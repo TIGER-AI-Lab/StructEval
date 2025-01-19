@@ -10,7 +10,9 @@ setup(
     author_email='dongfu.jiang@uwaterloo.ca',
     packages=find_packages(),
     url='https://github.com/TIGER-AI-Lab/StructEval',
+    entry_points={"console_scripts": ["structeval = structeval.cli:main"]},
     install_requires=[
+        "fire",
         "transformers",
         "sentencepiece",
         "torch",
