@@ -1,0 +1,1 @@
+from function1 import CONSTANT

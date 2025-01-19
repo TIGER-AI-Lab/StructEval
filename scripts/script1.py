@@ -1,0 +1,1 @@
+from structeval.vlm_eval import VLMEval
