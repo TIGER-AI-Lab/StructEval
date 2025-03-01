@@ -1,4 +1,4 @@
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=3
 
 export HF_TOKEN="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"
 

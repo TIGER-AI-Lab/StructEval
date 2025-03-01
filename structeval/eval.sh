@@ -1,8 +1,10 @@
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=4
 
 export HF_TOKEN="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"
 
 python cli.py evaluate \
-    --vlm_model_name "meta-llama/Meta-Llama-3-8B-Instruct" \
+    --vlm_model_name "microsoft/Phi-3.5-vision-instruct" \
+    --vlm_engine "vllm" \
     --input_path "HTMLoutputInference.json" \
-    --img_output_path "screenshots/"
+    --output_path "HTMLevaluations.json" \
+    --img_path "screenshots/"
