@@ -38,6 +38,10 @@ def vqa_eval(
                 image = img.convert("RGB")
         else:
             image = None 
+            item["VQA_score"] = 0.0
+            item["render_score"] = 0.0
+            item["VQAeval"] = []
+            output_data.append(item)
             continue
             
         debug_image_path = f"debug_images/{task_id}.png"
