@@ -1,0 +1,11 @@
+{
+    "task_name": "Generate Latex code from user's text query",
+    "query_example": "Sample Text -> LaTeX Query: Write a LaTeX document that includes a title, an abstract, and two sections with headings.",
+    "task_id": "001200",
+    "input_type": "Text",
+    "output_type": "Latex",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

@@ -1,0 +1,11 @@
+{
+    "task_name": "Generate Matplotlib code from user's text query",
+    "query_example": "Sample Text -> Matplotlib Query: Write a script to plot a histogram of student grades using Matplotlib.",
+    "task_id": "001100",
+    "input_type": "Text",
+    "output_type": "Matplotlib",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

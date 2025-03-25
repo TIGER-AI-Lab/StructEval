@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert Vue code to Markdown code",
+    "query_example": "Sample VUE -> Markdown Query: Convert the following Vue.js component into Markdown documentation. The Vue.js component renders a user profile card with a name and avatar. <template> <div class=\"profile\"> <img :src=\"avatar\" alt=\"User Avatar\"> <h2>{{ name }}</h2> </div> </template> <script> export default { props: { name: String, avatar: String } }; </script>",
+    "task_id": "140600",
+    "input_type": "Vue",
+    "output_type": "Markdown",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

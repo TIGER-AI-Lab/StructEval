@@ -1,0 +1,11 @@
+{
+    "task_name": "Generate CSV code from user's text query",
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "task_id": "000800",
+    "input_type": "Text",
+    "output_type": "CSV",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

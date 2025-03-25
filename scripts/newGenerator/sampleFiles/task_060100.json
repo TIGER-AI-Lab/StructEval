@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert Markdown code to HTML code",
+    "query_example": "Sample Markdown -> HTML Query: Convert the following Markdown content into HTML. The Markdown content represents an article with a title and a list. # Article Title\n- Point 1\n- Point 2\n- Point 3",
+    "task_id": "060100",
+    "input_type": "Markdown",
+    "output_type": "HTML",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

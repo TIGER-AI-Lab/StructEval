@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert HTML code to Angular code",
+    "query_example": "Sample HTML -> Angular Query: Convert the following HTML snippet into an Angular component. The HTML is a simple form with an input field and a submit button. Bind the input value to a variable called 'userInput' and display the value in real-time below the form. <form> <input type=\"text\" placeholder=\"Type something...\"> <button type=\"submit\">Submit</button> </form>",
+    "task_id": "011500",
+    "input_type": "HTML",
+    "output_type": "Angular",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

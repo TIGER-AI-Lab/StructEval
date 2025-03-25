@@ -1,0 +1,11 @@
+{
+    "task_name": "Generate SQL code from user's text query",
+    "query_example": "Sample Text -> SQL Query: Write an SQL query to create a table for storing information about events, including columns for event ID, name, date, and location.",
+    "task_id": "000500",
+    "input_type": "Text",
+    "output_type": "SQL",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

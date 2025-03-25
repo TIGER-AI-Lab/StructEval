@@ -1,0 +1,11 @@
+{
+    "task_name": "Generate Python code from user's text query",
+    "query_example": "Sample Text -> Python Query: Write a Python program that takes a list of numbers as input and outputs the sum of all even numbers in the list.",
+    "task_id": "000200",
+    "input_type": "Text",
+    "output_type": "Python",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert React code to Angular code",
+    "query_example": "Sample React -> Angular Query: Convert the following React component into an Angular component. The React component is a simple input form with a button that displays the entered text. function Form() { const [text, setText] = React.useState(''); return (<div> <input type=\"text\" onChange={(e) => setText(e.target.value)} /> <button onClick={() => alert(text)}>Submit</button> </div>); }",
+    "task_id": "071500",
+    "input_type": "React",
+    "output_type": "Angular",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

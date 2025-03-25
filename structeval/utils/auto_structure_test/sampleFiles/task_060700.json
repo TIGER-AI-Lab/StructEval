@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert Markdown code to React code",
+    "query_example": "Sample Markdown -> React Query: Convert the following Markdown content into a React component. The Markdown content represents a simple FAQ section. ## FAQ\n**Q:** What is React?\n**A:** React is a JavaScript library for building user interfaces.",
+    "task_id": "060700",
+    "input_type": "Markdown",
+    "output_type": "React",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

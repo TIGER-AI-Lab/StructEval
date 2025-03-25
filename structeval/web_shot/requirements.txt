@@ -1,0 +1,9 @@
+aioconsole
+beautifulsoup4
+numpy
+openai
+Pillow
+playwright
+playwright_stealth
+toml
+tqdm

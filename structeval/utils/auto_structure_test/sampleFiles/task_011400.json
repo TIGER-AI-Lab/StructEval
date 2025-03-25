@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert HTML code to Vue code",
+    "query_example": "Sample HTML -> VUE Query: Convert the following HTML snippet into a Vue.js component. The HTML represents a simple card with a title and description. Add a click event to the card that logs 'Card clicked' to the console. <div class=\"card\"> <h1>Card Title</h1> <p>Card description.</p> </div>",
+    "task_id": "011400",
+    "input_type": "HTML",
+    "output_type": "Vue",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

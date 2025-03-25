@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert CSV code to JSON code",
+    "query_example": "Sample CSV -> JSON Query: Convert the following CSV data into JSON format. name,age,hobbies\nAlice,25,reading;traveling",
+    "task_id": "080300",
+    "input_type": "CSV",
+    "output_type": "JSON",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

@@ -1,0 +1,11 @@
+{
+    "task_name": "Generate JSON code from user's text query",
+    "query_example": "Sample Text -> JSON Query: Generate a JSON object that represents a product with fields for name, price, and availability. Include an array of tags associated with the product.",
+    "task_id": "000300",
+    "input_type": "Text",
+    "output_type": "JSON",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

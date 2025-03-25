@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert React code to HTML code",
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle</button> {visible && <p>Text is now visible!</p>} </div>); }",
+    "task_id": "070100",
+    "input_type": "React",
+    "output_type": "HTML",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

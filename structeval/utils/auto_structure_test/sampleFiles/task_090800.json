@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert YAML code to CSV code",
+    "query_example": "Sample YAML -> CSV Query: Convert the following YAML data into CSV format. name: Alice\nage: 25\nhobbies: [reading, traveling]",
+    "task_id": "090800",
+    "input_type": "YAML",
+    "output_type": "CSV",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

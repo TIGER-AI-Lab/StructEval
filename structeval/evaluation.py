@@ -56,6 +56,7 @@ def vqa_eval(
             question = vqa["question"]
             answer = vqa["answer"]
             
+            #Use CoT before outputting True or False, step by step
             messages_with_image = [
                 {
                     "role": "user",

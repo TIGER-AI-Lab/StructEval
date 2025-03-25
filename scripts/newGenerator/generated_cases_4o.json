@@ -1,0 +1,200 @@
+[
+    {
+        "task_name": "Text to Angular",
+        "query_example": "Please output Angular:\n\nTask:\nConvert the provided text input into an Angular component that displays structured, user-friendly data.\n\nFeature Requirements:\n- Include a centered title using an <h2> element with the text ‘Data Overview’.\n- Use a <div> element to create a container with a class name of 'data-container' for layout purposes.\n- Display exactly 2 sections, each wrapped in a <section> element and containing unique content.\n- The first section should contain an unordered list (<ul>) with exactly 3 list items (<li>), each showing a distinct piece of information from the input.\n- The second section should display a paragraph (<p>) with styled text, using an inline style to set the font to italic.\n- Each list item (<li>) in the first section must include a label and a value separated by a colon (:).\n- Ensure one of the list items has its value text colored red by using a CSS class called 'highlight-red'.\n- Add a button element labeled ‘Refresh Data’, positioned at the bottom of the component using a <div> with class 'button-container' for alignment.",
+        "task_id": "000100",
+        "input_type": "Text",
+        "output_type": "Angular",
+        "rendering": true,
+        "query": "Please output Angular:\n\nTask: Transform the given text input into an Angular component that presents an interactive and informative user profile page.\n\nFeature Requirements:\n- Include a header with a class name 'profile-header' containing an <h1> element with the text ‘User Profile’.\n- Use a <div> element with class 'profile-container' to organize the component’s layout, ensuring contents are inside this container.\n- Display three sections (<section>), each presenting a different aspect of the user data.\n- The first section should have a table (<table>) with two rows, each containing two cells (<td>) — the first cell as a label (bolded) and the second cell as a value from the input data.\n- The second section should contain a single list (<ul>) with four list items (<li>), each representing a user interest, with the first interest styled with a blue font using a CSS class ‘highlight-blue’.\n- The third section should include two paragraphs (<p>), the first providing a user biography and the second showcasing recent user activity, styled with a font-size of 14px using inline styles.\n- Implement a styled <footer> with the class name ‘profile-footer’, containing a single <p> with text ‘End of Profile’, aligned to the center.\n- Add an outlined button within the footer labeled ‘Update Profile’, enclosed in a <div> with class 'footer-button' for proper alignment.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to CSV",
+        "query_example": "Please output CSV:\n\nTask:\nConvert the given text into a CSV representation of a fictional character list.\n\nFeature Requirements:\n- Include a first row with column headers: \"Character Name\", \"Age\", \"Occupation\", \"Location\".\n- Ensure all character names are unique and occupy the first column under the \"Character Name\" header.\n- Each \"Age\" entry must be an integer, appearing in the second column.\n- The \"Occupation\" column should include common professions such as \"Doctor\", \"Engineer\", \"Artist\", etc.\n- \"Location\" should list city names and must be included in the fourth column.\n- The CSV should contain exactly 10 rows of character data.\n- Ensure the CSV output does not have any blank rows between entries.\n- Each row, including the header, should have exactly 4 comma-separated values.",
+        "task_id": "000200",
+        "input_type": "Text",
+        "output_type": "CSV",
+        "rendering": false,
+        "query": "Please output CSV:\n\nTask:\nConvert the given text into a CSV representation of a fictional event schedule.\n\nFeature Requirements:\n- Include a first row with column headers: \"Event Name\", \"Day\", \"Time\", \"Location\".\n- Ensure all event names are unique and occupy the first column under the \"Event Name\" header.\n- Each \"Day\" entry must be a weekday and appear in the second column.\n- The \"Time\" column should follow the format \"HH:MM AM/PM\" and be included in the third column.\n- \"Location\" should list venue names and must be included in the fourth column.\n- The CSV should contain exactly 10 rows of event data.\n- Ensure there are no duplicate times for any day.\n- Ensure the CSV output does not have any blank rows between entries.\n- Each row, including the header, should have exactly 4 comma-separated values.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to Canvas",
+        "query_example": "Please output Canvas:\n\nTask:\nCreate a simple webpage displaying a personal profile summary.\n\nFeature Requirements:\n- Include a centered title using an <h1> element with the text \"Profile Summary\".\n- Display one <div> element containing a short paragraph with a maximum of 100 characters describing the individual.\n- Use a horizontal line (<hr>) to separate the title from the content below.\n- Include a two-column layout below the horizontal line, with each column equally occupying 50% of the available width.\n- The left column should contain a bulleted list with 3 hobbies, one per list item.\n- The right column should show a numbered list with 3 recent achievements, one per list item.\n- Use italics for the hobbies listed in the bulleted list.\n- Use bold font for the titles of each achievement in the numbered list.",
+        "task_id": "000300",
+        "input_type": "Text",
+        "output_type": "Canvas",
+        "rendering": true,
+        "query": "Please output Canvas:\n\nTask:\nCreate a simple webpage to display a fictional character's information.\n\nFeature Requirements:\n- Include an <h1> element at the top with the text \"Character Information\" centered on the page.\n- Display a <div> element underneath the title containing a short 80-character description of the character.\n- Insert a horizontal line (<hr>) below the description to separate it from the rest of the content.\n- Use a three-column layout below the horizontal line, with each column occupying one-third of the width.\n- The first column should contain a bulleted list with 3 key attributes of the character, each in italics.\n- The second column should consist of a numbered list describing the character's 3 goals, each with a bold title.\n- The third column should display a single <p> element with a quote attributed to the character, enclosed in quotation marks.\n- Align the text of the quote to the right side within the <p> element.\n- Ensure that there is consistent spacing between each element and list item for clarity.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to HTML",
+        "query_example": "Please output HTML:\n\nTask:\nConvert a short paragraph of text describing a fruit into an HTML structure.\n\nFeature Requirements:\n- Include a title using an <h1> element with the text \"Fruit Description\".\n- Display the original paragraph inside a <p> element immediately after the title.\n- Add a horizontal line using the <hr> element below the paragraph for separation.\n- Include a section titled \"Nutritional Information\" using an <h2> element.\n- Display a bullet point list within a <ul> element containing exactly 3 items: \"Calories\", \"Vitamins\", and \"Minerals\".\n- Each list item should use an <li> element and be presented in the order specified.\n- End the HTML document with a closing <footer> element containing the text \"End of Description\".",
+        "task_id": "000400",
+        "input_type": "Text",
+        "output_type": "HTML",
+        "rendering": true,
+        "query": "Please output HTML:\n\nTask:\nCreate a simple HTML page presenting a fictional animal.\n\nFeature Requirements:\n- The page should start with a title using an <h1> element with the text \"Fictional Animal Profile\".\n- Display a short paragraph of text describing the animal inside a <p> element immediately following the title.\n- Add a horizontal line using the <hr> element below the paragraph for separation.\n- Include a section titled \"Habitat Information\" using an <h2> element.\n- Utilize a <ul> element to display a list containing exactly 4 items: \"Continent\", \"Climate\", \"Terrain\", and \"Primary Food Source\".\n- Each list item should be enclosed within an <li> element and display in the order specified.\n- End the HTML document with a closing <footer> element containing the text \"Profile Complete\".",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to JSON",
+        "query_example": "Please output JSON:\n\nTask:\nConvert the input text into a structured JSON object containing specific details extracted from the text.\n\nFeature Requirements:\n- Include a \"summary\" key with a string value that summarizes the main point of the input text in no more than 50 words.\n- Extract all dates from the input text and list them under a \"dates\" key as an array of strings, formatted as \"YYYY-MM-DD\".\n- Identify all unique names mentioned in the input text and include them in a \"names\" key as an array of strings.\n- Count the total number of words in the input text and include this information as an integer value under a \"word_count\" key.\n- If any percentages are mentioned in the text, list them under a \"percentages\" key as an array of strings, retaining the original format (e.g., \"45%\").",
+        "task_id": "000500",
+        "input_type": "Text",
+        "output_type": "JSON",
+        "rendering": false,
+        "query": "Please output JSON:\n\nTask:\nTransform the input text into a JSON object detailing key elements derived from the text.\n\nFeature Requirements:\n- Include a \"key_message\" key with a concise sentence summarizing the essential message of the input text.\n- Extract any email addresses from the text and list them in an \"emails\" key as an array of strings.\n- Identify and list any phone numbers mentioned in the input text under a \"phone_numbers\" key, formatted as an array of strings.\n- Record the number of paragraphs in the input text and include this number under a \"paragraph_count\" key as an integer.\n- Extract all the capitalized words within the text and list them under a \"capitalized_words\" key as an array of strings.\n- Include a \"bullet_points\" key containing an array of strings; each string should represent a main point or fact derived from the text, presented in a bullet-point format.\n- Identify all URLs or web addresses mentioned in the text and include them in a \"urls\" key as an array of strings.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to Latex",
+        "query_example": "Please output Latex:\n\nTask:\nConvert the given plain text arithmetic expression into a properly formatted mathematical expression in LaTeX.\n\nFeature Requirements:\n- The expression must begin with a \\begin{equation} and end with \\end{equation} tags.\n- Use the \\frac{}{} command to represent fractions, ensuring each fraction has both a numerator and a denominator.\n- Include parentheses around expressions where necessary to preserve order of operations.\n- All variables should be italicized using the standard LaTeX mathematical formatting.\n- Exponents must be represented using the caret symbol (^) followed by curly braces to enclose the exponent.\n- Use \\cdot or \\times for multiplication symbols between numbers or variables, but omit multiplication symbols between adjacent variables or between numbers and variables.\n- Ensure that any square root operations are formatted using the \\sqrt{} command.\n- Represent any summation using the \\sum notation with appropriate limits specified where applicable.\n- Include a proper spacing command (e.g., \\,, \\; or \\;) between different elements of the equation for better readability.",
+        "task_id": "00XX00",
+        "input_type": "Text",
+        "output_type": "Latex",
+        "rendering": true,
+        "query": "Please output Latex:\n\nTask:\nConvert the given plain text geometric series expression into a properly formatted LaTeX expression.\n\nFeature Requirements:\n- The expression must start with a \\begin{equation*} and end with \\end{equation*} tags.\n- Geometric series should be represented using the \\sum notation, clearly specifying both the index and limits.\n- Use the \\cdot symbol to denote multiplication between numeric coefficients and variables or numbers.\n- Ensure the common ratio and variable terms within the series are italicized using LaTeX’s standard math mode.\n- Parentheses must be used to clearly denote the grouping of terms where multiplication or division is affected by order.\n- Powers should be represented using the caret (^) with braces for the exponent.\n- Format any terminal series sum terms in reduced fractional form using \\frac{}{}.\n- Use \\, or \\; to provide necessary spacing between different elements for improved readability and aesthetics.\n- Use the \\left( and \\right) commands to wrap any expressions that contain nested operations to maintain structural clarity.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to Markdown",
+        "query_example": "Please output Markdown:\n\nTask:\nConvert the given text into a formatted Markdown document featuring a simple report structure.\n\nFeature Requirements:\n- Include a centered title using an <h1> element with the text ‘Summary Report’.\n- Display a subsection header using an <h2> element titled ‘Introduction’.\n- Present exactly 2 paragraphs of the introduction section.\n- Use an <h2> element for a subsection titled ‘Details’ followed by a bullet list.\n- The bullet list should contain exactly 4 items, each describing a different detail.\n- Include a final subsection titled ‘Conclusion’ using an <h2> element containing a single paragraph.\n- Ensure that all paragraphs consist of at least two sentences.",
+        "task_id": "000700",
+        "input_type": "Text",
+        "output_type": "Markdown",
+        "rendering": true,
+        "query": "Please output Markdown:\n\nTask:\nConvert the given text into a formatted Markdown document for a fictional character profile.\n\nFeature Requirements:\n- Include a centered title using an <h1> element with the name 'Character Profile'.\n- Use an <h2> element to create a section titled ‘Background’ with exactly 3 paragraphs.\n- Each paragraph in the Background section should have at least three sentences.\n- Include an <h2> element for a subsection titled ‘Attributes’ followed by a bullet list.\n- Ensure the bullet list contains exactly 5 items, each describing a unique character attribute.\n- Use an <h2> element for a subsection titled ‘Statistics’ and present a table with 2 columns and 3 rows.\n- The table should list ‘Skill’ in the first column and ‘Level’ in the second column.\n- Add a final subsection titled ‘Synopsis’ using an <h2> element with a single paragraph of at least four sentences.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to Matplotlib",
+        "query_example": "Please output Matplotlib:\n\nTask:\nGenerate a Matplotlib line plot using predefined data arrays representing time and temperature measurements.\n\nFeature Requirements:\n- Display a line plot with the x-axis labeled as \"Time (hours)\" and the y-axis labeled as \"Temperature (°C)\".\n- Include a title for the plot at the top with the text \"Temperature Over Time\".\n- Plot exactly 10 data points representing time intervals evenly distributed on the x-axis.\n- Use a solid blue line to connect the data points.\n- Add grid lines to both the x and y axes to enhance readability.\n- Include a legend in the upper left corner with the label \"Temp Data\".\n- Use a range from 0 to 24 for the x-axis and a range from 15 to 30 for the y-axis.",
+        "task_id": "000800",
+        "input_type": "Text",
+        "output_type": "Matplotlib",
+        "rendering": true,
+        "query": "Please output Matplotlib:\n\nTask:\nGenerate a Matplotlib bar chart using predefined data sets representing sales numbers for different product categories.\n\nFeature Requirements:\n- Display a bar chart with the x-axis labeled as \"Product Category\" and the y-axis labeled as \"Sales (Units)\".\n- Include a title for the chart at the top with the text \"Sales Distribution by Category\".\n- Plot exactly 5 distinct product categories on the x-axis.\n- Use distinct colors for each bar to represent different categories.\n- Add data labels above each bar displaying exact sales numbers.\n- Include grid lines on the y-axis for clarity.\n- Set the x-axis range to display from 0 to 5 categories and the y-axis from 0 to 1000 units.\n- Include a legend at the bottom of the plot indicating color to category mapping.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to Mermaid",
+        "query_example": "Please output Mermaid:\n\nTask:\nConvert a textual process description into a Mermaid flowchart diagram.\n\nFeature Requirements:\n- Include a title at the top of the flowchart labeled \"Process Flow\".\n- Display exactly 3 main process steps, each within a unique node, connected with arrows.\n- Use a diamond-shaped node to represent a decision point in the process.\n- Include at least one loopback arrow indicating a repeatable step in the process.\n- Ensure all nodes are linked in a sequential order, with clear directional flow indicated by arrows.\n- Apply a different color fill for start and end nodes to distinguish them visually.\n- Use rectangular nodes exclusively for action steps in the process.\n- Include a legend explaining the meaning of node shapes at the bottom of the diagram.",
+        "task_id": "000900",
+        "input_type": "Text",
+        "output_type": "Mermaid",
+        "rendering": true,
+        "query": "Please output Mermaid:\n\nTask:\nGenerate a Mermaid flowchart diagram of a morning routine process.\n\nFeature Requirements:\n- Title the diagram as \"Morning Routine Process\" at the top of the chart.\n- Create exactly 4 action nodes representing distinct morning tasks, each connected with arrows.\n- Incorporate two decision points with diamond-shaped nodes to determine conditional paths in the process.\n- Ensure at least one path leads back to a previous decision, signifying the reassessment of a choice.\n- Use circular node shapes exclusively for start and end nodes.\n- Apply distinct color fills for the start, end, and decision nodes to enhance visual differentiation.\n- Connect all nodes in a visually sequential path with arrowheads indicating directionality.\n- Include annotations that describe each step or decision in brief phrases within respective nodes.\n- Provide a legend at the bottom of the diagram to decode node shapes, with additional explanations for any node colors used.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to TOML",
+        "query_example": "Please output TOML:\n\nTask:\nConvert the given text into a structured TOML format.\n\nFeature Requirements:\n- Include a title and specify it under a `[title]` section with the key `name`.\n- Under the `[metadata]` section, list exactly two items: `author` and `version`, each with a corresponding string value.\n- Include a `[settings]` section containing three boolean keys: `enabled`, `visible`, and `editable`, each set to either true or false.\n- Provide a `[data]` section that contains exactly two arrays: `items` and `details`, each holding three numeric values.\n- Under the `[messages]` section, ensure there are exactly three keys: `info`, `warning`, and `error`, each associated with a non-empty string value.\n- Include a single-line comment at the beginning of the TOML file starting with `#` followed by the text \"Generated TOML Configuration\".\n- Ensure all string values in the TOML file are enclosed in double quotes.\n- Use consistent indentation of two spaces for nested elements within sections.",
+        "task_id": "001000",
+        "input_type": "Text",
+        "output_type": "TOML",
+        "rendering": false,
+        "query": "Please output TOML:\n\nTask:\nOrganize the description into a defined TOML format for configuration purposes.\n\nFeature Requirements:\n- Include a section `[project]` with a key `title` having a string value.\n- Under the `[details]` section, provide two attributes: `owner` and `dateCreated`, both assigned a string value.\n- Create a `[preferences]` section with three options: `notificationsEnabled`, `debugMode`, and `autoSave`, each being either true or false.\n- Inside a `[configuration]` section, introduce two lists: `parameters` and `references`, both containing four integer values.\n- Develop a `[notifications]` section with three fields: `success`, `alert`, and `failure`, each paired with a specific string value.\n- Include a single-line comment at the start of the TOML file prefixed with `#` stating \"Autogenerated Configuration in TOML\".\n- Enclose all string values in double quotes.\n- Apply uniform two-space indentation for nested elements within sections.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to React",
+        "query_example": "Please output React:\n\nTask:\nGenerate a React component that displays a simple feedback form.\n\nFeature Requirements:\n- Include a centered header using an <h2> element with the text \"Feedback Form\".\n- Display a text input field with a placeholder text of \"Your Name\".\n- Include a textarea element with a placeholder text of \"Your Feedback\" and ensure it spans 3 rows.\n- Provide exactly two buttons at the bottom of the form labeled \"Submit\" and \"Reset\".\n- Ensure the \"Submit\" button is styled with a background color of blue.\n- Use a flexbox layout to center the form both vertically and horizontally on the page.\n- Implement a <p> element to display a thank you message below the form when the \"Submit\" button is clicked.\n- The form should include basic validation to ensure the text input and textarea are not empty before submission.",
+        "task_id": "001100",
+        "input_type": "Text",
+        "output_type": "React",
+        "rendering": true,
+        "query": "Please output React:\n\nTask:\nCreate a React component that displays a simple blog post interface.\n\nFeature Requirements:\n- Include a centered header using an <h1> element with the text \"Blog Post\".\n- Display a single text input field with a placeholder text of \"Title\" at the top of the form.\n- Include a textarea element with a placeholder text of \"Write your post here...\" and ensure it spans 5 rows.\n- Provide a checkbox labeled \"Published\" that users can check before clicking the publish button.\n- Include exactly two buttons at the bottom of the form labeled \"Publish\" and \"Cancel\".\n- Style the \"Publish\" button with a green background color and white text.\n- Use a grid layout to space out the form elements, ensuring equal spacing between inputs.\n- Implement a <div> element to show a success message with the text \"Post Successfully Published!\" when the \"Publish\" button is clicked, and only if the checkbox is checked.\n- The form should require the title input to be populated before submission can occur.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to SVG",
+        "query_example": "Please output SVG:\n\nTask:\nGenerate an SVG image of a simple tree with a trunk and branches.\n\nFeature Requirements:\n1. The SVG should contain a single rectangle element to represent the trunk, positioned vertically in the center of the image, and it must have a width of 50 pixels and a height of 150 pixels.\n2. The trunk should be colored brown using the hexadecimal code #8B4513.\n3. The SVG should include three circles above the trunk to represent the tree's foliage, each with a radius of 60 pixels.\n4. The circles should be evenly spaced horizontally and centered above the trunk.\n5. Each circle should be filled with a green color using the hexadecimal code #228B22.\n6. The entire SVG canvas should have a width and height of 300 pixels for consistent centering and alignment.\n7. The trunk's bottom should align with the bottom of the SVG canvas, ensuring it appears grounded.\n8. Each circle should have a stroke outline of 2 pixels in black (#000000).",
+        "task_id": "001200",
+        "input_type": "Text",
+        "output_type": "SVG",
+        "rendering": true,
+        "query": "Please output SVG:\n\nTask:\nGenerate an SVG image of a simple house with a rooftop and windows.\n\nFeature Requirements:\n1. The SVG should contain a single rectangle element to represent the walls of the house, positioned horizontally in the center of the image, with a width of 120 pixels and a height of 100 pixels.\n2. The house walls should be filled with a light gray color using the hexadecimal code #D3D3D3.\n3. The SVG should include a triangle above the rectangle to represent the rooftop, centered horizontally above the rectangle.\n4. The base of the triangle should coincide with the top of the rectangle, while its height should extend upwards by 50 pixels.\n5. The rooftop should be colored red using the hexadecimal code #FF4500.\n6. Two evenly spaced squares should be positioned on the rectangle to represent windows, each with a side length of 30 pixels.\n7. The windows should be centered on the left and right halves of the rectangle, leaving equal space from the sides of the rectangle.\n8. Each window should be filled with a light blue color using the hexadecimal code #87CEEB and have a black stroke outline of 2 pixels (#000000).\n9. The entire SVG canvas should have a width and height of 200 pixels to maintain consistent alignment and centering.\n10. The bottom of the house rectangle should align with the bottom of the SVG canvas, ensuring it appears grounded.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to Tikz",
+        "query_example": "Please output Tikz:\n\nTask:\nGenerate a Tikz diagram representing a simple network of nodes and edges.\n\nFeature Requirements:\n- Display exactly 5 nodes, each labeled with a unique number from 1 to 5.\n- Arrange the nodes in a circular layout with equal spacing between them.\n- Connect each node to exactly two other nodes with edges, forming a closed loop.\n- Use solid lines for the edges connecting the nodes.\n- Ensure all nodes are the same size and shape, specifically circles with a radius of 0.5 cm.\n- Position the entire diagram centered within a canvas of width 10 cm and height 10 cm.\n- Include a title centered above the diagram with the text \"Simple Network Graph\" in a bold font.",
+        "task_id": "001300",
+        "input_type": "Text",
+        "output_type": "Tikz",
+        "rendering": true,
+        "query": "Please output Tikz:\n\nTask:\nGenerate a Tikz diagram illustrating a car parking lot layout.\n\nFeature Requirements:\n- Display exactly 8 parking spaces arranged in two rows of four spaces each.\n- Label each parking space with a unique letter from A to H.\n- Draw the parking spaces as rectangles with dimensions of 2 cm by 4 cm.\n- Include a marked entrance at the bottom center of the layout, represented by an arrow pointing upwards.\n- Ensure the spaces are separated by a 1 cm gap between them horizontally and vertically.\n- Position a central aisle between the two rows, 2 cm in width.\n- Title the diagram \"Parking Lot Layout\" centered above in bold font.\n- Use dashed lines to indicate boundaries of the parking lot around the spaces.\n- Center the entire diagram within a 14 cm by 10 cm canvas.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to Typst",
+        "query_example": "Please output Typst:\n\nTask: Convert a given text description into a Typst document showcasing the structure and components of a basic webpage.\n\nFeature Requirements:\n- Include a main title using a level-1 heading element with the text \"Webpage Overview\".\n- Display a section with a level-2 heading titled \"Introduction\" followed by a paragraph containing placeholder text.\n- Create exactly two subsections under \"Introduction\", each having a level-3 heading and a list of three bullet points with placeholder content.\n- Insert a centered section titled \"Conclusion\" using a level-2 heading with a single paragraph of placeholder text following it.\n- Implement a horizontal line separating the \"Introduction\" section from the \"Conclusion\" section.\n- Add a footer area containing a single line of centered text \"End of Document\" using a smaller font size than the main content.",
+        "task_id": "001400",
+        "input_type": "Text",
+        "output_type": "Typst",
+        "rendering": true,
+        "query": "Please output Typst:\n\nTask: Convert a given textual description into a Typst document outlining a simple event schedule.\n\nFeature Requirements:\n- Include a main title using a level-1 heading element with the text \"Event Schedule\".\n- Present a section with a level-2 heading titled \"Day 1 Agenda\" followed by a bullet list with four placeholder event descriptions.\n- Create a sub-section under \"Day 1 Agenda\" with a level-3 heading titled \"Keynote Session\" and a numbered list of exactly two items describing placeholder session details.\n- Insert a centered section titled \"Day 2 Agenda\" using a level-2 heading followed by a paragraph of placeholder text explaining the day’s theme.\n- Implement a horizontal line separating the \"Day 1 Agenda\" section from the \"Day 2 Agenda\" section.\n- Add a header area containing a single line of centered text \"Welcome to the Annual Conference\" using a smaller font size than the main content.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to Vega",
+        "query_example": "Please output Vega:\n\nTask:\nCreate a Vega specification for a bar chart visualization of fictional sales data.\n\nFeature Requirements:\n- Include a title with the text \"Fictional Sales Data Chart\" displayed at the top of the visualization.\n- Display exactly 4 bars, each representing a unique product category.\n- Each bar must have a distinct color, ensuring no two bars share the same color.\n- Include a legend on the right side of the chart, mapping bar color to the corresponding product category.\n- Display numerical sales values directly above each bar.\n- Use the x-axis to label the product categories, ensuring each label is fully visible and not overlapping.\n- The y-axis should be formatted to display sales values in thousands, with labels every 10k increment.",
+        "task_id": "001500",
+        "input_type": "Text",
+        "output_type": "Vega",
+        "rendering": true,
+        "query": "Please output Vega:\n\nTask:\nCreate a Vega specification for a line chart visualization of fictional weather data.\n\nFeature Requirements:\n- Include a title with the text \"Fictional Weather Data Over Time\" displayed at the top of the visualization.\n- Plot a line representing temperature changes over a 7-day period.\n- Use a distinct color for the temperature line.\n- Display data points on the line for each day with small circles.\n- Use the x-axis to label each day of the week, ensuring all labels are fully visible and not overlapping.\n- The y-axis should be formatted to display temperature in degrees Fahrenheit, with labels every 10-degree increment.\n- Include a legend at the top right corner of the chart, explaining the meaning of the line color.\n- Annotate the highest and lowest temperatures with textual labels directly above or below the respective data points.\n- Include gridlines behind the temperature line to help gauge values easily.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to Vue",
+        "query_example": "Please output Vue:\n\nTask:\nConvert a plain text shopping list into a Vue component that displays the items and quantities.\n\nFeature Requirements:\n- Render a title using an `<h1>` element with the text \"Shopping List\".\n- Display each shopping list item as an `<li>` element within a `<ul>`.\n- Each `<li>` should include the item name in regular text and the quantity in parentheses.\n- Utilize v-for to iterate over a predefined data array for items and quantities.\n- Apply a CSS class named \"item\" to each `<li>` element for styling purposes.\n- Render a button with the text \"Clear List\" that, when clicked, removes all items from the list.\n- Use an `<input>` element with a placeholder text \"Add new item\" above the list.\n- Provide an \"Add Item\" button next to the input field to append new items to the list.\n- Include a data property in the Vue component for tracking the number of items currently displayed.",
+        "task_id": "001600",
+        "input_type": "Text",
+        "output_type": "Vue",
+        "rendering": true,
+        "query": "Please output Vue:\n\nTask:\nConvert a plain text list of book titles and authors into a Vue component that displays the library collection.\n\nFeature Requirements:\n- Render a main title using an `<h1>` element with the text \"Library Collection\".\n- Display each book and author as an `<li>` element within a `<ul>`.\n- Each `<li>` should include the book title in bold text followed by the author's name in italics.\n- Utilize v-for to iterate over a predefined data array for book titles and authors.\n- Apply a CSS class named \"book-entry\" to each `<li>` element for styling purposes.\n- Render a button with the text \"Clear Collection\" that, when clicked, removes all books from the list.\n- Use an `<input>` element with placeholder text \"Add new book\" above the list.\n- Provide an \"Add Book\" button next to the input field to append new books to the list.\n- Include a data property in the Vue component for tracking the number of books currently displayed.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to XML",
+        "query_example": "Please output XML:\n\nTask:\nGenerate an XML representation of a simple book catalog based on the given input text description of books.\n\nFeature Requirements:\n- Include a root element named `<catalog>`.\n- Within the `<catalog>`, have at least 2 `<book>` elements.\n- Each `<book>` element should contain a `<title>` element with the book's title in text.\n- Each `<book>` element should include an `<author>` element with the author's name in text.\n- Each `<book>` element must have a `<year>` element with four numeric characters representing the publication year.\n- Ensure each `<book>` element includes a `<price>` element with a numerical value formatted to two decimal places.\n- `<book>` elements should also contain a `<genre>` element with the genre name in text.\n- The `<catalog>` should be properly closed after all `<book>` elements.",
+        "task_id": "001700",
+        "input_type": "Text",
+        "output_type": "XML",
+        "rendering": false,
+        "query": "Please output XML:\n\nTask:\nGenerate an XML representation of a simple art gallery collection based on the given input text description of artworks.\n\nFeature Requirements:\n- Include a root element named `<gallery>`.\n- Within the `<gallery>`, have at least 3 `<artwork>` elements.\n- Each `<artwork>` element should contain a `<title>` element with the artwork's title in text.\n- Each `<artwork>` element should include an `<artist>` element with the artist's name in text.\n- Ensure each `<artwork>` element has a `<year>` element with four numeric characters representing the creation year.\n- Each `<artwork>` element must have a `<medium>` element with the type of medium used, such as oil, watercolor, or digital, in text.\n- Include a `<dimensions>` element in each `<artwork>` element, specifying the size of the artwork as \"width x height\" in inches.\n- Each `<artwork>` element should have a `<location>` element with the name of the gallery room or area where it is displayed.\n- All `<artwork>` elements should contain a `<price>` element featuring a numeric value formatted to two decimal places.\n- The `<gallery>` should be properly closed after all `<artwork>` elements.",
+        "raw_output_metric": [],
+        "VQA": {}
+    },
+    {
+        "task_name": "Text to YAML",
+        "query_example": "Please output YAML:\n\nTask:\nConvert the given text into a YAML format representing a shopping list.\n\nFeature Requirements:\n- Begin with a single key named `shopping_list`.\n- Include exactly 5 items as children under `shopping_list`.\n- Each item must have two keys: `name` and `quantity`.\n- All `name` keys should include non-empty string values.\n- All `quantity` keys should include integer values greater than zero.\n- Ensure the output is properly indented with two spaces for nested structures.\n- Provide a top-level comment indicating \"Generated Shopping List\".\n- Avoid any additional whitespace or empty lines between items.",
+        "task_id": "001800",
+        "input_type": "Text",
+        "output_type": "YAML",
+        "rendering": false,
+        "query": "Please output YAML:\n\nTask:\nConvert the given text into a YAML format representing a conference schedule.\n\nFeature Requirements:\n- Begin with a single key named `conference_schedule`.\n- Include exactly 3 sessions as children under `conference_schedule`.\n- Each session must have three keys: `title`, `speaker`, and `time`.\n- All `title` keys should include non-empty string values representing the session topic.\n- All `speaker` keys should include non-empty string values representing the speaker's name.\n- All `time` keys should include a string value in \"HH:MM AM/PM\" format.\n- Provide a top-level comment indicating \"Generated Conference Schedule\".\n- Ensure the output is properly indented with two spaces for nested structures.\n- Avoid any additional whitespace or empty lines between sessions.",
+        "raw_output_metric": [],
+        "VQA": {}
+    }
+]

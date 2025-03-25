@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert Angular code to HTML code",
+    "query_example": "Sample Angular -> HTML Query: Convert the following Angular component into plain HTML. The Angular component renders a styled button with a click event. @Component({ selector: 'app-button', template: '<button (click)=\"onClick()\">Click me</button>', styles: ['button { color: red; }'] }) export class ButtonComponent { onClick() { alert('Button clicked!'); } }",
+    "task_id": "150100",
+    "input_type": "Angular",
+    "output_type": "HTML",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

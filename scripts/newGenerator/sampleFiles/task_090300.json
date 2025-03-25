@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert YAML code to JSON code",
+    "query_example": "Sample YAML -> JSON Query: Convert the following YAML data into JSON format. name: Alice\nage: 25\nhobbies: [reading, traveling]",
+    "task_id": "090300",
+    "input_type": "YAML",
+    "output_type": "JSON",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

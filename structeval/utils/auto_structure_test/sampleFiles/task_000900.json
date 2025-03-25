@@ -1,0 +1,11 @@
+{
+    "task_name": "Generate YAML code from user's text query",
+    "query_example": "Sample Text -> YAML Query: Create a YAML configuration file for a web application, including settings for the server, database, and logging.",
+    "task_id": "000900",
+    "input_type": "Text",
+    "output_type": "YAML",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

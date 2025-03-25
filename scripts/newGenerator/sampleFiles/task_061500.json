@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert Markdown code to Angular code",
+    "query_example": "Sample Markdown -> Angular Query: Convert the following Markdown content into an Angular component. The Markdown content represents a contact form. ## Contact Us\n**Name:**\n**Email:**",
+    "task_id": "061500",
+    "input_type": "Markdown",
+    "output_type": "Angular",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

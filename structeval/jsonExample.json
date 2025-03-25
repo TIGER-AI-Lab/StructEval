@@ -1,0 +1,11 @@
+{
+    "person": {
+      "name": "Alice"
+    },
+    "favorites": {
+      "colors": ["red", "green", "blue"],
+      "numbers": [10, 20, 30]
+    },
+    "extra": "unexpected"
+  }
+  

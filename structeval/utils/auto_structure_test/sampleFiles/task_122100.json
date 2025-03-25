@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert Latex code to Typst code",
+    "query_example": "Sample LaTeX -> Typst Query: Convert the following LaTeX snippet into Typst format. \"\\documentclass{article}\\begin{document}Hello, world!\\end{document}\"",
+    "task_id": "122100",
+    "input_type": "Latex",
+    "output_type": "Typst",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

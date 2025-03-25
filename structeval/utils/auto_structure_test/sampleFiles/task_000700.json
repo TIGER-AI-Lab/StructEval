@@ -1,0 +1,11 @@
+{
+    "task_name": "Generate React code from user's text query",
+    "query_example": "Sample Text -> React Query: Create a React component that renders a form with fields for name, email, and a message. Include a submit button that logs the input data.",
+    "task_id": "000700",
+    "input_type": "Text",
+    "output_type": "React",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

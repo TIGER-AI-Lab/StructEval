@@ -1,0 +1,11 @@
+{
+    "task_name": "Generate SVG code from user's text query",
+    "query_example": "Sample Text -> SVG Query: Create an SVG representation of a triangle with vertices at specified coordinates.",
+    "task_id": "001300",
+    "input_type": "Text",
+    "output_type": "SVG",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

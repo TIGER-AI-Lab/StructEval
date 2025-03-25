@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert Vue code to Angular code",
+    "query_example": "Sample VUE -> Angular Query: Convert the following Vue.js component into an Angular component. The Vue.js component is a simple counter with increment and decrement buttons. <template> <div> <button @click=\"count--\">-</button> <span>{{ count }}</span> <button @click=\"count++\">+</button> </div> </template> <script> export default { data() { return { count: 0 }; } }; </script>",
+    "task_id": "141500",
+    "input_type": "Vue",
+    "output_type": "Angular",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

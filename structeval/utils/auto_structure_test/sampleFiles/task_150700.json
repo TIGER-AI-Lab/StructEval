@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert Angular code to React code",
+    "query_example": "Sample Angular -> React Query: Convert the following Angular component into a React component. The Angular component is a simple input field with a button that displays the input text. @Component({ selector: 'app-input', template: '<input [(ngModel)]=\"text\" /> <button (click)=\"showText()\">Show Text</button>', styles: [] }) export class InputComponent { text: string = ''; showText() { alert(this.text); } }",
+    "task_id": "150700",
+    "input_type": "Angular",
+    "output_type": "React",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

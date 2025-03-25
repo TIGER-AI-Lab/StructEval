@@ -1,0 +1,50 @@
+[
+    {
+        "task_id": "1",
+        "Person ": {
+            " Name": "Alice"
+        },
+        "Favorites": {
+            " Colors": [
+                "red",
+                "green",
+                "blue"
+            ],
+            "Numbers": [
+                10,
+                20,
+                30
+            ]
+        },
+        "extra_field": "unexpected",
+        "JSON_Score": 0.5,
+        "Missing_Keys": [
+            "root['person']['age']"
+        ],
+        "Extra_Keys": [
+            "root['task_id']",
+            "root['extra_field']"
+        ]
+    },
+    {
+        "task_id": "2",
+        "person": {
+            "name": "Bob",
+            "age": 25
+        },
+        "favorites": {
+            "colors": [
+                "blue"
+            ],
+            "numbers": [
+                5,
+                15
+            ]
+        },
+        "JSON_Score": 1.0,
+        "Missing_Keys": [],
+        "Extra_Keys": [
+            "root['task_id']"
+        ]
+    }
+]

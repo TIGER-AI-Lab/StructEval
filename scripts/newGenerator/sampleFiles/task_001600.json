@@ -1,0 +1,11 @@
+{
+    "task_name": "Generate Mermaid code from user's text query",
+    "query_example": "Sample Text -> Mermaid Query: Generate a Mermaid diagram that represents a flowchart for processing an online order.",
+    "task_id": "001600",
+    "input_type": "Text",
+    "output_type": "Mermaid",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

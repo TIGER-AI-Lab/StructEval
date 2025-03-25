@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert Markdown code to Vue code",
+    "query_example": "Sample Markdown -> VUE Query: Convert the following Markdown content into a Vue.js component. The Markdown content represents a simple welcome message. # Welcome\nThis is a Vue demo.",
+    "task_id": "061400",
+    "input_type": "Markdown",
+    "output_type": "Vue",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

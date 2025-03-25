@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert XML code to YAML code",
+    "query_example": "Sample XML -> YAML Query: Convert the following XML data into YAML format. <person><name>Alice</name><age>25</age><hobbies><hobby>reading</hobby><hobby>traveling</hobby></hobbies></person>",
+    "task_id": "040900",
+    "input_type": "XML",
+    "output_type": "YAML",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

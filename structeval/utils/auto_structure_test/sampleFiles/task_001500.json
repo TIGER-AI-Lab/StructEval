@@ -1,0 +1,11 @@
+{
+    "task_name": "Generate Angular code from user's text query",
+    "query_example": "Sample Text -> Angular Query: Write an Angular component that displays a registration form with validation for required fields.",
+    "task_id": "001500",
+    "input_type": "Text",
+    "output_type": "Angular",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

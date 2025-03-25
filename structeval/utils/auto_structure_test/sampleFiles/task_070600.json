@@ -1,0 +1,11 @@
+{
+    "task_name": "Convert React code to Markdown code",
+    "query_example": "Sample React -> Markdown Query: Convert the following React component into a Markdown documentation example. The component renders a styled card with a title and description. function Card() { return (<div style={{ border: '1px solid #ccc', padding: '10px' }}> <h2>Title</h2> <p>Description</p> </div>); }",
+    "task_id": "070600",
+    "input_type": "React",
+    "output_type": "Markdown",
+    "query": "",
+    "raw_output_metric": [],
+    "VQA_questions": [],
+    "VQA_answers": []
+}

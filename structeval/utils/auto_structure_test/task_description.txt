@@ -1,0 +1,43 @@
+Create a JSON annotation object with these fields:
+
+- task_name: A brief description of the task (e.g., "Generate HTML code from user's text query").
+- input_type: The type of input (e.g., "Text").
+- output_type: The expected output type (e.g., "HTML"). Note: If the output type is renderable (visually displayable), set rendering to true; otherwise, set it to false.
+- query_example (optional): An example that shows how to convert a sample text input to the desired query.
+- query: A clear, informative string instruction for what the LLM should generate.
+- raw_output_metric: A list of keywords that must appear in the generated raw output.
+- VQA_questions: A list of questions to evaluate the rendered output. Note: Do not include questions that test interactive components (e.g., "Does the button change color on hover?").
+- VQA_answers: A corresponding list of expected answers for each VQA question.
+- rendering: A boolean indicating whether the output should be rendered.
+
+Example Annotation:
+
+```json
+{
+    "task_name": "Generate Tikz code from user's text query",
+    "input_type": "Text",
+    "output_type": "Tikz",
+    "query_example": "Sample Text -> Tikz Query: Write a TikZ diagram representing a simple network graph with three nodes connected by edges.",
+    "query": "Create a Tikz diagram showing a traffic light state machine with three states: Red, Yellow, and Green. Use circles for states, color each state accordingly, and connect them with directed arrows in the sequence Red -> Green -> Yellow -> Red.",
+    "raw_output_metric": [
+        "\\begin{tikzpicture}",
+        "\\node",
+        "\\draw",
+        "->",
+        "circle",
+        "red",
+        "yellow",
+        "green"
+    ],
+    "VQA_questions": [
+        "How many circular states are in the diagram?",
+        "What is the color of the topmost state?",
+        "Are the state transitions shown with directed arrows?"
+    ],
+    "VQA_answers": [
+        "3",
+        "red",
+        "yes"
+    ],
+    "rendering": true
+}

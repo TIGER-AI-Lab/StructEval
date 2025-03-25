@@ -1,0 +1,2587 @@
+[
+  {
+    "query": "",
+    "task_id": "070100",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 35177,
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "raw_output_answer": {
+      "text": [
+        "class=\"subscribe-btn\"",
+        "class=\"info-text\"",
+        "Subscribe to our newsletter for updates",
+        "Thank you for subscribing!"
+      ]
+    },
+    "question": {
+      "text": [
+        "Is there a \"Subscribe\" button on the page?",
+        "Does the page initially show \"Subscribe to our newsletter for updates\"?",
+        "Does clicking the button change the text to \"Thank you for subscribing!\"?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a \"Subscribe\" button with the class name `subscribe-btn`. Above the button, a paragraph with class name `info-text` shows the message \"Subscribe to our newsletter for updates\". Clicking the button changes the message to \"Thank you for subscribing!\".  React Component Code:   import React, { useState } from 'react';  function SubscribeButton() {   const [message, setMessage] = useState('Subscribe to our newsletter for updates');    return (     <div className=\"container\">       <p className=\"info-text\">{message}<\/p>       <button className=\"subscribe-btn\" onClick={() => setMessage('Thank you for subscribing!')}>         Subscribe       <\/button>     <\/div>   ); }  export default SubscribeButton;",
+    "annotator": 45,
+    "annotation_id": 20660,
+    "created_at": "2025-01-21T16:08:42.995993Z",
+    "updated_at": "2025-01-21T16:08:42.996012Z",
+    "lead_time": 1929.242
+  },
+  {
+    "query": "",
+    "task_id": "000800",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 35205,
+    "raw_output_answer": {
+      "text": [
+        "First Name",
+        "Last Name",
+        "Job Title",
+        "Department",
+        "Salary",
+        "Hire Date",
+        "Location"
+      ]
+    },
+    "queryAnswer": "Please directly output CSV format. Generate a CSV file containing detailed information about employees, including the following columns: First Name, Last Name, Job Title, Department, Salary, Hire Date, and Location. Ensure there are at least 50 rows of data in the CSV file. The data should represent diverse and realistic entries with varied departments, job roles, locations, salary ranges (from $30,000 to $150,000), and hire dates between 2000 and 2023. Use proper CSV formatting with headers.",
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20687,
+    "created_at": "2025-01-23T00:33:14.935247Z",
+    "updated_at": "2025-01-23T20:24:08.382899Z",
+    "lead_time": 286.612
+  },
+  {
+    "query": "",
+    "task_id": "070101",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36767,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a navigation bar with three links: \"Home\", \"About\", and \"Contact\". Each link has a class name `nav-link`. The navigation bar itself has the id `main-navbar`.  React Component Code:   import React from 'react';  function Navbar() {   return (     <nav id=\"main-navbar\">       <ul>         <li><a href=\"#home\" className=\"nav-link\">Home<\/a><\/li>         <li><a href=\"#about\" className=\"nav-link\">About<\/a><\/li>         <li><a href=\"#contact\" className=\"nav-link\">Contact<\/a><\/li>       <\/ul>     <\/nav>   ); }  export default Navbar;",
+    "raw_output_answer": {
+      "text": [
+        "id=\"main-navbar\"",
+        "class=\"nav-link\"",
+        "Home",
+        "About",
+        "Contact"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True"
+      ]
+    },
+    "question": {
+      "text": [
+        "Does the navigation bar contain three links? ",
+        "Are the links labeled \"Home\", \"About\", and \"Contact\"? "
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20661,
+    "created_at": "2025-01-21T16:09:57.911953Z",
+    "updated_at": "2025-01-21T16:09:57.911970Z",
+    "lead_time": 67.759
+  },
+  {
+    "query": "",
+    "task_id": "070102",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36768,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders an input form with a placeholder \"Enter your email\". Below the input, a button labeled \"Submit\" is styled with the class `submit-btn`. The input field has the id `email-input`.  React Component Code:   import React from 'react';  function EmailForm() {   return (     <form>       <input type=\"email\" id=\"email-input\" placeholder=\"Enter your email\" \/>       <button className=\"submit-btn\" type=\"submit\">Submit<\/button>     <\/form>   ); }  export default EmailForm;",
+    "raw_output_answer": {
+      "text": [
+        "id=\"email-input\"",
+        "Enter your email",
+        "class=\"submit-btn\""
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Is there an input field with a placeholder \"Enter your email\"?",
+        "Is there a button labeled \"Submit\"?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20662,
+    "created_at": "2025-01-21T16:11:06.253229Z",
+    "updated_at": "2025-01-21T16:11:06.253251Z",
+    "lead_time": 64.89
+  },
+  {
+    "query": "",
+    "task_id": "070103",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36769,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a header with class `main-header` containing \"Welcome to My Site\" and a paragraph with class `description` containing \"This is the best place to learn React!\".  React Component Code:   import React from 'react';  function WelcomeMessage() {   return (     <div>       <h1 className=\"main-header\">Welcome to My Site<\/h1>       <p className=\"description\">This is the best place to learn React!<\/p>     <\/div>   ); }  export default WelcomeMessage;",
+    "raw_output_answer": {
+      "text": [
+        "class=\"main-header\"",
+        "class=\"description\"",
+        "Welcome to My Site",
+        "This is the best place to learn React!"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Is there a header with text \"Welcome to My Site\"",
+        "Is there a paragraph with text \"This is the best place to learn React!\"?",
+        "Is the header displayed above the paragraph?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20663,
+    "created_at": "2025-01-21T16:12:50.330127Z",
+    "updated_at": "2025-01-21T16:12:50.330160Z",
+    "lead_time": 102.678
+  },
+  {
+    "query": "",
+    "task_id": "070104",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36770,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a footer with class `footer-bar` containing three links: \"Privacy Policy\", \"Terms of Service\", and \"Contact Us\". Each link has the class `footer-link`.  React Component Code:   import React from 'react';  function Footer() {   return (     <footer className=\"footer-bar\">       <a href=\"#privacy\" className=\"footer-link\">Privacy Policy<\/a>       <a href=\"#terms\" className=\"footer-link\">Terms of Service<\/a>       <a href=\"#contact\" className=\"footer-link\">Contact Us<\/a>     <\/footer>   ); }  export default Footer;",
+    "raw_output_answer": {
+      "text": [
+        "class=\"footer-bar\"",
+        "class=\"footer-link\"",
+        "Privacy Policy",
+        "Terms of Service",
+        "Contact Us"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Is there a footer on the page?",
+        "Is there a link \"Privacy Policy\" present?",
+        "Is there a link \"Terms of Service\" present?",
+        "Is there a link \"Contact Us\" present?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20664,
+    "created_at": "2025-01-21T16:14:32.399775Z",
+    "updated_at": "2025-01-21T16:14:32.399804Z",
+    "lead_time": 100.558
+  },
+  {
+    "query": "",
+    "task_id": "070105",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36771,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a card with class name `card-container`. The card includes a title with the class `card-title`, and a description with the class `card-description`.  React Component Code:   import React from 'react';  function Card() {   return (     <div className=\"card-container\">       <h3 className=\"card-title\">Card Title<\/h3>       <p className=\"card-description\">This is a description of the card.<\/p>     <\/div>   ); }  export default Card;",
+    "raw_output_answer": {
+      "text": [
+        "class=\"card-container\"",
+        "class=\"card-title\"",
+        "class=\"card-description\"",
+        "Card Title",
+        "This is a description of the card."
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Does the card have a title labeled \"Card Title\"?",
+        "Does the card include a description?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20665,
+    "created_at": "2025-01-21T16:25:31.188362Z",
+    "updated_at": "2025-01-21T16:25:31.188379Z",
+    "lead_time": 650.274
+  },
+  {
+    "query": "",
+    "task_id": "070106",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36772,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders an unordered list with the class name `shopping-list` containing three items: \"Milk\", \"Eggs\", and \"Bread\". Each item has the class `list-item`.  React Component Code:   import React from 'react';  function ShoppingList() {   return (     <ul className=\"shopping-list\">       <li className=\"list-item\">Milk<\/li>       <li className=\"list-item\">Eggs<\/li>       <li className=\"list-item\">Bread<\/li>     <\/ul>   ); }  export default ShoppingList;",
+    "raw_output_answer": {
+      "text": [
+        "class=\"shopping-list\"",
+        "class=\"list-item\"",
+        "Milk",
+        "Eggs",
+        "Bread"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Does the list contain three items?",
+        "Are the items \"Milk\", \"Eggs\", and \"Bread\"? "
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20666,
+    "created_at": "2025-01-21T16:26:30.932645Z",
+    "updated_at": "2025-01-21T16:26:30.932660Z",
+    "lead_time": 58.37
+  },
+  {
+    "query": "",
+    "task_id": "070107",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36773,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a login form with two fields: \"Username\" (id `username`) and \"Password\" (id `password`). A submit button with class `login-btn` is included.  React Component Code:   import React from 'react';  function LoginForm() {   return (     <form>       <input type=\"text\" id=\"username\" placeholder=\"Enter your username\" \/>       <input type=\"password\" id=\"password\" placeholder=\"Enter your password\" \/>       <button className=\"login-btn\" type=\"submit\">Login<\/button>     <\/form>   ); }  export default LoginForm;",
+    "raw_output_answer": {
+      "text": [
+        "id=\"username\"",
+        "id=\"password\"",
+        "class=\"login-btn\"",
+        "Enter your username",
+        "Enter your password"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "question": {
+      "text": [
+        "Is the username field present?",
+        "Is the password field present?",
+        "Do the fields have placeholders \"Enter your username\" and \"Enter your password\"? ",
+        "Is there a login button?"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20667,
+    "created_at": "2025-01-21T16:28:06.112835Z",
+    "updated_at": "2025-01-21T16:28:06.112857Z",
+    "lead_time": 76.076
+  },
+  {
+    "query": "",
+    "task_id": "070108",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36774,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a header with a dark blue background (class `header-bar`) containing a centered title with the text \"Welcome to the Demo Page\". The title is styled with the class `header-title`, and the background color is set inline as `#003366`.  React Component Code:   import React from 'react';  function PageHeader() {   return (     <header className=\"header-bar\" style={{ backgroundColor: '#003366', padding: '10px', textAlign: 'center' }}>       <h1 className=\"header-title\" style={{ color: 'white' }}>Welcome to the Demo Page<\/h1>     <\/header>   ); }  export default PageHeader;",
+    "raw_output_answer": {
+      "text": [
+        "class=\"header-bar\"",
+        "class=\"header-title\"",
+        "Welcome to the Demo Page",
+        "#003366",
+        "text-align: center",
+        "color: white"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "question": {
+      "text": [
+        "Is there a header?",
+        "Is the header's background color dark blue?",
+        "Is the text centered in the header? ",
+        "Does the header contain the text \"Welcome to the Demo Page\"?",
+        "Is the text color white?"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20669,
+    "created_at": "2025-01-21T16:36:25.464230Z",
+    "updated_at": "2025-01-21T16:36:25.464247Z",
+    "lead_time": 130.577
+  },
+  {
+    "query": "",
+    "task_id": "070109",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36775,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a card with a light gray background (class `card-container`) containing a title (class `card-title`) with the text \"TIGER Lab\" and a subtitle (class `card-subtitle`) with the text \"Advancing Machine Learning Research\".  React Component Code: import React from 'react';  function InfoCard() {   return (     <div className=\"card-container\" style={{ backgroundColor: '#f0f0f0', padding: '20px' }}>       <h2 className=\"card-title\">TIGER Lab<\/h2>       <h4 className=\"card-subtitle\">Advancing Machine Learning Research<\/h4>     <\/div>   ); }  export default InfoCard;",
+    "raw_output_answer": {
+      "text": [
+        "class=\"card-container\"",
+        "class=\"card-title\"",
+        "class=\"card-subtitle\"",
+        "#f0f0f0",
+        "TIGER Lab",
+        "Advancing Machine Learning Research"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Is there a card with a light gray background",
+        "Does the card contain a title with text \"TIGER Lab\"",
+        "Is there a subtitle with text \"Advancing Machine Learning Research\"",
+        "Is the title being placed on top of the subtitle?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20668,
+    "created_at": "2025-01-21T16:34:13.385763Z",
+    "updated_at": "2025-01-21T16:34:13.385781Z",
+    "lead_time": 353.574
+  },
+  {
+    "query": "",
+    "task_id": "070110",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36776,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a button (class `center-button`) centered both vertically and horizontally on the page with the text \"Click Me\". The button has a green background color (`#28a745`) and white text.  React Component Code:   import React from 'react';  function CenteredButton() {   return (     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>       <button className=\"center-button\" style={{ backgroundColor: '#28a745', color: 'white', padding: '10px 20px', border: 'none' }}>         Click Me       <\/button>     <\/div>   ); }  export default CenteredButton;",
+    "raw_output_answer": {
+      "text": [
+        "class=\"center-button\"",
+        "#28a745",
+        "color: white",
+        "display: flex",
+        "justify-content: center",
+        "align-items: center"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Is the button vertically and horizontally centered?",
+        "Does the button have a green background?",
+        "Does the button have white text?",
+        "Is the text on the button \"Click Me\"?",
+        "Does the button have borders? "
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "False"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20670,
+    "created_at": "2025-01-21T16:49:16.099988Z",
+    "updated_at": "2025-01-21T16:49:16.100001Z",
+    "lead_time": 188.209
+  },
+  {
+    "query": "",
+    "task_id": "070111",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36777,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a title (class `left-title`) aligned to the left of the page with the text \"Hello World\". Below the title, a blue underline spans the same width as the text.  React Component Code:   import React from 'react';  function LeftAlignedTitle() {   return (     <div>       <h1 className=\"left-title\" style={{ textAlign: 'left', marginBottom: '5px' }}>Hello World<\/h1>       <div style={{ width: '150px', height: '2px', backgroundColor: 'blue' }}><\/div>     <\/div>   ); }  export default LeftAlignedTitle;",
+    "raw_output_answer": {
+      "text": [
+        "class=\"left-title\"",
+        "text-align: left",
+        "Hello World",
+        "background-color: blue"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Is the title aligned to the left of the page? ",
+        "Does the title have the text \"Hello World\"?",
+        "Is there a blue underline directly below the title?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20671,
+    "created_at": "2025-01-21T16:51:39.750654Z",
+    "updated_at": "2025-01-21T16:51:39.750678Z",
+    "lead_time": 142.258
+  },
+  {
+    "query": "",
+    "task_id": "070112",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36778,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a navigation bar with three links (Home, About, Contact) spaced evenly horizontally. The nav bar has a light blue background color (`#d9f2ff`), and the links are styled in bold.  React Component Code:   import React from 'react';  function NavigationBar() {   return (     <nav style={{ backgroundColor: '#d9f2ff', padding: '10px' }}>       <ul style={{ display: 'flex', justifyContent: 'space-around', listStyle: 'none', margin: 0, padding: 0 }}>         <li><a href=\"\/\" style={{ fontWeight: 'bold' }}>Home<\/a><\/li>         <li><a href=\"\/about\" style={{ fontWeight: 'bold' }}>About<\/a><\/li>         <li><a href=\"\/contact\" style={{ fontWeight: 'bold' }}>Contact<\/a><\/li>       <\/ul>     <\/nav>   ); }  export default NavigationBar;",
+    "raw_output_answer": {
+      "text": [
+        "background-color: #d9f2ff",
+        "display: flex",
+        "justify-content: space-around",
+        "font-weight: bold",
+        "Home",
+        "About",
+        "Contact"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True",
+        "True",
+        "False"
+      ]
+    },
+    "question": {
+      "text": [
+        "Is the navigation bar's background light blue",
+        "Are the links spaced evenly horizontally?",
+        "Is each link styled in bold?",
+        "Does \"Home\" displayed as a link?",
+        "Does \"About\" displayed as a link?",
+        "Does \"Contact\" displayed as a link?",
+        "Are there any bullets or list indicators?"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20672,
+    "created_at": "2025-01-21T16:54:13.691649Z",
+    "updated_at": "2025-01-21T16:54:13.691674Z",
+    "lead_time": 152.74
+  },
+  {
+    "query": "",
+    "task_id": "070113",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36779,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a header with the text \"Welcome Back\" (class `main-header`) in purple (#660099), centered horizontally. Below it is a subtitle (class `subtitle-text`) with the text \"We're glad to see you!\" styled in light yellow (`#FFCC33`).  React Component Code:   import React from 'react';  function Header() {   return (     <div style={{ textAlign: 'center', padding: '20px' }}>       <h1 className=\"main-header\" style={{ color: '#660099' }}>Welcome Back<\/h1>       <p className=\"subtitle-text\" style={{ color: '#FFCC33' }}>We're glad to see you!<\/p>     <\/div>   ); }  export default Header;",
+    "raw_output_answer": {
+      "text": [
+        "class=\"main-header\"",
+        "class=\"subtitle-text\"",
+        "text-align: center",
+        "#660099",
+        "#FFCC33"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Is the header text \"Welcome Back\" centered?",
+        "Is the subtitle \"We're glad to see you!\" directly below the header? ",
+        "Is the subtitle in light yellow?",
+        "Is the title in purple?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20673,
+    "created_at": "2025-01-21T17:43:17.619787Z",
+    "updated_at": "2025-01-21T17:43:17.619807Z",
+    "lead_time": 164.753
+  },
+  {
+    "query": "",
+    "task_id": "070114",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36780,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a footer with two links: \"Privacy Policy\" and \"Terms of Service\". The links are aligned to the center horizontally. The background of the footer is green (`#00AA00`) with white text.  React Component Code:   import React from 'react';  function Footer() {   return (     <footer style={{ backgroundColor: '#00AA00', color: 'white', textAlign: 'center', padding: '10px' }}>       <a href=\"\/privacy\" style={{ color: 'white', margin: '0 10px' }}>Privacy Policy<\/a>       <a href=\"\/terms\" style={{ color: 'white', margin: '0 10px' }}>Terms of Service<\/a>     <\/footer>   ); }  export default Footer;",
+    "raw_output_answer": {
+      "text": [
+        "background-color: #00AA00",
+        "text-align: center",
+        "color: white"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Is there a footer displayed on the page?",
+        "is the footer's color green?",
+        "Are the links \"Privacy Policy\" and \"Terms of Service\" centered horizontally?",
+        "Do the links have white text?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20674,
+    "created_at": "2025-01-21T17:46:05.731280Z",
+    "updated_at": "2025-01-21T17:46:05.731307Z",
+    "lead_time": 167.127
+  },
+  {
+    "query": "",
+    "task_id": "070115",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36781,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a registration form with:   1. Two input fields (Full Name, Email).   2. Two radio buttons to select Gender (Male, Female).   3. A styled \"Register\" button with rounded corners and a green background (`#28a745`).   All elements are aligned vertically, centered horizontally, with a 20px gap.  React Component Code:   import React from 'react';  function RegistrationForm() {   return (     <form style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', padding: '20px', maxWidth: '400px', margin: 'auto' }}>       <input type=\"text\" placeholder=\"Full Name\" style={{ width: '100%', padding: '10px', borderRadius: '5px' }} \/>       <input type=\"email\" placeholder=\"Email\" style={{ width: '100%', padding: '10px', borderRadius: '5px' }} \/>       <div>         <label>           <input type=\"radio\" name=\"gender\" value=\"male\" \/> Male         <\/label>         <label style={{ marginLeft: '10px' }}>           <input type=\"radio\" name=\"gender\" value=\"female\" \/> Female         <\/label>       <\/div>       <button style={{ backgroundColor: '#28a745', color: 'white', padding: '10px 20px', borderRadius: '10px', border: 'none' }}>Register<\/button>     <\/form>   ); }  export default RegistrationForm;",
+    "raw_output_answer": {
+      "text": [
+        "display: flex",
+        "flex-direction: column",
+        "align-items: center",
+        "name=\"gender\"",
+        "background-color: #28a745"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Are the input fields, radio buttons, and the button stacked vertically? ",
+        "Does the button have rounded corners?",
+        "Are the radio buttons labeled \"Male\" and \"Female\"?",
+        "Is the button green?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20675,
+    "created_at": "2025-01-21T17:48:48.639756Z",
+    "updated_at": "2025-01-21T17:48:48.639774Z",
+    "lead_time": 161.765
+  },
+  {
+    "query": "",
+    "task_id": "070116",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36782,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a horizontal navigation bar with four links (Home, About, Services, Contact).   1. The navbar has a blue background (`#007bff`).   2. Links are displayed horizontally with a gap of 15px and are styled with white text and no underline.   3. The active link (class `active`) has bold text.  React Component Code:   import React from 'react';  function NavBar() {   return (     <nav style={{ backgroundColor: '#007bff', padding: '10px' }}>       <a href=\"\/\" className=\"active\" style={{ color: 'white', textDecoration: 'none', fontWeight: 'bold', marginRight: '15px' }}>Home<\/a>       <a href=\"\/about\" style={{ color: 'white', textDecoration: 'none', marginRight: '15px' }}>About<\/a>       <a href=\"\/services\" style={{ color: 'white', textDecoration: 'none', marginRight: '15px' }}>Services<\/a>       <a href=\"\/contact\" style={{ color: 'white', textDecoration: 'none' }}>Contact<\/a>     <\/nav>   ); }  export default NavBar;",
+    "raw_output_answer": {
+      "text": [
+        "background-color: #007bff",
+        "text-decoration: none",
+        "color: white",
+        "font-weight: bold"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Is there a nav bar on the page?",
+        "Is the navbar background blue?",
+        "Are the links displayed horizontally?",
+        "Is the active link styled with bold text?",
+        "Are links styled without an underline?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20676,
+    "created_at": "2025-01-21T17:50:24.822764Z",
+    "updated_at": "2025-01-21T17:50:24.822791Z",
+    "lead_time": 94.946
+  },
+  {
+    "query": "",
+    "task_id": "070117",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36783,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a 3x2 grid layout with the following sections:   1. Header (spanning all 3 columns, blue background).   2. Two columns for content in rows 2 and 3.   3. A footer spanning all columns, dark gray background (`#333`) and white text.  React Component Code:   import React from 'react';  function GridLayout() {   return (     <div style={{ display: 'grid', gridTemplateRows: 'auto 1fr 1fr auto', gridTemplateColumns: '1fr 1fr 1fr', gap: '10px', height: '100vh' }}>       <div style={{ gridColumn: '1 \/ -1', backgroundColor: 'blue', padding: '10px' }}>Header<\/div>       <div style={{ gridColumn: '1 \/ 2', backgroundColor: 'lightgray' }}>Left Content<\/div>       <div style={{ gridColumn: '2 \/ -1', backgroundColor: 'lightgray' }}>Right Content<\/div>       <div style={{ gridColumn: '1 \/ -1', backgroundColor: '#333', color: 'white', padding: '10px' }}>Footer<\/div>     <\/div>   ); }  export default GridLayout;",
+    "raw_output_answer": {
+      "text": [
+        "display: grid",
+        "grid-template-rows",
+        "grid-template-columns",
+        "grid-column: 1 \/ -1"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Does the header span all columns?",
+        "Are the content sections being splited into two columns?",
+        "Is the footer's color dark gray?",
+        "Is there a gap between grid items?",
+        "Is the header's color blue?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20677,
+    "created_at": "2025-01-21T17:52:28.618670Z",
+    "updated_at": "2025-01-21T17:52:28.618699Z",
+    "lead_time": 120.636
+  },
+  {
+    "query": "",
+    "task_id": "070118",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36784,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a product catalog with three cards:   1. Each card includes a product title, price, and a \"Buy Now\" button.   2. Cards are displayed in a horizontal row with equal spacing.   3. Card background is white with a shadow (`box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1)`).   4. Buttons are styled with a blue background (`#007bff`) and white text.   5. From left to right, the products' price should all be $99.99.  React Component Code:   import React from 'react';  function ProductCatalog() {   return (     <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>       {['Product 1', 'Product 2', 'Product 3'].map((product, index) => (         <div key={index} style={{ backgroundColor: 'white', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', padding: '15px', width: '30%' }}>           <h3>{product}<\/h3>           <p>Price: $99.99<\/p>           <button style={{ backgroundColor: '#007bff', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '5px' }}>Buy Now<\/button>         <\/div>       ))}     <\/div>   ); }  export default ProductCatalog;",
+    "raw_output_answer": {
+      "text": [
+        "$99.99",
+        "#007bff",
+        "display: flex",
+        "justify-content: space-between",
+        "box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1)",
+        "border-radius: 5px"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Are the cards displayed horizontally with equal spacing?",
+        "Does each card have a white background with a shadow?",
+        "Are the \"Buy Now\" buttons blue with white text?",
+        "Are all cards equally sized? '",
+        "Are the prices all being $99.99?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20678,
+    "created_at": "2025-01-21T17:58:22.790300Z",
+    "updated_at": "2025-01-21T17:58:22.790326Z",
+    "lead_time": 346.768
+  },
+  {
+    "query": "",
+    "task_id": "070119",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36785,
+    "queryAnswer": "Please convert the following React component into plain HTML.  Component Description:   The component renders a feedback form with:   1. A textarea for feedback input.   2. A styled \"Submit\" button with rounded edges and a red background (`#dc3545`).   3. Textarea and button are vertically centered and aligned.   4. The textarea has a border color of light gray (`#ced4da`).    React Component Code:   import React from 'react';  function FeedbackForm() {   return (     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', gap: '15px' }}>       <textarea rows=\"5\" cols=\"40\" style={{ border: '1px solid #ced4da', borderRadius: '5px', padding: '10px' }} placeholder=\"Your feedback\"><\/textarea>       <button style={{ backgroundColor: '#dc3545', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '10px' }}>Submit<\/button>     <\/div>   ); }  export default FeedbackForm;",
+    "raw_output_answer": {
+      "text": [
+        "display: flex",
+        "flex-direction: column",
+        "align-items: center",
+        "#ced4da",
+        "border-radius: 10px"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Is the textarea vertically centered?",
+        "Does the textarea have a light gray border? ",
+        "Is the \"Submit\" button rounded with a red background?",
+        "Are the textarea and button aligned vertically?",
+        "Is there a gap between the text area and button?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20679,
+    "created_at": "2025-01-21T18:00:19.704912Z",
+    "updated_at": "2025-01-21T18:00:19.704929Z",
+    "lead_time": 115.014
+  },
+  {
+    "query": "",
+    "task_id": "070120",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36786,
+    "queryAnswer": "Please convert the following React component into plain HTML.\n\nComponent Description:  \nThe component renders a pricing table with three columns (Basic, Pro, Premium).  \n1. Each column includes a title, price, and a \"Choose Plan\" button.  \n2. Column titles are bold and centered.  \n3. The background of the selected column (Pro) is light blue (`#f0f8ff`).  \n\nReact Component Code:  \nimport React from 'react';\n\nfunction PricingTable() {\n  return (\n    <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', padding: '20px' }}>\n      {['Basic', 'Pro', 'Premium'].map((plan, index) => (\n        <div key={index} style={{ textAlign: 'center', padding: '20px', border: '1px solid #ddd', backgroundColor: plan === 'Pro' ? '#f0f8ff' : 'white', borderRadius: '5px', width: '25%' }}>\n          <h3>{plan}<\/h3>\n          <p>$10\/month<\/p>\n          <button style={{ backgroundColor: '#007bff', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '5px' }}>Choose Plan<\/button>\n        <\/div>\n      ))}\n    <\/div>\n  );\n}\n\nexport default PricingTable;\n",
+    "raw_output_answer": {
+      "text": [
+        "background-color: #f0f8ff",
+        "text-align: center"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Are the columns displayed in a row?",
+        "Is the \"Pro\" column background light blue? ",
+        "Are titles centered and bold?",
+        "Do the columns have rounded corners?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20686,
+    "created_at": "2025-01-22T18:58:43.138909Z",
+    "updated_at": "2025-01-22T18:58:43.138923Z",
+    "lead_time": 86.345
+  },
+  {
+    "query": "",
+    "task_id": "070121",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36787,
+    "queryAnswer": "Please convert the following React component into plain HTML.\n\nComponent Description:  \nThe component displays three notification cards (Success, Warning, Error) side-by-side.  \n1. Each card has a background color corresponding to its status:  \n   - Green (`#28a745`) for \"Success\"  \n   - Yellow (`#ffc107`) for \"Warning\"  \n   - Red (`#dc3545`) for \"Error\"  \n2. Cards are evenly spaced and horizontally aligned.  \n3. The text inside the cards is white and centered.  \n\nReact Component Code:  \nimport React from 'react';\n\nfunction NotificationBar() {\n  const notifications = [\n    { status: 'Success', color: '#28a745' },\n    { status: 'Warning', color: '#ffc107' },\n    { status: 'Error', color: '#dc3545' }\n  ];\n\n  return (\n    <div style={{ display: 'flex', justifyContent: 'space-around', padding: '20px' }}>\n      {notifications.map((note, index) => (\n        <div key={index} style={{ backgroundColor: note.color, color: 'white', padding: '20px', borderRadius: '5px', width: '30%', textAlign: 'center' }}>\n          <p>{note.status}<\/p>\n        <\/div>\n      ))}\n    <\/div>\n  );\n}\n\nexport default NotificationBar;\n",
+    "raw_output_answer": {
+      "text": [
+        "background-color: #28a745",
+        "background-color: #ffc107",
+        "background-color: #dc3545",
+        "text-align: center",
+        "color: white"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Are the three cards aligned horizontally?",
+        "Do the colors of the cards match their statuses?",
+        "Is the text inside the cards white?",
+        "Are the cards evenly spaced?",
+        "Do all 3 cards have round corners?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20681,
+    "created_at": "2025-01-22T18:31:20.339506Z",
+    "updated_at": "2025-01-22T18:31:20.339522Z",
+    "lead_time": 164.917
+  },
+  {
+    "query": "",
+    "task_id": "070122",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36788,
+    "queryAnswer": "Please convert the following React component into plain HTML.\n\nComponent Description:  \nThe component displays a two-section form:  \n1. The first section has a textbox and a yellow \"Submit\" button (`#ffc107`).  \n2. The second section includes a dropdown and a green \"Apply\" button (`#28a745`).  \n3. Sections are displayed side-by-side with equal spacing.  \n\nReact Component Code:  \nimport React from 'react';\n\nfunction MultiSectionForm() {\n  return (\n    <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>\n      <div style={{ width: '45%' }}>\n        <input type=\"text\" placeholder=\"Enter text\" style={{ width: '100%', padding: '10px', marginBottom: '10px' }} \/>\n        <button style={{ backgroundColor: '#ffc107', border: 'none', padding: '10px 20px', color: 'black', borderRadius: '5px' }}>Submit<\/button>\n      <\/div>\n      <div style={{ width: '45%' }}>\n        <select style={{ width: '100%', padding: '10px', marginBottom: '10px' }}>\n          <option>Option 1<\/option>\n          <option>Option 2<\/option>\n        <\/select>\n        <button style={{ backgroundColor: '#28a745', border: 'none', padding: '10px 20px', color: 'white', borderRadius: '5px' }}>Apply<\/button>\n      <\/div>\n    <\/div>\n  );\n}\n\nexport default MultiSectionForm;\n",
+    "raw_output_answer": {
+      "text": [
+        "background-color: #ffc107",
+        "background-color: #28a745",
+        "display: flex",
+        "justify-content: space-between"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Are the two sections aligned horizontally?",
+        "Does the button with text \"Submit\" have a yellow background? ",
+        "Does the first button with text \"Apply\" have a green background? ",
+        "Is there a visible gap between the two sections? "
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20682,
+    "created_at": "2025-01-22T18:33:55.096072Z",
+    "updated_at": "2025-01-22T18:34:00.327956Z",
+    "lead_time": 139.95
+  },
+  {
+    "query": "",
+    "task_id": "070123",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36789,
+    "queryAnswer": "Please convert the following React component into plain HTML.\n\nComponent Description:  \nThe component renders a pricing table with three columns: Basic, Standard, and Premium.  \n1. Each column is displayed in a card with a title, a list of features, and a \"Select\" button.  \n2. The columns are horizontally aligned with equal spacing.  \n3. The \"Basic\" card has a light gray background (`#f8f9fa`), \"Standard\" has blue (`#007bff`), and \"Premium\" has gold (`#ffc107`).  \n4. The title text is centered and white.  \n\nReact Component Code:  \nimport React from 'react';\n\nfunction PricingTable() {\n  const plans = [\n    { title: 'Basic', color: '#f8f9fa', textColor: '#000' },\n    { title: 'Standard', color: '#007bff', textColor: '#fff' },\n    { title: 'Premium', color: '#ffc107', textColor: '#000' }\n  ];\n\n  return (\n    <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }}>\n      {plans.map((plan, index) => (\n        <div key={index} style={{ backgroundColor: plan.color, color: plan.textColor, padding: '20px', borderRadius: '10px', width: '30%', textAlign: 'center' }}>\n          <h2>{plan.title}<\/h2>\n          <ul style={{ listStyle: 'none', padding: 0 }}>\n            <li>Feature 1<\/li>\n            <li>Feature 2<\/li>\n            <li>Feature 3<\/li>\n          <\/ul>\n          <button style={{ backgroundColor: '#000', color: '#fff', padding: '10px', border: 'none', borderRadius: '5px' }}>Select<\/button>\n        <\/div>\n      ))}\n    <\/div>\n  );\n}\n\nexport default PricingTable;\n",
+    "raw_output_answer": {
+      "text": [
+        "background-color: #f8f9fa",
+        "background-color: #007bff",
+        "background-color: #ffc107",
+        "text-align: center",
+        "justify-content: space-between"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Are the columns evenly spaced?",
+        "'Does \"Basic\"  column's background color light gray?",
+        "'Does \"Standard\" column's background color blue?",
+        "'Does \"Premium\" column's background color yellow?",
+        "Are the titles centered in each card?",
+        "Do all cards have rounded corners?",
+        "Are \"select\" buttons black with white text?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20683,
+    "created_at": "2025-01-22T18:41:08.308825Z",
+    "updated_at": "2025-01-22T18:41:08.308848Z",
+    "lead_time": 309.775
+  },
+  {
+    "query": "",
+    "task_id": "070124",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36790,
+    "queryAnswer": "Please convert the following React component into plain HTML.\n\nComponent Description:  \nThe component displays a progress bar:  \n1. A gray (`#e9ecef`) outer container representing the full progress.  \n2. A filled blue bar (`#007bff`) representing 70% progress.  \n3. The progress value (\"70%\") is displayed in white at the center of the blue bar.  \n\nReact Component Code:  \nimport React from 'react';\n\nfunction ProgressBar() {\n  return (\n    <div style={{ backgroundColor: '#e9ecef', width: '100%', height: '30px', borderRadius: '5px', overflow: 'hidden' }}>\n      <div style={{ backgroundColor: '#007bff', width: '70%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>\n        70%\n      <\/div>\n    <\/div>\n  );\n}\n\nexport default ProgressBar;\n",
+    "raw_output_answer": {
+      "text": [
+        "background-color: #e9ecef",
+        "background-color: #007bff",
+        "70"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Does the outer container have a gray background?",
+        "Is the progress bar filled to 70% of the container width?",
+        "Is the progress bar blue?",
+        "Is the progress value displayed at the center of the bar?",
+        "Is the progress value in white text? ",
+        "Does the progress bar have round corners?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20684,
+    "created_at": "2025-01-22T18:47:33.791162Z",
+    "updated_at": "2025-01-22T18:47:33.791174Z",
+    "lead_time": 187.682
+  },
+  {
+    "query": "",
+    "task_id": "070125",
+    "task_name": "Convert React code to HTML code",
+    "input_type": "React",
+    "VQA_answers": [],
+    "output_type": "HTML",
+    "VQA_questions": [],
+    "query_example": "Sample React -> HTML Query: Convert the following React component into plain HTML. The component renders a simple button that toggles text visibility when clicked. function App() { const [visible, setVisible] = React.useState(false); return (<div> <button onClick={() => setVisible(!visible)}>Toggle<\/button> {visible && <p>Text is now visible!<\/p>} <\/div>); }",
+    "raw_output_metric": [],
+    "id": 36791,
+    "queryAnswer": "Please convert the following React component into plain HTML.\n\nComponent Description:  \nThe component displays a vertically centered login form with the following features:  \n1. A light blue (`#e3f2fd`) background for the form container.  \n2. Two text inputs for \"Username\" and \"Password\" with rounded borders.  \n3. A green \"Login\" button (`#28a745`) centered below the inputs.  \n\nReact Component Code:  \nimport React from 'react';\n\nfunction LoginForm() {\n  return (\n    <div style={{ backgroundColor: '#e3f2fd', padding: '30px', width: '300px', margin: 'auto', borderRadius: '10px', textAlign: 'center' }}>\n      <input type=\"text\" placeholder=\"Username\" style={{ width: '100%', padding: '10px', marginBottom: '15px', borderRadius: '5px', border: '1px solid #ccc' }} \/>\n      <input type=\"password\" placeholder=\"Password\" style={{ width: '100%', padding: '10px', marginBottom: '15px', borderRadius: '5px', border: '1px solid #ccc' }} \/>\n      <button style={{ backgroundColor: '#28a745', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px' }}>Login<\/button>\n    <\/div>\n  );\n}\n\nexport default LoginForm;\n",
+    "raw_output_answer": {
+      "text": [
+        "background-color: #e3f2fd",
+        "border-radius: 5px",
+        "Username",
+        "Password"
+      ]
+    },
+    "shouldUseVisualRendering": "Use Visual Rendering",
+    "question": {
+      "text": [
+        "Is the form container vertically centered?",
+        "Does the form container have a light blue background?",
+        "Are the input fields and the button styled with rounded corners? ",
+        "Is the button green with white text?",
+        "Are the inputs stacked vertically with proper spacing?"
+      ]
+    },
+    "desiredAnswer": {
+      "text": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    "annotator": 45,
+    "annotation_id": 20685,
+    "created_at": "2025-01-22T18:49:08.102619Z",
+    "updated_at": "2025-01-22T18:49:08.102631Z",
+    "lead_time": 91.685
+  },
+  {
+    "query": "",
+    "task_id": "000801",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38580,
+    "queryAnswer": "Please directly output CSV format in your response. Generate a CSV file with data about global weather observations. Include the following columns: \"Date\", \"City\", \"Country\", \"Temperature (°C)\", \"Humidity (%)\", \"Wind Speed (km\/h)\", and \"Condition\". Provide at least 100 rows of realistic data with diverse weather conditions and locations. Ensure the dates are from January 2020 to December 2023, with proper CSV formatting including headers as the first row.",
+    "raw_output_answer": {
+      "text": [
+        "Temperature (°C)",
+        "Humidity (%)",
+        "Wind Speed (km\/h)",
+        "Condition",
+        "Country",
+        "Date",
+        "City"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20688,
+    "created_at": "2025-01-23T00:36:20.732713Z",
+    "updated_at": "2025-01-23T20:24:37.018570Z",
+    "lead_time": 59.789
+  },
+  {
+    "query": "",
+    "task_id": "000802",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38581,
+    "raw_output_answer": {
+      "text": [
+        "Ticket Price (USD)",
+        "Departure Time",
+        "Flight Duration (hours)",
+        "Flight Number",
+        "Origin Airport",
+        "Destination Airport"
+      ]
+    },
+    "queryAnswer": "Please directly output CSV format in your response. Generate a CSV file with information about international flights. The CSV should include the following columns: \"Flight Number\", \"Airline\", \"Origin Airport\", \"Destination Airport\", \"Departure Time\", \"Arrival Time\", \"Flight Duration (hours)\", and \"Ticket Price (USD)\". Provide exactly 75 rows of data. Ensure the data is realistic, with valid IATA airport codes for the origin and destination, ticket prices ranging from $50 to $2000, and flight durations from 1 to 20 hours. Use proper CSV formatting, with the first row as headers. Validate that every row is complete and follows the specified format.",
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20689,
+    "created_at": "2025-01-23T00:38:45.465057Z",
+    "updated_at": "2025-01-23T20:24:44.016040Z",
+    "lead_time": 75.267
+  },
+  {
+    "query": "",
+    "task_id": "000803",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38582,
+    "queryAnswer": "Please directly output CSV format in your response. Generate a CSV file containing a list of registered vehicles. Include the following columns: \"License Plate\", \"Owner Name\", \"Vehicle Make\", \"Vehicle Model\", \"Year\", \"Registration Date\", and \"City\". Provide 100 rows of data. Ensure the headers are exactly as specified. Include at least one row with \"Year\" = 2023 and another row with \"City\" = \"Tokyo\". Use proper CSV formatting with headers in the first row.",
+    "raw_output_answer": {
+      "text": [
+        "2023",
+        "Tokyo",
+        "License Plate",
+        "Owner Name",
+        "Vehicle Model",
+        "Registration Date"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20690,
+    "created_at": "2025-01-23T00:43:53.854884Z",
+    "updated_at": "2025-01-23T20:25:45.354827Z",
+    "lead_time": 343.576
+  },
+  {
+    "query": "",
+    "task_id": "000804",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38583,
+    "queryAnswer": "Please directly output CSV format in your response. Generate a CSV file containing a dataset of university students and their academic performance. Include the following columns: \"Student ID\", \"First Name\", \"Last Name\", \"Age\", \"Gender\", \"Major\", \"GPA\", \"Enrollment Year\", and \"Graduation Year\". Provide 10 rows of realistic data. Ensure the following conditions are met:\n\nHeaders must match exactly as specified.\nStudent IDs should be unique and follow the format \"S####\" (e.g., \"S1234\").\nAt least one row must include:\nMajor = \"Computer Science\".\nGPA = \"4.0\".\nGraduation Year = \"2023\".\nEnsure diverse values for Gender (\"Male\", \"Female\", and \"Non-Binary\") and Major (e.g., \"Biology\", \"Mathematics\", \"History\", etc.).\nUse proper CSV formatting with headers in the first row.",
+    "raw_output_answer": {
+      "text": [
+        "Computer Science",
+        "4.0",
+        "2023",
+        "First Name",
+        "Student ID",
+        "Major"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20691,
+    "created_at": "2025-01-23T00:45:55.678821Z",
+    "updated_at": "2025-01-23T20:33:45.594499Z",
+    "lead_time": 123.321
+  },
+  {
+    "query": "",
+    "task_id": "000805",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38584,
+    "queryAnswer": "Please directly output CSV format in your response. Generate a CSV file containing a list of products in an e-commerce store. Include the following columns: \"Product ID\", \"Product Name\", \"Category\", \"Price (USD)\", \"Stock Quantity\", \"Rating\", and \"Date Added\". Provide exactly 15 rows of data. Ensure the following conditions are met:\n\nHeaders must match exactly as specified.\nProduct IDs must be unique and follow the format \"P####\" (e.g., \"P1001\").\nAt least one row must include:\nCategory = \"Electronics\".\nPrice (USD) = \"999.99\".\nRating = \"5.0\".\nEnsure diverse values for Category (e.g., \"Books\", \"Clothing\", \"Home Appliances\") and Price (USD) ranging from \"10.00\" to \"999.99\".\nUse proper CSV formatting with headers in the first row.",
+    "raw_output_answer": {
+      "text": [
+        "999.99",
+        "5.0",
+        "Price (USD)",
+        "Rating",
+        "Price (USD)",
+        "Electronics"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20692,
+    "created_at": "2025-01-23T00:48:17.164398Z",
+    "updated_at": "2025-01-23T20:25:58.493786Z",
+    "lead_time": 860.67
+  },
+  {
+    "query": "",
+    "task_id": "000806",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38585,
+    "queryAnswer": "Please directly output CSV format in your response. Generate a CSV file containing a list of attendees for a corporate training event. Include the following columns: \"Attendee ID\", \"Full Name\", \"Department\", \"Role\", \"Email Address\", \"Registration Date\", and \"Attendance Status\". Provide exactly 12 rows of data. Ensure the following conditions are met:\n\nHeaders must match exactly as specified.\nAttendee IDs must be unique and follow the format \"A####\" (e.g., \"A0001\").\nAt least one row must include:\nDepartment = \"Human Resources\".\nRole = \"Manager\".\nAttendance Status = \"Present\".\nUse diverse values for Department (e.g., \"Finance\", \"Marketing\", \"Engineering\").\nEnsure Registration Dates follow the format YYYY-MM-DD and are from 2023.\nUse proper CSV formatting with headers in the first row.",
+    "raw_output_answer": {
+      "text": [
+        "Human Resources",
+        "Manager",
+        "Present",
+        "Attendee ID",
+        "Email Address",
+        "Registration Date"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20693,
+    "created_at": "2025-01-23T00:49:40.182562Z",
+    "updated_at": "2025-01-23T20:34:26.763735Z",
+    "lead_time": 83.953
+  },
+  {
+    "query": "",
+    "task_id": "000807",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38586,
+    "queryAnswer": "Please directly output CSV format in your response. Generate a dataset containing the weekly shift schedule for employees in a company. Include the following columns: Employee ID, Employee Name, Department, Shift Day, Shift Start Time, and Shift End Time. Provide exactly 10 rows of data. Ensure:\n\nEmployee ID values are unique and follow the format EMP### (e.g., EMP001).\nInclude at least one row where Department = IT and Shift Day = Monday.\nEnsure diverse Shift Days across rows (Monday to Sunday).\nUse proper CSV formatting with headers in the first row.",
+    "raw_output_answer": {
+      "text": [
+        "Monday",
+        "IT",
+        ",IT",
+        "Shift Start Time",
+        "Shift Day",
+        "Shift End Time"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20694,
+    "created_at": "2025-01-23T02:47:44.630400Z",
+    "updated_at": "2025-01-23T20:34:30.700327Z",
+    "lead_time": 7086.42
+  },
+  {
+    "query": "",
+    "task_id": "000808",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38587,
+    "queryAnswer": "Please directly output CSV format in your response. Generate a dataset of online orders for a retail store. Include the following columns: Order ID, Customer Name, Product Category, Order Amount (USD), Order Date, and Delivery Status. Provide 15 rows of data. Ensure:\n\nOrder ID values follow the format ORD#### (e.g., ORD1001).\nAt least one row has Product Category = Electronics and Order Amount (USD) > 500.\nAt least one row includes Delivery Status = Pending.\nUse proper CSV formatting with headers in the first row.",
+    "raw_output_answer": {
+      "text": [
+        "Order ID",
+        "Customer Name",
+        "Order Amount (USD)",
+        "Pending",
+        "Electronics"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20695,
+    "created_at": "2025-01-23T02:48:41.221745Z",
+    "updated_at": "2025-01-23T20:34:33.315602Z",
+    "lead_time": 56.693
+  },
+  {
+    "query": "",
+    "task_id": "000809",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38588,
+    "queryAnswer": "Please directly output CSV format in your response. Generate a dataset of patient records for a hospital. Include the following columns: Patient ID, Patient Name, Age, Gender, Department, Admission Date, and Discharge Status. Provide exactly 12 rows of data. Ensure:\n\nPatient ID values are unique and follow the format PAT#### (e.g., PAT0001).\nInclude at least one row where Department = Cardiology and Discharge Status = Discharged.\nEnsure diverse values for Gender (e.g., Male, Female, Non-Binary).\nUse proper CSV formatting with headers in the first row.",
+    "raw_output_answer": {
+      "text": [
+        ",Discharged",
+        "Cardiology",
+        "Age",
+        "Patient Name",
+        "Patient ID",
+        "Discharge Status",
+        "Patient ID"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20696,
+    "created_at": "2025-01-23T02:49:56.670674Z",
+    "updated_at": "2025-01-23T20:34:35.704981Z",
+    "lead_time": 75.678
+  },
+  {
+    "query": "",
+    "task_id": "000810",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38589,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following DataFrame into a CSV file with the specified headers. Ensure all column names are used exactly as provided, and all rows are preserved:\n\nStudent_ID | Name        | Course       | Grade | Year  \nST001      | Alice Smith | Mathematics  | A     | 2023  \nST002      | Bob Jones   | Biology      | B+    | 2022  \nST003      | Carol King  | Computer Sci | A-    | 2023  \nST004      | David Liu   | History      | B     | 2021 ",
+    "raw_output_answer": {
+      "text": [
+        "Student_ID",
+        "ST001",
+        "ST003",
+        "ST004",
+        "David Liu",
+        "History",
+        "Mathematics",
+        "2023",
+        "A-"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20697,
+    "created_at": "2025-01-23T02:51:56.044232Z",
+    "updated_at": "2025-01-23T20:34:38.164824Z",
+    "lead_time": 119.732
+  },
+  {
+    "query": "",
+    "task_id": "000811",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38590,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following structured text into a CSV file. The CSV should include the columns: Product_ID, Product_Name, Category, Price, and Stock:\n\nProduct_ID: P001, Product_Name: Laptop, Category: Electronics, Price: 1000, Stock: 20\nProduct_ID: P002, Product_Name: Chair, Category: Furniture, Price: 150, Stock: 50\nProduct_ID: P003, Product_Name: Desk, Category: Furniture, Price: 300, Stock: 10\nProduct_ID: P004, Product_Name: Headphones, Category: Electronics, Price: 200, Stock: 15\nEnsure headers match exactly and all rows are preserved.",
+    "raw_output_answer": {
+      "text": [
+        "Product_ID",
+        "Product_Name",
+        "Headphones",
+        "Electronics",
+        "200",
+        "50",
+        "20",
+        "Laptop",
+        "Stock"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20698,
+    "created_at": "2025-01-23T02:52:57.643964Z",
+    "updated_at": "2025-01-23T20:34:41.180376Z",
+    "lead_time": 62.053
+  },
+  {
+    "query": "",
+    "task_id": "000812",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38591,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following tab-separated values (TSV) into a CSV file. The TSV file includes employee details. Preserve all rows and convert the data into the CSV format with headers:\n\nEmployee_ID\\tName\\tDepartment\\tSalary\\tJoining_Date  \nE001\\tJohn Doe\\tIT\\t75000\\t2021-06-01  \nE002\\tJane Smith\\tHR\\t60000\\t2020-04-15  \nE003\\tAlbert Lee\\tFinance\\t80000\\t2022-10-20  \nE004\\tEmily Carter\\tMarketing\\t70000\\t2019-09-10  \nHeaders in the CSV must match exactly: Employee_ID, Name, Department, Salary, Joining_Date.",
+    "raw_output_answer": {
+      "text": [
+        "Employee_ID",
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "Emily Carter",
+        "60000",
+        "75000",
+        "2020-04-15",
+        "2019-09-10"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20699,
+    "created_at": "2025-01-23T02:53:57.084544Z",
+    "updated_at": "2025-01-23T20:34:44.096789Z",
+    "lead_time": 59.882
+  },
+  {
+    "query": "",
+    "task_id": "000813",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38592,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following JSON-like text into a CSV file. The CSV must include the headers ID, Full Name, Age, Occupation, and City. Use proper CSV formatting with headers in the first row.\n\n\n[  {\"ID\": \"101\", \"Full Name\": \"Alice Johnson\", \"Age\": 29, \"Occupation\": \"Engineer\", \"City\": \"Toronto\"},    {\"ID\": \"102\", \"Full Name\": \"Bob Carter\", \"Age\": 34, \"Occupation\": \"Designer\", \"City\": \"New York\"},    {\"ID\": \"103\", \"Full Name\": \"Carol White\", \"Age\": 40, \"Occupation\": \"Manager\", \"City\": \"London\"},    {\"ID\": \"104\", \"Full Name\": \"David Green\", \"Age\": 25, \"Occupation\": \"Analyst\", \"City\": \"Berlin\"}  ]\n",
+    "raw_output_answer": {
+      "text": [
+        "David Green",
+        "Occupation",
+        "Analyst",
+        "City",
+        "Alice Johnson",
+        "29",
+        "40",
+        "104",
+        "London",
+        "Manager"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20700,
+    "created_at": "2025-01-23T03:09:47.530888Z",
+    "updated_at": "2025-01-23T20:35:02.848080Z",
+    "lead_time": 76.9
+  },
+  {
+    "query": "",
+    "task_id": "000814",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38593,
+    "queryAnswer": "Please directly output CSV format in your response. The following input contains metadata and CSV-like content. Convert the CSV-like portion into a proper CSV file with headers Task_ID, Task_Name, Assigned_To, and Due_Date. Ignore the metadata.\n\nInput:\n# Metadata: Project Name: Workflow Automation, Created By: Team Lead  \nTask_ID,Task_Name,Assigned_To,Due_Date  \nT001,Design Workflow,Alice,2023-12-01  \nT002,Write Documentation,Bob,2023-12-10  \nT003,Code Review,Carol,2023-12-15  \nT004,Finalize Testing,David,2023-12-20  ",
+    "raw_output_answer": {
+      "text": [
+        "T001",
+        "T002,",
+        "T003,",
+        "T004,",
+        "Documentation",
+        "Code Review",
+        "Finalize Testing",
+        "2023-12-20"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20702,
+    "created_at": "2025-01-23T03:11:55.672238Z",
+    "updated_at": "2025-01-23T20:35:08.972822Z",
+    "lead_time": 128.708
+  },
+  {
+    "query": "",
+    "task_id": "000815",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38594,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following XML data into a CSV file. The CSV should include the headers: Book ID, Title, Author, Genre, and Price. Preserve all rows and ensure proper formatting:\n\n<books>\n  <book>\n    <id>101<\/id>\n    <title>The Great Gatsby<\/title>\n    <author>F. Scott Fitzgerald<\/author>\n    <genre>Fiction<\/genre>\n    <price>10.99<\/price>\n  <\/book>\n  <book>\n    <id>102<\/id>\n    <title>To Kill a Mockingbird<\/title>\n    <author>Harper Lee<\/author>\n    <genre>Fiction<\/genre>\n    <price>8.99<\/price>\n  <\/book>\n  <book>\n    <id>103<\/id>\n    <title>The Silent Patient<\/title>\n    <author>Alex Michaelides<\/author>\n    <genre>Thriller<\/genre>\n    <price>12.99<\/price>\n  <\/book>\n<\/books>",
+    "raw_output_answer": {
+      "text": [
+        "Book ID",
+        "Title",
+        "Author",
+        "F. Scott Fitzgerald",
+        "10.99",
+        "101",
+        "Author"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20703,
+    "created_at": "2025-01-23T03:13:24.670254Z",
+    "updated_at": "2025-01-23T20:35:11.889320Z",
+    "lead_time": 55.04
+  },
+  {
+    "query": "",
+    "task_id": "000816",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38595,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following HTML table into a CSV file. Include the headers: Country, Capital, Population, and Area (sq km). Ensure all rows from the table are included:\n<table>\n  <tr>\n    <th>Country<\/th>\n    <th>Capital<\/th>\n    <th>Population<\/th>\n    <th>Area (sq km)<\/th>\n  <\/tr>\n  <tr>\n    <td>Canada<\/td>\n    <td>Ottawa<\/td>\n    <td>38 million<\/td>\n    <td>9,984,670<\/td>\n  <\/tr>\n  <tr>\n    <td>Japan<\/td>\n    <td>Tokyo<\/td>\n    <td>126 million<\/td>\n    <td>377,975<\/td>\n  <\/tr>\n  <tr>\n    <td>Germany<\/td>\n    <td>Berlin<\/td>\n    <td>83 million<\/td>\n    <td>357,022<\/td>\n  <\/tr>\n<\/table>",
+    "raw_output_answer": {
+      "text": [
+        "Country",
+        "Area (sq km)",
+        "9,984,670",
+        "38 million",
+        "Canada",
+        "377975",
+        "357022"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20704,
+    "created_at": "2025-01-23T03:14:48.620826Z",
+    "updated_at": "2025-01-23T20:35:14.521537Z",
+    "lead_time": 74.621
+  },
+  {
+    "query": "",
+    "task_id": "000817",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38596,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following Markdown table into a CSV file. Include the headers Game, Platform, Developer, and Release Year:\n\n| Game                | Platform      | Developer          | Release Year |\n|---------------------|---------------|--------------------|--------------|\n| The Legend of Zelda | Nintendo      | Nintendo EPD       | 1986         |\n| Halo               | Xbox          | Bungie             | 2001         |\n| God of War         | PlayStation   | Santa Monica Studio| 2005         |\n| Minecraft          | Multi-Platform| Mojang Studios     | 2009         |",
+    "raw_output_answer": {
+      "text": [
+        "Mojang Studios",
+        "2009",
+        "2001",
+        "Nintendo",
+        "Platform",
+        "Developer",
+        "The Legend of Zelda"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20705,
+    "created_at": "2025-01-23T03:15:58.006283Z",
+    "updated_at": "2025-01-23T20:35:16.996205Z",
+    "lead_time": 46.012
+  },
+  {
+    "query": "",
+    "task_id": "000818",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38597,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following nested JSON into a flat CSV file with headers Customer ID, Name, Email, Order ID, and Order Total:\n\n[\n  {\n    \"customer_id\": \"C001\",\n    \"name\": \"Alice\",\n    \"email\": \"alice@example.com\",\n    \"orders\": [\n      {\"order_id\": \"O001\", \"total\": 250},\n      {\"order_id\": \"O002\", \"total\": 100}\n    ]\n  },\n  {\n    \"customer_id\": \"C002\",\n    \"name\": \"Bob\",\n    \"email\": \"bob@example.com\",\n    \"orders\": [\n      {\"order_id\": \"O003\", \"total\": 150}\n    ]\n  }\n]",
+    "raw_output_answer": {
+      "text": [
+        "Customer ID",
+        "Order ID",
+        "Order Total",
+        "O001",
+        "C002",
+        "150",
+        "Bob"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20706,
+    "created_at": "2025-01-23T03:16:56.412927Z",
+    "updated_at": "2025-01-23T20:35:20.216941Z",
+    "lead_time": 58.629
+  },
+  {
+    "query": "",
+    "task_id": "000819",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38598,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following fixed-width text into a CSV file with the headers City, State, Population, and Area:\n\nCity            State       Population Area  \nNew York        NY          8419600   468.9  \nLos Angeles     CA          3980400   503    \nChicago         IL          2716000   589    \nHouston         TX          2328000   637.5  ",
+    "raw_output_answer": {
+      "text": [
+        "Population",
+        "3980400",
+        "2328000",
+        ", TX",
+        ",468.9"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20707,
+    "created_at": "2025-01-23T03:17:55.423683Z",
+    "updated_at": "2025-01-23T20:35:22.801883Z",
+    "lead_time": 59.106
+  },
+  {
+    "query": "",
+    "task_id": "000820",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38599,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following SQL query result into a CSV file. The CSV should include the headers Order_ID, Customer_Name, Total_Amount, and Order_Date. Use proper CSV formatting with the first row as headers:\n\nOrder_ID | Customer_Name   | Total_Amount | Order_Date  \nO1001    | Alice Johnson   | 250.75       | 2023-01-15  \nO1002    | Bob Carter      | 150.50       | 2023-02-10  \nO1003    | Carol White     | 99.99        | 2023-03-05  \nO1004    | David Green     | 200.00       | 2023-04-20  ",
+    "raw_output_answer": {
+      "text": [
+        "O1001,",
+        "O1002,",
+        "O1003,",
+        "O1004,",
+        ",99.99,",
+        ",2023-04-20"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20708,
+    "created_at": "2025-01-23T03:19:08.138346Z",
+    "updated_at": "2025-01-23T20:35:25.995346Z",
+    "lead_time": 72.813
+  },
+  {
+    "query": "",
+    "task_id": "000821",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38600,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following log file into a CSV file. The CSV must include the headers Log_ID, Timestamp, Level, and Message. Ensure the headers match exactly and all rows are preserved:\n\n[INFO] [2023-01-15 12:34:56] Log ID: L001 Message: System initialized  \n[ERROR] [2023-01-15 12:35:01] Log ID: L002 Message: Connection failed  \n[WARNING] [2023-01-15 12:35:10] Log ID: L003 Message: Low disk space  \n[INFO] [2023-01-15 12:35:20] Log ID: L004 Message: Backup completed  ",
+    "raw_output_answer": {
+      "text": [
+        "Log_ID",
+        "Timestamp",
+        "Level",
+        "Message",
+        "System initialized",
+        "2023-01-15"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20709,
+    "created_at": "2025-01-23T03:20:02.004941Z",
+    "updated_at": "2025-01-23T20:35:31.756482Z",
+    "lead_time": 52.974
+  },
+  {
+    "query": "",
+    "task_id": "000822",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38601,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following YAML file into a CSV file. The CSV must include the headers ID, Name, Type, Status, and Created_Date. Preserve all rows and ensure headers match exactly:\n\n- ID: 1  \n  Name: Alpha  \n  Type: Server  \n  Status: Active  \n  Created_Date: 2023-01-01  \n\n- ID: 2  \n  Name: Beta  \n  Type: Database  \n  Status: Inactive  \n  Created_Date: 2023-02-15  \n\n- ID: 3  \n  Name: Gamma  \n  Type: API Gateway  \n  Status: Active  \n  Created_Date: 2023-03-10  ",
+    "raw_output_answer": {
+      "text": [
+        ",Status",
+        ",Created_Date",
+        ",2023-01-01",
+        ",Inactive",
+        ",API Gateway"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20710,
+    "created_at": "2025-01-23T03:20:54.032903Z",
+    "updated_at": "2025-01-23T20:35:34.720142Z",
+    "lead_time": 52.665
+  },
+  {
+    "query": "",
+    "task_id": "000823",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38602,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following JSON array into a CSV file. The CSV must include the headers Employee_ID, Name, Position, Department, and Start_Date. Use proper CSV formatting with headers in the first row:\n\n[\n  {\"Employee_ID\": \"E001\", \"Name\": \"John Doe\", \"Position\": \"Manager\", \"Department\": \"Sales\", \"Start_Date\": \"2020-01-15\"},\n  {\"Employee_ID\": \"E002\", \"Name\": \"Jane Smith\", \"Position\": \"Analyst\", \"Department\": \"Finance\", \"Start_Date\": \"2019-05-30\"},\n  {\"Employee_ID\": \"E003\", \"Name\": \"Albert Brown\", \"Position\": \"Developer\", \"Department\": \"IT\", \"Start_Date\": \"2021-07-20\"}\n]",
+    "raw_output_answer": {
+      "text": [
+        "Employee_ID,",
+        ",Name,",
+        "John Doe",
+        ",Manager",
+        "E001",
+        ",2021-07-20"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20711,
+    "created_at": "2025-01-23T03:21:59.062600Z",
+    "updated_at": "2025-01-23T20:35:37.560762Z",
+    "lead_time": 63.053
+  },
+  {
+    "query": "",
+    "task_id": "000824",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38603,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following pipe-delimited text into a CSV file. The CSV should include the headers Course_ID, Course_Name, Instructor, and Credits. Ensure all rows are preserved and the headers match exactly:\n\nCourse_ID|Course_Name|Instructor|Credits  \nC101|Data Structures|Dr. Alice White|3  \nC102|Operating Systems|Dr. Bob Green|4  \nC103|Computer Networks|Dr. Carol Brown|3  \nC104|Database Systems|Dr. David Blue|4 ",
+    "raw_output_answer": {
+      "text": [
+        ",Course_Name,",
+        ",Operating Systems,",
+        ",Dr. David",
+        ",3",
+        ",4"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20712,
+    "created_at": "2025-01-23T03:22:41.172111Z",
+    "updated_at": "2025-01-23T20:35:44.304883Z",
+    "lead_time": 42.901
+  },
+  {
+    "query": "",
+    "task_id": "000825",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38604,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following configuration file into a CSV file with headers Parameter, Value, and Description. Ignore comments (lines starting with #) and preserve all valid rows:\n\n# Application Configuration  \napp_name=MyApp  \n# Server settings  \nserver_port=8080  \nserver_ip=192.168.1.1  \n# Logging settings  \nlog_level=INFO  \nlog_file=\/var\/log\/myapp.log  ",
+    "raw_output_answer": {
+      "text": [
+        "Parameter",
+        "Description",
+        "8080",
+        "server_port,",
+        "log_level,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20713,
+    "created_at": "2025-01-23T03:23:39.227435Z",
+    "updated_at": "2025-01-23T20:35:41.586313Z",
+    "lead_time": 58.591
+  },
+  {
+    "query": "",
+    "task_id": "000826",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38605,
+    "queryAnswer": "Please directly output CSV format in your response. Correct the following CSV file by renaming the headers as specified. The output should include the headers ID, Name, Department, and Hire Date. Preserve all rows and ensure proper CSV formatting:\n\nInput CSV:\n\nEmp_ID,Full_Name,Dept,Start_Date  \n001,John Doe,IT,2020-05-10  \n002,Jane Smith,HR,2019-08-15  \n003,Bob Brown,Finance,2018-11-01  ",
+    "raw_output_answer": {
+      "text": [
+        "Name,",
+        "Department,",
+        ",Hire Date",
+        ",2020-05-10",
+        ",2019-08-15"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20714,
+    "created_at": "2025-01-23T03:24:49.868883Z",
+    "updated_at": "2025-01-23T20:35:48.400657Z",
+    "lead_time": 71.206
+  },
+  {
+    "query": "",
+    "task_id": "000827",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38606,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following key-value pair text into a CSV file with the headers Key and Value. Each key-value pair should be a separate row in the CSV:\n\n\nAppName: MyApp  \nVersion: 1.2.3  \nAuthor: John Doe  \nLicense: MIT  \nReleaseDate: 2023-01-01  ",
+    "raw_output_answer": {
+      "text": [
+        ",John Doe",
+        ",2023-01-01",
+        ",1.2.3"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20715,
+    "created_at": "2025-01-23T03:25:23.567268Z",
+    "updated_at": "2025-01-23T20:35:51.206289Z",
+    "lead_time": 33.444
+  },
+  {
+    "query": "",
+    "task_id": "000828",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38607,
+    "queryAnswer": "Please directly output CSV format in your response. Extract the tabular data from the following text and convert it into a CSV file. The CSV must include the headers Project, Start Date, End Date, and Status. Preserve all rows:\n\n# Project Information  \nHeader: Project, Start Date, End Date, Status  \nWebsite Revamp, 2023-01-15, 2023-03-30, In Progress  \nMobile App Development, 2023-02-01, 2023-06-30, Not Started  \nData Migration, 2023-03-01, 2023-12-31, Completed  ",
+    "raw_output_answer": {
+      "text": [
+        "Project",
+        "End Date,",
+        "2023-03-30,",
+        "Data Migration,",
+        ",Completed",
+        "2023-12-31,",
+        "Mobile App Development,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20716,
+    "created_at": "2025-01-23T03:26:34.646872Z",
+    "updated_at": "2025-01-23T20:35:53.633442Z",
+    "lead_time": 65.905
+  },
+  {
+    "query": "",
+    "task_id": "000829",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38608,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following semicolon-delimited text into a CSV file. Replace any missing values with N\/A. The output CSV should include the headers ID, Name, Score, and Grade:\n\nID;Name;Score;Grade  \n1;Alice;85;A  \n2;Bob;;B+  \n3;Carol;75;  \n4;David;;  ",
+    "raw_output_answer": {
+      "text": [
+        "Grade",
+        "B+",
+        "Alice,",
+        "Carol,",
+        "Name,",
+        "Score,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20717,
+    "created_at": "2025-01-23T03:27:28.275941Z",
+    "updated_at": "2025-01-23T20:35:56.677187Z",
+    "lead_time": 54.272
+  },
+  {
+    "query": "",
+    "task_id": "000830",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38609,
+    "queryAnswer": "Please directly output CSV format in your response. Simplify the following CSV-like content by removing the Comments column. The output CSV should only include the columns Task, Assignee, and Deadline:\n\nTask,Assignee,Deadline,Comments  \nDesign Homepage,Alex,2023-04-01,This task is urgent  \nFix Login Bug,Bob,2023-04-15,  \nPrepare Report,Carol,2023-05-01,Report on Q1 data  ",
+    "raw_output_answer": {
+      "text": [
+        "Deadline",
+        "Assignee,",
+        "Task,",
+        "Prepare Report,",
+        "2023-05-01,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20718,
+    "created_at": "2025-01-23T03:28:31.796408Z",
+    "updated_at": "2025-01-23T20:35:59.502076Z",
+    "lead_time": 64.37
+  },
+  {
+    "query": "",
+    "task_id": "000831",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38610,
+    "queryAnswer": "Please directly output CSV format in your response. Rearrange the following tabular data into a proper CSV file with headers in the first row. The headers are located in the last line of the input text:\n\nAlice    29  Developer   Toronto  \nBob      35  Manager     New York  \nCarol    42  Analyst     London  \nName     Age Position    City  ",
+    "raw_output_answer": {
+      "text": [
+        "Name,",
+        "Age,",
+        "Position,",
+        "29,",
+        "Developer,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20719,
+    "created_at": "2025-01-23T03:29:17.236370Z",
+    "updated_at": "2025-01-23T20:36:02.590283Z",
+    "lead_time": 45.503
+  },
+  {
+    "query": "",
+    "task_id": "000832",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38611,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following JSON object into a CSV file with the headers Team, Member, and Role. Flatten the nested arrays to include each member in a separate row:\n\n{\n  \"teams\": [\n    {\"team\": \"Engineering\", \"members\": [{\"name\": \"Alice\", \"role\": \"Developer\"}, {\"name\": \"Bob\", \"role\": \"Tester\"}]},\n    {\"team\": \"Marketing\", \"members\": [{\"name\": \"Carol\", \"role\": \"Designer\"}, {\"name\": \"David\", \"role\": \"Content Writer\"}]}\n  ]\n}",
+    "raw_output_answer": {
+      "text": [
+        "Team,",
+        "Member,",
+        "Role,",
+        "Content Writer",
+        "Developer,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20720,
+    "created_at": "2025-01-23T03:30:11.284965Z",
+    "updated_at": "2025-01-23T20:36:06.224372Z",
+    "lead_time": 55.31
+  },
+  {
+    "query": "",
+    "task_id": "000833",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38612,
+    "queryAnswer": "Please directly output CSV format in your response. Remove duplicate rows from the following CSV data. The output CSV should include only unique rows with the headers Item, Category, and Price:\n\nItem,Category,Price  \nLaptop,Electronics,1000  \nChair,Furniture,150  \nLaptop,Electronics,1000  \nTable,Furniture,200  \nChair,Furniture,150  ",
+    "raw_output_answer": {
+      "text": [
+        "Category,",
+        "Price",
+        "Item,",
+        "1000",
+        "Furniture,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20721,
+    "created_at": "2025-01-23T03:31:03.675848Z",
+    "updated_at": "2025-01-23T20:36:09.985646Z",
+    "lead_time": 53.052
+  },
+  {
+    "query": "",
+    "task_id": "000834",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38613,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following hierarchical JSON data into a flat CSV format. The CSV must include the headers: Region, City, Sales Rep, Total Sales, and Year. Aggregate the Total Sales field for each sales representative in a given year and region. Use proper CSV formatting with headers in the first row.\n\n\n{\n  \"regions\": [\n    {\n      \"region\": \"North America\",\n      \"cities\": [\n        {\"city\": \"New York\", \"sales\": [{\"rep\": \"Alice\", \"amount\": 3000, \"year\": 2022}, {\"rep\": \"Bob\", \"amount\": 2500, \"year\": 2022}]},\n        {\"city\": \"Toronto\", \"sales\": [{\"rep\": \"Alice\", \"amount\": 2000, \"year\": 2023}, {\"rep\": \"Charlie\", \"amount\": 1500, \"year\": 2023}]}\n      ]\n    },\n    {\n      \"region\": \"Europe\",\n      \"cities\": [\n        {\"city\": \"London\", \"sales\": [{\"rep\": \"Diana\", \"amount\": 4000, \"year\": 2022}, {\"rep\": \"Eve\", \"amount\": 3000, \"year\": 2023}]},\n        {\"city\": \"Berlin\", \"sales\": [{\"rep\": \"Diana\", \"amount\": 3500, \"year\": 2023}, {\"rep\": \"Eve\", \"amount\": 3200, \"year\": 2023}]}\n      ]\n    }\n  ]\n}",
+    "raw_output_answer": {
+      "text": [
+        "region,",
+        "Toronto,",
+        "Sales Rep,",
+        "2000,",
+        "3200,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20722,
+    "created_at": "2025-01-23T03:32:46.231333Z",
+    "updated_at": "2025-01-23T20:36:14.223171Z",
+    "lead_time": 81.735
+  },
+  {
+    "query": "",
+    "task_id": "000835",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38614,
+    "queryAnswer": "Please directly output CSV format in your response. Extract and organize the following embedded data into a CSV file. The output must have the headers Student Name, Exam, Score, and Date. Ensure to extract only the tabular content while ignoring unrelated text.\n\nWelcome to the test results portal. Below are the latest scores:  \n\nAlice:  \n- Exam: Math  \n- Score: 95  \n- Date: 2023-01-10  \n\nBob:  \n- Exam: Physics  \n- Score: 89  \n- Date: 2023-01-15  \n\nCarol:  \n- Exam: Chemistry  \n- Score: 92  \n- Date: 2023-01-20  \n\nEnd of data. Thank you for using our system!",
+    "raw_output_answer": {
+      "text": [
+        "2023-01-15",
+        "Student Name,",
+        "Exam,",
+        "Score,",
+        "95,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20723,
+    "created_at": "2025-01-23T03:33:34.171112Z",
+    "updated_at": "2025-01-23T20:36:17.252528Z",
+    "lead_time": 48.744
+  },
+  {
+    "query": "",
+    "task_id": "000836",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38615,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following nested bullet points into a CSV file. The CSV must include the headers: Task, Subtask, and Deadline. Use proper CSV formatting with headers in the first row:\n\n- Website Development:  \n  - Design Mockups (Deadline: 2023-02-01)  \n  - Backend API (Deadline: 2023-02-15)  \n- Marketing Campaign:  \n  - Social Media Ads (Deadline: 2023-03-01)  \n  - Email Campaign (Deadline: 2023-03-10)  ",
+    "raw_output_answer": {
+      "text": [
+        "Deadline",
+        "Subtask,",
+        "Task,",
+        "2023-03-01",
+        "Backend API,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20724,
+    "created_at": "2025-01-23T03:34:20.490817Z",
+    "updated_at": "2025-01-23T20:36:19.605556Z",
+    "lead_time": 46.559
+  },
+  {
+    "query": "",
+    "task_id": "000837",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38616,
+    "queryAnswer": "Please directly output CSV format in your response. Deduplicate the headers in the following CSV and produce a valid CSV file with the headers: ID, Name, Category, and Price. Ignore rows containing invalid data:\n\nID,Name,Name,Category,Price  \n101,Table,,Furniture,200  \n102,Chair,,Furniture,150  \n103,Desk,,Furniture,300  \n104,,Invalid Row,,  ",
+    "raw_output_answer": {
+      "text": [
+        "101",
+        "Category",
+        "Price",
+        "Furniture,",
+        "Furniture,300"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20725,
+    "created_at": "2025-01-23T03:35:04.294491Z",
+    "updated_at": "2025-01-23T20:36:29.706041Z",
+    "lead_time": 46.763
+  },
+  {
+    "query": "",
+    "task_id": "000838",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38617,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following JSON data into a CSV file. Only include rows where Status = Active. The CSV must have the headers: User ID, Name, Role, and Status:\n\n[\n  {\"id\": \"U001\", \"name\": \"Alice\", \"role\": \"Admin\", \"status\": \"Active\"},\n  {\"id\": \"U002\", \"name\": \"Bob\", \"role\": \"Editor\", \"status\": \"Inactive\"},\n  {\"id\": \"U003\", \"name\": \"Carol\", \"role\": \"Viewer\", \"status\": \"Active\"},\n  {\"id\": \"U004\", \"name\": \"David\", \"role\": \"Admin\", \"status\": \"Inactive\"}\n]",
+    "raw_output_answer": {
+      "text": [
+        "U001,",
+        "U003,",
+        "Viewer,",
+        "Admin,",
+        "Role,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20726,
+    "created_at": "2025-01-23T03:35:53.944572Z",
+    "updated_at": "2025-01-23T20:36:31.851574Z",
+    "lead_time": 49.726
+  },
+  {
+    "query": "",
+    "task_id": "000839",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38618,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following configuration file into a CSV file. The CSV should have the headers Section, Key, and Value. Extract the keys and values under each section, and preserve the section names in a new column:\n\n[General]  \nAppName=MyApp  \nVersion=1.0.0  \n\n[Database]  \nHost=localhost  \nPort=5432  \n\n[Logging]  \nLevel=INFO  \nFile=\/var\/log\/app.log  ",
+    "raw_output_answer": {
+      "text": [
+        "Section,",
+        "AppName,",
+        "\/var\/log\/app.log",
+        "Level,",
+        "1.0.0"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20727,
+    "created_at": "2025-01-23T03:36:42.564060Z",
+    "updated_at": "2025-01-23T20:36:34.187477Z",
+    "lead_time": 49.114
+  },
+  {
+    "query": "",
+    "task_id": "000840",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38619,
+    "queryAnswer": "Please directly output CSV format in your response. Extract the following semi-structured text into a CSV file. The CSV must include the headers: Transaction ID, Customer, Amount, and Date. Preserve all rows and ensure proper CSV formatting:\n\nTransaction Log:  \n- T001, John Doe, $200, 2023-01-01  \n- T002, Jane Smith, $300, 2023-01-02  \n- T003, Alice Brown, $150, 2023-01-03  ",
+    "raw_output_answer": {
+      "text": [
+        "T001, John Doe,",
+        "T002, Jane Smith,",
+        "T003, Alice Brown,",
+        "Customer,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20728,
+    "created_at": "2025-01-23T03:37:16.556453Z",
+    "updated_at": "2025-01-23T20:36:36.354515Z",
+    "lead_time": 34.472
+  },
+  {
+    "query": "",
+    "task_id": "000841",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38620,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following hierarchical JSON data into a flat CSV file. The CSV must include the headers Department, Team, Employee Name, Role, and Years of Experience. Flatten the data so that each employee is a separate row, and ensure proper CSV formatting:\n\n{\n  \"departments\": [\n    {\n      \"name\": \"Engineering\",\n      \"teams\": [\n        {\n          \"team_name\": \"Backend\",\n          \"employees\": [\n            {\"name\": \"Alice\", \"role\": \"Developer\", \"experience\": 5},\n            {\"name\": \"Bob\", \"role\": \"Tester\", \"experience\": 3}\n          ]\n        },\n        {\n          \"team_name\": \"Frontend\",\n          \"employees\": [\n            {\"name\": \"Carol\", \"role\": \"Designer\", \"experience\": 4},\n            {\"name\": \"David\", \"role\": \"Developer\", \"experience\": 6}\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"Marketing\",\n      \"teams\": [\n        {\n          \"team_name\": \"Content\",\n          \"employees\": [\n            {\"name\": \"Eve\", \"role\": \"Writer\", \"experience\": 7},\n            {\"name\": \"Frank\", \"role\": \"Editor\", \"experience\": 5}\n          ]\n        }\n      ]\n    }\n  ]\n}",
+    "raw_output_answer": {
+      "text": [
+        "Years of Experience",
+        "Employee Name,",
+        "Department,",
+        "Alice,",
+        "Frank,",
+        "7",
+        "5",
+        "Frontend,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20729,
+    "created_at": "2025-01-23T03:38:57.460745Z",
+    "updated_at": "2025-01-23T20:36:39.682276Z",
+    "lead_time": 102.18
+  },
+  {
+    "query": "",
+    "task_id": "000842",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38621,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following lengthy text file into a CSV file. The CSV must include the headers Book Title, Author, Genre, Publication Year, and Pages. Extract the tabular information and ignore irrelevant lines:\nThis is a collection of books in our library.\n\nLibrary Inventory:\n1. Book Title: \"The Great Gatsby\"  \n   Author: F. Scott Fitzgerald  \n   Genre: Fiction  \n   Publication Year: 1925  \n   Pages: 218  \n\n2. Book Title: \"To Kill a Mockingbird\"  \n   Author: Harper Lee  \n   Genre: Fiction  \n   Publication Year: 1960  \n   Pages: 281  \n\n3. Book Title: \"1984\"  \n   Author: George Orwell  \n   Genre: Dystopian  \n   Publication Year: 1949  \n   Pages: 328  \n\nThank you for using our library system.",
+    "raw_output_answer": {
+      "text": [
+        "To Kill a Mockingbird,",
+        "F. Scott Fitzgerald,",
+        "Publication Year,",
+        "Pages",
+        "Book Title,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20730,
+    "created_at": "2025-01-23T03:39:46.557917Z",
+    "updated_at": "2025-01-23T20:36:42.330099Z",
+    "lead_time": 49.379
+  },
+  {
+    "query": "",
+    "task_id": "000843",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38622,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following nested YAML file into a CSV file with headers: Project, Task, Assigned To, Status, and Due Date. Flatten the structure so that each task is a separate row:\n\nProjects:\n  - Name: Website Redesign  \n    Tasks:\n      - Task: Create Wireframes  \n        Assigned_To: Alice  \n        Status: Completed  \n        Due_Date: 2023-01-15  \n      - Task: Develop Backend  \n        Assigned_To: Bob  \n        Status: In Progress  \n        Due_Date: 2023-02-01  \n\n  - Name: Marketing Campaign  \n    Tasks:\n      - Task: Create Ad Copy  \n        Assigned_To: Carol  \n        Status: Not Started  \n        Due_Date: 2023-02-20  \n      - Task: Launch Social Media Ads  \n        Assigned_To: David  \n        Status: Completed  \n        Due_Date: 2023-03-01",
+    "raw_output_answer": {
+      "text": [
+        "Project,",
+        "Assigned To,",
+        "Status,",
+        "Due Date,",
+        "Develop Backend,",
+        "In Progress,",
+        "Create Ad Copy,"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20731,
+    "created_at": "2025-01-23T03:40:51.055712Z",
+    "updated_at": "2025-01-23T20:36:44.666261Z",
+    "lead_time": 64.826
+  },
+  {
+    "query": "",
+    "task_id": "000844",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38623,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following semi-structured text into a CSV file with headers ID, Customer Name, Product, Quantity, and Order Date. The headers and data are mixed together; separate them into proper rows:\n\nOrder Data:  \nID: 1001, Customer Name: Alice, Product: Laptop, Quantity: 2, Order Date: 2023-01-10  \nID: 1002, Customer Name: Bob, Product: Phone, Quantity: 1, Order Date: 2023-01-11  \nID: 1003, Customer Name: Carol, Product: Tablet, Quantity: 3, Order Date: 2023-01-12  ",
+    "raw_output_answer": {
+      "text": [
+        "1001, Alice",
+        "1002, Bob",
+        "Carol, Tablet"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20732,
+    "created_at": "2025-01-23T03:41:35.361754Z",
+    "updated_at": "2025-01-23T20:36:47.854910Z",
+    "lead_time": 44.86
+  },
+  {
+    "query": "",
+    "task_id": "000845",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38624,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following multi-section text file into a single CSV file with headers Section, Key, and Value. Each section name should be included as a new column:\n\n[General Information]  \nApp Name: MyApp  \nVersion: 1.0  \n\n[Database Configuration]  \nHost: localhost  \nPort: 5432  \n\n[Logging]  \nLevel: DEBUG  \nFile Path: \/var\/log\/myapp.log  ",
+    "raw_output_answer": {
+      "text": [
+        "\/var\/log\/myapp.log",
+        "Section,",
+        "Version,",
+        "localhost"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20733,
+    "created_at": "2025-01-23T03:42:24.235910Z",
+    "updated_at": "2025-01-23T20:36:50.009321Z",
+    "lead_time": 48.943
+  },
+  {
+    "query": "",
+    "task_id": "000846",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38625,
+    "queryAnswer": "Please directly output CSV format in your response. Extract the tabular data from the following JSON while ignoring metadata. The CSV must include the headers Product, Price, Stock, and Category:\n\n{\n  \"metadata\": {\n    \"generated_by\": \"Inventory System\",\n    \"timestamp\": \"2023-01-15\"\n  },\n  \"products\": [\n    {\"product\": \"Laptop\", \"price\": 1000, \"stock\": 50, \"category\": \"Electronics\"},\n    {\"product\": \"Chair\", \"price\": 150, \"stock\": 200, \"category\": \"Furniture\"},\n    {\"product\": \"Desk\", \"price\": 300, \"stock\": 75, \"category\": \"Furniture\"}\n  ]\n}",
+    "raw_output_answer": {
+      "text": [
+        "Laptop,",
+        "Chair,150,",
+        "Desk,300"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20734,
+    "created_at": "2025-01-23T03:42:57.192656Z",
+    "updated_at": "2025-01-23T20:36:52.797313Z",
+    "lead_time": 33.931
+  },
+  {
+    "query": "",
+    "task_id": "000847",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38626,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following plain text inventory list into a CSV file. The CSV must include the headers Item ID, Item Name, Category, Quantity, and Supplier. Ensure all rows are included, and each field is appropriately mapped:\n\n\nInventory List:  \nItem ID: I001, Item Name: Laptop, Category: Electronics, Quantity: 10, Supplier: TechCorp  \nItem ID: I002, Item Name: Chair, Category: Furniture, Quantity: 50, Supplier: HomeGoods  \nItem ID: I003, Item Name: Desk, Category: Furniture, Quantity: 20, Supplier: HomeGoods  \nItem ID: I004, Item Name: Smartphone, Category: Electronics, Quantity: 15, Suppli",
+    "raw_output_answer": {
+      "text": [
+        "I001, Laptop",
+        "Furniture,20",
+        "Smartphone, Electronics",
+        "Supplier"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20735,
+    "created_at": "2025-01-23T03:44:27.943293Z",
+    "updated_at": "2025-01-23T20:36:55.016562Z",
+    "lead_time": 90.823
+  },
+  {
+    "query": "",
+    "task_id": "000848",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38627,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following JSON object into a CSV file. The CSV must include the headers User ID, Name, Email, Country, and Signup Date. Ignore any additional metadata and include all valid entries:\n\n{\n  \"metadata\": {\"system\": \"User Management\", \"version\": \"2.0\"},\n  \"users\": [\n    {\"id\": \"U001\", \"name\": \"Alice\", \"email\": \"alice@example.com\", \"country\": \"USA\", \"signup_date\": \"2023-01-01\"},\n    {\"id\": \"U002\", \"name\": \"Bob\", \"email\": \"bob@example.com\", \"country\": \"Canada\", \"signup_date\": \"2023-01-02\"},\n    {\"id\": \"U003\", \"name\": \"Carol\", \"email\": \"carol@example.com\", \"country\": \"UK\", \"signup_date\": \"2023-01-03\"}\n  ]\n}",
+    "raw_output_answer": {
+      "text": [
+        "U001,Alice",
+        "alice@example.com,USA",
+        "Canada,2023-01-02"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20736,
+    "created_at": "2025-01-23T03:45:11.743055Z",
+    "updated_at": "2025-01-23T20:36:57.110665Z",
+    "lead_time": 43.847
+  },
+  {
+    "query": "",
+    "task_id": "000849",
+    "task_name": "Generate CSV code from user's text query",
+    "input_type": "Text",
+    "VQA_answers": [],
+    "output_type": "CSV",
+    "VQA_questions": [],
+    "query_example": "Sample Text -> CSV Query: Write a CSV file containing data about students, including their name, grade, and age.",
+    "raw_output_metric": [],
+    "id": 38628,
+    "queryAnswer": "Please directly output CSV format in your response. Convert the following HTML table into a CSV file. The CSV must include the headers Course Code, Course Name, Instructor, Credits, and Schedule. Flatten the nested content so that each row contains complete information:\n\nhtml\n复制\n编辑\n<table>\n  <tr>\n    <th>Course Code<\/th>\n    <th>Course Name<\/th>\n    <th>Instructor<\/th>\n    <th>Credits<\/th>\n    <th>Schedule<\/th>\n  <\/tr>\n  <tr>\n    <td>CS101<\/td>\n    <td>Intro to Programming<\/td>\n    <td>Dr. Alice<\/td>\n    <td>3<\/td>\n    <td>Monday, 10:00 AM<\/td>\n  <\/tr>\n  <tr>\n    <td>CS102<\/td>\n    <td>Data Structures<\/td>\n    <td>Dr. Bob<\/td>\n    <td>4<\/td>\n    <td>Wednesday, 2:00 PM<\/td>\n  <\/tr>\n<\/table>",
+    "raw_output_answer": {
+      "text": [
+        "Course Code",
+        "Instructor,",
+        "CS101,Intro to Programming",
+        "CS102,Data Structures",
+        ",Wednesday, 2:00 PM"
+      ]
+    },
+    "shouldUseVisualRendering": "Not Using Visual Rendering",
+    "annotator": 35,
+    "annotation_id": 20737,
+    "created_at": "2025-01-23T03:46:01.851991Z",
+    "updated_at": "2025-01-23T20:36:59.211672Z",
+    "lead_time": 49.956
+  }
+]
