@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue Template</title>
+  <!-- Import Vue 3 from CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    body {
+      font-family: 'Avenir', Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+    }
+    
+    .app-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+    
+    button {
+      background-color: #4fc08d;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #3aa776;
+    }
+    
+    h1 {
+      color: #42b983;
+    }
+
+    .counter {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .count {
+      font-size: 24px;
+      font-weight: bold;
+      min-width: 40px;
+      text-align: center;
+    }
+
+    button[type="reset"] {
+      background-color: #e74c3c;
+    }
+
+    button[type="reset"]:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <!-- Vue app container -->
+  <div id="app" class="app-container">
+    <!-- Vue app will mount here -->
+  </div>
+  
+  <!-- Import our app.js file -->
+  <script src="app.js"></script>
+</body>
+</html> 
