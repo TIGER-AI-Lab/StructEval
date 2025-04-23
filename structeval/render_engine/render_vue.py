@@ -29,36 +29,6 @@ def extract_vue_code_from_tag(generation):
     if vue_code.strip().startswith('{'):
         return vue_code
     
-    # Special case fix for task 001600 (Recipe component)
-    if "RecipeComponent" in vue_code and "cookingSteps" in vue_code:
-        # This is a direct fix for the specific component
-        return """
-{
-  name: 'RecipeComponent',
-  data() {
-    return {
-      ingredients: ['2 eggs', '1 cup of flour', '1/2 cup of milk'],
-      cookingSteps: ['Whisk the eggs and milk together.','Gradually add the flour and mix until smooth.','Pour into pan and cook until golden.'],
-      newIngredient: ''
-    };
-  },
-  computed: {
-    numberOfSteps() {
-      return this.cookingSteps.length;
-    }
-  },
-  methods: {
-    addIngredient() {
-      if (this.newIngredient.trim() !== '') {
-        this.ingredients.push(this.newIngredient.trim());
-        this.newIngredient = '';
-      }
-    }
-  },
-  template: `<div><h2>Recipe Instructions</h2><input v-model="newIngredient" placeholder="Enter additional ingredient" /><button @click="addIngredient">Add Ingredient</button><ol><li v-for="(item, index) in ingredients" :key="index">{{ item }}</li></ol><p>Total Ingredients: {{ ingredients.length }}</p><div v-for="(step, index) in cookingSteps" :key="index" class="step">{{ index + 1 }}. {{ step }}</div></div>`
-}
-"""
-    
     # Check if it's in SFC format with <template>, <script>, and <style> tags
     template_match = re.search(r"<template>(.*?)</template>", vue_code, re.DOTALL)
     script_match = re.search(r"<script>(.*?)</script>", vue_code, re.DOTALL)

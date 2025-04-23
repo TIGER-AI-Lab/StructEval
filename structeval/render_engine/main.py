@@ -14,7 +14,6 @@ from render_canvas import extract_canvas_html_from_code_tag, render_canvas_and_s
 from render_angular import extract_angular_component_from_code_tag, render_angular_and_screenshot
 from render_mermaid import extract_mermaid_code_from_tag, render_mermaid_and_screenshot
 from render_svg import extract_svg_from_code_tag, render_svg_and_screenshot
-from render_tikz import extract_tikz_from_code_tag, render_tikz_and_screenshot
 from render_typst import extract_typst_from_code_tag, render_typst_and_screenshot
 from render_vega import extract_vega_json_from_code_tag, render_vega_and_screenshot
 from render_vue import extract_vue_code_from_tag, render_vue_and_screenshot
@@ -60,64 +59,76 @@ async def process_json_file(json_file_path, img_output_path):
         print(output_type)
 
         generation = task.get("generation", "")
-        try:
-            generation = codecs.decode(generation, 'unicode_escape')
-        except Exception as e:
-            logging.warning(f"[{task_id}] Failed to decode generation string: {e}")
+        #try:
+            #generation = codecs.decode(generation, 'unicode_escape')
+        #except Exception as e:
+            #logging.warning(f"[{task_id}] Failed to decode generation string: {e}")
             # Continue with the original generation string if decoding fails
-            pass 
+            #pass 
         #print(generation)
 
         if output_type == "html":
+            generation = codecs.decode(generation, 'unicode_escape')
             content = extract_html_from_code_tag(generation)
             task["render_score"] = await render_html_and_screenshot(task_id, content, img_output_path)
 
         elif output_type == "react":
+            generation = codecs.decode(generation, 'unicode_escape')
             content = extract_react_from_code_tag(generation)
             task["render_score"] = await render_react_and_screenshot(task_id, content, img_output_path)
 
-        elif output_type == "latex":
+        elif output_type == "latex" or output_type == "tikz":
             content = extract_latex_from_code_tag(generation)
         
             task["render_score"] = render_latex_and_screenshot(task_id, content, img_output_path)
 
         elif output_type == "markdown":
+            generation = codecs.decode(generation, 'unicode_escape')
             content = extract_markdown_from_code_tag(generation)
             task["render_score"] = await render_markdown_and_screenshot(task_id, content, img_output_path)
 
         elif output_type == "matplotlib":
+            generation = codecs.decode(generation, 'unicode_escape')
             content = extract_matplotlib_from_code_tag(generation)
             task["render_score"] = render_matplotlib_and_screenshot(task_id, content, img_output_path)
 
         elif output_type == "canvas":
+            generation = codecs.decode(generation, 'unicode_escape')
             content = extract_canvas_html_from_code_tag(generation)
             task["render_score"] = await render_canvas_and_screenshot(task_id, content, img_output_path)
 
         elif output_type == "angular":
+            generation = codecs.decode(generation, 'unicode_escape')
             content = extract_angular_component_from_code_tag(generation)
             task["render_score"] = await render_angular_and_screenshot(task_id, content, img_output_path)
 
         elif output_type == "mermaid":
+            generation = codecs.decode(generation, 'unicode_escape')
             content = extract_mermaid_code_from_tag(generation)
             task["render_score"] = await render_mermaid_and_screenshot(task_id, content, img_output_path)
 
         elif output_type == "svg":
+            generation = codecs.decode(generation, 'unicode_escape')
             content = extract_svg_from_code_tag(generation)
             task["render_score"] = await render_svg_and_screenshot(task_id, content, img_output_path)
 
-        elif output_type == "tikz":
-            content = extract_tikz_from_code_tag(generation)
-            task["render_score"] = render_tikz_and_screenshot(task_id, content, img_output_path)
+        #elif output_type == "none":
+            #generation = codecs.decode(generation, 'unicode_escape')
+            #content = extract_tikz_from_code_tag(generation)
+            #task["render_score"] = render_tikz_and_screenshot(task_id, content, img_output_path)
 
         elif output_type == "typst":
+            generation = codecs.decode(generation, 'unicode_escape')
             content = extract_typst_from_code_tag(generation)
             task["render_score"] = render_typst_and_screenshot(task_id, content, img_output_path)
 
         elif output_type == "vega":
+            generation = codecs.decode(generation, 'unicode_escape')
             content = extract_vega_json_from_code_tag(generation)
             task["render_score"] = await render_vega_and_screenshot(task_id, content, img_output_path)
 
         elif output_type == "vue":
+            generation = codecs.decode(generation, 'unicode_escape')
             content = extract_vue_code_from_tag(generation)
             task["render_score"] = await render_vue_and_screenshot(task_id, content, img_output_path)
 

@@ -187,8 +187,6 @@ async def render_mermaid_and_screenshot(task_id, mermaid_code, img_output_path):
                 await page.screenshot(path=screenshot_path)
                 
             # If render_score is still 0 but we got a screenshot, set to partial success
-            if render_score == 0:
-                render_score = 0.5
                 
         except Exception as screenshot_error:
             logging.error(f"[{task_id}] Screenshot failed: {screenshot_error}")
@@ -196,8 +194,7 @@ async def render_mermaid_and_screenshot(task_id, mermaid_code, img_output_path):
             try:
                 await page.screenshot(path=screenshot_path)
                 logging.info(f"[{task_id}] Full page screenshot saved as fallback")
-                if render_score == 0:
-                    render_score = 0.5  # Partial success
+
             except Exception as e:
                 logging.error(f"[{task_id}] Full page screenshot also failed: {e}")
                 render_score = 0

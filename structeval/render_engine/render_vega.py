@@ -20,13 +20,15 @@ async def render_vega_and_screenshot(task_id, vega_spec, img_output_path):
         return render_score
 
     try:
-        # Try parsing as JSON to validate spec
-        json.loads(vega_spec)
-    except Exception as e:
-        logging.error(f"Invalid Vega spec JSON for {task_id}: {e}")
-        return render_score
+        # Try parsing only to pretty-print for debugging, but don't fail rendering if it doesn't parse
+        try:
+            vega_dict = json.loads(vega_spec)
+            spec_script = json.dumps(vega_dict, indent=2)
+        except Exception as inner_e:
+            logging.warning(f"Using raw spec string for task {task_id} due to JSON decode error: {inner_e}")
+            spec_script = vega_spec  # fallback to raw string
 
-    html_template = f"""
+        html_template = f"""
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,12 +51,15 @@ async def render_vega_and_screenshot(task_id, vega_spec, img_output_path):
 <body>
   <div id="vis"></div>
   <script>
-    const spec = {vega_spec};
+    const spec = {spec_script};
     vegaEmbed('#vis', spec).catch(console.error);
   </script>
 </body>
 </html>
 """
+    except Exception as e:
+        logging.error(f"Unexpected error preparing Vega spec for {task_id}: {e}")
+        return render_score
 
     browser, context, page, playwright = await start_browser()
     try:
