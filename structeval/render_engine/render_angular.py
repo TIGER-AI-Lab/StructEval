@@ -5,7 +5,7 @@ import logging
 import subprocess
 import tempfile
 import asyncio
-from render_utils import start_browser
+from .render_utils import start_browser
 
 def extract_angular_component_from_code_tag(generation):
     match = re.search(r"<code>(.*?)</code>", generation, re.DOTALL)

@@ -2,7 +2,8 @@
 import os
 import re
 import logging
-from render_react import start_browser
+from .render_utils import start_browser
+from .render_html import render_html_and_screenshot
 
 def extract_canvas_html_from_code_tag(generation):
     match = re.search(r"<code>(.*?)</code>", generation, re.DOTALL)
@@ -16,27 +17,28 @@ async def render_canvas_and_screenshot(task_id, canvas_html, img_output_path):
     render_score = 0
 
     if not canvas_html:
-        logging.warning(f"No canvas HTML content for task {task_id}")
+        logging.warning(f"No Canvas HTML content for {task_id}")
         return render_score
 
-    browser, context, page, playwright = await start_browser()
-
     try:
-        await page.set_content(canvas_html)
-        await page.wait_for_load_state("load")
-        await page.wait_for_timeout(500)  # give time for JS drawing
-
-        screenshot_path = os.path.join(img_output_path, f"{task_id}.png")
-        await page.screenshot(path=screenshot_path, full_page=True)
-
-        logging.info(f"Canvas screenshot saved: {screenshot_path}")
-        render_score = 1
+        # Embedded canvas code should be wrapped in a full HTML document
+        html_wrapper = f"""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Canvas Render</title>
+        </head>
+        <body>
+            {canvas_html}
+        </body>
+        </html>
+        """
+        
+        # Use HTML renderer to capture the rendered canvas
+        render_score = await render_html_and_screenshot(task_id, html_wrapper, img_output_path)
+        
     except Exception as e:
-        logging.error(f"Canvas rendering failed for {task_id}: {e}")
-    finally:
-        await page.close()
-        await context.close()
-        await browser.close()
-        await playwright.stop()
-
+        logging.error(f"Canvas rendering error for {task_id}: {e}")
+    
     return render_score

@@ -2,7 +2,7 @@ import os
 import logging
 import re
 from playwright.async_api import async_playwright
-from render_utils import start_browser
+from .render_utils import start_browser
 
 def extract_html_from_code_tag(generation):
     match = re.search(r"<code>(.*?)</code>", generation, re.DOTALL)

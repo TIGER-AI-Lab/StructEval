@@ -1,7 +1,7 @@
 import os
 import re
 import logging
-from render_utils import start_browser
+from .render_utils import start_browser
 
 def extract_svg_from_code_tag(generation):
     match = re.search(r"<code>(.*?)</code>", generation, re.DOTALL)

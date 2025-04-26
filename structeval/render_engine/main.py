@@ -4,19 +4,19 @@ import logging
 import asyncio
 import codecs
 
-from render_html import extract_html_from_code_tag, render_html_and_screenshot
-from render_react import extract_react_from_code_tag, render_react_and_screenshot
-from render_utils import score_non_renderable
-from render_latex import extract_latex_from_code_tag, render_latex_and_screenshot
-from render_markdown import extract_markdown_from_code_tag, render_markdown_and_screenshot
-from render_matplotlib import extract_matplotlib_from_code_tag, render_matplotlib_and_screenshot
-from render_canvas import extract_canvas_html_from_code_tag, render_canvas_and_screenshot
-from render_angular import extract_angular_component_from_code_tag, render_angular_and_screenshot
-from render_mermaid import extract_mermaid_code_from_tag, render_mermaid_and_screenshot
-from render_svg import extract_svg_from_code_tag, render_svg_and_screenshot
-from render_typst import extract_typst_from_code_tag, render_typst_and_screenshot
-from render_vega import extract_vega_json_from_code_tag, render_vega_and_screenshot
-from render_vue import extract_vue_code_from_tag, render_vue_and_screenshot
+from .render_html import extract_html_from_code_tag, render_html_and_screenshot
+from .render_react import extract_react_from_code_tag, render_react_and_screenshot
+from .render_utils import score_non_renderable
+from .render_latex import extract_latex_from_code_tag, render_latex_and_screenshot
+from .render_markdown import extract_markdown_from_code_tag, render_markdown_and_screenshot
+from .render_matplotlib import extract_matplotlib_from_code_tag, render_matplotlib_and_screenshot
+from .render_canvas import extract_canvas_html_from_code_tag, render_canvas_and_screenshot
+from .render_angular import extract_angular_component_from_code_tag, render_angular_and_screenshot
+from .render_mermaid import extract_mermaid_code_from_tag, render_mermaid_and_screenshot
+from .render_svg import extract_svg_from_code_tag, render_svg_and_screenshot
+from .render_typst import extract_typst_from_code_tag, render_typst_and_screenshot
+from .render_vega import extract_vega_json_from_code_tag, render_vega_and_screenshot
+from .render_vue import extract_vue_code_from_tag, render_vue_and_screenshot
 
 
 TYPE_CODES = {
@@ -48,24 +48,18 @@ async def process_json_file(json_file_path, img_output_path):
         tasks = json.load(f)
 
     for task in tasks:
-        if not task.get("useVisualRendering", False):
-            continue
-
         task_id = task.get("task_id", "unknown")
         type_code = task.get("task_id", "000000")[2:4]
-        
         output_type = next((k.lower() for k, v in TYPE_CODES.items() if v == type_code), "").lower()
-
-        print(output_type)
+        
+        # Skip tasks that are marked as not using visual rendering
+        if not task.get("useVisualRendering", False):
+            # For non-renderable types that can still be validated (JSON, YAML, CSV)
+            if output_type in ["json", "yaml", "csv", "toml", "xml"]:
+                task = score_non_renderable(task)
+            continue
 
         generation = task.get("generation", "")
-        #try:
-            #generation = codecs.decode(generation, 'unicode_escape')
-        #except Exception as e:
-            #logging.warning(f"[{task_id}] Failed to decode generation string: {e}")
-            # Continue with the original generation string if decoding fails
-            #pass 
-        #print(generation)
 
         if output_type == "html":
             generation = codecs.decode(generation, 'unicode_escape')
@@ -79,7 +73,6 @@ async def process_json_file(json_file_path, img_output_path):
 
         elif output_type == "latex" or output_type == "tikz":
             content = extract_latex_from_code_tag(generation)
-        
             task["render_score"] = render_latex_and_screenshot(task_id, content, img_output_path)
 
         elif output_type == "markdown":
@@ -112,11 +105,6 @@ async def process_json_file(json_file_path, img_output_path):
             content = extract_svg_from_code_tag(generation)
             task["render_score"] = await render_svg_and_screenshot(task_id, content, img_output_path)
 
-        #elif output_type == "none":
-            #generation = codecs.decode(generation, 'unicode_escape')
-            #content = extract_tikz_from_code_tag(generation)
-            #task["render_score"] = render_tikz_and_screenshot(task_id, content, img_output_path)
-
         elif output_type == "typst":
             generation = codecs.decode(generation, 'unicode_escape')
             content = extract_typst_from_code_tag(generation)
@@ -133,6 +121,7 @@ async def process_json_file(json_file_path, img_output_path):
             task["render_score"] = await render_vue_and_screenshot(task_id, content, img_output_path)
 
         else:
+            # For other output types, use the score_non_renderable function
             score_non_renderable(task)
 
     with open(json_file_path, "w", encoding="utf-8") as f:

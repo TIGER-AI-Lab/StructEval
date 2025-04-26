@@ -2,7 +2,7 @@ import os
 import re
 import json  # Import json for escaping
 import logging
-from render_utils import start_browser
+from .render_utils import start_browser
 
 def extract_mermaid_code_from_tag(generation):
     match = re.search(r"<code>(.*?)</code>", generation, re.DOTALL)

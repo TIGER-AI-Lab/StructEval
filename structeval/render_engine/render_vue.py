@@ -9,7 +9,7 @@ import time
 import socket
 import threading
 from http.server import HTTPServer, SimpleHTTPRequestHandler
-from render_utils import start_browser
+from .render_utils import start_browser
 
 # Path to the simplified Vue template
 VUE_TEMPLATE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vue_template")

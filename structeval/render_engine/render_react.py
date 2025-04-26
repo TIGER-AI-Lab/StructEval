@@ -1,7 +1,7 @@
 import os
 import logging
 import re
-from render_utils import start_browser
+from .render_utils import start_browser
 
 REACT_RENDER_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "react_render")
 
