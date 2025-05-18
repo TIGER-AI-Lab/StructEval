@@ -1,0 +1,15 @@
+
+import pandas as pd
+
+data = {
+    "artifact_id": ["ART-001", "ART-002", "ART-003", "ART-004", "ART-005", "ART-006"],
+    "discovery_site": ["Gobekli Tepe", "Pyramid of Giza", "Terracotta Army", "Machu Picchu", "Easter Island", "Stonehenge"],
+    "material": ["Limestone", "Granite", "Terracotta", "Andesite", "Tuff", "Bluestone"],
+    "estimated_age_years": [11600, 4500, 2200, 570, 800, 5000],
+    "discovery_date": ["1994-10-12", "1880-03-02", "1974-03-29", "1911-07-24", "1722-04-05", "1600-06-21"],
+    "current_location": ["Sanliurfa Museum", "British Museum", "Emperor Qinshihuang's Mausoleum", "Cusco Museum", "Rapa Nui Museum", "English Heritage Trust"]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("artifacts.csv", index=False)

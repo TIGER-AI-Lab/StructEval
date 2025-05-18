@@ -1,0 +1,23 @@
+
+museum:
+  name: "The Grand Art Gallery"
+  location:
+    city: "Florence"
+    country: "Italy"
+  founded_year: 1892
+  director:
+    name: "Isabella Conti"
+    tenure_years: 12
+  exhibitions:
+    - title: "Renaissance Revival"
+      year: 2023
+      artworks:
+        - title: "The Dawn of Florence"
+          artist: "Luca Bianchi"
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 120.5
+            width_cm: 95.0
+          on_loan: true
+  visitor_statistics:
+    annual_visitors: 450000

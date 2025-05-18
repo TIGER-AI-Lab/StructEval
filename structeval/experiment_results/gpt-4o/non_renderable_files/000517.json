@@ -1,0 +1,36 @@
+{
+  "creature": {
+    "name": "Luminara Drakon",
+    "species": "Draconis Luminara",
+    "stats": {
+      "height_cm": 350,
+      "weight_kg": 1200,
+      "lifespan_years": 500
+    },
+    "habitat": {
+      "type": "mountain",
+      "location": "Northern Peaks",
+      "climate": "temperate"
+    },
+    "abilities": [
+      {
+        "name": "Radiant Breath",
+        "description": "Emits a blinding light from its mouth that can disorient and damage foes.",
+        "power_level": 9
+      },
+      {
+        "name": "Winged Flight",
+        "description": "Capable of swift and agile flight through mountainous terrain.",
+        "power_level": 7
+      }
+    ],
+    "diet": {
+      "primary_foods": ["mountain goats", "eagles", "herbs"],
+      "is_carnivorous": true
+    },
+    "social_behavior": {
+      "group_size": 3,
+      "hierarchy": "solitary"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+
+  <galacticCarnival>
+    <rides>
+      <ride>
+        <name>Nebula Spinner</name>
+        <type>rollercoaster</type>
+        <capacity>24</capacity>
+      </ride>
+      <ride>
+        <name>Meteor Drop</name>
+        <type>freefall</type>
+        <capacity>16</capacity>
+      </ride>
+    </rides>
+    <cottonCandyFlavors>
+      <flavor>
+        <name>Cosmic Grape</name>
+      </flavor>
+      <flavor>
+        <name>Stardust Lemon</name>
+      </flavor>
+      <flavor>
+        <name>Black Hole Berry</name>
+      </flavor>
+    </cottonCandyFlavors>
+    <mascots>
+      <mascot>
+        <name>Zorp</name>
+        <species>Alien</species>
+      </mascot>
+      <mascot>
+        <name>Luna</name>
+        <species>Robot Cat</species>
+      </mascot>
+    </mascots>
+  </galacticCarnival>

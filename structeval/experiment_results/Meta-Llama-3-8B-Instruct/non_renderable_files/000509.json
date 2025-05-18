@@ -1,0 +1,50 @@
+
+{
+    "game": {
+        "title": "Elder Scrolls VI: Redfall",
+        "release_year": 2023,
+        "developer": {
+            "name": "Bethesda Game Studios",
+            "founded": 2001
+        },
+        "platforms": [
+            {
+                "name": "PC",
+                "release_date": "2023-05-05",
+                "features": [
+                    {
+                        "feature_name": "crossplay",
+                        "is_multiplayer_supported": true
+                    }
+                ]
+            },
+            {
+                "name": "PlayStation 5",
+                "release_date": "2023-05-05",
+                "features": [
+                    {
+                        "feature_name": "ray tracing",
+                        "is_multiplayer_supported": true
+                    }
+                ]
+            }
+        ],
+        "genres": ["RPG", "Action"],
+        "ratings": {
+            "ESRB": "M",
+            "PEGI": "18"
+        },
+        "awards": [
+            {
+                "award_name": "Game of the Year",
+                "year": 2023
+            }
+        ],
+        "characters": [
+            {
+                "name": "Ava Frost",
+                "role": "protagonist"
+            }
+        ]
+    }
+}

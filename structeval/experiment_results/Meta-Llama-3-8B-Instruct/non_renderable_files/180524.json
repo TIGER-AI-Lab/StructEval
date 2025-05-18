@@ -1,0 +1,51 @@
+
+{
+  "planet_name": "Xylophar",
+  "discovery": {
+    "year": 2147,
+    "method": "Quantum Spectroscopy",
+    "team": [
+      {
+        "name": "Dr. Lira Voss",
+        "role": "Astrobiologist"
+      },
+      {
+        "name": "Prof. Tano Rill",
+        "role": "Exoplanetary Chemist"
+      }
+    ]
+  },
+  "atmosphere": {
+    "composition": [
+      {
+        "gas": "Xenon",
+        "percentage": 62
+      },
+      {
+        "gas": "Oxygen",
+        "percentage": 27
+      }
+    ],
+    "pressure": 1.8
+  },
+  "moons": [
+    {
+      "name": "Zirra",
+      "diameter_km": 3200,
+      "has_rings": false
+    },
+    {
+      "name": "Plenth",
+      "diameter_km": 800,
+      "has_rings": true
+    }
+  ],
+  "surface": {
+    "temperature_c": -72,
+    "has_water": true,
+    "terrain_types": [
+      "Crystal Plains",
+      "Floating Forests"
+    ]
+  }
+}

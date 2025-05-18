@@ -1,0 +1,48 @@
+
+import pandas as pd
+
+def generate_recipe_csv(recipe_name, chef_name, cuisine_type, prep_time_minutes, cook_time_minutes, difficulty_level, servings, ingredient_list, ingredient_quantities, ingredient_units, step_descriptions, step_order, equipment_needed, nutrition_calories, nutrition_protein_g, nutrition_fat_g, nutrition_carbs_g):
+    recipe_data = {
+        'recipe_name': [recipe_name],
+        'chef_name': [chef_name],
+        'cuisine_type': [cuisine_type],
+        'prep_time_minutes': [prep_time_minutes],
+        'cook_time_minutes': [cook_time_minutes],
+        'total_time_minutes': [prep_time_minutes + cook_time_minutes],
+        'difficulty_level': [difficulty_level],
+        'servings': [servings],
+        'ingredient_list': [ingredient_list],
+        'ingredient_quantities': [ingredient_quantities],
+        'ingredient_units': [ingredient_units],
+        'step_descriptions': [step_descriptions],
+        'step_order': [step_order],
+        'equipment_needed': [equipment_needed],
+        'nutrition_calories': [nutrition_calories],
+        'nutrition_protein_g': [nutrition_protein_g],
+        'nutrition_fat_g': [nutrition_fat_g],
+        'nutrition_carbs_g': [nutrition_carbs_g]
+    }
+    recipe_df = pd.DataFrame(recipe_data)
+    return recipe_df.to_csv(index=False)
+
+# Example usage:
+recipe_name = "Spaghetti Carbonara"
+chef_name = "Giovanni Rossi"
+cuisine_type = "Italian"
+prep_time_minutes = 10
+cook_time_minutes = 15
+difficulty_level = "Medium"
+servings = 4
+ingredient_list = "Spaghetti, Eggs, Parmesan Cheese, Pancetta"
+ingredient_quantities = "200g, 4, 50g, 100g"
+ingredient_units = "g, each, g, g"
+step_descriptions = "Cook spaghetti, Beat eggs, Mix eggs and cheese, Add pancetta, Combine with spaghetti"
+step_order = "1, 2, 3, 4, 5"
+equipment_needed = "Pasta pot, Pan, Whisk"
+nutrition_calories = 500
+nutrition_protein_g = 20
+nutrition_fat_g = 30
+nutrition_carbs_g = 50
+
+csv_output = generate_recipe_csv(recipe_name, chef_name, cuisine_type, prep_time_minutes, cook_time_minutes, difficulty_level, servings, ingredient_list, ingredient_quantities, ingredient_units, step_descriptions, step_order, equipment_needed, nutrition_calories, nutrition_protein_g, nutrition_fat_g, nutrition_carbs_g)
+print(csv_output)

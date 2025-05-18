@@ -1,0 +1,25 @@
+
+exhibit:
+  title: Ancient Civilizations
+  curator:
+    name: John Doe
+    contact:
+      email: john.doe@example.com
+      phone: +1 123 456 7890
+  artifacts:
+  - name: Mummy Sarcophagus
+    origin: Ancient Egypt
+    year: 1200
+    materials:
+    - Limestone
+    - Gold
+    dimensions:
+      height_cm: 100.5
+      width_cm: 50.2
+      depth_cm: 20.1
+    on_loan: true
+    loan_info:
+      institution: British Museum
+      return_date: 2024-12-31
+  opening_date: 2024-07-01
+  closing_date: 2024-12-31

@@ -1,0 +1,30 @@
+
+{
+  "creature": {
+    "name": "Eldra",
+    "species": "Dragon",
+    "age": 150,
+    "attributes": {
+      "height": 350.5,
+      "color": "emerald green",
+      "abilities": ["flight", "fire breathing", "telepathy"]
+    },
+    "habitat": {
+      "location": "Crystal Mountains",
+      "climate": "temperate",
+      "resources": ["crystals", "rare herbs", "magic stones"]
+    },
+    "companions": [
+      {
+        "name": "Sylph",
+        "species": "Wind Sprite",
+        "bond_level": 8
+      },
+      {
+        "name": "Thorn",
+        "species": "Forest Elf",
+        "bond_level": 7
+      }
+    ]
+  }
+}

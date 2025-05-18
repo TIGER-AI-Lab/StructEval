@@ -1,0 +1,39 @@
+
+{
+  "planet_name": "Zephyra",
+  "system": {
+    "star": "Solara",
+    "distance_from_star": 1.4,
+    "orbital_period_days": 412
+  },
+  "inhabitants": {
+    "species": "Aerilith",
+    "count": 4500000,
+    "technologies": [
+      "Wind Harps",
+      "Cloud Cities",
+      "Skywriting Drones"
+    ]
+  },
+  "landmarks": [
+    {
+      "name": "Whispering Peaks",
+      "type": "Mountain Range",
+      "history": "Ancient site of Aerilith council gatherings."
+    },
+    {
+      "name": "Luminous Lake",
+      "type": "Lake",
+      "history": "Believed to be formed by a fallen comet."
+    }
+  ],
+  "resources": {
+    "primary": "Zephyrite Crystals",
+    "secondary": "Skyfruit",
+    "rare": "Luminite Ore"
+  },
+  "climate": {
+    "average_temperature_c": 22,
+    "weather_patterns": "Windy with frequent auroras"
+  }
+}

@@ -1,0 +1,23 @@
+creature:
+  name: "Zorgon the Magnificent"
+  species: "Zydonian"
+  origin:
+    planet: "Zydon Prime"
+    galaxy: "Andromeda"
+  abilities:
+    - type: "Telekinesis"
+      strength: 8
+    - type: "Energy Blast"
+      strength: 6
+  companions:
+    - name: "Gleepglorp"
+      species: "Floobert"
+      bond_level: 7
+    - name: "Xylar"
+      species: "Sentient Rock"
+      bond_level: 3
+  artifacts:
+    - name: "The Orb of Zz'glorg"
+      power_level: 9
+    - name: "The Amulet of Whispers"
+      power_level: 5

@@ -1,0 +1,28 @@
+[garden]
+name = "Community Garden of Joy"
+location = { city = "London", country = "UK" }
+size = { square_meters = 500, type = "community" }
+
+[[garden.plants]]
+species = "Tomato"
+age_years = 2
+fruit_bearing = true
+
+[[garden.plants.care_schedule]]
+task = "water"
+frequency_days = 2
+season = "summer"
+
+[[garden.tools]]
+name = "Shovel"
+quantity = 5
+last_serviced = "2024-03-15"
+
+[[garden.tools]]
+name = "Watering Can"
+quantity = 10
+last_serviced = "2024-04-20"
+
+[garden.opening_hours]
+weekdays = "9:00-17:00"
+weekends = "10:00-16:00"

@@ -1,0 +1,40 @@
+<recipe>
+  <title>Classic Tomato Soup</title>
+  <author>
+    <name>Jane Doe</name>
+    <contact>
+      <email>jane.doe@example.com</email>
+      <phone>+1-555-123-4567</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Tomatoes</name>
+      <quantity>4</quantity>
+      <unit>cups</unit>
+    </ingredient>
+    <!-- Additional ingredients can be added here -->
+  </ingredients>
+  <instructions>
+    <step order="1">
+      <description>Chop the tomatoes and sautÃ© them in a pot.</description>
+      <duration>
+        <minutes>10</minutes>
+      </duration>
+    </step>
+    <!-- Additional steps can be added here -->
+  </instructions>
+  <nutrition>
+    <calories>250</calories>
+    <fat>
+      <grams>10</grams>
+      <type>unsaturated</type>
+    </fat>
+    <carbohydrates>
+      <grams>30</grams>
+    </carbohydrates>
+    <protein>
+      <grams>5</grams>
+    </protein>
+  </nutrition>
+</recipe>

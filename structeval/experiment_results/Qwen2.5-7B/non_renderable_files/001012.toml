@@ -1,0 +1,28 @@
+
+artifact = {
+    name = "Xylophane Tablet"
+    origin = {
+        civilization = "Zorvath"
+        era = "Pre-Quasar"
+    }
+    materials = [
+        { type = "Lumirium", quantity_grams = 123.45 }
+        { type = "Aetherglass", quantity_grams = 67.89 }
+    ]
+    dimensions = {
+        height_cm = 23.4
+        width_cm = 15.6
+        depth_cm = 3.4
+    }
+    inscriptions = [
+        { language = "Zorvathic", translation = "In the name of the Great Quasar" }
+        { language = "Xyloth", translation = "May the Lumirium guide you" }
+    ]
+    discovery = {
+        date_iso = "2021-07-12"
+        location = {
+            latitude = 34.56
+            longitude = -123.45
+        }
+    }
+}

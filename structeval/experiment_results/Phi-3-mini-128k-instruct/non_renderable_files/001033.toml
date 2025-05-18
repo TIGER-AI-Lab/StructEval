@@ -1,0 +1,56 @@
+name = "Eden's Eden Botanical Garden"
+location = {
+    country = "Floralia"
+    city = "Blossomville"
+}
+established_year = 1987
+opening_hours = {
+    weekdays = {
+        opening = "09:00"
+        close = "17:00"
+    }
+    weekends = {
+        opening = "08:00"
+        close = "16:00"
+    }
+}
+greenhouses = [
+    {
+        name = "Tropical Treasures"
+        area_sqm = 2500
+        climate_type = "Tropical"
+        plants = [
+            {
+                species = "Ananas comosus"
+                origin_region = "South America"
+                is_endangered = false
+                year_introduced = 1995
+            },
+            {
+                species = "Rhododendron ponticum"
+                origin_region = "Europe"
+                is_endangered = true
+                year_introduced = 2000
+            }
+        ]
+    },
+    {
+        name = "Desert Delights"
+        area_sqm = 1500
+        climate_type = "Desert"
+        plants = [
+            {
+                species = "Opuntia ficus-indica"
+                origin_region = "Mexico"
+                is_endangered = false
+                year_introduced = 1998
+            },
+            {
+                species = "Agave americana"
+                origin_region = "Mexico"
+                is_endangered = false
+                year_introduced = 2003
+            }
+        ]
+    }
+]

@@ -1,0 +1,28 @@
+[brewery]
+name = "Mystic River Brewing Co."
+founded_year = 2012
+owner = "Alexandra Brewster"
+
+[brewery.location]
+city = "Portland"
+country = "USA"
+
+[[brewery.beers]]
+name = "Enchanted IPA"
+type = "IPA"
+abv = 6.5
+
+[[brewery.beers.ingredients]]
+malts = ["Pale Ale", "Caramel"]
+hops = ["Cascade", "Citra"]
+yeast = "American Ale"
+
+[[brewery.beers.awards]]
+name = "Best IPA"
+year = 2018
+
+[brewery.tours]
+available = true
+
+[[brewery.tours.schedule]]
+day = "Saturday"

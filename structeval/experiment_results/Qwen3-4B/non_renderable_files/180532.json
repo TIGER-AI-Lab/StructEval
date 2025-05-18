@@ -1,0 +1,63 @@
+
+{
+  "spaceStation": {
+    "name": "Nebula Outpost",
+    "location": {
+      "orbit": "Mars",
+      "coordinates": {
+        "latitude": 12.34,
+        "longitude": 56.78
+      }
+    },
+    "crew": [
+      {
+        "name": "Zara Quill",
+        "role": "Commander",
+        "species": "Human",
+        "favoriteSnacks": [
+          "Dried Mango",
+          "Space Pretzels"
+        ]
+      },
+      {
+        "name": "Gribnax",
+        "role": "Science Officer",
+        "species": "Xel'Naga",
+        "favoriteSnacks": [
+          "Jelly Cubes",
+          "Moon Cheese"
+        ]
+      }
+    ],
+    "modules": [
+      {
+        "type": "Habitat",
+        "status": "Operational",
+        "systems": {
+          "lifeSupport": "Active",
+          "power": "Stable"
+        }
+      },
+      {
+        "type": "Laboratory",
+        "status": "Maintenance",
+        "systems": {
+          "lifeSupport": "Standby",
+          "power": "Intermittent"
+        }
+      }
+    ],
+    "mission": {
+      "durationDays": 180,
+      "objectives": [
+        "Study Martian Atmosphere",
+        "Test Hydroponic Growth"
+      ]
+    },
+    "supplyLevels": {
+      "oxygen": 92,
+      "food": 76,
+      "water": 81
+    }
+  }
+}

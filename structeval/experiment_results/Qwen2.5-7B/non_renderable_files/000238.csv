@@ -1,0 +1,48 @@
+
+import csv
+
+def create_recipe_csv(recipe):
+    with open('recipes.csv', mode='a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow([
+            recipe['recipe_id'],
+            recipe['recipe_name'],
+            recipe['chef_name'],
+            recipe['cuisine_type'],
+            recipe['difficulty_level'],
+            recipe['prep_time_minutes'],
+            recipe['cook_time_minutes'],
+            recipe['servings'],
+            recipe['ingredient_list'],
+            recipe['ingredient_quantities'],
+            recipe['steps'],
+            recipe['step_times'],
+            recipe['equipment_needed'],
+            recipe['nutrition_calories'],
+            recipe['nutrition_protein_grams'],
+            recipe['nutrition_fat_grams'],
+            recipe['nutrition_carbs_grams']
+        ])
+
+# Example usage:
+recipe = {
+    'recipe_id': 1,
+    'recipe_name': 'Spaghetti Carbonara',
+    'chef_name': 'Gennaro Contaldo',
+    'cuisine_type': 'Italian',
+    'difficulty_level': 'Intermediate',
+    'prep_time_minutes': 15,
+    'cook_time_minutes': 10,
+    'servings': 4,
+    'ingredient_list': 'spaghetti;parmesan cheese;eggs;bacon',
+    'ingredient_quantities': '200g;100g;4;100g',
+    'steps': 'Cook spaghetti;Prepare bacon;Mix eggs and cheese;Combine with cooked spaghetti',
+    'step_times': '10;5;5;10',
+    'equipment_needed': 'pan;spatula',
+    'nutrition_calories': 500,
+    'nutrition_protein_grams': 20,
+    'nutrition_fat_grams': 25,
+    'nutrition_carbs_grams': 30
+}
+
+create_recipe_csv(recipe)

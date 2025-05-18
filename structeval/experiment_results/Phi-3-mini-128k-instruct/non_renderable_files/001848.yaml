@@ -1,0 +1,22 @@
+museum:
+  name: "The Grand Art Pavilion"
+  location:
+    city: "Artville"
+    country: "Imaginaria"
+  founded_year: 1985
+  director:
+    name: "Alexandria R. Montgomery"
+    tenure_years: 12
+  exhibitions:
+    - title: "Impressions of Modernity"
+      year: 2021
+      artworks:
+        - title: "Dawn of the New Era"
+          artist: "Elena V. Kozlov"
+          medium: "Oil on Canvas"
+          dimensions:
+            height_cm: 150
+            width_cm: 200
+          on_loan: false
+  visitor_statistics:
+    annual_visitors: 120000

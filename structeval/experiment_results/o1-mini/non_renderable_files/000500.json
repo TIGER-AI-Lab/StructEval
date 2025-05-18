@@ -1,0 +1,41 @@
+{
+  "novel": {
+    "title": "Whispers of Eternity",
+    "author": {
+      "name": "Elena Marlowe",
+      "birth_year": 1985
+    },
+    "publication": {
+      "year": 2021,
+      "publisher": "Stellar Press"
+    },
+    "genres": ["Fantasy", "Mystery", "Adventure"],
+    "characters": [
+      {
+        "name": "Aria Windrider",
+        "role": "protagonist",
+        "traits": ["brave", "curious", "resilient"]
+      },
+      {
+        "name": "Dorian Blackthorn",
+        "role": "antagonist",
+        "traits": ["cunning", "ambitious", "calculating"]
+      }
+    ],
+    "chapters": [
+      {
+        "title": "Chapter 1: The Awakening",
+        "word_count": 4500,
+        "events": [
+          "Aria discovers an ancient artifact in the forest",
+          "A mysterious figure observes Aria from the shadows",
+          "The village faces an unexplained phenomenon"
+        ]
+      },
+      {
+        "title": "Chapter 2: Shadows of the Past",
+        "word_count": 4800
+      }
+    ]
+  }
+}

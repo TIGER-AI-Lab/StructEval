@@ -1,0 +1,32 @@
+
+<creature>
+  <name>Zephyra Stormwing</name>
+  <species>Sky Drake</species>
+  <age>350</age>
+  <habitat>
+    <region>High mountain ranges of the Northern Skies</region>
+    <climate>Cold and windy alpine</climate>
+  </habitat>
+  <abilities>
+    <ability>
+      <name>Thunderclap Roar</name>
+      <powerLevel>85</powerLevel>
+      <element>air</element>
+    </ability>
+    <ability>
+      <name>Lightning Strike</name>
+      <powerLevel>90</powerLevel>
+      <element>fire</element>
+    </ability>
+  </abilities>
+  <appearance>
+    <height>4.7</height>
+    <color>Silver-blue</color>
+    <features>
+      <feature>
+        <type>wing</type>
+        <description>Massive, feathered wings that shimmer with electric sparks</description>
+      </feature>
+    </features>
+  </appearance>
+</creature>

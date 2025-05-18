@@ -1,0 +1,30 @@
+[recipe]
+title = "Spicy Mango Avocado Salad"
+cuisine = "Fusion"
+servings = 4
+prep_time_minutes = 15
+cook_time_minutes = 0
+
+[recipe.author]
+name = "Jamie Oliver"
+
+[recipe.author.contact]
+email = "jamie.oliver@example.com"
+
+[[recipe.ingredients]]
+name = "Mango"
+quantity = 2
+unit = "pieces"
+
+[[recipe.ingredients]]
+name = "Avocado"
+quantity = 2
+unit = "pieces"
+
+[[recipe.instructions]]
+step_number = 1
+description = "Peel and dice the mangoes and avocados into small cubes."
+
+[[recipe.instructions]]
+step_number = 2
+description = "Mix the diced mangoes and avocados in a bowl, and add a pinch of salt and lime juice to taste."

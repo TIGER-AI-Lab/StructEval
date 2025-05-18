@@ -1,0 +1,37 @@
+exhibit:
+  title: "Modern Expressions"
+  curator:
+    name: "Dr. Eleanor Vance"
+    contact_email: "eleanor.vance@artmuseum.org"
+  schedule:
+    opening_date: "2023-11-15"
+    closing_date: "2024-02-28"
+  artworks:
+    - artist: "Jackson Pollock"
+      title: "Number 1, 1950 (Lavender Mist)"
+      year_created: 1950
+      medium: "Oil, enamel, and aluminum paint on canvas"
+      dimensions:
+        height_cm: 221.0
+        width_cm: 299.7
+      provenance:
+        previous_owners:
+          - "Alfonso Ossorio"
+          - "Ben Heller"
+          - "Collection of Mr. and Mrs. Burton Tremaine"
+        acquisition_date: "1976-04-21"
+      awards:
+        - name: "Guggenheim International Award"
+          year: 1958
+    - artist: "Mark Rothko"
+      title: "Orange, Red, Yellow"
+      year_created: 1961
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 236.2
+        width_cm: 206.4
+      provenance:
+        previous_owners:
+          - "Private Collection, New York"
+        acquisition_date: "1992-10-05"
+      awards: []

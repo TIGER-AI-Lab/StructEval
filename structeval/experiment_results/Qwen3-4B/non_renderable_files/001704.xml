@@ -1,0 +1,38 @@
+
+<recipe>
+  <title>Spicy Chicken Tacos</title>
+  <author>
+    <name>John Doe</name>
+    <contact>
+      <email>john.doe@example.com</email>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Chicken breast</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Season chicken with chili powder and lime juice, then grill until cooked through.</description>
+      <duration_minutes>20</duration_minutes>
+      <tools>
+        <tool>
+          <name>Grill</name>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>350</calories>
+    <fat_grams>15.5</fat_grams>
+    <protein_grams>30</protein_grams>
+  </nutrition>
+  <tags>
+    <tag>Mexican</tag>
+  </tags>
+</recipe>

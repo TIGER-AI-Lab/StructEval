@@ -1,0 +1,52 @@
+{
+  "space_station": {
+    "name": "Aurora Haven",
+    "crew": [
+      "Cmdr. Vega",
+      "Dr. Orion",
+      "Lt. Nova",
+      "Eng. Pulsar"
+    ],
+    "location": {
+      "planet": "Kepler-442b",
+      "coordinates": {
+        "x": 124.5,
+        "y": -87.3,
+        "z": 210.0
+      }
+    },
+    "modules": [
+      {
+        "type": "Habitation",
+        "status": "Operational",
+        "experiments": [
+          "Plant Growth",
+          "Sleep Study"
+        ]
+      },
+      {
+        "type": "Research",
+        "status": "Under Maintenance",
+        "experiments": [
+          "Crystal Formation",
+          "Radiation Shielding"
+        ]
+      }
+    ],
+    "supply_levels": {
+      "oxygen": 78.2,
+      "water": 1200,
+      "food": 650
+    },
+    "mission_log": [
+      {
+        "date": "2042-03-01",
+        "event": "Docked with supply shuttle."
+      },
+      {
+        "date": "2042-03-03",
+        "event": "Initiated crystal growth experiment."
+      }
+    ]
+  }
+}

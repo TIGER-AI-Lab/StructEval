@@ -1,0 +1,38 @@
+
+[museum]
+name = "The Celestial Artifacts Museum"
+location = {
+    city = "New Avalon",
+    country = "Etherea"
+}
+founded_year = 1992
+director = {
+    name = "Dr. Elara Voss"
+    tenure_years = 25
+}
+galleries = [
+    {
+        title = "Ancient Echoes"
+        theme = "Prehistoric and Early Civilizations"
+        artworks = [
+            {
+                title = "The Starstone Crown"
+                artist = "Kael Marrow"
+                year = 2345
+                medium = "quartz and gold inlay"
+                on_display = true
+            },
+            {
+                title = "Whispering Tides"
+                artist = "Lira Solen"
+                year = 2289
+                medium = "shell and coral sculpture"
+                on_display = false
+            }
+        ]
+    }
+]
+opening_hours = {
+    weekdays = "09:00-17:00"
+    weekends = "10:00-16:00"
+}

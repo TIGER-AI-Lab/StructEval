@@ -1,0 +1,34 @@
+
+import pandas as pd
+
+# Define the artifact data
+artifact_data = {
+    "artifact_id": "M12345",
+    "artifact_name": "The Enigmatic Vessel",
+    "discovery.location": "Near the ancient city of Zephyria",
+    "discovery.date_found": "2021-07-15",
+    "discovery.expedition_leader": "Dr. Amelia Hart",
+    "discovery.team_members": 5,
+    "artifact_type": "Vessel",
+    "material.primary": "Clay",
+    "material.secondary": "",
+    "dimensions.height_cm": 25.5,
+    "dimensions.width_cm": 18.2,
+    "dimensions.depth_cm": 10.0,
+    "condition.status": "excellent",
+    "condition.restoration_needed": False,
+    "historical_period": "Classical Era",
+    "display_location.gallery": "Gallery 7",
+    "display_location.shelf_number": 3,
+    "provenance.previous_owners": "",
+    "provenance.acquisition_method": "Excavation"
+}
+
+# Create a DataFrame from the artifact data
+artifact_df = pd.DataFrame([artifact_data])
+
+# Convert the DataFrame to a CSV string
+artifact_csv = artifact_df.to_csv(index=False)
+
+# Print the CSV string
+print(artifact_csv)

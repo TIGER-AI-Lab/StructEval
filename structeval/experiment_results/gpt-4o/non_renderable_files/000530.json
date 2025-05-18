@@ -1,0 +1,38 @@
+
+{
+    "creature": {
+        "name": "Thalor",
+        "species": "Dragonkin",
+        "age": 150,
+        "attributes": {
+            "height": 320.5,
+            "color": "emerald",
+            "abilities": [
+                "fire breath",
+                "flight",
+                "invisibility"
+            ]
+        },
+        "habitat": {
+            "location": "Mystic Mountains",
+            "climate": "temperate",
+            "resources": [
+                "crystal caves",
+                "ancient forests",
+                "hidden springs"
+            ]
+        },
+        "companions": [
+            {
+                "name": "Fiora",
+                "species": "Phoenix",
+                "bond_level": 8
+            },
+            {
+                "name": "Gorak",
+                "species": "Stone Golem",
+                "bond_level": 6
+            }
+        ]
+    }
+}

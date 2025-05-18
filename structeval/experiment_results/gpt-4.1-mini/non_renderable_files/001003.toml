@@ -1,0 +1,35 @@
+
+[artifact]
+name = "Bronze Age Dagger"
+origin = "Mycenaean Greece"
+discovery_date = "1922-07-15"
+
+[artifact.materials]
+primary = "bronze"
+secondary = "wood"
+
+[artifact.dimensions]
+height_cm = 25.4
+width_cm = 3.2
+depth_cm = 0.5
+
+[[artifact.inscriptions.list]]
+language = "Linear B"
+translation = "For the king's guard"
+location_on_artifact = "blade"
+
+[[artifact.inscriptions.list]]
+language = "Ancient Greek"
+translation = "Gift of the warrior"
+location_on_artifact = "handle"
+
+[artifact.exhibit]
+current_location = "National Archaeological Museum, Athens"
+
+[[artifact.exhibit.previous_locations]]
+museum = "British Museum"
+year_range = "1950â1980"
+
+[[artifact.exhibit.previous_locations]]
+museum = "Louvre Museum"
+year_range = "1981â2000"

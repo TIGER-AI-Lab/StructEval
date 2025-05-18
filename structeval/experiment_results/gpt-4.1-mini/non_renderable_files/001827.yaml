@@ -1,0 +1,38 @@
+
+expedition:
+  team:
+    name: "Galactic Pioneers"
+    members:
+      - full_name: "Dr. Elena Vasquez"
+        role: "pilot"
+        skills:
+          - "advanced spacecraft navigation"
+          - "emergency medical response"
+          - "zero-gravity maneuvering"
+        equipment:
+          - item: "navigation console"
+            quantity: 1
+          - item: "space suit"
+            quantity: 1
+  destination:
+    planet: "Kepler-442b"
+    coordinates:
+      latitude: 37.7749
+      longitude: -122.4194
+  objectives:
+    primary: "Establish a sustainable human outpost"
+    secondary:
+      - "Collect geological samples"
+      - "Study atmospheric composition"
+      - "Search for microbial life"
+  timeline:
+    departure_date: "2042-07-15"
+    estimated_arrival: "2043-01-10"
+  resources:
+    supplies:
+      food_kg: 1200.5
+      water_liters: 3500
+    vehicles:
+      - "Lunar Rover"
+      - "Orbital Shuttle"
+      - "Surface Drone"

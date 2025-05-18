@@ -1,0 +1,34 @@
+[default_value = "false"]
+museum.name = "Fictional Art and History Museum"
+
+museum.location = {
+    city = "Imaginaria"
+    country = "Fictionland"
+}
+
+museum.established_year = 1999
+
+museum.director = {
+    full_name = "Dr. Jane Doe"
+    tenure_years = 10
+}
+
+museum.exhibits = [
+    {
+        title = "The Enchanted Canvas"
+        artist = "A. Imaginator"
+        year_created = 2005
+        medium = "Oil on canvas"
+        dimensions = {
+            height_cm = 150
+            width_cm = 200
+        }
+        on_display = true
+        tags = ["fantasy", "painting", "oil"]
+    }
+]
+
+museum.opening_hours = {
+    weekdays = "09:00 - 17:00"
+    weekends = "10:00 - 18:00"
+}

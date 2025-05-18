@@ -1,0 +1,26 @@
+artifact:
+  name: "Rosetta Stone"
+  origin:
+    culture: "Ancient Egyptian"
+    period: "Ptolemaic Era"
+  materials:
+    primary: "Granodiorite"
+    secondary:
+      - "None"
+  dimensions:
+    height_cm: 114.4
+    width_cm: 72.3
+    depth_cm: 27.9
+  current_location:
+    museum: "British Museum"
+    room: "Room 4"
+    display_case: "Case 1"
+  inscriptions:
+    - language: "Ancient Greek"
+      text: "ÎÎ±ÏÎ¹Î»ÎµÏÏ Î ÏÎ¿Î»ÎµÎ¼Î±á¿Î¿Ï..."
+      translation: "King Ptolemy..."
+  provenance:
+    history:
+      - owner: "Napoleon Bonaparte"
+        date_acquired: "1799-07-15"
+        method_of_acquisition: "excavation"

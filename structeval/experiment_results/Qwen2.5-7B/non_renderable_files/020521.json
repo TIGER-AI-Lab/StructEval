@@ -1,0 +1,28 @@
+
+import csv
+import json
+
+csv_data = """player_id,player_name,species,level,inventory.items,inventory.gold,skills,quests
+001,Aria,Elf,12,"["Bow", "Health Potion", "Map"]",150,"[{"skill_name": "Archery", "level": 5, "cooldown": 2}, {"skill_name": "Stealth", "level": 3, "cooldown": 5}]","[{"quest_id": "Q101", "status": "active", "objectives": [{"description": "Find the hidden cave", "completed": false}, {"description": "Collect 3 gems", "completed": false}]}]"
+002,Borin,Dwarf,15,"["Axe", "Ale", "Shield"]",200,"[{"skill_name": "Smithing", "level": 6, "cooldown": 1}, {"skill_name": "Battle Cry", "level": 4, "cooldown": 7}]","[{"quest_id": "Q102", "status": "completed", "objectives": [{"description": "Defeat the ogre", "completed": true}]}]"
+003,Lira,Human,10,"["Sword", "Lantern"]",75,"[{"skill_name": "Swordplay", "level": 4, "cooldown": 3}]","[{"quest_id": "Q103", "status": "active", "objectives": [{"description": "Rescue the merchant", "completed": false}]}]"
+"""
+
+# Remove the first line (header) from the CSV data
+header = csv_data.split('
+', 1)[0]
+csv_data = csv_data.replace(header, '')
+
+# Convert CSV data to JSON
+json_data = '['
+for row in csv_data.split('
+'):
+    if row:
+        json_data += '{'
+        for item in row.split(','):
+            key, value = item.split(',', 1)
+            json_data += f'"{key}": {value},'
+        json_data = json_data[:-1] + '},'
+json_data = json_data[:-1] + ']'
+
+print(json_data)

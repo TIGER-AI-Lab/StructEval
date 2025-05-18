@@ -1,0 +1,47 @@
+
+planet_name: Zyphora
+discovery.year: 3021
+discovery.method: Gravitational Microlensing
+atmosphere.composition:
+  - gas: Nitrogen
+    percentage: 68
+  - gas: Oxygen
+    percentage: 21
+moons:
+  - name: Phobos
+    diameter_km: 22.2
+    has_rings: False
+  - name: Deimos
+    diameter_km: 12.4
+    has_rings: False
+orbit.period_days: 687
+orbit.distance_au: 1.52
+inhabitants.population: 1200000
+inhabitants.species:
+  - name: Zyphorian
+    intelligence_level: High
+  - name: Glorg
+    intelligence_level: Medium
+planet_name: Xenon
+discovery.year: 2987
+discovery.method: Transit Method
+atmosphere.composition:
+  - gas: Hydrogen
+    percentage: 90
+  - gas: Helium
+    percentage: 9
+moons:
+  - name: Luna
+    diameter_km: 3474.8
+    has_rings: True
+  - name: Selene
+    diameter_km: 1737.1
+    has_rings: False
+orbit.period_days: 365
+orbit.distance_au: 1
+inhabitants.population: 8000000
+inhabitants.species:
+  - name: Xenite
+    intelligence_level: Very High
+  - name: Moonfolk
+    intelligence_level: Low

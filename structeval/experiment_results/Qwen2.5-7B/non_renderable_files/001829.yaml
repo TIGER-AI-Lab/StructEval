@@ -1,0 +1,31 @@
+exhibit:
+  name: "Impressionism: A New Era in Art"
+  curator: "Dr. Jane Smith"
+  opening_date: "2023-04-15"
+rooms:
+  - title: "Monet's Garden"
+    artworks:
+      - artist: "Claude Monet"
+        title: "Water Lilies"
+        year: 1916
+        medium: "Oil on canvas"
+        dimensions:
+          height_cm: 150
+          width_cm: 100
+          depth_cm: null
+        provenance: "Acquired by the museum in 1920"
+        on_loan: false
+        loan_details: {}
+      - artist: "Pierre-Auguste Renoir"
+        title: "Dance at Le Moulin de la Galette"
+        year: 1876
+        medium: "Oil on canvas"
+        dimensions:
+          height_cm: 120
+          width_cm: 160
+          depth_cm: null
+        provenance: "Private collection, Paris"
+        on_loan: true
+        loan_details:
+          lender: "MusÃ©e d'Orsay, Paris"
+          return_date: "2023-05-30"

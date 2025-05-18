@@ -1,0 +1,56 @@
+{
+  "planet_name": "Zephyros",
+  "galactic_coordinates": {
+    "x": 4292.7,
+    "y": -193.4,
+    "z": 782.1
+  },
+  "atmosphere": {
+    "composition": [
+      "nitrogen",
+      "oxygen",
+      "argon"
+    ],
+    "pressure": 1.2,
+    "temperature": 287
+  },
+  "fauna": [
+    "Skywhale",
+    "Luminescent Beetle",
+    "Glimmer Fox"
+  ],
+  "flora": [
+    "Crystal Fern",
+    "Whispering Moss"
+  ],
+  "satellites": [
+    {
+      "name": "Nyx",
+      "diameter_km": 3200,
+      "orbital_period_days": 35.5
+    },
+    {
+      "name": "Thalos",
+      "diameter_km": 2100,
+      "orbital_period_days": 18.2
+    }
+  ],
+  "research_stations": [
+    {
+      "station_id": "RS-01",
+      "crew_count": 12,
+      "equipment": [
+        "Spectrometer",
+        "Hydroponics Lab"
+      ]
+    },
+    {
+      "station_id": "RS-02",
+      "crew_count": 8,
+      "equipment": [
+        "Seismograph",
+        "Atmospheric Sampler"
+      ]
+    }
+  ]
+}

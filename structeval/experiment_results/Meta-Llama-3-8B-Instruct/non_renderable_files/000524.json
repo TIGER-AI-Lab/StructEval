@@ -1,0 +1,32 @@
+
+{
+  "exhibit": {
+    "title": "string",
+    "curator": {
+      "name": "string",
+      "contact": {
+        "email": "string",
+        "phone": "string"
+      }
+    },
+    "artifacts": [
+      {
+        "id": "string",
+        "name": "string",
+        "artist": "string",
+        "year": 0,
+        "medium": "string",
+        "provenance": {
+          "previous_owners": ["string"],
+          "acquisition_date": "string"
+        },
+        "on_display": true,
+        "dimensions": {
+          "height_cm": 0,
+          "width_cm": 0,
+          "depth_cm": 0
+        }
+      }
+    ]
+  }
+}

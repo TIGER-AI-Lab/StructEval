@@ -1,0 +1,24 @@
+<galaxy>
+  <name>Andromeda</name>
+  <constellations>
+    <constellation>Perseus</constellation>
+    <constellation>Cassiopeia</constellation>
+  </constellations>
+  <planets>
+    <planet>
+      <name>Zeta-5</name>
+      <rings>true</rings>
+      <moons>
+        <moon>Echo</moon>
+        <moon>Lira</moon>
+      </moons>
+    </planet>
+    <planet>
+      <name>Xylo-9</name>
+      <rings>false</rings>
+      <moons>
+        <moon>Vex</moon>
+      </moons>
+    </planet>
+  </planets>
+</galaxy>

@@ -1,0 +1,32 @@
+
+[museum]
+name = "The Grand Artistry Museum"
+location = {
+    city = "Paris"
+    country = "France"
+}
+established_year = 1892
+director = "Dr. Elena Voss"
+
+galleries = [
+    {
+        title = "Impressionist Masterpieces"
+        room_number = 5
+        artworks = [
+            {
+                artist = "Claude Monet"
+                title = "Water Lilies"
+                year = 1916
+                medium = "Oil on canvas"
+                dimensions = {
+                    height_cm = 120.5
+                    width_cm = 160.3
+                }
+                on_display = true
+                provenance = {
+                    previous_owners = ["Monet Family", "Private Collection 1920-1950", "National Gallery"]
+                }
+            }
+        ]
+    }
+]

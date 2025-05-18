@@ -1,0 +1,14 @@
+
+import pandas as pd
+
+data = [
+    {'CreatureName': 'Glimmerbat', 'Habitat': 'Crystal Caverns', 'Wingspan_cm': 42, 'Diet': 'Luminous Insects', 'FirstSighting': '2002-10-14', 'Luminosity': 7.5},
+    {'CreatureName': 'Frostfinch', 'Habitat': 'Icy Peaks', 'Wingspan_cm': 18, 'Diet': 'Frozen Berries', 'FirstSighting': '1998-01-23', 'Luminosity': 2.1},
+    {'CreatureName': 'Emberfox', 'Habitat': 'Volcanic Fields', 'Wingspan_cm': 0, 'Diet': 'Ash Mice', 'FirstSighting': '2011-06-30', 'Luminosity': 4.8},
+    {'CreatureName': 'Mossback Turtle', 'Habitat': 'Misty Swamp', 'Wingspan_cm': 0, 'Diet': 'Algae', 'FirstSighting': '1987-04-09', 'Luminosity': 1.3},
+    {'CreatureName': 'Starwhale', 'Habitat': 'Celestial Seas', 'Wingspan_cm': 350, 'Diet': 'Moon Jellyfish', 'FirstSighting': '2017-12-01', 'Luminosity': 9.9},
+    {'CreatureName': 'Duskmoth', 'Habitat': 'Twilight Forest', 'Wingspan_cm': 11, 'Diet': 'Nectar', 'FirstSighting': '2005-08-17', 'Luminosity': 3.6}
+]
+
+df = pd.DataFrame(data)
+df.to_csv('creatures.csv', index=False)

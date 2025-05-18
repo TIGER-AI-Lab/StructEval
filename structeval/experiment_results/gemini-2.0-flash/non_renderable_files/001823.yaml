@@ -1,0 +1,23 @@
+artifact:
+  name: "Rosetta Stone Fragment A"
+  origin:
+    culture: "Ptolemaic Egyptian"
+    period: "Hellenistic Period"
+  materials:
+    primary: "Granodiorite"
+    secondary: ""
+  dimensions:
+    height_cm: 25.0
+    width_cm: 30.5
+    depth_cm: 8.2
+  condition:
+    status: "Fair"
+    notes: "Surface is worn; some text is illegible."
+  exhibitions:
+    - title: "Ancient Scripts Deciphered"
+      date_range:
+        start: "2023-03-15"
+        end: "2024-01-01"
+      location:
+        museum: "The Grand Museum"
+        city: "London"

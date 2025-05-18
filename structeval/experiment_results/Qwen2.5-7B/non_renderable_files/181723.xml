@@ -1,0 +1,43 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def yaml_to_xml(yaml_data):
+    root = ET.Element("root")
+    data = yaml.safe_load(yaml_data)
+    for key, value in data.items():
+        if isinstance(value, dict):
+            sub_element = ET.SubElement(root, key)
+            for sub_key, sub_value in value.items():
+                if isinstance(sub_value, list):
+                    for item in sub_value:
+                        item_element = ET.SubElement(sub_element, sub_key)
+                        item_element.text = item
+                else:
+                    sub_element.set(sub_key, str(sub_value))
+        else:
+            root.set(key, str(value))
+    return ET.tostring(root, encoding='unicode')
+
+yaml_data = """
+galacticCarnival:
+  name: Nebula Fest
+  location:
+    planet: Zogtron
+    galaxy: Andromeda
+  attractions:
+    attraction:
+      - title: Zero Gravity Rollercoaster
+        type: Ride
+      - title: Alien Petting Zoo
+        type: Exhibit
+  staff:
+    member:
+      - name: Xylo Quark
+        role: Coordinator
+      - name: Mira Nova
+        role: Guide
+"""
+
+xml_data = yaml_to_xml(yaml_data)
+print(xml_data)

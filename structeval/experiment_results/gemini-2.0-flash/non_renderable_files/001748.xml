@@ -1,0 +1,82 @@
+
+<recipe>
+    <title>Delicious Chocolate Chip Cookies</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>jane.doe@example.com</contact>
+    </author>
+    <ingredients>
+        <item>
+            <name>Flour</name>
+            <quantity>2.5</quantity>
+            <unit>cups</unit>
+        </item>
+        <item>
+            <name>Sugar</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </item>
+        <item>
+            <name>Butter</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </item>
+        <item>
+            <name>Chocolate Chips</name>
+            <quantity>2</quantity>
+            <unit>cups</unit>
+        </item>
+        <item>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <unit/>
+        </item>
+    </ingredients>
+    <instructions>
+        <entry>
+            <stepNumber>1</stepNumber>
+            <description>Cream together butter and sugar.</description>
+            <timer>
+                <seconds>120</seconds>
+            </timer>
+        </entry>
+        <entry>
+            <stepNumber>2</stepNumber>
+            <description>Beat in eggs.</description>
+            <timer>
+                <seconds>60</seconds>
+            </timer>
+        </entry>
+        <entry>
+            <stepNumber>3</stepNumber>
+            <description>Gradually add flour and chocolate chips.</description>
+            <timer>
+                <seconds>90</seconds>
+            </timer>
+        </entry>
+        <entry>
+            <stepNumber>4</stepNumber>
+            <description>Drop by rounded tablespoons onto baking sheet.</description>
+            <timer>
+                <seconds>30</seconds>
+            </timer>
+        </entry>
+        <entry>
+            <stepNumber>5</stepNumber>
+            <description>Bake at 375 degrees F (190 degrees C) for 10 minutes.</description>
+            <timer>
+                <seconds>600</seconds>
+            </timer>
+        </entry>
+    </instructions>
+    <metadata>
+        <cuisine>American</cuisine>
+        <difficulty>easy</difficulty>
+        <servings>24</servings>
+    </metadata>
+    <nutrition>
+        <calories>150</calories>
+        <fat>8</fat>
+        <carbohydrates>20</carbohydrates>
+    </nutrition>
+</recipe>

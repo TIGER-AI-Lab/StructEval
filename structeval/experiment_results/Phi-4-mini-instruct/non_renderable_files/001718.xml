@@ -1,0 +1,40 @@
+<creature>
+  <name>Draktharion</name>
+  <species>Mythical Dragon</species>
+  <age>500</age>
+  <habitat>
+    <region>Enchanted Forest</region>
+    <climate>Temperate</climate>
+  </habitat>
+  <abilities>
+    <ability>
+      <type>Fire Breath</type>
+      <power_level>9</power_level>
+      <description>Unleashes a torrent of fire capable of incinerating entire villages.</description>
+    </ability>
+    <ability>
+      <type>Flight</type>
+      <power_level>8</power_level>
+      <description>Glides through the skies with unmatched speed and agility.</description>
+    </ability>
+  </abilities>
+  <appearance>
+    <color>Emerald Green</color>
+    <size>Large</size>
+    <distinctive_markings>Scales with golden runes etched into them</distinctive_markings>
+  </appearance>
+  <history>
+    <origin_story>The Draktharion was born from the heart of a dying star, infused with ancient magic.</origin_story>
+    <discovery_date>2023-04-01</discovery_date>
+  </history>
+  <relationships>
+    <relationships>
+      <related_creature>Silverwing</related_creature>
+      <relationship_type>Ally</relationship_type>
+    </relationships>
+    <relationships>
+      <related_creature>Shadowfang</related_creature>
+      <relationship_type>Rival</relationship_type>
+    </relationships>
+  </relationships>
+</creature>

@@ -1,0 +1,22 @@
+<planets>
+  <planet>
+    <name>Xenora</name>
+    <galaxy>Andromeda</galaxy>
+    <discovery_year>2321</discovery_year>
+    <discovery_method>Gravitational Lensing</discovery_method>
+    <discovery_team[0].name>Dr. Mira Tesh</discovery_team[0].name>
+    <discovery_team[0].role>Lead Astronomer</discovery_team[0].role>
+    <discovery_team[1].name>Prof. Halik Zor</discovery_team[1].name>
+    <discovery_team[1].role>Astrobiologist</discovery_team[1].role>
+    <atmosphere.composition[0>Nitrogen</atmosphere.composition[0>
+    <atmosphere.composition[1>Oxygen</atmosphere.composition[1>
+    <atmosphere.composition[2>Argon</atmosphere.composition[2>
+    <atmosphere.pressure>0.95</atmosphere.pressure>
+    <moons[0].name>Phobos</moons[0].name>
+    <moons[0].diameter_km>12.4</moons[0].diameter_km>
+    <moons[1].name>Deimos</moons[1].name>
+    <moons[1].diameter_km>7.6</moons[1].diameter_km>
+    <surface.temperature_celsius>-63</surface.temperature_celsius>
+    <surface.water_presence>Yes</surface.water_presence>
+  </planet>
+</planets>

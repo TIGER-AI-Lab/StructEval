@@ -1,0 +1,29 @@
+
+brewery:
+  name: The Hop Haven Brewery
+  location:
+    city: Boulder
+    country: United States
+  founded_year: 2008
+  owner: James Thompson
+  beers:
+    - name: Sunset IPA
+      style: IPA
+      abv: 6.2
+      awards:
+        - title: Best IPA of the Year
+          year: 2021
+          organization: Craft Beer Awards
+    - name: Dark Matter Stout
+      style: Stout
+      abv: 7.5
+      awards:
+        - title: Best Stout
+          year: 2022
+          organization: International Beer Review
+  tours:
+    available: true
+    schedule:
+      days: ["Monday", "Wednesday", "Friday"]
+      times: ["14:00", "15:30"]
+    languages_supported: ["English", "Spanish", "German"]

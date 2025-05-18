@@ -1,0 +1,31 @@
+{
+  "planet": {
+    "name": "Exoplanet A",
+    "type": "Terrestrial",
+    "discovery": {
+      "year": 2023,
+      "method": "Transit"
+    },
+    "atmosphere": {
+      "composition": ["Nitrogen", "Oxygen", "Argon"],
+      "pressure": 101.3
+    },
+    "moons": [
+      {
+        "name": "Moon A",
+        "diameter_km": 5000,
+        "orbital_period_days": 27,
+        "features": [
+          {
+            "type": "Crater",
+            "description": "A large impact crater with a diameter of 150 km."
+          }
+        ]
+      }
+    ]
+  },
+  "surface": {
+    "temperature_c": -10,
+    "gravity_ms2": 9.8
+  }
+}

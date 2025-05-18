@@ -1,0 +1,31 @@
+
+exhibit:
+  name: "Masterpieces of the Renaissance"
+  curator: "John Doe"
+  opening_date: "2024-03-01"
+rooms:
+  - title: "Room 1: Italian Masters"
+    artworks:
+      - artist: "Leonardo da Vinci"
+        title: "Mona Lisa"
+        year: 1503
+        medium: "Oil on poplar wood"
+        dimensions:
+          height_cm: 77
+          width_cm: 53
+          depth_cm: null
+        provenance: "Acquired by King Francis I in 1518"
+        on_loan: false
+      - artist: "Michelangelo"
+        title: "The Creation of Adam"
+        year: 1508
+        medium: "Sfumato technique on ceiling"
+        dimensions:
+          height_cm: 280
+          width_cm: 460
+          depth_cm: null
+        provenance: "Commissioned by Pope Julius II"
+        on_loan: true
+        loan_details:
+          lender: "The Vatican Museums"
+          return_date: "2025-06-01"

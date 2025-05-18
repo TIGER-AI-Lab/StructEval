@@ -1,0 +1,24 @@
+artifact:
+  name: "Rosetta Stone"
+  origin:
+    culture: "Ancient Egyptian"
+    era: "Ptolemaic Period"
+    discovery_date: "1799-07-15"
+  dimensions:
+    height_cm: 114.4
+    width_cm: 72.3
+  materials:
+    - "Granodiorite"
+  condition:
+    status: "intact"
+    restoration_history:
+      - date: "2004-05-20"
+        description: "Surface cleaning and stabilization"
+  exhibitions:
+    - location: "British Museum"
+      start_date: "1802-03-11"
+      end_date: "2023-10-01"
+      visitor_count: 5000000
+  references:
+    - citation: "Smith, J. (2005). The Rosetta Stone and the Rebirth of Ancient Egypt. London: British Museum Press."
+    - citation: "Brown, A. (2010). Deciphering the Rosetta Stone. New York: Oxford University Press."

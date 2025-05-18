@@ -1,0 +1,31 @@
+<creature>
+    <name>Drakonis Magnus</name>
+    <species>Dragon</species>
+    <age>500</age>
+    <habitat>
+        <region>Mystic Mountains</region>
+        <climate>Temperate</climate>
+    </habitat>
+    <abilities>
+        <ability>
+            <name>Fire Breath</name>
+            <powerLevel>95</powerLevel>
+            <element>Fire</element>
+        </ability>
+        <ability>
+            <name>Wind Gust</name>
+            <powerLevel>80</powerLevel>
+            <element>Air</element>
+        </ability>
+    </abilities>
+    <appearance>
+        <height>15.5</height>
+        <color>Emerald Green</color>
+        <features>
+            <feature>
+                <type>Wing</type>
+                <description>Massive wings with a span of 30 meters</description>
+            </feature>
+        </features>
+    </appearance>
+</creature>

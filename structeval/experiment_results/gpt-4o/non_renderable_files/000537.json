@@ -1,0 +1,46 @@
+{
+  "creatureProfile": {
+    "name": "Aetherial Phoenix",
+    "species": "Mythical Bird",
+    "age": 500,
+    "habitat": {
+      "region": "Mystic Highlands",
+      "climate": "Temperate",
+      "features": [
+        {
+          "type": "Volcanic Crater",
+          "description": "A secluded crater with constant geothermal activity, providing warmth and protection."
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "name": "Rebirth Flame",
+        "level": 10,
+        "cooldownSeconds": 86400
+      },
+      {
+        "name": "Ethereal Flight",
+        "level": 8,
+        "cooldownSeconds": 3600
+      }
+    ],
+    "appearance": {
+      "color": "Iridescent Gold",
+      "size": "Large",
+      "distinctiveMarks": [
+        {
+          "location": "Wings",
+          "markType": "Fiery Plume"
+        }
+      ]
+    },
+    "diet": {
+      "primaryFood": "Celestial Embers",
+      "secondaryFoods": [
+        "Stardust",
+        "Moonlight Nectar"
+      ]
+    }
+  }
+}

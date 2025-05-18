@@ -1,0 +1,33 @@
+exhibit:
+  name: "Impressionist Wonders"
+  curator:
+    full_name: "Dr. Emily Carter"
+    contact:
+      email: "emily.carter@museum.org"
+      phone: "+1-555-0102"
+  artworks:
+    - id: "IMW-001"
+      artist: "Claude Monet"
+      title: "Water Lilies"
+      year: 1916
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 100
+        width_cm: 150
+      provenance:
+        owner: "The Louvre"
+        acquisition_date: "2018-06-15"
+    - id: "IMW-002"
+      artist: "Pierre-Auguste Renoir"
+      title: "Dance at Le Moulin de la Galette"
+      year: 1876
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 130
+        width_cm: 200
+      provenance:
+        owner: "The Metropolitan Museum of Art"
+        acquisition_date: "1999-09-10"
+  schedule:
+    opening_date: "2023-05-01"
+    closing_date: "2023-08-31"

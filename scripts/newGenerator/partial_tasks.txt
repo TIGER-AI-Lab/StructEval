@@ -1,4 +1,0 @@
-Markdown → HTML: 50
-Angular → React: 35
-CSV → JSON: 50
-XML → CSV: 15

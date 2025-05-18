@@ -1,0 +1,32 @@
+
+{
+  "museum": {
+    "name": "The Imaginary Art Museum",
+    "location": {
+      "city": "New York",
+      "country": "USA"
+    },
+    "established_year": 1900,
+    "directors": [
+      {
+        "full_name": "John Doe",
+        "start_date": "2010-01-01"
+      }
+    ],
+    "galleries": [
+      {
+        "title": "Impressionist Gallery",
+        "theme": "Impressionist Art",
+        "artworks": [
+          {
+            "title": "Sunrise",
+            "artist": "Claude Monet",
+            "year_created": 1872,
+            "medium": "Oil on canvas",
+            "dimensions": "120x80 cm"
+          }
+        ]
+      }
+    ]
+  }
+}

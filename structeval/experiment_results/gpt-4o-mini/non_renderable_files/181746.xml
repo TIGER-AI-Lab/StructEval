@@ -1,0 +1,23 @@
+
+<galacticZoo>
+  <species>
+    <speciesItem>
+      <name>Quasar Lynx</name>
+      <originPlanet>Nebulon-5</originPlanet>
+      <diet>Plasma</diet>
+      <abilities>
+        <ability>Invisibility</ability>
+        <ability>Teleportation</ability>
+      </abilities>
+    </speciesItem>
+    <speciesItem>
+      <name>Photon Finch</name>
+      <originPlanet>Luminara</originPlanet>
+      <diet>Solar Flares</diet>
+      <abilities>
+        <ability>Sonic Chirp</ability>
+        <ability>Light Manipulation</ability>
+      </abilities>
+    </speciesItem>
+  </species>
+</galacticZoo>

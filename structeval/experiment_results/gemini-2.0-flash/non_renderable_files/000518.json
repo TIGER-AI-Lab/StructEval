@@ -1,0 +1,39 @@
+{
+  "artifact": {
+    "name": "Rosetta Stele Minor",
+    "period": "Ptolemaic Period",
+    "origin": {
+      "civilization": "Ancient Egyptian",
+      "region": "Lower Egypt"
+    },
+    "discovery": {
+      "date": "2024-03-15",
+      "location": {
+        "latitude": 31.3070,
+        "longitude": 30.4820
+      }
+    },
+    "materials": [
+      "granodiorite"
+    ],
+    "dimensions": {
+      "height_cm": 60.0,
+      "width_cm": 40.0,
+      "depth_cm": 15.0
+    },
+    "inscriptions": [
+      {
+        "language": "Ancient Greek",
+        "text": "ÎÎ±ÏÎ¹Î»Îµá½ºÏ Î ÏÎ¿Î»ÎµÎ¼Î±á¿Î¿Ï, Î¸Îµá½¸Ï á¼ÏÎ¹ÏÎ±Î½Î®Ï, Îµá½ÏÎ±ÏÎ¹ÏÏÎ®ÏÎ¹Î¿Î½",
+        "translation": "King Ptolemy, god Epiphanes, a thank offering.",
+        "condition": "intact"
+      },
+      {
+        "language": "Demotic",
+        "text": "pê£-á¸¥á¸ n pê£-ná¹¯r ptlmys ê¥ná¸« á¸d wê£s",
+        "translation": "The glory of the god Ptolemy, may he live forever.",
+        "condition": "fragmentary"
+      }
+    ]
+  }
+}

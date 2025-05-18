@@ -1,0 +1,26 @@
+
+expedition:
+  mission_name: "Abyssal Frontier"
+  launch_date: "2024-05-15"
+  duration_days: 120
+  crew:
+    - name: "Dr. Emily Carter"
+      role: "Marine Biologist"
+      age: 38
+      skills:
+        - "Underwater Photography"
+        - "Species Identification"
+        - "Deep-Sea Sampling"
+    - name: "Captain Liam Nguyen"
+      role: "Expedition Leader"
+      age: 45
+      skills:
+        - "Navigation"
+        - "Submersible Operation"
+        - "Emergency Response"
+  cargo:
+    manifest_id: "CF-2024-EXP001"
+    items:
+      - item_name: "Deep-Sea Submersible"
+        quantity: 2
+        weight_kg: 15000.5

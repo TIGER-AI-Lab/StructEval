@@ -1,0 +1,2 @@
+artifact_id,artifact_name,origin_civilization,discovery_date,material.primary,material.secondary,estimated_age_years,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,location.site_name,location.latitude,location.longitude,current_condition.status,current_condition.restoration_needed,notable_markings[0].type,notable_markings[0].description
+"001","Golden Mask","Ancient Egypt","1922-11-04","Gold","Glass","3300",54.0,39.0,49.0,"Valley of the Kings",25.7402,32.6014,"intact",false,"inscription","Hieroglyphs depicting the name of Pharaoh Tutankhamun"

@@ -1,0 +1,51 @@
+
+[
+  {
+    "mission_name": "Odyssey Alpha",
+    "launch": {
+      "date": "2042-07-16",
+      "site": "Artemis Launch Complex",
+      "crew": [
+        {
+          "name": "Dr. Jane Star",
+          "role": "Commander"
+        },
+        {
+          "name": "Alex Vega",
+          "role": "Pilot"
+        }
+      ]
+    },
+    "spacecraft": {
+      "model": "Orion-X",
+      "serial_number": "OX-2042-07",
+      "payloads": [
+        {
+          "type": "Satellite",
+          "mass_kg": 1200
+        },
+        {
+          "type": "Probe",
+          "mass_kg": 400
+        }
+      ]
+    },
+    "objectives": {
+      "primary": "Explore Europa's ocean",
+      "secondary": "Test new propulsion"
+    },
+    "results": {
+      "success": true,
+      "science_data": [
+        {
+          "experiment": "Ice Composition",
+          "findings": "Detected organic molecules"
+        },
+        {
+          "experiment": "Magnetic Field",
+          "findings": "Strong anomalies observed"
+        }
+      ]
+    }
+  }
+]

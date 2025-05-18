@@ -1,0 +1,33 @@
+
+artifact:
+  metadata:
+    name: "Crown of the Sun God"
+    discovery_date: "2023-04-15"
+    origin_civilization: "Ancient Egypt"
+    current_location: "Museum of Antiquities"
+  specifications:
+    dimensions:
+      length_cm: 120
+      width_cm: 30
+      height_cm: 20
+    materials:
+      - gold
+      - lapis lazuli
+      - copper
+    age_years: 3000
+  analysis:
+    hypotheses:
+      - summary: "Used as a royal regalia"
+        confidence_score: 0.85
+      - summary: "A ceremonial object for religious rituals"
+        confidence_score: 0.72
+    researchers:
+      - name: "Dr. Alice Johnson"
+        institution: "University of Archaeology"
+        contribution: "Conducted material analysis"
+      - name: "Dr. Bob Smith"
+        institution: "Institute of Ancient Studies"
+        contribution: "Performed radiocarbon dating"
+  related_artifacts:
+    - "Scepter of the Pharaoh"
+    - "Golden Mask"

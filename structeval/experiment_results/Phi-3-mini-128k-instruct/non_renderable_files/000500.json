@@ -1,0 +1,44 @@
+{
+  "novel": {
+    "title": "The Enchanted Forest",
+    "author": {
+      "name": "Alice Wonders",
+      "birth_year": 1985
+    },
+    "publication": {
+      "year": 2021,
+      "publisher": "Fantasy Realms Publishing"
+    },
+    "genres": ["Fantasy", "Adventure", "Young Adult"]
+  },
+  "characters": [
+    {
+      "name": "Evelyn Starlight",
+      "role": "protagonist",
+      "traits": ["brave", "curious", "kind-hearted"]
+    },
+    {
+      "name": "Morgath Shadowend",
+      "role": "antagonist",
+      "traits": ["cunning", "power-hungry", "misguided"]
+    }
+  ],
+  "chapters": [
+    {
+      "title": "The Whispering Woods",
+      "word_count": 3500,
+      "events": [
+        "Evelyn discovers a hidden path in the forest.",
+        "She encounters a talking fox who warns her of Morgath's plans."
+      ]
+    },
+    {
+      "title": "The Glimmering Lake",
+      "word_count": 4200,
+      "events": [
+        "Evelyn and the fox find a magical lake that grants visions.",
+        "They learn about Morgath's true intentions."
+      ]
+    }
+  ]
+}

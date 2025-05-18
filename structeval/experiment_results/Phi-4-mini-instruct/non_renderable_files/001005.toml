@@ -1,0 +1,31 @@
+
+[artifact]
+name = "Ancient Vase"
+
+[artifact.origin]
+civilization = "Minoan"
+era = "Bronze Age"
+location = "Crete, Greece"
+
+[artifact.materials]
+primary = "Clay"
+secondary = "Gold Leaf"
+decorations = [
+  [type = "Geometric Pattern", color = "Blue"]
+  [type = "Mythological Scene", color = "Red"]
+]
+
+[artifact.dimensions]
+height_cm = 45
+width_cm = 30
+weight_kg = 5
+
+[artifact.inscriptions]
+inscriptions = [
+  [language = "Linear A", text = "ððððð"]
+  [language = "Linear B", text = "ððððð"]
+]
+
+[artifact.current_location]
+museum = "Heraklion Archaeological Museum"
+exhibit_number = "A-45"

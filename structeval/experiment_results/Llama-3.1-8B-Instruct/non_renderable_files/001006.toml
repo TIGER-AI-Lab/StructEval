@@ -1,0 +1,38 @@
+
+recipe = {
+  title = "Delicious Chicken Fajitas",
+  author = {
+    name = "John Doe",
+    contact = {
+      email = "john.doe@example.com",
+      phone = "+1-123-456-7890"
+    }
+  },
+  ingredients = [
+    {
+      name = "Chicken breast",
+      quantity = 500,
+      unit = "g"
+    },
+    {
+      name = "Bell peppers",
+      quantity = 2,
+      unit = "cups"
+    }
+  ],
+  steps = [
+    {
+      instruction = "Slice the chicken and bell peppers into thin strips.",
+      duration_minutes = 10
+    },
+    {
+      instruction = "Heat a large skillet over medium-high heat and cook the chicken and bell peppers for 5-7 minutes.",
+      duration_minutes = 7
+    }
+  ],
+  metadata = {
+    servings = 4,
+    cuisine = "Mexican",
+    difficulty = "medium"
+  }
+}

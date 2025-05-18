@@ -1,0 +1,88 @@
+
+<recipe>
+    <title>Spaghetti Carbonara</title>
+    <author>
+        <name>John Doe</name>
+        <contact>
+            <email>johndoe@example.com</email>
+            <phone>+1234567890</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Bacon</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>3</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Parmesan cheese</name>
+            <quantity>50</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Black pepper</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <stepNumber>1</stepNumber>
+            <description>Boil water in a large pot and add salt.</description>
+            <timer>
+                <duration>PT10M</duration>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>2</stepNumber>
+            <description>Add spaghetti to the boiling water and cook according to package instructions.</description>
+            <timer>
+                <duration>PT8M</duration>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>3</stepNumber>
+            <description>In a pan, cook the bacon until crispy.</description>
+            <timer>
+                <duration>PT5M</duration>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>4</stepNumber>
+            <description>Beat the eggs in a bowl and mix in grated Parmesan cheese and black pepper.</description>
+            <timer>
+                <duration>PT2M</duration>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>5</stepNumber>
+            <description>Drain the spaghetti and mix it with the bacon and egg mixture.</description>
+            <timer>
+                <duration>PT3M</duration>
+            </timer>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>600</calories>
+        <fat>25</fat>
+        <protein>30</protein>
+    </nutrition>
+    <tags>
+        <label>Italian</label>
+        <label>pasta</label>
+        <label>quick meal</label>
+    </tags>
+    <metadata>
+        <createdDate>2023-10-01</createdDate>
+    </metadata>
+</recipe>

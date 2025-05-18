@@ -1,0 +1,30 @@
+
+[recipe]
+title = "Spaghetti Carbonara"
+[recipe.author]
+name = "John Doe"
+[email] = "john.doe@example.com"
+[recipe.author.contact]
+phone = "+1234567890"
+[recipe.ingredients]
+[[recipe.ingredients]]
+name = "Spaghetti"
+amount = 400
+unit = "grams"
+[[recipe.ingredients]]
+name = "Eggs"
+amount = 4
+unit = "pieces"
+[recipe.steps]
+[[recipe.steps]]
+description = "Cook spaghetti according to package instructions."
+duration_minutes = 10
+[[recipe.steps]]
+description = "In a separate pan, fry pancetta until crispy."
+duration_minutes = 5
+[recipe.metadata]
+cuisine = "Italian"
+difficulty = "easy"
+[recipe.metadata.tags]
+- "pasta"
+- "classical"

@@ -1,0 +1,34 @@
+
+planet:
+  name: "Xylophar"
+  type: "Gas Giant"
+  moons:
+    - "Iolet"
+    - "Cresca"
+    - "Druval"
+  discovery:
+    year: 2378
+    method: "Gravitational Microlensing"
+  atmosphere:
+    composition:
+      - "Hydrogen"
+      - "Helium"
+      - "Methane"
+    pressure: 120
+    temperature: -145
+  surface:
+    features:
+      - "Storm Bands"
+      - "Metallic Hydrogen Core"
+    gravity: 24.8
+    water_present: false
+  colonization:
+    missions: 3
+    successful: 1
+  colonization:
+    - name: "Cloudspire"
+      population: 1200
+      founded: 2390
+    - name: "Heliohaven"
+      population: 800
+      founded: 2401

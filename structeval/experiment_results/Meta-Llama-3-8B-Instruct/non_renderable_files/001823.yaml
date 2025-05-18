@@ -1,0 +1,24 @@
+
+artifact:
+  name: "The Celestial Sphere"
+  origin:
+    culture: "Ancient Mesopotamian"
+    period: "Early Dynastic Period"
+  materials:
+    primary: "Lapis Lazuli"
+    secondary: ""
+  dimensions:
+    height_cm: 25
+    width_cm: 18
+    depth_cm: 10
+  condition:
+    status: "Excellent"
+    notes: ""
+  exhibitions:
+    - title: "Treasures of Mesopotamia"
+      date_range:
+        start: "2022-01-01T00:00:00Z"
+        end: "2022-06-30T00:00:00Z"
+      location:
+        museum: "The British Museum"
+        city: "London"

@@ -1,0 +1,49 @@
+
+{
+  "creature": {
+    "species": "Glimmerwing",
+    "habitat": {
+      "region": "Aurora Forest",
+      "climate": "temperate",
+      "features": [
+        "Luminous tree canopy",
+        "Crystal-clear streams"
+      ]
+    },
+    "appearance": {
+      "size": 0.5,
+      "color": {
+        "primary": "iridescent blue",
+        "secondary": null
+      }
+    },
+    "abilities": [
+      {
+        "name": "Glimmer Shield",
+        "power_level": 6,
+        "cooldown_seconds": 30
+      },
+      {
+        "name": "Illumination",
+        "power_level": 8,
+        "cooldown_seconds": 60
+      }
+    ],
+    "behavior": {
+      "diet": {
+        "type": "omnivore",
+        "favorite_foods": [
+          "Glimmerberries"
+        ]
+      },
+      "social": {
+        "is_social": true,
+        "group_size": 5
+      }
+    },
+    "discovery": {
+      "discovery_date": "2022-03-15",
+      "discoverer": "Dr. Sophia Patel"
+    }
+  }
+}

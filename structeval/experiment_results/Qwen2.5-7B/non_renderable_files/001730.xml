@@ -1,0 +1,81 @@
+
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>John Doe</name>
+    <role>chef</role>
+  </author>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>easy</difficulty>
+    <servings>4</servings>
+    <tags>spaghetti, carbonara, italian, comfort food</tags>
+  </metadata>
+  <ingredients>
+    <item>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+    </item>
+    <item>
+      <name>Chicken breast</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </item>
+    <item>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+    </item>
+    <item>
+      <name>Parmesan cheese</name>
+      <quantity>50</quantity>
+      <unit>grams</unit>
+    </item>
+    <item>
+      <name>Black pepper</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </item>
+  </ingredients>
+  <steps>
+    <item>
+      <instruction>Boil spaghetti in salted water until al dente.</instruction>
+      <duration_minutes>10</duration_minutes>
+      <tools>pot, pasta strainer</tools>
+    </item>
+    <item>
+      <instruction>Meanwhile, cook chicken breast in a pan until cooked through.</instruction>
+      <duration_minutes>5</duration_minutes>
+      <tools>pan, spatula</tools>
+    </item>
+    <item>
+      <instruction>Whisk eggs, Parmesan cheese, and black pepper together in a bowl.</instruction>
+      <duration_minutes>2</duration_minutes>
+      <tools>bowl, whisk</tools>
+    </item>
+    <item>
+      <instruction>Add cooked chicken to the egg mixture and stir to combine.</instruction>
+      <duration_minutes>1</duration_minutes>
+      <tools>bowl, spoon</tools>
+    </item>
+    <item>
+      <instruction>Drain spaghetti and add it to the egg mixture, tossing to coat.</instruction>
+      <duration_minutes>2</duration_minutes>
+      <tools>spoon, pasta strainer</tools>
+    </item>
+    <item>
+      <instruction>Serve hot.</instruction>
+      <duration_minutes>1</duration_minutes>
+      <tools>plate</tools>
+    </item>
+  </steps>
+  <nutrition>
+    <calories>600</calories>
+    <macros>
+      <protein>30</protein>
+      <carbohydrates>40</carbohydrates>
+      <fat>20</fat>
+    </macros>
+  </nutrition>
+</recipe>

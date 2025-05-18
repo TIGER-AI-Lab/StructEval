@@ -1,0 +1,38 @@
+
+expedition:
+  name: "Galactic Odyssey"
+  launch_date: "2045-06-15"
+  destination:
+    planet: "Zyphor"
+    moons:
+      - "Lunara"
+      - "Triton"
+      - "Elysium"
+  crew:
+    - role: "Commander"
+      name: "Dr. Elara Voss"
+      age: 38
+      skills:
+        - "Astrobiology"
+        - "Navigation"
+        - "Leadership"
+    - name: "Lt. Orion Hale"
+      skills:
+        - "Engineering"
+        - "Robotics"
+        - "Survival Training"
+  cargo:
+    supplies:
+      food_kg: 1200
+      water_liters: 5000
+    equipment:
+      - type: "Rover"
+        quantity: 3
+      - type: "Drone"
+        quantity: 5
+  mission_objectives:
+    primary: "Conduct a comprehensive survey of Zyphor's atmosphere and surface."
+    secondary:
+      - "Collect soil samples from Lunara."
+      - "Analyze potential for microbial life."
+      - "Map geological features of Elysium."

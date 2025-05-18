@@ -1,0 +1,21 @@
+{
+  "name": "Imaginarium of Oddities",
+  "location": {
+    "city": "Whimsyville",
+    "country": "Fantasia"
+  },
+  "exhibits": {
+    "exhibit": [
+      {
+        "title": "The Clockwork Fish",
+        "artist": "Dr. Cogsworth",
+        "year": 1899
+      },
+      {
+        "title": "Invisible Portrait",
+        "artist": "Luna Mirage",
+        "year": 2022
+      }
+    ]
+  }
+}

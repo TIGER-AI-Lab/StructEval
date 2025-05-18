@@ -1,0 +1,30 @@
+
+<spaceStation>
+  <name>Nebula Outpost</name>
+  <modules>
+    <module>
+      <name>Hydroponics</name>
+      <equipment>
+        <item>GrowLights</item>
+        <item>NutrientTanks</item>
+      </equipment>
+    </module>
+    <module>
+      <name>Observatory</name>
+      <equipment>
+        <item>Telescope</item>
+        <item>RadiationShield</item>
+      </equipment>
+    </module>
+  </modules>
+  <crewMembers>
+    <crewMember>
+      <name>Dr. Vega</name>
+      <role>Botanist</role>
+    </crewMember>
+    <crewMember>
+      <name>Lt. Orion</name>
+      <role>Engineer</role>
+    </crewMember>
+  </crewMembers>
+</spaceStation>

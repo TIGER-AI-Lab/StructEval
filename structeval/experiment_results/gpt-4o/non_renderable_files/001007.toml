@@ -1,0 +1,31 @@
+
+[robot]
+model = "RX-9000"
+serial_number = "SN123456789"
+
+[robot.manufacturer]
+name = "RoboTech Industries"
+country = "USA"
+
+[robot.operating_system]
+version = "3.2.1"
+release_date = "2023-05-15"
+
+[[robot.sensors]]
+type = "lidar"
+range_meters = 100.0
+calibrated = true
+
+[[robot.sensors]]
+type = "camera"
+range_meters = 50.0
+calibrated = false
+
+[[robot.actuators]]
+name = "gripper"
+max_force_newtons = 150.0
+status = "active"
+
+[robot.maintenance]
+last_service = "2023-08-01"
+next_due = "2024-02-01"

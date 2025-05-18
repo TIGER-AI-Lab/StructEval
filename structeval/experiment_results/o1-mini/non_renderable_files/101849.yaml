@@ -1,0 +1,37 @@
+
+galactic_zoo:
+  name: "Nebula Fauna Reserve"
+  open_year: 3128
+  location:
+    planet: "Xylo-9"
+    sector: "Theta Prime"
+    galaxy: "Andromeda"
+  species:
+    - name: "Quasar Lynx"
+      origin: "Pulsar Ridge"
+      diet: "plasma"
+      enclosure:
+        size: 1200
+        atmosphere: "ionized hydrogen"
+      caretakers:
+        - name: "Zel Tora"
+          species: "Andromedan"
+        - name: "Pax Lume"
+          species: "Xylonite"
+    - name: "Stellar Manta"
+      origin: "Nebulae Streams"
+      diet: "cosmic dust"
+      enclosure:
+        size: 900
+        atmosphere: "neon-methane"
+      caretakers:
+        - name: "Rin Sola"
+          species: "Terran"
+  visitor_stats:
+    annual_visitors: 1200000
+    favorite_species: "Quasar Lynx"
+  hologram_tours:
+    enabled: true
+    languages:
+      - "Galactic Standard"
+      - "Andromedan"

@@ -1,0 +1,35 @@
+{
+  "id": "SS-42",
+  "name": "Starfire",
+  "class": "Explorer",
+  "captain": "Jane Nova",
+  "first_officer": "Tom Quasar",
+  "engineer_1": {
+    "name": "Lila Sparks",
+    "specialty": "Propulsion"
+  },
+  "engineer_2": {
+    "name": "Max Volt",
+    "specialty": "Shields"
+  },
+  "length_m": 120,
+  "mass_tons": 5000,
+  "weapon_1": {
+    "type": "Plasma Cannon",
+    "power_gw": 2.5
+  },
+  "weapon_2": {
+    "type": "Laser Array",
+    "power_gw": 1.1
+  },
+  "mission_1": {
+    "name": "Alpha Run",
+    "destination": "Proxima Centauri",
+    "success": true
+  },
+  "mission_2": {
+    "name": "Rescue Dawn",
+    "destination": "Betelgeuse",
+    "success": false
+  }
+}

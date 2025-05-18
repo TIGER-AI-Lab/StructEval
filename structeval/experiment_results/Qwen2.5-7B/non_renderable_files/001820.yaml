@@ -1,0 +1,33 @@
+ecosystem:
+  name: Amazon Rainforest
+  location:
+    region: South America
+    latitude: -2.0
+    longitude: -70.0
+  climate:
+    type: Tropical
+    average_temperature_celsius: 26
+    rainfall_mm_per_year: 2500
+  species:
+    - common_name: Jaguar
+      scientific_name: Panthera onca
+      population_estimate: 15000
+      conservation_status: Vulnerable
+      diet: Carnivore
+      notable_adaptations:
+        - Strong jaws and teeth for hunting
+        - Excellent night vision
+      sightings:
+        - date: 2021-07-15
+          location_description: Near the Rio Negro
+    - common_name: Harpy Eagle
+      scientific_name: Harpia harpyja
+      population_estimate: 2500
+      conservation_status: Near Threatened
+      diet: Carnivore
+      notable_adaptations:
+        - Sharp talons for catching prey
+        - Powerful wings for soaring
+      sightings:
+        - date: 2021-08-20
+          location_description: In the canopy of the tallest trees

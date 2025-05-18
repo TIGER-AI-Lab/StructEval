@@ -1,0 +1,68 @@
+
+recipe:
+  title: "Spaghetti Carbonara"
+  author:
+    name: "John Doe"
+    profile_url: "https://example.com/johndoe"
+  metadata:
+    cuisine: "Italian"
+    difficulty: "easy"
+    servings: 4
+    tags:
+      - "pasta"
+      - "dinner"
+      - "vegetarian"
+  ingredients:
+    - name: "Spaghetti"
+      quantity: 200
+      unit: "grams"
+      optional: false
+    - name: "Eggs"
+      quantity: 4
+      unit: "pieces"
+      optional: false
+    - name: "Pancetta"
+      quantity: 100
+      unit: "grams"
+      optional: false
+    - name: "Parmesan cheese"
+      quantity: 50
+      unit: "grams"
+      optional: true
+  steps:
+    - instruction: "Cook spaghetti according to package instructions."
+      duration_minutes: 10
+      tools:
+        - "pot"
+        - "spoon"
+    - instruction: "Cook pancetta in a pan until crispy."
+      duration_minutes: 5
+      tools:
+        - "pan"
+        - "spatula"
+    - instruction: "In a bowl, whisk eggs and Parmesan cheese together."
+      duration_minutes: 0
+      tools:
+        - "bowl"
+        - "whisk"
+    - instruction: "Add cooked pancetta to the egg mixture and stir."
+      duration_minutes: 0
+      tools:
+        - "bowl"
+        - "spoon"
+    - instruction: "Drain spaghetti and add to the egg mixture."
+      duration_minutes: 0
+      tools:
+        - "bowl"
+        - "spoon"
+    - instruction: "Toss everything together until well combined."
+      duration_minutes: 0
+      tools:
+        - "bowl"
+        - "spoon"
+  nutritional_info:
+    calories: 500
+    macros:
+      protein: 20
+      fat: 25
+      carbohydrates: 30

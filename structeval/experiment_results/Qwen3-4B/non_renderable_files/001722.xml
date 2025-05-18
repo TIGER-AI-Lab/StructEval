@@ -1,0 +1,36 @@
+
+<recipe>
+  <title>Spaghetti Aglio e Olio</title>
+  <author>
+    <name>John Doe</name>
+    <contact>
+      <email>john.doe@example.com</email>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Garlic</name>
+      <quantity>5</quantity>
+      <unit>cloves</unit>
+    </ingredient>
+    <ingredient>
+      <name>Olive Oil</name>
+      <quantity>2</quantity>
+      <unit>cups</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <order>1</order>
+      <description>SautÃ© garlic in olive oil over medium heat.</description>
+    </step>
+    <step>
+      <order>2</order>
+      <description>Toss with spaghetti and season to taste.</description>
+    </step>
+  </instructions>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <prepTime>PT30M</prepTime>
+  </metadata>
+</recipe>

@@ -1,0 +1,26 @@
+[recipe]
+title = "Creamy Mushroom Risotto"
+chef = {
+    name = "Chef Emily Carter"
+    experience_years = 10
+}
+ingredients = [
+    ["Arborio rice", 150, "grams"],
+    ["Chicken stock", 500, "ml"]
+]
+instructions = [
+    {
+        step = "Heat the stock in a separate pot and keep it warm."
+        time_minutes = 5
+    },
+    {
+        step = "In a large pan, sautÃ© the chopped onions and garlic until translucent."
+        time_minutes = 10
+    }
+]
+nutrition = {
+    calories = 450
+    protein_grams = 12
+    fat_grams = 10
+}
+tags = ["Italian", "Vegetarian", "Main Course"]

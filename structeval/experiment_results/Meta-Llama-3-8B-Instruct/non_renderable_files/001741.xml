@@ -1,0 +1,28 @@
+
+&lt;planet&gt;
+    &lt;name&gt;Xylophia-IV&lt;/name&gt;
+    &lt;mass&gt;1.23e22&lt;/mass&gt;
+    &lt;orbit&gt;
+        &lt;distance&gt;1.45&lt;/distance&gt;
+        &lt;period&gt;365&lt;/period&gt;
+    &lt;/orbit&gt;
+    &lt;atmosphere&gt;
+        &lt;composition&gt;Nitrogen, Oxygen, Argon&lt;/composition&gt;
+        &lt;pressure&gt;101.3&lt;/pressure&gt;
+    &lt;/atmosphere&gt;
+    &lt;moons&gt;
+        &lt;moon&gt;
+            &lt;name&gt;Xylophia-IVb&lt;/name&gt;
+            &lt;radius&gt;234.5&lt;/radius&gt;
+            &lt;discovered_by&gt;Astronomer Jane Smith&lt;/discovered_by&gt;
+            &lt;discovery_date&gt;2022-07-15&lt;/discovery_date&gt;
+        &lt;/moon&gt;
+    &lt;/moons&gt;
+    &lt;rings&gt;
+        &lt;ring&gt;
+            &lt;inner_radius&gt;100000&lt;/inner_radius&gt;
+            &lt;outer_radius&gt;200000&lt;/outer_radius&gt;
+            &lt;composition&gt;Rocky debris, Ice&lt;/composition&gt;
+        &lt;/ring&gt;
+    &lt;/rings&gt;
+&lt;/planet&gt;

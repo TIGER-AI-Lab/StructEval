@@ -1,0 +1,91 @@
+[recipe]
+title = "Spicy Peanut Noodles"
+
+[recipe.author]
+name = "Jane Doe"
+
+[recipe.author.contact]
+email = "jane.doe@email.com"
+
+[[recipe.ingredients]]
+name = "Noodles"
+quantity = 200
+unit = "g"
+notes = "Use dried egg noodles or ramen noodles."
+allergen = "gluten"
+
+[[recipe.ingredients]]
+name = "Peanut Butter"
+quantity = 60
+unit = "g"
+notes = "Smooth or crunchy, your preference."
+allergen = "peanuts"
+
+[[recipe.ingredients]]
+name = "Soy Sauce"
+quantity = 30
+unit = "ml"
+notes = ""
+allergen = "soy"
+
+[[recipe.ingredients]]
+name = "Sriracha"
+quantity = 15
+unit = "ml"
+notes = "Adjust to your spice preference."
+allergen = ""
+
+[[recipe.ingredients]]
+name = "Lime Juice"
+quantity = 15
+unit = "ml"
+notes = "Freshly squeezed is best."
+allergen = ""
+
+[[recipe.ingredients]]
+name = "Sesame Oil"
+quantity = 5
+unit = "ml"
+notes = ""
+allergen = "sesame"
+
+[[recipe.ingredients]]
+name = "Scallions"
+quantity = 2
+unit = "stalks"
+notes = "Chopped, for garnish."
+allergen = ""
+
+
+[[recipe.steps]]
+description = "Cook noodles according to package directions."
+duration_minutes = 8
+equipment = "Pot"
+temperature_celsius = 100
+
+[[recipe.steps]]
+description = "Whisk together peanut butter, soy sauce, sriracha, lime juice, and sesame oil in a bowl."
+duration_minutes = 5
+equipment = "Bowl, Whisk"
+temperature_celsius = 25
+
+[[recipe.steps]]
+description = "Drain the cooked noodles and add them to the sauce. Toss to coat."
+duration_minutes = 2
+equipment = "Bowl"
+temperature_celsius = 25
+
+[[recipe.steps]]
+description = "Garnish with chopped scallions."
+duration_minutes = 1
+equipment = ""
+temperature_celsius = 25
+
+
+[recipe.nutrition]
+calories = 600
+
+[recipe.nutrition.macronutrients]
+protein_g = 20
+carbs_g = 70
+fat_g = 30

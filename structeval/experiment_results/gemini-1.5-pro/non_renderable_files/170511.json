@@ -1,0 +1,54 @@
+{
+  "galaxy": {
+    "name": "Andromeda XZ",
+    "star_systems": {
+      "star_system": [
+        {
+          "system_name": "Solara Prime",
+          "planets": {
+            "planet": {
+              "planet_name": "Veridia",
+              "inhabitants": {
+                "inhabitant": [
+                  {
+                    "species": "Glowlings",
+                    "population": 120000
+                  },
+                  {
+                    "species": "Rocksprites",
+                    "population": 5000
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "system_name": "Quanta Minor",
+          "planets": {
+            "planet": [
+              {
+                "planet_name": "Azurith",
+                "inhabitants": {
+                  "inhabitant": {
+                    "species": "None",
+                    "population": 0
+                  }
+                }
+              },
+              {
+                "planet_name": "Pyronia",
+                "inhabitants": {
+                  "inhabitant": {
+                    "species": "Flamites",
+                    "population": 8700
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

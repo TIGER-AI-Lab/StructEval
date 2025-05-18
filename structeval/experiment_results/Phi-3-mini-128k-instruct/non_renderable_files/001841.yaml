@@ -1,0 +1,23 @@
+artifact:
+  name: "The Rosetta Stone"
+  type: "inscription"
+  discovery_date: "1799-07-15"
+  artifact.origin:
+    civilization: "Ptolemaic Egypt"
+    era: "Hellenistic Period"
+    artifact.origin.location:
+      latitude: 31.7393
+      longitude: 25.8931
+  materials:
+    - name: "Granite"
+      percentage: 90
+    - name: "Lapis Lazuli"
+      percentage: 10
+  artifact.dimensions:
+    height_cm: 45
+    width_cm: 34
+  features:
+    - description: "Contains inscriptions in three scripts."
+      significance: "Key to deciphering Egyptian hieroglyphs."
+    - description: "Inscribed with a decree issued in Memphis."
+      significance: "Provides insight into the administrative practices of ancient Egypt."

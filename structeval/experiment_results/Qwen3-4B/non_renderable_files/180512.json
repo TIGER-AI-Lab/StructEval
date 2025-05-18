@@ -1,0 +1,47 @@
+
+{
+  "planet_name": "Zephyra-9",
+  "system": {
+    "star_name": "Solara",
+    "distance_from_earth_ly": 1420,
+    "planets": [
+      {
+        "name": "Zephyra-9a",
+        "type": "terrestrial",
+        "moons": ["Lunara", "Thalassa"]
+      },
+      {
+        "name": "Zephyra-9b",
+        "type": "gas_giant",
+        "moons": ["Borealis"]
+      }
+    ]
+  },
+  "flora": {
+    "dominant_species": "Aetherbloom",
+    "characteristics": {
+      "color": "iridescent blue",
+      "height_m": 2.5
+    }
+  },
+  "fauna": {
+    "species_list": [
+      {
+        "name": "Skyrunner",
+        "diet": "herbivore"
+      },
+      {
+        "name": "Shadowfang",
+        "diet": "carnivore"
+      }
+    ]
+  },
+  "atmosphere": {
+    "composition": "oxygen-nitrogen-argon",
+    "pressure_kpa": 98
+  },
+  "exploration_status": {
+    "last_mission": "Aurora VI",
+    "human_presence": true
+  }
+}

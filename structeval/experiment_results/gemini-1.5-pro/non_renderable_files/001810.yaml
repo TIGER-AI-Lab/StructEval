@@ -1,0 +1,37 @@
+exhibit:
+  title: "Deconstructing Reality"
+  curator:
+    name: "Dr. Anya Sharma"
+    contact:
+      email: "anya.sharma@museum.org"
+      phone: "+1-555-123-4567"
+  opening_date: "2024-03-15"
+  closing_date: "2024-06-10"
+  rooms:
+    - name: "Introspection"
+      theme: "Exploring the inner self through abstract expressionism"
+      artworks:
+        - artist: "Jean-Paul Dubois"
+          title: "Untitled I"
+          year: 1958
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 120
+            width_cm: 100
+          provenance: "Private collection, Paris"
+        - artist: "Maria Sanchez"
+          title: "The Scream"
+          year: 1962
+          medium: "Mixed media"
+          dimensions:
+            height_cm: 80
+            width_cm: 60
+          provenance: "Museum of Modern Art, New York"
+        - artist: "Hiroshi Tanaka"
+          title: "Zen Garden"
+          year: 1975
+          medium: "Acrylic on wood panel"
+          dimensions:
+            height_cm: 150
+            width_cm: 200
+          provenance: "National Gallery, Tokyo"

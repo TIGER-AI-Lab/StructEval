@@ -1,0 +1,14 @@
+
+galacticZoo:
+  name: Nebula Fauna Sanctuary
+  location:
+    planet: Xyphos-9
+    sector: Orion Delta
+  exhibits:
+    exhibit:
+      - species: Quantum Lemur
+        origin: Nebula Forests
+        numberOfSpecimens: 7
+      - species: Solar Jellyfish
+        origin: Plasma Oceans
+        numberOfSpecimens: 12

@@ -1,0 +1,25 @@
+
+artifact:
+  name: "The Celestial Sphere"
+  origin:
+    civilization: "Ancient Sumerians"
+    era: "Uruk Period"
+  composition:
+    - type: "Lapis Lazuli"
+      percentage: 70
+    - type: "Gold"
+      percentage: 30
+  dimensions:
+    height_cm: 25
+    width_cm: 20
+    depth_cm: 10
+  discovery:
+    location:
+      country: "Iraq"
+      site: "Ur"
+    date: "2022-01-01"
+  features:
+    - description: "Intricate astronomical symbols etched into the surface"
+      is_unique: true
+    - description: "Delicate filigree work adorning the edges"
+      is_unique: false

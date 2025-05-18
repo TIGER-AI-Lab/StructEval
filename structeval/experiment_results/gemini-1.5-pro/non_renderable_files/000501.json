@@ -1,0 +1,43 @@
+{
+  "museum": {
+    "name": "Museum of Imaginary Arts",
+    "location": {
+      "address": "123 Fantasy Lane",
+      "city": "Dreamhaven",
+      "country": "Atheria"
+    },
+    "established_year": 1925,
+    "director": {
+      "name": "Dr. Aurora Dreamweaver",
+      "tenure_years": 15
+    },
+    "galleries": [
+      {
+        "title": "Gallery of Dreamscapes",
+        "theme": "Surrealist and Fantasy Art",
+        "artworks": [
+          {
+            "title": "Whispers of the Aether",
+            "artist": "Celestia Starfire",
+            "year_created": 2005,
+            "medium": "Oil on canvas",
+            "dimensions": {
+              "height_cm": 120,
+              "width_cm": 150
+            }
+          },
+          {
+            "title": "The Clockwork Heart",
+            "artist": "Geargrind Greyson",
+            "year_created": 2012,
+            "medium": "Mixed media sculpture",
+            "dimensions": {
+              "height_cm": 80,
+              "width_cm": 60
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

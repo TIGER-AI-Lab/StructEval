@@ -1,0 +1,34 @@
+{
+  "exhibit": {
+    "title": "Ancient Egyptian Treasures",
+    "curator": {
+      "name": "Dr. Evelyn Reed",
+      "contact": {
+        "email": "evelyn.reed@museum.org",
+        "phone": "+15551234567"
+      }
+    },
+    "artifacts": [
+      {
+        "id": "AET001",
+        "name": "Sarcophagus of Amenhotep",
+        "artist": "Unknown",
+        "year": -1300,
+        "medium": "Gilded wood and paint",
+        "provenance": {
+          "previous_owners": [
+            "Lord Carnarvon",
+            "Howard Carter Estate"
+          ],
+          "acquisition_date": "1923-02-16"
+        },
+        "on_display": true,
+        "dimensions": {
+          "height_cm": 220.5,
+          "width_cm": 80.0,
+          "depth_cm": 70.0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "artifact.name": "The Scribe's Tablet",
+  "artifact.origin.culture": "Ancient Mesopotamia",
+  "artifact.origin.period": "Early Dynastic Period",
+  "artifact.materials.primary": "Limestone",
+  "artifact.materials.secondary": "Glazed Ceramic",
+  "artifact.dimensions.height_cm": 35,
+  "artifact.dimensions.width_cm": 20,
+  "artifact.dimensions.depth_cm": 0.5,
+  "artifact.location.current_museum": "The Louvre",
+  "artifact.location.room": "AOA 2000",
+  "artifact.provenance.history": [
+    {
+      "event": "discovered",
+      "date": "2015-06-23",
+      "location": "Iraq"
+    }
+  ],
+  "artifact.images": [
+    {
+      "url": "https://www.the-louvre-museum.fr/images/scribe-tablet.jpg",
+      "description": "A detailed limestone tablet with cuneiform inscriptions."
+    }
+  ]
+}

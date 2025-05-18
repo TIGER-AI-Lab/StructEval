@@ -1,0 +1,19 @@
+<museum>
+  <name>Hall of Imaginary Creatures</name>
+  <location>
+    <city>Mythica</city>
+    <country>Dreamland</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Phoenix Rising</title>
+      <artist>L. Ember</artist>
+      <year>1854</year>
+    </exhibit>
+    <exhibit>
+      <title>Unicorn in Twilight</title>
+      <artist>S. Horn</artist>
+      <year>1923</year>
+    </exhibit>
+  </exhibits>
+</museum>

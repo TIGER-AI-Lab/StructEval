@@ -1,0 +1,42 @@
+
+[artifact]
+name = "The Golden Scepter"
+discovery_date = "1850-05-21"
+materials = ["Gold", "Emerald", "Silver"]
+
+[artifact.origin]
+culture = "Ancient Elvish"
+region = "Valinor"
+period = "Third Age"
+
+[artifact.dimensions]
+height_cm = 150.0
+width_cm = 10.0
+depth_cm = 10.0
+
+[artifact.condition]
+current_state = "Well-preserved"
+
+[[artifact.condition.restoration_history]]
+date = "1900-06-15"
+description = "Initial cleaning and gold plating"
+
+[artifact.provenance]
+
+  [[artifact.provenance.owners]]
+  name = "Lord EÃ¤rendil"
+  acquisition_year = 1800
+
+  [[artifact.provenance.owners]]
+  name = "Queen Galadriel"
+  acquisition_year = 1850
+
+[[artifact.exhibitions]]
+title = "Ancient Relics Exhibition"
+location = "British Museum"
+year = 1900
+
+[[artifact.exhibitions]]
+title = "Elvish Artifacts Showcase"
+location = "Metropolitan Museum of Art"
+year = 1950

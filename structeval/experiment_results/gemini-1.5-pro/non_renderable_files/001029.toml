@@ -1,0 +1,28 @@
+[artifact]
+name = "Artifact-XZ-77"
+origin = "Planet Kepler-452b"
+
+[artifact.discovery]
+year = 2042
+location = "Proxima Centauri b, Coordinates: 45.23, -12.87"
+
+[[artifact.materials]]
+type = "Trinium"
+percentage = 75.5
+
+[[artifact.materials]]
+type = "Neutronium"
+percentage = 24.5
+
+[artifact.dimensions]
+height_cm = 15.2
+width_cm = 10.8
+depth_cm = 5.1
+
+[[artifact.features]]
+description = "Complex geometric engravings"
+is_encrypted = true
+
+[[artifact.features]]
+description = "Pulsating energy core"
+is_encrypted = false

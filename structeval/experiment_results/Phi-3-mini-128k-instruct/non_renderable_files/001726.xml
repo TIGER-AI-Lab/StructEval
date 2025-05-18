@@ -1,0 +1,106 @@
+<recipe>
+    <title>Chocolate Chip Cookies</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>All-purpose flour</name>
+            <quantity>2.75 cups</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Baking soda</name>
+            <quantity>1 teaspoon</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>1 teaspoon</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Unsalted butter</name>
+            <quantity>1 cup</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Brown sugar</name>
+            <quantity>3/4 cup</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>White sugar</name>
+            <quantity>3/4 cup</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vanilla extract</name>
+            <quantity>1 teaspoon</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Chocolate chips</name>
+            <quantity>2 cups</quantity>
+            <unit>cups</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <instruction>Preheat oven to 350Â°F (175Â°C).</instruction>
+            <duration>PT5M</duration>
+        </step>
+        <step>
+            <instruction>In a large bowl, cream together the butter, brown sugar, and white sugar until smooth.</instruction>
+            <duration>PT10M</duration>
+            <tip>Use an electric mixer for best results.</tip>
+        </step>
+        <step>
+            <instruction>Beat in the eggs one at a time, then stir in the vanilla.</instruction>
+            <duration>PT5M</duration>
+        </step>
+        <step>
+            <instruction>In a separate bowl, sift together the flour, baking soda, and salt. Gradually add to the creamed mixture and mix well.</instruction>
+            <duration>PT10M</duration>
+        </step>
+        <step>
+            <instruction>Stir in the chocolate chips.</instruction>
+            <duration>PT5M</duration>
+        </step>
+        <step>
+            <instruction>Drop by large spoonfuls onto ungreased cookie sheets.</instruction>
+            <duration>PT10M</duration>
+        </step>
+        <step>
+            <instruction>Bake for 8 to 10 minutes, or until edges are nicely browned.</instruction>
+            <duration>PT10M</duration>
+        </step>
+        <step>
+            <instruction>Cool on baking sheets for a few minutes before transferring to wire racks to cool completely.</instruction>
+            <duration>PT15M</duration>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>250</calories>
+        <fat>12g</fat>
+        <protein>5g</protein>
+        <carbohydrates>35g</carbohydrates>
+    </nutrition>
+    <metadata>
+        <cuisine>American</cuisine>
+        <difficulty>easy</difficulty>
+        <tags>
+            <label>Baking</label>
+            <label>Sweet Treat</label>
+            <label>Dessert</label>
+        </tags>
+    </metadata>
+</recipe>

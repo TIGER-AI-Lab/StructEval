@@ -1,0 +1,38 @@
+[artifact]
+name = "Rosetta Stone"
+discovery_date = "1799-07-15"
+
+[artifact.origin]
+civilization = "Ancient Egyptian"
+location = "Rosetta, Egypt"
+
+[artifact.dimensions]
+height_cm = 114.4
+width_cm = 72.3
+
+[[artifact.materials]]
+type = "Granodiorite"
+percentage = 90.0
+
+[[artifact.materials]]
+type = "Basalt"
+percentage = 10.0
+
+[[artifact.inscriptions]]
+language = "Ancient Greek"
+translation = "Decree of Ptolemy V"
+
+[[artifact.inscriptions]]
+language = "Demotic"
+translation = "Royal decree details"
+
+[artifact.provenance]
+
+[artifact.provenance.previous_owners]
+[[artifact.provenance.previous_owners.owners]]
+owner_name = "Pierre-FranÃ§ois Bouchard"
+acquisition_year = 1799
+
+[[artifact.provenance.previous_owners.owners]]
+owner_name = "British Museum"
+acquisition_year = 1802

@@ -1,0 +1,52 @@
+
+{
+    "game": {
+        "title": "Mystic Quest: The Enchanted Realm",
+        "release_year": 2023,
+        "developer": {
+            "name": "DreamForge Studios",
+            "founded": 2010
+        },
+        "platforms": [
+            {
+                "name": "PC",
+                "release_date": "2023-09-15",
+                "features": [
+                    {
+                        "feature_name": "crossplay",
+                        "is_multiplayer_supported": true
+                    },
+                    {
+                        "feature_name": "ray tracing",
+                        "is_multiplayer_supported": false
+                    }
+                ]
+            }
+        ],
+        "genres": ["RPG", "Adventure"],
+        "ratings": {
+            "ESRB": "T",
+            "PEGI": "12"
+        },
+        "awards": [
+            {
+                "award_name": "Best RPG Game",
+                "year": 2023
+            },
+            {
+                "award_name": "Outstanding Visual Design",
+                "year": 2023
+            }
+        ],
+        "characters": [
+            {
+                "name": "Aria Windrider",
+                "role": "protagonist"
+            },
+            {
+                "name": "Lord Malakar",
+                "role": "antagonist"
+            }
+        ]
+    }
+}

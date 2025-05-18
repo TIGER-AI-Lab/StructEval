@@ -1,0 +1,24 @@
+
+{
+  "museum": {
+    "name": "The Imaginary Curiosity Cabinet",
+    "location": {
+      "city": "Fictionopolis",
+      "country": "Nowhere Land"
+    },
+    "exhibits": {
+      "exhibit": [
+        {
+          "title": "The Whispering Clock",
+          "artist": "Elara Ticktock",
+          "year": 1867
+        },
+        {
+          "title": "The Invisible Painting",
+          "artist": "V. Vanish",
+          "year": 2021
+        }
+      ]
+    }
+  }
+}

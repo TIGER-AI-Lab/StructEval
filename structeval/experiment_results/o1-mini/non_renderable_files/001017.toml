@@ -1,0 +1,34 @@
+
+[planet]
+name = "Aurora Prime"
+
+[planet.discovery]
+year = 2024
+method = "radial velocity"
+
+[planet.mass]
+value = 2.3
+unit = "Jupiter masses"
+
+[planet.orbit]
+semi_major_axis = 1.2
+eccentricity = 0.12
+period_days = 450.5
+
+[[planet.atmosphere.composition]]
+gas = "Hydrogen"
+percentage = 85.5
+
+[[planet.atmosphere.composition]]
+gas = "Helium"
+percentage = 14.5
+
+[[planet.moons]]
+name = "Selene"
+diameter_km = 2134.7
+discovery_date = "2025-08-19"
+
+[[planet.moons]]
+name = "Phobos"
+diameter_km = 1420.3
+discovery_date = "2026-11-03"

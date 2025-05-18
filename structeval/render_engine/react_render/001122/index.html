@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001122</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const NewsletterSignup = () => {
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('Please enter a valid email');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailRegex.test(email)) {
+      setMessage('Thank you for subscribing!');
+    } else {
+      setMessage('Please enter a valid email');
+    }
+  };
+
+  return (
+    <div style={{ width: '400px', border: '1px solid gray', margin: '0 auto' }}>
+      <h1>Join Our Newsletter</h1>
+      <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '10px', padding: '10px' }}>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          style={{ width: '100%' }}
+        />
+        <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '8px 16px' }}>
+          Subscribe
+        </button>
+      </form>
+      <p>{message}</p>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSignup />);
+
+    </script>
+  </body>
+</html>

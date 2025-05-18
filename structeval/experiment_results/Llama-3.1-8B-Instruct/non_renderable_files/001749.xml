@@ -1,0 +1,34 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<planet>
+    <name>Xylophia-IV</name>
+    <type>Gas Giant</type>
+    <orbitalPeriod>250.5</orbitalPeriod>
+    <discovery year="2020">
+        <method>Transit</method>
+        <discoverer>Dr. Maria Rodriguez</discoverer>
+    </discovery>
+    <atmosphere>
+        <composition>Hydrogen, Helium, Methane</composition>
+        <pressure>0.5</pressure>
+    </atmosphere>
+    <moons>
+        <moon>
+            <name>Xylophia-IV Moon 1</name>
+            <diameter>1500</diameter>
+            <hasSubsurfaceOcean>true</hasSubsurfaceOcean>
+        </moon>
+        <moon>
+            <name>Xylophia-IV Moon 2</name>
+            <diameter>800</diameter>
+            <hasSubsurfaceOcean>false</hasSubsurfaceOcean>
+        </moon>
+    </moons>
+    <rings>
+        <hasRings>true</hasRings>
+        <ring>
+            <width>1000</width>
+            <composition>Ice and Rock particles</composition>
+        </ring>
+    </rings>
+</planet>

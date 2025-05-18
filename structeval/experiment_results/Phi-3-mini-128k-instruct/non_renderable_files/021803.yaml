@@ -1,0 +1,34 @@
+planet:
+  name: Aurelia
+  type: Terrestrial
+  discovery:
+    year: 2178
+    method: Transit
+  moons: 2
+  atmosphere:
+    composition: "Nitrogen;Oxygen;Argon"
+    pressure: 1.2
+  orbital_parameters:
+    semi_major_axis: 1.05
+    eccentricity: 0.04
+    period: 400
+  surface:
+    features: "Craters;Mountains;Lakes"
+    average_temperature: 288
+planet:
+  name: Borealis
+  type: Gas Giant
+  discovery:
+    year: 2099
+    method: Imaging
+  moons: 16
+  atmosphere:
+    composition: "Hydrogen;Helium"
+    pressure: 20.5
+  orbital_parameters:
+    semi_major_axis: 5.2
+    eccentricity: 0.08
+    period: 4332
+  surface:
+    features: "Storms;Bands"
+    average_temperature: -150

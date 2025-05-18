@@ -1,0 +1,47 @@
+
+import json
+import yaml
+
+# Given YAML data
+yaml_data = """
+planet:
+  name: Zephyria
+  atmosphere:
+    composition:
+      - nitrogen
+      - argon
+      - trace xenon
+    pressure: 0.6 atm
+  moons:
+    - Borealis
+    - Caligo
+  discovery:
+    year: 2378
+    discoverer: Dr. Lian Song
+    telescope: Eventide Array
+  rings:
+    count: 2
+    materials:
+      - ice
+      - silicate dust
+  habitability:
+    potential: medium
+    notes: "Microbial life possible in polar regions."
+  surface:
+    lakes:
+      - name: Mirror Lake
+        area: 120 sq km
+      - name: Whispering Basin
+        area: 85 sq km
+    mountains:
+      - Frostspire
+      - The Shrouds
+"""
+
+# Convert YAML to dictionary
+data_dict = yaml.safe_load(yaml_data)
+
+# Convert dictionary to JSON
+json_data = json.dumps(data_dict, indent=2)
+
+print(json_data)

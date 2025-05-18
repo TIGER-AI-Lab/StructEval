@@ -1,0 +1,3 @@
+
+"species_id","species_name","habitat.region","habitat.climate","habitat.elevation_meters","physical_traits.height_cm","physical_traits.weight_kg","physical_traits.skin_color","diet.primary_food","diet.secondary_food","diet.is_carnivorous","reproduction.offspring_per_year","reproduction.mating_season_months","conservation_status.status","conservation_status.population_estimate"
+"SPC-001","Glimmerwing Iridian","Northern Forests","temperate",500,25,1.5,"Iridescent Blue","Insects","Fruits","true",5,"March,April", "Endangered", 1000

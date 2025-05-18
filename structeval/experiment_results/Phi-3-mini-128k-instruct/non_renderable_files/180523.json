@@ -1,0 +1,45 @@
+{
+  "planet": {
+    "name": "Zephyria",
+    "atmosphere": {
+      "composition": ["nitrogen", "argon", "trace_helium"],
+      "pressure": 1.2,
+      "layers": [
+        {
+          "name": "Troposphere",
+          "altitude_range": "0-15km",
+          "gases": ["nitrogen", "argon"]
+        },
+        {
+          "name": "Stratosphere",
+          "altitude_range": "15-60km",
+          "gases": ["nitrogen", "trace_helium"]
+        }
+      ]
+    },
+    "moons": [
+      {
+        "name": "Lira",
+        "diameter_km": 3200,
+        "discovered_by": "Dr. M. Rios",
+        "features": ["ice_volcanoes", "magnetic_field"]
+      },
+      {
+        "name": "Kynth",
+        "diameter_km": 2100,
+        "discovered_by": "Prof. J. Kwan",
+        "features": ["crater_seas", "thin_atmosphere"]
+      }
+    ],
+    "surface": {
+      "temperature_celsius": -65,
+      "has_liquid_water": false,
+      "largest_crater": "Vespera"
+    },
+    "discovery": {
+      "year": 2256,
+      "discovered_by": "Deep Space Array 4",
+      "method": "direct_imaging"
+    }
+  }
+}

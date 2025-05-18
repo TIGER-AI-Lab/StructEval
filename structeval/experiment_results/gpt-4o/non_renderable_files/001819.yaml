@@ -1,0 +1,24 @@
+
+exhibit:
+  title: "Visions of the Past"
+  curator:
+    name: "Dr. Emily Carter"
+    contact_email: "emily.carter@artexhibits.com"
+  opening_date: "2024-05-01"
+  closing_date: "2024-09-30"
+  artworks:
+    - artist: "John Doe"
+      title: "Echoes of Time"
+      year_created: 1998
+      medium: "Oil on Canvas"
+      dimensions:
+        height_cm: 150.0
+        width_cm: 100.0
+      provenance:
+        previous_owners:
+          - "Alice Smith"
+          - "The Modern Art Gallery"
+        acquisition_date: "2023-11-15"
+      on_loan: true
+      gallery_location:
+        room_number: "A1"

@@ -1,0 +1,31 @@
+{
+  "exhibit": {
+    "title": "Official Exhibit Name",
+    "curator": {
+      "name": "Full Name of the Curator",
+      "contact": {
+        "email": "curator@example.com",
+        "phone": "+1234567890"
+      }
+    },
+    "artifacts": [
+      {
+        "id": "unique_artifact_id_1",
+        "name": "Artifact Name",
+        "artist": "Artist Name",
+        "year": 2021,
+        "medium": "Material/Technique",
+        "provenance": {
+          "previous_owners": ["Owner 1", "Owner 2"],
+          "acquisition_date": "2021-01-01T00:00:00Z"
+        },
+        "on_display": true,
+        "dimensions": {
+          "height_cm": 150,
+          "width_cm": 100,
+          "depth_cm": 50
+        }
+      }
+    ]
+  }
+}

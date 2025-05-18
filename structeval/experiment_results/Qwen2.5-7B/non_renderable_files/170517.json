@@ -1,0 +1,46 @@
+
+import xmltodict
+import json
+
+xml_data = """
+<museum>
+  <name>Imaginary Insect Museum</name>
+  <location>
+    <city>Flutterville</city>
+    <country>Buglandia</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Glowworm Gala</title>
+      <year>2022</year>
+      <artifacts>
+        <artifact>
+          <name>Luminous Larva</name>
+          <type>Specimen</type>
+        </artifact>
+        <artifact>
+          <name>Bioluminescent Moss</name>
+          <type>Habitat</type>
+        </artifact>
+      </artifacts>
+    </exhibit>
+    <exhibit>
+      <title>Antique Antiques</title>
+      <year>2019</year>
+      <artifacts>
+        <artifact>
+          <name>Queen's Crown</name>
+          <type>Relic</type>
+        </artifact>
+      </artifacts>
+    </exhibit>
+  </exhibits>
+</museum>
+"""
+
+def xml_to_json(xml):
+    data_dict = xmltodict.parse(xml)
+    return json.dumps(data_dict, indent=4)
+
+json_data = xml_to_json(xml_data)
+print(json_data)

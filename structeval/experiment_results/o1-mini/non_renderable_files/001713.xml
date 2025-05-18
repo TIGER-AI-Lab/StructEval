@@ -1,0 +1,39 @@
+<recipe>
+    <title>Classic Lasagna</title>
+    <author>
+        <name>Maria Rossi</name>
+        <id>987654</id>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Ground Beef</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Tomato Sauce</name>
+            <quantity>2</quantity>
+            <unit>cups</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Preheat the oven to 375Â°F (190Â°C).</description>
+            <duration_minutes>10</duration_minutes>
+        </step>
+        <step>
+            <description>Layer the noodles, sauce, and beef in a baking dish.</description>
+            <duration_minutes>20</duration_minutes>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>350</calories>
+        <fat_grams>15.5</fat_grams>
+        <protein_grams>20</protein_grams>
+    </nutrition>
+    <tags>
+        <tag>Italian</tag>
+        <tag>Main Course</tag>
+    </tags>
+</recipe>

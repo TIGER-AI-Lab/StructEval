@@ -1,0 +1,90 @@
+<recipe>
+  <title>Quinoa Salad with Roasted Vegetables</title>
+  <author>
+    <name>Jane Doe</name>
+    <contact>
+      <email>jane.doe@example.com</email>
+      <phone>+1234567890</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Quinoa</name>
+      <quantity>1 cup</quantity>
+      <unit>c</unit>
+    </ingredient>
+    <ingredient>
+      <name>Cherry Tomatoes</name>
+      <quantity>2 cups</quantity>
+      <unit>c</unit>
+    </ingredient>
+    <ingredient>
+      <name>Red Onion</name>
+      <quantity>1 medium</quantity>
+      <unit>c</unit>
+    </ingredient>
+    <ingredient>
+      <name>Bell Peppers</name>
+      <quantity>1 cup</quantity>
+      <unit>c</unit>
+    </ingredient>
+    <ingredient>
+      <name>Olive Oil</name>
+      <quantity>2 tablespoons</quantity>
+      <unit>tbs</unit>
+    </ingredient>
+    <ingredient>
+      <name>Lemon Juice</name>
+      <quantity>1 tablespoon</quantity>
+      <unit>tbs</unit>
+    </ingredient>
+    <ingredient>
+      <name>Salt</name>
+      <quantity>1 teaspoon</quantity>
+      <unit>tsp</unit>
+    </ingredient>
+    <ingredient>
+      <name>Pepper</name>
+      <quantity>1/2 teaspoon</quantity>
+      <unit>tsp</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <instruction>Rinse the quinoa under cold water.</instruction>
+      <duration>5 minutes</duration>
+      <tools>Colander, Large Bowl</tools>
+    </step>
+    <step>
+      <instruction>Preheat the oven to 400Â°F (200Â°C).</instruction>
+      <duration>10 minutes</duration>
+      <tools>Oven, Oven Mitts</tools>
+    </step>
+    <step>
+      <instruction>Cut the vegetables into bite-sized pieces.</instruction>
+      <duration>10 minutes</duration>
+      <tools>Knife, Cutting Board</tools>
+    </step>
+    <step>
+      <instruction>Spread the vegetables on a baking sheet and roast for 20 minutes.</instruction>
+      <duration>20 minutes</duration>
+      <tools>Baking Sheet, Oven</tools>
+    </step>
+    <step>
+      <instruction>In a large bowl, combine the cooked quinoa, roasted vegetables, olive oil, lemon juice, salt, and pepper.</instruction>
+      <duration>5 minutes</duration>
+      <tools>Bowl, Whisk</tools>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>350</calories>
+    <fat>9 grams</fat>
+    <protein>8 grams</protein>
+    <carbohydrates>45 grams</carbohydrates>
+  </nutrition>
+  <tags>
+    <tag>Healthy</tag>
+    <tag>Vegetarian</tag>
+    <tag>Quick</tag>
+  </tags>
+</recipe>

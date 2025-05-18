@@ -1,0 +1,53 @@
+{
+  "novel": {
+    "title": "The Shadows of Eldoria",
+    "author": {
+      "name": "Lena Hartfield",
+      "birth_year": 1978
+    },
+    "publication": {
+      "year": 2021,
+      "publisher": "Silver Oak Press"
+    },
+    "genres": [
+      "Fantasy",
+      "Adventure",
+      "Mystery"
+    ],
+    "characters": [
+      {
+        "name": "Aric Thorne",
+        "role": "protagonist",
+        "traits": [
+          "brave",
+          "curious",
+          "loyal"
+        ]
+      },
+      {
+        "name": "Mira Voss",
+        "role": "antagonist",
+        "traits": [
+          "cunning",
+          "ambitious",
+          "ruthless"
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "title": "Whispers in the Dark",
+        "word_count": 4500,
+        "events": [
+          "Aric discovers a mysterious map in his late grandfather's attic",
+          "A shadowy figure watches Aric from afar",
+          "Aric decides to embark on a journey to Eldoria"
+        ]
+      },
+      {
+        "title": "The Gathering Storm",
+        "word_count": 5200
+      }
+    ]
+  }
+}

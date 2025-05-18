@@ -1,0 +1,52 @@
+[artifact]
+name = "The Rosetta Stone"
+discovery_date = "1799-07-15"
+
+artifact.origin = {
+    civilization = "Ancient Egyptians"
+    location = "Rosetta, Egypt"
+}
+
+artifact.dimensions = {
+    height_cm = 114
+    width_cm = 284
+}
+
+artifact.materials = [
+    {
+        type = "Granite"
+        percentage = 90
+    },
+    {
+        type = "Limestone"
+        percentage = 10
+    }
+]
+
+artifact.inscriptions = [
+    {
+        language = "Greek"
+        translation = "A decree concerning the treatment of the priests of the city of Alexandria."
+    },
+    {
+        language = "Coptic"
+        translation = "A decree concerning the treatment of the priests of the city of Alexandria."
+    },
+    {
+        language = "Egyptian Hieroglyphs"
+        translation = "A decree concerning the treatment of the priests of the city of Alexandria."
+    }
+]
+
+artifact.provenance = {
+    previous_owners = [
+        {
+            owner_name = "French Army"
+            acquisition_year = 1801
+        },
+        {
+            owner_name = "British Museum"
+            acquisition_year = 1802
+        }
+    ]
+}

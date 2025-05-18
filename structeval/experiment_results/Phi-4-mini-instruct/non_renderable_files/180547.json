@@ -1,0 +1,65 @@
+
+{
+  "space_station": {
+    "name": "Celestial Haven",
+    "location": {
+      "planet": "Europa",
+      "coordinates": {
+        "latitude": 67.89,
+        "longitude": -45.12
+      }
+    },
+    "modules": [
+      {
+        "module_name": "Habitat Alpha",
+        "purpose": "Living Quarters",
+        "crew": [
+          {
+            "name": "Dr. Lira Voss",
+            "role": "Commander",
+            "schedule": [
+              {
+                "day": "Monday",
+                "task": "Systems Check"
+              },
+              {
+                "day": "Tuesday",
+                "task": "Hydroponics Maintenance"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "module_name": "Lab Beta",
+        "purpose": "Research",
+        "crew": [
+          {
+            "name": "Prof. Ryo Tanaka",
+            "role": "Scientist",
+            "schedule": [
+              {
+                "day": "Monday",
+                "task": "Ice Core Analysis"
+              },
+              {
+                "day": "Tuesday",
+                "task": "Radiation Experiment"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "supply_levels": {
+      "oxygen": 78,
+      "water": 120,
+      "food": 54
+    },
+    "communication": {
+      "uplink_frequency": 8.45,
+      "downlink_frequency": 7.21,
+      "active": true
+    }
+  }
+}

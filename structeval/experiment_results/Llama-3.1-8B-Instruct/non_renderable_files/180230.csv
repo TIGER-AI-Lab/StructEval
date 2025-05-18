@@ -1,0 +1,21 @@
+
+import csv
+from datetime import datetime
+
+data = [
+    {"artifact_id": "AX-1001", "artifact_name": "Quantum Vase", "discovery_date": "2487-03-14", "estimated_value": 1200000, "material": "Translucent Alloy", "origin_planet": "Nebulon"},
+    {"artifact_id": "AX-1002", "artifact_name": "Chrono Compass", "discovery_date": "2490-07-23", "estimated_value": 875000, "material": "Crystalline Fiber", "origin_planet": "Xythera"},
+    {"artifact_id": "AX-1003", "artifact_name": "Stellar Coin", "discovery_date": "2479-11-05", "estimated_value": 430000, "material": "Galactic Silver", "origin_planet": "Vorticon"},
+    {"artifact_id": "AX-1004", "artifact_name": "Nebula Mask", "discovery_date": "2492-01-30", "estimated_value": 2500000, "material": "Ethereal Silk", "origin_planet": "Orbis"},
+    {"artifact_id": "AX-1005", "artifact_name": "Gravity Pendant", "discovery_date": "2485-06-18", "estimated_value": 670000, "material": "Magnetite Gem", "origin_planet": "Zarn"},
+    {"artifact_id": "AX-1006", "artifact_name": "Pulsar Scroll", "discovery_date": "2488-09-12", "estimated_value": 990000, "material": "Plasma Parchment", "origin_planet": "Lyra"}
+]
+
+with open('artifacts.csv', 'w', newline='') as csvfile:
+    fieldnames = ["artifact_id", "artifact_name", "discovery_date", "estimated_value", "material", "origin_planet"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in data:
+        row["discovery_date"] = datetime.strptime(row["discovery_date"], "%Y-%m-%d").strftime("%m/%d/%Y")
+        writer.writerow(row)

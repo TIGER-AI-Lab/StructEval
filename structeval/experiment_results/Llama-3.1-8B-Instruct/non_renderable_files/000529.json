@@ -1,0 +1,43 @@
+
+{
+  "creature": {
+    "name": "Zhra'gha",
+    "species": "Xhk'kht",
+    "origin": {
+      "planet": "Xeridia-IV",
+      "galaxy": "Andromeda"
+    },
+    "abilities": [
+      {
+        "type": "Energy Blast",
+        "strength": 80,
+        "cooldown_seconds": 30
+      },
+      {
+        "type": "Regeneration",
+        "strength": 40,
+        "cooldown_seconds": 60
+      }
+    ],
+    "appearance": {
+      "color": "Iridescent Blue",
+      "size_meters": 3.5,
+      "features": [
+        "Long, slender limbs",
+        "Large, black eyes"
+      ]
+    },
+    "companions": [
+      {
+        "name": "Korvath",
+        "species": "Xhk'kht Drone",
+        "role": "Loyal Servant"
+      },
+      {
+        "name": "Nexarion",
+        "species": "Xhk'kht Scout",
+        "role": "Reconnaissance Expert"
+      }
+    ]
+  }
+}

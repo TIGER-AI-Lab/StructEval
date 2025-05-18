@@ -1,0 +1,27 @@
+python
+import csv
+import json
+
+# Define the CSV data as a string
+csv_data = """planet_name,system.star_name,system.distance_from_star_au,system.star_type,moons[0].moon_name,moons[0].diameter_km,moons[0].features,moons[1].moon_name,moons[1].diameter_km,moons[1].features,atmosphere.composition,atmosphere.pressure_atm,atmosphere.has_clouds,discovered_by,discovery_year
+Aurelia,Helion,0.9,G-type,Selene,3200,"craters;ice geysers",Phobos,1500,"volcanoes;subsurface ocean",N2-O2,1.2,True,Dr. Xel'Naga,2378"""
+
+# Remove the header from the CSV data
+header = csv_data.split('
+')[0]
+csv_data = '
+'.join(csv_data.split('
+')[1:])
+
+# Convert CSV data to a list of dictionaries
+data = []
+reader = csv.DictReader(csv_data.split('
+'), fieldnames=header.split(','))
+for row in reader:
+    data.append(row)
+
+# Convert the list of dictionaries to JSON
+json_data = json.dumps(data, indent=4)
+
+# Output the JSON data
+print(json_data)

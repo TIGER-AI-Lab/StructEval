@@ -1,0 +1,38 @@
+[expedition]
+name = "Ares VI: Cerberus Ridge Survey"
+launch_date = "2042-07-21T08:00:00Z"
+
+[expedition.destination]
+planet = "Mars"
+region = "Cerberus Ridge"
+
+[[expedition.crew]]
+name = "Dr. Evelyn Hayes"
+role = "Geologist & Mission Specialist"
+experience_years = 12
+certifications = ["Planetary Geology", "Survival Training", "Robotics Operation"]
+
+[[expedition.crew]]
+name = "Cmdr. Kenji Tanaka"
+role = "Mission Commander & Pilot"
+experience_years = 18
+certifications = ["Spacecraft Piloting", "Emergency Response", "Weapons Training"]
+
+[[expedition.equipment]]
+item = "Mars Rover 'Opportunity II'"
+quantity = 1
+status = "operational"
+
+[[expedition.equipment]]
+item = "Geological Drill (Mk. IV)"
+quantity = 2
+status = "operational"
+
+[[expedition.equipment]]
+item = "Emergency Habitat Unit"
+quantity = 1
+status = "spare"
+
+[expedition.mission_objectives]
+primary = "Conduct geological survey of Cerberus Ridge to identify potential water ice deposits and assess the region's suitability for future habitat construction."
+secondary = "Deploy seismic sensors to monitor Martian tectonic activity and collect atmospheric data for climate modeling."

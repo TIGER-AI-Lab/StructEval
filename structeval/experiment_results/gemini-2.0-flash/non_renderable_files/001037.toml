@@ -1,0 +1,29 @@
+[brewery]
+name = "Golden Cascade Brewery"
+founded_year = 2015
+owner = "Patricia Miller"
+
+[brewery.location]
+city = "Bend"
+country = "USA"
+
+[[brewery.beers]]
+name = "Mountain Haze IPA"
+type = "IPA"
+abv = 6.8
+
+[brewery.beers[0].ingredients]
+malts = ["Pale Malt", "Vienna Malt", "Wheat Malt"]
+hops = ["Citra", "Mosaic", "El Dorado"]
+yeast = "Wyeast 1056 - American Ale"
+
+[[brewery.beers[0].awards]]
+name = "Best IPA"
+year = 2018
+
+[brewery.tours]
+available = true
+
+[[brewery.tours.schedule]]
+day = "Saturday"
+time = "2:00 PM"

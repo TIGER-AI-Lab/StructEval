@@ -1,0 +1,37 @@
+
+{
+  "planet": {
+    "name": "Exoplanet XJ-123",
+    "discovery": {
+      "year": 2045,
+      "method": "transit"
+    },
+    "orbital_parameters": {
+      "semi_major_axis": 0.95,
+      "eccentricity": 0.03,
+      "inclination": 2.5
+    },
+    "atmosphere": {
+      "composition": {
+        "primary_gas": "Nitrogen",
+        "trace_gases": ["Oxygen", "Argon", "Carbon Dioxide"]
+      },
+      "pressure": 1.2
+    },
+    "moons": [
+      {
+        "name": "Moon Alpha",
+        "diameter_km": 5000,
+        "orbit_period_days": 27,
+        "orbit_distance_km": 300000
+      }
+    ],
+    "rings": [
+      {
+        "name": "Ring A",
+        "radius_inner_km": 10000,
+        "radius_outer_km": 15000
+      }
+    ]
+  }
+}

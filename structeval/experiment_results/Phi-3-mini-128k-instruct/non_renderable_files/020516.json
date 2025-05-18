@@ -1,0 +1,59 @@
+{
+  "planet_name": "Aurelia",
+  "system": {
+    "star_name": "Helios",
+    "distance_from_earth_ly": 42.5,
+    "discovery": {
+      "year": 2087,
+      "method": "Transit"
+    }
+  },
+  "atmosphere": [
+    {"gas": "Nitrogen", "percentage": 78},
+    {"gas": "Oxygen", "percentage": 21},
+    {"gas": "Argon", "percentage": 1}
+  ],
+  "surface": {
+    "temperature_c": 22,
+    "has_water": true
+  },
+  "moons": [
+    {
+      "name": "Selene",
+      "diameter_km": 3200,
+      "orbital_period_days": 12
+    },
+    {
+      "name": "Nyx",
+      "diameter_km": 1800,
+      "orbital_period_days": 31
+    }
+  ]
+},
+{
+  "planet_name": "Zyphos",
+  "system": {
+    "star_name": "Kepler-442",
+    "distance_from_earth_ly": 1200,
+    "discovery": {
+      "year": 2015,
+      "method": "Radial Velocity"
+    }
+  },
+  "atmosphere": [
+    {"gas": "Carbon Dioxide", "percentage": 95},
+    {"gas": "Nitrogen", "percentage": 3},
+    {"gas": "Methane", "percentage": 2}
+  ],
+  "surface": {
+    "temperature_c": -80,
+    "has_water": false
+  },
+  "moons": [
+    {
+      "name": "Phobos",
+      "diameter_km": 1100,
+      "orbital_period_days": 8
+    }
+  ]
+}

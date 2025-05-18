@@ -1,0 +1,42 @@
+
+import pandas as pd
+
+species_data = [
+    {
+        "species": "Zorblatt",
+        "planet": "Xylophia-IV",
+        "discovery_year": 2021,
+        "average_height_cm": 150,
+        "habitat_type": "terrestrial",
+        "diet": "omnivore",
+        "number_of_limbs": 4,
+        "primary_color": "green",
+        "notable_ability": "telepathy",
+        "is_endangered": False,
+        "average_lifespan_years": 75,
+        "first_contact_date": "2021-06-15",
+        "planetary_region": "Grotto Valley",
+        "favorite_food": "Zogberry",
+        "language_family": "Xylophian"
+    },
+    {
+        "species": "Gloopnaut",
+        "planet": "Zorgon",
+        "discovery_year": 2022,
+        "average_height_cm": 120,
+        "habitat_type": "aquatic",
+        "diet": "carnivore",
+        "number_of_limbs": 0,
+        "primary_color": "blue",
+        "notable_ability": "bioluminescence",
+        "is_endangered": True,
+        "average_lifespan_years": 100,
+        "first_contact_date": "2022-09-23",
+        "planetary_region": "Deep Lake",
+        "favorite_food": "Plax",
+        "language_family": "Zorgonian"
+    }
+]
+
+df = pd.DataFrame(species_data)
+df.to_csv('alien_species.csv', index=False)

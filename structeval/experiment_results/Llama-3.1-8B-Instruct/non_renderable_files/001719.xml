@@ -1,0 +1,65 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <title>Delicious Chicken Fajitas</title>
+    <author>
+        <name>John Doe</name>
+        <contact>
+            <email>johndoe@example.com</email>
+            <phone>+1 123 456 7890</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Chicken Breast</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Onion</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Bell Pepper</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Cut the chicken into thin strips.</description>
+            <duration>
+                <minutes>10</minutes>
+            </duration>
+        </step>
+        <step>
+            <order>2</order>
+            <description>Heat a pan with oil and sautÃ© the chicken.</description>
+            <duration>
+                <minutes>15</minutes>
+            </duration>
+        </step>
+        <step>
+            <order>3</order>
+            <description>Add the onion and bell pepper to the pan and cook until tender.</description>
+            <duration>
+                <minutes>10</minutes>
+            </duration>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>500</calories>
+        <fat>
+            <grams>20</grams>
+            <type>saturated</type>
+        </fat>
+        <carbohydrates>
+            <grams>30</grams>
+        </carbohydrates>
+        <protein>
+            <grams>40</grams>
+        </protein>
+    </nutrition>
+</recipe>

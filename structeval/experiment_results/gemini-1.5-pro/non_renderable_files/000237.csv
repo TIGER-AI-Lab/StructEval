@@ -1,0 +1,4 @@
+artifact_id,artifact_name,origin_civilization,discovery_site,discovery_date,material.primary,material.secondary,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,estimated_age_years,current_condition,inscriptions.language,inscriptions.translation,inscriptions.meaning,display_status,museum_location
+A001,"Mask of the Jade Serpent",Maya,"Palenque, Mexico",1984-06-12,jade,obsidian,25.4,15.2,10.2,1200,intact,"Mayan glyphs","Offering to the gods of the underworld.","Ritualistic offering",On display,"National Museum of Anthropology, Mexico City"
+A002,"Golden Goblet of Psusennes I",Egyptian,"Tanis, Egypt",1940-04-21,gold,lapis lazuli,15,8,12,3200,fragmented,"Egyptian hieroglyphs","May the king live forever.","Blessing for the king",Under restoration,"Egyptian Museum, Cairo"
+A003,"Terracotta Army Soldier",Chinese,"Xi'an, China",1974-03-29,terracotta,,200,50,180,2200,intact,,,,"On display","Museum of the Terracotta Army, Xi'an"

@@ -1,0 +1,15 @@
+galaxy:
+  name: Andromeda
+  star_systems:
+    - system_name: Alpha-2
+      planets:
+        - planet:
+            planet_name: Zephyra
+            rings:
+              - ring: Ice Halo
+              - ring: Dust Band
+        - planet:
+            planet_name: Voltara
+            rings: []
+    - system_name: Beta-9
+      planets: []

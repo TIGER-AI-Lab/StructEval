@@ -1,0 +1,44 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def convert_yaml_to_xml(yaml_data):
+    data = yaml.safe_load(yaml_data)
+    root = ET.Element("galacticCarnival")
+    name = ET.SubElement(root, "name")
+    name.text = data["name"]
+    location = ET.SubElement(root, "location")
+    planet = ET.SubElement(location, "planet")
+    planet.text = data["location"]["planet"]
+    galaxy = ET.SubElement(location, "galaxy")
+    galaxy.text = data["location"]["galaxy"]
+    attractions = ET.SubElement(root, "attractions")
+    for attraction in data["attractions"]["attraction"]:
+        attr = ET.SubElement(attractions, "attraction")
+        title = ET.SubElement(attr, "title")
+        title.text = attraction["title"]
+        type_attr = ET.SubElement(attr, "type")
+        type_attr.text = attraction["type"]
+        alienHost = ET.SubElement(attr, "alienHost")
+        alienHost.text = attraction["alienHost"]
+    xml_str = ET.tostring(root, encoding="unicode")
+    return xml_str
+
+yaml_data = """
+galacticCarnival:
+  name: Nebula Fest 3050
+  location:
+    planet: Xylo-9
+    galaxy: Andromeda
+  attractions:
+    attraction:
+      - title: Gravity-Free Ferris Wheel
+        type: Ride
+        alienHost: Zorg the Jovial
+      - title: Quantum Cotton Candy
+        type: Food Stall
+        alienHost: Blip the Sweet
+"""
+
+xml_data = convert_yaml_to_xml(yaml_data)
+print(xml_data)

@@ -1,0 +1,36 @@
+
+<creature>
+  <species>Luminara</species>
+  <habitat>
+    <region>Aetherian Peaks</region>
+    <climate>temperate with frequent auroras</climate>
+    <features>bioluminescent flora, floating islands, magnetic storms</features>
+  </habitat>
+  <anatomy>
+    <limbs>
+      <count>4</count>
+      <type>aerial limbs</type>
+    </limbs>
+    <senses>
+      <sense>
+        <name>vision</name>
+        <range>100 meters</range>
+      </sense>
+    </senses>
+  </anatomy>
+  <behavior>
+    <diet>omnivore</diet>
+    <activity_cycle>nocturnal</activity_cycle>
+    <social_structure>solitary</social_structure>
+  </behavior>
+  <abilities>
+    <ability>
+      <name>Aurora Manipulation</name>
+      <description>Projects bioluminescent patterns to communicate and disorient predators</description>
+      <rarity>rare</rarity>
+    </ability>
+  </abilities>
+  <discovery>
+    <discovery_date>2023-11-15</discovery_date>
+  </discovery>
+</creature>

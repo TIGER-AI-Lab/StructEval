@@ -1,0 +1,83 @@
+<recipe>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <difficulty>easy</difficulty>
+        <prep_time_minutes>60</prep_time_minutes>
+        <tags>
+            <tag>pasta</tag>
+            <tag>vegetarian</tag>
+        </tags>
+    </metadata>
+    <author>
+        <name>John Doe</name>
+        <contact>
+            <email>johndoe@example.com</email>
+            <phone>+1-555-123-4567</phone>
+        </contact>
+    </author>
+    <title>Classic Spaghetti Carbonara</title>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Pancetta</name>
+            <quantity>150</quantity>
+            <unit>grams</unit>
+            <optional>true</optional>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>4</quantity>
+            <unit>large</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Parmesan cheese</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Garlic</name>
+            <quantity>2</quantity>
+            <unit>cloves</unit>
+            <optional>false</optional>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Cook the spaghetti in boiling salted water until al dente.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>
+                <tool>Saucepan</tool>
+                <tool>Colander</tool>
+            </tools>
+        </step>
+        <step>
+            <description>Whisk together eggs, Parmesan cheese, and black pepper in a bowl.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>
+                <tool>Whisk</tool>
+            </tools>
+        </step>
+        <step>
+            <description>Fry the pancetta and garlic in a pan until crispy.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>
+                <tool>Frying pan</tool>
+                <tool>Spatula</tool>
+            </tools>
+        </step>
+        <step>
+            <description>Combine the cooked spaghetti with the egg mixture and pancetta, tossing quickly to coat.</description>
+            <duration_minutes>3</duration_minutes>
+            <tools>
+                <tool>Saucepan</tool>
+            </tools>
+        </step>
+    </steps>
+</recipe>

@@ -1,0 +1,27 @@
+
+ecosystem:
+  name: "Luminara Tundra"
+  location:
+    latitude: 72.5
+    longitude: -134.2
+  climate:
+    type: "polar"
+    average_temperature_celsius: -25
+  flora:
+    - species: "Glacial Bloom"
+      population_estimate: 12000
+      notable_features:
+        - "Bioluminescent flowers that attract nocturnal pollinators"
+        - "Adapted to freeze-dry in harsh winters"
+  fauna:
+    - species: "Froststrider"
+      diet: "herbivore"
+      population_estimate: 8500
+      conservation_status: "least concern"
+  events:
+    - event_name: "Great Iceberg Collapse"
+      date: "2021-03-15"
+      impact_summary: "Disrupted migratory patterns of Froststrider but created new feeding grounds for Glacial Bloom."
+    - event_name: "Tundra Firestorm"
+      date: "2023-07-22"
+      impact_summary: "Destroyed 15% of Glacial Bloom habitat, leading to increased population in remaining areas."

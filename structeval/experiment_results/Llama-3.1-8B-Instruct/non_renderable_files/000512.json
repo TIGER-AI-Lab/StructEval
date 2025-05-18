@@ -1,0 +1,42 @@
+
+{
+  "puzzle": {
+    "title": "Logic Puzzle",
+    "description": "A brief summary of the puzzle",
+    "difficulty": {
+      "level": "medium",
+      "estimated_time_minutes": 30
+    },
+    "author": {
+      "name": "John Doe",
+      "contact": {
+        "email": "john.doe@example.com",
+        "website": "https://johndoe.com"
+      }
+    },
+    "hints": [
+      {
+        "text": "The first hint",
+        "relevance_score": 0.8
+      },
+      {
+        "text": "The second hint",
+        "relevance_score": 0.9
+      }
+    ],
+    "steps": [
+      {
+        "instruction": "Do something",
+        "expected_answer": "The solution for the first step"
+      },
+      {
+        "instruction": "Do something else",
+        "expected_answer": "The solution for the second step"
+      }
+    ],
+    "metadata": {
+      "tags": ["logic", "puzzle", "game"],
+      "date_created": "2022-01-01T00:00:00Z"
+    }
+  }
+}

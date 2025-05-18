@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041116</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Sample Visual Layout</h1>
+        <nav>
+          <ul>
+            <li><a href="#introduction">Intro</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="introduction">
+        <h2 className="section-title">Introduction</h2>
+        <p>This HTML page is designed to showcase a variety of visible structural elements. The layout includes headers, formatted content, lists, tables, and labeled data displaying a clear visual hierarchy.</p>
+        <p>The purpose of this page is to simulate a document that can be used for layout and visual conversion tasks.</p>
+      </section>
+
+      <section id="details">
+        <h2 className="section-title">Detailed Information</h2>
+        <dl className="labeled-data">
+          <dt>Project Name:</dt>
+          <dd>Visual Layout Converter</dd>
+          <dt>Version:</dt>
+          <dd>1.0.2</dd>
+          <dt>Author:</dt>
+          <dd>Jane Doe</dd>
+          <dt>Description:</dt>
+          <dd>This project aims to test and display structured information with clear layout and labeling for various content sections.</dd>
+        </dl>
+        <h3>Features</h3>
+        <ul className="feature-list">
+          <li>Responsive Design</li>
+          <li>Semantic Markup</li>
+          <li>Accessibility Focus</li>
+          <li>Clear Visual Hierarchy</li>
+          <li>Modern Layout Techniques</li>
+        </ul>
+      </section>
+
+      <section id="table">
+        <h2 className="section-title">Data Table</h2>
+        <table className="content-table">
+          <thead>
+            <tr>
+              <th>Item ID</th>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>101</td>
+              <td>Initial Design</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>Prototype Development</td>
+              <td>In Progress</td>
+            </tr>
+            <tr>
+              <td>103</td>
+              <td>User Testing</td>
+              <td>Pending</td>
+            </tr>
+            <tr>
+              <td>104</td>
+              <td>Final Adjustments</td>
+              <td>Pending</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contact">
+        <h2 className="section-title">Contact Information</h2>
+        <p>If you have any suggestions or need additional information, please contact the project team using the details below:</p>
+        <ul>
+          <li>Email: example@domain.com</li>
+          <li>Phone: +1 (555) 123-4567</li>
+          <li>Address: 1234 Main Street, Anytown, USA</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>&copy; 2023 Visual Layout Converter Project. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

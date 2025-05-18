@@ -1,0 +1,50 @@
+
+{
+  "game": {
+    "title": "Epic Quest of Legends",
+    "release_year": 2023,
+    "genres": ["RPG", "Adventure"],
+    "ratings": {
+      "ESRB": "M",
+      "PEGI": "18"
+    },
+    "awards": [
+      {
+        "award_name": "Best RPG of the Year",
+        "year": 2023
+      }
+    ],
+    "characters": [
+      {
+        "name": "Aria the Brave",
+        "role": "protagonist"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "PlayStation 5",
+        "release_date": "2023-09-15",
+        "features": [
+          {
+            "feature_name": "crossplay",
+            "is_multiplayer_supported": true
+          }
+        ]
+      },
+      {
+        "name": "PC",
+        "release_date": "2023-09-20",
+        "features": [
+          {
+            "feature_name": "crossplay",
+            "is_multiplayer_supported": false
+          }
+        ]
+      }
+    ],
+    "developer": {
+      "name": "Epic Games Studios",
+      "founded": 1991
+    }
+  }
+}

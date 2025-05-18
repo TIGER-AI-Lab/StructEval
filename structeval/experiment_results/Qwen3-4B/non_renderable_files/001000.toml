@@ -1,0 +1,32 @@
+
+museum = {
+    name = "The Grand Artistry Museum",
+    location = {
+        city = "Paris",
+        country = "France"
+    },
+    founded_year = 1892,
+    director = {
+        full_name = "Dr. Ãlise Moreau",
+        tenure_years = 15
+    },
+    galleries = [
+        {
+            title = "Impressionist Masterpieces",
+            floor = 2,
+            artworks = [
+                {
+                    title = "Sunrise over the Seine",
+                    artist = "Claude Monet",
+                    year_created = 1872,
+                    medium = "Oil on canvas",
+                    dimensions = {
+                        height_cm = 72.5,
+                        width_cm = 96.3
+                    },
+                    on_display = true
+                }
+            ]
+        }
+    ]
+}

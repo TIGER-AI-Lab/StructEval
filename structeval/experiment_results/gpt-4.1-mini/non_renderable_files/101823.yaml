@@ -1,0 +1,31 @@
+
+spaceship:
+  name: "Stellar Nomad"
+  model: "XG-9 Explorer"
+  captain: "Lyra Voss"
+  has_cloaking_device: true
+  launch_year: 2327
+  crew:
+    - name: "Lyra Voss"
+      role: "Captain"
+      species: "Human"
+    - name: "Ryn Talos"
+      role: "Pilot"
+      species: "Andronian"
+    - name: "Quill"
+      role: "Engineer"
+      species: "Mechanoid"
+  missions:
+    - title: "Nebula Drift"
+      destination: "Orion Nebula"
+      success: true
+    - title: "Crystal Run"
+      destination: "Vega Asteroid Belt"
+      success: false
+  specs:
+    length_m: 72.5
+    max_speed_mps: 12000
+    armament:
+      - "Plasma Cannons"
+      - "EMP Torpedoes"
+      - "Deflector Shields"

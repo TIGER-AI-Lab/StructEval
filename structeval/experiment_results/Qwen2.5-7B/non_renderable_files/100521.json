@@ -1,0 +1,59 @@
+python
+import toml
+import json
+
+# TOML code
+toml_code = """
+[planet]
+name = "Zyphora"
+discovery_year = 2217
+type = "Gas Giant"
+
+[planet.atmosphere]
+composition = ["Hydrogen", "Helium", "Methane"]
+pressure = 5000.2
+
+[[planet.moons]]
+name = "Elyth"
+radius_km = 1200
+
+  [[planet.moons.features]]
+  feature_name = "Crystal Caverns"
+  description = "Vast underground networks of glowing crystals."
+
+  [[planet.moons.features]]
+  feature_name = "Ice Spires"
+  description = "Towering ice formations near the poles."
+
+[[planet.moons]]
+name = "Vornax"
+radius_km = 890
+
+  [[planet.moons.features]]
+  feature_name = "Sulfur Geysers"
+  description = "Active geysers emitting sulfur compounds."
+
+  [[planet.moons.features]]
+  feature_name = "Magnetic Ridges"
+  description = "Regions with intense magnetic activity."
+
+[planet.rings]
+present = true
+count = 7
+
+[[planet.exploration_missions]]
+mission_name = "Aurora Zephyr"
+year = 2230
+status = "Completed"
+
+[[planet.exploration_missions]]
+mission_name = "Stellar Dawn"
+year = 2238
+status = "Ongoing"
+"""
+
+# Convert TOML to JSON
+json_data = toml.loads(toml_code)
+json_code = json.dumps(json_data, indent=2)
+
+print(json_code)

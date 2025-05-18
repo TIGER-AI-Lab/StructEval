@@ -1,0 +1,34 @@
+<planet>
+  <name>Zyphora</name>
+  <system>Alpha Centauri</system>
+  <discovery_year>2120</discovery_year>
+  <habitable>TRUE</habitable>
+  <atmosphere>
+    <composition>Nitrogen-Oxygen</composition>
+    <pressure>1.2</pressure>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>Phobos</name>
+      <diameter_km>22.2</diameter_km>
+      <has_rings>FALSE</has_rings>
+    </moon>
+    <moon>
+      <name>Deimos</name>
+      <diameter_km>12.4</diameter_km>
+      <has_rings>FALSE</has_rings>
+    </moon>
+  </moons>
+  <missions>
+    <mission>
+      <name>Explora-1</name>
+      <year>2130</year>
+      <success>TRUE</success>
+    </mission>
+    <mission>
+      <name>Probe-X</name>
+      <year>2145</year>
+      <success>FALSE</success>
+    </mission>
+  </missions>
+</planet>

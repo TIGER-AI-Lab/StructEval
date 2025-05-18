@@ -1,0 +1,86 @@
+<recipe>
+    <title>Spaghetti Carbonara</title>
+    <author>
+        <name>John Doe</name>
+        <contact>johndoe@example.com</contact>
+    </author>
+    <ingredients>
+        <item>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Pancetta</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Eggs</name>
+            <quantity>3</quantity>
+            <unit>pieces</unit>
+        </item>
+        <item>
+            <name>Parmesan Cheese</name>
+            <quantity>50</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Black Pepper</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </item>
+        <item>
+            <name>Salt</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </item>
+    </ingredients>
+    <instructions>
+        <step>
+            <stepNumber>1</stepNumber>
+            <description>Boil the spaghetti in salted water until al dente.</description>
+            <timer>
+                <seconds>600</seconds>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>2</stepNumber>
+            <description>Fry the pancetta in a pan until crispy.</description>
+            <timer>
+                <seconds>300</seconds>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>3</stepNumber>
+            <description>Beat the eggs and mix with grated Parmesan cheese.</description>
+            <timer>
+                <seconds>120</seconds>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>4</stepNumber>
+            <description>Combine spaghetti, pancetta, and egg mixture. Stir well.</description>
+            <timer>
+                <seconds>180</seconds>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>5</stepNumber>
+            <description>Season with black pepper and serve immediately.</description>
+            <timer>
+                <seconds>60</seconds>
+            </timer>
+        </step>
+    </instructions>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <difficulty>medium</difficulty>
+        <servings>2</servings>
+    </metadata>
+    <nutrition>
+        <calories>600</calories>
+        <fat>20</fat>
+        <carbohydrates>75</carbohydrates>
+    </nutrition>
+</recipe>

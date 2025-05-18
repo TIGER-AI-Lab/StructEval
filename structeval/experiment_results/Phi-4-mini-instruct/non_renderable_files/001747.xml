@@ -1,0 +1,22 @@
+<exoplanet>
+  <name>Kepler-22b</name>
+  <type>Super-Earth</type>
+  <discovery date="2011-02-07" method="transit" telescope="Kepler Space Telescope">
+    <period>289.9</period>
+    <eccentricity>0.0</eccentricity>
+    <semi_major_axis>0.85</semi_major_axis>
+  </discovery>
+  <atmosphere composition="Nitrogen, Oxygen, Argon, Carbon Dioxide, Water Vapor">
+    <pressure>1.0</pressure>
+  </atmosphere>
+  <moons>
+    <moon name="Kepler-22b I" diameter="1,000" year="2011" composition="Silicate Rock">
+    </moon>
+  </moons>
+  <rings present="true" count="5">
+    <details>
+      <material>Water Ice</material>
+      <width>10</width>
+    </details>
+  </rings>
+</exoplanet>

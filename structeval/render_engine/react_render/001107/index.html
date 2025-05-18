@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001107</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const UserRegistration = () => {
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    gender: '',
+    country: '',
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const [isValid, setIsValid] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setIsValid(
+      formData.username && formData.email && formData.password && formData.gender && formData.country
+    );
+  };
+
+  const handleClear = () => {
+    setFormData({
+      username: '',
+      email: '',
+      password: '',
+      gender: '',
+      country: '',
+    });
+    setSubmitted(false);
+    setIsValid(false);
+  };
+
+  return (
+    <div style={{ display: 'grid', placeItems: 'center' }}>
+      <h1>User Registration</h1>
+      <form style={{ display: 'grid', gap: '15px', width: '300px' }} onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter Username"
+          value={formData.username}
+          onChange={handleChange}
+        />
+        {submitted && !formData.username && <span style={{ color: 'red' }}>Username is required</span>}
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter Email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+        {submitted && !formData.email && <span style={{ color: 'red' }}>Email is required</span>}
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter Password"
+          value={formData.password}
+          onChange={handleChange}
+        />
+        {submitted && !formData.password && <span style={{ color: 'red' }}>Password is required</span>}
+        <div>
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="Male"
+              checked={formData.gender === 'Male'}
+              onChange={handleChange}
+            />{' '}
+            Male
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="Female"
+              checked={formData.gender === 'Female'}
+              onChange={handleChange}
+            />{' '}
+            Female
+          </label>
+        </div>
+        {submitted && !formData.gender && <span style={{ color: 'red' }}>Gender is required</span>}
+        <select name="country" value={formData.country} onChange={handleChange}>
+          <option value="">Select Country</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="Mexico">Mexico</option>
+        </select>
+        {submitted && !formData.country && <span style={{ color: 'red' }}>Country is required</span>}
+        <button type="submit">Register</button>
+        <button type="button" onClick={handleClear}>Clear</button>
+      </form>
+      {isValid && <p>Registration Successful</p>}
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<UserRegistration />);
+
+    </script>
+  </body>
+</html>

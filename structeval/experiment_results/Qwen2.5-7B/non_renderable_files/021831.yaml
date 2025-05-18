@@ -1,0 +1,23 @@
+
+species: Quazorian Sandhopper
+habitat:
+  name: Crimson Dunes
+  location:
+    region: Aridia
+    galaxy: Andromeda
+diet:
+  primary_foods: Plasma moss;Solar nectar
+  favorite_dishes: Electro-pollen pie;Zyphra stew
+lifespan:
+  average_years: 7
+  record_holder:
+    name: Old Hop
+    age: 14
+communication:
+  methods: Chirps;Color flashes
+  symbolic_language: Yes
+notable_individuals:
+  - name: Zynk
+    achievement: First intergalactic jumper
+  - name: Pyra
+    achievement: Invented sand-skating

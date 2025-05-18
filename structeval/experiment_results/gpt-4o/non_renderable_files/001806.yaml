@@ -1,0 +1,31 @@
+
+brewery:
+  name: "Fictional Craft Brewery"
+  location:
+    city: "Brewtown"
+    country: "Beerland"
+  founded_year: 2010
+  owner: "John Doe Brewing Co."
+  beers:
+    - name: "Hoppy Days"
+      style: "IPA"
+      abv: 6.5
+      awards:
+        - title: "Best IPA"
+          year: 2021
+        - title: "Gold Medal IPA"
+          year: 2022
+      ingredients:
+        hops:
+          - "Cascade"
+          - "Simcoe"
+        malts:
+          - "Pale Ale"
+          - "Caramel"
+        yeast: "American Ale"
+  tours:
+    available: true
+    schedule:
+      - day: "Saturday"
+        start_time: "14:00"
+        duration_minutes: 90

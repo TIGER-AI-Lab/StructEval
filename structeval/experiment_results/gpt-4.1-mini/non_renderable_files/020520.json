@@ -1,0 +1,39 @@
+[
+  {
+    "planet_name": "Zyphera",
+    "system": {
+      "star_name": "Solara",
+      "distance_from_earth_ly": 42.7,
+      "discovery_year": 2083
+    },
+    "atmosphere": {
+      "composition": "Nitrogen-Oxygen",
+      "pressure": 1.2,
+      "temperature_range": "210-320"
+    },
+    "moons": [
+      {
+        "moon_name": "Selene",
+        "diameter_km": 3400,
+        "discovered_by": "Dr. Mira Tanis"
+      },
+      {
+        "moon_name": "Nyx",
+        "diameter_km": 2800,
+        "discovered_by": "Prof. Ivo Rell"
+      }
+    ],
+    "exploration_missions": [
+      {
+        "mission_name": "Project Dawn",
+        "launch_year": 2099,
+        "success": true
+      },
+      {
+        "mission_name": "Stellar Quest",
+        "launch_year": 2105,
+        "success": false
+      }
+    ]
+  }
+]

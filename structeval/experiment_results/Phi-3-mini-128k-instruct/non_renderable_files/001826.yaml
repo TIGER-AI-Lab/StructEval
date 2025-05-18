@@ -1,0 +1,26 @@
+creature:
+  name: Zyphlorex
+  species: Xenomorphoid
+  origin:
+    planet: Zyphlon Prime
+    galaxy: Andromeda
+  abilities:
+    - ability_name: Telekinesis
+      power_level: 85
+      cooldown_seconds: 120
+    - ability_name: Invisibility
+      power_level: 70
+      cooldown_seconds: 180
+  appearance:
+    height_cm: 210
+    skin_color: Iridescent Blue
+    eye_count: 3
+  inventory:
+    - item_name: Quantum Shard
+      quantity: 1
+      rarity: legendary
+  allies:
+    - name: Xylo
+      relationship: mentor
+    - name: Thrax
+      relationship: rival

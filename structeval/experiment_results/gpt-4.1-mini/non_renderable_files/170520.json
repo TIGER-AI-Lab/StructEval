@@ -1,0 +1,43 @@
+
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "starSystems": {
+      "starSystem": [
+        {
+          "systemName": "Alpha Centauri",
+          "planets": {
+            "planet": [
+              {
+                "planetName": "Proxima b",
+                "moons": {
+                  "moon": [
+                    "Luna Minor",
+                    "Selene"
+                  ]
+                }
+              },
+              {
+                "planetName": "Centauri Prime",
+                "moons": {
+                  "moon": "Phobos"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "systemName": "Betelgeuse",
+          "planets": {
+            "planet": {
+              "planetName": "Betel One",
+              "moons": {
+                "moon": "Io Prime"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

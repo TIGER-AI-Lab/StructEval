@@ -1,0 +1,31 @@
+<rocket>
+  <name>Odyssey</name>
+  <mission>First Mars Landing</mission>
+  <launch_date>2032-07-19</launch_date>
+  <crew>
+    <member>
+      <name>Dr. Jane Foster</name>
+      <role>Commander</role>
+      <experience_years>12</experience_years>
+    </member>
+    <member>
+      <name>Alexei Volkov</name>
+      <role>Pilot</role>
+      <experience_years>8</experience_years>
+    </member>
+  </crew>
+  <payload>
+    <cargo>
+      <item>
+        <type>Scientific Equipment</type>
+        <weight_kg>5000</weight_kg>
+      </item>
+      <item>
+        <type>Food Supplies</type>
+        <weight_kg>2000</weight_kg>
+      </item>
+    </cargo>
+    <destination>Mars</destination>
+  </payload>
+  <status>Ready</status>
+</rocket>

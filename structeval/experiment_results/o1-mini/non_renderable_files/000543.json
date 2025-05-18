@@ -1,0 +1,43 @@
+{
+  "artifact": {
+    "name": "Ancient Chalice",
+    "origin": {
+      "civilization": "Minoan",
+      "era": "Bronze Age"
+    },
+    "discovery": {
+      "date": "2023-10-01",
+      "location": {
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      }
+    },
+    "materials": [
+      {
+        "type": "Gold",
+        "percentage": 75
+      },
+      {
+        "type": "Silver",
+        "percentage": 25
+      }
+    ],
+    "inscriptions": [
+      {
+        "language": "Linear A",
+        "translation": "Blessings upon the holder."
+      },
+      {
+        "language": "Ancient Greek",
+        "translation": "Eternal glory."
+      }
+    ],
+    "condition": {
+      "status": "Moderate",
+      "restoration": {
+        "last_date": "2023-09-15",
+        "notes": "Cleaned and stabilized by conservators."
+      }
+    }
+  }
+}

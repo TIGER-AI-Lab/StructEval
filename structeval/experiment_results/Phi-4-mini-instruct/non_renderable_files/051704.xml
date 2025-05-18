@@ -1,0 +1,30 @@
+
+&lt;galaxy>
+  &lt;name>Andromeda</name>
+  &lt;starSystems>
+    &lt;starSystem>
+      &lt;name>Alpha Centauri</name>
+      &lt;planets>
+        &lt;planet>
+          &lt;name>Proxima b</name>
+          &lt;moons>
+            &lt;moon>Luna Minor</moon>
+            &lt;moon>Luna Major</moon>
+          &lt;moons>
+        &lt;planet>
+          &lt;name>Proxima c</name>
+          &lt;moons>
+        &lt;planet>
+      &lt;starSystem>
+    &lt;starSystem>
+      &lt;name>Sirius</name>
+      &lt;planets>
+        &lt;planet>
+          &lt;name>Sirius A-1</name>
+          &lt;moons>
+            &lt;moon>Io</moon>
+          &lt;moons>
+        &lt;planet>
+      &lt;starSystem>
+  &lt;starSystems>
+&lt;/galaxy>

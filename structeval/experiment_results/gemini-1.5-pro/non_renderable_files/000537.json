@@ -1,0 +1,46 @@
+{
+  "creatureProfile": {
+    "name": "Sylvanus the Whispering Willow",
+    "species": "Treant",
+    "age": 500,
+    "habitat": {
+      "region": "Whispering Woods",
+      "climate": "Temperate",
+      "features": [
+        {
+          "type": "Forest",
+          "description": "A dense forest with ancient trees."
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "name": "Nature's Embrace",
+        "level": 8,
+        "cooldownSeconds": 600
+      },
+      {
+        "name": "Root Snare",
+        "level": 5,
+        "cooldownSeconds": 30
+      }
+    ],
+    "appearance": {
+      "color": "Brownish-Green",
+      "size": "Large",
+      "distinctiveMarks": [
+        {
+          "location": "Trunk",
+          "markType": "Glowing Runes"
+        }
+      ]
+    },
+    "diet": {
+      "primaryFood": "Sunlight",
+      "secondaryFoods": [
+        "Water",
+        "Minerals"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+
+<planet name="Jovion" type="Gas Giant" distance_from_sun_au="15.2" atmosphere.composition="Hydrogen;Helium" atmosphere.pressure_at_surface="1.5" atmosphere.has_weather="Yes">
+  <moons>
+    <moon name="Phobos" diameter_km="22.2" discovery_year="1877"/>
+    <moon name="Deimos" diameter_km="12.4" discovery_year="1877"/>
+  </moons>
+  <exploration>
+    <missions>
+      <mission name="ProbeOne" launch_year="1998" successful="True"/>
+    </missions>
+  </exploration>
+</planet>

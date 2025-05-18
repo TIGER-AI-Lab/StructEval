@@ -1,0 +1,49 @@
+<recipe>
+  <metadata>
+    <name>Classic Tomato Soup</name>
+    <author>Chef John Doe</author>
+    <cuisine>Italian</cuisine>
+    <prepTime>PT30M</prepTime>
+    <cookTime>PT45M</cookTime>
+    <servings>4</servings>
+  </metadata>
+  <ingredients>
+    <ingredient>
+      <name>Tomatoes</name>
+      <quantity>500</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Onion</name>
+      <quantity>1</quantity>
+      <unit>medium</unit>
+    </ingredient>
+    <ingredient>
+      <name>Garlic</name>
+      <quantity>2</quantity>
+      <unit>cloves</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <order>1</order>
+      <description>Chop the tomatoes, onion, and garlic.</description>
+      <duration>PT10M</duration>
+    </step>
+    <step>
+      <order>2</order>
+      <description>Heat oil in a pot and sautÃ© the onions and garlic until golden brown.</description>
+      <duration>PT15M</duration>
+    </step>
+    <step>
+      <order>3</order>
+      <description>Add the chopped tomatoes and simmer for 20 minutes.</description>
+      <duration>PT20M</duration>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>200</calories>
+    <protein>5</protein>
+    <fat>8</fat>
+  </nutrition>
+</recipe>

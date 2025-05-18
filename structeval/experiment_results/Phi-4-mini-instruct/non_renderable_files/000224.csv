@@ -1,0 +1,6 @@
+book_id,title,author_name,author_birth_year,genre,publication_year,publisher_name,publisher_country,pages,language,series_name,series_number,isbn_13,average_rating,review_count
+1,"The Enchanted Forest",Elena M. Smith,1975,Fantasy,2010,Arcane Publishing,USA,350,English,"The Enchanted Chronicles",1,978-3-16-148410-0,4.5,1500
+2,"Galactic Odyssey",John R. Carter,1982,Science Fiction,2015,Stellar Books,UK,220,English,"The Galactic Series",2,978-0-13-233456-0,4.7,2500
+3,"Mystery of the Ancients",Liam O'Connor,1990,Historical Fiction,2018,Timebound Press,Canada,410,English,"The Timebound Series",3,978-1-23-456789-0,4.2,1800
+4,"The Last Mage",Sophia T. Williams,2001,Fantasy,2021,Arcane Publishing,USA,500,English,"The Arcane Chronicles",4,978-3-16-148410-1,4.8,2200
+5,"Stars Beyond",Michael T. Johnson,1985,Science Fiction,2019,Galactic Press,USA,320,English,"The Space Chronicles",1,978-0-13-233456-1,4.9,3000

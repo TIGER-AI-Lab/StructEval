@@ -1,0 +1,23 @@
+
+artifact:
+  name: "Ancient Vase"
+  origin:
+    culture: "Minoan Civilization"
+    period: "Minoan Bronze Age"
+  materials:
+    primary: "Clay"
+    secondary: "Gold Inlay"
+  dimensions:
+    height_cm: 45
+    width_cm: 30
+    depth_cm: 15
+  condition:
+    status: "Excellent"
+    notes: "Minor surface wear"
+  exhibitions:
+    - title: "Treasures of the Aegean"
+      date_range:
+        start: "2021-06-01"
+        end: "2021-09-30"
+      museum: "Heraklion Archaeological Museum"
+      city: "Heraklion"

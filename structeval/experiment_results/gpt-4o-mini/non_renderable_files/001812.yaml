@@ -1,0 +1,35 @@
+
+brewery:
+  name: "Hoppy Trails Brewery"
+  location:
+    city: "Brewtown"
+    country: "USA"
+  founded_year: 2015
+  owner: "Jane Doe"
+  beers:
+    - name: "Trailblazer IPA"
+      style: "IPA"
+      abv: 6.5
+      awards:
+        - title: "Best IPA"
+          year: 2021
+          organization: "Craft Beer Association"
+    - name: "Muddy Boots Stout"
+      style: "Stout"
+      abv: 5.8
+      awards:
+        - title: "Gold Medal Stout"
+          year: 2020
+          organization: "International Beer Awards"
+  tours:
+    available: true
+    schedule:
+      days:
+        - "Saturday"
+        - "Sunday"
+      times:
+        - "11:00"
+        - "14:00"
+    languages_supported:
+      - "English"
+      - "Spanish"

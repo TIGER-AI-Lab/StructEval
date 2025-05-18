@@ -1,0 +1,63 @@
+
+<recipe>
+    <title>Creamy Tomato Pasta</title>
+    <author>
+        <name>John Doe</name>
+        <contact>
+            <email>johndoe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Tomatoes</name>
+            <quantity>250</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Pasta</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Boil the pasta in a large pot of salted water.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Pot</name>
+                    <required>true</required>
+                </tool>
+                <tool>
+                    <name>Colander</name>
+                    <required>true</required>
+                </tool>
+            </tools>
+        </step>
+        <step>
+            <description>Heat the olive oil in a large skillet over medium heat.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Skillet</name>
+                    <required>true</required>
+                </tool>
+                <tool>
+                    <name>Olive oil</name>
+                    <required>false</required>
+                </tool>
+            </tools>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>500</calories>
+        <fat_grams>20</fat_grams>
+        <protein_grams>30</protein_grams>
+    </nutrition>
+    <tags>
+        <tag>Italian</tag>
+        <tag>Vegetarian</tag>
+    </tags>
+</recipe>

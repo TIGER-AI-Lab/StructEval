@@ -1,0 +1,55 @@
+
+[
+  {
+    "galaxy_name": "Andromeda",
+    "sector": {
+      "id": 42,
+      "name": "Alpha Prime",
+      "coordinates": {
+        "x": 1200,
+        "y": 3400,
+        "z": 800
+      },
+      "planets": [
+        {
+          "planet_name": "Xenon",
+          "type": "Gas Giant",
+          "moons": 3,
+          "inhabitants": [
+            {
+              "species": "Xel'Naga",
+              "population": 200000,
+              "technology_level": "Advanced"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "galaxy_name": "Milky Way",
+    "sector": {
+      "id": 13,
+      "name": "Beta Quadrant",
+      "coordinates": {
+        "x": 4500,
+        "y": 2100,
+        "z": 1500
+      },
+      "planets": [
+        {
+          "planet_name": "Terra",
+          "type": "Terrestrial",
+          "moons": 1,
+          "inhabitants": [
+            {
+              "species": "Human",
+              "population": 7800000000,
+              "technology_level": "Modern"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

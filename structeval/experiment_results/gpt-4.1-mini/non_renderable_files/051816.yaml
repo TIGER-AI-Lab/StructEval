@@ -1,0 +1,27 @@
+planet:
+  name: Zephyria
+  orbital_period_days: 412
+  moons: 3
+  atmosphere:
+    composition:
+      - Nitrogen
+      - Argon
+      - Helium
+    pressure_kpa: 85.2
+  rings:
+    exists: true
+    particles:
+      - ice
+      - silicate
+      - carbon dust
+  surface_features:
+    - crystal forests
+    - floating mountains
+    - lava seas
+  inhabitants:
+    - species: Aetherians
+      population: 1200000
+      sentient: true
+    - species: Glintbeetles
+      population: 5000000000
+      sentient: false

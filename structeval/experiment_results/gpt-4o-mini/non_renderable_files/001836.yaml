@@ -1,0 +1,29 @@
+
+artifact:
+  name: "The Celestial Sphere"
+  origin: "Ancient Mesopotamia"
+  discovery:
+    year: 2022
+    discoverer: "Dr. Elena Vasquez and the Mesopotamian Archaeological Team"
+  materials:
+    - "Bronze"
+    - "Lapis Lazuli"
+    - "Gold"
+  dimensions:
+    height_cm: 30
+    width_cm: 25
+    depth_cm: 10
+  features:
+    - type: "Inscription"
+      description: "Intricate cuneiform inscriptions detailing astronomical observations."
+      condition: "Well-preserved with minor surface wear."
+    - type: "Relief"
+      description: "A relief depicting celestial bodies and mythological figures."
+  provenance:
+    previous_owners:
+      - "The Royal Museum of Antiquities"
+      - "Private Collector: John Smith"
+    auction_history:
+      - date: "2023-05-15"
+        price_usd: 150000
+        auction_house: "Heritage Auctions"

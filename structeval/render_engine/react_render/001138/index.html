@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001138</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const JobApplication = () => {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+    position: '',
+    coverLetter: '',
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+  const [validationErrors, setValidationErrors] = useState({});
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const errors = {};
+    if (!formData.fullName) errors.fullName = 'Full Name is required';
+    if (!formData.email) errors.email = 'Email is required';
+    if (!formData.email && !formData.email.includes('@')) errors.email = 'Invalid email format';
+    if (!formData.phone) errors.phone = 'Phone Number is required';
+    if (!formData.position) errors.position = 'Position is required';
+    if (!formData.coverLetter) errors.coverLetter = 'Cover Letter is required';
+
+    setValidationErrors(errors);
+
+    if (Object.keys(errors).length === 0) {
+      setSubmitted(true);
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        position: '',
+        coverLetter: '',
+      });
+    }
+  };
+
+  const handleReset = () => {
+    setFormData({
+      fullName: '',
+      email: '',
+      phone: '',
+      position: '',
+      coverLetter: '',
+    });
+    setValidationErrors({});
+  };
+
+
+  return (
+    <div>
+      <h1>Job Application</h1>
+      <form onSubmit={handleSubmit}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Full Name"
+            value={formData.fullName}
+            onChange={handleChange}
+          />
+          {validationErrors.fullName && <p style={{ color: 'red' }}>{validationErrors.fullName}</p>}
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          {validationErrors.email && <p style={{ color: 'red' }}>{validationErrors.email}</p>}
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            value={formData.phone}
+            onChange={handleChange}
+          />
+          {validationErrors.phone && <p style={{ color: 'red' }}>{validationErrors.phone}</p>}
+
+          <select name="position" value={formData.position} onChange={handleChange}>
+            <option value="">Position Applied For</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Data Scientist">Data Scientist</option>
+            <option value="Project Manager">Project Manager</option>
+          </select>
+          {validationErrors.position && <p style={{ color: 'red' }}>{validationErrors.position}</p>}
+
+          <textarea
+            name="coverLetter"
+            placeholder="Cover Letter"
+            rows="4"
+            value={formData.coverLetter}
+            onChange={handleChange}
+          />
+          {validationErrors.coverLetter && <p style={{ color: 'red' }}>{validationErrors.coverLetter}</p>}
+        </div>
+        <button type="submit" style={{ backgroundColor: 'darkgreen', color: 'white' }}>Apply</button>
+        <button type="button" onClick={handleReset} style={{ marginLeft: '10px' }}>Clear</button>
+      </form>
+
+      {submitted && (
+        <div>
+          <p>Application submitted successfully!</p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<JobApplication />);
+
+    </script>
+  </body>
+</html>

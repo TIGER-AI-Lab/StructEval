@@ -1,0 +1,46 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def yaml_to_xml(yaml_data):
+    root = ET.Element('root')
+    space_opera = yaml.load(yaml_data, Loader=yaml.FullLoader)
+    for member in space_opera['crew']['member']:
+        crew_member = ET.SubElement(root, 'crew_member')
+        ET.SubElement(crew_member, 'name').text = member['name']
+        ET.SubElement(crew_member, 'role').text = member['role']
+        ET.SubElement(crew_member, 'species').text = member['species']
+    ship = ET.SubElement(root, 'ship')
+    ET.SubElement(ship, 'name').text = space_opera['ship']['name']
+    ET.SubElement(ship, 'class').text = space_opera['ship']['class']
+    for mission in space_opera['missions']['mission']:
+        mission_element = ET.SubElement(root, 'mission')
+        ET.SubElement(mission_element, 'title').text = mission['title']
+        ET.SubElement(mission_element, 'destination').text = mission['destination']
+    return ET.tostring(root, encoding='unicode')
+
+yaml_data = """
+spaceOpera:
+  crew:
+    member:
+      - name: Captain Zira
+        role: Commander
+        species: Andromedan
+      - name: Flux
+        role: Engineer
+        species: Cyborg
+      - name: Pipp
+        role: Navigator
+        species: Human
+  ship:
+    name: Star Whisperer
+    class: Explorer
+  missions:
+    mission:
+      - title: Rescue at Nebula 9
+        destination: Nebula 9
+      - title: The Lost Planet
+        destination: Xyloxis Prime
+"""
+
+print(yaml_to_xml(yaml_data))

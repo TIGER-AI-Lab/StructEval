@@ -1,0 +1,33 @@
+
+artifact:
+  related_artifacts:
+    - "Ancient Pottery Shard"
+    - "Bronze Age Tool"
+  metadata:
+    name: "Ceremonial Mask"
+    discovery_date: "2023-09-15"
+    origin_civilization: "Mesoamerican"
+    current_location: "National Museum of Anthropology"
+  specifications:
+    dimensions:
+      length_cm: 30
+      width_cm: 20
+      height_cm: 15
+    materials:
+      - "Clay"
+      - "Paint"
+      - "Feathers"
+    age_years: 1200
+  analysis:
+    hypotheses:
+      - summary: "The mask was used in religious ceremonies."
+        confidence_score: 0.85
+      - summary: "The mask served as a status symbol for elite members."
+        confidence_score: 0.65
+    researchers:
+      - name: "Dr. Maria Lopez"
+        institution: "University of Mexico"
+        contribution: "Lead archaeologist on the excavation team."
+      - name: "Prof. John Smith"
+        institution: "Harvard University"
+        contribution: "Expert in Mesoamerican artifacts."

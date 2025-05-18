@@ -1,0 +1,79 @@
+<recipe>
+    <title>Chocolate Chip Cookies</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>jane.doe@example.com</contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>All-purpose flour</name>
+            <quantity>2.5</quantity>
+            <unit>cups</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Baking soda</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>0.5</quantity>
+            <unit>teaspoon</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Unsalted butter</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Brown sugar</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>White sugar</name>
+            <quantity>0.5</quantity>
+            <unit>cup</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <unit>large</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Vanilla extract</name>
+            <quantity>2</quantity>
+            <unit>teaspoon</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Chocolate chips</name>
+            <quantity>2</quantity>
+            <unit>cups</unit>
+            <optional>true</optional>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Preheat the oven to 350Â°F (175Â°C).</description>
+            <duration>PT5M</duration>
+        </step>
+        <step>
+            <description>In a large bowl, cream together the butter, brown sugar, and white sugar until smooth.</description>
+            <duration>PT10M</duration>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>250</calories>
+        <protein>5</protein>
+        <fat>10</fat>
+        <carbohydrates>35</carbohydrates>
+    </nutrition>
+</recipe>

@@ -1,0 +1,3 @@
+
+brewery_id,brewery_name,brewery_location,year_established,brewery_type,main_brewer,signature_beer,signature_beer_abv,signature_beer_ibu,tour_available,tour_days,tour_duration_minutes,award_count,annual_production_liters,website_url
+1,Hoppy Valley Brewery,Hopville,USA,2010,microbrewery,John Doe,Hoppy Valley IPA,5.4,60,yes,Saturday,Sunday,120,3,https://www.hoppyvalleybrewery.com

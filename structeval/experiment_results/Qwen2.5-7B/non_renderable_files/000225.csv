@@ -1,0 +1,53 @@
+python
+import csv
+
+creature_data = {
+    "creature_id": "123",
+    "species_name": "Gigantopithecus",
+    "habitat": {
+        "region": "Southeast Asia",
+        "climate": "Tropical",
+        "terrain": "Rainforest"
+    },
+    "physical_characteristics": {
+        "height_cm": 200,
+        "weight_kg": 200,
+        "skin_color": "Brown",
+        "eye_color": "Yellow"
+    },
+    "abilities": [
+        {"name": "Strength", "type": "Physical", "power_level": 90},
+        {"name": "Speed", "type": "Physical", "power_level": 80}
+    ],
+    "diet": {
+        "primary_food": "Fruits",
+        "secondary_food": "Leaves"
+    }
+}
+
+def generate_csv_row(creature_data):
+    csv_row = [
+        creature_data["creature_id"],
+        creature_data["species_name"],
+        creature_data["habitat"]["region"],
+        creature_data["habitat"]["climate"],
+        creature_data["habitat"]["terrain"],
+        creature_data["physical_characteristics"]["height_cm"],
+        creature_data["physical_characteristics"]["weight_kg"],
+        creature_data["physical_characteristics"]["skin_color"],
+        creature_data["physical_characteristics"]["eye_color"],
+        creature_data["abilities"][0]["name"],
+        creature_data["abilities"][0]["type"],
+        creature_data["abilities"][0]["power_level"],
+        creature_data["abilities"][1]["name"],
+        creature_data["abilities"][1]["type"],
+        creature_data["abilities"][1]["power_level"],
+        creature_data["diet"]["primary_food"],
+        creature_data["diet"]["secondary_food"]
+    ]
+    return csv_row
+
+csv_row = generate_csv_row(creature_data)
+writer = csv.writer(open("creature_data.csv", "w"))
+writer.writerow(["creature_id", "species_name", "habitat_region", "habitat_climate", "habitat_terrain", "height_cm", "weight_kg", "skin_color", "eye_color", "ability1_name", "ability1_type", "ability1_power_level", "ability2_name", "ability2_type", "ability2_power_level", "primary_food", "secondary_food"])
+writer.writerow(csv_row)

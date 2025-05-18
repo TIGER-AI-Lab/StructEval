@@ -1,0 +1,32 @@
+
+festival = {
+  name = "Global Harmony Festival",
+  location = {
+    city = "Tokyo",
+    country = "Japan"
+  },
+  year = 2023,
+  organizer = {
+    name = "Harmony Music Foundation",
+    contact = {
+      email = "info@harmonymusicfoundation.org",
+      phone = "+81 123 456 7890"
+    }
+  },
+  events = [
+    {
+      title = "Headliner Concert",
+      date = "2023-07-15T19:00:00Z",
+      performers = ["The Rolling Stones", "The Who"],
+      tickets = {
+        price = 500,
+        available = 1000,
+        types = ["VIP", "General", "Student"]
+      }
+    },
+    {
+      title = "Emerging Artists Showcase",
+      performers = ["Local Band", "Up-and-Coming Artist"]
+    }
+  ]
+}

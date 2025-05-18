@@ -1,0 +1,33 @@
+<planets>
+  <planet>
+    <name>Jovion</name>
+    <type>Gas Giant</type>
+    <distance_from_sun_au>15.2</distance_from_sun_au>
+    <atmosphere>
+      <composition>Hydrogen;Helium</composition>
+      <pressure_at_surface>1.5</pressure_at_surface>
+      <has_weather>Yes</has_weather>
+    </atmosphere>
+    <moons>
+      <moon>
+        <name>Phobos</name>
+        <diameter_km>22.2</diameter_km>
+        <discovery_year>1877</discovery_year>
+      </moon>
+      <moon>
+        <name>Deimos</name>
+        <diameter_km>12.4</diameter_km>
+        <discovery_year>1877</discovery_year>
+      </moon>
+    </moons>
+    <exploration>
+      <missions>
+        <mission>
+          <name>ProbeOne</name>
+          <launch_year>1998</launch_year>
+          <successful>True</successful>
+        </mission>
+      </missions>
+    </exploration>
+  </planet>
+</planets>

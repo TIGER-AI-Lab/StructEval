@@ -1,0 +1,46 @@
+<creature>
+    <name>Aetherius, the Sky Wanderer</name>
+    <species>Celestial Avian</species>
+    <habitat>
+        <region>High Peaks of Mount Cinder</region>
+        <climate>Alpine</climate>
+    </habitat>
+    <traits>
+        <trait>
+            <traitName>Thermal Regulation</trait>
+            <severity>High</severity>
+            <description>Withstands extreme temperatures.</description>
+        </trait>
+        <trait>
+            <traitName>Echolocation</trait>
+            <severity>Medium</severity>
+            <description>Navigates through dense fog using sound waves.</description>
+        </trait>
+    </traits>
+    <abilities>
+        <ability>
+            <abilityName>Celestial Flare</ability>
+            <cooldownSeconds>300</cooldownSeconds>
+            <effect>Emits a blinding flash of light.</effect>
+        </ability>
+        <ability>
+            <abilityName>Wind Manipulation</ability>
+            <cooldownSeconds>60</cooldownSeconds>
+            <effect>Creates gusts of wind for propulsion and defense.</effect>
+        </ability>
+    </abilities>
+    <appearance>
+        <color>
+            <primary>Azure</primary>
+            <secondary>Silver</secondary>
+        </color>
+        <size>
+            <heightCm>250</heightCm>
+            <weightKg>50</weightKg>
+        </size>
+    </appearance>
+    <discovery>
+        <dateDiscovered>2024-03-15</dateDiscovered>
+        <discoveredBy>Explorers Guild</discoveredBy>
+    </discovery>
+</creature>

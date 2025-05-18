@@ -1,0 +1,110 @@
+
+<recipe>
+  <metadata>
+    <title>Delicious Chocolate Chip Cookies</title>
+    <author>
+      <name>Jane Doe</name>
+      <contact>jane.doe@example.com</contact>
+    </author>
+    <datePublished>2023-10-27</datePublished>
+    <prepTime>PT15M</prepTime>
+    <cookTime>PT12M</cookTime>
+    <servings>24</servings>
+  </metadata>
+  <ingredients>
+    <ingredient>
+      <name>All-Purpose Flour</name>
+      <quantity>3</quantity>
+      <unit>cups</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Granulated Sugar</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Brown Sugar</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Butter</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>2</quantity>
+      <unit/>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Vanilla Extract</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Baking Soda</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Salt</name>
+      <quantity>0.5</quantity>
+      <unit>teaspoon</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Chocolate Chips</name>
+      <quantity>2</quantity>
+      <unit>cups</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Preheat oven to 375Â°F (190Â°C).</description>
+      <duration>PT5M</duration>
+    </step>
+    <step>
+      <description>Cream together the butter, granulated sugar, and brown sugar until smooth.</description>
+      <duration>PT5M</duration>
+    </step>
+    <step>
+      <description>Beat in the eggs, then stir in the vanilla.</description>
+      <duration>PT2M</duration>
+    </step>
+    <step>
+      <description>Dissolve baking soda in hot water. Add to batter along with salt.</description>
+      <duration>PT1M</duration>
+    </step>
+    <step>
+      <description>Stir in the flour and chocolate chips.</description>
+      <duration>PT2M</duration>
+    </step>
+    <step>
+      <description>Drop by rounded tablespoons onto ungreased baking sheets.</description>
+      <duration>PT2M</duration>
+    </step>
+    <step>
+      <description>Bake for 10-12 minutes, or until edges are nicely browned.</description>
+      <duration>PT12M</duration>
+    </step>
+    <step>
+      <description>Cool on baking sheets for a few minutes before transferring to a wire rack to cool completely.</description>
+      <duration>PT5M</duration>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>150</calories>
+    <protein>2</protein>
+    <fat>8</fat>
+    <carbohydrates>18</carbohydrates>
+  </nutrition>
+</recipe>

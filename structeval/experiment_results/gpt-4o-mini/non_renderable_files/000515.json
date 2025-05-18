@@ -1,0 +1,41 @@
+
+{
+  "artifact": {
+    "name": "The Golden Mask of Tutankhamun",
+    "origin": {
+      "civilization": "Ancient Egypt",
+      "era": "New Kingdom"
+    },
+    "materials": {
+      "primary": "Gold",
+      "secondary": "Lapis Lazuli, Carnelian"
+    },
+    "dimensions": {
+      "height_cm": 54,
+      "width_cm": 39,
+      "depth_cm": 49
+    },
+    "features": [
+      {
+        "type": "inscription",
+        "description": "Hieroglyphic inscriptions detailing the identity and titles of Tutankhamun.",
+        "preservation_state": "Well-preserved"
+      },
+      {
+        "type": "ornamentation",
+        "description": "Intricate inlays of semi-precious stones and glass.",
+        "preservation_state": "Good condition"
+      }
+    ],
+    "discovery": {
+      "date_found": "1922-11-04",
+      "location": {
+        "country": "Egypt",
+        "coordinates": {
+          "latitude": 25.7333,
+          "longitude": 32.6000
+        }
+      }
+    }
+  }
+}

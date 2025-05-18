@@ -1,0 +1,28 @@
+[festival]
+name = "Global Rhythm Festival"
+[location]
+city = "Melbourne"
+country = "Australia"
+year = 2023
+[organizer]
+name = "Global Music Events"
+[contact]
+email = "info@globalmusicfestival.com"
+phone = "+61 3 9000 5555"
+[events]
+[[events]]
+title = "Opening Night: International DJ Showcase"
+date = "2023-04-15"
+performers = ["David Guetta", "Martin Garrix", "Zedd"]
+[tickets]
+price = 150.00
+available = 500
+types = ["VIP", "General"]
+[[events]]
+title = "Day 1: Main Stage Concerts"
+date = "2023-04-16"
+performers = ["Adele", "Ed Sheeran", "BeyoncÃ©"]
+[tickets]
+price = 100.00
+available = 800
+types = ["VIP", "General", "Student"]

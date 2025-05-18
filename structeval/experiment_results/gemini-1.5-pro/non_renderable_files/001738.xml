@@ -1,0 +1,29 @@
+<planet type="terrestrial">
+  <name>Xylia</name>
+  <atmosphere habitable="true">
+    <composition>Nitrogen, Oxygen, Argon</composition>
+    <pressure>90</pressure>
+  </atmosphere>
+  <satellites>
+    <satellite>
+      <name>Luna Minor</name>
+      <diameter>3500</diameter>
+      <orbit eccentricity="0.15">
+        <period>25</period>
+        <distance>400000</distance>
+      </orbit>
+    </satellite>
+  </satellites>
+  <lifeforms>
+    <lifeform intelligence="sentient">
+      <species>Xylan</species>
+      <population>1000000</population>
+    </lifeform>
+  </lifeforms>
+  <resources>
+    <resource>
+      <type>water</type>
+      <quantity>1000000 liters</quantity>
+    </resource>
+  </resources>
+</planet>

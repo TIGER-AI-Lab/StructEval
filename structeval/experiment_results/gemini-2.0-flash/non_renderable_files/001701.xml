@@ -1,0 +1,32 @@
+
+<planet>
+    <name>Aethelgard</name>
+    <type>gas giant</type>
+    <discovery year="2342">
+        <method>telescope</method>
+        <observer>Dr. Aris Thorne</observer>
+    </discovery>
+    <moons>
+        <moon>
+            <name>Lyra</name>
+            <diameter>1250</diameter>
+            <orbit_period>12.5</orbit_period>
+        </moon>
+        <moon>
+            <name>Calliope</name>
+            <diameter>800</diameter>
+            <orbit_period>22.1</orbit_period>
+        </moon>
+    </moons>
+    <atmosphere>
+        <composition>Hydrogen, Helium, Methane</composition>
+        <pressure>150000</pressure>
+        <temperature>-150</temperature>
+    </atmosphere>
+    <rings>
+        <ring>
+            <width>5000</width>
+            <composition>Ice, Dust</composition>
+        </ring>
+    </rings>
+</planet>

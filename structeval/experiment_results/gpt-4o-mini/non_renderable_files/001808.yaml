@@ -1,0 +1,24 @@
+
+creature:
+  name: Lumivorax
+  species: Ethereal Predator
+  age: 150
+  habitat:
+    region: Frostbound Mountains
+    climate: Frigid and snowy
+  appearance:
+    color: Iridescent blue
+    size:
+      height_cm: 180
+      weight_kg: 75
+  abilities:
+    - type: Shadow Manipulation
+      description: Allows the creature to blend into shadows, becoming nearly invisible.
+      power_level: 9
+    - type: Frost Breath
+      description: Emits a chilling breath that can freeze opponents in place.
+      power_level: 8
+  behavior:
+    - nocturnal hunting
+    - territorial marking
+    - pack communication

@@ -1,0 +1,32 @@
+
+festival = {
+  name = "Global Beats Festival",
+  location = {
+    city = "Tokyo",
+    country = "Japan"
+  },
+  year = 2024,
+  organizer = {
+    name = "Global Beats Foundation",
+    contact = {
+      email = "info@globalbeats.org",
+      phone = "+81 03 1234 5678"
+    }
+  },
+  events = [
+    {
+      title = "Headliner: Tokyo Symphony Orchestra",
+      date = "2024-08-01T19:00:00+09:00",
+      performers = ["Tokyo Symphony Orchestra", "Special Guest: Ryuichi Sakamoto"],
+      tickets = {
+        price = 5000.0,
+        available = 1000,
+        types = ["VIP", "General"]
+      }
+    },
+    {
+      title = "Electronic Dance Night",
+      performers = ["DJ Taro", "DJ Yuna"]
+    }
+  ]
+}

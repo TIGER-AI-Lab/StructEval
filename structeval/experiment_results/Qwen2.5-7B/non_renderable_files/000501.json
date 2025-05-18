@@ -1,0 +1,44 @@
+
+{
+  "museum": {
+    "name": "The Metropolitan Museum of Art",
+    "location": {
+      "address": "1000 Fifth Avenue",
+      "city": "New York",
+      "country": "USA"
+    },
+    "established_year": 1870,
+    "director": {
+      "name": "Maximilian Schmuck",
+      "tenure_years": 10
+    },
+    "galleries": [
+      {
+        "name": "Egyptian Art",
+        "theme": "Ancient Egyptian Civilization",
+        "artworks": [
+          {
+            "title": "The Younger Memnon",
+            "artist": "Unknown",
+            "year_created": 1350,
+            "medium": "Limestone",
+            "dimensions": {
+              "height_cm": 196,
+              "width_cm": 100
+            }
+          },
+          {
+            "title": "Seated Scribe",
+            "artist": "Unknown",
+            "year_created": 1400,
+            "medium": "Wood",
+            "dimensions": {
+              "height_cm": 150,
+              "width_cm": 70
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "artifact": {
+    "name": "Golden Mask of Tutankhamun",
+    "origin": {
+      "civilization": "Ancient Egyptian",
+      "era": "New Kingdom, 18th Dynasty"
+    },
+    "materials": [
+      {
+        "type": "Gold",
+        "provenance": "Eastern Desert of Egypt"
+      },
+      {
+        "type": "Lapis Lazuli",
+        "provenance": "Badakhshan, Afghanistan"
+      }
+    ],
+    "dimensions": {
+      "height_cm": 32.5,
+      "width_cm": 39.3,
+      "depth_cm": 4.0
+    },
+    "inscriptions": [
+      {
+        "language": "Ancient Egyptian",
+        "translation": "May the gods protect the king.",
+        "position": "Forehead"
+      },
+      {
+        "language": "Ancient Egyptian",
+        "translation": "Long live the king.",
+        "position": "Chin"
+      }
+    ],
+    "current_location": {
+      "museum": "Egyptian Museum",
+      "display_case": "Treasury Room"
+    },
+    "discovery": {
+      "date": "1922-11-04",
+      "discoverer": "Howard Carter"
+    }
+  }
+}

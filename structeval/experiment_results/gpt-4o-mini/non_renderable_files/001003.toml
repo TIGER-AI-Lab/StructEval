@@ -1,0 +1,42 @@
+
+artifact = { 
+    name = "The Golden Mask of Tutankhamun",
+    origin = "Ancient Egypt",
+    discovery_date = "1922-11-04",
+    materials = { 
+        primary = "gold", 
+        secondary = "lapis lazuli" 
+    },
+    dimensions = { 
+        height_cm = 54, 
+        width_cm = 39, 
+        depth_cm = 49 
+    },
+    inscriptions = { 
+        list = [ 
+            { 
+                language = "Egyptian Hieroglyphs", 
+                translation = "The living Horus, the great god", 
+                location_on_artifact = "front" 
+            },
+            { 
+                language = "Ancient Greek", 
+                translation = "King Tutankhamun", 
+                location_on_artifact = "back" 
+            } 
+        ] 
+    },
+    exhibit = { 
+        current_location = "Egyptian Museum, Cairo",
+        previous_locations = [ 
+            { 
+                museum = "Metropolitan Museum of Art", 
+                year_range = "1976â1979" 
+            },
+            { 
+                museum = "British Museum", 
+                year_range = "2000â2001" 
+            } 
+        ] 
+    }
+}

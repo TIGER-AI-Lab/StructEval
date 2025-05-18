@@ -1,0 +1,46 @@
+{
+  "spaceship": {
+    "name": "Stellar Nomad",
+    "model": "XJ-9",
+    "crew": {
+      "captain": "Zara Quell",
+      "engineer": "Milo Dex",
+      "pilot": "Rin Sato",
+      "members": [
+        {
+          "name": "Lira",
+          "role": "Navigator"
+        },
+        {
+          "name": "Vex",
+          "role": "Medic"
+        }
+      ]
+    },
+    "cargo": [
+      {
+        "type": "Helium-3",
+        "quantity": 120
+      },
+      {
+        "type": "Alien Artifacts",
+        "quantity": 5
+      }
+    ],
+    "missions": [
+      {
+        "destination": "Epsilon Prime",
+        "success": true
+      },
+      {
+        "destination": "Orion Outpost",
+        "success": false
+      }
+    ],
+    "specs": {
+      "length_m": 72,
+      "mass_tons": 450,
+      "max_speed_kps": 310
+    }
+  }
+}

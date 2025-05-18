@@ -1,0 +1,31 @@
+[star]
+name = "GSC 02652-01324"
+type = "G-type"
+distance_lightyears = 500.5
+
+  [star.discovery]
+  year = 2004
+  method = "Transit Photometry"
+
+  [[star.planets]]
+  name = "Kepler-1 b"
+  mass_earths = 0.42
+  orbital_period_days = 1.42848
+
+    [[star.planets[0].moons]]
+    name = "Luna Minor"
+    diameter_km = 250
+    composition = "Ice"
+
+    [[star.planets[0].moons]]
+    name = "Terra Secunda"
+    diameter_km = 300
+    composition = "Rock"
+
+    [star.planets[0].atmosphere]
+    composition = ["Hydrogen", "Helium", "Methane"]
+    pressure_atm = 90.0
+    has_rings = false
+
+    [star.planets[0].surface]
+    temperature_celsius = 1200.0

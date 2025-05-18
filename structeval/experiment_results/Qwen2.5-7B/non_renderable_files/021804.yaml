@@ -1,0 +1,22 @@
+galaxy:
+  name: Andromeda
+  type: Spiral
+  distance_light_years: 2537000
+  discovery:
+    year: 964
+    telescope: Hubble
+  planets:
+  - name: Xenon
+    has_life: true
+    moons: 2
+    surface_temperature_c: -50
+    atmosphere:
+      gases: O2,N2,CO2
+      pressure_atm: 1.2
+  - name: Zephyra
+    has_life: false
+    moons: 0
+    surface_temperature_c: 120
+    atmosphere:
+      gases: CO2,Ar
+      pressure_atm: 0.8

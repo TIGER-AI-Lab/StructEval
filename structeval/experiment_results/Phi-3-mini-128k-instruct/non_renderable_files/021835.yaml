@@ -1,0 +1,22 @@
+galaxy:
+  name: Andromeda
+  type: Spiral
+  distance_lightyears: 2537000
+  constellation: Andromeda
+  discovery:
+    year: 964
+    discoverer: Abd al-Rahman al-Sufi
+    telescope: Optical Telescope
+  stars:
+    - name: Sirius
+      type: Main Sequence
+      planets:
+        - name: Proxima b
+          has_life: False
+          moons: 2
+    - name: Betelgeuse
+      type: Red Supergiant
+  stars_additional:
+    - name: Kepler-22b
+      has_life: True
+      moons: 1

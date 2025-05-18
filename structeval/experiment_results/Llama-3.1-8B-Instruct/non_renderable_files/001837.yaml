@@ -1,0 +1,36 @@
+
+ecosystem:
+  name: "The Emerald Canopy"
+  location:
+    region: "Tropical Rainforest"
+    country: "Brazil"
+  climate:
+    type: "Tropical"
+    average_temperature_celsius: 24.5
+  flora:
+    - species: "Philodendron selloum"
+      population_estimate: 5000
+      conservation_status: "Least Concern"
+    - species: "Aechmea fasciata"
+      population_estimate: 2000
+      conservation_status: "Vulnerable"
+  fauna:
+    - species: "Jaguar (Panthera onca)"
+      population_estimate: 100
+      diet: "Carnivore"
+      notable_behaviors:
+        - "Solitary animal"
+        - "Excellent swimmer"
+    - species: "Sloth (Bradypus variegatus)"
+      population_estimate: 50
+      diet: "Herbivore"
+      notable_behaviors:
+        - "Slow movement"
+        - "Arboreal"
+  research_projects:
+    - title: "Diversity of Plant Species in the Emerald Canopy"
+      lead_scientist: "Dr. Maria Rodriguez"
+      start_year: 2018
+    - title: "Behavioral Patterns of Jaguars in the Emerald Canopy"
+      lead_scientist: "Dr. John Taylor"
+      start_year: 2020

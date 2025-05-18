@@ -1,0 +1,53 @@
+
+[
+  {
+    "astronaut_id": "A001",
+    "name": {
+      "first": "Valentina",
+      "last": "Tereshkova"
+    },
+    "missions": [
+      {
+        "mission_name": "Vostok 6",
+        "year": 1963,
+        "duration_days": 3,
+        "crew_members": ["Valentina Tereshkova"],
+        "mission_name1": "Soyuz 17",
+        "year1": 1975,
+        "duration_days1": 5,
+        "crew_members1": ["Aleksei Gubarev", "Georgy Grechko"]
+      }
+    ],
+    "skills": ["Engineering", "Piloting", "Russian"],
+    "favorite_space_food": "Borscht",
+    "contact": {
+      "email": "valentina@roscosmos.ru",
+      "phone": "+7-495-1234567"
+    }
+  },
+  {
+    "astronaut_id": "A002",
+    "name": {
+      "first": "Chris",
+      "last": "Hadfield"
+    },
+    "missions": [
+      {
+        "mission_name": "STS-74",
+        "year": 1995,
+        "duration_days": 8,
+        "crew_members": ["Chris Hadfield", "Kenneth Cameron", "Jerry Ross", "William McArthur"],
+        "mission_name1": "Expedition 35",
+        "year1": 2013,
+        "duration_days1": 146,
+        "crew_members1": ["Chris Hadfield", "Tom Marshburn", "Roman Romanenko"]
+      }
+    ],
+    "skills": ["Guitar", "Science Communication", "Photography"],
+    "favorite_space_food": "Maple Syrup",
+    "contact": {
+      "email": "chris@asc-csa.gc.ca",
+      "phone": "+1-613-555-0199"
+    }
+  }
+]

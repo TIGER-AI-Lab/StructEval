@@ -1,0 +1,43 @@
+
+{
+  "artifact": {
+    "name": "The Golden Chalice of Eldarath",
+    "origin": {
+      "civilization": "Eldarathian",
+      "era": "Bronze Age"
+    },
+    "description": "A golden chalice with intricate Eldarathian designs, believed to have been used in ancient rituals.",
+    "discovery": {
+      "date": "2022-07-15",
+      "location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "team": [
+        {
+          "member_name": "John Doe",
+          "role": "Archaeologist"
+        },
+        {
+          "member_name": "Jane Smith",
+          "role": "Anthropologist"
+        }
+      ]
+    },
+    "materials": [
+      {
+        "type": "Gold",
+        "percentage": 95
+      },
+      {
+        "type": "Copper",
+        "percentage": 5
+      }
+    ],
+    "dimensions": {
+      "height_cm": 20,
+      "width_cm": 15,
+      "depth_cm": 10
+    }
+  }
+}

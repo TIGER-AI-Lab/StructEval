@@ -1,0 +1,52 @@
+
+<recipe>
+  <metadata>
+    <name>Spaghetti Aglio e Olio</name>
+    <author>John Doe</author>
+    <cuisine>Italian</cuisine>
+    <prepTime>10</prepTime>
+    <cookTime>20</cookTime>
+    <servings>4</servings>
+  </metadata>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Garlic</name>
+      <quantity>2</quantity>
+      <unit>cloves</unit>
+    </ingredient>
+    <ingredient>
+      <name>Olive Oil</name>
+      <quantity>50</quantity>
+      <unit>ml</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <order>1</order>
+      <description>Boil water in a large pot.</description>
+    </step>
+    <step>
+      <order>2</order>
+      <description>Cook spaghetti according to package instructions.</description>
+    </step>
+    <step>
+      <order>3</order>
+      <description>Heat olive oil in a pan and sautÃ© garlic until fragrant.</description>
+    </step>
+    <step>
+      <order>4</order>
+      <description>Combine cooked pasta with garlic oil and serve.</description>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>400</calories>
+    <protein>15</protein>
+    <fat>10</fat>
+    <carbohydrates>60</carbohydrates>
+  </nutrition>
+</recipe>

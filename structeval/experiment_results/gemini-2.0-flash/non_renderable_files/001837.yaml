@@ -1,0 +1,35 @@
+ecosystem:
+  name: "The Whispering Caves Ecosystem"
+  location:
+    region: "Andean Highlands"
+    country: "Peru"
+  climate:
+    type: "Temperate Highland"
+    average_temperature_celsius: 12
+  flora:
+    - species: "Polylepis sericea"
+      population_estimate: 50000
+      conservation_status: "Vulnerable"
+    - species: "Bromelia hieronymi"
+      population_estimate: 75000
+      conservation_status: "Least Concern"
+  fauna:
+    - species: "Andean Condor"
+      population_estimate: 6700
+      diet: "Scavenger"
+      notable_behaviors:
+        - "Forms strong pair bonds"
+        - "Nests on high cliffs"
+    - species: "Vizcacha"
+      population_estimate: 250000
+      diet: "Herbivore"
+      notable_behaviors:
+        - "Lives in colonies"
+        - "Excellent climbers"
+  research_projects:
+    - title: "Condor Population Dynamics Study"
+      lead_scientist: "Dr. Elena Rodriguez"
+      start_year: 2018
+    - title: "Impact of Climate Change on Polylepis Forests"
+      lead_scientist: "Dr. Javier Morales"
+      start_year: 2020

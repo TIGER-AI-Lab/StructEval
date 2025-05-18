@@ -1,0 +1,17 @@
+
+galaxy:
+  name: Andromeda
+  starClusters:
+    starCluster:
+      - name: Blue Cluster
+        planets:
+          planet:
+            - name: Azura
+              hasRings: true
+            - name: Cerulea
+              hasRings: false
+      - name: Crimson Cluster
+        planets:
+          planet:
+            - name: Rubia
+              hasRings: true

@@ -1,0 +1,35 @@
+
+[artifact]
+name = "Xel'Naga Obelisk"
+
+[artifact.origin]
+civilization = "Xel'Naga"
+era = "Pre-Interstellar Age"
+
+[[artifact.materials]]
+type = "Neutronium"
+quantity_grams = 12500
+
+[[artifact.materials]]
+type = "Quantum Crystal"
+quantity_grams = 4300
+
+[artifact.dimensions]
+height_cm = 215.5
+width_cm = 75.0
+depth_cm = 60.3
+
+[[artifact.inscriptions]]
+language = "Xel'Nagan Glyphs"
+translation = "Eternal knowledge of the stars"
+
+[[artifact.inscriptions]]
+language = "Ancient Terran"
+translation = "To those who seek, wisdom awaits"
+
+[artifact.discovery]
+date_iso = "2378-04-12"
+
+[artifact.discovery.location]
+latitude = -12.3456
+longitude = 98.7654

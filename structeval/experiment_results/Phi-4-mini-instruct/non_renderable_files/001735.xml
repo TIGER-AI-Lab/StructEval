@@ -1,0 +1,51 @@
+<recipe>
+  <title>Classic Tomato Soup</title>
+  <author>
+    <name>Chef John Doe</name>
+    <contact>john.doe@example.com</contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Tomatoes</name>
+      <quantity>4</quantity>
+      <unit>cups</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Onion</name>
+      <quantity>1</quantity>
+      <unit>medium</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Garlic</name>
+      <quantity>2</quantity>
+      <unit>cloves</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Chop the tomatoes, onion, and garlic.</description>
+      <duration>PT15M</duration>
+    </step>
+    <step>
+      <description>Heat oil in a pot and sautÃ© the onions and garlic until golden brown.</description>
+      <duration>PT10M</duration>
+    </step>
+    <step>
+      <description>Add the tomatoes and cook for 10 minutes.</description>
+      <duration>PT10M</duration>
+    </step>
+    <step>
+      <description>Blend the mixture until smooth and season with salt and pepper.</description>
+      <duration>PT5M</duration>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>250</calories>
+    <protein>5</protein>
+    <fat>10</fat>
+    <carbohydrates>40</carbohydrates>
+  </nutrition>
+</recipe>

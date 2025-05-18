@@ -1,0 +1,52 @@
+
+import csv
+from datetime import datetime
+
+def generate_artifact_csv():
+    artifact_id = "AR-001"
+    artifact_name = "Golden Sarcophagus"
+    origin_civilization = "Ancient Egyptians"
+    discovery_site = "Thebes, Egypt"
+    discovery_date = datetime(1350, 3, 15).isoformat()
+    material_primary = "Gold"
+    material_secondary = ""
+    dimensions_length_cm = 120.5
+    dimensions_width_cm = 80.2
+    dimensions_height_cm = 60.1
+    estimated_age_years = 1350
+    current_condition = "Intact"
+    inscriptions_language = ""
+    inscriptions_translation = ""
+    inscriptions_meaning = ""
+    display_status = "On public display"
+    museum_location = "The Egyptian Museum"
+
+    with open('artifact_catalog.csv', 'w', newline='') as csvfile:
+        fieldnames = ['artifact_id', 'artifact_name', 'origin_civilization', 'discovery_site', 'discovery_date', 
+                      'material.primary', 'material.secondary', 'dimensions.length_cm', 'dimensions.width_cm', 
+                      'dimensions.height_cm', 'estimated_age_years', 'current_condition', 'inscriptions.language', 
+                      'inscriptions.translation', 'inscriptions.meaning', 'display_status', 'museum_location']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+        writer.writerow({
+            'artifact_id': artifact_id,
+            'artifact_name': artifact_name,
+            'origin_civilization': origin_civilization,
+            'discovery_site': discovery_site,
+            'discovery_date': discovery_date,
+            'material.primary': material_primary,
+            'material.secondary': material_secondary,
+            'dimensions.length_cm': dimensions_length_cm,
+            'dimensions.width_cm': dimensions_width_cm,
+            'dimensions.height_cm': dimensions_height_cm,
+            'estimated_age_years': estimated_age_years,
+            'current_condition': current_condition,
+            'inscriptions.language': inscriptions_language,
+            'inscriptions.translation': inscriptions_translation,
+            'inscriptions.meaning': inscriptions_meaning,
+            'display_status': display_status,
+            'museum_location': museum_location
+        })
+
+generate_artifact_csv()

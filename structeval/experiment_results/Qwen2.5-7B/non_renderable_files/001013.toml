@@ -1,0 +1,19 @@
+[recipe]
+title = "Spaghetti Carbonara"
+author = {name = "John Doe", contact = {email = "john.doe@example.com"}}
+ingredients = [
+    {name = "Spaghetti", quantity = 400, unit = "g", notes = "Use whole wheat for a healthier option", allergen = "Wheat"},
+    {name = "Eggs", quantity = 4, unit = "pcs", notes = "Room temperature for better mixing", allergen = "Egg"},
+    {name = "Pancetta", quantity = 150, unit = "g", notes = "Cured pork belly, diced", allergen = "Pork"},
+    {name = "Parmesan cheese", quantity = 50, unit = "g", notes = "Grated", allergen = "Milk"},
+    {name = "Black pepper", quantity = 1, unit = "tsp", notes = "Freshly ground", allergen = "None"}
+]
+steps = [
+    {description = "Cook spaghetti according to package instructions until al dente.", duration_minutes = 10, equipment = "Pasta pot"},
+    {description = "In a separate pan, cook pancetta over medium heat until crispy.", duration_minutes = 5, equipment = "Non-stick pan", temperature_celsius = 180},
+    {description = "In a bowl, whisk eggs with Parmesan cheese and black pepper.", duration_minutes = 0, equipment = "Mixing bowl"},
+    {description = "Drain spaghetti and add to the pan with pancetta, tossing to combine.", duration_minutes = 2, equipment = "Pasta pot"},
+    {description = "Pour egg mixture over spaghetti and pancetta, tossing quickly to coat.", duration_minutes = 2, equipment = "Pasta pot"},
+    {description = "Serve immediately, garnished with additional Parmesan cheese and black pepper.", duration_minutes = 0, equipment = "None"}
+]
+nutrition = {calories = 500, macronutrients = {protein_g = 30, carbs_g = 40, fat_g = 20}}

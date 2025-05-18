@@ -1,0 +1,41 @@
+{
+  "species": {
+    "name": "Glowing Forest Hopper",
+    "habitat": {
+      "type": "forest",
+      "climate": "temperate",
+      "continents": ["North America", "Europe"]
+    },
+    "lifespan": {
+      "average_years": 5,
+      "max_recorded": 8
+    },
+    "diet": {
+      "primary": "herbivore",
+      "secondary": ["leaves", "fruits", "flowers"]
+    },
+    "appearance": {
+      "size": {
+        "length_cm": 30,
+        "weight_kg": 2.5
+      },
+      "coloration": {
+        "primary_colors": ["green", "blue", "yellow"]
+      }
+    },
+    "behavior": {
+      "migration_patterns": null,
+      "social_structure": "solitary"
+    },
+    "discovery": {
+      "discovery_date": "2023-05-15",
+      "discoverers": [
+        {
+          "name": "Dr. Jane Goodall",
+          "affiliation": "Wildlife Conservation Society",
+          "contribution": "Led the expedition and documented the species"
+        }
+      ]
+    }
+  }
+}

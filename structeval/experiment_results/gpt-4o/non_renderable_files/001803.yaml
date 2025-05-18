@@ -1,0 +1,18 @@
+museum:
+  name: "The Grand Art Museum"
+  location:
+    city: "Metropolis"
+    country: "Utopia"
+  founded_year: 1892
+  director:
+    full_name: "Dr. Alexandria Smith"
+    tenure_years: 12
+  galleries:
+    - title: "Renaissance Wonders"
+      floor: 2
+      artworks:
+        - artist: "Leonardo da Vinci"
+          title: "Mona Lisa"
+          year_created: 1503
+          medium: "Oil on poplar panel"
+          on_display: true

@@ -1,0 +1,25 @@
+artifact:
+  name: "The Enigma Tablet"
+  origin:
+    civilization: "Unknown Ancient Civilization"
+    era: "Prehistoric"
+  composition:
+    materials:
+      - type: "Obsidian"
+        percentage: 75
+      - type: "Gold"
+        percentage: 25
+  dimensions:
+    height_cm: 10.5
+    width_cm: 8.2
+    depth_cm: 2.3
+  discovery:
+    location:
+      country: "Unknown"
+      site: "Lost City"
+      date: "1950-07-15"
+  features:
+    - description: "Engraved symbols that have yet to be deciphered"
+      is_unique: true
+    - description: "A small, intricate carvings on the back"
+      is_unique: false

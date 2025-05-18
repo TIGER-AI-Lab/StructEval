@@ -1,0 +1,55 @@
+
+import json
+
+class Museum:
+    def __init__(self):
+        self.name = "National Museum of History"
+        self.location = {
+            "city": "Washington D.C.",
+            "country": "United States"
+        }
+        self.established_year = 1911
+        self.director = {
+            "full_name": "John Doe",
+            "tenure_years": 10
+        }
+        self.collections = [
+            {
+                "title": "Ancient Civilizations",
+                "category": "History",
+                "items_count": 1000,
+                "curator": "Jane Smith",
+                "highlighted_items": [
+                    {
+                        "name": "The Great Pyramid",
+                        "origin": "Ancient Egypt",
+                        "year": 2580,
+                        "description": "The oldest and only remaining ancient wonder"
+                    }
+                ]
+            },
+            {
+                "title": "Modern Art",
+                "category": "Art",
+                "items_count": 500,
+                "curator": "Bob Johnson",
+                "highlighted_items": [
+                    {
+                        "name": "The Starry Night",
+                        "origin": "Europe",
+                        "year": 1889,
+                        "description": "A famous painting by Vincent van Gogh"
+                    }
+                ]
+            }
+        ]
+        self.visitor_statistics = {
+            "annual_visitors": 1000000,
+            "last_updated": "2022-01-01T00:00:00Z"
+        }
+
+    def to_json(self):
+        return json.dumps(self, default=lambda o: o.__dict__, indent=4)
+
+museum = Museum()
+print(museum.to_json())

@@ -1,0 +1,32 @@
+
+spaceship:
+  name: Starhopper X9
+  model: GX-4000
+  launch_date: 2087-04-12
+  has_ai_pilot: true
+  last_maintenance: 2092-11-03
+  crew:
+    - name: Captain Lira Voss
+      role: Commander
+      species: Human
+    - name: Zylo
+      role: Pilot
+      species: Andromedan
+    - name: T3-R4
+      role: Engineer
+      species: Droid
+  specs:
+    length_m: 72.5
+    mass_tons: 340
+    max_speed_kmh: 98000
+    engine_types:
+      - Fusion Drive
+      - Ion Thruster
+      - Solar Sail
+  missions:
+    - destination: Europa
+      year: 2089
+      success: true
+    - destination: Kepler-442b
+      year: 2091
+      success: false

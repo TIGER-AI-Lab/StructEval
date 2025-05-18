@@ -1,0 +1,52 @@
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "star_systems": [
+      {
+        "star_system": {
+          "name": "Alpha Centauri",
+          "planets": [
+            {
+              "planet": {
+                "name": "Proxima b",
+                "type": "Terrestrial"
+              }
+            },
+            {
+              "planet": {
+                "name": "Alpha Centauri Bb",
+                "type": "Gas Giant"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "star_system": {
+          "name": "Sirius",
+          "planets": [
+            {
+              "planet": {
+                "name": "Sirius I",
+                "type": "Ice Giant",
+                "moons": [
+                  "Frost"
+                ]
+              }
+            },
+            {
+              "planet": {
+                "name": "Sirius II",
+                "type": "Dwarf",
+                "moons": [
+                  "Snowball",
+                  "Crystal"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

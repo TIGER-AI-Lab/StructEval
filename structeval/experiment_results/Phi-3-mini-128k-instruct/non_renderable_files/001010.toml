@@ -1,0 +1,73 @@
+[recipe]
+title = "Classic Tomato Pasta"
+author = "Chef John Doe"
+cuisine = "Italian"
+difficulty = "easy"
+
+prep_time = { minutes = 15 }
+cook_time = { minutes = 20 }
+
+ingredients = [
+    {
+        name = "tomatoes"
+        quantity = 4
+        unit = "cups"
+        optional = false
+    },
+    {
+        name = "pasta"
+        quantity = 8
+        unit = "ounces"
+        optional = false
+    },
+    {
+        name = "olive oil"
+        quantity = 2
+        unit = "tablespoons"
+        optional = false
+    },
+    {
+        name = "garlic"
+        quantity = 2
+        unit = "cloves"
+        optional = false
+    },
+    {
+        name = "basil"
+        quantity = 1
+        unit = "tablespoon"
+        optional = true
+    },
+    {
+        name = "parmesan cheese"
+        quantity = 1
+        unit = "tablespoon"
+        optional = true
+    }
+]
+
+steps = [
+    {
+        description = "Boil water and cook pasta according to package instructions."
+        duration_minutes = 10
+    },
+    {
+        description = "In a pan, heat olive oil and sautÃ© garlic until golden."
+        duration_minutes = 2
+    },
+    {
+        description = "Add tomatoes and cook until they break down into a sauce."
+        duration_minutes = 10
+    },
+    {
+        description = "Toss pasta in the tomato sauce and mix in basil and parmesan cheese if using."
+        duration_minutes = 3
+    }
+]
+
+nutrition = {
+    calories = 500
+    protein_grams = 15
+    fat_grams = 20
+    carbohydrates_grams = 60
+}

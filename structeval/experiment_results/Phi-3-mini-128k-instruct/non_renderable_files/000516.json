@@ -1,0 +1,60 @@
+{
+  "exhibit": {
+    "title": "Impressions of Modernity",
+    "curator": {
+      "name": "Dr. Elizabeth Monroe",
+      "contact": {
+        "email": "elizabeth.monroe@artmuseum.org",
+        "phone": "+1-555-0102"
+      }
+    },
+    "artworks": [
+      {
+        "artist": "Claude Monet",
+        "title": "Water Lilies",
+        "year_created": 1916,
+        "medium": "Oil on canvas",
+        "dimensions": {
+          "height_cm": 100,
+          "width_cm": 150,
+          "depth_cm": 10
+        },
+        "provenance": [
+          {
+            "owner": "John D. Rockefeller",
+            "acquisition_date": "1920-06-15"
+          },
+          {
+            "owner": "The Metropolitan Museum of Art",
+            "acquisition_date": "1950-09-23"
+          }
+        ]
+      },
+      {
+        "artist": "Pablo Picasso",
+        "title": "Guernica",
+        "year_created": 1937,
+        "medium": "Oil on canvas",
+        "dimensions": {
+          "height_cm": 349,
+          "width_cm": 776,
+          "depth_cm": 250
+        },
+        "provenance": [
+          {
+            "owner": "Guggenheim Foundation",
+            "acquisition_date": "1939-01-01"
+          },
+          {
+            "owner": "Reina Sofia Museum",
+            "acquisition_date": "1981-05-10"
+          }
+        ]
+      }
+    ],
+    "schedule": {
+      "opening_date": "2023-05-01",
+      "closing_date": "2023-08-31"
+    }
+  }
+}

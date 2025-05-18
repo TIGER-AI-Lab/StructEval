@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 071106</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  return (
+    <div>
+      <h1>Project Title: Visual Conversion Task</h1>
+
+      <p>This document provides a detailed breakdown of the code structure used for visual conversion tests. Its purpose is to assess:</p>
+      <ul>
+        <li>Visible structure</li>
+        <li>Layout hierarchy</li>
+        <li>Rendered content formatting</li>
+      </ul>
+
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#project-requirements">Project Requirements</a></li>
+        <li><a href="#visual-structure-layout">Visual Structure Layout</a></li>
+        <li><a href="#content-breakdown">Content Breakdown</a></li>
+        <li><a href="#code-sample">Code Sample</a></li>
+        <li><a href="#additional-elements">Additional Elements</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ol>
+
+      <hr />
+
+      <h2 id="introduction">Introduction</h2>
+      <p>Welcome to the visual conversion task sample Markdown document. This file demonstrates various Markdown features including headings, lists, tables, block quotes, and code blocks. It is designed to test the structural layout and visible content rendered on one static page.</p>
+      <blockquote>
+        <p>Remember: The goal is to ensure clarity and organization without any external dependencies or interactive elements.</p>
+      </blockquote>
+
+      <hr />
+
+      <h2 id="project-requirements">Project Requirements</h2>
+      <ul>
+        <li><strong>Visible Structure:</strong> The document should exhibit an organized layout with distinct sections and hierarchy.</li>
+        <li><strong>Formatted Content:</strong> Use markdown elements such as headings, lists, tables, code blocks, and block quotes.</li>
+        <li><strong>Self-Contained:</strong> This document does not rely on external images, links, scripts, or stylesheets.</li>
+        <li><strong>Static Layout:</strong> No animations, hover effects, or clickable interactivity.</li>
+      </ul>
+
+      <h3>Key Objectives</h3>
+      <ul>
+        <li>Provide a clear <strong>hierarchical organization</strong> for easy navigation.</li>
+        <li>Demonstrate <strong>multi-level formatting</strong> with both numbered and bullet lists.</li>
+        <li>Ensure <strong>readability</strong> with well-structured content segments.</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="visual-structure-layout">Visual Structure Layout</h2>
+
+      <h3>Section 1: Document Header</h3>
+      <ul>
+        <li><strong>Title:</strong> Clearly defined at the top.</li>
+        <li><strong>Table of Contents:</strong> A navigational list to link to major sections.</li>
+      </ul>
+
+      <h3>Section 2: Main Content</h3>
+      <ul>
+        <li><strong>Subsections</strong> that describe the project's component parts:
+          <ul>
+            <li>Introduction to Markdown usage.</li>
+            <li>Detailed project requirements.</li>
+            <li>Example code for demonstration.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Section 3: Supplementary Data</h3>
+      <ul>
+        <li><strong>Tables & Lists:</strong> Provide structured data.</li>
+        <li><strong>Block Quotes:</strong> Highlight key directives.</li>
+        <li><strong>Nested Lists:</strong> Demonstrate additional detail.</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="content-breakdown">Content Breakdown</h2>
+      <p>The following subsections elaborate on different Markdown elements in detail.</p>
+
+      <h3>List of Features</h3>
+      <ul>
+        <li>Clear and consistent <strong>Headings</strong> (H1, H2, H3, etc.)</li>
+        <li><strong>Bullet Lists</strong> and <strong>Numbered Lists</strong> for hierarchy.</li>
+        <li><strong>Tables</strong> for structured data presentation.</li>
+        <li><strong>Code Blocks</strong> with syntax highlighting.</li>
+        <li><strong>Block Quotes</strong> for emphasizing contextual information.</li>
+      </ul>
+
+      <h3>Detailed Bullet List</h3>
+      <ul>
+        <li>Primary Item 1
+          <ul>
+            <li>Secondary Detail A</li>
+            <li>Secondary Detail B
+              <ul>
+                <li>Further Detail i</li>
+                <li>Further Detail ii</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Primary Item 2
+          <ul>
+            <li>Secondary Detail C</li>
+          </ul>
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2 id="code-sample">Code Sample</h2>
+      <p>Below is a Python code snippet included to illustrate how code blocks can be embedded within the document. It is designed to be both simple and instructive:</p>
+      <pre>
+        <code>{`def greet(name):
+    """
+    Greet the user with a friendly message.
+    If no name is provided, default to 'World'.
+
+    Args:
+        name (str): The name of the person.
+
+    Returns:
+        None
+    """
+    if not name:
+        print("Hello, World!")
+    else:
+        print(f"Hello, {name}!")
+
+# Main execution block
+if __name__ == "__main__":
+    # Prompt for the user's name
+    user_name = input("Enter your name: ")
+    greet(user_name)
+`}
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

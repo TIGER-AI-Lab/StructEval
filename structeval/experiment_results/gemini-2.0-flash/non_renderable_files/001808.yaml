@@ -1,0 +1,23 @@
+creature:
+  name: Zephyr
+  species: Sky Serpent
+  age: 57
+  habitat:
+    region: The Azure Peaks
+    climate: Temperate, with strong winds
+  abilities:
+    - type: Aerokinesis
+      description: Ability to control and manipulate air currents.
+      power_level: 8
+    - type: Camouflage
+      description: Can blend seamlessly with the sky, becoming nearly invisible.
+      power_level: 6
+  appearance:
+    color: Azure Blue
+    size:
+      height_cm: 150
+      weight_kg: 80
+  behavior:
+    - Soaring through the skies in search of thermal updrafts.
+    - Nesting on high mountain ledges.
+    - Communicating with high-pitched whistles.

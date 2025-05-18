@@ -1,0 +1,31 @@
+
+[museum]
+name = "The Art of Imagination Museum"
+location = { city = "Dreamland", country = "Fantasyland" }
+founded_year = 2001
+
+[director]
+name = "Alice Wonderland"
+tenure_years = 5
+
+[[galleries]]
+title = "Gallery of Dreams"
+theme = "Surrealism"
+
+  [[galleries.artworks]]
+  title = "The Dreamer"
+  artist = "Eve Nightingale"
+  year = 2010
+  medium = "oil on canvas"
+  on_display = true
+
+  [[galleries.artworks]]
+  title = "Whispers of the Night"
+  artist = "Luna Star"
+  year = 2015
+  medium = "acrylic on wood"
+  on_display = false
+
+[opening_hours]
+weekdays = "09:00-17:00"
+weekends = "10:00-16:00"

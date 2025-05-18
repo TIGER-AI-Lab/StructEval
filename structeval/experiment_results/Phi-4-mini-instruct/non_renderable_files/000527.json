@@ -1,0 +1,32 @@
+
+{
+  "ecosystem": {
+    "name": "Verdant Expanse",
+    "location": {
+      "region": "Temperate Rainforest",
+      "coordinates": {
+        "latitude": 48.8566,
+        "longitude": -2.3522
+      }
+    },
+    "climate": {
+      "type": "temperate",
+      "average_temperature_celsius": 12,
+      "rainfall_mm_per_year": 2000
+    },
+    "species": [
+      {
+        "common_name": "Emerald Glider",
+        "scientific_name": "Glidera viridis",
+        "population_estimate": 15000,
+        "conservation_status": "Least Concern",
+        "diet": ["leaves", "insects", "nectar"],
+        "habitat": {
+          "description": "Prefers the dense canopy of the rainforest, often found in areas with high humidity and moderate light.",
+          "area_sq_km": 500
+        },
+        "notable_behaviors": ["gliding between trees", "nocturnal activity", "complex mating dances"]
+      }
+    ]
+  }
+}

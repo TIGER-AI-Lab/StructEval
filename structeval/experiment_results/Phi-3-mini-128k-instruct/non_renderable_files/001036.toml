@@ -1,0 +1,31 @@
+festival = {
+    name = "Global Beats Extravaganza",
+    location = {
+        city = "Berlin",
+        country = "Germany"
+    },
+    year = 2023,
+    organizer = {
+        name = "World Music Fest",
+        contact = {
+            email = "<EMAIL>",
+            phone = "+49 30 1234567"
+        }
+    },
+    events = [
+        {
+            title = "Opening Night: The World Stage",
+            date = "2023-07-15",
+            performers = ["The Electric Strings", "DJ Pulse", "Global Rhythms"],
+            tickets = {
+                price = 120,
+                available = 5000,
+                types = ["General", "VIP", "Student"]
+            }
+        },
+        {
+            title = "Evening of Classical Fusion",
+            performers = ["The Classical Quartet", "Orchestra of the Future", "Virtuoso Virtuoso"]
+        }
+    ]
+}

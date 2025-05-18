@@ -1,0 +1,38 @@
+
+{
+  "planet": {
+    "name": "Zephyros",
+    "atmosphere": {
+      "composition": ["nitrogen", "argon", "xenon"],
+      "pressure": 0.8,
+      "layers": [
+        {
+          "name": "Tropos",
+          "altitude_range": "0-15km"
+        },
+        {
+          "name": "Stratos",
+          "altitude_range": "15-50km"
+        }
+      ]
+    },
+    "moons": [
+      {
+        "name": "Galea",
+        "diameter_km": 3120,
+        "features": ["ice geysers", "subsurface ocean"]
+      },
+      {
+        "name": "Vesper",
+        "diameter_km": 2100,
+        "features": ["volcanic plains"]
+      }
+    ],
+    "orbital_period_days": 412,
+    "discovery": {
+      "year": 2273,
+      "method": "transit photometry",
+      "team": ["Dr. Ayla Quinn", "Prof. Soren Li"]
+    }
+  }
+}

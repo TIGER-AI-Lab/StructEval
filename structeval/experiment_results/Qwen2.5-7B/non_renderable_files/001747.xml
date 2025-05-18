@@ -1,0 +1,52 @@
+<planet name="51 Pegasi b" type="gas giant">
+  <discovery date="1995-01-00" method="radial velocity" telescope="Lick Observatory">
+    <name>51 Pegasi b</name>
+    <type>gas giant</type>
+    <date>1995-01-00</date>
+    <method>radial velocity</method>
+    <telescope>Lick Observatory</telescope>
+  </discovery>
+  <orbit period="4.23" eccentricity="0.05" semi_major_axis="0.05">
+    <period>4.23</period>
+    <eccentricity>0.05</eccentricity>
+    <semi_major_axis>0.05</semi_major_axis>
+  </orbit>
+  <atmosphere composition="hydrogen, helium" pressure="10">
+    <composition>hydrogen, helium</composition>
+    <pressure>10</pressure>
+  </atmosphere>
+  <moons>
+    <moon name="Galatea" diameter="100">
+      <discovery year="1986">
+        <name>Galatea</name>
+        <diameter>100</diameter>
+        <year>1986</year>
+      </discovery>
+      <composition>ice</composition>
+    </moon>
+    <moon name="Larissa" diameter="120">
+      <discovery year="1981">
+        <name>Larissa</name>
+        <diameter>120</diameter>
+        <year>1981</year>
+      </discovery>
+      <composition>rock</composition>
+    </moon>
+  </moons>
+  <rings present="true" count="3">
+    <rings>
+      <details material="ice" width="10000">
+        <material>ice</material>
+        <width>10000</width>
+      </details>
+      <details material="rock" width="5000">
+        <material>rock</material>
+        <width>5000</width>
+      </details>
+      <details material="gas" width="2000">
+        <material>gas</material>
+        <width>2000</width>
+      </details>
+    </rings>
+  </rings>
+</planet>

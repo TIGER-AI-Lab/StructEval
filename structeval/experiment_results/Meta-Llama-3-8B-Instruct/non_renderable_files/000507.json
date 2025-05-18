@@ -1,0 +1,41 @@
+
+{
+    "mysteryBox": {
+        "name": "The Enigmatic Box of Wonders",
+        "origin": "The ancient civilization of Zerzura",
+        "discovery": {
+            "date": "2022-07-15T14:30:00.000Z",
+            "location": "The lost city of Zerzura"
+        },
+        "contents": [
+            {
+                "itemName": "The Celestial Orb",
+                "itemType": "Magical Artifact",
+                "properties": {
+                    "weight": 2.5,
+                    "isMagical": true,
+                    "material": "Crystal"
+                },
+                "history": [
+                    {
+                        "event": "The Orb was used in a ritual to summon a celestial being",
+                        "year": 1350
+                    },
+                    {
+                        "event": "The Orb was stolen from the temple of the gods",
+                        "year": 1450
+                    }
+                ]
+            }
+        ],
+        "seal": {
+            "isIntact": false,
+            "sealedBy": "The High Priestess of Zerzura",
+            "dateSealed": "1300-01-01T00:00:00.000Z"
+        },
+        "estimatedValue": {
+            "amount": 1000000,
+            "currency": "Gold Coins"
+        }
+    }
+}

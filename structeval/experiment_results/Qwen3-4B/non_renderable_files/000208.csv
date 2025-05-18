@@ -1,0 +1,3 @@
+
+species,habitat,average_weight_kg,lifespan_years,diet_type,conservation_status,discovery.year,discovery.discoverer,discovery.location,notable_features[0].feature_name,notable_features[0].description,notable_features[1].feature_name,notable_features[1].description,related_species[0],related_species[1]
+"New Species",rainforest,5.5,10,"herbivore","least concern",2023,"Dr. Jane Smith","Amazon Rainforest","Bioluminescent Tissue","This species has bioluminescent skin to communicate.","Thermoregulatory Adaptation","It can regulate body temperature in extreme heat.","Tiger","Giraffe"

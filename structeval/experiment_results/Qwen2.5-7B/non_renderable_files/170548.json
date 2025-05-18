@@ -1,0 +1,46 @@
+python
+import xmltodict
+import json
+
+xml_data = """
+<galaxy>
+  <name>Andromeda</name>
+  <starSystems>
+    <starSystem>
+      <name>Alpha Centauri</name>
+      <planets>
+        <planet>
+          <name>Proxima b</name>
+          <moons>
+            <moon>Phobos</moon>
+            <moon>Deimos</moon>
+          </moons>
+        </planet>
+        <planet>
+          <name>Proxima c</name>
+          <moons/>
+        </planet>
+      </planets>
+    </starSystem>
+    <starSystem>
+      <name>Betelgeuse</name>
+      <planets>
+        <planet>
+          <name>Betelgeuse I</name>
+          <moons>
+            <moon>Io</moon>
+          </moons>
+        </planet>
+      </planets>
+    </starSystem>
+  </starSystems>
+</galaxy>
+"""
+
+# Parse the XML data
+parsed_xml = xmltodict.parse(xml_data)
+
+# Convert the parsed XML to JSON
+json_data = json.dumps(parsed_xml)
+
+print(json_data)

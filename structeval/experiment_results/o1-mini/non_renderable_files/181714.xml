@@ -1,0 +1,37 @@
+<galacticCarnival>
+  <attractions>
+    <attraction>
+      <name>Zero-G Rollercoaster</name>
+      <speciesAllowed>
+        <species>Human</species>
+        <species>Martian</species>
+        <species>Andromedan</species>
+      </speciesAllowed>
+      <heightRequirement>120cm</heightRequirement>
+    </attraction>
+    <attraction>
+      <name>Cosmic Funhouse</name>
+      <speciesAllowed>
+        <species>Venusian</species>
+        <species>Human</species>
+      </speciesAllowed>
+      <heightRequirement>100cm</heightRequirement>
+    </attraction>
+  </attractions>
+  <snackBooths>
+    <booth>
+      <name>Star Popcorn</name>
+      <specialtyTreats>
+        <treat>Nebula Caramel</treat>
+        <treat>Black Hole Butter</treat>
+      </specialtyTreats>
+    </booth>
+    <booth>
+      <name>Meteorite Sweets</name>
+      <specialtyTreats>
+        <treat>Comet Candy</treat>
+        <treat>Asteroid Fudge</treat>
+      </specialtyTreats>
+    </booth>
+  </snackBooths>
+</galacticCarnival>

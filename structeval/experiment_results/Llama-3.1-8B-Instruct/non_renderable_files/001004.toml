@@ -1,0 +1,31 @@
+
+museum = {
+  name = "The Artisan's Museum"
+  location = {
+    city = "New York"
+    country = "USA"
+  }
+  established_year = 1990
+  director = {
+    full_name = "Emily J. Smith"
+    tenure_years = 15
+  }
+  exhibits = [
+    {
+      title = "The Starry Night"
+      artist = "Vincent van Gogh"
+      year_created = 1889
+      medium = "Oil on canvas"
+      dimensions = {
+        height_cm = 72.5
+        width_cm = 92.1
+      }
+      on_display = true
+      tags = ["Post-Impressionism", "Starry Night", "Van Gogh"]
+    }
+  ]
+  opening_hours = {
+    weekdays = "10:00 AM - 5:00 PM"
+    weekends = "12:00 PM - 6:00 PM"
+  }
+}

@@ -1,0 +1,21 @@
+
+import csv
+import xml.etree.ElementTree as ET
+
+tree = ET.parse('spaceships.xml')
+root = tree.getroot()
+
+with open('spaceships.csv', 'w', newline='') as csvfile:
+    fieldnames = ['SpaceshipID', 'CaptainName', 'LaunchDate', 'FuelLevel', 'Destination', 'CrewCount']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in root.findall('row'):
+        writer.writerow({
+            'SpaceshipID': row.find('SpaceshipID').text,
+            'CaptainName': row.find('CaptainName').text,
+            'LaunchDate': row.find('LaunchDate').text,
+            'FuelLevel': row.find('FuelLevel').text,
+            'Destination': row.find('Destination').text,
+            'CrewCount': row.find('CrewCount').text
+        })

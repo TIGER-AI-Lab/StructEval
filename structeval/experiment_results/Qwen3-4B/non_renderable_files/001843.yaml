@@ -1,0 +1,26 @@
+
+festival:
+  name: "Eclipse Festival"
+  location:
+    city: "New Avalon"
+    venue: "Sunrise Park Arena"
+  dates:
+    start: "2023-10-15"
+    end: "2023-10-17"
+  lineup:
+    - artist: "The Midnight Echoes"
+      set_time: "19:00"
+      stage: "Stage A"
+      special_guests: []
+    - artist: "Solar Flare"
+      set_time: "21:30"
+      stage: "Stage B"
+      special_guests: ["Luna Waves"]
+  tickets:
+    types:
+      - category: "General Admission"
+        price: 100
+        availability: 500
+  sponsors:
+    main: "SoundWave Media"
+    secondary: ["Festival Lights", "MusicWorld"]

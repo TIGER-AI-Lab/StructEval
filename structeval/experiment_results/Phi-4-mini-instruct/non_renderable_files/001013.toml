@@ -1,0 +1,43 @@
+
+[recipe]
+title = "Classic Tomato Basil Pasta"
+
+[author]
+name = "Chef John Doe"
+contact = { email = "john.doe@example.com" }
+
+[ingredients]
+- name = "Spaghetti"
+  quantity = 200
+  unit = "g"
+  allergen = "gluten"
+- name = "Tomato Sauce"
+  quantity = 400
+  unit = "ml"
+  allergen = "none"
+- name = "Fresh Basil Leaves"
+  quantity = 30
+  unit = "g"
+  allergen = "none"
+- name = "Parmesan Cheese"
+  quantity = 50
+  unit = "g"
+  allergen = "none"
+
+[steps]
+- description = "Cook the spaghetti according to the package instructions."
+  duration_minutes = 10
+  equipment = "Stove"
+  temperature_celsius = 100
+- description = "In a pan, heat the tomato sauce and add the fresh basil leaves."
+  duration_minutes = 5
+  equipment = "Stove"
+  temperature_celsius = 75
+- description = "Mix the cooked spaghetti with the tomato sauce and top with parmesan cheese."
+  duration_minutes = 0
+  equipment = "Stove"
+  temperature_celsius = 0
+
+[nutrition]
+calories = 800
+macronutrients = { protein_g = 20, carbs_g = 100, fat_g = 30 }

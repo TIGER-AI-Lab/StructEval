@@ -1,0 +1,36 @@
+
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "stars": [
+      {
+        "name": "Alpha Centauri",
+        "type": "Binary",
+        "planets": [
+          {
+            "name": "Proxima b"
+          }
+        ]
+      },
+      {
+        "name": "Betelgeuse",
+        "type": "Red Supergiant",
+        "planets": [
+          {
+            "name": "Betel-1",
+            "moons": [
+              "Io"
+            ]
+          },
+          {
+            "name": "Betel-2",
+            "moons": [
+              "Europa",
+              "Ganymede"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+
+<creature>
+    <name>Mythril Wyrm</name>
+    <species>Dragonidae</species>
+    <habitat>
+        <region>Mt. Elysium</region>
+        <climate>Temperate, misty</climate>
+    </habitat>
+    <traits>
+        <trait>
+            <traitName>Pyrokinetic Breath</traitName>
+            <severity>High</severity>
+            <description>Can breathe fire</description>
+        </trait>
+        <trait>
+            <traitName>Regenerative Scales</traitName>
+            <severity>Moderate</severity>
+            <description>Can regenerate damaged scales</description>
+        </trait>
+    </traits>
+    <abilities>
+        <ability>
+            <abilityName>Blaze Strike</abilityName>
+            <cooldownSeconds>30</cooldownSeconds>
+            <effect>Deals 50 damage to all enemies within a 5-meter radius</effect>
+        </ability>
+        <ability>
+            <abilityName>Scale Shield</abilityName>
+            <cooldownSeconds>60</cooldownSeconds>
+            <effect>Grants the creature a 20% damage reduction for 10 seconds</effect>
+        </ability>
+    </abilities>
+    <appearance>
+        <color>
+            <primary>Golden</primary>
+            <secondary>Dark Brown</secondary>
+        </color>
+        <size>
+            <heightCm>250</heightCm>
+            <weightKg>500</weightKg>
+        </size>
+    </appearance>
+    <discovery>
+        <dateDiscovered>2022-07-15T14:30:00Z</dateDiscovered>
+        <discoveredBy>Dr. Sophia Patel</discoveredBy>
+    </discovery>
+</creature>

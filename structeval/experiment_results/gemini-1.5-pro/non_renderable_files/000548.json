@@ -1,0 +1,38 @@
+{
+  "artifact": {
+    "name": "Mask of Agamemnon",
+    "origin": {
+      "culture": "Mycenaean",
+      "period": "Late Bronze Age",
+      "discovery_date": "1939-11-26"
+    },
+    "materials": {
+      "primary": "Gold",
+      "secondary": null
+    },
+    "dimensions": {
+      "height_cm": 25,
+      "width_cm": 26,
+      "depth_cm": 1
+    },
+    "features": [
+      {
+        "description": "Beaten gold funerary mask",
+        "estimated_age_years": 3500,
+        "condition": "Well-preserved"
+      },
+      {
+        "description": "Depicts a bearded man",
+        "estimated_age_years": 3500,
+        "condition": "Slightly damaged"
+      }
+    ],
+    "exhibition_history": [
+      {
+        "location": "National Archaeological Museum, Athens",
+        "start_date": "1939-12-01",
+        "end_date": "2023-12-31"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+
+{
+  "ecosystem": {
+    "name": "Luminara Biome",
+    "location": {
+      "planet": "Zyphora",
+      "region": "Glowing Forests"
+    },
+    "climate": {
+      "average_temperature_celsius": 22,
+      "rainfall_mm_per_year": 1500
+    },
+    "flora": [
+      {
+        "species": "Luminara Gloriosa",
+        "population_estimate": 50000,
+        "conservation_status": "least concern"
+      }
+    ],
+    "fauna": [
+      {
+        "species": "Zyphorian Glider",
+        "average_weight_kg": 3.5,
+        "diet_type": "herbivore",
+        "conservation_status": "vulnerable"
+      }
+    ],
+    "researchers": [
+      {
+        "name": "Dr. Elara Voss",
+        "specialization": "Ecology",
+        "years_active": 12
+      },
+      {
+        "name": "Prof. Orion Kade",
+        "specialization": "Botany",
+        "years_active": 20
+      }
+    ]
+  }
+}

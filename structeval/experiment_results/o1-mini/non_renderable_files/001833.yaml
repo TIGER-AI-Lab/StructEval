@@ -1,0 +1,23 @@
+
+planet:
+  name: "Zephyria"
+  type: "Gas Giant"
+  discovery:
+    year: 2045
+    method: "Space Probe"
+  atmosphere:
+    composition:
+      - "Hydrogen"
+      - "Helium"
+      - "Methane"
+      - "Ammonia"
+    pressure: 1000.5
+    temperature: 185
+  moons:
+    - name: "Aurelia"
+      diameter_km: 1420
+      orbital_period_days: 88.6
+      surface_features:
+        - feature_type: "Mountain"
+          description: "A towering ice mountain with a crystalline peak."
+          coordinates: "23.5Â°N, 134.8Â°W"

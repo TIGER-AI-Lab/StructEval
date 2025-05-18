@@ -1,0 +1,31 @@
+{
+  "artifact": {
+    "name": "Golden Sun Mask",
+    "origin": {
+      "civilization": "Inca Empire",
+      "estimated_age": 600
+    },
+    "materials": {
+      "primary": "Gold",
+      "secondary": "Turquoise",
+      "composition_percentage": 85.5
+    },
+    "dimensions": {
+      "height_cm": 25.4,
+      "width_cm": 18.7,
+      "depth_cm": 3.2
+    },
+    "features": [
+      {
+        "type": "engraving",
+        "description": "Intricate sun motifs carved around the edges",
+        "preservation_state": "intact"
+      },
+      {
+        "type": "inlay",
+        "description": "Turquoise stones embedded in the eyes",
+        "preservation_state": "worn"
+      }
+    ]
+  }
+}

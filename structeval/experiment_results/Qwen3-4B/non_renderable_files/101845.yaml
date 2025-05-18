@@ -1,0 +1,35 @@
+
+space_station:
+  name: "Odyssey Outpost"
+  location:
+    planet: "Europa"
+    galaxy: "Milky Way"
+  modules:
+    - id: 1
+      type: "Life Support"
+      status: "operational"
+      crew_members:
+        - name: "Dr. Lin"
+          role: "Biologist"
+          shift_hours: 8
+        - name: "Samir Patel"
+          role: "Engineer"
+          shift_hours: 12
+    - id: 2
+      type: "Research Lab"
+      status: "maintenance"
+      crew_members:
+        - name: "Elena Kovac"
+          role: "Physicist"
+          shift_hours: 6
+  supply_levels:
+    oxygen: 78.5
+    water: 1200
+    food: 650
+  mission_log:
+    - date: "2087-03-14"
+      event: "Arrival at Europa orbit"
+      success: true
+    - date: "2087-03-16"
+      event: "Module 2 maintenance"
+      success: false

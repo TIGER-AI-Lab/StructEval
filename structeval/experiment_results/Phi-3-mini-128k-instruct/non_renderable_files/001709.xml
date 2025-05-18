@@ -1,0 +1,37 @@
+<creature>
+    <species>Glimmerwing Seraph</species>
+    <creature>
+        <habitat>
+            <region>Emerald Canopy</region>
+            <climate>Tropical, Humid</climate>
+            <features>Dense foliage, High canopies, Abundant water sources</features>
+        </habitat>
+        <anatomy>
+            <limbs>
+                <count>4</count>
+                <type>Wings and Tentacles</type>
+            </limbs>
+        </anatomy>
+        <senses>
+            <sense>
+                <name>Echolocation</name>
+                <range>50 meters</range>
+            </sense>
+        </senses>
+        <behavior>
+            <diet>Omnivore</diet>
+            <activity_cycle>Diurnal</activity_cycle>
+            <social_structure>Solitary</social_structure>
+        </behavior>
+        <abilities>
+            <ability>
+                <name>Bioluminescent Glow</name>
+                <description>The creature emits a soft, pulsating light from its skin to attract mates or confuse predators.</description>
+                <rarity>Rare</rarity>
+            </ability>
+        </abilities>
+        <discovery>
+            <discovery_date>2023-04-15</discovery_date>
+        </discovery>
+    </creature>
+</creature>

@@ -1,0 +1,28 @@
+[artifact]
+name = "Rosetta Stone"
+origin = "Ptolemaic Egypt"
+discovery_date = "1799-07-15"
+
+[artifact.materials]
+primary = "granodiorite"
+secondary = ""
+
+[artifact.dimensions]
+height_cm = 112.3
+width_cm = 75.7
+depth_cm = 28.4
+
+[artifact.inscriptions]
+list = [
+    { language = "Ancient Greek", translation = "Decree of Ptolemy V", location_on_artifact = "Bottom" },
+    { language = "Demotic", translation = "Decree of Ptolemy V in Demotic script", location_on_artifact = "Middle" },
+    { language = "Hieroglyphic", translation = "Decree of Ptolemy V in Hieroglyphs", location_on_artifact = "Top" }
+]
+
+[artifact.exhibit]
+current_location = "British Museum"
+
+[artifact.exhibit.previous_locations]
+locations = [
+    { museum = "Egyptian Museum, Cairo", year_range = "1802â1803" }
+]

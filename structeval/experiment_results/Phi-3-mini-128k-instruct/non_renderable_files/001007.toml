@@ -1,0 +1,31 @@
+[robot]
+model = "RoboExplorer"
+serial_number = "RX-2023-0421"
+
+[manufacturer]
+name = "RoboTech Innovations"
+country = "United States"
+
+[operating_system]
+version = "v3.1.5"
+release_date = "2023-04-15"
+
+[sensors]
+- type = "lidar"
+  range_meters = 100.0
+  calibrated = true
+- type = "camera"
+  range_meters = 50.0
+  calibrated = false
+
+[actuators]
+- name = "gripper"
+  max_force_newtons = 50.0
+  status = "active"
+- name = "wheel motor"
+  max_force_newtons = 10.0
+  status = "inactive"
+
+[maintenance]
+last_service = "2023-04-01"
+next_due = "2023-07-01"

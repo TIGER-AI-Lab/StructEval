@@ -1,0 +1,5 @@
+
+book_id,title,author_name,author_birth_year,genre,publication_year,publisher_name,publisher_country,pages,language,series_name,series_number,isbn_13,average_rating,review_count
+1,"The Hobbit",J.R.R. Tolkien,1892,Fantasy,1937,HarperCollins,USA,309,English,"The Lord of the Rings",1,9780399500000,4.5,15000
+2,"Pride and Prejudice",Jane Austen,1775,Romance,1813,Penguin UK,UK,279,English,,,"9780399500000",4.8,20000
+3,"Dune",Frank Herbert,1926,Science Fiction,1965,Ballantine,USA,450,English,,,"9780440228310",4.3,12000

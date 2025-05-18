@@ -1,0 +1,23 @@
+
+[museum]
+name = "The Art of Imagination Museum"
+location.city = "Metropolis"
+location.country = "Wonderland"
+founded_year = 1995
+
+[museum.director]
+full_name = "Alice Smith"
+tenure_years = 10
+
+[[museum.galleries]]
+title = "Modern Art Gallery"
+floor = 1
+
+[[museum.galleries.artworks]]
+title = "Dreamscape"
+artist = "John Doe"
+year_created = 2020
+medium = "Oil on Canvas"
+dimensions.height_cm = 150
+dimensions.width_cm = 100
+on_display = true

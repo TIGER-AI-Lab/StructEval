@@ -1,0 +1,3 @@
+
+"exhibit_id","artifact.name","artifact.origin","artifact.period","artifact.material","artifact.dimensions.height_cm","artifact.dimensions.width_cm","artifact.dimensions.depth_cm","artifact.condition","artifact.discovery.location","artifact.discovery.date","artifact.discovery.archaeologist","artifact.display.location","artifact.display.lighting","artifact.provenance.history"
+"EXHIBIT-1234","Ancient Vase","Ancient Egypt","New Kingdom","Porcelain and gold",30,25,15,"excellent","Giza, Egypt","2020-05-15","Dr. Emily Thompson","Hall 3, Case B","LED spotlight","Acquired from a private collection in 2020"

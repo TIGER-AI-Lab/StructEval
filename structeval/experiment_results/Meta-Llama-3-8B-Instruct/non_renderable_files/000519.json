@@ -1,0 +1,39 @@
+
+{
+    "name": "Gleeb",
+    "species": "Unknown",
+    "origin": {
+        "planet": "Xylophia-IV",
+        "galaxy": "Andromeda"
+    },
+    "abilities": [
+        {
+            "type": "Telepathy",
+            "description": "The ability to read and control minds",
+            "power_level": 80
+        },
+        {
+            "type": "Shape-shifting",
+            "description": "The ability to change physical form",
+            "power_level": 60
+        }
+    ],
+    "appearance": {
+        "height_cm": 150,
+        "skin_color": "Green",
+        "eye_count": 2
+    },
+    "history": {
+        "first_sighting": "2022-01-01T00:00:00.000Z",
+        "known_encounters": [
+            {
+                "location": "Forest of Glimmer",
+                "date": "2022-01-01T00:00:00.000Z"
+            },
+            {
+                "location": "Mountain of Mist",
+                "date": "2022-01-15T00:00:00.000Z"
+            }
+        ]
+    }
+}

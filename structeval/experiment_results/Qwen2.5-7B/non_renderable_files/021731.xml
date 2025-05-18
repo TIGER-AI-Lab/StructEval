@@ -1,0 +1,53 @@
+python
+import csv
+from xml.etree.ElementTree import Element, SubElement, tostring
+from xml.dom.minidom import parseString
+
+# Define the root element
+root = Element('planets')
+
+# Read the CSV data
+with open('planets.csv', newline='') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        # Create a planet element
+        planet = SubElement(root, 'planet')
+        
+        # Add attributes to the planet element
+        for key, value in row.items():
+            if key == 'planet.moons.moon.name':
+                moon = SubElement(planet, 'moon')
+                moon.text = value
+            elif key == 'planet.moons.moon.diameter_km':
+                moon = SubElement(planet, 'diameter_km')
+                moon.text = value
+            elif key == 'planet.moons.moon.has_atmosphere':
+                moon = SubElement(planet, 'has_atmosphere')
+                moon.text = value
+            elif key == 'planet.discovery.discovered_by':
+                discovery = SubElement(planet, 'discovered_by')
+                discovery.text = value
+            elif key == 'planet.discovery.year':
+                discovery = SubElement(planet, 'year')
+                discovery.text = value
+            elif key == 'planet.discovery.telescope':
+                discovery = SubElement(planet, 'telescope')
+                discovery.text = value
+            elif key == 'planet.atmosphere.composition':
+                atmosphere = SubElement(planet, 'composition')
+                atmosphere.text = value
+            elif key == 'planet.atmosphere.pressure_pa':
+                atmosphere = SubElement(planet, 'pressure_pa')
+                atmosphere.text = value
+            else:
+                planet.set(key, value)
+
+# Convert the ElementTree to a string
+xml_str = tostring(root, encoding='unicode')
+
+# Pretty print the XML
+dom = parseString(xml_str)
+pretty_xml_as_string = dom.toprettyxml()
+
+# Print the pretty XML
+print(pretty_xml_as_string)

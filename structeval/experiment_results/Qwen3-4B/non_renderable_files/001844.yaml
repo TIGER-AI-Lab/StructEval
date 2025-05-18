@@ -1,0 +1,30 @@
+
+creature:
+  name: Zyphorax
+  species: Xylothorax
+  age: 123
+  origin:
+    planet: Vryllion-7
+    galaxy: Andromeda
+  abilities:
+    - type: Energy Projection
+      power_level: 85
+    - type: Telepathic Communication
+      power_level: 70
+  appearance:
+    color: iridescent blue
+    size: medium
+    limbs:
+      count: 4
+      types:
+        - bioluminescent tentacles
+        - jointed appendages
+        - wing-like structures
+        - trunk-like limbs
+  companions:
+    - name: Thalax
+      species: Vryllionian
+      role: Navigational Guide
+    - name: Kryllis
+      species: Xylothorax
+      role: Energy Sustainer

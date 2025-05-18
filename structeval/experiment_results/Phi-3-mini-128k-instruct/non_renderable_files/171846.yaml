@@ -1,0 +1,17 @@
+galacticZoo:
+  location:
+    sector: Omega-7
+    galaxy: Andromeda
+  animals:
+    - name: Fluffernox
+      species: Quantum Lynx
+      originPlanet: Zyphora
+      features:
+        - Invisibility
+        - Telepathic whiskers
+    - name: Blorgle
+      species: Plasma Sloth
+      originPlanet: Quintar
+      features:
+        - Bioluminescence
+        - Gravity surfing

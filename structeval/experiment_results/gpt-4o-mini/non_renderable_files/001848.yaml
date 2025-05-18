@@ -1,0 +1,23 @@
+
+museum:
+  name: "The Modern Art Gallery"
+  location:
+    city: "New York"
+    country: "USA"
+  founded_year: 1995
+  director:
+    name: "Alice Johnson"
+    tenure_years: 8
+  exhibitions:
+    - title: "Visions of Tomorrow"
+      year: 2023
+      artworks:
+        - title: "Ethereal Dreams"
+          artist: "John Smith"
+          medium: "Oil on Canvas"
+          dimensions:
+            height_cm: 150
+            width_cm: 100
+          on_loan: false
+  visitor_statistics:
+    annual_visitors: 250000

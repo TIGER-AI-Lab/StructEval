@@ -1,0 +1,55 @@
+
+<creature>
+  <name>Zylarth Vexx</name>
+  <species>Draconis Luminaris</species>
+  <origin>
+    <planet>Virellia Prime</planet>
+    <galaxy>Andromeda Expanse</galaxy>
+  </origin>
+  <abilities>
+    <ability>
+      <type>Telepathy</type>
+      <description>Can communicate mentally across vast distances.</description>
+      <level>8</level>
+    </ability>
+    <ability>
+      <type>Regeneration</type>
+      <description>Rapidly heals wounds and regenerates lost limbs.</description>
+      <level>7</level>
+    </ability>
+    <ability>
+      <type>Energy Manipulation</type>
+      <description>Controls and shapes ambient energy for offense and defense.</description>
+      <level>9</level>
+    </ability>
+  </abilities>
+  <physical_traits>
+    <height>210</height>
+    <weight>145</weight>
+    <eye_color>Emerald Green</eye_color>
+    <limbs>
+      <count>6</count>
+      <type>tentacle</type>
+    </limbs>
+  </physical_traits>
+  <history>
+    <birth_date>2147-03-15</birth_date>
+    <events>
+      <event>
+        <title>First Contact</title>
+        <year>2170</year>
+        <impact>Established peaceful relations with neighboring species.</impact>
+      </event>
+      <event>
+        <title>Galactic Council Induction</title>
+        <year>2195</year>
+        <impact>Recognized as a key diplomatic species in the galaxy.</impact>
+      </event>
+      <event>
+        <title>Energy Crisis</title>
+        <year>2203</year>
+        <impact>Developed new energy manipulation techniques to save home planet.</impact>
+      </event>
+    </events>
+  </history>
+</creature>

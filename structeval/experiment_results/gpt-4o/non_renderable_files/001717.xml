@@ -1,0 +1,31 @@
+<recipe>
+    <title>Spaghetti Carbonara</title>
+    <description>A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</description>
+    <cuisine>Italian</cuisine>
+    <servings>4</servings>
+    <prepTime>PT15M</prepTime>
+    <cookTime>PT20M</cookTime>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>400</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <!-- Additional ingredients can be added here -->
+    </ingredients>
+    <steps>
+        <step>
+            <order>1</order>
+            <instruction>Boil the spaghetti in salted water until al dente.</instruction>
+            <duration>PT10M</duration>
+        </step>
+        <!-- Additional steps can be added here -->
+    </steps>
+    <nutrition>
+        <calories>500</calories>
+        <protein>20</protein>
+        <fat>22</fat>
+        <carbohydrates>60</carbohydrates>
+    </nutrition>
+</recipe>

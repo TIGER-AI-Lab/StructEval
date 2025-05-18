@@ -1,0 +1,28 @@
+
+creature:
+  name: Zylarth Prime
+  species: Luminoctis
+  age: 237
+  origin:
+    planet: Virellia
+    galaxy: Andromeda
+  abilities:
+    - type: Photokinesis
+      power_level: 85
+    - type: Telepathic Communication
+      power_level: 70
+  appearance:
+    color: iridescent blue
+    size: large
+    limbs:
+      count: 8
+      types:
+        - tentacle
+        - wing
+  companions:
+    - name: Krix
+      species: Vornak
+      role: Scout and protector
+    - name: Elara
+      species: Myridian
+      role: Healer and empathic guide

@@ -1,0 +1,22 @@
+creature:
+  name: Zyphlax
+  species: Zyphlorians
+  origin:
+    planet: Zyphlar Prime
+    galaxy: Andromeda
+  abilities:
+    - type: Telekinesis
+      description: Can move objects with their mind.
+      energy_cost: 50
+    - type: Invisibility
+      description: Becomes invisible to the naked eye.
+      energy_cost: 75
+  appearance:
+    height_cm: 210
+    skin_color: Iridescent blue
+    eye_count: 3
+  inventory:
+    - item_name: Zyphlaxian Crystals
+      quantity: 4
+    - item_name: Quantum Communicator
+      quantity: 1

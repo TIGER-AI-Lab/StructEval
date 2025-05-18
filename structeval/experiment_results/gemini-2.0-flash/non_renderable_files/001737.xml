@@ -1,0 +1,38 @@
+
+<recipe>
+  <title>Delicious Chocolate Cake</title>
+  <author>
+    <name>Jane Doe</name>
+    <contact>
+      <email>jane.doe@example.com</email>
+      <phone>+1-555-123-4567</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Flour</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Sugar</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Preheat oven to 350Â°F (175Â°C).</description>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <step>
+      <description>Mix flour, sugar, cocoa, baking powder, baking soda, and salt in a large bowl.</description>
+      <duration_minutes>5</duration_minutes>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>2500</calories>
+    <fat_grams>120.5</fat_grams>
+    <carbohydrates_grams>300.2</carbohydrates_grams>
+  </nutrition>
+</recipe>

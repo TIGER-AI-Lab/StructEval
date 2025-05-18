@@ -1,0 +1,79 @@
+<recipe>
+  <title>Spicy Chicken Stir-Fry</title>
+  <metadata>
+    <cuisine>Chinese</cuisine>
+    <difficulty>medium</difficulty>
+    <servings>4</servings>
+  </metadata>
+  <nutrition>
+    <calories>500</calories>
+    <fat>20</fat>
+    <carbohydrates>30</carbohydrates>
+  </nutrition>
+  <author>
+    <name>John Doe</name>
+    <contact>john.doe@example.com</contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Chicken breast</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Broccoli</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Red bell pepper</name>
+      <quantity>100</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Garlic</name>
+      <quantity>3</quantity>
+      <unit>cloves</unit>
+    </ingredient>
+    <ingredient>
+      <name>Soy sauce</name>
+      <quantity>50</quantity>
+      <unit>milliliters</unit>
+    </ingredient>
+    <ingredient>
+      <name>Olive oil</name>
+      <quantity>30</quantity>
+      <unit>milliliters</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <stepNumber>1</stepNumber>
+      <description>Cut the chicken breast into small pieces and season with salt and pepper.</description>
+      <timer>
+        <seconds>0</seconds>
+      </timer>
+    </step>
+    <step>
+      <stepNumber>2</stepNumber>
+      <description>Heat the olive oil in a pan over medium heat and add the chicken pieces.</description>
+      <timer>
+        <seconds>120</seconds>
+      </timer>
+    </step>
+    <step>
+      <stepNumber>3</stepNumber>
+      <description>Add the broccoli and red bell pepper to the pan and stir-fry for 5 minutes.</description>
+      <timer>
+        <seconds>300</seconds>
+      </timer>
+    </step>
+    <step>
+      <stepNumber>4</stepNumber>
+      <description>Stir in the garlic and soy sauce, and cook for another 2 minutes.</description>
+      <timer>
+        <seconds>120</seconds>
+      </timer>
+    </step>
+  </instructions>
+</recipe>

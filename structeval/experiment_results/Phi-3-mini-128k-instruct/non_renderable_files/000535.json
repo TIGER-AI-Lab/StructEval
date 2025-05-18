@@ -1,0 +1,31 @@
+{
+  "artifact": {
+    "name": "The Enigmatic Scepter",
+    "type": "weapon",
+    "materials": ["gold", "diamonds", "emeralds"],
+    "dimensions": {
+      "height_cm": 35,
+      "width_cm": 5,
+      "depth_cm": 2
+    },
+    "theory": {
+      "theory": "A ceremonial object used in ancient rituals of power and authority.",
+      "proposed_by": "Dr. Helena M. Cartwright",
+      "evidence": "Inscriptions on the scepter's base suggest a connection to a previously unknown deity worshipped by the civilization."
+    }
+  },
+  "artifact.discovery": {
+    "date": "2023-04-15",
+    "location": {
+      "latitude": 29.9792,
+      "longitude": -90.0715
+    },
+    "team": [
+      {
+        "member_name": "Dr. Helena M. Cartwright",
+        "role": "Archaeologist",
+        "experience_years": 12
+      }
+    ]
+  }
+}

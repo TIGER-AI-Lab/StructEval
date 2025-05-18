@@ -1,0 +1,40 @@
+
+<zoo>
+  <name>Wildlife Haven</name>
+  <location>
+    <city>Springfield</city>
+    <country>USA</country>
+  </location>
+  <opening_hours>
+    <weekdays>9am-5pm</weekdays>
+    <weekends>10am-6pm</weekends>
+  </opening_hours>
+  <animals>
+    <animal>
+      <species>Lion</species>
+      <name>Simba</name>
+      <age>5</age>
+      <enclosure>
+        <number>1</number>
+        <type>Outdoor</type>
+      </enclosure>
+      <feeding_times>
+        <time>10:00</time>
+        <time>16:00</time>
+      </feeding_times>
+    </animal>
+    <animal>
+      <species>Elephant</species>
+      <name>Dumbo</name>
+      <age>12</age>
+      <enclosure>
+        <number>2</number>
+        <type>Indoor</type>
+      </enclosure>
+      <feeding_times>
+        <time>11:00</time>
+        <time>17:00</time>
+      </feeding_times>
+    </animal>
+  </animals>
+</zoo>

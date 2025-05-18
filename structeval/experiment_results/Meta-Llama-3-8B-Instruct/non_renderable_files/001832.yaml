@@ -1,0 +1,25 @@
+
+exhibit:
+  title: Ancient Civilizations
+  curator:
+    name: John Smith
+    contact:
+      email: john.smith@example.com
+      phone: +1 555 123 4567
+  artifacts:
+  - name: The Golden Idol
+    origin: Mesopotamia
+    year: 2500
+    materials:
+      - Gold
+      - Lapis Lazuli
+    dimensions:
+      height_cm: 30
+      width_cm: 20
+      depth_cm: 10
+    on_loan: true
+    loan_info:
+      institution: British Museum
+      return_date: 2023-02-28T00:00:00Z
+  opening_date: 2022-03-01T00:00:00Z
+  closing_date: 2022-06-30T00:00:00Z

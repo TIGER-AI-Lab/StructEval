@@ -1,0 +1,14 @@
+
+import pandas as pd
+
+data = [
+    {"artifact_name": "Whispering Chalice", "species": "Elf", "discovery_date": "1876-03-14", "estimated_age_years": 920, "material": "Silver", "is_cursed": True, "appraised_value": 12000.50},
+    {"artifact_name": "Golem Heartstone", "species": "Golem", "discovery_date": "1992-11-02", "estimated_age_years": 1500, "material": "Granite", "is_cursed": False, "appraised_value": 8000.00},
+    {"artifact_name": "Phoenix Feather Quill", "species": "Phoenix", "discovery_date": "2008-07-21", "estimated_age_years": 350, "material": "Feather", "is_cursed": False, "appraised_value": 4500.75},
+    {"artifact_name": "Kraken Ink Vial", "species": "Kraken", "discovery_date": "1954-05-09", "estimated_age_years": 600, "material": "Glass", "is_cursed": True, "appraised_value": 9900.00},
+    {"artifact_name": "Dragonbone Flute", "species": "Dragon", "discovery_date": "1821-10-30", "estimated_age_years": 1800, "material": "Bone", "is_cursed": False, "appraised_value": 25000.00},
+    {"artifact_name": "Sprite Lantern", "species": "Sprite", "discovery_date": "2016-12-18", "estimated_age_years": 120, "material": "Crystal", "is_cursed": True, "appraised_value": 3700.25}
+]
+
+df = pd.DataFrame(data)
+df.to_csv('artifacts.csv', index=False)

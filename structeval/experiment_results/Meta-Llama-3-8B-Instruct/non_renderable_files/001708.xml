@@ -1,0 +1,42 @@
+
+<creature>
+    <name>Zorvath</name>
+    <species>Galactic Wraith</species>
+    <age>250</age>
+    <origin>
+        <planet>Andromeda-IV</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <abilities>
+        <ability>
+            <type>Telepathy</type>
+            <level>8</level>
+            <description>Empathic connection with other beings</description>
+        </ability>
+        <ability>
+            <type>Energy Projection</type>
+            <level>6</level>
+            <description>Project energy blasts for defense</description>
+        </ability>
+    </abilities>
+    <companions>
+        <companion>
+            <name>Korvath</name>
+            <species>Shadow Drake</species>
+            <bondStrength>0.7</bondStrength>
+        </companion>
+        <companion>
+            <name>Lyrax</name>
+            <species>Stellar Wyrm</species>
+            <bondStrength>0.9</bondStrength>
+        </companion>
+    </companions>
+    <physiology>
+        <height>180</height>
+        <weight>120</weight>
+        <coloration>
+            <primary>Indigo</primary>
+            <secondary></secondary>
+        </coloration>
+    </physiology>
+</creature>

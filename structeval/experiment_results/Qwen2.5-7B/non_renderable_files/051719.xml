@@ -1,0 +1,52 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "starSystems": {
+      "starSystem": [
+        {
+          "name": "Alpha-7",
+          "planets": {
+            "planet": [
+              { "name": "Xylon", "hasLife": true },
+              { "name": "Borealis", "hasLife": false }
+            ]
+          }
+        },
+        {
+          "name": "Beta-3",
+          "planets": {
+            "planet": [
+              { "name": "Ceres", "hasLife": false }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+'''
+
+data = json.loads(json_data)
+root = ET.Element("root")
+
+def json_to_xml(json_data, parent):
+    if isinstance(json_data, dict):
+        for key, value in json_data.items():
+            if isinstance(value, dict) or isinstance(value, list):
+                child = ET.SubElement(parent, key)
+                json_to_xml(value, child)
+            else:
+                ET.SubElement(parent, key).text = str(value)
+    elif isinstance(json_data, list):
+        for item in json_data:
+            json_to_xml(item, parent)
+
+json_to_xml(data, root)
+
+tree = ET.ElementTree(root)
+tree.write("output.xml")

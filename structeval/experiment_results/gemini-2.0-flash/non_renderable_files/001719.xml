@@ -1,0 +1,110 @@
+
+<recipe>
+  <title>Delicious Chocolate Cake</title>
+  <author>
+    <name>Jane Doe</name>
+    <contact>
+      <email>jane.doe@example.com</email>
+      <phone>+1-555-123-4567</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Flour</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Sugar</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Cocoa Powder</name>
+      <quantity>50</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>2</quantity>
+      <unit/>
+    </ingredient>
+    <ingredient>
+      <name>Milk</name>
+      <quantity>120</quantity>
+      <unit>ml</unit>
+    </ingredient>
+    <ingredient>
+      <name>Oil</name>
+      <quantity>80</quantity>
+      <unit>ml</unit>
+    </ingredient>
+    <ingredient>
+      <name>Baking Powder</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+    <ingredient>
+      <name>Vanilla Extract</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <order>1</order>
+      <description>Preheat oven to 180Â°C (350Â°F).</description>
+      <duration>
+        <minutes>5</minutes>
+      </duration>
+    </step>
+    <step>
+      <order>2</order>
+      <description>In a large bowl, whisk together flour, sugar, cocoa powder, and baking powder.</description>
+      <duration>
+        <minutes>3</minutes>
+      </duration>
+    </step>
+    <step>
+      <order>3</order>
+      <description>Add eggs, milk, oil, and vanilla extract to the dry ingredients. Mix until just combined.</description>
+      <duration>
+        <minutes>5</minutes>
+      </duration>
+    </step>
+    <step>
+      <order>4</order>
+      <description>Pour batter into a greased and floured cake pan.</description>
+      <duration>
+        <minutes>2</minutes>
+      </duration>
+    </step>
+    <step>
+      <order>5</order>
+      <description>Bake for 30-35 minutes, or until a wooden skewer inserted into the center comes out clean.</description>
+      <duration>
+        <minutes>35</minutes>
+      </duration>
+    </step>
+    <step>
+      <order>6</order>
+      <description>Let cool in the pan for 10 minutes before inverting onto a wire rack to cool completely.</description>
+      <duration>
+        <minutes>10</minutes>
+      </duration>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>2500</calories>
+    <fat>
+      <grams>120</grams>
+      <type>Saturated</type>
+    </fat>
+    <carbohydrates>
+      <grams>300</grams>
+    </carbohydrates>
+    <protein>
+      <grams>40</grams>
+    </protein>
+  </nutrition>
+</recipe>

@@ -1,0 +1,43 @@
+{
+  "planet_name": "Zephyra",
+  "system": {
+    "star_name": "Helion",
+    "distance_ly": 42.7,
+    "discovery": {
+      "year": 2091,
+      "method": "Transit"
+    }
+  },
+  "moons": [
+    {
+      "moon_name": "Selene",
+      "diameter_km": 3200,
+      "has_atmosphere": true
+    },
+    {
+      "moon_name": "Nyx",
+      "diameter_km": 2100,
+      "has_atmosphere": false
+    }
+  ],
+  "atmosphere": {
+    "composition": ["Nitrogen", "Oxygen"],
+    "pressure_atm": 1.2,
+    "temperature_c": -55
+  },
+  "surface": {
+    "water_coverage_percent": 14
+  },
+  "missions": [
+    {
+      "name": "Explorer I",
+      "agency": "ESA",
+      "year": 2095
+    },
+    {
+      "name": "Stellar Scout",
+      "agency": "NASA",
+      "year": 2102
+    }
+  ]
+}

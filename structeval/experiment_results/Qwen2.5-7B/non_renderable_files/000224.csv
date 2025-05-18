@@ -1,0 +1,24 @@
+
+import pandas as pd
+
+# Create a DataFrame with the book data
+book_data = pd.DataFrame({
+    'book_id': [1, 2, 3, 4, 5],
+    'title': ['The Great Gatsby', 'To Kill a Mockingbird', '1984', 'The Catcher in the Rye', 'Brave New World'],
+    'author_name': ['F. Scott Fitzgerald', 'Harper Lee', 'George Orwell', 'J.D. Salinger', 'Aldous Huxley'],
+    'author_birth_year': [1896, 1926, 1903, 1919, 1894],
+    'genre': ['Fiction', 'Fiction', 'Dystopian', 'Fiction', 'Science Fiction'],
+    'publication_year': [1925, 1960, 1949, 1951, 1932],
+    'publisher_name': ['Charles Scribner's Sons', 'J.B. Lippincott & Co.', 'Secker & Warburg', 'Little, Brown and Company', 'Chatto & Windus'],
+    'publisher_country': ['United States', 'United States', 'United Kingdom', 'United States', 'United Kingdom'],
+    'pages': [180, 281, 328, 277, 281],
+    'language': ['English', 'English', 'English', 'English', 'English'],
+    'series_name': ['-', '-', '-', '-', 'Brave New World'],
+    'series_number': [None, None, None, None, 1],
+    'isbn_13': ['9780743273565', '9780060935467', '9780451524935', '9780316769488', '9780060929909'],
+    'average_rating': [4.31, 4.57, 3.54, 4.17, 3.81],
+    'review_count': [100000, 80000, 60000, 50000, 40000]
+})
+
+# Save the DataFrame to a CSV file
+book_data.to_csv('books.csv', index=False)

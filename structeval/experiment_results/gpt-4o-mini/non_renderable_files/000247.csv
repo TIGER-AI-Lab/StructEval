@@ -1,0 +1,71 @@
+
+import csv
+
+# Define the creature data
+creature_data = [
+    {
+        "creature_id": "creature_001",
+        "species_name": "Flamewing Phoenix",
+        "habitat": {
+            "region": "Mystic Mountains",
+            "terrain_type": "Volcanic",
+            "temperature_celsius": 35
+        },
+        "physical_traits": {
+            "height_meters": 1.5,
+            "weight_kilograms": 10,
+            "skin_color": "Fiery Red",
+            "eye_count": 2
+        },
+        "abilities": [
+            {
+                "name": "Fire Manipulation",
+                "power_level": 90
+            },
+            {
+                "name": "Flight",
+                "power_level": 80
+            }
+        ],
+        "diet": {
+            "primary_food": "Ashen Fruits",
+            "secondary_food": "Ember Seeds"
+        }
+    }
+]
+
+# Specify the CSV file name
+csv_file = 'creatures.csv'
+
+# Write to CSV
+with open(csv_file, mode='w', newline='') as file:
+    writer = csv.DictWriter(file, fieldnames=[
+        "creature_id", "species_name", 
+        "habitat.region", "habitat.terrain_type", "habitat.temperature_celsius", 
+        "physical_traits.height_meters", "physical_traits.weight_kilograms", 
+        "physical_traits.skin_color", "physical_traits.eye_count", 
+        "abilities[0].name", "abilities[0].power_level", 
+        "abilities[1].name", "abilities[1].power_level", 
+        "diet.primary_food", "diet.secondary_food"
+    ])
+    
+    writer.writeheader()
+    
+    for creature in creature_data:
+        writer.writerow({
+            "creature_id": creature["creature_id"],
+            "species_name": creature["species_name"],
+            "habitat.region": creature["habitat"]["region"],
+            "habitat.terrain_type": creature["habitat"]["terrain_type"],
+            "habitat.temperature_celsius": creature["habitat"]["temperature_celsius"],
+            "physical_traits.height_meters": creature["physical_traits"]["height_meters"],
+            "physical_traits.weight_kilograms": creature["physical_traits"]["weight_kilograms"],
+            "physical_traits.skin_color": creature["physical_traits"]["skin_color"],
+            "physical_traits.eye_count": creature["physical_traits"]["eye_count"],
+            "abilities[0].name": creature["abilities"][0]["name"],
+            "abilities[0].power_level": creature["abilities"][0]["power_level"],
+            "abilities[1].name": creature["abilities"][1]["name"],
+            "abilities[1].power_level": creature["abilities"][1]["power_level"],
+            "diet.primary_food": creature["diet"]["primary_food"],
+            "diet.secondary_food": creature["diet"]["secondary_food"]
+        })

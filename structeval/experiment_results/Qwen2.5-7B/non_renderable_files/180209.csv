@@ -1,0 +1,14 @@
+
+import pandas as pd
+
+data = [
+    {"planet": "Zephyra", "moon_count": 3, "discovery_date": "2094-11-17", "atmosphere_type": "Nitrogen-Rich", "distance_from_earth_ly": 27.4, "is_habitable": True},
+    {"planet": "Aurion", "moon_count": 1, "discovery_date": "2101-05-02", "atmosphere_type": "Methane", "distance_from_earth_ly": 42.7, "is_habitable": False},
+    {"planet": "Lysara", "moon_count": 2, "discovery_date": "2089-08-26", "atmosphere_type": "Oxygen-Rich", "distance_from_earth_ly": 15.9, "is_habitable": True},
+    {"planet": "Vortalis", "moon_count": 5, "discovery_date": "2112-01-13", "atmosphere_type": "Carbon Dioxide", "distance_from_earth_ly": 63.2, "is_habitable": False},
+    {"planet": "Ecliptor", "moon_count": 0, "discovery_date": "2078-03-30", "atmosphere_type": "Helium", "distance_from_earth_ly": 88.5, "is_habitable": False},
+    {"planet": "Pyrrhion", "moon_count": 4, "discovery_date": "2099-12-05", "atmosphere_type": "Neon", "distance_from_earth_ly": 34.8, "is_habitable": True}
+]
+
+df = pd.DataFrame(data)
+df.to_csv('planets.csv', index=False)

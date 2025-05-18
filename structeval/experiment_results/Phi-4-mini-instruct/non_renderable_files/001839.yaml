@@ -1,0 +1,32 @@
+
+creature:
+  name: "Lumina"
+  species: "Aetherial Drake"
+  age: 150
+  habitat:
+    type: "Sky Realm"
+    location: "Celestial Canopy"
+    features:
+      - "Floating islands"
+      - "Radiant energy fields"
+      - "Ethereal flora"
+  abilities:
+    - name: "Luminous Projection"
+      description: "Emits a powerful beam of light to illuminate dark areas and disorient foes."
+      power_level: 8
+    - name: "Aetheric Flight"
+      description: "Glides through the air using the currents of the Aether."
+      power_level: 7
+  diet:
+    primary_food: "Starlight Nectar"
+    secondary_foods:
+      - "Moonbeam Mushrooms"
+      - "Solar Sprouts"
+    feeding_times:
+      - "03:00"
+      - "09:00"
+      - "15:00"
+      - "21:00"
+  social_behavior:
+    group_size: 5
+    hierarchy: "Alpha-led"

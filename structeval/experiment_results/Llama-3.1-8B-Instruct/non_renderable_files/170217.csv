@@ -1,0 +1,21 @@
+
+import xml.etree.ElementTree as ET
+import csv
+
+tree = ET.parse('artcollection.xml')
+root = tree.getroot()
+
+with open('artcollection.csv', 'w', newline='') as csvfile:
+    fieldnames = ['ArtworkTitle', 'Artist', 'YearCreated', 'Medium', 'EstimatedValueUSD', 'DateAcquired']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for artwork in root.findall('Artwork'):
+        writer.writerow({
+            'ArtworkTitle': artwork.find('ArtworkTitle').text,
+            'Artist': artwork.find('Artist').text,
+            'YearCreated': artwork.find('YearCreated').text,
+            'Medium': artwork.find('Medium').text,
+            'EstimatedValueUSD': artwork.find('EstimatedValueUSD').text,
+            'DateAcquired': artwork.find('DateAcquired').text
+        })

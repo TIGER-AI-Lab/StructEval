@@ -1,0 +1,3 @@
+
+"artifact_id","artifact_name","period","origin_region","material","dimensions_height_cm","dimensions_width_cm","dimensions_depth_cm","discovery_date","current_location","condition_status","historical_significance","images[0].url","images[0].description","restoration_records[0].date","restoration_records[0].details"
+"ART001","Ancient Warrior Helmet","Bronze Age","Mediterranean","bronze, gold","25.5","20.8","5.2","2022-01-01","The British Museum","intact","Symbol of ancient warrior culture","https://example.com/image1.jpg","A bronze helmet with intricate designs","2021-06-15","Cleaned and conserved to remove corrosion"

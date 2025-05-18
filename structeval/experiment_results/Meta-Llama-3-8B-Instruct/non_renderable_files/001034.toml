@@ -1,0 +1,37 @@
+
+robot = {
+  name = "FutureBot",
+  model_number = "FB-001",
+  manufacturer = "CyberCorp",
+  specs = {
+    weight_kg = 50.0,
+    height_cm = 120.0,
+    power_source = "Battery"
+  },
+  sensors = [
+    {
+      type = "Laser",
+      range_meters = 10.0
+    },
+    {
+      type = "Ultrasonic",
+      range_meters = 5.0
+    }
+  ],
+  modules = [
+    {
+      name = "Navigation",
+      status = "Active",
+      last_maintenance = "2022-01-01T00:00:00Z"
+    },
+    {
+      name = "Communication",
+      status = "Active",
+      last_maintenance = "2022-01-15T00:00:00Z"
+    }
+  ],
+  operating_modes = {
+    primary = "Autonomous",
+    secondary = "Remote"
+  }
+}

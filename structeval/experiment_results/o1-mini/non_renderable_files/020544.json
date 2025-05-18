@@ -1,0 +1,15 @@
+{
+  "mission_name": "Stellar Odyssey",
+  "launch.date": "2042-07-19",
+  "launch.site": "Tycho Base",
+  "crew": ["Dr. Mira Tan", "Cmdr. Lee Chen"],
+  "names": ["Commander", "Navigator"],
+  "crew.roles": ["Singaporean", "Canadian"],
+  "crew.nationalities": ["Habitat Module", "Research Probe"],
+  "payloads.types": [12000, 350],
+  "payloads.masses_kg": ["Lunar Orbit", "Mare Tranquillitatis"],
+  "payloads.destinations": ["Lunar Orbit", "Mare Tranquillitatis"],
+  "objectives.primary": "Establish first lunar habitat",
+  "objectives.secondary": "Test autonomous mining bots",
+  "status": "Scheduled"
+}

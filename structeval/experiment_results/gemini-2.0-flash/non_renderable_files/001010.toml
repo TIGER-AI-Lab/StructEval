@@ -1,0 +1,53 @@
+[recipe]
+name = "Spicy Shrimp Tacos"
+author = "Chef Emily"
+cuisine = "Mexican"
+difficulty = "medium"
+
+[recipe.prep_time]
+minutes = 20
+
+[recipe.cook_time]
+minutes = 15
+
+[[recipe.ingredients]]
+name = "Shrimp"
+quantity = 500
+unit = "grams"
+optional = false
+
+[[recipe.ingredients]]
+name = "Chili Powder"
+quantity = 2
+unit = "tablespoons"
+optional = false
+
+[[recipe.ingredients]]
+name = "Lime"
+quantity = 1
+unit = "whole"
+optional = false
+
+[[recipe.ingredients]]
+name = "Cilantro"
+quantity = 0.25
+unit = "cup"
+optional = true
+
+[[recipe.steps]]
+description = "Marinate shrimp with chili powder and lime juice."
+duration_minutes = 10
+
+[[recipe.steps]]
+description = "Cook shrimp in a pan until pink."
+duration_minutes = 5
+
+[[recipe.steps]]
+description = "Assemble tacos with shrimp and cilantro."
+duration_minutes = 5
+
+[recipe.nutrition]
+calories = 350
+protein_grams = 30
+fat_grams = 15
+carbohydrates_grams = 20

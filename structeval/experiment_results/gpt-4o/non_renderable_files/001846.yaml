@@ -1,0 +1,25 @@
+
+artifact:
+  name: "Golden Scepter of Amun"
+  origin:
+    civilization: "Ancient Egyptian"
+    era: "New Kingdom"
+  materials:
+    primary: "gold"
+    secondary: "lapis lazuli"
+  dimensions:
+    height_cm: 45.0
+    width_cm: 10.0
+    depth_cm: 5.0
+  features:
+    - description: "Intricate hieroglyphic engravings depicting deities"
+      type: "engraving"
+    - description: "Embedded with semi-precious stones"
+      type: "decoration"
+  provenance:
+    previous_owners:
+      - name: "British Museum"
+        acquisition_year: 1923
+    discovery:
+      location: "Valley of the Kings, Egypt"
+      date: "1922-11-04"

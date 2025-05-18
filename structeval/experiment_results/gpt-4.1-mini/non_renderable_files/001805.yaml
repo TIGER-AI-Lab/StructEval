@@ -1,0 +1,59 @@
+
+brewery:
+  name: "Silver Oak Craft Brewery"
+  location:
+    city: "Portland"
+    country: "USA"
+  established_year: 2010
+  specialties:
+    - "American IPA"
+    - "Sour Ales"
+    - "Barrel-aged Stouts"
+  master_brewer:
+    name: "Emily Carter"
+    experience_years: 15
+    awards:
+      - title: "Best Brewer of the Year"
+        year: 2018
+      - title: "Gold Medal at National Beer Awards"
+        year: 2020
+  beers:
+    - name: "Cascade IPA"
+      style: "American IPA"
+      abv: 6.5
+      ingredients:
+        malts:
+          - "Pale Malt"
+          - "Caramel Malt"
+        hops:
+          - "Cascade"
+          - "Centennial"
+      release_dates:
+        - "2012-05-15"
+        - "2013-06-20"
+    - name: "Sour Cherry Ale"
+      style: "Sour Ale"
+      abv: 5.2
+      ingredients:
+        malts:
+          - "Pilsner Malt"
+          - "Wheat Malt"
+        hops:
+          - "Saaz"
+          - "Hallertau"
+      release_dates:
+        - "2015-09-10"
+        - "2016-10-05"
+    - name: "Midnight Barrel Stout"
+      style: "Barrel-aged Stout"
+      abv: 9.0
+      ingredients:
+        malts:
+          - "Chocolate Malt"
+          - "Roasted Barley"
+        hops:
+          - "Fuggle"
+          - "East Kent Goldings"
+      release_dates:
+        - "2018-11-01"
+        - "2019-12-15"

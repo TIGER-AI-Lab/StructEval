@@ -1,0 +1,31 @@
+[robot]
+name = "XJ-9000"
+model_number = "XJ-9000-2025"
+manufacturer = "FutureTech Robotics"
+
+[robot.specs]
+weight_kg = 120.5
+height_cm = 210.0
+power_source = "fusion cell"
+
+[[robot.sensors]]
+type = "LIDAR"
+range_meters = 1000
+
+[[robot.sensors]]
+type = "Infrared"
+range_meters = 500
+
+[[robot.modules]]
+name = "Navigation"
+status = "active"
+last_maintenance = "2023-09-15"
+
+[[robot.modules]]
+name = "Communication"
+status = "inactive"
+last_maintenance = "2023-08-10"
+
+[robot.operating_modes]
+primary = "autonomous"
+secondary = "manual"

@@ -1,0 +1,40 @@
+{
+  "museum": {
+    "name": "The Grand Art Museum",
+    "location": {
+      "city": "New York",
+      "country": "USA"
+    },
+    "established_year": 1923,
+    "director": {
+      "name": "Dr. Elizabeth Johnson",
+      "tenure_years": 10
+    },
+    "departments": [
+      {
+        "name": "European Paintings",
+        "head": "Professor James Smith",
+        "collections": [
+          {
+            "title": "The Starry Night",
+            "year_acquired": 1950,
+            "artist": "Vincent van Gogh",
+            "medium": "Oil on canvas",
+            "on_display": true
+          },
+          {
+            "title": "The Birth of Venus",
+            "year_acquired": 1965,
+            "artist": "Sandro Botticelli",
+            "medium": "Tempera on canvas",
+            "on_display": false
+          }
+        ]
+      }
+    ],
+    "opening_hours": {
+      "weekdays": "10:00 AM - 6:00 PM",
+      "weekends": "10:00 AM - 8:00 PM"
+    }
+  }
+}

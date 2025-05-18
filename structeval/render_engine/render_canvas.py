@@ -7,7 +7,22 @@ from .render_html import render_html_and_screenshot
 
 def extract_canvas_html_from_code_tag(generation):
     match = re.search(r"<code>(.*?)</code>", generation, re.DOTALL)
-    return match.group(1) if match else None
+    if match:
+        code = match.group(1)
+    else:
+        # 2. Try to extract from ```<output_type>``` fenced block
+        code_fence_pattern = rf"```{output_type}\s*(.*?)```"
+        match = re.search(code_fence_pattern, generation, re.DOTALL)
+        if match:
+            code = match.group(1).strip() if match else generation.strip()
+        else:
+            fence_pattern = r"```\s*(.*?)```"
+            match = re.search(fence_pattern, generation, re.DOTALL)
+            if match:
+                code = match.group(1).strip() if match else generation.strip()
+            else:
+                raise ValueError("Parsing error: No correct tag found")
+    return code
 
 async def render_canvas_and_screenshot(task_id, canvas_html, img_output_path):
     """
@@ -30,10 +45,15 @@ async def render_canvas_and_screenshot(task_id, canvas_html, img_output_path):
             <title>Canvas Render</title>
         </head>
         <body>
-            {canvas_html}
+            <canvas id="canvas" width="600" height="400"></canvas>
+            <script>
+                {canvas_html}
+            </script>
         </body>
         </html>
         """
+
+        # print(html_wrapper)
         
         # Use HTML renderer to capture the rendered canvas
         render_score = await render_html_and_screenshot(task_id, html_wrapper, img_output_path)

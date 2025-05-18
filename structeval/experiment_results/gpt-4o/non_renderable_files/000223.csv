@@ -1,0 +1,2 @@
+artifact_id,artifact_name,discovery.site,discovery.date_found,discovery.discoverer,origin.culture,origin.estimated_age,origin.materials,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,condition.status,condition.restoration_needed,current_location.museum,current_location.exhibit_hall
+"12345","Ancient Vase","Athens, Greece","2023-05-12","Dr. John Doe","Greek",2500,"Clay;Paint",30.5,20.0,15.0,"Intact",false,"National Archaeological Museum","Hall of Antiquities"

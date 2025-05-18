@@ -1,0 +1,3 @@
+
+"species","habitat.region","habitat.climate","habitat.elevation_meters","diet.primary_food","diet.secondary_foods","diet.daily_caloric_intake","physical_traits.average_weight_kg","physical_traits.average_length_cm","physical_traits.coloration","behavior.activity_pattern","behavior.social_structure","behavior.migratory","conservation.status","conservation.population_estimate"
+"Glowfin Whisker","Tropical Rainforest","tropical",200,"insects","fruits;small vertebrates",2500,3.5,65,"bioluminescent green and blue patterns","diurnal","pair","no","Least Concern",150000

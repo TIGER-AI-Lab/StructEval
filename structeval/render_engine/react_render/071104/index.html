@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 071104</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+const MarkdownLayout = () => {
+  return (
+    <div>
+      <h1>Project Title: Markdown Layout Demonstration</h1>
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#configuration">Configuration</a></li>
+        <li><a href="#data-structure">Data Structure</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ol>
+      <hr />
+      <h2 id="introduction">Introduction</h2>
+      <p>Welcome to this comprehensive Markdown demonstration. This document is designed to illustrate a realistic, long-form code snippet that emphasizes <strong>visual structure</strong>, <strong>layout</strong>, and <strong>formatted content</strong>.</p>
+      <p>Key points:</p>
+      <ul>
+        <li>Clear visual hierarchy using headings.</li>
+        <li>Organized sections and subsections.</li>
+        <li>Lists, tables, code blocks, and block quotes.</li>
+        <li>Labeled values for configuration and data representation.</li>
+      </ul>
+      <blockquote>Note: This file is for layout demonstration purposes only.</blockquote>
+      <hr />
+      <h2 id="features">Features</h2>
+      <ul>
+        <li><strong>Headings and Subheadings:</strong> Clearly labeled structures for text hierarchy.</li>
+        <li><strong>Lists:</strong> Combination of ordered and unordered lists.</li>
+        <li><strong>Code Blocks:</strong> Demonstration of both inline and block code.</li>
+        <li><strong>Tables:</strong> Structured presentation of data.</li>
+        <li><strong>Block Quotes:</strong> Used to emphasize important notes.</li>
+      </ul>
+      <h3>Detailed Feature List</h3>
+      <ol>
+        <li><strong>Headings:</strong> Easily recognizable levels (H1, H2, H3, etc.).</li>
+        <li><strong>Bullet Points:</strong> Both dashes and asterisks provide clear list items.</li>
+        <li><strong>Numbered Lists:</strong> Sorted items for step-by-step instructions.</li>
+        <li><strong>Code Samples:</strong> Inline code <code>example()
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

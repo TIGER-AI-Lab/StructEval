@@ -1,0 +1,5 @@
+
+"species_name","habitat.region","habitat.climate","habitat.elevation_meters","average_lifespan_years","diet.primary_food","diet.secondary_food","diet.is_carnivorous","physical_traits.height_cm","physical_traits.weight_kg","physical_traits.fur_color","physical_traits.has_wings","social_structure.group_size","social_structure.dominant_gender","notable_behaviors[0].behavior_name","notable_behaviors[0].frequency_per_day","notable_behaviors[1].behavior_name","notable_behaviors[1].frequency_per_day"
+"Species A","Region 1","Tropical","500","10","Food A","Food B",true,100,5,"Brown",true,5,"Male", "Behavior 1", 3, "Behavior 2", 2
+"Species B","Region 2","Arid","1000","15","Food C","Food D",false,80,3,"Gray",false,10,"Female", "Behavior 3", 1, "Behavior 4", 4
+"Species C","Region 3","Temperate","2000","20","Food E","Food F",true,120,6,"Black",true,15,"Male", "Behavior 5", 2, "Behavior 6", 3

@@ -1,0 +1,22 @@
+
+galaxy:
+  name: Andromeda
+  star_systems:
+    - star_system:
+        system_name: Alpha Centauri
+        planets:
+          - planet:
+              planet_name: Proxima b
+              inhabited: false
+          - planet:
+              planet_name: Alpha Centauri Bb
+              inhabited: true
+    - star_system:
+        system_name: TRAPPIST-1
+        planets:
+          - planet:
+              planet_name: TRAPPIST-1e
+              inhabited: true
+          - planet:
+              planet_name: TRAPPIST-1f
+              inhabited: false

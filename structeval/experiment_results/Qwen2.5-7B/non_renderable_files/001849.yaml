@@ -1,0 +1,36 @@
+game:
+  title: The Legend of Zelda: Breath of the Wild
+  release_year: 2017
+  genre: Action-Adventure
+  platforms:
+    - name: Nintendo Switch
+      release_date: 2017-03-03
+      supported_languages:
+        - English
+        - Japanese
+        - French
+        - German
+        - Italian
+        - Spanish
+  developer:
+    name: Nintendo EAD
+    founded: 1981
+    location:
+      city: Kyoto
+      country: Japan
+  reviews:
+    - reviewer: GameSpot
+      score: 10
+      date: 2017-03-03
+      comment: "A masterpiece of modern gaming."
+    - reviewer: IGN
+      score: 9.9
+      date: 2017-03-04
+      comment: "Innovative gameplay and stunning world."
+  expansions:
+    - title: Breath of the Wild - The Master Quest
+      release_year: 2020
+      features:
+        - Expanded story
+        - New dungeons
+        - Enhanced graphics

@@ -1,0 +1,32 @@
+
+<galaxy>
+  <name>Andromeda</name>
+  <starSystems>
+    <starSystem>
+      <name>Alpha Centauri</name>
+      <planets>
+        <planet>
+          <name>Proxima b</name>
+          <hasLife>false</hasLife>
+        </planet>
+        <planet>
+          <name>Proxima c</name>
+          <hasLife>false</hasLife>
+        </planet>
+      </planets>
+    </starSystem>
+    <starSystem>
+      <name>Sirius</name>
+      <planets>
+        <planet>
+          <name>Sirius A-1</name>
+          <hasLife>true</hasLife>
+        </planet>
+        <planet>
+          <name>Sirius A-2</name>
+          <hasLife>false</hasLife>
+        </planet>
+      </planets>
+    </starSystem>
+  </starSystems>
+</galaxy>

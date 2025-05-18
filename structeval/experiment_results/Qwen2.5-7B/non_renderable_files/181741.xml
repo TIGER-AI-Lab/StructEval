@@ -1,0 +1,38 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def yaml_to_xml(yaml_data):
+    root = ET.Element('root')
+    space_station = ET.SubElement(root, 'spaceStation')
+    space_station.set('name', yaml_data['spaceStation']['name'])
+    location = ET.SubElement(space_station, 'location')
+    planet = ET.SubElement(location, 'planet')
+    planet.text = yaml_data['spaceStation']['location']['planet']
+    galaxy = ET.SubElement(location, 'galaxy')
+    galaxy.text = yaml_data['spaceStation']['location']['galaxy']
+    crew_members = ET.SubElement(space_station, 'crewMembers')
+    for crew_member in yaml_data['spaceStation']['crewMembers']:
+        member = ET.SubElement(crew_members, 'crewMember')
+        name = ET.SubElement(member, 'name')
+        name.text = crew_member['name']
+        role = ET.SubElement(member, 'role')
+        role.text = crew_member['role']
+    return ET.tostring(root, encoding='unicode')
+
+yaml_data = yaml.safe_load("""
+spaceStation:
+  name: Nebula Outpost
+  location:
+    planet: Xylophar
+    galaxy: Andromeda
+  crewMembers:
+    crewMember:
+      - name: Zira Quell
+        role: Botanist
+      - name: Torm Drav
+        role: Engineer
+""")
+
+xml_data = yaml_to_xml(yaml_data)
+print(xml_data)

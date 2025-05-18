@@ -1,0 +1,40 @@
+
+artifact = { 
+    name = "Celestial Sphere",
+    origin = { 
+        civilization = "Zyphorian",
+        era = "Galactic Age"
+    },
+    materials = [
+        { 
+            type = "Obsidian", 
+            quantity_grams = 2500 
+        },
+        { 
+            type = "Gold", 
+            quantity_grams = 500 
+        }
+    ],
+    dimensions = { 
+        height_cm = 30, 
+        width_cm = 20, 
+        depth_cm = 15 
+    },
+    inscriptions = [
+        { 
+            language = "Zyphorian", 
+            translation = "Knowledge is the path to the stars." 
+        },
+        { 
+            language = "Galactic Standard", 
+            translation = "Unity through diversity." 
+        }
+    ],
+    discovery = { 
+        date_iso = "2023-10-15", 
+        location = { 
+            latitude = -34.567, 
+            longitude = 150.123 
+        } 
+    }
+}

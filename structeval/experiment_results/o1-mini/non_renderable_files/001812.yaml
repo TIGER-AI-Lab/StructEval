@@ -1,0 +1,36 @@
+
+brewery:
+  name: "Hoppy Trails Brewery"
+  location:
+    city: "Portland"
+    country: "USA"
+  founded_year: 2010
+  owner: "Emily Stone"
+  beers:
+    - name: "Cascade IPA"
+      style: "IPA"
+      abv: 6.5
+      awards:
+        - title: "Best IPA"
+          year: 2022
+          organization: "Craft Beer Festival"
+    - name: "Midnight Stout"
+      style: "Stout"
+      abv: 8.0
+      awards:
+        - title: "Superior Stout"
+          year: 2023
+          organization: "BeerCon"
+  tours:
+    available: true
+    schedule:
+      days:
+        - "Monday"
+        - "Wednesday"
+        - "Friday"
+      times:
+        - "14:00"
+        - "16:00"
+    languages_supported:
+      - "English"
+      - "Spanish"

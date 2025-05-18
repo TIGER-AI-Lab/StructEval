@@ -1,0 +1,18 @@
+
+[ecosystem]
+name = "Mystic Forest"
+location = { latitude = 12.345, longitude = -98.765 }
+climate = { type = "temperate", average_temperature_c = 15, annual_rainfall_mm = 1200 }
+
+[species]
+common_name = "Silver Fox"
+scientific_name = "Vulpes mystica"
+population_estimate = 1500
+conservation_status = "Least Concern"
+notable_characteristics = ["Vibrant silver fur", "Nocturnal", "Highly intelligent"]
+
+common_name = "Emerald Tree Frog"
+scientific_name = "Hyla viridis"
+population_estimate = 3000
+conservation_status = "Least Concern"
+notable_characteristics = ["Green skin", "Nocturnal", "Can change color"]

@@ -1,0 +1,39 @@
+{
+  "artifact": {
+    "name": "The Serpent's Eye Diadem",
+    "discovery_date": "2023-10-27",
+    "origin": {
+      "civilization": "Ophidian Empire",
+      "era": "Late Serpent Dynasty"
+    },
+    "materials": [
+      {
+        "type": "Gold",
+        "purity": 98.5
+      },
+      {
+        "type": "Obsidian",
+        "purity": 99.9
+      }
+    ],
+    "dimensions": {
+      "height_cm": 12.5,
+      "width_cm": 18.0,
+      "depth_cm": 3.2
+    },
+    "inscriptions": [
+      {
+        "language": "Ophidian Hieroglyphs",
+        "translation": "Wisdom and power shall be granted to the wearer."
+      },
+      {
+        "language": "Ophidian Hieroglyphs",
+        "translation": "The Serpent sees all."
+      }
+    ],
+    "current_location": {
+      "museum": "National Archaeological Museum",
+      "display_case": "Hall of Ancient Empires, Case 7"
+    }
+  }
+}

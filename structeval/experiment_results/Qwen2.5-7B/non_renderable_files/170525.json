@@ -1,0 +1,36 @@
+
+import xmltodict
+import json
+
+xml_data = """
+<galacticZoo>
+  <animals>
+    <animal>
+      <name>Zorblax</name>
+      <species>Quasar Lynx</species>
+      <originPlanet>Vega-7</originPlanet>
+      <abilities>
+        <ability>Phase Shift</ability>
+        <ability>Stellar Roar</ability>
+      </abilities>
+    </animal>
+    <animal>
+      <name>Plink</name>
+      <species>Solar Puffin</species>
+      <originPlanet>Nova-3</originPlanet>
+      <abilities>
+        <ability>Solar Flare</ability>
+        <ability>Gravity Glide</ability>
+      </abilities>
+    </animal>
+  </animals>
+</galacticZoo>
+"""
+
+def xml_to_json(xml_string):
+    data_dict = xmltodict.parse(xml_string)
+    json_data = json.dumps(data_dict)
+    return json_data
+
+json_data = xml_to_json(xml_data)
+print(json_data)

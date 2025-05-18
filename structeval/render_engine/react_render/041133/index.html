@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041133</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Visual Layout Test Page</h1>
+        <p>This page is designed to demonstrate a clear structural layout and visual hierarchy using only HTML elements.</p>
+      </header>
+
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Welcome to the visual converter test page. This document is structured with multiple sections such as headings, articles,
+          lists, tables, and descriptive text to aid in testing overall layout and content visibility.
+        </p>
+      </section>
+
+      <section>
+        <h2>Page Sections Overview</h2>
+        <article>
+          <header>
+            <h3>Section 1: Basic Information</h3>
+          </header>
+          <p>
+            This section covers the foundational details about the test page, including purpose, authorship, and publication details.
+          </p>
+          <ul>
+            <li>Purpose of the Document</li>
+            <li>Layout Structure</li>
+            <li>Display and Arrangement</li>
+          </ul>
+          <dl>
+            <dt>Author:</dt>
+            <dd>Jane Doe</dd>
+            <dt>Date Created:</dt>
+            <dd>2023-10-10</dd>
+            <dt>Status:</dt>
+            <dd>Prototype</dd>
+          </dl>
+        </article>
+
+        <article>
+          <header>
+            <h3>Section 2: Detailed Layout Information</h3>
+          </header>
+          <p>
+            In this section, details regarding the test layout are outlined. It includes nested lists explaining specific layout
+            characteristics and expectations.
+          </p>
+          <ol>
+            <li>
+              Structural Elements
+              <ul>
+                <li>Headings and Subheadings</li>
+                <li>Paragraphs and Blocks</li>
+              </ul>
+            </li>
+            <li>
+              Visual Hierarchy
+              <ul>
+                <li>Emphasized Titles</li>
+                <li>Ordered and Unordered Lists</li>
+                <li>Tables for Structured Data</li>
+              </ul>
+            </li>
+            <li>Accessibility Considerations</li>
+          </ol>
+        </article>
+      </section>
+
+      <section>
+        <h2>Data Overview: Table Example</h2>
+        <p>The following table includes test data for verifying alignment and presentation of tabular content:</p>
+        <table border="1" cellPadding="5" cellSpacing="0">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Description</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>Sample Data Entry One</td>
+              <td>42</td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Sample Data Entry Two</td>
+              <td>37</td>
+            </tr>
+            <tr>
+              <td>003</td>
+              <td>Sample Data Entry Three</td>
+              <td>58</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Additional Information</h2>
+        <article>
+          <header>
+            <h3>References</h3>
+          </header>
+          <p>
+            The content in this document is constructed with HTML only and does not rely on external resources such as images or scripts.
+          </p>
+          <ol>
+            <li>Understanding HTML Structure</li>
+            <li>Best Practices for Web Layout Design</li>
+            <li>Visual Hierarchy in Document Design</li>
+          </ol>
+        </article>
+
+        <article>
+          <header>
+            <h3>Notes</h3>
+          </header>
+          <p>
+            All elements in this document are intended for testing purposes only. There are no interactive or dynamic features present.
+          </p>
+        </article>
+      </section>
+
+      <footer>
+        <hr />
+        <p>&copy; 2023 VisualTest Inc. - All rights reserved.</p>
+        <p>This standalone HTML document uses only built-in elements to demonstrate a well-structured visual layout.</p>
+      </footer>
+    </div>
+  );
+};
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

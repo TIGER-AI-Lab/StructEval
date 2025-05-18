@@ -1,0 +1,43 @@
+[ecosystem]
+name = "Xylia-Prime Ecosystem 1"
+
+[ecosystem.location]
+planet = "Xylia-Prime"
+region = "Northern Polar Ice Caps"
+
+[ecosystem.discovery]
+year = 2342
+discoverer = "Anya Petrova Expedition Team"
+
+[[ecosystem.species]]
+name = "Crystalline Yeti Crab"
+classification = "Crustacea glacialis"
+population_estimate = 500000
+
+[[ecosystem.species[0].traits]]
+trait_name = "Shell Composition"
+trait_value = "Crystalline Chitin"
+
+[[ecosystem.species[0].traits]]
+trait_name = "Diet"
+trait_value = "Ice Algae"
+
+
+[ecosystem.resources]
+
+[[ecosystem.resources.water_sources]]
+type = "Subglacial Lake"
+volume_liters = 1.5e15
+
+[[ecosystem.resources.minerals]]
+mineral_name = "Xylium"
+abundance_level = "High"
+
+[[ecosystem.resources.minerals]]
+mineral_name = "Frozen Methane"
+abundance_level = "Very High"
+
+
+[ecosystem.environment]
+average_temperature_celsius = -150.5
+atmosphere_composition = ["Nitrogen", "Methane", "Trace Argon"]

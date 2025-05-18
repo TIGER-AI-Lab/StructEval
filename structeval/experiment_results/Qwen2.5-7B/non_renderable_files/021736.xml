@@ -1,0 +1,4 @@
+
+mission_name,launch_date,destination.planet,destination.coordinates.latitude,destination.coordinates.longitude,crew_list[0].name,crew_list[0].role,crew_list[0].age,crew_list[1].name,crew_list[1].role,crew_list[1].age,cargo.manifest_id,cargo.items[0].item_name,cargo.items[0].quantity,cargo.items[0].weight_kg,cargo.items[1].item_name,cargo.items[1].quantity,cargo.items[1].weight_kg,status,mission_duration_days
+Odyssey-7,2045-08-19,Mars,-4.5895,137.4417,Dr. Ada Lovelace,Commander,38,Elon Tusk,Pilot,41,CARGO-2023-77,Hydroponic Kit,5,120,Research Drone,2,45,Ongoing,550
+Galileo-X,2047-03-23,Europa,0.1234,45.6789,Jane Starfield,Scientist,34,Max Rocket,Engineer,36,CARGO-2047-02,Ice Drill,3,75,Habitat Module,1,200,Completed,430

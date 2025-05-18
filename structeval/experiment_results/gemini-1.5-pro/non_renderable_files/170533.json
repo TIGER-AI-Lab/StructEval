@@ -1,0 +1,26 @@
+{
+  "galacticZoo": {
+    "animals": [
+      {
+        "name": "Zylox",
+        "species": "Quantum Panther",
+        "originPlanet": "Nebulon-5",
+        "diet": "Plasma Berries",
+        "abilities": [
+          "Invisibility",
+          "Time Leap"
+        ]
+      },
+      {
+        "name": "Gribble",
+        "species": "Stellar Sloth",
+        "originPlanet": "Andromeda Prime",
+        "diet": "Cosmic Leaves",
+        "abilities": [
+          "Gravity Manipulation",
+          "Stellar Camouflage"
+        ]
+      }
+    ]
+  }
+}

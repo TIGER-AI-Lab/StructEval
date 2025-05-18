@@ -1,0 +1,13 @@
+python
+import json
+import yaml
+
+# Load the YAML data
+with open('galactic_museum.yaml', 'r') as file:
+    galactic_museum = yaml.safe_load(file)
+
+# Convert the YAML data to JSON
+json_data = json.dumps(galactic_museum, indent=4)
+
+# Print the JSON data
+print(json_data)

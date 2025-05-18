@@ -1,0 +1,41 @@
+{
+  "museum": {
+    "name": "Imaginary Insect Museum",
+    "location": {
+      "city": "Flutterville",
+      "country": "Buglandia"
+    },
+    "exhibits": {
+      "exhibit": [
+        {
+          "title": "Glowworm Gala",
+          "year": 2022,
+          "artifacts": {
+            "artifact": [
+              {
+                "name": "Luminous Larva",
+                "type": "Specimen"
+              },
+              {
+                "name": "Bioluminescent Moss",
+                "type": "Habitat"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Antique Antiques",
+          "year": 2019,
+          "artifacts": {
+            "artifact": [
+              {
+                "name": "Queen's Crown",
+                "type": "Relic"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

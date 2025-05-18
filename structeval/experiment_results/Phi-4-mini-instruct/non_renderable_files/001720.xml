@@ -1,0 +1,43 @@
+<book>
+  <title>The Enchanted Forest</title>
+  <author>
+    <name>Emily Carter</name>
+    <birthYear>1980</birthYear>
+  </author>
+  <publication>
+    <year>2021</year>
+    <publisher>Arcane Publishing</publisher>
+  </publication>
+  <genres>
+    <genre>
+      <name>Fantasy</name>
+      <popularity>85</popularity>
+    </genre>
+    <genre>
+      <name>Adventure</name>
+      <popularity>78</popularity>
+    </genre>
+  </genres>
+  <chapters>
+    <chapter>
+      <title>Chapter One: The Mysterious Woods</title>
+      <pages>25</pages>
+    </chapter>
+    <chapter>
+      <title>Chapter Two: The Hidden Path</title>
+      <pages>30</pages>
+    </chapter>
+  </chapters>
+  <reviews>
+    <review>
+      <reviewer>John Smith</reviewer>
+      <rating>4</rating>
+      <date>2021-05-15</date>
+    </review>
+    <review>
+      <reviewer>Jane Doe</reviewer>
+      <rating>5</rating>
+      <date>2021-05-16</date>
+    </review>
+  </reviews>
+</book>

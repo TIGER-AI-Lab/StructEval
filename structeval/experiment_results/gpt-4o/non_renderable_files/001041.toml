@@ -1,0 +1,38 @@
+[expedition]
+name = "Voyager 3000"
+launch_date = "2045-07-16T08:00:00Z"
+
+[expedition.destination]
+planet = "Mars"
+region = "Valles Marineris"
+
+[[expedition.crew]]
+name = "Dr. Jane Smith"
+role = "Mission Commander"
+experience_years = 15
+certifications = ["Pilot License", "Spacewalk Certification", "First Aid"]
+
+[[expedition.crew]]
+name = "Lt. John Doe"
+role = "Science Officer"
+experience_years = 10
+certifications = ["Astrobiology Certification", "Geology Certification"]
+
+[[expedition.equipment]]
+item = "Rover"
+quantity = 2
+status = "operational"
+
+[[expedition.equipment]]
+item = "Habitat Module"
+quantity = 1
+status = "operational"
+
+[[expedition.equipment]]
+item = "Solar Panels"
+quantity = 10
+status = "spare"
+
+[expedition.mission_objectives]
+primary = "Establish a permanent research base"
+secondary = "Conduct geological and atmospheric studies"

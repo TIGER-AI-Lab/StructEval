@@ -1,0 +1,16 @@
+<planet name="Zyphera" orbitalPeriod="433">
+    <discovery year="2025" method="Transit Photometry" telescope="Kepler Space Telescope"/>
+    <atmosphere>
+        <composition>Nitrogen, Oxygen, Argon</composition>
+        <pressure>101.3</pressure>
+        <temperature>288</temperature>
+    </atmosphere>
+    <surface>
+        <features>
+            <feature type="Crater" coordinates="-23.5, 47.3"/>
+        </features>
+    </surface>
+    <moons>
+        <moon name="Lunara" diameter="3475" orbitalPeriod="27" discoveredBy="Dr. H. K. Luminar" discoveryDate="2025-08-17"/>
+    </moons>
+</planet>

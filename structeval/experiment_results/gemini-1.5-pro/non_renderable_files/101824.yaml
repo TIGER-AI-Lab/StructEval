@@ -1,0 +1,23 @@
+spaceship:
+  name: "Nebula Voyager"
+  model: "XJ-9000"
+  status: "operational"
+  launch_date: 2087-03-15
+  crew:
+    captain: "Ari Vega"
+    pilot: "Juno Lee"
+    engineers:
+      - name: "Rex Dalton"
+        specialty: "Warp Core"
+      - name: "Mira Chen"
+        specialty: "Life Support"
+  cargo:
+    - type: "Plasma Cells"
+      quantity: 120
+    - type: "Alien Artifacts"
+      quantity: 5
+  missions:
+    - destination: "Proxima Centauri b"
+      status: "completed"
+    - destination: "Gliese 581g"
+      status: "in progress"

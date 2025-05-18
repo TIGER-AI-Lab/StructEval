@@ -1,0 +1,62 @@
+
+recipe:
+  title: "Spaghetti Carbonara"
+  author:
+    name: "John Doe"
+    profile_url: "https://example.com/johndoe"
+  ingredients:
+    - name: "Spaghetti"
+      quantity: 200
+      unit: "grams"
+      optional: false
+    - name: "Eggs"
+      quantity: 4
+      unit: "pieces"
+    - name: "Parmesan Cheese"
+      quantity: 50
+      unit: "grams"
+    - name: "Pancetta"
+      quantity: 100
+      unit: "grams"
+      optional: true
+    - name: "Black Pepper"
+      quantity: 1
+      unit: "teaspoon"
+  steps:
+    - instruction: "Boil the spaghetti in salted water until al dente."
+      duration_minutes: 10
+      tools:
+        - "large pot"
+        - "colander"
+    - instruction: "Fry the pancetta until crispy."
+      duration_minutes: 5
+      tools:
+        - "frying pan"
+        - "spatula"
+    - instruction: "Whisk the eggs and Parmesan together in a bowl."
+      duration_minutes: 3
+      tools:
+        - "bowl"
+        - "whisk"
+    - instruction: "Combine spaghetti with pancetta and remove from heat. Quickly stir in egg mixture."
+      duration_minutes: 2
+      tools:
+        - "tongs"
+    - instruction: "Season with black pepper and serve immediately."
+      duration_minutes: 1
+      tools:
+        - "serving plates"
+  metadata:
+    cuisine: "Italian"
+    difficulty: "easy"
+    servings: 4
+    tags:
+      - "pasta"
+      - "main course"
+      - "quick"
+  nutritional_info:
+    calories: 450
+    macros:
+      protein: 18
+      fat: 15
+      carbohydrates: 50

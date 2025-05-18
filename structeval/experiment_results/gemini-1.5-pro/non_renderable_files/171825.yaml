@@ -1,0 +1,13 @@
+galacticZoo:
+  animals:
+    - animal:
+        species: Plasmacorn
+        originPlanet: Nebulon-5
+        diet: Stellar Dust
+    - animal:
+        species: Quantum Fox
+        originPlanet: Andromeda Prime
+        diet: Photon Berries
+  curator:
+    name: Zyra
+    species: Celestian

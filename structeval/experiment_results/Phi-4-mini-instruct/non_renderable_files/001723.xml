@@ -1,0 +1,78 @@
+<recipe>
+  <title>Spicy Avocado Chicken Salad</title>
+  <author>
+    <name>Alex Johnson</name>
+    <profileUrl>https://www.example.com/alex-johnson</profileUrl>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Chicken breast</name>
+      <quantity>2</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Avocado</name>
+      <quantity>1</quantity>
+      <unit>whole</unit>
+    </ingredient>
+    <ingredient>
+      <name>Lemon</name>
+      <quantity>1</quantity>
+      <unit>whole</unit>
+    </ingredient>
+    <ingredient>
+      <name>Red onion</name>
+      <quantity>1/2</quantity>
+      <unit>cup</unit>
+    </ingredient>
+    <ingredient>
+      <name>Salt</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+    <ingredient>
+      <name>Pepper</name>
+      <quantity>1/2</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <order>1</order>
+      <instruction>Cut the chicken breast into bite-sized pieces.</instruction>
+      <durationMinutes>5</durationMinutes>
+    </step>
+    <step>
+      <order>2</order>
+      <instruction>Dice the avocado, lemon, and red onion.</instruction>
+      <durationMinutes>5</durationMinutes>
+    </step>
+    <step>
+      <order>3</order>
+      <instruction>In a large bowl, combine the chicken, avocado, lemon, and red onion.</instruction>
+      <durationMinutes>2</durationMinutes>
+    </step>
+    <step>
+      <order>4</order>
+      <instruction>Season with salt and pepper to taste.</instruction>
+      <durationMinutes>1</durationMinutes>
+    </step>
+    <step>
+      <order>5</order>
+      <instruction>Garnish with fresh herbs and serve.</instruction>
+      <durationMinutes>2</durationMinutes>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>350</calories>
+    <fat>15</fat>
+    <protein>30</protein>
+    <carbohydrates>20</carbohydrates>
+  </nutrition>
+  <metadata>
+    <cuisine>Mexican</cuisine>
+    <difficulty>medium</difficulty>
+    <servings>4</servings>
+    <created>2023-04-01T00:00:00Z</created>
+  </metadata>
+</recipe>

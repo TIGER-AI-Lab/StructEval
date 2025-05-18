@@ -1,0 +1,97 @@
+
+<recipe>
+  <title>Spiced Pumpkin Quinoa Salad</title>
+  <author>
+    <name>Alexandra Green</name>
+    <contact>
+      <email>alexandra.green@example.com</email>
+      <phone>+1-555-123-4567</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Quinoa</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+    </ingredient>
+    <ingredient>
+      <name>Pumpkin puree</name>
+      <quantity>1.5</quantity>
+      <unit>cups</unit>
+    </ingredient>
+    <ingredient>
+      <name>Olive oil</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>Cinnamon</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+    <ingredient>
+      <name>Chopped pecans</name>
+      <quantity>0.5</quantity>
+      <unit>cups</unit>
+    </ingredient>
+    <ingredient>
+      <name>Maple syrup</name>
+      <quantity>1</quantity>
+      <unit>tablespoon</unit>
+    </ingredient>
+    <ingredient>
+      <name>Salt</name>
+      <quantity>0.5</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <instruction>Rinse quinoa under cold water until water runs clear.</instruction>
+      <duration>
+        <minutes>5</minutes>
+      </duration>
+      <tools>fine mesh strainer</tools>
+    </step>
+    <step>
+      <instruction>Cook quinoa in 2 cups of water until fluffy, about 15 minutes.</instruction>
+      <duration>
+        <minutes>15</minutes>
+      </duration>
+      <tools>saucepan, stove</tools>
+    </step>
+    <step>
+      <instruction>In a bowl, mix pumpkin puree, olive oil, cinnamon, maple syrup, and salt.</instruction>
+      <duration>
+        <minutes>3</minutes>
+      </duration>
+      <tools>mixing bowl, whisk</tools>
+    </step>
+    <step>
+      <instruction>Combine cooked quinoa with pumpkin mixture and stir well.</instruction>
+      <duration>
+        <minutes>2</minutes>
+      </duration>
+      <tools>spoon, mixing bowl</tools>
+    </step>
+    <step>
+      <instruction>Top salad with chopped pecans before serving.</instruction>
+      <duration>
+        <minutes>1</minutes>
+      </duration>
+      <tools>knife</tools>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>320</calories>
+    <fat>12</fat>
+    <protein>8</protein>
+    <carbohydrates>45</carbohydrates>
+  </nutrition>
+  <tags>
+    <tag>vegetarian</tag>
+    <tag>gluten-free</tag>
+    <tag>salad</tag>
+    <tag>fall</tag>
+  </tags>
+</recipe>

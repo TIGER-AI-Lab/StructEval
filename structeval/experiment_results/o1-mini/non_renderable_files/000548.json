@@ -1,0 +1,39 @@
+
+{
+  "artifact": {
+    "name": "Ancient Sumerian Vase",
+    "origin": {
+      "culture": "Sumerian",
+      "period": "Ur III Dynasty",
+      "discovery_date": "1922-05-15"
+    },
+    "materials": {
+      "primary": "Ceramic",
+      "secondary": "Gold Leaf"
+    },
+    "dimensions": {
+      "height_cm": 25.4,
+      "width_cm": 15.2,
+      "depth_cm": 10.0
+    },
+    "features": [
+      {
+        "description": "Intricate bas-relief depicting agricultural scenes",
+        "estimated_age_years": 4300,
+        "condition": "Well-preserved"
+      },
+      {
+        "description": "Embedded turquoise inlays",
+        "estimated_age_years": 4300,
+        "condition": "Minor surface wear"
+      }
+    ],
+    "exhibition_history": [
+      {
+        "location": "British Museum, London",
+        "start_date": "1985-03-12",
+        "end_date": "1985-09-30"
+      }
+    ]
+  }
+}

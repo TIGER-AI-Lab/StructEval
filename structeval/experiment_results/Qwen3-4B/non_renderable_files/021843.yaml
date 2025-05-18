@@ -1,0 +1,19 @@
+
+planet_name: Xylox
+galaxy: Andromeda
+discovery.year: 3054
+discovery.method: Gravitational Lensing
+discovery.team_1_name: Dr. Zeff
+discovery.team_1_role: Lead Astronomer
+discovery.team_2_name: Prof. Quill
+discovery.team_2_role: Astrobiologist
+moons_1_moon_name: Lunara
+moons_1_diameter_km: 1450
+moons_2_moon_name: Phobos
+moons_2_diameter_km: 900
+atmosphere.composition_1: Nitrogen,Oxygen
+atmosphere.pressure_atm: 1.2
+surface.temperature_c: -120
+surface.ocean_coverage_percent: 60
+inhabitants.species: Xylophian
+inhabitants.population_estimate: 1200000

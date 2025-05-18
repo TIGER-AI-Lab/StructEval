@@ -1,0 +1,26 @@
+
+import pandas asro
+import xml.etree.ElementTree as ET
+
+# Parse the XML data
+tree =ro
+root = ET.fromstring(xml_data)
+
+# Extract the data
+data =cre
+for creature in root.findall('creature'):
+    creature_name = creature.find('CreatureName').text
+    habitat = creature.find('Habitat').text
+    number_of_legs = int(creature.find('NumberOfLegs').text)
+    discovery_date = creature.find('DiscoveryDate').text
+    average_weight_kg = float(creature.find('AverageWeightKg').text)
+    diet_type = creature.find('DietType').text
+
+    # Append the data to the list
+    data.append([creature_name, habitat, number_of_legs, discovery_date, average_weight_kg, diet_type])
+
+# Create the DataFrame
+df = pd.DataFrame(data, columns=['CreatureName', 'Habitat', 'NumberOfLegs', 'DiscoveryDate', 'AverageWeightKg', 'DietType'])
+
+# Print the DataFrame
+print(df)

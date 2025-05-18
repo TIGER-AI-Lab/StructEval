@@ -1,0 +1,34 @@
+
+{
+  "planet": {
+    "name": "Zephyra-9",
+    "type": "Gas Giant",
+    "moons": 3,
+    "orbit": {
+      "distance_au": 5.2,
+      "period_days": 4332
+    },
+    "features": {
+      "atmosphere": "Hydrogen-Helium",
+      "has_rings": true
+    },
+    "features.surface": {
+      "temperature_c": -150,
+      "terrain_types": ["Cloud Bands", "Vortex Storms", "Ammonia Ice"]
+    }
+  },
+  "planet.discovery": {
+    "year": 2087,
+    "method": "Transit Photometry",
+    "team": [
+      {
+        "name": "Dr. Linh Vu",
+        "role": "Lead Astronomer"
+      },
+      {
+        "name": "Jasper Ortiz",
+        "role": "Data Analyst"
+      }
+    ]
+  }
+}

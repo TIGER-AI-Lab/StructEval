@@ -1,0 +1,15 @@
+
+import pandas as pd
+
+data = {
+    "planet_name": ["Zephyria", "Quarnyx", "Vortalis", "Lumora", "Pyralis", "Xenthis"],
+    "discovery_year": [2371, 2410, 2362, 2388, 2399, 2404],
+    "distance_ly": [120.5, 302.7, 89.1, 215.9, 178.3, 401.2],
+    "primary_element": ["Helionium", "Ferrium", "Silicite", "Luxium", "Pyronite", "Xenite"],
+    "has_life": ["true", "false", "true", "false", "true", "false"],
+    "first_visitor": ["Dr. Mira Solis", "Captain Lio Tran", "Prof. Asha Nadir", "Cmdr. Felix Rho", "Dr. Sora Lin", "Lt. Vega Orin"]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("planets.csv", index=False)

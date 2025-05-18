@@ -1,0 +1,24 @@
+[planet]
+name = "Kepler-452b"
+[planet.discovery]
+year = 2015
+method = "transit"
+[planet.orbit]
+period_days = 384.9
+eccentricity = 0.05
+[planet.atmosphere.composition]
+[gas]
+percentage = 78.0
+[gas]
+percentage = 21.0
+[planet.moons]
+[moon]
+diameter_km = 3720.0
+[moon]
+diameter_km = 1210.0
+[planet.surface]
+temperature_c = -60.0
+has_liquid_water = false
+[planet.surface.landmarks]
+[type]
+name = "Mountains"

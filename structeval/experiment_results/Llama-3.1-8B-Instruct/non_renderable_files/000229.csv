@@ -1,0 +1,69 @@
+
+import csv
+from datetime import datetime
+
+# Define the artifact metadata
+artifact_id = "AR-001"
+artifact_name = "Ancient Vase"
+period = "Classical Antiquity"
+origin_region = "Greece"
+material = "Terracotta"
+dimensions_height_cm = 30.5
+dimensions_width_cm = 20.2
+dimensions_depth_cm = 10.1
+discovery_date = datetime(1980, 6, 15).isoformat()
+current_location = "National Archaeological Museum"
+condition_status = "intact"
+historical_significance = "This vase is a significant example of ancient Greek pottery."
+images = [
+    {"url": "https://example.com/image1.jpg", "description": "Front view of the vase"},
+    {"url": "https://example.com/image2.jpg", "description": "Back view of the vase"}
+]
+restoration_records = [
+    {"date": datetime(2010, 3, 20).isoformat(), "details": "Conservation and stabilization of the vase"}
+]
+
+# Create a CSV writer
+with open("artifact_metadata.csv", "w", newline="") as csvfile:
+    fieldnames = [
+        "artifact_id",
+        "artifact_name",
+        "period",
+        "origin_region",
+        "material",
+        "dimensions_height_cm",
+        "dimensions_width_cm",
+        "dimensions_depth_cm",
+        "discovery_date",
+        "current_location",
+        "condition_status",
+        "historical_significance",
+        "images[0].url",
+        "images[0].description",
+        "restoration_records[0].date",
+        "restoration_records[0].details"
+    ]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    # Write the header
+    writer.writeheader()
+
+    # Write the artifact metadata
+    writer.writerow({
+        "artifact_id": artifact_id,
+        "artifact_name": artifact_name,
+        "period": period,
+        "origin_region": origin_region,
+        "material": material,
+        "dimensions_height_cm": dimensions_height_cm,
+        "dimensions_width_cm": dimensions_width_cm,
+        "dimensions_depth_cm": dimensions_depth_cm,
+        "discovery_date": discovery_date,
+        "current_location": current_location,
+        "condition_status": condition_status,
+        "historical_significance": historical_significance,
+        "images[0].url": images[0]["url"],
+        "images[0].description": images[0]["description"],
+        "restoration_records[0].date": restoration_records[0]["date"],
+        "restoration_records[0].details": restoration_records[0]["details"]
+    })

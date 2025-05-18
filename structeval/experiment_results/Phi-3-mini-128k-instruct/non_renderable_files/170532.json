@@ -1,0 +1,23 @@
+
+{
+  "galacticZoo": {
+    "animals": [
+      {
+        "species": "Quasar Lynx",
+        "name": "Nova",
+        "originPlanet": "Vega Prime",
+        "diet": "Stellar Berries"
+      },
+      {
+        "species": "Plasma Tortoise",
+        "name": "Shellshock",
+        "originPlanet": "Andromeda IX",
+        "diet": "Nebula Algae"
+      }
+    ],
+    "curator": {
+      "name": "Zylo",
+      "species": "Andromedan"
+    }
+  }
+}

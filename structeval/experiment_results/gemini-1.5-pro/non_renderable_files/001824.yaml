@@ -1,0 +1,25 @@
+artifact:
+  name: "The Sunstone of Aethelred"
+  origin:
+    civilization: "Aethelians"
+    estimated_age: 1200
+  materials:
+    - type: "gold"
+      provenance: "Aethelian Royal Mines"
+    - type: "quartz"
+      provenance: "Mount Cinderfall"
+  dimensions:
+    height_cm: 25.4
+    width_cm: 15.24
+    depth_cm: 5.08
+  inscriptions:
+    - language: "Aethelian Runes"
+      text: "To Aethelred, the Wise."
+    - language: "Ancient Common"
+      text: "May the sun guide your reign."
+  current_location:
+    museum: "Museum of Antiquities"
+    display_case: "Hall of Kings, Case 7"
+  discovery:
+    date: "1923-07-12"
+    location: "Valley of the Whispering Winds"

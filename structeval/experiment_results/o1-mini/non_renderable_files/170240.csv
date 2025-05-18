@@ -1,0 +1,8 @@
+
+ArtifactID,Name,DiscoveryDate,Material,WeightGrams,Era,IsCursed
+AX102,Singing Chalice,1924-07-12,Silver,450,Medieval,true
+AX103,Obsidian Mirror,1987-03-25,Obsidian,325,Aztec,false
+AX104,Clockwork Scarab,2002-11-08,Bronze,120,Victorian,false
+AX105,Jade Compass,2015-01-17,Jade,210,Ming Dynasty,true
+AX106,Crystal Flute,1978-05-04,Crystal,95,Baroque,false
+AX107,Ivory Dice,1963-09-19,Ivory,50,Roman,true

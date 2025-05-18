@@ -1,0 +1,37 @@
+
+museum:
+  name: "Art History Museum"
+  location:
+    city: "Paris"
+    country: "France"
+  founded_year: 1900
+  director:
+    name: "Dr. Emily Johnson"
+    tenure_years: 15
+  exhibits:
+    - title: "The Scream"
+      artist: "Edvard Munch"
+      year: 1893
+      medium: "oil on canvas"
+      dimensions:
+        height_cm: 70
+        width_cm: 100
+      on_loan: true
+      provenance:
+        previous_owners:
+          - "Norwegian Government"
+          - "Private Collector"
+        acquisition_date: "2015-03-22"
+    - title: "Starry Night"
+      artist: "Vincent van Gogh"
+      year: 1889
+      medium: "oil on canvas"
+      dimensions:
+        height_cm: 90
+        width_cm: 120
+      on_loan: false
+      provenance:
+        previous_owners:
+          - "French Government"
+          - "Museum of Art"
+        acquisition_date: "2010-11-10"

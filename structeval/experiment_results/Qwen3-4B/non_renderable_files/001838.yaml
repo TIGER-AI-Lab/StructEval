@@ -1,0 +1,25 @@
+
+artifact:
+  name: "Ancient Vase"
+  origin:
+    culture: "Mycenaean"
+    era: "Bronze Age"
+    discovery_date: "2020-05-15"
+  dimensions:
+    height_cm: 30.5
+    width_cm: 20.2
+  materials:
+    - "clay"
+    - "glaze"
+  condition:
+    status: "intact"
+    restoration_history:
+      - date: "2021-03-10"
+        description: "Restored cracks"
+    exhibitions:
+      - location: "National Museum"
+        start_date: "2022-04-01"
+        end_date: "2022-06-30"
+        visitor_count: 1500
+  references:
+    - citation: "Smith, 2021"

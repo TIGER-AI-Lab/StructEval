@@ -1,0 +1,47 @@
+<recipe>
+    <title>Chocolate Chip Cookies</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>All-purpose flour</name>
+            <quantity>2.5</quantity>
+            <unit>cups</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Baking soda</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+            <optional>false</optional>
+        </ingredient>
+        <!-- Additional ingredients would follow in a similar structure -->
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Preheat the oven to 350 degrees F (175 degrees C). In a large bowl, cream together the butter, white sugar, and brown sugar until smooth.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Mixing bowl</name>
+                    <required>true</required>
+                </tool>
+            </tools>
+        </step>
+        <!-- Additional steps would follow in a similar structure -->
+    </instructions>
+    <nutrition>
+        <calories>250</calories>
+        <fat_grams>12</fat_grams>
+        <protein_grams>5</protein_grams>
+    </nutrition>
+    <tags>
+        <tag>Dessert</tag>
+        <tag>Baking</tag>
+        <tag>Vegetarian</tag>
+    </tags>
+</recipe>

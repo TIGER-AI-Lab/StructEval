@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 161101</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const VisualLayout = () => {
+  const details = {
+    title: "Visual Conversion Task",
+    version: "1.0.0",
+    status: "Active"
+  };
+  const configuration = {
+    A: "Enabled",
+    B: "Disabled",
+    C: "Pending"
+  };
+
+  return (
+    <div id="app">
+      <header>
+        <h1>My Vue Visual Layout</h1>
+        <p>This page demonstrates a detailed structure with headings, sections, and labeled values.</p>
+      </header>
+
+      <section className="overview">
+        <h2>Overview</h2>
+        <p>The following sections are designed to showcase the structural layout and visual hierarchy.</p>
+        <ul>
+          <li>Introduction</li>
+          <li>Details</li>
+          <li>Summary</li>
+        </ul>
+      </section>
+
+      <section className="introduction">
+        <h2>Introduction</h2>
+        <div className="content">
+          <p>This introduction explains the overall purpose of the visual conversion task.</p>
+          <ul>
+            <li><strong>Purpose:</strong> To test structural layout.</li>
+            <li><strong>Focus:</strong> Visible structure and formatted content.</li>
+            <li><strong>Constraints:</strong> No external resources, only valid Vue code.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="details">
+        <h2>Details</h2>
+        <article>
+          <header>
+            <h3>Section Details</h3>
+          </header>
+          <div className="info-block">
+            <p>This block contains descriptive content for the details section.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Label</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Title</td>
+                  <td>{details.title}</td>
+                </tr>
+                <tr>
+                  <td>Version</td>
+                  <td>{details.version}</td>
+                </tr>
+                <tr>
+                  <td>Status</td>
+                  <td>{details.status}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article>
+          <header>
+            <h3>Configuration List</h3>
+          </header>
+          <div className="configuration">
+            <ol>
+              <li>Configuration A: {configuration.A}</li>
+              <li>Configuration B: {configuration.B}</li>
+              <li>Configuration C: {configuration.C}</li>
+            </ol>
+          </div>
+        </article>
+      </section>
+
+      <section className="summary">
+        <h2>Summary</h2>
+        <div className="conclusion">
+          <p>The above sections demonstrate a clear visual hierarchy. All content is statically rendered in one page without interactive elements.</p>
+          <blockquote>
+            "A well-organized layout leads to a better user experience."
+          </blockquote>
+          <p>Thank you for reviewing our demonstration of Vue structural layout.</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2023 My Vue Application</p>
+      </footer>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<VisualLayout />);
+
+    </script>
+  </body>
+</html>

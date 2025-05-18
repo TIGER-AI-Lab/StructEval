@@ -1,0 +1,59 @@
+
+import csv
+from datetime import datetime
+
+exhibit_id = "EXH001"
+artifact_name = "Ancient Greek Vase"
+artifact_origin = "Ancient Greece"
+artifact_period = "5th century BCE"
+artifact_material = "Terracotta"
+artifact_dimensions = "30cm x 20cm x 10cm"
+artifact_condition = "excellent"
+artifact_discovery_date = datetime(400, 1, 1).isoformat()
+artifact_discovery_location = "Athens, Greece"
+artifact_curator = "John Smith"
+artifact_estimated_value = 100000
+
+image1_url = "https://example.com/image1.jpg"
+image1_caption = "Front view of the vase"
+image2_url = "https://example.com/image2.jpg"
+image2_caption = "Back view of the vase"
+
+with open('exhibit.csv', 'w', newline='') as csvfile:
+    fieldnames = [
+        'exhibit_id',
+        'artifact.name',
+        'artifact.origin',
+        'artifact.period',
+        'artifact.material',
+        'artifact.dimensions',
+        'artifact.condition',
+        'artifact.discovery_date',
+        'artifact.discovery_location',
+        'artifact.curator',
+        'artifact.estimated_value',
+        'artifact.images[0].url',
+        'artifact.images[0].caption',
+        'artifact.images[1].url',
+        'artifact.images[1].caption'
+    ]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    writer.writerow({
+        'exhibit_id': exhibit_id,
+        'artifact.name': artifact_name,
+        'artifact.origin': artifact_origin,
+        'artifact.period': artifact_period,
+        'artifact.material': artifact_material,
+        'artifact.dimensions': artifact_dimensions,
+        'artifact.condition': artifact_condition,
+        'artifact.discovery_date': artifact_discovery_date,
+        'artifact.discovery_location': artifact_discovery_location,
+        'artifact.curator': artifact_curator,
+        'artifact.estimated_value': artifact_estimated_value,
+        'artifact.images[0].url': image1_url,
+        'artifact.images[0].caption': image1_caption,
+        'artifact.images[1].url': image2_url,
+        'artifact.images[1].caption': image2_caption
+    })

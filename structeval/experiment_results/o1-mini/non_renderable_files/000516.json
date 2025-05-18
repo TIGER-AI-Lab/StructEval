@@ -1,0 +1,36 @@
+
+{
+  "exhibit": {
+    "title": "Impressionist Masterpieces",
+    "curator": {
+      "name": "Dr. Emily Thompson",
+      "contact": {
+        "email": "emily.thompson@examplemuseum.org",
+        "phone": "+1-555-123-4567"
+      }
+    },
+    "artworks": [
+      {
+        "artist": "Claude Monet",
+        "title": "Water Lilies",
+        "year_created": 1906,
+        "medium": "Oil on canvas",
+        "dimensions": {
+          "height_cm": 200,
+          "width_cm": 180,
+          "depth_cm": 0
+        },
+        "provenance": [
+          {
+            "owner": "Private Collection of John Doe",
+            "acquisition_date": "1950-05-20"
+          }
+        ]
+      }
+    ],
+    "schedule": {
+      "opening_date": "2024-01-15",
+      "closing_date": "2024-06-30"
+    }
+  }
+}

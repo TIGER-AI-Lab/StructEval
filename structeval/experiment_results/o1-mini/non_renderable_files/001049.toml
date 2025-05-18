@@ -1,0 +1,27 @@
+
+[recipe]
+title = "Spicy Mango Tacos"
+author.name = "Jane Doe"
+author.contact.email = "jane.doe@example.com"
+cuisine = "Mexican"
+servings = 4
+prep_time_minutes = 15
+cook_time_minutes = 10
+
+[[recipe.ingredients]]
+name = "Mango"
+quantity = 1.5
+unit = "cups"
+
+[[recipe.ingredients]]
+name = "Corn Tortillas"
+quantity = 8
+unit = "pieces"
+
+[[recipe.instructions]]
+step_number = 1
+description = "Dice the mangoes and set aside."
+
+[[recipe.instructions]]
+step_number = 2
+description = "Warm the tortillas in a skillet over medium heat for 1 minute on each side."

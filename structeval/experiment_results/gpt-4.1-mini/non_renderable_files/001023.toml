@@ -1,0 +1,27 @@
+
+[museum]
+name = "The Grand Art Museum"
+established_year = 1923
+director = "Dr. Eleanor Whitfield"
+
+  [museum.location]
+  city = "Florence"
+  country = "Italy"
+
+  [[museum.galleries]]
+  title = "Renaissance Wonders"
+  room_number = 5
+
+    [[museum.galleries.artworks]]
+    artist = "Leonardo da Vinci"
+    title = "The Annunciation"
+    year = 1472
+    medium = "Tempera on wood"
+    on_display = true
+
+      [museum.galleries.artworks.dimensions]
+      height_cm = 98.0
+      width_cm = 217.0
+
+      [museum.galleries.artworks.provenance]
+      previous_owners = ["Ludovico Sforza", "King Francis I of France", "Louvre Museum"]

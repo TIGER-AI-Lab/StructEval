@@ -1,0 +1,26 @@
+
+exhibit:
+  title: "Treasures of Ancient Civilizations"
+  curator:
+    name: "Dr. Emily Carter"
+    contact:
+      email: "emily.carter@museum.org"
+      phone: "+1-555-123-4567"
+  artifacts:
+    - name: "Golden Mask of Tutankhamun"
+      origin: "Egypt"
+      year: 1323
+      materials:
+        - "Gold"
+        - "Lapis Lazuli"
+        - "Glass"
+      dimensions:
+        height_cm: 54
+        width_cm: 39
+        depth_cm: 49
+      on_loan: true
+      loan_info:
+        institution: "The British Museum"
+        return_date: "2024-05-15"
+  opening_date: "2024-01-10"
+  closing_date: "2024-06-30"

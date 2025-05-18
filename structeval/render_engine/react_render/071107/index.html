@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 071107</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const ProjectHomepage = () => {
+  return (
+    <div>
+      <h1>Project Homepage</h1>
+
+      <p>Welcome to the <strong>Project Homepage</strong>. This document serves as a sample layout to test structural hierarchy, visual layout, and formatted content in Markdown.</p>
+
+      <hr />
+
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#usage-instructions">Usage Instructions</a></li>
+        <li><a href="#project-structure">Project Structure</a></li>
+        <li><a href="#additional-information">Additional Information</a></li>
+      </ol>
+
+      <hr />
+
+      <h2 id="introduction">Introduction</h2>
+
+      <p>The goal of this project is to create a <strong>standalone Markdown</strong> layout that demonstrates:</p>
+      <ul>
+        <li><strong>Visible Structure</strong></li>
+        <li><strong>Content Hierarchy</strong></li>
+        <li><strong>Formatted Content</strong></li>
+      </ul>
+
+      <p>This simple layout includes headings, lists, tables, and text blocks to simulate a real-world document.</p>
+
+      <h3>Project Summary</h3>
+
+      <ul>
+        <li><strong>Title:</strong> Project Homepage</li>
+        <li><strong>Author:</strong> Jane Smith</li>
+        <li><strong>Date:</strong> 2023-10-01</li>
+        <li><strong>Version:</strong> 1.0.0</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="features">Features</h2>
+
+      <p>Below are some primary features:</p>
+
+      <ul>
+        <li><strong>Responsive Layout:</strong>
+          <ul>
+            <li>Adapts to various screen sizes</li>
+            <li>Maintains clear hierarchies and spacing</li>
+          </ul>
+        </li>
+        <li><strong>Easy Navigation:</strong>
+          <ul>
+            <li>Contains a structured table of contents</li>
+            <li>Clearly labeled sections and headings</li>
+          </ul>
+        </li>
+        <li><strong>Standalone Document:</strong>
+          <ul>
+            <li>No external images, links, or scripts required</li>
+            <li>Fully self-contained content</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Detailed Feature Breakdown</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Responsive Layout</td>
+            <td>Ensures clear display on all devices</td>
+          </tr>
+          <tr>
+            <td>Easy Navigation</td>
+            <td>Straightforward hierarchy with labeled sections</td>
+          </tr>
+          <tr>
+            <td>Standalone Content</td>
+            <td>Includes all necessary information within one file</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr />
+
+      <h2 id="usage-instructions">Usage Instructions</h2>
+
+      <p>To view and use this Markdown layout:</p>
+
+      <ol>
+        <li><strong>Copy the entire code block</strong> between the <code>&lt;code&gt;
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

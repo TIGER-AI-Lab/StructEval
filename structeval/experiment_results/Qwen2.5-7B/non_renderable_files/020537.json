@@ -1,0 +1,16 @@
+import pandas as pd
+import json
+
+# Read the CSV data
+data = """astronaut_id,name.first,name.last,missions[0].mission_name,missions[0].year,missions[0].duration_days,missions[0].crew_members,missions[1].mission_name,missions[1].year,missions[1].duration_days,missions[1].crew_members,skills,favorite_space_food,contact.email,contact.phone
+A001,Valentina,Tereshkova,Vostok 6,1963,3,"["Valentina Tereshkova"]",Soyuz 17,1975,5,"["Aleksei Gubarev", "Georgy Grechko"]","["Engineering", "Piloting", "Russian"]",Borscht,valentina@roscosmos.ru,+7-495-1234567
+A002,Chris,Hadfield,STS-74,1995,8,"["Chris Hadfield", "Kenneth Cameron", "Jerry Ross", "William McArthur"]",Expedition 35,2013,146,"["Chris Hadfield", "Tom Marshburn", "Roman Romanenko"]","["Guitar", "Science Communication", "Photography"]",Maple Syrup,chris@asc-csa.gc.ca,+1-613-555-0199"""
+
+# Convert the CSV data into a DataFrame
+df = pd.read_csv(pd.compat.StringIO(data), sep=',')
+
+# Convert the DataFrame to JSON
+json_data = df.to_json(orient='records')
+
+# Print the JSON data
+print(json_data)

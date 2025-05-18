@@ -1,0 +1,23 @@
+spaceship:
+  name: Star Voyager
+  model: EX-2000
+  crew:
+    captain: Jane Starfield
+    officers:
+      - name: Leo Quantum
+        role: First Officer
+      - name: Max Nebula
+        role: Science Officer
+  specs:
+    length_m: 120
+    mass_tons: 5000
+    engines:
+      - type: Ion Drive
+        thrust_kn: 4500
+      - type: Plasma Drive
+        thrust_kn: 3200
+  missions:
+    - name: Alpha Centauri Survey
+      success: true
+    - name: Europa Supply
+      success: false

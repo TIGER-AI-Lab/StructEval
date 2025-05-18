@@ -1,0 +1,23 @@
+artifact:
+  name: "Rosetta Stone"
+  type: "inscribed stone"
+  discovery_date: "1799-07-15"
+  origin:
+    civilization: "Ancient Egypt"
+    era: "Ptolemaic Period"
+    location:
+      latitude: 31.2058
+      longitude: 29.9245
+  materials:
+    - name: "Granodiorite"
+      percentage: 95
+    - name: "Iron"
+      percentage: 5
+  dimensions:
+    height_cm: 114
+    width_cm: 72
+  features:
+    - description: "Trilingual inscription"
+      significance: "Key to deciphering Egyptian hieroglyphs"
+    - description: "Royal decree"
+      significance: "Issued by King Ptolemy V"

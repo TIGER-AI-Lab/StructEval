@@ -1,0 +1,68 @@
+<recipe>
+  <metadata>
+    <title>Spaghetti Carbonara</title>
+    <author>
+      <name>John Doe</name>
+      <contact>
+        <email>john.doe@example.com</email>
+        <phone>+1234567890</phone>
+      </contact>
+    </author>
+    <cuisine>Italian</cuisine>
+    <difficulty>medium</difficulty>
+    <prep_time_minutes>15</prep_time_minutes>
+    <tags>
+      <tag>pasta</tag>
+      <tag>meat</tag>
+      <tag>cheese</tag>
+    </tags>
+  </metadata>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>large</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Pancetta</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Parmesan Cheese</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <description>Cook the spaghetti according to the package instructions.</description>
+      <duration_minutes>10</duration_minutes>
+      <tools>Pot, Strainer</tools>
+    </step>
+    <step>
+      <description>In a bowl, whisk the eggs and mix in the grated Parmesan cheese.</description>
+      <duration_minutes>5</duration_minutes>
+      <tools>Bowl, Whisk</tools>
+    </step>
+    <step>
+      <description>Cook the pancetta in a pan until crispy, then remove from heat.</description>
+      <duration_minutes>5</duration_minutes>
+      <tools>Pan, Tongs</tools>
+    </step>
+    <step>
+      <description>Combine the hot spaghetti with the pancetta and egg mixture, stirring quickly to create a creamy sauce.</description>
+      <duration_minutes>2</duration_minutes>
+      <tools>Pan, Spatula</tools>
+    </step>
+  </steps>
+</recipe>

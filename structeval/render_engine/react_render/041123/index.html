@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041123</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>My Website</h1>
+        <p>Welcome to my structured layout demo page.</p>
+      </header>
+
+      <nav>
+        <ul>
+          <li><strong>Home</strong></li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Services</li>
+        </ul>
+      </nav>
+
+      <main>
+        <section>
+          <h2>Introduction</h2>
+          <p>This page is a simulation of a website that emphasizes visible structure, clear layout, and formatted content. Below you will find various sections, lists of details, and labeled values meant to test visual conversion.</p>
+        </section>
+
+        <section>
+          <h2>Detailed Information</h2>
+          <article>
+            <h3>Features</h3>
+            <ul>
+              <li>Clear headings</li>
+              <li>Robust sections</li>
+              <li>Ordered and unordered lists</li>
+              <li>Labeled information blocks</li>
+              <li>Logical hierarchy</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Technical Details</h3>
+            <dl>
+              <dt>Version:</dt>
+              <dd>1.0.3</dd>
+              <dt>Format:</dt>
+              <dd>HTML5</dd>
+              <dt>Compliance:</dt>
+              <dd>W3C Valid</dd>
+              <dt>Language:</dt>
+              <dd>English</dd>
+            </dl>
+          </article>
+        </section>
+
+        <section>
+          <h2>Statistics Overview</h2>
+          <table border="1" cellSpacing="0" cellPadding="5">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Count</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Users</td>
+                <td>1024</td>
+                <td>Registered users</td>
+              </tr>
+              <tr>
+                <td>Posts</td>
+                <td>256</td>
+                <td>Articles and updates</td>
+              </tr>
+              <tr>
+                <td>Comments</td>
+                <td>5120</td>
+                <td>User feedback</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Development Timeline</h2>
+          <ol>
+            <li>January 2021 - Project Planning began</li>
+            <li>March 2021 - Design Phase completed</li>
+            <li>June 2021 - Development Phase initiated</li>
+            <li>November 2021 - Beta Release</li>
+            <li>February 2022 - Official Launch</li>
+          </ol>
+        </section>
+      </main>
+
+      <aside>
+        <h2>Additional Resources</h2>
+        <p>This section provides extra details related to the website structure and design strategy. It is meant for readers interested in web development principles.</p>
+        <ul>
+          <li>Semantic HTML Elements</li>
+          <li>Accessibility Guidelines</li>
+          <li>Responsive Design Best Practices</li>
+          <li>Performance Optimization</li>
+        </ul>
+      </aside>
+
+      <footer>
+        <hr />
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <p>Contact: info@mywebsite.com</p>
+      </footer>
+    </div>
+  );
+};
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

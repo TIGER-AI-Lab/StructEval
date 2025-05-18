@@ -1,0 +1,40 @@
+{
+  "mysteryBox": {
+    "name": "The Enigma Chest",
+    "origin": "Crafted by the Ancient Order of Mystics",
+    "discovery": {
+      "date": "2023-05-15",
+      "location": "Hidden Temple of Eldoria"
+    },
+    "contents": [
+      {
+        "itemName": "Orb of Luminescence",
+        "itemType": "Artifact",
+        "properties": {
+          "weight": 2.5,
+          "isMagical": true,
+          "material": "Crystal"
+        },
+        "history": [
+          {
+            "event": "Used in the Great Battle of Shadows",
+            "year": 1453
+          },
+          {
+            "event": "Stolen by the infamous thief, Elara the Swift",
+            "year": 1620
+          }
+        ]
+      }
+    ],
+    "seal": {
+      "isIntact": false,
+      "sealedBy": "High Sorcerer Arion",
+      "dateSealed": "1500-08-12"
+    },
+    "estimatedValue": {
+      "amount": 1000000,
+      "currency": "Gold Coins"
+    }
+  }
+}

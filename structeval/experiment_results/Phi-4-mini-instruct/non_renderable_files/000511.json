@@ -1,0 +1,30 @@
+
+{
+  "exhibit": {
+    "title": "Impressionist Masters",
+    "curator": {
+      "name": "Dr. Jane Smith",
+      "email": "jane.smith@museum.org"
+    },
+    "artworks": [
+      {
+        "artist": "Claude Monet",
+        "title": "Water Lilies",
+        "year_created": 1916,
+        "medium": "Oil on canvas",
+        "dimensions": {
+          "height_cm": 200,
+          "width_cm": 300,
+          "depth_cm": 0
+        },
+        "provenance": {
+          "previous_owners": ["John Doe", "The Louvre"],
+          "acquisition_date": "2010-05-15"
+        },
+        "on_display": true,
+        "tags": ["Impressionism", "Landscape", "Water"]
+      }
+    ],
+    "opening_date": "2023-04-01"
+  }
+}

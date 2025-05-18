@@ -1,0 +1,5 @@
+
+"artifact_id","artifact_name","origin_civilization","discovery_date","material_composition","estimated_age_years","current_location","condition_status","dimensions_height_cm","dimensions_width_cm","dimensions_depth_cm","notable_features","restoration_history","associated_myths","exhibit_status"
+"ART001","Golden Idol","Ancient Egyptians","2022-03-15","Gold;Copper","1500","Egyptian Museum","intact",10,5,2,"ornate details;inlaid gemstones","none","associated with the god Ra","on display"
+"ART002","Warrior's Helmet","Ancient Greeks","2018-09-20","Bronze;Iron","2500","National Archaeological Museum","fragmented",20,15,5,"intricate designs;bronze plating","restored","associated with the myth of Achilles","in storage"
+"ART003","Vase of the Gods","Ancient Mesopotamians","2020-06-01","Ceramic;Glaze","3000","Iraqi Museum","restored",30,20,10,"intricate designs;glazed finish","restored","associated with the myth of Ishtar","on display"

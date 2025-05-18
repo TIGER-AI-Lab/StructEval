@@ -1,0 +1,31 @@
+
+expedition:
+  name: Galactic Quest
+  launch_date: 2124-07-15
+  crew:
+    leader: Captain Zara
+    members:
+      - name: Elon Nova
+        role: Pilot
+        species: Human
+      - name: Blip Tork
+        role: Engineer
+        species: Andromedan
+      - name: Quill
+        role: Scientist
+        species: Avian
+  destination:
+    planet: Kepler-442b
+    galaxy: Lyra
+  equipment:
+    - name: Plasma Drill
+      quantity: 2
+    - name: Quantum Scanner
+      quantity: 1
+    - name: Terraforming Kit
+      quantity: 3
+  mission_objectives:
+    - Study exoplanet biosphere
+    - Collect mineral samples
+    - Establish research base
+  status: In Progress

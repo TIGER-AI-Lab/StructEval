@@ -1,0 +1,43 @@
+{
+  "artifact": {
+    "name": "Rosetta Tablet 2.0",
+    "origin": {
+      "civilization": "Ptolemaic",
+      "era": "Hellenistic Period"
+    },
+    "discovery": {
+      "date": "2024-10-27",
+      "location": {
+        "latitude": 30.95,
+        "longitude": 30.45
+      }
+    },
+    "materials": [
+      {
+        "type": "Basalt",
+        "percentage": 85
+      },
+      {
+        "type": "Quartz",
+        "percentage": 15
+      }
+    ],
+    "inscriptions": [
+      {
+        "language": "Ancient Greek",
+        "translation": "Praise the beneficent king!"
+      },
+      {
+        "language": "Demotic",
+        "translation": "Homage to the gods of the Nile."
+      }
+    ],
+    "condition": {
+      "status": "Good",
+      "restoration": {
+        "last_date": "2024-11-15",
+        "notes": "Minor cleaning and stabilization."
+      }
+    }
+  }
+}

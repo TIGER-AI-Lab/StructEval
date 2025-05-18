@@ -1,0 +1,61 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "museum": {
+    "name": "Museum of Imaginary Instruments",
+    "location": {
+      "city": "Luminara",
+      "country": "Fabeland"
+    },
+    "exhibits": {
+      "exhibit": [
+        {
+          "title": "Clockwork Melodies",
+          "year": 1892,
+          "artifacts": {
+            "artifact": [
+              { "name": "Steam Harp", "origin": "Aetheria" },
+              { "name": "Gear Flute", "origin": "Brassville" }
+            ]
+          }
+        },
+        {
+          "title": "Soundscapes of the Void",
+          "year": 2045,
+          "artifacts": {
+            "artifact": [
+              { "name": "Echo Sphere", "origin": "Voidpoint" }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+'''
+
+def json_to_xml(json_str):
+    data = json.loads(json_str)
+    root = ET.Element("root")
+    museum = ET.SubElement(root, "museum")
+    museum.set("name", data["museum"]["name"])
+    location = ET.SubElement(museum, "location")
+    ET.SubElement(location, "city").text = data["museum"]["location"]["city"]
+    ET.SubElement(location, "country").text = data["museum"]["location"]["country"]
+    exhibits = ET.SubElement(museum, "exhibits")
+    for exhibit in data["museum"]["exhibits"]["exhibit"]:
+        exhibit_elem = ET.SubElement(exhibits, "exhibit")
+        ET.SubElement(exhibit_elem, "title").text = exhibit["title"]
+        ET.SubElement(exhibit_elem, "year").text = str(exhibit["year"])
+        artifacts = ET.SubElement(exhibit_elem, "artifacts")
+        for artifact in exhibit["artifacts"]["artifact"]:
+            artifact_elem = ET.SubElement(artifacts, "artifact")
+            ET.SubElement(artifact_elem, "name").text = artifact["name"]
+            ET.SubElement(artifact_elem, "origin").text = artifact["origin"]
+    return ET.tostring(root, encoding="unicode")
+
+xml_output = json_to_xml(json_data)
+print(xml_output)

@@ -1,0 +1,43 @@
+<creature>
+    <name>Sylvanus</name>
+    <species>Forest Guardian</species>
+    <age>500</age>
+    <habitat>
+        <region>Whispering Woods</region>
+        <climate>Temperate</climate>
+        <resources>Ancient trees, magical herbs, pure spring water</resources>
+    </habitat>
+    <abilities>
+        <ability>
+            <type>Nature Manipulation</type>
+            <level>9</level>
+            <description>Can control and manipulate plant life.</description>
+        </ability>
+        <ability>
+            <type>Healing</type>
+            <level>7</level>
+            <description>Can heal injuries and ailments using natural remedies.</description>
+        </ability>
+    </abilities>
+    <appearance>
+        <color>Emerald Green</color>
+        <size>10 feet tall</size>
+        <distinctiveMarkings>Covered in intricate vine-like patterns.</distinctiveMarkings>
+    </appearance>
+    <history>
+        <origin>Born from the heart of the oldest tree in the Whispering Woods.</origin>
+        <legend>Said to protect the forest from any who would harm it.</legend>
+    </history>
+    <relationships>
+        <relationship>
+            <relatedTo>Dryads</related>
+            <relationshipType>Allies</relationship>
+            <duration>Centuries</duration>
+        </relationship>
+        <relationship>
+            <relatedTo>Goblins</related>
+            <relationshipType>Enemies</relationship>
+            <duration>200 years</duration>
+        </relationship>
+    </relationships>
+</creature>

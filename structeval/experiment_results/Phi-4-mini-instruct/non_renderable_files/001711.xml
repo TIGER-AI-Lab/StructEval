@@ -1,0 +1,48 @@
+<creature>
+  <name>Drakthar</name>
+  <species>Dragon</species>
+  <age>500</age>
+  <habitat>
+    <region>High Mountains</region>
+    <climate>Cold and harsh</climate>
+    <resources>Gold, Gems, Rare Minerals</resources>
+  </habitat>
+  <abilities>
+    <ability>
+      <type>Flight</type>
+      <level>9</level>
+      <description>Drakthar can soar through the skies with unmatched speed and agility.</description>
+    </ability>
+    <ability>
+      <type>Invisibility</type>
+      <level>7</level>
+      <description>Drakthar can become invisible to the naked eye, making it nearly impossible to be seen.</description>
+    </ability>
+    <ability>
+      <type>Fire Breathing</type>
+      <level>10</level>
+      <description>Drakthar can exhale torrents of fire, capable of incinerating anything in its path.</description>
+    </ability>
+  </abilities>
+  <appearance>
+    <color>Emerald Green</color>
+    <size>Large</size>
+    <distinctiveMarkings>Scales with golden patterns, fiery red eyes</distinctiveMarkings>
+  </appearance>
+  <history>
+    <origin>Ancient Drakthar Kingdom</origin>
+    <legend>Drakthar was once the guardian of the realm, protecting it from invaders.</legend>
+  </history>
+  <relationships>
+    <relationship>
+      <relatedTo>Elven Queen</relatedTo>
+      <relationshipType>Ally</relationshipType>
+      <duration>500 years</duration>
+    </relationship>
+    <relationship>
+      <relatedTo>Human Kingdom</relatedTo>
+      <relationshipType>Rival</relationshipType>
+      <duration>300 years</duration>
+    </relationship>
+  </relationships>
+</creature>

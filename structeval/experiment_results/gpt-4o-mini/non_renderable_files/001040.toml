@@ -1,0 +1,38 @@
+
+recipe = { 
+    title = "Spaghetti Carbonara",
+    author = { 
+        name = "John Doe",
+        contact = { 
+            email = "johndoe@example.com",
+            phone = "+1234567890"
+        }
+    },
+    ingredients = [
+        { 
+            name = "Spaghetti", 
+            quantity = 200, 
+            unit = "grams" 
+        },
+        { 
+            name = "Pancetta", 
+            quantity = 100, 
+            unit = "grams" 
+        }
+    ],
+    steps = [
+        { 
+            instruction = "Boil the spaghetti in salted water until al dente.", 
+            duration_minutes = 10 
+        },
+        { 
+            instruction = "Fry the pancetta until crispy and mix with the spaghetti.", 
+            duration_minutes = 5 
+        }
+    ],
+    metadata = { 
+        cuisine = "Italian", 
+        servings = 2, 
+        difficulty = "medium" 
+    }
+}

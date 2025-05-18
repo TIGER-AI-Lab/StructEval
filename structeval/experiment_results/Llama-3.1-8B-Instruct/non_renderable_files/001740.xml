@@ -1,0 +1,52 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<creature>
+    <name>Dragonix</name>
+    <species>Dragon</species>
+    <age>500</age>
+    <habitat>
+        <type>Mountainous</type>
+        <location>Dragon's Peak</location>
+        <temperature>10.5</temperature>
+    </habitat>
+    <abilities>
+        <ability>
+            <name>Fire Breath</name>
+            <level>8</level>
+            <cooldown>30</cooldown>
+        </ability>
+        <ability>
+            <name>Flight</name>
+            <level>9</level>
+            <cooldown>60</cooldown>
+        </ability>
+    </abilities>
+    <appearance>
+        <height>250</height>
+        <color>Blue</color>
+        <markings>Scaly</markings>
+    </appearance>
+    <history>
+        <origin>Dragon's Peak</origin>
+        <majorEvents>
+            <event>
+                <eventName>Birth</eventName>
+                <year>1000</year>
+            </event>
+            <event>
+                <eventName>First Flight</eventName>
+                <year>1020</year>
+            </event>
+        </majorEvents>
+    </history>
+    <relationships>
+        <relationship>
+            <relationType>Friend</relationType>
+            <individual>Dragonix Jr.</individual>
+        </relationship>
+        <relationship>
+            <relationType>Rival</relationType>
+            <individual>Drakon</individual>
+        </relationship>
+    </relationships>
+</creature>

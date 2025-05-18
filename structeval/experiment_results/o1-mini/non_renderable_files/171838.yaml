@@ -1,0 +1,19 @@
+galaxy:
+  name: Andromeda
+  star_systems:
+    - system_name: Alpha Centauri
+      planets:
+        - planet_name: Proxima b
+          moons:
+            - Selene
+            - Luna
+        - planet_name: Proxima c
+          moons:
+            - Io
+    - system_name: Betelgeuse
+      planets:
+        - planet_name: Betel-1
+          moons: []
+        - planet_name: Betel-2
+          moons:
+            - Phobos

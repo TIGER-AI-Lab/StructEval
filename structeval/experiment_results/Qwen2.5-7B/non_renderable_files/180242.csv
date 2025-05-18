@@ -1,0 +1,14 @@
+
+import pandas as pd
+
+data = [
+    {"CreatureName": "Glimmerfox", "Habitat": "Shimmering Woods", "NumberOfLegs": 4, "Diet": "Omnivore", "DiscoveryDate": "2012-03-15", "LuminescenceLevel": 8.5},
+    {"CreatureName": "Duskbeetle", "Habitat": "Twilight Caves", "NumberOfLegs": 6, "Diet": "Herbivore", "DiscoveryDate": "2008-11-02", "LuminescenceLevel": 4.2},
+    {"CreatureName": "Aurora Serpent", "Habitat": "Polar Skies", "NumberOfLegs": 0, "Diet": "Carnivore", "DiscoveryDate": "2017-07-23", "LuminescenceLevel": 9.1},
+    {"CreatureName": "Mossling", "Habitat": "Emerald Marsh", "NumberOfLegs": 2, "Diet": "Detritivore", "DiscoveryDate": "2010-05-30", "LuminescenceLevel": 2.7},
+    {"CreatureName": "Pyrohopper", "Habitat": "Volcanic Plains", "NumberOfLegs": 8, "Diet": "Insectivore", "DiscoveryDate": "2015-09-12", "LuminescenceLevel": 6.3},
+    {"CreatureName": "Cloudfinch", "Habitat": "Floating Isles", "NumberOfLegs": 2, "Diet": "Frugivore", "DiscoveryDate": "2019-01-09", "LuminescenceLevel": 1.0}
+]
+
+df = pd.DataFrame(data)
+df.to_csv('creatures.csv', index=False)

@@ -1,0 +1,23 @@
+
+creature:
+  name: Zephyrian Sylph
+  species: Aetherial Being
+  habitat:
+    type: mountainous
+    region: Cloudreach Peaks
+    climate: alpine
+  abilities:
+    - name: Aetherial Surge
+      description: Manipulates air currents to create gusts of wind up to 100 km/h
+      cooldown_seconds: 30
+    - name: Shadow Weave
+      description: Projects illusory duplicates of itself to confuse predators
+      cooldown_seconds: 60
+  stats:
+    size_meters: 3.2
+    weight_kg: 150
+    lifespan_years: 150
+    diet: omnivore
+  discovery:
+    discovered_by: The Astral Expedition Society
+    discovery_date: 2023-11-15

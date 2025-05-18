@@ -1,0 +1,119 @@
+
+<recipe>
+  <name>Delicious Chocolate Chip Cookies</name>
+  <author>Grandma Betty</author>
+  <cuisine>American</cuisine>
+  <prepTime>PT15M</prepTime>
+  <cookTime>PT12M</cookTime>
+  <servings>24</servings>
+  <ingredients>
+    <ingredient>
+      <name>All-purpose flour</name>
+      <quantity>3</quantity>
+      <unit>cups</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Granulated sugar</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Brown sugar</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Butter</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>2</quantity>
+      <unit/>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Vanilla extract</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Baking soda</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Salt</name>
+      <quantity>0.5</quantity>
+      <unit>teaspoon</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Chocolate chips</name>
+      <quantity>2</quantity>
+      <unit>cups</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Chopped walnuts</name>
+      <quantity>0.5</quantity>
+      <unit>cup</unit>
+      <optional>true</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <order>1</order>
+      <description>Preheat oven to 375Â°F (190Â°C).</description>
+      <duration>PT5M</duration>
+    </step>
+    <step>
+      <order>2</order>
+      <description>Cream together the butter, granulated sugar, and brown sugar until smooth.</description>
+      <duration>PT3M</duration>
+    </step>
+    <step>
+      <order>3</order>
+      <description>Beat in the eggs one at a time, then stir in the vanilla.</description>
+      <duration>PT2M</duration>
+    </step>
+    <step>
+      <order>4</order>
+      <description>Dissolve baking soda in hot water. Add to batter along with salt.</description>
+      <duration>PT1M</duration>
+    </step>
+    <step>
+      <order>5</order>
+      <description>Stir in the flour, chocolate chips, and walnuts (if using).</description>
+      <duration>PT2M</duration>
+    </step>
+    <step>
+      <order>6</order>
+      <description>Drop by rounded tablespoons onto baking sheets.</description>
+      <duration>PT1M</duration>
+    </step>
+    <step>
+      <order>7</order>
+      <description>Bake for 10-12 minutes, or until edges are nicely browned.</description>
+      <duration>PT12M</duration>
+    </step>
+    <step>
+      <order>8</order>
+      <description>Cool on baking sheets for a few minutes before transferring to a wire rack to cool completely.</description>
+      <duration>PT5M</duration>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>150</calories>
+    <fat>8</fat>
+    <protein>2</protein>
+    <carbohydrates>18</carbohydrates>
+  </nutrition>
+</recipe>

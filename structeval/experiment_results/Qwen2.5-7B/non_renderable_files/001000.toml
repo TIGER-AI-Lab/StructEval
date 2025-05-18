@@ -1,0 +1,31 @@
+museum = {
+    name = "The Metropolitan Museum of Art",
+    location = {
+        city = "New York",
+        country = "USA"
+    },
+    founded_year = 1870,
+    director = {
+        full_name = "Max Hollein",
+        tenure_years = 5
+    },
+    galleries = [
+        {
+            title = "American Wing",
+            floor = 2,
+            artworks = [
+                {
+                    title = "American Landscape",
+                    artist = "John Smith",
+                    year_created = 1900,
+                    medium = "Oil on canvas",
+                    dimensions = {
+                        height_cm = 150,
+                        width_cm = 100
+                    },
+                    on_display = true
+                }
+            ]
+        }
+    ]
+}

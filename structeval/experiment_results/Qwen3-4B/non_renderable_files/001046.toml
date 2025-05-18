@@ -1,0 +1,35 @@
+
+planet = {
+  name = "Vespera-7",
+  discovery = {
+    year = 2023,
+    method = "transit"
+  },
+  orbit = {
+    period_days = 120,
+    eccentricity = 0.15,
+    semi_major_axis_au = 1.2
+  },
+  atmosphere = {
+    composition = ["nitrogen", "oxygen", "argon", "carbon dioxide"],
+    pressure_atm = 1.5,
+    temperature_kelvin = 280
+  },
+  moons = [
+    {
+      name = "Lunara",
+      diameter_km = 1200,
+      orbital_period_days = 30,
+      features = [
+        {
+          type = "crater",
+          description = "Crater of Echoes, formed by a ancient asteroid impact."
+        },
+        {
+          type = "mountain",
+          description = "Mount Vespera, a volcanic plateau with active fumaroles."
+        }
+      ]
+    }
+  ]
+}

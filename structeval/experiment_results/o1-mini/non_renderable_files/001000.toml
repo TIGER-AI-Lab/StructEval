@@ -1,0 +1,28 @@
+
+[museum]
+name = "Imaginary Art Museum"
+founded_year = 1920
+
+[museum.location]
+city = "Fictionville"
+country = "Imaginaryland"
+
+[museum.director]
+full_name = "Jane Doe"
+tenure_years = 10
+
+[[museum.galleries]]
+title = "Gallery of Wonders"
+floor = 1
+
+  [[museum.galleries.artworks]]
+  title = "Mysterious Landscape"
+  artist = "John Smith"
+  year_created = 1950
+  medium = "Oil on canvas"
+
+    [museum.galleries.artworks.dimensions]
+    height_cm = 120.5
+    width_cm = 80.0
+
+  on_display = true

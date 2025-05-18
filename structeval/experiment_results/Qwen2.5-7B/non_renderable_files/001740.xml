@@ -1,0 +1,51 @@
+
+<creature>
+  <name>Fluffy</name>
+  <species>Felis catus</species>
+  <age>5</age>
+  <habitat>
+    <type>domestic</type>
+    <location>Living room</location>
+    <temperature>22</temperature>
+  </habitat>
+  <abilities>
+    <ability>
+      <name>Playfulness</name>
+      <level>8</level>
+      <cooldown>60</cooldown>
+    </ability>
+    <ability>
+      <name>Meowing</name>
+      <level>9</level>
+      <cooldown>30</cooldown>
+    </ability>
+  </abilities>
+  <appearance>
+    <height>40</height>
+    <color>White</color>
+    <markings>Spots</markings>
+  </appearance>
+  <history>
+    <origin>Breeder's litter</origin>
+    <majorEvents>
+      <event>
+        <eventName>Adoption</eventName>
+        <year>2018</year>
+      </event>
+      <event>
+        <eventName>First birthday</eventName>
+        <year>2019</year>
+      </event>
+    </majorEvents>
+  </history>
+  <relationships>
+    <relationship>
+      <relationType>Owner</relationType>
+      <individual>John Doe</individual>
+    </relationship>
+    <relationship>
+      <relationType>Friend</relationType>
+      <individual>Another cat</individual>
+    </relationship>
+  </relationships>
+</creature>

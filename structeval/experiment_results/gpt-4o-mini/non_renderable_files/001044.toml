@@ -1,0 +1,34 @@
+
+name = "Exoplanet XZ-123"
+
+[planet.discovery]
+year = 2023
+method = "transit"
+
+[planet.orbit]
+period_days = 365.25
+eccentricity = 0.02
+
+[[planet.atmosphere.composition]]
+gas = "carbon dioxide"
+percentage = 95.0
+
+[[planet.atmosphere.composition]]
+gas = "nitrogen"
+percentage = 5.0
+
+[[planet.moons]]
+name = "Moon A"
+diameter_km = 1500
+
+[[planet.moons]]
+name = "Moon B"
+diameter_km = 800
+
+[planet.surface]
+temperature_c = 15.0
+has_liquid_water = true
+
+[[planet.surface.landmarks]]
+type = "mountain"
+name = "Mount Olympus"

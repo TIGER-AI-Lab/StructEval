@@ -1,0 +1,25 @@
+expedition:
+  mission_name: "Abyssal Discovery: The Deep-Sea Expedition"
+  launch_date: "2023-07-15T00:00:00Z"
+  duration_days: 30
+  crew:
+    - name: "Dr. Emily Carter"
+      role: "Lead Marine Biologist"
+      age: 37
+      skills:
+        - "Marine Ecology"
+        - "Deep-Sea Navigation"
+        - "Underwater Photography"
+    - name: "Captain Johnathan Reed"
+      role: "Expedition Commander"
+      age: 45
+      skills:
+        - "Experienced Captain"
+        - "Emergency Response"
+        - "Advanced Navigation"
+  cargo:
+    manifest_id: "EXP2023-07-15-001"
+    items:
+      - item_name: "Submersible ROV"
+        quantity: 1
+        weight_kg: 250

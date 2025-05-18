@@ -1,0 +1,23 @@
+
+import pandas as pd
+
+artifact_data = {
+    "artifact_id": "A123",
+    "artifact_name": "Ancient Pottery",
+    "discovery.site": "Excavation Site X",
+    "discovery.country": "Egypt",
+    "discovery.year": 1950,
+    "discovery.method": "Excavation",
+    "material.primary": "Clay",
+    "material.secondary": "None",
+    "dimensions.height_cm": 15.5,
+    "dimensions.width_cm": 10.2,
+    "dimensions.depth_cm": 5.8,
+    "condition.current_status": "Intact",
+    "condition.restoration_history": "None",
+    "significance.cultural_importance": "Reflects ancient Egyptian pottery techniques",
+    "significance.estimated_value_usd": 25000.0
+}
+
+artifact_df = pd.DataFrame([artifact_data])
+print(artifact_df.to_csv(index=False))

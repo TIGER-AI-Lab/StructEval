@@ -1,0 +1,29 @@
+
+planet:
+  name: "Zyphora"
+  orbital_period_days: 412.5
+  moons:
+    - "Lunara"
+    - "Calyx"
+    - "Phobos II"
+  atmosphere:
+    composition:
+      - "argon"
+      - "xenon"
+      - "oxygen"
+    pressure_kpa: 97.3
+  lifeforms:
+    - species: "Glintwing"
+      population: 120000
+      diet: "phototrophic"
+    - species: "Burrowvine"
+      population: 83000
+      diet: "chemosynthetic"
+  exploration:
+    missions:
+      - name: "Aegis I"
+        year: 2378
+        success: true
+      - name: "Vanguard Beta"
+        year: 2382
+        success: false

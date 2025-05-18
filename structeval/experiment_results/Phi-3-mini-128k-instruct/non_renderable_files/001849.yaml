@@ -1,0 +1,30 @@
+game:
+  title: "Galactic Frontiers"
+  release_year: 2021
+  genre: "Space RPG"
+  platforms:
+    - name: "PC"
+      release_date: "2021-06-15"
+      supported_languages: ["English", "Spanish", "French"]
+  developer:
+    name: "Starbound Studios"
+    founded: 2011
+    location:
+      city: "San Francisco"
+      country: "USA"
+  reviews:
+    - reviewer: "GameSpot"
+      score: 8.5
+      date: "2021-07-22"
+      comment: "An immersive space RPG with a compelling story and engaging gameplay."
+    - reviewer: "IGN"
+      score: 9.0
+      date: "2021-08-05"
+      comment: "A masterpiece of storytelling and design, with a vast universe to explore."
+  expansions:
+    - title: "Galactic Frontiers: The Lost Sectors"
+      release_year: 2022
+      features:
+        - "New alien species and planets"
+        - "Enhanced space combat mechanics"
+        - "Additional quests and storylines"

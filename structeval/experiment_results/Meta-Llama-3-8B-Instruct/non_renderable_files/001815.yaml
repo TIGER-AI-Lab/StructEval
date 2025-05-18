@@ -1,0 +1,21 @@
+
+museum:
+  name: "The National Art Museum"
+  location:
+    city: "New York"
+    country: "USA"
+  established_year: 1920
+  director:
+    name: "John Smith"
+    tenure_years: 10
+  galleries:
+    - title: "Modern Art"
+      theme: "Abstract Expressionism"
+      artworks:
+        - title: "Untitled"
+          artist: "Jackson Pollock"
+          year_created: 1950
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 100
+            width_cm: 150

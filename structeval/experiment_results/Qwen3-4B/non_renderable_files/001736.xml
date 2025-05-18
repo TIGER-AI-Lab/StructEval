@@ -1,0 +1,38 @@
+
+<recipe>
+  <title>Classic Chocolate Cake</title>
+  <author>
+    <name>John Doe</name>
+    <id>12345</id>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Flour</name>
+      <quantity>250</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>2</quantity>
+      <unit>units</unit>
+      <optional>true</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Mix flour and eggs in a bowl.</description>
+      <duration_minutes>5</duration_minutes>
+    </step>
+    <step>
+      <description>Bake at 180Â°C for 30 minutes.</description>
+      <duration_minutes>30</duration_minutes>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>300</calories>
+    <protein_grams>15.5</protein_grams>
+    <fat_grams>10.2</fat_grams>
+    <carbs_grams>25</carbs_grams>
+  </nutrition>
+</recipe>

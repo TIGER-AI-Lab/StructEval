@@ -1,0 +1,42 @@
+
+<book>
+  <author>
+    <name>J.K. Rowling</name>
+    <nationality>British</nationality>
+  </author>
+  <publication>
+    <year>2020</year>
+    <publisher>Bloomsbury</publisher>
+  </publication>
+  <chapters>
+    <chapter>
+      <title>The Enchanted Forest</title>
+      <pageCount>100</pageCount>
+      <summary>A tale of magic and adventure.</summary>
+      <sections>
+        <section>
+          <heading>Introduction</heading>
+          <paragraphCount>3</paragraphCount>
+          <keyConcepts>
+            <item>Magic</item>
+            <item>Adventure</item>
+            <item>Friendship</item>
+          </keyConcepts>
+        </section>
+      </sections>
+    </chapter>
+  </chapters>
+  <appendices>
+    <appendix>
+      <topic>Glossary</topic>
+      <pageStart>200</pageStart>
+    </appendix>
+  </appendices>
+  <metadata>
+    <isbn>978-3-16-148410-0</isbn>
+    <genres>
+      <item>Fantasy</item>
+      <item>Adventure</item>
+    </genres>
+  </metadata>
+</book>

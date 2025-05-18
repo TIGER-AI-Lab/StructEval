@@ -1,0 +1,13 @@
+
+galacticZoo:
+  animals:
+    - name: Blorptopus
+      species: Aquatic Cephalopod
+      origin:
+        planet: Blorp Prime
+        galaxy: Andromeda
+    - name: Zyglax
+      species: Feathered Quadruped
+      origin:
+        planet: Zygos
+        galaxy: Milky Way

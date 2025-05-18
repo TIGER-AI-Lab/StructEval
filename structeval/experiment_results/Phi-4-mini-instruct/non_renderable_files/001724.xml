@@ -1,0 +1,56 @@
+<recipe>
+  <name>Spicy Chicken Stir-Fry</name>
+  <author>Chef John Doe</author>
+  <cuisine>Chinese</cuisine>
+  <prepTime>PT15M</prepTime>
+  <cookTime>PT30M</cookTime>
+  <servings>4</servings>
+  <ingredients>
+    <ingredient>
+      <name>chicken breast</name>
+      <quantity>500</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>soy sauce</name>
+      <quantity>50</quantity>
+      <unit>ml</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>garlic</name>
+      <quantity>3</quantity>
+      <unit>cloves</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <order>1</order>
+      <description>Cut the chicken into small pieces and season with salt and pepper.</description>
+      <duration>PT5M</duration>
+    </step>
+    <step>
+      <order>2</order>
+      <description>Heat oil in a pan and add garlic, sautÃ© until golden brown.</description>
+      <duration>PT2M</duration>
+    </step>
+    <step>
+      <order>3</order>
+      <description>Add chicken to the pan and stir-fry until cooked through.</description>
+      <duration>PT10M</duration>
+    </step>
+    <step>
+      <order>4</order>
+      <description>Pour in soy sauce and stir well, cook for another 5 minutes.</description>
+      <duration>PT5M</duration>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>250</calories>
+    <fat>10</fat>
+    <protein>30</protein>
+    <carbohydrates>20</carbohydrates>
+  </nutrition>
+</recipe>

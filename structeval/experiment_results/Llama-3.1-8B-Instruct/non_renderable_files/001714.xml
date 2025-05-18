@@ -1,0 +1,31 @@
+
+<planet>
+    <name>Xylophia-IV</name>
+    <type>gas giant</type>
+    <atmosphere>
+        <composition>hydrogen, helium, methane</composition>
+        <pressure>1000</pressure>
+    </atmosphere>
+    <discovery>
+        <year>2154</year>
+        <method>Telescope</method>
+    </discovery>
+    <moons>
+        <moon>
+            <name>Xylophia-IVb</name>
+            <diameter>2000</diameter>
+            <discovery_date>2155-02-15</discovery_date>
+            <features>
+                <feature>
+                    <type>crater</type>
+                    <description>A large impact crater on the moon's surface.</description>
+                </feature>
+            </features>
+        </moon>
+    </moons>
+    <rings>
+        <ring>
+            <radius>5000</radius>
+        </ring>
+    </rings>
+</planet>

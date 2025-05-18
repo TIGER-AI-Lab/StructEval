@@ -1,0 +1,2 @@
+album_id,album_title,artist_name,release_year,genre,label,producer,tracklist,tracklist_count,tracklist_first_title,tracklist_first_duration,tracklist_last_title,tracklist_last_duration,total_duration,cover_url
+ALB001,"Whispers in the Wind",Elias Thorne,2023,Folk,Indie Records,Sarah Jenkins,"Morning Dew;Whispers in the Wind;Beneath the Willow;Dancing with Fireflies;Twilight Serenade",5,Morning Dew,04:30,Twilight Serenade,05:15,25:00,https://example.com/cover.jpg

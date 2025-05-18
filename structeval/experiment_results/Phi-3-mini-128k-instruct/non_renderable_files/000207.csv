@@ -1,0 +1,3 @@
+
+species_id,common_name,latin_name,classification,habitat,diet,conservation_status,discovery
+"SP001","Glimmering Glider","Lumifelis volitantia","{ 'kingdom': 'Animalia', 'phylum': 'Chordata', 'class': 'Mammalia', 'order': 'Diprotodontia', 'family': 'Petauridae', 'genus': 'Lumifelis', 'species': 'volitantia' }",{ 'primary': 'Tropical Rainforest', 'secondary': 'Mountainous Regions' },{ 'type': 'Omnivore', 'examples': 'Fruits, Insects, Small Mammals' },{ 'status': 'Vulnerable', 'iucn_code': 'VU' },{ 'year': 1998, 'discoverer': 'Dr. Elara M. Kestrel' }

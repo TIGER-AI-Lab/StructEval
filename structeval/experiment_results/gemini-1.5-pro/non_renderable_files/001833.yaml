@@ -1,0 +1,32 @@
+planet:
+  name: Xylia
+  type: Terrestrial
+  discovery:
+    year: 2342
+    method: Transit Photometry
+  atmosphere:
+    composition:
+      - Nitrogen
+      - Oxygen
+      - Argon
+      - Trace Water Vapor
+    pressure: 90.5
+    temperature: 285
+  moons:
+    - name: Lunara
+      diameter_km: 3500
+      orbital_period_days: 27.8
+      surface_features:
+        - feature_type: Crater
+          description: Large impact crater with central peak
+          coordinates: 25Â°N, 40Â°E
+        - feature_type: Mountain Range
+          description: Jagged peaks formed by tectonic activity
+          coordinates: 5Â°S, 15Â°W
+    - name: Nyx
+      diameter_km: 1200
+      orbital_period_days: 11.2
+      surface_features:
+        - feature_type: Canyon
+          description: Deep canyon system extending across the surface
+          coordinates: 10Â°N, 70Â°E

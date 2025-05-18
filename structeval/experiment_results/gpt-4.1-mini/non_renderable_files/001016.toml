@@ -1,0 +1,29 @@
+
+[enchanted_forest]
+
+[[enchanted_forest.trees]]
+species = "willow"
+age = 150
+magical_properties = ["glowing leaves", "healing sap", "whispering branches"]
+
+  [[enchanted_forest.trees.inhabitants]]
+  name = "Lira"
+  type = "sprite"
+  friendliness = 8
+  last_seen = "2024-05-15T14:30:00Z"
+
+  [enchanted_forest.trees.fruit]
+  count = 42
+  type = "silverberry"
+  is_edible = true
+
+[[enchanted_forest.mystical_events]]
+event_name = "Moonlight Bloom"
+date = "2024-04-20"
+participants = ["Lira", "Eldrin", "Faela"]
+
+[enchanted_forest.guardian]
+name = "Thalor"
+species = "ancient treant"
+power_level = 92
+is_visible = false

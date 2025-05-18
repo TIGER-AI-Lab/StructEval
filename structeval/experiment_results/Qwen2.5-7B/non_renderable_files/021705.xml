@@ -1,0 +1,41 @@
+
+  <mission>
+    <name>Odyssey Alpha</name>
+    <launch_date>2031-07-16</launch_date>
+    <destination>
+      <planet>Mars</planet>
+      <landing_site>Gale Crater</landing_site>
+    </destination>
+    <crew_members>
+      <member>
+        <name>Dr. Jane Foster</name>
+        <role>Commander</role>
+        <age>42</age>
+      </member>
+      <member>
+        <name>Alex Kim</name>
+        <role>Pilot</role>
+        <age>37</age>
+      </member>
+    </crew_members>
+    <cargo>
+      <equipment>
+        <type>Habitat Module</type>
+        <quantity>1</quantity>
+      </equipment>
+      <equipment>
+        <type>Research Lab</type>
+        <quantity>2</quantity>
+      </equipment>
+      <scientific_samples>
+        <sample>
+          <sample_id>SMP-001</sample_id>
+          <description>Regolith core sample</description>
+        </sample>
+      </scientific_samples>
+    </cargo>
+    <communication>
+      <frequency_band>X-band</frequency_band>
+      <primary_contact>Johnson Space Center</primary_contact>
+    </communication>
+  </mission>

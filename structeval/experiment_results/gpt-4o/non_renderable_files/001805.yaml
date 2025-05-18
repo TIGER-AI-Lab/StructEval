@@ -1,0 +1,51 @@
+brewery:
+  name: "Mystic River Brewing Co."
+  location:
+    city: "Portland"
+    country: "USA"
+  established_year: 2010
+  specialties:
+    - "Sour Ales"
+    - "Barrel-Aged Stouts"
+    - "Hazy IPAs"
+  master_brewer:
+    name: "Eleanor Brewster"
+    experience_years: 15
+    awards:
+      - title: "Brewer of the Year"
+        year: 2018
+  beers:
+    - name: "Foggy Haze IPA"
+      style: "Hazy IPA"
+      abv: 6.5
+      ingredients:
+        malts:
+          - "Pale Malt"
+          - "Oats"
+        hops:
+          - "Citra"
+          - "Mosaic"
+      release_dates:
+        - "2015-06-15"
+    - name: "Dark Abyss Stout"
+      style: "Barrel-Aged Stout"
+      abv: 10.2
+      ingredients:
+        malts:
+          - "Roasted Barley"
+          - "Chocolate Malt"
+        hops:
+          - "East Kent Goldings"
+      release_dates:
+        - "2012-11-01"
+    - name: "Tart Cherry Sour"
+      style: "Sour Ale"
+      abv: 5.0
+      ingredients:
+        malts:
+          - "Pilsner Malt"
+          - "Wheat Malt"
+        hops:
+          - "Hallertau"
+      release_dates:
+        - "2018-04-20"

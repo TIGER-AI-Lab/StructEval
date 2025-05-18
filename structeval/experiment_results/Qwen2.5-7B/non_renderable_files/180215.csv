@@ -1,0 +1,14 @@
+
+import pandas as pd
+
+data = [
+    {'creature_name': 'Glimmerbeetle', 'biome': 'Crystal Caverns', 'number_of_legs': 8, 'discovery_date': '2020-04-18', 'venomous': True, 'favorite_food': 'Luminous moss'},
+    {'creature_name': 'Thundertuft', 'biome': 'Storm Peaks', 'number_of_legs': 4, 'discovery_date': '2018-09-02', 'venomous': False, 'favorite_food': 'Charged berries'},
+    {'creature_name': 'Frosthopper', 'biome': 'Frozen Marsh', 'number_of_legs': 6, 'discovery_date': '2021-12-11', 'venomous': False, 'favorite_food': 'Ice algae'},
+    {'creature_name': 'Emberling', 'biome': 'Volcanic Plains', 'number_of_legs': 2, 'discovery_date': '2019-07-23', 'venomous': True, 'favorite_food': 'Magma worms'},
+    {'creature_name': 'Shadowgrazer', 'biome': 'Twilight Thicket', 'number_of_legs': 5, 'discovery_date': '2022-03-30', 'venomous': False, 'favorite_food': 'Moonlit ferns'},
+    {'creature_name': 'Zephyrix', 'biome': 'Cloud Forest', 'number_of_legs': 3, 'discovery_date': '2017-11-14', 'venomous': True, 'favorite_food': 'Skyfruit'}
+]
+
+df = pd.DataFrame(data)
+df.to_csv('creatures.csv', index=False)

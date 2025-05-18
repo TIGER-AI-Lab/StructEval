@@ -1,0 +1,32 @@
+
+{
+    "planet": {
+        "name": "Exoplanet-123",
+        "type": "terrestrial",
+        "discovery": {
+            "year": 2022,
+            "method": "transit"
+        },
+        "atmosphere": {
+            "composition": ["helium", "methane"],
+            "pressure": 1013.25
+        },
+        "moons": [
+            {
+                "name": "Moon-1",
+                "diameter_km": 2345.67,
+                "orbital_period_days": 27.5,
+                "features": [
+                    {
+                        "type": "crater",
+                        "description": "A large impact crater on the moon's surface"
+                    }
+                ]
+            }
+        ],
+        "surface": {
+            "temperature_c": 15.5,
+            "gravity_ms2": 9.8
+        }
+    }
+}

@@ -1,0 +1,25 @@
+[museum]
+name = "The Grand Gallery of Art"
+established_year = 1955
+director = "Dr. Eleanor Vance"
+
+[museum.location]
+city = "Metropolis"
+country = "United States"
+
+[[museum.exhibits]]
+title = "Starry Night Over the City"
+artist = "Ava Sterling"
+year = 2042
+medium = "Holographic Projection"
+
+[museum.exhibits[0].dimensions]
+height_cm = 150.5
+width_cm = 200
+
+[museum.exhibits[0].provenance]
+previous_owners = ["John Smith", "Emily Carter", "The Sterling Foundation"]
+acquisition_date = "2023-03-15"
+acquisition_method = "Purchase"
+
+museum.exhibits[0].on_display = true

@@ -1,0 +1,28 @@
+
+import csv
+from xml.etree import ElementTree
+
+# Parse the XML data
+tree = ElementTree.parse('exoplanets.xml')
+root = tree.getroot()
+
+# Open a file for writing the CSV data
+with open('exoplanets.csv', 'w', newline='') as csvfile:
+    # Create a CSV writer object
+    writer = csv.writer(csvfile)
+
+    # Write the header row
+    writer.writerow(['PlanetName', 'DiscoveryYear', 'DistanceFromEarth_ly', 'HasLife', 'PrimaryElement', 'FirstContactDate'])
+
+    # Iterate over the Planet elements in the XML data
+    for planet in root.findall('Planet'):
+        # Extract the data for each Planet element
+        planet_name = planet.find('PlanetName').text
+        discovery_year = planet.find('DiscoveryYear').text
+        distance_from_earth_ly = planet.find('DistanceFromEarth_ly').text
+        has_life = planet.find('HasLife').text
+        primary_element = planet.find('PrimaryElement').text
+        first_contact_date = planet.find('FirstContactDate').text
+
+        # Write the data as a row in the CSV file
+        writer.writerow([planet_name, discovery_year, distance_from_earth_ly, has_life, primary_element, first_contact_date])

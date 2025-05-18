@@ -1,0 +1,39 @@
+
+ecosystem = {
+    name = "Zeta-7 Biome",
+    location = {
+        planet = "Zeta-7",
+        region = "Aurora Expanse"
+    },
+    discovery = {
+        year = 2085,
+        discoverer = "Interstellar Exploration Team"
+    },
+    species = [
+        {
+            name = "Xylophor",
+            classification = "Mammalian",
+            population_estimate = 1500000,
+            traits = [
+                { trait_name = "Bioluminescence", trait_value = "Violet" },
+                { trait_name = "Thermoregulation", trait_value = 38.5 }
+            ]
+        }
+    ],
+    resources = {
+        water_sources = [
+            {
+                type = "Subterranean Lake",
+                volume_liters = 4500000000
+            }
+        ],
+        minerals = [
+            { mineral_name = "Zyphorite", abundance_level = "High" },
+            { mineral_name = "Vortexite", abundance_level = 0.7 }
+        ]
+    },
+    environment = {
+        average_temperature_celsius = 22.4,
+        atmosphere_composition = ["70% Nitrogen", "25% Oxygen", "5% Argon"]
+    }
+}

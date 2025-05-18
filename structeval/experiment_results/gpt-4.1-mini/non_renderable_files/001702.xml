@@ -1,0 +1,99 @@
+
+<recipe>
+  <title>Spicy Thai Basil Chicken</title>
+  <author>
+    <name>Maria Lopez</name>
+    <contact>maria.lopez@example.com</contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Chicken breast</name>
+      <quantity>500</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Fresh basil leaves</name>
+      <quantity>30</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Garlic cloves</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Red chili</name>
+      <quantity>2</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Soy sauce</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>Oyster sauce</name>
+      <quantity>1</quantity>
+      <unit>tablespoon</unit>
+    </ingredient>
+    <ingredient>
+      <name>Vegetable oil</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>White sugar</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <description>Chop the chicken breast into bite-sized pieces.</description>
+      <duration_minutes>5</duration_minutes>
+      <tools>knife, cutting board</tools>
+    </step>
+    <step>
+      <description>Crush and finely chop the garlic and red chili.</description>
+      <duration_minutes>3</duration_minutes>
+      <tools>knife, mortar and pestle</tools>
+    </step>
+    <step>
+      <description>Heat vegetable oil in a wok over medium-high heat.</description>
+      <duration_minutes>2</duration_minutes>
+      <tools>wok, stove</tools>
+    </step>
+    <step>
+      <description>Add garlic and chili to the wok and stir-fry until fragrant.</description>
+      <duration_minutes>1</duration_minutes>
+      <tools>wok, spatula</tools>
+    </step>
+    <step>
+      <description>Add chicken pieces and stir-fry until cooked through.</description>
+      <duration_minutes>7</duration_minutes>
+      <tools>wok, spatula</tools>
+    </step>
+    <step>
+      <description>Mix in soy sauce, oyster sauce, and sugar; cook for another 2 minutes.</description>
+      <duration_minutes>2</duration_minutes>
+      <tools>wok, spatula</tools>
+    </step>
+    <step>
+      <description>Turn off heat and stir in fresh basil leaves until wilted.</description>
+      <duration_minutes>1</duration_minutes>
+      <tools>wok, spatula</tools>
+    </step>
+  </steps>
+  <metadata>
+    <cuisine>Thai</cuisine>
+    <difficulty>Medium</difficulty>
+    <servings>4</servings>
+    <prep_time>PT10M</prep_time>
+    <cook_time>PT15M</cook_time>
+  </metadata>
+  <nutrition>
+    <calories>320</calories>
+    <fat>15</fat>
+    <protein>35</protein>
+  </nutrition>
+</recipe>

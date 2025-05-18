@@ -1,0 +1,29 @@
+[recipe]
+title = "Original Recipe"
+author = "John Doe"
+cuisine = "Italian"
+difficulty = "easy"
+[recipe.prep_time]
+minutes = 15
+[recipe.cook_time]
+minutes = 30
+[recipe.ingredients]
+[[recipe.ingredients]]
+name = "Tomatoes"
+quantity = 4
+unit = "cups"
+optional = false
+[[recipe.ingredients]]
+name = "Onions"
+quantity = 2
+unit = "medium"
+optional = true
+[recipe.steps]
+[[recipe.steps]]
+description = "Chop the tomatoes and onions."
+duration_minutes = 5
+[recipe.nutrition]
+calories = 200
+protein_grams = 10.0
+fat_grams = 5.0
+carbohydrates_grams = 30.0

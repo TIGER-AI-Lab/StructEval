@@ -1,0 +1,27 @@
+
+artifact:
+  name: "Rosetta Stone"
+  origin:
+    culture: "Ptolemaic Egypt"
+    period: "Hellenistic Period"
+  materials:
+    primary: "Granodiorite"
+    secondary:
+      - "Pigment"
+  dimensions:
+    height_cm: 112.3
+    width_cm: 75.7
+    depth_cm: 28.4
+  current_location:
+    museum: "British Museum"
+    room: "Room 4"
+    display_case: "Case 12"
+  inscriptions:
+    - language: "Ancient Egyptian (Hieroglyphic)"
+      text: "ðð¤ðððªðð"
+      translation: "Decree of Memphis"
+  provenance:
+    history:
+      - owner: "British Museum"
+        date_acquired: "1802-03-11"
+        method_of_acquisition: "purchase"

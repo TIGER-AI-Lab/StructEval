@@ -1,0 +1,32 @@
+
+creature:
+  name: Zha'thik
+  species: Xhk'kht
+  origin:
+    planet: Xeridia-IV
+    galaxy: Andromeda
+  abilities:
+    - type: Energy Projection
+      description: The Zha'thik can project energy blasts from its hands to incapacitate or destroy targets.
+      power_level: 8
+    - type: Telepathy
+      description: The Zha'thik can read and control the thoughts of other beings, allowing it to manipulate their actions.
+      power_level: 9
+  physical_traits:
+    height_cm: 250
+    coloration: Iridescent blue and green scales
+    limbs:
+      count: 6
+      types:
+        - arm
+        - tentacle
+        - wing
+  history:
+    first_sighting:
+      date: 2022-01-01T00:00:00Z
+      location: Xeridia-IV, Andromeda Galaxy
+    known_encounters:
+      - date: 2022-01-15T00:00:00Z
+        description: A Zha'thik was spotted on Xeridia-IV, observed to be studying the local flora and fauna.
+      - date: 2023-06-01T00:00:00Z
+        description: A group of Zha'thik were encountered on a nearby planet, where they were found to be engaging in a ritualistic dance.

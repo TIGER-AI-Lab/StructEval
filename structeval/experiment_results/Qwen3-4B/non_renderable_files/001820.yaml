@@ -1,0 +1,45 @@
+
+ecosystem:
+  name: "Amazonian Rainforest Ecosystem"
+  location:
+    region: "Amazon Basin"
+    latitude: -3.1157
+    longitude: -60.0113
+  climate:
+    type: "tropical"
+    average_temperature_celsius: 27.5
+    rainfall_mm_per_year: 2500
+  species:
+    - common_name: "Jaguar"
+      scientific_name: "Panthera onca"
+      population_estimate: 30000
+      conservation_status: "vulnerable"
+      diet: "large mammals, birds"
+      notable_adaptations:
+        - "dazzling spotted coat for camouflage"
+        - "exceptional night vision"
+      sightings:
+        - date: "2023-10-15"
+          location_description: "Northern Amazon, near Rio Negro"
+    - common_name: "Blue-and-yellow Macaw"
+      scientific_name: "Ara ararauna"
+      population_estimate: 150000
+      conservation_status: "least concern"
+      diet: "fruits, nuts"
+      notable_adaptations:
+        - "strong, curved beak for cracking seeds"
+        - "can fly at high altitudes"
+      sightings:
+        - date: "2023-09-22"
+          location_description: "Central Amazon, La Selva Reserve"
+    - common_name: "Green Tree Frog"
+      scientific_name: "Dendrobates auricollis"
+      population_estimate: 500000
+      conservation_status: "endangered"
+      diet: "insects"
+      notable_adaptations:
+        - "vibrant coloration for warning predators"
+        - "gliding ability between trees"
+      sightings:
+        - date: "2023-11-03"
+          location_description: "Southern Amazon, Manu National Park"

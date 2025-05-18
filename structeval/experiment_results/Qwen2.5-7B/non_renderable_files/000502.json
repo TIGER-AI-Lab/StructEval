@@ -1,0 +1,32 @@
+
+{
+  "artifact": {
+    "name": "The Enigma Tablet",
+    "origin": {
+      "civilization": "Unknown",
+      "estimated_age": 2500
+    },
+    "materials": {
+      "primary": "Limestone",
+      "secondary": null,
+      "composition_percentage": 95
+    },
+    "dimensions": {
+      "height_cm": 30,
+      "width_cm": 20,
+      "depth_cm": 5
+    },
+    "features": [
+      {
+        "type": "Engraving",
+        "description": "A series of symbols and hieroglyphs",
+        "preservation_state": "Intact"
+      },
+      {
+        "type": "Inlay",
+        "description": "A small gemstone embedded in the surface",
+        "preservation_state": "Worn"
+      }
+    ]
+  }
+}

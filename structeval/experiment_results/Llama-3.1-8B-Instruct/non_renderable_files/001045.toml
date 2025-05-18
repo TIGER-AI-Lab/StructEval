@@ -1,0 +1,35 @@
+
+biome = {
+  name = "Arid Canyonlands",
+  climate = "arid",
+  average_temperature_celsius = 25.0,
+  flora = [
+    {
+      species = "Carnegiea gigantea",
+      population_estimate = 1000,
+      edibility = {
+        is_edible = true,
+        toxicity_level = "none"
+      }
+    }
+  ],
+  fauna = [
+    {
+      species = "Gopherus agassizii",
+      average_weight_kg = 1.5,
+      diet = "herbivore",
+      conservation_status = "least concern"
+    }
+  ],
+  water_sources = [
+    {
+      type = "spring",
+      freshwater = true,
+      average_depth_m = 5.0
+    }
+  ],
+  geology = {
+    dominant_rock_type = "sandstone",
+    mineral_resources = ["quartz", "feldspar", "mica"]
+  }
+}

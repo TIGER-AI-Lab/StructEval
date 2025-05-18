@@ -1,0 +1,30 @@
+
+<museum>
+  <name>Museum of Imaginary Artifacts</name>
+  <location>
+    <city>Eldoria</city>
+    <country>Fantasia</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Chrono Compass</title>
+      <year>1823</year>
+      <artists>
+        <artist>
+          <name>Lira Voss</name>
+          <nationality>Eldorian</nationality>
+        </artist>
+      </artists>
+    </exhibit>
+    <exhibit>
+      <title>Whispering Lantern</title>
+      <year>1901</year>
+      <artists>
+        <artist>
+          <name>Tomaso Finch</name>
+          <nationality>Fantastian</nationality>
+        </artist>
+      </artists>
+    </exhibit>
+  </exhibits>
+</museum>

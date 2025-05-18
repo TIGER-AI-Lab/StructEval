@@ -1,0 +1,6 @@
+
+"species","planet","discovery_year","average_height_cm","habitat_type","diet","number_of_limbs","primary_color","notable_ability","is_endangered","average_lifespan_years","first_contact_date","planetary_region","favorite_food","language_family"
+"Species A","Planet A",2020,150,"terrestrial","omnivore",4,"blue","bioluminescence",false,10,"2022-01-01","Northern Hemisphere","Fruit","Gleebian"
+"Species B","Planet B",2015,80,"aerial","carnivore",2,"red","telepathy",true,5,"2020-06-15","Southern Hemisphere","Insects","Zorvian"
+"Species C","Planet C",2010,120,"subterranean","herbivore",6,"green","none",false,15,"2018-03-20","Eastern Hemisphere","Roots","N'Terian"
+"Species D","Planet D",2012,100,"aquatic","omnivore",4,"blue","none",true,8,"2019-09-10","Western Hemisphere","Fish","K'Tharonian"

@@ -1,0 +1,41 @@
+
+{
+  "museum": {
+    "name": "The Imaginarium of Dreams",
+    "location": {
+      "city": "Dreamsville",
+      "country": "Utopia"
+    },
+    "established_year": 1985,
+    "director": {
+      "name": "Dr. Helena Morrow",
+      "tenure_years": 12
+    },
+    "departments": [
+      {
+        "name": "The Hall of Whimsical Art",
+        "head": "Professor Alistair Crowley",
+        "collections": [
+          {
+            "title": "The Enchanted Forest",
+            "year_acquired": 1990,
+            "artist": "L. F. Fantasia",
+            "medium": "Oil on canvas",
+            "on_display": true
+          },
+          {
+            "title": "The Celestial Dance",
+            "year_acquired": 1995,
+            "artist": "M. R. Dreamweaver",
+            "medium": "Mixed media",
+            "on_display": false
+          }
+        ]
+      }
+    ],
+    "opening_hours": {
+      "weekdays": "9:00 AM - 7:00 PM",
+      "weekends": "10:00 AM - 6:00 PM"
+    }
+  }
+}

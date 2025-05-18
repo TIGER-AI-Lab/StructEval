@@ -1,0 +1,28 @@
+event_name: Jazz Night
+date: 2024-09-15
+location:
+  venue: Blue Note
+  city: New York
+  country: USA
+performers:
+  - name: Ella Fitzgerald
+    instrument: Vocals
+    setlist:
+      - "Summertime"
+      - "Misty"
+  - name: Miles Davis
+    instrument: Trumpet
+    setlist:
+      - "So What"
+      - "Freddie Freeloader"
+schedule:
+  doors_open: 19:00
+  show_start: 20:00
+  show_end: 23:00
+tickets:
+  price: 75
+  sections:
+    - name: Balcony
+      available: 30
+    - name: Orchestra
+      available: 12

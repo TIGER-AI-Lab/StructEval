@@ -1,0 +1,7 @@
+PlanetName,DistanceFromStar_ly,DiscoveryDate,AtmosphereType,NumberOfMoons,IsHabitable
+Aurelia,12.5,2083-03-14,Nitrogen-Oxygen,2,true
+Virella,27.8,2075-11-02,Carbon Dioxide,0,false
+Thalassa,9.4,2091-07-22,Hydrogen-Helium,5,false
+Zephyra,15.2,2100-01-09,Methane,1,true
+Orionis,33.6,2069-05-30,Ammonia,3,false
+Cerulia,18.9,2089-12-18,Oxygen-Rich,4,true

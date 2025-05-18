@@ -1,0 +1,42 @@
+
+galacticZoo:
+  name: Zyphron Intergalactic Menagerie
+  location:
+    planet: Zyphron-5
+    galaxy: Andromeda
+    coordinates:
+      x: 9823.44
+      y: 11092.77
+  established: 3042
+  curator: Dr. Qilnax Vort
+  speciesCatalog:
+  - speciesName: Luminoctopus
+    origin: Nebula 7
+    diet: Plasma
+    enclosure:
+      size: Large
+      atmosphere: Ionized gas
+      features:
+        - Floating rocks
+        - UV pools
+  - speciesName: Glimmerbeetle
+    origin: Asteroid Belt 42
+    diet: Crystal pollen
+    enclosure:
+      size: Medium
+      atmosphere: Thin oxygen
+      features:
+        - Bioluminescent plants
+        - Cave tunnels
+  openingHours:
+    monday: 09:00-18:00
+    tuesday: 09:00-18:00
+    wednesday: 09:00-18:00
+    thursday: 09:00-18:00
+    friday: 09:00-21:00
+    saturday: 10:00-22:00
+    sunday: 10:00-20:00
+  visitorFacilities:
+    cafeteria: true
+    hologramTours: true
+    souvenirShop: false

@@ -1,0 +1,24 @@
+artifact:
+  name: "Golden Idol of Xibalba"
+  origin:
+    civilization: "Mayan"
+    era: "Classic Period"
+  materials:
+    primary: "Gold"
+    secondary: "Jade"
+  dimensions:
+    height_cm: 25.4
+    width_cm: 12.7
+    depth_cm: 10.2
+  features:
+    - description: "Intricate carvings depicting feathered serpent deity."
+      type: "Engraving"
+    - description: "Hollow interior potentially used for storing ritualistic substances."
+      type: "Chamber"
+  provenance:
+    previous_owners:
+      - name: "British Museum"
+        acquisition_year: 1905
+    discovery:
+      location: "Tikal, Guatemala"
+      date: "1892-03-15"

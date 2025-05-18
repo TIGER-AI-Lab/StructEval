@@ -1,0 +1,34 @@
+[artifact]
+name = "The Bronze Spear of Sparta"
+origin = "Ancient Greece"
+discovery_date = "1902-06-15"
+
+[artifact.materials]
+primary = "bronze"
+secondary = "wood"
+
+[artifact.dimensions]
+height_cm = 150.0
+width_cm = 5.0
+depth_cm = 3.0
+
+[[artifact.inscriptions.list]]
+language = "Ancient Greek"
+translation = "To the glory of Sparta"
+location_on_artifact = "shaft"
+
+[[artifact.inscriptions.list]]
+language = "Latin"
+translation = "Victory and Honor"
+location_on_artifact = "blade"
+
+[artifact.exhibit]
+current_location = "National Archaeological Museum, Athens"
+
+[[artifact.exhibit.previous_locations]]
+museum = "British Museum"
+year_range = "1920â1950"
+
+[[artifact.exhibit.previous_locations]]
+museum = "Louvre Museum"
+year_range = "1951â1980"

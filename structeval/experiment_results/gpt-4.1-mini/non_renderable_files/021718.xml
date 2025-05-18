@@ -1,0 +1,72 @@
+
+<planets>
+  <planet>
+    <name>Zephyria</name>
+    <type>Gas Giant</type>
+    <discovery>
+      <year>3099</year>
+      <method>Transit</method>
+    </discovery>
+    <orbit>
+      <semi_major_axis>5.2</semi_major_axis>
+      <eccentricity>0.03</eccentricity>
+    </orbit>
+    <atmosphere>
+      <composition>
+        <gas>
+          <name>Hydrogen</name>
+          <percentage>88</percentage>
+        </gas>
+        <gas>
+          <name>Helium</name>
+          <percentage>11</percentage>
+        </gas>
+      </composition>
+      <pressure>120</pressure>
+    </atmosphere>
+    <moons>
+      <moon>
+        <name>Aurelia</name>
+        <radius_km>1200</radius_km>
+        <discovered_by>Dr. Lune</discovered_by>
+      </moon>
+      <moon>
+        <name>Boreal</name>
+        <radius_km>950</radius_km>
+        <discovered_by>Prof. Solis</discovered_by>
+      </moon>
+    </moons>
+  </planet>
+  <planet>
+    <name>Thalassa</name>
+    <type>Oceanic</type>
+    <discovery>
+      <year>3120</year>
+      <method>Direct Imaging</method>
+    </discovery>
+    <orbit>
+      <semi_major_axis>1.8</semi_major_axis>
+      <eccentricity>0.05</eccentricity>
+    </orbit>
+    <atmosphere>
+      <composition>
+        <gas>
+          <name>Nitrogen</name>
+          <percentage>78</percentage>
+        </gas>
+        <gas>
+          <name>Oxygen</name>
+          <percentage>20</percentage>
+        </gas>
+      </composition>
+      <pressure>101</pressure>
+    </atmosphere>
+    <moons>
+      <moon>
+        <name>Nereid</name>
+        <radius_km>400</radius_km>
+        <discovered_by>Dr. Mare</discovered_by>
+      </moon>
+    </moons>
+  </planet>
+</planets>

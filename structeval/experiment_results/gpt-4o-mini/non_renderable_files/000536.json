@@ -1,0 +1,36 @@
+
+{
+  "ecosystem": {
+    "name": "Verdant Valley",
+    "location": {
+      "latitude": 34.0522,
+      "longitude": -118.2437
+    },
+    "climate": {
+      "type": "temperate",
+      "average_temperature_celsius": 18
+    },
+    "dominant_species": "Oak Tree",
+    "plant_species": [
+      {
+        "scientific_name": "Quercus robur",
+        "common_name": "English Oak",
+        "population_estimate": 15000
+      }
+    ],
+    "animal_species": [
+      {
+        "scientific_name": "Ursus americanus",
+        "conservation_status": "least concern",
+        "average_lifespan_years": 20,
+        "diet": "omnivore"
+      }
+    ],
+    "environmental_threats": [
+      {
+        "type": "habitat loss",
+        "severity": "high"
+      }
+    ]
+  }
+}

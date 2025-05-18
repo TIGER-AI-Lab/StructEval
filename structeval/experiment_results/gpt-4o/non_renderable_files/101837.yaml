@@ -1,0 +1,29 @@
+spaceship:
+  name: "Celestial Wanderer"
+  model: "XG-9000"
+  in_service: true
+  crew:
+    captain: "Lira Solis"
+    pilot: "Jax Vorn"
+    engineers:
+      - name: "Mira Tann"
+        rank: "Chief Engineer"
+      - name: "Oren Pike"
+        rank: "Junior Engineer"
+  cargo:
+    - type: "Quantum Batteries"
+      weight_kg: 1200
+    - type: "Alien Artifacts"
+      weight_kg: 500
+  missions:
+    completed: 12
+    failed: 1
+  specs:
+    length_m: 72.5
+    mass_tonnes: 340.7
+    hyperdrive_rating: 2.1
+  logbook:
+    - date: "3024-03-14"
+      event: "Departed from Vega Station"
+    - date: "3024-03-18"
+      event: "Encountered cosmic storm"

@@ -1,0 +1,17 @@
+
+galaxy:
+  name: Andromeda
+  starSystems:
+    starSystem:
+      - name: Alpha Prime
+        planets:
+          planet:
+            - name: Xerion
+              habitability: habitable
+            - name: Vortax
+              habitability: inhospitable
+      - name: Beta Minor
+        planets:
+          planet:
+            - name: Solara
+              habitability: habitable

@@ -1,0 +1,24 @@
+
+artifact:
+  name: "The Serpent's Eye Amulet"
+  discovery_date: "1923-07-15"
+  origin:
+    civilization: "Aztecs"
+    era: "Late Postclassic Period"
+  materials:
+    - type: "Obsidian"
+      provenance: "Volcanic regions near Lake Texcoco"
+    - type: "Turquoise"
+      provenance: "Northern Mexico mines"
+  dimensions:
+    height_cm: 12.5
+    width_cm: 7.8
+    depth_cm: 2.3
+  features:
+    - description: "Central carved serpent motif with intricate scale details"
+      condition: "Well-preserved with minor surface abrasions"
+    - description: "Inlaid turquoise stones forming the serpent's eye"
+      condition: "One stone missing, others intact and vibrant"
+  current_location:
+    museum: "National Museum of Anthropology, Mexico City"
+    display_case: "Case 14B"

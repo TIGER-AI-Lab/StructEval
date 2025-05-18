@@ -1,0 +1,51 @@
+
+<creatures>
+  <creature>
+    <CreatureName>Glitterfin</CreatureName>
+    <Habitat>Crystal Lake</Habitat>
+    <DiscoveryDate>2017-05-12</DiscoveryDate>
+    <NumberOfLegs>0</NumberOfLegs>
+    <IsNocturnal>false</IsNocturnal>
+    <AverageWingspanCm>24.5</AverageWingspanCm>
+  </creature>
+  <creature>
+    <CreatureName>Velvet Mothbear</CreatureName>
+    <Habitat>Velvet Woods</Habitat>
+    <DiscoveryDate>2009-11-28</DiscoveryDate>
+    <NumberOfLegs>4</NumberOfLegs>
+    <IsNocturnal>true</IsNocturnal>
+    <AverageWingspanCm>75.0</AverageWingspanCm>
+  </creature>
+  <creature>
+    <CreatureName>Sunstripe Gecko</CreatureName>
+    <Habitat>Golden Dunes</Habitat>
+    <DiscoveryDate>2012-03-14</DiscoveryDate>
+    <NumberOfLegs>4</NumberOfLegs>
+    <IsNocturnal>false</IsNocturnal>
+    <AverageWingspanCm>0.0</AverageWingspanCm>
+  </creature>
+  <creature>
+    <CreatureName>Azure Puffowl</CreatureName>
+    <Habitat>Mist Valley</Habitat>
+    <DiscoveryDate>2015-08-07</DiscoveryDate>
+    <NumberOfLegs>2</NumberOfLegs>
+    <IsNocturnal>true</IsNocturnal>
+    <AverageWingspanCm>120.3</AverageWingspanCm>
+  </creature>
+  <creature>
+    <CreatureName>Ironback Mole</CreatureName>
+    <Habitat>Ironclad Hills</Habitat>
+    <DiscoveryDate>2018-01-21</DiscoveryDate>
+    <NumberOfLegs>6</NumberOfLegs>
+    <IsNocturnal>true</IsNocturnal>
+    <AverageWingspanCm>0.0</AverageWingspanCm>
+  </creature>
+  <creature>
+    <CreatureName>Twilight Skimmer</CreatureName>
+    <Habitat>Shimmer Marsh</Habitat>
+    <DiscoveryDate>2020-09-30</DiscoveryDate>
+    <NumberOfLegs>8</NumberOfLegs>
+    <IsNocturnal>false</IsNocturnal>
+    <AverageWingspanCm>32.8</AverageWingspanCm>
+  </creature>
+</creatures>

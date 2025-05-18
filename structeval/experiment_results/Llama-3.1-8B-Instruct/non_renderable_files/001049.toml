@@ -1,0 +1,33 @@
+
+title = "Saffron Risotto"
+
+[recipe]
+title = "Saffron Risotto"
+author = {
+  [name] = "John Doe"
+  [contact] = {
+    [email] = "john.doe@example.com"
+  }
+}
+cuisine = "Italian"
+servings = 4
+prep_time_minutes = 20
+cook_time_minutes = 30
+
+[[ingredients]]
+name = "Saffron threads"
+quantity = 1.5
+unit = "grams"
+
+[[ingredients]]
+name = "Arborio rice"
+quantity = 250
+unit = "grams"
+
+[[instructions]]
+step_number = 1
+description = "Heat the chicken broth in a separate pot and keep warm."
+
+[[instructions]]
+step_number = 2
+description = "In a large skillet, sautÃ© the Arborio rice in olive oil until lightly toasted."

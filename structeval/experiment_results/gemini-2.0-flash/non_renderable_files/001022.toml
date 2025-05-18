@@ -1,0 +1,41 @@
+[artifact]
+name = "Rosetta Stone"
+origin = "Ancient Egypt"
+
+[artifact.discovery]
+year = 1799
+
+[artifact.discovery.location]
+country = "Egypt"
+site = "Rosetta"
+
+[[artifact.materials]]
+type = "Granodiorite"
+age_estimate = 2200
+
+[[artifact.materials]]
+type = "Ink"
+age_estimate = 2200
+
+[artifact.dimensions]
+height_cm = 112.3
+width_cm = 75.7
+
+[[artifact.inscriptions]]
+language = "Ancient Greek"
+content = "Text in Ancient Greek"
+deciphered = true
+
+[[artifact.inscriptions]]
+language = "Demotic"
+content = "Text in Demotic"
+deciphered = true
+
+[[artifact.inscriptions]]
+language = "Hieroglyphic"
+content = "Text in Hieroglyphic"
+deciphered = true
+
+[artifact.current_location]
+museum = "British Museum"
+acquisition_date = "1802-03-11"

@@ -1,0 +1,69 @@
+
+<recipe>
+  <title>Spicy Chickpea Stew</title>
+  <author>
+    <name>Maria Gonzalez</name>
+    <profileUrl>https://www.cookingwithmaria.com/profile</profileUrl>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Chickpeas</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Tomato Paste</name>
+      <quantity>3</quantity>
+      <unit>tablespoons</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Onion</name>
+      <quantity>1</quantity>
+      <unit>medium</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Garlic Cloves</name>
+      <quantity>2</quantity>
+      <unit>pieces</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Chili Powder</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+      <optional>true</optional>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <order>1</order>
+      <instruction>SautÃ© chopped onions and garlic in olive oil until translucent.</instruction>
+      <timer>
+        <seconds>300</seconds>
+      </timer>
+      <notes>Use medium heat to avoid burning the garlic.</notes>
+    </step>
+    <step>
+      <order>2</order>
+      <instruction>Add tomato paste and chili powder, cook for 2 minutes.</instruction>
+    </step>
+    <step>
+      <order>3</order>
+      <instruction>Stir in chickpeas and simmer with water for 20 minutes.</instruction>
+    </step>
+  </steps>
+  <metadata>
+    <cuisine>Mexican</cuisine>
+    <prepTimeMinutes>30</prepTimeMinutes>
+    <tags>
+      <tag>vegetarian</tag>
+      <tag>spicy</tag>
+    </tags>
+  </metadata>
+  <nutrition>
+    <calories>350</calories>
+  </nutrition>
+</recipe>

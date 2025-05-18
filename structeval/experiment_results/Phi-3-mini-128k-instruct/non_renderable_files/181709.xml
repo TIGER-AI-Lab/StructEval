@@ -1,0 +1,38 @@
+
+  <galacticCarnival>
+    <attractions>
+      <attraction>
+        <name>Nebula Ferris Wheel</name>
+        <type>Ride</type>
+        <speciesAllowed>
+          <species>
+            <species>Human</species>
+            <species>Andromedan</species>
+            <species>Cygnian</species>
+          </species>
+        </speciesAllowed>
+      </attraction>
+      <attraction>
+        <name>Gravity Maze</name>
+        <type>Game</type>
+        <speciesAllowed>
+          <species>
+            <species>Human</species>
+            <species>Martian</species>
+          </species>
+        </speciesAllowed>
+      </attraction>
+    </attractions>
+    <foodCourt>
+      <stalls>
+        <stall>
+          <name>Astro Bites</name>
+          <specialty>Meteorite Ice Cream</specialty>
+        </stall>
+        <stall>
+          <name>Saturn Sizzlers</name>
+          <specialty>Comet Kebabs</specialty>
+        </stall>
+      </stalls>
+    </foodCourt>
+  </galacticCarnival>

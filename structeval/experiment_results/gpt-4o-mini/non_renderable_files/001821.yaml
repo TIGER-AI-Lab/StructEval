@@ -1,0 +1,26 @@
+
+expedition:
+  mission_name: "Deep Blue Exploration"
+  launch_date: "2023-11-15T08:00:00Z"
+  duration_days: 30
+  crew:
+    - name: "Dr. Emily Carter"
+      role: "Chief Oceanographer"
+      age: 34
+      skills:
+        - "Marine Biology"
+        - "Data Analysis"
+        - "Submersible Operation"
+    - name: "Captain James O'Neill"
+      role: "Submersible Pilot"
+      age: 42
+      skills:
+        - "Navigation"
+        - "Emergency Response"
+        - "Mechanical Repair"
+  cargo:
+    manifest_id: "CARGO-2023-001"
+    items:
+      - item_name: "Oxygen Tanks"
+        quantity: 10
+        weight_kg: 150.0

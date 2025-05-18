@@ -1,0 +1,73 @@
+<recipe>
+    <title>Chocolate Lava Cake</title>
+    <author>
+        <name>Chef Julia</name>
+        <contact>julia@example.com</contact>
+    </author>
+    <ingredients>
+        <item>
+            <name>Dark chocolate</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Unsalted butter</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Sugar</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Eggs</name>
+            <quantity>3</quantity>
+            <unit>pieces</unit>
+        </item>
+        <item>
+            <name>Vanilla extract</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </item>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Preheat the oven to 425Â°F (220Â°C). Grease four ramekins and dust them with cocoa powder.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>Oven, ramekins, cocoa powder</tools>
+        </step>
+        <step>
+            <description>Melt the chocolate and butter together in a heatproof bowl set over a pot of simmering water. Stir until smooth.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>Heatproof bowl, pot, spatula</tools>
+        </step>
+        <step>
+            <description>Whisk the sugar and eggs together in a large bowl until pale and thick. Stir in the vanilla extract and then the melted chocolate mixture.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>Whisk, large bowl</tools>
+        </step>
+        <step>
+            <description>Divide the batter evenly among the prepared ramekins. Bake for 12 minutes or until the edges are firm but the center is soft.</description>
+            <duration_minutes>12</duration_minutes>
+            <tools>Timer</tools>
+        </step>
+        <step>
+            <description>Allow the cakes to cool for 1 minute, then invert onto serving plates. Serve immediately with a dusting of powdered sugar.</description>
+            <duration_minutes>1</duration_minutes>
+            <tools>Serving plates, powdered sugar</tools>
+        </step>
+    </steps>
+    <metadata>
+        <cuisine>Dessert</cuisine>
+        <difficulty>Medium</difficulty>
+        <servings>4</servings>
+        <prep_time>PT15M</prep_time>
+        <cook_time>PT12M</cook_time>
+    </metadata>
+    <nutrition>
+        <calories>250</calories>
+        <fat>15</fat>
+        <protein>5</protein>
+    </nutrition>
+</recipe>

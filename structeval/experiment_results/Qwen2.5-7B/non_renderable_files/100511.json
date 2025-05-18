@@ -1,0 +1,27 @@
+
+{
+  "planet": {
+    "name": "Zephyra",
+    "discovery_year": 2134,
+    "type": "Gas Giant",
+    "orbital_period_days": 482.5,
+    "moons": ["Aurelia", "Thalos", "Vireen"],
+    "atmosphere": {
+      "composition": ["hydrogen", "helium", "methane"],
+      "pressure": 5.6,
+      "has_clouds": true
+    },
+    "missions": [
+      {
+        "name": "Aurora I",
+        "year": 2150,
+        "crew": ["Dr. Lin", "Cmdr. Patel"]
+      },
+      {
+        "name": "Stellar Voyager",
+        "year": 2162,
+        "crew": ["Lt. Vega", "Dr. Sato", "Eng. Brooks"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+artifact = { name = "Golden Goblet of Ur" }
+artifact.origin = { civilization = "Sumerian", era = "Early Dynastic Period", location = "Ur" }
+artifact.materials = { primary = "Gold", secondary = "Lapis Lazuli" }
+artifact.materials.decorations = [ { type = "Inlay", color = "Blue" }, { type = "Engraving", color = "Gold" } ]
+artifact.dimensions = { height_cm = 10.0, width_cm = 5.0, weight_kg = 0.2 }
+artifact.inscriptions = [ { language = "Sumerian Cuneiform", text = "Dedicated to King Shulgi" }, { language = "Akkadian Cuneiform", text = "Gift from the city of Kish" } ]
+artifact.current_location = { museum = "British Museum", exhibit_number = "123456" }

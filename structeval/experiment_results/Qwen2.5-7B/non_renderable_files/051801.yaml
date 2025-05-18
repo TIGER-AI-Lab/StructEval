@@ -1,0 +1,49 @@
+
+import json
+import yaml
+
+json_data = '''
+{
+  "planet_name": "Zyphora Prime",
+  "system": {
+    "star_name": "Vexilon",
+    "distance_from_earth_ly": 3400,
+    "planets": [
+      {
+        "name": "Zyphora Prime",
+        "type": "Terrestrial",
+        "moons": 2
+      },
+      {
+        "name": "Zyphora Minor",
+        "type": "Gas Giant",
+        "moons": 5
+      }
+    ]
+  },
+  "inhabitants": {
+    "primary_species": "Luminari",
+    "population": 78000000,
+    "languages": ["Lumish", "Galcom"]
+  },
+  "landmarks": [
+    {
+      "name": "Crystal Spires",
+      "type": "Natural"
+    },
+    {
+      "name": "The Obsidian Citadel",
+      "type": "Artificial"
+    }
+  ],
+  "climate": {
+    "average_temp_c": 27,
+    "weather_patterns": ["Bioluminescent Storms", "Aurora Rains"]
+  }
+}
+'''
+
+data = json.loads(json_data)
+yaml_data = yaml.dump(data)
+
+print(yaml_data)

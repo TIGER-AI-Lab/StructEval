@@ -1,0 +1,7 @@
+
+book_id,title,author_name,author_birth_year,genre,publication_year,publisher_name,publisher_country,pages,language,series_name,series_number,isbn_13,average_rating,review_count
+1,The Enchanted Forest,Jane Doe,1980,Fantasy,2020,Fantasy Press,USA,350,English,The Enchanted Series,1,978-3-16-148410-0,4.5,150
+2,The Lost City,John Smith,1975,Adventure,2018,Adventure Books,UK,400,English,,,"978-1-23-456789-7",4.0,200
+3,Stars Beyond,Emily Johnson,1990,Science Fiction,2021,Future Publishing,Canada,300,English,Galactic Chronicles,2,978-0-12-345678-9,4.8,300
+4,Whispers of the Night,Michael Brown,1985,Horror,2019,Nightmare Press,Australia,250,English,,,"978-1-23-456789-0",3.9,100
+5,The Time Traveler's Dilemma,Sarah White,1982,Science Fiction,2022,Time Warp Publishing,USA,320,English,Time Travel Series,1,978-0-12-345679-6,4.7,250

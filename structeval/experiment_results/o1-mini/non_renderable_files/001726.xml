@@ -1,0 +1,110 @@
+<recipe>
+    <title>Spicy Mango Chicken</title>
+    <author>
+        <name>Emily Thompson</name>
+        <contact>
+            <email>emily.thompson@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Chicken Breast</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Mango</name>
+            <quantity>2</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Red Chili Powder</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Garlic Cloves</name>
+            <quantity>3</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Olive Oil</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Lime Juice</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Fresh Cilantro</name>
+            <quantity>Â¼</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>to taste</quantity>
+            <unit></unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <instruction>Marinate the chicken breasts with salt, red chili powder, and lime juice.</instruction>
+            <duration>PT15M</duration>
+            <tip>Let the chicken marinate for at least 30 minutes for deeper flavor.</tip>
+        </step>
+        <step>
+            <instruction>Heat olive oil in a skillet over medium heat.</instruction>
+            <duration>PT2M</duration>
+            <tip>Ensure the oil is hot before adding the chicken to prevent sticking.</tip>
+        </step>
+        <step>
+            <instruction>Cook the marinated chicken until fully cooked and golden brown.</instruction>
+            <duration>PT10M</duration>
+            <tip>Do not overcrowd the pan; cook in batches if necessary.</tip>
+        </step>
+        <step>
+            <instruction>Blend the mango and garlic cloves to make a smooth puree.</instruction>
+            <duration>PT5M</duration>
+            <tip>Add a splash of water if the mixture is too thick.</tip>
+        </step>
+        <step>
+            <instruction>Pour the mango puree over the cooked chicken and simmer for 5 minutes.</instruction>
+            <duration>PT5M</duration>
+            <tip>Stir gently to coat the chicken evenly with the sauce.</tip>
+        </step>
+        <step>
+            <instruction>Garnish with fresh cilantro before serving.</instruction>
+            <duration>PT1M</duration>
+            <tip>Add a squeeze of lime for extra zest.</tip>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>350</calories>
+        <fat>15</fat>
+        <protein>40</protein>
+        <carbohydrates>10</carbohydrates>
+    </nutrition>
+    <metadata>
+        <cuisine>Fusion</cuisine>
+        <difficulty>medium</difficulty>
+        <tags>
+            <tag>
+                <label>chicken</label>
+            </tag>
+            <tag>
+                <label>spicy</label>
+            </tag>
+            <tag>
+                <label>mango</label>
+            </tag>
+            <tag>
+                <label>quick</label>
+            </tag>
+            <tag>
+                <label>weeknight dinner</label>
+            </tag>
+        </tags>
+    </metadata>
+</recipe>

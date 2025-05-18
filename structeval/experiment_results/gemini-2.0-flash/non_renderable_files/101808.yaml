@@ -1,0 +1,31 @@
+space_station:
+  name: "Aurora Gateway"
+  location:
+    planet: "Neptune"
+    region: "Outer Orbit"
+  modules:
+    - id: "M-01"
+      type: "Habitation"
+      crew_capacity: 12
+      equipment:
+        - "Oxygen Recycler"
+        - "Zero-G Gym"
+    - id: "M-02"
+      type: "Research"
+      crew_capacity: 8
+      equipment:
+        - "Spectrometer"
+        - "Gene Lab"
+  operational:
+    status: "Active"
+    since: 2178
+  visitors:
+    - name: "Zylar"
+      species: "Andromedan"
+      purpose: "Diplomatic"
+    - name: "Dr. Mira Chen"
+      species: "Human"
+      purpose: "Research"
+  energy:
+    source: "Fusion"
+    backup: "Solar"

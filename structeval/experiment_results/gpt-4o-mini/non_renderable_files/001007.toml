@@ -1,0 +1,36 @@
+
+robot = { 
+    model = "RoboX-3000",
+    serial_number = "RX3000-123456",
+    manufacturer = { 
+        name = "RoboTech Industries",
+        country = "USA"
+    },
+    operating_system = { 
+        version = "1.5.2",
+        release_date = "2023-01-15"
+    },
+    sensors = [
+        { 
+            type = "lidar",
+            range_meters = 100.0,
+            calibrated = true
+        },
+        { 
+            type = "camera",
+            range_meters = 50.0,
+            calibrated = false
+        }
+    ],
+    actuators = [
+        { 
+            name = "gripper",
+            max_force_newtons = 150.0,
+            status = "active"
+        }
+    ],
+    maintenance = { 
+        last_service = "2023-09-01",
+        next_due = "2024-03-01"
+    }
+}

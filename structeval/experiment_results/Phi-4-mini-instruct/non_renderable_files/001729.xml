@@ -1,0 +1,33 @@
+<creature>
+  <name>Zyphloran</name>
+  <species>Exoformis</species>
+  <origin>
+    <planet>Zephyria</planet>
+    <galaxy>Andromeda</galaxy>
+  </origin>
+  <physiology>
+    <height>250</height>
+    <weight>75</weight>
+    <limbs>8</limbs>
+  </physiology>
+  <abilities>
+    <ability>
+      <name>Quantum Displacement</name>
+      <powerLevel>85</powerLevel>
+      <type>psychic</type>
+      <cooldownSeconds>30</cooldownSeconds>
+    </ability>
+  </abilities>
+  <equipment>
+    <item>
+      <itemName>Stellar Blade</itemName>
+      <rarity>legendary</rarity>
+      <acquiredFrom>Crystalline Caverns</acquiredFrom>
+      <enchantments>
+        <enchantment>
+          <effect>Grants the wielder the ability to phase through solid matter</effect>
+        </enchantment>
+      </enchantments>
+    </item>
+  </equipment>
+</creature>

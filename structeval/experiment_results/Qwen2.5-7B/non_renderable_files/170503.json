@@ -1,0 +1,38 @@
+
+import xmltodict
+import json
+
+xml_data = """
+<galaxy>
+  <name>Andromeda</name>
+  <planets>
+    <planet>
+      <planetName>Xebulon</planetName>
+      <moons>
+        <moon>
+          <moonName>Alpha</moonName>
+          <moonDiameter>3200</moonDiameter>
+        </moon>
+      </moons>
+    </planet>
+    <planet>
+      <planetName>Zephyria</planetName>
+      <moons>
+        <moon>
+          <moonName>Beta</moonName>
+          <moonDiameter>2100</moonDiameter>
+        </moon>
+        <moon>
+          <moonName>Gamma</moonName>
+          <moonDiameter>1800</moonDiameter>
+        </moon>
+      </moons>
+    </planet>
+  </planets>
+</galaxy>
+"""
+
+data_dict = xmltodict.parse(xml_data)
+json_data = json.dumps(data_dict)
+
+print(json_data)

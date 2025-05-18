@@ -1,0 +1,66 @@
+
+<planets>
+  <planet>
+    <name>Jovion</name>
+    <distance_from_sun_au>5.2</distance_from_sun_au>
+    <discovery>
+      <year>1610</year>
+      <discovered_by>Galileo Galilei</discovered_by>
+      <missions>
+        <mission>
+          <name>Voyager 1</name>
+          <year>1979</year>
+        </mission>
+        <mission>
+          <name>Juno</name>
+          <year>2016</year>
+        </mission>
+      </missions>
+    </discovery>
+    <missions_summary>
+        <mission_name>Voyager 1</mission_name>
+        <mission_year>1979</mission_year>
+        <mission_name>Juno</mission_name>
+        <mission_year>2016</mission_year>
+    </missions_summary>
+    <atmosphere>
+      <pressure>1.0</pressure>
+      <composition>
+        <gas>
+          <name>Hydrogen</name>
+          <percentage>89.8</percentage>
+        </gas>
+        <gas>
+          <name>Helium</name>
+          <percentage>10.2</percentage>
+        </gas>
+      </composition>
+    </atmosphere>
+    <atmosphere_summary>
+        <gas_1>Hydrogen</gas_1>
+        <percentage_1>89.8</percentage_1>
+        <gas_2>Helium</gas_2>
+        <percentage_2>10.2</percentage_2>
+    </atmosphere_summary>
+    <moons>
+      <moon>
+        <name>Io</name>
+        <diameter_km>3643</diameter_km>
+        <discovered>1610</discovered>
+      </moon>
+      <moon>
+        <name>Europa</name>
+        <diameter_km>3122</diameter_km>
+        <discovered>1610</discovered>
+      </moon>
+    </moons>
+    <moons_summary>
+        <moon_name>Io</moon_name>
+        <diameter_km>3643</diameter_km>
+        <discovered>1610</discovered>
+        <moon_name>Europa</moon_name>
+        <diameter_km>3122</diameter_km>
+        <discovered>1610</discovered>
+    </moons_summary>
+  </planet>
+</planets>

@@ -1,0 +1,32 @@
+<planet>
+  <name>Exonaris</name>
+  <type>Terrestrial</type>
+  <orbitalPeriod>687</orbitalPeriod>
+  <discovery year="2025">
+    <method>Transit</method>
+    <discoverer>Dr. Helena M. Voss</discoverer>
+  </discovery>
+  <atmosphere>
+    <composition>Nitrogen, Oxygen, Argon</composition>
+    <pressure>1.2</pressure>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>Exonaris I</name>
+      <diameter>3,500</diameter>
+      <hasSubsurfaceOcean>true</hasSubsurfaceOcean>
+    </moon>
+    <moon>
+      <name>Exonaris II</name>
+      <diameter>2,200</diameter>
+      <hasSubsurfaceOcean>false</hasSubsurfaceOcean>
+    </moon>
+  </moons>
+  <rings>
+    <ring>
+      <width>50,000</width>
+      <composition>Ice and Rock</composition>
+      <hasRings>true</hasRings>
+    </ring>
+  </rings>
+</planet>

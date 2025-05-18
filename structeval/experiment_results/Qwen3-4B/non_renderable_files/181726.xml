@@ -1,0 +1,25 @@
+
+<galacticZoo>
+  <species>
+    <name>Quazarion</name>
+    <originPlanet>Zenthara</originPlanet>
+    <diet>Plasma</diet>
+    <habitats>
+      <habitatType>
+        <habitat>Nebula Chamber</habitat>
+        <habitat>Ion Lake</habitat>
+      </habitatType>
+    </habitats>
+  </species>
+  <species>
+    <name>Lumifern</name>
+    <originPlanet>Sylvax</originPlanet>
+    <diet>Photosynthesis</diet>
+    <habitats>
+      <habitatType>
+        <habitat>Crystal Forest</habitat>
+        <habitat>Luminous Meadow</habitat>
+      </habitatType>
+    </habitats>
+  </species>
+</galacticZoo>

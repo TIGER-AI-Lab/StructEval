@@ -1,0 +1,41 @@
+{
+  "puzzle": {
+    "title": "The Mysterious Numbers",
+    "description": "A logic puzzle involving a sequence of numbers with a hidden pattern.",
+    "difficulty": {
+      "level": "medium",
+      "estimated_time_minutes": 15
+    },
+    "author": {
+      "name": "Alex Riddle",
+      "contact": {
+        "email": "alex.riddle@puzzleworld.com",
+        "website": "http://www.puzzleworld.com"
+      }
+    },
+    "hints": [
+      {
+        "text": "The first number in the sequence is the sum of the previous two numbers.",
+        "relevance_score": 0.9
+      },
+      {
+        "text": "The sequence starts with 1 and 1.",
+        "relevance_score": 0.8
+      }
+    ],
+    "steps": [
+      {
+        "instruction": "Identify the pattern in the sequence.",
+        "expected_answer": "Each number is the sum of the two preceding numbers."
+      },
+      {
+        "instruction": "Find the fifth number in the sequence.",
+        "expected_answer": "5"
+      }
+    ],
+    "metadata": {
+      "tags": ["number sequence", "pattern recognition", "logic puzzle"],
+      "date_created": "2023-04-01T10:00:00Z"
+    }
+  }
+}

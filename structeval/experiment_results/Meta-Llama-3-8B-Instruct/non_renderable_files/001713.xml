@@ -1,0 +1,41 @@
+
+<recipe>
+    <title>Creative Recipe</title>
+    <author>
+        <name>John Doe</name>
+        <id>1234567890</id>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Primary Ingredient</name>
+            <quantity>2</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Secondary Ingredient</name>
+            <quantity>1</quantity>
+            <unit>cups</unit>
+            <optional>false</optional>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Step 1 Description</description>
+            <duration_minutes>10</duration_minutes>
+        </step>
+        <step>
+            <description>Step 2 Description</description>
+            <duration_minutes>15</duration_minutes>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>500</calories>
+        <fat_grams>20</fat_grams>
+        <protein_grams>30</protein_grams>
+    </nutrition>
+    <tags>
+        <tag>Category 1</tag>
+        <tag>Category 2</tag>
+    </tags>
+</recipe>

@@ -1,0 +1,40 @@
+[expedition]
+name = "Ares VI"
+launch_date = "2042-08-24"
+
+  [expedition.destination]
+  planet = "Mars"
+
+    [expedition.destination.coordinates]
+    latitude = 4.5
+    longitude = 137.3
+
+  [[expedition.crew]]
+  name = "Commander Eva Rostova"
+  role = "Commander"
+  age = 42
+  certifications = ["Pilot", "Geologist", "Medical Officer"]
+
+  [[expedition.crew]]
+  name = "Dr. Jian Li"
+  role = "Chief Science Officer"
+  age = 35
+  certifications = ["Astrophysics", "Exobiology"]
+
+  [[expedition.crew]]
+  name = "Jax"
+  role = "Engineer"
+  age = 28
+  certifications = ["Mechanical Engineering", "Electrical Engineering"]
+
+  [[expedition.cargo]]
+  item = "Rover"
+  quantity = 2
+
+  [[expedition.cargo]]
+  item = "Habitat Modules"
+  quantity = 4
+
+  [[expedition.cargo]]
+  item = "Food Supplies (Metric Tons)"
+  quantity = 15

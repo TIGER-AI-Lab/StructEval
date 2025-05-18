@@ -1,0 +1,4 @@
+artifact_id,artifact_name,artifact_type,discovery_site,discovery_country,discovery_year,estimated_age_years,material,current_location,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,condition_status,associated_culture,notable_features
+A1234,Terracotta Warrior,Statue,Xi'an,China,1974,2100,clay,The British Museum,120,120,120,restored,Ancient China,Intricate battle scenes and inscriptions
+A5678,Mask of Agamemnon,Mask,Mycenae,Greece,1977,3200,bronze,The National Archaeological Museum of Athens,30,30,30,restored,Mycenaean Civilization,Gold leaf and precious stones
+A91011,Venus of Willendorf,Statue,Willendorf,Austria,1908,23000,stone,MusÃ©e d'Art et d'Histoire,20,20,20,restored,Paleolithic,Carved with exaggerated female features

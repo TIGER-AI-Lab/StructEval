@@ -1,0 +1,56 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "museum": {
+    "name": "Museum of Imaginary Technology",
+    "location": {
+      "city": "Cloudville",
+      "country": "Nowhere Land"
+    },
+    "exhibits": {
+      "exhibit": [
+        {
+          "title": "Perpetual Motion Machine",
+          "artist": "Dr. Loop",
+          "year": 1899
+        },
+        {
+          "title": "Invisible Painting",
+          "artist": "S. Pectrum",
+          "year": 2021
+        }
+      ]
+    }
+  }
+}
+'''
+
+data = json.loads(json_data)
+
+root = ET.Element("root")
+
+museum = ET.SubElement(root, "museum")
+name = ET.SubElement(museum, "name")
+name.text = data["museum"]["name"]
+
+location = ET.SubElement(museum, "location")
+city = ET.SubElement(location, "city")
+city.text = data["museum"]["location"]["city"]
+country = ET.SubElement(location, "country")
+country.text = data["museum"]["location"]["country"]
+
+exhibits = ET.SubElement(museum, "exhibits")
+for exhibit in data["museum"]["exhibits"]["exhibit"]:
+    exhibit_elem = ET.SubElement(exhibits, "exhibit")
+    title = ET.SubElement(exhibit_elem, "title")
+    title.text = exhibit["title"]
+    artist = ET.SubElement(exhibit_elem, "artist")
+    artist.text = exhibit["artist"]
+    year = ET.SubElement(exhibit_elem, "year")
+    year.text = str(exhibit["year"])
+
+tree = ET.ElementTree(root)
+tree.write("output.xml")

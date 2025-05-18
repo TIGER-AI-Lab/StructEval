@@ -1,0 +1,24 @@
+
+creature:
+  name: "Zyphorax the Celestial Guardian"
+  species: "Xelthorian"
+  origin:
+    planet: "Nexoria"
+    galaxy: "Andromeda"
+  abilities:
+    - type: "Telekinesis"
+      strength: 85
+    - type: "Time Manipulation"
+      strength: 90
+  companions:
+    - name: "Luna"
+      species: "Aetherian"
+      bond_level: 9
+    - name: "Grom"
+      species: "Terran"
+      bond_level: 7
+  artifacts:
+    - name: "Stellar Scepter"
+      power_level: 100
+    - name: "Chrono Crystal"
+      power_level: 95

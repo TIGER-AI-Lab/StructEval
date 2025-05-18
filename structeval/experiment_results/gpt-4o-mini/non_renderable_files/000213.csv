@@ -1,0 +1,3 @@
+
+artifact_id,artifact_name,discovery.site,discovery.country,discovery.year,discovery.method,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.current_status,condition.restoration_history,significance.cultural_importance,significance.estimated_value_usd
+A12345,Ancient Vase,Site of Pompeii,Italy,2020,Excavation,Clay,Paint,30,20,15,intact,,Symbol of Roman daily life,15000

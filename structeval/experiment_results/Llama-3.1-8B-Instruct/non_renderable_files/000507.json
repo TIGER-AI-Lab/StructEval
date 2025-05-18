@@ -1,0 +1,41 @@
+
+{
+  "mysteryBox": {
+    "name": "The Celestial Enigma",
+    "origin": "Ancient Astral Civilization",
+    "discovery": {
+      "date": "2022-01-01T00:00:00Z",
+      "location": "Lost City of Eldarath"
+    },
+    "contents": [
+      {
+        "itemName": "Stellar Crystal",
+        "itemType": "Magical Artifact",
+        "properties": {
+          "weight": 5.2,
+          "isMagical": true,
+          "material": "Celestial Quartz"
+        },
+        "history": [
+          {
+            "event": "Forged in the Heart of a Star",
+            "year": 5000
+          },
+          {
+            "event": "Used in Ancient Rituals",
+            "year": 3000
+          }
+        ]
+      }
+    ],
+    "seal": {
+      "isIntact": false,
+      "sealedBy": "Astral High Priestess",
+      "dateSealed": "2021-12-31T23:59:59Z"
+    },
+    "estimatedValue": {
+      "currency": "Galactic Credits",
+      "amount": 1000000
+    }
+  }
+}

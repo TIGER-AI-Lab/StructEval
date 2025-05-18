@@ -1,0 +1,28 @@
+
+<museum>
+  <name>Galactic Oddities Museum</name>
+  <location>
+    <city>Nebulon Prime</city>
+    <planet>Zygra-7</planet>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Crystalized Timepiece</title>
+      <artist>Xel'Nar</artist>
+      <year>4021</year>
+      <materials>
+        <material>Chronoglass</material>
+        <material>Starsteel</material>
+      </materials>
+    </exhibit>
+    <exhibit>
+      <title>Singing Nebula Sculpture</title>
+      <artist>Mira Qor</artist>
+      <year>3987</year>
+      <materials>
+        <material>Nebulite</material>
+        <material>Harmonic Alloy</material>
+      </materials>
+    </exhibit>
+  </exhibits>
+</museum>

@@ -1,0 +1,17 @@
+
+[brewery]
+name = "Hops & Barley Brewery"
+location = { city = "Portland", country = "Oregon" }
+founded_year = 2010
+owner = "John Smith"
+
+[brewery.beers]
+- name = "Cascade Ale"
+  type = "IPA"
+  abv = 5.5
+  ingredients = { malts = ["Pale Malt", "Caramel Malt"], hops = ["Cascade", "Centennial"], yeast = "American Ale" }
+  awards = [{ name = "Best IPA", year = 2018 }]
+
+[brewery.tours]
+available = true
+schedule = [{ day = "Saturday" }]

@@ -1,0 +1,23 @@
+artifact:
+  name: "The Enigmatic Cylinder"
+  civilization: "Assyrian"
+  era: "Neo-Assyrian Period"
+  materials:
+    primary: "Limestone"
+    secondary: "Gypsum"
+  dimensions:
+    height_cm: 15.2
+    width_cm: 10.5
+    depth_cm: 5.8
+  features:
+    - description: "Cylinder shape with intricate reliefs"
+      type: "Engraving"
+    - description: "Contains cuneiform script"
+      type: "Writing"
+  previous_owners:
+    - name: "The British Museum"
+      acquisition_year: 1850
+  provenance:
+    discovery:
+      location: "Nineveh, Iraq"
+      date: "1842-09-01"

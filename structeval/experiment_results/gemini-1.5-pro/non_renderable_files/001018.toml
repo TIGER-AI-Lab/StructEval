@@ -1,0 +1,32 @@
+[recipe]
+title = "Spaghetti Carbonara"
+
+[recipe.author]
+name = "Giovanni Roma"
+
+[recipe.author.contact]
+email = "giovanni.roma@email.com"
+phone = "+39 123 456 7890"
+
+[[recipe.ingredients]]
+name = "Spaghetti"
+amount = 200
+unit = "grams"
+
+[[recipe.ingredients]]
+name = "Guanciale"
+amount = 100
+unit = "grams"
+
+[[recipe.steps]]
+description = "Cook spaghetti according to package directions."
+duration_minutes = 8
+
+[[recipe.steps]]
+description = "Fry guanciale until crispy."
+duration_minutes = 5
+
+[recipe.metadata]
+cuisine = "Italian"
+difficulty = "medium"
+tags = ["pasta", "italian", "pork", "easy"]

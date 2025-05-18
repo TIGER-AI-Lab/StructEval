@@ -1,0 +1,40 @@
+
+{
+  "mysteryBox": {
+    "name": "The Enigmatic Enclave",
+    "origin": "Ancient Egyptian Temple",
+    "discovery": {
+      "date": "2023-04-15",
+      "location": "Valley of the Kings, Egypt"
+    },
+    "contents": [
+      {
+        "itemName": "Pharaoh's Amulet",
+        "itemType": "Relic",
+        "properties": {
+          "weight": 0.5,
+          "isMagical": true,
+          "material": "Gold and Encrusted Gems"
+        },
+        "history": [
+          {
+            "event": "Believed to have been worn by Pharaoh Ramses II",
+            "year": 1279
+          },
+          {
+            "event": "Discovered in a hidden chamber beneath the Sphinx",
+            "year": 2023
+          }
+        ]
+      }
+    ],
+    "seal": {
+      "isIntact": true,
+      "sealedBy": "High Priest Imhotep",
+      "dateSealed": "2023-04-15"
+    },
+    "estimatedValue": {
+      "currency": "USD"
+    }
+  }
+}

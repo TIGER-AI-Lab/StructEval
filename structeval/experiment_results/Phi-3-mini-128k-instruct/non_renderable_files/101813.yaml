@@ -1,0 +1,26 @@
+space_station:
+  name: "Aurora Outpost"
+  operational_since: 2098
+  energy_sources: ["solar", "fusion", "backup fuel cells"]
+  docking_ports: 7
+  location:
+    planet: "Ganymede"
+    orbit: "Low Orbit"
+  modules:
+    - id: "mod-01"
+      purpose: "Habitation"
+      crew_capacity: 20
+      equipment: ["sleep pods", "kitchen", "recreation"]
+    - id: "mod-02"
+      purpose: "Research"
+      crew_capacity: 12
+      equipment: ["lab benches", "spectrometer", "AI workstation"]
+  crew:
+    - name: "Dr. Xyla Norr"
+      role: "Chief Scientist"
+      species: "Human"
+      missions: ["Ice Core Analysis", "Microbe Survey"]
+    - name: "Kip-7"
+      role: "Engineer"
+      species: "Synthetic"
+      missions: ["Module Maintenance", "Energy Audit"]

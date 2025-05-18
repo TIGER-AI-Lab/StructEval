@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 071102</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  return (
+    <div>
+      <h1>Project Title: Visual Conversion Test</h1>
+
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#project-overview">Project Overview</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#future-improvements">Future Improvements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+
+      <hr />
+
+      <h2 id="introduction">Introduction</h2>
+      <p>This document is designed to represent a long and detailed markdown structure for testing visual conversion tasks. The layout includes multiple sections, lists, tables, code blocks, and blockquotes. The purpose of this document is to:</p>
+      <ul>
+        <li>Test the structural layout</li>
+        <li>Verify visual hierarchy</li>
+        <li>Ensure that all content is visible and properly formatted</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="project-overview">Project Overview</h2>
+      <p><strong>Project Name:</strong> Visual Layout Tester<br />
+        <strong>Version:</strong> 1.0.0<br />
+        <strong>Author:</strong> Jane Doe</p>
+      <p><strong>Description:</strong><br />
+        Visual Layout Tester is built to test how well structured content is rendered on a single static page. Every component, from headings to paragraphs and lists, is included to analyze the conversion and display processes.</p>
+      <blockquote>
+        <p><strong>Note:</strong> This project deliberately avoids external resources such as images, scripts, and stylesheets.</p>
+      </blockquote>
+
+      <hr />
+
+      <h2 id="features">Features</h2>
+      <ul>
+        <li><strong>Comprehensive Elements:</strong>
+          <ul>
+            <li>Headings and Subheadings</li>
+            <li>Ordered and Unordered Lists</li>
+            <li>Code Blocks</li>
+            <li>Tables and Blockquotes</li>
+          </ul>
+        </li>
+        <li><strong>Detailed Content Structure:</strong>
+          <ul>
+            <li>Clear Sections with Labeled Values</li>
+            <li>Inline Formatting and Emphasis</li>
+            <li>Explanatory Comments and Notes</li>
+          </ul>
+        </li>
+        <li><strong>Single-page Rendering:</strong>
+          <ul>
+            <li>No interactivity or animations</li>
+            <li>Static content that renders uniformly across platforms</li>
+          </ul>
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2 id="usage">Usage</h2>
+      <h3>Step 1: Read the Documentation</h3>
+      <p>Review each section to understand the layout and purpose of the content. This documentation covers:</p>
+      <ul>
+        <li>Introduction to the project</li>
+        <li>Detailed project overview and goals</li>
+        <li>Feature list with subsections</li>
+        <li>Step-by-step usage instructions</li>
+        <li>Future enhancements and contact information</li>
+      </ul>
+
+      <h3>Step 2: Validate the Layout</h3>
+      <p>Ensure that all markdown elements are properly rendered:</p>
+      <ul>
+        <li>Check for visible headings and subheadings.</li>
+        <li>Verify that the lists, tables, and code blocks display correctly.</li>
+        <li>Confirm that blockquotes and labeled values are clear and distinct.</li>
+      </ul>
+
+      <h3>Step 3: Visual Analysis</h3>
+      <p>Use the following checklist:</p>
+      <pre>
+        <code>
+[ ] Headings are bold and prominent.
+[ ] Lists are indented and clearly marked.
+[ ] Code blocks maintain their formatting.
+[ ] All sections have a distinct separation.
+[ ] No external images or hyperlinks are used.
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

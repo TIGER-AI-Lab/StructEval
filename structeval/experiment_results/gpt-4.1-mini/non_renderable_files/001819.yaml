@@ -1,0 +1,53 @@
+
+exhibit:
+  title: "Echoes of Time: A Journey Through Modern Art"
+  curator:
+    name: "Isabella Martinez"
+    contact_email: "isabella.martinez@examplemuseum.org"
+  opening_date: "2024-09-15"
+  closing_date: "2025-01-15"
+  artworks:
+    - artist: "Liam O'Connor"
+      title: "Whispers of the Forgotten"
+      year_created: 2018
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 120.5
+        width_cm: 90.0
+      provenance:
+        previous_owners:
+          - "The Green Gallery, Dublin"
+          - "Private Collection of Eleanor Smith"
+        acquisition_date: "2023-06-20"
+      on_loan: false
+      gallery_location:
+        room_number: "3B"
+    - artist: "Maya Chen"
+      title: "Urban Mirage"
+      year_created: 2021
+      medium: "Mixed media on wood panel"
+      dimensions:
+        height_cm: 85.0
+        width_cm: 85.0
+      provenance:
+        previous_owners:
+          - "ArtSpace Collective, New York"
+        acquisition_date: "2024-02-10"
+      on_loan: true
+      gallery_location:
+        room_number: "5A"
+    - artist: "Rajesh Patel"
+      title: "Silent Horizons"
+      year_created: 2019
+      medium: "Acrylic and ink on paper"
+      dimensions:
+        height_cm: 100.0
+        width_cm: 70.0
+      provenance:
+        previous_owners:
+          - "Modern Arts Foundation, Mumbai"
+          - "Private Collector: Anjali Desai"
+        acquisition_date: "2023-11-05"
+      on_loan: false
+      gallery_location:
+        room_number: "2C"

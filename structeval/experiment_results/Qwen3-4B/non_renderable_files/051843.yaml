@@ -1,0 +1,35 @@
+
+planet:
+  name: Zyphron
+  discovery:
+    year: 2184
+    method: Gravitational Microlensing
+  moons:
+    - Lunara
+    - Celestra
+  atmosphere:
+    composition:
+      - Nitrogen
+      - Argon
+      - Methane
+    pressure: 1.8
+    layers:
+      - name: Troposphere
+        altitude_range: "0-18km"
+      - name: Stratosphere
+        altitude_range: "18-50km"
+  surface:
+    temperature:
+      mean: -65
+      min: -120
+      max: 12
+    features:
+      - type: Canyon
+        coordinates: [123.5, -45.3]
+      - type: Volcano
+        coordinates: [98.2, 22.1]
+  life:
+    possible: true
+    detected_signatures:
+      - Methanogens
+      - Biofluorescence

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041110</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+const App = () => {
+  return (
+    <>
+      <header>
+        <h1>Welcome to Our Portal</h1>
+        <p>Your gateway to insightful articles and resources.</p>
+      </header>
+
+      <main>
+        <section>
+          <h2>About Us</h2>
+          <article>
+            <h3>Our Mission</h3>
+            <p>
+              Our mission is to enlighten readers with well-researched content, practical tutorials, and the latest industry innovations.
+              We aim to foster a community where knowledge is shared and nurtured.
+            </p>
+          </article>
+          <article>
+            <h3>Our Values</h3>
+            <ul>
+              <li><strong>Integrity:</strong> Always honest and transparent in our communication.</li>
+              <li><strong>Excellence:</strong> Striving for high quality in all our initiatives.</li>
+              <li><strong>Community:</strong> Building strong relationships with our audience.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section>
+          <h2>Services</h2>
+          <div>
+            <h3>Consulting</h3>
+            <p>
+              Provide expert advice and strategies tailored to your business needs. Our consulting services are designed
+              to bring clarity and innovation to complex challenges.
+            </p>
+          </div>
+          <div>
+            <h3>Workshops & Training</h3>
+            <p>
+              Engage in hands-on workshops that cover a range of topics from digital marketing to technology trends.
+              Learn new skills in an interactive environment.
+            </p>
+          </div>
+          <div>
+            <h3>Research & Development</h3>
+            <p>
+              Stay updated with our latest research reports and white papers that delve into market trends and innovative practices.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Upcoming Events</h2>
+          <ol>
+            <li>
+              <h3>Digital Innovation Summit</h3>
+              <p><em>Date:</em> September 10, 2023</p>
+              <p><em>Time:</em> 09:00 AM - 05:00 PM</p>
+            </li>
+            <li>
+              <h3>Interactive Web Development Workshop</h3>
+              <p><em>Date:</em> October 05, 2023</p>
+              <p><em>Time:</em> 11:00 AM - 02:00 PM</p>
+            </li>
+            <li>
+              <h3>Tech Leaders Meetup</h3>
+              <p><em>Date:</em> November 15, 2023</p>
+              <p><em>Time:</em> 04:00 PM - 07:00 PM</p>
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Team Directory</h2>
+          <dl>
+            <dt>Alex Carter</dt>
+            <dd>Chief Executive Officer</dd>
+            <dt>Maria Lopez</dt>
+            <dd>Head of Digital Strategy</dd>
+            <dt>Samir Patel</dt>
+            <dd>Lead Software Engineer</dd>
+            <dt>Linda Nguyen</dt>
+            <dd>Content Specialist</dd>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Contact Information</h2>
+          <div>
+            <p>
+              <strong>Office Address:</strong> 123 Main Street, Suite 400, Cityville, Country
+            </p>
+            <p>
+              <strong>Phone:</strong> (123) 456-7890
+            </p>
+            <p>
+              <strong>Email:</strong> contact@ourportal.com
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2023 Our Portal. All rights reserved.</p>
+        <p>For inquiries, please email us at contact@ourportal.com</p>
+      </footer>
+    </>
+  );
+};
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

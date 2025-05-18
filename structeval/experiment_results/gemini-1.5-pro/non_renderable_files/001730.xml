@@ -1,0 +1,81 @@
+<recipe>
+  <title>Spicy Peanut Noodles</title>
+  <author>
+    <name>Jane Doe</name>
+    <role>Home Cook</role>
+  </author>
+  <ingredients>
+    <item>
+      <name>Noodles</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </item>
+    <item>
+      <name>Peanut Butter</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </item>
+    <item>
+      <name>Soy Sauce</name>
+      <quantity>1</quantity>
+      <unit>tablespoon</unit>
+    </item>
+    <item>
+      <name>Sriracha</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </item>
+    <item>
+      <name>Lime Juice</name>
+      <quantity>1</quantity>
+      <unit>tablespoon</unit>
+    </item>
+    <item>
+      <name>Honey</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </item>
+    <item>
+      <name>Sesame Oil</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </item>
+  </ingredients>
+  <steps>
+    <item>
+      <instruction>Cook noodles according to package directions.</instruction>
+      <duration_minutes>8</duration_minutes>
+      <tools>Pot, Strainer</tools>
+    </item>
+    <item>
+      <instruction>Whisk together peanut butter, soy sauce, sriracha, lime juice, honey, and sesame oil in a bowl.</instruction>
+      <duration_minutes>5</duration_minutes>
+      <tools>Bowl, Whisk</tools>
+    </item>
+    <item>
+      <instruction>Drain noodles and add them to the sauce. Toss to coat.</instruction>
+      <duration_minutes>2</duration_minutes>
+      <tools>Bowl</tools>
+    </item>
+  </steps>
+  <metadata>
+    <cuisine>Asian Fusion</cuisine>
+    <difficulty>Easy</difficulty>
+    <servings>2</servings>
+    <tags>
+      <tag>noodles</tag>
+      <tag>peanut</tag>
+      <tag>spicy</tag>
+      <tag>vegan</tag>
+      <tag>quick</tag>
+    </tags>
+  </metadata>
+  <nutrition>
+    <calories>400</calories>
+    <macros>
+      <protein>15</protein>
+      <carbohydrates>60</carbohydrates>
+      <fat>15</fat>
+    </macros>
+  </nutrition>
+</recipe>

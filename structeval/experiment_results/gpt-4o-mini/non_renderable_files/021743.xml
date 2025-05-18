@@ -1,0 +1,34 @@
+
+<galaxy>
+    <name>Andromeda</name>
+    <coordinates>
+        <right_ascension>00h 42m 44s</right_ascension>
+        <declination>+41Â° 16â² 9â³</declination>
+    </coordinates>
+    <discovery>
+        <year>964</year>
+        <astronomer>Abd al-Rahman al-Sufi</astronomer>
+    </discovery>
+    <planets>
+        <planet>
+            <name>Planet X</name>
+            <type>Gas Giant</type>
+            <moons>3</moons>
+        </planet>
+        <planet>
+            <name>Planet Y</name>
+            <type>Rocky</type>
+            <moons>1</moons>
+        </planet>
+    </planets>
+    <notable_events>
+        <event>
+            <description>Collision with Milky Way</description>
+            <year>2500000000</year>
+        </event>
+        <event>
+            <description>First observed supernova</description>
+            <year>1885</year>
+        </event>
+    </notable_events>
+</galaxy>

@@ -1,0 +1,42 @@
+
+{
+  "species": {
+    "name": "Glimmerwing",
+    "habitat": {
+      "type": "forest",
+      "climate": "temperate",
+      "continents": ["North America", "South America"]
+    },
+    "lifespan": {
+      "average_years": 5,
+      "max_recorded": 7
+    },
+    "diet": {
+      "primary": "insects",
+      "secondary": ["nectar", "pollen"]
+    },
+    "appearance": {
+      "size": {
+        "length_cm": 20,
+        "weight_kg": 0.5
+      },
+      "coloration": {
+        "primary_colors": ["iridescent blue", "shimmering silver"]
+      }
+    },
+    "behavior": {
+      "migration_patterns": "irregular",
+      "social_structure": "solitary"
+    },
+    "discovery": {
+      "date": "2010-02-15T00:00:00.000Z",
+      "discoverers": [
+        {
+          "name": "Dr. Maria Rodriguez",
+          "affiliation": "University of California, Berkeley",
+          "contribution": "identification and classification"
+        }
+      ]
+    }
+  }
+}

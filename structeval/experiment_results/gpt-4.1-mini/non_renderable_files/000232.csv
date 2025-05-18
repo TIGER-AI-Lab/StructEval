@@ -1,0 +1,2 @@
+recipe_id,recipe_name,chef_name,cuisine_type,servings,prep_time_minutes,cook_time_minutes,ingredient0.name,ingredient0.quantity,ingredient0.unit,ingredient1.name,ingredient1.quantity,ingredient1.unit,step0.instruction,step0.duration_minutes
+"rec001","Spicy Mango Chicken","Alicia Gomez","Thai",4,20,30,"Chicken Breast",500,"grams","Mango",2,"pieces","Marinate the chicken with spices and mango puree.","15"

@@ -1,0 +1,29 @@
+creature:
+  name: Whisperwing
+  species: Aerial Sylph
+  age: 5
+  habitat:
+    type: Sky
+    location: Ethereal Highlands
+    features:
+      - Infinite azure expanses
+      - Cloud formations
+      - Rare floating islands
+  abilities:
+    - name: Wind Whisper
+      description: Can communicate with other creatures using the wind currents.
+      power_level: 8
+    - name: Sky Dance
+      description: Can perform aerial acrobatics to evade predators or attract mates.
+      power_level: 6
+  diet:
+    primary_food: Starlight Nectar
+    secondary_foods:
+      - Moonbeam Dew
+      - Celestial Berries
+    feeding_times:
+      - "02:00"
+      - "14:00"
+  social_behavior:
+    group_size: 3
+    hierarchy: Egalitarian

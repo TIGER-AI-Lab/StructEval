@@ -1,0 +1,36 @@
+
+<creature>
+    <species>Glintwing Draconis</species>
+    <habitat>
+        <region>Emerald Vale</region>
+        <climate>Tropical</climate>
+        <features>lush forests, sparkling rivers, misty mountains</features>
+    </habitat>
+    <anatomy>
+        <limbs>
+            <count>6</count>
+            <type>tentacles</type>
+        </limbs>
+        <senses>
+            <sense>
+                <name>vision</name>
+                <range>100 meters</range>
+            </sense>
+        </senses>
+    </anatomy>
+    <behavior>
+        <diet>omnivore</diet>
+        <activity_cycle>diurnal</activity_cycle>
+        <social_structure>in groups</social_structure>
+    </behavior>
+    <abilities>
+        <ability>
+            <name>Illumination Burst</name>
+            <description>Emits a blinding flash of light to disorient predators and prey.</description>
+            <rarity>rare</rarity>
+        </ability>
+    </abilities>
+    <discovery>
+        <discovery_date>2023-05-15</discovery_date>
+    </discovery>
+</creature>

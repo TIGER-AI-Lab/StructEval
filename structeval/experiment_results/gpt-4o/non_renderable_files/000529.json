@@ -1,0 +1,42 @@
+{
+  "creature": {
+    "name": "Zylox",
+    "species": "Quintarian",
+    "origin": {
+      "planet": "Xylaria",
+      "galaxy": "Andromeda"
+    },
+    "abilities": [
+      {
+        "type": "Telepathy",
+        "strength": 85,
+        "cooldown_seconds": 30
+      },
+      {
+        "type": "Invisibility",
+        "strength": 70,
+        "cooldown_seconds": 45
+      }
+    ],
+    "appearance": {
+      "color": "Emerald Green",
+      "size_meters": 2.5,
+      "features": [
+        "Bioluminescent skin",
+        "Prehensile tail"
+      ]
+    },
+    "companions": [
+      {
+        "name": "Flix",
+        "species": "Glimmerwing",
+        "role": "Scout"
+      },
+      {
+        "name": "Tara",
+        "species": "Stoneback",
+        "role": "Protector"
+      }
+    ]
+  }
+}

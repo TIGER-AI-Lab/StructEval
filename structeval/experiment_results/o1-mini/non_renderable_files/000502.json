@@ -1,0 +1,32 @@
+
+{
+  "artifact": {
+    "name": "Ancient Vase",
+    "origin": {
+      "civilization": "Minoan",
+      "estimated_age": 3500
+    },
+    "materials": {
+      "primary": "Clay",
+      "secondary": "Gold",
+      "composition_percentage": 85
+    },
+    "dimensions": {
+      "height_cm": 45.0,
+      "width_cm": 30.0,
+      "depth_cm": 20.0
+    },
+    "features": [
+      {
+        "type": "Engraving",
+        "description": "Intricate patterns depicting marine life",
+        "preservation_state": "Intact"
+      },
+      {
+        "type": "Inlay",
+        "description": "Gold inlays along the rim",
+        "preservation_state": "Worn"
+      }
+    ]
+  }
+}

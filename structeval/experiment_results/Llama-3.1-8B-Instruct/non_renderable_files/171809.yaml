@@ -1,0 +1,14 @@
+
+galaxy:
+  name: Andromeda
+  star_systems:
+    - name: Alpha Centauri
+      planets:
+        - name: Proxima b
+          has_life: false
+        - name: Alpha Centauri Bb
+          has_life: true
+    - name: Betelgeuse System
+      planets:
+        - name: Betelgeuse I
+          has_life: false

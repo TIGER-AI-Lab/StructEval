@@ -1,0 +1,40 @@
+{
+  "ecosystem": {
+    "name": "Verdantia Rainforest",
+    "location": {
+      "planet": "Xylophar",
+      "region": "Equatorial Belt"
+    },
+    "climate": {
+      "average_temperature_celsius": 28.5,
+      "rainfall_mm_per_year": 3200
+    },
+    "flora": [
+      {
+        "species": "Luminara arborea",
+        "population_estimate": 500000,
+        "conservation_status": "vulnerable"
+      }
+    ],
+    "fauna": [
+      {
+        "species": "Glideraptor sylvestris",
+        "average_weight_kg": 15.2,
+        "diet_type": "carnivore",
+        "conservation_status": "endangered"
+      }
+    ],
+    "researchers": [
+      {
+        "name": "Dr. Elara Voss",
+        "specialization": "Botany",
+        "years_active": 12
+      },
+      {
+        "name": "Prof. Kael Drayton",
+        "specialization": "Zoology",
+        "years_active": 20
+      }
+    ]
+  }
+}

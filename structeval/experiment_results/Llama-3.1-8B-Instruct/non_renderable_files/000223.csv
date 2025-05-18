@@ -1,0 +1,133 @@
+
+import csv
+from datetime import datetime
+
+class Artifact:
+    def __init__(self, artifact_id, artifact_name, discovery, origin, dimensions, condition, current_location):
+        self.artifact_id = artifact_id
+        self.artifact_name = artifact_name
+        self.discovery = discovery
+        self.origin = origin
+        self.dimensions = dimensions
+        self.condition = condition
+        self.current_location = current_location
+
+    def to_csv(self):
+        return [
+            self.artifact_id,
+            self.artifact_name,
+            self.discovery['site'],
+            self.discovery['date_found'],
+            self.discovery['discoverer'],
+            self.origin['culture'],
+            self.origin['estimated_age'],
+            self.origin['materials'],
+            self.dimensions['length_cm'],
+            self.dimensions['width_cm'],
+            self.dimensions['height_cm'],
+            self.condition['status'],
+            self.condition['restoration_needed'],
+            self.current_location['museum'],
+            self.current_location['exhibit_hall']
+        ]
+
+def main():
+    artifacts = [
+        Artifact(
+            'A001',
+            'Golden Mask',
+            {
+                'site': 'Egypt',
+                'date_found': datetime(1922, 11, 4).isoformat(),
+                'discoverer': 'Howard Carter'
+            },
+            {
+                'culture': 'Ancient Egyptian',
+                'estimated_age': 3000,
+                'materials': 'Gold;Lapis Lazuli'
+            },
+            {
+                'length_cm': 25.0,
+                'width_cm': 15.0,
+                'height_cm': 10.0
+            },
+            {
+                'status': 'Intact',
+                'restoration_needed': False
+            },
+            {
+                'museum': 'British Museum',
+                'exhibit_hall': 'Room 4'
+            }
+        ),
+        Artifact(
+            'A002',
+            'Roman Vase',
+            {
+                'site': 'Italy',
+                'date_found': datetime(1990, 6, 15).isoformat(),
+                'discoverer': 'Excavation Team'
+            },
+            {
+                'culture': 'Roman',
+                'estimated_age': 2000,
+                'materials': 'Terracotta;Glaze'
+            },
+            {
+                'length_cm': 30.0,
+                'width_cm': 20.0,
+                'height_cm': 15.0
+            },
+            {
+                'status': 'Fragmentary',
+                'restoration_needed': True
+            },
+            {
+                'museum': 'National Archaeological Museum',
+                'exhibit_hall': 'Gallery 2'
+            }
+        )
+    ]
+
+    with open('artifacts.csv', 'w', newline='') as csvfile:
+        fieldnames = [
+            'artifact_id',
+            'artifact_name',
+            'discovery.site',
+            'discovery.date_found',
+            'discovery.discoverer',
+            'origin.culture',
+            'origin.estimated_age',
+            'origin.materials',
+            'dimensions.length_cm',
+            'dimensions.width_cm',
+            'dimensions.height_cm',
+            'condition.status',
+            'condition.restoration_needed',
+            'current_location.museum',
+            'current_location.exhibit_hall'
+        ]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+        for artifact in artifacts:
+            writer.writerow({
+                'artifact_id': artifact.artifact_id,
+                'artifact_name': artifact.artifact_name,
+                'discovery.site': artifact.discovery['site'],
+                'discovery.date_found': artifact.discovery['date_found'],
+                'discovery.discoverer': artifact.discovery['discoverer'],
+                'origin.culture': artifact.origin['culture'],
+                'origin.estimated_age': artifact.origin['estimated_age'],
+                'origin.materials': artifact.origin['materials'],
+                'dimensions.length_cm': artifact.dimensions['length_cm'],
+                'dimensions.width_cm': artifact.dimensions['width_cm'],
+                'dimensions.height_cm': artifact.dimensions['height_cm'],
+                'condition.status': artifact.condition['status'],
+                'condition.restoration_needed': artifact.condition['restoration_needed'],
+                'current_location.museum': artifact.current_location['museum'],
+                'current_location.exhibit_hall': artifact.current_location['exhibit_hall']
+            })
+
+if __name__ == '__main__':
+    main()

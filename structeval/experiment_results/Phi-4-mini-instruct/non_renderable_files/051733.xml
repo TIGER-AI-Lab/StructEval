@@ -1,0 +1,28 @@
+
+&lt;galaxy>
+  &lt;name>Andromeda</name>
+  &lt;starSystems>
+    &lt;starSystem>
+      &lt;name>Alpha-3</name>
+      &lt;planets>
+        &lt;planet>
+          &lt;name>Xenon</name>
+          &lt;hasLife>true</hasLife>
+        </planet>
+        &lt;planet>
+          &lt;name>Helion</name>
+          &lt;hasLife>false</hasLife>
+        </planet>
+      </planets>
+    </starSystem>
+    &lt;starSystem>
+      &lt;name>Beta-7</name>
+      &lt;planets>
+        &lt;planet>
+          &lt;name>Zyra</name>
+          &lt;hasLife>true</hasLife>
+        </planet>
+      </planets>
+    </starSystem>
+  </starSystems>
+</galaxy>

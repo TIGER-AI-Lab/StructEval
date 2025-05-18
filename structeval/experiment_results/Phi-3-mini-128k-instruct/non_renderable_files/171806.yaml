@@ -1,0 +1,18 @@
+spaceStation:
+  name: Celestial Haven
+  modules:
+    - module:
+        moduleName: Botany Lab
+        experiments:
+          - experiment:
+              experimentName: Zero-G Plant Growth
+              status: Ongoing
+          - experiment:
+              experimentName: Algae Oxygen Production
+              status: Completed
+    - module:
+        moduleName: Astro Physics
+        experiments:
+          - experiment:
+              experimentName: Dark Matter Detection
+              status: Pending

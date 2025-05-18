@@ -1,0 +1,88 @@
+{
+  "title": "Spicy Mango Avocado Salsa",
+  "cuisine": "Mexican",
+  "difficulty": "easy",
+  "prep_time_minutes": 15,
+  "cook_time_minutes": 0,
+  "ingredients": [
+    {
+      "name": "mango",
+      "quantity": 2,
+      "unit": "cups",
+      "instruction": "Peel and dice the mangoes into small cubes.",
+      "duration_minutes": 5,
+      "tools": ["knife", "cutting board"]
+    },
+    {
+      "name": "avocado",
+      "quantity": 1,
+      "unit": "medium",
+      "instruction": "Cut the avocado in half, remove the pit, and scoop out the flesh.",
+      "duration_minutes": 3,
+      "tools": ["knife", "spoon"]
+    },
+    {
+      "name": "red onion",
+      "quantity": 0.25,
+      "unit": "cup",
+      "instruction": "Finely chop the red onion.",
+      "duration_minutes": 2,
+      "tools": ["knife", "cutting board"]
+    },
+    {
+      "name": "jalapeÃ±o",
+      "quantity": 1,
+      "unit": "small",
+      "instruction": "Deseed and finely chop the jalapeÃ±o.",
+      "duration_minutes": 1,
+      "tools": ["knife", "cutting board"]
+    },
+    {
+      "name": "fresh cilantro",
+      "quantity": 1,
+      "unit": "cup",
+      "instruction": "Roughly chop the fresh cilantro leaves.",
+      "duration_minutes": 1,
+      "tools": ["knife", "cutting board"]
+    },
+    {
+      "name": "lime",
+      "quantity": 1,
+      "unit": "whole",
+      "instruction": "Cut the lime in half and squeeze the juice into a small bowl.",
+      "duration_minutes": 1,
+      "tools": ["knife", "cutting board"]
+    },
+    {
+      "name": "salt",
+      "quantity": 1,
+      "unit": "teaspoon",
+      "instruction": "Add salt to taste.",
+      "duration_minutes": 0,
+      "tools": []
+    }
+  ],
+  "steps": [
+    {
+      "instruction": "In a large bowl, combine the diced mango, avocado, chopped red onion, jalapeÃ±o, and cilantro.",
+      "duration_minutes": 2,
+      "tools": ["large bowl"]
+    },
+    {
+      "instruction": "Add the lime juice and salt to the bowl and gently toss to combine.",
+      "duration_minutes": 1,
+      "tools": ["large bowl"]
+    },
+    {
+      "instruction": "Serve the salsa immediately or refrigerate for up to 2 hours before serving.",
+      "duration_minutes": 0,
+      "tools": []
+    }
+  ],
+  "nutrition": {
+    "calories": 200,
+    "protein_grams": 3,
+    "carbs_grams": 20,
+    "fat_grams": 15
+  }
+}

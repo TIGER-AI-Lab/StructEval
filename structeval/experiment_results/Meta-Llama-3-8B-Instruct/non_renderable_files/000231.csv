@@ -1,0 +1,4 @@
+
+"creature_id","species_name","habitat.region","habitat.climate","habitat.elevation_range","features.size","features.color_pattern","features.average_lifespan_years","abilities[0].name","abilities[0].description","abilities[0].power_level","abilities[1].name","abilities[1].description","abilities[1].power_level","diet.primary_foods"
+"creature1","Mythical Creature 1","Forest","temperate","sea level to 1000m","2 meters","green and brown stripes","10 years","Fire Breath","Can breathe fire to scorch enemies","8","Camouflage","Can blend into surroundings to hide from predators","6","Fruits, Berries"
+"creature2","Mythical Creature 2","Desert","arid","1000m to 2000m","1 meter","sand-colored","5 years","Sand Burrowing","Can dig complex tunnels to escape predators","9","Heat Resistance","Can withstand extreme temperatures to hunt at night","7","Insects, Small Reptiles"

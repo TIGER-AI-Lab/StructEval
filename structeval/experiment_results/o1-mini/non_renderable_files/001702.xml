@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <title>Classic Chocolate Chip Cookies</title>
+    <author>
+        <name>Emily Smith</name>
+        <contact>emily.smith@example.com</contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>All-purpose flour</name>
+            <quantity>2.5</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Baking soda</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>0.5</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Unsalted butter</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Granulated sugar</name>
+            <quantity>0.75</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Brown sugar</name>
+            <quantity>0.75</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vanilla extract</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Chocolate chips</name>
+            <quantity>2</quantity>
+            <unit>cups</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Preheat the oven to 350Â°F (175Â°C).</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>oven</tools>
+        </step>
+        <step>
+            <description>In a bowl, mix together the flour, baking soda, and salt.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>mixing bowl, whisk</tools>
+        </step>
+        <step>
+            <description>In another bowl, cream the butter, granulated sugar, and brown sugar until smooth.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>electric mixer, mixing bowl</tools>
+        </step>
+        <step>
+            <description>Beat in the vanilla extract and eggs one at a time.</description>
+            <duration_minutes>3</duration_minutes>
+            <tools>electric mixer</tools>
+        </step>
+        <step>
+            <description>Gradually blend in the dry ingredients.</description>
+            <duration_minutes>4</duration_minutes>
+            <tools>spatula</tools>
+        </step>
+        <step>
+            <description>Stir in the chocolate chips.</description>
+            <duration_minutes>2</duration_minutes>
+            <tools>spoon</tools>
+        </step>
+        <step>
+            <description>Drop rounded tablespoons of dough onto ungreased baking sheets.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>cookie scoop, baking sheet</tools>
+        </step>
+        <step>
+            <description>Bake for 10-12 minutes or until edges are golden brown.</description>
+            <duration_minutes>12</duration_minutes>
+            <tools>oven, timer</tools>
+        </step>
+        <step>
+            <description>Allow cookies to cool on the baking sheet for 5 minutes before transferring to wire racks.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>baking sheet, wire racks</tools>
+        </step>
+    </steps>
+    <metadata>
+        <cuisine>American</cuisine>
+        <difficulty>Easy</difficulty>
+        <servings>24</servings>
+        <prep_time>P0DT0H30M0S</prep_time>
+        <cook_time>P0DT0H12M0S</cook_time>
+    </metadata>
+    <nutrition>
+        <calories>200</calories>
+        <fat>10</fat>
+        <protein>3</protein>
+    </nutrition>
+</recipe>

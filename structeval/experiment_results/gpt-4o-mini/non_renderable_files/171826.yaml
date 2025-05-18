@@ -1,0 +1,16 @@
+
+galacticZoo:
+  species:
+    - name: Glorbon
+      originPlanet: Xylo-7
+      diet: Plasmavore
+      abilities:
+        ability:
+          - Invisibility
+          - Telepathy
+    - name: Quintari
+      originPlanet: Vega Prime
+      diet: Photosynthetic
+      abilities:
+        ability:
+          - Levitation

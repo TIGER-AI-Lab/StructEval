@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book>
+    <title>The Enchanted Realm</title>
+    <author>
+        <name>Alice Wonderland</name>
+        <birthYear>1980</birthYear>
+    </author>
+    <publication>
+        <year>2022</year>
+        <publisher>Fantasy House</publisher>
+    </publication>
+    <genres>
+        <genre>
+            <name>Fantasy</name>
+            <popularity>90</popularity>
+        </genre>
+        <genre>
+            <name>Adventure</name>
+            <popularity>75</popularity>
+        </genre>
+    </genres>
+    <chapters>
+        <chapter>
+            <title>The Awakening</title>
+            <pages>20</pages>
+        </chapter>
+        <chapter>
+            <title>The Quest Begins</title>
+            <pages>35</pages>
+        </chapter>
+    </chapters>
+    <reviews>
+        <review>
+            <reviewer>Emily Stark</reviewer>
+            <rating>4.8</rating>
+            <date>2022-05-10</date>
+        </review>
+        <review>
+            <reviewer>Daniel Greene</reviewer>
+            <rating>4.5</rating>
+            <date>2022-06-15</date>
+        </review>
+    </reviews>
+</book>

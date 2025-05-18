@@ -1,0 +1,34 @@
+
+[artifact]
+name = "Example Artifact"
+
+[artifact.origin]
+culture = "Example Culture"
+period = "Example Period"
+discovery_date = "2023-01-01"
+
+[artifact.dimensions]
+height_cm = 100.0
+width_cm = 50.0
+depth_cm = 30.0
+
+materials = ["Material1", "Material2", "Material3"]
+
+[artifact.current_location]
+museum = "Example Museum"
+room = "Gallery 1"
+display_case = "Case A"
+
+[[artifact.exhibitions]]
+title = "First Exhibition Title"
+year = 2023
+city = "Example City"
+curator = "Curator Name"
+
+[[artifact.restoration_history]]
+date = "2023-06-15"
+description = "Initial restoration to stabilize materials."
+
+[[artifact.restoration_history]]
+date = "2024-03-10"
+description = "Detailed cleaning and conservation of surface."

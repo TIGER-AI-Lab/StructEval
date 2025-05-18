@@ -1,0 +1,28 @@
+[festival]
+name = "Global Harmony Fest"
+year = 2024
+
+[festival.location]
+city = "Berlin"
+country = "Germany"
+
+[festival.organizer]
+name = "Melody Events GmbH"
+
+[festival.organizer.contact]
+email = "info@globalharmonyfest.com"
+phone = "+49 30 12345678"
+
+[[festival.events]]
+title = "Opening Gala"
+date = "2024-07-12"
+performers = ["Berlin Philharmonic Orchestra", "Aisha Khan"]
+
+[festival.events.tickets]
+price = 150.00
+available = 200
+types = ["VIP", "General", "Student"]
+
+[[festival.events]]
+title = "Indie Rock Night"
+performers = ["The Lunar Tides", "Echo Bloom"]

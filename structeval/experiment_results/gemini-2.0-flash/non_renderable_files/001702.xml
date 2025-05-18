@@ -1,0 +1,109 @@
+
+<recipe>
+  <title>Delicious Chocolate Chip Cookies</title>
+  <author>
+    <name>Jane Doe</name>
+    <contact>jane.doe@example.com</contact>
+  </author>
+  <ingredients>
+    <item>
+      <name>All-purpose flour</name>
+      <quantity>3</quantity>
+      <unit>cups</unit>
+    </item>
+    <item>
+      <name>Granulated sugar</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+    </item>
+    <item>
+      <name>Brown sugar</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+    </item>
+    <item>
+      <name>Butter</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+    </item>
+    <item>
+      <name>Eggs</name>
+      <quantity>2</quantity>
+      <unit/>
+    </item>
+    <item>
+      <name>Vanilla extract</name>
+      <quantity>2</quantity>
+      <unit>teaspoons</unit>
+    </item>
+    <item>
+      <name>Chocolate chips</name>
+      <quantity>2</quantity>
+      <unit>cups</unit>
+    </item>
+    <item>
+      <name>Baking soda</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </item>
+    <item>
+      <name>Salt</name>
+      <quantity>0.5</quantity>
+      <unit>teaspoon</unit>
+    </item>
+  </ingredients>
+  <steps>
+    <step>
+      <description>Preheat oven to 375Â°F (190Â°C).</description>
+      <duration_minutes>5</duration_minutes>
+      <tools>Oven</tools>
+    </step>
+    <step>
+      <description>Cream together the butter, granulated sugar, and brown sugar until smooth.</description>
+      <duration_minutes>5</duration_minutes>
+      <tools>Mixer, Bowl</tools>
+    </step>
+    <step>
+      <description>Beat in the eggs one at a time, then stir in the vanilla.</description>
+      <duration_minutes>2</duration_minutes>
+      <tools>Mixer, Bowl</tools>
+    </step>
+    <step>
+      <description>Dissolve baking soda in hot water. Add to batter along with salt.</description>
+      <duration_minutes>1</duration_minutes>
+      <tools>Bowl, Spoon</tools>
+    </step>
+    <step>
+      <description>Stir in the flour and chocolate chips.</description>
+      <duration_minutes>3</duration_minutes>
+      <tools>Spoon, Bowl</tools>
+    </step>
+    <step>
+      <description>Drop by rounded tablespoons onto baking sheets.</description>
+      <duration_minutes>2</duration_minutes>
+      <tools>Spoon, Baking sheet</tools>
+    </step>
+    <step>
+      <description>Bake for 10-12 minutes, or until edges are nicely browned.</description>
+      <duration_minutes>11</duration_minutes>
+      <tools>Oven, Baking sheet</tools>
+    </step>
+    <step>
+      <description>Cool on baking sheets for a few minutes before transferring to a wire rack to cool completely.</description>
+      <duration_minutes>5</duration_minutes>
+      <tools>Wire rack, Spatula</tools>
+    </step>
+  </steps>
+  <metadata>
+    <cuisine>American</cuisine>
+    <difficulty>Easy</difficulty>
+    <servings>24</servings>
+    <prep_time>PT15M</prep_time>
+    <cook_time>PT12M</cook_time>
+  </metadata>
+  <nutrition>
+    <calories>150</calories>
+    <fat>8</fat>
+    <protein>2</protein>
+  </nutrition>
+</recipe>

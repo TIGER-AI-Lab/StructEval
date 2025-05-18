@@ -1,0 +1,29 @@
+
+ecosystem = {
+  name = "The Azure Reef",
+  location = {
+    latitude = 23.4321,
+    longitude = -114.2345
+  },
+  climate = {
+    type = "tropical",
+    average_temperature_c = 28.5,
+    annual_rainfall_mm = 1500
+  },
+  species = [
+    {
+      common_name = "Azure Reef Wrasse",
+      scientific_name = "Thalassoma azureum",
+      population_estimate = 10000,
+      conservation_status = "Vulnerable",
+      notable_characteristics = ["bright blue color", "aggressive territorial behavior"]
+    },
+    {
+      common_name = "Giant Sea Turtle",
+      scientific_name = "Chelonia mydas",
+      population_estimate = 500,
+      conservation_status = "Endangered",
+      notable_characteristics = ["large size", "long migration routes"]
+    }
+  ]
+}

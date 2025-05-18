@@ -1,0 +1,50 @@
+<creature>
+    <name>Glimmerwing</name>
+    <species>Aerofauna</species>
+    <age>5</age>
+    <habitat>
+        <type>Forest</type>
+        <location>Emerald Canopy</location>
+        <temperature>16</temperature>
+    </habitat>
+    <appearance>
+        <height>150</height>
+        <color>Emerald Green</color>
+        <markings>Glowing Scales</markings>
+    </appearance>
+    <abilities>
+        <ability>
+            <name>Glide</name>
+            <level>8</level>
+            <cooldown>120</cooldown>
+        </ability>
+        <ability>
+            <name>Invisibility</name>
+            <level>5</level>
+            <cooldown>300</cooldown>
+        </ability>
+    </abilities>
+    <history>
+        <origin>Mystical Forest</origin>
+        <majorEvents>
+            <event>
+                <name>First Flight</name>
+                <year>157</year>
+            </event>
+            <event>
+                <name>Glimmerwing Festival</name>
+                <year>202</year>
+            </event>
+        </majorEvents>
+    </history>
+    <relationships>
+        <relationship>
+            <relationType>Friend</relationType>
+            <individual>Skyfeather</individual>
+        </relationship>
+        <relationship>
+            <relationType>Rival</relationType>
+            <individual>Thornclaw</individual>
+        </relationship>
+    </relationships>
+</creature>

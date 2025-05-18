@@ -1,0 +1,33 @@
+
+museum:
+  name: "The Grand Art Museum"
+  location:
+    city: "New York"
+    country: "USA"
+  founded_year: 1985
+  director:
+    name: "Dr. Jane Smith"
+    tenure_years: 10
+  exhibits:
+    - title: "The Starry Night"
+      artist: "Vincent van Gogh"
+      year: 1889
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 73.7
+        width_cm: 92.1
+      on_loan: false
+      provenance:
+        previous_owners: ["Paul Rosenberg", "The Museum of Modern Art"]
+        acquisition_date: "2010-05-15"
+    - title: "The Persistence of Memory"
+      artist: "Salvador DalÃ­"
+      year: 1931
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 24
+        width_cm: 33
+      on_loan: true
+      provenance:
+        previous_owners: ["DalÃ­ Foundation", "The DalÃ­ Museum"]
+        acquisition_date: "2015-08-23"

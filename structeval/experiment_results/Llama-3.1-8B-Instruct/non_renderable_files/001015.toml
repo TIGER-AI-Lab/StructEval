@@ -1,0 +1,38 @@
+
+artifact = {
+  title = "Golden Mask of the Sun God",
+  creator = {
+    name = "Kanaq the Great",
+    affiliation = "The Golden Temple of the Sun God"
+  },
+  year_created = 1356,
+  dimensions = {
+    height_cm = 25.5,
+    width_cm = 18.2
+  },
+  materials = [
+    {
+      type = "24K Gold",
+      source = "The Golden Mines of Azsar"
+    },
+    {
+      type = "Lapis Lazuli",
+      source = "The Azure Caves of Zerzura"
+    }
+  ],
+  exhibitions = [
+    {
+      name = "Treasures of the Ancient World",
+      location = "The Great Museum of Alexandria",
+      date_range = {
+        start = "2020-02-01",
+        end = "2020-05-31"
+      }
+    }
+  ],
+  provenance = [
+    "The Great Museum of Alexandria",
+    "The Royal Collection of the Sultan of Azsar",
+    "The Golden Temple of the Sun God"
+  ]
+}

@@ -1,0 +1,25 @@
+planet_name: Zyphora
+discovery_year: 3021
+discovery_method: Gravitational Microlensing
+atmosphere_composition:
+  - gas: Nitrogen
+    percentage: 68
+  - gas: Oxygen
+    percentage: 21
+moons:
+  - name: Phobos
+    diameter_km: 22.2
+    has_rings: false
+  - name: Deimos
+    diameter_km: 12.4
+    has_rings: false
+orbit:
+  period_days: 687
+  distance_au: 1.52
+inhabitants:
+  population: 1200000
+  species:
+    - name: Zyphorian
+      intelligence_level: High
+    - name: Glorg
+      intelligence_level: Medium

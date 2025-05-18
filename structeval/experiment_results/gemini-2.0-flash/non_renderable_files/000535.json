@@ -1,0 +1,33 @@
+{
+  "artifact": {
+    "name": "Xylos Stele 42",
+    "type": "Monumental Slab",
+    "materials": ["Limestone", "Red Ochre"],
+    "dimensions": {
+      "height_cm": 210.5,
+      "width_cm": 145.2,
+      "depth_cm": 35.8
+    },
+    "discovery": {
+      "date": "2023-10-27",
+      "location": {
+        "latitude": 34.0522,
+        "longitude": -118.2437
+      },
+      "team": [
+        {
+          "member_name": "Dr. Aris Thorne",
+          "role": "Lead Archaeologist",
+          "experience_years": 15
+        }
+      ]
+    },
+    "hypotheses": [
+      {
+        "theory": "The stele served as a boundary marker for a sacred grove.",
+        "proposed_by": "Thorne Archaeological Team",
+        "evidence": "Inscriptions on the stele match known grove boundary texts, and the stele was found near a grove of ancient trees."
+      }
+    ]
+  }
+}

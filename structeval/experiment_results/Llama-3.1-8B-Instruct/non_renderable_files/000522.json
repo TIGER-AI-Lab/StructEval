@@ -1,0 +1,47 @@
+
+{
+  "expedition": {
+    "mission_name": "Aurora Deep Space Expedition",
+    "leader": {
+      "name": "John Smith",
+      "rank": "Commander",
+      "contact": {
+        "email": "john.smith@aurora.space",
+        "phone": "+1 123 456 7890"
+      }
+    },
+    "crew": [
+      {
+        "name": "Jane Doe",
+        "role": "Pilot",
+        "skills": ["Astronaut Training", "Spacecraft Operations", "Emergency Response"]
+      },
+      {
+        "name": "Bob Johnson",
+        "role": "Engineer",
+        "skills": ["Robotics", "Mechanical Systems", "Life Support Systems"]
+      }
+    ],
+    "destination": {
+      "planet": "Kepler-62f",
+      "coordinates": {
+        "latitude": 23.456,
+        "longitude": -45.678
+      }
+    },
+    "supply_list": [
+      {
+        "item": "Food Rations",
+        "quantity": 1000
+      },
+      {
+        "item": "Water Bottles",
+        "quantity": 500
+      },
+      {
+        "item": "Medical Kit",
+        "quantity": 1
+      }
+    ]
+  }
+}

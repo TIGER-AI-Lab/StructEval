@@ -1,0 +1,28 @@
+creature:
+  species: "Lumifernis nocturna"
+  habitat:
+    region: "Southern Rainforests"
+    climate: "tropical"
+  appearance:
+    color: "iridescent green with blue spots"
+    size: "150 centimeters"
+  abilities:
+    primary: "Bioluminescent communication"
+    secondary: "Infrared vision"
+  diet:
+    type: "Herbivore"
+    frequency: "Twice daily"
+  behavior:
+    social_structure: "Colony"
+    active_hours: "Nocturnal"
+offspring:
+  - name: "Lumifernis Junior"
+    age: 12
+    traits:
+      - "Bioluminescent glow"
+      - "Infrared vision"
+      - "Green and blue coloration"
+  count: 3
+discovery:
+  year: 2023
+  discoverer: "Dr. Elara M. Kestrel"

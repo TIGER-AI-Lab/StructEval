@@ -1,0 +1,38 @@
+
+name = "Green Valley Botanical Garden"
+established_year = 1923
+location = {
+    country = "Green Valley"
+    city = "Green Valley"
+}
+opening_hours = {
+    weekdays = {
+        opening = "09:00"
+        close = "17:00"
+    }
+    weekends = {
+        opening = "10:00"
+        close = "18:00"
+    }
+}
+greenhouses = [
+    {
+        name = "Tropical Greenhouse"
+        area_sqm = 5000
+        climate_type = "Tropical"
+        plants = [
+            {
+                species = "Rafflesia arnoldii"
+                origin_region = "Indonesia"
+                is_endangered = true
+                year_introduced = 2005
+            },
+            {
+                species = "Phyllostachys edulis"
+                origin_region = "Asia"
+                is_endangered = false
+                year_introduced = 1990
+            }
+        ]
+    }
+]

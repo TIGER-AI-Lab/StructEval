@@ -1,0 +1,62 @@
+{
+  "space_station": {
+    "name": "Aurora Outpost",
+    "operational_status": "Active",
+    "mascot": "Cosmo the Astro-Cat",
+    "location": {
+      "planet": "Ganymede",
+      "coordinates": {
+        "latitude": 12.4567,
+        "longitude": 98.7654
+      }
+    },
+    "crew": [
+      "Dr. Vega",
+      "Lt. Orion",
+      "Engineer Nova",
+      "Chef Luna"
+    ],
+    "modules": [
+      {
+        "name": "Habitat Ring",
+        "purpose": "Living Quarters",
+        "status": "Operational",
+        "equipment": [
+          "Beds",
+          "Gym",
+          "Hydroponics"
+        ]
+      },
+      {
+        "name": "Research Lab",
+        "purpose": "Experiments",
+        "status": "Maintenance",
+        "equipment": [
+          "Microscopes",
+          "Spectrometers",
+          "Quantum Computer"
+        ]
+      }
+    ],
+    "supply_shipments": [
+      {
+        "shipment_id": "ST-2024-001",
+        "contents": [
+          "Oxygen Tanks",
+          "Food Rations",
+          "Spare Parts"
+        ],
+        "arrival_date": "2024-04-22"
+      },
+      {
+        "shipment_id": "ST-2024-002",
+        "contents": [
+          "Medical Supplies",
+          "Seeds",
+          "Water Filters"
+        ],
+        "arrival_date": "2024-06-15"
+      }
+    ]
+  }
+}

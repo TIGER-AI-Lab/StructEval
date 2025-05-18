@@ -1,0 +1,34 @@
+
+space_station = {
+  name = "Alpha-Centauri-1",
+  location = {
+    orbiting_body = "Earth",
+    coordinates = {
+      latitude = 51.5074,
+      longitude = -0.1278
+    }
+  },
+  modules = [
+    {
+      id = "module-1",
+      type = "habitation",
+      status = "active",
+      crew_capacity = 6
+    }
+  ],
+  experiments = [
+    {
+      experiment_id = "exp-1",
+      title = "Microgravity Effects on Plant Growth",
+      principal_investigator = "Dr. Jane Smith",
+      start_date = "2022-01-01T00:00:00Z",
+      status = "ongoing"
+    }
+  ],
+  launch_history = [
+    {
+      date = "2020-02-20T12:00:00Z",
+      vehicle = "Falcon 9"
+    }
+  ]
+}

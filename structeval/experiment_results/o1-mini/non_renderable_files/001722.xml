@@ -1,0 +1,37 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <title>Spaghetti Carbonara</title>
+    <author>
+        <name>John Doe</name>
+        <contact>
+            <email>johndoe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>4</quantity>
+            <unit>units</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Boil the spaghetti in salted water until al dente.</description>
+        </step>
+        <step>
+            <order>2</order>
+            <description>Beat the eggs and mix with grated Parmesan cheese.</description>
+        </step>
+    </instructions>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <prepTime>PT20M</prepTime>
+    </metadata>
+</recipe>

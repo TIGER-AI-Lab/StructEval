@@ -1,0 +1,51 @@
+
+<galaxy>
+    <name>Andromeda Galaxy</name>
+    <discoveryYear>1923</discoveryYear>
+    <type>spiral</type>
+    <stars>
+        <star>
+            <name>Star Alpha</name>
+            <spectralClass>G</spectralClass>
+            <ageMillionYears>10</ageMillionYears>
+            <massSolar>1.0</massSolar>
+            <planets>
+                <planet>
+                    <name>Planet Beta</name>
+                    <hasLife>true</hasLife>
+                    <orbitalPeriod>1.0</orbitalPeriod>
+                    <massEarths>1.0</massEarths>
+                    <atmosphere>
+                        <composition>Helium, Oxygen, Nitrogen</composition>
+                        <pressureAtm>1.0</pressureAtm>
+                    </atmosphere>
+                    <moons>
+                        <moon>
+                            <name>Moon Gamma</name>
+                            <diameterKm>1000</diameterKm>
+                            <discoveryDate>2020-01-01</discoveryDate>
+                        </moon>
+                    </moons>
+                </planet>
+            </planets>
+        </star>
+        <star>
+            <name>Star Delta</name>
+            <spectralClass>K</spectralClass>
+            <ageMillionYears>5</ageMillionYears>
+            <massSolar>0.5</massSolar>
+            <planets>
+                <planet>
+                    <name>Planet Epsilon</name>
+                    <hasLife>false</hasLife>
+                    <orbitalPeriod>0.5</orbitalPeriod>
+                    <massEarths>0.5</massEarths>
+                    <atmosphere>
+                        <composition>Carbon Dioxide, Nitrogen</composition>
+                        <pressureAtm>0.5</pressureAtm>
+                    </atmosphere>
+                </planet>
+            </planets>
+        </star>
+    </stars>
+</galaxy>

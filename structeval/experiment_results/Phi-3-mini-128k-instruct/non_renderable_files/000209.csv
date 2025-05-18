@@ -1,0 +1,3 @@
+
+planet_id,planet_name,system_name,discovery_year,mass_earths,radius_km,orbital_period_days,atmosphere_composition,has_rings,rings_count,largest_moon_name,largest_moon_diameter_km,surface_temperature_c,discovered_by,notes
+"EXO-12345","Zyphoria","Zyphor System","2025","5.2","11000","687","N2,O2,Ar,CO2","TRUE","2","Zyphoria Prime","12000","-15","Dr. Jane Smith","First exoplanet with Earth-like atmosphere and rings"

@@ -1,0 +1,86 @@
+
+recipe = {
+  title = "Delicious Chicken Fajitas",
+  author = {
+    name = "John Doe",
+    contact = {
+      email = "john.doe@example.com"
+    }
+  },
+  ingredients = [
+    {
+      name = "Chicken breast",
+      quantity = 500,
+      unit = "g",
+      notes = "Cut into thin strips",
+      allergen = "Poultry"
+    },
+    {
+      name = "Bell peppers",
+      quantity = 2,
+      unit = "cups",
+      notes = "Any color",
+      allergen = "Vegetable"
+    },
+    {
+      name = "Onions",
+      quantity = 1,
+      unit = "cup",
+      notes = "Chopped",
+      allergen = "Vegetable"
+    },
+    {
+      name = "Fajita seasoning",
+      quantity = 2,
+      unit = "teaspoons",
+      notes = "Store-bought or homemade",
+      allergen = "Spice"
+    },
+    {
+      name = "Tortillas",
+      quantity = 4,
+      unit = "count",
+      notes = "Corn or flour",
+      allergen = "Grain"
+    }
+  ],
+  steps = [
+    {
+      description = "Heat a large skillet over medium-high heat",
+      duration_minutes = 5,
+      equipment = "Skillet",
+      temperature_celsius = 180
+    },
+    {
+      description = "Add chicken to the skillet and cook until browned",
+      duration_minutes = 10,
+      equipment = "Skillet",
+      temperature_celsius = 180
+    },
+    {
+      description = "Add bell peppers and onions to the skillet and cook until tender",
+      duration_minutes = 10,
+      equipment = "Skillet",
+      temperature_celsius = 180
+    },
+    {
+      description = "Add fajita seasoning to the skillet and stir to combine",
+      duration_minutes = 1,
+      equipment = "Skillet",
+      temperature_celsius = 180
+    },
+    {
+      description = "Warm tortillas by wrapping them in a damp paper towel and microwaving for 20-30 seconds",
+      duration_minutes = 2,
+      equipment = "Microwave"
+    }
+  ],
+  nutrition = {
+    calories = 500,
+    macronutrients = {
+      protein_g = 50,
+      carbs_g = 30,
+      fat_g = 20
+    }
+  }
+}

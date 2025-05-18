@@ -1,0 +1,28 @@
+
+{
+  "planet": {
+    "name": "Xylophar",
+    "type": "Gas Giant",
+    "atmosphere": {
+      "composition": ["Hydrogen", "Helium", "Methane"],
+      "pressure": 1500
+    },
+    "moons": [
+      {
+        "name": "Zyra",
+        "diameter_km": 3200,
+        "features": ["Ice geysers", "Subsurface ocean"]
+      },
+      {
+        "name": "Vorin",
+        "diameter_km": 1200,
+        "features": ["Craters", "Magnetic anomalies"]
+      }
+    ],
+    "discovery": {
+      "year": 2134,
+      "discovered_by": "Dr. Lira Chen",
+      "telescope": "StellarNet Array"
+    }
+  }
+}

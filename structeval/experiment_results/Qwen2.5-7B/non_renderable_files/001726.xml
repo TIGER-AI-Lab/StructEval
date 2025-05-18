@@ -1,0 +1,79 @@
+
+<recipe>
+  <author>
+    <name>John Doe</name>
+    <contact>
+      <email>john.doe@example.com</email>
+    </contact>
+  </author>
+  <title>Spaghetti Carbonara</title>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Chicken</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Parmesan Cheese</name>
+      <quantity>50</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Black Pepper</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <instruction>Boil water and cook spaghetti</instruction>
+      <duration>PT10M</duration>
+      <tip>Make sure the water is salted</tip>
+    </step>
+    <step>
+      <instruction>Cook chicken and set aside</instruction>
+      <duration>PT5M</duration>
+    </step>
+    <step>
+      <instruction>Beat eggs and mix with parmesan cheese</instruction>
+      <duration>PT1M</duration>
+    </step>
+    <step>
+      <instruction>Add black pepper and mix well</instruction>
+      <duration>PT1M</duration>
+    </step>
+    <step>
+      <instruction>Add cooked chicken and mix well</instruction>
+      <duration>PT1M</duration>
+    </step>
+    <step>
+      <instruction>Add cooked spaghetti and mix well</instruction>
+      <duration>PT1M</duration>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>600</calories>
+    <fat>30</fat>
+    <protein>40</protein>
+    <carbohydrates>50</carbohydrates>
+  </nutrition>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>easy</difficulty>
+    <tags>
+      <tag>spaghetti</tag>
+      <tag>carbonara</tag>
+      <tag>italian</tag>
+    </tags>
+  </metadata>
+</recipe>

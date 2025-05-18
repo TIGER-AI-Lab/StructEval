@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041144</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+const App = () => {
+  return (
+    <>
+      <header>
+        <h1>Test Document for Visual Conversion</h1>
+        <p>This document is designed to test structural layout, visual hierarchy, and formatted content.</p>
+        <hr />
+      </header>
+
+      <nav>
+        <h2>Navigation</h2>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#profile">Profile Information</a></li>
+          <li><a href="#projects">Project Details</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+        <hr />
+      </nav>
+
+      <main>
+        <section id="introduction">
+          <h2>Introduction</h2>
+          <p>Welcome to the test document. The purpose of this page is to showcase a mix of different HTML elements arranged in a clear and organized manner.</p>
+          <p>This page contains headings, paragraphs, lists, and definition lists. All content is formatted to create a visible structure that encourages easy reading and conversion tasks.</p>
+        </section>
+
+        <section id="profile">
+          <h2>Profile Information</h2>
+          <dl>
+            <dt><strong>Name:</strong></dt>
+            <dd>John Doe</dd>
+            <dt><strong>Age:</strong></dt>
+            <dd>29</dd>
+            <dt><strong>Occupation:</strong></dt>
+            <dd>Web Developer</dd>
+            <dt><strong>Location:</strong></dt>
+            <dd>New York, USA</dd>
+          </dl>
+        </section>
+
+        <section id="projects">
+          <h2>Project Details</h2>
+          <p>The following list presents key milestones and achievements in recent projects:</p>
+          <ol>
+            <li>Developed a responsive website for a local business.</li>
+            <li>Implemented a custom content management system using vanilla JavaScript.</li>
+            <li>Optimized site performance, resulting in a 40% faster load time.</li>
+            <li>Collaborated with a team of designers and marketers for a product launch.</li>
+          </ol>
+        </section>
+
+        <section id="features">
+          <h2>Features</h2>
+          <p>This section outlines the main features of the project that stand out due to their design and functionality:</p>
+          <ul>
+            <li>Clean and minimalistic design</li>
+            <li>User-friendly interface</li>
+            <li>Cross-browser compatibility</li>
+            <li>Accessible and semantic HTML structure</li>
+            <li>Optimized for mobile devices</li>
+          </ul>
+
+          <section>
+            <h3>Additional Details</h3>
+            <p>Further details on the additional features include:</p>
+            <ul>
+              <li>Modular components for reusability</li>
+              <li>Well-documented code for future scalability</li>
+              <li>Focus on accessibility standards (WCAG compliance)</li>
+            </ul>
+          </section>
+        </section>
+
+        <section id="conclusion">
+          <h2>Conclusion</h2>
+          <p>In summary, this document showcases a variety of HTML elements organized into a cohesive structure. It serves as a testbed for visual conversion tasks, focusing on the importance of layout, hierarchy, and formatted content.</p>
+          <p>Feel free to review each section and inspect the code to see how different elements come together to form a complete and structured HTML document.</p>
+        </section>
+      </main>
+
+      <footer>
+        <hr />
+        <p>&copy; 2023 Test Document. All rights reserved.</p>
+        <section>
+          <h3>Contact Information</h3>
+          <p><strong>Email:</strong> example@testdomain.com</p>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+        </section>
+      </footer>
+    </>
+  );
+};
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

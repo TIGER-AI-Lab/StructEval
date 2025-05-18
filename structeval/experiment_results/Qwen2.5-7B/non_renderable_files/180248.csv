@@ -1,0 +1,14 @@
+
+import pandas as pd
+
+data = [
+    {"artifact_name": "Lunar Prism", "discovery_year": 2042, "planet_of_origin": "Selene IV", "material": "Crystalline Alloy", "estimated_value_millions": 17.5, "last_auction_date": "2061-03-12"},
+    {"artifact_name": "Nebula Harp", "discovery_year": 2087, "planet_of_origin": "Orpheus Prime", "material": "Resonant Fibers", "estimated_value_millions": 9.2, "last_auction_date": "2090-11-23"},
+    {"artifact_name": "Titan Relic", "discovery_year": 2055, "planet_of_origin": "Titan", "material": "Frozen Titanium", "estimated_value_millions": 22.8, "last_auction_date": "2065-06-04"},
+    {"artifact_name": "Solar Compass", "discovery_year": 2071, "planet_of_origin": "Helios", "material": "Photonic Quartz", "estimated_value_millions": 13.6, "last_auction_date": "2075-09-18"},
+    {"artifact_name": "Void Amulet", "discovery_year": 2101, "planet_of_origin": "Erebus", "material": "Dark Matter Glass", "estimated_value_millions": 30.0, "last_auction_date": "2103-02-27"},
+    {"artifact_name": "Aurora Lens", "discovery_year": 2060, "planet_of_origin": "Borealis", "material": "Polar Crystal", "estimated_value_millions": 8.7, "last_auction_date": "2062-12-05"}
+]
+
+df = pd.DataFrame(data)
+df.to_csv('artifacts.csv', index=False)

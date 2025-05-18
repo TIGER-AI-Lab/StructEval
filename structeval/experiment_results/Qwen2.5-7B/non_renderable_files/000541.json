@@ -1,0 +1,52 @@
+
+{
+  "museum": {
+    "name": "The Metropolitan Museum of Art",
+    "location": {
+      "city": "New York",
+      "country": "USA"
+    },
+    "established_year": 1870,
+    "director": "Max Hollein"
+  },
+  "exhibits": [
+    {
+      "title": "The Starry Night",
+      "artist": "Vincent van Gogh",
+      "year_created": 1889,
+      "medium": "Oil on canvas",
+      "dimensions": {
+        "height_cm": 73.7,
+        "width_cm": 92.1
+      },
+      "on_display": true,
+      "provenance": [
+        {
+          "owner": "Kunstmuseum Basel",
+          "acquisition_date": "1901-01-01"
+        }
+      ]
+    },
+    {
+      "title": "Liberty Leading the People",
+      "artist": "EugÃ¨ne Delacroix",
+      "year_created": 1830,
+      "medium": "Oil on canvas",
+      "dimensions": {
+        "height_cm": 260,
+        "width_cm": 322.5
+      },
+      "on_display": true,
+      "provenance": [
+        {
+          "owner": "MusÃ©e du Louvre",
+          "acquisition_date": "1874-01-01"
+        }
+      ]
+    }
+  ],
+  "opening_hours": {
+    "weekdays": "10:00 - 17:30",
+    "weekends": "10:00 - 18:00"
+  }
+}

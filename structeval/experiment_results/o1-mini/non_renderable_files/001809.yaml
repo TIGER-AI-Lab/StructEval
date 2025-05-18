@@ -1,0 +1,27 @@
+
+artifact:
+  name: "Ancient Sun Disk"
+  origin: "Mayan Civilization"
+  discovery:
+    date: "2023-05-15T10:30:00Z"
+    location: "YucatÃ¡n Peninsula, Mexico"
+  dimensions:
+    height_cm: 150
+    width_cm: 120
+  materials:
+    - Jade
+    - Gold
+    - Turquoise
+  inscriptions:
+    - language: "Hieroglyphic Maya"
+      text: "A calendar of the gods."
+    - language: "Ancient Greek"
+      text: "Symbol of eternity."
+  current_location:
+    museum: "National Museum of Anthropology"
+    city: "Mexico City"
+  restorations:
+    - year: 1998
+      description: "Consolidated damaged jade fragments."
+    - year: 2010
+      description: "Performed advanced cleaning and preservation."

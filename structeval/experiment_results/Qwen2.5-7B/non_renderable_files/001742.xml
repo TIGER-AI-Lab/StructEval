@@ -1,0 +1,35 @@
+<planetaryEcosystem>
+    <planet name="Earth" type="terrestrial" orbitalPeriod="365">
+        <atmosphere composition="N2, O2" pressure="1" temperature="288">
+            <discovery year="1492" method="astronomical"/>
+        </atmosphere>
+        <moons>
+            <moon name="Moon" diameter="3474" hasWater="true">
+                <discovery year="1609" method="telescope"/>
+            </moon>
+        </moons>
+        <lifeforms>
+            <lifeform species="Homo sapiens" population="7.8 billion" intelligenceLevel="sentient">
+                <firstObserved date="1957-10-04"/>
+            </lifeform>
+        </lifeforms>
+    </planet>
+    <planet name="Mars" type="terrestrial" orbitalPeriod="687">
+        <atmosphere composition="CO2" pressure="0.006" temperature="210">
+            <discovery year="1610" method="astronomical"/>
+        </atmosphere>
+        <moons>
+            <moon name="Phobos" diameter="22.2" hasWater="false">
+                <discovery year="1877" method="telescope"/>
+            </moon>
+            <moon name="Deimos" diameter="12.6" hasWater="false">
+                <discovery year="1877" method="telescope"/>
+            </moon>
+        </moons>
+        <lifeforms>
+            <lifeform species="Martian" population="0" intelligenceLevel="non-sentient">
+                <firstObserved date="1976-07-04"/>
+            </lifeform>
+        </lifeforms>
+    </planet>
+</planetaryEcosystem>

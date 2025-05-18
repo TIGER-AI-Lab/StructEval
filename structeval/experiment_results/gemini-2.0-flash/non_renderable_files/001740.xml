@@ -1,0 +1,51 @@
+
+<creature>
+    <name>Sparky</name>
+    <species>Thunderbird</species>
+    <age>25</age>
+    <habitat>
+        <type>Mountain</type>
+        <location>Mount Cinder</location>
+        <temperature>15</temperature>
+    </habitat>
+    <abilities>
+        <ability>
+            <name>Lightning Strike</name>
+            <level>8</level>
+            <cooldown>5.5</cooldown>
+        </ability>
+        <ability>
+            <name>Thunder Clap</name>
+            <level>6</level>
+            <cooldown>3.2</cooldown>
+        </ability>
+    </abilities>
+    <appearance>
+        <height>150</height>
+        <color>Golden</color>
+        <markings>Fiery Aura</markings>
+    </appearance>
+    <history>
+        <origin>Born from a volcanic eruption</origin>
+        <majorEvents>
+            <event>
+                <eventName>First Flight</eventName>
+                <year>5</year>
+            </event>
+            <event>
+                <eventName>Saved the Village</eventName>
+                <year>18</year>
+            </event>
+        </majorEvents>
+    </history>
+    <relationships>
+        <relationship>
+            <relationType>Friend</relationType>
+            <individual>Rocky</individual>
+        </relationship>
+        <relationship>
+            <relationType>Rival</relationType>
+            <individual>Shadow</individual>
+        </relationship>
+    </relationships>
+</creature>

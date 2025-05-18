@@ -1,0 +1,60 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <title>Spaghetti Bolognese</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Ground Beef</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <!-- Additional ingredients can be added here -->
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Heat a large pan over medium heat and add the ground beef. Cook until browned.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Large Pan</name>
+                    <required>true</required>
+                </tool>
+                <!-- Additional tools can be added here -->
+            </tools>
+        </step>
+        <step>
+            <description>Add the tomato sauce to the browned beef and let it simmer.</description>
+            <duration_minutes>15</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Wooden Spoon</name>
+                    <required>false</required>
+                </tool>
+            </tools>
+        </step>
+        <!-- Additional steps can be added here -->
+    </instructions>
+    <nutrition>
+        <calories>650</calories>
+        <fat_grams>20.5</fat_grams>
+        <protein_grams>35.0</protein_grams>
+    </nutrition>
+    <tags>
+        <tag>Pasta</tag>
+        <tag>Italian</tag>
+        <tag>Classic</tag>
+    </tags>
+</recipe>

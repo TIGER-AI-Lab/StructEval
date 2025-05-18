@@ -1,0 +1,26 @@
+
+artifact:
+  name: "The Nebra Sky Disk"
+  origin:
+    civilization: "Unetice culture"
+    era: "Bronze Age"
+  composition:
+    materials:
+      - type: "Bronze"
+        percentage: 85
+      - type: "Gold"
+        percentage: 15
+  dimensions:
+    height_cm: 32
+    width_cm: 30
+    depth_cm: 0.6
+  discovery:
+    date: "1999-07-04"
+    location:
+      country: "Germany"
+      site: "Ziegelroda Forest near Nebra"
+  features:
+    - description: "Depicts a celestial map with the sun, moon, and stars"
+      is_unique: true
+    - description: "One of the oldest known representations of the cosmos"
+      is_unique: true

@@ -1,0 +1,2 @@
+character_name,species,home_planet,rank,assignment.mission_name,assignment.start_date,assignment.end_date,assignment.status,skills[0].skill_name,skills[0].proficiency,skills[1].skill_name,skills[1].proficiency,equipment[0].item_name,equipment[0].quantity,equipment[1].item_name
+"John T. Kirk","Human","Earth","Captain","Operation Stardust","2265-04-12","2265-10-30","Completed","Command Strategy",9,"Hand-to-Hand Combat",7,"Phaser Pistol",1,"Communicator"

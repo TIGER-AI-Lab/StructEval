@@ -1,0 +1,53 @@
+
+[
+  {
+    "galaxy_name": "Andromeda",
+    "location": {
+      "quadrant": "Alpha",
+      "sector": "42"
+    },
+    "discovery": {
+      "year": 2387,
+      "method": "Infrared Survey"
+    },
+    "features": {
+      "star_systems": [
+        {
+          "system_name": "Solara",
+          "num_planets": 5,
+          "inhabited": true,
+          "notable_planets": [
+            {
+              "planet_name": "Terra",
+              "type": "Terrestrial",
+              "population": 8000000000
+            }
+          ]
+        },
+        {
+          "system_name": "Draconis",
+          "num_planets": 3,
+          "inhabited": false,
+          "notable_planets": [
+            {
+              "planet_name": "Nebula",
+              "type": "Gas Giant",
+              "population": 0
+            }
+          ]
+        }
+      ]
+    },
+    "notable_events": [
+      {
+        "event": "First Contact",
+        "year": 2390
+      },
+      {
+        "event": "Supernova",
+        "year": 2412
+      }
+    ],
+    "current_status": "Stable"
+  }
+]

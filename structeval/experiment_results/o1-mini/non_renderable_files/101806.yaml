@@ -1,0 +1,26 @@
+
+spaceship:
+  name: "Star Wanderer"
+  model: "XJ-9000"
+  crew:
+    captain: "Lira Moonshadow"
+    officers:
+      - name: "Rex Falconer"
+        role: "First Officer"
+      - name: "Mira Quell"
+        role: "Science Officer"
+  specs:
+    length_m: 120.5
+    width_m: 42.3
+    max_speed_mach: 7.2
+  cargo:
+    bays:
+      - id: "A1"
+        capacity_tons: 50
+      - id: "B2"
+        capacity_tons: 75
+  missions:
+    - name: "Nebula Run"
+      year: 2321
+    - name: "Andromeda Survey"
+      year: 2323

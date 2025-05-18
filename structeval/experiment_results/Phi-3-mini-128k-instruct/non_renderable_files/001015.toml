@@ -1,0 +1,35 @@
+[artifact]
+name = "The Scepter of Eldoria"
+creator = {
+    full_name = "Sir Reginald Archibald",
+    affiliation = "Royal Society of Eldoria"
+}
+year_created = 1452
+dimensions = {
+    height_cm = 150.0,
+    width_cm = 5.0
+}
+materials = [
+    {
+        type = "Gold",
+        source = "Eldoria Mines"
+    },
+    {
+        type = "Jade",
+        source = "Mountain of Serenity"
+    }
+]
+exhibitions = [
+    {
+        name = "Treasures of the Ancients",
+        location = "Eldoria Museum",
+        date_range = {
+            start = "2023-05-15",
+            end = "2023-08-30"
+        }
+    }
+]
+provenance = [
+    "The Crown of Eldoria",
+    "The Royal Treasury of Eldoria"
+]

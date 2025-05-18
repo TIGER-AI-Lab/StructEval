@@ -1,0 +1,26 @@
+
+creature:
+  name: "Zyphloran"
+  species: "Xenoflora"
+  age: 150
+  origin:
+    planet: "Zyphora"
+    galaxy: "Andromeda"
+  abilities:
+    - type: "Telekinesis"
+      power_level: 85
+    - type: "Bioluminescence"
+      power_level: 70
+  appearance:
+    color: "Violet"
+    size: "Large"
+    limbs:
+      count: 8
+      types: ["Fused", "Webbed", "Prehensile"]
+  companions:
+    - name: "Luminara"
+      species: "Luminarae"
+      role: "Guardian"
+    - name: "Thalax"
+      species: "Thalaxian"
+      role: "Scout"

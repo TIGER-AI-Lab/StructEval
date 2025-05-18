@@ -1,0 +1,27 @@
+
+<planet>
+  <name>Zephyria</name>
+  <type>terrestrial</type>
+  <orbitalPeriod>412</orbitalPeriod>
+  <atmosphere>
+    <composition>nitrogen, oxygen, argon</composition>
+    <pressure>1.2</pressure>
+    <temperature>288</temperature>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>Lunara</name>
+      <diameter>3200</diameter>
+      <hasWater>true</hasWater>
+      <discovery year="2147" method="orbital telescope"/>
+    </moon>
+  </moons>
+  <lifeforms>
+    <lifeform>
+      <species>Zephyrian Sylph</species>
+      <population>1500000</population>
+      <intelligenceLevel>sentient</intelligenceLevel>
+      <firstObserved date="2135-07-19T00:00:00Z"/>
+    </lifeform>
+  </lifeforms>
+</planet>

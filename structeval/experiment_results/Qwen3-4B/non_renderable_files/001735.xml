@@ -1,0 +1,38 @@
+
+<recipe>
+  <title>Chocolate Cake</title>
+  <author>
+    <name>Jane Doe</name>
+    <contact>jane.doe@example.com</contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Flour</name>
+      <quantity>2</quantity>
+      <unit>cups</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Chocolate</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>true</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Preheat oven to 350Â°F</description>
+      <duration>PT10M</duration>
+    </step>
+    <step>
+      <description>Mix ingredients and bake for 25 minutes</description>
+      <duration>PT25M</duration>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>400</calories>
+    <protein>20</protein>
+    <fat>15</fat>
+    <carbohydrates>30</carbohydrates>
+  </nutrition>
+</recipe>

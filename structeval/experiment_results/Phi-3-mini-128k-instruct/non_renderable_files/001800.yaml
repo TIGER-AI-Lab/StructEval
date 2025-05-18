@@ -1,0 +1,22 @@
+creature:
+  name: Glitterwing
+  species: Fantastical
+  habitat:
+    type: Forest
+    region: Enchanted Everwood
+    climate: Temperate
+  abilities:
+    - name: Luminescent Wings
+      description: The creature emits a soft, ethereal glow from its wings, illuminating the surrounding area.
+      cooldown_seconds: 120
+    - name: Whispering Winds
+      description: The creature can create gentle breezes that carry its whispers, influencing the behavior of nearby creatures.
+      cooldown_seconds: 300
+  stats:
+    size_meters: 1.2
+    weight_kg: 3.5
+    lifespan_years: 50
+    diet: Herbivore
+  discovery:
+    discovered_by: Dr. Elara Morningside
+    discovery_date: 2023-04-15

@@ -1,0 +1,23 @@
+
+galaxy:
+  name: Andromeda
+  type: Spiral
+  distance_light_years: 2537000
+  discovery:
+    year: 964
+    telescope: Hooker Telescope
+    astronomers:
+      - name: Edwin Hubble
+        country: USA
+      - name: Vesto Slipher
+        country: USA
+  planets:
+    - name: Planet X
+      type: Gas Giant
+      moons:
+        - Luna X1
+        - Luna X2
+    - name: Planet Y
+      type: Rocky
+      moons:
+        - Luna Y1

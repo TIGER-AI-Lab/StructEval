@@ -1,0 +1,21 @@
+
+garden:
+  name: "Botanical Garden"
+  location:
+    city: "New York"
+    country: "USA"
+  size_sq_meters: 100000
+  established_year: 1920
+  sections:
+  - section_name: "Rose Garden"
+    plants:
+    - species: "Rosa rugosa"
+      age_years: 5
+      height_cm: 150
+      is_perennial: true
+      flowering_months:
+        - "June"
+        - "July"
+      care:
+        last_watered: "2022-06-15T14:30:00Z"
+        fertilizer_type: "Organic"

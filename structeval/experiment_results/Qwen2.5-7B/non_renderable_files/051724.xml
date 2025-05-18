@@ -1,0 +1,48 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "planetarySystem": {
+    "name": "Kepler-452",
+    "planets": {
+      "planet": [
+        {
+          "name": "Kepler-452b",
+          "moons": {
+            "moon": ["Selene", "Luna Minor"]
+          }
+        },
+        {
+          "name": "Kepler-452c",
+          "moons": {
+            "moon": ["Phobos", "Deimos"]
+          }
+        }
+      ]
+    }
+  }
+}
+'''
+
+data = json.loads(json_data)
+
+root = ET.Element("root")
+
+planetary_system = ET.SubElement(root, "planetarySystem")
+planetary_system.set("name", data["planetarySystem"]["name"])
+
+planets = ET.SubElement(planetary_system, "planets")
+
+for planet in data["planetarySystem"]["planets"]["planet"]:
+    planet_element = ET.SubElement(planets, "planet")
+    planet_element.set("name", planet["name"])
+
+    moons = ET.SubElement(planet_element, "moons")
+    for moon in planet["moons"]["moon"]:
+        moon_element = ET.SubElement(moons, "moon")
+        moon_element.text = moon
+
+tree = ET.ElementTree(root)
+tree.write("output.xml")

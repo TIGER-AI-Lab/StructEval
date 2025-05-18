@@ -1,0 +1,62 @@
+
+{
+    "game": {
+        "title": "Eternal Quest",
+        "release_year": 2023,
+        "developer": {
+            "name": "Stellar Games",
+            "founded": 2010
+        },
+        "platforms": [
+            {
+                "name": "PC",
+                "release_date": "2023-09-15",
+                "features": [
+                    {
+                        "feature_name": "crossplay",
+                        "is_multiplayer_supported": true
+                    },
+                    {
+                        "feature_name": "modding support",
+                        "is_multiplayer_supported": false
+                    }
+                ]
+            },
+            {
+                "name": "PlayStation",
+                "release_date": "2023-09-22",
+                "features": [
+                    {
+                        "feature_name": "crossplay",
+                        "is_multiplayer_supported": true
+                    }
+                ]
+            }
+        ],
+        "genres": ["RPG", "Adventure"],
+        "ratings": {
+            "ESRB": "T",
+            "PEGI": "16"
+        },
+        "awards": [
+            {
+                "award_name": "Best RPG",
+                "year": 2023
+            },
+            {
+                "award_name": "Game of the Year",
+                "year": 2023
+            }
+        ],
+        "characters": [
+            {
+                "name": "Aria Windrunner",
+                "role": "protagonist"
+            },
+            {
+                "name": "Drake Shadowbane",
+                "role": "antagonist"
+            }
+        ]
+    }
+}

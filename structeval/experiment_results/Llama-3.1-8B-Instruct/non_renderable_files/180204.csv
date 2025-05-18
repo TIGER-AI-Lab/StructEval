@@ -1,0 +1,18 @@
+
+import csv
+from io import StringIO
+
+data = [
+    {"Creature": "Glimmerbat", "DiscoveryDate": "2021-10-31", "Luminosity": 87.5, "Habitat": "Crystal Caverns", "NumberOfWings": 4, "IsTelepathic": True},
+    {"Creature": "Zephyrfish", "DiscoveryDate": "2019-06-12", "Luminosity": 23.1, "Habitat": "Sky Rivers", "NumberOfWings": 0, "IsTelepathic": False},
+    {"Creature": "Emberfox", "DiscoveryDate": "2022-01-15", "Luminosity": 45.8, "Habitat": "Ashen Woods", "NumberOfWings": 2, "IsTelepathic": False},
+    {"Creature": "Prismowl", "DiscoveryDate": "2018-09-09", "Luminosity": 66.0, "Habitat": "Rainbow Peaks", "NumberOfWings": 6, "IsTelepathic": True},
+    {"Creature": "Mossbeetle", "DiscoveryDate": "2020-04-22", "Luminosity": 12.3, "Habitat": "Emerald Marshlands", "NumberOfWings": 4, "IsTelepathic": False},
+    {"Creature": "Frostling", "DiscoveryDate": "2023-02-28", "Luminosity": 33.9, "Habitat": "Glacial Hollows", "NumberOfWings": 2, "IsTelepathic": True}
+]
+
+with StringIO() as f:
+    writer = csv.DictWriter(f, fieldnames=data[0].keys())
+    writer.writeheader()
+    writer.writerows(data)
+    print(f.getvalue())

@@ -1,0 +1,26 @@
+
+artifact:
+  name: "The Celestial Amulet"
+  origin:
+    civilization: "Atlantis"
+    estimated_age: 3500
+  materials:
+    - type: "gold"
+      provenance: "Ancient mines of Atlantis"
+    - type: "lapis lazuli"
+      provenance: "Lazuli mines of Afghanistan"
+  dimensions:
+    height_cm: 15
+    width_cm: 10
+    depth_cm: 5
+  inscriptions:
+    - language: "Ancient Greek"
+      text: "To the gods of the sea, I offer my devotion."
+    - language: "Unknown"
+      text: "Eternal light, eternal peace."
+  current_location:
+    museum: "The British Museum"
+    display_case: "Exhibit 42"
+  discovery:
+    date: "2021-05-15"
+    location: "Off the coast of Crete, Greece"

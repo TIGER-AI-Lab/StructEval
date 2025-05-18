@@ -1,0 +1,25 @@
+
+galaxy:
+  name: Andromeda
+  type: Spiral
+  distance_light_years: 2537000
+  discovery:
+    year: 964
+    telescope: Hubble Telescope
+  stars:
+    - name: Alpha
+      type: Red Giant
+      planets:
+        - name: Planet X
+          has_life: false
+          moons: 2
+    - name: Beta
+      type: Main Sequence
+      planets:
+        - name: Planet Y
+          has_life: true
+  notable_events:
+    - event: First Observed
+      year: 964
+    - event: Closest Approach Predicted
+      year: 4470

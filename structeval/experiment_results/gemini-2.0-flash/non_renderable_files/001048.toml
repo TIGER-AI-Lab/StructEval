@@ -1,0 +1,40 @@
+[museum]
+name = "The Metropolitan Museum of Art"
+founded_year = 1870
+
+[museum.location]
+city = "New York"
+country = "USA"
+
+[museum.director]
+full_name = "Max Hollein"
+tenure_years = 5
+
+[[museum.galleries]]
+title = "European Paintings"
+theme = "19th-Century Masters"
+
+[[museum.galleries.artworks]]
+artist = "Vincent van Gogh"
+title = "Self-Portrait with a Straw Hat"
+year_created = 1887
+medium = "Oil on canvas"
+on_display = true
+
+[[museum.galleries.artworks]]
+artist = "Claude Monet"
+title = "Bridge over a Pool of Water Lilies"
+year_created = 1899
+medium = "Oil on canvas"
+on_display = true
+
+[[museum.galleries.artworks]]
+artist = "Edgar Degas"
+title = "The Dance Class"
+year_created = 1874
+medium = "Oil on canvas"
+on_display = false
+
+[[museum.events]]
+name = "Impressionism Exhibition"
+date = "2024-11-15"

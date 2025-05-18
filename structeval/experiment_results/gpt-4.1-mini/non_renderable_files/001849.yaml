@@ -1,0 +1,35 @@
+
+game:
+  title: "Chronicles of Eldoria"
+  release_year: 2022
+  genre: "RPG"
+  platforms:
+    - name: "PC"
+      release_date: "2022-09-15"
+      supported_languages:
+        - "English"
+        - "French"
+        - "German"
+        - "Japanese"
+  developer:
+    name: "Silver Oak Studios"
+    founded: 2010
+    location:
+      city: "Seattle"
+      country: "USA"
+  reviews:
+    - reviewer: "GameSpot"
+      score: 8.5
+      date: "2022-09-20"
+      comment: "A captivating RPG with deep storytelling and immersive gameplay."
+    - reviewer: "IGN"
+      score: 9.0
+      date: "2022-09-18"
+      comment: "Stunning visuals and a rich world make this a must-play."
+  expansions:
+    - title: "The Shadow's Rise"
+      release_year: 2023
+      features:
+        - "New playable character class: Shadow Mage"
+        - "Expanded open world with new regions"
+        - "Additional main storyline quests"

@@ -1,0 +1,68 @@
+
+<recipe>
+  <name>Classic Spaghetti Carbonara</name>
+  <author>Chef Mario Rossi</author>
+  <cuisine>Italian</cuisine>
+  <prepTime>PT15M</prepTime>
+  <cookTime>PT20M</cookTime>
+  <servings>4</servings>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Pancetta</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>units</unit>
+    </ingredient>
+    <ingredient>
+      <name>Parmesan cheese</name>
+      <quantity>100</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Black pepper</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+    <ingredient>
+      <name>Salt</name>
+      <quantity>to taste</quantity>
+      <unit></unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <order>1</order>
+      <description>Boil the spaghetti in salted water until al dente.</description>
+      <duration>PT10M</duration>
+    </step>
+    <step>
+      <order>2</order>
+      <description>Fry the pancetta until crispy.</description>
+      <duration>PT5M</duration>
+    </step>
+    <step>
+      <order>3</order>
+      <description>Beat the eggs and mix with grated Parmesan cheese and black pepper.</description>
+      <duration>PT3M</duration>
+    </step>
+    <step>
+      <order>4</order>
+      <description>Drain the spaghetti and combine immediately with the pancetta and egg mixture off the heat.</description>
+      <duration>PT2M</duration>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>450</calories>
+    <protein>20</protein>
+    <fat>18</fat>
+  </nutrition>
+</recipe>

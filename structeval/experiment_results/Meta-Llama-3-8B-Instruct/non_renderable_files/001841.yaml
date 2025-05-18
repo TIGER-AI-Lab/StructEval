@@ -1,0 +1,24 @@
+
+artifact:
+  name: "The Golden Idol"
+  type: "statue"
+  discovery_date: "2022-01-01T00:00:00Z"
+  origin:
+    civilization: "Ancient Egyptians"
+    era: "New Kingdom"
+  location:
+    latitude: 25.7123
+    longitude: 32.7123
+  materials:
+    - name: "Gold"
+      percentage: 80
+    - name: "Copper"
+      percentage: 20
+  dimensions:
+    height_cm: 50
+    width_cm: 30
+  features:
+    - description: "Intricate hieroglyphics on the base"
+      significance: "Provides insight into ancient Egyptian artistry"
+    - description: "Golden accents on the crown"
+      significance: "Symbolizes the pharaoh's divine right"

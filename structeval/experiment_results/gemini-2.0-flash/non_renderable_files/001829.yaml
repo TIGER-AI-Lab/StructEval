@@ -1,0 +1,42 @@
+exhibit:
+  name: "Modern Masters: A Retrospective"
+  curator: "Dr. Eleanor Vance"
+  opening_date: "2023-10-27"
+  rooms:
+    - title: "The Dawn of Abstraction"
+      artworks:
+        - artist: "Wassily Kandinsky"
+          title: "Composition VII"
+          year: 1913
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 200
+            width_cm: 300
+            depth_cm: null
+          provenance: "Collection of Solomon R. Guggenheim, New York; Private Collection, Switzerland"
+          on_loan: true
+          loan_details:
+            lender: "Guggenheim Museum"
+            return_date: "2024-04-27"
+        - artist: "Piet Mondrian"
+          title: "Composition with Red, Blue and Yellow"
+          year: 1930
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 46
+            width_cm: 46
+            depth_cm: null
+          provenance: "Kunsthaus ZÃ¼rich"
+          on_loan: false
+    - title: "Surrealist Visions"
+      artworks:
+        - artist: "Salvador DalÃ­"
+          title: "The Persistence of Memory"
+          year: 1931
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 24
+            width_cm: 33
+            depth_cm: null
+          provenance: "Museum of Modern Art, New York"
+          on_loan: false

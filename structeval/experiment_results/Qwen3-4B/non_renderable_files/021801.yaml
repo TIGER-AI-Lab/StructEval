@@ -1,0 +1,24 @@
+
+mission_name: Odyssey Alpha
+launch:
+  date: 2042-07-16
+  location:
+    site: Cape Canaveral
+    country: USA
+crew:
+  - name: Dr. Jane Foster
+    role: Commander
+    experience_years: 12
+  - name: Alexei Ivanov
+    role: Pilot
+    experience_years: 7
+payload:
+  cargo: Satellite
+  weight_kg: 1200
+  experiments:
+    - title: Crystal Growth
+      field: Materials Science
+    - title: Photosynthesis in Microgravity
+      field: Biology
+duration_days: 180
+status: Completed

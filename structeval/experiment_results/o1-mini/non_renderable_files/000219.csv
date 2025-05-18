@@ -1,0 +1,117 @@
+
+import csv
+
+# Sample fictional recipe description
+recipe_description = """
+Recipe ID: 12345
+Name: Spicy Thai Basil Chicken
+Chef: Chef Amy
+Cuisine: Thai
+Difficulty: Intermediate
+Preparation Time: 15 minutes
+Cooking Time: 20 minutes
+Ingredients:
+- Chicken breast
+- Fresh basil
+- Garlic
+- Red chilies
+- Soy sauce
+- Oyster sauce
+- Sugar
+- Vegetable oil
+Instructions:
+1. Slice the chicken into thin pieces.
+2. Heat the vegetable oil in a pan.
+3. Add garlic and red chilies, sautÃ© until fragrant.
+4. Add chicken and cook until no longer pink.
+5. Stir in soy sauce, oyster sauce, and sugar.
+6. Add fresh basil and cook until wilted.
+Servings: 4
+Calories per Serving: 350
+Vegetarian: FALSE
+User Rating: 4.5
+"""
+
+# Function to extract information from the recipe description
+def extract_recipe(description):
+    lines = description.strip().split('
+')
+    recipe = {}
+    ingredients = []
+    steps = []
+    in_ingredients = False
+    in_steps = False
+    for line in lines:
+        line = line.strip()
+        if line.startswith('Recipe ID:'):
+            recipe['recipe_id'] = line.split(':', 1)[1].strip()
+        elif line.startswith('Name:'):
+            recipe['recipe_name'] = line.split(':', 1)[1].strip()
+        elif line.startswith('Chef:'):
+            recipe['chef_name'] = line.split(':', 1)[1].strip()
+        elif line.startswith('Cuisine:'):
+            recipe['cuisine_type'] = line.split(':', 1)[1].strip()
+        elif line.startswith('Difficulty:'):
+            recipe['difficulty_level'] = line.split(':', 1)[1].strip()
+        elif line.startswith('Preparation Time:'):
+            prep = int(line.split(':',1)[1].strip().split()[0])
+            recipe['prep_time_minutes'] = prep
+        elif line.startswith('Cooking Time:'):
+            cook = int(line.split(':',1)[1].strip().split()[0])
+            recipe['cook_time_minutes'] = cook
+        elif line.startswith('Ingredients:'):
+            in_ingredients = True
+            in_steps = False
+        elif line.startswith('Instructions:'):
+            in_ingredients = False
+            in_steps = True
+        elif in_ingredients and line.startswith('-'):
+            ingredient = line[1:].strip()
+            ingredients.append(ingredient)
+        elif in_steps and line[0].isdigit():
+            step = line.split('.',1)[1].strip()
+            steps.append(step)
+        elif line.startswith('Servings:'):
+            recipe['servings'] = int(line.split(':',1)[1].strip())
+        elif line.startswith('Calories per Serving:'):
+            recipe['calories_per_serving'] = int(line.split(':',1)[1].strip())
+        elif line.startswith('Vegetarian:'):
+            veg = line.split(':',1)[1].strip().upper()
+            recipe['is_vegetarian'] = 'TRUE' if veg == 'TRUE' else 'FALSE'
+        elif line.startswith('User Rating:'):
+            recipe['user_rating'] = float(line.split(':',1)[1].strip())
+    
+    recipe['ingredient_list'] = ';'.join(ingredients)
+    recipe['ingredient_count'] = len(set(ingredients))
+    recipe['main_ingredient'] = ingredients[0] if ingredients else ''
+    recipe['steps'] = ';'.join(steps)
+    
+    return recipe
+
+# Extract recipe information
+recipe_data = extract_recipe(recipe_description)
+
+# Define CSV headers
+headers = [
+    'recipe_id',
+    'recipe_name',
+    'chef_name',
+    'cuisine_type',
+    'difficulty_level',
+    'prep_time_minutes',
+    'cook_time_minutes',
+    'ingredient_list',
+    'ingredient_count',
+    'main_ingredient',
+    'steps',
+    'servings',
+    'calories_per_serving',
+    'is_vegetarian',
+    'user_rating'
+]
+
+# Write to CSV
+with open('recipe.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=headers)
+    writer.writeheader()
+    writer.writerow(recipe_data)

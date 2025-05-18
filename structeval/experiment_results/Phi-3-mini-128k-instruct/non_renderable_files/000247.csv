@@ -1,0 +1,5 @@
+
+"creature_id","species_name","habitat.region","habitat.terrain_type","habitat.temperature_celsius","physical_traits.height_meters","physical_traits.weight_kilograms","physical_traits.skin_color","physical_traits.eye_count","abilities[0].name","abilities[0].power_level","abilities[1].name","abilities[1].power_level","diet.primary_food","diet.secondary_food"
+"001","Glimmerwing Seraph","Ethereal Plains","Forest","15","1.2","2","Silver","4","Gliding","9","Invisibility","7","Moonberries","Starfruit"
+"002","Shadowstalker Lynx","Misty Mountains","Mountain","5","1.5","30","Grey","2","Shadow Maneuver","8","Camouflage","6","Mistberries","Moonberries"
+"003","Sunburst Phoenix","Solar Desert","Desert","35","1.8","10","Gold","2","Fire Resurrection","10","Sunburst Flight","9","Sunfruit","Solar Berries"

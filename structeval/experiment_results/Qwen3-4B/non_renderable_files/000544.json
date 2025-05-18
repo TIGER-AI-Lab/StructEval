@@ -1,0 +1,39 @@
+
+{
+  "planet": {
+    "name": "Vespera-7",
+    "discovery": {
+      "year": 2023,
+      "method": "transit"
+    },
+    "orbital_parameters": {
+      "semi_major_axis": 0.5,
+      "eccentricity": 0.1,
+      "inclination": 30
+    },
+    "atmosphere": {
+      "composition": {
+        "primary_gas": "hydrogen",
+        "trace_gases": ["methane", "carbon_dioxide", "neon"]
+      },
+      "pressure": 10
+    },
+    "moons": [
+      {
+        "name": "Luna Prime",
+        "diameter_km": 1000,
+        "orbit": {
+          "period_days": 3,
+          "distance_km": 100000
+        }
+      }
+    ],
+    "rings": [
+      {
+        "name": "Aurora Ring",
+        "radius_inner_km": 5000,
+        "radius_outer_km": 15000
+      }
+    ]
+  }
+}

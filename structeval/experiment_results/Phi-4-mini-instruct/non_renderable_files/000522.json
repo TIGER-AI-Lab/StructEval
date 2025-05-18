@@ -1,0 +1,55 @@
+
+{
+  "expedition": {
+    "mission_name": "Odyssey to Andromeda",
+    "leader": {
+      "name": "Captain Elena Rodriguez",
+      "rank": "Commander",
+      "contact": {
+        "email": "elena.rodriguez@spaceagency.gov",
+        "phone": "+1-555-123-4567"
+      }
+    },
+    "crew": [
+      {
+        "name": "Dr. Marcus Lee",
+        "role": "Chief Scientist",
+        "skills": ["Astrophysics", "Biology", "Engineering"]
+      },
+      {
+        "name": "Lieutenant Sarah Chen",
+        "role": "Navigation Officer",
+        "skills": ["Celestial Navigation", "Astrodynamics", "Computer Science"]
+      }
+    ],
+    "destination": {
+      "planet": "Andromeda-3",
+      "coordinates": {
+        "latitude": -23.45,
+        "longitude": 134.56
+      }
+    },
+    "supply_list": [
+      {
+        "item": "Oxygen Tanks",
+        "quantity": 100
+      },
+      {
+        "item": "Food Rations",
+        "quantity": 500
+      },
+      {
+        "item": "Water Purification Units",
+        "quantity": 10
+      },
+      {
+        "item": "Space Suits",
+        "quantity": 20
+      },
+      {
+        "item": "Medical Kits",
+        "quantity": 15
+      }
+    ]
+  }
+}

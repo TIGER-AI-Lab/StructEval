@@ -1,0 +1,42 @@
+[expedition]
+name = "Interstellar Expedition: The Red Odyssey"
+launch_date = "2045-07-21T14:30:00Z"
+destination = {
+    planet = "Mars"
+    region = "Valles Marineris"
+}
+crew = [
+    {
+        name = "Dr. Jane Smith"
+        role = "Lead Astrobiologist"
+        experience_years = 12
+        certifications = ["Certified Astrobiologist", "Mars Habitat Specialist"]
+    },
+    {
+        name = "Commander John Doe"
+        role = "Mission Commander"
+        experience_years = 15
+        certifications = ["Certified Space Mission Commander", "Advanced Piloting Certification"]
+    }
+]
+equipment = [
+    {
+        item = "Habitat Module"
+        quantity = 2
+        status = "operational"
+    },
+    {
+        item = "Rover"
+        quantity = 1
+        status = "operational"
+    },
+    {
+        item = "Spectrometer"
+        quantity = 3
+        status = "spare"
+    }
+]
+mission_objectives = {
+    primary = "Establish a permanent research base on Mars"
+    secondary = "Search for signs of past or present life"
+}

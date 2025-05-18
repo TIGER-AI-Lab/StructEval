@@ -1,0 +1,39 @@
+
+import csv
+import xml.etree.ElementTree as ET
+
+def csv_to_xml(csv_file, xml_file):
+    tree = ET.ElementTree()
+    root = ET.Element("planets")
+    tree._setroot(root)
+
+    with open(csv_file, 'r') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            planet = ET.SubElement(root, "planet")
+            planet.set("name", row["planet_name"])
+            star = ET.SubElement(planet, "star")
+            star.set("name", row["system.star_name"])
+            star.set("type", row["system.star_type"])
+            star.set("distance_from_earth_ly", row["system.distance_from_earth_ly"])
+            moon1 = ET.SubElement(planet, "moon")
+            moon1.set("name", row["moons[0].moon_name"])
+            moon1.set("diameter_km", row["moons[0].diameter_km"])
+            moon1.set("has_atmosphere", row["moons[0].has_atmosphere"])
+            moon2 = ET.SubElement(planet, "moon")
+            moon2.set("name", row["moons[1].moon_name"])
+            moon2.set("diameter_km", row["moons[1].diameter_km"])
+            moon2.set("has_atmosphere", row["moons[1].has_atmosphere"])
+            surface = ET.SubElement(planet, "surface")
+            surface.set("temperature_c", row["surface.temperature_c"])
+            surface.set("gravity_ms2", row["surface.gravity_ms2"])
+            feature1 = ET.SubElement(surface, "feature")
+            feature1.set("name", row["surface.features[0].feature_name"])
+            feature1.set("type", row["surface.features[0].feature_type"])
+            feature2 = ET.SubElement(surface, "feature")
+            feature2.set("name", row["surface.features[1].feature_name"])
+            feature2.set("type", row["surface.features[1].feature_type"])
+
+    tree.write(xml_file)
+
+csv_to_xml("planets.csv", "planets.xml")

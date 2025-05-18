@@ -1,0 +1,30 @@
+[artifact]
+name = "The Enigmatic Vessel"
+origin = "Minoan"
+[artifact.discovery]
+year = 1975
+[artifact.discovery.location]
+country = "Greece"
+site = "Knossos"
+[artifact.materials]
+[artifact.materials[0]]
+type = "Ceramic"
+age_estimate = 3500
+[artifact.materials[1]]
+type = "Metal"
+age_estimate = 3400
+[artifact.dimensions]
+height_cm = 25.5
+width_cm = 18.2
+[artifact.inscriptions]
+[artifact.inscriptions[0]]
+language = "Linear A"
+content = "Kamares ware"
+deciphered = true
+[artifact.inscriptions[1]]
+language = "Unknown"
+content = "Symbolic markings"
+deciphered = false
+[artifact.current_location]
+museum = "National Archaeological Museum, Athens"
+acquisition_date = "1976-05-10"

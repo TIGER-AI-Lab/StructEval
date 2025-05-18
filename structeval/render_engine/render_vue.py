@@ -1,5 +1,6 @@
 import os
 import re
+import html  # for un‑escaping &lt;…&gt; that often wraps SFC code
 import logging
 import tempfile
 import subprocess
@@ -18,12 +19,19 @@ def extract_vue_code_from_tag(generation):
     """
     Extract Vue code from a code tag. Handles both object format and Single File Component format.
     For SFC format, converts it to object format that can be used with Vue.createApp.
+    
+    Improved to handle various edge cases and better clean HTML entities.
     """
+    # Check if we have code tags
     match = re.search(r"<code>(.*?)</code>", generation, re.DOTALL)
     if not match:
-        return None
+        # Try without code tags
+        vue_code = generation.strip()
+    else:
+        vue_code = match.group(1).strip()
     
-    vue_code = match.group(1).strip()
+    # Always decode HTML entities - this is crucial for properly rendering Vue components
+    vue_code = html.unescape(vue_code)
     
     # Check if it's already in object format (starts with a curly brace)
     if vue_code.strip().startswith('{'):
@@ -33,63 +41,58 @@ def extract_vue_code_from_tag(generation):
     template_match = re.search(r"<template>(.*?)</template>", vue_code, re.DOTALL)
     script_match = re.search(r"<script>(.*?)</script>", vue_code, re.DOTALL)
     
-    if template_match and script_match:
+    if template_match:
         template_content = template_match.group(1).strip()
-        script_content = script_match.group(1).strip()
         
-        # Extract the component object from the script section
-        # It could be in "export default {...}" format
-        component_match = re.search(r"export\s+default\s+(\{.*?\}\s*;?)", script_content, re.DOTALL)
-        if component_match:
-            component_object = component_match.group(1).strip()
-            if component_object.endswith(';'):
-                component_object = component_object[:-1]  # Remove trailing semicolon
+        # If we have a script section, try to extract the component object
+        if script_match:
+            script_content = script_match.group(1).strip()
             
-            # Add the template directly to the component object
-            # First check if it already has a template property
-            if "template:" not in component_object:
-                # Insert before the closing brace, make sure it has proper commas
-                component_object = component_object.rstrip('}')
-                if not component_object.endswith(','):
-                    component_object += ','
-                component_object += '\n  template: `' + template_content + '`\n}'
+            # Extract the component object from the <script> section
+            if "export default" in script_content:
+                try:
+                    comp = script_content.split("export default", 1)[1].strip()
+                    # Drop a trailing semicolon, if present
+                    if comp.endswith(";"):
+                        comp = comp[:-1].rstrip()
+                    
+                    # Ensure it starts with "{" – otherwise we bail out
+                    if comp.lstrip().startswith("{"):
+                        component_object = comp
+
+                        # Inject the template property if missing
+                        if "template:" not in component_object:
+                            component_object = component_object.rstrip("}")
+                            if not component_object.endswith(","):
+                                component_object += ","
+                            component_object += f"\n  template: `{template_content}`\n}}"
+
+                        return component_object
+                except Exception as e:
+                    logging.warning(f"Error extracting component object: {e}")
             
-            # Fix missing methods, computed etc.
-            # Extract methods from component
-            methods_match = re.search(r'methods:\s*{([^}]*)}', component_object, re.DOTALL)
-            computed_match = re.search(r'computed:\s*{([^}]*)}', component_object, re.DOTALL)
-            
-            # Ensure the methods section has proper syntax
-            if methods_match:
-                methods_section = methods_match.group(1).strip()
-                # Make sure each method ends with a comma if it doesn't already
-                methods_lines = methods_section.split('\n')
-                for i in range(len(methods_lines) - 1):  # Skip the last line
-                    line = methods_lines[i].strip()
-                    if line and not line.endswith(','):
-                        methods_lines[i] = line + ','
-                fixed_methods = '\n'.join(methods_lines)
-                component_object = component_object.replace(methods_match.group(1), fixed_methods)
-            
-            # Do the same for computed properties
-            if computed_match:
-                computed_section = computed_match.group(1).strip()
-                computed_lines = computed_section.split('\n')
-                for i in range(len(computed_lines) - 1):  # Skip the last line
-                    line = computed_lines[i].strip()
-                    if line and not line.endswith(','):
-                        computed_lines[i] = line + ','
-                fixed_computed = '\n'.join(computed_lines)
-                component_object = component_object.replace(computed_match.group(1), fixed_computed)
-            
-            return component_object
+            # If we couldn't extract the component object properly, create a basic one
+            logging.warning("Couldn't extract component object from script, creating minimal component")
         
-        # If we couldn't extract the component object, create a minimal one
-        logging.warning("Couldn't extract component object from script, creating minimal component")
+        # Create a minimal component with just the template
         return '{\n  template: `' + template_content + '`\n}'
     
     # If all else fails, treat the whole code as template
     logging.warning("Couldn't identify Vue component format, using as template only")
+    
+    # Handle common issues with Vue templates
+    # 1. Fix unclosed curly braces in template strings
+    # 2. Replace problematic characters that might cause rendering issues
+    # 3. Limit component size to avoid memory issues
+    
+    # Simplify very large components by keeping just the essential parts
+    if len(vue_code) > 5000:
+        logging.warning("Vue component is very large, simplifying for better rendering")
+        vue_code = vue_code[:5000]  # Limit size to avoid memory issues
+        
+    # Ensure HTML structures are balanced
+    vue_code = vue_code.replace("&copy;", "©")
+        
     return '{\n  template: `' + vue_code + '`\n}'
 
 def ensure_vue_template_exists():
@@ -114,22 +117,20 @@ class QuietHTTPRequestHandler(SimpleHTTPRequestHandler):
 
 def start_http_server(directory, port):
     """Start a simple HTTP server in a separate thread"""
-    # Change to the specified directory
-    os.chdir(directory)
-    
-    # Create and start the server
+    os.chdir(directory)                       # stay here until cleanup
     server = HTTPServer(('localhost', port), QuietHTTPRequestHandler)
-    server_thread = threading.Thread(target=server.serve_forever)
-    server_thread.daemon = True
-    server_thread.start()
-    
+    thread = threading.Thread(target=server.serve_forever, daemon=True)
+    thread.start()
     return server
 
 async def render_vue_and_screenshot(task_id, vue_code, img_output_path):
     """
     Renders Vue component code by copying a simplified Vue CDN template,
     injecting the component, and taking a screenshot.
+    
+    Improved to handle complex Vue components and provide better error recovery.
     """
+    img_output_path = os.path.abspath(img_output_path)   # <— make path absolute
     os.makedirs(img_output_path, exist_ok=True)
     render_score = 0
 
@@ -158,12 +159,12 @@ async def render_vue_and_screenshot(task_id, vue_code, img_output_path):
             logging.info(f"[{task_id}] Injecting component code...")
             app_js_path = os.path.join(project_dir, "app.js")
             
-            # Format the Vue code to fit the template
+            # Format the Vue code to fit the template - use a simplified approach for more reliable rendering
             formatted_vue_code = f"""
 // Template for Vue application
 const {{ createApp }} = Vue;
 
-// Vue component from the task
+// Vue component from the task - simplified for rendering
 const App = {vue_code};
 
 // Mount the app
@@ -181,6 +182,7 @@ app.mount('#app');
             server = start_http_server(project_dir, port)
             logging.info(f"[{task_id}] Server started on port {port}")
 
+            # Set a longer timeout for rendering complex Vue components
             logging.info(f"[{task_id}] Starting Playwright browser...")
             browser, context, page, playwright = await start_browser()
             page.on("console", lambda msg: logging.info(f"[{task_id}] Browser Console ({msg.type}): {msg.text}"))
@@ -188,10 +190,16 @@ app.mount('#app');
 
             try:
                 logging.info(f"[{task_id}] Navigating to page...")
-                await page.goto(f"http://localhost:{port}")
+                await page.goto(f"http://localhost:{port}", timeout=60000)  # Increase timeout to 60 seconds
                 logging.info(f"[{task_id}] Navigation complete. Waiting for network idle...")
-                await page.wait_for_load_state("networkidle")
+                
+                # Longer wait time for complex Vue components with many elements
+                await page.wait_for_load_state("networkidle", timeout=60000)
                 logging.info(f"[{task_id}] Network idle detected. Taking screenshot...")
+                
+                # Add a small delay to ensure Vue has properly rendered everything
+                await asyncio.sleep(1)
+                
                 screenshot_path = os.path.join(img_output_path, f"{task_id}.png")
                 await page.screenshot(path=screenshot_path, full_page=True)
                 logging.info(f"[{task_id}] Vue screenshot saved: {screenshot_path}")

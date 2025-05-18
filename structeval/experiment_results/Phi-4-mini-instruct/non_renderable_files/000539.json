@@ -1,0 +1,44 @@
+{
+  "artifact": {
+    "name": "Example Artifact Name",
+    "origin": {
+      "civilization": "Example Civilization",
+      "era": "Example Era"
+    },
+    "materials": [
+      {
+        "type": "Primary Material Type",
+        "provenance": "Geographical or Historical Provenance of First Material"
+      },
+      {
+        "type": "Second Material Type",
+        "provenance": "Geographical or Historical Provenance of Second Material"
+      }
+    ],
+    "dimensions": {
+      "height_cm": 123,
+      "width_cm": 45,
+      "depth_cm": 30
+    },
+    "inscriptions": [
+      {
+        "language": "Inscription Language 1",
+        "translation": "English Translation 1",
+        "position": "Inscription Position 1"
+      },
+      {
+        "language": "Inscription Language 2",
+        "translation": "English Translation 2",
+        "position": "Inscription Position 2"
+      }
+    ]
+  },
+  "current_location": {
+    "museum": "Example Museum Name",
+    "display_case": "Example Display Case or Gallery"
+  },
+  "discovery": {
+    "date": "2023-01-01T00:00:00Z",
+    "discoverer": "Example Discoverer Name"
+  }
+}

@@ -1,0 +1,13 @@
+
+galacticZoo:
+  animals:
+    - name: Quarfling
+      species: Plasma Fox
+      planets:
+        - Zylox
+        - Mira-7
+    - name: Blorptail
+      species: Gravity Lemur
+      planets:
+        - Andara
+        - Phobos

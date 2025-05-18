@@ -1,0 +1,47 @@
+{
+  "museum": {
+    "name": "The Grand Art Museum",
+    "location": {
+      "city": "Metropolis",
+      "country": "Fictionland"
+    },
+    "established_year": 1923,
+    "director": {
+      "name": "Dr. Eleanor Finch",
+      "tenure_years": 12
+    },
+    "departments": [
+      {
+        "name": "Modern Art",
+        "head": "Samuel Greene",
+        "collections": [
+          {
+            "title": "Sunset Over the City",
+            "year_acquired": 2005,
+            "artist": "Lila Hart",
+            "medium": "Oil on canvas",
+            "on_display": true
+          },
+          {
+            "title": "Abstract Dreams",
+            "year_acquired": 2010,
+            "artist": "Marco Diaz",
+            "medium": "Mixed media",
+            "on_display": false
+          },
+          {
+            "title": "Neon Nights",
+            "year_acquired": 2018,
+            "artist": "Jin Park",
+            "medium": "Acrylic on board",
+            "on_display": true
+          }
+        ]
+      }
+    ],
+    "opening_hours": {
+      "weekdays": "9:00 AM - 6:00 PM",
+      "weekends": "10:00 AM - 8:00 PM"
+    }
+  }
+}

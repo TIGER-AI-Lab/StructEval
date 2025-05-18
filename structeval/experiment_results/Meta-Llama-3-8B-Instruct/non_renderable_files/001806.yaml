@@ -1,0 +1,25 @@
+
+brewery:
+  name: "Frosty's Craft Brewery"
+  location:
+    city: "Denver"
+    country: "USA"
+  founded_year: 2015
+  owner: "John Smith"
+  beers:
+  - name: "Frosty's IPA"
+    style: "India Pale Ale"
+    abv: 6.2
+    awards:
+    - title: "Best IPA"
+      year: 2020
+    ingredients:
+      hops: ["Cascade", "Centennial"]
+      malts: ["Pale Malt", "Caramel Malt"]
+      yeast: "US-05"
+  tours:
+    available: true
+    schedule:
+    - day: "Saturday"
+      start_time: "14:00"
+      duration_minutes: 60

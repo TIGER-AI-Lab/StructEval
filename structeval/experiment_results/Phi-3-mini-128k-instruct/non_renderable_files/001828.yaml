@@ -1,0 +1,34 @@
+artifact:
+  metadata:
+    name: "The Enigmatic Tablet of Ancient Sumeria"
+    discovery_date: "2023-04-15"
+    origin_civilization: "Sumerian"
+    current_location: "The British Museum, London"
+  specifications:
+    dimensions:
+      length_cm: 30
+      width_cm: 15
+      height_cm: 2
+    materials:
+      - "Limestone"
+      - "Glazed ceramic"
+    age_years: 4500
+  analysis:
+    hypotheses:
+      - summary: "The tablet likely served as a record-keeping device for trade transactions."
+        confidence_score: 0.85
+      - summary: "It may have been a ceremonial object used in religious rites."
+        confidence_score: 0.65
+    researchers:
+      - name: "Dr. Emily Carter"
+        institution: "University of Oxford"
+        contribution: "Lead archaeologist and primary excavator of the site."
+      - name: "Prof. Johnathan Smith"
+        institution: "Harvard University"
+        contribution: "Specialist in Sumerian language and script analysis."
+      - name: "Dr. Angela Davis"
+        institution: "Cambridge University"
+        contribution: "Expert in ancient ceremonial artifacts."
+    related_artifacts:
+      - "The Code of Hammurabi Stele"
+      - "The Standard of Ur"

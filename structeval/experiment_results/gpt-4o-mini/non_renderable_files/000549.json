@@ -1,0 +1,40 @@
+
+{
+  "artifact": {
+    "name": "Golden Mask of Tutankhamun",
+    "origin": {
+      "culture": "Ancient Egyptian",
+      "period": "New Kingdom"
+    },
+    "materials": [
+      {
+        "type": "gold",
+        "quantity_grams": 1100
+      },
+      {
+        "type": "lapis lazuli",
+        "quantity_grams": 200
+      }
+    ],
+    "dimensions": {
+      "height_cm": 54,
+      "width_cm": 39,
+      "depth_cm": 49
+    },
+    "features": [
+      {
+        "description": "Intricate inlay work with semi-precious stones",
+        "estimated_age_years": 3300
+      },
+      {
+        "description": "Symbolizes the power and divinity of the pharaoh",
+        "estimated_age_years": 3300
+      }
+    ],
+    "current_location": {
+      "museum": "Egyptian Museum, Cairo",
+      "room": "Room 3",
+      "display_case": "Case 12"
+    }
+  }
+}

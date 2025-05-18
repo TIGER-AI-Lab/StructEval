@@ -1,0 +1,15 @@
+
+import pandas as pd
+import json
+
+# Read the CSV data
+data = pd.read_csv('data.csv')
+
+# Convert the DataFrame to a list of dictionaries
+data_list = data.to_dict(orient='records')
+
+# Convert the list of dictionaries to JSON
+json_data = json.dumps(data_list, indent=4)
+
+# Print the JSON data
+print(json_data)

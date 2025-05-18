@@ -1,0 +1,40 @@
+
+{
+  "artifact": {
+    "name": "Ancient Bronze Statue",
+    "origin": {
+      "culture": "Minoan",
+      "period": "Bronze Age"
+    },
+    "materials": [
+      {
+        "type": "bronze",
+        "quantity_grams": 1500
+      },
+      {
+        "type": "marble",
+        "quantity_grams": 500
+      }
+    ],
+    "dimensions": {
+      "height_cm": 120,
+      "width_cm": 45,
+      "depth_cm": 30
+    },
+    "features": [
+      {
+        "description": "Intricately carved detailing on the robes",
+        "estimated_age_years": 3500
+      },
+      {
+        "description": "Inlaid with semi-precious gemstones",
+        "estimated_age_years": 3500
+      }
+    ],
+    "current_location": {
+      "museum": "National Archaeological Museum",
+      "room": "Gallery of Bronze Artifacts",
+      "display_case": "Case 12B"
+    }
+  }
+}

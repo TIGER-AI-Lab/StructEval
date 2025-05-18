@@ -1,0 +1,64 @@
+
+import pandas as pd
+
+xml_data = """
+<FossilRecords>
+  <row>
+    <SpecimenID>FX-1021</SpecimenID>
+    <Species>Velociraptor mongoliensis</Species>
+    <DiscoveryDate>1997-05-14</DiscoveryDate>
+    <Location>Gobi Desert</Location>
+    <EstimatedAgeMillions>75.3</EstimatedAgeMillions>
+    <FossilType>Claw</FossilType>
+    <Curator>Dr. Linh Tran</Curator>
+  </row>
+  <row>
+    <SpecimenID>FX-1042</SpecimenID>
+    <Species>Triceratops horridus</Species>
+    <DiscoveryDate>2003-08-22</DiscoveryDate>
+    <Location>Montana, USA</Location>
+    <EstimatedAgeMillions>66.0</EstimatedAgeMillions>
+    <FossilType>Skull fragment</FossilType>
+    <Curator>Dr. Samuel Ortiz</Curator>
+  </row>
+  <row>
+    <SpecimenID>FX-1077</SpecimenID>
+    <Species>Pteranodon longiceps</Species>
+    <DiscoveryDate>2011-03-09</DiscoveryDate>
+    <Location>Kansas, USA</Location>
+    <EstimatedAgeMillions>86.5</EstimatedAgeMillions>
+    <FossilType>Wing bone</FossilType>
+    <Curator>Dr. Mei Chen</Curator>
+  </row>
+  <row>
+    <SpecimenID>FX-1103</SpecimenID>
+    <Species>Stegosaurus stenops</Species>
+    <DiscoveryDate>1999-11-30</DiscoveryDate>
+    <Location>Colorado, USA</Location>
+    <EstimatedAgeMillions>155.0</EstimatedAgeMillions>
+    <FossilType>Plate</FossilType>
+    <Curator>Dr. Ahmed El-Sayed</Curator>
+  </row>
+  <row>
+    <SpecimenID>FX-1138</SpecimenID>
+    <Species>Archaeopteryx lithographica</Species>
+    <DiscoveryDate>2015-07-17</DiscoveryDate>
+    <Location>Bavaria, Germany</Location>
+    <EstimatedAgeMillions>150.8</EstimatedAgeMillions>
+    <FossilType>Feather imprint</FossilType>
+    <Curator>Dr. Fiona McLeod</Curator>
+  </row>
+  <row>
+    <SpecimenID>FX-1159</SpecimenID>
+    <Species>Tyrannosaurus rex</Species>
+    <DiscoveryDate>2007-02-05</DiscoveryDate>
+    <Location>South Dakota, USA</Location>
+    <EstimatedAgeMillions>68.2</EstimatedAgeMillions>
+    <FossilType>Tooth</FossilType>
+    <Curator>Dr. Carlos Mendes</Curator>
+  </row>
+</FossilRecords>
+"""
+
+df = pd.read_xml(xml_data, xpath="//row")
+df.to_csv("fossil_records.csv", index=False)

@@ -1,0 +1,4 @@
+artifact_id,artifact_name,origin_civilization,discovery_date,material_composition,estimated_age_years,current_location,condition_status,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,notable_features,restoration_history,associated_myths,exhibit_status
+A1234567,"Golden Sun Disc",Minoan,2024-03-15,Gold;Electrum,3600,Heraklion Archaeological Museum,intact,25.5,25.5,2,Intricate carvings of sun rays;Central spiral motif,None,Myth of the Sun God Helios;Legend of the Labyrinth,On display
+B8765432,"Clay Tablet of Laws",Babylonian,2023-11-01,Clay,4000,British Museum,fragmented,15,10,2.5,Cuneiform script;Legal code,Partially restored in 2024,Code of Hammurabi,In storage
+C2468013,"Jade Dragon Pendant",Chinese,2024-06-20,Jade,2000,National Museum of China,restored,8,5,1,Intricate dragon carving;Symbol of imperial power,Restored in 1985,Symbol of good fortune and prosperity,On display

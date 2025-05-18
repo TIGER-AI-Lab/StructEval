@@ -1,0 +1,88 @@
+
+<recipe>
+  <title>Classic Spaghetti Carbonara</title>
+  <author>
+    <name>Maria Johnson</name>
+    <contact>maria.johnson@example.com</contact>
+  </author>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>Medium</difficulty>
+    <lastUpdated>2024-05-15</lastUpdated>
+  </metadata>
+  <nutrition>
+    <calories>650</calories>
+    <fat>22</fat>
+    <protein>28</protein>
+    <carbohydrates>75</carbohydrates>
+  </nutrition>
+  <ingredients>
+    <item>
+      <name>Spaghetti</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </item>
+    <item>
+      <name>Pancetta</name>
+      <quantity>100</quantity>
+      <unit>grams</unit>
+    </item>
+    <item>
+      <name>Egg yolks</name>
+      <quantity>4</quantity>
+      <unit>units</unit>
+    </item>
+    <item>
+      <name>Parmesan cheese</name>
+      <quantity>50</quantity>
+      <unit>grams</unit>
+    </item>
+    <item>
+      <name>Black pepper</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </item>
+    <item>
+      <name>Salt</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </item>
+    <item>
+      <name>Olive oil</name>
+      <quantity>1</quantity>
+      <unit>tablespoon</unit>
+    </item>
+  </ingredients>
+  <steps>
+    <step>
+      <description>Bring a large pot of salted water to a boil and cook the spaghetti until al dente, about 8 minutes.</description>
+      <duration>8</duration>
+      <tools>pot, stove, colander</tools>
+    </step>
+    <step>
+      <description>While the pasta cooks, heat olive oil in a pan over medium heat and fry the pancetta until crispy, about 5 minutes.</description>
+      <duration>5</duration>
+      <tools>pan, stove, spatula</tools>
+    </step>
+    <step>
+      <description>In a bowl, whisk together the egg yolks, grated Parmesan cheese, and black pepper until smooth.</description>
+      <duration>3</duration>
+      <tools>bowl, whisk</tools>
+    </step>
+    <step>
+      <description>Drain the spaghetti, reserving some pasta water. Add the hot pasta to the pancetta pan and remove from heat.</description>
+      <duration>2</duration>
+      <tools>colander, pan</tools>
+    </step>
+    <step>
+      <description>Quickly stir in the egg and cheese mixture, adding reserved pasta water as needed to create a creamy sauce without scrambling the eggs.</description>
+      <duration>3</duration>
+      <tools>spoon, bowl</tools>
+    </step>
+    <step>
+      <description>Serve immediately, garnished with extra Parmesan and freshly ground black pepper.</description>
+      <duration>1</duration>
+      <tools>plate, fork</tools>
+    </step>
+  </steps>
+</recipe>

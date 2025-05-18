@@ -1,0 +1,19 @@
+
+{
+  "galacticZoo": {
+    "animals": [
+      {
+        "name": "Zorblax",
+        "species": "Quasar Lynx",
+        "originPlanet": "Vega-7",
+        "abilities": ["Phase Shift", "Stellar Roar"]
+      },
+      {
+        "name": "Plink",
+        "species": "Solar Puffin",
+        "originPlanet": "Nova-3",
+        "abilities": ["Solar Flare", "Gravity Glide"]
+      }
+    ]
+  }
+}

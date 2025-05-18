@@ -1,0 +1,32 @@
+[artifact]
+name = "Terracotta Army Soldier"
+materials = ["Terracotta", "Paint"]
+
+[artifact.origin]
+culture = "Chinese"
+period = "Qin Dynasty"
+discovery_date = "1974-03-29"
+
+[artifact.dimensions]
+height_cm = 180.0
+width_cm = 50.0
+depth_cm = 45.0
+
+[artifact.current_location]
+museum = "Emperor Qin Shihuang's Mausoleum Site Museum"
+room = "Hall 1"
+display_case = "Case A12"
+
+[[artifact.exhibitions]]
+title = "The First Emperor: China's Terracotta Army"
+year = 2007
+city = "London"
+curator = "Jane Portal"
+
+[[artifact.restoration_history]]
+date = "2010-06-15"
+description = "Consolidation of flaking paint layers."
+
+[[artifact.restoration_history]]
+date = "2018-11-01"
+description = "Repair of minor cracks in the torso."

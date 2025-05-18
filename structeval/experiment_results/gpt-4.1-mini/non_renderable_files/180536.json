@@ -1,0 +1,61 @@
+{
+  "planet": "Zephyria",
+  "atmosphere": {
+    "composition": {
+      "nitrogen": "72%",
+      "oxygen": "20%",
+      "argon": "5%",
+      "xenon": "3%"
+    },
+    "pressure": "0.9 atm",
+    "layers": [
+      {
+        "name": "Troposphere",
+        "altitude_range": "0-15km"
+      },
+      {
+        "name": "Stratosphere",
+        "altitude_range": "15-50km"
+      }
+    ]
+  },
+  "moons": [
+    {
+      "name": "Lira",
+      "diameter_km": 3200,
+      "features": [
+        "Subsurface ocean",
+        "Ice volcanoes"
+      ]
+    },
+    {
+      "name": "Voss",
+      "diameter_km": 2100,
+      "features": [
+        "Rocky canyons"
+      ]
+    }
+  ],
+  "rings": {
+    "present": true,
+    "count": 4,
+    "composition": "Silicate dust"
+  },
+  "surface": {
+    "temperature_c": -45,
+    "landmarks": [
+      {
+        "name": "Crystal Plateau",
+        "type": "mesa"
+      },
+      {
+        "name": "Whispering Dunes",
+        "type": "desert"
+      }
+    ]
+  },
+  "discovery": {
+    "year": 2307,
+    "discoverer": "Dr. Linh Voss"
+  }
+}

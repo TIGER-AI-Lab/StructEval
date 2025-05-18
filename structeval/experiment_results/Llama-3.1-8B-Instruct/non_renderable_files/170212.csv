@@ -1,0 +1,21 @@
+
+import xml.etree.ElementTree as ET
+import csv
+
+tree = ET.parse('asteroids.xml')
+root = tree.getroot()
+
+with open('asteroids.csv', 'w', newline='') as csvfile:
+    fieldnames = ['AsteroidName', 'DiscoveryYear', 'DiameterKm', 'SpectralType', 'ClosestApproachDate', 'DiscoveredBy']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in root.findall('row'):
+        writer.writerow({
+            'AsteroidName': row.find('AsteroidName').text,
+            'DiscoveryYear': row.find('DiscoveryYear').text,
+            'DiameterKm': row.find('DiameterKm').text,
+            'SpectralType': row.find('SpectralType').text,
+            'ClosestApproachDate': row.find('ClosestApproachDate').text,
+            'DiscoveredBy': row.find('DiscoveredBy').text
+        })

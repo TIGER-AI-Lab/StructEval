@@ -1,0 +1,15 @@
+
+import csv
+import xml.etree.ElementTree as ET
+
+root = ET.Element("planets")
+
+with open('planets.csv', 'r') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        planet = ET.SubElement(root, "planet")
+        for key, value in row.items():
+            ET.SubElement(planet, key).text = value
+
+tree = ET.ElementTree(root)
+tree.write("planets.xml")

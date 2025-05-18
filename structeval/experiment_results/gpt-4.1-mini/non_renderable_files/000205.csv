@@ -1,0 +1,4 @@
+artifact_id,artifact_name,discovery_site,discovery_date,estimated_age_years,artifact_type,material_primary,material_secondary,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,condition_status,current_location,associated_civilization,notable_inscriptions
+A-2024-001,Venus Figurine,Willendorf,1908-08-07,25000,statue,limestone,,11.1,4.3,3.5,intact,Natural History Museum Vienna,Upper Paleolithic,"none"
+A-2024-002,Mask of Agamemnon,Mycenae,1876-04-01,3500,mask,gold,,20.0,15.0,5.0,restored,National Archaeological Museum Athens,Mycenaean,"decorative patterns"
+A-2024-003,Terracotta Army Soldier,Xi'an,1974-03-29,2200,statue,terracotta,paint,180.0,60.0,50.0,fragmented,Emperor Qin's Mausoleum Site Museum,Qin Dynasty,"inscriptions on armor"

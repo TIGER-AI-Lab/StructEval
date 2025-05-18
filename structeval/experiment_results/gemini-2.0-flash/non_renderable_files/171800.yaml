@@ -1,0 +1,15 @@
+
+galacticZoo:
+  animals:
+    - animal:
+        name: Zylox
+        species: Plasma Lynx
+        origin:
+          planet: Xenora
+          galaxy: Andromeda
+    - animal:
+        name: Morbix
+        species: Quantum Owl
+        origin:
+          planet: Quintar
+          galaxy: Milky Way

@@ -1,0 +1,84 @@
+
+import csv
+from datetime import datetime
+
+class Artifact:
+    def __init__(self, artifact_id, artifact_name, origin_civilization, discovery_date, material_composition, estimated_age_years, current_location, condition_status, dimensions_height_cm, dimensions_width_cm, dimensions_depth_cm, notable_features, restoration_history, associated_myths, exhibit_status):
+        self.artifact_id = artifact_id
+        self.artifact_name = artifact_name
+        self.origin_civilization = origin_civilization
+        self.discovery_date = discovery_date
+        self.material_composition = material_composition
+        self.estimated_age_years = estimated_age_years
+        self.current_location = current_location
+        self.condition_status = condition_status
+        self.dimensions_height_cm = dimensions_height_cm
+        self.dimensions_width_cm = dimensions_width_cm
+        self.dimensions_depth_cm = dimensions_depth_cm
+        self.notable_features = notable_features
+        self.restoration_history = restoration_history
+        self.associated_myths = associated_myths
+        self.exhibit_status = exhibit_status
+
+    def to_csv_row(self):
+        return (
+            self.artifact_id,
+            self.artifact_name,
+            self.origin_civilization,
+            self.discovery_date,
+            self.material_composition,
+            str(self.estimated_age_years),
+            self.current_location,
+            self.condition_status,
+            str(self.dimensions_height_cm),
+            str(self.dimensions_width_cm),
+            str(self.dimensions_depth_cm),
+            self.notable_features,
+            self.restoration_history,
+            self.associated_myths,
+            self.exhibit_status
+        )
+
+def main():
+    artifact = Artifact(
+        'ART-001',
+        'Golden Idol',
+        'Ancient Egyptians',
+        datetime(2022, 1, 1).strftime('%Y-%m-%d'),
+        'Gold;Copper',
+        3000,
+        'Egyptian Museum',
+        'intact',
+        50,
+        20,
+        10,
+        'Golden mask;Eye inlays',
+        'none',
+        'Associated with the god Ra',
+        'on display'
+    )
+
+    with open('artifacts.csv', 'w', newline='') as csvfile:
+        fieldnames = [
+            'artifact_id',
+            'artifact_name',
+            'origin_civilization',
+            'discovery_date',
+            'material_composition',
+            'estimated_age_years',
+            'current_location',
+            'condition_status',
+            'dimensions_height_cm',
+            'dimensions_width_cm',
+            'dimensions_depth_cm',
+            'notable_features',
+            'restoration_history',
+            'associated_myths',
+            'exhibit_status'
+        ]
+        writer = csv.writer(csvfile)
+        writer.writerow(fieldnames)
+        writer.writerow(artifact.to_csv_row())
+
+if __name__ == "__main__":
+    main()

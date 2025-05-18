@@ -1,0 +1,31 @@
+{
+  "planet": {
+    "name": "Zyphora",
+    "type": "Gas Giant",
+    "discovery_year": 2342,
+    "moons": ["Elaris", "Vorin", "Trantor"],
+    "atmosphere": {
+      "composition": ["Hydrogen", "Helium", "Methane"],
+      "pressure": 120.5,
+      "temperature": -180
+    },
+    "surface": {
+      "liquid_water": false,
+      "mountains": 0,
+      "craters": 47,
+      "landing_sites": ["Alpha Ridge", "Blue Hollow"]
+    },
+    "missions": [
+      {
+        "name": "Voyager X",
+        "year": 2350,
+        "success": true
+      },
+      {
+        "name": "Helios Probe",
+        "year": 2361,
+        "success": false
+      }
+    ]
+  }
+}

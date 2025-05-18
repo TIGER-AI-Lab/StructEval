@@ -1,0 +1,22 @@
+
+[
+  {
+    "name": "Star Voyager",
+    "model": "XJ-9",
+    "captain": "Amelia Hawk",
+    "pilot": "Leo Tran",
+    "engineer": "Samira Voss",
+    "length_m": 120,
+    "mass_kg": 45000,
+    "propulsion_type": "Antimatter",
+    "propulsion_thrust_kN": 1500,
+    "mission_1_name": "Alpha Pioneer",
+    "mission_1_destination": "Proxima Centauri",
+    "mission_1_year": 2087,
+    "mission_1_outcome": "Success",
+    "mission_2_name": "Stellar Rescue",
+    "mission_2_destination": "Barnard's Star",
+    "mission_2_year": 2091,
+    "mission_2_outcome": "Partial Success"
+  }
+]

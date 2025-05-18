@@ -1,0 +1,23 @@
+
+galaxy:
+  name: Andromeda
+  star_systems:
+    - star_system:
+        name: Alpha Centauri
+        planets:
+          - planet:
+              name: Proxima b
+              species:
+                - species_name: Glimmerons
+                - species_name: Thraxi
+          - planet:
+              name: Centauria
+              species:
+                - species_name: Centaurians
+    - star_system:
+        name: Betelgeuse
+        planets:
+          - planet:
+              name: Betel Prime
+              species:
+                - species_name: Betelites

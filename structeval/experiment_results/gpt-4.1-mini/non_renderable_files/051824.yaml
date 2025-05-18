@@ -1,0 +1,34 @@
+spaceStation:
+  name: Aurora Outpost
+  location:
+    planet: Neptune
+    sector: Delta-7
+  crew: 12
+  modules:
+    - type: Habitat
+      status: Operational
+      equipment:
+        - Beds
+        - Showers
+        - Oxygen Recycler
+    - type: Science Lab
+      status: Maintenance
+      equipment:
+        - Spectrometer
+        - Sample Freezer
+        - AI Assistant
+  supplyLevels:
+    oxygen: 83
+    food: 45
+    water: 60
+  missionLog:
+    - date: 2087-04-12
+      event: Arrival at Neptune orbit
+      participants:
+        - Cmdr. Vega
+        - Dr. Lin
+    - date: 2087-04-15
+      event: First sample collected
+      participants:
+        - Dr. Lin
+        - Spec. Osei

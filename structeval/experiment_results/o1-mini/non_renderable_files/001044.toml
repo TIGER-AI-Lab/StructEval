@@ -1,0 +1,35 @@
+
+[planet]
+name = "Kepler-442b"
+
+[planet.discovery]
+year = 2015
+method = "transit"
+
+[planet.orbit]
+period_days = 112.3
+eccentricity = 0.05
+
+[[planet.atmosphere.composition]]
+gas = "Nitrogen"
+percentage = 78.0
+
+[[planet.atmosphere.composition]]
+gas = "Oxygen"
+percentage = 21.0
+
+[[planet.moons]]
+name = "Luna"
+diameter_km = 3474.2
+
+[[planet.moons]]
+name = "Selene"
+diameter_km = 1234.5
+
+[planet.surface]
+temperature_c = 15.0
+has_liquid_water = true
+
+[[planet.surface.landmarks]]
+type = "crater"
+name = "Impact Site Alpha"

@@ -1,0 +1,35 @@
+
+<museum>
+    <name>The Imaginarium</name>
+    <location>
+        <city>Wonderville</city>
+        <country>Fantasia</country>
+    </location>
+    <established>1876</established>
+    <director>Dr. Lucinda Quest</director>
+    <exhibitions>
+        <exhibition>
+            <title>Surreal Horizons</title>
+            <year>2022</year>
+            <curator>Elena Miro</curator>
+            <artworks>
+                <artwork>
+                    <artist>Salvador Dali</artist>
+                    <title>Persistence of Memory</title>
+                    <year_created>1931</year_created>
+                    <medium>Oil on canvas</medium>
+                </artwork>
+                <artwork>
+                    <artist>RenÃ© Magritte</artist>
+                    <title>The Son of Man</title>
+                    <year_created>1964</year_created>
+                    <medium>Oil on canvas</medium>
+                </artwork>
+            </artworks>
+        </exhibition>
+    </exhibitions>
+    <visitor_stats>
+        <annual>500000</annual>
+        <monthly_avg>41666</monthly_avg>
+    </visitor_stats>
+</museum>

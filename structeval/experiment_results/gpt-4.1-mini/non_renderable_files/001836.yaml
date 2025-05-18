@@ -1,0 +1,29 @@
+
+artifact:
+  name: "The Serpent's Eye Amulet"
+  origin: "Ancient Mesoamerica"
+  discovery:
+    year: 1987
+    discoverer: "Dr. Elena Marquez and team"
+  materials:
+    - "Jade"
+    - "Gold"
+    - "Obsidian"
+  dimensions:
+    height_cm: 12.5
+    width_cm: 7.8
+    depth_cm: 2.3
+  features:
+    - type: "Central Gemstone"
+      description: "A polished jade stone carved into the shape of a serpent's eye, believed to hold spiritual significance."
+      condition: "Excellent, with minor surface abrasions"
+    - type: "Gold Inlay"
+      description: "Intricate gold filigree surrounding the gemstone, depicting ancient glyphs and symbols."
+  provenance:
+    previous_owners:
+      - "Private collector: Miguel Santos"
+      - "National Museum of Anthropology, Mexico City"
+    auction_history:
+      - date: "1995-11-15"
+        price_usd: 125000
+        auction_house: "Sotheby's"

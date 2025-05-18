@@ -1,0 +1,7 @@
+ArtifactID,Era,Material,DiscoveryDate,EstimatedValueUSD,LocationFound,IsCursed
+AF-001,Bronze Age,Copper,2014-06-13,25000.75,Crete,false
+AF-002,Iron Age,Iron,2016-11-02,18000.00,Yorkshire,true
+AF-003,Classical,Marble,2018-04-22,42000.5,Athens,false
+AF-004,Medieval,Gold,2020-09-10,97000.0,Prague,true
+AF-005,Renaissance,Porcelain,2012-01-29,15500.3,Florence,false
+AF-006,Modern,Glass,2023-03-15,8700.0,New York,false

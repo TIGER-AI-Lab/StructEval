@@ -1,0 +1,37 @@
+[artifact]
+name = "The Rosetta Stone"
+
+[artifact.origin]
+culture = "Ancient Egyptian"
+period = "Ptolemaic Period"
+discovery_date = "1799-07-15"
+
+[artifact.dimensions]
+height_cm = 114.4
+width_cm = 72.3
+
+[artifact.materials]
+primary = "Granodiorite"
+secondary = ""
+
+[artifact.condition]
+status = "intact"
+restoration_notes = "Cleaned and stabilized in 2004"
+
+[[artifact.exhibitions]]
+title = "Egyptian Antiquities"
+year = 1802
+location = "British Museum, London"
+
+[[artifact.exhibitions]]
+title = "World Treasures"
+year = 2005
+location = "Louvre, Paris"
+
+[[artifact.images]]
+url = "https://example.com/rosetta_stone_front.jpg"
+caption = "Front view of the Rosetta Stone"
+
+[[artifact.images]]
+url = "https://example.com/rosetta_stone_back.jpg"
+caption = "Back view of the Rosetta Stone"

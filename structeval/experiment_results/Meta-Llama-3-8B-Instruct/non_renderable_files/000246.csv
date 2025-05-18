@@ -1,0 +1,3 @@
+
+"artifact_id","artifact_name","discovery.location","discovery.date_found","discovery.expedition_leader","discovery.team_members","artifact_type","material.primary","material.secondary","dimensions.height_cm","dimensions.width_cm","dimensions.depth_cm","condition.status","condition.restoration_needed","historical_period","display_location.gallery","display_location.shelf_number","provenance.previous_owners","provenance.acquisition_method"
+"ART001","Ancient Warrior Statue","Egyptian Desert","2022-03-15","Dr. Maria Rodriguez","5","Sculpture","Limestone","None",25.5,15.2,10.8,"Excellent",false,"Ancient Egyptian","Egyptian Galleries","EGG-001","Unknown","Excavation"

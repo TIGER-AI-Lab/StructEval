@@ -1,0 +1,12 @@
+
+species_name,habitat.region,habitat.climate,habitat.elevation_meters,average_lifespan_years,diet.primary_food,diet.secondary_food,diet.is_carnivorous,physical_traits.height_cm,physical_traits.weight_kg,physical_traits.fur_color,physical_traits.has_wings,social_structure.group_size,social_structure.dominant_gender,notable_behaviors[0].behavior_name,notable_behaviors[0].frequency_per_day,notable_behaviors[1].behavior_name,notable_behaviors[1].frequency_per_day
+"Sky Serpent","Andes Mountains","Alpine",3500,15,"Mountain Goats","Berries",true,50,10,"White",true,1,"female","Aerial Display",2,"Sunbathing",4
+"Gloomfang Badger","Congo Rainforest","Tropical",200,8,"Giant Snails","Roots",false,30,7,"Dark Brown",false,5,"male","Burrowing",3,"Nocturnal Hunting",1
+"Crystalback Turtle","Great Barrier Reef","Tropical",0,80,"Seaweed","Jellyfish",false,100,150,"Iridescent Blue",false,1,"none","Sunbathing",6,"Filter Feeding",20
+"Shadow Lynx","Siberian Taiga","Subarctic",500,12,"Arctic Hares","Voles",true,45,18,"Grey",false,3,"male","Ambush Hunting",1,"Territorial Marking",2
+"Sunpetal Finch","Amazon Rainforest","Tropical",100,5,"Nectar","Insects",false,10,0.1,"Yellow",true,10,"none","Pollination",15,"Social Singing",5
+"Stonehide Golem","Mojave Desert","Arid",800,200,"Minerals","Crystals",false,200,500,"Grey",false,1,"none","Solar Charging",8,"Dust Bathing",1
+"Whisperwind Deer","Scottish Highlands","Temperate",300,10,"Grass","Berries",false,120,70,"Brown",false,8,"female","Silent Movement",4,"Alert Stance",6
+"Frostclaw Bear","Arctic Tundra","Arctic",100,25,"Seals","Fish",true,150,250,"White",false,2,"male","Hibernation",1,"Ice Fishing",2
+"Emberwing Falcon","Mediterranean Coast","Mediterranean",150,18,"Small Birds","Rodents",true,40,1.5,"Red",true,4,"female","Thermal Soaring",5,"Precise Diving",3
+"Mudskipper Dragon","Mangrove Swamps","Tropical",0,6,"Crabs","Insects",true,25,0.5,"Green",false,1,"none","Mud Bathing",3,"Territorial Display",2

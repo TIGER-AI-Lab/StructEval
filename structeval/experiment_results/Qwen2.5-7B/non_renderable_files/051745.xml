@@ -1,0 +1,52 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "constellations": {
+      "constellation": [
+        {
+          "name": "Cassiopeia",
+          "stars": {
+            "star": [
+              { "name": "Schedar", "magnitude": 2.24 },
+              { "name": "Caph", "magnitude": 2.27 }
+            ]
+          }
+        },
+        {
+          "name": "Perseus",
+          "stars": {
+            "star": [
+              { "name": "Mirfak", "magnitude": 1.79 },
+              { "name": "Algol", "magnitude": 2.12 }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+'''
+
+def json_to_xml(json_str):
+    data = json.loads(json_str)
+    root = ET.Element("root")
+    galaxy = ET.SubElement(root, "galaxy")
+    galaxy.set("name", data["galaxy"]["name"])
+    constellations = ET.SubElement(galaxy, "constellations")
+    for constellation in data["galaxy"]["constellations"]["constellation"]:
+        const = ET.SubElement(constellations, "constellation")
+        const.set("name", constellation["name"])
+        stars = ET.SubElement(const, "stars")
+        for star in constellation["stars"]["star"]:
+            s = ET.SubElement(stars, "star")
+            s.set("name", star["name"])
+            s.set("magnitude", str(star["magnitude"]))
+    return ET.tostring(root, encoding='unicode')
+
+xml_data = json_to_xml(json_data)
+print(xml_data)

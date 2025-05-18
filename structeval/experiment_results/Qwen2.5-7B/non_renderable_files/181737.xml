@@ -1,0 +1,20 @@
+
+galacticCarnival:
+  name: Nebula Fest
+  location:
+    planet: Zyphron
+    galaxy: Andromeda
+  attractions:
+    attraction:
+      - name: Zero-Gravity Rollercoaster
+        type: Ride
+        capacity: 40
+      - name: Alien Petting Zoo
+        type: Exhibit
+        capacity: 25
+  staff:
+    member:
+      - name: Xeltra
+        role: Ringmaster
+      - name: Blip
+        role: Engineer

@@ -1,0 +1,14 @@
+
+space_station:
+  name: Celestial Haven
+  modules:
+    - type: Habitation
+      experiments:
+        - title: Plant Growth in Microgravity
+          status: Ongoing
+        - title: Sleep Patterns Monitoring
+          status: Completed
+    - type: Laboratory
+      experiments:
+        - title: Cosmic Ray Analysis
+          status: Planned

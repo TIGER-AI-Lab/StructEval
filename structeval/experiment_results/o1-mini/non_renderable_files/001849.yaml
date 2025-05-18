@@ -1,0 +1,44 @@
+
+game:
+  title: "Epic Quest"
+  release_year: 2021
+  genre: "RPG"
+  platforms:
+    - name: "PC"
+      release_date: "2021-09-15"
+      supported_languages:
+        - "English"
+        - "Spanish"
+        - "French"
+    - name: "Switch"
+      release_date: "2021-10-10"
+      supported_languages:
+        - "English"
+        - "Spanish"
+    - name: "Xbox"
+      release_date: "2021-09-30"
+      supported_languages:
+        - "English"
+        - "French"
+  developer:
+    name: "Game Studios"
+    founded: 2010
+    location:
+      city: "San Francisco"
+      country: "USA"
+  reviews:
+    - reviewer: "GameReviewMag"
+      score: 9.5
+      date: "2021-09-20"
+      comment: "An epic adventure that redefines the genre."
+    - reviewer: "PlayerOne"
+      score: 8.7
+      date: "2021-09-22"
+      comment: "Great gameplay mechanics but a lengthy storyline."
+  expansions:
+    - title: "Epic Quest: Shadows"
+      release_year: 2022
+      features:
+        - "New playable character"
+        - "Expanded map"
+        - "Additional quests"

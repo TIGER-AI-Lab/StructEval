@@ -1,0 +1,25 @@
+recipe:
+  title: "Spicy Peanut Noodles"
+  author:
+    name: "Jane Doe"
+    contact:
+      email: "jane.doe@example.com"
+  ingredients:
+    - name: "Noodles"
+      quantity: 200
+      unit: "grams"
+    - name: "Peanut Butter"
+      quantity: 4
+      unit: "tablespoons"
+  steps:
+    - description: "Cook noodles according to package directions."
+      duration_minutes: 8
+    - description: "Mix peanut butter with soy sauce, honey, and chili garlic sauce."
+      duration_minutes: 5
+  metadata:
+    cuisine: "Asian Fusion"
+    difficulty: "easy"
+    tags: ["noodles", "peanut", "spicy", "vegetarian"]
+  nutrition:
+    calories: 450
+    protein_grams: 15

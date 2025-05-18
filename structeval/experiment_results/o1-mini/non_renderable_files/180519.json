@@ -1,0 +1,58 @@
+{
+  "galactic_zoo": {
+    "name": "Nebula Menagerie",
+    "location": "Andromeda Sector 5",
+    "established": "3042-07-16",
+    "director": "Dr. Vira Quell",
+    "species_catalog": [
+      {
+        "species_name": "Quasar Lynx",
+        "origin_planet": "Xyphos Prime",
+        "diet": "Stellar plankton",
+        "enclosure": "Aurora Dome 3",
+        "notable_traits": [
+          "bioluminescent fur",
+          "telepathic communication"
+        ]
+      },
+      {
+        "species_name": "Void Pangolin",
+        "origin_planet": "Nereid IX",
+        "diet": "Crystalline insects",
+        "enclosure": "Gravity Well Habitat",
+        "notable_traits": [
+          "gravity manipulation",
+          "armored scales"
+        ]
+      }
+    ],
+    "visitor_facilities": {
+      "cafeterias": [
+        "Pulsar Pantry",
+        "Comet CafÃ©"
+      ],
+      "transport_modes": [
+        "hoverpods",
+        "teleport pads"
+      ],
+      "guided_tours": [
+        "Cosmic Critters",
+        "Alien Aviary"
+      ]
+    },
+    "special_events": [
+      "Galactic Conservation Day",
+      "Interstellar Night Safari"
+    ],
+    "research_programs": {
+      "active_projects": [
+        "Xenobiology Genome Mapping",
+        "Quantum Habitat Simulation"
+      ],
+      "collaborators": [
+        "Orion Institute",
+        "Vega University"
+      ]
+    }
+  }
+}

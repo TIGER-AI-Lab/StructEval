@@ -1,0 +1,49 @@
+{
+  "game": {
+    "title": "Eternal Quest: The Last Stand",
+    "release_year": 2023,
+    "developer": {
+      "name": "Aeon Studios",
+      "founded": 2001
+    },
+    "platforms": [
+      {
+        "name": "PC",
+        "release_date": "2023-04-15",
+        "features": [
+          {
+            "feature_name": "crossplay",
+            "is_multiplayer_supported": true
+          }
+        ]
+      },
+      {
+        "name": "PlayStation 5",
+        "release_date": "2023-05-20",
+        "features": [
+          {
+            "feature_name": "4K resolution",
+            "is_multiplayer_supported": false
+          }
+        ]
+      }
+    ],
+    "genres": ["RPG", "Fantasy", "Action"],
+    "ratings": {
+      "ESRB": "T",
+      "PEGI": "16"
+    },
+    "awards": [
+      {
+        "award_name": "Best RPG Game",
+        "year": 2023
+      }
+    ],
+    "characters": [
+      {
+        "name": "Aria",
+        "role": "protagonist"
+      }
+    ]
+  }
+}

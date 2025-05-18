@@ -1,0 +1,40 @@
+
+recipe = {
+  title = "Creamy Tomato Pasta",
+  chef = {
+    name = "Chef Giovanni",
+    experience_years = 10,
+  },
+  ingredients = [
+    {
+      name = "Penne pasta",
+      quantity = 250,
+      unit = "grams",
+    },
+    {
+      name = "Tomato sauce",
+      quantity = 500,
+      unit = "milliliters",
+    },
+  ],
+  instructions = [
+    {
+      step = "Cook the penne pasta according to package instructions.",
+      time_minutes = 8,
+    },
+    {
+      step = "Heat the tomato sauce in a pan over medium heat.",
+      time_minutes = 5,
+    },
+  ],
+  nutrition = {
+    calories = 350,
+    protein_grams = 15,
+    fat_grams = 20,
+  },
+  tags = [
+    "Italian",
+    "Pasta",
+    "Vegetarian",
+  ],
+}

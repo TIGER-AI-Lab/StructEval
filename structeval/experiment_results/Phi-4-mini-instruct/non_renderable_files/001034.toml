@@ -1,0 +1,36 @@
+
+[robot]
+name = "FuturisticBot"
+model_number = "FB-2023"
+manufacturer = "Techtronics Inc."
+specs = {
+  weight_kg = 120.5
+  height_cm = 180
+  power_source = "solar"
+}
+sensors = [
+  {
+    type = "LIDAR"
+    range_meters = 100
+  },
+  {
+    type = "RADAR"
+    range_meters = 150
+  }
+]
+modules = [
+  {
+    name = "Navigation System"
+    status = "active"
+    last_maintenance = "2023-04-01T10:00:00Z"
+  },
+  {
+    name = "Communication Module"
+    status = "active"
+    last_maintenance = "2023-04-02T11:00:00Z"
+  }
+]
+operating_modes = {
+  primary = "Autonomous"
+  secondary = "Manual Control"
+}

@@ -1,0 +1,19 @@
+<museum>
+  <name>Museum of Imaginary Artifacts</name>
+  <location>
+    <city>Eldoria</city>
+    <country>Fabeland</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>The Infinite Hourglass</title>
+      <artist>Seraphina Quill</artist>
+      <year>1899</year>
+    </exhibit>
+    <exhibit>
+      <title>Clockwork Phoenix</title>
+      <artist>Dorian Vex</artist>
+      <year>1923</year>
+    </exhibit>
+  </exhibits>
+</museum>

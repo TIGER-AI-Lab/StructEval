@@ -1,0 +1,32 @@
+
+[star]
+name = "Zeta Prime"
+type = "G-type"
+distance_lightyears = 120.5
+
+[star.discovery]
+year = 2023
+method = "Infrared Survey"
+
+[[star.planets]]
+name = "Elysia"
+mass_earths = 1.8
+orbital_period_days = 400.7
+
+  [[star.planets.moons]]
+  name = "Selene"
+  diameter_km = 1500
+  composition = "ice"
+
+  [[star.planets.moons]]
+  name = "Phoebe"
+  diameter_km = 950
+  composition = "rock"
+
+  [star.planets.atmosphere]
+  composition = ["Nitrogen", "Methane", "Ammonia"]
+  pressure_atm = 0.9
+  has_rings = false
+
+  [star.planets.surface]
+  temperature_celsius = -15

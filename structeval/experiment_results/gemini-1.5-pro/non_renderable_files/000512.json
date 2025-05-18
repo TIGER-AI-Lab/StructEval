@@ -1,0 +1,41 @@
+{
+  "puzzle": {
+    "title": "The Mysterious Number",
+    "description": "Find the hidden number based on the clues.",
+    "difficulty": {
+      "level": "medium",
+      "estimated_time_minutes": 15
+    },
+    "author": {
+      "name": "John Doe",
+      "contact": {
+        "email": "john.doe@example.com",
+        "website": "www.johndoe.com"
+      }
+    },
+    "hints": [
+      {
+        "text": "The number is between 10 and 100.",
+        "relevance_score": 0.8
+      },
+      {
+        "text": "The number is divisible by 3.",
+        "relevance_score": 0.5
+      }
+    ],
+    "steps": [
+      {
+        "instruction": "Add the digits of the number together.",
+        "expected_answer": "9"
+      },
+      {
+        "instruction": "Multiply the sum by 2.",
+        "expected_answer": "18"
+      }
+    ],
+    "metadata": {
+      "tags": ["math", "logic", "number"],
+      "date_created": "2024-04-26"
+    }
+  }
+}

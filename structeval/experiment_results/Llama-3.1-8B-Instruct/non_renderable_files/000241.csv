@@ -1,0 +1,44 @@
+
+import uuid
+from datetime import datetime, timedelta
+
+def generate_agent_data():
+    agent_id = str(uuid.uuid4()).upper()
+    agent_name = "Agent Alpha"
+    agent_species = "Human"
+    origin_planet = "Earth"
+    age = 35
+    affiliation = "Galactic Intelligence Agency"
+    rank = "Level 3 Operative"
+    mission_count = 10
+    last_mission_date = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
+    favorite_gadget = "Graviton Disruptor"
+    nemesis_name = "Agent Omega"
+    nemesis_species = "Zyloxian"
+    nemesis_last_encounter = (datetime.now() - timedelta(days=60)).strftime("%Y-%m-%d")
+    sidekick_name = "R2-D2"
+    sidekick_type = "Robot"
+
+    return {
+        "character_id": agent_id,
+        "name": agent_name,
+        "species": agent_species,
+        "origin_planet": origin_planet,
+        "age": age,
+        "affiliation": affiliation,
+        "rank": rank,
+        "mission_count": mission_count,
+        "last_mission_date": last_mission_date,
+        "favorite_gadget": favorite_gadget,
+        "nemesis_name": nemesis_name,
+        "nemesis_species": nemesis_species,
+        "nemesis_last_encounter": nemesis_last_encounter,
+        "sidekick_name": sidekick_name,
+        "sidekick_type": sidekick_type
+    }
+
+def print_csv_row(data):
+    print(f'"{data["character_id"]}","{data["name"]}","{data["species"]}","{data["origin_planet"]}",{data["age"]},"{data["affiliation"]}","{data["rank"]}",{data["mission_count"]},"{data["last_mission_date"]}","{data["favorite_gadget"]}","{data["nemesis_name"]}","{data["nemesis_species"]}","{data["nemesis_last_encounter"]}","{data["sidekick_name"]}","{data["sidekick_type"]}"')
+
+data = generate_agent_data()
+print_csv_row(data)

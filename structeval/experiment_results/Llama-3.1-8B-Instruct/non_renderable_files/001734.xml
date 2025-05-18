@@ -1,0 +1,45 @@
+
+<creature>
+    <name>Galactic Gazer</name>
+    <species>Unknown</species>
+    <origin>
+        <planet>Xylophia-IV</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <traits>
+        <trait>
+            <type>agility</type>
+            <description>Highly agile and nimble, capable of rapid movement</description>
+            <rarity>common</rarity>
+        </trait>
+        <trait>
+            <type>camouflage</type>
+            <description>Ability to blend into surroundings, making it difficult to detect</description>
+            <rarity>rare</rarity>
+        </trait>
+    </traits>
+    <abilities>
+        <ability>
+            <name>Stellar Blast</name>
+            <level>5</level>
+            <cooldown>10.5</cooldown>
+        </ability>
+        <ability>
+            <name>Gravitational Pull</name>
+            <level>3</level>
+            <cooldown>5.2</cooldown>
+        </ability>
+    </abilities>
+    <appearance>
+        <height>250</height>
+        <color>Indigo</color>
+        <appendages>
+            <count>4</count>
+            <type>tentacle</type>
+        </appendages>
+    </appearance>
+    <discovery>
+        <date>2022-07-15T14:30:00Z</date>
+        <discovered_by>Dr. Sophia Patel</discovered_by>
+    </discovery>
+</creature>

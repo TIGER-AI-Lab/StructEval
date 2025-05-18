@@ -1,0 +1,37 @@
+
+robot = {
+  name = "Cybertron X5000",
+  model_number = "CRN-5000",
+  manufacturer = "NeuroSpark Industries",
+  specs = {
+    weight_kg = 250.5,
+    height_cm = 120.8,
+    power_source = "Advanced Lithium-Ion Battery",
+  },
+  sensors = [
+    {
+      type = "LIDAR",
+      range_meters = 100.2,
+    },
+    {
+      type = "Ultrasonic",
+      range_meters = 5.0,
+    },
+  ],
+  modules = [
+    {
+      name = "Navigation Module",
+      status = "active",
+      last_maintenance = "2022-01-01T00:00:00Z",
+    },
+    {
+      name = "Communication Module",
+      status = "active",
+      last_maintenance = "2022-01-15T00:00:00Z",
+    },
+  ],
+  operating_modes = {
+    primary = "Autonomous Exploration",
+    secondary = "Remote Control",
+  },
+}

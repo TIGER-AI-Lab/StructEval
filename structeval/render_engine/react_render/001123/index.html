@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001123</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const NewsletterSignup = () => {
+  const [email, setEmail] = useState('');
+  const [frequency, setFrequency] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!email.includes('@') || !frequency) {
+      setMessage('Please enter a valid email and select a frequency.');
+      return;
+    }
+
+    setMessage('Thank you for subscribing!');
+  };
+
+  const handleClear = () => {
+    setEmail('');
+    setFrequency('');
+    setMessage('');
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <div>
+        <h2 style={{ textAlign: 'center' }}>Newsletter Signup</h2>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          style={{ width: '100%', marginBottom: '10px' }}
+        />
+        <select value={frequency} onChange={(e) => setFrequency(e.target.value)} style={{ width: '100%', marginBottom: '10px' }}>
+          <option value="">Select Frequency</option>
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+        </select>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <button onClick={handleSubmit} style={{ backgroundColor: 'green', color: 'white', padding: '10px', border: 'none' }}>Subscribe</button>
+          <button onClick={handleClear} style={{ border: '1px solid red', padding: '10px' }}>Clear Form</button>
+        </div>
+        <p>{message}</p>
+      </div>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSignup />);
+
+    </script>
+  </body>
+</html>

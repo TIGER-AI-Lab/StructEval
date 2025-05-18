@@ -1,0 +1,39 @@
+
+{
+  "recipe": {
+    "title": "Spicy Thai Chicken Stir-Fry",
+    "author": "John Doe",
+    "cuisine": "Thai",
+    "servings": 4,
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 15,
+    "ingredients": [
+      {
+        "name": "Chicken breast",
+        "quantity": 400,
+        "unit": "grams"
+      },
+      {
+        "name": "Red bell pepper",
+        "quantity": 1,
+        "unit": "each"
+      }
+    ],
+    "steps": [
+      {
+        "description": "Slice the chicken breast into thin strips.",
+        "duration_minutes": 5
+      },
+      {
+        "description": "Heat oil in a pan and sautÃ© the chicken strips until cooked.",
+        "duration_minutes": 10
+      }
+    ],
+    "nutrition": {
+      "calories": 250,
+      "fat_grams": 10,
+      "protein_grams": 30,
+      "carbohydrates_grams": 15
+    }
+  }
+}

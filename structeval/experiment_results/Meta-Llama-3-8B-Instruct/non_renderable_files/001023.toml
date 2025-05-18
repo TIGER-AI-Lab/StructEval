@@ -1,0 +1,24 @@
+
+[museum]
+name = "The Modern Art Museum"
+location = { city = "New York", country = "USA" }
+established_year = 1920
+director = "John Smith"
+
+galleries = [
+  {
+    title = "Impressionism"
+    room_number = "101"
+    artworks = [
+      {
+        artist = "Claude Monet"
+        title = "Impression, Sunrise"
+        year = 1872
+        medium = "Oil on canvas"
+        dimensions = { height_cm = 100, width_cm = 150 }
+        on_display = true
+        provenance = { previous_owners = ["Pierre-Auguste Renoir", "Henri de Toulouse-Lautrec"] }
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "artifact": {
+    "name": "Venus of Willendorf",
+    "origin": {
+      "culture": "Paleolithic",
+      "period": "Upper Paleolithic",
+      "discovery_date": "1908-08-07"
+    },
+    "materials": {
+      "primary": "Limestone",
+      "secondary": null
+    },
+    "dimensions": {
+      "height_cm": 11.1,
+      "width_cm": 4.3,
+      "depth_cm": 3.6
+    },
+    "features": [
+      {
+        "description": "Small statuette representing a female figure with exaggerated features",
+        "estimated_age_years": 25000,
+        "condition": "intact"
+      }
+    ],
+    "exhibition_history": [
+      {
+        "location": "Natural History Museum, Vienna",
+        "start_date": "1930-01-01",
+        "end_date": "1930-12-31"
+      }
+    ]
+  }
+}

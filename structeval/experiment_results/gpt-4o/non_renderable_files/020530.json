@@ -1,0 +1,55 @@
+[
+    {
+        "planet_name": "Xylo-7",
+        "system": {
+            "star_name": "Kepler-442",
+            "distance_from_earth_ly": 1200,
+            "discovery": {
+                "year": 2015,
+                "method": "Transit"
+            }
+        },
+        "atmosphere": {
+            "composition": [
+                {"gas": "Nitrogen", "percentage": 78},
+                {"gas": "Oxygen", "percentage": 21}
+            ],
+            "pressure": 1.2
+        },
+        "moons": [
+            {"name": "Luna-X", "diameter_km": 1800, "has_rings": false},
+            {"name": "Orbitar", "diameter_km": 950, "has_rings": true}
+        ],
+        "surface": {
+            "temperature_c": -80,
+            "has_water": true,
+            "largest_mountain": "Mount Zarn"
+        }
+    },
+    {
+        "planet_name": "Vega-Prime",
+        "system": {
+            "star_name": "Vega",
+            "distance_from_earth_ly": 25,
+            "discovery": {
+                "year": 2031,
+                "method": "Radial Velocity"
+            }
+        },
+        "atmosphere": {
+            "composition": [
+                {"gas": "Hydrogen", "percentage": 90},
+                {"gas": "Helium", "percentage": 9}
+            ],
+            "pressure": 0.8
+        },
+        "moons": [
+            {"name": "Vega-Moon1", "diameter_km": 500, "has_rings": false}
+        ],
+        "surface": {
+            "temperature_c": 230,
+            "has_water": false,
+            "largest_mountain": "Peak Lumis"
+        }
+    }
+]

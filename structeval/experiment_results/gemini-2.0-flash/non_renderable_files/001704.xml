@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <title>Delicious Chocolate Cake</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Flour</name>
+            <quantity>2.5</quantity>
+            <unit>cups</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Sugar</name>
+            <quantity>1.75</quantity>
+            <unit>cups</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Cocoa Powder</name>
+            <quantity>0.75</quantity>
+            <unit>cups</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Baking Soda</name>
+            <quantity>1.5</quantity>
+            <unit>teaspoons</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Baking Powder</name>
+            <quantity>1.5</quantity>
+            <unit>teaspoons</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <unit/>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Milk</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Vegetable Oil</name>
+            <quantity>0.5</quantity>
+            <unit>cup</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Vanilla Extract</name>
+            <quantity>2</quantity>
+            <unit>teaspoons</unit>
+            <optional>true</optional>
+        </ingredient>
+        <ingredient>
+            <name>Boiling Water</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+            <optional>false</optional>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Preheat oven to 350Â°F (175Â°C). Grease and flour a 9x13 inch pan.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Oven</name>
+                    <required>true</required>
+                </tool>
+                <tool>
+                    <name>9x13 inch pan</name>
+                    <required>true</required>
+                </tool>
+                <tool>
+                    <name>Measuring Cups</name>
+                    <required>true</required>
+                </tool>
+            </tools>
+        </step>
+        <step>
+            <description>In a large bowl, whisk together the flour, sugar, cocoa, baking soda, baking powder, and salt.</description>
+            <duration_minutes>3</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Large Bowl</name>
+                    <required>true</required>
+                </tool>
+                <tool>
+                    <name>Whisk</name>
+                    <required>true</required>
+                </tool>
+            </tools>
+        </step>
+        <step>
+            <description>Add the eggs, milk, oil, and vanilla extract to the dry ingredients. Beat until well combined.</description>
+            <duration_minutes>2</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Mixer</name>
+                    <required>true</required>
+                </tool>
+            </tools>
+        </step>
+        <step>
+            <description>Gradually add the boiling water to the batter, mixing until smooth. The batter will be thin.</description>
+            <duration_minutes>1</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Mixer</name>
+                    <required>true</required>
+                </tool>
+            </tools>
+        </step>
+        <step>
+            <description>Pour the batter into the prepared pan and bake for 30-35 minutes, or until a wooden skewer inserted into the center comes out clean.</description>
+            <duration_minutes>35</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Wooden Skewer</name>
+                    <required>true</required>
+                </tool>
+            </tools>
+        </step>
+        <step>
+            <description>Let the cake cool in the pan for 10 minutes before inverting it onto a wire rack to cool completely.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Wire Rack</name>
+                    <required>true</required>
+                </tool>
+            </tools>
+        </step>
+        <step>
+            <description>Frost with your favorite frosting and enjoy!</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Spatula</name>
+                    <required>true</required>
+                </tool>
+            </tools>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>350</calories>
+        <fat_grams>15.5</fat_grams>
+        <protein_grams>5.2</protein_grams>
+    </nutrition>
+    <tags>
+        <tag>Dessert</tag>
+        <tag>Chocolate</tag>
+        <tag>Cake</tag>
+    </tags>
+</recipe>

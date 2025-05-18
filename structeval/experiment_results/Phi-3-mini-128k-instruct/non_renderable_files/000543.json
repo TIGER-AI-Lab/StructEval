@@ -1,0 +1,41 @@
+{
+  "name": "The Scepter of Pharaoh Amenhotep",
+  "origin": {
+    "civilization": "Ancient Egypt",
+    "era": "New Kingdom"
+  },
+  "discovery": {
+    "date": "2023-04-15",
+    "location": {
+      "latitude": 25.7153,
+      "longitude": 32.6557
+    }
+  },
+  "materials": [
+    {
+      "type": "Gold",
+      "percentage": 90
+    },
+    {
+      "type": "Lapis Lazuli",
+      "percentage": 10
+    }
+  ],
+  "inscriptions": [
+    {
+      "language": "Ancient Egyptian Hieroglyphs",
+      "translation": "The power of the gods is with the king."
+    },
+    {
+      "language": "Akkadian",
+      "translation": "The king is the chosen one of the gods."
+    }
+  ],
+  "condition": {
+    "status": "Excellent",
+    "restoration": {
+      "last_date": "2022-11-03",
+      "notes": "Recently cleaned and restored to its original luster."
+    }
+  }
+}

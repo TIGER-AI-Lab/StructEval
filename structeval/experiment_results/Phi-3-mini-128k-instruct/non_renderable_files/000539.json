@@ -1,0 +1,49 @@
+{
+  "artifact": {
+    "name": "Rosetta Stone",
+    "origin": {
+      "civilization": "Ancient Egypt",
+      "era": "Ptolemaic Period"
+    },
+    "materials": [
+      {
+        "type": "Granite",
+        "provenance": "Khedivate of Egypt"
+      },
+      {
+        "type": "Lapis Lazuli",
+        "provenance": "Badakhshan, Afghanistan"
+      }
+    ],
+    "dimensions": {
+      "height_cm": 77,
+      "width_cm": 28,
+      "depth_cm": 11
+    },
+    "inscriptions": [
+      {
+        "language": "Ancient Egyptian Hieroglyphs",
+        "translation": "This is a decree concerning King Ptolemy V, erected in the first year after he ascended to the throne.",
+        "position": "Top"
+      },
+      {
+        "language": "Ancient Egyptian Demotic",
+        "translation": "This is a decree concerning King Ptolemy V, erected in the first year after he ascended to the throne.",
+        "position": "Middle"
+      },
+      {
+        "language": "Ancient Greek",
+        "translation": "This is a decree concerning King Ptolemy V, erected in the first year after he ascended to the throne.",
+        "position": "Bottom"
+      }
+    ],
+    "current_location": {
+      "museum": "British Museum",
+      "display_case": "Room 6"
+    },
+    "discovery": {
+      "date": "1799-07-15",
+      "discoverer": "Pierre-FranÃ§ois Bouchard"
+    }
+  }
+}

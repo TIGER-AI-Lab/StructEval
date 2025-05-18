@@ -1,0 +1,28 @@
+[artifact]
+name = "Zyloxian Relic"
+origin = "Zylox Prime"
+
+[artifact.discovery]
+year = 3021
+location = "Sector 7G, Quadrant 4"
+
+[[artifact.materials]]
+type = "Zyloxium"
+percentage = 75.5
+
+[[artifact.materials]]
+type = "Quantum Alloy"
+percentage = 24.5
+
+[artifact.dimensions]
+height_cm = 150.0
+width_cm = 75.0
+depth_cm = 50.0
+
+[[artifact.features]]
+description = "Emits a low-frequency hum when approached"
+is_encrypted = true
+
+[[artifact.features]]
+description = "Displays holographic star maps"
+is_encrypted = false

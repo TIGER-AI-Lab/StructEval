@@ -1,0 +1,37 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<galaxies>
+  <galaxy>
+    <name>Andromeda</name>
+    <type>Spiral</type>
+    <distance_lightyears>2537000</distance_lightyears>
+    <discovery>
+      <year>1923</year>
+      <telescope>Hubble Space Telescope</telescope>
+      <observers>
+        <observer>
+          <name>Edwin Hubble</name>
+          <institution>Mount Wilson Observatory</institution>
+        </observer>
+        <observer>
+          <name>Cecilia Payne</name>
+          <institution>Harvard College Observatory</institution>
+        </observer>
+      </observers>
+    </discovery>
+    <planets>
+      <planet>
+        <name>Planet X</name>
+        <type>Terrestrial</type>
+        <moons>2</moons>
+        <inhabited>true</inhabited>
+      </planet>
+      <planet>
+        <name>Planet Y</name>
+        <type>Gas Giant</type>
+        <moons>14</moons>
+        <inhabited>false</inhabited>
+      </planet>
+    </planets>
+  </galaxy>
+</galaxies>

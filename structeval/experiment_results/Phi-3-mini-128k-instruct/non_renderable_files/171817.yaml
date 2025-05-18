@@ -1,0 +1,25 @@
+galaxy:
+  name: Andromeda
+  star_systems:
+    - system_name: Alpha Prime
+      planets:
+        - planet:
+            planet_name: Zephyrus
+            moons:
+              - moon: Echo
+              - moon: Pulse
+          - planet:
+            planet_name: Vesper
+            moons:
+              - moon: Shade
+    - system_name: Beta Nova
+      planets:
+        - planet:
+            planet_name: Orion
+            moons:
+              - moon: Gale
+        - planet:
+            planet_name: Lira
+            moons:
+              - moon: Frost
+              - moon: Blaze

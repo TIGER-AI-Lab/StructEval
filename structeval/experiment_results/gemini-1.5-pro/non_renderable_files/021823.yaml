@@ -1,0 +1,34 @@
+- galaxy:
+    name: Andromeda
+    type: Spiral
+    distance_mly: 2.537
+    constellation: Andromeda
+    discovery:
+      year: 964
+      method: Optical
+    observatories: ["Hubble", "Spitzer"]
+    notable_features:
+      black_hole_mass_solar: 1.4e8
+      star_clusters: Globular
+      satellite_galaxies:
+        - name: M32
+          distance_kly: 2.65
+        - name: M110
+          distance_kly: 2.91
+- galaxy:
+    name: Sombrero
+    type: Spiral
+    distance_mly: 31.1
+    constellation: Virgo
+    discovery:
+      year: 1781
+      method: Optical
+    observatories: ["Hubble", "Chandra"]
+    notable_features:
+      black_hole_mass_solar: 1.0e9
+      star_clusters: Open
+      satellite_galaxies:
+        - name: NGC 4594-A
+          distance_kly: 12.0
+        - name: NGC 4594-B
+          distance_kly: 14.5

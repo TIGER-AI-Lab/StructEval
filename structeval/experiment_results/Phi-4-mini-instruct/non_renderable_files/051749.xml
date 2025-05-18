@@ -1,0 +1,18 @@
+
+&lt;galaxy>
+  &lt;name>Andromeda</name>
+  &lt;planets>
+    &lt;planet>
+      &lt;name>Xenon</name>
+      &lt;moons>
+        &lt;moon>Alpha</moon>
+        &lt;moon>Beta</moon>
+      &lt;moons>
+    &lt;planet>
+      &lt;name>Zephyr</name>
+      &lt;moons>
+        &lt;moon>Gamma</moon>
+      &lt;moons>
+    &lt;planet>
+  &lt;planets>
+&lt;/galaxy>

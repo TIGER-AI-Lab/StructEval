@@ -1,0 +1,28 @@
+
+artifact = {
+    name = "Celestial Disk of Ur",
+    origin = "Sumerian",
+    discovery = {
+        year = 1934,
+        location = {
+            country = "Iraq",
+            site = "Ur"
+        }
+    },
+    materials = [
+        { type = "bronze", age_estimate = 4500 },
+        { type = "lapis lazuli", age_estimate = 4300 }
+    ],
+    dimensions = {
+        height_cm = 12.5,
+        width_cm = 8.3
+    },
+    inscriptions = [
+        { language = "Sumerian", content = "The heavens are the domain of the gods", deciphered = true },
+        { language = "Akkadian", content = "The stars guide the path of the king", deciphered = false }
+    ],
+    current_location = {
+        museum = "British Museum",
+        acquisition_date = "2010-05-15"
+    }
+}

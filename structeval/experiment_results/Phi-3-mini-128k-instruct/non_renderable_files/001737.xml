@@ -1,0 +1,37 @@
+<recipe>
+    <title>Classic Chocolate Chip Cookies</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+            <phone>+1-555-123-4567</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>All-purpose flour</name>
+            <quantity>2.75 cups</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Unsalted butter</name>
+            <quantity>1 cup</quantity>
+            <unit>cups</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Preheat the oven to 350Â°F (175Â°C).</description>
+            <duration_minutes>5</duration_minutes>
+        </step>
+        <step>
+            <description>Cream together the butter and sugars until light and fluffy.</description>
+            <duration_minutes>10</duration_minutes>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>2500</calories>
+        <fat_grams>150</fat_grams>
+        <carbohydrates_grams>300</carbohydrates_grams>
+    </nutrition>
+</recipe>

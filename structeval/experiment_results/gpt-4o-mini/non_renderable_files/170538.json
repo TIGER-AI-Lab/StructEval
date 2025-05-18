@@ -1,0 +1,61 @@
+
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "star_systems": {
+      "star_system": [
+        {
+          "system_name": "Alpha Prime",
+          "planets": {
+            "planet": [
+              {
+                "planet_name": "Zylox",
+                "inhabitants": {
+                  "inhabitant": [
+                    {
+                      "species": "Glorbian",
+                      "population": 12000
+                    },
+                    {
+                      "species": "Robots",
+                      "population": 3000
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "system_name": "Beta Minor",
+          "planets": {
+            "planet": [
+              {
+                "planet_name": "Quintar",
+                "inhabitants": {
+                  "inhabitant": [
+                    {
+                      "species": "Humanoid",
+                      "population": 500
+                    }
+                  ]
+                }
+              },
+              {
+                "planet_name": "Vortax",
+                "inhabitants": {
+                  "inhabitant": [
+                    {
+                      "species": "Crystal Entity",
+                      "population": 42
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

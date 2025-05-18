@@ -1,0 +1,19 @@
+
+planet_name: Zyphron
+system:
+  star_name: Kepler-442
+  distance_from_earth_ly: 1206
+  discovery:
+    year: 2015
+    method: Transit
+atmosphere:
+  composition: Oxygen;Nitrogen;Argon
+  pressure: 1.3
+moons:
+  - name: Luna Minor
+    diameter_km: 210
+    discovered_by: Dr. Zeta
+  - name: Luna Major
+    diameter_km: 410
+    discovered_by: Prof. Quark
+notable_features: Blue storms;Floating mountains

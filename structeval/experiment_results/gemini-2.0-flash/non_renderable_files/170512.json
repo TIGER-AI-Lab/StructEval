@@ -1,0 +1,24 @@
+
+{
+  "museum": {
+    "name": "The Surrealist Menagerie",
+    "location": {
+      "city": "Dreamhaven",
+      "country": "Imaginaria"
+    },
+    "exhibits": {
+      "exhibit": [
+        {
+          "title": "Clockwork Giraffe",
+          "artist": "Luna Dali",
+          "year": 2042
+        },
+        {
+          "title": "Floating Teacups",
+          "artist": "Max Magritte",
+          "year": 2037
+        }
+      ]
+    }
+  }
+}

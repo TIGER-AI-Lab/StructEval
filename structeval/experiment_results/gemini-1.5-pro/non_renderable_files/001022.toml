@@ -1,0 +1,34 @@
+[artifact]
+name = "The Starstone"
+origin = "Ancient Astronauts"
+[artifact.discovery]
+year = 1922
+[artifact.discovery.location]
+country = "Egypt"
+site = "Valley of the Kings"
+
+[[artifact.materials]]
+type = "Meteorite"
+age_estimate = 10000
+
+[[artifact.materials]]
+type = "Gold"
+age_estimate = 3000
+
+[artifact.dimensions]
+height_cm = 15.24
+width_cm = 10.16
+
+[[artifact.inscriptions]]
+language = "Unknown"
+content = "^^^#%$!@#$$"
+deciphered = false
+
+[[artifact.inscriptions]]
+language = "Ancient Egyptian"
+content = "Praise Ra"
+deciphered = true
+
+[artifact.current_location]
+museum = "Cairo Museum"
+acquisition_date = "1923-01-15"

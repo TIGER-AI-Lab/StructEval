@@ -1,0 +1,18 @@
+garden:
+  name: "Eden Botanical Haven"
+  location:
+    city: "Springfield"
+    country: "United States"
+  size_sq_meters: 12000
+  established_year: 1985
+  sections:
+    - section_name: "Tropical Paradise"
+      plants:
+        - species: "Heliconia rostrata"
+          age_years: 5
+          height_cm: 150
+          is_perennial: true
+          flowering_months: ["June", "July", "August"]
+          care:
+            last_watered: "2023-03-15T09:00:00Z"
+            fertilizer_type: "Nitrogen-rich"

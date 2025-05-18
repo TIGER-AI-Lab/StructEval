@@ -1,0 +1,66 @@
+<recipe>
+  <title>Galactic Guacamole</title>
+  <author>
+    <name>Cosmic Cook</name>
+    <contact>
+      <email>cosmiccook@galaxy.com</email>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Avocados</name>
+      <quantity>3</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Space Salt</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+    <ingredient>
+      <name>Nebula Nectar</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <description>Mash avocados with a fork.</description>
+      <duration>
+        <minutes>5</minutes>
+      </duration>
+      <tools>
+        <tool>
+          <toolName>Fork</toolName>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+    <step>
+      <description>Add space salt and nebula nectar.</description>
+      <duration>
+        <minutes>2</minutes>
+      </duration>
+      <tools>
+        <tool>
+          <toolName>Spoon</toolName>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>250</calories>
+    <fat>
+      <grams>20</grams>
+    </fat>
+    <protein>
+      <grams>5</grams>
+    </protein>
+  </nutrition>
+  <metadata>
+    <cuisine>Fusion</cuisine>
+    <difficulty>easy</difficulty>
+    <published date="2023-10-27"/>
+  </metadata>
+</recipe>

@@ -1,0 +1,80 @@
+
+<galaxy>
+    <name>Andromeda</name>
+    <discoveryYear>1920</discoveryYear>
+    <type>spiral</type>
+    <stars>
+        <star>
+            <name>Alpha Andromedae</name>
+            <spectralClass>G</spectralClass>
+            <ageMillionYears>5000</ageMillionYears>
+            <massSolar>1.2</massSolar>
+            <planets>
+                <planet>
+                    <name>Andromeda I</name>
+                    <hasLife>false</hasLife>
+                    <orbitalPeriod>1.5</orbitalPeriod>
+                    <massEarths>0.9</massEarths>
+                    <atmosphere>
+                        <composition>N2,O2,Ar</composition>
+                        <pressureAtm>1.0</pressureAtm>
+                    </atmosphere>
+                    <moons>
+                        <moon>
+                            <name>Andromeda I-a</name>
+                            <diameterKm>3000</diameterKm>
+                            <discoveryDate>2001-05-15</discoveryDate>
+                        </moon>
+                    </moons>
+                </planet>
+                <planet>
+                    <name>Andromeda II</name>
+                    <hasLife>true</hasLife>
+                    <orbitalPeriod>2.3</orbitalPeriod>
+                    <massEarths>1.5</massEarths>
+                    <atmosphere>
+                        <composition>CO2,N2,O2</composition>
+                        <pressureAtm>0.8</pressureAtm>
+                    </atmosphere>
+                    <moons>
+                        <moon>
+                            <name>Andromeda II-a</name>
+                            <diameterKm>1500</diameterKm>
+                            <discoveryDate>2005-08-20</discoveryDate>
+                        </moon>
+                        <moon>
+                            <name>Andromeda II-b</name>
+                            <diameterKm>1200</diameterKm>
+                            <discoveryDate>2010-11-10</discoveryDate>
+                        </moon>
+                    </moons>
+                </planet>
+            </planets>
+        </star>
+        <star>
+            <name>Beta Andromedae</name>
+            <spectralClass>K</spectralClass>
+            <ageMillionYears>3000</ageMillionYears>
+            <massSolar>0.8</massSolar>
+            <planets>
+                <planet>
+                    <name>Andromeda III</name>
+                    <hasLife>false</hasLife>
+                    <orbitalPeriod>3.0</orbitalPeriod>
+                    <massEarths>1.2</massEarths>
+                    <atmosphere>
+                        <composition>CO2,N2</composition>
+                        <pressureAtm>0.5</pressureAtm>
+                    </atmosphere>
+                    <moons>
+                        <moon>
+                            <name>Andromeda III-a</name>
+                            <diameterKm>2000</diameterKm>
+                            <discoveryDate>2015-02-25</discoveryDate>
+                        </moon>
+                    </moons>
+                </planet>
+            </planets>
+        </star>
+    </stars>
+</galaxy>

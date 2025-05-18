@@ -1,0 +1,69 @@
+
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>John Doe</name>
+    <contact>
+      <email>john.doe@example.com</email>
+      <phone>123-456-7890</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <name>Spaghetti</name>
+    <quantity>400</quantity>
+    <unit>grams</unit>
+    <name>Guanciale</name>
+    <quantity>150</quantity>
+    <unit>grams</unit>
+    <name>Eggs</name>
+    <quantity>4</quantity>
+    <unit>pieces</unit>
+    <name>Parmesan Cheese</name>
+    <quantity>50</quantity>
+    <unit>grams</unit>
+  </ingredients>
+  <instructions>
+    <stepNumber>1</stepNumber>
+    <description>Boil water in a large pot and add spaghetti</description>
+    <timer>
+      <duration>PT8M</duration>
+    </timer>
+    <stepNumber>2</stepNumber>
+    <description>Cook spaghetti until al dente</description>
+    <timer>
+      <duration>PT10M</duration>
+    </timer>
+    <stepNumber>3</stepNumber>
+    <description>While spaghetti is cooking, fry guanciale in a pan</description>
+    <timer>
+      <duration>PT5M</duration>
+    </timer>
+    <stepNumber>4</stepNumber>
+    <description>Beat eggs and Parmesan cheese together in a bowl</description>
+    <timer>
+      <duration>PT0M</duration>
+    </timer>
+    <stepNumber>5</stepNumber>
+    <description>Drain spaghetti and add to the pan with guanciale</description>
+    <timer>
+      <duration>PT2M</duration>
+    </timer>
+    <stepNumber>6</stepNumber>
+    <description>Add egg mixture to the pan and toss until well combined</description>
+    <timer>
+      <duration>PT1M</duration>
+    </timer>
+  </instructions>
+  <nutrition>
+    <calories>600</calories>
+    <fat>30</fat>
+    <protein>20</protein>
+  </nutrition>
+  <tags>
+    <label>Italian</label>
+    <label>Dinner</label>
+  </tags>
+  <metadata>
+    <createdDate>2022-01-01</createdDate>
+  </metadata>
+</recipe>

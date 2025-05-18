@@ -1,0 +1,59 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "galacticZoo": {
+    "species": [
+      {
+        "name": "Zyglon",
+        "habitat": "Nebula Gardens",
+        "diet": "plasma",
+        "abilities": [
+          {
+            "name": "Invisibility",
+            "description": "Can become invisible in cosmic fog."
+          },
+          {
+            "name": "Telepathy",
+            "description": "Communicates with other Zyglons across galaxies."
+          }
+        ]
+      },
+      {
+        "name": "Quasarfin",
+        "habitat": "Asteroid Lakes",
+        "diet": "mineral dust",
+        "abilities": [
+          {
+            "name": "Gravity Surfing",
+            "description": "Rides gravitational waves for quick travel."
+          }
+        ]
+      }
+    ]
+  }
+}
+'''
+
+data = json.loads(json_data)
+root = ET.Element("root")
+
+for species in data["galacticZoo"]["species"]:
+    specie = ET.SubElement(root, "species")
+    name = ET.SubElement(specie, "name")
+    name.text = species["name"]
+    habitat = ET.SubElement(specie, "habitat")
+    habitat.text = species["habitat"]
+    diet = ET.SubElement(specie, "diet")
+    diet.text = species["diet"]
+    for ability in species["abilities"]:
+        ability_element = ET.SubElement(specie, "ability")
+        name = ET.SubElement(ability_element, "name")
+        name.text = ability["name"]
+        description = ET.SubElement(ability_element, "description")
+        description.text = ability["description"]
+
+tree = ET.ElementTree(root)
+tree.write("output.xml")

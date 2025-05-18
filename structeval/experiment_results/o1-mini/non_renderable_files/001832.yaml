@@ -1,0 +1,25 @@
+
+exhibit:
+  title: "Ancient Wonders: A Journey Through Time"
+  curator:
+    name: "Dr. Emily Stone"
+    contact:
+      email: "emily.stone@museum.org"
+      phone: "+1-555-6789"
+  artifacts:
+    - name: "Sumerian Tablet"
+      origin: "Mesopotamia"
+      year: -2500
+      materials:
+        - "Clay"
+        - "Cuneiform script"
+      dimensions:
+        height_cm: 15.2
+        width_cm: 10.5
+        depth_cm: 2.3
+      on_loan: true
+      loan_info:
+        institution: "British Museum"
+        return_date: "2025-12-31"
+  opening_date: "2024-05-01"
+  closing_date: "2024-10-31"

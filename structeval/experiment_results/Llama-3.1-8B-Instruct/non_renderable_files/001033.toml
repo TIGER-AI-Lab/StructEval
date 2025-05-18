@@ -1,0 +1,40 @@
+
+botanical_garden = {
+  name = "Green Haven Botanical Garden"
+  established_year = 1990
+  location = {
+    country = "Australia"
+    city = "Melbourne"
+  }
+  opening_hours = {
+    weekdays = {
+      open = "09:00"
+      close = "17:00"
+    }
+    weekends = {
+      open = "10:00"
+      close = "16:00"
+    }
+  }
+  greenhouses = [
+    {
+      name = "Tropical Greenhouse"
+      area_sqm = 500.0
+      climate_type = "Tropical"
+      plants = [
+        {
+          species = "Dendrobium nobile"
+          origin_region = "Southeast Asia"
+          is_endangered = false
+          year_introduced = 2005
+        }
+        {
+          species = "Orchidaceae"
+          origin_region = "Australia"
+          is_endangered = true
+          year_introduced = 2010
+        }
+      ]
+    }
+  ]
+}

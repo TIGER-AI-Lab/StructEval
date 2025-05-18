@@ -1,0 +1,25 @@
+[
+  {
+    "galaxy_name": "Andromeda",
+    "system": {
+      "id": 42,
+      "name": "Alpha Centauri",
+      "star_type": "Yellow Dwarf",
+      "planets": [
+        {
+          "planet_name": "Xerion",
+          "type": "Gas Giant",
+          "moons": [
+            {
+              "moon_name": "Lunara",
+              "diameter_km": 3200,
+              "has_atmosphere": true,
+              "discovered_by": "Dr. Vega",
+              "discovery_year": 2345
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

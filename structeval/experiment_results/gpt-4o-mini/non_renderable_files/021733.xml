@@ -1,0 +1,37 @@
+
+<planet>
+    <name>Gliese 581g</name>
+    <system>
+        <star_name>Gliese 581</star_name>
+        <star_type>Red Dwarf</star_type>
+        <distance_from_earth_ly>20.3</distance_from_earth_ly>
+    </system>
+    <moons>
+        <moon>
+            <name>Phobos</name>
+            <diameter_km>22.2</diameter_km>
+            <has_atmosphere>False</has_atmosphere>
+        </moon>
+        <moon>
+            <name>Deimos</name>
+            <diameter_km>12.4</diameter_km>
+            <has_atmosphere>False</has_atmosphere>
+        </moon>
+    </moons>
+    <exploration_missions>
+        <mission>
+            <name>Project Pioneer</name>
+            <launch_year>2041</launch_year>
+            <crew_members>
+                <member>
+                    <name>Dr. Ada Lovelace</name>
+                    <role>Commander</role>
+                </member>
+                <member>
+                    <name>Elon Tusk</name>
+                    <role>Pilot</role>
+                </member>
+            </crew_members>
+        </mission>
+    </exploration_missions>
+</planet>

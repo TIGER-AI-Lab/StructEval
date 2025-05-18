@@ -1,0 +1,37 @@
+
+museum:
+  name: "The Modern Art Museum"
+  location:
+    city: "New York"
+    country: "USA"
+  founded_year: 1985
+  director:
+    name: "Jane Doe"
+    tenure_years: 5
+  exhibits:
+    - title: "Starry Night"
+      artist: "Vincent van Gogh"
+      year: 1889
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 73.7
+        width_cm: 92.1
+      on_loan: false
+      provenance:
+        previous_owners:
+          - "Museum of Modern Art, New York"
+          - "Private Collection, Paris"
+        acquisition_date: "2020-06-15"
+    - title: "The Persistence of Memory"
+      artist: "Salvador DalÃ­"
+      year: 1931
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 24.1
+        width_cm: 33.0
+      on_loan: true
+      provenance:
+        previous_owners:
+          - "Museum of Modern Art, New York"
+          - "Private Collection, London"
+        acquisition_date: "2018-03-22"

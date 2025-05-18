@@ -1,0 +1,5 @@
+
+artifact_id,artifact_name,artifact_type,discovery_site,discovery_country,discovery_year,estimated_age_years,material,current_location,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,condition_status,associated_culture,notable_features
+A001,The Great Vase,vase,Ancient Ruins,Italy,1985,2500,ceramic,National Museum of Italy,50,30,30,intact,Ancient Rome,decorated with intricate floral patterns
+A002,Stone Tool,tool,Prehistoric Site,France,1990,10000,stone,Archaeological Museum of France,15,5,3,fragmented,Neolithic,sharp edge for cutting
+A003,Bronze Statue,statue,Temple of Apollo,Greece,2000,3000,bronze,National Archaeological Museum,120,40,30,restored,Ancient Greece,depicts a god with detailed facial features

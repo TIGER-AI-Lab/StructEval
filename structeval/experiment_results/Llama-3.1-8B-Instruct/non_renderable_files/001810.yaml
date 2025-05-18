@@ -1,0 +1,31 @@
+
+exhibition:
+  title: Modern Art Exhibition
+  curator:
+    name: John Doe
+    contact:
+      email: john.doe@example.com
+      phone: +1-123-456-7890
+  exhibit_dates:
+    opening_date: 2024-07-01
+    closing_date: 2024-09-01
+  rooms:
+    - name: Room 1
+      theme: Contemporary Art
+      artworks:
+        - artist: Jane Smith
+          title: Artwork 1
+          year: 2020
+          medium: Oil on Canvas
+          dimensions:
+            height_cm: 100
+            width_cm: 150
+          provenance: Private Collection
+        - artist: Bob Johnson
+          title: Artwork 2
+          year: 2019
+          medium: Acrylic on Wood
+          dimensions:
+            height_cm: 80
+            width_cm: 120
+          provenance: Museum of Modern Art

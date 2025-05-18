@@ -1,0 +1,19 @@
+planet_name: Auroria
+system:
+  star_name: Helion
+  distance_light_years: 1200
+  discovery:
+    year: 2350
+    method: Transit
+atmosphere:
+  composition: Hydrogen;Helium;Methane
+  pressure: 0.8
+moons:
+  - name: Lunara
+    diameter_km: 3200
+  - name: Selene
+    diameter_km: 2900
+expeditions:
+  - mission_name: First Light
+    year: 2360
+    crew_members: Dr. Nova;Capt. Vega;Lt. Orion

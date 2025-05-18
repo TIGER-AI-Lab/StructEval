@@ -1,0 +1,49 @@
+
+import xmltodict
+import json
+
+xml_data = """
+<planetarium>
+  <exhibits>
+    <exhibit>
+      <name>Solar System Wonders</name>
+      <planets>
+        <planet>
+          <planetName>Jupiter</planetName>
+          <moons>
+            <moon>Io</moon>
+            <moon>Europa</moon>
+          </moons>
+        </planet>
+        <planet>
+          <planetName>Saturn</planetName>
+          <moons>
+            <moon>Titan</moon>
+          </moons>
+        </planet>
+      </planets>
+    </exhibit>
+    <exhibit>
+      <name>Exoplanet Exploration</name>
+      <planets>
+        <planet>
+          <planetName>Kepler-22b</planetName>
+          <moons/>
+        </planet>
+        <planet>
+          <planetName>Gliese 581g</planetName>
+          <moons/>
+        </planet>
+      </planets>
+    </exhibit>
+  </exhibits>
+</planetarium>
+"""
+
+def xml_to_json(xml_string):
+    data_dict = xmltodict.parse(xml_string)
+    json_data = json.dumps(data_dict)
+    return json_data
+
+json_data = xml_to_json(xml_data)
+print(json_data)

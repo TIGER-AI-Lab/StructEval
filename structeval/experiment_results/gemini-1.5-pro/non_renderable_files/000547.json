@@ -1,0 +1,40 @@
+{
+  "creature": {
+    "name": "Gloomfang",
+    "species": "Nocturnus umbra",
+    "age": 15,
+    "habitat": {
+      "region": "Shadowfen Swamps",
+      "climate": "Subtropical, humid"
+    },
+    "abilities": [
+      {
+        "type": "Shadow Manipulation",
+        "power_level": 8
+      },
+      {
+        "type": "Echolocation",
+        "power_level": 6
+      }
+    ],
+    "appearance": {
+      "size": "medium",
+      "color_pattern": "Dark grey with bioluminescent blue stripes"
+    },
+    "diet": {
+      "primary_foods": [
+        "Swamp rodents",
+        "Fish",
+        "Insects"
+      ],
+      "hunting_methods": [
+        "Ambush",
+        "Pursuit diving"
+      ]
+    },
+    "social_behavior": {
+      "group_size": 5,
+      "hierarchy_level": "beta"
+    }
+  }
+}

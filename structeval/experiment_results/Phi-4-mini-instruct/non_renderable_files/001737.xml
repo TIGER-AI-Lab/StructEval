@@ -1,0 +1,39 @@
+<recipe>
+  <metadata>
+    <title>Grandma's Apple Pie</title>
+    <author>
+      <name>John Doe</name>
+      <contact>
+        <email>john.doe@example.com</email>
+        <phone>+1234567890</phone>
+      </contact>
+    </author>
+    <nutrition>
+      <calories>350</calories>
+      <fat_grams>10</fat_grams>
+      <carbohydrates_grams>45</carbohydrates_grams>
+    </nutrition>
+  </metadata>
+  <ingredients>
+    <ingredient>
+      <name>Apples</name>
+      <quantity>6</quantity>
+      <unit>cups</unit>
+    </ingredient>
+    <ingredient>
+      <name>Flour</name>
+      <quantity>2</quantity>
+      <unit>cups</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Preheat the oven to 375 degrees Fahrenheit.</description>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <step>
+      <description>Mix the apples with sugar and cinnamon.</description>
+      <duration_minutes>15</duration_minutes>
+    </step>
+  </instructions>
+</recipe>

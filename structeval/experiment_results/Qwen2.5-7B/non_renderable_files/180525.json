@@ -1,0 +1,42 @@
+
+import json
+import yaml
+
+# Given YAML code
+spaceship_yaml = """
+spaceship:
+  name: USS Nebula
+  model: NX-4721
+  crew:
+    captain: Zara Quill
+    officers:
+      - name: Lio Tran
+        role: First Officer
+      - name: Petra Solis
+        role: Science Officer
+    engineers:
+      - name: Ryo Matsuda
+        specialty: Warp Core
+      - name: Amara Voss
+        specialty: Shields
+  specs:
+    length_meters: 320
+    mass_tons: 85000
+    warp_drive: true
+  armaments:
+    lasers: 8
+    torpedoes: 12
+    deflector_shields: true
+  missions:
+    - mission_name: Pulsar Survey
+      destination: Zeta-4 System
+      success: true
+    - mission_name: Rescue at Vega
+      destination: Vega Outpost
+      success: false
+"""
+
+# Convert YAML to JSON
+spaceship_json = json.dumps(yaml.safe_load(spaceship_yaml), indent=2)
+
+print(spaceship_json)

@@ -1,0 +1,165 @@
+
+import csv
+import uuid
+import re
+
+def extract_recipe_info(recipe_description):
+    # Initialize the recipe dictionary with default values
+    recipe = {
+        "recipe_id": str(uuid.uuid4()),
+        "recipe_name": "",
+        "chef_name": "",
+        "cuisine_type": "",
+        "preparation_time_minutes": 0,
+        "cooking_time_minutes": 0,
+        "servings": 0,
+        "difficulty_level": "",
+        "main_ingredient": "",
+        "ingredient_list": "",
+        "ingredient_quantities": "",
+        "cooking_method": "",
+        "calories_per_serving": 0,
+        "allergen_warnings": "None",
+        "vegetarian_friendly": "No",
+        "seasonality": ""
+    }
+    
+    # Example parsing logic (to be customized based on recipe description format)
+    # This is a simplistic approach and may need more advanced NLP techniques for real-world use
+
+    # Extract recipe name
+    match = re.search(r'Recipe Name:\s*(.*)', recipe_description)
+    if match:
+        recipe["recipe_name"] = match.group(1).strip()
+
+    # Extract chef name
+    match = re.search(r'Chef:\s*(.*)', recipe_description)
+    if match:
+        recipe["chef_name"] = match.group(1).strip()
+
+    # Extract cuisine type
+    match = re.search(r'Cuisine:\s*(.*)', recipe_description)
+    if match:
+        recipe["cuisine_type"] = match.group(1).strip()
+
+    # Extract preparation time
+    match = re.search(r'Prep Time:\s*(\d+)\s*minutes', recipe_description)
+    if match:
+        recipe["preparation_time_minutes"] = int(match.group(1))
+
+    # Extract cooking time
+    match = re.search(r'Cook Time:\s*(\d+)\s*minutes', recipe_description)
+    if match:
+        recipe["cooking_time_minutes"] = int(match.group(1))
+
+    # Extract servings
+    match = re.search(r'Servings:\s*(\d+)', recipe_description)
+    if match:
+        recipe["servings"] = int(match.group(1))
+
+    # Extract difficulty level
+    match = re.search(r'Difficulty:\s*(Easy|Medium|Hard)', recipe_description, re.IGNORECASE)
+    if match:
+        recipe["difficulty_level"] = match.group(1).capitalize()
+
+    # Extract main ingredient
+    match = re.search(r'Main Ingredient:\s*(.*)', recipe_description)
+    if match:
+        recipe["main_ingredient"] = match.group(1).strip()
+
+    # Extract ingredients and quantities
+    ingredients = re.findall(r'-\s*(\d+[^,]+),\s*(.*)', recipe_description)
+    if ingredients:
+        ingredient_names = [ing[1].strip() for ing in ingredients]
+        ingredient_quantities = [ing[0].strip() for ing in ingredients]
+        recipe["ingredient_list"] = ", ".join(ingredient_names)
+        recipe["ingredient_quantities"] = ", ".join(ingredient_quantities)
+
+    # Extract cooking method
+    match = re.search(r'Cooking Method:\s*(.*)', recipe_description)
+    if match:
+        recipe["cooking_method"] = match.group(1).strip()
+
+    # Extract calories per serving
+    match = re.search(r'Calories per Serving:\s*(\d+)', recipe_description)
+    if match:
+        recipe["calories_per_serving"] = int(match.group(1))
+
+    # Extract allergen warnings
+    match = re.search(r'Allergens:\s*(.*)', recipe_description)
+    if match:
+        allergens = match.group(1).strip()
+        recipe["allergen_warnings"] = allergens if allergens else "None"
+
+    # Extract vegetarian friendly
+    match = re.search(r'Vegetarian:\s*(Yes|No)', recipe_description, re.IGNORECASE)
+    if match:
+        recipe["vegetarian_friendly"] = match.group(1).capitalize()
+
+    # Extract seasonality
+    match = re.search(r'Seasonality:\s*(.*)', recipe_description)
+    if match:
+        recipe["seasonality"] = match.group(1).strip()
+
+    return recipe
+
+def write_recipe_to_csv(recipes, filename='recipes.csv'):
+    fieldnames = [
+        "recipe_id",
+        "recipe_name",
+        "chef_name",
+        "cuisine_type",
+        "preparation_time_minutes",
+        "cooking_time_minutes",
+        "servings",
+        "difficulty_level",
+        "main_ingredient",
+        "ingredient_list",
+        "ingredient_quantities",
+        "cooking_method",
+        "calories_per_serving",
+        "allergen_warnings",
+        "vegetarian_friendly",
+        "seasonality"
+    ]
+    
+    with open(filename, mode='w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for recipe in recipes:
+            writer.writerow(recipe)
+
+# Example usage:
+if __name__ == "__main__":
+    recipe_descriptions = [
+        """
+        Recipe Name: Spaghetti Carbonara
+        Chef: John Doe
+        Cuisine: Italian
+        Prep Time: 15 minutes
+        Cook Time: 20 minutes
+        Servings: 4
+        Difficulty: Easy
+        Main Ingredient: Spaghetti
+        Ingredients:
+        - 200g spaghetti,
+        - 100g pancetta,
+        - 2 large eggs,
+        - 50g pecorino cheese,
+        - 50g parmesan,
+        - Black pepper
+        Cooking Method: Boiling and frying
+        Calories per Serving: 500
+        Allergens: Dairy, Eggs
+        Vegetarian: No
+        Seasonality: All Year
+        """
+        # Add more recipe descriptions as needed
+    ]
+
+    recipes = []
+    for desc in recipe_descriptions:
+        recipe = extract_recipe_info(desc)
+        recipes.append(recipe)
+    
+    write_recipe_to_csv(recipes)

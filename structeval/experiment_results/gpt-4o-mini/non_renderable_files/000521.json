@@ -1,0 +1,41 @@
+
+{
+  "museum": {
+    "name": "The Grand Art Museum",
+    "location": {
+      "city": "Metropolis",
+      "country": "Fictionland"
+    },
+    "established_year": 1995,
+    "director": {
+      "name": "Dr. Jane Smith",
+      "tenure_years": 8
+    },
+    "departments": [
+      {
+        "name": "Modern Art",
+        "head": "Mr. John Doe",
+        "collections": [
+          {
+            "title": "The Colorful Dream",
+            "year_acquired": 2010,
+            "artist": "Alice Johnson",
+            "medium": "Oil on Canvas",
+            "on_display": true
+          },
+          {
+            "title": "Abstract Thoughts",
+            "year_acquired": 2015,
+            "artist": "Bob Brown",
+            "medium": "Acrylic",
+            "on_display": false
+          }
+        ]
+      }
+    ],
+    "opening_hours": {
+      "weekdays": "9 AM - 5 PM",
+      "weekends": "10 AM - 6 PM"
+    }
+  }
+}

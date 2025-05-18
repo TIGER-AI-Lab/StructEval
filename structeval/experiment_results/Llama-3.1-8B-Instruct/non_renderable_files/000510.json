@@ -1,0 +1,30 @@
+
+{
+  "museum": {
+    "name": "The Imaginary Art Museum",
+    "location": {
+      "city": "New York",
+      "country": "United States"
+    },
+    "established_year": 1990,
+    "director": {
+      "full_name": "John Doe",
+      "start_date": "2020-01-01"
+    },
+    "galleries": [
+      {
+        "title": "Modern Art Gallery",
+        "theme": "20th and 21st-century art",
+        "artworks": [
+          {
+            "title": "The Starry Night",
+            "artist": "Vincent van Gogh",
+            "year_created": 1889,
+            "medium": "Oil on canvas",
+            "dimensions": "73.7 x 91.3 cm"
+          }
+        ]
+      }
+    ]
+  }
+}

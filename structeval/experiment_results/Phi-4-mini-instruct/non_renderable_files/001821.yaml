@@ -1,0 +1,26 @@
+
+expedition:
+  mission_name: "Abyssal Discovery Initiative"
+  launch_date: "2023-09-15T08:00:00Z"
+  duration_days: 90
+  crew:
+    - name: "Dr. Emily Carter"
+      role: "Lead Marine Biologist"
+      age: 38
+      skills: ["Marine Biology", "Underwater Photography", "Data Analysis"]
+    - name: "Captain John Smith"
+      role: "Mission Commander"
+      age: 45
+      skills: ["Navigation", "Emergency Response", "Leadership"]
+  cargo:
+    manifest_id: "EXP-2023-09-15-001"
+    items:
+      - item_name: "Submersible Drone"
+        quantity: 2
+        weight_kg: 1200
+      - item_name: "Research Equipment Kit"
+        quantity: 5
+        weight_kg: 250
+      - item_name: "Food Supplies"
+        quantity: 1000
+        weight_kg: 5000

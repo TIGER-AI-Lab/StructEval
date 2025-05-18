@@ -1,0 +1,71 @@
+<recipe>
+  <title>Galactic Guacamole</title>
+  <author>
+    <name>Cosmo Kramer</name>
+    <contact>
+      <email>kramer@example.com</email>
+      <phone>+1-212-555-1212</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Avocados</name>
+      <quantity>3</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Red Onion</name>
+      <quantity>0.5</quantity>
+      <unit>cup</unit>
+    </ingredient>
+    <ingredient>
+      <name>Lime Juice</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>Cilantro</name>
+      <quantity>0.25</quantity>
+      <unit>cup</unit>
+    </ingredient>
+    <ingredient>
+      <name>Starfruit</name>
+      <quantity>1</quantity>
+      <unit>piece</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <instruction>Mash avocados in a bowl.</instruction>
+      <duration>
+        <minutes>5</minutes>
+      </duration>
+      <tools>Fork, Bowl</tools>
+    </step>
+    <step>
+      <instruction>Dice red onion, starfruit, and cilantro.</instruction>
+      <duration>
+        <minutes>10</minutes>
+      </duration>
+      <tools>Knife, Cutting Board</tools>
+    </step>
+    <step>
+      <instruction>Combine all ingredients in the bowl and mix well.</instruction>
+      <duration>
+        <minutes>2</minutes>
+      </duration>
+      <tools>Spoon</tools>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>250</calories>
+    <fat>20</fat>
+    <protein>5</protein>
+    <carbohydrates>15</carbohydrates>
+  </nutrition>
+  <tags>
+    <tag>vegan</tag>
+    <tag>appetizer</tag>
+    <tag>fusion</tag>
+  </tags>
+</recipe>

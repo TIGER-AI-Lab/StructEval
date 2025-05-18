@@ -1,0 +1,3 @@
+
+artifact_id,artifact_name,discovery.location,discovery.date_found,discovery.team_leader,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,material.primary,material.secondary,estimated_age.years,estimated_age.method,current_condition.status,current_condition.last_inspection,exhibition_history[0].museum,exhibition_history[0].start_date,exhibition_history[0].end_date
+"001","Ancient Clay Pot","Pompeii, Italy","2022-05-15","Dr. Jane Smith",30,20,15,"clay","","2000","thermoluminescence","excellent","2023-10-01","Pompeii Archaeological Museum","2023-01-10","2023-12-31"

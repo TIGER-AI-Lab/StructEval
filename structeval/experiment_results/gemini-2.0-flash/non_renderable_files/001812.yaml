@@ -1,0 +1,35 @@
+brewery:
+  name: "Starlight Brewing Co."
+  location:
+    city: "Portland"
+    country: "USA"
+  founded_year: 2012
+  owner: "Alice Johnson"
+  beers:
+    - name: "Cosmic IPA"
+      style: "IPA"
+      abv: 6.8
+      awards:
+        - title: "Best IPA"
+          year: 2018
+          organization: "Oregon Beer Awards"
+    - name: "Dark Matter Stout"
+      style: "Stout"
+      abv: 7.5
+      awards:
+        - title: "Gold Medal"
+          year: 2020
+          organization: "Great American Beer Festival"
+    - name: "Nebula Pale Ale"
+      style: "Pale Ale"
+      abv: 5.2
+      awards:
+        - title: "People's Choice"
+          year: 2022
+          organization: "Portland Beer Week"
+  tours:
+    available: true
+    schedule:
+      days: ["Saturday", "Sunday"]
+      times: ["14:00", "16:00"]
+    languages_supported: ["English", "Spanish"]

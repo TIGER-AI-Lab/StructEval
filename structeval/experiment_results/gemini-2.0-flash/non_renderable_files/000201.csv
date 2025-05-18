@@ -1,0 +1,17 @@
+
+species_name,primary_color,average_height_cm,habitat_type,diet_classification,number_of_legs,average_lifespan_years,endangered_status,native_planet,notable_ability,first_discovered_year,discovered_by,communication_method,social_structure,reproduction_cycle_days
+Kryll,iridescent green,180,swamps,omnivore,2,80,not threatened,Kryll Prime,shapeshifting,2342,Dr. Aris Thorne,telepathy,tribal,365
+Vorath,purple,250,mountains,carnivore,6,120,endangered,Vorath Major,super strength,2100,The Galactic Explorers,roaring,packs,730
+Gleepglorp,yellow,50,underground caves,herbivore,0,30,not threatened,Gleepglorp Minor,bioluminescence,2400,Professor Eldrin,clicking sounds,colonies,180
+Zydonians,blue,160,deserts,omnivore,2,75,vulnerable,Zydon,sand manipulation,2250,Captain Valerius,sign language,hierarchical,400
+Florg,orange,300,jungles,herbivore,4,90,not threatened,Florgania,regeneration,2300,The Botanical Survey Team,drumming,family groups,300
+Quarren,silver,170,oceanic caves,carnivore,2,60,vulnerable,Quarren Prime,echolocation,2050,The Deep Sea Expedition,whistling,solitary,380
+Blorp,pink,80,forests,omnivore,4,40,not threatened,Blorp Major,camouflage,2150,Ranger Anya,scent marking,small groups,270
+Glargons,red,200,volcanic plains,carnivore,6,150,endangered,Glargon Prime,fire resistance,2200,The Volcanic Research Institute,growling,territorial,500
+Squeebles,green,30,gardens,herbivore,2,20,not threatened,Squeebland,flight,2350,The Children of Xylo,chirping,communal,100
+Xylar,white,190,ice caves,carnivore,2,100,vulnerable,Xylos,ice manipulation,2450,The Arctic Explorers,howling,nomadic,600
+Groknar,brown,220,swamps,omnivore,4,85,not threatened,Groknar Prime,acid spit,2120,The Swamp Raiders,grunting,tribal,420
+Fuzzballs,grey,40,mountains,herbivore,0,25,not threatened,Fuzzballia,extreme cuteness,2280,The Pet Collectors,purring,herds,150
+Slitherin,black,150,underground tunnels,carnivore,0,70,vulnerable,Slitherin Major,venomous bite,2080,The Tunnel Rats,hissing,solitary,330
+Glimmerwings,gold,60,forest canopies,herbivore,6,35,not threatened,Glimmer Prime,light manipulation,2380,The Canopy Watchers,flashing lights,flocks,210
+Rocklings,grey,100,rocky plains,herbivore,4,50,not threatened,Rocklandia,rock mimicry,2420,The Stone Seekers,rumbling,small groups,290

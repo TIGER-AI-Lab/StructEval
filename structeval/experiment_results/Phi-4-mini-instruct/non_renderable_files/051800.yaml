@@ -1,0 +1,25 @@
+
+planet:
+  name: Zyphora-9
+  galaxy: Andromeda
+  population: 1200000000
+  atmosphere:
+    composition: [Xenon, Argon, Helium]
+    pressure: 1.7
+  climate:
+    temperature:
+      average: -73
+      extremes:
+        high: -40
+        low: -120
+    weather_patterns: [acid rain, electrical storms, crimson fog]
+  moons:
+    - name: Virella
+      diameter_km: 3200
+      has_water: true
+    - name: Orbis Minor
+      diameter_km: 1500
+      has_water: false
+  discovery:
+    year: 2458
+    discovered_by: Dr. Lira Qest

@@ -1,0 +1,38 @@
+
+[artifact]
+name = "The Rosetta Stone"
+discovery_date = "1799-07-15"
+
+[artifact.origin]
+civilization = "Ptolemaic Egypt"
+location = "Rashid (Rosetta), Egypt"
+
+[artifact.dimensions]
+height_cm = 114.4
+width_cm = 72.3
+
+[[artifact.materials]]
+type = "Granodiorite"
+percentage = 90.0
+
+[[artifact.materials]]
+type = "Inscriptions (paint)"
+percentage = 10.0
+
+[[artifact.inscriptions]]
+language = "Ancient Egyptian (Hieroglyphs)"
+translation = "Decree issued at Memphis in 196 BC affirming the royal cult of Ptolemy V"
+
+[[artifact.inscriptions]]
+language = "Ancient Greek"
+translation = "Official decree inscribed to honor Ptolemy V and establish tax exemptions"
+
+[artifact.provenance]
+
+[[artifact.provenance.previous_owners]]
+owner_name = "French Army"
+acquisition_year = 1799
+
+[[artifact.provenance.previous_owners]]
+owner_name = "British Museum"
+acquisition_year = 1802

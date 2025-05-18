@@ -1,0 +1,32 @@
+
+{
+  "museum": {
+    "name": "The Metropolitan Museum of Art",
+    "location": {
+      "city": "New York",
+      "country": "USA"
+    },
+    "established_year": 1870,
+    "director": {
+      "name": "Max Hollein",
+      "tenure_years": 5
+    },
+    "exhibits": [
+      {
+        "title": "The Starry Night",
+        "artist": "Vincent van Gogh",
+        "year_created": 1889,
+        "medium": "oil on canvas",
+        "dimensions": {
+          "height_cm": 73.7,
+          "width_cm": 92.1
+        },
+        "on_display": true,
+        "provenance": {
+          "previous_owners": ["Private Collection", "The Art Institute of Chicago"],
+          "acquisition_date": "2005-03-15"
+        }
+      }
+    ]
+  }
+}

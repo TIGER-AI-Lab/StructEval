@@ -1,0 +1,35 @@
+
+[artifact]
+name = "Example Artifact"
+origin = "Ancient Greece"
+discovery_date = "2023-04-15"
+
+[artifact.materials]
+primary = "bronze"
+secondary = "ivory"
+
+[artifact.dimensions]
+height_cm = 120.5
+width_cm = 75.0
+depth_cm = 50.0
+
+[[artifact.inscriptions.list]]
+language = "Ancient Greek"
+translation = "In honorem Dionysi"
+location_on_artifact = "base"
+
+[[artifact.inscriptions.list]]
+language = "Latin"
+translation = "Ave Caesar"
+location_on_artifact = "side"
+
+[artifact.exhibit]
+current_location = "National Archaeological Museum"
+
+[[artifact.exhibit.previous_locations]]
+museum = "British Museum"
+year_range = "1850â1900"
+
+[[artifact.exhibit.previous_locations]]
+museum = "Louvre Museum"
+year_range = "1901â1950"

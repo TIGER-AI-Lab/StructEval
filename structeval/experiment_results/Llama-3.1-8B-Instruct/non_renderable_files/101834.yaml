@@ -1,0 +1,42 @@
+
+galacticZoo:
+  name: "Nebula Fauna Reserve"
+  opening_year: 3120
+
+  location:
+    planet: "Xenon Prime"
+    galaxy: "Andromeda"
+
+  species_list:
+  - name: "Glitterhorn"
+    origin: "Tau Ceti IV"
+    diet: "herbivore"
+    enclosure:
+      type: "biosphere dome"
+      atmosphere: "methane-rich"
+      features:
+        - "crystal meadows"
+        - "luminescent pools"
+
+  - name: "Void Lynx"
+    origin: "Orion Belt"
+    diet: "carnivore"
+    enclosure:
+      type: "gravity chamber"
+      atmosphere: "oxygen"
+      features:
+        - "anti-grav platforms"
+        - "shadow groves"
+
+  staff:
+    director: "Dr. Zira Voss"
+    caretakers:
+      - "Juno"
+      - "Rex"
+      - "Mira"
+    robots:
+      active: 12
+      models:
+        - "Caretak3r"
+        - "BotaniX"
+        - "Sanitron"

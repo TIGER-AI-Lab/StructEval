@@ -1,0 +1,27 @@
+
+import pandas as pd
+
+# Create a DataFrame with the recipe data
+recipe_data = pd.DataFrame({
+    'recipe_id': ['rec123'],
+    'recipe_name': ['Spaghetti Carbonara'],
+    'chef_name': ['Giovanni Rossi'],
+    'cuisine_type': ['Italian'],
+    'servings': [4],
+    'prep_time_minutes': [20],
+    'cook_time_minutes': [10],
+    'ingredient[0].name': ['Spaghetti'],
+    'ingredient[0].quantity': [400],
+    'ingredient[0].unit': ['grams'],
+    'ingredient[1].name': ['Eggs'],
+    'ingredient[1].quantity': [4],
+    'ingredient[1].unit': ['pieces'],
+    'step[0].instruction': ['Cook spaghetti in boiling water until al dente.'],
+    'step[0].duration_minutes': [10]
+})
+
+# Convert the DataFrame to CSV format
+csv_data = recipe_data.to_csv(index=False)
+
+# Print the CSV data
+print(csv_data)

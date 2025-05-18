@@ -1,0 +1,28 @@
+
+ecosystem:
+  name: "Mystic Forest"
+  location:
+    region: "Northern Hemisphere"
+    country: "Canada"
+  climate:
+    type: "Temperate"
+    average_temperature_celsius: 12
+  flora:
+    - species: "Quercus rubra"
+      population_estimate: 15000
+      conservation_status: "Least Concern"
+  fauna:
+    - species: "Ursus americanus"
+      population_estimate: 1200
+      diet: "Omnivore"
+      notable_behaviors:
+        - "Hibernates during winter"
+        - "Climbs trees to forage"
+        - "Uses vocalizations for communication"
+  research_projects:
+    - title: "Impact of Climate Change on Forest Biodiversity"
+      lead_scientist: "Dr. Emily Carter"
+      start_year: 2021
+    - title: "Habitat Restoration Techniques for Endangered Species"
+      lead_scientist: "Dr. Michael Thompson"
+      start_year: 2020

@@ -1,0 +1,45 @@
+
+museum:
+  name: Museum of Imaginary Artifacts
+  location:
+    city: Fantasia
+    country: Imaginaria
+    coordinates:
+      latitude: 45.1234
+      longitude: -71.5678
+  established_year: 1923
+  exhibits:
+    - title: The Whispering Vase
+      artist: Lira Moon
+      year: 1899
+      medium: Porcelain
+      dimensions:
+        height_cm: 35
+        width_cm: 20
+      on_display: true
+    - title: Clock of Lost Hours
+      artist: Eliot Tern
+      year: 1765
+      medium: Bronze
+      dimensions:
+        height_cm: 120
+        width_cm: 60
+      on_display: false
+  opening_hours:
+    monday: 10:00-18:00
+    tuesday: 10:00-18:00
+    wednesday: 10:00-18:00
+    thursday: 10:00-18:00
+    friday: 10:00-20:00
+    saturday: 11:00-20:00
+    sunday: Closed
+  guided_tours:
+    available: true
+    languages:
+      - English
+      - Esperanto
+      - Imaginese
+  ticket_prices:
+    adult: 18.5
+    child: 8.0
+    senior: 12.0

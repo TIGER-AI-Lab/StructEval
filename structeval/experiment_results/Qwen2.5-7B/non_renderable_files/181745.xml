@@ -1,0 +1,44 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def convert_yaml_to_xml(yaml_data):
+    root = ET.Element("spaceStation")
+    for module in yaml_data["modules"]:
+        module_elem = ET.SubElement(root, "module")
+        module_elem.set("name", module["name"])
+        for equipment in module["equipment"]:
+            equipment_elem = ET.SubElement(module_elem, "equipment")
+            equipment_elem.text = equipment
+    for crew_member in yaml_data["crewMembers"]:
+        crew_member_elem = ET.SubElement(root, "crewMember")
+        crew_member_elem.set("name", crew_member["name"])
+        crew_member_elem.set("role", crew_member["role"])
+    return ET.tostring(root, encoding="unicode")
+
+yaml_data = {
+    "name": "Nebula Outpost",
+    "modules": [
+        {
+            "name": "Hydroponics",
+            "equipment": ["GrowLights", "NutrientTanks"]
+        },
+        {
+            "name": "Observatory",
+            "equipment": ["Telescope", "RadiationShield"]
+        }
+    ],
+    "crewMembers": [
+        {
+            "name": "Dr. Vega",
+            "role": "Botanist"
+        },
+        {
+            "name": "Lt. Orion",
+            "role": "Engineer"
+        }
+    ]
+}
+
+xml_data = convert_yaml_to_xml(yaml_data)
+print(xml_data)

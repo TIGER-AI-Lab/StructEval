@@ -1,0 +1,46 @@
+<creature>
+    <name>Celestial Drakon</name>
+    <species>Draconic Entity</species>
+    <habitat>
+        <region>Himalayan Peaks</region>
+        <climate>Frigid Alpine</climate>
+    </habitat>
+    <traits>
+        <trait>
+            <traitName>Bioluminescent Scales</traitName>
+            <severity>High</severity>
+            <description>Scales emit a soft, ethereal glow in darkness.</description>
+        </trait>
+        <trait>
+            <traitName>Telepathic Communication</traitName>
+            <severity>Moderate</severity>
+            <description>Can communicate with other beings through thought.</description>
+        </trait>
+    </traits>
+    <abilities>
+        <ability>
+            <abilityName>Aurora Breath</abilityName>
+            <cooldownSeconds>300</cooldownSeconds>
+            <effect>Releases a dazzling beam of light that disorients foes.</effect>
+        </ability>
+        <ability>
+            <abilityName>Time Warp</abilityName>
+            <cooldownSeconds>600</cooldownSeconds>
+            <effect>Briefly slows down time in a localized area.</effect>
+        </ability>
+    </abilities>
+    <appearance>
+        <color>
+            <primary>Silver</primary>
+            <secondary>Azure</secondary>
+        </color>
+        <size>
+            <heightCm>450</heightCm>
+            <weightKg>1200</weightKg>
+        </size>
+    </appearance>
+    <discovery>
+        <dateDiscovered>2023-09-15</dateDiscovered>
+        <discoveredBy>Mythical Creatures Research Society</discoveredBy>
+    </discovery>
+</creature>

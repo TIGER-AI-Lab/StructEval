@@ -1,0 +1,2 @@
+artifact_id,artifact_name,discovery.location,discovery.date_found,discovery.team_leader,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,material.primary,material.secondary,estimated_age.years,estimated_age.method,current_condition.status,current_condition.last_inspection,exhibition_history[0].museum,exhibition_history[0].start_date,exhibition_history[0].end_date
+"ART12345","Bronze Age Sword","Hallstatt, Austria","2023-07-15","Dr. Emily Carter",85,5,2,"bronze","","3200","radiocarbon dating","excellent","2024-05-10","Natural History Museum Vienna","2024-01-20",""

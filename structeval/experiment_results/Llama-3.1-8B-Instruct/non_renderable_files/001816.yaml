@@ -1,0 +1,29 @@
+
+recipe:
+  title: "Delicious Chicken Fajitas"
+  author:
+    name: "John Doe"
+    contact:
+      email: "johndoe@example.com"
+  ingredients:
+  - name: "Boneless, skinless chicken breasts"
+    quantity: 1
+    unit: "pounds"
+  - name: "Bell peppers (any color)"
+    quantity: 2
+    unit: "cups"
+  steps:
+  - description: "Slice the chicken and bell peppers into thin strips."
+    duration_minutes: 10
+  - description: "Heat a large skillet over medium-high heat and cook the chicken and bell peppers for 5-7 minutes."
+    duration_minutes: 7
+  metadata:
+    cuisine: "Mexican"
+    difficulty: "medium"
+    tags:
+    - "chicken"
+    - "fajitas"
+    - "Mexican"
+  nutrition:
+    calories: 350
+    protein_grams: 35

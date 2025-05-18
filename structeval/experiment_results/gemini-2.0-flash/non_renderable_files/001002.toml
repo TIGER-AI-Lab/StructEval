@@ -1,0 +1,34 @@
+[ecosystem]
+name = "Xantus Prime Ecosystem 7"
+
+[ecosystem.location]
+planet = "Xantus Prime"
+region = "Equatorial Rainforest"
+
+[ecosystem.discovery]
+year = 2342
+discoverer = "Dr. Aris Thorne and Team"
+
+[[ecosystem.species]]
+name = "Arborealis Vitae"
+classification = "Arboreal Mammal"
+population_estimate = 12000
+traits = [
+    { trait_name = "Height", trait_value = "2.5 meters" },
+    { trait_name = "Lifespan", trait_value = 80 },
+    { trait_name = "Diet", trait_value = "Herbivorous" }
+]
+
+[ecosystem.resources]
+[[ecosystem.resources.water_sources]]
+type = "River"
+volume_liters = 5.2e+10
+
+minerals = [
+    { mineral_name = "Xantusite", abundance_level = "High" },
+    { mineral_name = "Ferrite", abundance_level = 0.75 }
+]
+
+[ecosystem.environment]
+average_temperature_celsius = 28.5
+atmosphere_composition = ["Nitrogen", "Oxygen", "Xantus Gases"]

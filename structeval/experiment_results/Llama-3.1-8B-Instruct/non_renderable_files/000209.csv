@@ -1,0 +1,25 @@
+
+import csv
+import pandas as pd
+
+data = {
+    "planet_id": ["EXO-1", "EXO-2", "EXO-3"],
+    "planet_name": ["Kepler-452b", "TRAPPIST-1e", "K2-18b"],
+    "system_name": ["Kepler-452", "TRAPPIST-1", "K2-18"],
+    "discovery_year": [2015, 2017, 2015],
+    "mass_earths": [1.63, 0.92, 8.62],
+    "radius_km": [1490, 9390, 2000],
+    "orbital_period_days": [385, 6.1, 33.2],
+    "atmosphere_composition": ["CO2, N2, O2", "H2, He, CH4", "H2, He, H2O"],
+    "has_rings": [False, False, True],
+    "rings_count": [0, 0, 3],
+    "largest_moon_name": ["Kepler-452b I", "", "K2-18b I"],
+    "largest_moon_diameter_km": [1000, 0, 500],
+    "surface_temperature_c": [288, 250, 230],
+    "discovered_by": ["NASA", "TRAPPIST Team", "K2 Team"],
+    "notes": ["Habitable zone planet", "Multi-planet system", "Water vapor detected"]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("exoplanets.csv", index=False, header=True)

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001113</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const NewsletterForm = () => {
+  const [email, setEmail] = useState('');
+  const [agreed, setAgreed] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!email || !email.includes('@')) {
+      setError('Invalid email.');
+      return;
+    }
+
+    setError('');
+    // In a real application, you would handle form submission here.
+    console.log('Subscribed with email:', email);
+  };
+
+  const handleClear = () => {
+    setEmail('');
+    setAgreed(false);
+    setError('');
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <div style={{ border: '2px solid black', padding: '20px' }}>
+        <h1>Subscribe Now</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <br />
+          <input
+            type="checkbox"
+            id="terms"
+            checked={agreed}
+            onChange={(e) => setAgreed(e.target.checked)}
+          />
+          <label htmlFor="terms">Agree to terms & conditions</label>
+          <br />
+          <button type="submit" style={{ backgroundColor: 'green' }}>Subscribe</button>
+          <button type="button" onClick={handleClear} style={{ backgroundColor: 'grey' }}>Clear</button>
+        </form>
+        {error && <p>{error}</p>}
+      </div>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterForm />);
+
+    </script>
+  </body>
+</html>

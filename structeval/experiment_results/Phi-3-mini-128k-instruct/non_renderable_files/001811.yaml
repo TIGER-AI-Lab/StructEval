@@ -1,0 +1,27 @@
+expedition:
+  name: "Red Planet Reconnaissance"
+  launch_date: "2025-07-16"
+  destination:
+    planet: "Mars"
+    moons: ["Phobos", "Deimos"]
+  crew:
+    - role: "Commander"
+      name: "Alex R. Martinez"
+      age: 45
+      skills: ["Leadership", "Navigation", "Communication"]
+    - name: "Samantha K. Liu"
+      skills: ["Geology", "Astrophysics", "Piloting"]
+  cargo:
+    supplies:
+      food_kg: 1200
+      water_liters: 3000
+    equipment:
+      - type: "Scientific Instruments"
+        quantity: 15
+      - type: "Habitat Modules"
+        quantity: 2
+  mission_objectives:
+    primary: "To establish a preliminary base for future human exploration"
+    secondary:
+      - "To conduct geological surveys of Martian terrain"
+      - "To test in-situ resource utilization techniques"

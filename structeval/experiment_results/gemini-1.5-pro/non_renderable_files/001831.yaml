@@ -1,0 +1,44 @@
+exhibit:
+  title: "Masterpieces of Modern Art"
+  curator:
+    name: "Dr. Emily Carter"
+    contact:
+      email: "emily.carter@museum.org"
+      phone: "+1-555-123-4567"
+  artworks:
+    - id: "A123"
+      artist: "Pablo Picasso"
+      title: "Guernica"
+      year: 1937
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 349.3
+        width_cm: 776.6
+      provenance:
+        - owner: "Museum of Modern Art"
+          acquisition_date: "1939-09-15"
+    - id: "B456"
+      artist: "Vincent van Gogh"
+      title: "The Starry Night"
+      year: 1889
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 73.7
+        width_cm: 92.1
+      provenance:
+        - owner: "Museum of Modern Art"
+          acquisition_date: "1941-07-07"
+    - id: "C789"
+      artist: "Salvador DalÃ­"
+      title: "The Persistence of Memory"
+      year: 1931
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 24.1
+        width_cm: 33
+      provenance:
+        - owner: "Museum of Modern Art"
+          acquisition_date: "1934-05-03"
+  schedule:
+    opening_date: "2024-03-01"
+    closing_date: "2024-06-30"

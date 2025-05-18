@@ -1,0 +1,76 @@
+python
+import csv
+import xml.etree.ElementTree as ET
+
+# Parse the XML data
+xml_data = '''
+<stars>
+  <row>
+    <Constellation>Orion</Constellation>
+    <StarName>Betelgeuse</StarName>
+    <ApparentMagnitude>0.42</ApparentMagnitude>
+    <DiscoveryDate>1789-12-15</DiscoveryDate>
+    <SpectralType>M2Iab</SpectralType>
+    <DistanceLY>642.5</DistanceLY>
+  </row>
+  <row>
+    <Constellation>Ursa Major</Constellation>
+    <StarName>Dubhe</StarName>
+    <ApparentMagnitude>1.79</ApparentMagnitude>
+    <DiscoveryDate>1603-03-01</DiscoveryDate>
+    <SpectralType>K0III</SpectralType>
+    <DistanceLY>123.0</DistanceLY>
+  </row>
+  <row>
+    <Constellation>Lyra</Constellation>
+    <StarName>Vega</StarName>
+    <ApparentMagnitude>0.03</ApparentMagnitude>
+    <DiscoveryDate>1850-07-22</DiscoveryDate>
+    <SpectralType>A0V</SpectralType>
+    <DistanceLY>25.0</DistanceLY>
+  </row>
+  <row>
+    <Constellation>Scorpius</Constellation>
+    <StarName>Antares</StarName>
+    <ApparentMagnitude>1.06</ApparentMagnitude>
+    <DiscoveryDate>1670-05-10</DiscoveryDate>
+    <SpectralType>M1.5Iab-b</SpectralType>
+    <DistanceLY>550.0</DistanceLY>
+  </row>
+  <row>
+    <Constellation>Canis Major</Constellation>
+    <StarName>Sirius</StarName>
+    <ApparentMagnitude>-1.46</ApparentMagnitude>
+    <DiscoveryDate>1862-01-31</DiscoveryDate>
+    <SpectralType>A1V</SpectralType>
+    <DistanceLY>8.6</DistanceLY>
+  </row>
+  <row>
+    <Constellation>Cygnus</Constellation>
+    <StarName>Deneb</StarName>
+    <ApparentMagnitude>1.25</ApparentMagnitude>
+    <DiscoveryDate>1901-09-18</DiscoveryDate>
+    <SpectralType>A2Ia</SpectralType>
+    <DistanceLY>2600.0</DistanceLY>
+  </row>
+</stars>
+'''
+
+# Parse the XML
+root = ET.fromstring(xml_data)
+
+# Extract headers from the first row
+headers = [child.tag for child in root[0]]
+
+# Open a file for writing the CSV
+with open('stars.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+
+    # Write the headers
+    writer.writerow(headers)
+
+    # Write the data rows
+    for row in root[1:]:
+        writer.writerow([child.text for child in row])
+
+# The CSV file 'stars.csv' is now created with the data from the XML

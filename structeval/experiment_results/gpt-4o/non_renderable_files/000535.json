@@ -1,0 +1,37 @@
+
+{
+  "artifact": {
+    "name": "Ancient Bronze Dagger",
+    "type": "weapon",
+    "discovery": {
+      "date": "2023-09-15",
+      "location": {
+        "latitude": 34.0522,
+        "longitude": -118.2437
+      },
+      "team": [
+        {
+          "member_name": "Dr. Jane Smith",
+          "role": "archaeologist",
+          "experience_years": 12
+        }
+      ]
+    },
+    "materials": [
+      "bronze",
+      "wood"
+    ],
+    "dimensions": {
+      "height_cm": 30.5,
+      "width_cm": 5.0,
+      "depth_cm": 1.5
+    },
+    "hypotheses": [
+      {
+        "theory": "The dagger was used in ceremonial rituals.",
+        "proposed_by": "Dr. John Doe",
+        "evidence": "Residue analysis revealed traces of incense and ceremonial oils."
+      }
+    ]
+  }
+}

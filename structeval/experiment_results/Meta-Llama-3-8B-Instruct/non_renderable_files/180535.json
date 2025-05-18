@@ -1,0 +1,57 @@
+
+{
+  "planetName": "Zephyra",
+  "system": {
+    "starName": "Solara Prime",
+    "distanceFromEarth": "3200 light-years",
+    "discovery": {
+      "year": 2287,
+      "method": "Gravitational Microlensing"
+    }
+  },
+  "atmosphere": {
+    "composition": [
+      "Nitrogen",
+      "Xenon",
+      "Oxygen"
+    ],
+    "pressure": 1.2,
+    "layers": [
+      {
+        "name": "Troposphere",
+        "altitudeRange": "0-12km"
+      },
+      {
+        "name": "Stratosphere",
+        "altitudeRange": "12-50km"
+      }
+    ]
+  },
+  "surface": {
+    "features": [
+      {
+        "type": "Floating Mountains",
+        "description": "Massive rock formations suspended by magnetic fields."
+      },
+      {
+        "type": "Crystal Forests",
+        "description": "Bioluminescent crystalline structures covering vast areas."
+      }
+    ],
+    "waterPresence": true
+  },
+  "inhabitants": {
+    "species": [
+      {
+        "name": "Aeriliths",
+        "populationEstimate": 1200000,
+        "sentient": true
+      },
+      {
+        "name": "Skyleapers",
+        "populationEstimate": 8500000,
+        "sentient": false
+      }
+    ]
+  }
+}

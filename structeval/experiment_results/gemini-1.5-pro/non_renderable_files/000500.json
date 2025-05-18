@@ -1,0 +1,52 @@
+{
+  "novel": {
+    "title": "The Echoing Labyrinth",
+    "author": {
+      "name": "Elara Vance",
+      "birth_year": 1982
+    },
+    "publication": {
+      "year": 2024,
+      "publisher": "Mystic Press"
+    },
+    "genres": [
+      "Fantasy",
+      "Mystery",
+      "Adventure"
+    ],
+    "characters": [
+      {
+        "name": "Anya Petrova",
+        "role": "Protagonist",
+        "traits": [
+          "Courageous",
+          "Resourceful",
+          "Empathetic"
+        ]
+      },
+      {
+        "name": "Kael Thorne",
+        "role": "Antagonist",
+        "traits": [
+          "Cunning",
+          "Ambitious",
+          "Ruthless"
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "title": "The Whispering Stones",
+        "word_count": 3520,
+        "events": [
+          "Anya discovers a hidden map.",
+          "Kael's forces attack a peaceful village."
+        ]
+      },
+      {
+        "title": "The Shadow Gate",
+        "word_count": 4250
+      }
+    ]
+  }
+}

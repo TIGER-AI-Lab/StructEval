@@ -1,0 +1,28 @@
+
+&lt;galacticCarnival&gt;
+  &lt;name&gt;Nebula Fest&lt;/name&gt;
+  &lt;location&gt;
+    &lt;planet&gt;Zogtron&lt;/planet&gt;
+    &lt;galaxy&gt;Andromeda&lt;/galaxy&gt;
+  &lt;/location&gt;
+  &lt;attractions&gt;
+    &lt;attraction&gt;
+      &lt;title&gt;Zero Gravity Rollercoaster&lt;/title&gt;
+      &lt;type&gt;Ride&lt;/type&gt;
+    &lt;/attraction&gt;
+    &lt;attraction&gt;
+      &lt;title&gt;Alien Petting Zoo&lt;/title&gt;
+      &lt;type&gt;Exhibit&lt;/type&gt;
+    &lt;/attraction&gt;
+  &lt;/attractions&gt;
+  &lt;staff&gt;
+    &lt;member&gt;
+      &lt;name&gt;Xylo Quark&lt;/name&gt;
+      &lt;role&gt;Coordinator&lt;/role&gt;
+    &lt;/member&gt;
+    &lt;member&gt;
+      &lt;name&gt;Mira Nova&lt;/name&gt;
+      &lt;role&gt;Guide&lt;/role&gt;
+    &lt;/member&gt;
+  &lt;/staff&gt;
+&lt;/galacticCarnival&gt;

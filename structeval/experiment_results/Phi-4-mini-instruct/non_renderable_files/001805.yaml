@@ -1,0 +1,40 @@
+
+brewery:
+  name: "Hops & Barley Brewery"
+  location:
+    city: "Portland"
+    country: "Oregon"
+  established_year: 2010
+  specialties:
+    - "IPA"
+    - "Stout"
+  master_brewer:
+    name: "John Hopsworth"
+    experience_years: 15
+    awards:
+      - title: "Master Brewer of the Year"
+        year: 2015
+  beers:
+    - name: "Portland Pale Ale"
+      style: "IPA"
+      abv: 6.5
+      ingredients:
+        malts:
+          - "Pale Malt"
+          - "Caramel Malt"
+        hops:
+          - "Cascade"
+          - "Centennial"
+      release_dates:
+        - "2010-06-15"
+    - name: "Dark Horse Stout"
+      style: "Stout"
+      abv: 7.2
+      ingredients:
+        malts:
+          - "Chocolate Malt"
+          - "Roasted Barley"
+        hops:
+          - "Saaz"
+      release_dates:
+        - "2012-11-01"

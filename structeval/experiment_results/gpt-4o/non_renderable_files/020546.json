@@ -1,0 +1,35 @@
+{
+  "spaceship_id": "SS-001",
+  "name": "Star Voyager",
+  "mission": {
+    "type": "Exploration",
+    "destination": "Alpha Centauri",
+    "duration_days": 365
+  },
+  "crew": [
+    {
+      "name": "Jane Starcommander",
+      "role": "Commander",
+      "species": "Human",
+      "skills": "Piloting;Leadership"
+    },
+    {
+      "name": "Zorblax",
+      "role": "Engineer",
+      "species": "Zorgon",
+      "skills": "Engineering;Xenolinguistics"
+    }
+  ],
+  "equipment": [
+    {
+      "name": "Quantum Scanner",
+      "quantity": 2
+    },
+    {
+      "name": "Plasma Drill",
+      "quantity": 4
+    }
+  ],
+  "launch_date": "2124-03-15",
+  "status": "Active"
+}

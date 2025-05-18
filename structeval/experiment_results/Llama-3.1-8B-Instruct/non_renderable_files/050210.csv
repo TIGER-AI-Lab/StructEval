@@ -1,0 +1,56 @@
+
+import csv
+import json
+
+data = '''[
+  {
+    "artifact_id": "AQT-001",
+    "discovery_site": "Obsidian Caverns",
+    "material": "Volcanic Glass",
+    "age_years": 3200,
+    "discovered_on": "1998-05-21",
+    "current_location": "Quantum History Museum"
+  },
+  {
+    "artifact_id": "AQT-002",
+    "discovery_site": "Azure Plateau",
+    "material": "Cerulean Clay",
+    "age_years": 1500,
+    "discovered_on": "2004-11-02",
+    "current_location": "Azure City Archives"
+  },
+  {
+    "artifact_id": "AQT-003",
+    "discovery_site": "Nebula Dunes",
+    "material": "Stellar Sandstone",
+    "age_years": 4100,
+    "discovered_on": "2011-07-19",
+    "current_location": "Nebula Institute of Antiquities"
+  },
+  {
+    "artifact_id": "AQT-004",
+    "discovery_site": "Echoing Forest",
+    "material": "Resonant Wood",
+    "age_years": 2300,
+    "discovered_on": "2015-03-12",
+    "current_location": "Forest Echo Gallery"
+  },
+  {
+    "artifact_id": "AQT-005",
+    "discovery_site": "Crystaline Ridge",
+    "material": "Prismatic Quartz",
+    "age_years": 5400,
+    "discovered_on": "2020-09-27",
+    "current_location": "Ridge Crystal Vault"
+  }
+]'''
+
+data = json.loads(data)
+
+with open('output.csv', 'w', newline='') as csvfile:
+    fieldnames = ['artifact_id', 'discovery_site', 'material', 'age_years', 'discovered_on', 'current_location']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for item in data:
+        writer.writerow(item)

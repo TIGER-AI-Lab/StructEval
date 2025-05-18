@@ -1,0 +1,9 @@
+
+creatures.csv:
+  creature_name,biome,number_of_legs,discovery_date,venomous,average_weight_kg
+Glimmerbeetle,Crystal Caverns,6,2018-04-17,True,0.4
+Mossback Torto,Emerald Marsh,4,2020-09-03,False,35.2
+Skywhisp,Cloud Peaks,0,2015-12-22,False,2.7
+Emberfox,Ashen Forest,4,2019-06-11,True,8.1
+Ripplefin,Sapphire Lake,2,2021-03-14,False,1.6
+Thornhopper,Bramble Fields,8,2017-11-29,True,0.9

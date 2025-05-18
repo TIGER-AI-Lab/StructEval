@@ -1,0 +1,58 @@
+
+import csv
+import json
+
+data = '''
+{
+  "potions": [
+    {
+      "PotionName": "Moonlit Mirage",
+      "Color": "Iridescent Blue",
+      "BrewedBy": "Eldra Vex",
+      "PotencyLevel": 8.5,
+      "DiscoveryDate": "2022-03-14",
+      "IngredientCount": 7
+    },
+    {
+      "PotionName": "Gnome's Whimsy",
+      "Color": "Chartreuse",
+      "BrewedBy": "Finnick Moss",
+      "PotencyLevel": 6.2,
+      "DiscoveryDate": "2021-07-22",
+      "IngredientCount": 5
+    },
+    {
+      "PotionName": "Phoenix Ember",
+      "Color": "Crimson",
+      "BrewedBy": "Seraphine Lux",
+      "PotencyLevel": 9.1,
+      "DiscoveryDate": "2023-01-05",
+      "IngredientCount": 8
+    },
+    {
+      "PotionName": "Shadow's Veil",
+      "Color": "Obsidian Black",
+      "BrewedBy": "Grimm Talon",
+      "PotencyLevel": 7.7,
+      "DiscoveryDate": "2020-11-30",
+      "IngredientCount": 6
+    },
+    {
+      "PotionName": "Sunspire Dew",
+      "Color": "Golden",
+      "BrewedBy": "Lira Solis",
+      "PotencyLevel": 5.9,
+      "DiscoveryDate": "2022-08-17",
+      "IngredientCount": 4
+    }
+  ]
+}
+'''
+
+data = json.loads(data)
+with open('output.csv', 'w', newline='') as csvfile:
+    fieldnames = ['PotionName', 'Color', 'BrewedBy', 'PotencyLevel', 'DiscoveryDate', 'IngredientCount']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    for potion in data['potions']:
+        writer.writerow(potion)

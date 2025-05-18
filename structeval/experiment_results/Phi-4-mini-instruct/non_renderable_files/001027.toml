@@ -1,0 +1,31 @@
+
+[ecosystem]
+planet = {
+    name = "Exoplanet Zeta-Prime"
+    orbital_period_days = 687
+    atmosphere = {
+        composition = ["Nitrogen", "Oxygen", "Argon"]
+        pressure_kpa = 101.3
+    }
+    terrain_types = ["Forests", "Deserts", "Mountains"]
+}
+
+native_species = [
+    {
+        species_name = "Zeta-Prime Fauna"
+        classification = "Mammal"
+        population_estimate = 5000000
+        average_lifespan_years = 75
+        diet = "Omnivore"
+        notable_traits = ["Bioluminescent fur", "Enhanced night vision"]
+    }
+]
+
+habitats = [
+    {
+        habitat_name = "Zeta-Prime Forests"
+        dominant_species = "Zeta-Prime Fauna"
+        climate_type = "Temperate"
+        average_temperature_c = 22
+    }
+]

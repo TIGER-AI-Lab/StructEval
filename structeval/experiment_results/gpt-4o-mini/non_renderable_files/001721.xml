@@ -1,0 +1,80 @@
+
+<recipe>
+    <title>Spaghetti Carbonara</title>
+    <author>
+        <name>John Doe</name>
+        <contact>
+            <email>johndoe@example.com</email>
+            <phone>+1234567890</phone>
+        </contact>
+    </author>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <difficulty>medium</difficulty>
+        <prep_time_minutes>20</prep_time_minutes>
+        <tags>
+            <tag>pasta</tag>
+            <tag>quick</tag>
+            <tag>Italian</tag>
+        </tags>
+    </metadata>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Pancetta</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <unit>pieces</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Parmesan cheese</name>
+            <quantity>50</quantity>
+            <unit>grams</unit>
+            <optional>true</optional>
+        </ingredient>
+        <ingredient>
+            <name>Black pepper</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+            <optional>true</optional>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Boil the spaghetti in salted water until al dente.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>pot, colander</tools>
+        </step>
+        <step>
+            <description>Fry the pancetta in a pan until crispy.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>pan</tools>
+        </step>
+        <step>
+            <description>Beat the eggs and mix with grated Parmesan cheese.</description>
+            <duration_minutes>2</duration_minutes>
+            <tools>mixing bowl, whisk</tools>
+        </step>
+        <step>
+            <description>Combine the spaghetti with pancetta and remove from heat.</description>
+            <duration_minutes>2</duration_minutes>
+            <tools>tongs</tools>
+        </step>
+        <step>
+            <description>Add the egg and cheese mixture to the spaghetti, stirring quickly.</description>
+            <duration_minutes>1</duration_minutes>
+            <tools>tongs</tools>
+        </step>
+    </steps>
+</recipe>

@@ -1,0 +1,40 @@
+
+<recipe>
+  <metadata>
+    <title>Spaghetti Carbonara</title>
+    <author>
+      <name>John Doe</name>
+      <contact>
+        <email>john.doe@example.com</email>
+        <phone>+1 202-555-0175</phone>
+      </contact>
+    </author>
+  </metadata>
+  <ingredients>
+    <ingredient>
+      <name>Pasta</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Boil water and cook pasta until al dente</description>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <step>
+      <description>Beat eggs and mix with grated cheese and pancetta</description>
+      <duration_minutes>5</duration_minutes>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>1200</calories>
+    <fat_grams>50</fat_grams>
+    <carbohydrates_grams>100</carbohydrates_grams>
+  </nutrition>
+</recipe>

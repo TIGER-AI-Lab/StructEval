@@ -1,0 +1,58 @@
+{
+  "expedition": {
+    "mission_name": "Project Nova Dawn",
+    "leader": {
+      "name": "Dr. Evelyn Hayes",
+      "rank": "Expedition Commander",
+      "contact": {
+        "email": "evelyn.hayes@starcommand.org",
+        "phone": "+15551234567"
+      }
+    },
+    "crew": [
+      {
+        "name": "Kenji Tanaka",
+        "role": "Astrophysicist",
+        "skills": [
+          "Spectroscopy",
+          "Data Analysis",
+          "Exoplanet Detection"
+        ]
+      },
+      {
+        "name": "Maria Rodriguez",
+        "role": "Chief Engineer",
+        "skills": [
+          "Propulsion Systems",
+          "Robotics",
+          "Life Support Systems"
+        ]
+      }
+    ],
+    "destination": {
+      "planet": "Kepler-186f",
+      "coordinates": {
+        "latitude": 43.25,
+        "longitude": -75.88
+      }
+    },
+    "supply_list": [
+      {
+        "item": "Water",
+        "quantity": 500
+      },
+      {
+        "item": "Nutrient Paste",
+        "quantity": 1000
+      },
+      {
+        "item": "Oxygen Tanks",
+        "quantity": 200
+      },
+      {
+        "item": "Medical Kit",
+        "quantity": 50
+      }
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 161108</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const DashboardComponent = () => {
+  const [user, setUser] = useState({
+    username: 'johndoe',
+    email: 'john.doe@example.com',
+    membership: 'Premium'
+  });
+  const [stats, setStats] = useState({
+    posts: 42,
+    comments: 128,
+    likes: 256
+  });
+  const [activities, setActivities] = useState([
+    {
+      title: 'New Post Created',
+      description: 'You created a new post about web development.',
+      date: '2023-04-15',
+      status: 'Completed'
+    },
+    {
+      title: 'Comment Added',
+      description: 'You commented on a post about React vs Vue.',
+      date: '2023-04-14',
+      status: 'Completed'
+    },
+    {
+      title: 'Profile Updated',
+      description: 'You updated your profile information.',
+      date: '2023-04-10',
+      status: 'Completed'
+    }
+  ]);
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    console.log('Dashboard component mounted');
+  }, []);
+
+  const refreshData = () => {
+    console.log('Refreshing dashboard data...');
+    // Logic to refresh data would go here
+  };
+
+  return (
+    <div className="container">
+      <header className="main-header">
+        <h1>Dashboard Overview</h1>
+        <p>Welcome to your personal dashboard. Here you will find your details, statistics, and recent activities.</p>
+      </header>
+
+      <section className="user-info">
+        <h2>User Information</h2>
+        <div className="info-item">
+          <label>Username:</label>
+          <span>{user.username}</span>
+        </div>
+        <div className="info-item">
+          <label>Email:</label>
+          <span>{user.email}</span>
+        </div>
+        <div className="info-item">
+          <label>Membership:</label>
+          <span>{user.membership}</span>
+        </div>
+      </section>
+      <section className="stats">
+        <h2>Activity Statistics</h2>
+        <ul>
+          <li><strong>Posts:</strong> {stats.posts}</li>
+          <li><strong>Comments:</strong> {stats.comments}</li>
+          <li><strong>Likes:</strong> {stats.likes}</li>
+        </ul>
+      </section>
+      <section className="recent-activities">
+        <h2>Recent Activities</h2>
+        {activities.map((activity, index) => (
+          <div key={index} className="activity-item">
+            <h3>Activity {index + 1}</h3>
+            <p className="activity-title">{activity.title}</p>
+            <p className="activity-desc">{activity.description}</p>
+            <div className="activity-meta">
+              <span><strong>Date:</strong> {activity.date}</span>
+              <span><strong>Status:</strong> {activity.status}</span>
+            </div>
+          </div>
+        ))}
+      </section>
+      <section className="additional-info">
+        <h2>More Details</h2>
+        <div className="detail-section">
+          <h3>Settings</h3>
+          <p>Adjust your profile settings and preferences below.</p>
+          <ul>
+            <li>Notification Preferences</li>
+            <li>Privacy Settings</li>
+            <li>Language Options</li>
+          </ul>
+        </div>
+        <div className="detail-section">
+          <h3>Support</h3>
+          <p>If you encounter any issues, please review our support guidelines.</p>
+          <ul>
+            <li>FAQ</li>
+            <li>Contact Support via email</li>
+            <li>Live Chat Support</li>
+          </ul>
+        </div>
+      </section>
+      <footer className="main-footer">
+        <p>&copy; {currentYear} Dashboard System</p>
+      </footer>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<DashboardComponent />);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 071122</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  return (
+    <div>
+      <h1>Project Documentation</h1>
+
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#configuration">Configuration</a></li>
+        <li><a href="#data-details">Data Details</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#changelog">Changelog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+
+      <hr />
+
+      <h2 id="introduction">Introduction</h2>
+      <p>Welcome to the project documentation. This document is designed to illustrate the structural layout and visual hierarchy in Markdown format. The purpose of this guide is to provide clear instructions and insights into the project functionalities, ensuring a seamless understanding of the core concepts and configuration details.</p>
+
+      <h3>Overview</h3>
+      <ul>
+        <li><strong>Purpose:</strong> Demonstrate visible structure and formatted content.</li>
+        <li><strong>Audience:</strong> Developers, Testers, and Documentation Specialists.</li>
+        <li><strong>Scope:</strong> Installation, usage, configuration, data structures, and troubleshooting.</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="installation">Installation</h2>
+      <p>To get started, follow these installation steps:</p>
+      <ol>
+        <li><strong>Download the Source</strong>
+          <ul>
+            <li>Ensure you have the latest version downloaded.</li>
+          </ul>
+        </li>
+        <li><strong>Extract the Package</strong>
+          <ul>
+            <li>Use your preferred archive manager.</li>
+          </ul>
+        </li>
+        <li><strong>Run the Setup</strong>
+          <ul>
+            <li>Execute the following command in your terminal:</li>
+          </ul>
+        </li>
+      </ol>
+      <pre>
+        <code>python setup.py install
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

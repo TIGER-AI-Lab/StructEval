@@ -1,0 +1,31 @@
+[robot]
+name = "RX-8000"
+model_number = "8000-A"
+manufacturer = "Cyberdyne Systems"
+
+[robot.specs]
+weight_kg = 250.5
+height_cm = 210
+power_source = "Fusion Cell"
+
+[[robot.sensors]]
+type = "Lidar"
+range_meters = 500
+
+[[robot.sensors]]
+type = "Thermal"
+range_meters = 200
+
+[[robot.modules]]
+name = "Mobility"
+status = "active"
+last_maintenance = "2024-07-24T14:30:00Z"
+
+[[robot.modules]]
+name = "Combat"
+status = "active"
+last_maintenance = "2024-07-24T10:00:00Z"
+
+[robot.operating_modes]
+primary = "Patrolling"
+secondary = "Defense"

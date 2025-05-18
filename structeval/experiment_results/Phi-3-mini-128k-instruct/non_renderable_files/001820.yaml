@@ -1,0 +1,33 @@
+ecosystem:
+  name: "Azure Forest"
+  location:
+    region: "Southeast Asia"
+    latitude: 1.3521
+    longitude: 103.8198
+  climate:
+    type: "tropical"
+    average_temperature_celsius: 26
+    rainfall_mm_per_year: 2500
+species:
+  - common_name: "Blue-winged Parrot"
+    scientific_name: "Tanyura azurea"
+    population_estimate: 1500
+    conservation_status: "vulnerable"
+    diet: "fruits, nuts, and seeds"
+    notable_adaptations:
+      - "brightly colored feathers for mating displays"
+      - "strong beak for cracking nuts"
+    sightings:
+      - date: "2023-03-15"
+        location_description: "Canopy layer near the riverbank"
+  - common_name: "Spotted Jaguar"
+    scientific_name: "Panthera onca"
+    population_estimate: 300
+    conservation_status: "near threatened"
+    diet: "varied, including small mammals and fish"
+    notable_adaptations:
+      - "powerful jaws for crushing bones"
+      - "camouflaged fur for stealth hunting"
+    sightings:
+      - date: "2023-04-10"
+        location_description: "Dense underbrush in the central forest"

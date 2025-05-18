@@ -1,0 +1,64 @@
+
+import json
+import csv
+
+data = '''[
+  {
+    "CreatureName": "Glimmerbat",
+    "Habitat": "Crystal Caverns",
+    "Wingspan_cm": 42,
+    "Diet": "Luminous Insects",
+    "FirstSpotted": "2013-04-21",
+    "LuminosityLevel": 7.2
+  },
+  {
+    "CreatureName": "Sapphire Moth",
+    "Habitat": "Azure Forest",
+    "Wingspan_cm": 18,
+    "Diet": "Moon Nectar",
+    "FirstSpotted": "2017-09-14",
+    "LuminosityLevel": 5.8
+  },
+  {
+    "CreatureName": "Prismalisk",
+    "Habitat": "Rainbow Peaks",
+    "Wingspan_cm": 65,
+    "Diet": "Sunbeams",
+    "FirstSpotted": "2011-12-05",
+    "LuminosityLevel": 9.5
+  },
+  {
+    "CreatureName": "Twilight Drifter",
+    "Habitat": "Duskmire Marsh",
+    "Wingspan_cm": 31,
+    "Diet": "Mist Blossoms",
+    "FirstSpotted": "2019-06-30",
+    "LuminosityLevel": 4.1
+  },
+  {
+    "CreatureName": "Glowtail Finch",
+    "Habitat": "Starlit Grove",
+    "Wingspan_cm": 12,
+    "Diet": "Radiant Seeds",
+    "FirstSpotted": "2015-02-18",
+    "LuminosityLevel": 6.4
+  },
+  {
+    "CreatureName": "Opaline Wyrm",
+    "Habitat": "Gleaming Dunes",
+    "Wingspan_cm": 88,
+    "Diet": "Shimmering Sand",
+    "FirstSpotted": "2018-11-07",
+    "LuminosityLevel": 8.7
+  }
+]'''
+
+data = json.loads(data)
+
+with open('output.csv', 'w', newline='') as csvfile:
+    fieldnames = ['CreatureName', 'Habitat', 'Wingspan_cm', 'Diet', 'FirstSpotted', 'LuminosityLevel']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in data:
+        writer.writerow(row)

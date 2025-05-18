@@ -1,0 +1,35 @@
+<recipe>
+    <title>Spicy Avocado Toast</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Avocado</name>
+            <quantity>1</quantity>
+            <unit>piece</unit>
+        </ingredient>
+        <ingredient>
+            <name>Red Pepper Flakes</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Mash the avocado in a bowl until smooth.</description>
+        </step>
+        <step>
+            <order>2</order>
+            <description>Spread the mashed avocado on toasted bread and sprinkle with red pepper flakes.</description>
+        </step>
+    </instructions>
+    <metadata>
+        <cuisine>American</cuisine>
+        <prepTime>PT10M</prepTime>
+    </metadata>
+</recipe>

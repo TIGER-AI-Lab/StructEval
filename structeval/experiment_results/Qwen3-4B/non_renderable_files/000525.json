@@ -1,0 +1,40 @@
+
+{
+  "name": "Artifact X-127",
+  "origin": {
+    "period": "Bronze Age",
+    "region": "Anatolia"
+  },
+  "materials": [
+    {
+      "type": "bronze",
+      "provenance": "local smelting sites"
+    },
+    {
+      "type": "ivory",
+      "provenance": "Near Eastern trade networks"
+    }
+  ],
+  "dimensions": {
+    "height_cm": 42.5,
+    "width_cm": 31.2,
+    "depth_cm": 18.7
+  },
+  "features": [
+    {
+      "description": "elaborate incised patterns",
+      "condition": "partially preserved"
+    },
+    {
+      "description": "oxidized surface layer",
+      "condition": "moderately intact"
+    }
+  ],
+  "discovery": {
+    "location": {
+      "latitude": 38.7234,
+      "longitude": 33.2101
+    },
+    "date_found": "2023-04-15T09:30:00Z"
+  }
+}

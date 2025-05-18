@@ -1,0 +1,36 @@
+exhibit:
+  title: "Ancient Wonders"
+  curator:
+    name: "Dr. Sarah Jones"
+    contact:
+      email: "sarah.jones@museum.org"
+      phone: "+1-555-123-4567"
+  artifacts:
+    - name: "Golden Mask of Tutankhamun"
+      origin: "Egypt"
+      year: 1323
+      materials:
+        - "Gold"
+        - "Lapis Lazuli"
+        - "Carnelian"
+        - "Obsidian"
+      dimensions:
+        height_cm: 54.0
+        width_cm: 39.3
+        depth_cm: 49.0
+      on_loan: true
+      loan_info:
+        institution: "Egyptian Museum, Cairo"
+        return_date: "2024-12-31"
+    - name: "Rosetta Stone"
+      origin: "Egypt"
+      year: 196
+      materials:
+        - "Granodiorite"
+      dimensions:
+        height_cm: 112.3
+        width_cm: 75.7
+        depth_cm: 28.4
+      on_loan: false
+  opening_date: "2023-10-26"
+  closing_date: "2024-03-15"

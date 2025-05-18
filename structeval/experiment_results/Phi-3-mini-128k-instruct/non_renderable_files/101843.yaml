@@ -1,0 +1,34 @@
+galactic_zoo:
+  name: "Nebula Fauna Reserve"
+  open_to_public: true
+  location:
+    galaxy: "Andromeda"
+    sector: "M42"
+    coordinates:
+      x: 1204.5
+      y: 998.1
+  curator:
+    name: "Dr. Zira Quell"
+    species: "Xanthean"
+    tenure_years: 12
+  specimens:
+    - id: "ZX-001"
+      species: "Glowtail Drifter"
+      origin_planet: "Lumora-7"
+      diet: ["plasma algae", "mineral dust"]
+      last_checkup: "3024-01-20"
+    - id: "ZX-002"
+      species: "Nebula Fox"
+      origin_planet: "Virellion"
+      diet: ["stellar berries"]
+      last_checkup: "3024-02-12"
+  exhibits:
+    - theme: "Bioluminescent Wonders"
+      open_since: "3018-06-01"
+      featured_species: ["Glowtail Drifter", "Starback Beetle"]
+    - theme: "Predators of the Void"
+      open_since: "3020-03-14"
+      featured_species: ["Nebula Fox"]
+  visitor_stats:
+    last_year: 128000
+    this_year: 134500

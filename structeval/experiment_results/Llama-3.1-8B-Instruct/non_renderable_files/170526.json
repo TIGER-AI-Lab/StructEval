@@ -1,0 +1,33 @@
+
+{
+  "planetaryZoo": {
+    "planet": [
+      {
+        "name": "Zephyria",
+        "creatures": {
+          "creature": [
+            {
+              "species": "Glowing Skywhale",
+              "habitat": "Floating Forests"
+            },
+            {
+              "species": "Crystal Beetle",
+              "habitat": "Glass Caves"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Mossara",
+        "creatures": {
+          "creature": [
+            {
+              "species": "Shimmering Mosscat",
+              "habitat": "Emerald Jungles"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

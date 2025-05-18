@@ -1,0 +1,30 @@
+<planet>
+  <name>Exoplanet XJ-9</name>
+  <type>gas giant</type>
+  <discovery>
+    <year>2045</year>
+    <method>space telescope imaging</method>
+  </discovery>
+  <atmosphere>
+    <composition>Hydrogen, Helium, Methane</composition>
+    <pressure>1500</pressure>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>ExoMoon Alpha</name>
+      <diameter>5000</diameter>
+      <discovery_date>2045-07-16</discovery_date>
+      <features>
+        <feature>
+          <type>crater</type>
+          <description>A large impact crater with a diameter of 300 km.</description>
+        </feature>
+      </features>
+    </moon>
+  </moons>
+  <rings>
+    <ring>
+      <radius>20000</radius>
+    </ring>
+  </rings>
+</planet>

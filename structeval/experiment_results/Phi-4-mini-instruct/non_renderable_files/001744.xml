@@ -1,0 +1,31 @@
+<planet>
+  <name>Exoplanet XJ-9</name>
+  <orbitalPeriod>687</orbitalPeriod>
+  <discovery>
+    <year>2025</year>
+    <method>Transit Photometry</method>
+    <telescope>Hubble Space Telescope</telescope>
+    <atmosphere>
+      <composition>Nitrogen, Oxygen, Argon</composition>
+      <pressure>101.3</pressure>
+      <temperature>288</temperature>
+    </atmosphere>
+  </discovery>
+  <moons>
+    <moon>
+      <name>ExoMoon Alpha</name>
+      <diameter>3,474</diameter>
+      <orbitalPeriod>1.2</orbitalPeriod>
+      <discoveredBy>Dr. Jane Smith</discoveredBy>
+      <discoveryDate>2025-08-15</discoveryDate>
+    </moon>
+  </moons>
+  <surface>
+    <features>
+      <feature>
+        <type>Mountain Range</type>
+        <coordinates>23.5N, 45.2E</coordinates>
+      </feature>
+    </features>
+  </surface>
+</planet>

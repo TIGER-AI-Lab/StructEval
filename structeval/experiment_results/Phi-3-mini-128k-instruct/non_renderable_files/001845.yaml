@@ -1,0 +1,30 @@
+ecosystem:
+  name: "Verdant Expanse"
+  planet: "Terra Nova"
+  location:
+    region: "Equatorial Belt"
+  climate:
+    average_temperature_c: 27
+    seasonal_patterns: ["rainy season", "dry season"]
+  flora:
+    - species: "Helianthus Nova"
+      population_estimate: 15000
+      dominant_color: "yellow"
+    - species: "Ficus Nova"
+      population_estimate: 8000
+      dominant_color: "green"
+  fauna:
+    - species: "Panthera Nova"
+      population_estimate: 300
+      diet_type: "carnivore"
+      notable_behavior: "nocturnal hunting"
+    - species: "Gallus Nova"
+      population_estimate: 1200
+      diet_type: "omnivore"
+      notable_behavior: "migratory nesting"
+  human_impact:
+    pollution_level: 3.2
+    conservation_status: "endangered"
+    projects:
+      - project_name: "Reforestation Initiative"
+        start_year: 2025

@@ -1,0 +1,15 @@
+
+import pandas as pd
+
+data = {
+    "artifact_id": ["ARC-001", "ARC-002", "ARC-003", "ARC-004", "ARC-005", "ARC-006"],
+    "discovery_site": ["Sunken Atlantis", "Lunar Crater 7", "Amazonian Ruins", "Subterranean Vault 3", "Martian Outpost", "Antarctic Cavern"],
+    "material": ["Obsidian", "Titanium Alloy", "Jade", "Crystal Quartz", "Martian Basalt", "Bronze"],
+    "estimated_age_years": [3200, 12000, 850, 5000, 20500, 2700],
+    "excavation_date": ["2021-06-14", "2023-09-01", "2022-11-23", "2020-02-17", "2024-03-30", "2019-12-05"],
+    "current_condition": ["Pristine", "Fragmented", "Restored", "Damaged", "Intact", "Corroded"]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("artifacts.csv", index=False)

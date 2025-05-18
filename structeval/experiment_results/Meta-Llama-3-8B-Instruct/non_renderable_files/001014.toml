@@ -1,0 +1,26 @@
+
+expedition = {
+  name = "Galactic Odyssey",
+  launch_date = "2022-01-01T00:00:00Z",
+  destination = {
+    planet = "Mars",
+    coordinates = {
+      latitude = 42.0,
+      longitude = 123.0
+    }
+  },
+  crew = [
+    {
+      name = "John Doe",
+      role = "Commander",
+      age = 35,
+      certifications = ["Pilot", "Engineer"]
+    }
+  ],
+  cargo = [
+    {
+      item = "Food",
+      quantity = 1000
+    }
+  ]
+}

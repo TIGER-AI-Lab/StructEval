@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041143</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Document Structural Layout Example</h1>
+        <p>This HTML document is designed to test the visual conversion task. It showcases the use of headings, sections, lists, tables, and labeled content in a standalone HTML file.</p>
+      </header>
+
+      <section>
+        <h2>Introduction</h2>
+        <p>Welcome to the document. This section provides an overview of the content structure used in the example. The layout is organized with a clear visual hierarchy and includes multiple content blocks.</p>
+        <ol>
+          <li>Overview of structural layout</li>
+          <li>Content formatting details</li>
+          <li>Examples of nested lists</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Content Areas</h2>
+        
+        <article>
+          <h3>General Information</h3>
+          <p>This is the general information area where key details about the document are provided.</p>
+          <dl>
+            <dt className="info-label">Author:</dt>
+            <dd>John Doe</dd>
+            <dt className="info-label">Version:</dt>
+            <dd>1.0.0</dd>
+            <dt className="info-label">Last Updated:</dt>
+            <dd>October 2023</dd>
+          </dl>
+        </article>
+
+        <article>
+          <h3>Key Features</h3>
+          <ul>
+            <li>Clear visual structure</li>
+            <li>Formatted content with headings and lists</li>
+            <li>Data representation with tables</li>
+            <li>Definition lists for labeled content</li>
+          </ul>
+        </article>
+        
+        <article>
+          <h3>Steps and Procedures</h3>
+          <ol>
+            <li>
+              <strong>Step 1:</strong> Review the basic structure.
+              <ul>
+                <li>Examine the header</li>
+                <li>Check the sections</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Step 2:</strong> Analyze content blocks.
+              <ul>
+                <li>Focus on paragraphs</li>
+                <li>Consider lists and tables</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Step 3:</strong> Verify labeled information.
+              <ul>
+                <li>Ensure definitions are clear</li>
+                <li>Confirm overall organization</li>
+              </ul>
+            </li>
+          </ol>
+        </article>
+      </section>
+
+      <section>
+        <h2>Data Table</h2>
+        <p>This table outlines some example data to demonstrate the inclusion of tabulated information in the document.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Description</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Item A</td>
+              <td>Overview of item A details.</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Item B</td>
+              <td>Overview of item B details.</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Item C</td>
+              <td>Overview of item C details.</td>
+              <td>15</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Additional Information</h2>
+        <p>This section covers further insights, background data, and supplementary lists to complete the document layout example.</p>
+        <ul>
+          <li>Insight 1: The document is structured semantically with appropriate HTML tags.</li>
+          <li>Insight 2: All content is visible and organized to emphasize information hierarchy.</li>
+          <li>Insight 3: The code is self-contained and does not rely on external resources.</li>
+        </ul>
+        <p>Below is a nested list example:</p>
+        <ul>
+          <li>Main Point
+            <ul>
+              <li>Subpoint A</li>
+              <li>Subpoint B</li>
+              <li>
+                Subpoint C
+                <ul>
+                  <li>Detail 1</li>
+                  <li>Detail 2</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Another Main Point</li>
+        </ul>
+      </section>
+
+      <footer>
+        <h2>Footer</h2>
+        <p>This footer summarizes the document layout example. The structure presented above is designed for a visual conversion task that tests the structural layout and visible content of an HTML document.</p>
+        <p className="info-label">Contact:</p>
+        <p>Email: example@example.com</p>
+      </footer>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

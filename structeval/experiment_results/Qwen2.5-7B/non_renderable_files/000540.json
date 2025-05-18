@@ -1,0 +1,47 @@
+
+museum = {
+    "name": "The Metropolitan Museum of Art",
+    "location": {
+        "city": "New York",
+        "country": "USA"
+    },
+    "established_year": 1870,
+    "director": {
+        "full_name": "Max Hollein",
+        "tenure_years": 5
+    },
+    "collections": [
+        {
+            "title": "Egyptian Art",
+            "category": "Ancient Art",
+            "items_count": 5000,
+            "curator": "Dr. Jane Smith",
+            "highlighted_items": [
+                {
+                    "name": "Mask of Tutankhamun",
+                    "origin": "Egypt",
+                    "year": 1323,
+                    "description": "The mask is made of gold and lapis lazuli and is one of the most famous artifacts from the tomb of Tutankhamun."
+                }
+            ]
+        },
+        {
+            "title": "European Paintings",
+            "category": "Fine Art",
+            "items_count": 10000,
+            "curator": "Dr. John Doe",
+            "highlighted_items": [
+                {
+                    "name": "Starry Night",
+                    "origin": "Netherlands",
+                    "year": 1889,
+                    "description": "A masterpiece by Vincent van Gogh, depicting a starry night over a small town."
+                }
+            ]
+        }
+    ],
+    "visitor_statistics": {
+        "annual_visitors": 6000000,
+        "last_updated": "2021-09-15"
+    }
+}

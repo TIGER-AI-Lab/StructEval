@@ -1,0 +1,65 @@
+python
+import toml
+import json
+
+# TOML code
+toml_code = """
+[space_station]
+name = "Celestial Haven"
+operational_since = 2087
+is_docked = true
+
+[space_station.location]
+planet = "Europa"
+
+[space_station.location.coordinates]
+latitude = 12.3456
+longitude = 78.9101
+
+[[space_station.crew_members]]
+name = "Dr. Lira Moonsong"
+role = "Commander"
+species = "Human"
+
+[[space_station.crew_members]]
+name = "Xel'Rath"
+role = "Engineer"
+species = "Zyphorian"
+
+[[space_station.crew_members]]
+name = "Bot-9Q"
+role = "Science Officer"
+species = "Android"
+
+[[space_station.modules]]
+module_name = "BioDome"
+status = "active"
+
+  [[space_station.modules.experiments]]
+  experiment_id = "BDX-01"
+  description = "Plant growth under Europa's gravity."
+
+  [[space_station.modules.experiments]]
+  experiment_id = "BDX-02"
+  description = "Microbial adaptation study."
+
+[[space_station.modules]]
+module_name = "AstroLab"
+status = "maintenance"
+
+  [[space_station.modules.experiments]]
+  experiment_id = "ALX-01"
+  description = "Cosmic ray detection."
+
+[space_station.supply_levels]
+oxygen = 78.5
+water = 120.0
+food = 95.3
+"""
+
+# Convert TOML to JSON
+toml_data = toml.loads(toml_code)
+json_data = json.dumps(toml_data, indent=2)
+
+# Output JSON code
+print(json_data)

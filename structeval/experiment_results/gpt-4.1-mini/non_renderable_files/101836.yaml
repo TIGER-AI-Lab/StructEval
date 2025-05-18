@@ -1,0 +1,30 @@
+
+spaceship:
+  name: "Nebula Voyager"
+  model: "NX-9000"
+  operational: true
+  crew:
+    captain: "Lira Solis"
+    engineers:
+      - "Avi Patel"
+      - "Mina Chen"
+    officers:
+      - name: "Jonas Rell"
+        role: "First Officer"
+      - name: "Tariq Elbaz"
+        role: "Science Officer"
+  specs:
+    length_meters: 312.5
+    width_meters: 98.7
+    max_speed_mach: 22.4
+  missions:
+    - destination: "Alpha Centauri"
+      success: true
+      crew_participated:
+        - "Lira Solis"
+        - "Jonas Rell"
+    - destination: "Kepler-442b"
+      success: false
+      crew_participated:
+        - "Tariq Elbaz"
+        - "Avi Patel"

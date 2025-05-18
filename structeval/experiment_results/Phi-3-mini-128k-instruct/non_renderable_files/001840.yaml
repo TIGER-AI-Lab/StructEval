@@ -1,0 +1,23 @@
+museum:
+  name: "The Grand Art Museum"
+  location:
+    city: "Artville"
+    country: "Imaginaria"
+  founded_year: 1923
+  curators:
+    - name: "Dr. Jane Doe"
+      specialty: "Modern Art"
+      years_of_experience: 25
+  exhibits:
+    - title: "The Evolution of Sculpture"
+      artist: "Alexei Petrov"
+      year_created: 1985
+      medium: "Bronze"
+      dimensions:
+        height_cm: 150
+        width_cm: 100
+      on_display: true
+      provenance:
+        previous_owners:
+          - "The Petrov Estate"
+          - "Artville City Museum"

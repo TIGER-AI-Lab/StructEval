@@ -1,0 +1,40 @@
+
+[museum]
+name = "The Art and History Museum"
+location.city = "Metropolis"
+location.country = "Fictionland"
+founded_year = 1995
+
+[director]
+full_name = "Dr. Jane Smith"
+tenure_years = 10
+
+[[galleries]]
+title = "Modern Art"
+theme = "Exploration of contemporary artistic expressions"
+
+[galleries.artworks]
+[[galleries.artworks]]
+artist = "John Doe"
+title = "Abstract Dreams"
+year_created = 2020
+medium = "Oil on canvas"
+on_display = true
+
+[[galleries.artworks]]
+artist = "Emily White"
+title = "City Lights"
+year_created = 2018
+medium = "Acrylic on canvas"
+on_display = true
+
+[[galleries.artworks]]
+artist = "Michael Brown"
+title = "Nature's Whisper"
+year_created = 2021
+medium = "Mixed media"
+on_display = false
+
+[[events]]
+name = "Annual Art Gala"
+date = "2023-11-15"

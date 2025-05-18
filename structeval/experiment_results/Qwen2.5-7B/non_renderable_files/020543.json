@@ -1,0 +1,11 @@
+import pandas as pd
+import json
+
+csv_data = """player_id,profile.name,profile.species,profile.level,profile.stats.health,profile.stats.mana,profile.stats.stamina,inventory[0].item_name,inventory[0].quantity,inventory[0].attributes.rarity,inventory[0].attributes.enchantments,inventory[0].attributes.enchantments,inventory[1].item_name,inventory[1].quantity,inventory[1].attributes.rarity,inventory[1].attributes.enchantments,quests[0].quest_name,quests[0].status,quests[0].rewards.gold,quests[0].rewards.items,quests[1].quest_name,quests[1].status,quests[1].rewards.gold,quests[1].rewards.items
+001,Aria Moonshadow,Elf,17,120,85,200,Elven Bow,1,Legendary,"Piercing Shot;Wind's Grace",Healing Potion,3,Common,"",The Lost Relic,Completed,500,"Elven Bow;Healing Potion",Goblin Menace,In Progress,200,"Healing Potion" """
+
+df = pd.read_csv(pd.compat.StringIO(csv_data))
+df.columns = [col.replace(' ', '_') for col in df.columns]
+json_data = df.to_json(orient='records')
+
+print(json_data)

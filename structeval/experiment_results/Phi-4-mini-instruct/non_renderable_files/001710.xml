@@ -1,0 +1,28 @@
+<planet>
+  <name>Exonaris</name>
+  <mass>5.2</mass>
+  <atmosphere>
+    <layer>
+      <name>Troposphere</name>
+      <altitude_range>0-12</altitude_range>
+      <temperature>15</temperature>
+    </layer>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>Selene</name>
+      <diameter>3,500</diameter>
+      <discovered_by>Dr. Helena M. Voss</discovered_by>
+      <discovery_date>2025-08-17</discovery_date>
+      <orbital_period>27.3</orbital_period>
+    </moon>
+  </moons>
+  <rings>
+    <ring>
+      <composition>Ice and rock</composition>
+      <radius>20,000</radius>
+    </ring>
+  </rings>
+  <orbital_period>365.25</orbital_period>
+  <distance_from_star>1.0</distance_from_star>
+</planet>

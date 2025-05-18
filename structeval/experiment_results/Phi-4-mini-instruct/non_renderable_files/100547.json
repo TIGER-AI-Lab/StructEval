@@ -1,0 +1,41 @@
+
+{
+  "mission": {
+    "name": "Odyssey Alpha",
+    "launch_date": "2042-07-16",
+    "duration_days": 480,
+    "status": "En Route",
+    "crew": [
+      {
+        "name": "Dr. Elara Myles",
+        "role": "Commander",
+        "spacewalks": 3
+      },
+      {
+        "name": "Lt. Orion Voss",
+        "role": "Pilot",
+        "spacewalks": 1
+      }
+    ],
+    "payloads": [
+      {
+        "type": "Habitat Module",
+        "weight_kg": 12500,
+        "experiments": ["Plant Growth", "Radiation Shielding"]
+      },
+      {
+        "type": "Scientific Rover",
+        "weight_kg": 3200,
+        "experiments": ["Soil Analysis", "Seismic Survey"]
+      }
+    ],
+    "destination": {
+      "planet": "Europa",
+      "landing_site": "Cyllene Valley",
+      "coordinates": {
+        "latitude": 6.02,
+        "longitude": 134.7
+      }
+    }
+  }
+}

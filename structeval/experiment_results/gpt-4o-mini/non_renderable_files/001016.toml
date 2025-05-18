@@ -1,0 +1,36 @@
+
+enchanted_forest = { 
+    trees = [
+        { 
+            species = "willow", 
+            age = 150, 
+            magical_properties = ["whispers secrets", "heals wounds", "grants visions"], 
+            inhabitants = [
+                { 
+                    name = "Elysia", 
+                    type = "sprite", 
+                    friendliness = 8, 
+                    last_seen = "2023-10-01T12:00:00Z" 
+                }
+            ], 
+            fruit = { 
+                count = 20, 
+                type = "glimmerberry", 
+                is_edible = true 
+            } 
+        }
+    ], 
+    mystical_events = [
+        { 
+            event_name = "The Great Illumination", 
+            date = "2023-09-15T18:00:00Z", 
+            participants = ["Elysia", "Eldrin", "Thorn"] 
+        }
+    ], 
+    guardian = { 
+        name = "Thorn", 
+        species = "dryad", 
+        power_level = 85, 
+        is_visible = true 
+    } 
+}

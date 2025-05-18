@@ -1,0 +1,56 @@
+
+import pandas as pd
+
+data = [
+  {
+    "PlanetName": "Azura",
+    "System": "Kepler-442",
+    "DiscoveryYear": 2031,
+    "Gravity_m_s2": 12.5,
+    "HasRings": True,
+    "AtmosphereType": "Nitrogen-Oxygen"
+  },
+  {
+    "PlanetName": "Verdant",
+    "System": "TRAPPIST-1",
+    "DiscoveryYear": 2027,
+    "Gravity_m_s2": 8.9,
+    "HasRings": False,
+    "AtmosphereType": "Methane-Rich"
+  },
+  {
+    "PlanetName": "Cinder",
+    "System": "Gliese 581",
+    "DiscoveryYear": 2029,
+    "Gravity_m_s2": 15.3,
+    "HasRings": True,
+    "AtmosphereType": "Carbon Dioxide"
+  },
+  {
+    "PlanetName": "Nimbus",
+    "System": "LHS 1140",
+    "DiscoveryYear": 2033,
+    "Gravity_m_s2": 11.7,
+    "HasRings": False,
+    "AtmosphereType": "Hydrogen-Helium"
+  },
+  {
+    "PlanetName": "Solace",
+    "System": "Proxima Centauri",
+    "DiscoveryYear": 2025,
+    "Gravity_m_s2": 9.2,
+    "HasRings": False,
+    "AtmosphereType": "Ammonia"
+  },
+  {
+    "PlanetName": "Echo",
+    "System": "Tau Ceti",
+    "DiscoveryYear": 2030,
+    "Gravity_m_s2": 10.4,
+    "HasRings": True,
+    "AtmosphereType": "Sulfur Dioxide"
+  }
+]
+
+df = pd.DataFrame(data)
+df.to_csv('planets.csv', index=False)

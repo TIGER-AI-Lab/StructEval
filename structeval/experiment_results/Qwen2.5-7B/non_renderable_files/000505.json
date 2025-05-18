@@ -1,0 +1,36 @@
+
+{
+  "artifact": {
+    "name": "The Enigma Tablet",
+    "discovery_date": "2021-07-15",
+    "origin": {
+      "civilization": "Unknown",
+      "era": "Prehistoric"
+    },
+    "materials": [
+      {
+        "type": "Limestone",
+        "purity": 95.0
+      },
+      {
+        "type": "Bronze",
+        "purity": 85.0
+      }
+    ],
+    "dimensions": {
+      "height_cm": 30.0,
+      "width_cm": 20.0,
+      "depth_cm": 5.0
+    },
+    "inscriptions": [
+      {
+        "language": "Unknown",
+        "translation": "Translation of unknown language"
+      }
+    ],
+    "current_location": {
+      "museum": "Museum of Unknown Antiquities",
+      "display_case": "Case 123"
+    }
+  }
+}

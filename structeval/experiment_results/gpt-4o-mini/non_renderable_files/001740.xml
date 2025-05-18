@@ -1,0 +1,51 @@
+
+<creature>
+    <name>Thalor</name>
+    <species>Draconis Mysticus</species>
+    <age>150</age>
+    <habitat>
+        <type>forest</type>
+        <location>Emerald Glade</location>
+        <temperature>22.5</temperature>
+    </habitat>
+    <abilities>
+        <ability>
+            <name>Fire Breath</name>
+            <level>10</level>
+            <cooldown>30</cooldown>
+        </ability>
+        <ability>
+            <name>Invisibility</name>
+            <level>8</level>
+            <cooldown>60</cooldown>
+        </ability>
+    </abilities>
+    <appearance>
+        <height>250</height>
+        <color>Emerald Green</color>
+        <markings>Golden scales along the spine</markings>
+    </appearance>
+    <history>
+        <origin>Born from the flames of the ancient volcano</origin>
+        <majorEvents>
+            <event>
+                <eventName>Battle of the Ancients</eventName>
+                <year>1200</year>
+            </event>
+            <event>
+                <eventName>Discovery of the Crystal Caverns</eventName>
+                <year>1350</year>
+            </event>
+        </majorEvents>
+    </history>
+    <relationships>
+        <relationship>
+            <relationType>friend</relationType>
+            <individual>Elara</individual>
+        </relationship>
+        <relationship>
+            <relationType>rival</relationType>
+            <individual>Gorath</individual>
+        </relationship>
+    </relationships>
+</creature>

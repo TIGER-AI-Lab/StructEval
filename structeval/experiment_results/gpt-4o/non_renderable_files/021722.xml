@@ -1,0 +1,40 @@
+<Mission>
+    <MissionName>Odyssey Alpha</MissionName>
+    <LaunchDate>2042-07-16</LaunchDate>
+    <Destination>
+        <Planet>Mars</Planet>
+        <Coordinates>
+            <Latitude>-4.5895</Latitude>
+            <Longitude>137.4417</Longitude>
+        </Coordinates>
+    </Destination>
+    <Crew>
+        <Member>
+            <Name>Jane Star</Name>
+            <Role>Pilot</Role>
+            <Age>34</Age>
+            <Specializations>Navigation, Robotics</Specializations>
+        </Member>
+        <Member>
+            <Name>Sam Quark</Name>
+            <Role>Engineer</Role>
+            <Age>29</Age>
+            <Specializations>Life support, Propulsion</Specializations>
+        </Member>
+    </Crew>
+    <Cargo>
+        <Item>
+            <Name>Food Supplies</Name>
+            <Quantity>200</Quantity>
+            <WeightKg>500</WeightKg>
+        </Item>
+        <Item>
+            <Name>Research Equipment</Name>
+            <Quantity>15</Quantity>
+            <WeightKg>1200</WeightKg>
+        </Item>
+    </Cargo>
+    <DurationDays>365</DurationDays>
+    <Success>true</Success>
+    <Notes>First crewed mission to Mars</Notes>
+</Mission>

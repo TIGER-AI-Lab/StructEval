@@ -1,0 +1,39 @@
+
+[
+  {
+    "species": "Zyglorx",
+    "galaxy": "Andromeda",
+    "planet": "Xenon IV",
+    "biological_classification.kingdom": "Animalia",
+    "biological_classification.phylum": "Chordata",
+    "biological_classification.class": "Mammalia",
+    "biological_classification.order": "Primates",
+    "biological_classification.family": "Zyglorcidae",
+    "biological_classification.genus": "Zyglorx",
+    "biological_classification.species": "Zyglorx sapiens",
+    "anatomy.heads": "3",
+    "anatomy.limbs": "8",
+    "anatomy.sensory_organs": ["antennae", "compound eyes", "thermal pits"],
+    "abilities": ["Telepathy", "Can communicate over vast distances"],
+    "favorite_foods": ["plasma berries", "moon fungus"],
+    "communication_methods": ["sonic pulses", "bioluminescence"]
+  },
+  {
+    "species": "Quarvian",
+    "galaxy": "Milky Way",
+    "planet": "Earth",
+    "biological_classification.kingdom": "Plantae",
+    "biological_classification.phylum": "Tracheophyta",
+    "biological_classification.class": "Magnoliopsida",
+    "biological_classification.order": "Rosales",
+    "biological_classification.family": "Quarviaceae",
+    "biological_classification.genus": "Quarvia",
+    "biological_classification.species": "Quarvia floralis",
+    "anatomy.heads": "0",
+    "anatomy.limbs": "0",
+    "anatomy.sensory_organs": ["petal sensors", "root feelers", "chlorophyll patches"],
+    "abilities": ["Photosynthesis", "Spore Burst"],
+    "favorite_foods": ["carbon dioxide", "mineral water"],
+    "communication_methods": ["chemical signals", "color changes"]
+  }
+]

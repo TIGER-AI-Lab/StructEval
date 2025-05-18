@@ -1,0 +1,22 @@
+
+artifact = {
+    name = "Zeta-7 Relic"
+    origin = "Zeta-7 Civilization"
+    discovery = {
+        year = 2023
+        location = "40.7128Â° N, 74.0060Â° W"
+    }
+    materials = [
+        { type = "Titanium", percentage = 75.0 },
+        { type = "Aluminum", percentage = 25.0 }
+    ]
+    dimensions = {
+        height_cm = 150
+        width_cm = 100
+        depth_cm = 50
+    }
+    features = [
+        { description = "Crystal Core", is_encrypted = true },
+        { description = "Energy Resonator", is_encrypted = false }
+    ]
+}

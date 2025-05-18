@@ -1,0 +1,15 @@
+
+import pandas as pd
+
+data = {
+    "CreatureName": ["Glimmerfox", "Duskbeetle", "Aurora Serpent", "Mossling", "Pyrohopper", "Cloudfinch"],
+    "Habitat": ["Shimmering Woods", "Twilight Caves", "Polar Skies", "Emerald Marsh", "Volcanic Plains", "Floating Isles"],
+    "NumberOfLegs": [4, 6, 0, 2, 8, 2],
+    "Diet": ["Omnivore", "Herbivore", "Carnivore", "Detritivore", "Insectivore", "Frugivore"],
+    "DiscoveryDate": ["2012-03-15", "2008-11-02", "2017-07-23", "2010-05-30", "2015-09-12", "2019-01-09"],
+    "LuminescenceLevel": [8.5, 4.2, 9.1, 2.7, 6.3, 1.0]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("creatures.csv", index=False)

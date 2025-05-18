@@ -1,0 +1,24 @@
+
+museum:
+  name: "Imaginary Art Museum"
+  location:
+    city: "Artville"
+    country: "Artland"
+  founding_year: 2020
+  director:
+    full_name: "Jane Doe"
+    tenure_years: 3
+  exhibits:
+    - title: "Whispers of Time"
+      artist: "John Smith"
+      year_created: 2018
+      medium: "Oil on Canvas"
+      dimensions:
+        height_cm: 150
+        width_cm: 100
+      on_display: true
+      provenance:
+        previous_owners:
+          - "Private Collector A"
+          - "Gallery B"
+        acquisition_date: "2021-06-15"

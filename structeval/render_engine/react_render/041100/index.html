@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041100</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Main Title: Visual Conversion Test</h1>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </header>
+
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Welcome to the Visual Conversion Test Page. This HTML document is designed to showcase a clear structure with visible headings, sections, lists, tables, and formatted content.
+        </p>
+      </section>
+
+      <section>
+        <h2>Content Overview</h2>
+
+        <article>
+          <h3>Article 1: Basics of HTML Structure</h3>
+          <p>
+            This article explains how HTML tags are used to structure and organize content:
+          </p>
+          <ul>
+            <li>Headings and Paragraphs</li>
+            <li>Navigation and Lists</li>
+            <li>Articles and Sections</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Article 2: Detailed Formatting</h3>
+          <p>
+            This part dives deeper into HTML formatting techniques:
+          </p>
+          <ol>
+            <li>Using definition lists for descriptions</li>
+            <li>Constructing tables to present data</li>
+            <li>Implementing footers and sidebars for additional information</li>
+          </ol>
+        </article>
+      </section>
+
+      <aside>
+        <h2>Additional Information</h2>
+        <p>
+          The following details provide extra context:
+        </p>
+        <dl>
+          <dt>Purpose</dt>
+          <dd>
+            Test the structural layout and visual hierarchy in a standalone HTML page
+          </dd>
+          <dt>Scope</dt>
+          <dd>
+            Include various elements like lists, headings, tables, and labeled values.
+          </dd>
+          <dt>Guidelines</dt>
+          <dd>
+            Keep the visual content clear and well-structured.
+          </dd>
+        </dl>
+      </aside>
+
+      <section>
+        <h2>Data Table</h2>
+        <table border="1" cellSpacing="0" cellPadding="5">
+          <thead>
+            <tr>
+              <th>Label</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Username</td>
+              <td>TestUser123</td>
+            </tr>
+            <tr>
+              <td>User Role</td>
+              <td>Administrator</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Last Login</td>
+              <td>2023-10-01</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>List of Features</h2>
+        <ul>
+          <li>Clear structure with headings and sections</li>
+          <li>Organized content in articles and asides</li>
+          <li>User-friendly navigation and layout</li>
+          <li>Data presentation using tables and lists</li>
+        </ul>
+      </section>
+
+      <footer>
+        <h2>Footer Information</h2>
+        <p>
+          Thank you for reviewing this Visual Conversion Test Page.
+        </p>
+      </footer>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

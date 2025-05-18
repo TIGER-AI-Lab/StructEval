@@ -1,0 +1,2 @@
+recipe_id,recipe_name,chef_name,cuisine_type,servings,prep_time_minutes,cook_time_minutes,ingredient[0].name,ingredient[0].quantity,ingredient[0].unit,ingredient[1].name,ingredient[1].quantity,ingredient[1].unit,step[0].instruction,step[0].duration_minutes
+recipe001,Spicy Mango Salsa with Cinnamon Sugar Chips,Chef Amelia Stone,Fusion,4,20,15,Mango,2,ripe,Red Onion,0.5,medium,Preheat oven to 350Â°F (175Â°C).,5

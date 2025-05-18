@@ -1,0 +1,45 @@
+
+artifact = { 
+    name = "The Golden Mask of Tutankhamun", 
+    discovery_date = "1922-11-04", 
+    origin = { 
+        civilization = "Ancient Egypt", 
+        location = "Valley of the Kings" 
+    }, 
+    dimensions = { 
+        height_cm = 54, 
+        width_cm = 39 
+    }, 
+    materials = [ 
+        { 
+            type = "Gold", 
+            percentage = 90 
+        }, 
+        { 
+            type = "Lapis Lazuli", 
+            percentage = 10 
+        } 
+    ], 
+    inscriptions = [ 
+        { 
+            language = "Ancient Egyptian", 
+            translation = "The living Horus, the great god" 
+        }, 
+        { 
+            language = "Ancient Egyptian", 
+            translation = "The king of Upper and Lower Egypt" 
+        } 
+    ], 
+    provenance = { 
+        previous_owners = [ 
+            { 
+                owner_name = "Howard Carter", 
+                acquisition_year = 1922 
+            }, 
+            { 
+                owner_name = "Egyptian Museum", 
+                acquisition_year = 1923 
+            } 
+        ] 
+    } 
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book>
+    <title>The Midnight Bloom</title>
+    <author>
+        <name>Eleanor Vance</name>
+        <birthYear>1978</birthYear>
+    </author>
+    <publication>
+        <year>2023</year>
+        <publisher>Starlight Publishing</publisher>
+    </publication>
+    <genres>
+        <genre>
+            <name>Fantasy</name>
+            <popularity>85</popularity>
+        </genre>
+        <genre>
+            <name>Romance</name>
+            <popularity>60</popularity>
+        </genre>
+    </genres>
+    <chapters>
+        <chapter>
+            <title>Whispers of the Forest</title>
+            <pages>25</pages>
+        </chapter>
+        <chapter>
+            <title>The Enchanted Garden</title>
+            <pages>32</pages>
+        </chapter>
+    </chapters>
+    <reviews>
+        <review>
+            <reviewer>John Doe</reviewer>
+            <rating>4</rating>
+            <date>2023-11-15</date>
+        </review>
+        <review>
+            <reviewer>Jane Smith</reviewer>
+            <rating>5</rating>
+            <date>2023-12-01</date>
+        </review>
+    </reviews>
+</book>

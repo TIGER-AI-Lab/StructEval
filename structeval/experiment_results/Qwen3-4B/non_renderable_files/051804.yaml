@@ -1,0 +1,29 @@
+
+planet_name: Xerion-5
+galactic_coordinates:
+  x: 1845.7
+  y: -293.2
+  z: 990.0
+atmosphere:
+  composition:
+    - gas: Xenon
+      percentage: 68
+    - gas: Oxygen
+      percentage: 21
+  pressure: 1.4
+inhabitants:
+  species: Glorbian
+  population: 1200000
+  languages:
+    - Glorbic
+    - Trade Basic
+rings:
+  exists: true
+  composition: ice and silicate dust
+moons:
+  - name: Vexia
+    diameter_km: 3200
+    has_life: false
+  - name: Tarlon
+    diameter_km: 1500
+    has_life: true

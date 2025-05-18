@@ -1,0 +1,30 @@
+
+ecosystem = {
+  planet = {
+    name = "Xylophia-IV",
+    orbital_period_days = 345.67,
+    atmosphere = {
+      composition = ["Nitrogen", "Oxygen", "Carbon Dioxide"],
+      pressure_kpa = 101.325,
+    },
+    terrain_types = ["Continents", "Oceans", "Mountains"],
+    native_species = [
+      {
+        species_name = "Xylophianus maximus",
+        population_estimate = 1000000,
+        classification = "Mammal",
+        average_lifespan_years = 50.0,
+        diet = "Herbivore",
+        notable_traits = ["Intelligence", "Social behavior"],
+      },
+    ],
+    habitats = [
+      {
+        habitat_name = "Xylophian Forest",
+        dominant_species = "Xylophianus maximus",
+        climate_type = "Temperate",
+        average_temperature_c = 22.0,
+      },
+    ],
+  },
+}

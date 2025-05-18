@@ -1,0 +1,85 @@
+{
+  "recipe": {
+    "title": "Spiced Mango Quinoa Salad",
+    "author": "Ava Martinez",
+    "cuisine": "Fusion",
+    "servings": 4,
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 15,
+    "ingredients": [
+      {
+        "name": "quinoa",
+        "quantity": 1.5,
+        "unit": "cups"
+      },
+      {
+        "name": "ripe mango",
+        "quantity": 2,
+        "unit": "pieces"
+      },
+      {
+        "name": "red bell pepper",
+        "quantity": 1,
+        "unit": "piece"
+      },
+      {
+        "name": "fresh cilantro",
+        "quantity": 0.5,
+        "unit": "cups"
+      },
+      {
+        "name": "lime juice",
+        "quantity": 3,
+        "unit": "tablespoons"
+      },
+      {
+        "name": "olive oil",
+        "quantity": 2,
+        "unit": "tablespoons"
+      },
+      {
+        "name": "cumin powder",
+        "quantity": 1,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "chili flakes",
+        "quantity": 0.5,
+        "unit": "teaspoon"
+      },
+      {
+        "name": "salt",
+        "quantity": 0.75,
+        "unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      {
+        "description": "Rinse quinoa thoroughly and cook in boiling water for 15 minutes until fluffy. Drain and let cool.",
+        "duration_minutes": 15
+      },
+      {
+        "description": "Dice mango and red bell pepper into small cubes. Chop fresh cilantro finely.",
+        "duration_minutes": 5
+      },
+      {
+        "description": "In a large bowl, combine cooled quinoa, mango, bell pepper, and cilantro.",
+        "duration_minutes": 3
+      },
+      {
+        "description": "Whisk lime juice, olive oil, cumin powder, chili flakes, and salt to make the dressing.",
+        "duration_minutes": 2
+      },
+      {
+        "description": "Pour dressing over the quinoa mixture and toss gently to combine. Serve chilled or at room temperature.",
+        "duration_minutes": 2
+      }
+    ],
+    "nutrition": {
+      "calories": 320,
+      "fat_grams": 10,
+      "protein_grams": 8,
+      "carbohydrates_grams": 45
+    }
+  }
+}

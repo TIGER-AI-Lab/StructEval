@@ -1,0 +1,30 @@
+
+{
+  "galaxy": {
+    "name": "Whirlpool",
+    "star_systems": [
+      {
+        "name": "Alpha Centauri",
+        "planets": [
+          {
+            "name": "Zephyria",
+            "species": ["Zephyrian Hawk", "Wind Serpent"]
+          },
+          {
+            "name": "Lumora",
+            "species": ["Glow Beetle"]
+          }
+        ]
+      },
+      {
+        "name": "Betelgeuse",
+        "planets": [
+          {
+            "name": "Crystalis",
+            "species": ["Crystal Fox"]
+          }
+        ]
+      }
+    ]
+  }
+}

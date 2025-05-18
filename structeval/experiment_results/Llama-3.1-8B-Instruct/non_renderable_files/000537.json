@@ -1,0 +1,44 @@
+
+{
+  "creatureProfile": {
+    "name": "Glimmerwing",
+    "species": "Luminous Avian",
+    "age": 250,
+    "habitat": {
+      "region": "Misty Mountains",
+      "climate": "temperate",
+      "features": [
+        {
+          "type": "cave",
+          "description": "A network of glittering caves that reflect the creature's bioluminescent abilities."
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "name": "Glowing Aura",
+        "level": 8,
+        "cooldownSeconds": 30
+      },
+      {
+        "name": "Illuminating Wings",
+        "level": 5,
+        "cooldownSeconds": 15
+      }
+    ],
+    "appearance": {
+      "color": "iridescent blue",
+      "size": "medium",
+      "distinctiveMarks": [
+        {
+          "location": "forehead",
+          "markType": "horn"
+        }
+      ]
+    },
+    "diet": {
+      "primaryFood": "insects",
+      "secondaryFoods": ["nectar", "small fruits"]
+    }
+  }
+}

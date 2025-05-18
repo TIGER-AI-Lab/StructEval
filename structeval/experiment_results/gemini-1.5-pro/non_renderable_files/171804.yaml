@@ -1,0 +1,23 @@
+galaxy:
+  name: Andromeda
+  star_systems:
+    - star_system:
+        system_name: Alpha-3
+        planets:
+          - planet:
+              planet_name: Zephyria
+              moons:
+                - Lunara
+                - Phobos
+          - planet:
+              planet_name: Vorticon
+              moons:
+                - Glimmer
+    - star_system:
+        system_name: Beta-7
+        planets:
+          - planet:
+              planet_name: Crystalis
+              moons:
+                - Opaline
+                - Shadow

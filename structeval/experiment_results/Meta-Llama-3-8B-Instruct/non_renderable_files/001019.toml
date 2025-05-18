@@ -1,0 +1,37 @@
+
+[artifact]
+name = "Historical Artifact"
+origin = {
+  culture = "Ancient Civilization"
+  period = "Bronze Age"
+  discovery_date = "2022-01-01T00:00:00Z"
+}
+dimensions = {
+  height_cm = 20.5
+  width_cm = 15.2
+  depth_cm = 8.1
+}
+materials = ["Wood", "Metal", "Stone"]
+current_location = {
+  museum = "The National Museum"
+  room = "Gallery 1"
+  display_case = "Case 3"
+}
+exhibitions = [
+  {
+    title = "The Ancient World"
+    year = 2010
+    city = "New York"
+    curator = "John Smith"
+  }
+]
+restoration_history = [
+  {
+    date = "2020-02-15T12:00:00Z"
+    description = "Conservation treatment to remove dirt and grime"
+  },
+  {
+    date = "2015-03-01T14:00:00Z"
+    description = "Repair of cracks and fissures"
+  }
+]

@@ -1,0 +1,23 @@
+artifact:
+  name: "The Scepter of Pharaoh Amenhotep"
+  discovery_date: "2023-04-15"
+  origin:
+    civilization: "Ancient Egypt"
+    era: "New Kingdom"
+  materials:
+    - type: "Gold"
+      provenance: "Nubian gold mines"
+    - type: "Lapis Lazuli"
+      provenance: "Badakhshan, Afghanistan"
+  dimensions:
+    height_cm: 35
+    width_cm: 5
+    depth_cm: 2
+  features:
+    - description: "Intricately engraved hieroglyphs"
+      condition: "Mostly intact, with some erosion"
+    - description: "Gold inlay with precious stones"
+      condition: "Gold plating has worn off in some areas"
+  current_location:
+    museum: "The Metropolitan Museum of Art"
+    display_case: "Room 22, Case 17"

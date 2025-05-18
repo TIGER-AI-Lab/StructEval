@@ -1,0 +1,48 @@
+<galaxy>
+    <name>Andromeda</name>
+    <discovery>
+        <year>1924</year>
+        <telescope>Hale Telescope</telescope>
+        <astronomers>
+            <astronomer>
+                <name>Edwin Hubble</name>
+                <institution>Mount Wilson Observatory</institution>
+            </astronomer>
+            <astronomer>
+                <name>Milton Humason</name>
+                <institution>Mount Wilson Observatory</institution>
+            </astronomer>
+        </astronomers>
+    </discovery>
+    <planets>
+        <planet>
+            <name>Planet X</name>
+            <type>Gas Giant</type>
+            <moons>14</moons>
+            <atmosphere>
+                <composition>Hydrogen &amp; Helium</composition>
+                <pressure>1200</pressure>
+            </atmosphere>
+        </planet>
+        <planet>
+            <name>Planet Y</name>
+            <type>Terrestrial</type>
+            <moons>2</moons>
+            <atmosphere>
+                <composition>Nitrogen &amp; Oxygen</composition>
+                <pressure>101</pressure>
+            </atmosphere>
+        </planet>
+    </planets>
+    <distance_lightyears>2540000</distance_lightyears>
+    <notable_events>
+        <event>
+            <name>First recorded supernova</name>
+            <year>1885</year>
+        </event>
+        <event>
+            <name>Unusual gamma ray burst</name>
+            <year>1977</year>
+        </event>
+    </notable_events>
+</galaxy>

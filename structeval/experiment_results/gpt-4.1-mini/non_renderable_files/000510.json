@@ -1,0 +1,29 @@
+{
+  "museum": {
+    "name": "The Celestial Art Museum",
+    "location": {
+      "city": "Luminara",
+      "country": "Artemisia"
+    },
+    "established_year": 1987,
+    "director": {
+      "full_name": "Dr. Isabella Maren Valdez",
+      "start_date": "2019-04-15"
+    },
+    "galleries": [
+      {
+        "title": "Galactic Visions",
+        "theme": "Exploration of cosmic phenomena through contemporary art",
+        "artworks": [
+          {
+            "title": "Nebula Dreams",
+            "artist": "Elara Voss",
+            "year_created": 2021,
+            "medium": "Mixed media on canvas",
+            "dimensions": "150x120 cm"
+          }
+        ]
+      }
+    ]
+  }
+}

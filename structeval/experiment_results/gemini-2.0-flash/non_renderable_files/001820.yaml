@@ -1,0 +1,44 @@
+ecosystem:
+  name: "Emerald Valley Rainforest"
+  location:
+    region: "Amazon Basin"
+    latitude: -3.1190
+    longitude: -60.0217
+  climate:
+    type: "tropical rainforest"
+    average_temperature_celsius: 27
+    rainfall_mm_per_year: 2500
+  species:
+    - common_name: "Jaguar"
+      scientific_name: "Panthera onca"
+      population_estimate: 250
+      conservation_status: "near threatened"
+      diet: "Carnivorous; primarily capybaras, peccaries, and caiman."
+      notable_adaptations:
+        - "Powerful bite force for cracking turtle shells."
+        - "Melanistic variations for camouflage in dense undergrowth."
+      sightings:
+        - date: "2024-07-15"
+          location_description: "Observed near the Rio Negro riverbank, hunting capybaras."
+    - common_name: "Scarlet Macaw"
+      scientific_name: "Ara macao"
+      population_estimate: 1200
+      conservation_status: "least concern"
+      diet: "Primarily fruits, nuts, and seeds."
+      notable_adaptations:
+        - "Strong beak for cracking hard nuts."
+        - "Bright plumage for attracting mates and signaling."
+      sightings:
+        - date: "2024-07-20"
+          location_description: "Seen flying over the canopy near the Giant Kapok tree."
+    - common_name: "Poison Dart Frog"
+      scientific_name: "Dendrobatidae tinctorius"
+      population_estimate: 5000
+      conservation_status: "least concern"
+      diet: "Small insects and invertebrates."
+      notable_adaptations:
+        - "Bright coloration as a warning to predators."
+        - "Secretion of toxins through the skin."
+      sightings:
+        - date: "2024-07-25"
+          location_description: "Found on a bromeliad leaf near a waterfall."

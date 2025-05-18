@@ -1,0 +1,31 @@
+
+creature:
+  name: "Lumivine"
+  species: "Glowing Vine Serpent"
+  age: 150
+  habitat:
+    type: "Rainforest"
+    location: "Emerald Canopy"
+    features:
+      - "Dense foliage"
+      - "High humidity"
+      - "Abundant waterfalls"
+  abilities:
+    - name: "Bioluminescent Glow"
+      description: "Emits a soothing light that can calm nearby creatures and illuminate dark areas."
+      power_level: 8
+    - name: "Vine Whip"
+      description: "Uses its tail to lash out at threats, capable of stunning or entangling foes."
+      power_level: 6
+  diet:
+    primary_food: "Moonfruit"
+    secondary_foods:
+      - "Insects"
+      - "Small mammals"
+      - "Nectar"
+    feeding_times:
+      - "06:00"
+      - "18:00"
+  social_behavior:
+    group_size: 5
+    hierarchy: "Egalitarian"

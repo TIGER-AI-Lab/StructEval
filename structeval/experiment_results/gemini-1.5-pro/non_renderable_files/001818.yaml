@@ -1,0 +1,47 @@
+recipe:
+  title: "Spicy Peanut Noodles with Crispy Tofu"
+  author:
+    name: "Jane Doe"
+    profile_url: "https://www.example.com/jane_doe"
+  ingredients:
+    - name: "Tofu"
+      quantity: 300
+      unit: "grams"
+      optional: false
+    - name: "Peanut butter"
+      quantity: 0.5
+      unit: "cups"
+      optional: false
+    - name: "Soy sauce"
+      quantity: 0.25
+      unit: "cups"
+      optional: false
+    - name: "Noodles"
+      quantity: 200
+      unit: "grams"
+      optional: false
+    - name: "Sriracha"
+      quantity: 2
+      unit: "tablespoons"
+      optional: true
+  steps:
+    - instruction: "Press the tofu to remove excess water."
+      duration_minutes: 15
+      tools: ["Tofu press", "Paper towels"]
+    - instruction: "Cook the noodles according to package directions."
+      duration_minutes: 8
+      tools: ["Pot", "Strainer"]
+    - instruction: "Mix the peanut butter, soy sauce, and sriracha in a bowl."
+      duration_minutes: 5
+      tools: ["Bowl", "Whisk"]
+  metadata:
+    cuisine: "Asian Fusion"
+    difficulty: "medium"
+    servings: 2
+    tags: ["vegan", "gluten-free", "spicy", "quick"]
+  nutritional_info:
+    calories: 550
+    macros:
+      protein: 25
+      fat: 20
+      carbohydrates: 70

@@ -1,0 +1,68 @@
+python
+import csv
+import xml.etree.ElementTree as ET
+
+# Parse the XML data
+xml_data = '''
+<artifacts>
+  <artifact>
+    <ArtifactID>AX102</ArtifactID>
+    <DiscoverySite>Gobekli Tepe</DiscoverySite>
+    <Material>Limestone</Material>
+    <EstimatedAge>9600</EstimatedAge>
+    <DiscoveryDate>1994-07-11</DiscoveryDate>
+    <Curator>Dr. Elif Kaya</Curator>
+  </artifact>
+  <artifact>
+    <ArtifactID>BX207</ArtifactID>
+    <DiscoverySite>Pompeii</DiscoverySite>
+    <Material>Bronze</Material>
+    <EstimatedAge>2000</EstimatedAge>
+    <DiscoveryDate>1748-03-23</DiscoveryDate>
+    <Curator>Prof. Marco Rossi</Curator>
+  </artifact>
+  <artifact>
+    <ArtifactID>CY315</ArtifactID>
+    <DiscoverySite>Angkor Wat</DiscoverySite>
+    <Material>Sandstone</Material>
+    <EstimatedAge>800</EstimatedAge>
+    <DiscoveryDate>1860-09-15</DiscoveryDate>
+    <Curator>Ms. Sophea Chan</Curator>
+  </artifact>
+  <artifact>
+    <ArtifactID>DW411</ArtifactID>
+    <DiscoverySite>Stonehenge</DiscoverySite>
+    <Material>Bluestone</Material>
+    <EstimatedAge>4500</EstimatedAge>
+    <DiscoveryDate>1901-06-02</DiscoveryDate>
+    <Curator>Dr. Nigel Pierce</Curator>
+  </artifact>
+  <artifact>
+    <ArtifactID>EV509</ArtifactID>
+    <DiscoverySite>Chichen Itza</DiscoverySite>
+    <Material>Limestone</Material>
+    <EstimatedAge>1200</EstimatedAge>
+    <DiscoveryDate>1924-11-18</DiscoveryDate>
+    <Curator>Dr. Ana Gutierrez</Curator>
+  </artifact>
+</artifacts>
+'''
+
+root = ET.fromstring(xml_data)
+
+# Extract headers from the first artifact
+headers = [child.tag for child in root[0]]
+
+# Create a list to store the rows of data
+rows = []
+
+# Iterate over each artifact and extract the data
+for artifact in root:
+    row = {child.tag: child.text for child in artifact}
+    rows.append(row)
+
+# Write the data to a CSV file
+with open('artifacts.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=headers)
+    writer.writeheader()
+    writer.writerows(rows)

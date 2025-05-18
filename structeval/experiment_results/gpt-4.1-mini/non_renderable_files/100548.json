@@ -1,0 +1,44 @@
+{
+  "galactic_zoo": {
+    "name": "Stellar Fauna Reserve",
+    "opened_year": 3042,
+    "director": "Dr. Zyx Quasar",
+    "location": {
+      "planet": "Xenon Prime",
+      "galaxy": "Andromeda"
+    },
+    "exhibits": [
+      {
+        "species": "Nebula Lynx",
+        "origin": "Nebulon Belt",
+        "population": 7,
+        "diet": ["plasma", "stellar dust"],
+        "enclosure": {
+          "type": "Anti-gravity Dome",
+          "climate": "Ionized Mist"
+        }
+      },
+      {
+        "species": "Quantum Parrot",
+        "origin": "Quark Isles",
+        "population": 15,
+        "diet": ["photons", "nano-seeds"],
+        "enclosure": {
+          "type": "Phase Aviary",
+          "climate": "Temporal Breeze"
+        }
+      }
+    ],
+    "tickets": {
+      "currency": "Galactic Credits",
+      "prices": {
+        "adult": 42.5,
+        "child": 18.0
+      }
+    },
+    "visitor_facilities": {
+      "restaurants": ["Supernova Snacks", "Comet CafÃ©"],
+      "shuttle_service": true
+    }
+  }
+}

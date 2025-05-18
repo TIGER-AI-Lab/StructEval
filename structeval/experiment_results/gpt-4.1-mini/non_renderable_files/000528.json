@@ -1,0 +1,37 @@
+{
+  "artifact": {
+    "name": "Golden Mask of Tutankhamun",
+    "origin": {
+      "culture": "Ancient Egyptian",
+      "period": "18th Dynasty, New Kingdom"
+    },
+    "materials": {
+      "primary": "Gold",
+      "secondary": "Lapis lazuli, Glass, Semi-precious stones"
+    },
+    "dimensions": {
+      "height_cm": 54,
+      "width_cm": 39,
+      "depth_cm": 0
+    },
+    "location": {
+      "current_museum": "Egyptian Museum, Cairo",
+      "room": "Room 22"
+    },
+    "provenance": {
+      "history": [
+        {
+          "event": "discovered",
+          "date": "1922-11-04",
+          "location": "Valley of the Kings, Egypt"
+        }
+      ]
+    },
+    "images": [
+      {
+        "url": "https://example.com/images/golden_mask_tutankhamun.jpg",
+        "description": "Front view of the Golden Mask of Tutankhamun showing intricate craftsmanship."
+      }
+    ]
+  }
+}

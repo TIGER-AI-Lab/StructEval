@@ -1,0 +1,55 @@
+brewery:
+  name: "Misty Mountain Brewing Company"
+  location:
+    city: "Denver"
+    country: "USA"
+  established_year: 2010
+  specialties:
+    - "Barrel-aged stouts"
+    - "High-altitude IPAs"
+    - "Experimental sours"
+  master_brewer:
+    name: "Sierra Nevada Pale Ale"
+    experience_years: 15
+    awards:
+      - title: "Brewer of the Year"
+        year: 2022
+  beers:
+    - name: "Cloud Peak IPA"
+      style: "American IPA"
+      abv: 7.2
+      ingredients:
+        malts:
+          - "Pale Malt"
+          - "Crystal Malt"
+          - "Munich Malt"
+        hops:
+          - "Citra"
+          - "Mosaic"
+          - "Simcoe"
+      release_dates:
+        - "2015-03-21"
+    - name: "Midnight Stout"
+      style: "Imperial Stout"
+      abv: 10.5
+      ingredients:
+        malts:
+          - "Roasted Barley"
+          - "Chocolate Malt"
+          - "Flaked Oats"
+        hops:
+          - "East Kent Goldings"
+          - "Fuggles"
+      release_dates:
+        - "2018-11-01"
+    - name: "Alpine Sour"
+      style: "Berliner Weisse"
+      abv: 4.5
+      ingredients:
+        malts:
+          - "Pilsner Malt"
+          - "Wheat Malt"
+        hops:
+          - "Hallertau MittelfrÃ¼h"
+      release_dates:
+        - "2021-06-15"

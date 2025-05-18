@@ -1,0 +1,27 @@
+
+ecosystem:
+  name: "The Whispering Woods"
+  location:
+    latitude: 43.2134
+    longitude: -71.4567
+  climate:
+    type: "temperate"
+    average_temperature_celsius: 10.5
+  flora:
+  - species: "Quercus robur"
+    population_estimate: 5000
+    notable_features:
+      - "Deciduous"
+      - "Edible acorns"
+  fauna:
+  - species: "Ursus arctos"
+    diet: "omnivore"
+    population_estimate: 200
+    conservation_status: "least concern"
+  events:
+  - event_name: "Forest Fire"
+    date: "2020-08-15T14:30:00Z"
+    impact_summary: "The fire burned for several days, affecting 10% of the forest area."
+  - event_name: "Heavy Rainfall"
+    date: "2018-04-20T12:00:00Z"
+    impact_summary: "The rain caused widespread flooding, damaging several habitats and affecting local wildlife."

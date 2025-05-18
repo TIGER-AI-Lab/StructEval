@@ -1,0 +1,37 @@
+{
+  "exhibit": {
+    "title": "Modern Masters: A Retrospective",
+    "curator": {
+      "name": "Dr. Eleanor Vance",
+      "email": "eleanor.vance@museum.org"
+    },
+    "artworks": [
+      {
+        "artist": "Pablo Picasso",
+        "title": "Guernica",
+        "year_created": 1937,
+        "medium": "oil on canvas",
+        "dimensions": {
+          "height_cm": 349.3,
+          "width_cm": 776.6,
+          "depth_cm": 0
+        },
+        "provenance": {
+          "previous_owners": [
+            "Private Collection, Paris",
+            "Museum of Modern Art, New York"
+          ],
+          "acquisition_date": "1981-05-15"
+        },
+        "on_display": true,
+        "tags": [
+          "cubism",
+          "political",
+          "war",
+          "monochrome"
+        ]
+      }
+    ],
+    "opening_date": "2024-03-10"
+  }
+}

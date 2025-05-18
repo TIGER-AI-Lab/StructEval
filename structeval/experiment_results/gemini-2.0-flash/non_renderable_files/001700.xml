@@ -1,0 +1,94 @@
+
+<recipe>
+    <title>Spicy Vegan Black Bean Burgers</title>
+    <author>
+        <name>Alice Smith</name>
+        <contact>
+            <email>alice.smith@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Black Beans</name>
+            <quantity>400</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Red Onion</name>
+            <quantity>0.5</quantity>
+            <unit>medium</unit>
+        </ingredient>
+        <ingredient>
+            <name>Chipotle Peppers in Adobo Sauce</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Breadcrumbs</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Spices</name>
+            <quantity>1</quantity>
+            <unit>tablespoon</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <order>1</order>
+            <instruction>Mash the black beans in a large bowl.</instruction>
+            <duration>
+                <minutes>5</minutes>
+            </duration>
+        </step>
+        <step>
+            <order>2</order>
+            <instruction>Finely chop the red onion and chipotle peppers.</instruction>
+            <duration>
+                <minutes>10</minutes>
+            </duration>
+        </step>
+        <step>
+            <order>3</order>
+            <instruction>Add the chopped onion, peppers, breadcrumbs, and spices to the mashed beans. Mix well.</instruction>
+            <duration>
+                <minutes>5</minutes>
+            </duration>
+        </step>
+        <step>
+            <order>4</order>
+            <instruction>Form the mixture into patties.</instruction>
+            <duration>
+                <minutes>5</minutes>
+            </duration>
+        </step>
+        <step>
+            <order>5</order>
+            <instruction>Cook the patties in a pan over medium heat for 5-7 minutes per side.</instruction>
+            <duration>
+                <minutes>12</minutes>
+            </duration>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>350</calories>
+        <fat>
+            <grams>10</grams>
+        </fat>
+        <protein>
+            <grams>15</grams>
+        </protein>
+        <carbohydrates>
+            <grams>50</grams>
+        </carbohydrates>
+    </nutrition>
+    <tags>
+        <tag>vegan</tag>
+        <tag>spicy</tag>
+        <tag>burger</tag>
+    </tags>
+    <metadata>
+        <created_at>2023-10-27</created_at>
+    </metadata>
+</recipe>

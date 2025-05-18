@@ -1,0 +1,32 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<galaxy>
+  <galaxy_name>Andromeda</galaxy_name>
+  <sector id="42">
+    <name>Alpha Quadrant</name>
+    <star_systems>
+      <system>
+        <system_name>Helios</system_name>
+        <planets>
+          <planet>
+            <planet_name>Aurelia</planet_name>
+            <type>Terrestrial</type>
+            <inhabitants>
+              <inhabitant>
+                <species>Aurelian</species>
+                <population>5200000</population>
+                <technology_level>Advanced</technology_level>
+              </inhabitant>
+            </inhabitants>
+            <moons>
+              <moon>
+                <moon_name>Selene</moon_name>
+                <diameter_km>3400</diameter_km>
+              </moon>
+            </moons>
+          </planet>
+        </planets>
+      </system>
+    </star_systems>
+  </sector>
+</galaxy>

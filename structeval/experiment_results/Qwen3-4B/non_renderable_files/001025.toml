@@ -1,0 +1,40 @@
+
+artifact = {
+  name = "Crown of the Pharaoh",
+  origin = {
+    civilization = "Ancient Egypt",
+    era = "Old Kingdom"
+  },
+  materials = [
+    {
+      type = "gold",
+      provenance = "Nile River Valley"
+    },
+    {
+      type = "lapis lazuli",
+      provenance = "Badakhshan"
+    }
+  ],
+  dimensions = {
+    height_cm = 30,
+    width_cm = 25,
+    depth_cm = 15
+  },
+  discovery = {
+    date = "2023-04-15",
+    location = {
+      country = "Egypt",
+      site = "Giza Plateau"
+    },
+    expedition_team = [
+      {
+        member_name = "Dr. Alice Smith",
+        role = "Lead Archaeologist"
+      },
+      {
+        member_name = "John Doe",
+        role = "Field Technician"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+
+[artifact]
+name = "Ancient Scepter of Pharaoh"
+origin = "Ancient Egypt"
+discovery_date = "1922-07-15"
+materials = ["gold", "lapis lazuli"]
+dimensions = { height_cm = 150, width_cm = 10, depth_cm = 5 }
+inscriptions = [
+  { language = "Hieroglyphs", translation = "Pharaoh's Power", location_on_artifact = "top" },
+  { language = "Hieroglyphs", translation = "Divine Ankh", location_on_artifact = "base" }
+]
+exhibit = { current_location = "The British Museum", previous_locations = [
+  { museum = "The Egyptian Museum", year_range = "1922â1923" },
+  { museum = "The Louvre", year_range = "1923â1925" }
+] }

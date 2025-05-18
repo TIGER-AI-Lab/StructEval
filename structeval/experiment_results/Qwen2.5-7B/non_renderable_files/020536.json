@@ -1,0 +1,14 @@
+
+import pandas as pd
+import json
+
+# Read the CSV file
+df = pd.read_csv('mission_data.csv')
+
+# Convert the DataFrame to a list of dictionaries
+missions = df.to_dict(orient='records')
+
+# Convert the list of dictionaries to JSON
+json_data = json.dumps(missions, indent=2)
+
+print(json_data)

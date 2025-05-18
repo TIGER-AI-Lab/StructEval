@@ -1,0 +1,18 @@
+
+galacticZoo:
+  animals:
+    - species: Quarflon
+      homePlanet: Zygnus-3
+      abilities:
+        - Telepathy
+        - Invisibility
+    - species: Blorptaur
+      homePlanet: Blorpia
+      abilities:
+        - Shape-shifting
+        - Acidic Slime
+  caretakers:
+    - name: Luna Starwhisper
+      assignedSpecies:
+        - Quarflon
+        - Blorptaur

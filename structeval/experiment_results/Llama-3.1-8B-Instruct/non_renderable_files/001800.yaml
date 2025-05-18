@@ -1,0 +1,23 @@
+
+creature:
+  name: Glimmerwings
+  species: Luminous Avian
+  habitat:
+    type: forest
+    region: Ancient Oakwood
+    climate: temperate
+  abilities:
+    - name: Bioluminescence
+      description: The Glimmerwings can produce light from its body, allowing it to communicate and navigate in the dark.
+      cooldown_seconds: 30
+    - name: Gust Call
+      description: The Glimmerwings can produce a loud, high-pitched call that creates a gust of wind, knocking enemies off balance.
+      cooldown_seconds: 60
+  stats:
+    size_meters: 1.5
+    weight_kg: 3.2
+    lifespan_years: 10
+    diet: omnivore
+  discovery:
+    discovered_by: Dr. Elara Vex
+    discovery_date: 2010-07-22

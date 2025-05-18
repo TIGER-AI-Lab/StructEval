@@ -1,0 +1,30 @@
+
+ecosystem = {
+  planet = {
+    name = "Xylophia-IV",
+    orbital_period_days = 345,
+  },
+  atmosphere = {
+    composition = ["nitrogen", "oxygen", "argon"],
+    pressure_kpa = 101.3,
+  },
+  terrain_types = ["oceanic", "continental", "volcanic"],
+  native_species = [
+    {
+      species_name = "Xylophianus magnificus",
+      population_estimate = 1000000,
+      classification = "mammal",
+      average_lifespan_years = 50,
+      diet = "omnivore",
+      notable_traits = ["intelligent", "agile"],
+    },
+  ],
+  habitats = [
+    {
+      habitat_name = "Xylophian Forest",
+      dominant_species = "Xylophianus magnificus",
+      climate_type = "temperate",
+      average_temperature_c = 22,
+    },
+  ],
+}

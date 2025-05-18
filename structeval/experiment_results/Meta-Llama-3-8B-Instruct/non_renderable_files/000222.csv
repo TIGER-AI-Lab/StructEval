@@ -1,0 +1,4 @@
+
+"artifact_id","artifact_name","origin_civilization","discovery_date","material.primary","material.secondary","estimated_age_years","dimensions.length_cm","dimensions.width_cm","dimensions.height_cm","location.site_name","location.latitude","location.longitude","current_condition.status","current_condition.restoration_needed","notable_markings[0].type","notable_markings[0].description"
+"ART001","Golden Idol","Ancient Egyptians","2022-01-01","Gold","None",1000,20,15,30,"Pyramid of Giza",29.9792,-31.1343,"Intact",false,"Inscription","Hieroglyphic text describing the pharaoh"
+"ART002","Roman Coin","Roman Empire","2010-06-15","Copper","Silver",2000,2,2,0.5,"Roman Forum",41.8792,12.4823,"Fragmented",true,"Symbol","Mark of the Roman Empire"

@@ -1,0 +1,23 @@
+[artifact]
+name = "The Scepter of Pharaoh Amenhotep"
+artifact.origin = {
+    civilization = "Ancient Egypt"
+    era = "New Kingdom"
+}
+artifact.materials = [
+    ["Gold", "Egypt"],
+    ["Lapis Lazuli", "Afghanistan"]
+]
+artifact.dimensions = {
+    height_cm = 35
+    width_cm = 5
+    depth_cm = 2
+}
+artifact.discovery = {
+    date = "2023-04-15"
+    country = "Egypt"
+    site = "Valley of the Kings"
+    artifact.discovery.expedition_team = [
+        ["Dr. Sarah Connolly", "Lead Archaeologist"]
+    ]
+}

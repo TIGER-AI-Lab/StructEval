@@ -1,0 +1,22 @@
+museum_name: Museum of Imaginary History
+location:
+  city: Wonderville
+  country: Fantasia
+established_year: 1899
+curators:
+  - name: Dr. Luna Sparks
+    specialty: Ancient Robotics
+    years_experience: 12
+  - name: Prof. Orion Vale
+    specialty: Time Travel Artifacts
+    years_experience: 8
+exhibits:
+  - title: Clockwork Pharaoh
+    year: 1923
+    artifacts: "Gears, Golden Mask, Sand Vial"
+  - title: The Lost Symphony
+    year: 2001
+    artifacts: "Sheet Music, Holographic Baton, Composer's Quill"
+annual_visitors: 120000
+membership:
+  levels: "Bronze,Silver,Gold,Platinum"

@@ -1,0 +1,72 @@
+
+import csv
+import json
+
+data = '''
+{
+  "alien_artifacts": [
+    {
+      "artifact_id": "ZX-1021",
+      "discovery_date": "2123-07-15",
+      "material": "crystaline alloy",
+      "estimated_age_years": 4500,
+      "planet_of_origin": "Xelthar",
+      "is_sentient": false,
+      "museum_display_name": "The Singing Prism"
+    },
+    {
+      "artifact_id": "QK-4408",
+      "discovery_date": "2119-03-03",
+      "material": "liquid metal",
+      "estimated_age_years": 12000,
+      "planet_of_origin": "Vornax",
+      "is_sentient": true,
+      "museum_display_name": "Vornaxian Shifter"
+    },
+    {
+      "artifact_id": "LM-3007",
+      "discovery_date": "2130-12-22",
+      "material": "holographic fiber",
+      "estimated_age_years": 1500,
+      "planet_of_origin": "Mira Prime",
+      "is_sentient": false,
+      "museum_display_name": "Fiber Relic"
+    },
+    {
+      "artifact_id": "TR-8822",
+      "discovery_date": "2125-05-19",
+      "material": "organic quartz",
+      "estimated_age_years": 8000,
+      "planet_of_origin": "Rylos",
+      "is_sentient": true,
+      "museum_display_name": "Rylos Heartstone"
+    },
+    {
+      "artifact_id": "GH-2140",
+      "discovery_date": "2118-09-01",
+      "material": "ferrous gas",
+      "estimated_age_years": 2300,
+      "planet_of_origin": "Helion",
+      "is_sentient": false,
+      "museum_display_name": "Helion Vapor Core"
+    }
+  ]
+}
+'''
+
+data = json.loads(data)
+with open('output.csv', 'w', newline='') as csvfile:
+    fieldnames = ['artifact_id', 'discovery_date', 'material', 'estimated_age_years', 'planet_of_origin', 'is_sentient', 'museum_display_name']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for artifact in data['alien_artifacts']:
+        writer.writerow({
+            'artifact_id': artifact['artifact_id'],
+            'discovery_date': artifact['discovery_date'],
+            'material': artifact['material'],
+            'estimated_age_years': artifact['estimated_age_years'],
+            'planet_of_origin': artifact['planet_of_origin'],
+            'is_sentient': str(artifact['is_sentient']),
+            'museum_display_name': artifact['museum_display_name']
+        })

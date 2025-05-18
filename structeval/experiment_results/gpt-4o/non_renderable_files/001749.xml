@@ -1,0 +1,32 @@
+<planet>
+    <name>Zephyra</name>
+    <type>Gas Giant</type>
+    <orbitalPeriod>4321</orbitalPeriod>
+    <discovery year="2123">
+        <method>Transit</method>
+        <discoverer>Dr. Celeste Nova</discoverer>
+    </discovery>
+    <atmosphere>
+        <composition>Hydrogen, Helium, Methane</composition>
+        <pressure>1.5</pressure>
+    </atmosphere>
+    <moons>
+        <moon>
+            <name>Aether</name>
+            <diameter>3120</diameter>
+            <hasSubsurfaceOcean>true</hasSubsurfaceOcean>
+        </moon>
+        <moon>
+            <name>Nyx</name>
+            <diameter>1450</diameter>
+            <hasSubsurfaceOcean>false</hasSubsurfaceOcean>
+        </moon>
+    </moons>
+    <rings>
+        <hasRings>true</hasRings>
+        <ring>
+            <width>12000</width>
+            <composition>Ice, Rock</composition>
+        </ring>
+    </rings>
+</planet>

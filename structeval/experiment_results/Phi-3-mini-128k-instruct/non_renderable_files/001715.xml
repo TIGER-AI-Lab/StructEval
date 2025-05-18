@@ -1,0 +1,48 @@
+<creature>
+    <name>Zyphron the Starweaver</name>
+    <species>Zyphronidae</species>
+    <origin>
+        <planet>Xylophar</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <abilities>
+        <ability>
+            <type>Weave</type>
+            <description>Can manipulate the fabric of space-time to create or alter matter.</description>
+            <level>9</level>
+        </ability>
+        <ability>
+            <type>Telekinesis</type>
+            <description>Can move objects with their mind, even across vast distances.</description>
+            <level>8</level>
+        </ability>
+        <ability>
+            <type>Invisibility</type>
+            <description>Can render themselves invisible to the naked eye.</description>
+            <level>7</level>
+        </ability>
+    </abilities>
+    <physical_traits>
+        <height>210</height>
+        <weight>120</weight>
+        <eye_color>Celestial Blue</eye_color>
+        <limbs>
+            <count>6</count>
+            <type>Tentacle</type>
+        </limbs>
+    </physical_traits>
+    <history>
+        <events>
+            <event>
+                <title>The Great Nebula Creation</title>
+                <year>2345-07-16</year>
+                <impact>Zyphron single-handedly created a new star system, providing a new home for countless species.</impact>
+            </event>
+            <event>
+                <title>The Battle of the Void</title>
+                <year>2378-11-03</year>
+                <impact>Zyphron led a coalition of alien species to victory against a hostile force, ensuring peace across the galaxy.</impact>
+            </event>
+        </events>
+    </history>
+</creature>

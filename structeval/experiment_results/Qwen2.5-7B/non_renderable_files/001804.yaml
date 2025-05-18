@@ -1,0 +1,20 @@
+garden:
+  name: "Botanical Garden"
+  location:
+    city: "New York"
+    country: "USA"
+  size_sq_meters: 10000
+  established_year: 1900
+  sections:
+    - section_name: "Tropical Plants"
+      plants:
+        - species: "Cycas revoluta"
+          age_years: 50
+          height_cm: 150
+          is_perennial: true
+          flowering_months:
+            - "April"
+            - "May"
+          care:
+            last_watered: "2021-09-15"
+            fertilizer_type: "Slow-release"

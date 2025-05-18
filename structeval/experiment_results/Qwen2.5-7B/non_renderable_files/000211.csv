@@ -1,0 +1,29 @@
+
+import pandas as pd
+
+# Define the artifact data
+artifact_data = {
+    "artifact_id": "A12345",
+    "artifact_name": "The Golden Scarab",
+    "origin_civilization": "Egyptian",
+    "discovery_site": "Valley of Kings",
+    "discovery_date": "1925-03-15",
+    "material.primary": "gold",
+    "material.secondary": "",
+    "dimensions.length_cm": 5.2,
+    "dimensions.width_cm": 3.1,
+    "dimensions.height_cm": 2.8,
+    "estimated_age_years": 3000,
+    "current_location.museum": "British Museum",
+    "current_location.city": "London",
+    "current_location.country": "United Kingdom",
+    "condition_status": "excellent",
+    "notable_features": "Engraved with hieroglyphs",
+    "related_artifacts": "A67890;A23456"
+}
+
+# Create a DataFrame from the artifact data
+artifact_df = pd.DataFrame([artifact_data])
+
+# Save the DataFrame to a CSV file
+artifact_df.to_csv("artifacts.csv", index=False)

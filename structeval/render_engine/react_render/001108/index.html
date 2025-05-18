@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001108</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const NewsletterSubscription = () => {
+  const [email, setEmail] = useState('');
+  const [agreed, setAgreed] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [subscriptionSuccessful, setSubscriptionSuccessful] = useState(false);
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    setErrorMessage('');
+  };
+
+  const handleCheckboxChange = (e) => {
+    setAgreed(e.target.checked);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!email) {
+      setErrorMessage('Email is required');
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setErrorMessage('Invalid email format');
+      return;
+    }
+
+    if (!agreed) {
+      setErrorMessage('Please agree to the terms and conditions');
+      return;
+    }
+
+    setSubscriptionSuccessful(true);
+  };
+
+  return (
+    <div style={{ border: '1px solid #ccc', padding: '20px' }}>
+      <h3 style={{ textAlign: 'center' }}>Subscribe to Our Newsletter</h3>
+      {subscriptionSuccessful ? (
+        <div>Subscription successful</div>
+      ) : (
+        <form onSubmit={handleSubmit} style={{ marginTop: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 40px', gap: '10px' }}>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              value={email}
+              onChange={handleEmailChange}
+            />
+            <span>{email.length}</span>
+          </div>
+          {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', marginTop: '10px' }}>
+            <label>
+              <input type="checkbox" checked={agreed} onChange={handleCheckboxChange} />
+              I agree to the terms and conditions
+            </label>
+          </div>
+          <button type="submit" style={{ backgroundColor: 'green', color: 'white', marginTop: '10px' }}>
+            Subscribe
+          </button>
+        </form>
+      )}
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscription />);
+
+    </script>
+  </body>
+</html>

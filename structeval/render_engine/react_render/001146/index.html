@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001146</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const NewsletterForm = () => {
+  const [email, setEmail] = useState('');
+  const [receiveUpdates, setReceiveUpdates] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!email) {
+      setError('Email is required');
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setError('Invalid email format');
+      return;
+    }
+
+    if (!receiveUpdates) {
+      setError('Please check the box to receive updates');
+      return;
+    }
+
+    setError('');
+    setSubmitted(true);
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <div>
+        <h1>Subscribe Now</h1>
+        {submitted ? (
+          <p>Thank you for subscribing!</p>
+        ) : (
+          <form onSubmit={handleSubmit}>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                style={{ marginRight: '10px' }}
+              />
+              <input
+                type="checkbox"
+                checked={receiveUpdates}
+                onChange={() => setReceiveUpdates(!receiveUpdates)}
+              />
+              <label>Receive Updates</label>
+            </div>
+            {error && <span style={{ color: 'red' }}>{error}</span>}
+            <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '10px 20px', border: 'none', cursor: 'pointer' }}>
+              Sign Up
+            </button>
+          </form>
+        )}
+      </div>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterForm />);
+
+    </script>
+  </body>
+</html>

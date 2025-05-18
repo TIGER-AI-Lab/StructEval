@@ -1,0 +1,27 @@
+
+artifact:
+  name: "Mummified Sarcophagus"
+  origin:
+    culture: "Ancient Egyptian"
+    era: "New Kingdom"
+    discovery_date: "1350-1330 BCE"
+  dimensions:
+    height_cm: 120
+    width_cm: 80
+  materials:
+    - Limestone
+    - Gold
+    - Lapis Lazuli
+  condition:
+    status: "Intact"
+    restoration_history:
+      - date: "2000-01-01"
+        description: "Conservation and stabilization of the sarcophagus"
+  exhibitions:
+    - location: "The British Museum"
+      start_date: "2010-01-01"
+      end_date: "2012-12-31"
+      visitor_count: 500000
+  references:
+    - citation: "Smith, J. (2015). The Mummified Sarcophagus of Pharaoh Tutankhamun. Journal of Egyptian Archaeology, 101(1), 1-15."
+    - citation: "Johnson, K. (2018). The Art and Culture of Ancient Egypt. Routledge."

@@ -1,0 +1,22 @@
+
+garden:
+  name: "Botanical Wonders Garden"
+  location:
+    city: "Springfield"
+    country: "USA"
+  size_sq_meters: 5000
+  established_year: 1995
+  sections:
+    - section_name: "Tropical Plants"
+      plants:
+        - species: "Heliconia rostrata"
+          age_years: 3
+          height_cm: 150
+          is_perennial: true
+          flowering_months:
+            - "January"
+            - "February"
+            - "March"
+          care:
+            last_watered: "2023-10-01T10:00:00Z"
+            fertilizer_type: "Balanced 10-10-10"

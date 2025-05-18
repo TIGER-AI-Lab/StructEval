@@ -1,0 +1,31 @@
+
+<planet>
+    <name>Xylophia-IV</name>
+    <orbitalPeriod>365.25</orbitalPeriod>
+    <discovery year="2020">
+        <method>Transit Method</method>
+        <telescope>Keck Observatory</telescope>
+    </discovery>
+    <atmosphere>
+        <composition>Helium, Oxygen, Nitrogen</composition>
+        <pressure>100.0</pressure>
+        <temperature>250.0</temperature>
+    </atmosphere>
+    <moons>
+        <moon>
+            <name>Xylophia-IVb</name>
+            <diameter>1000.0</diameter>
+            <orbitalPeriod>30.0</orbitalPeriod>
+            <discoveredBy>John Smith</discoveredBy>
+            <discoveryDate>2022-01-01</discoveryDate>
+        </moon>
+    </moons>
+    <surface>
+        <features>
+            <feature>
+                <type>Crater</type>
+                <coordinates>43.2132, 12.3456</coordinates>
+            </feature>
+        </features>
+    </surface>
+</planet>

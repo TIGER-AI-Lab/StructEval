@@ -1,0 +1,23 @@
+
+[ecosystem.planet]
+name = "Xylora Prime"
+orbital_period_days = 412.5
+terrain_types = ["crystalline plains", "bioluminescent forests", "acidic swamps"]
+
+[ecosystem.planet.atmosphere]
+composition = ["nitrogen", "argon", "methane", "trace oxygen"]
+pressure_kpa = 85.3
+
+[[ecosystem.planet.native_species]]
+species_name = "Luminara spectris"
+population_estimate = 1250000
+classification = "insectoid"
+average_lifespan_years = 7.4
+diet = "omnivore"
+notable_traits = ["bioluminescence", "echolocation", "regenerative limbs"]
+
+[[ecosystem.planet.habitats]]
+habitat_name = "Glowing Thicket"
+dominant_species = "Luminara spectris"
+climate_type = "temperate"
+average_temperature_c = 22.7

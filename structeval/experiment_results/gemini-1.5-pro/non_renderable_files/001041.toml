@@ -1,0 +1,38 @@
+[expedition]
+name = "Ares VI Mission to Mars"
+launch_date = "2027-03-15T09:30:00Z"
+
+[expedition.destination]
+planet = "Mars"
+region = "Valles Marineris"
+
+[[expedition.crew]]
+name = "Commander Valentina Tereshkova"
+role = "Mission Commander"
+experience_years = 15
+certifications = ["Spacecraft Piloting", "Astrogation", "Xenogeology"]
+
+[[expedition.crew]]
+name = "Dr. David Bowman"
+role = "Mission Specialist"
+experience_years = 12
+certifications = ["Astrophysics", "Exobiology", "Planetary Science"]
+
+[[expedition.equipment]]
+item = "Mars Rover"
+quantity = 2
+status = "operational"
+
+[[expedition.equipment]]
+item = "Habitat Module"
+quantity = 1
+status = "operational"
+
+[[expedition.equipment]]
+item = "Solar Panel Array"
+quantity = 4
+status = "operational"
+
+[expedition.mission_objectives]
+primary = "Establish a permanent research outpost."
+secondary = "Conduct geological surveys and search for signs of past or present life."

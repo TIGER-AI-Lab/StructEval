@@ -1,0 +1,81 @@
+<recipe>
+    <title>Chocolate Lava Cake</title>
+    <author>
+        <name>Chef Emily</name>
+        <contact>emily@example.com</contact>
+    </author>
+    <ingredients>
+        <item>
+            <name>Dark chocolate</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Butter</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Sugar</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <unit>large</unit>
+        </item>
+        <item>
+            <name>Vanilla extract</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </item>
+    </ingredients>
+    <instructions>
+        <entry>
+            <stepNumber>1</stepNumber>
+            <description>Preheat the oven to 220Â°C (425Â°F).</description>
+            <timer>
+                <seconds>0</seconds>
+            </timer>
+        </entry>
+        <entry>
+            <stepNumber>2</stepNumber>
+            <description>Melt the chocolate and butter together in a bowl over a pot of simmering water.</description>
+            <timer>
+                <seconds>180</seconds>
+            </timer>
+        </entry>
+        <entry>
+            <stepNumber>3</stepNumber>
+            <description>Whisk the sugar and eggs together until well combined.</description>
+            <timer>
+                <seconds>0</seconds>
+            </timer>
+        </entry>
+        <entry>
+            <stepNumber>4</stepNumber>
+            <description>Combine the melted chocolate mixture with the sugar and egg mixture, and stir in the vanilla extract.</description>
+            <timer>
+                <seconds>0</seconds>
+            </timer>
+        </entry>
+        <entry>
+            <stepNumber>5</stepNumber>
+            <description>Pour the batter into greased ramekins and bake for 12 minutes.</description>
+            <timer>
+                <seconds>0</seconds>
+            </timer>
+        </entry>
+    </instructions>
+    <metadata>
+        <cuisine>Dessert</cuisine>
+        <difficulty>easy</difficulty>
+        <servings>4</servings>
+    </metadata>
+    <nutrition>
+        <calories>250</calories>
+        <fat>15</fat>
+        <carbohydrates>20</carbohydrates>
+    </nutrition>
+</recipe>

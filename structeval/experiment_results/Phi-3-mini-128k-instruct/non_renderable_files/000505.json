@@ -1,0 +1,35 @@
+{
+  "artifact": {
+    "name": "The Scepter of Pharaoh Amenhotep",
+    "discovery_date": "2023-04-15",
+    "origin": {
+      "civilization": "Ancient Egypt",
+      "era": "New Kingdom"
+    },
+    "materials": [
+      {
+        "type": "Gold",
+        "purity": 99.9
+      },
+      {
+        "type": "Lapis Lazuli",
+        "purity": 95.0
+      }
+    ],
+    "dimensions": {
+      "height_cm": 35,
+      "width_cm": 5,
+      "depth_cm": 2
+    },
+    "inscriptions": [
+      {
+        "language": "Egyptian Hieroglyphs",
+        "translation": "The power of the gods is with the king."
+      }
+    ],
+    "current_location": {
+      "museum": "The British Museum",
+      "display_case": "Room 22"
+    }
+  }
+}

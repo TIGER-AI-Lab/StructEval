@@ -1,0 +1,36 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def yaml_to_xml(yaml_data):
+    root = ET.Element("museum")
+    for key, value in yaml_data.items():
+        if isinstance(value, dict):
+            sub_element = ET.SubElement(root, key)
+            for sub_key, sub_value in value.items():
+                sub_sub_element = ET.SubElement(sub_element, sub_key)
+                sub_sub_element.text = str(sub_value)
+        else:
+            ET.SubElement(root, key).text = str(value)
+    return ET.tostring(root, encoding='unicode')
+
+yaml_data = yaml.safe_load("""
+museum:
+  name: The Imaginary Museum of Clouds
+  location:
+    city: Nimbusville
+    country: Skylandia
+  exhibits:
+    exhibit:
+      - title: Whispering Stratus
+        artist: Zephyr Alto
+        year: 2021
+        medium: Oil on Vapor
+      - title: Cumulus Dreams
+        artist: Cirro Stratus
+        year: 2019
+        medium: Watercolor on Air
+""")
+
+xml_data = yaml_to_xml(yaml_data)
+print(xml_data)

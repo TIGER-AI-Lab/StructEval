@@ -1,0 +1,14 @@
+
+import pandas as pd
+
+data = [
+    {'creature_name': 'Glimmerbeetle', 'biome': 'Crystal Caves', 'number_of_legs': 6, 'discovery_date': '2021-04-17', 'venomous': True, 'average_weight_kg': 0.8},
+    {'creature_name': 'Frostwhisker', 'biome': 'Arctic Tundra', 'number_of_legs': 4, 'discovery_date': '2019-12-05', 'venomous': False, 'average_weight_kg': 3.2},
+    {'creature_name': 'Emberling', 'biome': 'Volcanic Plains', 'number_of_legs': 8, 'discovery_date': '2022-07-22', 'venomous': True, 'average_weight_kg': 1.5},
+    {'creature_name': 'Mossback', 'biome': 'Enchanted Forest', 'number_of_legs': 4, 'discovery_date': '2018-03-11', 'venomous': False, 'average_weight_kg': 12.6},
+    {'creature_name': 'Skyflare', 'biome': 'Floating Isles', 'number_of_legs': 2, 'discovery_date': '2020-09-30', 'venomous': False, 'average_weight_kg': 0.4},
+    {'creature_name': 'Duskcrawler', 'biome': 'Shadow Marshes', 'number_of_legs': 10, 'discovery_date': '2023-01-15', 'venomous': True, 'average_weight_kg': 2.9}
+]
+
+df = pd.DataFrame(data)
+df.to_csv('creatures.csv', index=False)

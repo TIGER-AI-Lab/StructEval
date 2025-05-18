@@ -1,0 +1,17 @@
+
+species_name,primary_color,average_height_cm,habitat_type,diet_classification,number_of_legs,average_lifespan_years,endangered_status,native_planet,notable_ability,first_discovered_year,discovered_by,communication_method,social_structure,reproduction_cycle_days
+Zephyrians,iridescent blue,180,floating islands,herbivore,2,120,vulnerable,Zephyria,flight,2345,Stellar Expedition 12,telepathy,communal societies,365
+Drakthars,scarlet red,220,volcanic plains,carnivore,4,80,endangered,Drakthar Prime,pyrokinesis,2301,Orbital Survey Team Alpha,sonic pulses,tribal hierarchy,200
+Luminas,glowing white,150,oceanic trenches,omnivore,0,150,not threatened,Luminara,bioluminescence,2250,Nautic Discoverers,X-ray flashes,solitary,400
+Vorloks,moss green,90,forest canopies,herbivore,6,60,vulnerable,Vorlok IX,camouflage,2380,Research Vessel Delta,chemical signals,cluster groups,150
+Xentori,metallic silver,200,crystalline caves,herbivore,8,300,not threatened,Xentor,crystal manipulation,2205,Deep Cave Explorers,light patterns,collective intelligence,500
+Aquilans,sky blue,170,mountain ranges,omnivore,2,100,not threatened,Aquilara,flight,2290,Highland Expedition,sonic songs,feathered clans,250
+Nebulons,nebular purple,160,gas giants,plasma-based,0,500,endangered,Nebula Prime,plasma generation,2100,Gaseous Survey Team,plasma waves,hive mind,800
+Terragons,earth brown,250,desert dunes,herbivore,4,75,vulnerable,Terraxis,sand manipulation,2350,Sahara Expedition,gravitational waves,tribal societies,300
+Maridans,coral pink,130,underwater cities,omnivore,0,200,not threatened,Marida,shape-shifting,2280,Oceanic Research Group,bioluminescent signals,fluid communities,180
+Sylphids,forest green,140,enchanted forests,herbivore,2,110,not threatened,Sylphia,nature control,2320,Greenwood Expedition,natural pheromones,ecological networks,320
+Oblivions,shadow black,210,void spaces,omnivore,6,90,endangered,Oblivion IX,shadow melding,2400,Dark Space Explorers,shadow pulses,clandestine groups,400
+Crystalians,crystal clear,160,ice capitol,herbivore,4,130,not threatened,Crystaline,Pentagon formation,2265,Polar Expedition Prisma,light refraction,frozen clans,270
+Solarians,solar gold,190,solar flares,carnivore,2,140,not threatened,Solaris,solar energy absorption,2175,Sunspot Mission,solar flares,solar federations,330
+Galvans,metallic bronze,220,metallic jungles,omnivore,4,85,vulnerable,Galvanis,magnetic field control,2395,Metallic Survey Group,magnetic pulses,industrial guilds,210
+Aquarians,teal blue,175,subterranean lakes,herbivore,0,160,not threatened,Aquaria,water manipulation,2230,Deep Dive Team,water currents,aqueous collectives,290

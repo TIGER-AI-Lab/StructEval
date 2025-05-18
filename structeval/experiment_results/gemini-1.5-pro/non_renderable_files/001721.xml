@@ -1,0 +1,80 @@
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>John Doe</name>
+    <contact>
+      <email>john.doe@example.com</email>
+      <phone>+1-555-123-4567</phone>
+    </contact>
+  </author>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>medium</difficulty>
+    <prep_time_minutes>20</prep_time_minutes>
+    <tags>
+      <tag>pasta</tag>
+      <tag>italian</tag>
+      <tag>easy</tag>
+    </tags>
+  </metadata>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>250</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Guanciale</name>
+      <quantity>100</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>large</unit>
+      <optional>false</optional>
+    </ingredient>
+     <ingredient>
+      <name>Pecorino Romano cheese</name>
+      <quantity>50</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+     <ingredient>
+      <name>Black pepper</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <description>Cook spaghetti according to package directions.</description>
+      <duration_minutes>10</duration_minutes>
+      <tools>large pot, colander</tools>
+    </step>
+    <step>
+      <description>While the pasta is cooking, cut the guanciale into small pieces and fry until crispy.</description>
+      <duration_minutes>5</duration_minutes>
+      <tools>frying pan</tools>
+    </step>
+    <step>
+      <description>In a bowl, whisk the eggs, pecorino romano cheese, and black pepper.</description>
+      <duration_minutes>2</duration_minutes>
+      <tools>bowl, whisk</tools>
+    </step>
+    <step>
+      <description>Drain the spaghetti and add it to the pan with the guanciale.</description>
+      <duration_minutes>1</duration_minutes>
+      <tools>tongs</tools>
+    </step>
+    <step>
+      <description>Remove the pan from the heat and add the egg mixture. Toss quickly to combine.</description>
+      <duration_minutes>2</duration_minutes>
+      <tools>tongs</tools>
+    </step>
+
+  </steps>
+</recipe>

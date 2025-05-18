@@ -1,0 +1,31 @@
+[ecosystem]
+name = "Azure Highlands"
+location = {
+    latitude = 42.354
+    longitude = -122.678
+}
+climate = {
+    type = "temperate"
+    average_temperature_c = 10.5
+    annual_rainfall_mm = 750
+}
+
+[ecosystem.species]
+- common_name = "Spotted Azure Lynx"
+  scientific_name = "Lynx azureus"
+  population_estimate = 150
+  conservation_status = "Vulnerable"
+  notable_characteristics = [
+    "Has a distinctive blue-spotted coat",
+    "Excellent climber with strong paws",
+    "Predominantly nocturnal"
+  ]
+- common_name = "Crimson Crested Warbler"
+  scientific_name = "Sylvia crimsonis"
+  population_estimate = 5000
+  conservation_status = "Least Concern"
+  notable_characteristics = [
+    "Vibrant crimson crest",
+    "Melodious song",
+    "Insectivorous diet"
+  ]

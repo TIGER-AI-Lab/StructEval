@@ -1,0 +1,23 @@
+
+planet: Zephyron
+details:
+  type: Gas Giant
+  discovery:
+    year: 2197
+    method: Transit
+  moons:
+    - name: Aeolus
+      diameter_km: 3200
+    - name: Boreas
+      diameter_km: 1500
+    - name: Eurus
+      diameter_km: 800
+atmosphere:
+  primary_gases:
+    - Hydrogen
+    - Helium
+    - Methane
+  pressure_atm: 3.2
+rings:
+  present: Yes
+  composition: Ice and Dust

@@ -1,0 +1,44 @@
+artifact = {
+    name = "The Enigma Tablet",
+    discovery_date = "1923-08-15",
+    origin = {
+        civilization = "The Lost Tribe",
+        location = "Mount Enigma, Island of Myst"
+    },
+    dimensions = {
+        height_cm = 12.5,
+        width_cm = 8.7
+    },
+    materials = [
+        {
+            type = "Obsidian",
+            percentage = 75
+        },
+        {
+            type = "Gold",
+            percentage = 25
+        }
+    ],
+    inscriptions = [
+        {
+            language = "EnigmaScript",
+            translation = "In the name of the Great Enigma, may the bearer find peace."
+        },
+        {
+            language = "EnigmaGlyphs",
+            translation = "May the secrets of the universe be revealed to you."
+        }
+    ],
+    provenance = {
+        previous_owners = [
+            {
+                owner_name = "Dr. Amelia Hart",
+                acquisition_year = 1923
+            },
+            {
+                owner_name = "The National Museum of Enigmas",
+                acquisition_year = 1925
+            }
+        ]
+    }
+}

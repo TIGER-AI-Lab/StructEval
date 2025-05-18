@@ -1,0 +1,40 @@
+{
+  "artifact": {
+    "name": "Rosetta Stone",
+    "origin": {
+      "civilization": "Ancient Egyptian",
+      "era": "Ptolemaic Period"
+    },
+    "materials": {
+      "primary": "Granodiorite",
+      "secondary": "None"
+    },
+    "dimensions": {
+      "height_cm": 112.3,
+      "width_cm": 75.7,
+      "depth_cm": 28.4
+    },
+    "features": [
+      {
+        "type": "Inscription",
+        "description": "Decree inscribed in three scripts: Hieroglyphic, Demotic, and Ancient Greek.",
+        "preservation_state": "Mostly intact, some surface erosion"
+      },
+      {
+        "type": "Fragment",
+        "description": "The stone is a fragment of a larger stele; the top right and bottom left corners are missing.",
+        "preservation_state": "Fragmentary"
+      }
+    ],
+    "discovery": {
+      "date_found": "1799-07-15",
+      "location": {
+        "country": "Egypt",
+        "coordinates": {
+          "latitude": 31.3000,
+          "longitude": 30.4167
+        }
+      }
+    }
+  }
+}

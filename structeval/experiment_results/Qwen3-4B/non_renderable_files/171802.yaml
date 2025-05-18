@@ -1,0 +1,13 @@
+
+galacticZoo:
+  animals:
+    - name: Quazil
+      species: Plasma Lynx
+      origin:
+        planet: Xenthra
+        galaxy: Andromeda
+    - name: Vorb
+      species: Neon Tortoise
+      origin:
+        planet: Orionis
+        galaxy: Milky Way

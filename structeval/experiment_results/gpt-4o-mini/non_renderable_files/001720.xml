@@ -1,0 +1,44 @@
+
+<book>
+    <title>The Enchanted Forest</title>
+    <author>
+        <name>Jane Doe</name>
+        <birthYear>1985</birthYear>
+    </author>
+    <publication>
+        <year>2023</year>
+        <publisher>Fantasy Press</publisher>
+    </publication>
+    <genres>
+        <genre>
+            <name>Fantasy</name>
+            <popularity>85</popularity>
+        </genre>
+        <genre>
+            <name>Adventure</name>
+            <popularity>75</popularity>
+        </genre>
+    </genres>
+    <chapters>
+        <chapter>
+            <title>The Beginning of Magic</title>
+            <pages>20</pages>
+        </chapter>
+        <chapter>
+            <title>The Quest Unfolds</title>
+            <pages>25</pages>
+        </chapter>
+    </chapters>
+    <reviews>
+        <review>
+            <reviewer>John Smith</reviewer>
+            <rating>4</rating>
+            <date>2023-10-01</date>
+        </review>
+        <review>
+            <reviewer>Emily Johnson</reviewer>
+            <rating>5</rating>
+            <date>2023-10-05</date>
+        </review>
+    </reviews>
+</book>

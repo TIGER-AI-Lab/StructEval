@@ -1,0 +1,39 @@
+
+{
+  "name": "string",
+  "species": "string",
+  "origin": {
+    "planet": "string",
+    "galaxy": "string"
+  },
+  "abilities": [
+    {
+      "type": "string",
+      "description": "string",
+      "power_level": 1-100
+    },
+    {
+      "type": "string",
+      "description": "string",
+      "power_level": 1-100
+    }
+  ],
+  "appearance": {
+    "height_cm": number,
+    "skin_color": "string",
+    "eye_count": number
+  },
+  "history": {
+    "first_sighting": "ISO-8601 date",
+    "known_encounters": [
+      {
+        "location": "string",
+        "date": "ISO-8601 date"
+      },
+      {
+        "location": "string",
+        "date": "ISO-8601 date"
+      }
+    ]
+  }
+}

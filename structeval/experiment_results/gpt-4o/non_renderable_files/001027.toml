@@ -1,0 +1,22 @@
+[ecosystem.planet]
+name = "Xylaria"
+orbital_period_days = 365.25
+terrain_types = ["mountainous", "forest", "oceanic"]
+
+[ecosystem.planet.atmosphere]
+composition = ["nitrogen", "oxygen", "argon"]
+pressure_kpa = 101.3
+
+[[ecosystem.planet.native_species]]
+species_name = "Xylaria magnus"
+population_estimate = 5000000
+classification = "mammal"
+average_lifespan_years = 85
+diet = "omnivore"
+notable_traits = ["bioluminescent skin", "telepathic communication"]
+
+[[ecosystem.planet.habitats]]
+habitat_name = "Verdant Highlands"
+dominant_species = "Xylaria magnus"
+climate_type = "temperate"
+average_temperature_c = 15.5

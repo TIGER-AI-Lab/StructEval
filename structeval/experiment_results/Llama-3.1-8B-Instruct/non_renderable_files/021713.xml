@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<planet>
+    <name>Aurelia</name>
+    <system>
+        <star>
+            <name>Helios</name>
+            <type>G-type</type>
+            <distance_from_earth>42.7</distance_from_earth>
+        </star>
+    </system>
+    <moons>
+        <moon>
+            <name>Selene</name>
+            <diameter_km>3200</diameter_km>
+            <has_atmosphere>true</has_atmosphere>
+        </moon>
+        <moon>
+            <name>Nyx</name>
+            <diameter_km>2100</diameter_km>
+            <has_atmosphere>false</has_atmosphere>
+        </moon>
+    </moons>
+    <atmosphere>
+        <composition>
+            <element>Nitrogen</element>
+            <percentage>78</percentage>
+        </composition>
+        <composition>
+            <element>Oxygen</element>
+            <percentage>21</percentage>
+        </composition>
+    </atmosphere>
+    <discovered_by>Dr. Vega</discovered_by>
+    <discovery_year>2145</discovery_year>
+</planet>

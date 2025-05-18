@@ -1,0 +1,50 @@
+<Planet Name="Zephyra" SolarSystem="Andromeda" DiscoveryYear="2345" DiscoveryAstronomer="Dr. Lira Nox">
+    <AtmosphereComposition>
+        <Gas>Hydrogen</Gas>
+        <Percentage>85</Percentage>
+    </AtmosphereComposition>
+    <AtmosphereComposition>
+        <Gas>Nitrogen</Gas>
+        <Percentage>10</Percentage>
+    </AtmosphereComposition>
+    <AtmospherePressure>0.9</AtmospherePressure>
+    <Moons>
+        <Moon Name="Phobos" Diameter_km="22.2"/>
+        <Moon Name="Deimos" Diameter_km="12.4"/>
+    </Moons>
+    <HasRings>Yes</HasRings>
+    <SurfaceTemperature_C>-120</SurfaceTemperature_C>
+    <NotableEvents>
+        <Event>FirstLanding</Event>
+        <Year>2390</Year>
+    </NotableEvents>
+    <NotableEvents>
+        <Event>AlienSignalDetected</Event>
+        <Year>2401</Year>
+    </NotableEvents>
+</Planet>
+<Planet Name="Calypsion" SolarSystem="Pegasus" DiscoveryYear="2201" DiscoveryAstronomer="Prof. M. Quill">
+    <AtmosphereComposition>
+        <Gas>Oxygen</Gas>
+        <Percentage>45</Percentage>
+    </AtmosphereComposition>
+    <AtmosphereComposition>
+        <Gas>Nitrogen</Gas>
+        <Percentage>50</Percentage>
+    </AtmosphereComposition>
+    <AtmospherePressure>1.5</AtmospherePressure>
+    <Moons>
+        <Moon Name="Selene" Diameter_km="35.7"/>
+        <Moon Name="Nyx" Diameter_km="18.6"/>
+    </Moons>
+    <HasRings>No</HasRings>
+    <SurfaceTemperature_C>-180</SurfaceTemperature_C>
+    <NotableEvents>
+        <Event>DiscoveredRings</Event>
+        <Year>2250</Year>
+    </NotableEvents>
+    <NotableEvents>
+        <Event>VolcanicEruption</Event>
+        <Year>2265</Year>
+    </NotableEvents>
+</Planet>

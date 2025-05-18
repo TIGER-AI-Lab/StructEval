@@ -1,0 +1,56 @@
+<recipe>
+  <title>Galactic Guacamole</title>
+  <author>
+    <name>Cosmo Cook</name>
+    <profileUrl>https://www.cosmocook.com</profileUrl>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Avocados</name>
+      <quantity>3</quantity>
+      <unit>pieces</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Space Salt</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Nebula Nectar</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+      <optional>true</optional>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <order>1</order>
+      <instruction>Mash the avocados in a bowl.</instruction>
+      <timer>
+        <seconds>60</seconds>
+      </timer>
+      <notes>Make sure the avocados are ripe for optimal mashing.</notes>
+    </step>
+    <step>
+      <order>2</order>
+      <instruction>Add the space salt and nebula nectar.</instruction>
+      <timer>
+        <seconds>30</seconds>
+      </timer>
+      <notes>Mix well.</notes>
+    </step>
+  </steps>
+  <metadata>
+    <cuisine>Intergalactic</cuisine>
+    <prepTimeMinutes>5</prepTimeMinutes>
+    <tags>
+      <tag>vegan</tag>
+      <tag>easy</tag>
+    </tags>
+  </metadata>
+  <nutrition>
+    <calories>250</calories>
+  </nutrition>
+</recipe>

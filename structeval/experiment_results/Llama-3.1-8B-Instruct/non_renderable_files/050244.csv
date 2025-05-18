@@ -1,0 +1,70 @@
+
+import json
+import csv
+
+data = '''[
+  {
+    "Constellation": "Orion",
+    "Star_Name": "Betelgeuse",
+    "Magnitude": 0.42,
+    "Discovery_Year": 1836,
+    "Spectral_Type": "M2Iab",
+    "Distance_Light_Years": 642.5,
+    "Last_Observed": "2023-12-12"
+  },
+  {
+    "Constellation": "Canis Major",
+    "Star_Name": "Sirius",
+    "Magnitude": -1.46,
+    "Discovery_Year": 1844,
+    "Spectral_Type": "A1V",
+    "Distance_Light_Years": 8.6,
+    "Last_Observed": "2023-10-02"
+  },
+  {
+    "Constellation": "Lyra",
+    "Star_Name": "Vega",
+    "Magnitude": 0.03,
+    "Discovery_Year": 1850,
+    "Spectral_Type": "A0V",
+    "Distance_Light_Years": 25.0,
+    "Last_Observed": "2024-01-14"
+  },
+  {
+    "Constellation": "Taurus",
+    "Star_Name": "Aldebaran",
+    "Magnitude": 0.85,
+    "Discovery_Year": 1864,
+    "Spectral_Type": "K5III",
+    "Distance_Light_Years": 65.1,
+    "Last_Observed": "2023-11-27"
+  },
+  {
+    "Constellation": "Centaurus",
+    "Star_Name": "Alpha Centauri",
+    "Magnitude": -0.27,
+    "Discovery_Year": 1839,
+    "Spectral_Type": "G2V",
+    "Distance_Light_Years": 4.37,
+    "Last_Observed": "2024-02-05"
+  },
+  {
+    "Constellation": "Aquila",
+    "Star_Name": "Altair",
+    "Magnitude": 0.77,
+    "Discovery_Year": 1900,
+    "Spectral_Type": "A7V",
+    "Distance_Light_Years": 16.7,
+    "Last_Observed": "2023-09-18"
+  }
+]'''
+
+data = json.loads(data)
+
+with open('stars.csv', 'w', newline='') as csvfile:
+    fieldnames = ['Constellation', 'Star_Name', 'Magnitude', 'Discovery_Year', 'Spectral_Type', 'Distance_Light_Years', 'Last_Observed']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for star in data:
+        writer.writerow(star)

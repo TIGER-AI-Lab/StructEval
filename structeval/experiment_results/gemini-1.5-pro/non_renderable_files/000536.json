@@ -1,0 +1,35 @@
+{
+  "ecosystem": {
+    "name": "The Whispering Woods",
+    "location": {
+      "latitude": 34.56,
+      "longitude": -118.24
+    },
+    "climate": {
+      "type": "temperate",
+      "average_temperature_celsius": 15.5
+    },
+    "dominant_species": "Giant Redwood",
+    "plant_species": [
+      {
+        "scientific_name": "Sequoiadendron giganteum",
+        "common_name": "Giant Redwood",
+        "population_estimate": 5000
+      }
+    ],
+    "animal_species": [
+      {
+        "scientific_name": "Ursus arctos californicus",
+        "conservation_status": "vulnerable",
+        "average_lifespan_years": 20,
+        "diet": "omnivore"
+      }
+    ],
+    "environmental_threats": [
+      {
+        "type": "habitat loss",
+        "severity": "medium"
+      }
+    ]
+  }
+}

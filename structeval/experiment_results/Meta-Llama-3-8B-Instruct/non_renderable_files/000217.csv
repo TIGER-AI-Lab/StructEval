@@ -1,0 +1,5 @@
+
+"artifact_id","artifact_name","origin_culture","origin_period","discovery_location","estimated_age_years","material_composition","dimensions_height_cm","dimensions_width_cm","dimensions_depth_cm","current_location","condition_status","inscriptions_present","inscription_languages","notable_features","related_artifacts"
+"ART001","Golden Mask","Ancient Egyptian","New Kingdom","Thebes","2500","gold, lapis lazuli","15.5","10.2","3.8","Egyptian Museum, Cairo","intact","true","Egyptian hieroglyphics","ornate design, intricate details","ART002, ART003"
+"ART002","Bronze Sword","Ancient Greek","Classical Period","Troy","1200","bronze, iron","60.5","5.1","2.5","National Archaeological Museum, Athens","fragmented","false","-","unique hilt design, battle-worn","ART001"
+"ART003","Terracotta Vase","Ancient Greek","Hellenistic Period","Pergamon","500","terracotta, paint","30.8","20.1","10.2","Pergamon Museum, Berlin","intact","true","Greek","ornate patterns, delicate design","ART002"

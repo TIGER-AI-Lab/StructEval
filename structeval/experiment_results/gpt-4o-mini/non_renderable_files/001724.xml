@@ -1,0 +1,69 @@
+
+<recipe>
+    <name>Classic Spaghetti Carbonara</name>
+    <author>Chef Mario Rossi</author>
+    <cuisine>Italian</cuisine>
+    <prepTime>PT15M</prepTime>
+    <cookTime>PT20M</cookTime>
+    <servings>4</servings>
+    <ingredients>
+        <ingredient>
+            <name>spaghetti</name>
+            <quantity>400</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>eggs</name>
+            <quantity>4</quantity>
+            <unit>large</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>parmesan cheese</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>pancetta</name>
+            <quantity>150</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>black pepper</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+            <optional>true</optional>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Boil a large pot of salted water and cook the spaghetti according to package instructions until al dente.</description>
+            <duration>PT10M</duration>
+        </step>
+        <step>
+            <order>2</order>
+            <description>In a bowl, whisk together the eggs and grated parmesan cheese.</description>
+            <duration>PT5M</duration>
+        </step>
+        <step>
+            <order>3</order>
+            <description>In a pan, cook the pancetta until crispy, then remove from heat.</description>
+            <duration>PT5M</duration>
+        </step>
+        <step>
+            <order>4</order>
+            <description>Drain the spaghetti and quickly mix it with the pancetta and egg mixture, adding reserved pasta water as needed.</description>
+            <duration>PT5M</duration>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>600</calories>
+        <fat>25</fat>
+        <protein>30</protein>
+        <carbohydrates>70</carbohydrates>
+    </nutrition>
+</recipe>

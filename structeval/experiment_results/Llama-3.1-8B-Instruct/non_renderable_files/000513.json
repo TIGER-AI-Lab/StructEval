@@ -1,0 +1,46 @@
+
+{
+  "artifact": {
+    "name": "The Golden Chalice",
+    "discovery_date": "2020-07-15",
+    "origin": {
+      "civilization": "Ancient Egyptians",
+      "location": "Thebes, Egypt"
+    },
+    "materials": [
+      {
+        "type": "Gold",
+        "purity": 95.5
+      },
+      {
+        "type": "Copper",
+        "purity": 98.2
+      }
+    ],
+    "dimensions": {
+      "height_cm": 25.5,
+      "width_cm": 15.8,
+      "depth_cm": 10.2
+    },
+    "features": [
+      {
+        "description": "Intricate hieroglyphics on the rim",
+        "estimated_age_years": 3500
+      },
+      {
+        "description": "Delicate filigree work on the handle",
+        "estimated_age_years": 3200
+      }
+    ],
+    "current_location": {
+      "museum": "The Egyptian Museum",
+      "display_case": "Case 12, Room 3"
+    },
+    "historical_significance": {
+      "summary": "The Golden Chalice is a significant artifact of Ancient Egyptian culture, representing the advanced metalworking skills of the time.",
+      "references": [
+        "Smith, J. (2019). The Art of Ancient Egypt. New York: Random House."
+      ]
+    }
+  }
+}

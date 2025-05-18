@@ -1,0 +1,42 @@
+
+<exoplanet>
+    <planet>
+        <name>HD 209458 b</name>
+        <type>gas giant</type>
+        <discovery date="1999-11-04">
+            <method>transit</method>
+            <telescope>Smithsonian Astrophysical Observatory</telescope>
+        </discovery>
+        <orbit>
+            <period>3.524</period>
+            <eccentricity>0.016</eccentricity>
+            <semi_major_axis>0.047</semi_major_axis>
+        </orbit>
+        <atmosphere>
+            <composition>hydrogen, helium, water vapor</composition>
+            <pressure>0.1</pressure>
+        </atmosphere>
+        <moons>
+            <moon>
+                <name>Moon A</name>
+                <diameter>1500</diameter>
+                <discovery year="2001"/>
+                <composition>rocky</composition>
+            </moon>
+            <moon>
+                <name>Moon B</name>
+                <diameter>800</diameter>
+                <discovery year="2003"/>
+                <composition>icy</composition>
+            </moon>
+        </moons>
+        <rings present="true" count="3">
+            <details>
+                <ring>
+                    <material>ice</material>
+                    <width>1000</width>
+                </ring>
+            </details>
+        </rings>
+    </planet>
+</exoplanet>

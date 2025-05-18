@@ -1,0 +1,22 @@
+
+import pandas as pd
+
+recipes = pd.DataFrame({
+    'recipe_id': [1, 2, 3, 4, 5],
+    'recipe_name': ['Martian Mushroom Stew', 'Quantum Quinoa Salad', 'Neo-Japanese Sushi Roll', 'Molecular Chocolate Mousse', 'Interstellar Ice Cream'],
+    'chef_name': ['Chef Zephyr', 'Chef Nova', 'Chef Luna', 'Chef Orion', 'Chef Vega'],
+    'cuisine_type': ['Martian', 'Molecular', 'Neo-Japanese', 'Molecular', 'Interstellar'],
+    'difficulty_level': ['Easy', 'Medium', 'Hard', 'Medium', 'Easy'],
+    'prep_time_minutes': [30, 45, 60, 30, 15],
+    'cook_time_minutes': [20, 30, 45, 15, 30],
+    'servings': [4, 6, 8, 2, 1],
+    'ingredient_list': ['Mushrooms;Quinoa;Soy Sauce;Mirin;Sesame Oil;Green Onions', 'Quinoa;Spinach;Edamame;Miso Paste;Sesame Seeds;Rice Vinegar', 'Sushi Rice;Avocado;Cucumber;Eel;Salmon;Pickled Ginger', 'Dark Chocolate;Gelatin;Lemon Juice;Sugar;Egg Whites', 'Milk;Cream;Sugar;Vanilla Extract;Chocolate Chips'],
+    'ingredient_quantities': ['2 cups;1 cup;1/4 cup;1/4 cup;1/4 cup;1/4 cup', '1 cup;1 cup;1 cup;1/4 cup;1/4 cup;1/4 cup', '1 cup;1/2 avocado;1/2 cucumber;1/4 eel;1/4 salmon;1/4 pickled ginger', '1 cup;1 tbsp;1 tbsp;1/4 cup;2 egg whites', '1 cup;1 cup;1/2 cup;1 tsp;1/2 cup'],
+    'ingredient_units': ['cups;cup;cup;cup;cup', 'cup;cup;cup;cup;cup;cup', 'cup;cup;cup;cup;cup;cup', 'cup;tbsp;tbsp;tbsp;cup', 'cup;cup;tbsp;tsp;cup'],
+    'steps': ['SautÃ© mushrooms, add quinoa, soy sauce, mirin, sesame oil, and green onions; simmer', 'Cook quinoa, add spinach, edamame, miso paste, sesame seeds, and rice vinegar; mix', 'Prepare sushi rice, slice avocado and cucumber, add eel and salmon; roll sushi', 'Melt chocolate, add gelatin, lemon juice, sugar, and egg whites; chill', 'Combine milk, cream, sugar, vanilla extract, and chocolate chips; freeze'],
+    'main_ingredient': ['Mushrooms', 'Quinoa', 'Sushi Rice', 'Dark Chocolate', 'Milk'],
+    'vegetarian': [True, True, True, True, True],
+    'date_published': ['2022-01-01', '2022-01-02', '2022-01-03', '2022-01-04', '2022-01-05']
+})
+
+recipes.to_csv('recipes.csv', index=False)

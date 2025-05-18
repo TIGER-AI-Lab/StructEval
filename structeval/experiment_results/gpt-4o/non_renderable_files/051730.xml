@@ -1,0 +1,28 @@
+<galacticZoo>
+  <species>
+    <name>Zyglon</name>
+    <habitat>Nebula Gardens</habitat>
+    <diet>plasma</diet>
+    <abilities>
+      <ability>
+        <name>Invisibility</name>
+        <description>Can become invisible in cosmic fog.</description>
+      </ability>
+      <ability>
+        <name>Telepathy</name>
+        <description>Communicates with other Zyglons across galaxies.</description>
+      </ability>
+    </abilities>
+  </species>
+  <species>
+    <name>Quasarfin</name>
+    <habitat>Asteroid Lakes</habitat>
+    <diet>mineral dust</diet>
+    <abilities>
+      <ability>
+        <name>Gravity Surfing</name>
+        <description>Rides gravitational waves for quick travel.</description>
+      </ability>
+    </abilities>
+  </species>
+</galacticZoo>

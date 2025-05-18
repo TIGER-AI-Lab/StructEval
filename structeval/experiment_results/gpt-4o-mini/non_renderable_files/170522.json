@@ -1,0 +1,38 @@
+
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "starSystems": [
+      {
+        "systemName": "Alpha",
+        "planets": [
+          {
+            "planetName": "Zephyrus",
+            "moons": [
+              "Selene",
+              "Io"
+            ]
+          },
+          {
+            "planetName": "Helios",
+            "moons": [
+              "Phobos"
+            ]
+          }
+        ]
+      },
+      {
+        "systemName": "Beta",
+        "planets": [
+          {
+            "planetName": "Nyx",
+            "moons": [
+              "Luna",
+              "Callisto"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+
+<planet>
+  <name>Orbiteria</name>
+  <orbitalPeriod>245</orbitalPeriod>
+  <discovery year="1987" method="radial velocity" telescope="Keck Observatory"/>
+  <atmosphere>
+    <composition>nitrogen, oxygen, carbon dioxide</composition>
+    <pressure>101.3</pressure>
+    <temperature>298</temperature>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>Orbita</name>
+      <diameter>3000</diameter>
+      <orbitalPeriod>7</orbitalPeriod>
+      <discoveredBy>Orbiterian Astronomical Society</discoveredBy>
+      <discoveryDate>1990-06-15</discoveryDate>
+    </moon>
+  </moons>
+  <surface>
+    <features>
+      <feature type="crater" coordinates="30N, 45E"/>
+      <feature type="mountain" coordinates="15S, 60W"/>
+      <feature type="canyon" coordinates="0N, 0E"/>
+    </features>
+  </surface>
+</planet>

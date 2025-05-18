@@ -1,0 +1,13 @@
+import pandas as pd
+
+data = {
+    'planet_name': ['Zephyra', 'Quarnyx', 'Eldoria', 'Virell', 'Surnis', 'Mynth'],
+    'distance_lightyears': [42.7, 89.2, 15.6, 73.9, 38.1, 101.4],
+    'discovered_by': ['Dr. Linx', 'Prof. Taro', 'Dr. Vega', 'Capt. Rilo', 'Dr. Linx', 'Prof. Taro'],
+    'discovery_date': ['2215-11-03', '2230-07-21', '2201-03-14', '2222-12-30', '2217-05-09', '2240-02-18'],
+    'has_rings': [True, False, True, False, True, False],
+    'surface_temperature_c': [-180, 320, 45, -50, 110, 210]
+}
+
+df = pd.DataFrame(data)
+df.to_csv('planets.csv', index=False)

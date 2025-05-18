@@ -1,0 +1,24 @@
+
+exhibit:
+  title: "Modern Visions: Art of the 20th Century"
+  curator:
+    name: "Dr. Elena Martinez"
+    contact_email: "curator@modernvisions.org"
+  opening_date: "2023-11-01"
+  closing_date: "2023-11-15"
+  artworks:
+    - artist: "James Carter"
+      title: "Echoes of Time"
+      year_created: 1998
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 120.5
+        width_cm: 160.2
+      provenance:
+        previous_owners:
+          - "Private Collection, 1998-2005"
+          - "The Metropolitan Museum, 2005-2010"
+        acquisition_date: "2010-03-15"
+      on_loan: false
+      gallery_location:
+        room_number: "A3"

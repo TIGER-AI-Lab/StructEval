@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001130</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+`;
+
+const FormContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+`;
+
+const FormField = styled.div`
+  margin-bottom: 10px;
+`;
+
+const Button = styled.button`
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: ${props => props.green ? 'green' : 'grey'};
+  color: white;
+`;
+
+const ConfirmationMessage = styled.p`
+  margin-top: 10px;
+  color: green;
+`;
+
+
+function ReservationForm() {
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [date, setDate] = useState('');
+  const [time, setTime] = useState('');
+  const [guests, setGuests] = useState('Select number of guests');
+  const [isConfirmed, setIsConfirmed] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (name && phone && date && time && guests !== 'Select number of guests') {
+      setIsConfirmed(true);
+    } else {
+      alert('Please fill in all fields.');
+    }
+  };
+
+  return (
+    <Container>
+      <h1>Reserve Your Table</h1>
+      <FormContainer>
+        <FormField>
+          <input type="text" placeholder="Enter your full name" value={name} onChange={(e) => setName(e.target.value)} />
+        </FormField>
+        <FormField>
+          <input type="tel" placeholder="Enter your phone number" value={phone} onChange={(e) => setPhone(e.target.value)} />
+        </FormField>
+        <FormField>
+          <label htmlFor="reservationDate">Reservation Date:</label>
+          <input type="date" id="reservationDate" value={date} onChange={(e) => setDate(e.target.value)} />
+        </FormField>
+        <FormField>
+          <label htmlFor="reservationTime">Reservation Time:</label>
+          <input type="time" id="reservationTime" value={time} onChange={(e) => setTime(e.target.value)} />
+        </FormField>
+        <FormField>
+          <select value={guests} onChange={(e) => setGuests(e.target.value)}>
+            <option disabled>Select number of guests</option>
+            {[...Array(10)].map((_, i) => (
+              <option key={i + 1} value={i + 1}>{i + 1}</option>
+            ))}
+          </select>
+        </FormField>
+        <Button green onClick={handleSubmit}>Book Now</Button>
+        <Button onClick={() => { /* Handle Cancel action */ }}>Cancel</Button>
+        {isConfirmed && <ConfirmationMessage>Reservation confirmed!</ConfirmationMessage>}
+      </FormContainer>
+    </Container>
+  );
+}
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<ReservationForm />);
+
+    </script>
+  </body>
+</html>

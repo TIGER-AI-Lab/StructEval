@@ -1,0 +1,109 @@
+
+import json
+
+class Exhibit:
+    def __init__(self, title, curator, artifacts):
+        self.title = title
+        self.curator = Curator(curator['name'], curator['contact'])
+        self.artifacts = [Artifact(artifact) for artifact in artifacts]
+
+class Curator:
+    def __init__(self, name, contact):
+        self.name = name
+        self.contact = Contact(contact['email'], contact['phone'])
+
+class Contact:
+    def __init__(self, email, phone):
+        self.email = email
+        self.phone = phone
+
+class Artifact:
+    def __init__(self, data):
+        self.id = data['id']
+        self.name = data['name']
+        self.artist = data.get('artist', '')
+        self.year = data['year']
+        self.medium = data['medium']
+        self.provenance = Provenance(data['provenance'])
+        self.dimensions = Dimensions(data['dimensions'])
+        self.on_display = data['on_display']
+
+class Provenance:
+    def __init__(self, data):
+        self.previous_owners = data['previous_owners']
+        self.acquisition_date = data['acquisition_date']
+
+class Dimensions:
+    def __init__(self, data):
+        self.height_cm = data['height_cm']
+        self.width_cm = data['width_cm']
+        self.depth_cm = data['depth_cm']
+
+# Example data
+exhibit_data = {
+    'title': 'Exhibit Title',
+    'curator': {
+        'name': 'Curator Name',
+        'contact': {
+            'email': 'curator@example.com',
+            'phone': '+1 123 456 7890'
+        }
+    },
+    'artifacts': [
+        {
+            'id': 'artifact-1',
+            'name': 'Artifact Name',
+            'artist': 'Artist Name',
+            'year': 2020,
+            'medium': 'Painting',
+            'provenance': {
+                'previous_owners': ['Owner 1', 'Owner 2'],
+                'acquisition_date': '2020-01-01'
+            },
+            'dimensions': {
+                'height_cm': 100,
+                'width_cm': 200,
+                'depth_cm': 50
+            },
+            'on_display': True
+        }
+    ]
+}
+
+# Create exhibit object
+exhibit = Exhibit(exhibit_data['title'], exhibit_data['curator'], exhibit_data['artifacts'])
+
+# Convert exhibit object to JSON
+exhibit_json = json.dumps({
+    'exhibit': {
+        'title': exhibit.title,
+        'curator': {
+            'name': exhibit.curator.name,
+            'contact': {
+                'email': exhibit.curator.contact.email,
+                'phone': exhibit.curator.contact.phone
+            }
+        },
+        'artifacts': [
+            {
+                'id': exhibit.artifacts[0].id,
+                'name': exhibit.artifacts[0].name,
+                'artist': exhibit.artifacts[0].artist,
+                'year': exhibit.artifacts[0].year,
+                'medium': exhibit.artifacts[0].medium,
+                'provenance': {
+                    'previous_owners': exhibit.artifacts[0].provenance.previous_owners,
+                    'acquisition_date': exhibit.artifacts[0].provenance.acquisition_date
+                },
+                'dimensions': {
+                    'height_cm': exhibit.artifacts[0].dimensions.height_cm,
+                    'width_cm': exhibit.artifacts[0].dimensions.width_cm,
+                    'depth_cm': exhibit.artifacts[0].dimensions.depth_cm
+                },
+                'on_display': exhibit.artifacts[0].on_display
+            }
+        ]
+    }
+})
+
+print(exhibit_json)

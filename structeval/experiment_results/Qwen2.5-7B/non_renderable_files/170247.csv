@@ -1,0 +1,75 @@
+
+import csv
+from xml.etree import ElementTree
+
+# Parse the XML data
+xml_data = '''
+<spaceships>
+  <row>
+    <SpaceshipName>Star Gazer</SpaceshipName>
+    <Captain>Lyra Voss</Captain>
+    <CrewSize>12</CrewSize>
+    <LaunchDate>2125-04-18</LaunchDate>
+    <HomePlanet>Nova Prime</HomePlanet>
+    <EngineType>Quantum Pulse</EngineType>
+  </row>
+  <row>
+    <SpaceshipName>Celestial Wanderer</SpaceshipName>
+    <Captain>Jax Orion</Captain>
+    <CrewSize>7</CrewSize>
+    <LaunchDate>2130-09-02</LaunchDate>
+    <HomePlanet>Terra Nova</HomePlanet>
+    <EngineType>Antimatter Drive</EngineType>
+  </row>
+  <row>
+    <SpaceshipName>Photon Arrow</SpaceshipName>
+    <Captain>Rhea Solis</Captain>
+    <CrewSize>5</CrewSize>
+    <LaunchDate>2118-12-23</LaunchDate>
+    <HomePlanet>Vega IX</HomePlanet>
+    <EngineType>Solar Ion</EngineType>
+  </row>
+  <row>
+    <SpaceshipName>Void Runner</SpaceshipName>
+    <Captain>Ezra Kane</Captain>
+    <CrewSize>9</CrewSize>
+    <LaunchDate>2122-06-15</LaunchDate>
+    <HomePlanet>Orionis</HomePlanet>
+    <EngineType>Dark Matter Fusion</EngineType>
+  </row>
+  <row>
+    <SpaceshipName>Galactic Nomad</SpaceshipName>
+    <Captain>Seren Arcturus</Captain>
+    <CrewSize>15</CrewSize>
+    <LaunchDate>2135-01-30</LaunchDate>
+    <HomePlanet>Altair</HomePlanet>
+    <EngineType>Warp Coil</EngineType>
+  </row>
+  <row>
+    <SpaceshipName>Comet Whisper</SpaceshipName>
+    <Captain>Nova Elric</Captain>
+    <CrewSize>8</CrewSize>
+    <LaunchDate>2128-08-11</LaunchDate>
+    <HomePlanet>Zephyria</HomePlanet>
+    <EngineType>Plasma Stream</EngineType>
+  </row>
+</spaceships>
+'''
+
+# Parse the XML data
+root = ElementTree.fromstring(xml_data)
+
+# Extract the column names from the first row
+columns = [child.tag for child in root[0]]
+
+# Create a list to store the CSV data
+csv_data = [columns]
+
+# Extract the data from the remaining rows
+for row in root[1:]:
+    csv_data.append([child.text for child in row])
+
+# Write the CSV data to a file
+with open('spaceships.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerows(csv_data)

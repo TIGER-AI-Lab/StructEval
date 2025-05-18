@@ -1,0 +1,32 @@
+[recipe]
+title = "Spaghetti Carbonara"
+
+[recipe.author]
+name = "John Doe"
+
+[recipe.author.contact]
+email = "john.doe@example.com"
+phone = "+1-555-123-4567"
+
+[[recipe.ingredients]]
+name = "Spaghetti"
+quantity = 250
+unit = "g"
+
+[[recipe.ingredients]]
+name = "Eggs"
+quantity = 4
+unit = ""
+
+[[recipe.steps]]
+instruction = "Cook spaghetti according to package directions."
+duration_minutes = 10
+
+[[recipe.steps]]
+instruction = "Whisk eggs, cheese, and pepper."
+duration_minutes = 5
+
+[recipe.metadata]
+servings = 4
+cuisine = "Italian"
+difficulty = "medium"

@@ -1,0 +1,75 @@
+{
+  "zoo_name": "Galactic Wildlife Sanctuary",
+  "location": {
+    "city": "Nebulon",
+    "country": "Andromeda",
+    "coordinates": {
+      "latitude": 42.1234,
+      "longitude": -71.5678
+    }
+  },
+  "established_year": 3042,
+  "animals": [
+    {
+      "species": "Star Panther",
+      "name": "Orion",
+      "age": 7,
+      "enclosure": {
+        "number": 12,
+        "type": "BioDome"
+      },
+      "feeding_schedule": [
+        {
+          "time": "08:00",
+          "food": "Nebula Berries"
+        },
+        {
+          "time": "18:00",
+          "food": "Quantum Fish"
+        }
+      ]
+    },
+    {
+      "species": "Moon Rabbit",
+      "name": "Luna",
+      "age": 3,
+      "enclosure": {
+        "number": 7,
+        "type": "Lunar Habitat"
+      },
+      "feeding_schedule": [
+        {
+          "time": "09:00",
+          "food": "Celestial Carrots"
+        },
+        {
+          "time": "20:00",
+          "food": "Starlight Hay"
+        }
+      ]
+    }
+  ],
+  "staff": {
+    "director": "Dr. Vega Pulsar",
+    "keepers": [
+      {
+        "name": "Cassiopeia Drift",
+        "experience_years": 12
+      },
+      {
+        "name": "Rigel Storm",
+        "experience_years": 8
+      }
+    ]
+  },
+  "special_events": [
+    {
+      "event_name": "Meteor Shower Gala",
+      "date": "3042-07-15"
+    },
+    {
+      "event_name": "Intergalactic Animal Parade",
+      "date": "3042-09-23"
+    }
+  ]
+}

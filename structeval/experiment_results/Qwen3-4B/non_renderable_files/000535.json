@@ -1,0 +1,34 @@
+
+{
+  "artifact": {
+    "name": "Ceremonial Axe of the Valley",
+    "type": "tool",
+    "discovery": {
+      "date": "2023-04-15",
+      "location": {
+        "latitude": 34.0522,
+        "longitude": -118.2437
+      },
+      "team": [
+        {
+          "member_name": "Dr. Elena Martinez",
+          "role": "archaeologist",
+          "experience_years": 25
+        }
+      ]
+    },
+    "materials": ["obsidian", "bronze", "ivory"],
+    "dimensions": {
+      "height_cm": 75,
+      "width_cm": 30,
+      "depth_cm": 15
+    },
+    "hypotheses": [
+      {
+        "theory": "The artifact was a ceremonial weapon used in ritualistic ceremonies to symbolize power and connection to the divine.",
+        "proposed_by": "Dr. Samuel Thompson",
+        "evidence": "The presence of ritualistic engravings on the blade and the use of rare materials suggest a ceremonial purpose."
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+
+artifact_id,artifact_name,origin_civilization,discovery_date,material.primary,material.secondary,estimated_age_years,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,location.site_name,location.latitude,location.longitude,current_condition.status,current_condition.restoration_needed,notable_markings[0].type,notable_markings[0].description
+"ART001","Ancient Vase","Ancient Greece","2023-01-15","Ceramic","","2500",30,20,25,"Olympia",37.6375,21.6251,"intact",false,"inscription","Decorative Greek text around the rim"

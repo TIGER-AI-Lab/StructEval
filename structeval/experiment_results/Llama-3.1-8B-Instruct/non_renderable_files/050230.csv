@@ -1,0 +1,63 @@
+
+import pandas as pd
+import json
+
+data = '''[
+  {
+    "PotionName": "Moonlit Mirage",
+    "Color": "Silver",
+    "MainIngredient": "Dreamleaf",
+    "BrewTimeMinutes": 45,
+    "PotencyLevel": 8.5,
+    "DiscoveryDate": "2021-10-13"
+  },
+  {
+    "PotionName": "Inferno Whisper",
+    "Color": "Crimson",
+    "MainIngredient": "Blazebark",
+    "BrewTimeMinutes": 60,
+    "PotencyLevel": 9.2,
+    "DiscoveryDate": "2019-05-27"
+  },
+  {
+    "PotionName": "Frostveil Essence",
+    "Color": "Ice Blue",
+    "MainIngredient": "Snowcap Mushroom",
+    "BrewTimeMinutes": 30,
+    "PotencyLevel": 7.1,
+    "DiscoveryDate": "2022-01-04"
+  },
+  {
+    "PotionName": "Glimmering Echo",
+    "Color": "Opal",
+    "MainIngredient": "Echo Fern",
+    "BrewTimeMinutes": 52,
+    "PotencyLevel": 8.0,
+    "DiscoveryDate": "2020-08-16"
+  },
+  {
+    "PotionName": "Twilight Sigh",
+    "Color": "Violet",
+    "MainIngredient": "Duskmint",
+    "BrewTimeMinutes": 38,
+    "PotencyLevel": 7.8,
+    "DiscoveryDate": "2018-12-09"
+  },
+  {
+    "PotionName": "Solaris Dew",
+    "Color": "Golden",
+    "MainIngredient": "Sunpetal",
+    "BrewTimeMinutes": 25,
+    "PotencyLevel": 6.9,
+    "DiscoveryDate": "2023-03-21"
+  }
+]'''
+
+# Load JSON data
+data = json.loads(data)
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Convert DataFrame to CSV
+df.to_csv('potion_data.csv', index=False)

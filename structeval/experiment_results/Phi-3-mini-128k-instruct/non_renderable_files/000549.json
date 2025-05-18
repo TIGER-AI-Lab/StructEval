@@ -1,0 +1,39 @@
+{
+  "artifact": {
+    "name": "Sun Disc of the Olmec",
+    "origin": {
+      "culture": "Olmec",
+      "period": "Preclassic Period"
+    },
+    "materials": [
+      {
+        "type": "jadeite",
+        "quantity_grams": 1500
+      },
+      {
+        "type": "obsidian",
+        "quantity_grams": 300
+      }
+    ],
+    "dimensions": {
+      "height_cm": 10,
+      "width_cm": 15,
+      "depth_cm": 2
+    },
+    "features": [
+      {
+        "description": "Intricately carved with a representation of the Mesoamerican sun god",
+        "estimated_age_years": 3000
+      },
+      {
+        "description": "Believed to be a ceremonial object used in religious rituals",
+        "estimated_age_years": 3000
+      }
+    ],
+    "current_location": {
+      "museum": "Museum of Ancient Cultures",
+      "room": "Ancient Civilizations Gallery",
+      "display_case": "Case 42"
+    }
+  }
+}

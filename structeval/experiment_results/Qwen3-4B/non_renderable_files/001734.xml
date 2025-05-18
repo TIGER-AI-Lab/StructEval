@@ -1,0 +1,45 @@
+
+<creature>
+  <name>Zynx-7</name>
+  <species>Xenovore</species>
+  <origin>
+    <planet>Vortis-9</planet>
+    <galaxy>Andromeda</galaxy>
+  </origin>
+  <appearance>
+    <height>250</height>
+    <color>bioluminescent blue</color>
+    <appendages>
+      <count>4</count>
+      <type>tentacle</type>
+    </appendages>
+  </appearance>
+  <traits>
+    <trait>
+      <type>agility</type>
+      <description>high speed and reflexes</description>
+      <rarity>rare</rarity>
+    </trait>
+    <trait>
+      <type>camouflage</type>
+      <description>changes color to blend with surroundings</description>
+      <rarity>common</rarity>
+    </trait>
+  </traits>
+  <abilities>
+    <ability>
+      <name>telekinesis</name>
+      <level>5</level>
+      <cooldown>30</cooldown>
+    </ability>
+    <ability>
+      <name>energy projection</name>
+      <level>4</level>
+      <cooldown>60</cooldown>
+    </ability>
+  </abilities>
+  <discovery>
+    <date>2023-10-05</date>
+    <discovered_by>Dr. Elara Morn</discovered_by>
+  </discovery>
+</creature>

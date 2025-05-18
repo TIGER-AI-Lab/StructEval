@@ -1,0 +1,48 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "planet": {
+    "name": "Zyphora",
+    "moons": {
+      "moon": [
+        { "name": "Lunara", "diameter_km": 3200 },
+        { "name": "Calyx", "diameter_km": 2100 }
+      ]
+    },
+    "rings": {
+      "count": 2,
+      "materials": {
+        "material": ["ice", "silicate dust"]
+      }
+    }
+  }
+}
+'''
+
+def json_to_xml(json_str):
+    data = json.loads(json_str)
+    root = ET.Element('root')
+    planet = ET.SubElement(root, 'planet')
+    for key, value in data['planet'].items():
+        if key == 'moons':
+            moons = ET.SubElement(planet, key)
+            for moon in value['moon']:
+                moon_elem = ET.SubElement(moons, 'moon')
+                for moon_key, moon_value in moon.items():
+                    moon_sub_elem = ET.SubElement(moon_elem, moon_key)
+                    moon_sub_elem.text = str(moon_value)
+        elif key == 'rings':
+            rings = ET.SubElement(planet, key)
+            for ring_key, ring_value in value.items():
+                rings_elem = ET.SubElement(rings, ring_key)
+                rings_elem.text = str(ring_value)
+        else:
+            elem = ET.SubElement(planet, key)
+            elem.text = str(value)
+    return ET.tostring(root, encoding='unicode')
+
+xml_output = json_to_xml(json_data)
+print(xml_output)

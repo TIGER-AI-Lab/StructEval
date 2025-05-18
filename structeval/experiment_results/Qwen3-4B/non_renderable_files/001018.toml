@@ -1,0 +1,24 @@
+
+recipe = {
+    title = "Italian Chocolate Cake",
+    author = {
+        name = "Maria Rossi",
+        contact = {
+            email = "maria.rossi@example.com",
+            phone = "+39123456789"
+        }
+    },
+    ingredients = [
+        { name = "Flour", amount = 200, unit = "grams" },
+        { name = "Sugar", amount = 100, unit = "grams" }
+    ],
+    steps = [
+        { description = "Mix dry ingredients", duration_minutes = 5 },
+        { description = "Bake at 180Â°C for 30 minutes", duration_minutes = 30 }
+    ],
+    metadata = {
+        cuisine = "Italian",
+        difficulty = "medium",
+        tags = ["dessert", "baking", "chocolate"]
+    }
+}

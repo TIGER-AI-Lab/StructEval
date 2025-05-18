@@ -1,0 +1,89 @@
+
+<recipe>
+  <title>Classic Chocolate Chip Cookies</title>
+  <author>
+    <name>Jane Doe</name>
+    <contact>
+      <email>jane.doe@example.com</email>
+      <phone>+1-555-123-4567</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>All-purpose flour</name>
+      <quantity>250</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Semi-sweet chocolate chips</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Unsalted butter</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Granulated sugar</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Brown sugar</name>
+      <quantity>100</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>2</quantity>
+      <unit>units</unit>
+    </ingredient>
+    <ingredient>
+      <name>Baking soda</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+    <ingredient>
+      <name>Vanilla extract</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+    <ingredient>
+      <name>Salt</name>
+      <quantity>0.5</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Preheat the oven to 180Â°C (350Â°F) and line a baking sheet with parchment paper.</description>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <step>
+      <description>Cream together the butter and sugars until light and fluffy, then beat in the eggs and vanilla extract.</description>
+      <duration_minutes>5</duration_minutes>
+    </step>
+    <step>
+      <description>In a separate bowl, whisk together the flour, baking soda, and salt. Gradually add to the wet ingredients and mix until combined.</description>
+      <duration_minutes>7</duration_minutes>
+    </step>
+    <step>
+      <description>Fold in the chocolate chips evenly throughout the dough.</description>
+      <duration_minutes>3</duration_minutes>
+    </step>
+    <step>
+      <description>Drop spoonfuls of dough onto the prepared baking sheet and bake for 10-12 minutes until golden brown.</description>
+      <duration_minutes>12</duration_minutes>
+    </step>
+    <step>
+      <description>Allow cookies to cool on the baking sheet for 5 minutes before transferring to a wire rack to cool completely.</description>
+      <duration_minutes>10</duration_minutes>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>2500</calories>
+    <fat_grams>120.5</fat_grams>
+    <carbohydrates_grams>320.3</carbohydrates_grams>
+  </nutrition>
+</recipe>

@@ -1,0 +1,51 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "starSystems": {
+      "starSystem": [
+        {
+          "name": "Alpha-1",
+          "planets": {
+            "planet": [
+              { "name": "Zyra", "hasLife": true },
+              { "name": "Borealis", "hasLife": false }
+            ]
+          }
+        },
+        {
+          "name": "Beta-9",
+          "planets": {
+            "planet": [
+              { "name": "Orion", "hasLife": false }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+'''
+
+def json_to_xml(json_str):
+    data = json.loads(json_str)
+    root = ET.Element("root")
+    galaxy = ET.SubElement(root, "galaxy")
+    galaxy.set("name", data["galaxy"]["name"])
+    star_systems = ET.SubElement(galaxy, "starSystems")
+    for star_system in data["galaxy"]["starSystems"]["starSystem"]:
+        ss = ET.SubElement(star_systems, "starSystem")
+        ss.set("name", star_system["name"])
+        planets = ET.SubElement(ss, "planets")
+        for planet in star_system["planets"]["planet"]:
+            p = ET.SubElement(planets, "planet")
+            p.set("name", planet["name"])
+            p.set("hasLife", str(planet["hasLife"]))
+    return ET.tostring(root, encoding='unicode')
+
+xml_output = json_to_xml(json_data)
+print(xml_output)

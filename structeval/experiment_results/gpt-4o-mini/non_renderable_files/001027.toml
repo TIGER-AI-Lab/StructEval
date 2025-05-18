@@ -1,0 +1,30 @@
+
+ecosystem = { 
+    planet = { 
+        name = "Zyphoria", 
+        orbital_period_days = 365, 
+        terrain_types = ["mountains", "forests", "oceans"], 
+        native_species = [ 
+            { 
+                species_name = "Zyphorax maximus", 
+                population_estimate = 150000, 
+                classification = "mammal", 
+                average_lifespan_years = 20, 
+                diet = "herbivore", 
+                notable_traits = ["bioluminescent skin", "high intelligence", "social behavior"] 
+            } 
+        ], 
+        habitats = [ 
+            { 
+                habitat_name = "Luminous Forest", 
+                dominant_species = "Zyphorax maximus", 
+                climate_type = "temperate", 
+                average_temperature_c = 22 
+            } 
+        ] 
+    }, 
+    atmosphere = { 
+        composition = ["nitrogen", "oxygen", "argon", "carbon dioxide"], 
+        pressure_kpa = 101.3 
+    } 
+}

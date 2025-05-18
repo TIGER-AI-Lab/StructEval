@@ -1,0 +1,50 @@
+
+museum:
+  name: "The Grand Art Museum"
+  location:
+    city: "Paris"
+    country: "France"
+  founded_year: 1892
+  director:
+    name: "Dr. Marie Curie"
+    tenure_years: 5
+  exhibits:
+    - title: "Starry Night"
+      artist: "Vincent van Gogh"
+      year: 1889
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 73.7
+        width_cm: 92.1
+      on_loan: false
+      provenance:
+        previous_owners:
+          - "Theo van Gogh"
+          - "Paul Rosenberg"
+        acquisition_date: "1941-06-15"
+    - title: "The Persistence of Memory"
+      artist: "Salvador DalÃ­"
+      year: 1931
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 24
+        width_cm: 33
+      on_loan: true
+      provenance:
+        previous_owners:
+          - "Julien Levy"
+          - "Museum of Modern Art"
+        acquisition_date: "1958-11-01"
+    - title: "Mona Lisa"
+      artist: "Leonardo da Vinci"
+      year: 1503
+      medium: "Oil on poplar panel"
+      dimensions:
+        height_cm: 77
+        width_cm: 53
+      on_loan: false
+      provenance:
+        previous_owners:
+          - "King Francis I of France"
+          - "Napoleon Bonaparte"
+        acquisition_date: "1797-10-10"

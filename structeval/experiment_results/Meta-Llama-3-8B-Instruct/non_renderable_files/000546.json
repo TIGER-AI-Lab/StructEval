@@ -1,0 +1,41 @@
+
+{
+    "ecosystem": {
+        "name": "The Great Barrier Reef",
+        "location": {
+            "latitude": 20.5,
+            "longitude": 146.5
+        },
+        "climate": {
+            "type": "tropical",
+            "average_temperature_celsius": 25.5
+        },
+        "flora": [
+            {
+                "species": "Acropora cervicornis",
+                "population_estimate": 100000,
+                "is_endangered": true
+            }
+        ],
+        "fauna": [
+            {
+                "species": "Chelonia mydas",
+                "population_estimate": 5000,
+                "is_nocturnal": false
+            }
+        ],
+        "researchers": [
+            {
+                "name": "John Smith",
+                "field_of_study": "Marine Biology",
+                "years_active": 10
+            }
+        ],
+        "historical_events": [
+            {
+                "year": 1985,
+                "description": "Mass coral bleaching event"
+            }
+        ]
+    }
+}

@@ -1,0 +1,78 @@
+<recipe>
+  <title>Quinoa Stuffed Peppers</title>
+  <author>
+    <name>Alex Johnson</name>
+    <contact>
+      <email>alex.johnson@example.com</email>
+      <phone>+1-555-123-4567</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Quinoa</name>
+      <quantity>1 cup</quantity>
+      <unit>c</unit>
+    </ingredient>
+    <ingredient>
+      <name>Bell Peppers</name>
+      <quantity>4</quantity>
+      <unit>pcs</unit>
+    </ingredient>
+    <ingredient>
+      <name>Black Beans</name>
+      <quantity>1 can (15 oz)</quantity>
+      <unit>cans</unit>
+    </ingredient>
+    <ingredient>
+      <name>Tomato Sauce</name>
+      <quantity>1 cup</quantity>
+      <unit>c</unit>
+    </ingredient>
+    <ingredient>
+      <name>Cheddar Cheese</name>
+      <quantity>1/2 cup</quantity>
+      <unit>c</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <instruction>Preheat oven to 375Â°F (190Â°C).</instruction>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <step>
+      <instruction>Cook quinoa according to package instructions.</instruction>
+      <duration_minutes>15</duration_minutes>
+    </step>
+    <step>
+      <instruction>Halve and deseed bell peppers, then remove seeds.</instruction>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <step>
+      <instruction>Mix cooked quinoa, black beans, tomato sauce, and cheese in a bowl.</instruction>
+      <duration_minutes>5</duration_minutes>
+    </step>
+    <step>
+      <instruction>Stuff bell peppers with quinoa mixture and place in a baking dish.</instruction>
+      <duration_minutes>5</duration_minutes>
+    </step>
+    <step>
+      <instruction>Bake for 25-30 minutes or until peppers are tender.</instruction>
+      <duration_minutes>25-30</duration_minutes>
+    </step>
+  </steps>
+  <metadata>
+    <cuisine>Mexican</cuisine>
+    <difficulty>Medium</difficulty>
+    <servings>4</servings>
+    <tags>
+      <tag>Vegetarian</tag>
+      <tag>Gluten-Free</tag>
+    </tags>
+  </metadata>
+  <nutrition>
+    <calories>200</calories>
+    <fat_grams>5</fat_grams>
+    <protein_grams>10</protein_grams>
+    <carbs_grams>30</carbs_grams>
+  </nutrition>
+</recipe>

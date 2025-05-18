@@ -1,0 +1,49 @@
+
+<creature>
+  <name>Zephyra</name>
+  <species>Sky Serpent</species>
+  <age>450</age>
+  <habitat>
+    <region>Celestial Highlands</region>
+    <climate>Temperate with frequent storms</climate>
+    <resources>Crystal lakes, rare herbs, high-altitude winds</resources>
+  </habitat>
+  <abilities>
+    <ability>
+      <type>flight</type>
+      <level>9</level>
+      <description>Can soar at incredible speeds and heights, riding storm winds effortlessly.</description>
+    </ability>
+    <ability>
+      <type>invisibility</type>
+      <level>6</level>
+      <description>Can blend into the sky and clouds, becoming nearly invisible to the naked eye.</description>
+    </ability>
+    <ability>
+      <type>storm manipulation</type>
+      <level>8</level>
+      <description>Has the power to summon and control thunderstorms to defend its territory.</description>
+    </ability>
+  </abilities>
+  <appearance>
+    <color>iridescent blue and silver</color>
+    <size>30 feet long</size>
+    <distinctiveMarkings>Glowing runic patterns along its scales that shimmer in moonlight</distinctiveMarkings>
+  </appearance>
+  <history>
+    <origin>Born from the union of the sky goddess and a mountain dragon in the Celestial Highlands</origin>
+    <legend>It is said Zephyra once calmed a raging storm that threatened to flood the highlands, earning the eternal gratitude of the mountain tribes.</legend>
+  </history>
+  <relationships>
+    <relationship>
+      <relatedTo>Mountain Tribes</relatedTo>
+      <relationshipType>protector</relationshipType>
+      <duration>centuries</duration>
+    </relationship>
+    <relationship>
+      <relatedTo>Emberclaw, the Fire Drake</relatedTo>
+      <relationshipType>rival</relationshipType>
+      <duration>200</duration>
+    </relationship>
+  </relationships>
+</creature>

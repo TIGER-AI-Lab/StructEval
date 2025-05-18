@@ -1,0 +1,36 @@
+
+enchanted_forest = {
+    trees = [
+        {
+            species = "oak",
+            age = 500,
+            magical_properties = ["heals wounds", "casts illusions"],
+            inhabitants = [
+                {
+                    name = "Glimmer",
+                    type = "sprite",
+                    friendliness = 8,
+                    last_seen = "2023-10-05T14:30:00Z"
+                }
+            ],
+            fruit = {
+                count = 12,
+                type = "starfruit",
+                is_edible = true
+            }
+        }
+    ],
+    mystical_events = [
+        {
+            event_name = "Moonlit Dance",
+            date = "2023-10-12T08:00:00Z",
+            participants = ["Bramble", "Whisper"]
+        }
+    ],
+    guardian = {
+        name = "Thornspire",
+        species = "dragon",
+        power_level = 95,
+        is_visible = true
+    }
+}

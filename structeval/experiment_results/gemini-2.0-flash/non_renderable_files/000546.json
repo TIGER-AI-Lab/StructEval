@@ -1,0 +1,59 @@
+{
+  "ecosystem": {
+    "name": "Amazon Rainforest",
+    "location": {
+      "latitude": -3.4653,
+      "longitude": -62.2159
+    },
+    "climate": {
+      "type": "Tropical rainforest",
+      "average_temperature_celsius": 27
+    },
+    "flora": [
+      {
+        "species": "Victoria amazonica",
+        "population_estimate": 50000,
+        "is_endangered": false
+      },
+      {
+        "species": "Bertholletia excelsa",
+        "population_estimate": 30000,
+        "is_endangered": true
+      }
+    ],
+    "fauna": [
+      {
+        "species": "Panthera onca",
+        "population_estimate": 15000,
+        "is_nocturnal": true
+      },
+      {
+        "species": "Ara macao",
+        "population_estimate": 60000,
+        "is_nocturnal": false
+      }
+    ],
+    "researchers": [
+      {
+        "name": "Jane Goodall",
+        "field_of_study": "Primatology",
+        "years_active": 10
+      },
+      {
+        "name": "David Attenborough",
+        "field_of_study": "Zoology",
+        "years_active": 5
+      }
+    ],
+    "historical_events": [
+      {
+        "year": 1985,
+        "description": "Establishment of the Amazon Cooperation Treaty Organization (ACTO)."
+      },
+      {
+        "year": 2019,
+        "description": "Significant increase in deforestation and wildfires."
+      }
+    ]
+  }
+}

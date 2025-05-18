@@ -1,0 +1,67 @@
+python
+import json
+import csv
+
+# JSON data
+json_data = '''
+[
+  {
+    "CreatureName": "Glimmerbat",
+    "Habitat": "Crystal Caves",
+    "AverageWeightKg": 3.2,
+    "DiscoveryDate": "2003-11-18",
+    "IsNocturnal": true,
+    "FavoriteFood": "Luminous Moths"
+  },
+  {
+    "CreatureName": "Frosttail Lynx",
+    "Habitat": "Icy Tundra",
+    "AverageWeightKg": 22.5,
+    "DiscoveryDate": "1999-02-07",
+    "IsNocturnal": false,
+    "FavoriteFood": "Arctic Hares"
+  },
+  {
+    "CreatureName": "Sunscale Turtle",
+    "Habitat": "Volcanic Springs",
+    "AverageWeightKg": 87.1,
+    "DiscoveryDate": "2012-06-25",
+    "IsNocturnal": false,
+    "FavoriteFood": "Fire Algae"
+  },
+  {
+    "CreatureName": "Echo Wisp",
+    "Habitat": "Haunted Forest",
+    "AverageWeightKg": 0.1,
+    "DiscoveryDate": "2017-10-31",
+    "IsNocturnal": true,
+    "FavoriteFood": "Phantom Nectar"
+  },
+  {
+    "CreatureName": "Thunderhoof",
+    "Habitat": "Stormy Plains",
+    "AverageWeightKg": 340.0,
+    "DiscoveryDate": "1987-04-12",
+    "IsNocturnal": false,
+    "FavoriteFood": "Electric Grass"
+  },
+  {
+    "CreatureName": "Mossback Beetle",
+    "Habitat": "Ancient Swamp",
+    "AverageWeightKg": 1.7,
+    "DiscoveryDate": "2009-09-14",
+    "IsNocturnal": true,
+    "FavoriteFood": "Rotting Bark"
+  }
+]
+'''
+
+# Parse JSON data
+data = json.loads(json_data)
+
+# Write to CSV
+with open('creatures.csv', 'w', newline='') as file:
+    writer = csv.DictWriter(file, fieldnames=data[0].keys())
+    writer.writeheader()
+    for row in data:
+        writer.writerow(row)

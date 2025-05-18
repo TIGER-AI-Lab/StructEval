@@ -1,0 +1,45 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+data = """
+galacticZoo:
+  species:
+    - name: Lumina Fox
+      originPlanet: Zephyra
+      diet: photonic nectar
+      abilities:
+        ability:
+          - Light Bending
+          - Telepathic Chirping
+    - name: Nebula Tortoise
+      originPlanet: Orionis
+      diet: cosmic algae
+      abilities:
+        ability:
+          - Temporal Shell
+          - Star Mapping
+"""
+
+# Load the YAML data
+yaml_data = yaml.safe_load(data)
+
+# Create the root element
+root = ET.Element("galacticZoo")
+
+# Iterate over the species and create XML elements
+for species in yaml_data["species"]:
+    species_element = ET.SubElement(root, "species")
+    for key, value in species.items():
+        if key == "abilities":
+            abilities_element = ET.SubElement(species_element, "abilities")
+            for ability in value["ability"]:
+                ET.SubElement(abilities_element, "ability").text = ability
+        else:
+            ET.SubElement(species_element, key).text = str(value)
+
+# Create the XML tree and write to a string
+xml_str = ET.tostring(root, encoding="unicode")
+
+# Print the XML string
+print(xml_str)

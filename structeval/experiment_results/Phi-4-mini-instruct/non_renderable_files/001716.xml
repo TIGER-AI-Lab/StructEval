@@ -1,0 +1,71 @@
+<recipe>
+  <title>Grandma's Apple Pie</title>
+  <author>
+    <name>John Doe</name>
+    <contact>
+      <email>john.doe@example.com</email>
+      <phone>+1234567890</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Apples</name>
+      <quantity>6</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Pie crust</name>
+      <quantity>2</quantity>
+      <unit>rolls</unit>
+    </ingredient>
+    <ingredient>
+      <name>Butter</name>
+      <quantity>1/2</quantity>
+      <unit>cup</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <stepNumber>1</stepNumber>
+      <description>Preheat the oven to 375 degrees Fahrenheit.</description>
+      <timer>PT15M</timer>
+    </step>
+    <step>
+      <stepNumber>2</stepNumber>
+      <description>Roll out the pie crust and place it in a pie dish.</description>
+      <timer>PT5M</timer>
+    </step>
+    <step>
+      <stepNumber>3</stepNumber>
+      <description>Mix the apples with sugar and cinnamon, then pour into the pie crust.</description>
+      <timer>PT10M</timer>
+    </step>
+    <step>
+      <stepNumber>4</stepNumber>
+      <description>Roll out the second pie crust and place it over the apples.</description>
+      <timer>PT5M</timer>
+    </step>
+    <step>
+      <stepNumber>5</stepNumber>
+      <description>Seal the edges and cut slits in the top crust.</description>
+      <timer>PT5M</timer>
+    </step>
+    <step>
+      <stepNumber>6</stepNumber>
+      <description>Bake for 50 minutes or until the crust is golden brown.</description>
+      <timer>PT50M</timer>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>250</calories>
+    <fat>14</fat>
+    <protein>2</protein>
+  </nutrition>
+  <tags>
+    <label>dessert</label>
+    <label>homemade</label>
+  </tags>
+  <metadata>
+    <createdDate>2023-04-01</createdDate>
+  </metadata>
+</recipe>

@@ -1,0 +1,22 @@
+creature:
+  Zephyra:
+    species: "Aeravine Serpent"
+    habitat:
+      type: "Mountain Peak"
+      region: "The Whispering Crags"
+      climate: "Alpine"
+    abilities:
+      - name: "Wind Manipulation"
+        description: "Controls air currents to create gusts or shields."
+        cooldown_seconds: 15
+      - name: "Sonic Shriek"
+        description: "Emits a high-pitched sound that disorients opponents."
+        cooldown_seconds: 30
+    stats:
+      size_meters: 3.5
+      weight_kg: 150
+      lifespan_years: 80
+      diet: "Carnivore"
+    discovery:
+      discovered_by: "Dr. Aris Thorne"
+      discovery_date: "2023-07-20"

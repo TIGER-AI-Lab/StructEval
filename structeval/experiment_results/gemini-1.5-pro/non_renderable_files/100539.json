@@ -1,0 +1,62 @@
+{
+  "space_station": {
+    "name": "Celestial Haven",
+    "operational_since": 2087,
+    "is_docked": true,
+    "location": {
+      "planet": "Europa",
+      "coordinates": {
+        "latitude": 12.3456,
+        "longitude": 78.9101
+      }
+    },
+    "crew_members": [
+      {
+        "name": "Dr. Lira Moonsong",
+        "role": "Commander",
+        "species": "Human"
+      },
+      {
+        "name": "Xel'Rath",
+        "role": "Engineer",
+        "species": "Zyphorian"
+      },
+      {
+        "name": "Bot-9Q",
+        "role": "Science Officer",
+        "species": "Android"
+      }
+    ],
+    "modules": [
+      {
+        "module_name": "BioDome",
+        "status": "active",
+        "experiments": [
+          {
+            "experiment_id": "BDX-01",
+            "description": "Plant growth under Europa's gravity."
+          },
+          {
+            "experiment_id": "BDX-02",
+            "description": "Microbial adaptation study."
+          }
+        ]
+      },
+      {
+        "module_name": "AstroLab",
+        "status": "maintenance",
+        "experiments": [
+          {
+            "experiment_id": "ALX-01",
+            "description": "Cosmic ray detection."
+          }
+        ]
+      }
+    ],
+    "supply_levels": {
+      "oxygen": 78.5,
+      "water": 120.0,
+      "food": 95.3
+    }
+  }
+}

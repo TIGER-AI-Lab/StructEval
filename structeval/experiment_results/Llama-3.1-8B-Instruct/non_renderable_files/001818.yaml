@@ -1,0 +1,44 @@
+
+recipe:
+  title: "Delicious Chicken Fajitas"
+  author:
+    name: "John Doe"
+    profile_url: "https://example.com/johndoe"
+  ingredients:
+    - name: "Chicken Breast"
+      quantity: 500
+      unit: "grams"
+      optional: false
+    - name: "Bell Peppers"
+      quantity: 200
+      unit: "grams"
+      optional: false
+    - name: "Onions"
+      quantity: 100
+      unit: "grams"
+      optional: false
+  steps:
+    - instruction: "Heat a pan over medium heat."
+      duration_minutes: 5
+      tools:
+        - "Pan"
+        - "Stove"
+    - instruction: "Add chicken and cook until browned."
+      duration_minutes: 10
+      tools:
+        - "Pan"
+        - "Spork"
+  metadata:
+    cuisine: "Mexican"
+    difficulty: "medium"
+    servings: 4
+    tags:
+      - "Fajitas"
+      - "Chicken"
+      - "Vegetarian"
+  nutritional_info:
+    calories: 400
+    macros:
+      protein: 30
+      fat: 20
+      carbohydrates: 30

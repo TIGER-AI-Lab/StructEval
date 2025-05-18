@@ -1,0 +1,45 @@
+
+ecosystem:
+  name: "Rainforest of the Emerald Coast"
+  location:
+    region: "Southeastern Coast"
+    latitude: 10.5
+    longitude: -85.2
+  climate:
+    type: "tropical"
+    average_temperature_celsius: 24.5
+    rainfall_mm_per_year: 4000
+  species:
+    - common_name: "Emerald Toucanet"
+      scientific_name: "Aulacorhynchus prasinus"
+      population_estimate: 5000
+      conservation_status: "least concern"
+      diet: "fruits, insects, and nectar"
+      notable_adaptations:
+        - "brightly colored plumage"
+        - "long, curved beak"
+      sightings:
+        - date: "2022-07-15"
+          location_description: "near a fruiting tree in the forest undergrowth"
+    - common_name: "Coastal Jaguar"
+      scientific_name: "Panthera onca"
+      population_estimate: 200
+      conservation_status: "endangered"
+      diet: "large mammals, reptiles, and fish"
+      notable_adaptations:
+        - "powerful build and strong swimming ability"
+        - "camouflage coat with dark spots"
+      sightings:
+        - date: "2021-03-20"
+          location_description: "along a riverbank in the coastal wetlands"
+    - common_name: "Emerald Tree Boa"
+      scientific_name: "Corallus caninus"
+      population_estimate: 1000
+      conservation_status: "least concern"
+      diet: "small mammals, birds, and reptiles"
+      notable_adaptations:
+        - "green, scaly skin for camouflage"
+        - "long, slender body for climbing"
+      sightings:
+        - date: "2020-09-01"
+          location_description: "in a tree canopy in the forest interior"

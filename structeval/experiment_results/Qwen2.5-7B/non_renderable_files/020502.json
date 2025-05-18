@@ -1,0 +1,16 @@
+import pandas as pd
+import json
+
+# Read the CSV data
+data = """species,galaxy,planet,biological_classification.kingdom,biological_classification.phylum,biological_classification.class,biological_classification.order,biological_classification.family,biological_classification.genus,biological_classification.species,anatomy.heads,anatomy.limbs,anatomy.sensory_organs,abilities,abilities, favorite_foods,communication_methods
+Zyglorx,Andromeda,Xenon IV,Animalia,Chordata,Mammalia,Primates,Zyglorcidae,Zyglorx,Zyglorx sapiens,3,8,antennae|compound eyes|thermal pits,Telepathy|Can communicate over vast distances,Shapeshifting|Alter physical appearance,plasma berries|moon fungus,sonic pulses|bioluminescence
+Quarvian,Milky Way,Earth,Plantae,Tracheophyta,Magnoliopsida,Rosales,Quarviaceae,Quarvia,Quarvia floralis,0,0,petal sensors|root feelers|chlorophyll patches,Photosynthesis|Convert sunlight to energy,Spore Burst|Release hallucinogenic spores,carbon dioxide|mineral water,chemical signals|color changes"""
+
+# Convert the data into a DataFrame
+df = pd.read_csv(pd.compat.StringIO(data), sep=',')
+
+# Convert the DataFrame to JSON
+json_data = df.to_json(orient='records')
+
+# Print the JSON data
+print(json_data)

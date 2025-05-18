@@ -1,0 +1,40 @@
+{
+  "ecosystem": {
+    "name": "Verdant Expanse of Zephyria",
+    "location": {
+      "planet": "Zephyria",
+      "region": "Emerald Canopy Belt"
+    },
+    "climate": {
+      "average_temperature_celsius": 22,
+      "rainfall_mm_per_year": 1500
+    },
+    "flora": [
+      {
+        "species": "Zephyrian Whispering Fern",
+        "population_estimate": 50000,
+        "conservation_status": "least concern"
+      }
+    ],
+    "fauna": [
+      {
+        "species": "Celestial Skyrunner",
+        "average_weight_kg": 70,
+        "diet_type": "herbivore",
+        "conservation_status": "vulnerable"
+      }
+    ],
+    "researchers": [
+      {
+        "name": "Dr. Elara M. Kestrel",
+        "specialization": "Planetary Botany",
+        "years_active": 12
+      },
+      {
+        "name": "Prof. Orion V. Hawk",
+        "specialization": "Astroecology",
+        "years_active": 15
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+
+artifact = { 
+  name = "The Golden Mask of Tutankhamun",
+  origin = { 
+    culture = "Ancient Egyptian",
+    period = "New Kingdom",
+    discovery_date = "1922-11-04"
+  },
+  dimensions = { 
+    height_cm = 54,
+    width_cm = 39
+  },
+  materials = { 
+    primary = "Gold",
+    secondary = "Lapis Lazuli"
+  },
+  condition = { 
+    status = "intact",
+    restoration_notes = ""
+  },
+  exhibitions = [
+    { 
+      title = "Treasures of the Pharaohs",
+      year = 1976,
+      location = "Metropolitan Museum of Art, New York"
+    },
+    { 
+      title = "The Golden Age of the Pharaohs",
+      year = 2000,
+      location = "British Museum, London"
+    }
+  ],
+  images = [
+    { 
+      url = "https://example.com/images/tut_mask.jpg",
+      caption = "The Golden Mask of Tutankhamun"
+    },
+    { 
+      url = "https://example.com/images/tut_mask_side.jpg",
+      caption = "Side view of the Golden Mask"
+    }
+  ]
+}

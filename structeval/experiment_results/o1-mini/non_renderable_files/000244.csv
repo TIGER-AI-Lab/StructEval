@@ -1,0 +1,5 @@
+
+species_name,habitat.region,habitat.climate,habitat.elevation_meters,average_lifespan_years,diet.primary_food,diet.secondary_food,diet.is_carnivorous,physical_traits.height_cm,physical_traits.weight_kg,physical_traits.fur_color,physical_traits.has_wings,social_structure.group_size,social_structure.dominant_gender,notable_behaviors[0].behavior_name,notable_behaviors[0].frequency_per_day,notable_behaviors[1].behavior_name,notable_behaviors[1].frequency_per_day
+Lumina Lynx,Enchanted Forest,tropical,500,15,Glowing Ferns,,false,60,30,Silver,true,5,female,Moonlight Stalking,3,Night Howling,2
+Skyclaw Griffin,High Peaks,arid,3000,25,Mountain Goats,Rock Beetles,true,150,200,Golden,TRUE,2,male,Sky Soaring,4,Stone Nesting,1
+Aqua Serpent,Crystal Lake,temperate,200,40,Water Algae,Fish,true,300,1200,Azure,False,1,none,Water Dancing,5,Sunbathing,2

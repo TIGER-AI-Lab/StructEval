@@ -1,0 +1,26 @@
+<spaceStation>
+  <name>Aurora Outpost</name>
+  <location>
+    <planet>Kepler-442b</planet>
+    <galaxy>Andromeda</galaxy>
+  </location>
+  <crewMembers>
+    <crewMember>
+      <name>Dr. Linnea Vega</name>
+      <role>Botanist</role>
+    </crewMember>
+    <crewMember>
+      <name>Commander Ryo Takeda</name>
+      <role>Pilot</role>
+    </crewMember>
+  </crewMembers>
+  <laboratories>
+    <laboratory>
+      <type>Hydroponics</type>
+      <experiments>
+        <experiment>Algae Growth</experiment>
+        <experiment>Microgravity Farming</experiment>
+      </experiments>
+    </laboratory>
+  </laboratories>
+</spaceStation>

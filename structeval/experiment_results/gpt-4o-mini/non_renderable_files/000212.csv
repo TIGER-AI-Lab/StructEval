@@ -1,0 +1,3 @@
+
+species_id,common_name,scientific_name,classification.kingdom,classification.phylum,classification.class,classification.order,classification.family,classification.genus,habitat.primary,habitat.secondary,distribution.continent,distribution.countries,conservation_status.iucn,conservation_status.population_trend,notable_features,average_lifespan_years,diet
+1,Asian Elephant,Elephas maximus,Animalia,Chordata,Mammalia,Proboscidea,Elephantidae,Elephas,tropical rainforest,grassland,Asia,India, Sri Lanka, Endangered,Decreasing,Large ears and trunk,60,herbivore

@@ -1,0 +1,40 @@
+
+{
+  "planet": {
+    "name": "Auroria Prime",
+    "type": "Gas Giant",
+    "moons": ["Lunara", "Eclipse", "Shadow"],
+    "discovery": {
+      "year": 2384,
+      "method": "Gravitational Microlensing",
+      "telescope": "Vera Rubin Observatory"
+    },
+    "habitatibility": {
+      "has_water": false,
+      "atmosphere": {
+        "composition": ["Hydrogen", "Helium", "Methane"],
+        "pressure": 130.5
+      },
+      "temperature": {
+        "average": -180,
+        "seasonal_variation": ["Mild", "Extreme"]
+      }
+    },
+    "rings": {
+      "exists": true,
+      "materials": ["Ice", "Dust", "Rock"]
+    },
+    "visitors": [
+      {
+        "species": "Xel'Naga",
+        "arrival_date": "2412-07-19",
+        "mission": "Research"
+      },
+      {
+        "species": "Terran",
+        "arrival_date": "2413-03-02",
+        "mission": "Colonization"
+      }
+    ]
+  }
+}

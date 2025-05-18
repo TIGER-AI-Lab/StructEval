@@ -1,0 +1,48 @@
+{
+  "museum": {
+    "name": "The Grand Art Museum",
+    "location": {
+      "city": "New York",
+      "country": "USA"
+    },
+    "established_year": 1923
+  },
+  "museum.director": {
+    "full_name": "Dr. Elizabeth Johnson",
+    "tenure_years": 10
+  },
+  "museum.collections": [
+    {
+      "title": "Impressionist Paintings",
+      "category": "Painting",
+      "items_count": 150,
+      "curator": "John Smith",
+      "highlighted_items": [
+        {
+          "name": "The Starry Night",
+          "origin": "France",
+          "year": 1889,
+          "description": "Vincent van Gogh's iconic post-impressionist painting depicting the view from his asylum room at night."
+        }
+      ]
+    },
+    {
+      "title": "Ancient Egyptian Artifacts",
+      "category": "Archaeology",
+      "items_count": 300,
+      "curator": "Dr. Amina Patel",
+      "highlighted_items": [
+        {
+          "name": "The Rosetta Stone",
+          "origin": "Egypt",
+          "year": 196 BCE,
+          "description": "A granodiorite stele inscribed with a decree issued at Memphis in 196 BCE."
+        }
+      ]
+    }
+  ],
+  "museum.visitor_statistics": {
+    "annual_visitors": 1200000,
+    "last_updated": "2023-03-15"
+  }
+}

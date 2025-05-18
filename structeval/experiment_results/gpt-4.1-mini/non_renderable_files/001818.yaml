@@ -1,0 +1,80 @@
+
+recipe:
+  title: "Spicy Thai Basil Chicken"
+  author:
+    name: "Samantha Lee"
+    profile_url: "https://www.cookingwithsamantha.com/profiles/samanthalee"
+  metadata:
+    cuisine: "Thai"
+    difficulty: "medium"
+    servings: 4
+    tags:
+      - "spicy"
+      - "quick"
+      - "stir-fry"
+      - "dinner"
+  ingredients:
+    - name: "ground chicken"
+      quantity: 500
+      unit: "grams"
+      optional: false
+    - name: "Thai basil leaves"
+      quantity: 1
+      unit: "cup"
+      optional: false
+    - name: "garlic cloves"
+      quantity: 4
+      unit: "pieces"
+      optional: false
+    - name: "red chili"
+      quantity: 2
+      unit: "pieces"
+      optional: true
+    - name: "soy sauce"
+      quantity: 3
+      unit: "tablespoons"
+      optional: false
+    - name: "fish sauce"
+      quantity: 2
+      unit: "tablespoons"
+      optional: false
+    - name: "vegetable oil"
+      quantity: 2
+      unit: "tablespoons"
+      optional: false
+    - name: "white sugar"
+      quantity: 1
+      unit: "teaspoon"
+      optional: false
+  steps:
+    - instruction: "Heat vegetable oil in a wok or large skillet over medium-high heat. Add minced garlic and chopped red chili, stir-fry until fragrant."
+      duration_minutes: 3
+      tools:
+        - "wok"
+        - "spatula"
+        - "knife"
+    - instruction: "Add ground chicken and cook until no longer pink, breaking it apart with the spatula."
+      duration_minutes: 5
+      tools:
+        - "wok"
+        - "spatula"
+    - instruction: "Stir in soy sauce, fish sauce, and sugar. Cook for another 2 minutes to combine flavors."
+      duration_minutes: 2
+      tools:
+        - "wok"
+        - "spatula"
+    - instruction: "Add Thai basil leaves and stir-fry until wilted, about 1 minute."
+      duration_minutes: 1
+      tools:
+        - "wok"
+        - "spatula"
+    - instruction: "Serve hot with steamed jasmine rice."
+      duration_minutes: 0
+      tools:
+        - "serving plate"
+  nutritional_info:
+    calories: 320
+    macros:
+      protein: 35
+      fat: 15
+      carbohydrates: 8

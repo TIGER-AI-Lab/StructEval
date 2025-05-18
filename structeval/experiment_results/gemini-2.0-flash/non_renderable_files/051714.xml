@@ -1,0 +1,33 @@
+<museum>
+  <name>Museum of Imaginary Music Boxes</name>
+  <location>
+    <city>Whimsyville</city>
+    <country>Fantasia</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Clockwork Melodies</title>
+      <year>1892</year>
+      <artifacts>
+        <artifact>
+          <name>Silver Lullaby</name>
+          <material>Silver</material>
+        </artifact>
+        <artifact>
+          <name>Gilded Waltz</name>
+          <material>Gold</material>
+        </artifact>
+      </artifacts>
+    </exhibit>
+    <exhibit>
+      <title>Mechanical Harmonies</title>
+      <year>1930</year>
+      <artifacts>
+        <artifact>
+          <name>Crystal Chimes</name>
+          <material>Crystal</material>
+        </artifact>
+      </artifacts>
+    </exhibit>
+  </exhibits>
+</museum>

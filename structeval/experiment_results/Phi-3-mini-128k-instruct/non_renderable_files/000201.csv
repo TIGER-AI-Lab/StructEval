@@ -1,0 +1,18 @@
+
+species_name,primary_color,average_height_cm,habitat_type,diet_classification,number_of_legs,average_lifespan_years,endangered_status,native_planet,notable_ability,first_discovered_year,discovered_by,communication_method,social_structure,reproduction_cycle_days
+Zyphlorians,silver,150,space,herbivore,6,250,not threatened,Zyphlon,telekinesis,2150,Dr. Elara Mivon,telepathy,solitary
+Glorptarians,emerald green,200,forest,omnivore,8,150,vulnerable,Glorptar,invisibility,1987,Expedition Gaia,color changes,hive mind
+Vexillians,neon blue,120,urban,carnivore,4,100,endangered,Vexillia,shape-shifting,2045,Prof. T'Kara,sonic pulses,packs
+Crystalline Entities,translucent,10,crystal caverns,herbivore,0,10000,not threatened,Crystallon,energy manipulation,2100,Dr. H'Quan,radiowaves,clustered
+Floragons,vibrant purple,50,flower fields,herbivore,2,50,not threatened,Floragon,photosynthesis,2001,Dr. Liora Voss,bioluminescence,pair bonding
+Skywhales,iridescent white,300,atmospheric,herbivore,0,500,not threatened,Skywhale,floating,2200,Captain Rael,sonic pulses,pods
+Mindweavers,silver and gold,100,mind realms,omnivore,0,300,not threatened,Mindweaver,telepathy,2175,Dr. Y'Lora,telepathy,networked
+Shadowcrawlers,black,75,dark caves,carnivore,8,70,endangered,Shadowcrawler,stealth,1999,Expedition Nocturne,sonic pulses,packs
+Glimmerfins,silver and silver,10,oceanic caves,herbivore,0,200,not threatened,Glimmerfin,sonic pulses,2020,Dr. Naiad,sonic pulses,school
+Starweavers,neon yellow,120,space,omnivore,0,2000,not threatened,Starweaver,star weaving,2150,Dr. Elara Mivon,telepathy,clans
+Quantum Sprites,multi-colored,10,quantum fields,herbivore,0,100,not threatened,Quantum Sprite,quantum entanglement,2100,Dr. H'Quan,radiowaves,solitary
+Crystal Serpents,crystal blue,250,crystal caverns,carnivore,0,500,not threatened,Crystal Serpent,crystal manipulation,2100,Dr. H'Quan,radiowaves,packs
+Galactic Goliaths,iridescent green,3000,space,carnivore,0,1000,not threatened,Galactic Goliath,telekinesis,2150,Dr. Elara Mivon,telepathy,herds
+Stellar Sentinels,silver and gold,200,space stations,omnivore,0,5000,not threatened,Stellar Sentinel,energy manipulation,2150,Dr. Elara Mivon,telepathy,networked
+Cosmic Crawlers,neon pink,10,cosmic dust,herbivore,0,100,not threatened,Cosmic Crawler,cosmic energy absorption,2020,Dr. Naiad,sonic pulses,solitary
+Astral Archers,silver and black,150,space,carnivore,2,250,endangered,Astral Archer,teleportation,2150,Dr. Elara Mivon,sonic pulses,clans

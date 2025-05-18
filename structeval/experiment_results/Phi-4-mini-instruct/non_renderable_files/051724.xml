@@ -1,0 +1,17 @@
+
+&lt;planetarySystem name="Kepler-452">
+  &lt;planets>
+    &lt;planet name="Kepler-452b">
+      &lt;moons>
+        &lt;moon name="Selene"/>
+        &lt;moon name="Luna Minor"/>
+      &lt;/moons>
+    &lt;/planet>
+    &lt;planet name="Kepler-452c">
+      &lt;moons>
+        &lt;moon name="Phobos"/>
+        &lt;moon name="Deimos"/>
+      &lt;/moons>
+    &lt;/planet>
+  &lt;/planets>
+&lt;/planetarySystem>

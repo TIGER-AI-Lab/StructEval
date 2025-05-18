@@ -1,0 +1,28 @@
+
+[museum]
+name = "The Imaginary Art Museum"
+established_year = 1985
+
+[museum.location]
+city = "Fictionville"
+country = "Utopia"
+
+[museum.director]
+full_name = "Alexandra Verity"
+tenure_years = 12
+
+[[museum.exhibits]]
+title = "Dreamscape"
+artist = "Luna Morrow"
+year_created = 2010
+medium = "Oil on canvas"
+on_display = true
+tags = ["surrealism", "dreams", "landscape"]
+
+  [museum.exhibits.dimensions]
+  height_cm = 120.5
+  width_cm = 90.0
+
+[museum.opening_hours]
+weekdays = "09:00 - 18:00"
+weekends = "10:00 - 16:00"

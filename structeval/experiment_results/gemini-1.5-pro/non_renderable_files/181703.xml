@@ -1,0 +1,46 @@
+<spaceStation>
+  <name>Nebula Outpost</name>
+  <location>
+    <planet>Gliese V</planet>
+    <galaxy>Andromeda</galaxy>
+  </location>
+  <crewMembers>
+    <crew>
+      <crewMember>
+        <name>Zara Quell</name>
+        <role>Commander</role>
+        <species>Human</species>
+      </crewMember>
+      <crewMember>
+        <name>Rix Tal</name>
+        <role>Engineer</role>
+        <species>Xentari</species>
+      </crewMember>
+      <crewMember>
+        <name>Luma</name>
+        <role>Botanist</role>
+        <species>Synthoid</species>
+      </crewMember>
+    </crew>
+  </crewMembers>
+  <modules>
+    <module>
+      <moduleInfo>
+        <type>Hydroponics</type>
+        <status>Operational</status>
+      </moduleInfo>
+    </module>
+    <module>
+      <moduleInfo>
+        <type>Defense</type>
+        <status>Standby</status>
+      </moduleInfo>
+    </module>
+    <module>
+      <moduleInfo>
+        <type>Research</type>
+        <status>Under Maintenance</status>
+      </moduleInfo>
+    </module>
+  </modules>
+</spaceStation>

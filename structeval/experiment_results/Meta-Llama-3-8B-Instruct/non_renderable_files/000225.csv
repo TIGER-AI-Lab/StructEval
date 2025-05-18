@@ -1,0 +1,4 @@
+
+"creature_id","species_name","habitat","physical_characteristics","abilities","diet"
+"Creature1","Glorp","{""region"":""Tropical Rainforest"",""climate"":""Tropical"",""terrain"":""Jungle""}",{"height_cm":150,"weight_kg":50,"skin_color":"Green","eye_color":"Yellow"},[{"name":"Camouflage","type":"Defense","power_level":80},{"name":"Venomous Fangs","type":"Attack","power_level":60}],"{""primary_food"":""Insects"",""secondary_food"":""Fruits""}"
+"Creature2","Snorp","{""region"":""Arctic Tundra"",""climate"":""Polar"",""terrain"":""Ice""}",{"height_cm":200,"weight_kg":100,"skin_color":"White","eye_color":"Blue"},[{"name":"Blinding Flash","type":"Defense","power_level":90},{"name":"Ice Breath","type":"Attack","power_level":70}],"{""primary_food"":""Fish"",""secondary_food"":""Seaweed""}"

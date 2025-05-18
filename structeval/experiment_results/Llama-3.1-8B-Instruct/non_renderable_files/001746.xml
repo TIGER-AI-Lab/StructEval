@@ -1,0 +1,49 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Delicious Chicken Fettuccine</name>
+    <author>John Doe</author>
+    <cuisine>Italian</cuisine>
+    <prepTime>PT30M</prepTime>
+    <cookTime>PT45M</cookTime>
+    <servings>4</servings>
+    <ingredients>
+        <ingredient>
+            <name>Chicken Breast</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Fettuccine</name>
+            <quantity>250</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Tomato Sauce</name>
+            <quantity>200</quantity>
+            <unit>milliliters</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Cook the fettuccine according to the package instructions.</description>
+            <duration>PT15M</duration>
+        </step>
+        <step>
+            <order>2</order>
+            <description>Season the chicken breast with salt and pepper.</description>
+            <duration>PT5M</duration>
+        </step>
+        <step>
+            <order>3</order>
+            <description>Heat the tomato sauce in a pan over medium heat.</description>
+            <duration>PT10M</duration>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>500</calories>
+        <protein>30</protein>
+        <fat>20</fat>
+    </nutrition>
+</recipe>

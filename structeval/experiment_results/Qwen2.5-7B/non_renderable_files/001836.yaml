@@ -1,0 +1,26 @@
+artifact:
+  name: "Exemplar-1234"
+  origin: "Mysticus Antiquus"
+  discovery:
+    year: 1975
+    discoverer: "Dr. Elara Vesper"
+  materials: ["Bronze", "Lapis Lazuli"]
+  dimensions:
+    height_cm: 15.2
+    width_cm: 10.8
+    depth_cm: 3.5
+  features:
+    - type: "Statue"
+      description: "A depiction of the ancient deity, Luminara"
+      condition: "Excellent"
+    - type: "Inscription"
+      description: "A rare incantation in the lost language of Thalassian"
+      condition: "Good"
+  provenance:
+    auction_history:
+      - date: "2002-05-12"
+        price_usd: 150000
+        auction_house: "Aucturae Lux"
+    previous_owners:
+      - "Museum of Antiquities, Mysticus"
+      - "Private Collection, Enigma Island"

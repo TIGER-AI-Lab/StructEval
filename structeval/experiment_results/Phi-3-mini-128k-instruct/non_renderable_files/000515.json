@@ -1,0 +1,38 @@
+{
+  "artifact": {
+    "name": "Rosetta Stone",
+    "origin": {
+      "civilization": "Ancient Egypt",
+      "era": "Ptolemaic Period"
+    },
+    "materials": {
+      "primary": "Granodiorite",
+      "secondary": "Inscription"
+    },
+    "dimensions": {
+      "height_cm": 77,
+      "width_cm": 28,
+      "depth_cm": 11
+    },
+    "features": [
+      {
+        "type": "Inscription",
+        "description": "Contains the same text in three different scripts",
+        "preservation_state": "Intact"
+      },
+      {
+        "type": "Ornamentation",
+        "description": "Features a cartouche with the name of Ptolemy V",
+        "preservation_state": "Intact"
+      }
+    ]
+  },
+  "discovery": {
+    "date_found": "1799-07-15",
+    "country": "Egypt",
+    "coordinates": {
+      "latitude": 27.702,
+      "longitude": 30.501
+    }
+  }
+}

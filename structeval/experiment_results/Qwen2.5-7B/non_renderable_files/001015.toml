@@ -1,0 +1,38 @@
+artifact = {
+    title = "Mystic Scribe's Quill"
+    creator = {
+        name = "Eldarion the Wise"
+        affiliation = "Guild of Mystic Scribes"
+    }
+    year_created = 1492
+    dimensions = {
+        height_cm = 15.5
+        width_cm = 10.2
+    }
+    materials = [
+        {
+            type = "Ebonwood"
+            source = "Forest of Shadows"
+        },
+        {
+            type = "Dragon's Breath Silk"
+            source = "Dragon's Den"
+        }
+    ]
+    exhibitions = [
+        {
+            name = "Exhibition of Ancient Writings"
+            location = "National Museum of Mysteries"
+            date_range = {
+                start = "2023-06-15"
+                end = "2023-08-30"
+            }
+        }
+    ]
+    provenance = {
+        previous_owners = [
+            "Lysandra the Historian",
+            "The Royal Library of Eldoria"
+        ]
+    }
+}

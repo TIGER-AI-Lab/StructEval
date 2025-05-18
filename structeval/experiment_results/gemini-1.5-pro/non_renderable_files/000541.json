@@ -1,0 +1,51 @@
+{
+  "museum": {
+    "name": "National Museum of Art",
+    "location": {
+      "city": "New York City",
+      "country": "USA"
+    },
+    "established_year": 1870,
+    "director": "Dr. Emily Carter",
+    "exhibits": [
+      {
+        "title": "Starry Night",
+        "artist": "Vincent van Gogh",
+        "year_created": 1889,
+        "medium": "Oil on canvas",
+        "dimensions": {
+          "height_cm": 73.7,
+          "width_cm": 92.1
+        },
+        "on_display": true,
+        "provenance": [
+          {
+            "owner": "Galerie Paul Rosenberg",
+            "acquisition_date": "1941-01-15"
+          }
+        ]
+      },
+      {
+        "title": "Water Lilies",
+        "artist": "Claude Monet",
+        "year_created": 1915,
+        "medium": "Oil on canvas",
+        "dimensions": {
+          "height_cm": 100,
+          "width_cm": 200
+        },
+        "on_display": false,
+        "provenance": [
+          {
+            "owner": "MusÃ©e de l'Orangerie",
+            "acquisition_date": "1927-05-01"
+          }
+        ]
+      }
+    ],
+    "opening_hours": {
+      "weekdays": "10:00 AM - 5:00 PM",
+      "weekends": "11:00 AM - 6:00 PM"
+    }
+  }
+}

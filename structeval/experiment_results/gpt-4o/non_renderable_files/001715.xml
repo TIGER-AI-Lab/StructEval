@@ -1,0 +1,54 @@
+<creature>
+    <name>Zyloxian Prime</name>
+    <species>Zyloxian</species>
+    <origin>
+        <planet>Zylox</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <abilities>
+        <ability>
+            <type>Telepathy</type>
+            <description>Ability to communicate using thoughts</description>
+            <level>8</level>
+        </ability>
+        <ability>
+            <type>Invisibility</type>
+            <description>Can become invisible at will</description>
+            <level>7</level>
+        </ability>
+        <ability>
+            <type>Regeneration</type>
+            <description>Rapid healing of injuries</description>
+            <level>9</level>
+        </ability>
+    </abilities>
+    <physical_traits>
+        <height>210</height>
+        <weight>120</weight>
+        <eye_color>Emerald Green</eye_color>
+        <limbs>
+            <count>4</count>
+            <type>Tentacle</type>
+        </limbs>
+    </physical_traits>
+    <history>
+        <birth_date>3021-07-15</birth_date>
+        <events>
+            <event>
+                <title>First Contact with Earth</title>
+                <year>3050</year>
+                <impact>Established peaceful relations with humans</impact>
+            </event>
+            <event>
+                <title>Battle of Zylox</title>
+                <year>3075</year>
+                <impact>Defended home planet from invaders</impact>
+            </event>
+            <event>
+                <title>Discovery of Quantum Travel</title>
+                <year>3080</year>
+                <impact>Revolutionized intergalactic travel</impact>
+            </event>
+        </events>
+    </history>
+</creature>

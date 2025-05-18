@@ -1,0 +1,54 @@
+
+<recipe>
+  <title>Spicy Tuna Salad</title>
+  <author>
+    <name>Jane Doe</name>
+    <profileUrl>https://example.com/janedoe</profileUrl>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Tuna</name>
+      <quantity>2</quantity>
+      <unit>lbs</unit>
+    </ingredient>
+    <ingredient>
+      <name>Mayo</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+    </ingredient>
+    <ingredient>
+      <name>Red onion</name>
+      <quantity>1</quantity>
+      <unit>medium</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <order>1</order>
+      <instruction>Chop the red onion and mix with tuna.</instruction>
+      <durationMinutes>5</durationMinutes>
+    </step>
+    <step>
+      <order>2</order>
+      <instruction>Add mayo and mix well.</instruction>
+      <durationMinutes>3</durationMinutes>
+    </step>
+    <step>
+      <order>3</order>
+      <instruction>Chill for 15 minutes before serving.</instruction>
+      <durationMinutes>15</durationMinutes>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>200</calories>
+    <fat>10</fat>
+    <protein>25</protein>
+    <carbohydrates>5</carbohydrates>
+  </nutrition>
+  <metadata>
+    <cuisine>American</cuisine>
+    <difficulty>medium</difficulty>
+    <servings>4</servings>
+    <created>2023-10-05T12:00:00Z</created>
+  </metadata>
+</recipe>

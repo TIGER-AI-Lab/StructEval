@@ -1,0 +1,32 @@
+[recipe]
+title = "Delicious Chocolate Chip Cookies"
+
+[recipe.author]
+name = "Alice Baker"
+
+[recipe.author.contact]
+email = "alice.baker@example.com"
+phone = "+1-555-123-4567"
+
+[[recipe.ingredients]]
+name = "All-purpose flour"
+quantity = 2.5
+unit = "cups"
+
+[[recipe.ingredients]]
+name = "Chocolate chips"
+quantity = 12
+unit = "oz"
+
+[[recipe.steps]]
+instruction = "Preheat oven to 375Â°F (190Â°C)."
+duration_minutes = 10
+
+[[recipe.steps]]
+instruction = "Mix ingredients and bake for 10-12 minutes."
+duration_minutes = 12
+
+[recipe.metadata]
+cuisine = "American"
+servings = 24
+difficulty = "easy"

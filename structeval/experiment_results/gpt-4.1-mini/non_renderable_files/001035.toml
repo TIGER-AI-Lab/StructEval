@@ -1,0 +1,26 @@
+
+[ecosystem]
+name = "Lumina Forest"
+
+[ecosystem.location]
+latitude = 12.3456
+longitude = 78.9012
+
+[ecosystem.climate]
+type = "tropical"
+average_temperature_c = 27.5
+annual_rainfall_mm = 2200
+
+[[ecosystem.species]]
+common_name = "Glowing Tree Frog"
+scientific_name = "Luminus ranae"
+population_estimate = 15000
+conservation_status = "Near Threatened"
+notable_characteristics = ["bioluminescent skin", "nocturnal", "arboreal"]
+
+[[ecosystem.species]]
+common_name = "Silverleaf Butterfly"
+scientific_name = "Argentum folia"
+population_estimate = 500000
+conservation_status = "Least Concern"
+notable_characteristics = ["iridescent wings", "migratory", "pollinator"]

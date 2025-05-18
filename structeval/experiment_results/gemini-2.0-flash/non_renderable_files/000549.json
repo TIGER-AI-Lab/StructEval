@@ -1,0 +1,39 @@
+{
+  "artifact": {
+    "name": "Bronze Age Axe Head",
+    "origin": {
+      "culture": "Minoan",
+      "period": "Late Bronze Age"
+    },
+    "materials": [
+      {
+        "type": "bronze",
+        "quantity_grams": 350
+      },
+      {
+        "type": "wood",
+        "quantity_grams": 50
+      }
+    ],
+    "dimensions": {
+      "height_cm": 15.2,
+      "width_cm": 7.6,
+      "depth_cm": 3.1
+    },
+    "features": [
+      {
+        "description": "Ornate geometric patterns etched on the blade.",
+        "estimated_age_years": 3200
+      },
+      {
+        "description": "Evidence of hafting suggests use as a tool or weapon.",
+        "estimated_age_years": 3200
+      }
+    ],
+    "current_location": {
+      "museum": "Heraklion Archaeological Museum",
+      "room": "Minoan Metalwork Gallery",
+      "display_case": "Case 12B"
+    }
+  }
+}

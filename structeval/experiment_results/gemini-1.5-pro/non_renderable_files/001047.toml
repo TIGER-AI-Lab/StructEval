@@ -1,0 +1,37 @@
+[artifact]
+name = "Golden Goblet of Gladius"
+
+[artifact.origin]
+culture = "Gladian Empire"
+period = "Late Gladian Era"
+discovery_date = "1922-07-15"
+
+[artifact.dimensions]
+height_cm = 25.5
+width_cm = 12.0
+
+[artifact.materials]
+primary = "Gold"
+secondary = "Silver"
+
+[artifact.condition]
+status = "Partially restored"
+restoration_notes = "Minor repairs to the handle and base."
+
+[[artifact.exhibitions]]
+title = "Treasures of the Gladian Empire"
+year = 1985
+location = "National Museum of Antiquities, Gladia City"
+
+[[artifact.exhibitions]]
+title = "Ancient Gold: Power and Ritual"
+year = 2008
+location = "Metropolitan Museum of Art, New York City"
+
+[[artifact.images]]
+url = "https://example.com/images/goblet_front.jpg"
+caption = "Front view of the goblet"
+
+[[artifact.images]]
+url = "https://example.com/images/goblet_detail.jpg"
+caption = "Detail of the intricate engravings"

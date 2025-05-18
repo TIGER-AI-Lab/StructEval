@@ -1,0 +1,24 @@
+[artifact]
+name = "The Enigmatic Cylinder"
+[artifact.origin]
+civilization = "Assyrian"
+era = "Neo-Assyrian"
+[artifact.materials]
+- type = "Limestone"
+  provenance = "Assyrian Empire"
+  type = "Gold"
+  provenance = "Persian Empire"
+[artifact.dimensions]
+height_cm = 15.5
+width_cm = 10.2
+depth_cm = 5.8
+[artifact.discovery]
+date = "1975-08-12"
+[artifact.discovery.location]
+country = "Iraq"
+site = "Nineveh"
+[artifact.discovery.expedition_team]
+- member_name = "Dr. Jane Smith"
+  role = "Archaeologist"
+  member_name = "Dr. John Doe"
+  role = "Conservator"

@@ -1,0 +1,64 @@
+
+import csv
+from datetime import datetime
+
+data = [
+    {
+        "species": "Zorvath",
+        "planet": "Xeridia",
+        "discovery_year": 2053,
+        "average_height_cm": 175,
+        "habitat_type": "terrestrial",
+        "diet": "carnivore",
+        "number_of_limbs": 4,
+        "primary_color": "green",
+        "notable_ability": "telepathy",
+        "is_endangered": False,
+        "average_lifespan_years": 50,
+        "first_contact_date": "2020-01-01",
+        "planetary_region": "Aerthys Continent",
+        "favorite_food": "Gloopernuts",
+        "language_family": "Xeridian"
+    },
+    {
+        "species": "N'Tari",
+        "planet": "N'Terra",
+        "discovery_year": 2087,
+        "average_height_cm": 120,
+        "habitat_type": "aerial",
+        "diet": "herbivore",
+        "number_of_limbs": 6,
+        "primary_color": "blue",
+        "notable_ability": "bioluminescence",
+        "is_endangered": True,
+        "average_lifespan_years": 30,
+        "first_contact_date": "2050-06-15",
+        "planetary_region": "Skywhisper Mountains",
+        "favorite_food": "Skyblooms",
+        "language_family": "N'Tari"
+    }
+]
+
+with open('alien_species.csv', 'w', newline='') as csvfile:
+    fieldnames = ["species", "planet", "discovery_year", "average_height_cm", "habitat_type", "diet", "number_of_limbs", "primary_color", "notable_ability", "is_endangered", "average_lifespan_years", "first_contact_date", "planetary_region", "favorite_food", "language_family"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for species in data:
+        writer.writerow({
+            "species": species["species"],
+            "planet": species["planet"],
+            "discovery_year": species["discovery_year"],
+            "average_height_cm": species["average_height_cm"],
+            "habitat_type": species["habitat_type"],
+            "diet": species["diet"],
+            "number_of_limbs": species["number_of_limbs"],
+            "primary_color": species["primary_color"],
+            "notable_ability": species["notable_ability"],
+            "is_endangered": species["is_endangered"],
+            "average_lifespan_years": species["average_lifespan_years"],
+            "first_contact_date": species["first_contact_date"],
+            "planetary_region": species["planetary_region"],
+            "favorite_food": species["favorite_food"],
+            "language_family": species["language_family"]
+        })

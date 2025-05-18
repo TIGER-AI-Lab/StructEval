@@ -1,0 +1,54 @@
+{
+  "expedition": {
+    "mission_name": "Interstellar Pioneer",
+    "leader": {
+      "name": "Commander Amelia Reyes",
+      "rank": "Mission Commander",
+      "contact": {
+        "email": "areyes@spaceagency.gov",
+        "phone": "+1-555-123-4567"
+      }
+    },
+    "crew": [
+      {
+        "name": "Dr. David Chen",
+        "role": "Chief Scientist",
+        "skills": [
+          "Astrophysics",
+          "Xenobiology",
+          "Planetary Geology"
+        ]
+      },
+      {
+        "name": "Eva Rodriguez",
+        "role": "Chief Engineer",
+        "skills": [
+          "Propulsion Systems",
+          "Robotics",
+          "Life Support Maintenance"
+        ]
+      }
+    ],
+    "destination": {
+      "planet": "Kepler-186f",
+      "coordinates": {
+        "latitude": 45.23,
+        "longitude": -122.58
+      }
+    },
+    "supply_list": [
+      {
+        "item": "Oxygen Tanks",
+        "quantity": 500
+      },
+      {
+        "item": "Food Rations",
+        "quantity": 1000
+      },
+      {
+        "item": "Scientific Instruments",
+        "quantity": 20
+      }
+    ]
+  }
+}

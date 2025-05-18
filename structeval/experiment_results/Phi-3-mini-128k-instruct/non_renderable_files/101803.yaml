@@ -1,0 +1,32 @@
+space_station:
+  name: "Odyssey Outpost"
+  last_contact: "2024-04-15T10:30:00Z"
+  location:
+    planet: "Europa"
+    coordinates:
+      latitude: 67.89
+      longitude: -23.45
+  crew_members:
+    - name: "Zara Lin"
+      role: "Commander"
+      species: "Human"
+    - name: "Tiko"
+      role: "Science Officer"
+      species: "Andromedan"
+    - name: "Rex-47"
+      role: "Engineer"
+      species: "Synthoid"
+  modules:
+    - id: "M1"
+      purpose: "Habitation"
+      status: "Operational"
+    - id: "M2"
+      purpose: "Research"
+      status: "Under Maintenance"
+    - id: "M3"
+      purpose: "Hydroponics"
+      status: "Operational"
+  supply_levels:
+    oxygen: 78.5
+    water: 1200
+    food: 560

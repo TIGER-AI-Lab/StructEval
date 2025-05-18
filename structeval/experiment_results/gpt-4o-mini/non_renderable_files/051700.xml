@@ -1,0 +1,32 @@
+
+<library>
+  <name>The Clockwork Library</name>
+  <location>
+    <city>Gearspring</city>
+    <country>Steamlantis</country>
+  </location>
+  <sections>
+    <section>
+      <title>Automaton Fiction</title>
+      <books>
+        <book>
+          <title>The Brass Heart</title>
+          <author>Elena Cogswell</author>
+        </book>
+        <book>
+          <title>Steam & Shadows</title>
+          <author>Victor Valve</author>
+        </book>
+      </books>
+    </section>
+    <section>
+      <title>Chronicles of Time</title>
+      <books>
+        <book>
+          <title>Tick Tock Tales</title>
+          <author>Harold Pendulum</author>
+        </book>
+      </books>
+    </section>
+  </sections>
+</library>

@@ -1,0 +1,32 @@
+
+creature:
+  name: Zylthar
+  species: Xyloformis
+  origin:
+    planet: Vortan Prime
+    galaxy: Andromeda
+  abilities:
+    - type: Bioluminescence
+      description: Emits a soft glow to communicate and attract prey.
+      power_level: 7
+    - type: Telepathy
+      description: Can communicate thoughts and emotions with other beings.
+      power_level: 8
+  physical_traits:
+    height_cm: 250
+    coloration: Iridescent blue and green with swirling patterns.
+    limbs:
+      count: 6
+      types:
+        - tentacle
+        - arm
+        - fin
+  history:
+    first_sighting:
+      date: 2021-05-15
+      location: The Crystal Caves of Vortan Prime
+    known_encounters:
+      - date: 2022-08-30
+        description: A research team encountered Zylthar while studying bioluminescent organisms, leading to a brief but peaceful interaction.
+      - date: 2023-01-12
+        description: Zylthar was observed during a storm, using its telepathy to guide lost creatures to safety.

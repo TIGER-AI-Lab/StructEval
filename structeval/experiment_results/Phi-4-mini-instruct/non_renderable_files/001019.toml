@@ -1,0 +1,9 @@
+
+[artifact]
+name = "Ancient Vase"
+origin = { culture = "Minoan", period = "Bronze Age", discovery_date = "1902-04-15" }
+dimensions = { height_cm = 45, width_cm = 30, depth_cm = 15 }
+materials = ["Clay", "Gold Inlay"]
+current_location = { museum = "British Museum", room = "Ancient Civilizations Gallery", display_case = "Case 12" }
+exhibitions = [{ title = "Treasures of the Aegean", year = 1903, city = "London", curator = "Dr. John Smith" }]
+restoration_history = [{ date = "1950-06-10", description = "Minor surface cleaning and repair of cracks" }, { date = "1975-09-23", description = "Restoration of gold inlay and reapplication of protective coating" }]

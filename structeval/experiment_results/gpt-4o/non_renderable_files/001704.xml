@@ -1,0 +1,41 @@
+<recipe>
+    <title>Spicy Avocado Toast</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Avocado</name>
+            <quantity>1</quantity>
+            <unit>piece</unit>
+            <optional>false</optional>
+        </ingredient>
+        <!-- Additional ingredients can be added here -->
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Slice the avocado in half, remove the pit, and scoop the flesh into a bowl.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Knife</name>
+                    <required>true</required>
+                </tool>
+                <!-- Additional tools can be added here -->
+            </tools>
+        </step>
+        <!-- Additional steps can be added here -->
+    </instructions>
+    <nutrition>
+        <calories>250</calories>
+        <fat_grams>22</fat_grams>
+        <protein_grams>3</protein_grams>
+    </nutrition>
+    <tags>
+        <tag>Breakfast</tag>
+        <!-- Additional tags can be added here -->
+    </tags>
+</recipe>

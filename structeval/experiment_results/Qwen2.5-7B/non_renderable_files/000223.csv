@@ -1,0 +1,43 @@
+
+import csv
+
+def create_csv(data):
+    with open('artifact_metadata.csv', mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(['artifact_id', 'artifact_name', 'discovery.site', 'discovery.date_found', 'discovery.discoverer', 'origin.culture', 'origin.estimated_age', 'origin.materials', 'dimensions.length_cm', 'dimensions.width_cm', 'dimensions.height_cm', 'condition.status', 'condition.restoration_needed', 'current_location.museum', 'current_location.exhibit_hall'])
+        for artifact in data:
+            writer.writerow([artifact['artifact_id'], artifact['artifact_name'], artifact['discovery']['site'], artifact['discovery']['date_found'], artifact['discovery']['discoverer'], artifact['origin']['culture'], artifact['origin']['estimated_age'], artifact['origin']['materials'], artifact['dimensions']['length_cm'], artifact['dimensions']['width_cm'], artifact['dimensions']['height_cm'], artifact['condition']['status'], artifact['condition']['restoration_needed'], artifact['current_location']['museum'], artifact['current_location']['exhibit_hall']])
+
+# Example usage:
+artifact_data = [
+    {
+        'artifact_id': 'A123',
+        'artifact_name': 'Ancient Pottery',
+        'discovery': {
+            'site': 'Museum of Antiquities',
+            'date_found': '2020-05-15',
+            'discoverer': 'Dr. Jane Smith'
+        },
+        'origin': {
+            'culture': 'Minoan',
+            'estimated_age': 2000,
+            'materials': 'clay; glaze'
+        },
+        'dimensions': {
+            'length_cm': 15.5,
+            'width_cm': 10.2,
+            'height_cm': 8.7
+        },
+        'condition': {
+            'status': 'intact',
+            'restoration_needed': False
+        },
+        'current_location': {
+            'museum': 'Museum of Antiquities',
+            'exhibit_hall': 'Room 101'
+        }
+    },
+    # Add more artifacts as needed
+]
+
+create_csv(artifact_data)

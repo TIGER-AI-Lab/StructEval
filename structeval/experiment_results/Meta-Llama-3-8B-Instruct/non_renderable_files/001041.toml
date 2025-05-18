@@ -1,0 +1,43 @@
+
+[expedition]
+name = "Galactic Horizon Expedition"
+launch_date = "2023-03-15T12:00:00Z"
+destination = {
+  planet = "Mars",
+  region = "Olympus Mons"
+}
+crew = [
+  {
+    name = "John Doe",
+    role = "Commander",
+    experience_years = 10,
+    certifications = ["Astronaut", "Pilot"]
+  },
+  {
+    name = "Jane Smith",
+    role = "Engineer",
+    experience_years = 8,
+    certifications = ["Mechanic", "Electronics"]
+  }
+]
+equipment = [
+  {
+    item = "Oxygen Generator",
+    quantity = 2,
+    status = "operational"
+  },
+  {
+    item = "Communication Device",
+    quantity = 1,
+    status = "operational"
+  },
+  {
+    item = "Life Support System",
+    quantity = 1,
+    status = "operational"
+  }
+]
+mission_objectives = {
+  primary = "Establish a sustainable human settlement on Mars",
+  secondary = "Conduct scientific research on Martian geology and atmosphere"
+}

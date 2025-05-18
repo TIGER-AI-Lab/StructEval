@@ -1,0 +1,23 @@
+
+museum:
+  name: "The Grand Artistry Museum"
+  location:
+    city: "Paris"
+    country: "France"
+  established_year: 1895
+  director:
+    name: "Dr. Eleanor Voss"
+    tenure_years: 30
+  galleries:
+    - 
+      title: "Impressionist Masterpieces"
+      theme: "19th-century French painting"
+      artworks:
+        - 
+          title: "Sunrise over the Seine"
+          artist: "Claude Monet"
+          year_created: 1872
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 72.5
+            width_cm: 96.3

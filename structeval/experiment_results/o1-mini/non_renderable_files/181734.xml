@@ -1,0 +1,22 @@
+
+&lt;enchantedLibrary&gt;
+  &lt;section&gt;
+    &lt;name&gt;Ancient Grimoires&lt;/name&gt;
+    &lt;shelf id="1"&gt;
+      &lt;book&gt;
+        &lt;title&gt;The Whispering Pages&lt;/title&gt;
+        &lt;spell&gt;Invisibility&lt;/spell&gt;
+      &lt;/book&gt;
+      &lt;book&gt;
+        &lt;title&gt;Runes of the Moon&lt;/title&gt;
+        &lt;spell&gt;Lunar Beacon&lt;/spell&gt;
+      &lt;/book&gt;
+    &lt;/shelf&gt;
+    &lt;shelf id="2"&gt;
+      &lt;book&gt;
+        &lt;title&gt;Potion Mastery&lt;/title&gt;
+        &lt;spell&gt;Transmute&lt;/spell&gt;
+      &lt;/book&gt;
+    &lt;/shelf&gt;
+  &lt;/section&gt;
+&lt;/enchantedLibrary&gt;

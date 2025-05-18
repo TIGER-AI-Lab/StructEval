@@ -1,0 +1,47 @@
+
+import json
+
+def generate_json():
+    artifact = {
+        'name': 'Artifact-001',
+        'type': 'Tool',
+        'materials': ['Stone', 'Wood'],
+        'dimensions': {
+            'height_cm': 10.5,
+            'width_cm': 5.2,
+            'depth_cm': 2.1
+        }
+    }
+
+    discovery = {
+        'date': '2022-01-01',
+        'location': {
+            'latitude': 37.7749,
+            'longitude': -122.4194
+        },
+        'team': [
+            {
+                'member_name': 'John Doe',
+                'role': 'Archaeologist',
+                'experience_years': 10
+            }
+        ]
+    }
+
+    hypotheses = [
+        {
+            'theory': 'The artifact was used for hunting.',
+            'proposed_by': 'Jane Smith',
+            'evidence': 'Similar artifacts have been found in other hunting sites.'
+        }
+    ]
+
+    json_data = {
+        'artifact': artifact,
+        'discovery': discovery,
+        'hypotheses': hypotheses
+    }
+
+    return json.dumps(json_data, indent=4)
+
+print(generate_json())

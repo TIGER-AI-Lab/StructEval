@@ -1,0 +1,28 @@
+
+<galaxy>
+  <name>Andromeda</name>
+  <starSystems>
+    <starSystem>
+      <name>Alpha-1</name>
+      <planets>
+        <planet>
+          <name>Xenon</name>
+          <type>Gas Giant</type>
+        </planet>
+        <planet>
+          <name>Ourelia</name>
+          <type>Terrestrial</type>
+        </planet>
+      </planets>
+    </starSystem>
+    <starSystem>
+      <name>Beta-7</name>
+      <planets>
+        <planet>
+          <name>Praxius</name>
+          <type>Ice</type>
+        </planet>
+      </planets>
+    </starSystem>
+  </starSystems>
+</galaxy>

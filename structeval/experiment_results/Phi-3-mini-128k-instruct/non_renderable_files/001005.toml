@@ -1,0 +1,45 @@
+artifact = {
+    name = "The Rosetta Stone",
+    origin = {
+        civilization = "Ancient Egypt",
+        era = "Ptolemaic Period",
+        location = "Rashid (Rosetta) Rockshelter"
+    },
+    materials = {
+        primary = "Granite",
+        secondary = "Limestone",
+        decorations = [
+            {
+                type = "Inscription",
+                color = "Black"
+            },
+            {
+                type = "Gold Leaf",
+                color = "Gold"
+            }
+        ]
+    },
+    dimensions = {
+        height_cm = 114.0,
+        width_cm = 72.0,
+        weight_kg = 2.5
+    },
+    inscriptions = [
+        {
+            language = "Ancient Egyptian Hieroglyphs",
+            text = "Annals of Ptolemy V, decree concerning the temples of Egypt"
+        },
+        {
+            language = "Ancient Egyptian Demotic",
+            text = "The same text as above in Demotic script"
+        },
+        {
+            language = "Ancient Greek",
+            text = "The same text as above in Ancient Greek"
+        }
+    ],
+    current_location = {
+        museum = "The British Museum",
+        exhibit_number = "1025"
+    }
+}

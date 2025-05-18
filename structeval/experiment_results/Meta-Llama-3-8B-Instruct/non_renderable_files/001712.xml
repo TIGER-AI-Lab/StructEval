@@ -1,0 +1,33 @@
+
+<creature>
+    <name>Zorvath the Unyielding</name>
+    <species>Galactic Wraith</species>
+    <origin>
+        <planet>Xeridia</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <stats>
+        <height>250</height>
+        <weight>120</weight>
+        <age>500</age>
+    </stats>
+    <abilities>
+        <ability>
+            <name>Telekinetic Blast</name>
+            <power_level>80</power_level>
+            <type>telepathy</type>
+        </ability>
+        <ability>
+            <name>Energy Shield</name>
+            <power_level>60</power_level>
+            <type>strength</type>
+        </ability>
+    </abilities>
+    <companions>
+        <companion>
+            <name>Korvath the Loyal</name>
+            <species>Galactic Hound</species>
+            <role>Guardian</role>
+        </companion>
+    </companions>
+</creature>

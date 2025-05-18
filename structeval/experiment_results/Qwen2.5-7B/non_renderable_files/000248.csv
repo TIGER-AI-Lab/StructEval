@@ -1,0 +1,30 @@
+
+import pandas as pd
+
+# Define the artifact data
+artifact_data = {
+    "artifact_id": ["A1", "A2", "A3"],
+    "artifact_name": ["Statue of Zeus", "Golden Mask", "Sarcophagus"],
+    "discovery.site": ["Mount Olympus", "Troy", "Mycenae"],
+    "discovery.country": ["Greece", "Turkey", "Greece"],
+    "discovery.year": [432, 330, 1300],
+    "material.primary": ["Bronze", "Gold", "Marble"],
+    "material.secondary": ["Wood", "", "Bronze"],
+    "dimensions.height_cm": [120.5, 50.2, 150.0],
+    "dimensions.width_cm": [60.3, 40.1, 100.5],
+    "dimensions.depth_cm": [30.1, 20.2, 80.0],
+    "condition.current_state": ["intact", "fragmented", "restored"],
+    "condition.restoration_years": ["1980", "1950, 2000", ""],
+    "provenance.previous_owners": ["Unknown", "King Midas", "Royal Family"],
+    "provenance.auction_history": ["", "1990: Christie's", ""],
+    "exhibit.locations": ["Museum of Olympia", "National Archaeological Museum, Athens", "Louvre Museum"]
+}
+
+# Create a DataFrame from the artifact data
+artifact_df = pd.DataFrame(artifact_data)
+
+# Convert the DataFrame to a CSV string
+csv_string = artifact_df.to_csv(index=False)
+
+# Print the CSV string
+print(csv_string)

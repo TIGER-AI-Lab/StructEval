@@ -1,0 +1,19 @@
+galacticZoo:
+  animals:
+    - animal:
+        name: Zylo
+        species: Quarkian Panther
+        origin:
+          planet: Quarkos
+    - animal:
+        name: Blip
+        species: Stellar Lemur
+        origin:
+          planet: Nova Prime
+  caretakers:
+    - caretaker:
+        name: Dr. Nebula
+        role: Xenobiologist
+    - caretaker:
+        name: Captain Starwind
+        role: Security Chief

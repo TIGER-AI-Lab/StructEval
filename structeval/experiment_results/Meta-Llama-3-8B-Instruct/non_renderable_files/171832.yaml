@@ -1,0 +1,15 @@
+
+galacticZoo:
+  animals:
+  - animal:
+      name: Blorbian Floof
+      species: Floofus maximus
+      origin:
+        planet: Blorbus
+        galaxy: Andromeda
+  - animal:
+      name: Quantum Quokka
+      species: Quokkalis quanticus
+      origin:
+        planet: Qubitron
+        galaxy: MilkyWay

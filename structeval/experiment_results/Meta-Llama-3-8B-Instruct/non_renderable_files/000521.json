@@ -1,0 +1,41 @@
+
+{
+  "museum": {
+    "name": "The National Art Museum",
+    "location": {
+      "city": "New York",
+      "country": "USA"
+    },
+    "established_year": 1920,
+    "director": {
+      "name": "John Smith",
+      "tenure_years": 10
+    },
+    "departments": [
+      {
+        "name": "Painting",
+        "head": "Jane Doe",
+        "collections": [
+          {
+            "title": "The Starry Night",
+            "year_acquired": 1950,
+            "artist": "Vincent van Gogh",
+            "medium": "Oil on canvas",
+            "on_display": true
+          },
+          {
+            "title": "The Scream",
+            "year_acquired": 1960,
+            "artist": "Edvard Munch",
+            "medium": "Oil and tempera on cardboard",
+            "on_display": false
+          }
+        ]
+      }
+    ],
+    "opening_hours": {
+      "weekdays": "10:00 AM - 5:00 PM",
+      "weekends": "12:00 PM - 6:00 PM"
+    }
+  }
+}

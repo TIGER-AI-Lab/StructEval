@@ -1,0 +1,21 @@
+
+planet_name: Aurelia
+system.star.name: Helion
+system.star.type: G-type
+system.star.age_million_years: 4500
+system.orbit.distance_au: 1.2
+system.orbit.period_days: 365
+atmosphere.composition:
+  - gas: Nitrogen
+    percentage: 78
+  - gas: Oxygen
+    percentage: 21
+atmosphere.pressure_atm: 1
+surface.temperature_c: 22
+surface.water_presence: Yes
+surface.largest_landform: Mount Zephyr
+moons:
+  - name: Luna
+    diameter_km: 3474
+  - name: Selene
+    diameter_km: 3122

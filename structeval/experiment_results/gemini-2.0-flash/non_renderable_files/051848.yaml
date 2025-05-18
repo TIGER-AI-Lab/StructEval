@@ -1,0 +1,30 @@
+spaceship:
+  name: Starlight Voyager
+  model: XJ-9000
+  year_built: 2087
+  crew:
+    captain: Luna Vega
+    officers:
+      - name: Rex Dalton
+        role: First Officer
+      - name: Mira Yao
+        role: Science Officer
+    engineers:
+      - name: Finn Harper
+        specialty: Propulsion
+      - name: Zoey Lin
+        specialty: Life Support
+  specs:
+    length_meters: 120.5
+    weight_tons: 9500
+    fuel_type: Antimatter
+    max_speed_kmh: 2500000
+  missions:
+    - mission_name: Europa Survey
+      destination: Europa
+      year: 2090
+      successful: true
+    - mission_name: Nebula Traverse
+      destination: Horsehead Nebula
+      year: 2092
+      successful: false

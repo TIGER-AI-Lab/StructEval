@@ -1,0 +1,34 @@
+
+```json
+{
+  "artifact": {
+    "name": "Serpent's Eye Amulet",
+    "origin": {
+      "civilization": "Ophidian Empire",
+      "estimated_age": 3500
+    },
+    "materials": {
+      "primary": "Obsidian",
+      "secondary": "Gold",
+      "composition_percentage": 85
+    },
+    "dimensions": {
+      "height_cm": 7.5,
+      "width_cm": 4.2,
+      "depth_cm": 1.8
+    },
+    "features": [
+      {
+        "type": "Engraving",
+        "description": "Intricate depiction of a coiled serpent with ruby eyes.",
+        "preservation_state": "Intact"
+      },
+      {
+        "type": "Inlay",
+        "description": "Gold inlay forming a geometric pattern around the serpent.",
+        "preservation_state": "Worn"
+      }
+    ]
+  }
+}
+```

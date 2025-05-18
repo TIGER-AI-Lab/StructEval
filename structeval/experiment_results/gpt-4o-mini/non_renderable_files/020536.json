@@ -1,0 +1,38 @@
+{
+  "mission_name": "Odyssey Alpha",
+  "launch_date": "2023-11-12",
+  "launch_site": "Cape Canaveral",
+  "crew": [
+    {
+      "name": "Jane Smith",
+      "role": "Commander",
+      "nationality": "USA"
+    },
+    {
+      "name": "Akira Tanaka",
+      "role": "Pilot",
+      "nationality": "Japan"
+    }
+  ],
+  "payloads": [
+    {
+      "type": "Satellite",
+      "mass_kg": 1200,
+      "destination": "LEO"
+    },
+    {
+      "type": "Probe",
+      "mass_kg": 800,
+      "destination": "Moon"
+    }
+  ],
+  "telemetry": {
+    "orbit": {
+      "apoapsis_km": 420,
+      "periapsis_km": 410
+    },
+    "status": "Stable"
+  },
+  "mission_duration_days": 14,
+  "success": true
+}

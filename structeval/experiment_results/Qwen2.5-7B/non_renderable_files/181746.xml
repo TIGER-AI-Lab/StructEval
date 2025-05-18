@@ -1,0 +1,43 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+data = """
+galacticZoo:
+  species:
+    - name: Quasar Lynx
+      originPlanet: Nebulon-5
+      diet: Plasma
+      abilities:
+        ability:
+          - Invisibility
+          - Teleportation
+    - name: Photon Finch
+      originPlanet: Luminara
+      diet: Solar Flares
+      abilities:
+        ability:
+          - Sonic Chirp
+          - Light Manipulation
+"""
+
+# Parse the YAML data
+parsed_data = yaml.safe_load(data)
+
+# Create the XML structure
+root = ET.Element("galacticZoo")
+for species in parsed_data["species"]:
+    specie = ET.SubElement(root, "species")
+    for key, value in species.items():
+        if key == "abilities":
+            abilities = ET.SubElement(specie, "abilities")
+            for ability in value["ability"]:
+                ET.SubElement(abilities, "ability").text = ability
+        else:
+            ET.SubElement(specie, key).text = str(value)
+
+# Convert the XML structure to a string
+xml_data = ET.tostring(root, encoding="unicode")
+
+# Print the XML data
+print(xml_data)

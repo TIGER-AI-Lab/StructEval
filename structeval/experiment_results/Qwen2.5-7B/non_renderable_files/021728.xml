@@ -1,0 +1,23 @@
+python
+import csv
+import xml.etree.ElementTree as ET
+
+# Define the CSV file path
+csv_file_path = 'path_to_your_csv_file.csv'
+
+# Create the root element for the XML
+root = ET.Element("museums")
+
+# Read the CSV file and populate the XML structure
+with open(csv_file_path, mode='r') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        museum = ET.SubElement(root, "museum")
+        for key, value in row.items():
+            ET.SubElement(museum, key).text = value
+
+# Generate the XML string
+xml_str = ET.tostring(root, encoding='unicode')
+
+# Print the XML string
+print(xml_str)

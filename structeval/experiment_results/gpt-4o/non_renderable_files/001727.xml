@@ -1,0 +1,68 @@
+<recipe>
+    <name>Spaghetti Carbonara</name>
+    <author>John Doe</author>
+    <cuisine>Italian</cuisine>
+    <prepTime>15</prepTime>
+    <cookTime>20</cookTime>
+    <servings>4</servings>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>400</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Pancetta</name>
+            <quantity>150</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>4</quantity>
+            <unit>large</unit>
+        </ingredient>
+        <ingredient>
+            <name>Parmesan Cheese</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Black Pepper</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Boil the spaghetti in salted water until al dente.</description>
+        </step>
+        <step>
+            <order>2</order>
+            <description>Fry the pancetta in a pan until crispy.</description>
+        </step>
+        <step>
+            <order>3</order>
+            <description>Beat the eggs and mix with grated Parmesan cheese.</description>
+        </step>
+        <step>
+            <order>4</order>
+            <description>Drain the spaghetti and mix with pancetta and egg mixture.</description>
+        </step>
+        <step>
+            <order>5</order>
+            <description>Season with black pepper and serve immediately.</description>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>500</calories>
+        <protein>20</protein>
+        <fat>22</fat>
+        <carbohydrates>60</carbohydrates>
+    </nutrition>
+</recipe>

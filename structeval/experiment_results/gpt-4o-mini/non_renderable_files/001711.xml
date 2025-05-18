@@ -1,0 +1,49 @@
+
+<creature>
+    <name>Zephyra</name>
+    <species>Sky Serpent</species>
+    <age>150</age>
+    <habitat>
+        <region>Cloudspire Mountains</region>
+        <climate>Temperate</climate>
+        <resources>Crystalline waters, rare herbs, and abundant prey</resources>
+    </habitat>
+    <abilities>
+        <ability>
+            <type>flight</type>
+            <level>10</level>
+            <description>Can soar through the skies at incredible speeds.</description>
+        </ability>
+        <ability>
+            <type>invisibility</type>
+            <level>8</level>
+            <description>Can become invisible to evade predators and hunters.</description>
+        </ability>
+        <ability>
+            <type>storm summoning</type>
+            <level>9</level>
+            <description>Can call forth storms to protect its territory.</description>
+        </ability>
+    </abilities>
+    <appearance>
+        <color>Azure Blue</color>
+        <size>30 feet long</size>
+        <distinctiveMarkings>Glowing silver scales and iridescent wings</distinctiveMarkings>
+    </appearance>
+    <history>
+        <origin>Born from the first storm clouds of the world</origin>
+        <legend>It is said that Zephyra once saved a village from a great drought by summoning rain.</legend>
+    </history>
+    <relationships>
+        <relationship>
+            <relatedTo>Elara the Wise</relatedTo>
+            <relationshipType>ally</relationshipType>
+            <duration>centuries</duration>
+        </relationship>
+        <relationship>
+            <relatedTo>Grom the Terrible</relatedTo>
+            <relationshipType>rival</relationshipType>
+            <duration>50 years</duration>
+        </relationship>
+    </relationships>
+</creature>

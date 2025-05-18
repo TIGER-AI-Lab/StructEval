@@ -1,0 +1,29 @@
+
+[gallery]
+title = "Modern Art Gallery"
+
+  [gallery.curator]
+  name = "Alexandra Smith"
+
+    [gallery.curator.contact]
+    email = "alexandra.smith@modernartgallery.com"
+    phone = "+1-555-123-4567"
+
+  [gallery.location]
+  city = "New York"
+  country = "USA"
+
+  [[gallery.exhibitions]]
+  name = "Visions of Tomorrow"
+  start_date = "2024-09-01"
+  end_date = "2024-12-15"
+
+    [[gallery.exhibitions.artworks]]
+    artist = "Liam Johnson"
+    title = "Ethereal Horizons"
+    year = 2023
+    medium = "Oil on canvas"
+
+      [gallery.exhibitions.artworks.dimensions]
+      height_cm = 120.5
+      width_cm = 90.0

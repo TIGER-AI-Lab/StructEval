@@ -1,0 +1,91 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <title>Spicy Thai Basil Chicken</title>
+    <author>
+        <name>Jane Doe</name>
+        <role>chef</role>
+    </author>
+    <metadata>
+        <cuisine>Thai</cuisine>
+        <difficulty>medium</difficulty>
+        <servings>4</servings>
+        <tags>
+            <tag>spicy</tag>
+            <tag>quick</tag>
+            <tag>gluten-free</tag>
+        </tags>
+    </metadata>
+    <ingredients>
+        <ingredient>
+            <name>Chicken Breast</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Fresh Basil Leaves</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Garlic Cloves</name>
+            <quantity>3</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Red Chili</name>
+            <quantity>2</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Fish Sauce</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <instruction>Slice the chicken breast into thin strips.</instruction>
+            <duration_minutes>10</duration_minutes>
+            <tools>knife, cutting board</tools>
+        </step>
+        <step>
+            <instruction>Heat oil in a pan over medium heat.</instruction>
+            <duration_minutes>2</duration_minutes>
+            <tools>pan, stove</tools>
+        </step>
+        <step>
+            <instruction>Add garlic and chili, sautÃ© until fragrant.</instruction>
+            <duration_minutes>3</duration_minutes>
+            <tools>spatula</tools>
+        </step>
+        <step>
+            <instruction>Introduce the chicken strips and cook until browned.</instruction>
+            <duration_minutes>7</duration_minutes>
+            <tools>spatula, pan</tools>
+        </step>
+        <step>
+            <instruction>Pour in fish sauce and stir well.</instruction>
+            <duration_minutes>2</duration_minutes>
+            <tools>spatula</tools>
+        </step>
+        <step>
+            <instruction>Turn off the heat and mix in fresh basil leaves.</instruction>
+            <duration_minutes>1</duration_minutes>
+            <tools>spatula</tools>
+        </step>
+        <step>
+            <instruction>Serve hot with steamed rice.</instruction>
+            <duration_minutes>1</duration_minutes>
+            <tools>serving plate, rice cooker</tools>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>350</calories>
+        <macros>
+            <protein>30</protein>
+            <carbohydrates>20</carbohydrates>
+            <fat>15</fat>
+        </macros>
+    </nutrition>
+</recipe>

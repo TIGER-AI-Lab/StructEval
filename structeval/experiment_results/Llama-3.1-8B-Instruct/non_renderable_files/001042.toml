@@ -1,0 +1,28 @@
+
+brewery = {
+  name = "Golden Hops Brewery"
+  founded_year = 2015
+  location = {
+    city = "Portland"
+    country = "USA"
+  }
+  flagship_beer = {
+    name = "Hoppy Dream"
+    abv = 6.2
+    awards = [
+      { title = "Best IPA" year = 2020 }
+      { title = "Golden Hops Award" year = 2018 }
+    ]
+  }
+  brewers = [
+    { name = "John Doe" role = "Head Brewer" years_experience = 10 }
+    { name = "Jane Smith" role = "Assistant Brewer" years_experience = 5 }
+  ]
+  tours = {
+    available = true
+    schedule = [
+      { day = "Monday" start_time = "10:00" language = "English" }
+      { day = "Wednesday" start_time = "14:00" language = "Spanish" }
+    ]
+  }
+}

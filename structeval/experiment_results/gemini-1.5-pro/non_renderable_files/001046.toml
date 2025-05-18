@@ -1,0 +1,43 @@
+[planet]
+name = "Xylia"
+
+[planet.discovery]
+year = 2342
+method = "Transit"
+
+[planet.orbit]
+period_days = 452.7
+eccentricity = 0.02
+semi_major_axis_au = 1.3
+
+[planet.atmosphere]
+composition = ["Nitrogen", "Oxygen", "Argon"]
+pressure_atm = 1.2
+temperature_kelvin = 290
+
+[[planet.moons]]
+name = "Luna Prime"
+diameter_km = 3500
+orbital_period_days = 27.3
+
+[[planet.moons[0].features]]
+type = "Crater"
+description = "Large impact crater with central peak"
+
+[[planet.moons[0].features]]
+type = "Mare"
+description = "Dark, basaltic plain"
+
+
+[[planet.moons]]
+name = "Valyr"
+diameter_km = 1200
+orbital_period_days = 15.9
+
+[[planet.moons[1].features]]
+type = "Canyon"
+description = "Vast canyon system spanning thousands of kilometers"
+
+[[planet.moons[1].features]]
+type = "Volcano"
+description = "Inactive shield volcano"

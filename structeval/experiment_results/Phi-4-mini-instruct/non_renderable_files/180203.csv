@@ -1,0 +1,8 @@
+
+planet_name,gravity_g,discovery_year,has_rings,moon_count,atmosphere
+Zephyria,1.2,2042,true,3,Neon-rich
+Glimmarion,0.7,2099,false,1,Methane
+Volturna,2.5,2183,true,5,Oxygen-Nitrogen
+Quarion,0.95,2066,false,2,Carbon Dioxide
+Eldoria,1.8,2120,true,4,Ammonia
+Saphyra,1.1,2175,false,0,Helium

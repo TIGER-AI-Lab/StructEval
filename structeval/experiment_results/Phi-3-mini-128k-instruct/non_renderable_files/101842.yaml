@@ -1,0 +1,39 @@
+space_station:
+  name: "Aurora Gateway"
+  location:
+    orbit: "LEO"
+    planet: "Earth"
+  modules:
+    - id: "M1"
+      purpose: "Habitation"
+      crew: 6
+      status: "active"
+    - id: "M2"
+      purpose: "Research"
+      crew: 4
+      status: "active"
+    - id: "M3"
+      purpose: "Docking"
+      crew: 1
+      status: "maintenance"
+  power_system:
+    type: "solar"
+    output_kw: 120
+    backup: true
+  supplies:
+    oxygen:
+      level_percent: 87
+  food:
+    last_delivery: 2024-05-10
+    inventory:
+      - item: "Nutrient Packs"
+        quantity: 200
+      - item: "Fresh Produce"
+        quantity: 30
+  communication:
+    status: "nominal"
+    channels:
+      - name: "Ground Control"
+        frequency_mhz: 145.8
+      - name: "Science Relay"
+        frequency_mhz: 437.1

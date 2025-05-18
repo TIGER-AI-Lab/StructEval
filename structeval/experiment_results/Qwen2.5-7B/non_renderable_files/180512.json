@@ -1,0 +1,14 @@
+
+import json
+import yaml
+
+# Load the YAML data
+with open('data.yaml', 'r') as file:
+    yaml_data = yaml.safe_load(file)
+
+# Convert the YAML data to JSON
+json_data = json.dumps(yaml_data, indent=2)
+
+# Write the JSON data to a file
+with open('data.json', 'w') as file:
+    file.write(json_data)

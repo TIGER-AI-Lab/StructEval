@@ -1,0 +1,20 @@
+
+<museum>
+  <name>Museum of Imaginary Instruments</name>
+  <location>
+    <city>Cloudville</city>
+    <country>Fantasiana</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Whispering Harp</title>
+      <artist>Lira O'Sound</artist>
+      <year>2022</year>
+    </exhibit>
+    <exhibit>
+      <title>Invisible Drum</title>
+      <artist>Percy Rhythm</artist>
+      <year>2019</year>
+    </exhibit>
+  </exhibits>
+</museum>

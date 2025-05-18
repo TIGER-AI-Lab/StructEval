@@ -1,0 +1,24 @@
+
+creature:
+  name: "Lumivine"
+  species: "Glowing Forest Spirit"
+  age: 150
+  habitat:
+    region: "Mystic Woods"
+    climate: "Temperate"
+  abilities:
+    - type: "Luminescence"
+      description: "Emits a soothing glow that calms nearby creatures."
+      power_level: 8
+    - type: "Nature's Whisper"
+      description: "Communicates with plants to encourage rapid growth."
+      power_level: 7
+  appearance:
+    color: "Iridescent Green"
+    size:
+      height_cm: 120
+      weight_kg: 35
+  behavior:
+    - "Nocturnal wanderer"
+    - "Guardian of the forest"
+    - "Communal with other forest spirits"

@@ -1,0 +1,3 @@
+
+artifact_id,artifact_name,discovery.location,discovery.date_found,discovery.expedition_leader,discovery.team_members,artifact_type,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.status,condition.restoration_needed,historical_period,display_location.gallery,display_location.shelf_number,provenance.previous_owners,provenance.acquisition_method
+"ART12345","Ancient Ceremonial Dagger","Giza Plateau, Egypt","2023-04-15","Dr. Sarah Johnson","5","weapon","metal","gold inlay; steel",15.2,7.8,2.5,"excellent","false","Ptolemaic Period","Egyptian Museum","A-12","John Doe; Jane Smith; Museum of Antiquities"

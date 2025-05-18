@@ -1,0 +1,23 @@
+spaceship:
+  name: "Nebula Voyager"
+  model: "NX-5000"
+  launch_year: 2087
+  crew:
+    captain: "Astra Vega"
+    engineer: "Riko Tanaka"
+    scientists:
+      - "Dr. Zane Quill"
+      - "Dr. Mira Solis"
+  missions:
+    - name: "Europa Survey"
+      destination: "Europa, Jupiter"
+      success: true
+    - name: "Exoplanet Alpha"
+      destination: "Kepler-442b"
+      success: false
+  systems:
+    life_support:
+      status: "Nominal"
+    navigation:
+      operational: true
+      version: "3.2.1"

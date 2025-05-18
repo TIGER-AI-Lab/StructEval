@@ -1,0 +1,26 @@
+
+spaceship:
+  name: "Star Voyager"
+  captain:
+    name: "Jane Starling"
+    rank: "Captain"
+  crew:
+    - name: "Alan Quasar"
+      role: "Pilot"
+      species: "Human"
+    - name: "Beep Boop"
+      role: "Engineer"
+      species: "Android"
+  specs:
+    length_m: 120
+    mass_tons: 500
+    engine:
+      type: "Plasma"
+      thrust_kn: 3000
+  cargo:
+    - item: "Food Supplies"
+      quantity: 200
+      hazardous: false
+    - item: "Alien Artifacts"
+      quantity: 5
+      hazardous: true

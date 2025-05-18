@@ -1,0 +1,41 @@
+
+import csv
+
+def create_csv_row(data):
+    return [data.get('artifact_id', ''),
+            data.get('artifact_name', ''),
+            data.get('origin_civilization', ''),
+            data.get('discovery_date', ''),
+            data.get('material', {}).get('primary', ''),
+            data.get('material', {}).get('secondary', ''),
+            data.get('estimated_age_years', ''),
+            data.get('dimensions', {}).get('length_cm', ''),
+            data.get('dimensions', {}).get('width_cm', ''),
+            data.get('dimensions', {}).get('height_cm', ''),
+            data.get('location', {}).get('site_name', ''),
+            data.get('location', {}).get('latitude', ''),
+            data.get('location', {}).get('longitude', ''),
+            data.get('current_condition', {}).get('status', ''),
+            data.get('current_condition', {}).get('restoration_needed', ''),
+            data.get('notable_markings', [{}])[0].get('type', ''),
+            data.get('notable_markings', [{}])[0].get('description', '')]
+
+artifact_data = {
+    'artifact_id': '12345',
+    'artifact_name': 'Pottery Vessel',
+    'origin_civilization': 'Mayan',
+    'discovery_date': '2010-05-12',
+    'material': {'primary': 'Clay', 'secondary': 'Paint'},
+    'estimated_age_years': 1000,
+    'dimensions': {'length_cm': 15.5, 'width_cm': 10.2, 'height_cm': 30.1},
+    'location': {'site_name': 'Mayan Ruins', 'latitude': 19.4326, 'longitude': -98.5847},
+    'current_condition': {'status': 'Intact', 'restoration_needed': False},
+    'notable_markings': [{'type': 'Inscription', 'description': 'A Mayan glyph'}]
+}
+
+with open('artifact_details.csv', 'w', newline='') as csvfile:
+    fieldnames = ['artifact_id', 'artifact_name', 'origin_civilization', 'discovery_date', 'material_primary', 'material_secondary', 'estimated_age_years', 'dimensions_length_cm', 'dimensions_width_cm', 'dimensions_height_cm', 'location_site_name', 'location_latitude', 'location_longitude', 'current_condition_status', 'current_condition_restoration_needed', 'notable_markings_type', 'notable_markings_description']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    writer.writerow(create_csv_row(artifact_data))

@@ -1,0 +1,7 @@
+book_id,title,author_name,author_birth_year,genre,publication_year,publisher_name,publisher_country,pages,language,series_name,series_number,isbn_13,average_rating,review_count
+1,"The Shadow of the Spire",Amelia Nightshade,1972,Fantasy,2023,"Mystic Press",USA,456,English,"Chronicles of Eldoria",1,9780321765723,4.5,2547
+2,"The Star Wanderer",Jaxon Nova,1985,Science Fiction,2024,"Cosmic House",UK,582,English,"",,9781473226789,4.2,1876
+3,"Whispers of the Ancients",Elara Whisperwind,1968,Fantasy,2022,"Ancient Tales Publishing",Canada,398,English,"",,9780545909876,4.7,3254
+4,"The City of Shifting Sands",Kael Sandstorm,1979,Fantasy,2023,"Desert Winds Press",USA,512,English,"Dunes of Destiny",2,9780765383021,4.3,2189
+5,"Echoes in the Void",Nova Zephyr,1992,Science Fiction,2024,"Galactic Press",USA,620,English,"",,9781593079523,4.6,2845
+6,"The Lost City of Eldoria",Amelia Nightshade,1972,Fantasy,2024,"Mystic Press",USA,480,English,"Chronicles of Eldoria",2,9780321999999,4.4,2312

@@ -1,0 +1,29 @@
+<planet>
+  <name>Kepler-452b</name>
+  <type>Terrestrial</type>
+  <orbitalPeriod>385</orbitalPeriod>
+  <discovery year="2015" method="Transit" discoverer="NASA Kepler Mission"/>
+  <atmosphere>
+    <composition>nitrogen, oxygen, argon</composition>
+    <pressure>0.9</pressure>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>Kepler-452b-I</name>
+      <diameter>5000</diameter>
+      <hasSubsurfaceOcean>true</hasSubsurfaceOcean>
+    </moon>
+    <moon>
+      <name>Kepler-452b-II</name>
+      <diameter>3000</diameter>
+      <hasSubsurfaceOcean>false</hasSubsurfaceOcean>
+    </moon>
+  </moons>
+  <rings>
+    <hasRings>true</hasRings>
+    <ring>
+      <width>10000</width>
+      <composition>ice, dust</composition>
+    </ring>
+  </rings>
+</planet>

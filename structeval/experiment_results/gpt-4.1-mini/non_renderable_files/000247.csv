@@ -1,0 +1,2 @@
+creature_id,species_name,habitat.region,habitat.terrain_type,habitat.temperature_celsius,physical_traits.height_meters,physical_traits.weight_kilograms,physical_traits.skin_color,physical_traits.eye_count,abilities[0].name,abilities[0].power_level,abilities[1].name,abilities[1].power_level,diet.primary_food,diet.secondary_food
+"CR001","Flamewing Drakon","Volcanic Archipelago","mountainous volcanic","45",3.5,250,"crimson red",2,"Fire Breath",90,"Wing Gust",70,"lava insects","charred plants"

@@ -1,0 +1,41 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ship>
+  <id>SS-42</id>
+  <name>Star Wanderer</name>
+  <captain>
+    <name>Elara Voss</name>
+    <rank>Commander</rank>
+    <species>Andromedan</species>
+  </captain>
+  <crew>
+    <member>
+      <name>Tiko</name>
+      <role>Navigator</role>
+      <species>Human</species>
+    </member>
+    <member>
+      <name>Grall</name>
+      <role>Engineer</role>
+      <species>Zentari</species>
+    </member>
+  </crew>
+  <missions>
+    <mission>
+      <name>First Contact</name>
+      <destination>Proxima Centauri</destination>
+      <success>true</success>
+    </mission>
+    <mission>
+      <name>Rescue Mission</name>
+      <destination>Alpha Tauri</destination>
+      <success>false</success>
+    </mission>
+  </missions>
+  <specifications>
+    <length_meters>320</length_meters>
+    <max_speed_warp>9.8</max_speed_warp>
+    <armament>Plasma Cannons</armament>
+    <shield_strength>High</shield_strength>
+  </specifications>
+</ship>

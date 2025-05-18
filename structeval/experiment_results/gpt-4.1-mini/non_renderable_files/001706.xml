@@ -1,0 +1,143 @@
+
+<recipe>
+  <title>Spicy Mango Chicken Stir-Fry</title>
+  <author>
+    <name>Jessica Lee</name>
+    <contact>
+      <email>jessica.lee@example.com</email>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Chicken breast</name>
+      <quantity>300</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Mango</name>
+      <quantity>1</quantity>
+      <unit>piece</unit>
+    </ingredient>
+    <ingredient>
+      <name>Red bell pepper</name>
+      <quantity>1</quantity>
+      <unit>piece</unit>
+    </ingredient>
+    <ingredient>
+      <name>Soy sauce</name>
+      <quantity>3</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>Chili flakes</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+    <ingredient>
+      <name>Garlic</name>
+      <quantity>2</quantity>
+      <unit>cloves</unit>
+    </ingredient>
+    <ingredient>
+      <name>Olive oil</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <description>Slice the chicken breast into thin strips.</description>
+      <duration>
+        <minutes>10</minutes>
+      </duration>
+      <tools>
+        <tool>
+          <toolName>Knife</toolName>
+          <required>true</required>
+        </tool>
+        <tool>
+          <toolName>Cutting board</toolName>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+    <step>
+      <description>Chop the mango and red bell pepper into bite-sized pieces.</description>
+      <duration>
+        <minutes>8</minutes>
+      </duration>
+      <tools>
+        <tool>
+          <toolName>Knife</toolName>
+          <required>true</required>
+        </tool>
+        <tool>
+          <toolName>Cutting board</toolName>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+    <step>
+      <description>Heat olive oil in a wok over medium heat and sautÃ© garlic until fragrant.</description>
+      <duration>
+        <minutes>3</minutes>
+      </duration>
+      <tools>
+        <tool>
+          <toolName>Wok</toolName>
+          <required>true</required>
+        </tool>
+        <tool>
+          <toolName>Spatula</toolName>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+    <step>
+      <description>Add chicken strips and cook until no longer pink.</description>
+      <duration>
+        <minutes>7</minutes>
+      </duration>
+      <tools>
+        <tool>
+          <toolName>Wok</toolName>
+          <required>true</required>
+        </tool>
+        <tool>
+          <toolName>Spatula</toolName>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+    <step>
+      <description>Stir in mango, red bell pepper, soy sauce, and chili flakes; cook for another 5 minutes.</description>
+      <duration>
+        <minutes>5</minutes>
+      </duration>
+      <tools>
+        <tool>
+          <toolName>Wok</toolName>
+          <required>true</required>
+        </tool>
+        <tool>
+          <toolName>Spatula</toolName>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>450</calories>
+    <fat>
+      <grams>15</grams>
+    </fat>
+    <protein>
+      <grams>40</grams>
+    </protein>
+  </nutrition>
+  <metadata>
+    <cuisine>Fusion</cuisine>
+    <difficulty>medium</difficulty>
+    <published date="2024-06-15"/>
+  </metadata>
+</recipe>

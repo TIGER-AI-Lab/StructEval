@@ -1,0 +1,34 @@
+
+gallery = {
+    title = "Modern Visions Art Gallery"
+    curator = {
+        name = "Dr. Elena Martinez"
+        contact = {
+            email = "curator@example.com"
+            phone = "+1234567890"
+        }
+    }
+    location = {
+        city = "New York"
+        country = "USA"
+    }
+    exhibitions = [
+        {
+            name = "Contemporary Expressions"
+            start_date = "2023-11-01"
+            end_date = "2023-12-31"
+            artworks = [
+                {
+                    artist = "James Wilson"
+                    title = "Urban Echoes"
+                    year = 2020
+                    medium = "oil on canvas"
+                    dimensions = {
+                        height_cm = 120.5
+                        width_cm = 150.2
+                    }
+                }
+            ]
+        }
+    ]
+}

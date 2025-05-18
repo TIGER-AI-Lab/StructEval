@@ -1,0 +1,36 @@
+
+ecosystem:
+  name: "Lumina Marsh"
+  location:
+    latitude: -15.1234
+    longitude: 45.6789
+  climate:
+    type: "tropical"
+    average_temperature_celsius: 27.5
+  flora:
+    - species: "Glowleaf Fern"
+      population_estimate: 150000
+      notable_features:
+        - "Bioluminescent fronds that emit a soft blue light at night"
+        - "Rapid growth rate, covering large areas in short periods"
+    - species: "Silkvine Orchid"
+      population_estimate: 50000
+      notable_features:
+        - "Produces silky threads to capture moisture from the air"
+        - "Flowers change color based on soil pH levels"
+  fauna:
+    - species: "Azure Dartwing"
+      diet: "herbivore"
+      population_estimate: 12000
+      conservation_status: "endangered"
+    - species: "Mirewolf"
+      diet: "carnivore"
+      population_estimate: 3000
+      conservation_status: "vulnerable"
+  events:
+    - event_name: "Great Luminescence"
+      date: "2022-06-21"
+      impact_summary: "Unprecedented bioluminescent bloom attracted researchers and tourists, leading to increased awareness but also environmental strain."
+    - event_name: "Flood Season Surge"
+      date: "2023-03-15"
+      impact_summary: "Heavy rains caused significant flooding, altering habitats and affecting both flora and fauna populations."

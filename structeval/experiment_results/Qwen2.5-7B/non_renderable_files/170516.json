@@ -1,0 +1,30 @@
+
+import xmltodict
+import json
+
+xml_data = """
+<museum>
+  <name>The Imaginary Curiosity Cabinet</name>
+  <location>
+    <city>Fictionopolis</city>
+    <country>Nowhere Land</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>The Whispering Clock</title>
+      <artist>Elara Ticktock</artist>
+      <year>1867</year>
+    </exhibit>
+    <exhibit>
+      <title>The Invisible Painting</title>
+      <artist>V. Vanish</artist>
+      <year>2021</year>
+    </exhibit>
+  </exhibits>
+</museum>
+"""
+
+data_dict = xmltodict.parse(xml_data)
+json_data = json.dumps(data_dict)
+
+print(json_data)

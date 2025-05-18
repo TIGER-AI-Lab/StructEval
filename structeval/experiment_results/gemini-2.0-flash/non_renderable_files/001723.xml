@@ -1,0 +1,109 @@
+
+<recipe>
+    <title>Spicy Mango Salsa Chicken</title>
+    <author>
+        <name>Jane Doe</name>
+        <profileUrl>https://www.example.com/janedoe</profileUrl>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Chicken Breast</name>
+            <quantity>2</quantity>
+            <unit>lbs</unit>
+        </ingredient>
+        <ingredient>
+            <name>Mango</name>
+            <quantity>2</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Red Onion</name>
+            <quantity>0.5</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Jalapeno</name>
+            <quantity>1</quantity>
+            <unit>small</unit>
+        </ingredient>
+        <ingredient>
+            <name>Lime Juice</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Cilantro</name>
+            <quantity>0.25</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Olive Oil</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Chili Powder</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Cumin</name>
+            <quantity>0.5</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>0.5</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Black Pepper</name>
+            <quantity>0.25</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <order>1</order>
+            <instruction>Preheat grill to medium-high heat.</instruction>
+            <durationMinutes>5</durationMinutes>
+        </step>
+        <step>
+            <order>2</order>
+            <instruction>In a bowl, combine mango, red onion, jalapeno, lime juice, and cilantro. Mix well and set aside.</instruction>
+            <durationMinutes>10</durationMinutes>
+        </step>
+        <step>
+            <order>3</order>
+            <instruction>In a separate bowl, mix olive oil, chili powder, cumin, salt, and pepper.</instruction>
+            <durationMinutes>2</durationMinutes>
+        </step>
+        <step>
+            <order>4</order>
+            <instruction>Brush chicken breasts with the olive oil mixture.</instruction>
+            <durationMinutes>2</durationMinutes>
+        </step>
+        <step>
+            <order>5</order>
+            <instruction>Grill chicken for 6-8 minutes per side, or until cooked through.</instruction>
+            <durationMinutes>16</durationMinutes>
+        </step>
+        <step>
+            <order>6</order>
+            <instruction>Top grilled chicken with mango salsa and serve.</instruction>
+            <durationMinutes>2</durationMinutes>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>350</calories>
+        <fat>15</fat>
+        <protein>35</protein>
+        <carbohydrates>20</carbohydrates>
+    </nutrition>
+    <metadata>
+        <cuisine>Mexican</cuisine>
+        <difficulty>easy</difficulty>
+        <servings>4</servings>
+        <created>2023-10-27</created>
+    </metadata>
+</recipe>

@@ -1,0 +1,23 @@
+galaxy:
+  name: Andromeda
+  planets:
+    - planet:
+        name: Zephyra
+        type: Gas Giant
+        moons:
+          - moon:
+              name: Lunara
+              composition: Ice
+          - moon:
+              name: Phobos
+              composition: Rocky
+    - planet:
+        name: Orionis
+        type: Terrestrial
+        moons:
+          - moon:
+              name: Selene
+              composition: Iron
+          - moon:
+              name: Nyx
+              composition: Crystal

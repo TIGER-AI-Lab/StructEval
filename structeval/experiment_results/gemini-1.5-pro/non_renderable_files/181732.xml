@@ -1,0 +1,31 @@
+<galaxy>
+  <name>Andromeda</name>
+  <constellations>
+    <constellation>
+      <name>Cassiopeia</name>
+      <stars>
+        <star>
+          <name>Schedar</name>
+          <type>Giant</type>
+        </star>
+        <star>
+          <name>Caph</name>
+          <type>Subgiant</type>
+        </star>
+      </stars>
+    </constellation>
+    <constellation>
+      <name>Perseus</name>
+      <stars>
+        <star>
+          <name>Mirfak</name>
+          <type>Supergiant</type>
+        </star>
+        <star>
+          <name>Algol</name>
+          <type>Eclipsing binary</type>
+        </star>
+      </stars>
+    </constellation>
+  </constellations>
+</galaxy>

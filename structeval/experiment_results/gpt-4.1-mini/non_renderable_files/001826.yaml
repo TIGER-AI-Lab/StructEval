@@ -1,0 +1,27 @@
+
+creature:
+  name: "Zylarth the Luminescent"
+  species: "Luminoid"
+  origin:
+    planet: "Gliese Prime"
+    galaxy: "Andromeda"
+  abilities:
+    - ability_name: "Photon Burst"
+      power_level: 85
+      cooldown_seconds: 30
+    - ability_name: "Mind Shield"
+      power_level: 60
+      cooldown_seconds: 45
+  appearance:
+    height_cm: 210
+    skin_color: "iridescent blue"
+    eye_count: 4
+  inventory:
+    - item_name: "Quantum Crystal"
+      quantity: 3
+      rarity: "rare"
+  allies:
+    - name: "Vexor"
+      relationship: "mentor"
+    - name: "Klyra"
+      relationship: "friend"

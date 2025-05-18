@@ -1,0 +1,59 @@
+{
+  "space_station": {
+    "name": "Celestial Haven",
+    "location": {
+      "planet": "Kepler-442b",
+      "coordinates": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      }
+    },
+    "crew": [
+      {
+        "name": "Zara Quell",
+        "role": "Commander",
+        "species": "Human",
+        "missions": [
+          {
+            "mission_name": "Aurora Leap",
+            "year": 2227
+          },
+          {
+            "mission_name": "Nebula Drift",
+            "year": 2229
+          }
+        ]
+      },
+      {
+        "name": "Rivox D'kaar",
+        "role": "Engineer",
+        "species": "Xel'Naga",
+        "missions": [
+          {
+            "mission_name": "Stellar Forge",
+            "year": 2228
+          }
+        ]
+      }
+    ],
+    "modules": [
+      {
+        "module_name": "Hydroponics Bay",
+        "purpose": "Food Production",
+        "status": "Operational"
+      },
+      {
+        "module_name": "Quantum Lab",
+        "purpose": "Research",
+        "status": "Under Maintenance"
+      }
+    ],
+    "launch_date": "2225-04-17",
+    "operational_status": "Active",
+    "supply_levels": {
+      "oxygen": 87,
+      "water": 74,
+      "food": 62
+    }
+  }
+}

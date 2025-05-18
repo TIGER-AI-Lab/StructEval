@@ -1,0 +1,66 @@
+python
+import csv
+from io import StringIO
+
+data = """
+creatures:
+  - creature_name: Glimmerbeetle
+    biome: Crystal Caverns
+    number_of_legs: 6
+    discovery_date: 2018-04-17
+    venomous: true
+    average_weight_kg: 0.4
+  - creature_name: Mossback Torto
+    biome: Emerald Marsh
+    number_of_legs: 4
+    discovery_date: 2020-09-03
+    venomous: false
+    average_weight_kg: 35.2
+  - creature_name: Skywhisp
+    biome: Cloud Peaks
+    number_of_legs: 0
+    discovery_date: 2015-12-22
+    venomous: false
+    average_weight_kg: 2.7
+  - creature_name: Emberfox
+    biome: Ashen Forest
+    number_of_legs: 4
+    discovery_date: 2019-06-11
+    venomous: true
+    average_weight_kg: 8.1
+  - creature_name: Ripplefin
+    biome: Sapphire Lake
+    number_of_legs: 2
+    discovery_date: 2021-03-14
+    venomous: false
+    average_weight_kg: 1.6
+  - creature_name: Thornhopper
+    biome: Bramble Fields
+    number_of_legs: 8
+    discovery_date: 2017-11-29
+    venomous: true
+    average_weight_kg: 0.9
+"""
+
+# Remove the YAML header
+data = data.split("creatures:")[1]
+
+# Create a CSV file in memory
+csv_data = StringIO()
+csv_writer = csv.writer(csv_data)
+
+# Write the header row
+header = ["creature_name", "biome", "number_of_legs", "discovery_date", "venomous", "average_weight_kg"]
+csv_writer.writerow(header)
+
+# Write the data rows
+for creature in data.strip().split("
+"):
+    creature_data = creature.split()
+    csv_writer.writerow(creature_data)
+
+# Get the CSV data as a string
+csv_string = csv_data.getvalue()
+
+# Print the CSV data
+print(csv_string)

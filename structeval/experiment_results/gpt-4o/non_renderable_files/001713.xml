@@ -1,0 +1,39 @@
+<recipe>
+    <title>Spicy Tomato Pasta</title>
+    <author>
+        <name>Jane Doe</name>
+        <id>12345</id>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Tomato</name>
+            <quantity>3</quantity>
+            <unit>pieces</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Garlic</name>
+            <quantity>2</quantity>
+            <unit>cloves</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Chop the tomatoes and garlic finely.</description>
+            <duration_minutes>10</duration_minutes>
+        </step>
+        <step>
+            <description>SautÃ© the garlic in olive oil until golden, then add tomatoes.</description>
+            <duration_minutes>15</duration_minutes>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>350</calories>
+        <fat_grams>12.5</fat_grams>
+        <protein_grams>8</protein_grams>
+    </nutrition>
+    <tags>
+        <tag>Vegetarian</tag>
+        <tag>Quick</tag>
+    </tags>
+</recipe>

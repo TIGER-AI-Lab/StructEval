@@ -1,0 +1,8 @@
+
+planet_name,discovery_year,distance_lightyears,atmosphere_type,surface_temperature_c,inhabited,last_probe_visit
+Zyphora,2134,47.5,Methane-rich,-180,false,2140-07-23
+Krellon,2121,92.8,Oxygen-nitrogen,22,true,2138-11-14
+Virelia,2142,15.3,Sulfur dioxide,430,false,2143-02-01
+Thessia,2109,60.0,Carbon dioxide,-55,false,2111-09-12
+Marnax,2137,120.2,Hydrogen-helium,-160,false,2141-04-30
+Eldoria,2115,33.9,Nitrogen-argon,5,true,2139-06-19

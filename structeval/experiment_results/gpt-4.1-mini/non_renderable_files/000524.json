@@ -1,0 +1,34 @@
+{
+  "exhibit": {
+    "title": "Impressionist Masterpieces",
+    "curator": {
+      "name": "Dr. Emily Rose Thompson",
+      "contact": {
+        "email": "emily.thompson@museum.org",
+        "phone": "+1-555-123-4567"
+      }
+    },
+    "artifacts": [
+      {
+        "id": "IMP-001",
+        "name": "Water Lilies",
+        "artist": "Claude Monet",
+        "year": 1916,
+        "medium": "Oil on canvas",
+        "provenance": {
+          "previous_owners": [
+            "Paul Durand-Ruel",
+            "The Art Institute of Chicago"
+          ],
+          "acquisition_date": "1985-09-15"
+        },
+        "on_display": true,
+        "dimensions": {
+          "height_cm": 200.5,
+          "width_cm": 300.0,
+          "depth_cm": 4.0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+
+artifact_id,artifact_name,origin_civilization,discovery_site,discovery_date,material.primary,material.secondary,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,estimated_age_years,current_location.museum,current_location.city,current_location.country,condition_status,notable_features,related_artifacts
+A123B,Camel Figurine,Ancient Egypt,Valley of Kings,2023-07-15,bronze,gold inlay,12.50,8.75,15.00,3500,Egyptian Museum,Cairo,Egypt,excellent,engraved hieroglyphs;intricate design,A456C;D789E

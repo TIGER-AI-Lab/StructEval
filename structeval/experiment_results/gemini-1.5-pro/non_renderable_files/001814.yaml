@@ -1,0 +1,23 @@
+artifact:
+  name: "Sunstone Stela"
+  discovery_date: "1923-07-15"
+  origin:
+    civilization: "Aztec"
+    era: "Late Postclassic"
+  materials:
+    - type: "Basalt"
+      provenance: "Teotihuacan Valley"
+    - type: "Obsidian"
+      provenance: "Pachuca Mountains"
+  dimensions:
+    height_cm: 180
+    width_cm: 120
+    depth_cm: 30
+  features:
+    - description: "Carved depiction of sun god Tonatiuh"
+      condition: "Well-preserved, minor erosion"
+    - description: "Glyphic inscriptions around the edges"
+      condition: "Partially faded, some glyphs illegible"
+  current_location:
+    museum: "National Museum of Anthropology, Mexico City"
+    display_case: "Mexica Hall, Case 47A"

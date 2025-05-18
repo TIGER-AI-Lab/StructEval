@@ -1,0 +1,28 @@
+
+spaceship:
+  name: Star Voyager
+  captain: Captain Lyra
+  crew_members:
+    - name: Tharn
+      role: Engineer
+      alien_species: Martian
+    - name: Zel
+      role: Navigator
+      alien_species: Venusian
+    - name: Kip
+      role: Pilot
+      alien_species: Human
+  mission:
+    destination: Europa
+    duration_days: 180
+    objectives:
+      - Collect samples
+      - Map terrain
+    success: true
+  cargo:
+    - item: Crystal Ore
+      quantity: 50
+    - item: Alien Artifacts
+      quantity: 3
+    - item: Quantum Fuel Cells
+      quantity: 10

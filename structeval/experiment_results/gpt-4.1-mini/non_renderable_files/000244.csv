@@ -1,0 +1,6 @@
+species_name,habitat.region,habitat.climate,habitat.elevation_meters,average_lifespan_years,diet.primary_food,diet.secondary_food,diet.is_carnivorous,physical_traits.height_cm,physical_traits.weight_kg,physical_traits.fur_color,physical_traits.has_wings,social_structure.group_size,social_structure.dominant_gender,notable_behaviors[0].behavior_name,notable_behaviors[0].frequency_per_day,notable_behaviors[1].behavior_name,notable_behaviors[1].frequency_per_day
+"Crimson Forest Lynx","Verdant Highlands","temperate",1200,15,"small mammals","berries",true,60,25,"reddish-brown",false,5,"female","nocturnal hunting",3,"territorial marking",2
+"Azure Skywing","Celestial Archipelago","tropical",50,8,"nectar","insects",false,30,0.5,"bright blue",true,12,"none","dawn chorus",4,"aerial acrobatics",6
+"Sandstone Burrower","Arid Dunes","arid",300,12,"roots","insects",false,25,3,"sandy beige",false,10,"male","burrow digging",5,"dust bathing",3
+"Glacier Howler","Frozen Tundra","polar",500,20,"fish","seals",true,90,80,"white",false,8,"male","howling",7,"ice sliding",4
+"Twilight Glider","Misty Mountains","temperate",1800,10,"fruits","small birds",true,45,12,"dark gray",true,6,"female","gliding",8,"night hunting",5

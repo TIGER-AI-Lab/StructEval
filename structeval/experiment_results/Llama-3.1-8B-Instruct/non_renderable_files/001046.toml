@@ -1,0 +1,35 @@
+
+planet = {
+  name = "Xylophia-IV",
+  discovery = {
+    year = 2022,
+    method = "Transit Method"
+  },
+  orbit = {
+    period_days = 365.25,
+    eccentricity = 0.05,
+    semi_major_axis_au = 1.2
+  },
+  atmosphere = {
+    composition = ["Nitrogen", "Oxygen", "Carbon Dioxide"],
+    pressure_atm = 1.2,
+    temperature_kelvin = 288
+  },
+  moons = [
+    {
+      name = "Xylophia-IV-1",
+      diameter_km = 500,
+      orbital_period_days = 30,
+      features = [
+        {
+          type = "Crater",
+          description = "A large impact crater in the moon's southern hemisphere"
+        },
+        {
+          type = "Mountain",
+          description = "A mountain range in the moon's northern hemisphere"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[exhibit]
+title = "Echoes of the Past"
+opening_date = "2024-03-15"
+closing_date = "2024-05-20"
+
+[exhibit.curator]
+name = "Dr. Eleanor Vance"
+contact_email = "eleanor.vance@artmuseum.org"
+
+[[exhibit.galleries]]
+name = "Gallery A"
+theme = "Ancient Civilizations"
+
+[[exhibit.galleries.artworks]]
+title = "The Pharaoh's Mask"
+artist = "Unknown"
+year_created = -1300
+medium = "Gold and Lapis Lazuli"
+
+[exhibit.galleries.artworks.dimensions]
+height_cm = 30.5
+width_cm = 22.0
+
+on_loan = true
+provenance = "Excavated from the Valley of the Kings, acquired by the museum in 1950."
+
+[[exhibit.galleries.artworks]]
+title = "Roman Bust of Emperor Hadrian"
+artist = "Unknown Roman Sculptor"
+year_created = 120
+medium = "Marble"
+
+[exhibit.galleries.artworks.dimensions]
+height_cm = 65.0
+width_cm = 40.0
+
+on_loan = false
+provenance = "Found in Rome, Italy. Donated to the museum in 1920."

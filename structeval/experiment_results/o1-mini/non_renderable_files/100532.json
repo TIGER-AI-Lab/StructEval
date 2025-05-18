@@ -1,0 +1,46 @@
+{
+  "galactic_zoo": {
+    "name": "Nebula Fauna Sanctuary",
+    "opening_year": 3077,
+    "location": {
+      "planet": "Xyphos IV",
+      "sector": "Zeta-9",
+      "galaxy": "Andromeda"
+    },
+    "admission_prices": {
+      "adult": 25.5,
+      "child": 12.0,
+      "alien_species": 15.75
+    },
+    "attractions": [
+      {
+        "name": "Floating Jelly Gardens",
+        "species": "Aeros Medusae",
+        "habitat": "Anti-grav Domes",
+        "feeding_times": ["09:00", "17:00"]
+      },
+      {
+        "name": "Crystal Beetle Caverns",
+        "species": "Gemma Scarabaeus",
+        "habitat": "Luminous Caves",
+        "feeding_times": ["12:30", "20:00"]
+      }
+    ],
+    "staff": {
+      "director": "Zyra Quell",
+      "caretakers": ["Harn T'vyl", "Mira Solis"]
+    },
+    "gift_shop": {
+      "items": [
+        {
+          "name": "Plush Nebula Jelly",
+          "price": 7.99
+        },
+        {
+          "name": "Crystal Beetle Figurine",
+          "price": 12.5
+        }
+      ]
+    }
+  }
+}

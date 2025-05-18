@@ -1,0 +1,53 @@
+[space_station]
+name = "Orion Station"
+location = {
+    orbiting_body = "Earth"
+    coordinates = {
+        latitude = 28.5
+        longitude = -80.6
+    }
+}
+modules = [
+    {
+        id = "Habitation Module"
+        type = "habitation"
+        status = "active"
+        crew_capacity = 6
+        experiments = [
+            {
+                experiment_id = "EXP-001"
+                title = "Atmospheric Regeneration"
+                principal_investigator = "Dr. Jane Smith"
+                start_date = "2023-04-01"
+                status = "ongoing"
+            },
+            {
+                experiment_id = "EXP-002"
+                title = "Space Agriculture"
+                principal_investigator = "Dr. John Doe"
+                start_date = "2023-05-15"
+                status = "ongoing"
+            }
+        ]
+    },
+    {
+        id = "Laboratory Module"
+        type = "laboratory"
+        status = "active"
+        experiments = [
+            {
+                experiment_id = "EXP-003"
+                title = "Microgravity Plant Growth"
+                principal_investigator = "Dr. Emily Johnson"
+                start_date = "2023-06-10"
+                status = "ongoing"
+            }
+        ]
+    }
+]
+launch_history = [
+    {
+        date = "2023-01-15"
+        vehicle = "Falcon Heavy"
+    }
+]

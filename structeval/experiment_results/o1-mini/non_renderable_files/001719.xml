@@ -1,0 +1,53 @@
+<recipe>
+    <title>Spaghetti Bolognese</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+            <phone>+1-202-555-0173</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Ground Beef</name>
+            <quantity>150</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <!-- Additional ingredients can be added here -->
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Boil the spaghetti according to package instructions.</description>
+            <duration>
+                <minutes>10</minutes>
+            </duration>
+        </step>
+        <step>
+            <order>2</order>
+            <description>Cook the ground beef in a pan until browned.</description>
+            <duration>
+                <minutes>15</minutes>
+            </duration>
+        </step>
+        <!-- Additional steps can be added here -->
+    </instructions>
+    <nutrition>
+        <calories>850</calories>
+        <fat>
+            <grams>30.5</grams>
+            <type>Unsaturated</type>
+        </fat>
+        <carbohydrates>
+            <grams>100</grams>
+        </carbohydrates>
+        <protein>
+            <grams>45</grams>
+        </protein>
+    </nutrition>
+</recipe>

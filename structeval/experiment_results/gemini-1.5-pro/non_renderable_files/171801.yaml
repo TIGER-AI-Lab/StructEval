@@ -1,0 +1,22 @@
+galaxy:
+  name: Andromeda
+  star_systems:
+    - star_system:
+        name: Alpha Centauri
+        planets:
+          - planet:
+              name: Proxima b
+              inhabitants:
+                - Microbial life
+                - Alien explorers
+          - planet:
+              name: Alpha Centauri Bb
+              inhabitants:
+                - None
+    - star_system:
+        name: Betelgeuse
+        planets:
+          - planet:
+              name: Betel Prime
+              inhabitants:
+                - Sentient gas clouds

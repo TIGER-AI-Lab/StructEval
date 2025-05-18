@@ -1,0 +1,42 @@
+
+artifact = {
+  name = "The Golden Chalice",
+  origin = "Ancient Greece",
+  discovery_date = "2020-01-01",
+  materials = {
+    primary = "gold",
+    secondary = ""
+  },
+  dimensions = {
+    height_cm = 30,
+    width_cm = 20,
+    depth_cm = 10
+  },
+  inscriptions = {
+    list = [
+      {
+        language = "Greek",
+        translation = "For the gods",
+        location_on_artifact = "base"
+      },
+      {
+        language = "Latin",
+        translation = "For the people",
+        location_on_artifact = "side"
+      }
+    ]
+  },
+  exhibit = {
+    current_location = "The British Museum",
+    previous_locations = [
+      {
+        museum = "The Metropolitan Museum of Art",
+        year_range = "2010â2015"
+      },
+      {
+        museum = "The Louvre",
+        year_range = "2015â2020"
+      }
+    ]
+  }
+}

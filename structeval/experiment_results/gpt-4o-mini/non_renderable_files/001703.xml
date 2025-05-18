@@ -1,0 +1,113 @@
+
+<recipe>
+    <title>Vegan Chocolate Cake</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+            <phone>+1234567890</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>All-purpose flour</name>
+            <quantity>2</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Cocoa powder</name>
+            <quantity>3/4</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Granulated sugar</name>
+            <quantity>1.5</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Baking soda</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>1/2</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vegetable oil</name>
+            <quantity>1/2</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vinegar</name>
+            <quantity>1</quantity>
+            <unit>tablespoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vanilla extract</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Water</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <instruction>Preheat the oven to 350Â°F (175Â°C).</instruction>
+            <duration>
+                <minutes>5</minutes>
+            </duration>
+            <tools>Oven</tools>
+        </step>
+        <step>
+            <instruction>In a large bowl, mix the dry ingredients: flour, cocoa powder, sugar, baking soda, and salt.</instruction>
+            <duration>
+                <minutes>10</minutes>
+            </duration>
+            <tools>Mixing bowl, whisk</tools>
+        </step>
+        <step>
+            <instruction>Add the wet ingredients: oil, vinegar, vanilla, and water. Mix until smooth.</instruction>
+            <duration>
+                <minutes>5</minutes>
+            </duration>
+            <tools>Mixing bowl, spatula</tools>
+        </step>
+        <step>
+            <instruction>Pour the batter into a greased cake pan.</instruction>
+            <duration>
+                <minutes>5</minutes>
+            </duration>
+            <tools>Cake pan, spatula</tools>
+        </step>
+        <step>
+            <instruction>Bake for 30-35 minutes or until a toothpick comes out clean.</instruction>
+            <duration>
+                <minutes>35</minutes>
+            </duration>
+            <tools>Oven, toothpick</tools>
+        </step>
+        <step>
+            <instruction>Let the cake cool before serving.</instruction>
+            <duration>
+                <minutes>15</minutes>
+            </duration>
+            <tools>Cooling rack</tools>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>250</calories>
+        <fat>10</fat>
+        <protein>3</protein>
+        <carbohydrates>40</carbohydrates>
+    </nutrition>
+    <tags>
+        <tag>vegan</tag>
+        <tag>desser</tag>
+        <tag>chocolate</tag>
+    </tags>
+</recipe>

@@ -1,0 +1,41 @@
+{
+  "puzzle": {
+    "title": "Logic Puzzle",
+    "description": "A puzzle that requires logical thinking to solve",
+    "difficulty": {
+      "level": "medium",
+      "estimated_time_minutes": 30
+    },
+    "author": {
+      "name": "John Doe",
+      "contact": {
+        "email": "johndoe@example.com",
+        "website": "https://johndoe.com"
+      }
+    },
+    "hints": [
+      {
+        "text": "Hint 1: Look for patterns in the given information",
+        "relevance_score": 0.8
+      },
+      {
+        "text": "Hint 2: Consider all possible scenarios",
+        "relevance_score": 0.7
+      }
+    ],
+    "steps": [
+      {
+        "instruction": "Step 1: Analyze the given information",
+        "expected_answer": "Answer 1: Identify the key elements of the puzzle"
+      },
+      {
+        "instruction": "Step 2: Apply logical reasoning to the identified elements",
+        "expected_answer": "Answer 2: Deduce the solution based on the given information"
+      }
+    ],
+    "metadata": {
+      "tags": ["logic", "puzzle", "medium"],
+      "date_created": "2022-01-01"
+    }
+  }
+}

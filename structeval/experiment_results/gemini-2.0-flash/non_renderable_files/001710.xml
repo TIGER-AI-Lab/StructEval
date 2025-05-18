@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planet>
+    <name>Aethelgard</name>
+    <mass>7.5</mass>
+    <orbital_period>456.2</orbital_period>
+    <distance_from_star>2.8</distance_from_star>
+    <atmosphere>
+        <composition>Hydrogen, Helium, Methane</composition>
+        <pressure>2.3</pressure>
+        <layers>
+            <layer>
+                <name>Troposphere</name>
+                <altitude_range>0-12</altitude_range>
+                <temperature>15</temperature>
+            </layer>
+        </layers>
+    </atmosphere>
+    <moons>
+        <moon>
+            <name>Luna Minor</name>
+            <diameter>3474</diameter>
+            <discovered_by>Dr. Aris Thorne</discovered_by>
+            <discovery_date>2077-03-15</discovery_date>
+        </moon>
+    </moons>
+    <rings>
+        <ring>
+            <composition>Ice particles and dust</composition>
+            <radius>120000</radius>
+        </ring>
+    </rings>
+</planet>

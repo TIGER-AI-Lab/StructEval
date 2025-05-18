@@ -1,0 +1,42 @@
+
+planet = {
+  name = "Kepler-452b"
+  discovery = {
+    year = 2015
+    method = "transit"
+  }
+  orbit = {
+    period_days = 385
+    eccentricity = 0.02
+  }
+  atmosphere = {
+    composition = [
+      { gas = "Helium"
+        percentage = 60
+      }
+      { gas = "Hydrogen"
+        percentage = 40
+      }
+    ]
+  }
+  moons = [
+    { name = "Kepler-452b I"
+      diameter_km = 1000
+    }
+    { name = "Kepler-452b II"
+      diameter_km = 800
+    }
+  ]
+  surface = {
+    temperature_c = -10
+    has_liquid_water = false
+    landmarks = [
+      { type = "crater"
+        name = "Kepler-452b Crater"
+      }
+      { type = "mountain"
+        name = "Kepler-452b Mountain"
+      }
+    ]
+  }
+}

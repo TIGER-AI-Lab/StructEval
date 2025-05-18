@@ -1,0 +1,38 @@
+
+{
+  "artifact": {
+    "name": "The Enigma Vessel",
+    "origin": {
+      "culture": "Minoan",
+      "period": "Minoan Bronze Age"
+    },
+    "materials": {
+      "primary": "Copper",
+      "secondary": "Gold"
+    },
+    "dimensions": {
+      "height_cm": 30,
+      "width_cm": 20,
+      "depth_cm": 0
+    },
+    "location": {
+      "current_museum": "Museum of Crete",
+      "room": "Room 12"
+    },
+    "provenance": {
+      "history": [
+        {
+          "event": "discovered",
+          "date": "1950-06-15",
+          "location": "Knossos, Crete"
+        }
+      ]
+    },
+    "images": [
+      {
+        "url": "https://example.com/enigma_vessel_image.jpg",
+        "description": "A detailed view of The Enigma Vessel"
+      }
+    ]
+  }
+}

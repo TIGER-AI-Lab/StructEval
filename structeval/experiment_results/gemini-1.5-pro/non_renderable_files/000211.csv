@@ -1,0 +1,6 @@
+artifact_id,artifact_name,origin_civilization,discovery_site,discovery_date,material.primary,material.secondary,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,estimated_age_years,current_location.museum,current_location.city,current_location.country,condition_status,notable_features,related_artifacts
+A1234567,Golden Mask of Tutankhamun,Ancient Egyptian,Valley of the Kings,1922-11-04,gold,lapis lazuli;colored glass,32.5,10.5,25,3300,Egyptian Museum,Cairo,Egypt,excellent,Intricate details;Hieroglyphic inscriptions,
+BC789012,Rosetta Stone,Ancient Egyptian,Rosetta,1799-07-15,granodiorite,,76.2,114.4,28.4,2200,British Museum,London,United Kingdom,good,Trilingual inscription;Key to deciphering hieroglyphs,
+XY345678,Terracotta Army,Ancient Chinese,Lintong District,1974-03-29,terracotta,,Varies,Varies,Varies,2200,Mausoleum of the First Qin Emperor,Xi'an,China,fragmented,Life-sized figures;Individualized features,
+GH901234,Ishtar Gate,Neo-Babylonian,Babylon,1899-03-20,brick;glazed brick,lapis lazuli;gold,14,30,Varies,2600,Pergamon Museum,Berlin,Germany,restored,Depiction of animals;Intricate brickwork,
+DE567890,Venus de Milo,Ancient Greek,Milos,1820-04-08,marble,,203,65,90,2100,Louvre Museum,Paris,France,fragmented,Missing arms;Classical style,

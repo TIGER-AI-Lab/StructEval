@@ -1,0 +1,73 @@
+
+<recipe>
+  <title>Spicy Tuna Salad</title>
+  <author>
+    <name>Jane Doe</name>
+    <contact>
+      <email>jane.doe@example.com</email>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Tuna</name>
+      <quantity>2</quantity>
+      <unit>lbs</unit>
+    </ingredient>
+    <ingredient>
+      <name>Mayonnaise</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+    </ingredient>
+    <ingredient>
+      <name>Lemon</name>
+      <quantity>1</quantity>
+      <unit>lime</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <description>Prepare tuna by flaking it into small pieces.</description>
+      <duration>
+        <minutes>5</minutes>
+      </duration>
+      <tools>
+        <tool>
+          <toolName>Knife</toolName>
+          <required>true</required>
+        </tool>
+        <tool>
+          <toolName>Cutting Board</toolName>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+    <step>
+      <description>Mix tuna with mayonnaise and lemon juice.</description>
+      <duration>
+        <minutes>3</minutes>
+      </duration>
+      <tools>
+        <tool>
+          <toolName>Whisk</toolName>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>250</calories>
+    <fat>
+      <grams>10</grams>
+    </fat>
+    <protein>
+      <grams>20</grams>
+    </protein>
+  </nutrition>
+  <metadata>
+    <cuisine>American</cuisine>
+    <difficulty>medium</difficulty>
+    <published>
+      <date>2023-10-25</date>
+    </published>
+  </metadata>
+</recipe>

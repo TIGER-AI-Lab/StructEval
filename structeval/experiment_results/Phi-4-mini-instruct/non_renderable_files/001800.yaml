@@ -1,0 +1,23 @@
+
+creature:
+  name: "Luminara"
+  species: "Bioluminescent Avian"
+  habitat:
+    type: "forest"
+    region: "Amazon Rainforest"
+    climate: "tropical"
+  abilities:
+    - name: "Glow Pulse"
+      description: "Emits a bright light to disorient predators and attract mates."
+      cooldown_seconds: 30
+    - name: "Night Vision"
+      description: "Enhances vision in low light conditions, allowing for nocturnal hunting."
+      cooldown_seconds: 45
+  stats:
+    size_meters: 1.5
+    weight_kg: 5
+    lifespan_years: 10
+    diet: "omnivore"
+  discovery:
+    discovered_by: "Dr. Elena Torres"
+    discovery_date: "2023-05-15"

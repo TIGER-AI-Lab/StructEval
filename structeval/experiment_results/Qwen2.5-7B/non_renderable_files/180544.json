@@ -1,0 +1,12 @@
+import json
+import yaml
+
+# Load the YAML data
+with open('spaceship.yaml', 'r') as file:
+    yaml_data = yaml.safe_load(file)
+
+# Convert the YAML data to JSON
+json_data = json.dumps(yaml_data, indent=2)
+
+# Print the JSON data
+print(json_data)

@@ -1,0 +1,31 @@
+{
+  "museum": {
+    "name": "Elysian Art Gallery",
+    "location": {
+      "city": "Florentia",
+      "country": "Artland"
+    },
+    "established_year": 1985,
+    "director": {
+      "name": "Dr. Amelia Hart",
+      "tenure_years": 8
+    },
+    "exhibits": [
+      {
+        "title": "Whispers of Eternity",
+        "artist": "Leonardo V.",
+        "year_created": 2020,
+        "medium": "acrylic on canvas",
+        "dimensions": {
+          "height_cm": 120.5,
+          "width_cm": 95.0
+        },
+        "on_display": true,
+        "provenance": {
+          "previous_owners": ["Gallery Prima", "Private Collector X"],
+          "acquisition_date": "2021-03-15"
+        }
+      }
+    ]
+  }
+}

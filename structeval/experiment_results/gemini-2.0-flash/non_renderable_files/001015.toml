@@ -1,0 +1,34 @@
+[artifact]
+title = "The Serpent's Eye Amulet"
+year_created = 1788
+
+[artifact.creator]
+name = "Isabella Rossi"
+affiliation = "The Florentine Alchemists' Guild"
+
+[artifact.dimensions]
+height_cm = 15.2
+width_cm = 8.9
+
+[[artifact.materials]]
+type = "Obsidian"
+source = "Mount Vesuvius, Italy"
+
+[[artifact.materials]]
+type = "Silver"
+source = "Potosi Mines, Bolivia"
+
+[artifact.provenance]
+previous_owners = [
+  "Dr. Armitage Leopold",
+  "The Rossi Family Collection",
+  "King Frederick Augustus III of Saxony"
+]
+
+[[artifact.exhibitions]]
+name = "Magic and Mystery: Artifacts of the Enlightenment"
+location = "The Grand Museum, London"
+
+[artifact.exhibitions.date_range]
+start = "2023-06-15"
+end = "2024-01-01"

@@ -1,0 +1,29 @@
+
+expedition:
+  name: Aurora Initiative
+  launch_date: 2025-03-15
+  destination:
+    planet: Mars
+    moons: [Phobos, Deimos]
+  crew:
+    - role: Commander
+      name: John Smith
+      age: 42
+      skills: [Leadership, Navigation, Communication]
+    - role: Engineer
+      name: Jane Doe
+      skills: [Robotics, Mechanics, Electronics]
+  cargo:
+    supplies:
+      food_kg: 5000
+      water_liters: 10000
+    equipment:
+      - type: Life Support
+        quantity: 2
+      - type: Communication
+        quantity: 1
+  mission_objectives:
+    primary: Investigate Martian geology and search for signs of life
+    secondary:
+      - Conduct a thorough survey of the Martian surface
+      - Collect and analyze Martian rock samples

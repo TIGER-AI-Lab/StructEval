@@ -1,0 +1,67 @@
+
+import csv
+import json
+
+data = '''
+{
+  "fantasy_creatures": [
+    {
+      "CreatureName": "Glimmerfox",
+      "Habitat": "Moonlit Forest",
+      "NumberOfLegs": 4,
+      "FavoriteSnack": "Starlight Berries",
+      "DiscoveryDate": "1897-03-14",
+      "IsNocturnal": true
+    },
+    {
+      "CreatureName": "Bubblewyrm",
+      "Habitat": "Crystal Lake",
+      "NumberOfLegs": 0,
+      "FavoriteSnack": "Floating Algae",
+      "DiscoveryDate": "2003-08-22",
+      "IsNocturnal": false
+    },
+    {
+      "CreatureName": "Mossbeetle",
+      "Habitat": "Emerald Caverns",
+      "NumberOfLegs": 6,
+      "FavoriteSnack": "Luminous Moss",
+      "DiscoveryDate": "1954-11-02",
+      "IsNocturnal": true
+    },
+    {
+      "CreatureName": "Whistletoad",
+      "Habitat": "Foggy Marsh",
+      "NumberOfLegs": 2,
+      "FavoriteSnack": "Echo Flies",
+      "DiscoveryDate": "2017-04-19",
+      "IsNocturnal": false
+    },
+    {
+      "CreatureName": "Thistlegriff",
+      "Habitat": "Windy Highlands",
+      "NumberOfLegs": 4,
+      "FavoriteSnack": "Bramble Seeds",
+      "DiscoveryDate": "1823-09-05",
+      "IsNocturnal": false
+    },
+    {
+      "CreatureName": "Sunscale",
+      "Habitat": "Golden Desert",
+      "NumberOfLegs": 8,
+      "FavoriteSnack": "Sand Beetles",
+      "DiscoveryDate": "1999-12-31",
+      "IsNocturnal": true
+    }
+  ]
+}
+'''
+
+data = json.loads(data)
+with open('output.csv', 'w', newline='') as csvfile:
+    fieldnames = ['CreatureName', 'Habitat', 'NumberOfLegs', 'FavoriteSnack', 'DiscoveryDate', 'IsNocturnal']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for creature in data['fantasy_creatures']:
+        writer.writerow(creature)

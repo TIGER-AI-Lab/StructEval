@@ -1,0 +1,38 @@
+
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>John Doe</name>
+    <contact>
+      <email>john.doe@example.com</email>
+      <phone>+1234567890</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>g</unit>
+    </ingredient>
+    <ingredient>
+      <name>Guanciale or Pancetta</name>
+      <quantity>150</quantity>
+      <unit>g</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Boil spaghetti in salted water until al dente.</description>
+      <duration>P00:15:00</duration>
+    </step>
+    <step>
+      <description>Cook guanciale or pancetta in a pan until crispy.</description>
+      <duration>P00:10:00</duration>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>1200</calories>
+    <fat>50</fat>
+    <protein>60</protein>
+  </nutrition>
+</recipe>

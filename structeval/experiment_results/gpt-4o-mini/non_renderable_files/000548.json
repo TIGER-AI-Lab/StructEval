@@ -1,0 +1,39 @@
+
+{
+  "artifact": {
+    "name": "Ancient Pottery Vase",
+    "origin": {
+      "culture": "Minoan",
+      "period": "Bronze Age",
+      "discovery_date": "1900-01-01"
+    },
+    "materials": {
+      "primary": "Clay",
+      "secondary": "Paint"
+    },
+    "dimensions": {
+      "height_cm": 30,
+      "width_cm": 20,
+      "depth_cm": 15
+    },
+    "features": [
+      {
+        "description": "Intricate geometric patterns",
+        "estimated_age_years": 3500,
+        "condition": "intact"
+      },
+      {
+        "description": "Unique handle design",
+        "estimated_age_years": 3500,
+        "condition": "intact"
+      }
+    ],
+    "exhibition_history": [
+      {
+        "location": "National Archaeological Museum",
+        "start_date": "2020-05-01",
+        "end_date": "2020-11-01"
+      }
+    ]
+  }
+}

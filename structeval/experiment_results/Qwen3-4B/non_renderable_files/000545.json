@@ -1,0 +1,40 @@
+
+{
+  "artifact": {
+    "name": "Crown of the Sun God",
+    "origin": {
+      "civilization": "Minoan Civilization",
+      "epoch": "Bronze Age"
+    },
+    "materials": [
+      {
+        "type": "gold",
+        "provenance": "local mines of Crete"
+      },
+      {
+        "type": "lapis lazuli",
+        "provenance": "Mesopotamia"
+      }
+    ],
+    "dimensions": {
+      "height_cm": 35,
+      "width_cm": 25,
+      "depth_cm": 15
+    },
+    "features": [
+      {
+        "description": "ornate golden filigree",
+        "estimated_age_years": 3000
+      },
+      {
+        "description": "blue lapis lazuli inlay",
+        "estimated_age_years": 2800
+      }
+    ],
+    "inscriptions": {
+      "language": "Linear A",
+      "text": "Hail to the Sun God",
+      "translation": "Salute to the Sun God"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+[
+    {
+        "planet_name": "Zephyria",
+        "system": {
+            "star_name": "Helion",
+            "distance_from_earth_lightyears": 42,
+            "discovery": {
+                "year": 2095,
+                "method": "Transit",
+                "observatories": "Helioscope;Gaia Array"
+            }
+        },
+        "atmosphere": {
+            "composition": [
+                {"gas": "Oxygen", "percentage": 30},
+                {"gas": "Nitrogen", "percentage": 60},
+                {"gas": "Argon", "percentage": 10}
+            ],
+            "pressure_at_surface": 1.2
+        },
+        "moons": [
+            {"name": "Lunara", "diameter_km": 3200, "has_rings": false},
+            {"name": "Cerulea", "diameter_km": 2100, "has_rings": true}
+        ],
+        "exploration": {
+            "missions": [
+                {"name": "Voyager X", "year_launched": 2101, "outcome": "Success"},
+                {"name": "Zephyr Probe", "year_launched": 2107, "outcome": "Ongoing"}
+            ]
+        }
+    },
+    {
+        "planet_name": "Orbis",
+        "system": {
+            "star_name": "Solara",
+            "distance_from_earth_lightyears": 87,
+            "discovery": {
+                "year": 2120,
+                "method": "Radial Velocity",
+                "observatories": "StellarEye;Kepler"
+            }
+        },
+        "atmosphere": {
+            "composition": [
+                {"gas": "Hydrogen", "percentage": 85},
+                {"gas": "Helium", "percentage": 10},
+                {"gas": "Methane", "percentage": 5}
+            ],
+            "pressure_at_surface": 0.9
+        },
+        "moons": [
+            {"name": "Phobos", "diameter_km": 1200, "has_rings": false}
+        ],
+        "exploration": {
+            "missions": [
+                {"name": "Orbiter I", "year_launched": 2121, "outcome": "Failure"}
+            ]
+        }
+    }
+]

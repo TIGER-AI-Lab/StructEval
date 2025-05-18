@@ -1,0 +1,60 @@
+
+import csv
+from typing import Dict
+
+def generate_recipe_row(description: str) -> Dict:
+    # Example dish description
+    dish_name = "Spaghetti Bolognese"
+    chef_name = "Chef Giovanni"
+    cuisine_type = "Italian"
+    prep_time_minutes = 15
+    cook_time_minutes = 30
+    total_time_minutes = prep_time_minutes + cook_time_minutes
+    difficulty_level = "Medium"
+    servings = 4
+    ingredient_list = "Spaghetti, Ground Beef, Tomato Sauce, Onion, Garlic, Olive Oil"
+    ingredient_quantities = "500g, 250g, 250g, 1, 2, 2 tbsp"
+    ingredient_units = "g, g, g, , , tbsp"
+    step_descriptions = "Cook spaghetti, Brown ground beef, Add tomato sauce, Simmer, Season"
+    step_order = "1, 2, 3, 4, 5"
+    equipment_needed = "Large pot, Cutting board, Knife, Frying pan"
+    nutrition_calories = 500
+    nutrition_protein_g = 30
+    nutrition_fat_g = 20
+    nutrition_carbs_g = 40
+
+    return {
+        "recipe_name": dish_name,
+        "chef_name": chef_name,
+        "cuisine_type": cuisine_type,
+        "prep_time_minutes": prep_time_minutes,
+        "cook_time_minutes": cook_time_minutes,
+        "total_time_minutes": total_time_minutes,
+        "difficulty_level": difficulty_level,
+        "servings": servings,
+        "ingredient_list": ingredient_list,
+        "ingredient_quantities": ingredient_quantities,
+        "ingredient_units": ingredient_units,
+        "step_descriptions": step_descriptions,
+        "step_order": step_order,
+        "equipment_needed": equipment_needed,
+        "nutrition_calories": nutrition_calories,
+        "nutrition_protein_g": nutrition_protein_g,
+        "nutrition_fat_g": nutrition_fat_g,
+        "nutrition_carbs_g": nutrition_carbs_g
+    }
+
+def write_to_csv(row: Dict, filename: str) -> None:
+    with open(filename, 'a', newline='') as csvfile:
+        fieldnames = ["recipe_name", "chef_name", "cuisine_type", "prep_time_minutes", "cook_time_minutes", "total_time_minutes", "difficulty_level", "servings", "ingredient_list", "ingredient_quantities", "ingredient_units", "step_descriptions", "step_order", "equipment_needed", "nutrition_calories", "nutrition_protein_g", "nutrition_fat_g", "nutrition_carbs_g"]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        
+        if csvfile.tell() == 0:
+            writer.writeheader()
+        
+        writer.writerow(row)
+
+# Example usage
+description = "A classic Italian dish made with spaghetti, ground beef, and tomato sauce."
+row = generate_recipe_row(description)
+write_to_csv(row, "recipes.csv")

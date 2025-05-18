@@ -1,0 +1,27 @@
+
+planetName: Zyphron
+discovery:
+  year: 2187
+  method: Transit Photometry
+  telescope: StellarEye Array
+atmosphere:
+  composition:
+    - gas: Nitrogen
+      percentage: 68
+    - gas: Argon
+      percentage: 21
+  pressure: 1.2
+moons:
+  - name: Vexia
+    diameter_km: 3200
+    has_atmosphere: false
+  - name: Trellon
+    diameter_km: 1500
+    has_atmosphere: true
+orbitalDetails:
+  distance_au: 1.8
+  period_days: 687
+lifeDetected: true
+surface:
+  temperature_c: -42
+  gravity_m_s2: 13.7

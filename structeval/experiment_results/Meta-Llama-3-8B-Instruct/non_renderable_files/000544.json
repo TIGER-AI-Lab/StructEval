@@ -1,0 +1,39 @@
+
+{
+  "planet": {
+    "name": "HD 189733b",
+    "discovery": {
+      "year": 2005,
+      "method": "transit"
+    },
+    "orbital_parameters": {
+      "semi_major_axis": 0.03,
+      "eccentricity": 0.02,
+      "inclination": 85.3
+    },
+    "atmosphere": {
+      "composition": {
+        "primary_gas": "helium",
+        "trace_gases": ["methane", "ammonia"]
+      },
+      "pressure": 2.5
+    },
+    "moons": [
+      {
+        "name": "Moon 1",
+        "diameter_km": 1000,
+        "orbit": {
+          "period_days": 10,
+          "distance_km": 200000
+        }
+      }
+    ],
+    "rings": [
+      {
+        "name": "Ring 1",
+        "radius_inner_km": 10000,
+        "radius_outer_km": 20000
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+PotionName,Color,PotencyLevel,BrewDate,IngredientCount,IsExplosive
+Moonlit Mirage,Iridescent Blue,8,2023-11-03,7,false
+Whispering Moss,Emerald Green,5,2024-01-17,5,false
+Solar Flare Elixir,Glowing Amber,10,2023-08-29,9,true
+Frostbite Draught,Pale Silver,6,2024-03-14,6,false
+Shadowmelt Serum,Deep Violet,9,2023-12-21,8,true
+Aurora Essence,Opalescent Pink,7,2024-02-05,6,false

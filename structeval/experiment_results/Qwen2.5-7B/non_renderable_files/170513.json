@@ -1,0 +1,35 @@
+python
+import xmltodict
+import json
+
+xml_data = """
+<planetaryZoo>
+  <planet>
+    <name>Gliese Prime</name>
+    <species>
+      <type>Glowfox</type>
+      <population>1200</population>
+    </species>
+    <species>
+      <type>Bubbleback</type>
+      <population>350</population>
+    </species>
+  </planet>
+  <planet>
+    <name>Kryptonix</name>
+    <species>
+      <type>Iron Beetle</type>
+      <population>700</population>
+    </species>
+    <species>
+      <type>Frostwing</type>
+      <population>90</population>
+    </species>
+  </planet>
+</planetaryZoo>
+"""
+
+# Convert XML to JSON
+json_data = json.dumps(xmltodict.parse(xml_data), indent=4)
+
+print(json_data)

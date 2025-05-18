@@ -1,0 +1,15 @@
+
+[museum]
+name = "Fictional Art Museum"
+location = { city = "Metropolis", country = "Utopia" }
+established_year = 1985
+director = "Jane Doe"
+
+[exhibits]
+- title = "The Enigmatic Canvas"
+- artist = "John Smith"
+- year = 1990
+- medium = "Oil on canvas"
+- dimensions = { height_cm = 150, width_cm = 100 }
+- on_display = true
+- provenance = { previous_owners = ["The Smith Collection", "Art World Gallery"], acquisition_date = "1990-05-20", acquisition_method = "Purchase" }

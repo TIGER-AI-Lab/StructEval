@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001144</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const RestaurantOrderForm = () => {
+  const [name, setName] = useState('');
+  const [seating, setSeating] = useState('Indoor');
+  const [mealType, setMealType] = useState('Lunch');
+  const [quantity, setQuantity] = useState(1);
+  const [orderPlaced, setOrderPlaced] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (name.trim() === '' || quantity < 1) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+    setOrderPlaced(true);
+  };
+
+  const handleClear = () => {
+    setName('');
+    setSeating('Indoor');
+    setMealType('Lunch');
+    setQuantity(1);
+    setOrderPlaced(false);
+  };
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', padding: '2rem' }}>
+      <h1>Restaurant Order Form</h1>
+      <input type="text" placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} />
+      <select value={seating} onChange={(e) => setSeating(e.target.value)}>
+        <option value="Indoor">Indoor</option>
+        <option value="Outdoor">Outdoor</option>
+        <option value="Bar">Bar</option>
+      </select>
+      <div>
+        <label>
+          <input type="radio" value="Lunch" checked={mealType === 'Lunch'} onChange={(e) => setMealType(e.target.value)} /> Lunch
+        </label>
+        <label>
+          <input type="radio" value="Dinner" checked={mealType === 'Dinner'} onChange={(e) => setMealType(e.target.value)} /> Dinner
+        </label>
+      </div>
+      <input type="number" min="1" value={quantity} onChange={(e) => setQuantity(parseInt(e.target.value) || 1)} />
+      <div style={{ display: 'flex', gap: '1rem' }}>
+        <button style={{ backgroundColor: 'green', color: 'white' }} onClick={handleSubmit}>Place Order</button>
+        <button onClick={handleClear}>Clear Form</button>
+      </div>
+      {orderPlaced && <p>Order placed successfully!</p>}
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<RestaurantOrderForm />);
+
+    </script>
+  </body>
+</html>

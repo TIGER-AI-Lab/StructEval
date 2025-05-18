@@ -1,0 +1,46 @@
+
+{
+  "artifact": {
+    "name": "Ancient Pottery",
+    "discovery_date": "1975-08-12",
+    "origin": {
+      "civilization": "Minoan",
+      "location": "Crete, Greece"
+    },
+    "materials": [
+      {
+        "type": "Clay",
+        "purity": 95
+      },
+      {
+        "type": "Paint",
+        "purity": 80
+      }
+    ],
+    "dimensions": {
+      "height_cm": 20,
+      "width_cm": 15,
+      "depth_cm": 5
+    },
+    "features": [
+      {
+        "description": "Hand-painted geometric patterns",
+        "estimated_age_years": 3500
+      },
+      {
+        "description": "Incised lines on the surface",
+        "estimated_age_years": 3450
+      }
+    ],
+    "historical_significance": {
+      "summary": "This pottery provides insight into Minoan art and daily life.",
+      "references": [
+        "Smith, J. (2005). Ancient Minoan Pottery. Journal of Archaeology, 23(4), 210-230."
+      ]
+    },
+    "current_location": {
+      "museum": "National Archaeological Museum, Athens",
+      "display_case": "Case 12, Section B"
+    }
+  }
+}

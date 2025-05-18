@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041118</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Example Website</h1>
+        <p>Welcome to this demonstration of a long HTML code snippet built for visual layout and structural analysis.</p>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#data-structure">Data Structures</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#footer">Footer</a></li>
+        </ul>
+      </nav>
+
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>This section introduces the purpose and overview of the page. It demonstrates several layouts such as headings, paragraphs, and lists in a realistic HTML document.</p>
+      </section>
+
+      <section id="features">
+        <h2>Features</h2>
+        <p>This page includes a variety of HTML elements to render a visually structured document. Below is a list of some key features:</p>
+        <ul>
+          <li>Clear Hierarchical Grouping of Content</li>
+          <li>Semantic Elements like header, nav, section, article, and footer</li>
+          <li>Labeled Data and Formatted Content</li>
+          <li>Readable Grouping of Information</li>
+        </ul>
+      </section>
+
+      <section id="data-structure">
+        <h2>Data Structures</h2>
+        <article>
+          <h3>Employee Information</h3>
+          <p>The following table provides a selection of employee data:</p>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Department</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>Alice Smith</td>
+                <td>Manager</td>
+                <td>Sales</td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>Bob Johnson</td>
+                <td>Developer</td>
+                <td>Engineering</td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td>Carol Lee</td>
+                <td>Designer</td>
+                <td>Marketing</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article>
+          <h3>Project Timeline</h3>
+          <p>Below is a list of important project milestones:</p>
+          <ol>
+            <li>Project Kickoff</li>
+            <li>Requirement Gathering</li>
+            <li>Design Phase</li>
+            <li>Implementation Phase</li>
+            <li>Testing and QA</li>
+            <li>Deployment</li>
+          </ol>
+        </article>
+
+        <article>
+          <h3>Survey Results</h3>
+          <p>Survey data represented with labeled data.</p>
+          <dl>
+            <dt>Question 1: Satisfaction</dt>
+            <dd>Average Rating: 4.5/5</dd>
+            <dt>Question 2: Usability</dt>
+            <dd>Average Rating: 4.0/5</dd>
+            <dt>Question 3: Features</dt>
+            <dd>Average Rating: 4.8/5</dd>
+          </dl>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Please use the form below to contact us.</p>
+        <form action="/submit-form" method="post">
+          <label htmlFor="name">Name:</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label htmlFor="email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <label htmlFor="message">Message:</label><br />
+          <textarea id="message" name="message" rows="4" cols="50"></textarea><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+
+      <footer id="footer">
+        <p>&copy; 2024 Example Website. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

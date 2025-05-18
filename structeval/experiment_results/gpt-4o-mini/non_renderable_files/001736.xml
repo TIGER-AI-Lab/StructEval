@@ -1,0 +1,38 @@
+
+<recipe>
+    <title>Spaghetti Carbonara</title>
+    <author>
+        <name>John Doe</name>
+        <id>12345</id>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Bacon</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Boil water in a large pot and add the spaghetti. Cook according to package instructions until al dente.</description>
+            <duration_minutes>10</duration_minutes>
+        </step>
+        <step>
+            <description>In a separate pan, cook the bacon until crispy. Drain excess fat and set aside.</description>
+            <duration_minutes>5</duration_minutes>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>400</calories>
+        <protein_grams>20</protein_grams>
+        <fat_grams>15</fat_grams>
+        <carbs_grams>50</carbs_grams>
+    </nutrition>
+</recipe>

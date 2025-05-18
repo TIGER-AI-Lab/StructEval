@@ -1,0 +1,30 @@
+
+recipe:
+  title: "Spicy Thai Basil Chicken"
+  author:
+    name: "Samantha Lee"
+    contact:
+      email: "samantha.lee@example.com"
+  ingredients:
+    - name: "ground chicken"
+      quantity: 500
+      unit: "grams"
+    - name: "fresh Thai basil leaves"
+      quantity: 1
+      unit: "cup"
+  steps:
+    - description: "Heat oil in a pan over medium heat, add garlic and chilies, and sautÃ© until fragrant."
+      duration_minutes: 5
+    - description: "Add ground chicken and cook until browned, then stir in soy sauce, fish sauce, and sugar."
+      duration_minutes: 10
+  metadata:
+    cuisine: "Thai"
+    difficulty: "medium"
+    tags:
+      - "spicy"
+      - "quick"
+      - "dinner"
+      - "gluten-free"
+  nutrition:
+    calories: 450
+    protein_grams: 40

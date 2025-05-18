@@ -1,0 +1,12 @@
+import json
+import yaml
+
+# Load the YAML data
+with open('planet.yaml', 'r') as file:
+    planet_data = yaml.safe_load(file)
+
+# Convert the YAML data to JSON
+json_data = json.dumps(planet_data, indent=4)
+
+# Print the JSON data
+print(json_data)

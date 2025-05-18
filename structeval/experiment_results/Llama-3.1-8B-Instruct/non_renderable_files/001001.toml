@@ -1,0 +1,35 @@
+
+city = {
+  name = "New Haven"
+  country = "United States"
+  population = 130000
+  founded = "1640"
+  mayor = {
+    name = "Emily Wilson"
+    term_start = "2020-01-01"
+    term_end = "2025-01-01"
+  }
+  landmarks = [
+    {
+      name = "Old City Hall"
+      type = "Monument"
+      year_built = 1870
+      architect = "John Smith"
+      visitors_per_year = 50000
+    }
+    {
+      name = "New Haven Museum"
+      type = "Museum"
+      year_built = 1990
+      architect = "Jane Doe"
+      visitors_per_year = 20000
+    }
+  ]
+  transportation = {
+    modes = ["Bus", "Train", "Bike"]
+    metro = {
+      lines = 3
+      stations = 20
+    }
+  }
+}

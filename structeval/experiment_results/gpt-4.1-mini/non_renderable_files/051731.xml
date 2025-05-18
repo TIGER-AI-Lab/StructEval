@@ -1,0 +1,20 @@
+
+<museum>
+  <name>Museum of Imaginary Artifacts</name>
+  <location>
+    <city>Luminara</city>
+    <country>Mythica</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>The Infinite Compass</title>
+      <artist>Eloise Vant</artist>
+      <year>1872</year>
+    </exhibit>
+    <exhibit>
+      <title>Clockwork Phoenix</title>
+      <artist>Ravi Sorn</artist>
+      <year>1921</year>
+    </exhibit>
+  </exhibits>
+</museum>

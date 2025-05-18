@@ -1,0 +1,59 @@
+{
+  "museum": {
+    "name": "The Grand Art Museum",
+    "location": {
+      "city": "New York",
+      "country": "USA"
+    },
+    "established_year": 1923,
+    "director": "Dr. Emily Carter",
+    "opening_hours": {
+      "weekdays": "09:00-18:00",
+      "weekends": "10:00-20:00"
+    },
+    "exhibits": [
+      {
+        "title": "Starry Night",
+        "artist": "Vincent van Gogh",
+        "year_created": 1889,
+        "medium": "Oil on canvas",
+        "dimensions": {
+          "height_cm": 74,
+          "width_cm": 92
+        },
+        "on_display": true,
+        "provenance": [
+          {
+            "owner": "Theo van Gogh",
+            "acquisition_date": "1889-06-01"
+          },
+          {
+            "owner": "Museum of Modern Art",
+            "acquisition_date": "1941-10-01"
+          }
+        ]
+      },
+      {
+        "title": "The Persistence of Memory",
+        "artist": "Salvador DalÃ­",
+        "year_created": 1931,
+        "medium": "Oil on canvas",
+        "dimensions": {
+          "height_cm": 24,
+          "width_cm": 33
+        },
+        "on_display": false,
+        "provenance": [
+          {
+            "owner": "Julien Levy",
+            "acquisition_date": "1934-03-15"
+          },
+          {
+            "owner": "Private Collector",
+            "acquisition_date": "1950-07-22"
+          }
+        ]
+      }
+    ]
+  }
+}

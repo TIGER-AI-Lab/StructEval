@@ -1,0 +1,27 @@
+[star]
+name = "HD 123456"
+type = "G-type"
+distance_lightyears = 42.7
+[star.discovery]
+year = 2005
+method = "radial velocity"
+[star.planets]
+[star.planets[0]]
+name = "Bor"
+mass_earths = 1.5
+orbital_period_days = 365.25
+[star.planets[0].moons]
+[star.planets[0].moons[0]]
+name = "Luna"
+diameter_km = 3474
+composition = "rock"
+[star.planets[0].moons[1]]
+name = "Selene"
+diameter_km = 2274
+composition = "ice"
+[star.planets[0].atmosphere]
+composition = ["nitrogen", "oxygen", "argon"]
+pressure_atm = 1.2
+has_rings = true
+[star.planets[0].surface]
+temperature_celsius = 15

@@ -1,0 +1,49 @@
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>John Doe</name>
+    <contact>john.doe@example.com</contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>1</quantity>
+      <unit>lb</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Pancetta</name>
+      <quantity>0.5</quantity>
+      <unit>lb</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>each</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Grated Parmesan Cheese</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Boil water in a large pot and cook spaghetti according to package instructions.</description>
+      <duration>PT10M</duration>
+    </step>
+    <step>
+      <description>Cook pancetta in a pan until crispy, then remove from pan and set aside.</description>
+      <duration>PT5M</duration>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>1000</calories>
+    <protein>50</protein>
+    <fat>50</fat>
+    <carbohydrates>100</carbohydrates>
+  </nutrition>
+</recipe>

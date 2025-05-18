@@ -1,0 +1,51 @@
+
+{
+  "galactic_zoo": {
+    "name": "Andromeda Galactic Zoo",
+    "location": "Sector 9, Andromeda Spiral Arm",
+    "founded": 2487,
+    "director": "Dr. Xyla Quarn",
+    "species_catalog": [
+      {
+        "species_name": "Nebulon Panther",
+        "planet_of_origin": "Nebulon-5",
+        "diet": "Carnivore",
+        "enclosure": "CryoDome A",
+        "population": 6,
+        "notable_individuals": [
+          {
+            "name": "Shadowpounce",
+            "achievement": "First Nebulon Panther born in captivity"
+          },
+          {
+            "name": "Stardust",
+            "achievement": "Oldest living Nebulon Panther"
+          }
+        ]
+      },
+      {
+        "species_name": "Plasma Finch",
+        "planet_of_origin": "Aurora-3",
+        "diet": "Plasma Nectar",
+        "enclosure": "BioSphere 2",
+        "population": 24,
+        "notable_individuals": [
+          {
+            "name": "Flicker",
+            "achievement": "Set zoo record for longest song"
+          }
+        ]
+      }
+    ],
+    "facilities": {
+      "research_labs": 5,
+      "transport_hubs": 3,
+      "habitat_modules": 12
+    },
+    "visitor_statistics": {
+      "annual_visitors": 1200000,
+      "most_popular_species": "Nebulon Panther",
+      "top_visited_month": "Stellar Solstice"
+    }
+  }
+}

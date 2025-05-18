@@ -1,0 +1,22 @@
+creature:
+  name: "Glimmerwing"
+  species: "Luminosus Butterfly"
+  appearance:
+    size: "Small"
+    color: "Iridescent"
+    distinctive_marks: ["Wings with bioluminescent patterns", "Eyes that glow in the dark"]
+  habitat:
+    region: "Enchanted Forest"
+    climate: "Mild and moist"
+    features: ["Shimmering streams", "Glowing mushrooms"]
+  abilities:
+    - type: "Bioluminescence"
+      description: "Can emit light from its wings to communicate or attract prey."
+      power_level: 8
+    - type: "Telepathy"
+      description: "Has the ability to communicate with other creatures through thoughts."
+      power_level: 6
+  history:
+    discovery_date: "2020-05-12"
+    discoverer: "Dr. Elara Myles"
+    legend: "It is said that Glimmerwings are messengers of the forest spirits, guiding lost travelers with their glowing wings."

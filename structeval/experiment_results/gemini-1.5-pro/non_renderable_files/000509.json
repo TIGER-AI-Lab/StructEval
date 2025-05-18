@@ -1,0 +1,70 @@
+{
+  "game": {
+    "title": "Aetheria: Echoes of the Past",
+    "release_year": 2024,
+    "developer": {
+      "name": "Luminary Studios",
+      "founded": 2010
+    },
+    "platforms": [
+      {
+        "name": "PC",
+        "release_date": "2024-03-15",
+        "features": [
+          {
+            "feature_name": "Ray Tracing",
+            "is_multiplayer_supported": false
+          },
+          {
+            "feature_name": "Online Co-op",
+            "is_multiplayer_supported": true
+          }
+        ]
+      },
+      {
+        "name": "PlayStation 5",
+        "release_date": "2024-03-15",
+        "features": [
+          {
+            "feature_name": "Haptic Feedback",
+            "is_multiplayer_supported": false
+          },
+          {
+            "feature_name": "Online Multiplayer",
+            "is_multiplayer_supported": true
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "RPG",
+      "Adventure",
+      "Open World"
+    ],
+    "ratings": {
+      "ESRB": "T",
+      "PEGI": "12"
+    },
+    "awards": [
+      {
+        "award_name": "Best RPG of the Year",
+        "year": 2025
+      },
+      {
+        "award_name": "Game of the Year",
+        "year": 2025
+      }
+
+    ],
+    "characters": [
+      {
+        "name": "Elara",
+        "role": "Protagonist"
+      },
+      {
+        "name": "Kaelen",
+        "role": "Companion"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "artifact": {
+    "name": "Ancient Bronze Dagger",
+    "origin": {
+      "period": "Late Bronze Age",
+      "region": "Eastern Mediterranean"
+    },
+    "materials": [
+      {
+        "type": "Bronze",
+        "provenance": "Local ore from the Taurus Mountains"
+      },
+      {
+        "type": "Wood",
+        "provenance": "Cedars of Lebanon"
+      }
+    ],
+    "dimensions": {
+      "height_cm": 35,
+      "width_cm": 5,
+      "depth_cm": 1.2
+    },
+    "features": [
+      {
+        "description": "Intricately engraved blade with geometric patterns",
+        "condition": "Well-preserved with minor corrosion"
+      },
+      {
+        "description": "Wooden handle wrapped in leather strips",
+        "condition": "Partially deteriorated but intact"
+      }
+    ],
+    "discovery": {
+      "location": {
+        "latitude": 36.2021,
+        "longitude": 34.9115
+      },
+      "date_found": "2023-11-15"
+    }
+  }
+}

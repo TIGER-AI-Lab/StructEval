@@ -1,0 +1,40 @@
+
+import csv
+import json
+
+data = []
+with open('mission_data.csv', 'r') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        crew = []
+        for i in range(2):
+            crew.append({
+                'name': row[f'crew[{i}].name'],
+                'role': row[f'crew[{i}].role'],
+                'experience_years': row[f'crew[{i}].experience_years']
+            })
+        payload = {
+            'cargo_type': row['payload.cargo_type'],
+            'weight_kg': row['payload.weight_kg'],
+            'equipment_list': [row['payload.equipment_list[0]'], row['payload.equipment_list[1]']]
+        }
+        destination = {
+            'planet': row['destination.planet'],
+            'coordinates': {
+                'lat': row['destination.coordinates.lat'],
+                'lon': row['destination.coordinates.lon']
+            }
+        }
+        status = row['status']
+        data.append({
+            'mission_name': row['mission_name'],
+            'launch_date': row['launch.date'],
+            'launch_site': row['launch.site'],
+            'crew': crew,
+            'payload': payload,
+            'destination': destination,
+            'status': status
+        })
+
+with open('mission_data.json', 'w') as jsonfile:
+    json.dump(data, jsonfile)

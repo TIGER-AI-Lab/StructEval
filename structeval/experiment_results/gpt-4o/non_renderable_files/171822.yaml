@@ -1,0 +1,18 @@
+
+galacticZoo:
+  animals:
+    - animal:
+        name: Starlight Panther
+        species: Felix Nebulae
+        abilities:
+          - ability: Invisibility
+          - ability: Gravity Leap
+    - animal:
+        name: Quantum Parrot
+        species: Ara Quanticus
+        abilities:
+          - ability: Time Mimicry
+          - ability: Teleportation
+  keeper:
+    name: Zylo
+    species: Andromedan

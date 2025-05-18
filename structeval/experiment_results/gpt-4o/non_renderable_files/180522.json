@@ -1,0 +1,56 @@
+{
+  "galactic_zoo": {
+    "name": "Stellar Menagerie",
+    "location": {
+      "sector": "Orion Arm",
+      "planet": "Zyphora Prime",
+      "galaxy": "Andromeda"
+    },
+    "opening_year": 3124,
+    "species_catalog": [
+      {
+        "species_name": "Luminoctopus",
+        "classification": "Cephalopod",
+        "habitat": "Bio-luminescent Lakes",
+        "diet": "Phototrophic",
+        "average_lifespan": 60
+      },
+      {
+        "species_name": "Nebulon Lynx",
+        "classification": "Mammal",
+        "habitat": "Crystal Forests",
+        "diet": "Carnivore",
+        "average_lifespan": 25
+      }
+    ],
+    "staff": {
+      "director": "Zara Quell",
+      "curators": [
+        {
+          "name": "Dr. Phex Tora",
+          "specialty": "Aquatic Lifeforms"
+        },
+        {
+          "name": "Mira Solis",
+          "specialty": "Xeno-Botany"
+        }
+      ]
+    },
+    "visitor_stats": {
+      "annual_visitors": 4800000,
+      "most_popular_exhibit": "Nebulon Lynx Habitat"
+    },
+    "special_events": [
+      {
+        "event_name": "Galactic Conservation Day",
+        "date": "3124-08-12",
+        "description": "Workshops and tours on preserving endangered species."
+      },
+      {
+        "event_name": "Starlight Safari Night",
+        "date": "3124-11-22",
+        "description": "Nighttime guided tours under artificial auroras."
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+
+exhibit:
+  title: "The Timeless Collection"
+  curator:
+    name: "Jane Doe"
+    contact_email: "jane.doe@example.com"
+  artworks:
+    - artist: "John Smith"
+      title: "Eternal Beauty"
+      year_created: 2020
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 150
+        width_cm: 200
+      provenance:
+        previous_owners:
+          - "The Art Museum"
+          - "Private Collector"
+        acquisition_date: "2020-05-15"
+        awards:
+          - name: "Best New Artist Award"
+            year: 2021
+      schedule:
+        opening_date: "2023-11-01"
+        closing_date: "2023-12-31"

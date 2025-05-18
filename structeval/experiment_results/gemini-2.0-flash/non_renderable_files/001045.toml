@@ -1,0 +1,40 @@
+[biome]
+name = "Crystalline Peaks"
+climate = "alpine"
+average_temperature_celsius = -5
+
+[[biome.flora]]
+species = "Glacier Bloom (Crystallis nivalis)"
+population_estimate = 5000
+edibility = { is_edible = false, toxicity_level = "mild" }
+
+[[biome.flora]]
+species = "Frost Lichen (Gelidus lichen)"
+population_estimate = 12000
+edibility = { is_edible = false, toxicity_level = "none" }
+
+[[biome.fauna]]
+species = "Crystal Lynx (Lynx crystallis)"
+average_weight_kg = 25.5
+diet = "carnivore"
+conservation_status = "vulnerable"
+
+[[biome.fauna]]
+species = "Snow Griffon (Gryphus nivalis)"
+average_weight_kg = 40.0
+diet = "carnivore"
+conservation_status = "least concern"
+
+[[biome.water_sources]]
+type = "glacial stream"
+freshwater = true
+average_depth_m = 0.75
+
+[[biome.water_sources]]
+type = "ice cave spring"
+freshwater = true
+average_depth_m = 2.0
+
+[biome.geology]
+dominant_rock_type = "quartzite"
+mineral_resources = ["quartz crystals", "mica", "garnet"]

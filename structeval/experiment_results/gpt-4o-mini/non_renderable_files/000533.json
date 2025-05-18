@@ -1,0 +1,36 @@
+
+{
+  "planet": {
+    "name": "HD 209458 b",
+    "type": "gas giant",
+    "discovery": {
+      "year": 1999,
+      "method": "transit"
+    },
+    "atmosphere": {
+      "composition": [
+        "hydrogen",
+        "helium",
+        "water vapor"
+      ],
+      "pressure": 100
+    },
+    "moons": [
+      {
+        "name": "Moon A",
+        "diameter_km": 1500,
+        "orbital_period_days": 30,
+        "features": [
+          {
+            "type": "crater",
+            "description": "A large impact crater with a diameter of 200 km."
+          }
+        ]
+      }
+    ],
+    "surface": {
+      "temperature_c": 1200,
+      "gravity_ms2": 24.79
+    }
+  }
+}

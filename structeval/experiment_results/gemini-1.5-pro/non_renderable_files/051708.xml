@@ -1,0 +1,32 @@
+<spaceZoo>
+  <aliens>
+    <alien>
+      <name>Zorblax</name>
+      <species>Glorbian</species>
+      <pets>
+        <pet>
+          <name>Fluffy</name>
+          <type>Nebula Cat</type>
+        </pet>
+        <pet>
+          <name>Sparky</name>
+          <type>Plasma Pup</type>
+        </pet>
+      </pets>
+    </alien>
+    <alien>
+      <name>Quintar</name>
+      <species>Vorticon</species>
+      <pets>
+        <pet>
+          <name>Blinky</name>
+          <type>Astro Fish</type>
+        </pet>
+      </pets>
+    </alien>
+  </aliens>
+  <location>
+    <planet>Xylon</planet>
+    <galaxy>Andromeda</galaxy>
+  </location>
+</spaceZoo>

@@ -1,0 +1,28 @@
+recipe:
+  title: "Spicy Chickpea Stew"
+  author:
+    name: "Jamie Oliver"
+    contact:
+      email: "jamie.oliver@example.com"
+  ingredients:
+    - name: "Chickpeas"
+      quantity: 400
+      unit: "grams"
+    - name: "Tomato Paste"
+      quantity: 2
+      unit: "tablespoons"
+  steps:
+    - description: "Rinse and drain the chickpeas. Heat oil in a pot and add chickpeas, cooking until slightly crispy."
+      duration_minutes: 10
+    - description: "Add tomato paste and spices to the pot, stirring well. Cook for another 5 minutes."
+      duration_minutes: 5
+  metadata:
+    cuisine: "Mediterranean"
+    difficulty: "easy"
+    tags:
+      - "vegan"
+      - "gluten-free"
+      - "quick"
+  nutrition:
+    calories: 350
+    protein_grams: 15

@@ -1,0 +1,38 @@
+
+artifact = { 
+    title = "The Rosetta Stone",
+    creator = { 
+        name = "Unknown",
+        affiliation = "Ancient Egyptian Civilization"
+    },
+    year_created = 196 BC,
+    dimensions = { 
+        height_cm = 114.4,
+        width_cm = 72.3,
+        depth_cm = 28.4
+    },
+    materials = ["Granodiorite"],
+    origin = { 
+        country = "Egypt",
+        city = "Memphis"
+    },
+    exhibition_history = [
+        { 
+            location = "British Museum",
+            year = 1802,
+            curator = "Sir Hans Sloane"
+        }
+    ],
+    provenance = { 
+        previous_owners = [
+            { 
+                name = "Napoleon Bonaparte",
+                acquisition_date = "1799-07-01"
+            },
+            { 
+                name = "British Government",
+                acquisition_date = "1801-09-01"
+            }
+        ]
+    }
+}

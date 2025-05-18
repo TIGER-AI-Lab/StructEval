@@ -1,0 +1,33 @@
+{
+  "creature": {
+    "name": "Zorblatt",
+    "species": "Xylophagous Symbiont",
+    "age": 7,
+    "habitat": {
+      "region": "Mystic Woods",
+      "climate": "Tropical"
+    },
+    "abilities": [
+      {
+        "type": "Regenerative Healing",
+        "power_level": 9
+      },
+      {
+        "type": "Elemental Manipulation",
+        "power_level": 7
+      }
+    ],
+    "appearance": {
+      "size": "Medium",
+      "color_pattern": "Multicolored"
+    },
+    "diet": {
+      "primary_foods": ["Fungal Growth", "Nectar"],
+      "hunting_methods": ["Ambush", "Pollinator Mimicry"]
+    },
+    "social_behavior": {
+      "group_size": 5,
+      "hierarchy_level": "Alpha"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+
+recipe:
+  title: "Spaghetti Carbonara"
+  author:
+    name: "John Doe"
+    contact:
+      email: "john.doe@example.com"
+  ingredients:
+    - name: "Spaghetti"
+      quantity: 200
+      unit: "grams"
+    - name: "Pancetta"
+      quantity: 100
+      unit: "grams"
+  steps:
+    - description: "Cook the spaghetti in salted boiling water until al dente."
+      duration_minutes: 10
+    - description: "In a pan, cook the pancetta until crispy, then mix with the pasta."
+      duration_minutes: 5
+  metadata:
+    cuisine: "Italian"
+    difficulty: "easy"
+    tags: ["pasta", "pancetta", "carbonara"]
+  nutrition:
+    calories: 600
+    protein_grams: 30

@@ -1,0 +1,40 @@
+
+import csv
+from datetime import datetime
+
+class Artifact:
+    def __init__(self, artifact_id, artifact_name, discovery_site, discovery_date, estimated_age_years, artifact_type, material_primary, material_secondary, dimensions_height_cm, dimensions_width_cm, dimensions_depth_cm, condition_status, current_location, associated_civilization, notable_inscriptions):
+        self.artifact_id = artifact_id
+        self.artifact_name = artifact_name
+        self.discovery_site = discovery_site
+        self.discovery_date = discovery_date
+        self.estimated_age_years = estimated_age_years
+        self.artifact_type = artifact_type
+        self.material_primary = material_primary
+        self.material_secondary = material_secondary
+        self.dimensions_height_cm = dimensions_height_cm
+        self.dimensions_width_cm = dimensions_width_cm
+        self.dimensions_depth_cm = dimensions_depth_cm
+        self.condition_status = condition_status
+        self.current_location = current_location
+        self.associated_civilization = associated_civilization
+        self.notable_inscriptions = notable_inscriptions
+
+    def to_csv(self):
+        return f"{self.artifact_id},{self.artifact_name},{self.discovery_site},{self.discovery_date},{self.estimated_age_years},{self.artifact_type},{self.material_primary},{self.material_secondary},{self.dimensions_height_cm},{self.dimensions_width_cm},{self.dimensions_depth_cm},{self.condition_status},{self.current_location},{self.associated_civilization},{self.notable_inscriptions}"
+
+def main():
+    artifacts = [
+        Artifact("A-2024-001", "Golden Mask", "Egyptian Site", "2022-01-01", 3000, "mask", "gold", "", 20.5, 15.2, 5.0, "intact", "Egyptian Museum", "Ancient Egyptian", ""),
+        Artifact("A-2024-002", "Roman Vase", "Roman Ruins", "2019-06-15", 2000, "vase", "ceramic", "glaze", 30.8, 25.6, 10.2, "restored", "Roman Museum", "Roman", ""),
+        Artifact("A-2024-003", "Inca Pot", "Inca Site", "2015-03-20", 500, "pot", "clay", "", 25.1, 18.5, 8.0, "fragmented", "Inca Museum", "Inca", "")
+    ]
+
+    with open('artifacts.csv', 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(["artifact_id", "artifact_name", "discovery_site", "discovery_date", "estimated_age_years", "artifact_type", "material_primary", "material_secondary", "dimensions_height_cm", "dimensions_width_cm", "dimensions_depth_cm", "condition_status", "current_location", "associated_civilization", "notable_inscriptions"])
+        for artifact in artifacts:
+            writer.writerow([artifact.artifact_id, artifact.artifact_name, artifact.discovery_site, artifact.discovery_date, artifact.estimated_age_years, artifact.artifact_type, artifact.material_primary, artifact.material_secondary, artifact.dimensions_height_cm, artifact.dimensions_width_cm, artifact.dimensions_depth_cm, artifact.condition_status, artifact.current_location, artifact.associated_civilization, artifact.notable_inscriptions])
+
+if __name__ == "__main__":
+    main()

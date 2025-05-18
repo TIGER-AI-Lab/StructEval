@@ -1,0 +1,22 @@
+[recipe]
+title = "Spaghetti Carbonara"
+[recipe.author]
+name = "John Doe"
+email = "john.doe@example.com"
+phone = "+1234567890"
+[recipe.ingredients]
+- name = "Spaghetti"
+  quantity = 400
+  unit = "grams"
+- name = "Eggs"
+  quantity = 4
+  unit = "pieces"
+[recipe.steps]
+- instruction = "Cook spaghetti according to package instructions."
+  duration_minutes = 10
+- instruction = "In a separate pan, cook bacon until crispy."
+  duration_minutes = 5
+[recipe.metadata]
+cuisine = "Italian"
+servings = 4
+difficulty = "easy"

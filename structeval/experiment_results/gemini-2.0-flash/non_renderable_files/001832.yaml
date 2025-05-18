@@ -1,0 +1,34 @@
+exhibit:
+  title: "Ancient Civilizations"
+  curator:
+    name: "Dr. Eleanor Vance"
+    contact:
+      email: "eleanor.vance@museum.org"
+      phone: "+1-555-123-4567"
+  artifacts:
+    - name: "Rosetta Stone Fragment"
+      origin: "Ancient Egypt"
+      year: -196
+      materials:
+        - "Granodiorite"
+      dimensions:
+        height_cm: 112.3
+        width_cm: 75.7
+        depth_cm: 28.4
+      on_loan: true
+      loan_info:
+        institution: "British Museum"
+        return_date: "2024-12-31"
+    - name: "Terracotta Army Warrior"
+      origin: "China"
+      year: -210
+      materials:
+        - "Terracotta"
+        - "Paint"
+      dimensions:
+        height_cm: 180
+        width_cm: 60
+        depth_cm: 45
+      on_loan: false
+  opening_date: "2023-10-27"
+  closing_date: "2024-05-15"

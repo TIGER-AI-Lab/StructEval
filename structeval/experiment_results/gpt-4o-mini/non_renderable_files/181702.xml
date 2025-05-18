@@ -1,0 +1,20 @@
+
+<spaceStation>
+  <name>Nebula Haven</name>
+  <location>
+    <planet>Gliese 581g</planet>
+    <galaxy>Andromeda</galaxy>
+  </location>
+  <crewMembers>
+    <member>
+      <name>Zora Quill</name>
+      <role>Astrobotanist</role>
+      <favoriteSnack>Lunar Grapes</favoriteSnack>
+    </member>
+    <member>
+      <name>Milo Drift</name>
+      <role>Quantum Engineer</role>
+      <favoriteSnack>Meteorite Crunchies</favoriteSnack>
+    </member>
+  </crewMembers>
+</spaceStation>

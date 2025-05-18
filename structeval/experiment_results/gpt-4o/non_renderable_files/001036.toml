@@ -1,0 +1,28 @@
+[festival]
+name = "Global Harmony Fest"
+year = 2024
+
+[festival.location]
+city = "Barcelona"
+country = "Spain"
+
+[festival.organizer]
+name = "World Music Events Ltd."
+
+[festival.organizer.contact]
+email = "info@worldmusicevents.com"
+phone = "+34-123-456-789"
+
+[[festival.events]]
+title = "Opening Night Gala"
+date = "2024-06-15"
+performers = ["The Global Band", "DJ International", "Symphony of Cultures"]
+
+[festival.events.tickets]
+price = 75.00
+available = 500
+types = ["VIP", "General", "Student"]
+
+[[festival.events]]
+title = "World Beats Showcase"
+performers = ["Rhythm Masters", "Cultural Collective", "Dance Fusion Crew"]

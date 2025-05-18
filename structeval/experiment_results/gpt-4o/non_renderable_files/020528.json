@@ -1,0 +1,33 @@
+[
+    {
+        "id": "SS-001",
+        "name": "Star Voyager",
+        "class": "Explorer",
+        "captain": "Jane Kirk",
+        "engineer": "Sam Torres",
+        "scientist1": {
+            "name": "Dr. Luna Ray",
+            "specialty": "Astrogeology"
+        },
+        "scientist2": {
+            "name": "Dr. Max Quark",
+            "specialty": "Quantum Physics"
+        },
+        "missions": [
+            {
+                "id": "M-101",
+                "destination": "Mars",
+                "success": true
+            },
+            {
+                "id": "M-102",
+                "destination": "Europa",
+                "success": false
+            }
+        ],
+        "length_m": 120,
+        "weight_tons": 450,
+        "fuel_type": "Nuclear Fusion",
+        "in_service": true
+    }
+]

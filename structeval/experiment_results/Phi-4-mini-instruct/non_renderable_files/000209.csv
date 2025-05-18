@@ -1,0 +1,2 @@
+planet_id,planet_name,system_name,discovery_year,mass_earths,radius_km,orbital_period_days,atmosphere_composition,has_rings,rings_count,largest_moon_name,largest_moon_diameter_km,surface_temperature_c,discovered_by,notes
+"EP-001","Zyphoria","Zyphoria System","2025","5.2","12,500","365","Nitrogen, Oxygen, Argon","TRUE","3","Luna Major","7,500","-23","ExoResearch Team","Zyphoria has a stable climate and is located in the habitable zone of its star."

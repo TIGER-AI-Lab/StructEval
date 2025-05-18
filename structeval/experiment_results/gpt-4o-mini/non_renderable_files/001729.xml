@@ -1,0 +1,34 @@
+
+<creature>
+    <name>Xeltharion</name>
+    <species>Thyraxian</species>
+    <origin>
+        <planet>Thyrax</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <physiology>
+        <height>250</height>
+        <weight>150</weight>
+        <limbs>6</limbs>
+    </physiology>
+    <abilities>
+        <ability>
+            <name>Telekinetic Manipulation</name>
+            <powerLevel>85</powerLevel>
+            <type>psychic</type>
+            <cooldownSeconds>30</cooldownSeconds>
+        </ability>
+    </abilities>
+    <equipment>
+        <item>
+            <itemName>Quantum Blaster</itemName>
+            <rarity>legendary</rarity>
+            <acquiredFrom>Ancient Ruins of Thyrax</acquiredFrom>
+            <enchantments>
+                <enchantment>
+                    <effect>Increases energy output by 50%</effect>
+                </enchantment>
+            </enchantments>
+        </item>
+    </equipment>
+</creature>

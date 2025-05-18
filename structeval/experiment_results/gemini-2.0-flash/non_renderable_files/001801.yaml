@@ -1,0 +1,50 @@
+museum:
+  name: "The Metropolitan Museum of Art"
+  location:
+    city: "New York"
+    country: "USA"
+  founded_year: 1870
+  director:
+    name: "Max Hollein"
+    tenure_years: 5
+  exhibits:
+    - title: "Irises"
+      artist: "Vincent van Gogh"
+      year: 1889
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 71
+        width_cm: 93
+      on_loan: false
+      provenance:
+        previous_owners:
+          - "Julien Tanguy"
+          - "Ambroise Vollard"
+          - "Erwin Davis"
+        acquisition_date: "1958-01-16"
+    - title: "The Starry Night"
+      artist: "Vincent van Gogh"
+      year: 1889
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 73.7
+        width_cm: 92.1
+      on_loan: false
+      provenance:
+        previous_owners:
+          - "Johanna van Gogh-Bonger"
+          - "Georgette P. van Stolk-Tollenaar"
+        acquisition_date: "1941-01-01"
+    - title: "Water Lilies"
+      artist: "Claude Monet"
+      year: 1915
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 200
+        width_cm: 200
+      on_loan: true
+      provenance:
+        previous_owners:
+          - "Michel Monet"
+          - "Galerie Durand-Ruel"
+        acquisition_date: "1955-03-03"

@@ -1,0 +1,69 @@
+
+import csv
+from dataclasses import dataclass
+
+@dataclass
+class Recipe:
+    recipe_id: str
+    recipe_name: str
+    chef_name: str
+    cuisine_type: str
+    difficulty_level: str
+    prep_time_minutes: int
+    cook_time_minutes: int
+    ingredient_list: str
+    ingredient_count: int
+    main_ingredient: str
+    steps: str
+    servings: int
+    calories_per_serving: int
+    is_vegetarian: bool
+    user_rating: float
+
+def recipe_to_csv(recipe):
+    with open('recipe.csv', 'w', newline='') as csvfile:
+        fieldnames = ['recipe_id', 'recipe_name', 'chef_name', 'cuisine_type', 'difficulty_level', 
+                      'prep_time_minutes', 'cook_time_minutes', 'ingredient_list', 'ingredient_count', 
+                      'main_ingredient', 'steps', 'servings', 'calories_per_serving', 'is_vegetarian', 
+                      'user_rating']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+        writer.writerow({
+            'recipe_id': recipe.recipe_id,
+            'recipe_name': recipe.recipe_name,
+            'chef_name': recipe.chef_name,
+            'cuisine_type': recipe.cuisine_type,
+            'difficulty_level': recipe.difficulty_level,
+            'prep_time_minutes': recipe.prep_time_minutes,
+            'cook_time_minutes': recipe.cook_time_minutes,
+            'ingredient_list': recipe.ingredient_list,
+            'ingredient_count': recipe.ingredient_count,
+            'main_ingredient': recipe.main_ingredient,
+            'steps': recipe.steps,
+            'servings': recipe.servings,
+            'calories_per_serving': recipe.calories_per_serving,
+            'is_vegetarian': 'TRUE' if recipe.is_vegetarian else 'FALSE',
+            'user_rating': recipe.user_rating
+        })
+
+# Example usage:
+recipe = Recipe(
+    recipe_id='R001',
+    recipe_name='Spaghetti Bolognese',
+    chef_name='Chef Giovanni',
+    cuisine_type='Italian',
+    difficulty_level='Intermediate',
+    prep_time_minutes=15,
+    cook_time_minutes=30,
+    ingredient_list='spaghetti; ground beef; tomato sauce; onion; garlic; olive oil',
+    ingredient_count=6,
+    main_ingredient='ground beef',
+    steps='Cook spaghetti; brown ground beef; add tomato sauce; cook onion and garlic',
+    servings=4,
+    calories_per_serving=500,
+    is_vegetarian=False,
+    user_rating=4.5
+)
+
+recipe_to_csv(recipe)

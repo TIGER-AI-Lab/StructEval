@@ -1,0 +1,12 @@
+
+import pandas as pd
+
+def extract_planetary_details(text):
+    # Your code here
+    pass
+
+# Example usage
+text = """
+# Example text
+"""
+print(extract_planetary_details(text))

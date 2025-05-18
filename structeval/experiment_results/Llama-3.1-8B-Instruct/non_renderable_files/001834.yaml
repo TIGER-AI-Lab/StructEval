@@ -1,0 +1,24 @@
+
+creature:
+  name: Zorvath, the Celestial Guardian
+  species: Kyrennei
+  origin:
+    planet: Xeridia
+    galaxy: Andromeda
+  abilities:
+    - type: Energy Projection
+      strength: 8
+    - type: Telekinesis
+      strength: 9
+  companions:
+    - name: Lyra, the Starlight Seren
+      species: Aethon
+      bond_level: 7
+    - name: Kael, the Shadow Dancer
+      species: Nefari
+      bond_level: 5
+  artifacts:
+    - name: Starheart Crystal
+      power_level: 6
+    - name: Celestial Scepter
+      power_level: 8

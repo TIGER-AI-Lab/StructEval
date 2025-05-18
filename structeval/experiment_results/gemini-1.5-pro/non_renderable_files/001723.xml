@@ -1,0 +1,63 @@
+<recipe>
+    <title>Galactic Guacamole</title>
+    <author>
+        <name>Cosmic Cook</name>
+        <profileUrl>https://www.cosmiccook.com</profileUrl>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Avocado</name>
+            <quantity>3</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Red Onion</name>
+            <quantity>0.5</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Lime Juice</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Cilantro</name>
+            <quantity>0.25</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>0.5</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <order>1</order>
+            <instruction>Mash avocados in a bowl.</instruction>
+            <durationMinutes>5</durationMinutes>
+        </step>
+        <step>
+            <order>2</order>
+            <instruction>Dice red onion and add to the bowl.</instruction>
+            <durationMinutes>3</durationMinutes>
+        </step>
+        <step>
+            <order>3</order>
+            <instruction>Stir in lime juice, cilantro, and salt.</instruction>
+            <durationMinutes>2</durationMinutes>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>200</calories>
+        <fat>15</fat>
+        <protein>2</protein>
+        <carbohydrates>10</carbohydrates>
+    </nutrition>
+    <metadata>
+        <cuisine>Mexican</cuisine>
+        <difficulty>easy</difficulty>
+        <servings>4</servings>
+        <created>2024-07-20T12:00:00Z</created>
+    </metadata>
+</recipe>

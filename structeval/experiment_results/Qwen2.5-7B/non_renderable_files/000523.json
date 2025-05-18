@@ -1,0 +1,32 @@
+
+{
+  "name": "Zorblatt",
+  "type": "Mammal",
+  "origin": {
+    "planet": "Zorblatt III",
+    "galaxy": "Milky Way"
+  },
+  "abilities": [
+    {
+      "name": "Regenerative Healing Factor",
+      "power_level": 9
+    },
+    {
+      "name": "Intangibility",
+      "power_level": 7
+    }
+  ],
+  "habitat": {
+    "environment": "Tropical Forest",
+    "temperature_range": "-10C to 30C",
+    "resources": [
+      "Abundant Water",
+      "Rich Soil"
+    ]
+  },
+  "appearance": {
+    "color": "Green",
+    "size": "2 meters",
+    "distinctive_feature": "Bioluminescent Spots"
+  }
+}

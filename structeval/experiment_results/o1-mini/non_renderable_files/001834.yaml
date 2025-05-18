@@ -1,0 +1,24 @@
+
+creature:
+  name: Zephyrion the Star Weaver
+  species: Luminarian
+  origin:
+    planet: Lumina Prime
+    galaxy: Andromeda
+  abilities:
+    - type: Energy Manipulation
+      strength: 85
+    - type: Telepathy
+      strength: 75
+  companions:
+    - name: Orion
+      species: Nebulon
+      bond_level: 9
+    - name: Lyra
+      species: Solarian
+      bond_level: 7
+  artifacts:
+    - name: Celestial Staff
+      power_level: 95
+    - name: Void Crystal
+      power_level: 80

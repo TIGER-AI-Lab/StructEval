@@ -1,0 +1,37 @@
+artifact = {
+    name = "The Scepter of Pharaoh Amenhotep",
+    origin = "Ancient Egypt",
+    discovery_date = "2023-04-15",
+    materials = {
+        primary = "gold",
+        secondary = ""
+    },
+    dimensions = {
+        height_cm = 35,
+        width_cm = 5,
+        depth_cm = 2
+    },
+    inscriptions = {
+        list = [
+            {
+                language = "Hieroglyphics",
+                translation = "The power of the gods",
+                location_on_artifact = "top"
+            },
+            {
+                language = "English",
+                translation = "The power of the gods",
+                location_on_artifact = "top"
+            }
+        ]
+    },
+    exhibit = {
+        current_location = "The Metropolitan Museum of Art",
+        previous_locations = [
+            {
+                museum = "The British Museum",
+                year_range = "2018â2023"
+            }
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "spaceship": {
+    "name": "Starhopper X7",
+    "captain": "Juno Vega",
+    "is_operational": true,
+    "last_maintenance": "2023-11-18T14:30:00Z",
+    "crew": [
+      {
+        "name": "Rex Solaris",
+        "role": "Pilot",
+        "species": "Andromedan"
+      },
+      {
+        "name": "Lyra Quark",
+        "role": "Engineer",
+        "species": "Terran"
+      },
+      {
+        "name": "Mira Flux",
+        "role": "Navigator",
+        "species": "Venusian"
+      }
+    ],
+    "specs": {
+      "length_m": 72.5,
+      "mass_tons": 4300,
+      "fuel_type": "Antimatter Plasma"
+    },
+    "missions": [
+      {
+        "name": "Nebula Drift",
+        "destination": "Orion Sector",
+        "year": 2124
+      },
+      {
+        "name": "Celestial Relay",
+        "destination": "Proxima Outpost",
+        "year": 2126
+      }
+    ]
+  }
+}

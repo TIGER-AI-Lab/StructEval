@@ -1,0 +1,32 @@
+[creature]
+species = "Nocturnus Umbra"
+
+[creature.habitat]
+region = "Shadowfen Forest"
+climate = "Temperate, humid"
+
+[creature.appearance]
+size = "3 meters"
+color = "Deep indigo with silver markings"
+
+[creature.abilities]
+primary = "Shadow manipulation"
+secondary = "Enhanced night vision"
+
+[[creature.behavior.patterns]]
+name = "Nocturnal Hunting"
+frequency = "Nightly"
+description = "Hunts small animals under the cover of darkness."
+
+[[creature.behavior.patterns]]
+name = "Lunar Howling"
+frequency = "Full moon"
+description = "Emits a haunting howl during the full moon, believed to be a form of communication."
+
+[creature.diet]
+type = "Carnivore"
+favorite_foods = ["Shadowmice", "Gloomshrooms"]
+
+[creature.discovery]
+discoverer = "Professor Armitage Luxley"
+year = 1927

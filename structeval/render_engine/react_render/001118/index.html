@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001118</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const UserRegistration = () => {
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [terms, setTerms] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleRegister = () => {
+    if (!username || !email || !password || !terms) {
+      setError('All fields are required and terms must be accepted.');
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setError('Invalid email format.');
+      return;
+    }
+
+    // In a real application, you would handle registration logic here
+    console.log('User registered:', { username, email, password });
+  };
+
+  const handleCancel = () => {
+    setUsername('');
+    setEmail('');
+    setPassword('');
+    setTerms(false);
+    setError('');
+  };
+
+  return (
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', maxWidth: '400px', margin: '0 auto' }}>
+      <h2>User Registration</h2>
+      <label htmlFor="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter Username" value={username} onChange={e => setUsername(e.target.value)} />
+      <label htmlFor="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter Email" value={email} onChange={e => setEmail(e.target.value)} />
+      <label htmlFor="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter Password" value={password} onChange={e => setPassword(e.target.value)} />
+      <input type="checkbox" id="terms" checked={terms} onChange={e => setTerms(e.target.checked)} />
+      <label htmlFor="terms">Accept Terms and Conditions</label>
+      {error && <p style={{ color: 'red', gridColumn: '1 / span 2' }}>{error}</p>}
+      <button style={{ backgroundColor: 'green', color: 'white' }} onClick={handleRegister}>Register</button>
+      <button onClick={handleCancel}>Cancel</button>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<UserRegistration />);
+
+    </script>
+  </body>
+</html>

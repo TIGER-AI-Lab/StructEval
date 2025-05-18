@@ -1,0 +1,2 @@
+creature_id,species_name,habitat.region,habitat.climate,habitat.elevation_range,features.size,features.color_pattern,features.average_lifespan_years,abilities[0].name,abilities[0].description,abilities[0].power_level,abilities[1].name,abilities[1].description,abilities[1].power_level,diet.primary_foods
+"CR001","Drakonis Ignis","Volcanic Mountains","arid","1000m to 3000m","4 meters","fiery red with black stripes",120,"Fire Breath","Exhales intense flames to incinerate foes",9,"Flight","Soars at high speeds to evade predators",7,"lava insects, molten rocks, sulfur plants"

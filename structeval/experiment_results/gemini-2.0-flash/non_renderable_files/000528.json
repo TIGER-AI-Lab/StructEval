@@ -1,0 +1,25 @@
+{
+  "artifact.name": "The Sunstone of Viridia",
+  "artifact.origin.culture": "Viridian Civilization",
+  "artifact.origin.period": "Early Viridian Dynasty",
+  "artifact.materials.primary": "Obsidian",
+  "artifact.materials.secondary": "Gold inlay",
+  "artifact.dimensions.height_cm": 30.5,
+  "artifact.dimensions.width_cm": 22.0,
+  "artifact.dimensions.depth_cm": 3.8,
+  "artifact.location.current_museum": "National Archaeological Museum",
+  "artifact.location.room": "Hall of Ancient Civilizations",
+  "artifact.provenance.history": [
+    {
+      "event": "Discovered",
+      "date": "2023-07-15",
+      "location": "Viridian Valley Excavation Site"
+    }
+  ],
+  "artifact.images": [
+    {
+      "url": "https://example.com/sunstone_image.jpg",
+      "description": "Front view of the Sunstone, showing the obsidian surface and gold inlay."
+    }
+  ]
+}

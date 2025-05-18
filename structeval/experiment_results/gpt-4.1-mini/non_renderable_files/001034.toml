@@ -1,0 +1,37 @@
+
+[robot]
+name = "Aegis-X9"
+model_number = "AX9-2047"
+manufacturer = "CyberDyne Systems"
+
+  [robot.specs]
+  weight_kg = 125.5
+  height_cm = 185
+  power_source = "fusion battery"
+
+  [[robot.sensors]]
+  type = "LIDAR"
+  range_meters = 250
+
+  [[robot.sensors]]
+  type = "Infrared"
+  range_meters = 100
+
+  [[robot.modules]]
+  name = "Hydraulic Arm"
+  status = "active"
+  last_maintenance = "2024-05-15T09:30:00Z"
+
+  [[robot.modules]]
+  name = "Optical Processor"
+  status = "active"
+  last_maintenance = "2024-04-20T14:00:00Z"
+
+  [[robot.modules]]
+  name = "Thermal Regulator"
+  status = "inactive"
+  last_maintenance = "2024-03-10T11:15:00Z"
+
+  [robot.operating_modes]
+  primary = "Autonomous Navigation"
+  secondary = "Remote Control"

@@ -1,0 +1,34 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<planet>
+    <name>Zephyria</name>
+    <type>Gas Giant</type>
+    <orbitalPeriod>4000</orbitalPeriod>
+    <discovery year="2150">
+        <method>Direct Imaging</method>
+        <discoverer>Dr. Elena Marquez and Team Stellar</discoverer>
+    </discovery>
+    <atmosphere>
+        <composition>Hydrogen, Helium, Methane, Ammonia</composition>
+        <pressure>5.2</pressure>
+    </atmosphere>
+    <moons>
+        <moon>
+            <name>Aquilon</name>
+            <diameter>1520</diameter>
+            <hasSubsurfaceOcean>true</hasSubsurfaceOcean>
+        </moon>
+        <moon>
+            <name>Boreas</name>
+            <diameter>980</diameter>
+            <hasSubsurfaceOcean>false</hasSubsurfaceOcean>
+        </moon>
+    </moons>
+    <rings>
+        <hasRings>true</hasRings>
+        <ring>
+            <width>1200</width>
+            <composition>Ice, Rock Particles</composition>
+        </ring>
+    </rings>
+</planet>

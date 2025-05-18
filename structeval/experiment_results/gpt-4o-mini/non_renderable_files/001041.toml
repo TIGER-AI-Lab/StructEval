@@ -1,0 +1,44 @@
+
+expedition = { 
+    name = "Galactic Pioneer Mission", 
+    launch_date = "2025-06-15T14:30:00Z", 
+    destination = { 
+        planet = "Mars", 
+        region = "Valles Marineris" 
+    }, 
+    crew = [ 
+        { 
+            name = "Dr. Alice Johnson", 
+            role = "Astrobiologist", 
+            experience_years = 10, 
+            certifications = ["PhD in Astrobiology", "NASA Certified"] 
+        }, 
+        { 
+            name = "Captain Mark Thompson", 
+            role = "Mission Commander", 
+            experience_years = 15, 
+            certifications = ["Commercial Pilot License", "Spaceflight Training"] 
+        } 
+    ], 
+    equipment = [ 
+        { 
+            item = "Rover", 
+            quantity = 2, 
+            status = "operational" 
+        }, 
+        { 
+            item = "Habitat Module", 
+            quantity = 1, 
+            status = "operational" 
+        }, 
+        { 
+            item = "Scientific Instruments", 
+            quantity = 5, 
+            status = "spare" 
+        } 
+    ], 
+    mission_objectives = { 
+        primary = "Conduct geological and biological research on Mars", 
+        secondary = "Establish a sustainable habitat for future missions" 
+    } 
+}

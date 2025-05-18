@@ -1,0 +1,26 @@
+
+artifact:
+  name: "The Celestial Disk of Ur"
+  origin:
+    civilization: "Sumerian"
+    estimated_age: 4600
+  materials:
+    - type: "bronze"
+      provenance: "mountains of Mesopotamia"
+    - type: "lapis lazuli"
+      provenance: "mountains of Afghanistan"
+  dimensions:
+    height_cm: 30
+    width_cm: 25
+    depth_cm: 15
+  inscriptions:
+    - language: "Sumerian"
+      text: "The gods created the heavens and the earth."
+    - language: "Akkadian"
+      text: "May the king rule forever under the protection of the gods."
+  current_location:
+    museum: "British Museum"
+    display_case: "Ancient Mesopotamia"
+  discovery:
+    date: "1850-04-15"
+    location: "ruins of Ur, Mesopotamia"

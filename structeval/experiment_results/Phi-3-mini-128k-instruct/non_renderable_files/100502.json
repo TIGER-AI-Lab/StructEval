@@ -1,0 +1,31 @@
+{
+  "planet": {
+    "name": "Zyphora",
+    "discovery_year": 2342,
+    "moons": ["Lira", "Cantos", "Umbra"],
+    "atmosphere": {
+      "composition": ["Argon", "Methane", "Neon"],
+      "pressure": 1.8
+    },
+    "surface": {
+      "terrain_types": ["crystalline plains", "lava fields", "ice spires"],
+      "mean_temperature": -120.5
+    },
+    "surface.volcanoes": {
+      "active": 7,
+      "inactive": 23
+    }
+  },
+  "planet.missions": [
+    {
+      "name": "Aurora-7",
+      "year": 2350,
+      "success": true
+    },
+    {
+      "name": "Helios-3",
+      "year": 2356,
+      "success": false
+    }
+  ]
+}

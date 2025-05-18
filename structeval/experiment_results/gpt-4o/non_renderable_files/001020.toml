@@ -1,0 +1,35 @@
+[artifact]
+name = "Rosetta Stone"
+discovery_date = "1799-07-15"
+
+[artifact.origin]
+civilization = "Ancient Egypt"
+location = "Memphis, Egypt"
+
+[artifact.dimensions]
+height_cm = 114.4
+width_cm = 72.3
+
+[[artifact.materials]]
+type = "Granodiorite"
+percentage = 85.0
+
+[[artifact.materials]]
+type = "Other minerals"
+percentage = 15.0
+
+[[artifact.inscriptions]]
+language = "Ancient Greek"
+translation = "In the ninth year of Ptolemy V..."
+
+[[artifact.inscriptions]]
+language = "Demotic"
+translation = "The decree of the priests..."
+
+[[artifact.provenance.previous_owners]]
+owner_name = "Napoleon Bonaparte"
+acquisition_year = 1801
+
+[[artifact.provenance.previous_owners]]
+owner_name = "British Museum"
+acquisition_year = 1802

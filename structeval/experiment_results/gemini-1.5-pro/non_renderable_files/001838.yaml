@@ -1,0 +1,26 @@
+artifact:
+  name: "Golden Goblet of Pithos"
+  origin:
+    culture: "Minoan"
+    era: "Late Bronze Age"
+    discovery_date: "1922-04-25"
+  dimensions:
+    height_cm: 25.5
+    width_cm: 15.0
+  materials:
+    - "Gold"
+    - "Silver"
+    - "Lapis Lazuli"
+  condition:
+    status: "Restored"
+    restoration_history:
+      - date: "1985-10-01"
+        description: "Reconstruction of broken handle and rim."
+  exhibitions:
+    - location: "National Archaeological Museum, Athens"
+      start_date: "2000-06-15"
+      end_date: "2001-03-15"
+      visitor_count: 120000
+  references:
+    - citation: "Evans, A. (1921). The Palace of Minos at Knossos. London: Macmillan."
+    - citation: "Pendlebury, J. D. S. (1939). The Archaeology of Crete. London: Methuen."

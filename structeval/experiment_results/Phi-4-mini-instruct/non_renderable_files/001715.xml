@@ -1,0 +1,32 @@
+
+&lt;creature name="Zyphorix" species="Zyphorixian">
+  &lt;origin.planet>Zephyria</origin.planet>
+  &lt;origin.galaxy>Andromeda</origin.galaxy>
+  &lt;abilities>
+    &lt;type>Telekinesis</type>
+    &lt;description>Ability to move objects with the mind</description>
+    &lt;level>8</level>
+    &lt;type>Invisibility</type>
+    &lt;description>Can become invisible at will</description>
+    &lt;level>6</level>
+  &lt;/abilities>
+  &lt;physical_traits>
+    &lt;height>250</height>
+    &lt;weight>75</weight>
+    &lt;eye_color>Amber</eye_color>
+    &lt;limbs.count>6</limbs.count>
+    &lt;limbs.type>Fused tentacles</limbs.type>
+  &lt;/physical_traits>
+  &lt;history>
+    &lt;events>
+      &lt;title>Birth of Zyphorix</title>
+      &lt;year>5023</year>
+      &lt;impact>First Zyphorixian born on Zephyria</impact>
+    &lt;/events>
+    &lt;events>
+      &lt;title>Discovery of Andromeda</title>
+      &lt;year>5100</year>
+      &lt;impact>Zyphorixians first contact with other species</impact>
+    &lt;/events>
+  &lt;/history>
+&lt;/creature>

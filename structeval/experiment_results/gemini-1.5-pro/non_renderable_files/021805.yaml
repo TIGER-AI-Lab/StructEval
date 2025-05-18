@@ -1,0 +1,30 @@
+planet_name: Gliese 581g
+system:
+  star_name: Gliese 581
+  star_type: Red Dwarf
+  distance_from_earth: 20.3
+discovery:
+  year: 2010
+  method: Radial Velocity
+  team:
+    - name: Dr. L. Vogt
+      role: Lead Scientist
+    - name: Dr. S. Butler
+      role: Data Analyst
+moons:
+    - moon_name: Zarmina
+      diameter_km: 3500
+    - moon_name: Phobos
+      diameter_km: 2200
+atmosphere:
+  composition:
+    - Nitrogen
+    - Oxygen
+  pressure_atm: 1.2
+surface:
+  temperature_c: -37
+  has_water: Yes
+  landmarks:
+    - Crater Lake
+    - The Great Ridge
+notes: Potentially habitable exoplanet candidate

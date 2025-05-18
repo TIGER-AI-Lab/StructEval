@@ -1,0 +1,21 @@
+
+exhibit:
+  name: "Masterpieces of the Renaissance"
+  curator: "Dr. Emily Carter"
+  opening_date: "2023-11-15"
+  rooms:
+    - title: "The Italian Renaissance"
+      artworks:
+        - artist: "Leonardo da Vinci"
+          title: "Mona Lisa"
+          year: 1503
+          medium: "Oil on poplar panel"
+          dimensions:
+            height_cm: 77
+            width_cm: 53
+            depth_cm: null
+          provenance: "Acquired by King Francis I of France in 1518"
+          on_loan: true
+          loan_details:
+            lender: "Louvre Museum"
+            return_date: "2024-05-01"

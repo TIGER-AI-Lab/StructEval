@@ -1,0 +1,3 @@
+
+recipe_id,recipe_name,chef_name,cuisine_type,servings,prep_time_minutes,cook_time_minutes,ingredient[0].name,ingredient[0].quantity,ingredient[0].unit,ingredient[1].name,ingredient[1].quantity,ingredient[1].unit,step[0].instruction,step[0].duration_minutes
+REC-001,Spicy Tuna Salad,Chef Maria Lopez,Japanese,4,15,5,Tuna,200,g,Cucumber,1,cup,"Combine tuna, cucumber, and spices in a bowl.",10

@@ -1,0 +1,23 @@
+artifact:
+  name: "Rosetta Stone"
+  type: "inscription"
+  discovery_date: "1799-07-15"
+  origin:
+    civilization: "Ptolemaic Kingdom"
+    era: "Hellenistic Period"
+    location:
+      latitude: 31.3083
+      longitude: 30.3167
+  materials:
+    - name: "Granodiorite"
+      percentage: 90
+    - name: "Quartz"
+      percentage: 10
+  dimensions:
+    height_cm: 114.4
+    width_cm: 72.3
+  features:
+    - description: "Contains inscriptions in three scripts: Hieroglyphic, Demotic, and Ancient Greek."
+      significance: "Provided the key to deciphering Egyptian hieroglyphs."
+    - description: "The text is a decree from Ptolemy V."
+      significance: "Offers insights into the political and religious landscape of Ptolemaic Egypt."

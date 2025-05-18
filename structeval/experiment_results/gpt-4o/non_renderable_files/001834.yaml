@@ -1,0 +1,23 @@
+creature:
+  name: "Zylar the Wise"
+  species: "Quorvian"
+  origin:
+    planet: "Xylophar"
+    galaxy: "Andromeda"
+  abilities:
+    - type: "Telepathy"
+      strength: 85
+    - type: "Invisibility"
+      strength: 70
+  companions:
+    - name: "Flix"
+      species: "Glimmerfox"
+      bond_level: 8
+    - name: "Ryn"
+      species: "Stardust Owl"
+      bond_level: 9
+  artifacts:
+    - name: "Orb of Lumina"
+      power_level: 95
+    - name: "Crystal of Echoes"
+      power_level: 80

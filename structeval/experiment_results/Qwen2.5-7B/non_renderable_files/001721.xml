@@ -1,0 +1,79 @@
+
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>John Doe</name>
+    <contact>
+      <email>john.doe@example.com</email>
+      <phone>+1-202-555-0175</phone>
+    </contact>
+  </author>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>easy</difficulty>
+    <prep_time_minutes>30</prep_time_minutes>
+    <tags>
+      <tag>spaghetti</tag>
+      <tag>carbonara</tag>
+      <tag>italian</tag>
+    </tags>
+  </metadata>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Pancetta</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Grated Parmesan Cheese</name>
+      <quantity>50</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <description>Boil water in a large pot and cook spaghetti according to package instructions.</description>
+      <duration_minutes>10</duration_minutes>
+      <tools>Pot, Spatula</tools>
+    </step>
+    <step>
+      <description>Cook pancetta in a pan until crispy.</description>
+      <duration_minutes>5</duration_minutes>
+      <tools>Pan, Spatula</tools>
+    </step>
+    <step>
+      <description>Beat eggs and grated Parmesan cheese together in a bowl.</description>
+      <duration_minutes>0</duration_minutes>
+      <tools>Bowl, Whisk</tools>
+    </step>
+    <step>
+      <description>Drain spaghetti and add it to the pan with pancetta. Toss to combine.</description>
+      <duration_minutes>2</duration_minutes>
+      <tools>Pan, Spatula</tools>
+    </step>
+    <step>
+      <description>Quickly pour the egg and cheese mixture over the spaghetti and pancetta. Toss to coat evenly.</description>
+      <duration_minutes>2</duration_minutes>
+      <tools>Pan, Spatula</tools>
+    </step>
+    <step>
+      <description>Remove from heat and serve immediately.</description>
+      <duration_minutes>0</duration_minutes>
+      <tools>None</tools>
+    </step>
+  </steps>
+</recipe>

@@ -1,0 +1,49 @@
+<creature>
+    <name>Xylar Starbreeze</name>
+    <species>Lumarian</species>
+    <origin>
+        <planet>Xylos</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <abilities>
+        <ability>
+            <type>Telekinesis</type>
+            <description>Ability to move objects with mind.</description>
+            <level>7</level>
+        </ability>
+        <ability>
+            <type>Energy Projection</type>
+            <description>Can project energy blasts.</description>
+            <level>9</level>
+        </ability>
+        <ability>
+            <type>Shapeshifting</type>
+            <description>Can alter physical form.</description>
+            <level>5</level>
+        </ability>
+    </abilities>
+    <physical_traits>
+        <height>250</height>
+        <weight>120</weight>
+        <eye_color>Golden</eye_color>
+        <limbs>
+            <count>6</count>
+            <type>Tentacle</type>
+        </limbs>
+    </physical_traits>
+    <history>
+        <birth_date>2050-03-15</birth_date>
+        <events>
+            <event>
+                <title>First Contact</title>
+                <year>2075</year>
+                <impact>Met humans for the first time.</impact>
+            </event>
+            <event>
+                <title>Xylos Uprising</title>
+                <year>2080</year>
+                <impact>Led a rebellion against oppressive regime.</impact>
+            </event>
+        </events>
+    </history>
+</creature>

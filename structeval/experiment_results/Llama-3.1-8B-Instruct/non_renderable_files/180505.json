@@ -1,0 +1,52 @@
+
+{
+  "space_station": {
+    "name": "Nebula Outpost",
+    "location": {
+      "planet": "Gliese 581g",
+      "orbit": "Low"
+    },
+    "crew_members": [
+      {
+        "name": "Zhara Voss",
+        "role": "Commander",
+        "species": "Human",
+        "skills": [
+          "Leadership",
+          "Astrophysics"
+        ]
+      },
+      {
+        "name": "T'Kara",
+        "role": "Engineer",
+        "species": "Andronian",
+        "skills": [
+          "Reactor Maintenance",
+          "Robotics"
+        ]
+      }
+    ],
+    "modules": [
+      {
+        "type": "Habitat",
+        "status": "operational",
+        "capacity": 12
+      },
+      {
+        "type": "Research Lab",
+        "status": "under_maintenance",
+        "capacity": 6
+      }
+    ],
+    "supplies": {
+      "food": 1500,
+      "water": 4000,
+      "oxygen": "90 days"
+    },
+    "mission": {
+      "log": "Initiated atmospheric sampling. Minor meteor shower encountered.",
+      "start_date": "2424-03-10",
+      "end_date": "2424-09-18"
+    }
+  }
+}

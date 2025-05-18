@@ -1,0 +1,28 @@
+[artifact]
+name = "Xylosian Obelisk"
+origin = "Xylos"
+
+[artifact.discovery]
+year = 2342
+location = "Andromeda Galaxy, Sector 42-Alpha"
+
+[[artifact.materials]]
+type = "Neutronium Alloy"
+percentage = 67.8
+
+[[artifact.materials]]
+type = "Crystalline Silicon"
+percentage = 32.2
+
+[artifact.dimensions]
+height_cm = 120.5
+width_cm = 45.2
+depth_cm = 30.1
+
+[[artifact.features]]
+description = "Emits a focused beam of unknown energy."
+is_encrypted = true
+
+[[artifact.features]]
+description = "Surface is covered in complex, undeciphered glyphs."
+is_encrypted = false

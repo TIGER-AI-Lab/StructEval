@@ -1,0 +1,37 @@
+
+expedition:
+  name: Aurora Borealis Initiative
+  leader: Dr. Vega Solaris
+  year: 2427
+  destination:
+    planet: Gliese 581d
+    region: Crimson Highlands
+  crew:
+  - name: Lt. Orion Flux
+    role: Pilot
+    species: Human
+    equipment:
+    - type: Exo-suit
+      status: Operational
+    - type: Navigation module
+      status: Calibrated
+  - name: Zara Quell
+    role: Xenobiologist
+    species: Andromedan
+    equipment:
+    - type: Bio-scanner
+      status: Charged
+    - type: Sample kit
+      status: Sterilized
+  objectives:
+  - Survey native flora
+  - Collect mineral samples
+  - Establish comms relay
+  logbook:
+    entries:
+    - day: 1
+      event: Landing successful
+      notes: Atmospheric conditions stable. Crew in good spirits.
+    - day: 2
+      event: First flora survey
+      notes: Discovered bioluminescent moss near landing site.

@@ -1,0 +1,33 @@
+
+import xmltodict
+import json
+
+xml_data = """
+<planetaryZoo>
+  <planet>
+    <name>Zephyria</name>
+    <creatures>
+      <creature>
+        <species>Glowing Skywhale</species>
+        <habitat>Floating Forests</habitat>
+      </creature>
+      <creature>
+        <species>Crystal Beetle</species>
+        <habitat>Glass Caves</habitat>
+      </creature>
+    </creatures>
+  </planet>
+  <planet>
+    <name>Mossara</name>
+    <creatures>
+      <creature>
+        <species>Shimmering Mosscat</species>
+        <habitat>Emerald Jungles</habitat>
+      </creature>
+    </creatures>
+  </planet>
+</planetaryZoo>
+"""
+
+json_data = json.dumps(xmltodict.parse(xml_data), indent=4)
+print(json_data)

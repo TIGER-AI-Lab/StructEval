@@ -1,0 +1,42 @@
+
+<creature>
+  <name>Zylar</name>
+  <species>Vortan</species>
+  <age>127</age>
+  <origin>
+    <planet>Xenora</planet>
+    <galaxy>Andromeda</galaxy>
+  </origin>
+  <abilities>
+    <ability>
+      <type>Telepathy</type>
+      <level>8</level>
+      <description>Communicates mentally across vast distances instantly.</description>
+    </ability>
+    <ability>
+      <type>Regeneration</type>
+      <level>6</level>
+      <description>Rapidly heals wounds and regenerates lost limbs.</description>
+    </ability>
+  </abilities>
+  <companions>
+    <companion>
+      <name>Lumo</name>
+      <species>Glintar</species>
+      <bondStrength>0.85</bondStrength>
+    </companion>
+    <companion>
+      <name>Fex</name>
+      <species>Draln</species>
+      <bondStrength>0.67</bondStrength>
+    </companion>
+  </companions>
+  <physiology>
+    <height>210</height>
+    <weight>145.5</weight>
+    <coloration>
+      <primary>Emerald Green</primary>
+      <secondary>Silver</secondary>
+    </coloration>
+  </physiology>
+</creature>

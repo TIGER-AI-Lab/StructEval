@@ -1,0 +1,36 @@
+
+galaxy:
+  - name: Andromeda
+    type: Spiral
+    distance_mly: 2530
+    constellation: Andromeda
+    discovery_year: 964
+    discoverer: Abd al-Rahman al-Sufi
+    features:
+      - spiral_arms: 2
+      - black_holes: 1
+      - exoplanets:
+        - name: Kepler-452b
+          mass_jupiter: 5.0
+          habitable: TRUE
+      - exoplanets:
+        - name: Trappist-1d
+          mass_jupiter: 0.3
+          habitable: FALSE
+  - name: Whirlpool
+    type: Spiral
+    distance_mly: 23000
+    constellation: Canes Venatici
+    discovery_year: 1773
+    discoverer: Charles Messier
+    features:
+      - spiral_arms: 2
+      - black_holes: 1
+      - exoplanets:
+        - name: HD 40307g
+          mass_jupiter: 7.1
+          habitable: FALSE
+      - exoplanets:
+        - name: Proxima b
+          mass_jupiter: 1.3
+          habitable: TRUE

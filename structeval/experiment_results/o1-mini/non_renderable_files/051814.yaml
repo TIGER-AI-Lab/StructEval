@@ -1,0 +1,48 @@
+galacticZoo:
+  name: "Nebula Safari Sanctuary"
+  location: "Sector 7G, Andromeda Spiral Arm"
+  openingYear: 3021
+  intergalacticAccreditation: true
+  speciesList:
+    - speciesName: "Luminoctopus"
+      planetOfOrigin: "Gleise 581g"
+      diet: "Bioluminescent plankton"
+      enclosure:
+        habitatType: "Aquatic Dome"
+        capacity: 3
+        specialFeatures:
+          - "UV-reactive coral"
+          - "Zero-g water currents"
+    - speciesName: "Frostwing Gryphos"
+      planetOfOrigin: "Cryon IV"
+      diet: "Frozen nectar"
+      enclosure:
+        habitatType: "Cryogenic Aviary"
+        capacity: 5
+        specialFeatures:
+          - "Artificial snow"
+          - "Wind tunnels"
+  staff:
+    - name: "Zara Quell"
+      role: "Xeno-biologist"
+      yearsOfExperience: 12
+      certifications:
+        - "Galactic Wildlife License"
+        - "Cryo-ecology"
+    - name: "Rex Voltar"
+      role: "Habitat Engineer"
+      yearsOfExperience: 8
+      certifications:
+        - "Zero-G Construction"
+        - "Atmospheric Regulation"
+  annualVisitors: 1250000
+  specialEvents:
+    - eventName: "Nebula Night Glow"
+      date: "3024-08-17"
+      featuredSpecies:
+        - "Luminoctopus"
+        - "Stellar Jelly"
+    - eventName: "Frost Fest"
+      date: "3024-12-01"
+      featuredSpecies:
+        - "Frostwing Gryphos"

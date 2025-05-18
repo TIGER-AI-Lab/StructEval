@@ -1,0 +1,34 @@
+
+[brewery]
+name = "Crafted Brews Co."
+founded_year = 2015
+
+[brewery.location]
+city = "Portland"
+country = "USA"
+
+[brewery.flagship_beer]
+name = "Hoppy Trails IPA"
+abv = 6.5
+
+[[brewery.flagship_beer.awards]]
+title = "Best IPA"
+year = 2021
+
+[[brewery.brewers]]
+name = "Alice Johnson"
+role = "Head Brewer"
+years_experience = 10
+
+[[brewery.brewers]]
+name = "Mark Smith"
+role = "Assistant Brewer"
+years_experience = 5
+
+[brewery.tours]
+available = true
+
+[[brewery.tours.schedule]]
+day = "Saturday"
+start_time = "14:00"
+language = "English"

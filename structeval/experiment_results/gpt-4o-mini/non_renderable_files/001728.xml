@@ -1,0 +1,88 @@
+
+<recipe>
+    <title>Spaghetti Carbonara</title>
+    <author>
+        <name>John Doe</name>
+        <role>Chef</role>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Pancetta</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>3</quantity>
+            <unit>units</unit>
+        </ingredient>
+        <ingredient>
+            <name>Parmesan cheese</name>
+            <quantity>50</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Black pepper</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <instruction>Boil water in a large pot and add salt.</instruction>
+            <duration_minutes>5</duration_minutes>
+            <tools>Pot, Spoon</tools>
+        </step>
+        <step>
+            <instruction>Add spaghetti to the boiling water and cook according to package instructions.</instruction>
+            <duration_minutes>10</duration_minutes>
+            <tools>Pot, Timer</tools>
+        </step>
+        <step>
+            <instruction>In a pan, cook pancetta until crispy.</instruction>
+            <duration_minutes>5</duration_minutes>
+            <tools>Pan, Spatula</tools>
+        </step>
+        <step>
+            <instruction>In a bowl, whisk together eggs and grated Parmesan cheese.</instruction>
+            <duration_minutes>2</duration_minutes>
+            <tools>Bowl, Whisk</tools>
+        </step>
+        <step>
+            <instruction>Drain spaghetti and add to the pan with pancetta, remove from heat.</instruction>
+            <duration_minutes>2</duration_minutes>
+            <tools>Colander, Pan</tools>
+        </step>
+        <step>
+            <instruction>Quickly mix in the egg and cheese mixture, stirring to create a creamy sauce.</instruction>
+            <duration_minutes>2</duration_minutes>
+            <tools>Bowl, Spoon</tools>
+        </step>
+        <step>
+            <instruction>Season with black pepper and serve immediately.</instruction>
+            <duration_minutes>1</duration_minutes>
+            <tools>Plate, Spoon</tools>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>600</calories>
+        <protein_grams>25</protein_grams>
+        <fat_grams>30</fat_grams>
+        <carbohydrates_grams>60</carbohydrates_grams>
+    </nutrition>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <difficulty>Intermediate</difficulty>
+        <published_date>2023-10-01</published_date>
+    </metadata>
+</recipe>

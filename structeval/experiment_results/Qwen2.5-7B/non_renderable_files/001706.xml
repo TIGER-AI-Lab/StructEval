@@ -1,0 +1,76 @@
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>John Doe</name>
+    <contact>
+      <email>john.doe@example.com</email>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Guanciale</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Parmesan cheese</name>
+      <quantity>50</quantity>
+      <unit>grams</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <description>Boil water and cook spaghetti</description>
+      <duration minutes="10"/>
+      <tools>
+        <toolName>Pot</toolName>
+        <toolName>Stove</toolName>
+      </tools>
+    </step>
+    <step>
+      <description>Cook guanciale in a pan</description>
+      <duration minutes="5"/>
+      <tools>
+        <toolName>Pan</toolName>
+        <toolName>Stove</toolName>
+        <toolName>Cooking spoon</toolName>
+      </tools>
+    </step>
+    <step>
+      <description>Whisk eggs and Parmesan cheese</description>
+      <duration minutes="0"/>
+      <tools>
+        <toolName>Whisk</toolName>
+        <toolName>Bowl</toolName>
+      </tools>
+    </step>
+    <step>
+      <description>Combine cooked spaghetti, guanciale, and egg mixture</description>
+      <duration minutes="2"/>
+      <tools>
+        <toolName>Large bowl</toolName>
+        <toolName>Spoon</toolName>
+      </tools>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>1200</calories>
+    <fat grams="50"/>
+    <protein grams="40"/>
+  </nutrition>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>easy</difficulty>
+    <published date="2022-01-01"/>
+  </metadata>
+</recipe>

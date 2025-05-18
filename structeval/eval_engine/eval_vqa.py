@@ -1,8 +1,9 @@
 import os
 import logging
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 from PIL import Image
 import torch
+import json
 import sys
 
 # Make sure llm_engines is in the path
@@ -11,8 +12,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(
 def vqa_eval(
     model_name: str,
     vlm_engine: str,
-    data: List[Dict[str, Any]],
-    images: Dict[str, str]
+    data: List[Dict[str, Any]] = None,
+    images: Dict[str, str] = None,
+    **kwargs
 ) -> List[Dict[str, Any]]:
     """
     Visual Question Answering evaluation for renderable outputs.
@@ -20,12 +22,19 @@ def vqa_eval(
     Args:
         model_name: Name of the VLM model
         vlm_engine: Engine for VLM evaluation
+        additional_args: Additional arguments to pass to the VLM
         data: List of tasks to evaluate
         images: Dictionary mapping task_id to image paths
         
     Returns:
         List of evaluated tasks with VQA scores
     """
+    # Handle default parameters
+    if data is None:
+        data = []
+    if images is None:
+        images = {}
+        
     try:
         from llm_engines import LLMEngine
     except ImportError:
@@ -39,16 +48,12 @@ def vqa_eval(
     
     llm = LLMEngine()
     
-    # Set up model-specific configuration
-    additional_args = ["--chat-template=llama_3_vision"]
-    additional_args.extend(["--limit-mm-per-prompt", "image=2", "--max-model-len", "4096"])
-    
     try:
         llm.load_model(
             model_name=model_name,
             engine=vlm_engine,
             use_cache=False,
-            additional_args=additional_args
+            **kwargs
         )
     except Exception as e:
         logging.error(f"Failed to load VLM model: {e}")
@@ -61,8 +66,11 @@ def vqa_eval(
     os.makedirs("debug_images", exist_ok=True)
     
     output_data = []
-    
+    counter = 0
     for item in data:
+        counter += 1
+        print(f"Evaluating VQA task {counter} of {len(data)}")
+        
         task_id = item.get("task_id")
         img_file = images.get(task_id)
 
@@ -90,55 +98,58 @@ def vqa_eval(
             output_data.append(item)
             continue
         
-        # Run VQA evaluation
-        evaluations = []
-        for vqa in item.get("VQAmetric", []):
-            question = vqa["question"]
-            answer = vqa["answer"]
-            
-            # Prepare message with image
-            messages_with_image = [
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": f"""Determine whether the provided image satisfies the given answer to the question. 
-                                        Your task is to verify if the visual content of the image aligns with the expected answer. 
-                                        Respond strictly with either 'True' or 'False' ONLY.
+        # Run VQA evaluation in a single call with JSON output
+        vqa_questions = item.get("VQA", [])
+        total_questions = len(vqa_questions)
+        if total_questions == 0:
+            item["VQA_score"] = 0.0
+            item["VQAeval"] = []
+            output_data.append(item)
+            continue
 
-                                        Question: {question}
-                                        Expected Answer: {answer}
+        # Build the question-answer list for the prompt
+        qa_list = ""
+        for idx, vqa in enumerate(vqa_questions, 1):
+            qa_list += f"{idx}. Question: {vqa['question']} Expected Answer: {vqa['answer']}\n"
 
-                                        Respond with either 'True' or 'False' ONLY
-                                        
-                                        If you cannot see the image, respond with 'NONE' """
-                        },
-                        {
-                            "type": "image",
-                            "image": image
-                        }
-                    ]
-                }
-            ]
-            
-            try:
-                response = llm.call_model(model_name, 
-                                         messages_with_image, 
-                                         temperature=0.0, 
-                                         max_tokens=None)
-                evaluations.append(response)
-            except Exception as e:
-                logging.error(f"VQA evaluation failed for {task_id}: {e}")
-                evaluations.append("ERROR")
+        messages = [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": (
+                            "You are given an image and a list of question-answer pairs. "
+                            "For each pair, verify if the image content supports the expected answer based on the corresponding question. "
+                            "Base your judgment solely on the visual content of the provided image, and the question. "
+                            "Do not use any external information or common-sense reasoning beyond what is visible. "
+                            "Respond with a JSON object mapping each question number to true or false (e.g., {\"1\": true, \"2\": false}). "
+                            "If the image is unclear or does not contain enough information to answer, use null for that question. "
+                            "Here are the question-answer pairs:\n"
+                            f"{qa_list}"
+                        )
+                    },
+                    {
+                        "type": "image",
+                        "image": image
+                    }
+                ]
+            }
+        ]
 
-        # Normalize and filter valid responses
-        valid_responses = [resp.strip().lower() for resp in evaluations if resp.strip().lower() in ["true", "false"]]
+        try:
+            response = llm.call_model(model_name, messages, temperature=0.0, max_tokens=None)
+            parsed = json.loads(response)
+            evaluations = [parsed.get(str(idx)) for idx in range(1, total_questions + 1)]
+            true_count = sum(1 for ans in evaluations if ans is True)
+        except Exception as e:
+            logging.error(f"VQA evaluation failed for {task_id}: {e}")
+            evaluations = [None] * total_questions
+            true_count = 0
 
-        # Calculate VQA score
-        item["VQA_score"] = valid_responses.count("true") / len(valid_responses) if valid_responses else 0.0
+        item["VQA_score"] = true_count / total_questions
         item["VQAeval"] = evaluations
         output_data.append(item)
     
     logging.info(f"VQA evaluation completed for {len(output_data)} tasks")
-    return output_data 
+    return output_data

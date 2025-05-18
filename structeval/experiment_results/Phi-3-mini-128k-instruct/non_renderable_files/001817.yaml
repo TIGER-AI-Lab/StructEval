@@ -1,0 +1,24 @@
+artifact:
+  name: "The Rosetta Stone"
+  origin:
+    civilization: "Ancient Egypt"
+    era: "Ptolemaic Period"
+  composition:
+    materials:
+      - type: "Granite"
+        percentage: 90
+      - type: "Limestone"
+        percentage: 10
+  dimensions:
+    height_cm: 77
+    width_cm: 28
+    depth_cm: 27
+  discovery:
+    country: "Egypt"
+    site: "Rosetta"
+    date: "1799-07-15"
+  features:
+    - description: "Contains inscriptions in three scripts"
+      is_unique: true
+    - description: "Key to deciphering Egyptian hieroglyphs"
+      is_unique: true

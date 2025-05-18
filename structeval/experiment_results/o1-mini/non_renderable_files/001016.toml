@@ -1,0 +1,29 @@
+
+[enchanted_forest]
+
+[[enchanted_forest.trees]]
+species = "oak"
+age = 300
+magical_properties = ["glowing leaves", "whispering branches"]
+
+  [[enchanted_forest.trees.inhabitants]]
+  name = "Lira"
+  type = "sprite"
+  friendliness = 8
+  last_seen = "2023-08-15T14:30:00Z"
+
+  [enchanted_forest.trees.fruit]
+  count = 50
+  type = "apple"
+  is_edible = true
+
+[[enchanted_forest.mystical_events]]
+event_name = "Moonlight Festival"
+date = "2023-09-21"
+participants = ["Lira", "Thorn", "Eldra"]
+
+[enchanted_forest.guardian]
+name = "Eldra"
+species = "dryad"
+power_level = 85
+is_visible = true

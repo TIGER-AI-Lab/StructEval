@@ -1,0 +1,17 @@
+
+import xml.etree.ElementTree as ET
+import csv
+
+tree = ET.parse('artifacts.xml')
+root = tree.getroot()
+
+with open('artifacts.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(['ArtifactID', 'DiscoverySite', 'Material', 'EstimatedAge', 'DiscoveryDate', 'Curator'])
+    for artifact in root.findall('artifact'):
+        writer.writerow([artifact.find('ArtifactID').text,
+                         artifact.find('DiscoverySite').text,
+                         artifact.find('Material').text,
+                         artifact.find('EstimatedAge').text,
+                         artifact.find('DiscoveryDate').text,
+                         artifact.find('Curator').text])

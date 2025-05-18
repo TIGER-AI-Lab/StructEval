@@ -1,0 +1,34 @@
+
+exhibit:
+  title: "Modern Masters"
+  curator:
+    name: "Dr. Emily Thompson"
+    contact:
+      email: "curator@example.com"
+      phone: "+1234567890"
+  schedule:
+    opening_date: "2023-10-01"
+    closing_date: "2023-10-15"
+  artworks:
+    - id: "ART001"
+      artist: "John Doe"
+      title: "Sunset"
+      year: 2020
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 120
+        width_cm: 160
+      provenance:
+        - owner: "Private Collection"
+          acquisition_date: "2015-05-20"
+    - id: "ART002"
+      artist: "Jane Smith"
+      title: "Cityscape"
+      year: 2018
+      medium: "Acrylic on paper"
+      dimensions:
+        height_cm: 90
+        width_cm: 120
+      provenance:
+        - owner: "Museum Foundation"
+          acquisition_date: "2020-03-15"

@@ -1,0 +1,25 @@
+festival:
+  name: "Harmony Fest 2023"
+  location:
+    city: "Austin"
+    venue: "Zilker Park"
+  dates:
+    start: "2023-09-15"
+    end: "2023-09-17"
+  lineup:
+    - artist: "The Soundwaves"
+      set_time: "18:00"
+      stage: "Main Stage"
+      special_guests: []
+    - artist: "Echoes of Tomorrow"
+      set_time: "20:00"
+      stage: "Sunset Stage"
+      special_guests: ["DJ Pulse", "MC Harmony"]
+  tickets:
+    types:
+      - category: "General Admission"
+        price: 150
+        availability: 5000
+  sponsors:
+    main: "MusicWorld Inc."
+    secondary: ["SoundGear", "TuneUp", "LiveNation"]

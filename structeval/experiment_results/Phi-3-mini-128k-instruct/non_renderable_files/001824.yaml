@@ -1,0 +1,25 @@
+artifact:
+  name: "The Scepter of Ages"
+  origin:
+    civilization: "Ancient Atlantis"
+    estimated_age: 2500
+  materials:
+    - type: "bronze"
+      provenance: "Atlantean mines"
+    - type: "gold"
+      provenance: "Atlantean gold fields"
+  dimensions:
+    height_cm: 35
+    width_cm: 5
+    depth_cm: 2
+  inscriptions:
+    - language: "Atlantean"
+      text: "In the beginning, the world was forged by the gods."
+    - language: "Latin"
+      text: "Veritas et aeternitas in aeternum."
+  current_location:
+    museum: "The National Museum of History"
+    display_case: "Exhibit A - Ancient Civilizations"
+  discovery:
+    date: "2023-04-15"
+    location: "Atlantis, Mediterranean Sea"

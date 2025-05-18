@@ -1,0 +1,60 @@
+
+import csv
+from io import StringIO
+
+json_data = '''[
+  {
+    "CreatureName": "Glimmerfin Parrot",
+    "Habitat": "Crystal Marsh",
+    "DiscoveryYear": 1998,
+    "AverageWingspan_cm": 34.2,
+    "Diet": "Herbivore",
+    "LuminescenceLevel": 7,
+    "LastSeenDate": "2023-10-12"
+  },
+  {
+    "CreatureName": "Velvet Duskbeetle",
+    "Habitat": "Shadow Grove",
+    "DiscoveryYear": 2007,
+    "AverageWingspan_cm": 4.8,
+    "Diet": "Detritivore",
+    "LuminescenceLevel": 3,
+    "LastSeenDate": "2024-02-18"
+  },
+  {
+    "CreatureName": "Azure Whistlefox",
+    "Habitat": "Frosted Tundra",
+    "DiscoveryYear": 2015,
+    "AverageWingspan_cm": 0.0,
+    "Diet": "Omnivore",
+    "LuminescenceLevel": 0,
+    "LastSeenDate": "2022-07-05"
+  },
+  {
+    "CreatureName": "Sunflare Moth",
+    "Habitat": "Golden Plains",
+    "DiscoveryYear": 2002,
+    "AverageWingspan_cm": 12.6,
+    "Diet": "Nectarivore",
+    "LuminescenceLevel": 9,
+    "LastSeenDate": "2023-05-21"
+  },
+  {
+    "CreatureName": "Twilight Mosslark",
+    "Habitat": "Misty Highlands",
+    "DiscoveryYear": 2011,
+    "AverageWingspan_cm": 27.9,
+    "Diet": "Insectivore",
+    "LuminescenceLevel": 2,
+    "LastSeenDate": "2023-11-30"
+  }
+]'''
+
+import json
+data = json.loads(json_data)
+
+with StringIO() as f:
+    writer = csv.DictWriter(f, fieldnames=data[0].keys())
+    writer.writeheader()
+    writer.writerows(data)
+    print(f.getvalue())

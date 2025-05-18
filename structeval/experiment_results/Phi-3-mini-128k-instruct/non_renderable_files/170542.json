@@ -1,0 +1,20 @@
+
+{
+  "spaceStation": {
+    "name": "Odyssey Orbital",
+    "crew": [
+      {
+        "astronaut": "Dr. Mira Patel"
+      },
+      {
+        "astronaut": "Commander Lee Zhang"
+      }
+    ],
+    "laboratories": [
+      {
+        "name": "Astrobiology Bay",
+        "equipment": ["Microscope", "Gene Sequencer"]
+      }
+    ]
+  }
+}

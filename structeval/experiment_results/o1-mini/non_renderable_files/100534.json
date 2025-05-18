@@ -1,0 +1,35 @@
+{
+  "planet": {
+    "name": "Xenon Prime",
+    "type": "Gas Giant",
+    "discovery": {
+      "year": 2178,
+      "method": "Gravitational Microlensing"
+    },
+    "orbit": {
+      "semi_major_axis": 5.2,
+      "eccentricity": 0.03
+    },
+    "moons": ["Arios", "Betrix", "Calyx"],
+    "atmosphere": {
+      "composition": ["Hydrogen", "Helium", "Methane"],
+      "pressure": 1800.5
+    },
+    "surface": {
+      "temperature": -150.7,
+      "features": ["Cloud Bands", "Storm Spots"]
+    },
+    "missions": [
+      {
+        "name": "Voyager XI",
+        "year": 2199,
+        "success": true
+      },
+      {
+        "name": "Stellar Surveyor",
+        "year": 2205,
+        "success": false
+      }
+    ]
+  }
+}

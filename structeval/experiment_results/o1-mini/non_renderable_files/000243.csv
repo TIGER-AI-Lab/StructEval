@@ -1,0 +1,3 @@
+
+artifact_id,artifact_name,discovery.location,discovery.date_found,discovery.team_leader,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,material.primary,material.secondary,estimated_age.years,estimated_age.method,current_condition.status,current_condition.last_inspection,exhibition_history[0].museum,exhibition_history[0].start_date,exhibition_history[0].end_date
+A001,Ancient Greek Amphora,"Delphi, Greece",2022-07-15,Dr. Elena Petrova,45.0,30.0,25.0,Clay,Paint,2500,Thermoluminescence,Good,2023-03-10,"National Archaeological Museum, Athens",2023-04-01,

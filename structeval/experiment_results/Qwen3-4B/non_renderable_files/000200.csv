@@ -1,0 +1,3 @@
+
+"recipe_id";"recipe_name";"chef_name";"cuisine_type";"prep_time_minutes";"cook_time_minutes";"difficulty_level";"ingredient_list";"ingredient_quantities";"ingredient_units";"step_descriptions";"step_timers";"servings";"vegetarian";"allergen_warnings";"rating_average";"review_count"
+"R123";"Spaghetti Aglio e Olio";"Mario Rossi";"Italian";10;20;"Medium";"Spaghetti;Garlic;Olive oil;Red pepper flakes";"200g;2 cloves;400ml;1 tsp";"grams;cloves;milliliters;teaspoons";"Cook spaghetti;SautÃ© garlic;Add oil and pepper flakes;Mix";"5;3;10;0";2;TRUE;"";4.5;150

@@ -1,0 +1,34 @@
+
+ecosystem:
+  name: "The Azure Reef"
+  location:
+    region: "The Great Barrier Reef"
+    latitude: 20.5
+    longitude: 146.5
+  climate:
+    type: "tropical"
+    average_temperature_celsius: 28.5
+    rainfall_mm_per_year: 2000
+  species:
+  - common_name: "Blue Tang"
+    scientific_name: "Acanthurus coeruleus"
+    population_estimate: 5000
+    conservation_status: "least concern"
+    diet: "algae and small invertebrates"
+    notable_adaptations:
+      - "bright blue coloration for camouflage"
+      - "sharp spines for defense"
+    sightings:
+      - date: "2022-03-15T14:30:00Z"
+        location_description: "near the coral reef's edge"
+  - common_name: "Sea Turtle"
+    scientific_name: "Chelonia mydas"
+    population_estimate: 1000
+    conservation_status: "vulnerable"
+    diet: "seaweed and jellyfish"
+    notable_adaptations:
+      - "flippers for swimming"
+      - "shell for protection"
+    sightings:
+      - date: "2022-06-20T10:00:00Z"
+        location_description: "in a sandy bay"

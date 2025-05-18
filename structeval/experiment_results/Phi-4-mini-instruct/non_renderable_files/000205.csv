@@ -1,0 +1,6 @@
+artifact_id,artifact_name,discovery_site,discovery_date,estimated_age_years,artifact_type,material_primary,material_secondary,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,condition_status,current_location,associated_civilization,notable_inscriptions
+"A-2024-001","Bronze Age Pottery Shard","Giza Plateau, Egypt","2023-04-15",3200,"pottery","clay","","10.5,5.2,2.3","intact","Egyptian Museum, Cairo","Ancient Egypt",""
+"A-2024-002","Minoan Fresco","Knossos, Crete","2023-05-22",3500,"fresco","plaster","","","intact","Heraklion Archaeological Museum, Crete","Minoan Civilization",""
+"A-2024-003","Roman Coin","Rome, Italy","2023-06-30",2000,"coin","silver","","1.2,1.2,0.2","restored","British Museum, London","Roman Empire",""
+"A-2024-004","Olmec Colossal Head","San Lorenzo, Mexico","2023-07-18",1500,"statue","jade","","","intact","Museo Nacional de AntropologÃ­a, Mexico City","Olmec Civilization",""
+"A-2024-005","Ancient Greek Vase","Athens, Greece","2023-08-05",2500,"vase","clay","","15.0,10.0,5.0","intact","National Archaeological Museum, Athens","Greek Civilization",""

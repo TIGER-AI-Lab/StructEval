@@ -1,0 +1,30 @@
+<galacticCarnival>
+  <attractions>
+    <attraction>
+      <name>Nebula Coaster</name>
+      <type>rollercoaster</type>
+      <features>
+        <feature>zero-gravity loops</feature>
+        <feature>holographic tunnels</feature>
+      </features>
+    </attraction>
+    <attraction>
+      <name>Astro Maze</name>
+      <type>maze</type>
+      <features>
+        <feature>shifting walls</feature>
+        <feature>alien guides</feature>
+      </features>
+    </attraction>
+  </attractions>
+  <snackStalls>
+    <stall>
+      <name>Meteor Bites</name>
+      <specialty>asteroid donuts</specialty>
+    </stall>
+    <stall>
+      <name>Cosmic Cones</name>
+      <specialty>anti-gravity ice cream</specialty>
+    </stall>
+  </snackStalls>
+</galacticCarnival>

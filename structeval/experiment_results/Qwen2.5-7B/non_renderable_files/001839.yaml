@@ -1,0 +1,30 @@
+creature:
+  name: "Zephyr"
+  species: "Aetherian"
+  age: 5
+  habitat:
+    type: "Celestial Plains"
+    location: "Orbital Nexus"
+    features:
+      - "Twinkling stars"
+      - "Glowing nebulae"
+      - "Whispering winds"
+  abilities:
+    - name: "Wisp Flight"
+      description: "Allows Zephyr to glide through the air effortlessly."
+      power_level: 8
+    - name: "Stellar Pulse"
+      description: "Zephyr can emit a burst of energy that disrupts nearby objects."
+      power_level: 6
+  diet:
+    primary_food: "Cosmic Dust"
+    secondary_foods:
+      - "Stardust"
+      - "Galactic Nectar"
+    feeding_times:
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  social_behavior:
+    group_size: 3
+    hierarchy: "Alpha-led"

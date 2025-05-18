@@ -1,0 +1,37 @@
+
+{
+  "creature": {
+    "name": "Shadowfang Wyrmling",
+    "species": "Aetherian Serpent",
+    "stats": {
+      "height_cm": 250,
+      "weight_kg": 150,
+      "lifespan_years": 120
+    },
+    "habitat": {
+      "type": "mountainous",
+      "location": "Eldertide Peaks",
+      "climate": "temperate"
+    },
+    "abilities": [
+      {
+        "name": "Shadowmeld",
+        "description": "Can become completely invisible in dim light, leaving only a faint shadow behind.",
+        "power_level": 8
+      },
+      {
+        "name": "Fangslash",
+        "description": "Delivers a devastating bite that can pierce armor and cause temporary paralysis.",
+        "power_level": 7
+      }
+    ],
+    "diet": {
+      "primary_foods": ["soulstone", "moonlight moss"],
+      "is_carnivorous": true
+    },
+    "social_behavior": {
+      "group_size": 5,
+      "hierarchy": "pack"
+    }
+  }
+}

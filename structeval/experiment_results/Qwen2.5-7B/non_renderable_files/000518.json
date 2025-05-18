@@ -1,0 +1,38 @@
+
+{
+  "artifact": {
+    "name": "The Bronze Tablet",
+    "period": "Bronze Age",
+    "origin": {
+      "civilization": "Minoan",
+      "region": "Crete"
+    },
+    "discovery": {
+      "date": "2020-07-15",
+      "location": {
+        "latitude": 35.2345,
+        "longitude": 24.5678
+      }
+    },
+    "materials": ["bronze", "gold"],
+    "dimensions": {
+      "height_cm": 15.5,
+      "width_cm": 10.2,
+      "depth_cm": 2.3
+    },
+    "inscriptions": [
+      {
+        "language": "Minoan Linear A",
+        "text": "ni-ja-pa-ta",
+        "translation": "May the gods bless you",
+        "condition": "intact"
+      },
+      {
+        "language": "Greek",
+        "text": "ÎÎ¥ÎÎÎÎÎÎ£ ÎÎÎÎÎ£",
+        "translation": "Blessed by the gods",
+        "condition": "eroded"
+      }
+    ]
+  }
+}

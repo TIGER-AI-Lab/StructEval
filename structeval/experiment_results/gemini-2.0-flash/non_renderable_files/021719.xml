@@ -1,0 +1,75 @@
+
+<planets>
+  <planet>
+    <planet_name>Xylon</planet_name>
+    <galaxy>Andromeda</galaxy>
+    <discovery>
+      <year>2341</year>
+      <method>Transit</method>
+      <team_lead>Dr. Quark</team_lead>
+    </discovery>
+    <moons>
+      <moon>
+        <moon_name>LunaX</moon_name>
+        <diameter_km>1200</diameter_km>
+        <has_atmosphere>True</has_atmosphere>
+      </moon>
+      <moon>
+        <moon_name>PhobosX</moon_name>
+        <diameter_km>950</diameter_km>
+        <has_atmosphere>False</has_atmosphere>
+      </moon>
+    </moons>
+    <atmosphere>
+      <composition>
+        <gas>Nitrogen</gas>
+        <percentage>65</percentage>
+      </composition>
+      <composition>
+        <gas>Oxygen</gas>
+        <percentage>30</percentage>
+      </composition>
+      <pressure_kpa>101</pressure_kpa>
+    </atmosphere>
+    <surface>
+      <temperature_c>22</temperature_c>
+      <gravity_m_s2>-9.5</gravity_m_s2>
+    </surface>
+  </planet>
+  <planet>
+    <planet_name>Zyra</planet_name>
+    <galaxy>MilkyWay</galaxy>
+    <discovery>
+      <year>2099</year>
+      <method>Direct Imaging</method>
+      <team_lead>Prof. Nova</team_lead>
+    </discovery>
+    <moons>
+      <moon>
+        <moon_name>SeleneZ</moon_name>
+        <diameter_km>800</diameter_km>
+        <has_atmosphere>False</has_atmosphere>
+      </moon>
+      <moon>
+        <moon_name>IoZ</moon_name>
+        <diameter_km>600</diameter_km>
+        <has_atmosphere>False</has_atmosphere>
+      </moon>
+    </moons>
+    <atmosphere>
+      <composition>
+        <gas>Hydrogen</gas>
+        <percentage>80</percentage>
+      </composition>
+      <composition>
+        <gas>Helium</gas>
+        <percentage>15</percentage>
+      </composition>
+      <pressure_kpa>90</pressure_kpa>
+    </atmosphere>
+    <surface>
+      <temperature_c>110</temperature_c>
+      <gravity_m_s2>8.1</gravity_m_s2>
+    </surface>
+  </planet>
+</planets>

@@ -1,0 +1,44 @@
+
+<book>
+  <title>The Enchanted Labyrinth</title>
+  <author>
+    <name>Elena M. Rivers</name>
+    <birthYear>1978</birthYear>
+  </author>
+  <publication>
+    <year>2023</year>
+    <publisher>Starlight Press</publisher>
+  </publication>
+  <genres>
+    <genre>
+      <name>Fantasy</name>
+      <popularity>85</popularity>
+    </genre>
+    <genre>
+      <name>Adventure</name>
+      <popularity>78</popularity>
+    </genre>
+  </genres>
+  <chapters>
+    <chapter>
+      <title>The Whispering Woods</title>
+      <pages>24</pages>
+    </chapter>
+    <chapter>
+      <title>Secrets of the Maze</title>
+      <pages>30</pages>
+    </chapter>
+  </chapters>
+  <reviews>
+    <review>
+      <reviewer>James Thornton</reviewer>
+      <rating>4.5</rating>
+      <date>2023-11-15</date>
+    </review>
+    <review>
+      <reviewer>Alice Monroe</reviewer>
+      <rating>4.0</rating>
+      <date>2023-12-02</date>
+    </review>
+  </reviews>
+</book>

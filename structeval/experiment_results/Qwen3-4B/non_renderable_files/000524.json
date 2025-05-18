@@ -1,0 +1,35 @@
+
+{
+  "exhibit": {
+    "title": "Ancient Civilizations",
+    "curator": {
+      "name": "Dr. Emily Thompson",
+      "contact": {
+        "email": "emily.thompson@museum.org",
+        "phone": "+1234567890"
+      }
+    },
+    "artifacts": [
+      {
+        "id": "ART-001",
+        "name": "Statue of the Sun God",
+        "artist": "Unknown",
+        "year": 200,
+        "medium": "Limestone",
+        "provenance": {
+          "previous_owners": [
+            "Royal Family of Egypt",
+            "Private Collector"
+          ],
+          "acquisition_date": "2015-04-15"
+        },
+        "on_display": true,
+        "dimensions": {
+          "height_cm": 120,
+          "width_cm": 80,
+          "depth_cm": 50
+        }
+      }
+    ]
+  }
+}

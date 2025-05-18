@@ -1,0 +1,100 @@
+
+<recipe>
+  <title>Spicy Thai Basil Chicken</title>
+  <author>
+    <name>Jessica Nguyen</name>
+    <contact>
+      <email>jessica.nguyen@example.com</email>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Chicken breast</name>
+      <quantity>500</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Thai basil leaves</name>
+      <quantity>30</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Garlic cloves</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Red chili</name>
+      <quantity>2</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Fish sauce</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>Soy sauce</name>
+      <quantity>1</quantity>
+      <unit>tablespoon</unit>
+    </ingredient>
+    <ingredient>
+      <name>Vegetable oil</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>White sugar</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <instruction>Chop the garlic and red chili finely.</instruction>
+      <duration>PT5M</duration>
+      <tip>Use a mortar and pestle for a more aromatic paste.</tip>
+    </step>
+    <step>
+      <instruction>Heat vegetable oil in a pan over medium heat and sautÃ© the garlic and chili until fragrant.</instruction>
+      <duration>PT3M</duration>
+      <tip>Do not burn the garlic to avoid bitterness.</tip>
+    </step>
+    <step>
+      <instruction>Add diced chicken breast and stir-fry until cooked through.</instruction>
+      <duration>PT7M</duration>
+      <tip>Cut chicken into uniform pieces for even cooking.</tip>
+    </step>
+    <step>
+      <instruction>Mix in fish sauce, soy sauce, and sugar, then stir well.</instruction>
+      <duration>PT2M</duration>
+      <tip>Taste and adjust seasoning as needed.</tip>
+    </step>
+    <step>
+      <instruction>Turn off heat and fold in Thai basil leaves until wilted.</instruction>
+      <duration>PT1M</duration>
+      <tip>Add basil last to preserve its aroma and flavor.</tip>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>350</calories>
+    <fat>15</fat>
+    <protein>40</protein>
+    <carbohydrates>8</carbohydrates>
+  </nutrition>
+  <metadata>
+    <cuisine>Thai</cuisine>
+    <difficulty>medium</difficulty>
+    <tags>
+      <tag>
+        <label>spicy</label>
+      </tag>
+      <tag>
+        <label>quick</label>
+      </tag>
+      <tag>
+        <label>gluten-free</label>
+      </tag>
+    </tags>
+  </metadata>
+</recipe>

@@ -1,0 +1,23 @@
+creature:
+  name: "Flicker"
+  species: "Lumiflora"
+  age: 37
+  habitat:
+    region: "Whispering Woods"
+    climate: "Temperate rainforest"
+  abilities:
+    - type: "Bioluminescence"
+      description: "Emits a soft, pulsating glow from its petals."
+      power_level: 7
+    - type: "Photosynthesis"
+      description: "Derives energy from sunlight and converts it into magical energy."
+      power_level: 9
+  appearance:
+    color: "Lavender"
+    size:
+      height_cm: 85
+      weight_kg: 15
+  behavior:
+    - "Nocturnal foraging for moonpetal dew."
+    - "Communicates through rhythmic flashing patterns."
+    - "Symbiotic relationship with the Whispering Willow trees."

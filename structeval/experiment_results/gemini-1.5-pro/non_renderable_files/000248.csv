@@ -1,0 +1,6 @@
+artifact_id,artifact_name,discovery.site,discovery.country,discovery.year,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.current_state,condition.restoration_years,provenance.previous_owners,provenance.auction_history,exhibit.locations
+A123,"Terracotta Figurine",Mycenae,Greece,1876,Terracotta,"Pigments,Glaze",25.5,15.2,8.1,Fragmented,1920,Lord Elgin,"Sotheby's 1880, Christie's 1910","British Museum,National Archaeological Museum of Athens"
+B456,"Gold Necklace",Ur,Iraq,1922,Gold,Lapis Lazuli,32.0,28.0,1.5,Intact,,,"Private Collection,Iraq Museum","Iraq Museum"
+C789,"Bronze Sword",Hallstatt,Austria,1846,Bronze,,76.3,4.8,0.3,Restored,"1888,2005",,"Private Collection","Natural History Museum Vienna"
+D012,"Marble Statue",Rome,Italy,1785,Marble,,185.0,60.0,55.0,Fragmented,1810,"Medici Family,Vatican","Sotheby's 1790","Vatican Museums,Louvre Museum"
+E345,"Clay Tablet",Nineveh,Iraq,1853,Clay,,10.2,6.5,2.8,Intact,,Ashurbanipal Library,,British Museum

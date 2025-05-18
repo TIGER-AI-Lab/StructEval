@@ -1,0 +1,31 @@
+artifact:
+  metadata:
+    name: "Ancient Vase of Alexandria"
+    discovery_date: "2023-07-15"
+    origin_civilization: "Ancient Egypt"
+    current_location: "British Museum, London"
+  specifications:
+    dimensions:
+      length_cm: 45.0
+      width_cm: 30.0
+      height_cm: 60.0
+    materials:
+      - "Clay"
+      - "Gold Leaf"
+    age_years: 2300
+  analysis:
+    hypotheses:
+      - summary: "The vase was used in religious ceremonies."
+        confidence_score: 0.85
+      - summary: "The vase served as a storage container for grains."
+        confidence_score: 0.65
+    researchers:
+      - name: "Dr. Emily Carter"
+        institution: "University of Oxford"
+        contribution: "Lead archaeologist overseeing the excavation."
+      - name: "Prof. John Smith"
+        institution: "Harvard University"
+        contribution: "Conducted material analysis and dating."
+  related_artifacts:
+    - "Golden Mask of Tutankhamun"
+    - "Rosetta Stone"

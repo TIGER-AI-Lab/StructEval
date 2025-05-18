@@ -1,0 +1,42 @@
+
+{
+  "ecosystem": {
+    "name": "Luminescent Marshlands",
+    "location": {
+      "region": "Eldoria Basin",
+      "coordinates": {
+        "latitude": -12.3456,
+        "longitude": 54.3210
+      }
+    },
+    "climate": {
+      "type": "tropical",
+      "average_temperature_celsius": 27.5,
+      "rainfall_mm_per_year": 2000
+    },
+    "species": [
+      {
+        "common_name": "Glowing Dart Frog",
+        "scientific_name": "Dendrobates lucidus",
+        "population_estimate": 5000,
+        "conservation_status": "Endangered",
+        "diet": {
+          "primary_foods": [
+            "ants",
+            "beetles",
+            "moths"
+          ]
+        },
+        "habitat": {
+          "description": "Found near nutrient-rich pools and dense vegetation, utilizing leaf litter for shelter.",
+          "area_sq_km": 15.75
+        },
+        "notable_behaviors": [
+          "Bioluminescent signaling during mating rituals",
+          "Nocturnal hunting patterns",
+          "Territorial displays through vibrant color changes"
+        ]
+      }
+    ]
+  }
+}

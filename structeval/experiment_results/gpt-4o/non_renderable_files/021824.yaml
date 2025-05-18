@@ -1,0 +1,46 @@
+- planet_name: Kepler-186f
+  system:
+    star_name: Kepler-186
+    distance_from_earth_ly: 492
+    planets:
+      - name: Kepler-186f
+        type: Terrestrial
+        moons: 0
+        atmosphere:
+          composition: "Nitrogen;Oxygen"
+          pressure: 1.0
+        rings:
+          has_rings: false
+          ring_types: null
+      - name: Kepler-186b
+        type: Terrestrial
+        moons: 0
+        atmosphere:
+          composition: "Carbon Dioxide"
+          pressure: 0.9
+        rings:
+          has_rings: false
+          ring_types: null
+- planet_name: TRAPPIST-1d
+  system:
+    star_name: TRAPPIST-1
+    distance_from_earth_ly: 39
+    planets:
+      - name: TRAPPIST-1d
+        type: Terrestrial
+        moons: 0
+        atmosphere:
+          composition: "Nitrogen;Methane"
+          pressure: 0.8
+        rings:
+          has_rings: false
+          ring_types: null
+      - name: TRAPPIST-1e
+        type: Terrestrial
+        moons: 0
+        atmosphere:
+          composition: "Nitrogen;Oxygen"
+          pressure: 1.1
+        rings:
+          has_rings: false
+          ring_types: null

@@ -1,0 +1,66 @@
+
+import csv
+
+data = [
+    {
+        "species_name": "Zhra'gha",
+        "average_lifespan": 250,
+        "habitat": {
+            "primary_biome": "forest",
+            "climate_zone": "temperate",
+            "planet": "Xylophia-IV"
+        },
+        "diet": {
+            "type": "herbivore",
+            "favorite_foods": ["Xylophian Blooms", "Gloopernuts"]
+        },
+        "social_structure": {
+            "type": "pack",
+            "average_group_size": 15
+        },
+        "communication": {
+            "methods": ["Chemical signals", "Electromagnetic pulses"]
+        },
+        "notable_abilities": [
+            {
+                "name": "Empathic Resonance",
+                "description": "The ability to sense and manipulate the emotions of others"
+            },
+            {
+                "name": "Bioluminescent Camouflage",
+                "description": "The ability to blend into their surroundings using bioluminescent markings"
+            }
+        ],
+        "conservation_status": "least concern"
+    }
+]
+
+with open('alien_species.csv', 'w', newline='') as csvfile:
+    fieldnames = ["species_name", "average_lifespan", "habitat.primary_biome", "habitat.climate_zone", "habitat.planet", 
+                  "diet.type", "diet.favorite_foods[0]", "diet.favorite_foods[1]", "social_structure.type", 
+                  "social_structure.average_group_size", "communication.methods[0]", "communication.methods[1]", 
+                  "notable_abilities[0].name", "notable_abilities[0].description", "notable_abilities[1].name", 
+                  "notable_abilities[1].description", "conservation_status"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in data:
+        writer.writerow({
+            "species_name": row["species_name"],
+            "average_lifespan": row["average_lifespan"],
+            "habitat.primary_biome": row["habitat"]["primary_biome"],
+            "habitat.climate_zone": row["habitat"]["climate_zone"],
+            "habitat.planet": row["habitat"]["planet"],
+            "diet.type": row["diet"]["type"],
+            "diet.favorite_foods[0]": row["diet"]["favorite_foods"][0],
+            "diet.favorite_foods[1]": row["diet"]["favorite_foods"][1],
+            "social_structure.type": row["social_structure"]["type"],
+            "social_structure.average_group_size": row["social_structure"]["average_group_size"],
+            "communication.methods[0]": row["communication"]["methods"][0],
+            "communication.methods[1]": row["communication"]["methods"][1],
+            "notable_abilities[0].name": row["notable_abilities"][0]["name"],
+            "notable_abilities[0].description": row["notable_abilities"][0]["description"],
+            "notable_abilities[1].name": row["notable_abilities"][1]["name"],
+            "notable_abilities[1].description": row["notable_abilities"][1]["description"],
+            "conservation_status": row["conservation_status"]
+        })

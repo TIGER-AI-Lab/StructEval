@@ -1,0 +1,31 @@
+{
+  "planet": {
+    "name": "Kepler-452b",
+    "type": "terrestrial",
+    "discovery": {
+      "year": 2015,
+      "method": "transit"
+    },
+    "atmosphere": {
+      "composition": ["nitrogen", "oxygen", "argon", "carbon dioxide"],
+      "pressure": 101.3
+    },
+    "moons": [
+      {
+        "name": "Kepler-452b I",
+        "diameter_km": 3200,
+        "orbital_period_days": 27.3,
+        "features": [
+          {
+            "type": "crater",
+            "description": "A large impact crater approximately 150 km in diameter with a central peak."
+          }
+        ]
+      }
+    ],
+    "surface": {
+      "temperature_c": 22,
+      "gravity_ms2": 9.8
+    }
+  }
+}

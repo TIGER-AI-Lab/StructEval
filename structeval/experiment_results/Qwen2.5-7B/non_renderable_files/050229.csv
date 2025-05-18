@@ -1,0 +1,61 @@
+python
+import csv
+import json
+
+# JSON data
+data = '''
+[
+  {
+    "CreatureName": "Glimmerfin",
+    "DiscoveryYear": 1982,
+    "Habitat": "Crystal Lakes",
+    "AverageLengthMeters": 1.7,
+    "DietType": "Herbivore",
+    "LuminescenceColor": "Turquoise"
+  },
+  {
+    "CreatureName": "Shadowmoth",
+    "DiscoveryYear": 2005,
+    "Habitat": "Obsidian Caves",
+    "AverageLengthMeters": 0.3,
+    "DietType": "Omnivore",
+    "LuminescenceColor": "Purple"
+  },
+  {
+    "CreatureName": "Frostleap",
+    "DiscoveryYear": 1997,
+    "Habitat": "Icy Tundra",
+    "AverageLengthMeters": 2.1,
+    "DietType": "Carnivore",
+    "LuminescenceColor": "Blue"
+  },
+  {
+    "CreatureName": "Sunscale",
+    "DiscoveryYear": 2010,
+    "Habitat": "Golden Desert",
+    "AverageLengthMeters": 0.9,
+    "DietType": "Herbivore",
+    "LuminescenceColor": "Yellow"
+  },
+  {
+    "CreatureName": "Mistwhisker",
+    "DiscoveryYear": 2021,
+    "Habitat": "Floating Forest",
+    "AverageLengthMeters": 1.2,
+    "DietType": "Omnivore",
+    "LuminescenceColor": "Silver"
+  }
+]
+'''
+
+# Parse JSON data
+json_data = json.loads(data)
+
+# Write to CSV
+with open('creatures.csv', 'w', newline='') as file:
+    writer = csv.DictWriter(file, fieldnames=json_data[0].keys())
+    writer.writeheader()
+    for creature in json_data:
+        writer.writerow(creature)
+
+print("CSV file 'creatures.csv' has been created.")

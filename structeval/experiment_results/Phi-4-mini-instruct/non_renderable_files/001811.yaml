@@ -1,0 +1,34 @@
+
+expedition:
+  name: "Odyssey to Europa"
+  launch_date: "2025-08-15"
+  destination:
+    planet: "Europa"
+    moons:
+      - "Ganymede"
+      - "Callisto"
+  crew:
+    - role: "Commander"
+      name: "Alex Johnson"
+      age: 35
+      skills:
+        - "Astrophysics"
+        - "Spacecraft Navigation"
+    - name: "Dr. Maria Gonzalez"
+      skills:
+        - "Microbiology"
+        - "Geology"
+  cargo:
+    supplies:
+      food_kg: 1200
+      water_liters: 5000
+    equipment:
+      - type: "Habitat Module"
+        quantity: 1
+      - type: "Research Lab"
+        quantity: 1
+  mission_objectives:
+    primary: "Search for signs of life beneath Europa's ice crust"
+    secondary:
+      - "Analyze the moon's geology"
+      - "Study the potential for future human colonization"

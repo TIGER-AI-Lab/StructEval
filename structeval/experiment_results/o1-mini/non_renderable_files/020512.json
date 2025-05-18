@@ -1,0 +1,19 @@
+{
+  "name": "Odyssey",
+  "mission_type": "Exploration",
+  "launch_date": "2041-07-16",
+  "crew_1_name": "Dr. Lina Patel",
+  "crew_1_role": "Commander",
+  "crew_1_experience_years": 12,
+  "crew_2_name": "Alexei Volkov",
+  "crew_2_role": "Pilot",
+  "crew_2_experience_years": 8,
+  "payload_cargo_manifest_1_item": "Geological Sampler",
+  "payload_cargo_manifest_1_quantity": 3,
+  "payload_cargo_manifest_2_item": "Satellite Probe",
+  "payload_cargo_manifest_2_quantity": 2,
+  "payload_total_weight_kg": 4500,
+  "destination_planet": "Mars",
+  "destination_landing_site": "Valles Marineris",
+  "status": "En Route"
+}

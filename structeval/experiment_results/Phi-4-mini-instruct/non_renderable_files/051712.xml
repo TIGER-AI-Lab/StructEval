@@ -1,0 +1,32 @@
+
+&lt;galacticCarnival>
+  &lt;eventName>Nebula Spectacular</eventName>
+  &lt;location>
+    &lt;planet>Zyphron</planet>
+    &lt;galaxy>Andromeda</galaxy>
+  &lt;location>
+  &lt;attractions>
+    &lt;attraction>
+      &lt;name>Zero-Gravity Ferris Wheel</name>
+      &lt;type>ride</type>
+    &lt;attraction>
+    &lt;attraction>
+      &lt;name>Alien Petting Zoo</name>
+      &lt;type>exhibit</type>
+    &lt;attraction>
+  &lt;attractions>
+  &lt;schedule>
+    &lt;day>
+      &lt;date>3024-07-01</date>
+      &lt;activities>
+        &lt;activity>Meteor Shower Parade</activity>
+        &lt;activity>Cosmic Cotton Candy Eating Contest</activity>
+      &lt;activities>
+    &lt;day>
+      &lt;date>3024-07-02</date>
+      &lt;activities>
+        &lt;activity>Starlight Maze</activity>
+      &lt;activities>
+    &lt;day>
+  &lt;schedule>
+&lt;/galacticCarnival>

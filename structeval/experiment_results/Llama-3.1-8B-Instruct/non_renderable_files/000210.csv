@@ -1,0 +1,58 @@
+
+import csv
+
+data = {
+    "species_name": "Glimmerwings",
+    "biome": {
+        "primary_type": "forest",
+        "secondary_types": ""
+    },
+    "habitat": {
+        "region": "Tropical Asia",
+        "elevation_meters": "500-1000",
+        "climate": "tropical"
+    },
+    "physical_traits": {
+        "average_height_cm": 25,
+        "average_weight_kg": 1.2,
+        "color_variations": "Iridescent blue, shimmering silver"
+    },
+    "diet": {
+        "primary_food": "Nectar",
+        "secondary_foods": ""
+    },
+    "population": {
+        "estimated_count": 1000000,
+        "status": "least concern"
+    },
+    "behavior": {
+        "daily_activity_pattern": "diurnal",
+        "social_structure": "solitary"
+    }
+}
+
+with open('glimmerwings.csv', 'w', newline='') as csvfile:
+    fieldnames = ["species_name", "biome.primary_type", "biome.secondary_types", "habitat.region", "habitat.elevation_meters", "habitat.climate", 
+                  "physical_traits.average_height_cm", "physical_traits.average_weight_kg", "physical_traits.color_variations", 
+                  "diet.primary_food", "diet.secondary_foods", "population.estimated_count", "population.status", 
+                  "behavior.daily_activity_pattern", "behavior.social_structure"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    writer.writerow({
+        "species_name": data["species_name"],
+        "biome.primary_type": data["biome"]["primary_type"],
+        "biome.secondary_types": data["biome"]["secondary_types"],
+        "habitat.region": data["habitat"]["region"],
+        "habitat.elevation_meters": data["habitat"]["elevation_meters"],
+        "habitat.climate": data["habitat"]["climate"],
+        "physical_traits.average_height_cm": data["physical_traits"]["average_height_cm"],
+        "physical_traits.average_weight_kg": round(data["physical_traits"]["average_weight_kg"], 1),
+        "physical_traits.color_variations": data["physical_traits"]["color_variations"],
+        "diet.primary_food": data["diet"]["primary_food"],
+        "diet.secondary_foods": data["diet"]["secondary_foods"],
+        "population.estimated_count": data["population"]["estimated_count"],
+        "population.status": data["population"]["status"],
+        "behavior.daily_activity_pattern": data["behavior"]["daily_activity_pattern"],
+        "behavior.social_structure": data["behavior"]["social_structure"]
+    })

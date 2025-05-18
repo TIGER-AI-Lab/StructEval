@@ -1,0 +1,32 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<planet name="Xylophia-IV" type="terrestrial">
+    <atmosphere habitable="true">
+        <composition>N2, O2, CO2</composition>
+        <pressure>1013</pressure>
+    </atmosphere>
+    <satellites>
+        <satellite>
+            <name>Orb-1</name>
+            <diameter>3000</diameter>
+            <orbit>
+                <period>365</period>
+                <distance>400000</distance>
+                <eccentricity>0.05</eccentricity>
+            </orbit>
+        </satellite>
+    </satellites>
+    <lifeforms>
+        <lifeform>
+            <species>Florapex</species>
+            <population>1000000</population>
+            <intelligence>sentient</intelligence>
+        </lifeform>
+    </lifeforms>
+    <resources>
+        <resource>
+            <type>water</type>
+            <quantity>1000000000 liters</quantity>
+        </resource>
+    </resources>
+</planet>

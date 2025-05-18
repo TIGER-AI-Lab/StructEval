@@ -1,0 +1,22 @@
+
+import xml.etree.ElementTree as ET
+import csv
+
+tree = ET.parse('fossil_records.xml')
+root = tree.getroot()
+
+with open('fossil_records.csv', 'w', newline='') as csvfile:
+    fieldnames = ['SpecimenID', 'Species', 'DiscoveryDate', 'Location', 'EstimatedAgeMillions', 'FossilType', 'Curator']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in root.findall('row'):
+        writer.writerow({
+            'SpecimenID': row.find('SpecimenID').text,
+            'Species': row.find('Species').text,
+            'DiscoveryDate': row.find('DiscoveryDate').text,
+            'Location': row.find('Location').text,
+            'EstimatedAgeMillions': row.find('EstimatedAgeMillions').text,
+            'FossilType': row.find('FossilType').text,
+            'Curator': row.find('Curator').text
+        })

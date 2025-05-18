@@ -1,0 +1,15 @@
+
+import pandas as pd
+
+data = {
+    "artifact_name": ["Luminar Crystal", "Chrono Tablet", "Echo Sphere", "Nebula Idol", "Starlace Pendant", "Prism Totem"],
+    "discovery_site": ["Zephyra Caverns", "Meridian Plateau", "Harmonic Dunes", "Solace Trench", "Aurora Fields", "Mirage Basin"],
+    "planet": ["Orbis IV", "Xylen Prime", "Virella", "Quorra", "Orbis IV", "Xylen Prime"],
+    "composition": ["Silicate", "Alloy", "Crystal", "Organic", "Metal", "Gemstone"],
+    "age_million_years": [120.5, 87.2, 310.8, 45.9, 205.4, 155.0],
+    "discovery_date": ["2321-07-14", "2315-03-22", "2332-11-05", "2327-09-30", "2330-01-18", "2333-05-27"]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("artifacts.csv", index=False)

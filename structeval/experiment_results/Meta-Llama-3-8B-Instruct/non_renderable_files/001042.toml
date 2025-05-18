@@ -1,0 +1,15 @@
+
+[brewery]
+name = "Frosty's Brewing Co."
+founded_year = 2015
+location = { city = "Denver", country = "USA" }
+flagship_beer = { name = "Frosty's Pale Ale", abv = 5.2 }
+flagship_beer.awards = [{ title = "Gold Medal", year = 2018 }]
+brewers = [
+  { name = "John Doe", role = "Head Brewer", years_experience = 10 },
+  { name = "Jane Smith", role = "Assistant Brewer", years_experience = 5 }
+]
+tours = { available = true }
+tours.schedule = [
+  { day = "Saturday", start_time = "10:00", language = "English" }
+]

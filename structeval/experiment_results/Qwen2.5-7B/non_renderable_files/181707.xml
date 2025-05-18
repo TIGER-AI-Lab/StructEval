@@ -1,0 +1,44 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def convert_yaml_to_xml(yaml_data):
+    data = yaml.safe_load(yaml_data)
+    root = ET.Element("museum")
+    name = ET.SubElement(root, "name")
+    name.text = data["name"]
+    location = ET.SubElement(root, "location")
+    city = ET.SubElement(location, "city")
+    city.text = data["location"]["city"]
+    planet = ET.SubElement(location, "planet")
+    planet.text = data["location"]["planet"]
+    exhibits = ET.SubElement(root, "exhibits")
+    for exhibit in data["exhibits"]:
+        exhibit_elem = ET.SubElement(exhibits, "exhibit")
+        title = ET.SubElement(exhibit_elem, "title")
+        title.text = exhibit["title"]
+        species = ET.SubElement(exhibit_elem, "species")
+        species.text = exhibit["species"]
+        year_discovered = ET.SubElement(exhibit_elem, "year_discovered")
+        year_discovered.text = str(exhibit["year_discovered"])
+    xml_str = ET.tostring(root, encoding="unicode")
+    return xml_str
+
+yaml_data = """
+museum:
+  name: Galactic Oddities Archive
+  location:
+    city: Nebulon Heights
+    planet: Xanthea IV
+  exhibits:
+    exhibit:
+      - title: Singing Meteorites
+        species: Asteroidus Vocalis
+        year_discovered: 3087
+      - title: Quantum Jellyfish
+        species: Medusae Quantica
+        year_discovered: 3092
+"""
+
+xml_data = convert_yaml_to_xml(yaml_data)
+print(xml_data)

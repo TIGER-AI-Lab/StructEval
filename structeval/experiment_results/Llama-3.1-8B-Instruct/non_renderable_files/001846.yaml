@@ -1,0 +1,25 @@
+
+artifact:
+  name: "Golden Ankh of the Pharaohs"
+  origin:
+    civilization: "Ancient Egyptian"
+    era: "New Kingdom"
+  materials:
+    primary: "Gold"
+    secondary: "Lapis Lazuli"
+  dimensions:
+    height_cm: 15.0
+    width_cm: 10.0
+    depth_cm: 5.0
+  features:
+    - description: "Intricately engraved with hieroglyphics depicting the pharaoh's journey to the afterlife."
+      type: "Engraving"
+    - description: "Features a delicate mechanism allowing the ankh to be opened and closed."
+      type: "Mechanism"
+  provenance:
+    previous_owners:
+      - name: "The British Museum"
+        acquisition_year: 1920
+    discovery:
+      location: "Thebes, Egypt"
+      date: "2010-02-15"

@@ -1,0 +1,169 @@
+
+import csv
+import re
+
+def extract_recipe_info(recipe_text):
+    # Initialize variables
+    recipe_id = ''
+    recipe_name = ''
+    chef_name = ''
+    cuisine_type = ''
+    difficulty_level = ''
+    prep_time_minutes = 0
+    cook_time_minutes = 0
+    servings = 0
+    ingredient_list = []
+    ingredient_quantities = []
+    steps = []
+    step_times = []
+    equipment_needed = []
+    nutrition_calories = 0
+    nutrition_protein_grams = 0
+    nutrition_fat_grams = 0
+    nutrition_carbs_grams = 0
+
+    # Extract recipe id
+    match = re.search(r'\d+', recipe_text)
+    if match:
+        recipe_id = match.group()
+
+    # Extract recipe name
+    match = re.search(r'(?<=Recipe: )[^.]+', recipe_text)
+    if match:
+        recipe_name = match.group()
+
+    # Extract chef name
+    match = re.search(r'(?<=by )[^.]+', recipe_text)
+    if match:
+        chef_name = match.group()
+
+    # Extract cuisine type
+    match = re.search(r'(?<=Cuisine: )[^.]+', recipe_text)
+    if match:
+        cuisine_type = match.group()
+
+    # Extract difficulty level
+    match = re.search(r'(?<=Difficulty: )[^.]+', recipe_text)
+    if match:
+        difficulty_level = match.group()
+
+    # Extract prep time
+    match = re.search(r'(?<=Prep Time: )\d+', recipe_text)
+    if match:
+        prep_time_minutes = int(match.group())
+
+    # Extract cook time
+    match = re.search(r'(?<=Cook Time: )\d+', recipe_text)
+    if match:
+        cook_time_minutes = int(match.group())
+
+    # Extract servings
+    match = re.search(r'(?<=Servings: )\d+', recipe_text)
+    if match:
+        servings = int(match.group())
+
+    # Extract ingredient list
+    match = re.search(r'(?<=Ingredients: )[^.]+', recipe_text)
+    if match:
+        ingredients = match.group().split(';')
+        for ingredient in ingredients:
+            ingredient_list.append(ingredient.strip())
+            match = re.search(r'(?<=\d+) (.+)', ingredient)
+            if match:
+                ingredient_quantities.append(match.group())
+
+    # Extract steps
+    match = re.search(r'(?<=Steps: )[^.]+', recipe_text)
+    if match:
+        steps = match.group().split(';')
+
+    # Extract step times
+    for i, step in enumerate(steps):
+        match = re.search(r'(?<=Step \d+: )\d+', step)
+        if match:
+            step_times.append(int(match.group()))
+
+    # Extract equipment needed
+    match = re.search(r'(?<=Equipment Needed: )[^.]+', recipe_text)
+    if match:
+        equipment_needed = match.group().split(';')
+
+    # Extract nutrition information
+    match = re.search(r'(?<=Nutrition: )[^.]+', recipe_text)
+    if match:
+        nutrition_info = match.group().split(';')
+        for info in nutrition_info:
+            match = re.search(r'(?<=\d+) (.+)', info)
+            if match:
+                if 'Calories' in info:
+                    nutrition_calories = int(match.group())
+                elif 'Protein' in info:
+                    nutrition_protein_grams = int(match.group())
+                elif 'Fat' in info:
+                    nutrition_fat_grams = int(match.group())
+                elif 'Carbs' in info:
+                    nutrition_carbs_grams = int(match.group())
+
+    # Create CSV row
+    csv_row = [
+        recipe_id,
+        recipe_name,
+        chef_name,
+        cuisine_type,
+        difficulty_level,
+        prep_time_minutes,
+        cook_time_minutes,
+        servings,
+        ';'.join(ingredient_list),
+        ';'.join(ingredient_quantities),
+        ';'.join(steps),
+        ';'.join(map(str, step_times)),
+        ';'.join(equipment_needed),
+        nutrition_calories,
+        nutrition_protein_grams,
+        nutrition_fat_grams,
+        nutrition_carbs_grams
+    ]
+
+    return csv_row
+
+# Example usage
+recipe_text = """
+Recipe: Chicken Fettuccine Alfredo
+by Chef John
+Cuisine: Italian
+Difficulty: Easy
+Prep Time: 10
+Cook Time: 15
+Servings: 4
+Ingredients: 1 pound fettuccine; 2 cups chicken broth; 1 cup heavy cream; 1 cup grated Parmesan cheese; 1 pound boneless, skinless chicken breast
+Steps: Cook fettuccine according to package instructions; In a saucepan, combine chicken broth and heavy cream; Bring to a simmer and cook until reduced by half; Stir in Parmesan cheese; Add cooked fettuccine and toss to coat; Slice chicken breast and serve on top
+Equipment Needed: saucepan; whisk; colander
+Nutrition: 500 Calories; 30g Protein; 25g Fat; 30g Carbs
+"""
+
+csv_row = extract_recipe_info(recipe_text)
+with open('recipe.csv', 'a', newline='') as csvfile:
+    fieldnames = ['recipe_id', 'recipe_name', 'chef_name', 'cuisine_type', 'difficulty_level', 'prep_time_minutes', 'cook_time_minutes', 'servings', 'ingredient_list', 'ingredient_quantities', 'steps', 'step_times', 'equipment_needed', 'nutrition_calories', 'nutrition_protein_grams', 'nutrition_fat_grams', 'nutrition_carbs_grams']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    if csvfile.tell() == 0:
+        writer.writeheader()
+    writer.writerow({
+        'recipe_id': csv_row[0],
+        'recipe_name': csv_row[1],
+        'chef_name': csv_row[2],
+        'cuisine_type': csv_row[3],
+        'difficulty_level': csv_row[4],
+        'prep_time_minutes': csv_row[5],
+        'cook_time_minutes': csv_row[6],
+        'servings': csv_row[7],
+        'ingredient_list': csv_row[8],
+        'ingredient_quantities': csv_row[9],
+        'steps': csv_row[10],
+        'step_times': csv_row[11],
+        'equipment_needed': csv_row[12],
+        'nutrition_calories': csv_row[13],
+        'nutrition_protein_grams': csv_row[14],
+        'nutrition_fat_grams': csv_row[15],
+        'nutrition_carbs_grams': csv_row[16]
+    })

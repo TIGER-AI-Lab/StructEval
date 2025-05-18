@@ -1,0 +1,37 @@
+
+{
+  "exhibit": {
+    "title": "Impressionist Masterpieces",
+    "curator": {
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com"
+    },
+    "artworks": [
+      {
+        "artist": "Claude Monet",
+        "title": "Water Lilies",
+        "year_created": 1916,
+        "medium": "oil on canvas",
+        "dimensions": {
+          "height_cm": 200,
+          "width_cm": 300,
+          "depth_cm": 5
+        },
+        "provenance": {
+          "previous_owners": [
+            "John Smith",
+            "Emily Johnson"
+          ],
+          "acquisition_date": "2020-05-15"
+        },
+        "on_display": true,
+        "tags": [
+          "Impressionism",
+          "Nature",
+          "Water"
+        ]
+      }
+    ],
+    "opening_date": "2023-11-01"
+  }
+}

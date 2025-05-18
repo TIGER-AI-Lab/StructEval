@@ -1,0 +1,15 @@
+
+import pandas as pd
+
+data = {
+    "CreatureName": ["Glimmerbat", "Frosttail Finch", "Ember Moth", "Verdant Swallow", "Starwhisk Owl", "Duskbeetle Hawk"],
+    "Habitat": ["Crystal Caves", "Arctic Tundra", "Volcanic Vents", "Emerald Forest", "Midnight Peaks", "Shadow Marsh"],
+    "Wingspan_cm": [47, 22, 35, 29, 60, 41],
+    "Diet": ["Luminous Fungi", "Ice Berries", "Ash Nectar", "Leaf Bugs", "Moon Mice", "Glow Larvae"],
+    "DiscoveryDate": ["2011-05-21", "2003-11-09", "2018-02-14", "1999-07-30", "2007-12-01", "2015-09-18"],
+    "Luminosity_Level": [8.5, 3.2, 9.1, 4.7, 7.8, 6.4]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("creatures.csv", index=False)

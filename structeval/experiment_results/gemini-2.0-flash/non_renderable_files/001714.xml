@@ -1,0 +1,38 @@
+
+<planet>
+    <name>Aethelgard</name>
+    <type>terrestrial</type>
+    <mass units="earth_masses">2.5</mass>
+    <radius units="earth_radii">1.3</radius>
+    <orbital_period units="days">420</orbital_period>
+    <surface_temperature units="kelvin">288</surface_temperature>
+    <discovery>
+        <year>2242</year>
+        <method>Telescopic observation</method>
+    </discovery>
+    <atmosphere>
+        <composition>Nitrogen, Oxygen, Argon, Carbon Dioxide</composition>
+        <pressure units="kPa">101.325</pressure>
+    </atmosphere>
+    <moons>
+        <moon>
+            <name>Lyra</name>
+            <diameter units="km">600</diameter>
+            <discovery_date>2245-07-15</discovery_date>
+            <features>
+                <feature>
+                    <type>crater</type>
+                    <description>Large impact crater on the southern hemisphere.</description>
+                </feature>
+            </features>
+        </moon>
+    </moons>
+    <rings>
+        <ring>
+            <name>Aethelgard A Ring</name>
+            <radius units="km">150000</radius>
+            <width units="km">5000</width>
+            <composition>Ice particles, dust</composition>
+        </ring>
+    </rings>
+</planet>

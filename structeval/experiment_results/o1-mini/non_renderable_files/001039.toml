@@ -1,0 +1,33 @@
+
+[creature]
+species = "Aetherion Phoenix"
+
+[creature.habitat]
+region = "Celestial Peaks"
+climate = "temperate"
+
+[creature.appearance]
+size = "4 meters"
+color = "fiery red and gold plumage"
+
+[creature.abilities]
+primary = "rebirth from ashes"
+secondary = "control over fire elements"
+
+[[creature.behavior.patterns]]
+name = "Sunrise Flight"
+frequency = "daily"
+description = "The Aetherion Phoenix takes to the skies at dawn, performing majestic flights to greet the new day."
+
+[[creature.behavior.patterns]]
+name = "Ashen Nesting"
+frequency = "annually"
+description = "Once a year, it constructs a nest of pure ashes to undergo the rebirth process."
+
+[creature.diet]
+type = "carnivore"
+favorite_foods = ["solar insects", "luminous seeds"]
+
+[creature.discovery]
+discoverer = "Professor Lyra Starling"
+year = 2024

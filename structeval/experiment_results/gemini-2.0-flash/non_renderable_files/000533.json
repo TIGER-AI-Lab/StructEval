@@ -1,0 +1,36 @@
+{
+  "planet": {
+    "name": "HD 209458 b",
+    "type": "gas giant",
+    "discovery": {
+      "year": 1999,
+      "method": "transit"
+    },
+    "atmosphere": {
+      "composition": [
+        "hydrogen",
+        "helium",
+        "oxygen",
+        "carbon"
+      ],
+      "pressure": 100
+    },
+    "moons": [
+      {
+        "name": "Luna1",
+        "diameter_km": 3474.8,
+        "orbital_period_days": 27.3,
+        "features": [
+          {
+            "type": "crater",
+            "description": "Large impact crater on the far side."
+          }
+        ]
+      }
+    ],
+    "surface": {
+      "temperature_c": 1000,
+      "gravity_ms2": 9.8
+    }
+  }
+}

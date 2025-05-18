@@ -1,0 +1,20 @@
+
+galacticCarnival:
+  rides:
+    - name: Zero Gravity Coaster
+      type: Thrill
+      planets:
+        - Jupiter
+        - Saturn
+    - name: Starship Carousel
+      type: Family
+      planets:
+        - Venus
+        - Mars
+  snackStalls:
+    - stall:
+        stallName: Cosmic Corn
+        specialty: Stardust Popcorn
+    - stall:
+        stallName: Astro Sweets
+        specialty: Meteorite Candy

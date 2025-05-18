@@ -1,0 +1,24 @@
+
+galaxy:
+  name: Andromeda
+  star_systems:
+    - star_system:
+        system_name: Alpha Centauri
+        planets:
+          - planet:
+              planet_name: Proxima b
+              moons:
+                - Selene
+                - Iolette
+          - planet:
+              planet_name: Centauria
+              moons:
+                - Glacia
+    - star_system:
+        system_name: Betelgeuse Minor
+        planets:
+          - planet:
+              planet_name: Redmist
+              moons:
+                - Crimson
+                - Mistlet

@@ -1,0 +1,25 @@
+
+brewery:
+  name: "Golden Hops Brewery"
+  location:
+    city: "Portland"
+    country: "USA"
+  founded_year: 2015
+  owner: "John Doe"
+  beers:
+    - name: "IPA"
+      style: "India Pale Ale"
+      abv: 6.2
+      awards:
+        - title: "Best IPA"
+          year: 2020
+      ingredients:
+        hops: ["Cascade", "Chinook"]
+        malts: ["Pale Malt", "Crystal Malt"]
+        yeast: "Ale Yeast"
+  tours:
+    available: true
+    schedule:
+      - day: "Saturday"
+        start_time: "14:00"
+        duration_minutes: 60

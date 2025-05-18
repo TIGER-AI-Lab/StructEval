@@ -1,0 +1,36 @@
+[planet]
+name = "Xylophoria"
+discovery = {
+    year = 2025,
+    method = "Transit"
+}
+orbit = {
+    semi_major_axis = 0.7,
+    eccentricity = 0.05,
+    period_days = 250
+}
+atmosphere = [
+    {
+        gas = "Nitrogen",
+        percentage = 78.0
+    },
+    {
+        gas = "Oxygen",
+        percentage = 20.9
+    },
+    {
+        gas = "Argon",
+        percentage = 1.0
+    }
+]
+satellites = [
+    {
+        name = "Phobos-X",
+        diameter_km = 11.2
+    },
+    {
+        name = "Deimos-Y",
+        diameter_km = 6.2
+    }
+]
+habitable = true

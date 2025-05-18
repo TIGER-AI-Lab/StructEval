@@ -1,0 +1,23 @@
+
+galacticCarnival:
+  attractions:
+    attraction:
+      - name: Zero-G Ferris Wheel
+        type: ride
+        aliensAllowed: true
+      - name: Nebula Maze
+        type: game
+        aliensAllowed: false
+  stellarSnacks:
+    snack:
+      - name: Meteor Popcorn
+        ingredients:
+          ingredient:
+            - corn
+            - stardust
+            - butter
+      - name: Cosmic Cotton Candy
+        ingredients:
+          ingredient:
+            - sugar
+            - nebula extract

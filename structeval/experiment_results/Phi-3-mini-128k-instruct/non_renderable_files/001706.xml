@@ -1,0 +1,127 @@
+<recipe>
+    <title>Chocolate Chip Cookies</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact email="jane.doe@example.com"/>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>All-purpose flour</name>
+            <quantity>2.5</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Baking soda</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>0.5</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Unsalted butter</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Brown sugar</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>White sugar</name>
+            <quantity>0.5</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <unit>large</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vanilla extract</name>
+            <quantity>2</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Chocolate chips</name>
+            <quantity>2</quantity>
+            <unit>cups</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Preheat oven to 350Â°F (175Â°C).</description>
+            <duration minutes="5"/>
+            <tools>
+                <tool name="oven" required="true"/>
+            </tools>
+        </step>
+        <step>
+            <description>In a large bowl, cream together the butter, brown sugar, and white sugar until smooth.</description>
+            <duration minutes="10"/>
+            <tools>
+                <tool name="mixer" required="true"/>
+            </tools>
+        </step>
+        <step>
+            <description>Beat in the eggs one at a time, then stir in the vanilla.</description>
+            <duration minutes="5"/>
+            <tools>
+                <tool name="mixer" required="true"/>
+            </tools>
+        </step>
+        <step>
+            <description>In a separate bowl, sift together the flour, baking soda, and salt; gradually stir into the creamed mixture.</description>
+            <duration minutes="10"/>
+            <tools>
+                <tool name="sifter" required="false"/>
+            </tools>
+        </step>
+        <step>
+            <description>Stir in the chocolate chips.</description>
+            <duration minutes="5"/>
+            <tools>
+                <tool name="spoon" required="true"/>
+            </tools>
+        </step>
+        <step>
+            <description>Drop by rounded spoonfuls onto ungreased cookie sheets.</description>
+            <duration minutes="10"/>
+            <tools>
+                <tool name="spoon" required="true"/>
+            </tools>
+        </step>
+        <step>
+            <description>Bake for 8 to 10 minutes, or until edges are nicely browned.</description>
+            <duration minutes="10"/>
+            <tools>
+                <tool name="cookie sheet" required="true"/>
+            </tools>
+        </step>
+        <step>
+            <description>Cool on baking sheets for a few minutes before transferring to wire racks to cool completely.</description>
+            <duration minutes="10"/>
+            <tools>
+                <tool name="baking sheet" required="false"/>
+                <tool name="wire rack" required="true"/>
+            </tools>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>2100</calories>
+        <fat>
+            <grams>100</grams>
+        </fat>
+        <protein>
+            <grams>20</grams>
+        </protein>
+    </nutrition>
+    <metadata>
+        <cuisine>American</cuisine>
+        <difficulty>easy</difficulty>
+        <published date="2023-04-01"/>
+    </metadata>
+</recipe>

@@ -1,0 +1,33 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<planet>
+    <name>Aurelia</name>
+    <mass>12.3</mass>
+    <orbital_period>400</orbital_period>
+    <distance_from_star>1.5</distance_from_star>
+    <atmosphere>
+        <composition>Carbon Dioxide, Nitrogen, Methane</composition>
+        <pressure>2.5</pressure>
+        <layers>
+            <layer>
+                <name>Stratosphere</name>
+                <altitude_range>10-50</altitude_range>
+                <temperature>-50</temperature>
+            </layer>
+        </layers>
+    </atmosphere>
+    <moons>
+        <moon>
+            <name>Selene</name>
+            <diameter>1500</diameter>
+            <discovered_by>Jane Doe</discovered_by>
+            <discovery_date>2020-06-15</discovery_date>
+        </moon>
+    </moons>
+    <rings>
+        <ring>
+            <composition>Silicate Particles and Ice</composition>
+            <radius>50000</radius>
+        </ring>
+    </rings>
+</planet>

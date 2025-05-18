@@ -1,0 +1,23 @@
+
+import pandas as pd
+
+brewery_data = {
+    'brewery_id': '12345',
+    'brewery_name': 'Craft Beer Haven',
+    'brewery_location': 'San Francisco, USA',
+    'year_established': 2010,
+    'brewery_type': 'microbrewery',
+    'main_brewer': 'John Smith',
+    'signature_beer': 'Hefe Weizen',
+    'signature_beer_abv': 5.2,
+    'signature_beer_ibu': 12,
+    'tour_available': 'yes',
+    'tour_days': 'Saturday,Sunday',
+    'tour_duration_minutes': 60,
+    'award_count': 3,
+    'annual_production_liters': 100000,
+    'website_url': 'www.craftbeerhaven.com'
+}
+
+brewery_df = pd.DataFrame([brewery_data])
+brewery_df.to_csv('brewery_info.csv', index=False)

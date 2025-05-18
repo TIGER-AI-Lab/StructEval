@@ -1,0 +1,38 @@
+
+{
+  "artifact": {
+    "name": "Golden Scepter of Ur",
+    "period": "Early Dynastic Period",
+    "origin": {
+      "civilization": "Sumerian",
+      "region": "Mesopotamia"
+    },
+    "discovery": {
+      "date": "2023-09-15",
+      "location": {
+        "latitude": 30.9642,
+        "longitude": 46.1051
+      }
+    },
+    "materials": ["gold", "lapis lazuli"],
+    "dimensions": {
+      "height_cm": 45.0,
+      "width_cm": 10.0,
+      "depth_cm": 10.0
+    },
+    "inscriptions": [
+      {
+        "language": "Sumerian",
+        "text": "ð­ðð¤ð ",
+        "translation": "To the god Enlil",
+        "condition": "intact"
+      },
+      {
+        "language": "Akkadian",
+        "text": "ð­ðð¤ð ð¾",
+        "translation": "Gift to Enlil",
+        "condition": "eroded"
+      }
+    ]
+  }
+}

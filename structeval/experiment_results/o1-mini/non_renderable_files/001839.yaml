@@ -1,0 +1,31 @@
+
+creature:
+  name: Lumifern
+  species: Nocturna lumiflora
+  age: 5
+  habitat:
+    type: forest
+    location: Mystic Woods
+    features:
+      - bioluminescent plants
+      - dense canopy
+      - mysterious fog
+  abilities:
+    - name: Glow Manipulation
+      description: Can control and alter its bioluminescent glow to communicate or deter predators.
+      power_level: 8
+    - name: Camouflage
+      description: Can blend seamlessly into the surrounding environment to avoid detection.
+      power_level: 6
+  diet:
+    primary_food: nectar
+    secondary_foods:
+      - fruits
+      - small insects
+    feeding_times:
+      - "06:00"
+      - "12:00"
+      - "18:00"
+  social_behavior:
+    group_size: 15
+    hierarchy: egalitarian

@@ -1,0 +1,104 @@
+<recipe>
+    <title>Classic Chocolate Chip Cookies</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+            <phone>555-1234</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>All-purpose flour</name>
+            <quantity>2.75</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Baking soda</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>0.5</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Unsalted butter</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Brown sugar</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>White sugar</name>
+            <quantity>0.5</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <unit>large</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vanilla extract</name>
+            <quantity>2</quantity>
+            <unit>teaspoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Chocolate chips</name>
+            <quantity>2</quantity>
+            <unit>cups</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <stepNumber>1</stepNumber>
+        <description>Preheat the oven to 350Â°F (175Â°C).</description>
+        <duration>PT15M</duration>
+    </instructions>
+    <instructions>
+        <stepNumber>2</stepNumber>
+        <description>In a large bowl, whisk together the flour, baking soda, and salt.</description>
+        <duration>PT5M</duration>
+    </instructions>
+    <instructions>
+        <stepNumber>3</stepNumber>
+        <description>In a separate bowl, cream together the butter, brown sugar, and white sugar until light and fluffy.</description>
+        <duration>PT10M</duration>
+    </instructions>
+    <instructions>
+        <stepNumber>4</stepNumber>
+        <description>Beat in the eggs one at a time, then stir in the vanilla.</description>
+        <duration>PT5M</duration>
+    </instructions>
+    <instructions>
+        <stepNumber>5</stepNumber>
+        <description>Gradually blend in the dry ingredients, then fold in the chocolate chips.</description>
+        <duration>PT10M</duration>
+    </instructions>
+    <instructions>
+        <stepNumber>6</stepNumber>
+        <description>Drop rounded tablespoons of dough onto ungreased cookie sheets.</description>
+        <duration>PT5M</duration>
+    </instructions>
+    <instructions>
+        <stepNumber>7</stepNumber>
+        <description>Bake for 8 to 10 minutes, or until the edges are lightly toasted.</description>
+        <duration>PT10M</duration>
+    </instructions>
+    <nutrition>
+        <calories>250</calories>
+        <fat>12g</fat>
+        <protein>5g</protein>
+    </nutrition>
+    <tags>
+        <label>vegetarian</label>
+        <label>dessert</label>
+    </tags>
+    <metadata>
+        <createdDate>2023-04-01</createdDate>
+    </metadata>
+</recipe>

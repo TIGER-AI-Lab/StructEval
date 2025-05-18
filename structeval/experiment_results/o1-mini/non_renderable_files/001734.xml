@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creature>
+    <name>Zylaran</name>
+    <species>Thrynnian Luminarian</species>
+    <origin>
+        <planet>Thrynn</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <traits>
+        <trait>
+            <type>Agility</type>
+            <description>Exceptional speed and reflexes</description>
+            <rarity>rare</rarity>
+        </trait>
+        <trait>
+            <type>Camouflage</type>
+            <description>Ability to blend into surroundings seamlessly</description>
+            <rarity>common</rarity>
+        </trait>
+    </traits>
+    <abilities>
+        <ability>
+            <name>Photon Blast</name>
+            <level>5</level>
+            <cooldown>30.5</cooldown>
+        </ability>
+        <ability>
+            <name>Quantum Shift</name>
+            <level>3</level>
+            <cooldown>60</cooldown>
+        </ability>
+    </abilities>
+    <appearance>
+        <height>250.0</height>
+        <color>Emerald Green</color>
+        <appendages>
+            <count>4</count>
+            <type>tentacle</type>
+        </appendages>
+    </appearance>
+    <discovery>
+        <date>2023-05-17T14:30:00Z</date>
+        <discovered_by>Dr. Elena Voss</discovered_by>
+    </discovery>
+</creature>

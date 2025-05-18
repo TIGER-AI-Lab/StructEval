@@ -1,0 +1,14 @@
+galacticCarnival:
+  attractions:
+    - name: Zero-G Ferris Wheel
+      type: Ride
+      aliens:
+        - species: Glorbian
+          job: Operator
+        - species: Lunari
+          job: Maintenance
+    - name: Plasma Popcorn Stand
+      type: Food Stall
+      aliens:
+        - species: Quarx
+          job: Vendor

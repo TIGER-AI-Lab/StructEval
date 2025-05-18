@@ -1,0 +1,17 @@
+galaxy:
+  name: Andromeda
+  stars:
+    - star:
+        name: Sirius
+        type: Main Sequence
+        planets:
+          - planet:
+              name: Bluehaven
+              has_life: true
+    - star:
+        name: Vega
+        type: Giant
+        planets:
+          - planet:
+              name: Crimsonis
+              has_life: false

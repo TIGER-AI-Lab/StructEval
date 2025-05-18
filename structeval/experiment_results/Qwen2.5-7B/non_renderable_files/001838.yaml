@@ -1,0 +1,25 @@
+artifact:
+  name: "The Enigmatic Vessel"
+  origin:
+    culture: "Minoan"
+    era: "Minoan Civilization"
+    discovery_date: "1975-08-15"
+  dimensions:
+    height_cm: 30.5
+    width_cm: 20.3
+  materials:
+    - "Ceramic"
+    - "Paint"
+  condition:
+    status: "Fragmented"
+    restoration_history:
+      - date: "2005-06-10"
+        description: "Partial restoration of the vessel's neck"
+  exhibitions:
+    - location: "Museum of Crete"
+      start_date: "2010-04-01"
+      end_date: "2010-09-30"
+      visitor_count: 15000
+  references:
+    - citation: "Smith, J. (2008). Ancient Minoan Artifacts. Journal of Archaeology, 25(3), 123-145."
+    - citation: "Johnson, L. (2012). The Enigmatic Vessel: A Study in Minoan Ceramics. University Press."

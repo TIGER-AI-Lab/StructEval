@@ -1,0 +1,64 @@
+
+import json
+import csv
+
+data = '''[
+  {
+    "CreatureName": "Glimmerbat",
+    "Habitat": "Crystal Caves",
+    "NumberOfLegs": 4,
+    "FirstSightingDate": "2012-09-18",
+    "AverageWingspan_cm": 87.5,
+    "IsBioluminescent": true
+  },
+  {
+    "CreatureName": "Frosttail Lynx",
+    "Habitat": "Frozen Tundra",
+    "NumberOfLegs": 4,
+    "FirstSightingDate": "2009-02-12",
+    "AverageWingspan_cm": 0,
+    "IsBioluminescent": false
+  },
+  {
+    "CreatureName": "Sunspike Beetle",
+    "Habitat": "Desert Oasis",
+    "NumberOfLegs": 6,
+    "FirstSightingDate": "2017-06-30",
+    "AverageWingspan_cm": 2.3,
+    "IsBioluminescent": true
+  },
+  {
+    "CreatureName": "Velvet Quill",
+    "Habitat": "Enchanted Forest",
+    "NumberOfLegs": 2,
+    "FirstSightingDate": "2015-11-04",
+    "AverageWingspan_cm": 34.2,
+    "IsBioluminescent": false
+  },
+  {
+    "CreatureName": "Marbleback Turtle",
+    "Habitat": "Coral Reefs",
+    "NumberOfLegs": 4,
+    "FirstSightingDate": "2003-04-21",
+    "AverageWingspan_cm": 0,
+    "IsBioluminescent": false
+  },
+  {
+    "CreatureName": "Echo Wisp",
+    "Habitat": "Foggy Marsh",
+    "NumberOfLegs": 0,
+    "FirstSightingDate": "2019-08-10",
+    "AverageWingspan_cm": 12.8,
+    "IsBioluminescent": true
+  }
+]'''
+
+data = json.loads(data)
+
+with open('output.csv', 'w', newline='') as csvfile:
+    fieldnames = ['CreatureName', 'Habitat', 'NumberOfLegs', 'FirstSightingDate', 'AverageWingspan_cm', 'IsBioluminescent']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in data:
+        writer.writerow(row)

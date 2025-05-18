@@ -1,0 +1,44 @@
+
+<galaxies>
+  <galaxy>
+    <name>Andromeda</name>
+    <type>Spiral</type>
+    <distance_lightyears>2537000</distance_lightyears>
+    <discovery>
+      <year>1923</year>
+      <telescope>Hubble Telescope</telescope>
+      <team>
+        <member>
+          <name>Edwin Hubble</name>
+          <role>Lead Astronomer</role>
+        </member>
+        <member>
+          <name>Milton Humason</name>
+          <role>Assistant Astronomer</role>
+        </member>
+      </team>
+    </discovery>
+    <planets>
+      <planet>
+        <name>Planet X</name>
+        <type>Gas Giant</type>
+        <moons>
+          <moon>
+            <name>Luna X</name>
+            <diameter_km>3475</diameter_km>
+          </moon>
+        </moons>
+      </planet>
+      <planet>
+        <name>Planet Y</name>
+        <type>Terrestrial</type>
+        <moons>
+          <moon>
+            <name>Phobos Y</name>
+            <diameter_km>22.2</diameter_km>
+          </moon>
+        </moons>
+      </planet>
+    </planets>
+  </galaxy>
+</galaxies>

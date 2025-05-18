@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041113</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Main Website Title</h1>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <p>This is the header section of the page, containing navigation and a general introduction to the content.</p>
+      </header>
+
+      <article>
+        <section id="introduction">
+          <h2>Introduction</h2>
+          <p>Welcome! This document is a visual conversion test which displays the layout hierarchy and visible content structure in HTML. It features multiple sections, lists, labeled values, and tables to simulate a complex page.</p>
+        </section>
+
+        <section id="features">
+          <h2>Main Features</h2>
+          <ol>
+            <li>Well-Structured Headings and Sections</li>
+            <li>Navigation Menus and Sidebars</li>
+            <li>Detailed Lists and Labeled Information</li>
+            <li>Tabular Data Display</li>
+            <li>Footer with Contact Information</li>
+          </ol>
+        </section>
+
+        <section id="details">
+          <h2>Detailed Layout Information</h2>
+          <div>
+            <h3>Subsection: Lists</h3>
+            <ul>
+              <li>Ordered list item one</li>
+              <li>Ordered list item two
+                <ul>
+                  <li>Sub-item A</li>
+                  <li>Sub-item B</li>
+                </ul>
+              </li>
+              <li>Ordered list item three</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Subsection: Table Data</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Attribute</th>
+                  <th>Description</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Width</td>
+                  <td>Displays the width of the element in pixels</td>
+                  <td>800px</td>
+                </tr>
+                <tr>
+                  <td>Height</td>
+                  <td>Displays the height of the element in pixels</td>
+                  <td>600px</td>
+                </tr>
+                <tr>
+                  <td>Margin</td>
+                  <td>The spacing around the element</td>
+                  <td>20px</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="values">
+          <h2>Labeled Values and Details</h2>
+          <p>Below is a list of labeled values representing some typical information a user might need to read:</p>
+          <dl>
+            <dt>Username:</dt>
+            <dd>john_doe_92</dd>
+            <dt>Membership:</dt>
+            <dd>Gold</dd>
+            <dt>Last Login:</dt>
+            <dd>October 5, 2023</dd>
+          </dl>
+        </section>
+      </article>
+
+      <aside>
+        <h2>Sidebar Information</h2>
+        <p>This sidebar contains supplementary details and relevant links (non-clickable) that provide supporting information.</p>
+        <ul>
+          <li>Latest News</li>
+          <li>Upcoming Events</li>
+          <li>User Tips</li>
+          <li>FAQs</li>
+        </ul>
+      </aside>
+
+      <footer>
+        <h2>Contact and Legal Information</h2>
+        <section>
+          <h3>Contact Details</h3>
+          <p>Email: support@example.com</p>
+          <p>Phone: (555) 123-4567</p>
+        </section>
+        <section>
+          <h3>Legal</h3>
+          <p>Â© 2023 Example Corporation. All rights reserved.</p>
+        </section>
+        <p>This is the footer section of the page containing essential legal information and contact data.</p>
+      </footer>
+    </div>
+  );
+};
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

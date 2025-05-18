@@ -1,0 +1,7 @@
+
+SpaceshipID, CaptainName, LaunchDate, FuelLevel, Destination, CrewCount
+ZX-001, Lira Moon, 2124-03-17, 87.5, Europa, 5
+ZX-002, Viktor Sol, 2124-04-02, 65.2, Ganymede, 7
+ZX-003, Asha Ray, 2124-05-21, 92.8, Callisto, 6
+ZX-004, Juno Vega, 2124-06-09, 74.3, Titan, 8
+ZX-005, Milo Drake, 2124-07-15, 81.0, Enceladus, 4

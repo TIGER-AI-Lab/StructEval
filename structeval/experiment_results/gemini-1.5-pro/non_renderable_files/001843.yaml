@@ -1,0 +1,25 @@
+festival:
+  name: "Harmony Fest"
+  location:
+    city: "Austin"
+    venue: "Zilker Park"
+  dates:
+    start: "2024-09-20"
+    end: "2024-09-22"
+  lineup:
+    - artist: "The Lumineers"
+      set_time: "21:00"
+      stage: "Main Stage"
+      special_guests: []
+    - artist: "Hozier"
+      set_time: "19:30"
+      stage: "Sunset Stage"
+      special_guests: [" Brandi Carlile"]
+  tickets:
+    types:
+      - category: "General Admission"
+        price: 150.00
+        availability: 5000
+  sponsors:
+    main: "Spotify"
+    secondary: ["Red Bull", "American Express"]

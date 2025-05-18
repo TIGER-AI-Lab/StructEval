@@ -1,0 +1,19 @@
+
+{
+  "museum": {
+    "name": "The Imaginary Artifacts Museum",
+    "location": "Atlantis",
+    "exhibits": [
+      {
+        "title": "Chrono Compass",
+        "artist": "Lira Tempus",
+        "year": 1875
+      },
+      {
+        "title": "Feather of the Sky Whale",
+        "artist": "Unknown",
+        "year": "Prehistoric"
+      }
+    ]
+  }
+}

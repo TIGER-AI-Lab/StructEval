@@ -1,0 +1,19 @@
+
+garden:
+  name: "Botanical Garden of Green Valley"
+  location:
+    city: "Greenfield"
+    country: "Greenland"
+  size_sq_meters: 12500
+  established_year: 1923
+  sections:
+    - section_name: "Tropical Exotics"
+      plants:
+        - species: "Heliconia rostrata"
+          age_years: 5
+          height_cm: 140
+          is_perennial: true
+          flowering_months: ["May", "June"]
+          care:
+            last_watered: "2023-10-05"
+            fertilizer_type: "Organic compost"

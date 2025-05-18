@@ -1,0 +1,70 @@
+
+galaxies:
+  - name: Andromeda
+    type: Spiral
+    distance_lightyears: 2537000
+    discovery:
+      year: 964
+      telescope: Hubble Space Telescope
+      astronomer: Edwin Hubble
+    stars:
+      - name: Alpha Centauri A
+        type: G-Type
+        planets:
+          - name: Proxima b
+            has_life: True
+            moons: 2
+            atmosphere:
+              composition: Nitrogen-Oxygen
+              pressure: 1.01
+  - name: Andromeda
+    type: Spiral
+    distance_lightyears: 2537000
+    discovery:
+      year: 964
+      telescope: Hubble Space Telescope
+      astronomer: Edwin Hubble
+    stars:
+      - name: Alpha Centauri A
+        type: G-Type
+        planets:
+          - name: Proxima c
+            has_life: False
+            moons: 0
+            atmosphere:
+              composition: Carbon Dioxide
+              pressure: 0.7
+  - name: Milky Way
+    type: Barred Spiral
+    distance_lightyears: 0
+    discovery:
+      year: 1610
+      telescope: Galileo's Telescope
+      astronomer: Galileo Galilei
+    stars:
+      - name: Sun
+        type: G-Type
+        planets:
+          - name: Earth
+            has_life: True
+            moons: 1
+            atmosphere:
+              composition: Nitrogen-Oxygen
+              pressure: 1.0
+  - name: Milky Way
+    type: Barred Spiral
+    distance_lightyears: 0
+    discovery:
+      year: 1610
+      telescope: Galileo's Telescope
+      astronomer: Galileo Galilei
+    stars:
+      - name: Sun
+        type: G-Type
+        planets:
+          - name: Mars
+            has_life: False
+            moons: 2
+            atmosphere:
+              composition: Carbon Dioxide
+              pressure: 0.006

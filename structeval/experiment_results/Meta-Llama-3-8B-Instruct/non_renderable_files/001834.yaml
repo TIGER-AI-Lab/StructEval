@@ -1,0 +1,24 @@
+
+creature:
+  name: "Gorthok the Devourer"
+  species: "K'tk'tk"
+  origin:
+    planet: "Zorvath"
+    galaxy: "Andromeda"
+  abilities:
+  - type: "Energy Projection"
+    strength: 8
+  - type: "Telepathy"
+    strength: 5
+  companions:
+  - name: "Korvath the Unyielding"
+    species: "K'tk'tk"
+    bond_level: 7
+  - name: "Xexu the Cunning"
+    species: "Xhk'kht"
+    bond_level: 3
+  artifacts:
+  - name: "The Devourer's Fang"
+    power_level: 9
+  - name: "The Eye of Andromeda"
+    power_level: 6

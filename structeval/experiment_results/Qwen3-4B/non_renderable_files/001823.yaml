@@ -1,0 +1,24 @@
+
+artifact:
+  name: "The Golden Mask of the Sun God"
+  origin:
+    culture: "Mycenean"
+    period: "Late Bronze Age"
+  materials:
+    primary: "gold"
+    secondary: "copper and silver"
+  dimensions:
+    height_cm: 35.2
+    width_cm: 22.8
+    depth_cm: 15.4
+  condition:
+    status: "Excellent"
+    notes: "Minimal wear, well-preserved"
+  exhibitions:
+    - title: "Ancient Treasures of the Aegean"
+      date_range:
+        start: "2023-04-01"
+        end: "2023-06-30"
+      location:
+        museum: "National Archaeological Museum"
+        city: "Athens"

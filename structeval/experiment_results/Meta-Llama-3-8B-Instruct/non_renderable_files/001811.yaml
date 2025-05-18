@@ -1,0 +1,29 @@
+
+expedition:
+  name: "Galactic Horizon Expedition"
+  launch_date: "2025-03-15"
+  destination:
+    planet: "Mars"
+    moons: ["Phobos", "Deimos"]
+  crew:
+    - role: "Commander"
+      name: "John Smith"
+      age: 42
+      skills: ["Leadership", "Navigation"]
+    - role: "Engineer"
+      name: "Jane Doe"
+      skills: ["Mechanical", "Electrical"]
+  cargo:
+    supplies:
+      food_kg: 500
+      water_liters: 1000
+    equipment:
+      - type: "Scientific Instruments"
+        quantity: 5
+      - type: "Communication Devices"
+        quantity: 2
+  mission_objectives:
+    primary: "Search for signs of life on Mars"
+    secondary:
+      - "Collect geological samples"
+      - "Conduct atmospheric analysis"

@@ -1,0 +1,78 @@
+
+<recipe>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <difficulty>Medium</difficulty>
+        <lastUpdated>2023-10-27</lastUpdated>
+    </metadata>
+    <title>Spaghetti Carbonara</title>
+    <author>
+        <name>John Doe</name>
+        <contact>john.doe@example.com</contact>
+    </author>
+    <nutrition>
+        <calories>600</calories>
+        <fat>30</fat>
+        <protein>25</protein>
+        <carbohydrates>60</carbohydrates>
+    </nutrition>
+    <ingredients>
+        <item>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Guanciale</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Egg Yolks</name>
+            <quantity>3</quantity>
+            <unit>count</unit>
+        </item>
+        <item>
+            <name>Pecorino Romano Cheese</name>
+            <quantity>50</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Black Pepper</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </item>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Cook spaghetti according to package directions.</description>
+            <duration>10</duration>
+            <tools>Pot, Colander</tools>
+        </step>
+        <step>
+            <description>While pasta is cooking, dice guanciale and fry until crispy.</description>
+            <duration>8</duration>
+            <tools>Frying Pan, Knife</tools>
+        </step>
+        <step>
+            <description>In a bowl, whisk together egg yolks, pecorino romano cheese, and black pepper.</description>
+            <duration>2</duration>
+            <tools>Bowl, Whisk</tools>
+        </step>
+        <step>
+            <description>Drain spaghetti, reserving some pasta water. Add spaghetti to the pan with guanciale.</description>
+            <duration>1</duration>
+            <tools>Colander</tools>
+        </step>
+        <step>
+            <description>Remove pan from heat. Pour egg mixture over spaghetti and toss quickly, adding pasta water as needed to create a creamy sauce.</description>
+            <duration>3</duration>
+            <tools>None</tools>
+        </step>
+        <step>
+            <description>Serve immediately, garnished with extra pecorino romano cheese and black pepper.</description>
+            <duration>1</duration>
+            <tools>None</tools>
+        </step>
+    </steps>
+</recipe>

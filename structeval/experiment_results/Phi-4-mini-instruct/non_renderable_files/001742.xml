@@ -1,0 +1,11 @@
+<planet name="Zyphoria" type="terrestrial" orbitalPeriod="365">
+  <atmosphere composition="Nitrogen, Oxygen, Argon" pressure="1" temperature="288"/>
+  <moons>
+    <moon name="Lunara" diameter="3,474" hasWater="true" discovery year="2025" discovery method="Telescopic Observation">
+      <firstObserved date="2025-04-12T00:00:00Z" species="Lunara Flora" population="500000" intelligenceLevel="non-sentient"/>
+    </moon>
+  </moons>
+  <lifeforms>
+    <lifeform species="Zyphorian Fauna" population="2000000" intelligenceLevel="sentient" firstObserved date="2025-04-12T00:00:00Z"/>
+  </lifeforms>
+</planet>

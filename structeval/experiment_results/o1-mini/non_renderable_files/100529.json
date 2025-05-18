@@ -1,0 +1,40 @@
+{
+  "planet": {
+    "name": "Zyphora",
+    "atmosphere": {
+      "composition": "Nitrogen-Oxygen",
+      "pressure": 1.2,
+      "layers": [
+        {
+          "name": "Troposphere",
+          "altitude_range": "0-12km",
+          "gases": ["Nitrogen", "Oxygen", "Argon"]
+        },
+        {
+          "name": "Stratosphere",
+          "altitude_range": "12-50km",
+          "gases": ["Ozone", "Nitrogen"]
+        }
+      ]
+    },
+    "moons": [
+      {
+        "name": "Aurelia",
+        "diameter_km": 3420,
+        "discovered_by": "Dr. Yelena Voss",
+        "features": ["Ice geysers", "Subsurface ocean"]
+      },
+      {
+        "name": "Borealis",
+        "diameter_km": 2100,
+        "discovered_by": "Prof. Lin Tao",
+        "features": ["Volcanic plains", "Rift valleys"]
+      }
+    ],
+    "discovery": {
+      "year": 2241,
+      "method": "Gravitational Microlensing",
+      "telescope": "Vanguard Array"
+    }
+  }
+}

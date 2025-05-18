@@ -1,0 +1,40 @@
+import json
+import yaml
+
+json_data = '''
+{
+  "spaceship": {
+    "name": "Nebula Voyager",
+    "model": "NX-2024",
+    "crew": {
+      "captain": "Lira Quell",
+      "pilot": "Jax Torin",
+      "engineers": [
+        { "name": "Vex Marlo", "specialty": "Propulsion" },
+        { "name": "Sera Dune", "specialty": "Life Support" }
+      ]
+    },
+    "cargo": [
+      { "type": "Cryogenic Seeds", "weight": 120 },
+      { "type": "Quantum Batteries", "weight": 75 }
+    ],
+    "missions": [
+      {
+        "destination": "Kepler-442b",
+        "status": "Completed",
+        "objectives": ["Survey terrain", "Establish outpost"]
+      },
+      {
+        "destination": "Gliese 581g",
+        "status": "Ongoing",
+        "objectives": ["Deploy drones", "Analyze atmosphere"]
+      }
+    ]
+  }
+}
+'''
+
+data = json.loads(json_data)
+yaml_data = yaml.dump(data, default_flow_style=False)
+
+print(yaml_data)

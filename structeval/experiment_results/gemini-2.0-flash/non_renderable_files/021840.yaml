@@ -1,0 +1,49 @@
+
+- planet_name: Aurelia
+  orbital_data:
+    semi_major_axis: 1.2
+    eccentricity: 0.05
+    inclination: 3.2
+  atmosphere:
+    composition:
+      - gas: Nitrogen
+        percentage: 78
+      - gas: Oxygen
+        percentage: 21
+    pressure: 1.0
+  moons:
+    - name: Titania
+      diameter_km: 1577
+      discovery:
+        year: 1787
+    - name: Oberon
+      diameter_km: 1523
+      discovery:
+        year: 1787
+  surface:
+    temperature_mean_c: 14.5
+    has_liquid_water: TRUE
+- planet_name: Borealis
+  orbital_data:
+    semi_major_axis: 0.8
+    eccentricity: 0.09
+    inclination: 1.5
+  atmosphere:
+    composition:
+      - gas: Hydrogen
+        percentage: 92
+      - gas: Helium
+        percentage: 7
+    pressure: 0.3
+  moons:
+    - name: Phobos
+      diameter_km: 22
+      discovery:
+        year: 1877
+    - name: Deimos
+      diameter_km: 12
+      discovery:
+        year: 1877
+  surface:
+    temperature_mean_c: -63
+    has_liquid_water: FALSE

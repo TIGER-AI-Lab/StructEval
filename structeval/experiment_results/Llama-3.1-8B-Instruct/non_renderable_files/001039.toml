@@ -1,0 +1,41 @@
+
+creature = {
+  species = "Luminawing"
+  habitat = {
+    region = "Auroral Isles"
+    climate = "Temperate"
+  }
+  appearance = {
+    size = "Medium (1.8 meters)"
+    color = "Iridescent blue and silver"
+  }
+  abilities = {
+    primary = "Bioluminescence"
+    secondary = "Shape-shifting"
+  }
+  behavior = {
+    patterns = [
+      {
+        name = "Moonlit Migration"
+        frequency = "Monthly"
+        description = "Mass migration to the eastern coast during full moon"
+      }
+      {
+        name = "Nocturnal Foraging"
+        frequency = "Daily"
+        description = "Individual creatures forage for food at night, often in groups"
+      }
+    ]
+  }
+  diet = {
+    type = "Omnivore"
+    favorite_foods = [
+      "Sea berries"
+      "Crustaceans"
+    ]
+  }
+  discovery = {
+    discoverer = "Dr. Elara Vex"
+    year = 2015
+  }
+}

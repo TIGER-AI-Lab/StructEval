@@ -1,0 +1,15 @@
+
+import pandas as pd
+
+data = {
+    "Planet": ["Zephyros", "Virelia", "Quarnyx", "Stravos", "Lumora", "Ecliptix"],
+    "Population": [1200000, 870000, 4300000, 150000, 2600000, 980000],
+    "DiscoveryDate": ["2187-04-12", "2201-09-30", "2179-01-25", "2210-11-18", "2195-06-03", "2208-02-14"],
+    "PrimaryElement": ["Helium", "Neon", "Oxygen", "Carbon", "Hydrogen", "Argon"],
+    "DistanceFromEarthLY": [45.2, 67.8, 12.4, 102.6, 33.9, 58.7],
+    "HasRings": [True, False, True, False, True, False]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("planets.csv", index=False)

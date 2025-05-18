@@ -1,0 +1,70 @@
+
+import json
+import csv
+
+data = '''[
+  {
+    "planet_name": "Zyphora",
+    "discovery_year": 2134,
+    "distance_lightyears": 47.5,
+    "atmosphere_type": "Methane-rich",
+    "surface_temperature_c": -180,
+    "inhabited": false,
+    "last_probe_visit": "2140-07-23"
+  },
+  {
+    "planet_name": "Krellon",
+    "discovery_year": 2121,
+    "distance_lightyears": 92.8,
+    "atmosphere_type": "Oxygen-nitrogen",
+    "surface_temperature_c": 22,
+    "inhabited": true,
+    "last_probe_visit": "2138-11-14"
+  },
+  {
+    "planet_name": "Virelia",
+    "discovery_year": 2142,
+    "distance_lightyears": 15.3,
+    "atmosphere_type": "Sulfur dioxide",
+    "surface_temperature_c": 430,
+    "inhabited": false,
+    "last_probe_visit": "2143-02-01"
+  },
+  {
+    "planet_name": "Thessia",
+    "discovery_year": 2109,
+    "distance_lightyears": 60.0,
+    "atmosphere_type": "Carbon dioxide",
+    "surface_temperature_c": -55,
+    "inhabited": false,
+    "last_probe_visit": "2111-09-12"
+  },
+  {
+    "planet_name": "Marnax",
+    "discovery_year": 2137,
+    "distance_lightyears": 120.2,
+    "atmosphere_type": "Hydrogen-helium",
+    "surface_temperature_c": -160,
+    "inhabited": false,
+    "last_probe_visit": "2141-04-30"
+  },
+  {
+    "planet_name": "Eldoria",
+    "discovery_year": 2115,
+    "distance_lightyears": 33.9,
+    "atmosphere_type": "Nitrogen-argon",
+    "surface_temperature_c": 5,
+    "inhabited": true,
+    "last_probe_visit": "2139-06-19"
+  }
+]'''
+
+data = json.loads(data)
+
+with open('planets.csv', 'w', newline='') as csvfile:
+    fieldnames = ['planet_name', 'discovery_year', 'distance_lightyears', 'atmosphere_type', 'surface_temperature_c', 'inhabited', 'last_probe_visit']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for planet in data:
+        writer.writerow(planet)

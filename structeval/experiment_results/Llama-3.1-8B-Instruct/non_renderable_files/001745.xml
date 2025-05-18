@@ -1,0 +1,62 @@
+
+<recipe>
+    <title>Delicious Chicken Fajitas</title>
+    <author>
+        <name>John Doe</name>
+        <profileUrl>https://example.com/johndoe</profileUrl>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Chicken Breast</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Onion</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Bell Pepper</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>
+            <stepNumber>1</stepNumber>
+            <description>Cut the chicken into thin strips.</description>
+            <timer>
+                <durationMinutes>5</durationMinutes>
+                <optional>false</optional>
+            </timer>
+        </instruction>
+        <instruction>
+            <stepNumber>2</stepNumber>
+            <description>Heat a large skillet over medium-high heat.</description>
+            <timer>
+                <durationMinutes>2</durationMinutes>
+                <optional>false</optional>
+            </timer>
+        </instruction>
+        <instruction>
+            <stepNumber>3</stepNumber>
+            <description>Add the chicken to the skillet and cook until browned.</description>
+            <timer>
+                <durationMinutes>8</durationMinutes>
+                <optional>false</optional>
+            </timer>
+        </instruction>
+    </instructions>
+    <nutrition>
+        <calories>350</calories>
+        <fat>20</fat>
+        <carbohydrates>20</carbohydrates>
+        <protein>30</protein>
+    </nutrition>
+    <tags>
+        <tag>Chicken</tag>
+        <tag>Fajitas</tag>
+        <tag>Mexican</tag>
+    </tags>
+</recipe>

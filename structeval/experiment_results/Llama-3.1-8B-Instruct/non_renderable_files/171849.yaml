@@ -1,0 +1,16 @@
+
+galaxy:
+  name: Andromeda
+  planets:
+    - planet:
+        planetName: Xenon
+        moons:
+          - moon:
+              moonName: Alpha
+          - moon:
+              moonName: Beta
+    - planet:
+        planetName: Yttrium
+        moons:
+          - moon:
+              moonName: Gamma

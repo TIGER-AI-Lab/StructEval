@@ -1,0 +1,28 @@
+<galacticCarnival>
+  <name>Nebula Fest</name>
+  <location>
+    <planet>Zogtron</planet>
+    <galaxy>Andromeda</galaxy>
+  </location>
+  <attractions>
+    <attraction>
+      <title>Zero Gravity Rollercoaster</title>
+      <type>Ride</type>
+    </attraction>
+    <attraction>
+      <title>Alien Petting Zoo</title>
+      <type>Exhibit</type>
+    </attraction>
+  </attractions>
+  <staff>
+    <member>
+      <name>Xylo Quark</name>
+      <role>Coordinator</role>
+    </member>
+    <member>
+      <name>Mira Nova</name>
+      <role>Guide</role>
+    </member>
+  </staff>
+</galacticCarnival>
+</code>

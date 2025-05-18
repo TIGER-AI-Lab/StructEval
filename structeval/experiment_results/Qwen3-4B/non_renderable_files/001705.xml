@@ -1,0 +1,53 @@
+
+<recipe>
+  <title>Chicken Pasta</title>
+  <author>
+    <name>John Doe</name>
+    <contact>john@example.com</contact>
+  </author>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>Medium</difficulty>
+    <lastUpdated>2023-10-05</lastUpdated>
+  </metadata>
+  <nutrition>
+    <calories>400</calories>
+    <fat>15</fat>
+    <protein>25</protein>
+    <carbohydrates>50</carbohydrates>
+  </nutrition>
+  <ingredients>
+    <item>
+      <name>Chicken</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </item>
+    <item>
+      <name>Pasta</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </item>
+    <item>
+      <name>Tomato sauce</name>
+      <quantity>1</quantity>
+      <unit>cups</unit>
+    </item>
+  </ingredients>
+  <steps>
+    <step>
+      <description>Boil pasta in salted water until al dente.</description>
+      <duration>10</duration>
+      <tools>pot, water</tools>
+    </step>
+    <step>
+      <description>Cook chicken in a pan with garlic and olive oil.</description>
+      <duration>15</duration>
+      <tools>pan, garlic, olive oil</tools>
+    </step>
+    <step>
+      <description>Combine cooked pasta, chicken, and tomato sauce.</description>
+      <duration>5</duration>
+      <tools>mixing bowl, spoon</tools>
+    </step>
+  </steps>
+</recipe>

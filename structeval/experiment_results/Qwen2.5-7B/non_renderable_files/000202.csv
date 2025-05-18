@@ -1,0 +1,53 @@
+python
+import csv
+
+# Define the alien species data
+alien_species = {
+    "species_name": "Zorblatt",
+    "average_lifespan": 150,
+    "habitat": {
+        "primary_biome": "Forest",
+        "climate_zone": "Temperate",
+        "planet": "Xylophia-IV"
+    },
+    "diet": {
+        "type": "Omnivore",
+        "favorite_foods": ["Zogurt", "Bleepberries"]
+    },
+    "social_structure": {
+        "type": "Pack",
+        "average_group_size": 12
+    },
+    "communication": {
+        "methods": ["Sonic chirps", "Body language"]
+    },
+    "notable_abilities": [
+        {"name": "Regenerative healing", "description": "Can regrow lost limbs and heal quickly."},
+        {"name": "Mental telepathy", "description": "Can communicate over short distances without sound."}
+    ],
+    "conservation_status": "Least concern"
+}
+
+# Write the data to a CSV file
+with open('alien_species.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(["species_name", "average_lifespan", "habitat.primary_biome", "habitat.climate_zone", "habitat.planet", "diet.type", "diet.favorite_foods[0]", "diet.favorite_foods[1]", "social_structure.type", "social_structure.average_group_size", "communication.methods[0]", "communication.methods[1]", "notable_abilities[0].name", "notable_abilities[0].description", "notable_abilities[1].name", "notable_abilities[1].description", "conservation_status"])
+    writer.writerow([
+        alien_species["species_name"],
+        alien_species["average_lifespan"],
+        alien_species["habitat"]["primary_biome"],
+        alien_species["habitat"]["climate_zone"],
+        alien_species["habitat"]["planet"],
+        alien_species["diet"]["type"],
+        alien_species["diet"]["favorite_foods"][0],
+        alien_species["diet"]["favorite_foods"][1],
+        alien_species["social_structure"]["type"],
+        alien_species["social_structure"]["average_group_size"],
+        alien_species["communication"]["methods"][0],
+        alien_species["communication"]["methods"][1],
+        alien_species["notable_abilities"][0]["name"],
+        alien_species["notable_abilities"][0]["description"],
+        alien_species["notable_abilities"][1]["name"],
+        alien_species["notable_abilities"][1]["description"],
+        alien_species["conservation_status"]
+    ])

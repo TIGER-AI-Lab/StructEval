@@ -1,0 +1,39 @@
+
+<planet>
+  <name>Kepler-452b</name>
+  <type>terrestrial</type>
+  <discovery date="2015-07-23">
+    <method>transit</method>
+    <telescope>Kepler Space Telescope</telescope>
+  </discovery>
+  <orbit>
+    <period>384.84</period>
+    <eccentricity>0.02</eccentricity>
+    <semi_major_axis>1.046</semi_major_axis>
+  </orbit>
+  <atmosphere>
+    <composition>nitrogen, oxygen, argon, carbon dioxide</composition>
+    <pressure>1.0</pressure>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>Kepler-452b I</name>
+      <diameter>3200</diameter>
+      <discovery year="2017"/>
+      <composition>rocky</composition>
+    </moon>
+    <moon>
+      <name>Kepler-452b II</name>
+      <diameter>1500</diameter>
+      <discovery year="2019"/>
+      <composition>icy</composition>
+    </moon>
+  </moons>
+  <rings present="true">
+    <count>3</count>
+    <details>
+      <material>ice and rock</material>
+      <width>15000</width>
+    </details>
+  </rings>
+</planet>

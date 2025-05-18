@@ -1,0 +1,29 @@
+
+galaxy:
+  name: Andromeda
+  type: Spiral
+  distance_mly: 2530000
+  discovery:
+    year: 964
+    telescope: Naked Eye
+    astronomer: Abd al-Rahman al-Sufi
+  planets:
+    - name: Xerion
+      radius_km: 14250
+      has_life: true
+      moons:
+        - name: Selene
+          diameter_km: 3500
+        - name: Nyx
+          diameter_km: 2100
+    - name: Virelia
+      radius_km: 9800
+      has_life: false
+      moons:
+        - name: Umbra
+          diameter_km: 1200
+  notable_events:
+    - event: Supernova SN1885A
+      year: 1885
+    - event: First Exoplanet Discovery
+      year: 2278

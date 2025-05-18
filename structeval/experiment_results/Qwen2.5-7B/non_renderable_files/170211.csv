@@ -1,0 +1,28 @@
+
+import csv
+from xml.etree import ElementTree
+
+# Parse the XML data
+tree = ElementTree.parse('artifacts.xml')
+root = tree.getroot()
+
+# Open a file for writing the CSV data
+with open('artifacts.csv', 'w', newline='') as csvfile:
+    # Create a CSV writer object
+    csvwriter = csv.writer(csvfile)
+
+    # Write the header row
+    csvwriter.writerow(['ArtifactID', 'DiscoverySite', 'Era', 'Material', 'WeightGrams', 'DiscoveryDate'])
+
+    # Iterate over the Artifact elements in the XML data
+    for artifact in root.findall('Artifact'):
+        # Extract the data from each Artifact element
+        artifact_id = artifact.find('ArtifactID').text
+        discovery_site = artifact.find('DiscoverySite').text
+        era = artifact.find('Era').text
+        material = artifact.find('Material').text
+        weight_grams = artifact.find('WeightGrams').text
+        discovery_date = artifact.find('DiscoveryDate').text
+
+        # Write the data as a row in the CSV file
+        csvwriter.writerow([artifact_id, discovery_site, era, material, weight_grams, discovery_date])

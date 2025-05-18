@@ -1,0 +1,48 @@
+expedition:
+  team:
+    name: "Ares VI Exploration Team"
+    members:
+      - full_name: "Dr. Evelyn Hayes"
+        role: "Astrobiologist"
+        skills:
+          - "Microbial Analysis"
+          - "Geochemical Sampling"
+          - "Survival Training"
+        equipment:
+          - item: "Bioanalyzer 3000"
+            quantity: 1
+          - item: "Geological Hammer"
+            quantity: 1
+      - full_name: "Commander Marcus Cole"
+        role: "Pilot"
+        skills:
+          - "Orbital Mechanics"
+          - "Emergency Landing Procedures"
+          - "Weapons Training"
+        equipment:
+          - item: "Navigation System"
+            quantity: 1
+          - item: "Sidearm"
+            quantity: 1
+  destination:
+    planet: "Europa"
+    coordinates:
+      latitude: 15.45
+      longitude: -30.22
+  objectives:
+    primary: "Search for evidence of extant or extinct life in Europa's subsurface ocean."
+    secondary:
+      - "Analyze the chemical composition of Europa's ice shell."
+      - "Map the geological features of the landing site."
+      - "Collect samples for future research."
+  timeline:
+    departure_date: "2077-03-15"
+    estimated_arrival: "2079-09-20"
+  resources:
+    supplies:
+      food_kg: 500.0
+      water_liters: 1000.0
+    vehicles:
+      - "Europa Lander"
+      - "Surface Rover"
+      - "Orbital Shuttle"

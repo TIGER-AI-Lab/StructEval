@@ -1,0 +1,67 @@
+
+import xml.etree.ElementTree as ET
+
+def generate_recipe_xml(title, author_name, author_contact, ingredients, steps, metadata, nutrition):
+    recipe = ET.Element("recipe")
+    recipe.set("title", title)
+
+    author = ET.SubElement(recipe, "author")
+    author.set("name", author_name)
+    author.set("contact", author_contact)
+
+    for ingredient in ingredients:
+        name, quantity, unit = ingredient
+        ingredient_elem = ET.SubElement(recipe, "ingredient")
+        ingredient_elem.set("name", name)
+        ingredient_elem.set("quantity", str(quantity))
+        ingredient_elem.set("unit", unit)
+
+    for step in steps:
+        description, duration_minutes, tools = step
+        step_elem = ET.SubElement(recipe, "step")
+        step_elem.set("description", description)
+        step_elem.set("duration_minutes", str(duration_minutes))
+        step_elem.set("tools", tools)
+
+    metadata_elem = ET.SubElement(recipe, "metadata")
+    metadata_elem.set("cuisine", metadata["cuisine"])
+    metadata_elem.set("difficulty", metadata["difficulty"])
+    metadata_elem.set("servings", str(metadata["servings"]))
+    metadata_elem.set("prep_time", metadata["prep_time"])
+    metadata_elem.set("cook_time", metadata["cook_time"])
+
+    nutrition_elem = ET.SubElement(recipe, "nutrition")
+    nutrition_elem.set("calories", str(nutrition["calories"]))
+    nutrition_elem.set("fat", str(nutrition["fat"]))
+    nutrition_elem.set("protein", str(nutrition["protein"]))
+
+    return ET.tostring(recipe, encoding="unicode")
+
+# Example usage:
+title = "Spaghetti Carbonara"
+author_name = "John Doe"
+author_contact = "john.doe@example.com"
+ingredients = [("Spaghetti", 500, "g"), ("Eggs", 4, ""), ("Pancetta", 200, "g"), ("Parmesan", 50, "g")]
+steps = [
+    ("Cook spaghetti in salted water until al dente.", 10, "Pasta pot"),
+    ("Fry pancetta until crispy, then remove and set aside.", 5, "Frying pan"),
+    ("In a bowl, whisk eggs with Parmesan and a pinch of salt.", 2, ""),
+    ("Drain spaghetti and add to egg mixture, tossing to combine.", 2, "Large bowl"),
+    ("Add pancetta and toss again.", 1, ""),
+    ("Serve immediately.", 0, "")
+]
+metadata = {
+    "cuisine": "Italian",
+    "difficulty": "Easy",
+    "servings": 4,
+    "prep_time": "PT15M",
+    "cook_time": "PT20M"
+}
+nutrition = {
+    "calories": 500,
+    "fat": 20,
+    "protein": 30
+}
+
+xml_output = generate_recipe_xml(title, author_name, author_contact, ingredients, steps, metadata, nutrition)
+print(xml_output)

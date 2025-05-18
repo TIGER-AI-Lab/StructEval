@@ -1,0 +1,38 @@
+{
+  "planet": {
+    "name": "Nova Terra",
+    "discovery": {
+      "year": 2024,
+      "method": "transit"
+    },
+    "orbital_parameters": {
+      "semi_major_axis": 0.85,
+      "eccentricity": 0.12,
+      "inclination": 89.7
+    },
+    "atmosphere": {
+      "composition": {
+        "primary_gas": "Nitrogen",
+        "trace_gases": ["Oxygen", "Argon", "Carbon Dioxide"]
+      },
+      "pressure": 1.02
+    },
+    "moons": [
+      {
+        "name": "Luna Nova",
+        "diameter_km": 3470,
+        "orbit": {
+          "period_days": 27.3,
+          "distance_km": 384400
+        }
+      }
+    ],
+    "rings": [
+      {
+        "name": "Aurelia Ring",
+        "radius_inner_km": 75000,
+        "radius_outer_km": 85000
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "ecosystem": {
+    "name": "The Whispering Mire",
+    "location": {
+      "planet": "Xylos",
+      "region": "The Great Southern Swamps"
+    },
+    "climate": {
+      "average_temperature_celsius": 18,
+      "rainfall_mm_per_year": 2500
+    },
+    "flora": [
+      {
+        "species": "Luminaria Sylvestris",
+        "population_estimate": 500000,
+        "conservation_status": "least concern"
+      },
+      {
+        "species": "Umbra Fungus",
+        "population_estimate": 1200000,
+        "conservation_status": "least concern"
+      }
+    ],
+    "fauna": [
+      {
+        "species": "Swamp Strider",
+        "average_weight_kg": 35,
+        "diet_type": "herbivore",
+        "conservation_status": "vulnerable"
+      },
+      {
+        "species": "Shadow Serpent",
+        "average_weight_kg": 12,
+        "diet_type": "carnivore",
+        "conservation_status": "near threatened"
+      }
+    ],
+    "researchers": [
+      {
+        "name": "Dr. Aris Thorne",
+        "specialization": "Xylosian Botany",
+        "years_active": 15
+      },
+      {
+        "name": "Dr. Lena Hanson",
+        "specialization": "Xylosian Zoology",
+        "years_active": 10
+      }
+    ]
+  }
+}

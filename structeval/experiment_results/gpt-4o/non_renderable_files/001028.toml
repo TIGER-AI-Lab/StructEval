@@ -1,0 +1,24 @@
+[ship]
+name = "Stellar Voyager"
+class = "Explorer"
+
+[ship.captain]
+name = "Captain Jane Starwind"
+rank = "Commodore"
+species = "Human"
+
+[[ship.crew]]
+name = "Lt. Zorak Quasar"
+role = "Engineer"
+species = "Andromedan"
+age = 35
+skills = ["Engineering", "Astrophysics", "Quantum Mechanics"]
+
+[[ship.log]]
+date = "2023-10-15T14:30:00Z"
+entry = "Departed from Earth orbit, all systems operational."
+location = "Earth Orbit"
+
+[[ship.cargo]]
+item = "Quantum Fuel Cells"
+quantity = 50

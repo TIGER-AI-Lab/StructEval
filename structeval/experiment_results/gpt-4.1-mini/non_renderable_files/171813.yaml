@@ -1,0 +1,18 @@
+
+spaceStation:
+  name: Orbital Harmony
+  modules:
+    - module:
+        type: Laboratory
+        crew:
+          member:
+            - name: Dr. Vega
+              role: Biologist
+            - name: Lt. Orion
+              role: Engineer
+    - module:
+        type: Habitat
+        crew:
+          member:
+            - name: Cmdr. Luna
+              role: Commander

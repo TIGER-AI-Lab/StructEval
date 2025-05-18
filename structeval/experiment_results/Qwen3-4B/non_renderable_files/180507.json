@@ -1,0 +1,48 @@
+
+{
+  "planet_name": "Gliese 581d",
+  "classification": "Super-Earth",
+  "distance_from_earth": "20.3 light-years",
+  "atmosphere": {
+    "composition": ["carbon dioxide", "nitrogen", "water vapor"],
+    "pressure": 1.6,
+    "layers": [
+      {
+        "name": "Troposphere",
+        "altitude_km": "0-15"
+      },
+      {
+        "name": "Stratosphere",
+        "altitude_km": "15-50"
+      }
+    ]
+  },
+  "moons": [
+    {
+      "name": "Eos",
+      "diameter_km": 3200,
+      "has_rings": false
+    },
+    {
+      "name": "Selene",
+      "diameter_km": 4200,
+      "has_rings": true
+    }
+  ],
+  "exploration": {
+    "missions": [
+      {
+        "name": "Project Dawn",
+        "year": 2093,
+        "success": true
+      },
+      {
+        "name": "Aurora Probe",
+        "year": 2101,
+        "success": false
+      }
+    ]
+  },
+  "discovered_by": "Dr. Mira Patel",
+  "discovery_year": 2087
+}

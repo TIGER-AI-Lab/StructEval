@@ -1,0 +1,38 @@
+expedition:
+  name: Interstellar Odyssey
+  launch_date: 2023-09-15
+  crew:
+    - role: Commander
+      name: Captain Sarah Mitchell
+      age: 42
+      skills:
+        - Leadership
+        - Navigation
+        - Emergency Response
+    - role: Engineer
+      name: Dr. Michael Thompson
+      age: 38
+      skills:
+        - Robotics
+        - Life Support Systems
+        - Data Analysis
+  cargo:
+    supplies:
+      food_kg: 5000
+      water_liters: 3000
+    equipment:
+      - type: Communication Devices
+        quantity: 4
+      - type: Medical Kits
+        quantity: 6
+  destination:
+    planet: Kepler-62f
+    moons: 
+      - Kepler-62f-1
+      - Kepler-62f-2
+  mission_objectives:
+    primary: Establish a research station on Kepler-62f
+    secondary:
+      - Study the planet's geology
+      - Assess potential for human habitation
+      - Investigate the moon's environmental conditions

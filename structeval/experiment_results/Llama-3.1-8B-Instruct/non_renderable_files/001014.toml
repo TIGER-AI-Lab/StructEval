@@ -1,0 +1,36 @@
+
+expedition = {
+  name = "Galactic Horizon Expedition"
+  launch_date = "2025-01-01"
+  destination = {
+    planet = "Mars"
+    coordinates = {
+      latitude = 42.0
+      longitude = 78.0
+    }
+  }
+  crew = [
+    {
+      name = "John Doe"
+      role = "Commander"
+      age = 35
+      certifications = ["Pilot", "Engineer"]
+    }
+    {
+      name = "Jane Smith"
+      role = "Scientist"
+      age = 28
+      certifications = ["Biologist", "Physicist"]
+    }
+  ]
+  cargo = [
+    {
+      item = "Food Supplies"
+      quantity = 1000
+    }
+    {
+      item = "Medical Equipment"
+      quantity = 500
+    }
+  ]
+}

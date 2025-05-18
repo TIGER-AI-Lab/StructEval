@@ -1,0 +1,21 @@
+
+<planet>
+  <name>Zyphora</name>
+  <moons>
+    <moon>
+      <name>Lunara</name>
+      <diameter_km>3200</diameter_km>
+    </moon>
+    <moon>
+      <name>Calyx</name>
+      <diameter_km>2100</diameter_km>
+    </moon>
+  </moons>
+  <rings>
+    <count>2</count>
+    <materials>
+      <material>ice</material>
+      <material>silicate dust</material>
+    </materials>
+  </rings>
+</planet>

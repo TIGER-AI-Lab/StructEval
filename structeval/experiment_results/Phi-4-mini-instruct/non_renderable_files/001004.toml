@@ -1,0 +1,19 @@
+
+[museum]
+name = "Fictional Art and History Museum"
+location = { city = "Metropolis", country = "Utopia" }
+established_year = 1985
+director = { full_name = "Jane Doe", tenure_years = 10 }
+
+[exhibits]
+- title = "The Enchanted Forest"
+  artist = "A. L. Artist"
+  year_created = 1990
+  medium = "Oil on canvas"
+  dimensions = { height_cm = 150, width_cm = 100 }
+  on_display = true
+  tags = ["Fantasy", "Nature", "Imagination"]
+
+[opening_hours]
+weekdays = "9:00 AM - 7:00 PM"
+weekends = "10:00 AM - 6:00 PM"

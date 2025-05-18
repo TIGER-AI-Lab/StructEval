@@ -1,0 +1,98 @@
+<recipe>
+    <title>Rainbow Veggie Skewers with Peanut Sauce</title>
+    <author>
+        <name>Chef Rainbow</name>
+        <contact>chef.rainbow@email.com</contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Red bell pepper</name>
+            <quantity>1</quantity>
+            <unit>piece</unit>
+        </ingredient>
+        <ingredient>
+            <name>Yellow bell pepper</name>
+            <quantity>1</quantity>
+            <unit>piece</unit>
+        </ingredient>
+        <ingredient>
+            <name>Green bell pepper</name>
+            <quantity>1</quantity>
+            <unit>piece</unit>
+        </ingredient>
+        <ingredient>
+            <name>Red onion</name>
+            <quantity>1</quantity>
+            <unit>piece</unit>
+        </ingredient>
+        <ingredient>
+            <name>Zucchini</name>
+            <quantity>1</quantity>
+            <unit>piece</unit>
+        </ingredient>
+        <ingredient>
+            <name>Cherry tomatoes</name>
+            <quantity>1</quantity>
+            <unit>pint</unit>
+        </ingredient>
+        <ingredient>
+            <name>Peanut butter</name>
+            <quantity>0.5</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Soy sauce</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Honey</name>
+            <quantity>1</quantity>
+            <unit>tablespoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Lime juice</name>
+            <quantity>1</quantity>
+            <unit>tablespoon</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Chop all vegetables into 1-inch pieces.</description>
+            <duration_minutes>15</duration_minutes>
+            <tools>Knife, Cutting board</tools>
+        </step>
+        <step>
+            <description>Thread vegetables onto skewers, alternating colors.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>Skewers</tools>
+        </step>
+        <step>
+            <description>Whisk together peanut butter, soy sauce, honey, and lime juice for the sauce.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>Whisk, Small bowl</tools>
+        </step>
+        <step>
+            <description>Grill skewers for 5-7 minutes per side, or until tender and slightly charred.</description>
+            <duration_minutes>15</duration_minutes>
+            <tools>Grill, Tongs</tools>
+        </step>
+        <step>
+            <description>Serve skewers with peanut sauce.</description>
+            <duration_minutes>2</duration_minutes>
+            <tools></tools>
+        </step>
+    </steps>
+    <metadata>
+        <cuisine>Asian Fusion</cuisine>
+        <difficulty>Easy</difficulty>
+        <servings>4</servings>
+        <prep_time>PT20M</prep_time>
+        <cook_time>PT15M</cook_time>
+    </metadata>
+    <nutrition>
+        <calories>350</calories>
+        <fat>15</fat>
+        <protein>12</protein>
+    </nutrition>
+</recipe>

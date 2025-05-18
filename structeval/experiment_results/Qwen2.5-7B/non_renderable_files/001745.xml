@@ -1,0 +1,67 @@
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>John Doe</name>
+    <profileUrl>https://example.com/johndoe</profileUrl>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>g</unit>
+    </ingredient>
+    <ingredient>
+      <name>Guanciale or Pancetta</name>
+      <quantity>100</quantity>
+      <unit>g</unit>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>pcs</unit>
+    </ingredient>
+    <ingredient>
+      <name>Parmesan Cheese</name>
+      <quantity>50</quantity>
+      <unit>g</unit>
+    </ingredient>
+    <ingredient>
+      <name>Black Pepper</name>
+      <quantity>1</quantity>
+      <unit>spoon</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <instruction stepNumber="1">
+      <description>Boil water and cook spaghetti according to package instructions.</description>
+      <timer durationMinutes="10" optional="false"/>
+    </instruction>
+    <instruction stepNumber="2">
+      <description>Cook Guanciale or Pancetta in a pan until crispy.</description>
+      <timer durationMinutes="5" optional="false"/>
+    </instruction>
+    <instruction stepNumber="3">
+      <description>Beat eggs with Parmesan cheese and black pepper.</description>
+      <timer durationMinutes="0" optional="true"/>
+    </instruction>
+    <instruction stepNumber="4">
+      <description>Add cooked spaghetti to the pan with Guanciale or Pancetta and pour the egg mixture over it.</description>
+      <timer durationMinutes="3" optional="false"/>
+    </instruction>
+    <instruction stepNumber="5">
+      <description>Mix everything together and serve hot.</description>
+      <timer durationMinutes="0" optional="true"/>
+    </instruction>
+  </instructions>
+  <nutrition>
+    <calories>1200</calories>
+    <fat>50</fat>
+    <carbohydrates>100</carbohydrates>
+    <protein>60</protein>
+  </nutrition>
+  <tags>
+    <tag>Pasta</tag>
+    <tag>Italian</tag>
+    <tag>Dinner</tag>
+  </tags>
+</recipe>

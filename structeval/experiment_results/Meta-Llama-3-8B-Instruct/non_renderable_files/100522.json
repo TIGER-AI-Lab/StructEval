@@ -1,0 +1,29 @@
+
+{
+  "spaceship": {
+    "name": "Starlance",
+    "model": "XG-9",
+    "crew": {
+      "captain": "Dr. Nova Vega",
+      "pilots": ["Aiden Ray", "Mira Solis"],
+      "engineers": ["Taro Chen", "Lina Patel"]
+    },
+    "specs": {
+      "length_meters": 72.5,
+      "mass_tons": 1800,
+      "fuel_types": ["antimatter", "helium-3"]
+    },
+    "missions": [
+      {
+        "name": "Nebula Drift",
+        "destination": "Orion Nebula",
+        "success": true
+      },
+      {
+        "name": "Europa Survey",
+        "destination": "Europa",
+        "success": false
+      }
+    ]
+  }
+}

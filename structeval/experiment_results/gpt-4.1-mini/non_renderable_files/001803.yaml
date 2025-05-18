@@ -1,0 +1,37 @@
+
+museum:
+  name: "The Grand Art Museum"
+  location:
+    city: "New York"
+    country: "USA"
+  founded_year: 1923
+  director:
+    full_name: "Dr. Eleanor Whitman"
+    tenure_years: 12
+  galleries:
+    - title: "Impressionist Gallery"
+      floor: 2
+      artworks:
+        - artist: "Claude Monet"
+          title: "Water Lilies"
+          year_created: 1916
+          medium: "Oil on canvas"
+          on_display: true
+        - artist: "Edgar Degas"
+          title: "The Ballet Class"
+          year_created: 1874
+          medium: "Oil on canvas"
+          on_display: false
+    - title: "Modern Art Gallery"
+      floor: 3
+      artworks:
+        - artist: "Pablo Picasso"
+          title: "Les Demoiselles d'Avignon"
+          year_created: 1907
+          medium: "Oil on canvas"
+          on_display: true
+        - artist: "Jackson Pollock"
+          title: "No. 5, 1948"
+          year_created: 1948
+          medium: "Oil on fiberboard"
+          on_display: true

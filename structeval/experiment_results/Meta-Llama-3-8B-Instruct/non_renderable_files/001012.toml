@@ -1,0 +1,40 @@
+
+artifact = {
+  name = "Newly Discovered Alien Artifact",
+  origin = {
+    civilization = "Zorvathians",
+    era = "Ancient Era of Galactic Expansion"
+  },
+  materials = [
+    {
+      type = "Unobtanium",
+      quantity_grams = 1000.5
+    },
+    {
+      type = "G'lunkian Crystal",
+      quantity_grams = 250.2
+    }
+  ],
+  dimensions = {
+    height_cm = 30.1,
+    width_cm = 20.3,
+    depth_cm = 15.7
+  },
+  inscriptions = [
+    {
+      language = "Zorvathian",
+      translation = "Greetings, Earthlings"
+    },
+    {
+      language = "G'lunkian",
+      translation = "May the cosmos guide you"
+    }
+  ],
+  discovery = {
+    date_iso = "2022-07-15T14:30:00Z",
+    location = {
+      latitude = 43.2134,
+      longitude = -71.5678
+    }
+  }
+}

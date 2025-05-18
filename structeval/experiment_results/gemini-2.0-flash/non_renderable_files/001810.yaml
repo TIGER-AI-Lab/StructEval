@@ -1,0 +1,37 @@
+exhibit:
+  title: "Abstract Expressions: A Retrospective"
+  curator:
+    name: "Dr. Eleanor Vance"
+    contact:
+      email: "eleanor.vance@artmuseum.org"
+      phone: "+1-202-555-0123"
+  opening_date: "2024-03-15"
+  closing_date: "2024-06-01"
+  rooms:
+    - name: "Room 1: Origins of Abstraction"
+      theme: "Early explorations of abstract form and color"
+      artworks:
+        - artist: "Wassily Kandinsky"
+          title: "Composition VII"
+          year: 1913
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 200
+            width_cm: 300
+          provenance: "Private collection, New York"
+        - artist: "Kazimir Malevich"
+          title: "Black Square"
+          year: 1915
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 79.5
+            width_cm: 79.5
+          provenance: "State Tretyakov Gallery, Moscow"
+        - artist: "Piet Mondrian"
+          title: "Composition with Red, Blue and Yellow"
+          year: 1930
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 46
+            width_cm: 46
+          provenance: "Kunsthaus ZÃ¼rich"

@@ -1,0 +1,5 @@
+
+artifact_id,artifact_name,discovery.site,discovery.date_found,discovery.discoverer,origin.culture,origin.estimated_age,origin.materials,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,condition.status,condition.restoration_needed,current_location.museum,current_location.exhibit_hall
+"001","Ancient Vase","Pompeii","79-08-24","Archaeological Team A","Roman",1944,"Ceramic;Glaze",30.5,20.0,15.0,"intact",false,"National Archaeological Museum","Room 5"
+"002","Stone Tool","Olduvai Gorge","1959-07-17","Louis Leakey","Homo Habilis",1,"Stone",10.0,5.0,2.0,"fragmentary",true,"Tanzania National Museum","Exhibit A"
+"003","Gold Necklace","Tutankhamun's Tomb","1922-11-04","Howard Carter","Ancient Egyptian",3325,"Gold;Lapis Lazuli",25.0,1.5,1.0,"restored",false,"Egyptian Museum","Hall of Treasures"

@@ -1,0 +1,4 @@
+artifact_id,artifact_name,origin_civilization,discovery_date,material.primary,material.secondary,estimated_age_years,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,location.site_name,location.latitude,location.longitude,current_condition.status,current_condition.restoration_needed,notable_markings[0].type,notable_markings[0].description
+"artifact_001","Ancient Vase","Minoan Civilization","2023-04-15","Clay","","2500","30","15","10","Knossos","35.3015","25.4313","intact","false","inscription","Contains a series of hieroglyphs"
+"artifact_002","Bronze Spearhead","Mycenaean Civilization","2023-05-22","Bronze","Iron","3200","60","5","2","Mycenae","37.9575","22.6817","fragmented","true","symbol","Depicts a warrior in battle"
+"artifact_003","Gold Coin","Roman Empire","2023-06-30","Gold","Silver","2000","2.5","2.5","0.2","Rome","41.9028","12.4964","intact","false","inscription","Shows the face of Emperor Augustus"

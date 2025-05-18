@@ -1,0 +1,44 @@
+
+{
+  "creature": {
+    "species": "Luminara",
+    "habitat": {
+      "region": "Tropical Rainforest",
+      "climate": "tropical",
+      "features": ["Dense vegetation", "High humidity"]
+    },
+    "appearance": {
+      "size": 3.5,
+      "color": {
+        "primary": "deep blue",
+        "secondary": "white"
+      }
+    },
+    "abilities": [
+      {
+        "name": "Bioluminescent Light",
+        "power_level": 8,
+        "cooldown_seconds": 60
+      },
+      {
+        "name": "Shadow Manipulation",
+        "power_level": 7,
+        "cooldown_seconds": 120
+      }
+    ],
+    "behavior": {
+      "diet": {
+        "type": "omnivore",
+        "favorite_foods": ["Fruit", "Insects"]
+      },
+      "social": {
+        "is_social": true,
+        "group_size": 15
+      }
+    },
+    "discovery": {
+      "date": "2023-05-15",
+      "discoverer": "Dr. Elara Morn"
+    }
+  }
+}

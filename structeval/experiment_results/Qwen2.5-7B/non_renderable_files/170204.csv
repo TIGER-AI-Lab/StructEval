@@ -1,0 +1,76 @@
+python
+import csv
+import xml.etree.ElementTree as ET
+
+# Parse the XML data
+xml_data = '''
+<stars>
+  <row>
+    <Constellation>Orion</Constellation>
+    <DiscoveryYear>1781</DiscoveryYear>
+    <ApparentMagnitude>0.18</ApparentMagnitude>
+    <DistanceLightYears>642.5</DistanceLightYears>
+    <SpectralType>B0Ia</SpectralType>
+    <NotableFeature>Supergiant</NotableFeature>
+  </row>
+  <row>
+    <Constellation>Lyra</Constellation>
+    <DiscoveryYear>1850</DiscoveryYear>
+    <ApparentMagnitude>0.03</ApparentMagnitude>
+    <DistanceLightYears>25.04</DistanceLightYears>
+    <SpectralType>A0V</SpectralType>
+    <NotableFeature>Fast Rotator</NotableFeature>
+  </row>
+  <row>
+    <Constellation>Centaurus</Constellation>
+    <DiscoveryYear>1915</DiscoveryYear>
+    <ApparentMagnitude>-0.27</ApparentMagnitude>
+    <DistanceLightYears>4.37</DistanceLightYears>
+    <SpectralType>G2V</SpectralType>
+    <NotableFeature>Closest Star System</NotableFeature>
+  </row>
+  <row>
+    <Constellation>Canis Major</Constellation>
+    <DiscoveryYear>1844</DiscoveryYear>
+    <ApparentMagnitude>-1.46</ApparentMagnitude>
+    <DistanceLightYears>8.6</DistanceLightYears>
+    <SpectralType>A1V</SpectralType>
+    <NotableFeature>Brightest Star</NotableFeature>
+  </row>
+  <row>
+    <Constellation>Ursa Minor</Constellation>
+    <DiscoveryYear>1690</DiscoveryYear>
+    <ApparentMagnitude>2.02</ApparentMagnitude>
+    <DistanceLightYears>431</DistanceLightYears>
+    <SpectralType>F7Ib</SpectralType>
+    <NotableFeature>North Star</NotableFeature>
+  </row>
+  <row>
+    <Constellation>Scorpius</Constellation>
+    <DiscoveryYear>1819</DiscoveryYear>
+    <ApparentMagnitude>1.09</ApparentMagnitude>
+    <DistanceLightYears>550</DistanceLightYears>
+    <SpectralType>M1.5Iab-b</SpectralType>
+    <NotableFeature>Red Supergiant</NotableFeature>
+  </row>
+</stars>
+'''
+
+# Parse the XML
+root = ET.fromstring(xml_data)
+
+# Extract headers from the first row
+headers = [child.tag for child in root[0]]
+
+# Open a file for writing the CSV
+with open('output.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+
+    # Write the headers
+    writer.writerow(headers)
+
+    # Write the data rows
+    for row in root[1:]:
+        writer.writerow([child.text for child in row])
+
+# The CSV file 'output.csv' is now created with the data from the XML

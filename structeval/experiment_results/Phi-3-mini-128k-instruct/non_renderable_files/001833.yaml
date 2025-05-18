@@ -1,0 +1,24 @@
+planet:
+  name: Zephyria
+  type: Terrestrial
+  discovery:
+    year: 2045
+    method: Space Telescope
+  atmosphere:
+    composition:
+      - Nitrogen
+      - Oxygen
+      - Argon
+    pressure: 101.3
+    temperature: 288
+  moons:
+    - name: Lunaris
+      diameter_km: 3474
+      orbital_period_days: 27.3
+      surface_features:
+        - feature_type: Crater
+          description: "The largest crater on Lunaris, named 'Aether's Eye', spans over 150 kilometers in diameter."
+          coordinates: "12.34, -56.78"
+        - feature_type: Mountain
+          description: "Mount 'Helios' is a towering peak rising 7 kilometers above the surrounding plains."
+          coordinates: "23.45, 67.89"

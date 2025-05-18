@@ -1,0 +1,14 @@
+
+galactic_zoo:
+  animals:
+    - name: Zylox
+      species: Quantum Panther
+      origin_planet: Vortis-9
+      abilities:
+        - Invisibility
+        - Time Leap
+    - name: Flarb
+      species: Plasma Tortoise
+      origin_planet: Kepler-442b
+      abilities:
+        - Plasma Shell

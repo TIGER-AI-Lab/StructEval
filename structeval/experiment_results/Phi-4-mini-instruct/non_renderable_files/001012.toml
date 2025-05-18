@@ -1,0 +1,14 @@
+
+[artifact]
+name = "The Celestial Compass"
+origin = { civilization = "Zyphar", era = "Eon of Enlightenment" }
+materials = [
+  { type = "Stellar Crystal", quantity_grams = 1500 },
+  { type = "Quantum Alloy", quantity_grams = 300 }
+]
+dimensions = { height_cm = 45, width_cm = 30, depth_cm = 10 }
+inscriptions = [
+  { language = "Zyphar", translation = "Guidance through the stars" },
+  { language = "Xenon", translation = "Pathfinder of the cosmos" }
+]
+discovery = { date_iso = "2023-04-01", location = { latitude = 34.0522, longitude = -118.2437 } }

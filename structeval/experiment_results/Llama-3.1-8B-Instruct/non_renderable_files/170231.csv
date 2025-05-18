@@ -1,0 +1,21 @@
+
+import xml.etree.ElementTree as ET
+import csv
+
+tree = ET.parse('creatures.xml')
+root = tree.getroot()
+
+with open('creatures.csv', 'w', newline='') as csvfile:
+    fieldnames = ['CreatureName', 'Habitat', 'DiscoveryDate', 'NumberOfLegs', 'IsNocturnal', 'AverageWingspanCm']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for creature in root.findall('creature'):
+        writer.writerow({
+            'CreatureName': creature.find('CreatureName').text,
+            'Habitat': creature.find('Habitat').text,
+            'DiscoveryDate': creature.find('DiscoveryDate').text,
+            'NumberOfLegs': creature.find('NumberOfLegs').text,
+            'IsNocturnal': creature.find('IsNocturnal').text,
+            'AverageWingspanCm': creature.find('AverageWingspanCm').text
+        })

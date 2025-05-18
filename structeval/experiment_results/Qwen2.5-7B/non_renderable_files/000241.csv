@@ -1,0 +1,44 @@
+python
+import csv
+from datetime import datetime
+
+# Define the agent's information
+agent_info = {
+    'character_id': 'AGENT123',
+    'name': 'James Bond',
+    'species': 'Human',
+    'origin_planet': 'Earth',
+    'age': 45,
+    'affiliation': 'MI6',
+    'rank': 'Agent',
+    'mission_count': 123,
+    'last_mission_date': datetime.now().strftime('%Y-%m-%d'),
+    'favorite_gadget': 'Pierce Brosnan',
+    'nemesis_name': 'Evil Dr. Evil',
+    'nemesis_species': 'Human',
+    'nemesis_last_encounter': datetime(2022, 1, 1).strftime('%Y-%m-%d'),
+    'sidekick_name': 'Q',
+    'sidekick_type': 'Human'
+}
+
+# Define the nemesis's information
+nemesis_info = {
+    'name': 'Evil Dr. Evil',
+    'species': 'Human',
+    'last_encounter': datetime(2022, 1, 1).strftime('%Y-%m-%d')
+}
+
+# Define the sidekick's information
+sidekick_info = {
+    'name': 'Q',
+    'type': 'Human'
+}
+
+# Create a list of dictionaries containing the agent's and their nemesis's and sidekick's information
+data = [agent_info, nemesis_info, sidekick_info]
+
+# Write the data to a CSV file
+with open('agent_info.csv', 'w', newline='') as file:
+    writer = csv.DictWriter(file, fieldnames=agent_info.keys())
+    writer.writeheader()
+    writer.writerows(data)

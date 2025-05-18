@@ -1,0 +1,20 @@
+museum:
+  name: "The Grand Art Museum"
+  location:
+    city: "Artville"
+    country: "Imaginaria"
+  established_year: 1985
+  director:
+    name: "Dr. Jane Doe"
+    tenure_years: 10
+  galleries:
+    - title: "The Dawn of Imagination"
+      theme: "Exploration of Dreams and Fantasies"
+      artworks:
+        - title: "Dreamscape"
+          artist: "Alexei Petrov"
+          year_created: 2001
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 150
+            width_cm: 200

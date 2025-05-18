@@ -1,0 +1,101 @@
+
+<recipe>
+  <title>Spicy Mango Avocado Salsa</title>
+  <author>
+    <name>Jessica Martinez</name>
+    <contact>
+      <email>jessica.martinez@example.com</email>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Mango</name>
+      <quantity>2</quantity>
+      <unit>cups</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Avocado</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Red Onion</name>
+      <quantity>0.5</quantity>
+      <unit>cups</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>JalapeÃ±o</name>
+      <quantity>1</quantity>
+      <unit>piece</unit>
+      <optional>true</optional>
+    </ingredient>
+    <ingredient>
+      <name>Lime Juice</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Cilantro</name>
+      <quantity>0.25</quantity>
+      <unit>cups</unit>
+      <optional>true</optional>
+    </ingredient>
+    <ingredient>
+      <name>Salt</name>
+      <quantity>0.5</quantity>
+      <unit>teaspoons</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Dice the mango and avocado into small cubes and finely chop the red onion and jalapeÃ±o. Combine all in a mixing bowl.</description>
+      <duration_minutes>10</duration_minutes>
+      <tools>
+        <tool>
+          <name>Mixing Bowl</name>
+          <required>true</required>
+        </tool>
+        <tool>
+          <name>Knife</name>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+    <step>
+      <description>Add lime juice, chopped cilantro, and salt to the bowl. Stir gently to combine all ingredients without mashing the avocado.</description>
+      <duration_minutes>5</duration_minutes>
+      <tools>
+        <tool>
+          <name>Spoon</name>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+    <step>
+      <description>Chill the salsa in the refrigerator for 15 minutes before serving to allow flavors to meld.</description>
+      <duration_minutes>15</duration_minutes>
+      <tools>
+        <tool>
+          <name>Refrigerator</name>
+          <required>false</required>
+        </tool>
+      </tools>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>180</calories>
+    <fat_grams>9.5</fat_grams>
+    <protein_grams>2.3</protein_grams>
+  </nutrition>
+  <tags>
+    <tag>Fresh</tag>
+    <tag>Vegan</tag>
+    <tag>Gluten-Free</tag>
+    <tag>Appetizer</tag>
+  </tags>
+</recipe>

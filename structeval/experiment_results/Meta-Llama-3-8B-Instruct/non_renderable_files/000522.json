@@ -1,0 +1,40 @@
+
+{
+    "expedition": {
+        "mission_name": "Galactic Horizon Expedition",
+        "leader": {
+            "name": "Captain Jameson A. Thompson",
+            "rank": "Commander",
+            "contact": {
+                "email": "jthompson@galacticexplorers.com",
+                "phone": "+1 555 123 4567"
+            }
+        },
+        "crew": [
+            {
+                "name": "Dr. Sophia Patel",
+                "role": "Chief Scientist",
+                "skills": ["Astrophysics", "Biology", "Engineering"]
+            },
+            {
+                "name": "Lieutenant Michael Chen",
+                "role": "Chief Engineer",
+                "skills": ["Mechanical Engineering", "Electrical Engineering", "Robotics"]
+            }
+        ],
+        "destination": {
+            "planet": "Kepler-62f",
+            "coordinates": {
+                "latitude": 34.7232,
+                "longitude": -118.2431
+            }
+        },
+        "supply_list": [
+            {"item": "Food Rations", "quantity": 1000},
+            {"item": "Water Purification Tablets", "quantity": 500},
+            {"item": "Medical Kit", "quantity": 1},
+            {"item": "Communication Device", "quantity": 1},
+            {"item": "Life Support Equipment", "quantity": 2}
+        ]
+    }
+}

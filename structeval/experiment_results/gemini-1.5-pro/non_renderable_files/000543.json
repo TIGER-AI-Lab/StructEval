@@ -1,0 +1,43 @@
+{
+  "artifact": {
+    "name": "The Sunstone Stele",
+    "origin": {
+      "civilization": "Aztec",
+      "era": "Post-Classic"
+    },
+    "discovery": {
+      "date": "1790-12-17",
+      "location": {
+        "latitude": 19.432608,
+        "longitude": -99.133208
+      }
+    },
+    "materials": [
+      {
+        "type": "Basalt",
+        "percentage": 95
+      },
+      {
+        "type": "Obsidian",
+        "percentage": 5
+      }
+    ],
+    "inscriptions": [
+      {
+        "language": "Nahuatl",
+        "translation": "Gift to Tonatiuh"
+      },
+      {
+        "language": "Nahuatl",
+        "translation": "Fifth sun's reign"
+      }
+    ],
+    "condition": {
+      "status": "Partially weathered",
+      "restoration": {
+        "last_date": "2023-07-21",
+        "notes": "Minor crack filling and surface cleaning."
+      }
+    }
+  }
+}

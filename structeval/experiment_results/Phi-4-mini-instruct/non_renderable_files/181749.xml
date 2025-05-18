@@ -1,0 +1,29 @@
+
+<planetarium>
+  <location>
+    <city>Stellaris</city>
+    <country>Cosmica</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <name>Nebula Tunnel</name>
+      <year_opened>2015</year_opened>
+      <features>
+        <feature>
+          <item>Interactive Lights</item>
+          <item>Holographic Stars</item>
+        </feature>
+      </features>
+    </exhibit>
+    <exhibit>
+      <name>Meteorite Lab</name>
+      <year_opened>2018</year_opened>
+      <features>
+        <feature>
+          <item>Real Meteorite Samples</item>
+          <item>Impact Simulation Table</item>
+        </feature>
+      </features>
+    </exhibit>
+  </exhibits>
+</planetarium>

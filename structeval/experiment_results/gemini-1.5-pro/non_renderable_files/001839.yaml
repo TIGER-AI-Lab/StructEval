@@ -1,0 +1,29 @@
+creature:
+  name: Zephyr
+  species: Sky Wanderer
+  age: 150
+  habitat:
+    type: Aerial
+    location: High Peaks mountain range
+    features:
+      - "High altitude, thin air"
+      - "Strong winds and updrafts"
+      - "Rocky terrain with sparse vegetation"
+  abilities:
+    - name: Wind Manipulation
+      description: Can control and generate gusts of wind.
+      power_level: 8
+    - name: Cloud Camouflage
+      description: Can blend seamlessly into cloud formations.
+      power_level: 6
+  diet:
+    primary_food: Skyberries
+    secondary_foods:
+      - Sunflowers
+      - Mountain Dew
+    feeding_times:
+      - "06:00"
+      - "18:00"
+  social_behavior:
+    group_size: 5
+    hierarchy: Alpha-led

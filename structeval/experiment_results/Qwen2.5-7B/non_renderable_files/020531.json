@@ -1,0 +1,18 @@
+import pandas as pd
+import json
+
+# Read the CSV data
+data = """
+planet.name,planet.type,planet.distance_from_sun_au,planet.has_rings,planet.moons,planet.atmosphere.composition,planet.atmosphere.pressure,planet.atmosphere.layers[0].name,planet.atmosphere.layers[0].altitude_range_km,planet.atmosphere.layers[1].name,planet.atmosphere.layers[1].altitude_range_km,planet.landing_sites[0].site_name,planet.landing_sites[0].coordinates.latitude,planet.landing_sites[0].coordinates.longitude,planet.landing_sites[1].site_name,planet.landing_sites[1].coordinates.latitude,planet.landing_sites[1].coordinates.longitude
+Saturn,Gas Giant,9.58,TRUE,82,Hydrogen/Helium,140,"Troposphere","0-250",Stratosphere,"250-1000",Enceladus Base,-2.5,202.6,Titan Outpost,-1.3,210.8
+Mars,Terrestrial,1.52,FALSE,2,CO2/N2/Ar,0.6,Troposphere,"0-40",Stratosphere,"40-100",Gale Crater,-5.4,137.8,Olympus Base,18.65,226.2
+"""
+
+# Convert the CSV data to a DataFrame
+df = pd.read_csv(pd.compat.StringIO(data), sep=',')
+
+# Convert the DataFrame to a JSON string
+json_data = df.to_json(orient='records')
+
+# Print the JSON data
+print(json_data)

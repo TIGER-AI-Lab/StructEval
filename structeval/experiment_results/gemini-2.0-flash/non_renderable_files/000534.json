@@ -1,0 +1,45 @@
+{
+  "artifact": {
+    "name": "Terracotta Army Soldier",
+    "origin": {
+      "culture": "Chinese",
+      "estimated_period": "Qin Dynasty"
+    },
+    "materials": [
+      "Terracotta",
+      "Pigments"
+    ],
+    "dimensions": {
+      "height_cm": 180.0,
+      "width_cm": 60.0,
+      "depth_cm": 45.0
+    },
+    "provenance": {
+      "previous_owners": [
+        {
+          "name": "Private Collector A",
+          "acquisition_year": 1950
+        },
+        {
+          "name": "Museum B",
+          "acquisition_year": 1980
+        }
+      ]
+    },
+    "restoration_history": [
+      {
+        "date": "2005-07-15",
+        "description": "Consolidation of cracks and pigment stabilization.",
+        "restorer": "Institute of Archaeology"
+      }
+    ],
+    "exhibition_records": [
+      {
+        "venue": "National Museum of China"
+      },
+      {
+        "venue": "British Museum"
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001115</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const BankingLoginForm = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleLogin = () => {
+    if (!email || !password) {
+      setErrorMessage('Email and password are required.');
+    } else if (!email.includes('@')) {
+      setErrorMessage('Please enter a valid email address.');
+    } else {
+      setErrorMessage('');
+      // Perform login logic here
+      console.log('Logging in with:', email, password);
+    }
+  };
+
+  const handleClear = () => {
+    setEmail('');
+    setPassword('');
+    setErrorMessage('');
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <div style={{ maxWidth: '400px', width: '100%', padding: '20px', border: '1px solid #ccc', borderRadius: '5px' }}>
+        <h2 style={{ textAlign: 'center' }}>Banking Login</h2>
+        <input
+          type="text"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          style={{ width: '100%', padding: '10px', marginBottom: '10px', boxSizing: 'border-box' }}
+        />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          style={{ width: '100%', padding: '10px', marginBottom: '10px', boxSizing: 'border-box' }}
+        />
+        {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <button onClick={handleLogin} style={{ backgroundColor: 'green', color: 'white', padding: '10px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>Login</button>
+          <button onClick={handleClear} style={{ padding: '10px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>Clear</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<BankingLoginForm />);
+
+    </script>
+  </body>
+</html>

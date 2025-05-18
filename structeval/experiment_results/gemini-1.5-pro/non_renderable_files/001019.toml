@@ -1,0 +1,32 @@
+[artifact]
+name = "Egyptian Sarcophagus of Anubis"
+materials = ["Wood", "Gold", "Paint"]
+
+[artifact.origin]
+culture = "Egyptian"
+period = "Late Period"
+discovery_date = "1893-11-15"
+
+[artifact.dimensions]
+height_cm = 180
+width_cm = 60
+depth_cm = 45
+
+[artifact.current_location]
+museum = "Metropolitan Museum of Art"
+room = "Egyptian Art Gallery 10"
+display_case = "Case 32A"
+
+[[artifact.exhibitions]]
+title = "Treasures of Ancient Egypt"
+year = 1920
+city = "New York"
+curator = "Howard Carter"
+
+[[artifact.restoration_history]]
+date = "1955-07-01"
+description = "Cleaning and preservation of painted surface."
+
+[[artifact.restoration_history]]
+date = "2002-03-10"
+description = "Repair of cracks in the wood and reinforcement of the base."

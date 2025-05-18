@@ -1,0 +1,28 @@
+
+artifact:
+  name: "Ancient Greek Vase"
+  origin:
+    culture: "Ancient Greece"
+    period: "Classical Period"
+  materials:
+    primary: "Ceramic"
+    secondary:
+      - "Paint"
+      - "Glaze"
+  dimensions:
+    height_cm: 30
+    width_cm: 20
+    depth_cm: 15
+  current_location:
+    museum: "National Archaeological Museum"
+    room: "Gallery 5"
+    display_case: "Case 12"
+  inscriptions:
+    - language: "Ancient Greek"
+      text: "ÎÎ±Î»á½¸Ï á¼ÏÎ¹ÏÏÎ¿ÏÎ­Î»Î·Ï"
+      translation: "Beautiful Aristotle"
+  provenance:
+    history:
+      - owner: "John Smith"
+        date_acquired: "1985-06-15"
+        method_of_acquisition: "purchase"

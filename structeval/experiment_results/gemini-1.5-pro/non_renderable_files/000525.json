@@ -1,0 +1,41 @@
+{
+  "name": "A1234",
+  "artifact": {
+    "origin": {
+      "period": "Late Bronze Age",
+      "region": "Mediterranean"
+    },
+    "materials": [
+      {
+        "type": "Ceramic",
+        "provenance": "Local"
+      },
+      {
+        "type": "Pigment",
+        "provenance": "Imported"
+      }
+    ],
+    "dimensions": {
+      "height_cm": 10.5,
+      "width_cm": 15.2,
+      "depth_cm": 5.8
+    },
+    "features": [
+      {
+        "description": "Intricate geometric patterns",
+        "condition": "Well-preserved"
+      },
+      {
+        "description": "Traces of red pigment",
+        "condition": "Partially faded"
+      }
+    ],
+    "discovery": {
+      "location": {
+        "latitude": 35.5,
+        "longitude": 27.8
+      },
+      "date_found": "2024-03-15"
+    }
+  }
+}

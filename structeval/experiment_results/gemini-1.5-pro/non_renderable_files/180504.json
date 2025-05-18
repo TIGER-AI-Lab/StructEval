@@ -1,0 +1,53 @@
+{
+  "planet_name": "Zephyros",
+  "discovery": {
+    "year": 2194,
+    "telescope": "StellarScope X9",
+    "team": [
+      {
+        "name": "Dr. Mira Chen",
+        "role": "Lead Astronomer"
+      },
+      {
+        "name": "Prof. Luca Santori",
+        "role": "Data Analyst"
+      },
+      {
+        "name": "Aisha Patel",
+        "role": "Robotics Engineer"
+      }
+    ]
+  },
+  "physical_characteristics": {
+    "mass": 2.3e+25,
+    "radius": 9500,
+    "composition": {
+      "core": "Metallic Hydrogen",
+      "atmosphere": "Nitrogen-Oxygen"
+    }
+  },
+  "moons": [
+    {
+      "name": "Borealis",
+      "diameter_km": 3200
+    },
+    {
+      "name": "Solis",
+      "diameter_km": 1800
+    },
+    {
+      "name": "Nyx",
+      "diameter_km": 900
+    }
+  ],
+  "notable_events": [
+    {
+      "year": 2200,
+      "description": "First probe landed on Zephyros."
+    },
+    {
+      "year": 2207,
+      "description": "Signs of microbial life detected."
+    }
+  ]
+}

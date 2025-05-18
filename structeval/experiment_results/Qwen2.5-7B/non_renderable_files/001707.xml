@@ -1,0 +1,36 @@
+
+<creature>
+  <name>Drakonos the Shadow Wyrm</name>
+  <species>Wyvern</species>
+  <age>150</age>
+  <habitat>
+    <region>Dark Forest of Eldoria</region>
+    <climate>Temperate</climate>
+  </habitat>
+  <abilities>
+    <ability>
+      <name>Shadow Strike</name>
+      <powerLevel>85</powerLevel>
+      <element>Darkness</element>
+    </ability>
+    <ability>
+      <name>Blinding Speed</name>
+      <powerLevel>90</powerLevel>
+      <element>Wind</element>
+    </ability>
+  </abilities>
+  <appearance>
+    <height>12.5</height>
+    <color>Black with emerald green scales</color>
+    <features>
+      <feature>
+        <type>Winged</type>
+        <description>Leathery wings with a span of 20 meters</description>
+      </feature>
+      <feature>
+        <type>Dragon-like Head</type>
+        <description>Large, reptilian head with sharp teeth and glowing red eyes</description>
+      </feature>
+    </features>
+  </appearance>
+</creature>

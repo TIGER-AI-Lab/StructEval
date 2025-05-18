@@ -1,0 +1,2 @@
+planet_id,planet_name,system_name,discovery_year,mass_earths,radius_km,orbital_period_days,atmosphere_composition,has_rings,rings_count,largest_moon_name,largest_moon_diameter_km,surface_temperature_c,discovered_by,notes
+"PX-001","Aurora Prime","Aurora System",2124,3.5,7200,365,"Nitrogen,Oxygen,Argon",TRUE,3,"Luna Aurora",3400,22,"Dr. Elena Voss","Aurora Prime is notable for its vibrant auroras caused by a strong magnetic field and dense atmosphere."

@@ -1,0 +1,37 @@
+
+<planet>
+  <name>Zephyra</name>
+  <system>
+    <star>
+      <name>Helion</name>
+      <type>Yellow Dwarf</type>
+      <distance_from_earth_ly>42</distance_from_earth_ly>
+    </star>
+  </system>
+  <moons>
+    <moon>
+      <name>Phobos</name>
+      <diameter_km>22.4</diameter_km>
+      <has_atmosphere>false</has_atmosphere>
+    </moon>
+    <moon>
+      <name>Deimos</name>
+      <diameter_km>12.4</diameter_km>
+      <has_atmosphere>true</has_atmosphere>
+    </moon>
+  </moons>
+  <surface>
+    <temperature_c>-85</temperature_c>
+    <gravity_ms2>3.7</gravity_ms2>
+    <features>
+      <feature>
+        <name>Crystal Peaks</name>
+        <type>Mountain</type>
+      </feature>
+      <feature>
+        <name>Obsidian Lake</name>
+        <type>Lake</type>
+      </feature>
+    </features>
+  </surface>
+</planet>

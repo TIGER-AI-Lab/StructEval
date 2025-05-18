@@ -1,0 +1,100 @@
+
+import csv
+from dataclasses import dataclass
+
+@dataclass
+class Ingredient:
+    name: str
+    quantity: float
+    unit: str
+
+@dataclass
+class Step:
+    step_number: int
+    instruction: str
+
+@dataclass
+class Nutrition:
+    calories: int
+    protein_grams: float
+    fat_grams: float
+
+@dataclass
+class Recipe:
+    recipe_id: str
+    title: str
+    chef_name: str
+    cuisine_type: str
+    difficulty_level: str
+    prep_time_minutes: int
+    cook_time_minutes: int
+    servings: int
+    main_ingredient: str
+    ingredients: list[Ingredient]
+    steps: list[Step]
+    nutrition: Nutrition
+
+recipe = Recipe(
+    recipe_id="R001",
+    title="Pan-Seared Scallops with Garlic Butter",
+    chef_name="Chef John Doe",
+    cuisine_type="French",
+    difficulty_level="Medium",
+    prep_time_minutes=15,
+    cook_time_minutes=12,
+    servings=4,
+    main_ingredient="Scallops",
+    ingredients=[
+        Ingredient("Scallops", 12, "pieces"),
+        Ingredient("Butter", 2, "tablespoons"),
+        Ingredient("Garlic", 3, "cloves"),
+    ],
+    steps=[
+        Step(1, "Season the scallops with salt and pepper."),
+        Step(2, "Heat the butter in a skillet over medium heat."),
+    ],
+    nutrition=Nutrition(240, 20, 10),
+)
+
+with open("recipe.csv", "w", newline="") as csvfile:
+    fieldnames = [
+        "recipe_id",
+        "title",
+        "chef_name",
+        "cuisine_type",
+        "difficulty_level",
+        "prep_time_minutes",
+        "cook_time_minutes",
+        "servings",
+        "main_ingredient",
+        "ingredients[0].name",
+        "ingredients[0].quantity",
+        "ingredients[0].unit",
+        "steps[0].step_number",
+        "steps[0].instruction",
+        "nutrition.calories",
+        "nutrition.protein_grams",
+        "nutrition.fat_grams",
+    ]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    writer.writerow({
+        "recipe_id": recipe.recipe_id,
+        "title": recipe.title,
+        "chef_name": recipe.chef_name,
+        "cuisine_type": recipe.cuisine_type,
+        "difficulty_level": recipe.difficulty_level,
+        "prep_time_minutes": recipe.prep_time_minutes,
+        "cook_time_minutes": recipe.cook_time_minutes,
+        "servings": recipe.servings,
+        "main_ingredient": recipe.main_ingredient,
+        "ingredients[0].name": recipe.ingredients[0].name,
+        "ingredients[0].quantity": recipe.ingredients[0].quantity,
+        "ingredients[0].unit": recipe.ingredients[0].unit,
+        "steps[0].step_number": recipe.steps[0].step_number,
+        "steps[0].instruction": recipe.steps[0].instruction,
+        "nutrition.calories": recipe.nutrition.calories,
+        "nutrition.protein_grams": recipe.nutrition.protein_grams,
+        "nutrition.fat_grams": recipe.nutrition.fat_grams,
+    })

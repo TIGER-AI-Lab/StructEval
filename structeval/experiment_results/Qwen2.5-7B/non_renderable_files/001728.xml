@@ -1,0 +1,59 @@
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>John Doe</name>
+    <role>Chef</role>
+  </author>
+  <ingredients>
+    <name>Spaghetti</name>
+    <quantity>400</quantity>
+    <unit>grams</unit>
+    <name>Guanciale</name>
+    <quantity>150</quantity>
+    <unit>grams</unit>
+    <name>Eggs</name>
+    <quantity>4</quantity>
+    <unit>pieces</unit>
+    <name>Parmesan Cheese</name>
+    <quantity>50</quantity>
+    <unit>grams</unit>
+  </ingredients>
+  <steps>
+    <step>
+      <instruction>Boil water and cook spaghetti until al dente</instruction>
+      <duration_minutes>10</duration_minutes>
+      <tools>pot, pasta strainer</tools>
+    </step>
+    <step>
+      <instruction>Cook guanciale in a pan until crispy</instruction>
+      <duration_minutes>5</duration_minutes>
+      <tools>pan</tools>
+    </step>
+    <step>
+      <instruction>Beat eggs and Parmesan cheese together</instruction>
+      <duration_minutes>2</duration_minutes>
+      <tools>whisk</tools>
+    </step>
+    <step>
+      <instruction>Add cooked spaghetti to the pan with guanciale and toss</instruction>
+      <duration_minutes>2</duration_minutes>
+      <tools>spoon</tools>
+    </step>
+    <step>
+      <instruction>Pour egg and cheese mixture over spaghetti and toss until well combined</instruction>
+      <duration_minutes>2</duration_minutes>
+      <tools>spoon</tools>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>800</calories>
+    <protein_grams>30</protein_grams>
+    <fat_grams>40</fat_grams>
+    <carbohydrates_grams>50</carbohydrates_grams>
+  </nutrition>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>Intermediate</difficulty>
+    <published_date>2022-01-01</published_date>
+  </metadata>
+</recipe>

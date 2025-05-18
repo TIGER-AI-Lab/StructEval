@@ -1,0 +1,46 @@
+{
+  "museum": {
+    "name": "The Grand Heritage Museum",
+    "location": {
+      "city": "Metropolis",
+      "country": "Freedonia"
+    },
+    "founded_year": 1895,
+    "director": {
+      "name": "Dr. Emily Lancaster",
+      "tenure_years": 5
+    },
+    "collections": [
+      {
+        "title": "Ancient Artifacts",
+        "era": "Bronze Age",
+        "items": [
+          {
+            "name": "Bronze Sword of Victory",
+            "type": "Weapon",
+            "origin_country": "Freedonia",
+            "year_acquired": 2005,
+            "on_display": true
+          }
+        ]
+      },
+      {
+        "title": "Modern Art",
+        "era": "21st Century",
+        "items": [
+          {
+            "name": "Abstract Expressionist Painting",
+            "type": "Painting",
+            "origin_country": "Artland",
+            "year_acquired": 2018,
+            "on_display": false
+          }
+        ]
+      }
+    ],
+    "visitor_stats": {
+      "annual_visitors": 500000,
+      "most_popular_collection": "Ancient Artifacts"
+    }
+  }
+}

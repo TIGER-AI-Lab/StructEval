@@ -1,0 +1,42 @@
+{
+  "creature": {
+    "name": "Xylar",
+    "species": "Lumiflora",
+    "origin": {
+      "planet": "Xylos",
+      "galaxy": "Andromeda"
+    },
+    "abilities": [
+      {
+        "type": "Photosynthesis",
+        "strength": 75,
+        "cooldown_seconds": 0
+      },
+      {
+        "type": "Light Burst",
+        "strength": 50,
+        "cooldown_seconds": 300
+      }
+    ],
+    "appearance": {
+      "color": "Azure",
+      "size_meters": 2.5,
+      "features": [
+        "Bioluminescent petals",
+        "Retractable roots"
+      ]
+    },
+    "companions": [
+      {
+        "name": "Flora",
+        "species": "Sylvan Sprite",
+        "role": "Guardian"
+      },
+      {
+        "name": "Rocky",
+        "species": "Geolite",
+        "role": "Companion"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+
+brewery:
+  name: "Fictional Craft Brewery"
+  location:
+    city: "Portland"
+    country: "USA"
+  established_year: 2015
+  specialties:
+    - "IPA"
+    - "Stout"
+  master_brewer:
+    name: "John Doe"
+    experience_years: 10
+  awards:
+    - title: "Best Brewery in the West"
+      year: 2020
+  beers:
+    - name: "IPA"
+      style: "India Pale Ale"
+      abv: 6.5
+      ingredients:
+        malts:
+          - "2-Row Malt"
+          - "Caramel Malt"
+        hops:
+          - "Cascade"
+          - "Centennial"
+      release_dates:
+        - "2020-03-01T00:00:00Z"
+    - name: "Stout"
+      style: "Dry Stout"
+      abv: 4.2
+      ingredients:
+        malts:
+          - "Roasted Malt"
+          - "Chocolate Malt"
+        hops:
+          - "East Kent Goldings"
+          - "Fuggles"
+      release_dates:
+        - "2019-11-15T00:00:00Z"

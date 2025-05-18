@@ -1,0 +1,51 @@
+
+ecosystem = { 
+    name = "Xylophor Ecosystem",
+    location = { 
+        planet = "Zyphoria", 
+        region = "Emerald Forest" 
+    },
+    discovery = { 
+        year = 2145, 
+        discoverer = "Galactic Exploration Team Alpha" 
+    },
+    species = [
+        { 
+            name = "Luminara Gloriosa", 
+            classification = "Flora", 
+            population_estimate = 150000, 
+            traits = [
+                { 
+                    trait_name = "Bioluminescence", 
+                    trait_value = "Glows in the dark" 
+                },
+                { 
+                    trait_name = "Height", 
+                    trait_value = 2.5 
+                }
+            ] 
+        }
+    ],
+    resources = { 
+        water_sources = [
+            { 
+                type = "Lake", 
+                volume_liters = 500000 
+            }
+        ],
+        minerals = [
+            { 
+                mineral_name = "Zyphorite", 
+                abundance_level = "High" 
+            },
+            { 
+                mineral_name = "Glintstone", 
+                abundance_level = "Moderate" 
+            }
+        ] 
+    },
+    environment = { 
+        average_temperature_celsius = 22, 
+        atmosphere_composition = ["Nitrogen", "Oxygen", "Argon"] 
+    }
+}

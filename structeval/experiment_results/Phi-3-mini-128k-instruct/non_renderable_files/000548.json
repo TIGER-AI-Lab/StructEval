@@ -1,0 +1,33 @@
+{
+  "artifact": {
+    "name": "The Rosetta Stone",
+    "origin": {
+      "culture": "Ptolemaic Egypt",
+      "period": "Hellenistic",
+      "discovery_date": "1799-07-15"
+    },
+    "materials": {
+      "primary": "Granodiorite",
+      "secondary": null
+    },
+    "dimensions": {
+      "height_cm": 45,
+      "width_cm": 27.5,
+      "depth_cm": 11
+    },
+    "features": [
+      {
+        "description": "Inscribed with a decree issued in Memphis, Egypt in 196 BC.",
+        "estimated_age_years": 2150,
+        "condition": "Intact"
+      }
+    ]
+  },
+  "exhibition_history": [
+    {
+      "location": "The British Museum, London",
+      "start_date": "1802-01-01",
+      "end_date": "present"
+    }
+  ]
+}

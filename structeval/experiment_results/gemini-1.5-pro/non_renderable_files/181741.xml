@@ -1,0 +1,17 @@
+<spaceStation>
+  <name>Nebula Outpost</name>
+  <location>
+    <planet>Xylophar</planet>
+    <galaxy>Andromeda</galaxy>
+  </location>
+  <crewMembers>
+    <crewMember>
+      <name>Zira Quell</name>
+      <role>Botanist</role>
+    </crewMember>
+    <crewMember>
+      <name>Torm Drav</name>
+      <role>Engineer</role>
+    </crewMember>
+  </crewMembers>
+</spaceStation>

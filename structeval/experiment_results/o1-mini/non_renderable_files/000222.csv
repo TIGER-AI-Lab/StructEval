@@ -1,0 +1,119 @@
+import csv
+import re
+from datetime import datetime
+
+def extract_artifact_details(description):
+    # Initialize dictionary with keys
+    artifact = {
+        'artifact_id': '',
+        'artifact_name': '',
+        'origin_civilization': '',
+        'discovery_date': '',
+        'material.primary': '',
+        'material.secondary': '',
+        'estimated_age_years': '',
+        'dimensions.length_cm': '',
+        'dimensions.width_cm': '',
+        'dimensions.height_cm': '',
+        'location.site_name': '',
+        'location.latitude': '',
+        'location.longitude': '',
+        'current_condition.status': '',
+        'current_condition.restoration_needed': '',
+        'notable_markings[0].type': '',
+        'notable_markings[0].description': ''
+    }
+    
+    # Example regex patterns (these need to be tailored to actual descriptions)
+    patterns = {
+        'artifact_id': r'ID:\s*(\w+)',
+        'artifact_name': r'Name:\s*([^
+]+)',
+        'origin_civilization': r'Origin:\s*([^
+]+)',
+        'discovery_date': r'Discovered on:\s*(\d{4}-\d{2}-\d{2})',
+        'material.primary': r'Primary Material:\s*([^
+]+)',
+        'material.secondary': r'Secondary Material:\s*([^
+]+)',
+        'estimated_age_years': r'Age:\s*(\d+) years',
+        'dimensions.length_cm': r'Length:\s*([\d.]+) cm',
+        'dimensions.width_cm': r'Width:\s*([\d.]+) cm',
+        'dimensions.height_cm': r'Height:\s*([\d.]+) cm',
+        'location.site_name': r'Site:\s*([^
+]+)',
+        'location.latitude': r'Latitude:\s*([-\d.]+)',
+        'location.longitude': r'Longitude:\s*([-\d.]+)',
+        'current_condition.status': r'Condition:\s*([^
+]+)',
+        'current_condition.restoration_needed': r'Restoration Needed:\s*(True|False)',
+        'notable_markings[0].type': r'Marking Type:\s*([^
+]+)',
+        'notable_markings[0].description': r'Marking Description:\s*([^
+]+)'
+    }
+    
+    for key, pattern in patterns.items():
+        match = re.search(pattern, description, re.IGNORECASE)
+        if match:
+            artifact[key] = match.group(1).strip()
+    
+    # Convert restoration_needed to boolean
+    if artifact['current_condition.restoration_needed'].lower() == 'true':
+        artifact['current_condition.restoration_needed'] = True
+    elif artifact['current_condition.restoration_needed'].lower() == 'false':
+        artifact['current_condition.restoration_needed'] = False
+    else:
+        artifact['current_condition.restoration_needed'] = ''
+
+    return artifact
+
+def write_to_csv(artifact, filename='artifacts.csv'):
+    fieldnames = [
+        'artifact_id',
+        'artifact_name',
+        'origin_civilization',
+        'discovery_date',
+        'material.primary',
+        'material.secondary',
+        'estimated_age_years',
+        'dimensions.length_cm',
+        'dimensions.width_cm',
+        'dimensions.height_cm',
+        'location.site_name',
+        'location.latitude',
+        'location.longitude',
+        'current_condition.status',
+        'current_condition.restoration_needed',
+        'notable_markings[0].type',
+        'notable_markings[0].description'
+    ]
+    
+    with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerow(artifact)
+
+# Example usage
+description = """
+ID: A12345
+Name: The Golden Vase
+Origin: Ancient Egypt
+Discovered on: 2023-04-15
+Primary Material: Gold
+Secondary Material: Lapiz Lazuli
+Age: 3000 years
+Length: 25.5 cm
+Width: 10.0 cm
+Height: 15.0 cm
+Site: Valley of the Kings
+Latitude: 25.7402
+Longitude: 32.6000
+Condition: Intact
+Restoration Needed: False
+Marking Type: Inscription
+Marking Description: Hieroglyphic symbols detailing the vase's origin.
+"""
+
+artifact = extract_artifact_details(description)
+write_to_csv(artifact)

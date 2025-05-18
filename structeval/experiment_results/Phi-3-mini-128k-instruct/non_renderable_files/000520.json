@@ -1,0 +1,42 @@
+{
+  "artifact": {
+    "name": "The Scepter of Pharaoh Amenhotep",
+    "origin": {
+      "civilization": "Ancient Egypt",
+      "era": "New Kingdom"
+    },
+    "description": "A golden scepter adorned with lapis lazuli, symbolizing power and divine authority."
+  },
+  "discovery": {
+    "date": "2023-04-15",
+    "location": {
+      "latitude": 25.715289,
+      "longitude": 32.655734
+    },
+    "team": [
+      {
+        "member_name": "Dr. Sarah Jennings",
+        "role": "Lead Archaeologist"
+      },
+      {
+        "member_name": "Prof. Michael Thompson",
+        "role": "Ancient Egyptian Artifacts Specialist"
+      }
+    ]
+  },
+  "materials": [
+    {
+      "type": "gold",
+      "percentage": 90
+    },
+    {
+      "type": "lapis lazuli",
+      "percentage": 10
+    }
+  ],
+  "dimensions": {
+    "height_cm": 35,
+    "width_cm": 5,
+    "depth_cm": 2
+  }
+}

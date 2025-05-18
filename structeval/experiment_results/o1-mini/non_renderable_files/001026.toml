@@ -1,0 +1,40 @@
+
+[exhibit]
+title = "Whispers of Time"
+
+[exhibit.curator]
+name = "Elena Martinez"
+contact_email = "elena.martinez@artgallery.com"
+
+opening_date = "2024-06-15"
+closing_date = "2024-12-20"
+
+[[exhibit.galleries]]
+name = "Gallery One"
+theme = "Surrealism"
+
+  [[exhibit.galleries.artworks]]
+  title = "Dreamscape"
+  artist = "Lucas Reed"
+  year_created = 2021
+  medium = "Oil on canvas"
+
+    [exhibit.galleries.artworks.dimensions]
+    height_cm = 120.5
+    width_cm = 95.0
+
+  on_loan = false
+  provenance = "Acquired from the Reed Family Collection."
+
+  [[exhibit.galleries.artworks]]
+  title = "Eternal Mirage"
+  artist = "Sophia Lin"
+  year_created = 2019
+  medium = "Mixed media"
+
+    [exhibit.galleries.artworks.dimensions]
+    height_cm = 150.0
+    width_cm = 110.0
+
+  on_loan = true
+  provenance = "Loaned from the Modern Arts Trust."

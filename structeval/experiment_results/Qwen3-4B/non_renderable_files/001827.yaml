@@ -1,0 +1,35 @@
+
+expedition:
+  name: "Interstellar Exploration Team 7"
+  team:
+    name: "Interstellar Exploration Team 7"
+    members:
+      - full_name: "Dr. Elara M. Voss"
+        role: "pilot"
+        skills:
+          - "interplanetary navigation"
+          - "emergency systems management"
+        equipment:
+          - item: "thruster module"
+            quantity: 3
+  destination:
+    planet: "Tyrion-9"
+    coordinates:
+      latitude: 42.3756
+      longitude: -117.8923
+  objectives:
+    primary: "Collect biosignatures from Tyrion-9's subsurface oceans"
+    secondary:
+      - "Map the planet's magnetic field anomalies"
+      - "Test autonomous rover endurance in extreme conditions"
+  timeline:
+    departure_date: "2025-04-15"
+    estimated_arrival: "2025-06-22"
+  resources:
+    supplies:
+      food_kg: 15000
+      water_liters: 30000
+    vehicles:
+      - "heavy lander"
+      - "aerostat drone"
+      - "sample collection rover"

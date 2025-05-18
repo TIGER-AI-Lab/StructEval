@@ -1,0 +1,44 @@
+python
+import json
+import xmltodict
+
+xml_data = """
+<galaxy>
+  <name>Andromeda</name>
+  <planets>
+    <planet>
+      <name>Veridia</name>
+      <type>Gas Giant</type>
+      <moons>
+        <moon>
+          <name>Echo</name>
+          <diameter>3200</diameter>
+        </moon>
+        <moon>
+          <name>Pulse</name>
+          <diameter>2100</diameter>
+        </moon>
+      </moons>
+    </planet>
+    <planet>
+      <name>Crystalis</name>
+      <type>Rocky</type>
+      <moons>
+        <moon>
+          <name>Shard</name>
+          <diameter>1700</diameter>
+        </moon>
+      </moons>
+    </planet>
+  </planets>
+</galaxy>
+"""
+
+# Parse the XML data
+parsed_xml = xmltodict.parse(xml_data)
+
+# Convert the parsed XML to JSON
+json_data = json.dumps(parsed_xml, indent=2)
+
+# Output the JSON data
+print(json_data)

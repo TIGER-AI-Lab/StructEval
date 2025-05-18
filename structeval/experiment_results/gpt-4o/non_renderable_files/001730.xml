@@ -1,0 +1,99 @@
+<recipe>
+    <title>Spicy Thai Basil Chicken</title>
+    <author>
+        <name>Jane Doe</name>
+        <role>chef</role>
+    </author>
+    <ingredients>
+        <item>
+            <name>Chicken breast</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Thai basil leaves</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </item>
+        <item>
+            <name>Garlic</name>
+            <quantity>4</quantity>
+            <unit>cloves</unit>
+        </item>
+        <item>
+            <name>Red chili</name>
+            <quantity>2</quantity>
+            <unit>pieces</unit>
+        </item>
+        <item>
+            <name>Soy sauce</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </item>
+        <item>
+            <name>Fish sauce</name>
+            <quantity>1</quantity>
+            <unit>tablespoon</unit>
+        </item>
+        <item>
+            <name>Vegetable oil</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </item>
+    </ingredients>
+    <steps>
+        <step>
+            <instruction>Chop the chicken into bite-sized pieces.</instruction>
+            <duration_minutes>10</duration_minutes>
+            <tools>knife, cutting board</tools>
+        </step>
+        <step>
+            <instruction>Mince the garlic and slice the red chili.</instruction>
+            <duration_minutes>5</duration_minutes>
+            <tools>knife, cutting board</tools>
+        </step>
+        <step>
+            <instruction>Heat oil in a pan over medium heat.</instruction>
+            <duration_minutes>2</duration_minutes>
+            <tools>pan, stove</tools>
+        </step>
+        <step>
+            <instruction>Add garlic and chili to the pan and stir-fry until fragrant.</instruction>
+            <duration_minutes>2</duration_minutes>
+            <tools>pan, spatula</tools>
+        </step>
+        <step>
+            <instruction>Add chicken to the pan and cook until no longer pink.</instruction>
+            <duration_minutes>7</duration_minutes>
+            <tools>pan, spatula</tools>
+        </step>
+        <step>
+            <instruction>Add soy sauce and fish sauce, stir well.</instruction>
+            <duration_minutes>3</duration_minutes>
+            <tools>pan, spatula</tools>
+        </step>
+        <step>
+            <instruction>Add Thai basil leaves and stir until wilted.</instruction>
+            <duration_minutes>2</duration_minutes>
+            <tools>pan, spatula</tools>
+        </step>
+    </steps>
+    <metadata>
+        <cuisine>Thai</cuisine>
+        <difficulty>medium</difficulty>
+        <servings>4</servings>
+        <tags>
+            <tag>spicy</tag>
+            <tag>quick</tag>
+            <tag>stir-fry</tag>
+        </tags>
+    </metadata>
+    <nutrition>
+        <calories>250</calories>
+        <macros>
+            <protein>30</protein>
+            <carbohydrates>5</carbohydrates>
+            <fat>10</fat>
+        </macros>
+    </nutrition>
+</recipe>

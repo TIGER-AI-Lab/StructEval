@@ -1,0 +1,23 @@
+
+museum:
+  name: "The Aurora Art Museum"
+  founded_year: 1985
+  location:
+    city: "Lumina City"
+    country: "Eldoria"
+  director:
+    name: "Dr. Elena Marquez"
+    tenure_years: 8
+  exhibitions:
+    - title: "Echoes of Eternity"
+      year: 2024
+      artworks:
+        - title: "Starlit Reverie"
+          artist: "Liam O'Connor"
+          medium: "Acrylic on Canvas"
+          dimensions:
+            height_cm: 150.0
+            width_cm: 200.0
+          on_loan: false
+  visitor_statistics:
+    annual_visitors: 350000

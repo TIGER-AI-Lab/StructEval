@@ -1,0 +1,45 @@
+{
+  "artifact": {
+    "name": "Ancient Egyptian Canopic Jar",
+    "origin": {
+      "culture": "Ancient Egyptian",
+      "estimated_period": "New Kingdom"
+    },
+    "materials": [
+      "Alabaster",
+      "Limestone"
+    ],
+    "dimensions": {
+      "height_cm": 25.4,
+      "width_cm": 10.2,
+      "depth_cm": 10.2
+    },
+    "provenance": {
+      "previous_owners": [
+        {
+          "name": "Sir John Smith",
+          "acquisition_year": 1892
+        },
+        {
+          "name": "The British Museum",
+          "acquisition_year": 1923
+        }
+      ]
+    },
+    "restoration_history": [
+      {
+        "date": "1985-07-15",
+        "description": "Stabilization of cracks and surface cleaning",
+        "restorer": "Dr. Emily Carter"
+      }
+    ],
+    "exhibition_records": [
+      {
+        "venue": "The British Museum"
+      },
+      {
+        "venue": "Louvre Museum"
+      }
+    ]
+  }
+}

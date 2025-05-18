@@ -1,0 +1,24 @@
+
+creature:
+  name: "Zylarth the Infinite"
+  species: "Nebulon Wraith"
+  origin:
+    planet: "Xerath Prime"
+    galaxy: "Andromeda"
+  abilities:
+    - type: "Quantum Phasing"
+      strength: 85
+    - type: "Temporal Manipulation"
+      strength: 90
+  companions:
+    - name: "Vex"
+      species: "Luminar Sprite"
+      bond_level: 8
+    - name: "Korra"
+      species: "Void Serpent"
+      bond_level: 7
+  artifacts:
+    - name: "Eclipse Shard"
+      power_level: 95
+    - name: "Chrono Core"
+      power_level: 88

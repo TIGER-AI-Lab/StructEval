@@ -1,0 +1,39 @@
+
+{
+  "novel": {
+    "title": "The Enchanted Forest",
+    "author": {
+      "name": "Eleanor Swift",
+      "birth_year": 1975
+    },
+    "publication": {
+      "year": 2021,
+      "publisher": "Mystic Books"
+    },
+    "genres": ["Fantasy", "Adventure", "Mystery"]
+  },
+  "characters": [
+    {
+      "name": "Lila",
+      "role": "protagonist",
+      "traits": ["brave", "curious", "kind"]
+    },
+    {
+      "name": "Thorn",
+      "role": "antagonist",
+      "traits": ["cunning", "powerful", "mysterious"]
+    }
+  ],
+  "chapters": [
+    {
+      "title": "The Mysterious Forest",
+      "word_count": 2500,
+      "events": ["Lila discovers the entrance to the enchanted forest", "Thorn appears and challenges Lila"]
+    },
+    {
+      "title": "The Hidden Path",
+      "word_count": 3200,
+      "events": ["Lila and Thorn race to find the hidden path", "Lila finds a magical artifact"]
+    }
+  ]
+}

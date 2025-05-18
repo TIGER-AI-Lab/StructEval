@@ -1,0 +1,35 @@
+
+[planet]
+name = "Kepler-452b"
+
+[planet.discovery]
+year = 2015
+method = "transit"
+
+[planet.orbit]
+period_days = 384.84
+eccentricity = 0.02
+
+[[planet.atmosphere.composition]]
+gas = "Nitrogen"
+percentage = 78.0
+
+[[planet.atmosphere.composition]]
+gas = "Oxygen"
+percentage = 21.0
+
+[[planet.moons]]
+name = "Selene"
+diameter_km = 3474.8
+
+[[planet.moons]]
+name = "Phobos"
+diameter_km = 22.2
+
+[planet.surface]
+temperature_c = 22.0
+has_liquid_water = true
+
+[[planet.surface.landmarks]]
+type = "crater"
+name = "Aurelia Basin"

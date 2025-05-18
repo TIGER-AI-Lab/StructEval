@@ -1,0 +1,55 @@
+
+<creature>
+    <name>Zorgon-7 Stellaris</name>
+    <species>Xylar</species>
+    <origin>
+        <planet>Xylos</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <abilities>
+        <ability>
+            <type>Telekinesis</type>
+            <description>Ability to move objects with the mind.</description>
+            <level>8</level>
+        </ability>
+        <ability>
+            <type>Energy Absorption</type>
+            <description>Can absorb and redirect energy.</description>
+            <level>6</level>
+        </ability>
+        <ability>
+            <type>Shapeshifting</type>
+            <description>Ability to alter physical form.</description>
+            <level>3</level>
+        </ability>
+    </abilities>
+    <physical_traits>
+        <height>210.5</height>
+        <weight>110.2</weight>
+        <eye_color>Violet</eye_color>
+        <limbs>
+            <count>6</count>
+            <type>Tentacle</type>
+        </limbs>
+    </physical_traits>
+    <history>
+        <birth_date>2242-07-15</birth_date>
+        <events>
+            <event>
+                <title>First Contact</title>
+                <year>2260</year>
+                <impact>Encountered a friendly alien race.</impact>
+            </event>
+            <event>
+                <title>Xylar Rebellion</title>
+                <year>2275</year>
+                <impact>Participated in a rebellion against the tyrannical overlords.</impact>
+            </event>
+            <event>
+                <title>Galactic Explorer</title>
+                <year>2280</year>
+                <impact>Began a journey to explore the galaxy.</impact>
+            </event>
+        </events>
+    </history>
+</creature>

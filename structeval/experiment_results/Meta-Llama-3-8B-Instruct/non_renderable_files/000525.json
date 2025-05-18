@@ -1,0 +1,42 @@
+
+{
+  "name": "Newly Discovered Artifact",
+  "artifact": {
+    "origin": {
+      "period": "Ancient Era",
+      "region": "Mediterranean"
+    },
+    "materials": [
+      {
+        "type": "Copper",
+        "provenance": "Local Mine"
+      },
+      {
+        "type": "Gold",
+        "provenance": "Trade Route"
+      }
+    ],
+    "dimensions": {
+      "height_cm": 10,
+      "width_cm": 5,
+      "depth_cm": 2
+    },
+    "features": [
+      {
+        "description": "Intricate carvings",
+        "condition": "Well-preserved"
+      },
+      {
+        "description": "Eroded surface",
+        "condition": "Faded"
+      }
+    ]
+  },
+  "discovery": {
+    "location": {
+      "latitude": 40.7128,
+      "longitude": -74.0060
+    },
+    "date_found": "2022-01-01T00:00:00.000Z"
+  }
+}

@@ -1,0 +1,57 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "galacticCarnival": {
+    "planets": {
+      "planet": [
+        {
+          "name": "Zyphora",
+          "attractions": {
+            "attraction": [
+              { "name": "Gravity-Free Rollercoaster", "type": "ride" },
+              { "name": "Nebula Maze", "type": "game" }
+            ]
+          }
+        },
+        {
+          "name": "Orionis",
+          "attractions": {
+            "attraction": [
+              { "name": "Starlight Parade", "type": "show" }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+'''
+
+def json_to_xml(json_str):
+    root = ET.Element("root")
+    data = json.loads(json_str)
+    for key, value in data.items():
+        element = ET.SubElement(root, key)
+        if isinstance(value, dict):
+            for k, v in value.items():
+                sub_element = ET.SubElement(element, k)
+                if isinstance(v, list):
+                    for item in v:
+                        if isinstance(item, dict):
+                            for ik, iv in item.items():
+                                sub_sub_element = ET.SubElement(sub_element, ik)
+                                sub_sub_element.text = str(iv)
+                        else:
+                            sub_sub_element = ET.SubElement(sub_element, k)
+                            sub_sub_element.text = str(v)
+                else:
+                    sub_element.text = str(v)
+        else:
+            element.text = str(value)
+    return ET.tostring(root, encoding='unicode')
+
+xml_output = json_to_xml(json_data)
+print(xml_output)

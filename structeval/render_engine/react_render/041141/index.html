@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041141</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Welcome to My Structured Page</h1>
+        <p>This page is designed to demonstrate a clear visual hierarchy and structured content layout.</p>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#profile">Profile Details</a></li>
+          <li><a href="#features">Key Features</a></li>
+          <li><a href="#summary">Summary</a></li>
+        </ul>
+      </nav>
+
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          This section serves as an introduction to the page. The purpose of this example is to display a realistic HTML structure that includes a range of elements such as headings, paragraphs, lists, and structured content.
+        </p>
+        <p>
+          The following content is organized into sections for clarity and ease of navigation.
+        </p>
+      </section>
+
+      <section id="profile">
+        <h2>Profile Details</h2>
+        <article>
+          <h3>Basic Information</h3>
+          <dl>
+            <dt>Full Name:</dt>
+            <dd>Jane Doe</dd>
+            <dt>Occupation:</dt>
+            <dd>Web Developer</dd>
+            <dt>Location:</dt>
+            <dd>San Francisco, CA</dd>
+          </dl>
+        </article>
+        <article>
+          <h3>Contact Information</h3>
+          <p>Please use the following details to get in touch:</p>
+          <ul>
+            <li>Email: janedoe@example.com</li>
+            <li>Phone: (123) 456-7890</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="features">
+        <h2>Key Features</h2>
+        <ol>
+          <li>
+            <h4>Responsive Layout</h4>
+            <p>The design adapts to various screen sizes ensuring readability and usability.</p>
+          </li>
+          <li>
+            <h4>Clear Structure</h4>
+            <p>Organized content including sections, headings, and lists to create an accessible document.</p>
+          </li>
+          <li>
+            <h4>Semantic HTML</h4>
+            <p>Proper use of elements such as header, nav, section, article, and footer to assist with SEO and accessibility.</p>
+          </li>
+        </ol>
+      </section>
+
+      <aside>
+        <h2>Additional Notes</h2>
+        <p>
+          All content is formatted without any external dependencies. The code is built solely with HTML ensuring complete standalone operation.
+        </p>
+        <ul>
+          <li>Pure HTML structure</li>
+          <li>No external images or stylesheets</li>
+          <li>Simple navigation for content sections</li>
+        </ul>
+      </aside>
+
+      <section id="summary">
+        <h2>Summary</h2>
+        <p>
+          This document demonstrates how a long HTML snippet can be fully self-contained while still delivering a clear and structured layout.
+        </p>
+        <p>
+          With categorized sections such as Introduction, Profile Details, Key Features, and Additional Notes, this example serves as a foundation for a more complex page layout.
+        </p>
+      </section>
+
+      <footer>
+        <p>&copy; 2023 Sample HTML Page. All rights reserved.</p>
+        <p>Contact: support@example.com</p>
+      </footer>
+    </div>
+  );
+};
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

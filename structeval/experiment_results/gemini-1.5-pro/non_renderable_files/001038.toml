@@ -1,0 +1,39 @@
+["Orbital Station Alpha"]
+name = "Orbital Station Alpha"
+description = "Modular space station orbiting Earth."
+
+[space_station.location]
+orbiting_body = "Earth"
+
+[space_station.location.coordinates]
+latitude = 28.57
+longitude = -80.58
+
+[[space_station.modules]]
+id = "HAB-001"
+type = "habitation"
+status = "active"
+crew_capacity = 6
+
+[[space_station.modules[0].experiments]]
+experiment_id = "EXP-001"
+title = "Plant Growth in Microgravity"
+principal_investigator = "Dr. Jane Doe"
+start_date = "2024-03-15"
+status = "ongoing"
+
+[[space_station.modules[0].experiments]]
+experiment_id = "EXP-002"
+title = "Solar Panel Efficiency in LEO"
+principal_investigator = "Dr. John Smith"
+start_date = "2024-04-20"
+status = "completed"
+
+
+[[space_station.launch_history]]
+date = "2024-01-20"
+vehicle = "Falcon Heavy"
+
+[[space_station.launch_history]]
+date = "2024-02-28"
+vehicle = "Starship"

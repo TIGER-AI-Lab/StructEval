@@ -1,0 +1,48 @@
+
+<planet>
+  <name>Jovion</name>
+  <distance_from_sun_au>5.2</distance_from_sun_au>
+  <discovery>
+    <year>1610</year>
+    <discovered_by>Galileo Galilei</discovered_by>
+    <missions>
+      <mission>
+        <name>Voyager 1</name>
+        <year>1979</year>
+      </mission>
+      <mission>
+        <name>Juno</name>
+        <year>2016</year>
+      </mission>
+    </missions>
+  </discovery>
+  <name_1>Voyager 1</name_1>
+  <year_1>1979</year_1>
+  <name_2>Juno</name_2>
+  <year_2>2016</year_2>
+  <atmosphere>
+    <pressure>1.0</pressure>
+    <composition>
+      <gas>
+        <name>Hydrogen</name>
+        <percentage>89.8</percentage>
+      </gas>
+      <gas>
+        <name>Helium</name>
+        <percentage>10.2</percentage>
+      </gas>
+    </composition>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>Io</name>
+      <diameter_km>3643</diameter_km>
+      <discovered>1610</discovered>
+    </moon>
+    <moon>
+      <name>Europa</name>
+      <diameter_km>3122</diameter_km>
+      <discovered>1610</discovered>
+    </moon>
+  </moons>
+</planet>

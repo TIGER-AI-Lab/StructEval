@@ -1,0 +1,24 @@
+
+galacticCarnival:
+  attractions:
+    attraction:
+      - name: Nebula Ferris Wheel
+        type: Ride
+        speciesAllowed:
+          species:
+            - Human
+            - Andromedan
+            - Cygnian
+      - name: Gravity Maze
+        type: Game
+        speciesAllowed:
+          species:
+            - Human
+            - Martian
+  foodCourt:
+    stalls:
+      stall:
+        - name: Astro Bites
+          specialty: Meteorite Ice Cream
+        - name: Saturn Sizzlers
+          specialty: Comet Kebabs

@@ -1,0 +1,6 @@
+artifact_id,artifact_name,discovery.site,discovery.country,discovery.year,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.current_state,condition.restoration_years,provenance.previous_owners,provenance.auction_history,exhibit.locations
+"001","Rosetta Stone","Rosetta, Egypt","Egypt","1799","Granodiorite, Limestone, Sandstone","Limestone, Sandstone","24.1","11.15","7.25","intact","","","British Museum, Louvre Museum, The Metropolitan Museum of Art"
+"002","Terracotta Army","Xi'an, Shaanxi","China","1974","Terracotta","","38.5, 29.5, 12.5","intact","","","The National Museum of China, The Metropolitan Museum of Art, The British Museum"
+"003","Mask of Tutankhamun","Thebes, Egypt","Egypt","1922","Gold, Amethyst, Lapis Lazuli, Turquoise","Amethyst, Lapis Lazuli, Turquoise","15.2, 10.2, 5.9","intact","","","The Egyptian Museum, The British Museum, The Metropolitan Museum of Art"
+"004","Venus de Milo","Milos, Greece","Greece","1820","Marble","","213.5, 138.9, 66.0","intact","","","Louvre Museum, The British Museum, The Metropolitan Museum of Art"
+"005","Mona Lisa","Amboise, France","France","1503","Wood, Varnish","","77.0, 53.3, 7.0","intact","","","Louvre Museum, The Metropolitan Museum of Art, The Hermitage Museum"

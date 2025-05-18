@@ -1,0 +1,50 @@
+[
+  {
+    "planet_name": "Gliese 581g",
+    "system": {
+      "star_name": "Gliese 581",
+      "distance_light_years": 20.3,
+      "discovery_year": 2010,
+      "planets": {
+        "name": "Gliese 581g",
+        "type": "Super-Earth",
+        "moons": 0,
+        "atmosphere": {
+          "composition": "Nitrogen-Oxygen",
+          "pressure": 1.2,
+          "temperature": 273
+        },
+        "satellites": [
+          {
+            "name": "Zeta",
+            "diameter_km": 1200
+          }
+        ]
+      }
+    }
+  },
+  {
+    "planet_name": "Kepler-22b",
+    "system": {
+      "star_name": "Kepler-22",
+      "distance_light_years": 600,
+      "discovery_year": 2011,
+      "planets": {
+        "name": "Kepler-22b",
+        "type": "Neptune-like",
+        "moons": 2,
+        "atmosphere": {
+          "composition": "Hydrogen-Helium",
+          "pressure": 0.9,
+          "temperature": 295
+        },
+        "satellites": [
+          {
+            "name": "Phobos",
+            "diameter_km": 1000
+          }
+        ]
+      }
+    }
+  }
+]

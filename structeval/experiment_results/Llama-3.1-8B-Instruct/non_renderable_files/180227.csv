@@ -1,0 +1,22 @@
+
+import csv
+import io
+
+data = """planet_name,distance_from_earth_ly,discovered_by,discovery_date,number_of_moons,atmosphere_composition
+Zephyra,45.2,Dr. Lira Voss,2019-08-13,3,Nitrogen-Oxygen
+Orbis Prime,102.7,Prof. Kenji Ito,2015-03-22,1,Methane-Rich
+Virelia,67.9,Dr. Amara Singh,2021-11-05,2,Carbon Dioxide
+Thalassa,88.4,Capt. Hugo Stern,2018-06-29,5,Oxygen-Argon
+Pyrrhos,130.6,Dr. Mei Chen,2016-12-11,0,Sulfur Dioxide
+Ecliptor,59.3,Prof. Omar Haddad,2020-02-17,4,Neon-Helium"""
+
+f = io.StringIO(data)
+reader = csv.DictReader(f)
+rows = list(reader)
+
+with open('planets.csv', 'w', newline='') as csvfile:
+    fieldnames = ['planet_name', 'distance_from_earth_ly', 'discovered_by', 'discovery_date', 'number_of_moons', 'atmosphere_composition']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    for row in rows:
+        writer.writerow(row)

@@ -1,0 +1,22 @@
+creature:
+  name: Xylar
+  species: Kryll
+  origin:
+    planet: Xylos
+    galaxy: Andromeda
+  abilities:
+    - type: Psionic
+      description: Telepathic communication over short distances.
+      energy_cost: 10
+    - type: Bio-Regeneration
+      description: Accelerated healing of minor wounds.
+      energy_cost: 15
+  appearance:
+    height_cm: 210
+    skin_color: "Deep Violet"
+    eye_count: 3
+  inventory:
+    - item_name: Translator Device
+      quantity: 1
+    - item_name: Energy Crystals
+      quantity: 50

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001101</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+function App() {
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [eventType, setEventType] = useState('Workshop');
+  const [numGuests, setNumGuests] = useState(1);
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!username || !email) {
+      setMessage('Username and Email are required.');
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setMessage('Invalid email format.');
+      return;
+    }
+
+    setMessage('Registration successful!');
+  };
+
+  return (
+    <div className="App">
+      <h1 style={{ textAlign: 'center' }}>Event Registration</h1>
+      <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', padding: '20px' }}>
+        <input
+          type="text"
+          placeholder="Enter your username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          required
+        />
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <select value={eventType} onChange={(e) => setEventType(e.target.value)}>
+          <option value="Workshop">Workshop</option>
+          <option value="Seminar">Seminar</option>
+          <option value="Meetup">Meetup</option>
+        </select>
+        <input
+          type="number"
+          placeholder="Guests"
+          min="1"
+          value={numGuests}
+          onChange={(e) => setNumGuests(parseInt(e.target.value, 10))}
+        />
+        <button type="submit" style={{ backgroundColor: 'green', color: 'white', gridColumn: 'span 2' }}>Register</button>
+      </form>
+      <div>{message}</div>
+      <footer style={{ textAlign: 'center', marginTop: '20px' }}>2023 Event Registration</footer>
+    </div>
+  );
+}
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001128</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+function App() {
+  const [tasks, setTasks] = useState([]);
+  const [message, setMessage] = useState('');
+  const inputRef = useRef(null);
+
+  const addTask = () => {
+    const newTask = inputRef.current.value.trim();
+    if (newTask === '') {
+      return;
+    }
+
+    setTasks([...tasks, newTask]);
+    setMessage('Task added!');
+    inputRef.current.value = '';
+
+    setTimeout(() => {
+      setMessage('');
+    }, 1500);
+  };
+
+  const deleteTask = (index) => {
+    const updatedTasks = tasks.filter((_, i) => i !== index);
+    setTasks(updatedTasks);
+  };
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <div style={{ border: '1px solid #ccc', padding: '20px' }}>
+        <h2 style={{ textAlign: 'center' }}>To-Do List</h2>
+        <input type="text" placeholder="New Task" ref={inputRef} />
+        <button onClick={addTask}>Add Task</button>
+        {message && <p>{message}</p>}
+        <ul>
+          {tasks.map((task, index) => (
+            <li key={index} style={index === tasks.length - 1 ? { backgroundColor: 'lightgreen' } : null}>
+              {task}
+              <button onClick={() => deleteTask(index)}>Delete</button>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

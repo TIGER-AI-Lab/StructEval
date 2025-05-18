@@ -1,0 +1,26 @@
+
+spaceship:
+  name: Starblazer X9
+  model: ZX-Quantum
+  crew:
+    captain: Astra Nova
+    engineer: Dex Volt
+    pilot: Lira Quill
+  cargo:
+    - type: Cryo-Fruit
+      weight_kg: 1200
+      destination: Europa Station
+    - type: Nano-Alloys
+      weight_kg: 8000
+      destination: Mars Outpost
+  missions:
+    - mission_name: Nebula Drift
+      success: true
+      year: 2421
+    - mission_name: Dark Sector Run
+      success: false
+      year: 2422
+  specs:
+    length_m: 95.4
+    mass_tons: 320
+    hyperdrive_rating: 2.1A

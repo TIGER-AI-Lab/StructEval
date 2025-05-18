@@ -1,0 +1,38 @@
+
+{
+  "planet": {
+    "name": "Zyphora",
+    "discovery_year": 2217,
+    "type": "Gas Giant",
+    "atmosphere": {
+      "composition": ["Hydrogen", "Helium", "Methane"],
+      "pressure": 5000.2
+    },
+    "moons": [
+      {
+        "name": "Elyth",
+        "radius_km": 1200,
+        "features": [
+          {"feature_name": "Crystal Caverns", "description": "Vast underground networks of glowing crystals."},
+          {"feature_name": "Ice Spires", "description": "Towering ice formations near the poles."}
+        ]
+      },
+      {
+        "name": "Vornax",
+        "radius_km": 890,
+        "features": [
+          {"feature_name": "Sulfur Geysers", "description": "Active geysers emitting sulfur compounds."},
+          {"feature_name": "Magnetic Ridges", "description": "Regions with intense magnetic activity."}
+        ]
+      }
+    ],
+    "rings": {
+      "present": true,
+      "count": 7
+    },
+    "exploration_missions": [
+      {"mission_name": "Aurora Zephyr", "year": 2230, "status": "Completed"},
+      {"mission_name": "Stellar Dawn", "year": 2238, "status": "Ongoing"}
+    ]
+  }
+}

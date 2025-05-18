@@ -1,0 +1,41 @@
+
+space_station:
+  name: "Aurora Outpost"
+  operational_since: 2042
+  status: "active"
+
+  location:
+    planet: "Europa"
+    orbit: "Polar"
+
+  modules:
+    - id: "LAB-1"
+      purpose: "Biological Research"
+      crew_capacity: 4
+      experiments:
+        - "Hydroponics"
+        - "Microbial Growth"
+
+    - id: "ENG-2"
+      purpose: "Engineering"
+      crew_capacity: 2
+      experiments:
+        - "Material Stress"
+        - "Vacuum Tolerance"
+
+  supply_schedule:
+    frequency_days: 60
+    last_delivery: "2044-11-15"
+
+  crew_members:
+    - name: "Dr. Li Wei"
+      role: "Lead Biologist"
+      specialties:
+        - "Botany"
+        - "Microbiology"
+
+    - name: "Cmdr. Sasha Ivanov"
+      role: "Station Commander"
+      specialties:
+        - "Piloting"
+        - "Systems Engineering"

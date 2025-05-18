@@ -1,0 +1,40 @@
+
+{
+  "artifact": {
+    "name": "Ancient Pottery",
+    "origin": {
+      "culture": "Minoan",
+      "period": "Minoan Bronze Age"
+    },
+    "materials": [
+      {
+        "type": "clay",
+        "quantity_grams": 1500
+      },
+      {
+        "type": "paint",
+        "quantity_grams": 50
+      }
+    ],
+    "dimensions": {
+      "height_cm": 20,
+      "width_cm": 15,
+      "depth_cm": 10
+    },
+    "features": [
+      {
+        "description": "Distinct geometric patterns",
+        "estimated_age_years": 3500
+      },
+      {
+        "description": "Found near a Minoan settlement",
+        "estimated_age_years": 3500
+      }
+    ],
+    "current_location": {
+      "museum": "National Archaeological Museum",
+      "room": "Room 12",
+      "display_case": "Case 34"
+    }
+  }
+}

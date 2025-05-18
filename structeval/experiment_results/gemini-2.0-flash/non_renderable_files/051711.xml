@@ -1,0 +1,26 @@
+<galacticCarnival>
+  <planets>
+    <planet>
+      <name>Zyphora</name>
+      <attractions>
+        <attraction>
+          <name>Gravity-Free Rollercoaster</name>
+          <type>ride</type>
+        </attraction>
+        <attraction>
+          <name>Nebula Maze</name>
+          <type>game</type>
+        </attraction>
+      </attractions>
+    </planet>
+    <planet>
+      <name>Orionis</name>
+      <attractions>
+        <attraction>
+          <name>Starlight Parade</name>
+          <type>show</type>
+        </attraction>
+      </attractions>
+    </planet>
+  </planets>
+</galacticCarnival>

@@ -1,0 +1,43 @@
+{
+  "artifact": {
+    "name": "Ancient Sun Disk",
+    "origin": {
+      "civilization": "Minoan",
+      "era": "Bronze Age"
+    },
+    "discovery": {
+      "date": "2023-11-15",
+      "location": {
+        "latitude": 35.2989,
+        "longitude": 25.1234
+      }
+    },
+    "materials": [
+      {
+        "type": "Gold",
+        "percentage": 75.5
+      },
+      {
+        "type": "Copper",
+        "percentage": 24.5
+      }
+    ],
+    "inscriptions": [
+      {
+        "language": "Linear A",
+        "translation": "Offering to the sun god"
+      },
+      {
+        "language": "Ancient Greek",
+        "translation": "Blessings for the harvest"
+      }
+    ],
+    "condition": {
+      "status": "Good, minor corrosion",
+      "restoration": {
+        "last_date": "2024-04-10",
+        "notes": "Surface cleaned and stabilized; no structural repairs needed"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+artifact_id,artifact_name,origin_culture,origin_period,discovery_location,estimated_age_years,material_composition,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,current_location,condition_status,inscriptions_present,inscription_languages,notable_features,related_artifacts
+1,"Golden Mask of Tutankhamun","Ancient Egyptian","New Kingdom","Valley of the Kings",3300,"gold, lapis lazuli, quartz",54,39,49,"Egyptian Museum, Cairo","intact",true,"Ancient Egyptian","Funerary mask with intricate inlay and craftsmanship","2,3"
+2,"Terracotta Army Warrior","Ancient Chinese","Qin Dynasty","Lintong, Shaanxi Province",2200,"terracotta",180,60,40,"Museum of the Terracotta Army, Xi'an","fragmented",false,"","Life-sized warrior statue with detailed armor",""
+3,"Venus of Willendorf","Paleolithic","Upper Paleolithic","Willendorf, Austria",25000,"limestone",11,7,5,"Natural History Museum, Vienna","intact",false,"","Small figurine representing fertility",""

@@ -1,0 +1,46 @@
+game:
+  title: "Aetheria Online"
+  release_year: 2020
+  genre: "MMORPG"
+  platforms:
+    - name: "PC"
+      release_date: "2020-05-15"
+      supported_languages:
+        - English
+        - French
+        - German
+        - Japanese
+    - name: "macOS"
+      release_date: "2020-06-20"
+      supported_languages:
+        - English
+        - French
+        - German
+  developer:
+    name: "Phoenix Studios"
+    founded: 2012
+    location:
+      city: "Austin"
+      country: "USA"
+  reviews:
+    - reviewer: "IGN"
+      score: 8.5
+      date: "2020-05-20"
+      comment: "A polished and engaging MMORPG with a rich world."
+    - reviewer: "GameSpot"
+      score: 9.0
+      date: "2020-05-22"
+      comment: "Aetheria Online sets a new standard for online RPGs."
+  expansions:
+    - title: "Shadows of the Past"
+      release_year: 2021
+      features:
+        - "New story quests"
+        - "Increased level cap"
+        - "New playable race"
+    - title: "Rise of the Titans"
+      release_year: 2022
+      features:
+        - "New raid instances"
+        - "New crafting system"
+        - "World PvP updates"

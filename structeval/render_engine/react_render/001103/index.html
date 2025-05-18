@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001103</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const LibraryBookSearch = () => {
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState([]);
+  const [error, setError] = useState('');
+
+  const handleSearch = () => {
+    if (query.trim() === '') {
+      setError('Please enter a search query.');
+      setResults([]);
+      return;
+    }
+
+    setError('');
+    // Placeholder for actual search logic
+    const mockResults = [
+      'Book 1', 'Book 2', 'Book 3', 'Book 4', 'Book 5',
+    ].filter(title => title.toLowerCase().includes(query.toLowerCase())).slice(0, 5);
+    setResults(mockResults);
+  };
+
+  const handleClear = () => {
+    setQuery('');
+    setResults([]);
+    setError('');
+  };
+
+  return (
+    <div>
+      <h1 style={{ textAlign: 'center' }}>Library Book Search</h1>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr auto auto', gap: '10px', alignItems: 'center' }}>
+        <input
+          type="text"
+          placeholder="Type book title here"
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+        />
+        <button style={{ backgroundColor: 'green', color: 'white' }} onClick={handleSearch}>Search</button>
+        <button onClick={handleClear}>Clear</button>
+      </div>
+      <ul>
+        {results.map((result, index) => (
+          <li key={index}>{result}</li>
+        ))}
+      </ul>
+      {error && <div style={{ color: 'red' }}>{error}</div>}
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<LibraryBookSearch />);
+
+    </script>
+  </body>
+</html>

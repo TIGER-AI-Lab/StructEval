@@ -1,0 +1,45 @@
+
+<creature>
+  <name>Zyphorax</name>
+  <species>Vortanid</species>
+  <origin>
+    <planet>Neptarion</planet>
+    <galaxy>Andromeda</galaxy>
+  </origin>
+  <traits>
+    <trait>
+      <type>agility</type>
+      <description>Extremely fast and nimble in zero gravity environments.</description>
+      <rarity>rare</rarity>
+    </trait>
+    <trait>
+      <type>camouflage</type>
+      <description>Can blend seamlessly with nebula clouds.</description>
+      <rarity>common</rarity>
+    </trait>
+  </traits>
+  <abilities>
+    <ability>
+      <name>Plasma Burst</name>
+      <level>5</level>
+      <cooldown>30.5</cooldown>
+    </ability>
+    <ability>
+      <name>Quantum Phase Shift</name>
+      <level>3</level>
+      <cooldown>60</cooldown>
+    </ability>
+  </abilities>
+  <appearance>
+    <height>210</height>
+    <color>iridescent blue</color>
+    <appendages>
+      <count>6</count>
+      <type>tentacle</type>
+    </appendages>
+  </appearance>
+  <discovery>
+    <date>2124-04-15T14:30:00Z</date>
+    <discovered_by>Dr. Elara Voss</discovered_by>
+  </discovery>
+</creature>

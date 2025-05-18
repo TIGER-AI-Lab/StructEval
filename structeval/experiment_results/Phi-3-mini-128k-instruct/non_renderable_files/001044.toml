@@ -1,0 +1,31 @@
+[planet]
+name = "Kepler-186f"
+
+[planet.discovery]
+year = 2014
+method = "transit"
+
+[planet.orbit]
+period_days = 130.2
+eccentricity = 0.08
+
+[planet.atmosphere.composition]
+- gas = "Nitrogen"
+  percentage = 78
+- gas = "Oxygen"
+  percentage = 21
+
+[planet.moons]
+- name = "Kepler-186f b"
+  diameter_km = 12750
+
+- name = "Kepler-186f c"
+  diameter_km = 12750
+
+[planet.surface]
+temperature_c = -45
+has_liquid_water = true
+
+[planet.surface.landmarks]
+- type = "crater"
+  name = "Kepler-186f Crater"

@@ -1,0 +1,45 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<planets>
+  <planet>
+    <planet_name>Eurydice</planet_name>
+    <system>
+      <star_name>Alpha Centauri</star_name>
+      <star_type>Red Dwarf</star_type>
+      <distance_from_earth_ly>4.3</distance_from_earth_ly>
+    </system>
+    <moons>
+      <moon>
+        <moon_name>Selene</moon_name>
+        <diameter_km>1200</diameter_km>
+        <discovered_by>Dr. Voss</discovered_by>
+        <year_discovered>2101</year_discovered>
+      </moon>
+      <moon>
+        <moon_name>Nyx</moon_name>
+        <diameter_km>890</diameter_km>
+        <discovered_by>Dr. Toma</discovered_by>
+        <year_discovered>2120</year_discovered>
+      </moon>
+    </moons>
+    <atmosphere>
+      <composition>Nitrogen</composition>
+      <composition>Oxygen</composition>
+      <pressure_kpa>101.3</pressure_kpa>
+    </atmosphere>
+    <exploration>
+      <missions>
+        <mission>
+          <mission_name>First Landing</mission_name>
+          <year>2105</year>
+          <agency>ESA</agency>
+        </mission>
+        <mission>
+          <mission_name>Deep Probe</mission_name>
+          <year>2112</year>
+          <agency>NASA</agency>
+        </mission>
+      </missions>
+    </exploration>
+  </planet>
+</planets>

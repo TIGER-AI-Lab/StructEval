@@ -1,0 +1,37 @@
+exhibit:
+  title: "Ephemeral Echoes"
+  curator:
+    name: "Dr. Amelia Hayes"
+    contact_email: "ahayes@artmuseum.example.com"
+  opening_date: "2024-03-15"
+  closing_date: "2024-06-20"
+  artworks:
+    - artist: "Sarah Johnson"
+      title: "Whispers of the Wind"
+      year_created: 2021
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 120.5
+        width_cm: 90.0
+      provenance:
+        previous_owners:
+          - "Private Collection, London"
+          - "Estate of John Smith"
+        acquisition_date: "2023-11-01"
+      on_loan: false
+      gallery_location:
+        room_number: "Gallery 3A"
+    - artist: "Ken Watanabe"
+      title: "Urban Reflections"
+      year_created: 2022
+      medium: "Acrylic on wood panel"
+      dimensions:
+        height_cm: 60
+        width_cm: 80
+      provenance:
+        previous_owners:
+          - "Artist's Studio"
+        acquisition_date: "2024-01-15"
+      on_loan: true
+      gallery_location:
+        room_number: "Gallery 2B"

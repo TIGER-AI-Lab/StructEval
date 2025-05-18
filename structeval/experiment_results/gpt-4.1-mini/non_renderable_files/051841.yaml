@@ -1,0 +1,32 @@
+planet:
+  name: Zyphora-3b
+  system: Alpharion-Delta
+  discovery:
+    year: 2246
+    method: Gravitational Microlensing
+  atmosphere:
+    composition:
+      - Neon
+      - Argon
+      - Methane
+    pressure: 3.2
+  moons:
+    - name: Klyntos
+      diameter_km: 2100
+      surface:
+        features:
+          - Ice Geysers
+    - name: Virella
+      diameter_km: 1450
+      surface:
+        features:
+          - Crater Lakes
+          - Crystal Plains
+  habitability:
+    potential: false
+    criteria:
+      met:
+        - Stable Orbit
+      unmet:
+        - Liquid Water
+        - Optimal Temperature

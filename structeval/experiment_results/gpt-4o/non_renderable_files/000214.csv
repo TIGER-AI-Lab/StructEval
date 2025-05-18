@@ -1,0 +1,2 @@
+recipe_id,title,chef_name,cuisine_type,difficulty_level,prep_time_minutes,cook_time_minutes,servings,main_ingredient,ingredients[0].name,ingredients[0].quantity,ingredients[0].unit,steps[0].step_number,steps[0].instruction,nutrition.calories,nutrition.protein_grams,nutrition.fat_grams
+"RCP12345","Truffle Infused Wild Mushroom Risotto","Gordon Ramsay","Italian","Hard",30,45,4,"Wild Mushrooms","Arborio Rice",1.5,"cups",1,"Heat olive oil in a pan and sautÃ© onions until translucent.",550,12.5,22.0

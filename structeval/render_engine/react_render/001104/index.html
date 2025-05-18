@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001104</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const NoteTaker = () => {
+  const [noteTitle, setNoteTitle] = useState('');
+  const [noteContent, setNoteContent] = useState('');
+  const [isImportant, setIsImportant] = useState(false);
+  const [savedNote, setSavedNote] = useState(null);
+
+  const handleSaveNote = () => {
+    if (!noteTitle || !noteContent) {
+      alert('Please fill in both title and content.');
+      return;
+    }
+    setSavedNote({ title: noteTitle, content: noteContent, important: isImportant });
+  };
+
+  const handleClear = () => {
+    setNoteTitle('');
+    setNoteContent('');
+    setIsImportant(false);
+    setSavedNote(null);
+  };
+
+  return (
+    <div style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
+      <h1>Note Taker</h1>
+      <input
+        type="text"
+        placeholder="Enter note title"
+        value={noteTitle}
+        onChange={(e) => setNoteTitle(e.target.value)}
+        style={{ width: '300px' }}
+      />
+      <textarea
+        placeholder="Enter your note"
+        rows={4}
+        value={noteContent}
+        onChange={(e) => setNoteContent(e.target.value)}
+      />
+      <div>
+        <input
+          type="checkbox"
+          checked={isImportant}
+          onChange={(e) => setIsImportant(e.target.checked)}
+        />
+        <label>Mark as Important</label>
+      </div>
+      <button onClick={handleSaveNote} style={{ backgroundColor: 'green' }}>
+        Save Note
+      </button>
+      <button onClick={handleClear} style={{ backgroundColor: 'red' }}>
+        Clear
+      </button>
+      {savedNote && (
+        <div>
+          <h2>{savedNote.title}</h2>
+          <p>{savedNote.content}</p>
+          {savedNote.important && <p>Important!</p>}
+        </div>
+      )}
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<NoteTaker />);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+
+<creature species="Glimmerwings">
+  <habitat>
+    <region>Crystal Caves</region>
+    <climate>Subterranean</climate>
+    <features>Glittering crystals, underground rivers</features>
+  </habitat>
+  <anatomy>
+    <limbs>
+      <count>6</count>
+      <type>Wings</type>
+    </limbs>
+    <senses>
+      <sense>
+        <name>Vision</name>
+        <range>100 meters</range>
+      </sense>
+    </senses>
+  </anatomy>
+  <behavior>
+    <diet>Omnivore</diet>
+    <activity_cycle>Nocturnal</activity_cycle>
+    <social_structure>Monogamous pairs</social_structure>
+  </behavior>
+  <abilities>
+    <ability>
+      <name>Bioluminescence</name>
+      <description>Can produce light from its body</description>
+      <rarity>Common</rarity>
+    </ability>
+  </abilities>
+  <discovery>
+    <date>2022-03-15T14:30:00Z</date>
+  </discovery>
+</creature>

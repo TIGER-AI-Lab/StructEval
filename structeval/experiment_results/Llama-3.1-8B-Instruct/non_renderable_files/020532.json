@@ -1,0 +1,44 @@
+
+[
+  {
+    "station_id": "ISS-42",
+    "name": "Orbital Research Station",
+    "location": {
+      "city": "Low Earth Orbit",
+      "country": "International",
+      "coordinates": {
+        "latitude": 51.6,
+        "longitude": -0.1
+      }
+    },
+    "launch_date": "2023-10-12",
+    "modules": [
+      {
+        "module_id": "MOD-ALPHA",
+        "type": "Habitation",
+        "status": "Active",
+        "experiments": [
+          {
+            "experiment_id": "EXP-001",
+            "title": "Plant Growth in Microgravity",
+            "lead_scientist": "Dr. Ada Bloom",
+            "results_summary": "Successful germination observed."
+          }
+        ]
+      },
+      {
+        "module_id": "MOD-BETA",
+        "type": "Lab",
+        "status": "Inactive",
+        "experiments": [
+          {
+            "experiment_id": "EXP-002",
+            "title": "Crystal Formation",
+            "lead_scientist": "Dr. Linus Quartz",
+            "results_summary": "Partial crystallization noted."
+          }
+        ]
+      }
+    ]
+  }
+]

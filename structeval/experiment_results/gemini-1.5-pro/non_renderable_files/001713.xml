@@ -1,0 +1,39 @@
+<recipe>
+  <title>Galactic Guacamole</title>
+  <author>
+    <id>42</id>
+    <name>Zorp Glorbax</name>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Hyperspace Avocados</name>
+      <quantity>3</quantity>
+      <unit>pieces</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Nebula Nectar</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Mash the Hyperspace Avocados with a cosmic fork.</description>
+      <duration_minutes>5</duration_minutes>
+    </step>
+    <step>
+      <description>Stir in the Nebula Nectar and let it sit for a lightyear.</description>
+      <duration_minutes>1</duration_minutes>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>250</calories>
+    <fat_grams>20</fat_grams>
+    <protein_grams>5</protein_grams>
+  </nutrition>
+  <tags>
+    <tag>appetizer</tag>
+    <tag>alien</tag>
+  </tags>
+</recipe>

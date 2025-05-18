@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<galacticLibrary>
+  <section>
+    <name>Nebulae Fiction</name>
+    <shelves>
+      <shelf>
+        <title>Spiral Epics</title>
+        <books>
+          <book>
+            <title>The Andromeda Paradox</title>
+            <author>Lira Quell</author>
+          </book>
+          <book>
+            <title>Eventide Over Orion</title>
+            <author>Jax Tern</author>
+          </book>
+        </books>
+      </shelf>
+      <shelf>
+        <title>Cosmic Legends</title>
+        <books>
+          <book>
+            <title>The Pulsar's Secret</title>
+            <author>Zeno Vark</author>
+          </book>
+        </books>
+      </shelf>
+    </shelves>
+  </section>
+</galacticLibrary>

@@ -1,0 +1,21 @@
+
+import csv
+from datetime import datetime
+
+data = [
+    {"creature_name": "Glimmerbeetle", "biome": "Crystal Caves", "number_of_legs": 6, "discovery_date": datetime(2021, 4, 17), "venomous": True, "average_weight_kg": 0.8},
+    {"creature_name": "Frostwhisker", "biome": "Arctic Tundra", "number_of_legs": 4, "discovery_date": datetime(2019, 12, 5), "venomous": False, "average_weight_kg": 3.2},
+    {"creature_name": "Emberling", "biome": "Volcanic Plains", "number_of_legs": 8, "discovery_date": datetime(2022, 7, 22), "venomous": True, "average_weight_kg": 1.5},
+    {"creature_name": "Mossback", "biome": "Enchanted Forest", "number_of_legs": 4, "discovery_date": datetime(2018, 3, 11), "venomous": False, "average_weight_kg": 12.6},
+    {"creature_name": "Skyflare", "biome": "Floating Isles", "number_of_legs": 2, "discovery_date": datetime(2020, 9, 30), "venomous": False, "average_weight_kg": 0.4},
+    {"creature_name": "Duskcrawler", "biome": "Shadow Marshes", "number_of_legs": 10, "discovery_date": datetime(2023, 1, 15), "venomous": True, "average_weight_kg": 2.9}
+]
+
+with open('creatures.csv', 'w', newline='') as csvfile:
+    fieldnames = ["creature_name", "biome", "number_of_legs", "discovery_date", "venomous", "average_weight_kg"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in data:
+        row['discovery_date'] = row['discovery_date'].strftime("%Y-%m-%d")
+        writer.writerow(row)

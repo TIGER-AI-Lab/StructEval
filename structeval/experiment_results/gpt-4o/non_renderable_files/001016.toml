@@ -1,0 +1,28 @@
+[enchanted_forest]
+
+[[enchanted_forest.trees]]
+species = "willow"
+age = 300
+magical_properties = ["glows at night", "sings with the wind"]
+
+  [[enchanted_forest.trees.inhabitants]]
+  name = "Lira"
+  type = "sprite"
+  friendliness = 8
+  last_seen = "2023-09-15"
+
+  [enchanted_forest.trees.fruit]
+  count = 50
+  type = "glimmerberry"
+  is_edible = true
+
+[[enchanted_forest.mystical_events]]
+event_name = "Moonlit Dance"
+date = "2023-08-21"
+participants = ["Lira", "Eldrin", "Faylinn"]
+
+[enchanted_forest.guardian]
+name = "Eldrin"
+species = "ancient oak spirit"
+power_level = 95
+is_visible = false

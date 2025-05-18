@@ -1,0 +1,67 @@
+python
+import json
+import csv
+
+# JSON data
+json_data = '''
+[
+  {
+    "PlanetName": "Zyphron",
+    "AtmosphereType": "Methane-rich",
+    "NumberOfMoons": 2,
+    "DiscoveryDate": "2134-08-17",
+    "DistanceFromEarthLY": 412.7,
+    "PrimaryElement": "Iridium"
+  },
+  {
+    "PlanetName": "Tessara",
+    "AtmosphereType": "Carbon Dioxide",
+    "NumberOfMoons": 0,
+    "DiscoveryDate": "2122-03-11",
+    "DistanceFromEarthLY": 95.4,
+    "PrimaryElement": "Silicon"
+  },
+  {
+    "PlanetName": "Glimora",
+    "AtmosphereType": "Oxygen-Nitrogen",
+    "NumberOfMoons": 3,
+    "DiscoveryDate": "2140-12-05",
+    "DistanceFromEarthLY": 501.2,
+    "PrimaryElement": "Cobalt"
+  },
+  {
+    "PlanetName": "Vorun",
+    "AtmosphereType": "Hydrogen",
+    "NumberOfMoons": 1,
+    "DiscoveryDate": "2151-06-29",
+    "DistanceFromEarthLY": 788.9,
+    "PrimaryElement": "Platinum"
+  },
+  {
+    "PlanetName": "Elyria",
+    "AtmosphereType": "Sulfur Dioxide",
+    "NumberOfMoons": 4,
+    "DiscoveryDate": "2128-11-22",
+    "DistanceFromEarthLY": 320.6,
+    "PrimaryElement": "Magnesium"
+  },
+  {
+    "PlanetName": "Quorin",
+    "AtmosphereType": "Helium",
+    "NumberOfMoons": 2,
+    "DiscoveryDate": "2137-04-15",
+    "DistanceFromEarthLY": 610.3,
+    "PrimaryElement": "Nickel"
+  }
+]
+'''
+
+# Parse JSON data
+data = json.loads(json_data)
+
+# Write to CSV
+with open('planets.csv', 'w', newline='') as file:
+    writer = csv.DictWriter(file, fieldnames=data[0].keys())
+    writer.writeheader()
+    for row in data:
+        writer.writerow(row)

@@ -1,0 +1,95 @@
+
+recipe = {
+    title = "Spicy Tuna and Avocado Bowl"
+    author = {
+        name = "Alex Johnson"
+        contact = {
+            email = "alex.johnson@cookify.com"
+        }
+    }
+    ingredients = [
+        {
+            name = "Tuna"
+            quantity = 200
+            unit = "g"
+            notes = "Canned or fresh, drained"
+            allergen = "fish"
+        },
+        {
+            name = "Avocado"
+            quantity = 150
+            unit = "g"
+            notes = "Mashed with a fork"
+            allergen = "tree nut"
+        },
+        {
+            name = "Cucumber"
+            quantity = 100
+            unit = "g"
+            notes = "Chopped into cubes"
+            allergen = "peanut"
+        },
+        {
+            name = "Red onion"
+            quantity = 50
+            unit = "g"
+            notes = "Sliced thinly"
+            allergen = "gluten"
+        },
+        {
+            name = "Lime"
+            quantity = 1
+            unit = "medium"
+            notes = "Juiced"
+            allergen = "dairy"
+        },
+        {
+            name = "Tahini"
+            quantity = 20
+            unit = "g"
+            notes = "For the dressing"
+            allergen = "soy"
+        },
+        {
+            name = "Chili flakes"
+            quantity = 1
+            unit = "teaspoon"
+            notes = "To taste"
+            allergen = "pepper"
+        }
+    ]
+    steps = [
+        {
+            description = "In a large bowl, mash avocado with a fork until smooth"
+            duration_minutes = 5
+            equipment = "bowl"
+            temperature_celsius = 20
+        },
+        {
+            description = "Add drained tuna, cucumber, red onion, and lime juice to the bowl"
+            duration_minutes = 3
+            equipment = "spatula"
+            temperature_celsius = 25
+        },
+        {
+            description = "In a separate small bowl, mix tahini with chili flakes and a splash of water to create a dressing"
+            duration_minutes = 2
+            equipment = "bowl"
+            temperature_celsius = 20
+        },
+        {
+            description = "Toss the salad with the dressing until evenly coated"
+            duration_minutes = 4
+            equipment = "mixing bowl"
+            temperature_celsius = 22
+        }
+    ]
+    nutrition = {
+        calories = 420
+        macronutrients = {
+            protein_g = 35
+            carbs_g = 18
+            fat_g = 25
+        }
+    }
+}

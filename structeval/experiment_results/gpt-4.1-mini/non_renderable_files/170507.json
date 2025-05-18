@@ -1,0 +1,36 @@
+
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "planets": {
+      "planet": [
+        {
+          "planetName": "Zephyria",
+          "moons": {
+            "moon": [
+              {
+                "moonName": "Lunara"
+              },
+              {
+                "moonName": "Celestria"
+              }
+            ]
+          }
+        },
+        {
+          "planetName": "Orionis",
+          "moons": {
+            "moon": [
+              {
+                "moonName": "Phobos"
+              },
+              {
+                "moonName": "Deimos"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

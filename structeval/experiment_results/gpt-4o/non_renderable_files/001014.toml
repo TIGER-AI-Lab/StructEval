@@ -1,0 +1,30 @@
+[expedition]
+name = "Mars Exploration Mission"
+launch_date = "2025-07-16"
+
+[expedition.destination]
+planet = "Mars"
+
+[expedition.destination.coordinates]
+latitude = -4.5895
+longitude = 137.4417
+
+[[expedition.crew]]
+name = "Alice Johnson"
+role = "Commander"
+age = 38
+certifications = ["Pilot", "Engineer"]
+
+[[expedition.crew]]
+name = "Bob Smith"
+role = "Scientist"
+age = 42
+certifications = ["Biologist", "Geologist"]
+
+[[expedition.cargo]]
+item = "Food Supplies"
+quantity = 100
+
+[[expedition.cargo]]
+item = "Scientific Equipment"
+quantity = 50

@@ -1,0 +1,73 @@
+
+{
+    "title": "Saffron Crusted Scallops with Lemon-Garlic Butter",
+    "cuisine": "Mediterranean",
+    "difficulty": "medium",
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 12,
+    "ingredients": [
+        {
+            "name": "Scallops",
+            "quantity": 12,
+            "unit": "pieces"
+        },
+        {
+            "name": "Unsalted butter",
+            "quantity": 2,
+            "unit": "tablespoons"
+        },
+        {
+            "name": "Fresh lemon juice",
+            "quantity": 2,
+            "unit": "tablespoons"
+        },
+        {
+            "name": "Garlic",
+            "quantity": 2,
+            "unit": "cloves"
+        },
+        {
+            "name": "Saffron threads",
+            "quantity": 1/2,
+            "unit": "teaspoon"
+        },
+        {
+            "name": "Salt",
+            "quantity": 1/4,
+            "unit": "teaspoon"
+        },
+        {
+            "name": "Fresh parsley",
+            "quantity": 1/4,
+            "unit": "cup"
+        }
+    ],
+    "steps": [
+        {
+            "instruction": "Preheat the oven to 400Â°F (200Â°C).",
+            "duration_minutes": 5,
+            "tools": ["oven", "thermometer"]
+        },
+        {
+            "instruction": "Rinse the scallops under cold water and pat them dry with paper towels.",
+            "duration_minutes": 5,
+            "tools": ["colander", "paper towels"]
+        },
+        {
+            "instruction": "In a small bowl, mix together the saffron threads and 1 tablespoon of hot water.",
+            "duration_minutes": 2,
+            "tools": ["bowl", "spoon"]
+        },
+        {
+            "instruction": "In a large skillet, melt the butter over medium heat.",
+            "duration_minutes": 3,
+            "tools": ["skillet", "spatula"]
+        }
+    ],
+    "nutrition": {
+        "calories": 240,
+        "protein_grams": 30,
+        "carbs_grams": 4,
+        "fat_grams": 12
+    }
+}

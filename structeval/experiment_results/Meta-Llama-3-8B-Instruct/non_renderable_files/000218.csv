@@ -1,0 +1,3 @@
+
+"exhibit_id","artifact.name","artifact.origin","artifact.period","artifact.material","artifact.dimensions","artifact.condition","artifact.discovery_date","artifact.discovery_location","artifact.curator","artifact.estimated_value","artifact.images[0].url","artifact.images[0].caption","artifact.images[1].url","artifact.images[1].caption"
+"12345","Roman Vase","Italy","Roman Empire","Terracotta","20cm x 15cm x 5cm","excellent","2022-01-01","Rome","John Smith",1000,"https://example.com/image1.jpg","A Roman Vase from Italy","https://example.com/image2.jpg","A close-up of the vase's design"

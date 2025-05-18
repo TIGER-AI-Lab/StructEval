@@ -1,0 +1,13 @@
+import pandas as pd
+
+data = [
+    {'star_name': 'Alnitak', 'constellation': 'Orion', 'discovery_year': 1700, 'apparent_magnitude': 1.74, 'spectral_type': 'O9.5', 'distance_lightyears': 736, 'last_observed': '2023-12-05'},
+    {'star_name': 'Betelgeuse', 'constellation': 'Orion', 'discovery_year': 1836, 'apparent_magnitude': 0.42, 'spectral_type': 'M1', 'distance_lightyears': 642, 'last_observed': '2024-02-15'},
+    {'star_name': 'Vega', 'constellation': 'Lyra', 'discovery_year': 1850, 'apparent_magnitude': 0.03, 'spectral_type': 'A0', 'distance_lightyears': 25, 'last_observed': '2024-05-01'},
+    {'star_name': 'Antares', 'constellation': 'Scorpius', 'discovery_year': 1670, 'apparent_magnitude': 1.06, 'spectral_type': 'M1.5', 'distance_lightyears': 554, 'last_observed': '2023-11-19'},
+    {'star_name': 'Procyon', 'constellation': 'Canis Minor', 'discovery_year': 1910, 'apparent_magnitude': 0.34, 'spectral_type': 'F5', 'distance_lightyears': 11.46, 'last_observed': '2024-03-07'},
+    {'star_name': 'Sirius', 'constellation': 'Canis Major', 'discovery_year': 1862, 'apparent_magnitude': -1.46, 'spectral_type': 'A1', 'distance_lightyears': 8.6, 'last_observed': '2024-01-22'}
+]
+
+df = pd.DataFrame(data)
+df.to_csv('stars.csv', index=False)

@@ -1,0 +1,25 @@
+
+[ship]
+name = "SS Voyager"
+class = "Exploration Cruiser"
+
+[ship.captain]
+name = "Captain Elara Voss"
+rank = "Fleet Admiral"
+species = "Human"
+
+[[ship.crew]]
+name = "First Officer Jax Thorne"
+role = "First Officer"
+species = "Zentari"
+age = 34
+skills = ["Navigation", "Diplomacy", "Combat"]
+
+[[ship.log]]
+date = "2023-10-01T14:30:00Z"
+entry = "Departed from Earth orbit, heading towards Alpha Centauri."
+location = "Earth Orbit"
+
+[[ship.cargo]]
+item = "Hydrogen Fuel Cells"
+quantity = 150

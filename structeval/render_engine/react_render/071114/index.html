@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 071114</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>My Project Documentation</h1>
+
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#project-structure">Project Structure</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#contributing">Contributing</a></li>
+        <li><a href="#license">License</a></li>
+        <li><a href="#changelog">Changelog</a></li>
+        <li><a href="#appendix">Appendix</a></li>
+      </ol>
+
+      <hr />
+
+      <h2 id="introduction">Introduction</h2>
+      <p>Welcome to the documentation for <strong>My Project</strong>. This file outlines the structure, installation process, and usage instructions for our project. It is designed to be readable both as code and as a rendered Markdown file.</p>
+      <p><strong>Key Points:</strong></p>
+      <ul>
+        <li>Organized and modular project layout.</li>
+        <li>Clearly defined sections for ease of navigation.</li>
+        <li>Step-by-step instructions for installation and usage.</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="project-structure">Project Structure</h2>
+      <h3>Directory Layout</h3>
+      <pre>
+        {`my_project/
+âââ README.md           # Main documentation file
+âââ LICENSE             # License file
+âââ CONTRIBUTING.md     # Contribution guidelines
+âââ docs/
+â   âââ introduction.md # Extended introduction
+â   âââ usage.md        # Detailed usage instructions
+â   âââ changelog.md    # Change history
+âââ src/
+â   âââ module1/
+â   â   âââ componentA.md  # Component A documentation
+â   â   âââ componentB.md  # Component B documentation
+â   âââ module2/
+â       âââ main.md        # Entry point information
+â       âââ utils.md       # Utility functions and helpers
+âââ tests/
+    âââ test_module1.md    # Module 1 tests
+    âââ test_module2.md    # Module 2 tests
+`}
+      </pre>
+
+      <h3>Detailed Components</h3>
+      <ul>
+        <li><strong>Module 1:</strong>
+          <ul>
+            <li><em>Component A</em>: Processes raw data and performs initial normalization.</li>
+            <li><em>Component B</em>: Provides interfaces for data manipulation and communication.</li>
+          </ul>
+        </li>
+        <li><strong>Module 2:</strong>
+          <ul>
+            <li><em>Main</em>: Contains the core program logic and initialization routines.</li>
+            <li><em>Utils</em>: Offers support functions such as logging, error handling, and configurations.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Build Process</h3>
+      <pre>
+        {`bash
+$ make build
+`}
+      </pre>
+      <p>After a successful build, the executable files and resources will be available in the <code>bin/
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

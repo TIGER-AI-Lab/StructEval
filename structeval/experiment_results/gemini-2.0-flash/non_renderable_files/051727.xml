@@ -1,0 +1,33 @@
+<museum>
+  <name>The Galactic Oddities Museum</name>
+  <location>
+    <city>Nebulon</city>
+    <planet>Zyphora</planet>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Floating Timepieces</title>
+      <year_acquired>3042</year_acquired>
+      <artifacts>
+        <artifact>
+          <name>Chrono Sphere</name>
+          <origin>Vortex VI</origin>
+        </artifact>
+        <artifact>
+          <name>Temporal Locket</name>
+          <origin>Earth</origin>
+        </artifact>
+      </artifacts>
+    </exhibit>
+    <exhibit>
+      <title>Alien Footwear</title>
+      <year_acquired>3039</year_acquired>
+      <artifacts>
+        <artifact>
+          <name>Graviton Boots</name>
+          <origin>Asteroid Belt</origin>
+        </artifact>
+      </artifacts>
+    </exhibit>
+  </exhibits>
+</museum>

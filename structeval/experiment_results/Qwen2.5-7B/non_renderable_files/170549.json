@@ -1,0 +1,31 @@
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "starSystems": {
+      "starSystem": [
+        {
+          "systemName": "Alpha Centauri",
+          "planets": {
+            "planet": [
+              {
+                "planetName": "Zyphus",
+                "rings": [
+                  "Outer",
+                  "Inner"
+                ]
+              },
+              {
+                "planetName": "Virelia",
+                "rings": []
+              }
+            ]
+          }
+        },
+        {
+          "systemName": "Betelgeuse Minor",
+          "planets": {}
+        }
+      ]
+    }
+  }
+}

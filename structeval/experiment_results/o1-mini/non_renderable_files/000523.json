@@ -1,0 +1,33 @@
+{
+    "creature": {
+        "name": "Xelthar",
+        "type": "Silicaceous Arachnid",
+        "origin": {
+            "planet": "Zyphoria",
+            "galaxy": "Andromeda"
+        },
+        "abilities": [
+            {
+                "name": "Plasma Webbing",
+                "power_level": 85
+            },
+            {
+                "name": "Electro Shock",
+                "power_level": 90
+            }
+        ],
+        "habitat": {
+            "environment": "Volcanic Caverns",
+            "temperature_range": "500C to 800C",
+            "resources": [
+                "Molten Silicon",
+                "Thermal Crystals"
+            ]
+        },
+        "appearance": {
+            "color": "Crimson Red",
+            "size": "3 meters",
+            "distinctive_feature": "Bioluminescent Spinners"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+
+expedition:
+  name: "Odyssey Interplanetary Mission"
+  launch_date: "2042-07-16"
+  destination:
+    planet: "Europa"
+    moons:
+      - "Io"
+      - "Ganymede"
+      - "Callisto"
+  crew:
+    - name: "Dr. Elena Vasquez"
+      role: "Commander"
+      age: 42
+      skills:
+        - "Astrophysics"
+        - "Leadership"
+        - "Spacecraft Navigation"
+    - name: "Raj Patel"
+      skills:
+        - "Mechanical Engineering"
+        - "Robotics"
+        - "Extravehicular Activity"
+  cargo:
+    supplies:
+      food_kg: 1200.5
+      water_liters: 2500
+    equipment:
+      - type: "Scientific Instruments"
+        quantity: 15
+      - type: "Habitat Modules"
+        quantity: 3
+  mission_objectives:
+    primary: "Investigate subsurface ocean for signs of microbial life"
+    secondary:
+      - "Map ice crust thickness"
+      - "Analyze surface composition"
+      - "Test new radiation shielding technology"

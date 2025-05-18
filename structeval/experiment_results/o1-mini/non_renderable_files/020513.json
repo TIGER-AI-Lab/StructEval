@@ -1,0 +1,79 @@
+{
+  "castle": {
+    "name": "Dragonspire",
+    "location": {
+      "country": "Fantasia",
+      "region": "Northlands"
+    },
+    "year_built": 1234,
+    "owner": {
+      "name": "Lord Eldrick",
+      "title": "Baron"
+    },
+    "towers": [
+      {
+        "name": "North Tower",
+        "height_m": 40,
+        "purpose": "Lookout"
+      },
+      {
+        "name": "East Tower",
+        "height_m": 35,
+        "purpose": "Wizardry"
+      }
+    ],
+    "tower1": {
+      "name": "North Tower",
+      "height_m": 40,
+      "purpose": "Lookout"
+    },
+    "tower2": {
+      "name": "East Tower",
+      "height_m": 35,
+      "purpose": "Wizardry"
+    },
+    "defenses": {
+      "moat_depth_m": 12,
+      "wall_thickness_m": 6,
+      "traps": [
+        {
+          "type": "Pitfall",
+          "location": "Main Gate"
+        },
+        {
+          "type": "Arrow Trap",
+          "location": "Hallway"
+        }
+      ]
+    },
+    "trap1": {
+      "type": "Pitfall",
+      "location": "Main Gate"
+    },
+    "trap2": {
+      "type": "Arrow Trap",
+      "location": "Hallway"
+    },
+    "legend": {
+      "founder": "Lady Mirabel",
+      "ghosts": [
+        {
+          "name": "Sir Gareth",
+          "appearance": "Armored Knight"
+        },
+        {
+          "name": "The Weeping Lady",
+          "appearance": "Pale Woman in Veil"
+        }
+      ]
+    },
+    "ghost1": {
+      "name": "Sir Gareth",
+      "appearance": "Armored Knight"
+    },
+    "ghost2": {
+      "name": "The Weeping Lady",
+      "appearance": "Pale Woman in Veil"
+    }
+  }
+}

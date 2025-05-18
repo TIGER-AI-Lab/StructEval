@@ -1,0 +1,43 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<creature>
+    <name>Zylarth</name>
+    <species>Nebulon</species>
+    <age>450</age>
+    <origin>
+        <planet>Orionis</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <abilities>
+        <ability>
+            <type>Telepathy</type>
+            <level>8</level>
+            <description>Communicates thoughts across vast distances.</description>
+        </ability>
+        <ability>
+            <type>Energy Manipulation</type>
+            <level>7</level>
+            <description>Controls and shapes energy for various effects.</description>
+        </ability>
+    </abilities>
+    <companions>
+        <companion>
+            <name>Luma</name>
+            <species>Larvalis</species>
+            <bondStrength>0.85</bondStrength>
+        </companion>
+        <companion>
+            <name>Threx</name>
+            <species>Vortexian</species>
+            <bondStrength>0.92</bondStrength>
+        </companion>
+    </companions>
+    <physiology>
+        <height>220.5</height>
+        <weight>85.3</weight>
+        <coloration>
+            <primary>Azure Blue</primary>
+            <secondary>Silver</secondary>
+        </coloration>
+    </physiology>
+</creature>

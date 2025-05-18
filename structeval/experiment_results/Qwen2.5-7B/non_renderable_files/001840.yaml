@@ -1,0 +1,23 @@
+museum:
+  name: "The Metropolitan Museum of Art"
+  location:
+    city: "New York"
+    country: "USA"
+  founded_year: 1870
+  curators:
+    - name: "Dr. John Doe"
+      specialty: "Ancient Art"
+      years_of_experience: 20
+  exhibits:
+    - title: "The Winged Victory of Samothrace"
+      artist: "Unknown"
+      year_created: 190
+      medium: "Marble"
+      dimensions:
+        height_cm: 2.75
+        width_cm: 1.90
+      on_display: true
+      provenance:
+        previous_owners:
+          - "Private Collection"
+          - "The Louvre"

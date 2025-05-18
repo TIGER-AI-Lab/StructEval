@@ -1,0 +1,46 @@
+
+{
+  "artifact": {
+    "name": "The Golden Chalice of the Ancients",
+    "discovery_date": "2022-05-15T14:30:00.000Z",
+    "origin": {
+      "civilization": "Egyptian",
+      "location": "Thebes"
+    },
+    "materials": [
+      {
+        "type": "Gold",
+        "purity": 95
+      },
+      {
+        "type": "Copper",
+        "purity": 80
+      }
+    ],
+    "dimensions": {
+      "height_cm": 25,
+      "width_cm": 18,
+      "depth_cm": 10
+    },
+    "features": [
+      {
+        "description": "Intricate hieroglyphics adorn the chalice's rim",
+        "estimated_age_years": 1500
+      },
+      {
+        "description": "The chalice's base is adorned with a golden ankh symbol",
+        "estimated_age_years": 1200
+      }
+    ],
+    "current_location": {
+      "museum": "The Egyptian Museum",
+      "display_case": "Case 12"
+    },
+    "historical_significance": {
+      "summary": "The Golden Chalice of the Ancients is a significant artifact in understanding the cultural and artistic achievements of ancient Egyptian civilization",
+      "references": [
+        "Smith, J. (2020). The Art of Ancient Egypt. Routledge."
+      ]
+    }
+  }
+}

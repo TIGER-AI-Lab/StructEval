@@ -1,0 +1,35 @@
+<recipe>
+  <title>Spicy Tomato Basil Pasta</title>
+  <author>
+    <name>Giovanni Rossi</name>
+    <contact>
+      <email>giovanni.rossi@example.com</email>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Tomato Sauce</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <order>1</order>
+      <description>Boil the spaghetti in salted water until al dente.</description>
+    </step>
+    <step>
+      <order>2</order>
+      <description>In a pan, sautÃ© garlic and add tomato sauce, then simmer.</description>
+    </step>
+  </instructions>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <prepTime>PT30M</prepTime>
+  </metadata>
+</recipe>

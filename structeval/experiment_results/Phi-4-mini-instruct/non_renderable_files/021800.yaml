@@ -1,0 +1,27 @@
+
+planet_name: Aurelia
+system:
+  star_name: Helios
+  distance_from_earth_ly: 42
+  discovery:
+    year: 2087
+    method: Transit
+  atmosphere:
+    composition: CO2-N2-O2
+    pressure: 1.2
+    layers:
+      - name: Troposphere
+        altitude_range_km: 0-15
+      - name: Stratosphere
+        altitude_range_km: 15-60
+moons:
+  - name: Selene
+    diameter_km: 3200
+  - name: Phobos
+    diameter_km: 2100
+exploration:
+  missions:
+    - name: Surveyor I
+      year: 2090
+    - name: Surveyor II
+      year: 2095

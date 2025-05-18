@@ -1,0 +1,47 @@
+museum:
+  name: "Imaginary Art Museum"
+  location:
+    city: "Fantasia"
+    country: "Imaginaria"
+  founding_year: 1985
+  director:
+    full_name: "Dr. Alice Wonderland"
+    tenure_years: 10
+  exhibits:
+    - title: "The Enchanted Canvas"
+      artist: "Evelyn Dreamweaver"
+      year_created: 1999
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 150
+        width_cm: 200
+      on_display: true
+      provenance:
+        previous_owners:
+        - "The Dream Collector"
+        - "Fantasia Art Gallery"
+        acquisition_date: "1999-06-15"
+    - title: "Whispers of the Past"
+      artist: "Lucas Timebender"
+      year_created: 2005
+      medium: "Mixed media"
+      dimensions:
+        height_cm: 120
+        width_cm: 180
+      on_display: false
+      provenance:
+        previous_owners:
+        - "The Timekeeper's Trove"
+        acquisition_date: "2005-09-23"
+    - title: "Shadows and Light"
+      artist: "Mira Lightbringer"
+      year_created: 2010
+      medium: "Photography"
+      dimensions:
+        height_cm: 100
+        width_cm: 150
+      on_display: true
+      provenance:
+        previous_owners:
+        - "The Illusionist's Estate"
+        acquisition_date: "2010-11-05"

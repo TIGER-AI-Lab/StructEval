@@ -1,0 +1,41 @@
+
+<recipe>
+    <title>Spaghetti Aglio e Olio</title>
+    <author>
+        <id>12345</id>
+        <name>Giovanni Rossi</name>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Garlic</name>
+            <quantity>4</quantity>
+            <unit>cloves</unit>
+            <optional>false</optional>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Boil water in a large pot and add salt.</description>
+            <duration_minutes>10</duration_minutes>
+        </step>
+        <step>
+            <description>Add spaghetti to the boiling water and cook until al dente.</description>
+            <duration_minutes>8</duration_minutes>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>400</calories>
+        <fat_grams>10</fat_grams>
+        <protein_grams>12</protein_grams>
+    </nutrition>
+    <tags>
+        <tag>Italian</tag>
+        <tag>Pasta</tag>
+    </tags>
+</recipe>

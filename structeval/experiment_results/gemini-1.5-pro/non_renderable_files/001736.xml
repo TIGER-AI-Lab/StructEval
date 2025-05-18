@@ -1,0 +1,63 @@
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>Gordon Ramsay</name>
+    <id>12345</id>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>250</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Guanciale</name>
+      <quantity>100</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>large</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Pecorino Romano cheese</name>
+      <quantity>50</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Black pepper</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Cook spaghetti according to package directions.</description>
+      <duration_minutes>8</duration_minutes>
+    </step>
+    <step>
+      <description>While the pasta is cooking, fry the guanciale in a pan until crispy.</description>
+      <duration_minutes>5</duration_minutes>
+    </step>
+    <step>
+      <description>Whisk eggs, pecorino romano, and black pepper in a bowl.</description>
+      <duration_minutes>2</duration_minutes>
+    </step>
+    <step>
+      <description>Combine pasta, guanciale, and egg mixture. Toss until creamy.</description>
+      <duration_minutes>3</duration_minutes>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>600</calories>
+    <protein_grams>25.5</protein_grams>
+    <fat_grams>30</fat_grams>
+    <carbs_grams>60</carbs_grams>
+  </nutrition>
+</recipe>

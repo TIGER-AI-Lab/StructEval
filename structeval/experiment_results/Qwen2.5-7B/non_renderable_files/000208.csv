@@ -1,0 +1,55 @@
+python
+import csv
+
+# Sample data
+data = [
+    {
+        "species": "Panthera leo",
+        "habitat": "Savannah",
+        "average_weight_kg": 195,
+        "lifespan_years": 12,
+        "diet_type": "Carnivore",
+        "conservation_status": "Vulnerable",
+        "discovery": {
+            "year": 1758,
+            "discoverer": "Carl Linnaeus",
+            "location": "Sweden"
+        },
+        "notable_features": [
+            {"feature_name": "Powerful jaws", "description": "Strong bite force"},
+            {"feature_name": "Sharp claws", "description": "Used for hunting"}
+        ],
+        "related_species": ["Panthera tigris", "Panthera onca"]
+    },
+    {
+        "species": "Gorilla beringei",
+        "habitat": "Rainforest",
+        "average_weight_kg": 180,
+        "lifespan_years": 35,
+        "diet_type": "Herbivore",
+        "conservation_status": "Critically Endangered",
+        "discovery": {
+            "year": 1852,
+            "discoverer": "Johann Friedrich Blumenbach",
+            "location": "Germany"
+        },
+        "notable_features": [
+            {"feature_name": "Intelligence", "description": "Highly intelligent"},
+            {"feature_name": "Complex social structure", "description": "Lives in family groups"}
+        ],
+        "related_species": ["Gorilla gorilla", "Gorilla beringei beringei"]
+    }
+]
+
+# Writing to CSV
+with open('animals.csv', 'w', newline='') as file:
+    fieldnames = [
+        "species", "habitat", "average_weight_kg", "lifespan_years", "diet_type", "conservation_status",
+        "discovery.year", "discovery.discoverer", "discovery.location", "notable_features[0].feature_name",
+        "notable_features[0].description", "notable_features[1].feature_name", "notable_features[1].description",
+        "related_species[0]", "related_species[1]"
+    ]
+    writer = csv.DictWriter(file, fieldnames=fieldnames)
+    writer.writeheader()
+    for row in data:
+        writer.writerow(row)

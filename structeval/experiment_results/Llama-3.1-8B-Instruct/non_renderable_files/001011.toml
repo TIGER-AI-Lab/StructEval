@@ -1,0 +1,38 @@
+
+artifact = {
+  title = "Ancient Vase",
+  creator = {
+    name = "The Ancient Greek Pottery Workshop",
+    affiliation = "The Athenian Pottery Guild"
+  },
+  year_created = 500,
+  dimensions = {
+    height_cm = 30.5,
+    width_cm = 20.8,
+    depth_cm = 10.2
+  },
+  materials = ["Terracotta", "Glaze"],
+  origin = {
+    country = "Greece",
+    city = "Athens"
+  },
+  exhibition_history = [
+    {
+      location = "The British Museum",
+      year = 1850,
+      curator = "John Smith"
+    }
+  ],
+  provenance = {
+    previous_owners = [
+      {
+        name = "King Henry VIII",
+        acquisition_date = "1520-01-01"
+      },
+      {
+        name = "The Victoria and Albert Museum",
+        acquisition_date = "1850-06-01"
+      }
+    ]
+  }
+}

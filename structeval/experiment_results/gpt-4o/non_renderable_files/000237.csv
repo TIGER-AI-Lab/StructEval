@@ -1,0 +1,3 @@
+
+artifact_id,artifact_name,origin_civilization,discovery_site,discovery_date,material.primary,material.secondary,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,estimated_age_years,current_condition,inscriptions.language,inscriptions.translation,inscriptions.meaning,display_status,museum_location
+"ART12345","Golden Mask of Tutankhamun","Ancient Egypt","Valley of the Kings, Egypt","1922-11-04","gold","glass",54,39,49,3300,"intact","Ancient Egyptian","Tutankhamun, ruler of Upper and Lower Egypt, beloved of Amun","A declaration of Tutankhamun's divine right to rule","on public display","Egyptian Museum, Cairo"

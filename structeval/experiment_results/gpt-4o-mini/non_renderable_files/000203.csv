@@ -1,0 +1,3 @@
+
+album_id,album_title,artist_name,release_year,genre,label,producer,tracklist,tracklist_count,tracklist_first_title,tracklist_first_duration,tracklist_last_title,tracklist_last_duration,total_duration,cover_url
+"ALB001","Echoes of Tomorrow","The Dreamers",2023,"Electronic","Future Sounds","Jane Doe","Awakening;Chasing Stars;Infinite Skies;Fading Light;Elysium","5","Awakening","03:45","Elysium","04:30","18:00","https://example.com/cover.jpg"

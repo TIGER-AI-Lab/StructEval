@@ -1,0 +1,35 @@
+{
+  "ecosystem": {
+    "name": "Mystic Rainforest",
+    "location": {
+      "latitude": -3.4653,
+      "longitude": 36.7855
+    },
+    "climate": {
+      "type": "tropical",
+      "average_temperature_celsius": 27.5
+    },
+    "dominant_species": "Emerald Parrot",
+    "plant_species": [
+      {
+        "scientific_name": "Floratopia splendidus",
+        "common_name": "Splendid Flower",
+        "population_estimate": 50000
+      }
+    ],
+    "animal_species": [
+      {
+        "scientific_name": "Aves mirabilis",
+        "conservation_status": "endangered",
+        "average_lifespan_years": 12,
+        "diet": "omnivore"
+      }
+    ],
+    "environmental_threats": [
+      {
+        "type": "habitat loss",
+        "severity": "high"
+      }
+    ]
+  }
+}

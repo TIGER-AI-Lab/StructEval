@@ -1,0 +1,29 @@
+
+recipe:
+  title: "Spicy Chickpea Curry"
+  author:
+    name: "Jane Doe"
+    contact:
+      email: "jane.doe@example.com"
+  ingredients:
+    - name: "Chickpeas"
+      quantity: 400
+      unit: "grams"
+    - name: "Coconut Milk"
+      quantity: 400
+      unit: "ml"
+  steps:
+    - description: "Rinse and drain the chickpeas, then set aside."
+      duration_minutes: 5
+    - description: "In a pot, combine chickpeas and coconut milk, and simmer for 20 minutes."
+      duration_minutes: 20
+  metadata:
+    cuisine: "Indian"
+    difficulty: "medium"
+    tags:
+      - "vegan"
+      - "gluten-free"
+      - "spicy"
+  nutrition:
+    calories: 350
+    protein_grams: 15

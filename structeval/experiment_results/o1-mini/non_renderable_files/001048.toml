@@ -1,0 +1,34 @@
+
+[museum]
+name = "Artisan Museum of Modern Arts"
+founded_year = 1923
+
+[museum.location]
+city = "Metropolis"
+country = "Freedonia"
+
+[museum.director]
+full_name = "Dr. Helena Smith"
+tenure_years = 12
+
+[[museum.galleries]]
+title = "Impressionist Collection"
+theme = "Impressionism"
+
+  [[museum.galleries.artworks]]
+  artist = "Claude Monet"
+  title = "Water Lilies"
+  year_created = 1906
+  medium = "Oil on Canvas"
+  on_display = true
+
+  [[museum.galleries.artworks]]
+  artist = "Pierre-Auguste Renoir"
+  title = "Dance at Le Moulin de la Galette"
+  year_created = 1876
+  medium = "Oil on Canvas"
+  on_display = false
+
+[[museum.events]]
+name = "Summer Sculpture Exhibition"
+date = "2024-07-15"

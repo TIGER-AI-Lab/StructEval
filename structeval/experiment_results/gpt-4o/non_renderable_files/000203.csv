@@ -1,0 +1,3 @@
+
+"album_id","album_title","artist_name","release_year","genre","label","producer","tracklist","tracklist_count","tracklist_first_title","tracklist_first_duration","tracklist_last_title","tracklist_last_duration","total_duration","cover_url"
+"ALB001","Fictional Sounds","Imaginary Band",2023,"Rock","Dream Records","John Doe","Intro;The Journey;Finale",3,"Intro","02:30","Finale","04:15","10:00","http://example.com/cover.jpg"

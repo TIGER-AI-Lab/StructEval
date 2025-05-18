@@ -1,0 +1,11 @@
+book_id,title,author_name,author_birth_year,genre,publication_year,publisher_name,publisher_country,pages,language,series_name,series_number,isbn_13,average_rating,review_count
+1,"The Dragon's Apprentice","Elara Blackwood",1985,"Fantasy",2018,"Mythic House Publishing","United Kingdom",420,"English","Chronicles of Aetheria",1,"9781234567890",4.5,1250
+2,"Echoes of the Void","Kaelen Vance",1970,"Science Fiction",2022,"Galactic Press","United States",350,"English","Starbound Legacy",2,"9780987654321",4.2,800
+3,"The Alchemist's Secret","Seraphina Moreau",1892,"Historical Fantasy",2015,"Arcane Books","France",512,"English","Secrets of the Order",1,"9782468135790",4.8,1800
+4,"Beneath Crimson Skies","Alistair Finch",1960,"Steampunk",2019,"Clockwork Publishing","Canada",384,"English","Gears and Glory",3,"9783692581470",4.0,650
+5,"The Last Oracle","Lysandra Thorne",1990,"YA Fantasy",2023,"Phoenix Rising Books","Australia",296,"English","Guardians of the Realm",1,"9784821759360",4.6,920
+6,"Shadows of Yesterday","Jasper Sterling",1945,"Mystery",2021,"Crimson Tide Press","United States",320,"English",,,"9785039186420",3.9,580
+7,"The Silent Symphony","Genevieve Bellweather",1978,"Romance",2020,"Harmony House","United Kingdom",288,"English",,,"9786157043280",4.3,710
+8,"The Quantum Enigma","Orion Nebula",2000,"Science Fiction",2024,"Cosmic Reads","Germany",400,"English","Beyond the Horizon",1,"9787315920140",4.7,1400
+9,"Whispers of the Wildwood","Rowan Greenleaf",1955,"Folk Horror",2017,"Eerie Tales Publishing","Ireland",256,"English",,,"9788546791230",3.5,400
+10,"The Emperor's Gambit","Maximilian Stone",1982,"Political Thriller",2022,"Global Ink","Spain",448,"English",,,"9789701234560",4.1,690

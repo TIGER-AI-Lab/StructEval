@@ -1,0 +1,48 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def yaml_to_xml(yaml_data):
+    root = ET.Element("museum")
+    for key, value in yaml_data.items():
+        if key == "exhibits":
+            for exhibit in value:
+                exhibit_element = ET.SubElement(root, "exhibit")
+                for exhibit_key, exhibit_value in exhibit.items():
+                    if exhibit_key == "materials":
+                        materials_element = ET.SubElement(exhibit_element, exhibit_key)
+                        for material in exhibit_value:
+                            material_element = ET.SubElement(materials_element, "material")
+                            material_element.text = material
+                    else:
+                        ET.SubElement(exhibit_element, exhibit_key).text = str(exhibit_value)
+        else:
+            ET.SubElement(root, key).text = str(value)
+    return ET.tostring(root, encoding="unicode")
+
+yaml_data = yaml.safe_load("""
+museum:
+  name: Galactic Oddities Museum
+  location:
+    city: Nebulon Prime
+    planet: Zygra-7
+  exhibits:
+    exhibit:
+      - title: Crystalized Timepiece
+        artist: Xel'Nar
+        year: 4021
+        materials:
+          material:
+            - Chronoglass
+            - Starsteel
+      - title: Singing Nebula Sculpture
+        artist: Mira Qor
+        year: 3987
+        materials:
+          material:
+            - Nebulite
+            - Harmonic Alloy
+""")
+
+xml_data = yaml_to_xml(yaml_data)
+print(xml_data)

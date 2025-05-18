@@ -1,0 +1,28 @@
+[planet]
+name = "Zyphora"
+habitable = false
+
+[planet.discovery]
+year = 2147
+method = "transit"
+
+[planet.orbit]
+semi_major_axis = 1.35
+eccentricity = 0.05
+period_days = 482
+
+[[planet.atmosphere.composition]]
+gas = "Nitrogen"
+percentage = 78.0
+
+[[planet.atmosphere.composition]]
+gas = "Oxygen"
+percentage = 21.0
+
+[[planet.satellites]]
+name = "Lunara"
+diameter_km = 3474.8
+
+[[planet.satellites]]
+name = "Celestra"
+diameter_km = 3122.5

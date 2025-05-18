@@ -1,0 +1,30 @@
+
+artifact:
+  name: "The Celestial Sphere of Zerzura"
+  origin: "Ancient Zerzuran Civilization"
+  discovery:
+    year: 2015
+    discoverer: "Dr. Sofia Patel and Team"
+  materials:
+    - Gold
+    - Lapis Lazuli
+    - Quartz
+  dimensions:
+    height_cm: 25.5
+    width_cm: 20.8
+    depth_cm: 15.2
+  features:
+    - type: "Astronomical Instrument"
+      description: "A highly accurate sundial with intricate carvings of celestial bodies"
+      condition: "Excellent, with minor signs of wear"
+    - type: "Symbolic Representation"
+      description: "A series of interlocking geometric patterns representing the Zerzuran concept of the universe"
+      condition: "Good, with some minor damage to the surface"
+  provenance:
+    previous_owners:
+      - "The Zerzuran Royal Family"
+      - "The Museum of Ancient History"
+    auction_history:
+      - date: "2020-02-12T14:30:00Z"
+        price_usd: 850000
+        auction_house: "Sotheby's"

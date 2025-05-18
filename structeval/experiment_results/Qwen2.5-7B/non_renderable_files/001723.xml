@@ -1,0 +1,74 @@
+
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>John Doe</name>
+    <profileUrl>https://example.com/johndoe</profileUrl>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Guanciale</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Parmesan Cheese</name>
+      <quantity>50</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Black Pepper</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <order>1</order>
+      <instruction>Bring a large pot of salted water to a boil. Add spaghetti and cook until al dente.</instruction>
+      <durationMinutes>10</durationMinutes>
+    </step>
+    <step>
+      <order>2</order>
+      <instruction>In a separate pan, cook guanciale over medium heat until crispy. Remove from pan and set aside.</instruction>
+      <durationMinutes>5</durationMinutes>
+    </step>
+    <step>
+      <order>3</order>
+      <instruction>Drain spaghetti and reserve 1/2 cup of pasta water. Add spaghetti to the pan with guanciale and toss to combine.</instruction>
+      <durationMinutes>2</durationMinutes>
+    </step>
+    <step>
+      <order>4</order>
+      <instruction>In a bowl, whisk together eggs, Parmesan cheese, and black pepper. Gradually pour the egg mixture over the spaghetti, tossing to coat.</instruction>
+      <durationMinutes>2</durationMinutes>
+    </step>
+    <step>
+      <order>5</order>
+      <instruction>If the sauce is too thick, add some reserved pasta water. Serve immediately.</instruction>
+      <durationMinutes>1</durationMinutes>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>800</calories>
+    <fat>40</fat>
+    <protein>30</protein>
+    <carbohydrates>100</carbohydrates>
+  </nutrition>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>medium</difficulty>
+    <servings>4</servings>
+    <created>2022-01-01T00:00:00Z</created>
+  </metadata>
+</recipe>

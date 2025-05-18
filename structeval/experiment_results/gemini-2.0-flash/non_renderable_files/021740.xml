@@ -1,0 +1,35 @@
+
+<missions>
+  <mission>
+    <mission_name>Odyssey Alpha</mission_name>
+    <launch_date>2042-08-16</launch_date>
+    <crew>
+      <crew_member>
+        <crew_name>Dr. Mira Chen</crew_name>
+        <crew_role>Commander</crew_role>
+        <crew_age>38</crew_age>
+        <crew_specializations>Astrobiology;Navigation</crew_specializations>
+      </crew_member>
+      <crew_member>
+        <crew_name>Lt. Pavel Ivanov</crew_name>
+        <crew_role>Pilot</crew_role>
+        <crew_age>35</crew_age>
+        <crew_specializations>Engineering;Robotics</crew_specializations>
+      </crew_member>
+    </crew>
+    <cargo_mass_kg>1200</cargo_mass_kg>
+    <instruments>
+      <instrument>
+        <instrument_name>SpectroCam</instrument_name>
+        <instrument_type>Camera</instrument_type>
+      </instrument>
+      <instrument>
+        <instrument_name>GeoDrill</instrument_name>
+        <instrument_type>Drill</instrument_type>
+      </instrument>
+    </instruments>
+    <planet>Mars</planet>
+    <landing_site>Olympus Mons</landing_site>
+    <status>En Route</status>
+  </mission>
+</missions>

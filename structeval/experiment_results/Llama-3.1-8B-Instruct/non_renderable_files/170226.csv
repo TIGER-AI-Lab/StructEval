@@ -1,0 +1,21 @@
+
+import xml.etree.ElementTree as ET
+import csv
+
+tree = ET.parse('planets.xml')
+root = tree.getroot()
+
+with open('planets.csv', 'w', newline='') as csvfile:
+    fieldnames = ['PlanetName', 'DistanceFromStar_ly', 'DiscoveryDate', 'AtmosphereType', 'NumberOfMoons', 'IsHabitable']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for planet in root.findall('planet'):
+        writer.writerow({
+            'PlanetName': planet.find('PlanetName').text,
+            'DistanceFromStar_ly': planet.find('DistanceFromStar_ly').text,
+            'DiscoveryDate': planet.find('DiscoveryDate').text,
+            'AtmosphereType': planet.find('AtmosphereType').text,
+            'NumberOfMoons': planet.find('NumberOfMoons').text,
+            'IsHabitable': planet.find('IsHabitable').text
+        })

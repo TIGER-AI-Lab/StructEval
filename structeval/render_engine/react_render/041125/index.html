@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041125</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Main Title of the Document</h1>
+        <p>This page is designed to test the visual conversion process by demonstrating structural layout, visual hierarchy, and clearly formatted content.</p>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <h2>Section One: Introduction</h2>
+          <p>This section is intended to provide an overview and introduction to the main topics. The following articles provide more detailed information.</p>
+
+          <article>
+            <header>
+              <h3>Article 1: Getting Started</h3>
+            </header>
+            <p>This article introduces the basic configuration and steps necessary for setting up the initial framework.</p>
+            <ul>
+              <li>Step One: Install the required components</li>
+              <li>Step Two: Configure parameters</li>
+              <li>Step Three: Verify installation</li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <h3>Article 2: Detailed Overview</h3>
+            </header>
+            <p>This article delves into a more detailed exploration of the system's functionalities and best practices.</p>
+            <ol>
+              <li>Detail One: Understanding the architecture</li>
+              <li>Detail Two: System configuration and fine tuning</li>
+              <li>Detail Three: Reviewing outcomes</li>
+            </ol>
+          </article>
+        </section>
+
+        <section>
+          <h2>Section Two: Data and Structured Information</h2>
+          <p>This section includes data tables, labeled lists, and descriptions that provide additional clarity.</p>
+
+          <dl>
+            <dt>Identifier Alpha</dt>
+            <dd>A primary identifier used to mark essential data points in the system.</dd>
+            <dt>Identifier Beta</dt>
+            <dd>A secondary value representing the supporting metrics of the platform.</dd>
+            <dt>Identifier Gamma</dt>
+            <dd>This field is used for auxiliary processes and logging information.</dd>
+          </dl>
+
+          <table>
+            <caption>Parameter Overview</caption>
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>Value</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Parameter One</td>
+                <td>100</td>
+                <td>Base setting for general operations.</td>
+              </tr>
+              <tr>
+                <td>Parameter Two</td>
+                <td>200</td>
+                <td>Enhanced mode configuration value.</td>
+              </tr>
+              <tr>
+                <td>Parameter Three</td>
+                <td>300</td>
+                <td>Optimized threshold value for specific tasks.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <aside>
+          <h2>Additional Notes</h2>
+          <p>This side section includes extra details and supplementary items that may be useful for in-depth analysis.</p>
+          <ul>
+            <li>Supplementary Item A</li>
+            <li>Supplementary Item B</li>
+            <li>Supplementary Item C</li>
+          </ul>
+        </aside>
+      </main>
+
+      <footer>
+        <p>Contact us at: info@example.com | +1 234 567 890</p>
+        <p>&copy; 2023 All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

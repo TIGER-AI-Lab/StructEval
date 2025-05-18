@@ -1,0 +1,22 @@
+museum:
+  name: "Museum of Imaginary Arts"
+  location:
+    city: "Fantasia"
+    country: "Atheria"
+  founded_year: 1925
+  director:
+    name: "Dr. Aurora Borealis"
+    tenure_years: 15
+  exhibitions:
+    - title: "Ephemeral Echoes"
+      year: 2023
+      artworks:
+        - title: "Whispers of the Wind"
+          artist: "Zephyr Zephyrson"
+          medium: "Sculpted air currents"
+          dimensions:
+            height_cm: 200
+            width_cm: 150
+          on_loan: false
+  visitor_statistics:
+    annual_visitors: 350000

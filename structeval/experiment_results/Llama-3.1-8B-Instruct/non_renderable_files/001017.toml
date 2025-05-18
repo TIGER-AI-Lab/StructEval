@@ -1,0 +1,35 @@
+
+planet = {
+  name = "Kepler-452b",
+  discovery = {
+    year = 2015,
+    method = "transit"
+  },
+  mass = {
+    value = 5.0,
+    unit = "Earth masses"
+  },
+  orbit = {
+    semi_major_axis = 1.63,
+    eccentricity = 0.0,
+    period_days = 385.0
+  },
+  atmosphere = {
+    composition = [
+      { gas = "Nitrogen", percentage = 78.08 },
+      { gas = "Oxygen", percentage = 20.95 }
+    ]
+  },
+  moons = [
+    {
+      name = "Kepler-452b I",
+      diameter_km = 1000.0,
+      discovery_date = "2015-07-23"
+    },
+    {
+      name = "Kepler-452b II",
+      diameter_km = 500.0,
+      discovery_date = "2015-07-23"
+    }
+  ]
+}

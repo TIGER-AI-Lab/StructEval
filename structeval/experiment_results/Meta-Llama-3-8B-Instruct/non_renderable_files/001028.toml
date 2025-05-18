@@ -1,0 +1,29 @@
+
+[ship]
+name = "Aurora's Hope"
+class = "Exploration Vessel"
+
+[ship.captain]
+name = "Captain Zara Vex"
+rank = "Commander"
+species = "Human"
+
+[ship.crew]
+[[ship.crew]]
+name = "Lieutenant Commander Elianore Quasar"
+role = "First Officer"
+species = "Human"
+age = 35
+skills = ["Piloting", "Tactical", "Leadership"]
+
+[ship.log]
+[[ship.log]]
+date = "2023-02-15T14:30:00Z"
+entry = "Arrived at planet Xylophia-IV. Conducting routine scans."
+location = "Xylophia-IV (43.7212Â° N, 12.3456Â° E)"
+
+[ship.cargo]
+[[ship.cargo]]
+item = "Medical Supplies"
+quantity = 100
+

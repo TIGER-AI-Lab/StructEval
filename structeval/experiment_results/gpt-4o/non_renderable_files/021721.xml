@@ -1,0 +1,29 @@
+<zoo>
+    <name>WonderWorld Zoo</name>
+    <location>Springfield</location>
+    <opening_hours>09:00-18:00</opening_hours>
+    <animals>
+        <animal>
+            <species>Lion</species>
+            <name>Simba</name>
+            <age>5</age>
+            <enclosure>
+                <number>12</number>
+                <type>Outdoor</type>
+                <size_sq_meters>450</size_sq_meters>
+            </enclosure>
+        </animal>
+    </animals>
+    <staff>
+        <member>
+            <name>Jane Doe</name>
+            <role>Veterinarian</role>
+            <years_experience>8</years_experience>
+        </member>
+        <member>
+            <name>John Smith</name>
+            <role>Zookeeper</role>
+            <years_experience>5</years_experience>
+        </member>
+    </staff>
+</zoo>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <title>Delicious Chocolate Chip Cookies</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>All-purpose flour</name>
+            <quantity>300</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Granulated sugar</name>
+            <quantity>150</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Brown sugar</name>
+            <quantity>150</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Unsalted butter</name>
+            <quantity>225</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <unit>count</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vanilla extract</name>
+            <quantity>2</quantity>
+            <unit>teaspoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Baking soda</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>0.5</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Chocolate chips</name>
+            <quantity>300</quantity>
+            <unit>grams</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <instruction>Preheat oven to 190Â°C (375Â°F).</instruction>
+            <duration>PT5M</duration>
+            <tip>Make sure your oven is properly calibrated for best results.</tip>
+        </step>
+        <step>
+            <instruction>Cream together the butter, granulated sugar, and brown sugar until light and fluffy.</instruction>
+            <duration>PT7M</duration>
+            <tip>Use softened butter for easier creaming.</tip>
+        </step>
+        <step>
+            <instruction>Beat in the eggs one at a time, then stir in the vanilla.</instruction>
+            <duration>PT3M</duration>
+            <tip>Don't overmix after adding the eggs.</tip>
+        </step>
+        <step>
+            <instruction>In a separate bowl, whisk together the flour, baking soda, and salt.</instruction>
+            <duration>PT2M</duration>
+            <tip>Whisking ensures even distribution of baking soda and salt.</tip>
+        </step>
+        <step>
+            <instruction>Gradually add the dry ingredients to the wet ingredients, mixing until just combined.</instruction>
+            <duration>PT5M</duration>
+            <tip>Be careful not to overmix the dough.</tip>
+        </step>
+        <step>
+            <instruction>Stir in the chocolate chips.</instruction>
+            <duration>PT2M</duration>
+            <tip>Use high-quality chocolate chips for the best flavor.</tip>
+        </step>
+        <step>
+            <instruction>Drop by rounded tablespoons onto ungreased baking sheets.</instruction>
+            <duration>PT5M</duration>
+            <tip>Leave some space between the cookies.</tip>
+        </step>
+        <step>
+            <instruction>Bake for 9-11 minutes, or until golden brown.</instruction>
+            <duration>PT10M</duration>
+            <tip>Check the cookies frequently to prevent burning.</tip>
+        </step>
+        <step>
+            <instruction>Let cool on baking sheets for a few minutes before transferring to a wire rack to cool completely.</instruction>
+            <duration>PT5M</duration>
+            <tip>Cooling on the baking sheet helps the cookies set.</tip>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>150</calories>
+        <fat>8</fat>
+        <protein>2</protein>
+        <carbohydrates>18</carbohydrates>
+    </nutrition>
+    <metadata>
+        <cuisine>American</cuisine>
+        <difficulty>easy</difficulty>
+        <tags>
+            <label>cookies</label>
+            <label>chocolate</label>
+            <label>dessert</label>
+            <label>baking</label>
+        </tags>
+    </metadata>
+</recipe>

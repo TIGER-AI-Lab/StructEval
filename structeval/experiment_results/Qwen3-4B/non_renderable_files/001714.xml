@@ -1,0 +1,31 @@
+
+<planet>
+  <name>Zyphorion</name>
+  <type>gas giant</type>
+  <discovery>
+    <year>2085</year>
+    <method>gravitational lensing</method>
+  </discovery>
+  <atmosphere>
+    <composition>hydrogen, helium, methane</composition>
+    <pressure>120.0</pressure>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>Lunara</name>
+      <diameter>1500</diameter>
+      <discovery_date>2023-04-15</discovery_date>
+      <features>
+        <feature>
+          <type>crater</type>
+          <description>a large impact crater with a central peak</description>
+        </feature>
+      </features>
+    </moon>
+  </moons>
+  <rings>
+    <ring>
+      <radius>10000</radius>
+    </ring>
+  </rings>
+</planet>

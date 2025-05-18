@@ -1,0 +1,39 @@
+
+{
+  "novel": {
+    "title": "The Shadow of the Eclipse",
+    "author": {
+      "name": "Elena Voss",
+      "birth_year": 1975
+    },
+    "publication": {
+      "year": 2021,
+      "publisher": "Aurora Press"
+    },
+    "genres": ["Fantasy", "Dystopian", "Science Fiction"],
+    "characters": [
+      {
+        "name": "Kael Marrow",
+        "role": "Protagonist",
+        "traits": ["brave", "intelligent", "determined"]
+      },
+      {
+        "name": "Lira Solen",
+        "role": "Antagonist",
+        "traits": ["cunning", "ambitious", "calculating"]
+      }
+    ],
+    "chapters": [
+      {
+        "title": "The Awakening",
+        "word_count": 1200,
+        "events": ["Kael discovers the ancient artifact", "Lira's secret mission revealed"]
+      },
+      {
+        "title": "The Fracture",
+        "word_count": 1500,
+        "events": ["The artifact's power is activated", "The city begins to collapse"]
+      }
+    ]
+  }
+}

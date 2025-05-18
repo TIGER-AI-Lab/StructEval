@@ -1,0 +1,36 @@
+
+import csv
+import xml.etree.ElementTree as ET
+
+def csv_to_xml(csv_file, xml_file):
+    tree = ET.ElementTree()
+    root = ET.Element("planets")
+    tree._setroot(root)
+
+    with open(csv_file, 'r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            planet = ET.SubElement(root, "planet")
+            ET.SubElement(planet, "name").text = row["planet_name"]
+            ET.SubElement(planet, "star_name").text = row["system.star_name"]
+            ET.SubElement(planet, "star_type").text = row["system.star_type"]
+            ET.SubElement(planet, "distance_from_earth").text = row["system.distance_from_earth"]
+            moon1 = ET.SubElement(planet, "moon")
+            ET.SubElement(moon1, "name").text = row["moons[0].moon_name"]
+            ET.SubElement(moon1, "diameter_km").text = row["moons[0].diameter_km"]
+            ET.SubElement(moon1, "has_atmosphere").text = row["moons[0].has_atmosphere"]
+            moon2 = ET.SubElement(planet, "moon")
+            ET.SubElement(moon2, "name").text = row["moons[1].moon_name"]
+            ET.SubElement(moon2, "diameter_km").text = row["moons[1].diameter_km"]
+            ET.SubElement(moon2, "has_atmosphere").text = row["moons[1].has_atmosphere"]
+            atmosphere = ET.SubElement(planet, "atmosphere")
+            ET.SubElement(atmosphere, "composition").text = row["atmosphere.composition[0].element"]
+            ET.SubElement(atmosphere, "percentage").text = row["atmosphere.composition[0].percentage"]
+            ET.SubElement(atmosphere, "composition").text = row["atmosphere.composition[1].element"]
+            ET.SubElement(atmosphere, "percentage").text = row["atmosphere.composition[1].percentage"]
+            ET.SubElement(planet, "discovered_by").text = row["discovered_by"]
+            ET.SubElement(planet, "discovery_year").text = row["discovery_year"]
+
+    tree.write(xml_file)
+
+csv_to_xml("planets.csv", "planets.xml")

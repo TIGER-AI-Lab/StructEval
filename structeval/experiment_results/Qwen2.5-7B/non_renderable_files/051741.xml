@@ -1,0 +1,45 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "museum": {
+    "name": "The Clockwork Gallery",
+    "location": {
+      "city": "Gearford",
+      "country": "Steamlantis"
+    },
+    "exhibits": {
+      "exhibit": [
+        {
+          "title": "The Bronze Owl",
+          "artist": "Helena Gearsby",
+          "year": 1887
+        },
+        {
+          "title": "Pendulum Dreams",
+          "artist": "Victor Cogsworth",
+          "year": 1892
+        }
+      ]
+    }
+  }
+}
+'''
+
+data = json.loads(json_data)
+
+root = ET.Element("museum")
+for key, value in data["museum"].items():
+    if key == "exhibits":
+        exhibits = ET.SubElement(root, key)
+        for exhibit in value["exhibit"]:
+            exhibit_elem = ET.SubElement(exhibits, "exhibit")
+            for exhibit_key, exhibit_value in exhibit.items():
+                exhibit_elem.set(exhibit_key, str(exhibit_value))
+    else:
+        root.set(key, str(value))
+
+tree = ET.ElementTree(root)
+tree.write("output.xml")

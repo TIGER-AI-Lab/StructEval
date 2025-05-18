@@ -1,0 +1,96 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <title>Spaghetti Carbonara</title>
+    <author>
+        <name>John Doe</name>
+        <contact>
+            <email>johndoe@example.com</email>
+            <phone>+1234567890</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>4</quantity>
+            <unit>pieces</unit>
+            <optional>true</optional>
+        </ingredient>
+        <ingredient>
+            <name>Parmesan Cheese</name>
+            <quantity>50</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Pancetta</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Black Pepper</name>
+            <quantity>to taste</quantity>
+            <unit>none</unit>
+            <optional>true</optional>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Boil water in a large pot and cook the spaghetti until al dente.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>
+                <tool>pot</tool>
+                <tool>stove</tool>
+            </tools>
+        </step>
+        <step>
+            <description>In a separate bowl, beat the eggs and mix with grated Parmesan cheese.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>
+                <tool>bowl</tool>
+                <tool>whisk</tool>
+            </tools>
+        </step>
+        <step>
+            <description>Cook the pancetta in a skillet until crispy.</description>
+            <duration_minutes>7</duration_minutes>
+            <tools>
+                <tool>skillet</tool>
+                <tool>stove</tool>
+            </tools>
+        </step>
+        <step>
+            <description>Drain the spaghetti and combine with the pancetta and egg mixture.</description>
+            <duration_minutes>3</duration_minutes>
+            <tools>
+                <tool>colander</tool>
+                <tool>tongs</tool>
+            </tools>
+        </step>
+        <step>
+            <description>Season with black pepper and serve immediately.</description>
+            <duration_minutes>2</duration_minutes>
+            <tools>
+                <tool>serving plate</tool>
+            </tools>
+        </step>
+    </steps>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <difficulty>medium</difficulty>
+        <prep_time_minutes>27</prep_time_minutes>
+        <tags>
+            <tag>Pasta</tag>
+            <tag>Main Course</tag>
+            <tag>Italian</tag>
+            <tag>Quick</tag>
+        </tags>
+    </metadata>
+</recipe>

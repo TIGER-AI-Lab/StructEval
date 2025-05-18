@@ -1,0 +1,29 @@
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "planets": [
+      {
+        "planetName": "Xebulon",
+        "moons": [
+          {
+            "moonName": "Alpha",
+            "moonDiameter": 3200
+          }
+        ]
+      },
+      {
+        "planetName": "Zephyria",
+        "moons": [
+          {
+            "moonName": "Beta",
+            "moonDiameter": 2100
+          },
+          {
+            "moonName": "Gamma",
+            "moonDiameter": 1800
+          }
+        ]
+      }
+    ]
+  }
+}

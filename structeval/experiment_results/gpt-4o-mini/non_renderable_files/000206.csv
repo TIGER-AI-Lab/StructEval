@@ -1,0 +1,5 @@
+
+species,planet,discovery_year,average_height_cm,habitat_type,diet,number_of_limbs,primary_color,notable_ability,is_endangered,average_lifespan_years,first_contact_date,planetary_region,favorite_food,language_family
+Zylox,Veridion,2023,180,terrestrial,omnivore,4,green,telepathy,false,75,2023-05-15,North Continent,fruit,Veridionese
+Glarbax,Thalassia,2022,150,aquatic,carnivore,6,blue,bioluminescence,true,50,2022-11-20,Coral Archipelago,plankton,Thalassian
+Xyphor,Aridonia,2021,200,subterranean,herbivore,8,brown,camouflage,false,100,2021-08-30,Desert Plains,roots,Aridonian

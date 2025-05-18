@@ -1,0 +1,3 @@
+
+species_id,common_name,scientific_name,classification.kingdom,classification.phylum,classification.class,classification.order,classification.family,classification.genus,habitat.primary,habitat.secondary,distribution.continent,distribution.countries,conservation_status.iucn,conservation_status.population_trend,notable_features,average_lifespan_years,diet
+1,Red Fox,Vulpes vulpes,Animalia,Chordata,Mammalia,Carnivora,Foxidae,Vulpes,Temperate forest,Grassland,North America,"United States,Canada,Mexico",Least Concern,Stable,Adaptable to various environments,5,Carnivore

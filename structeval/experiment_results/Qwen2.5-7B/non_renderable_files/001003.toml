@@ -1,0 +1,29 @@
+[artifact]
+name = "The Enigmatic Amulet"
+origin = "The Lost City of Zephyria"
+discovery_date = "1923-07-15"
+[artifact.materials]
+primary = "gold"
+secondary = "lapis lazuli"
+[artifact.dimensions]
+height_cm = 5.2
+width_cm = 3.8
+depth_cm = 1.5
+[artifact.inscriptions.list]
+[[artifact.inscriptions.list]]
+language = "Zephyrian"
+translation = "May the winds of fortune carry you safely."
+location_on_artifact = "front"
+[[artifact.inscriptions.list]]
+language = "Latin"
+translation = "A token of good luck."
+location_on_artifact = "back"
+[artifact.exhibit]
+current_location = "Museum of Ancient Treasures"
+[artifact.exhibit.previous_locations]
+[[artifact.exhibit.previous_locations]]
+museum = "National Museum of Lost Cities"
+year_range = "1923â1950"
+[[artifact.exhibit.previous_locations]]
+museum = "Zephyrian Historical Society"
+year_range = "1951â1975"

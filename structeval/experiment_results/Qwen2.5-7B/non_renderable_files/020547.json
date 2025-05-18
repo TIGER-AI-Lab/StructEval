@@ -1,0 +1,10 @@
+import pandas as pd
+import json
+
+csv_data = """planet_name,galaxy,discovery.year,discovery.method,discovery.team_1_name,discovery.team_1_role,discovery.team_2_name,discovery.team_2_role,moons_1_name,moons_1_diameter_km,moons_1_has_atmosphere,moons_2_name,moons_2_diameter_km,moons_2_has_atmosphere,atmosphere.composition,atmosphere.pressure_kpa,inhabitants.civilizations_1_name,inhabitants.civilizations_1_population_millions,inhabitants.civilizations_2_name,inhabitants.civilizations_2_population_millions
+Tarsis,Andromeda,2245,Transit Method,Dr. Xel,Lead Astronomer,Prof. Yani,Astrobiologist,Phobos,22.4,TRUE,Deimos,12.3,FALSE,Nitrogen-Oxygen,101.3,Azurians,850,Crystalians,120"""
+
+df = pd.read_csv(pd.compat.StringIO(csv_data))
+json_data = df.to_json(orient='records')
+
+print(json_data)

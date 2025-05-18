@@ -1,0 +1,34 @@
+planet:
+  name: "Xenon"
+  type: "gas giant"
+  discovery:
+    year: 2145
+    method: "space probe"
+  atmosphere:
+    composition:
+      - "hydrogen"
+      - "helium"
+      - "methane"
+    pressure: 1500.5
+    temperature: 95.3
+  moons:
+    - name: "Zephyr"
+      diameter_km: 3200
+      orbital_period_days: 12.5
+      surface_features:
+        - feature_type: "crater"
+          description: "A large impact crater with a central peak."
+          coordinates: "45.0N, 23.5E"
+        - feature_type: "mountain"
+          description: "A towering mountain range with sharp peaks."
+          coordinates: "12.3S, 78.9W"
+    - name: "Aether"
+      diameter_km: 1500
+      orbital_period_days: 7.8
+      surface_features:
+        - feature_type: "valley"
+          description: "A deep valley with steep sides."
+          coordinates: "33.2N, 45.1W"
+        - feature_type: "plain"
+          description: "A vast, flat plain with scattered boulders."
+          coordinates: "10.0S, 60.0E"

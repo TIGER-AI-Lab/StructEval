@@ -1,0 +1,41 @@
+
+{
+  "artifact": {
+    "name": "The Golden Chalice",
+    "origin": {
+      "civilization": "Ancient Egyptians",
+      "era": "New Kingdom"
+    },
+    "materials": {
+      "primary": "Gold",
+      "secondary": "Copper"
+    },
+    "dimensions": {
+      "height_cm": 15,
+      "width_cm": 10,
+      "depth_cm": 5
+    },
+    "features": [
+      {
+        "type": "Inscription",
+        "description": "A hieroglyphic inscription on the side of the chalice",
+        "preservation_state": "Good"
+      },
+      {
+        "type": "Ornamentation",
+        "description": "Intricate designs and patterns on the chalice's surface",
+        "preservation_state": "Fair"
+      }
+    ]
+  },
+  "discovery": {
+    "date_found": "2022-01-01T00:00:00.000Z",
+    "location": {
+      "country": "Egypt",
+      "coordinates": {
+        "latitude": 25.733333,
+        "longitude": 32.733333
+      }
+    }
+  }
+}

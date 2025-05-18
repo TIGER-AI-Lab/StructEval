@@ -1,0 +1,36 @@
+
+{
+  "space_mission": "Artemis I",
+  "launch.date": "2024-11-16",
+  "launch.vehicle": "Orion",
+  "crew": [
+    {
+      "name": "Alice Kim",
+      "role": "Commander",
+      "nationality": "USA"
+    },
+    {
+      "name": "Raj Singh",
+      "role": "Engineer",
+      "nationality": "India"
+    }
+  ],
+  "nationality": "USA",
+  "payload.cargo": "Scientific Equipment",
+  "payload.weight_kg": "1200",
+  "payload.experiments": [
+    {
+      "experiment_name": "Lunar Soil Analysis",
+      "status": "Pending"
+    },
+    {
+      "experiment_name": "Radiation Measurement",
+      "status": "Ongoing"
+    }
+  ],
+  "mission_duration_days": "14",
+  "destination.planet": "Moon",
+  "destination.landing_site": "Aristarchus Plateau",
+  "communication.frequency_mhz": "145.8",
+  "communication.channels": ["Alpha", "Beta", "Gamma"]
+}

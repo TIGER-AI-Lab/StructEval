@@ -1,0 +1,19 @@
+
+museum:
+  name: "The Aetherium Museum"
+  location:
+    city: "Virelia"
+    country: "Eldoria"
+  founded_year: 1923
+  director:
+    full_name: "Dr. Elara Morn"
+    tenure_years: 15
+  galleries:
+    - title: "Modern Art Gallery"
+      floor: 2
+      artworks:
+        - artist: "Vincent Nocturne"
+          title: "Starry Night Over Virelia"
+          year_created: 1945
+          medium: "oil on canvas"
+          on_display: true

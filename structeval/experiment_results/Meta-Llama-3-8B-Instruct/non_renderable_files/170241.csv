@@ -1,0 +1,8 @@
+
+"StarName","SpectralType","DistanceLY","DiscoveryDate","HasExoplanets","ApparentMagnitude"
+"Kepler-22","G5","620","2011-12-05","true","11.664"
+"TRAPPIST-1","M8","39.6","2016-02-22","true","18.8"
+"Betelgeuse","M2","548","1836-10-15","false","0.42"
+"Proxima Centauri","M5","4.24","1915-08-18","true","11.13"
+"Vega","A0","25","1850-07-17","false","0.03"
+"HD 209458","G0","159","1999-11-05","true","7.65"

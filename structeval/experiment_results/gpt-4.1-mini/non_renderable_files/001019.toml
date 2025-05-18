@@ -1,0 +1,37 @@
+
+[artifact]
+name = "The Rosetta Stone"
+materials = ["Granodiorite"]
+
+[artifact.origin]
+culture = "Ptolemaic Egypt"
+period = "Hellenistic Period"
+discovery_date = "1799-07-15"
+
+[artifact.dimensions]
+height_cm = 114.4
+width_cm = 72.3
+depth_cm = 27.9
+
+[artifact.current_location]
+museum = "British Museum"
+room = "Room 4"
+display_case = "Case 12"
+
+[[artifact.exhibitions]]
+title = "Ancient Egyptian Treasures"
+year = 1802
+city = "London"
+curator = "Sir Henry Salt"
+
+[[artifact.restoration_history]]
+date = "1902-05-10"
+description = "Cleaned surface to remove accumulated dirt and grime."
+
+[[artifact.restoration_history]]
+date = "1953-11-22"
+description = "Stabilized cracks and reinforced structural integrity."
+
+[[artifact.restoration_history]]
+date = "2003-03-15"
+description = "Applied protective coating to prevent further erosion."

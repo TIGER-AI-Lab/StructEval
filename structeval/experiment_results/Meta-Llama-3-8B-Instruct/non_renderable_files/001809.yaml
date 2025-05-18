@@ -1,0 +1,27 @@
+
+artifact:
+  name: The Celestial Sphere of Zerzura
+  origin: Ancient Zerzurian Empire
+  discovery:
+    date: 2010-03-15T14:30:00Z
+    location: Egypt, Giza Plateau
+  dimensions:
+    height_cm: 25.5
+    width_cm: 18.2
+  materials:
+    - Gold
+    - Lapis Lazuli
+    - Quartz
+  inscriptions:
+    - language: Ancient Zerzurian
+      text: "May the celestial spheres align in harmony"
+    - language: Egyptian Hieroglyphs
+      text: "The great pharaoh's wisdom shall never fade"
+  current_location:
+    museum: The Egyptian Museum
+    city: Cairo
+  restorations:
+    - year: 1995
+      description: "Removal of centuries-old grime and restoration of original luster"
+    - year: 2012
+      description: "Repair of minor cracks and consolidation of fragile materials"

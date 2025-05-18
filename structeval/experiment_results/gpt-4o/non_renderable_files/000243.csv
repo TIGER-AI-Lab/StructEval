@@ -1,0 +1,3 @@
+
+"artifact_id","artifact_name","discovery.location","discovery.date_found","discovery.team_leader","dimensions.height_cm","dimensions.width_cm","dimensions.depth_cm","material.primary","material.secondary","estimated_age.years","estimated_age.method","current_condition.status","current_condition.last_inspection","exhibition_history[0].museum","exhibition_history[0].start_date","exhibition_history[0].end_date"
+"ART12345","Ancient Vase","Athens, Greece","2023-05-14","Dr. John Smith",45.0,30.0,30.0,"clay","paint",2500,"thermoluminescence","good","2023-09-01","National Archaeological Museum","2023-06-01",""

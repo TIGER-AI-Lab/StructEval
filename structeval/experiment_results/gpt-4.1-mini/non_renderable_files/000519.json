@@ -1,0 +1,40 @@
+{
+  "creature": {
+    "name": "Zylarion",
+    "species": "Xenovian",
+    "origin": {
+      "planet": "Vortax",
+      "galaxy": "Andromeda"
+    },
+    "abilities": [
+      {
+        "type": "Telekinesis",
+        "description": "Can move objects with the power of the mind up to 500 kg.",
+        "power_level": 85
+      },
+      {
+        "type": "Invisibility",
+        "description": "Can become completely invisible to the naked eye for up to 10 minutes.",
+        "power_level": 70
+      }
+    ],
+    "appearance": {
+      "height_cm": 210,
+      "skin_color": "iridescent blue",
+      "eye_count": 4
+    },
+    "history": {
+      "first_sighting": "2124-04-15T00:00:00Z",
+      "known_encounters": [
+        {
+          "location": "Orbital Research Station Theta",
+          "date": "2124-04-15T14:30:00Z"
+        },
+        {
+          "location": "Vortax Northern Plains",
+          "date": "2125-01-22T09:00:00Z"
+        }
+      ]
+    }
+  }
+}

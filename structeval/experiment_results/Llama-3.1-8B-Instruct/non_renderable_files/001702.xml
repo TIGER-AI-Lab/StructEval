@@ -1,0 +1,55 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <author>
+        <name>John Doe</name>
+        <contact>johndoe@example.com</contact>
+    </author>
+    <title>Creative Recipe</title>
+    <ingredients>
+        <ingredient>
+            <name>Flour</name>
+            <quantity>2</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Sugar</name>
+            <quantity>1</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>3</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Mix flour and sugar in a bowl.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>mixing bowl, spoon</tools>
+        </step>
+        <step>
+            <description>Crack eggs into the bowl.</description>
+            <duration_minutes>2</duration_minutes>
+            <tools>egg cracker, bowl</tools>
+        </step>
+        <step>
+            <description>Mix everything together.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>mixing spoon</tools>
+        </step>
+    </steps>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <difficulty>Medium</difficulty>
+        <servings>4</servings>
+        <prep_time>P1DT0H30M</prep_time>
+        <cook_time>P1DT0H30M</cook_time>
+    </metadata>
+    <nutrition>
+        <calories>500</calories>
+        <fat>20</fat>
+        <protein>30</protein>
+    </nutrition>
+</recipe>

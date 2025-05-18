@@ -1,0 +1,30 @@
+<zoo>
+  <animals>
+    <animal>
+      <name>Bubbles</name>
+      <species>Elephant</species>
+      <tricks>
+        <trick>Painting</trick>
+        <trick>Balancing</trick>
+      </tricks>
+    </animal>
+    <animal>
+      <name>Milo</name>
+      <species>Capuchin Monkey</species>
+      <tricks>
+        <trick>Juggling</trick>
+        <trick>Riding a bike</trick>
+      </tricks>
+    </animal>
+  </animals>
+  <staff>
+    <staffMember>
+      <name>Lara</name>
+      <role>Zookeeper</role>
+    </staffMember>
+    <staffMember>
+      <name>Samir</name>
+      <role>Veterinarian</role>
+    </staffMember>
+  </staff>
+</zoo>

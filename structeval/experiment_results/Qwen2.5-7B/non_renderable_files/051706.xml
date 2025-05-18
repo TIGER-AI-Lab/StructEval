@@ -1,0 +1,65 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "spaceZoo": {
+    "galaxies": {
+      "galaxy": [
+        {
+          "name": "Andromeda",
+          "planets": {
+            "planet": [
+              {
+                "name": "Xenon",
+                "creatures": {
+                  "creature": ["Glowbeast", "Stardust Fox"]
+                }
+              },
+              {
+                "name": "Quorra",
+                "creatures": {
+                  "creature": ["Nebula Hare"]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "MilkyWay",
+          "planets": {
+            "planet": [
+              {
+                "name": "Terra",
+                "creatures": {
+                  "creature": ["Lunar Owl"]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+'''
+
+def json_to_xml(json_data):
+    root = ET.Element("root")
+    space_zoo = ET.SubElement(root, "spaceZoo")
+    galaxies = ET.SubElement(space_zoo, "galaxies")
+    for galaxy in json_data["spaceZoo"]["galaxies"]["galaxy"]:
+        galaxy_element = ET.SubElement(galaxies, "galaxy")
+        ET.SubElement(galaxy_element, "name").text = galaxy["name"]
+        planets = ET.SubElement(galaxy_element, "planets")
+        for planet in galaxy["planets"]["planet"]:
+            planet_element = ET.SubElement(planets, "planet")
+            ET.SubElement(planet_element, "name").text = planet["name"]
+            creatures = ET.SubElement(planet_element, "creatures")
+            for creature in planet["creatures"]["creature"]:
+                ET.SubElement(creatures, "creature").text = creature
+    return ET.tostring(root, encoding="unicode")
+
+xml_data = json_to_xml(json.loads(json_data))
+print(xml_data)

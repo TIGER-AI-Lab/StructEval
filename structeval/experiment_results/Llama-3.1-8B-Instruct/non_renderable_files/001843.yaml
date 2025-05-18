@@ -1,0 +1,31 @@
+
+festival:
+  name: Electric Dreams Music Festival
+  location:
+    city: Los Angeles
+    venue: Dodger Stadium
+  dates:
+    start: 2024-07-15
+    end: 2024-07-17
+  lineup:
+    - artist: The Killers
+      set_time: 19:00
+      stage: Main Stage
+      special_guests: []
+    - artist: Billie Eilish
+      set_time: 21:30
+      stage: Main Stage
+      special_guests: [Lizzo, Justin Bieber]
+  tickets:
+    types:
+      - category: General Admission
+        price: 99.99
+        availability: 1000
+      - category: VIP
+        price: 299.99
+        availability: 500
+  sponsors:
+    main: Coca-Cola
+    secondary:
+      - Apple Music
+      - Toyota

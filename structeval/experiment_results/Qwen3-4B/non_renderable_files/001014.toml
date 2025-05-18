@@ -1,0 +1,36 @@
+
+expedition = {
+    name = "Interstellar Voyager 2023",
+    launch_date = "2023-10-15",
+    destination = {
+        planet = "Tyrus-7",
+        coordinates = {
+            latitude = 45.678,
+            longitude = -123.456
+        }
+    },
+    crew = [
+        {
+            name = "Commander Alex Morgan",
+            role = "Commander",
+            age = 42,
+            certifications = ["Astronaut", "Space Navigation"]
+        },
+        {
+            name = "Dr. Elena Torres",
+            role = "Scientist",
+            age = 38,
+            certifications = ["Astrophysics", "Exobiology"]
+        }
+    ],
+    cargo = [
+        {
+            item = "Advanced Hydroponics System",
+            quantity = 5
+        },
+        {
+            item = "Quantum Communication Array",
+            quantity = 2
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+
+artifact:
+  name: "Eldoria Chalice"
+  origin:
+    civilization: "Eldorian Empire"
+    estimated_age: 2450
+  materials:
+    - type: "silver"
+      provenance: "Silver mines of Aridia"
+    - type: "emerald"
+      provenance: "Lakes of Luminara"
+  dimensions:
+    height_cm: 30.5
+    width_cm: 15.2
+    depth_cm: 10.0
+  inscriptions:
+    - language: "Eldorian"
+      text: "May the light guide our destiny."
+    - language: "Ancient Glyphs"
+      text: "Eternity in serenity."
+  current_location:
+    museum: "Grand Museum of Ancient Artifacts"
+    display_case: "Case 42B"
+  discovery:
+    date: "1785-06-12"
+    location: "Ruins of Thalor, Eldoria"

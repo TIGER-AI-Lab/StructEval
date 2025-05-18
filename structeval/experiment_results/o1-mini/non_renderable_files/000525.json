@@ -1,0 +1,39 @@
+{
+  "name": "Ancient Sumerian Seal",
+  "origin": {
+    "period": "Ur III Dynasty",
+    "region": "Mesopotamia"
+  },
+  "materials": [
+    {
+      "type": "Steatite",
+      "provenance": "Local quarries"
+    },
+    {
+      "type": "Copper Inlay",
+      "provenance": "Imported from Oman"
+    }
+  ],
+  "dimensions": {
+    "height_cm": 5.5,
+    "width_cm": 5.5,
+    "depth_cm": 1.2
+  },
+  "features": [
+    {
+      "description": "Intricate cuneiform inscriptions",
+      "condition": "Well-preserved"
+    },
+    {
+      "description": "Iconographic representation of a deity",
+      "condition": "Minor erosion"
+    }
+  ],
+  "discovery": {
+    "location": {
+      "latitude": 32.56,
+      "longitude": 45.76
+    },
+    "date_found": "2023-05-15"
+  }
+}

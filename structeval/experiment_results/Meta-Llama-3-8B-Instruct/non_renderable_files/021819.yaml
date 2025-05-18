@@ -1,0 +1,48 @@
+
+planets:
+  - planet_name: Xenon Prime
+    system:
+      star_name: Arcturus
+      distance_from_earth: 22.5
+      discovery:
+        year: 2187
+        method: Transit
+        telescope: OrbitalEye
+    moons:
+      - moon_name: Phobos
+        diameter_km: 12.4
+        has_atmosphere: false
+      - moon_name: Deimos
+        diameter_km: 8.2
+        has_atmosphere: true
+    atmosphere:
+      composition:
+        - Nitrogen
+        - Oxygen
+      pressure_atm: 0.9
+      surface:
+        temperature_c: 23
+        has_liquid_water: true
+  - planet_name: Auroria
+    system:
+      star_name: Betelgeuse
+      distance_from_earth: 643
+      discovery:
+        year: 2290
+        method: Radial Velocity
+        telescope: DeepScan
+    moons:
+      - moon_name: Luna
+        diameter_km: 18.1
+        has_atmosphere: true
+      - moon_name: Selene
+        diameter_km: 10.7
+        has_atmosphere: false
+    atmosphere:
+      composition:
+        - Hydrogen
+        - Helium
+      pressure_atm: 0.2
+      surface:
+        temperature_c: -120
+        has_liquid_water: false

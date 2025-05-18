@@ -1,0 +1,35 @@
+ecosystem:
+  name: "The Whispering Woods"
+  location:
+    latitude: 34.56
+    longitude: -118.24
+  climate:
+    type: "temperate rainforest"
+    average_temperature_celsius: 15.5
+  flora:
+    - species: "Giant Glowshroom"
+      population_estimate: 5000
+      notable_features:
+        - "Bioluminescent cap"
+        - "Symbiotic relationship with Whispering Willow trees"
+    - species: "Whispering Willow"
+      population_estimate: 2000
+      notable_features:
+        - "Produces a soft, melodic rustling sound in the wind"
+        - "Roots intertwine with Giant Glowshrooms"
+  fauna:
+    - species: "Luminescent Deer"
+      diet: "herbivore"
+      population_estimate: 1000
+      conservation_status: "vulnerable"
+    - species: "Shadow Cat"
+      diet: "carnivore"
+      population_estimate: 300
+      conservation_status: "endangered"
+  events:
+    - event_name: "Great Bloom"
+      date: "2020-03-15"
+      impact_summary: "A sudden increase in Glowshroom population led to a temporary surge in Luminescent Deer numbers."
+    - event_name: "Shadow Cat Decline"
+      date: "2022-07-01"
+      impact_summary: "A decrease in Luminescent Deer population due to a fungal blight resulted in a decline in Shadow Cat numbers."

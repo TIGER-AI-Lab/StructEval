@@ -1,0 +1,30 @@
+
+artifact = {
+  name = "Ancient Sumerian Vase",
+  origin = {
+    civilization = "Sumerians",
+    era = "Uruk Period",
+    location = "Mesopotamia"
+  },
+  materials = {
+    primary = "Ceramic",
+    secondary = "Glazed",
+    decorations = [
+      { type = "Geometric Patterns", color = "Blue" },
+      { type = "Floral Motifs", color = "Red" }
+    ]
+  },
+  dimensions = {
+    height_cm = 30.5,
+    width_cm = 25.8,
+    weight_kg = 4.2
+  },
+  inscriptions = [
+    { language = "Sumerian", text = "For the temple of Inanna" },
+    { language = "Akkadian", text = "A gift from the king" }
+  ],
+  current_location = {
+    museum = "The British Museum",
+    exhibit_number = "123456"
+  }
+}

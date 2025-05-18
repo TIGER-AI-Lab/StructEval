@@ -1,0 +1,27 @@
+[museum]
+name = "Fictional Art Museum"
+established_year = 1923
+director = "Dr. Jane Doe"
+
+[museum.location]
+city = "Imaginetown"
+country = "Fictionland"
+
+[[museum.galleries]]
+title = "Masterpieces of the Imagination"
+room_number = "101"
+
+[[museum.galleries.artworks]]
+artist = "John Smith"
+title = "Dreamscape"
+year = 1950
+medium = "Oil on Canvas"
+
+[museum.galleries.artworks.dimensions]
+height_cm = 150.0
+width_cm = 100.0
+
+museum.galleries.artworks.on_display = true
+
+[museum.galleries.artworks.provenance]
+previous_owners = ["Alice Johnson", "The Imaginary Gallery", "Private Collector"]

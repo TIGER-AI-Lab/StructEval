@@ -1,0 +1,50 @@
+
+import csv
+from datetime import datetime
+
+def officer_to_csv(officer):
+    with open('officer.csv', 'w', newline='') as csvfile:
+        fieldnames = ['character_name', 'species', 'home_planet', 'rank', 'assignment.mission_name', 'assignment.start_date', 'assignment.end_date', 'assignment.status', 'skills[0].skill_name', 'skills[0].proficiency', 'skills[1].skill_name', 'skills[1].proficiency', 'equipment[0].item_name', 'equipment[0].quantity', 'equipment[1].item_name']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+        writer.writerow({
+            'character_name': officer['name'],
+            'species': officer['species'],
+            'home_planet': officer['home_planet'],
+            'rank': officer['rank'],
+            'assignment.mission_name': officer['assignment']['mission_name'],
+            'assignment.start_date': officer['assignment']['start_date'].strftime('%Y-%m-%d'),
+            'assignment.end_date': officer['assignment']['end_date'].strftime('%Y-%m-%d') if officer['assignment']['end_date'] else '',
+            'assignment.status': officer['assignment']['status'],
+            'skills[0].skill_name': officer['skills'][0]['skill_name'],
+            'skills[0].proficiency': officer['skills'][0]['proficiency'],
+            'skills[1].skill_name': officer['skills'][1]['skill_name'],
+            'skills[1].proficiency': officer['skills'][1]['proficiency'],
+            'equipment[0].item_name': officer['equipment'][0]['item_name'],
+            'equipment[0].quantity': officer['equipment'][0]['quantity'],
+            'equipment[1].item_name': officer['equipment'][1]['item_name']
+        })
+
+officer = {
+    'name': 'John Doe',
+    'species': 'Human',
+    'home_planet': 'Earth',
+    'rank': 'Lieutenant',
+    'assignment': {
+        'mission_name': 'Mission Alpha',
+        'start_date': datetime(2022, 1, 1),
+        'end_date': datetime(2022, 12, 31),
+        'status': 'Completed'
+    },
+    'skills': [
+        {'skill_name': 'Piloting', 'proficiency': 8},
+        {'skill_name': 'Tactics', 'proficiency': 6}
+    ],
+    'equipment': [
+        {'item_name': 'Phaser', 'quantity': 2},
+        {'item_name': 'Tricorder', 'quantity': 1}
+    ]
+}
+
+officer_to_csv(officer)

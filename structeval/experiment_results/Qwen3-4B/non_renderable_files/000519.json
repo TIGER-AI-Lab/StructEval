@@ -1,0 +1,39 @@
+
+{
+  "name": "Zyphorax",
+  "species": "Xenothorax",
+  "origin": {
+    "planet": "Vryllion",
+    "galaxy": "Lyra"
+  },
+  "abilities": [
+    {
+      "type": "Energy Projection",
+      "description": "Emits a concentrated beam of plasma energy",
+      "power_level": 85
+    },
+    {
+      "type": "Gravitic Manipulation",
+      "description": "Alters local gravity fields for movement",
+      "power_level": 72
+    }
+  ],
+  "appearance": {
+    "height_cm": 320,
+    "skin_color": "iridescent blue",
+    "eye_count": 6
+  },
+  "history": {
+    "first_sighting": "2023-10-05T14:48:00Z",
+    "known_encounters": [
+      {
+        "location": "Desert of Zeta-7",
+        "date": "2023-10-05T14:48:00Z"
+      },
+      {
+        "location": "Forest of Klyntar",
+        "date": "2024-03-12T09:15:00Z"
+      }
+    ]
+  }
+}

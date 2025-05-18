@@ -1,0 +1,21 @@
+
+museum:
+  name: "The Grand Imaginary Museum"
+  location:
+    city: "Fictionville"
+    country: "Narnia"
+  established_year: 1990
+  director:
+    name: "Jane Doe"
+    tenure_years: 10
+  galleries:
+    - title: "Modern Art Gallery"
+      theme: "Abstract Expressions"
+      artworks:
+        - title: "Colors of Silence"
+          artist: "John Smith"
+          year_created: 2010
+          medium: "Oil on Canvas"
+          dimensions:
+            height_cm: 150.5
+            width_cm: 200.0

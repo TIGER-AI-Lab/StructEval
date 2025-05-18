@@ -1,0 +1,77 @@
+
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>John Doe</name>
+    <contact>john.doe@example.com</contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Guanciale</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Parmesan Cheese</name>
+      <quantity>50</quantity>
+      <unit>grams</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <instruction>
+      <stepNumber>1</stepNumber>
+      <description>Boil spaghetti according to package instructions.</description>
+      <timer>
+        <seconds>1200</seconds>
+      </timer>
+    </instruction>
+    <instruction>
+      <stepNumber>2</stepNumber>
+      <description>Cook guanciale in a pan until crispy.</description>
+      <timer>
+        <seconds>600</seconds>
+      </timer>
+    </instruction>
+    <instruction>
+      <stepNumber>3</stepNumber>
+      <description>Beat eggs with Parmesan cheese.</description>
+      <timer>
+        <seconds>0</seconds>
+      </timer>
+    </instruction>
+    <instruction>
+      <stepNumber>4</stepNumber>
+      <description>Add cooked spaghetti to the pan with guanciale and pour egg mixture over it.</description>
+      <timer>
+        <seconds>300</seconds>
+      </timer>
+    </instruction>
+    <instruction>
+      <stepNumber>5</stepNumber>
+      <description>Mix everything together and serve hot.</description>
+      <timer>
+        <seconds>0</seconds>
+      </timer>
+    </instruction>
+  </instructions>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>easy</difficulty>
+    <servings>4</servings>
+  </metadata>
+  <nutrition>
+    <calories>800</calories>
+    <fat>30</fat>
+    <carbohydrates>50</carbohydrates>
+  </nutrition>
+</recipe>

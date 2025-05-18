@@ -1,0 +1,41 @@
+
+[expedition]
+name = "Odyssey Interplanetary Mission"
+launch_date = "2035-07-16"
+
+[expedition.destination]
+planet = "Mars"
+
+[expedition.destination.coordinates]
+latitude = -4.5895
+longitude = 137.4417
+
+[[expedition.crew]]
+name = "Dr. Elena Ramirez"
+role = "Commander"
+age = 42
+certifications = ["Pilot License", "Astrobiology PhD", "Spacewalk Certified"]
+
+[[expedition.crew]]
+name = "Lt. Mark Chen"
+role = "Engineer"
+age = 35
+certifications = ["Mechanical Engineering", "Robotics Specialist"]
+
+[[expedition.crew]]
+name = "Dr. Amina Hassan"
+role = "Scientist"
+age = 38
+certifications = ["Geology PhD", "Planetary Science"]
+
+[[expedition.cargo]]
+item = "Habitat Module"
+quantity = 1
+
+[[expedition.cargo]]
+item = "Rover Vehicle"
+quantity = 2
+
+[[expedition.cargo]]
+item = "Scientific Instruments"
+quantity = 15

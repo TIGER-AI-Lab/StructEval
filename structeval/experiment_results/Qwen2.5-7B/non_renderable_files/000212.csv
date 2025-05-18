@@ -1,0 +1,99 @@
+python
+import csv
+import re
+
+def extract_species_info(text):
+    species_info = {}
+    
+    # Extract species_id
+    species_id = re.search(r'species_id: (\d+)', text).group(1)
+    species_info['species_id'] = species_id
+    
+    # Extract common_name
+    common_name = re.search(r'common_name: (.+)', text).group(1)
+    species_info['common_name'] = common_name
+    
+    # Extract scientific_name
+    scientific_name = re.search(r'scientific_name: (.+)', text).group(1)
+    species_info['scientific_name'] = scientific_name
+    
+    # Extract classification details
+    classification = {}
+    classification['kingdom'] = re.search(r'classification\.kingdom: (.+)', text).group(1)
+    classification['phylum'] = re.search(r'classification\.phylum: (.+)', text).group(1)
+    classification['class'] = re.search(r'classification\.class: (.+)', text).group(1)
+    classification['order'] = re.search(r'classification\.order: (.+)', text).group(1)
+    classification['family'] = re.search(r'classification\.family: (.+)', text).group(1)
+    classification['genus'] = re.search(r'classification\.genus: (.+)', text).group(1)
+    species_info['classification'] = classification
+    
+    # Extract habitat details
+    habitat = {}
+    habitat['primary'] = re.search(r'habitat\.primary: (.+)', text).group(1)
+    habitat['secondary'] = re.search(r'habitat\.secondary: (.+)', text).group(1)
+    species_info['habitat'] = habitat
+    
+    # Extract distribution details
+    distribution = {}
+    distribution['continent'] = re.search(r'distribution\.continent: (.+)', text).group(1)
+    distribution['countries'] = re.search(r'distribution\.countries: (.+)', text).group(1)
+    species_info['distribution'] = distribution
+    
+    # Extract conservation_status details
+    conservation_status = {}
+    conservation_status['iucn'] = re.search(r'conservation_status\.iucn: (.+)', text).group(1)
+    conservation_status['population_trend'] = re.search(r'conservation_status\.population_trend: (.+)', text).group(1)
+    species_info['conservation_status'] = conservation_status
+    
+    # Extract notable_features
+    notable_features = re.search(r'notable_features: (.+)', text).group(1)
+    species_info['notable_features'] = notable_features
+    
+    # Extract average_lifespan_years
+    average_lifespan_years = re.search(r'average_lifespan_years: (\d+)', text).group(1)
+    species_info['average_lifespan_years'] = average_lifespan_years
+    
+    # Extract diet
+    diet = re.search(r'diet: (.+)', text).group(1)
+    species_info['diet'] = diet
+    
+    return species_info
+
+def write_to_csv(species_info, filename):
+    with open(filename, 'w', newline='') as csvfile:
+        fieldnames = [
+            'species_id', 'common_name', 'scientific_name', 'classification.kingdom',
+            'classification.phylum', 'classification.class', 'classification.order',
+            'classification.family', 'classification.genus', 'habitat.primary',
+            'habitat.secondary', 'distribution.continent', 'distribution.countries',
+            'conservation_status.iucn', 'conservation_status.population_trend',
+            'notable_features', 'average_lifespan_years', 'diet'
+        ]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerow(species_info)
+
+# Example usage
+text = """
+species_id: 123
+common_name: Lion
+scientific_name: Panthera leo
+classification.kingdom: Animalia
+classification.phylum: Chordata
+classification.class: Mammalia
+classification.order: Carnivora
+classification.family: Felidae
+classification.genus: Panthera
+habitat.primary: Grassland
+habitat.secondary: Savanna
+distribution.continent: Africa
+distribution.countries: South Africa, Kenya, Tanzania
+conservation_status.iucn: Vulnerable
+conservation_status.population_trend: Decreasing
+notable_features: Powerful muscles, sharp claws, and teeth
+average_lifespan_years: 15
+diet: Carnivore
+"""
+
+species_info = extract_species_info(text)
+write_to_csv(species_info, 'species_info.csv')

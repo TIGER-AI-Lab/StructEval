@@ -1,0 +1,29 @@
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "starSystems": [
+      {
+        "name": "Alpha Prime",
+        "planets": [
+          {
+            "name": "Zephyria",
+            "moons": ["Iolet", "Vesper"]
+          },
+          {
+            "name": "Quorra",
+            "moons": ["Nyx"]
+          }
+        ]
+      },
+      {
+        "name": "Beta Echo",
+        "planets": [
+          {
+            "name": "Solace",
+            "moons": ["Echolet"]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+
+import csv
+
+# Define the CSV file name
+csv_file = 'fictional_species.csv'
+
+# Define the header based on the feature requirements
+header = [
+    'species_id',
+    'species_name',
+    'habitat.region',
+    'habitat.climate',
+    'habitat.elevation_meters',
+    'physical_traits.height_cm',
+    'physical_traits.weight_kg',
+    'physical_traits.skin_color',
+    'diet.primary_food',
+    'diet.secondary_food',
+    'diet.is_carnivorous',
+    'reproduction.offspring_per_year',
+    'reproduction.mating_season_months',
+    'conservation_status.status',
+    'conservation_status.population_estimate'
+]
+
+# Sample data for the fictional species
+data = [
+    'SPC-001',
+    'Lumifera Glowsong',
+    'Enchanted Forests',
+    'temperate',
+    350,
+    120,
+    45,
+    'iridescent green',
+    'nectar',
+    'pollen',
+    'false',
+    30,
+    'April,May',
+    'Least Concern',
+    5000
+]
+
+# Write the data to the CSV file
+with open(csv_file, mode='w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(header)
+    writer.writerow(data)
+
+print(f"CSV file '{csv_file}' has been created successfully.")

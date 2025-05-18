@@ -1,0 +1,52 @@
+
+{
+  "museum": {
+    "name": "The Art Institute of Chicago",
+    "location": {
+      "city": "Chicago",
+      "country": "United States"
+    },
+    "established_year": 1879,
+    "director": "James Rondeau",
+    "exhibits": [
+      {
+        "title": "Nighthawks",
+        "artist": "Edward Hopper",
+        "year_created": 1942,
+        "medium": "Oil on canvas",
+        "dimensions": {
+          "height_cm": 84.1,
+          "width_cm": 152.4
+        },
+        "on_display": true,
+        "provenance": [
+          {
+            "owner": "The Art Institute of Chicago",
+            "acquisition_date": "1942-05-13"
+          }
+        ]
+      },
+      {
+        "title": "American Gothic",
+        "artist": "Grant Wood",
+        "year_created": 1930,
+        "medium": "Oil on beaverboard",
+        "dimensions": {
+          "height_cm": 78,
+          "width_cm": 65.3
+        },
+        "on_display": true,
+        "provenance": [
+          {
+            "owner": "The Art Institute of Chicago",
+            "acquisition_date": "1930-11-01"
+          }
+        ]
+      }
+    ],
+    "opening_hours": {
+      "weekdays": "10:30 AM - 5:00 PM",
+      "weekends": "10:00 AM - 5:00 PM"
+    }
+  }
+}

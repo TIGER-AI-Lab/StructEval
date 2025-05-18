@@ -1,0 +1,35 @@
+expedition:
+  name: "Voyager Beyond"
+  launch_date: "2035-07-16"
+  destination:
+    planet: "Jupiter"
+    moons:
+      - "Europa"
+      - "Ganymede"
+      - "Callisto"
+  crew:
+    - role: "Commander"
+      name: "Dr. Alex Mercer"
+      age: 42
+      skills:
+        - "Leadership"
+        - "Astrophysics"
+        - "Navigation"
+    - name: "Lt. Sarah Kim"
+      skills:
+        - "Engineering"
+        - "Robotics"
+        - "Survival Training"
+  cargo:
+    supplies:
+      food_kg: 5000
+      water_liters: 10000
+    equipment:
+      - type: "Scientific Instruments"
+        quantity: 20
+  mission_objectives:
+    primary: "Study the atmospheric composition of Jupiter"
+    secondary:
+      - "Analyze the ice crust of Europa"
+      - "Conduct geological surveys on Ganymede"
+      - "Search for signs of life on Callisto"

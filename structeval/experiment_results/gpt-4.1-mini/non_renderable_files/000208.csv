@@ -1,0 +1,66 @@
+import csv
+
+data = {
+    "species": "Luminae nocturna",
+    "habitat": "tropical rainforest",
+    "average_weight_kg": 3.5,
+    "lifespan_years": 12,
+    "diet_type": "omnivore",
+    "conservation_status": "vulnerable",
+    "discovery": {
+        "year": 2023,
+        "discoverer": "Dr. Elena Marquez",
+        "location": "Amazon Basin"
+    },
+    "notable_features": [
+        {
+            "feature_name": "Bioluminescent fur",
+            "description": "Emits a soft blue glow to attract mates and deter predators."
+        },
+        {
+            "feature_name": "Prehensile tail",
+            "description": "Used for grasping branches and aiding in arboreal movement."
+        }
+    ],
+    "related_species": [
+        "Nocturna luminis",
+        "Felis arboreus"
+    ]
+}
+
+with open('animal_data.csv', mode='w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow([
+        "species",
+        "habitat",
+        "average_weight_kg",
+        "lifespan_years",
+        "diet_type",
+        "conservation_status",
+        "discovery.year",
+        "discovery.discoverer",
+        "discovery.location",
+        "notable_features[0].feature_name",
+        "notable_features[0].description",
+        "notable_features[1].feature_name",
+        "notable_features[1].description",
+        "related_species[0]",
+        "related_species[1]"
+    ])
+    writer.writerow([
+        data["species"],
+        data["habitat"],
+        data["average_weight_kg"],
+        data["lifespan_years"],
+        data["diet_type"],
+        data["conservation_status"],
+        data["discovery"]["year"],
+        data["discovery"]["discoverer"],
+        data["discovery"]["location"],
+        data["notable_features"][0]["feature_name"],
+        data["notable_features"][0]["description"],
+        data["notable_features"][1]["feature_name"],
+        data["notable_features"][1]["description"],
+        data["related_species"][0],
+        data["related_species"][1]
+    ])

@@ -1,0 +1,44 @@
+
+expedition = {
+  name = "Galactic Horizon Expedition",
+  launch_date = "2025-01-01T00:00:00Z",
+  destination = {
+    planet = "Mars",
+    region = "Olympus Mons Caldera"
+  },
+  crew = [
+    {
+      name = "John Doe",
+      role = "Mission Commander",
+      experience_years = 10,
+      certifications = ["Pilot", "Scientist", "Engineer"]
+    },
+    {
+      name = "Jane Smith",
+      role = "Chief Scientist",
+      experience_years = 8,
+      certifications = ["Biologist", "Geologist", "Physicist"]
+    }
+  ],
+  equipment = [
+    {
+      item = "Spacecraft",
+      quantity = 1,
+      status = "operational"
+    },
+    {
+      item = "Lander",
+      quantity = 2,
+      status = "operational"
+    },
+    {
+      item = "Communication Device",
+      quantity = 1,
+      status = "spare"
+    }
+  ],
+  mission_objectives = {
+    primary = "Establish a sustainable human settlement on Mars",
+    secondary = "Conduct scientific research on Martian geology and atmosphere"
+  }
+}

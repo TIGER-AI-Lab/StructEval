@@ -1,0 +1,30 @@
+
+galaxy:
+  name: "Andromeda"
+  type: "Spiral"
+  distance_mly: 2.537
+  constellation: "Andromeda"
+  has_supermassive_blackhole: true
+  notable_features:
+    - "Double nucleus"
+    - "Star-forming regions"
+    - "Dust lanes"
+  discovery:
+    year: 964
+    discovered_by: "Abd al-Rahman al-Sufi"
+    instruments:
+      - "Naked eye"
+      - "Optical telescope"
+  satellites:
+    - name: "M32"
+      type: "Dwarf elliptical"
+      distance_kly: 2.65
+      has_atmosphere: false
+    - name: "M110"
+      type: "Dwarf elliptical"
+      distance_kly: 2.91
+      has_atmosphere: false
+    - name: "NGC 205"
+      type: "Dwarf elliptical"
+      distance_kly: 3.45
+      has_atmosphere: false

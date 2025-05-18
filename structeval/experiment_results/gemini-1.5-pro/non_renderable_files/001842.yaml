@@ -1,0 +1,23 @@
+museum:
+  name: "Museum of Imaginary Arts"
+  location:
+    city: "Exhibitsville"
+    country: "Imaginationland"
+  founding_year: 1955
+  director:
+    full_name: "Dr. Curator"
+    tenure_years: 15
+  exhibits:
+    - title: "The Whispering Sculpture"
+      artist: "A. Nonymous"
+      year_created: 2001
+      medium: "Dreams and Echoes"
+      dimensions:
+        height_cm: 180.5
+        width_cm: 90
+      on_display: true
+      provenance:
+        previous_owners:
+          - "Mr. Collector"
+          - "Ms. Artlover"
+        acquisition_date: "2010-03-15"

@@ -1,0 +1,24 @@
+
+<enchantedLibrary>
+  <section>
+    <name>Ancient Grimoires</name>
+    <shelf>
+      <shelfItem id="1">
+        <book>
+          <title>The Whispering Pages</title>
+          <spell>Invisibility</spell>
+        </book>
+        <book>
+          <title>Runes of the Moon</title>
+          <spell>Lunar Beacon</spell>
+        </book>
+      </shelfItem>
+      <shelfItem id="2">
+        <book>
+          <title>Potion Mastery</title>
+          <spell>Transmute</spell>
+        </book>
+      </shelfItem>
+    </shelf>
+  </section>
+</enchantedLibrary>

@@ -1,0 +1,38 @@
+
+{
+  "artifact": {
+    "name": "Crown of the Pharaoh",
+    "origin": {
+      "culture": "Ancient Egypt",
+      "period": "Old Kingdom"
+    },
+    "materials": {
+      "primary": "gold",
+      "secondary": "lapis lazuli, copper"
+    },
+    "dimensions": {
+      "height_cm": 30,
+      "width_cm": 20,
+      "depth_cm": 10
+    },
+    "location": {
+      "current_museum": "British Museum",
+      "room": "Egyptian Antiquities"
+    },
+    "provenance": {
+      "history": [
+        {
+          "event": "discovered",
+          "date": "2023-05-15",
+          "location": "Giza, Egypt"
+        }
+      ]
+    },
+    "images": [
+      {
+        "url": "https://example.com/artifact1.jpg",
+        "description": "Golden crown with lapis lazuli inlay, depicting pharaonic symbols"
+      }
+    ]
+  }
+}

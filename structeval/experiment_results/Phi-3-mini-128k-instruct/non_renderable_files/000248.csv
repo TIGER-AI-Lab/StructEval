@@ -1,0 +1,5 @@
+
+artifact_id,artifact_name,discovery.site,discovery.country,discovery.year,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.current_state,condition.restoration_years,provenance.previous_owners,provenance.auction_history,exhibit.locations
+"001","Ancient Vase","Giza Plateau","Egypt","2015","Clay","Gold leaf","45.25","30.00","10.00","intact","2018","John Doe","2018, The Louvre Auction","The British Museum, The Metropolitan Museum of Art"
+"002","Roman Coin","Tarragona","Spain","2017","Bronze","Silver","2.50","1.25","0.10","fragmented","2019,2021","Alice Smith","2020, The Vatican Sale","The National Archaeological Museum, The Capitoline Museums"
+"003","Medieval Sword","St. Gallen","Switzerland","2016","Steel","Iron","100.00","0.50","0.20","restored","2018","Robert Brown","2019, The Geneva Auction","The Swiss National Museum, The Museum of Fine Arts, Boston"

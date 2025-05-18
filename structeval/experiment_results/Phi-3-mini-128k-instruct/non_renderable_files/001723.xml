@@ -1,0 +1,63 @@
+<recipe>
+    <title>Chocolate Avocado Mousse</title>
+    <author>
+        <name>Chef Avocado</name>
+        <profileUrl>https://chefavocado.com</profileUrl>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Avocado</name>
+            <quantity>2</quantity>
+            <unit>medium</unit>
+        </ingredient>
+        <ingredient>
+            <name>Dark Chocolate</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Maple Syrup</name>
+            <quantity>3</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vanilla Extract</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>pinch</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <order>1</order>
+            <instruction>Melt the dark chocolate in a heatproof bowl over a pot of simmering water.</instruction>
+            <durationMinutes>5</durationMinutes>
+        </step>
+        <step>
+            <order>2</order>
+            <instruction>Blend the avocados, melted chocolate, maple syrup, vanilla extract, and salt in a food processor until smooth.</instruction>
+            <durationMinutes>10</durationMinutes>
+        </step>
+        <step>
+            <order>3</order>
+            <instruction>Chill the mousse in the refrigerator for at least 1 hour before serving.</instruction>
+            <durationMinutes>60</durationMinutes>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>250</calories>
+        <fat>20</fat>
+        <protein>5</protein>
+        <carbohydrates>20</carbohydrates>
+    </nutrition>
+    <metadata>
+        <cuisine>Dessert</cuisine>
+        <difficulty>Easy</difficulty>
+        <servings>4</servings>
+        <created>2023-04-01T12:00:00Z</created>
+    </metadata>
+</recipe>

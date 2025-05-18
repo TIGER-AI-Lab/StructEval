@@ -1,0 +1,37 @@
+{
+  "artifact": {
+    "name": "The Helm of Ages",
+    "period": "Bronze Age",
+    "origin": {
+      "civilization": "Minoan",
+      "region": "Crete"
+    },
+    "discovery": {
+      "date": "2023-04-15",
+      "location": {
+        "latitude": 35.297,
+        "longitude": 25.168
+      }
+    },
+    "dimensions": {
+      "height_cm": 30,
+      "width_cm": 15,
+      "depth_cm": 10
+    },
+    "materials": ["bronze", "gold"],
+    "inscriptions": [
+      {
+        "language": "Linear A",
+        "text": "ðððððð¤ðð­ðªðð¤ðð­ðªðð¤ðð­ðª",
+        "translation": "Guardian of the sacred flame",
+        "condition": "intact"
+      },
+      {
+        "language": "Greek",
+        "text": "á¼©ÏÎ±ÎºÎ»ÎµÎ¯Î± Ïá¿Ï Î¸ÎµÎ¯Î±Ï ÏÏÏá½¸Ï ÏÏÎ»Î±Î¾",
+        "translation": "Heracles, guardian of the divine fire",
+        "condition": "eroded"
+      }
+    ]
+  }
+}

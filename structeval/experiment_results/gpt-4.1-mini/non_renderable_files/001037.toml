@@ -1,0 +1,30 @@
+
+[brewery]
+name = "Silver Oak Craft Brewery"
+founded_year = 2012
+owner = "Lena Thompson"
+
+[brewery.location]
+city = "Portland"
+country = "USA"
+
+[[brewery.beers]]
+name = "Midnight Cascade"
+type = "Stout"
+abv = 6.5
+
+  [brewery.beers.ingredients]
+  malts = ["Pale Malt", "Chocolate Malt", "Caramel Malt"]
+  hops = ["Cascade", "Fuggle"]
+  yeast = "American Ale Yeast"
+
+  [[brewery.beers.awards]]
+  name = "Best Stout 2021"
+  year = 2021
+
+[brewery.tours]
+available = true
+
+  [[brewery.tours.schedule]]
+  day = "Saturday"
+  time = "14:00"

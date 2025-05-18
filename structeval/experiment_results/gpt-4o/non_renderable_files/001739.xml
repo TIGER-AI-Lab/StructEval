@@ -1,0 +1,39 @@
+<recipe>
+    <title>Spicy Avocado Toast</title>
+    <author>
+        <name>Jamie Oliver</name>
+        <profileUrl>http://www.jamieoliver.com/profile</profileUrl>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Avocado</name>
+            <quantity>2</quantity>
+            <unit>pieces</unit>
+            <optional>false</optional>
+        </ingredient>
+        <!-- Additional ingredients can be added here -->
+    </ingredients>
+    <steps>
+        <step>
+            <order>1</order>
+            <instruction>Mash the avocados in a bowl.</instruction>
+            <timer>
+                <seconds>60</seconds>
+            </timer>
+            <notes>Ensure the avocados are ripe for easy mashing.</notes>
+        </step>
+        <!-- Additional steps can be added here -->
+    </steps>
+    <metadata>
+        <cuisine>Mexican</cuisine>
+        <prepTimeMinutes>10</prepTimeMinutes>
+        <tags>
+            <tag>vegetarian</tag>
+            <!-- Additional tags can be added here -->
+        </tags>
+    </metadata>
+    <nutrition>
+        <calories>250</calories>
+        <!-- Additional nutrition facts can be added here -->
+    </nutrition>
+</recipe>

@@ -1,0 +1,17 @@
+
+species_name,primary_color,average_height_cm,habitat_type,diet_classification,number_of_legs,average_lifespan_years,endangered_status,native_planet,notable_ability,first_discovered_year,discovered_by,communication_method,social_structure,reproduction_cycle_days
+Zyphorix,iridescent blue,150,forest,omnivore,6,120,not threatened,Zyphorion Prime,bioluminescent camouflage,3050,Zara Xenobiology Expedition,sonic pulses,tribal societies,90
+Xenolux,green,200,desert,herbivore,4,200,vulnerable,Xenolux Prime,solar energy absorption,3100,Dr. H. Lumen,visual signals,matriarchal clans,45
+Vortax,red,180,underwater,omnivore,8,300,not threatened,Vortax Prime,water manipulation,2950,Oceanic Research Group,sonic pulses,herd communities,60
+Quorax,purple,170,ice caves,herbivore,4,150,threatened,Quorax Prime,thermal regulation,2900,Arctic Exploration Team,visual signals,monogamous pairs,30
+Glimmerix,iridescent green,160,forest,omnivore,6,110,not threatened,Glimmerix Prime,light reflection,3000,Forest Life Sciences,sonic pulses,matriarchal clans,50
+Nebulon,black,190,space,herbivore,2,500,not threatened,Nebulon Prime,space adaptation,3100,Galactic Survey Team,sonic pulses,colonies,100
+Crystax,crystal blue,140,desert,herbivore,4,80,threatened,Crystax Prime,crystal growth,2950,Desert Ecology Group,visual signals,herd communities,20
+Fluorix,fluorescent yellow,155,forest,omnivore,6,130,not threatened,Fluorix Prime,photosynthesis,3050,Flora and Fauna Research,sonic pulses,tribal societies,70
+Silvax,green,165,forest,herbivore,4,110,not threatened,Silvax Prime,tree climbing,2900,Forest Life Sciences,visual signals,monogamous pairs,40
+Aquarix,blue,175,underwater,omnivore,8,220,vulnerable,Aquarix Prime,water breathing,3000,Oceanic Research Group,sonic pulses,herd communities,55
+Pyroclast,red,185,volcanic,omnivore,6,90,not threatened,Pyroclast Prime,heat resistance,3100,Volcanic Research Team,sonic pulses,tribal societies,35
+Aerox,iridescent blue,160,space,herbivore,2,400,not threatened,Aerox Prime,zero-gravity adaptation,2950,Space Exploration Team,sonic pulses,colonies,120
+Electrax,crystal blue,170,forest,omnivore,6,150,not threatened,Electrax Prime,electromagnetic field manipulation,3050,Electro-Environmental Studies,sonic pulses,matriarchal clans,65
+Magnetix,magenta,165,desert,herbivore,4,100,not threatened,Magnetix Prime,magnetic field manipulation,2900,Desert Ecology Group,visual signals,herd communities,25
+Chronox,iridescent green,155,forest,omnivore,6,140,not threatened,Chronox Prime,time manipulation,3000,Time Research Institute,sonic pulses,monogamous pairs,45

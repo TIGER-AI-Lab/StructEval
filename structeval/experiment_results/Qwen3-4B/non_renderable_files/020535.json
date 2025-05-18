@@ -1,0 +1,33 @@
+
+[
+  {
+    "planet_name": "Zephyria",
+    "system.star_name": "Helios-3",
+    "system.distance_from_earth_ly": 1200,
+    "system.discovery_year": 2178,
+    "atmosphere.composition": ["Oxygen", "Nitrogen", "Argon"],
+    "atmosphere.pressure_kpa": 98,
+    "moons": ["Phobos", "Deimos"],
+    "moons_diameter_km": [12.3, 7.6],
+    "moons_has_rings": [true, false],
+    "exploration.missions": ["Aurora I", "Aurora II"],
+    "exploration.missions_year": [2190, 2205],
+    "exploration.missions_agency": ["ISSA", "LunarX"],
+    "exploration.notes": "First mission revealed subsurface oceans."
+  },
+  {
+    "planet_name": "Tritara",
+    "system.star_name": "Solara-7",
+    "system.distance_from_earth_ly": 300,
+    "system.discovery_year": 2099,
+    "atmosphere.composition": ["Methane", "Hydrogen"],
+    "atmosphere.pressure_kpa": 34,
+    "moons": ["Luna Minor", "Luna Major"],
+    "moons_diameter_km": [5.2, 8.9],
+    "moons_has_rings": [false, true],
+    "exploration.missions": ["Stellar Probe", "Deep Reach"],
+    "exploration.missions_year": [2102, 2115],
+    "exploration.missions_agency": ["AstroNet", "CosmoCorp"],
+    "exploration.notes": "Major storms observed during flyby."
+  }
+]

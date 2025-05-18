@@ -1,0 +1,40 @@
+
+game:
+  title: "Elder Scrolls VI"
+  release_year: 2023
+  genre: "RPG"
+  platforms:
+  - name: "PC"
+    release_date: "2023-11-15"
+    supported_languages:
+      - English
+      - French
+      - German
+  - name: "Xbox Series X|S"
+    release_date: "2023-11-15"
+    supported_languages:
+      - English
+      - French
+      - German
+  developer:
+    name: "Bethesda Game Studios"
+    founded: 1986
+    location:
+      city: "Rockville"
+      country: "USA"
+  reviews:
+  - reviewer: "IGN"
+    score: 9.5
+    date: "2023-11-10"
+    comment: "Elder Scrolls VI is a masterclass in open-world game design."
+  - reviewer: "Game Informer"
+    score: 9.0
+    date: "2023-11-12"
+    comment: "The game's story is engaging, but the combat could be improved."
+  expansions:
+  - title: "Elder Scrolls VI: High King"
+    release_year: 2024
+    features:
+      - "New faction: The Thieves Guild"
+      - "Improved character customization"
+      - "New quests and storylines"

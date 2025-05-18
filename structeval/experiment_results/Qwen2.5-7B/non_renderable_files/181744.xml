@@ -1,0 +1,36 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def yaml_to_xml(yaml_data):
+    root = ET.Element("museum")
+    for key, value in yaml_data.items():
+        if key == "exhibits":
+            for exhibit in value:
+                exhibit_element = ET.SubElement(root, "exhibit")
+                for exhibit_key, exhibit_value in exhibit.items():
+                    exhibit_sub_element = ET.SubElement(exhibit_element, exhibit_key)
+                    exhibit_sub_element.text = str(exhibit_value)
+        else:
+            sub_element = ET.SubElement(root, key)
+            sub_element.text = str(value)
+    return ET.tostring(root, encoding="unicode")
+
+yaml_data = """
+museum:
+  name: The Imaginary Curiosity Cabinet
+  location:
+    city: Fabletown
+    country: Mythica
+  exhibits:
+    exhibit:
+      - title: The Whispering Mirror
+        artist: Ellory Finch
+        year: 1872
+      - title: Clockwork Phoenix
+        artist: Zara Volta
+        year: 1924
+"""
+
+xml_data = yaml_to_xml(yaml.safe_load(yaml_data))
+print(xml_data)

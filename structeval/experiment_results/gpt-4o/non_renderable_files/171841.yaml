@@ -1,0 +1,17 @@
+
+galacticBakery:
+  menu:
+    - item:
+        name: Stardust Croissant
+        ingredients:
+          - ingredient: Cosmic Flour
+          - ingredient: Meteorite Butter
+          - ingredient: Moon Sugar
+    - item:
+        name: Black Hole Brownie
+        ingredients:
+          - ingredient: Dark Matter Chocolate
+          - ingredient: Event Horizon Nuts
+  location:
+    planet: Andromeda Prime
+    sector: Gamma-17

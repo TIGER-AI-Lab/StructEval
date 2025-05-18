@@ -1,0 +1,47 @@
+
+spaceship:
+  name: SS Quantum Voyager
+  captain: Astra Vega
+  crew:
+    - name: Jax Orion
+      role: Pilot
+      species: Human
+      skills:
+        - Navigation
+        - Evasion
+        - Astrogation
+    - name: Lira Kestrel
+      role: Engineer
+      species: Andromedan
+      skills:
+        - Warp Mechanics
+        - Diagnostics
+  missions:
+    - mission_name: Nebula Survey
+      destination: Cygnus X-1
+      success: true
+      log_entries:
+        - Entered nebula
+        - Collected gas samples
+        - Avoided gravitational anomaly
+    - mission_name: Diplomatic Envoy
+      destination: Epsilon Prime
+      success: false
+      log_entries:
+        - Docking denied
+        - Negotiations failed
+  engine:
+    type: Quantum Flux Drive
+    thrust_kn: 12000
+    fuel_type: Antimatter
+  cargo:
+    bays:
+      - id: A1
+        capacity_tons: 50
+        contents:
+          - Medical Supplies
+          - Research Equipment
+      - id: B2
+        capacity_tons: 30
+        contents:
+          - Food Rations

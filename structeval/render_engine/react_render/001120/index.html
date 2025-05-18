@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001120</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+function App() {
+  const [tasks, setTasks] = useState([]);
+  const [newTask, setNewTask] = useState('');
+
+  const addTask = () => {
+    if (newTask.trim() !== '') {
+      setTasks([...tasks, { text: newTask, completed: false }]);
+      setNewTask('');
+    }
+  };
+
+  const toggleTask = (index) => {
+    const updatedTasks = [...tasks];
+    updatedTasks[index].completed = !updatedTasks[index].completed;
+    setTasks(updatedTasks);
+  };
+
+  const clearAllTasks = () => {
+    setTasks([]);
+  };
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
+      <h3 style={{ marginBottom: '20px' }}>Task Manager</h3>
+
+      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
+        <input
+          type="text"
+          placeholder="Enter new task"
+          value={newTask}
+          onChange={(e) => setNewTask(e.target.value)}
+          style={{ marginRight: '10px' }}
+        />
+        <button onClick={addTask} style={{ backgroundColor: 'green', color: 'white', padding: '8px 16px', border: 'none', borderRadius: '4px' }}>Add Task</button>
+      </div>
+
+      {tasks.length === 0 ? (
+        <p>No tasks available</p>
+      ) : (
+        <ul>
+          {tasks.map((task, index) => (
+            <li key={index} style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
+              <input type="checkbox" checked={task.completed} onChange={() => toggleTask(index)} /> {task.text}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      <button onClick={clearAllTasks} style={{ backgroundColor: 'red', color: 'white', padding: '8px 16px', border: 'none', borderRadius: '4px', marginTop: '20px' }}>Clear All</button>
+    </div>
+  );
+}
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

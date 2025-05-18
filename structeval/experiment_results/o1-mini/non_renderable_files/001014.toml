@@ -1,0 +1,31 @@
+
+[expedition]
+name = "Galactic Pioneer"
+launch_date = "2025-07-20"
+
+[expedition.destination]
+planet = "Europa"
+
+[expedition.destination.coordinates]
+latitude = 45.0
+longitude = -122.5
+
+[[expedition.crew]]
+name = "John Doe"
+role = "Captain"
+age = 42
+certifications = ["Navigation", "Pilot"]
+
+[[expedition.crew]]
+name = "Jane Smith"
+role = "Engineer"
+age = 35
+certifications = ["Mechanical Engineering", "Systems Management"]
+
+[[expedition.cargo]]
+item = "Oxygen Tanks"
+quantity = 50
+
+[[expedition.cargo]]
+item = "Scientific Equipment"
+quantity = 20

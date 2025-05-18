@@ -1,0 +1,49 @@
+{
+  "spaceship": {
+    "name": "Stellar Nomad",
+    "model": "XJ-9000",
+    "crew": {
+      "captain": "Astra Vega",
+      "first_officer": "Lio Kade",
+      "engineers": [
+        {
+          "name": "Rin Taro",
+          "specialty": "Warp Drive"
+        },
+        {
+          "name": "Mira Solis",
+          "specialty": "Life Support"
+        }
+      ]
+    },
+    "specs": {
+      "length_m": 220,
+      "mass_t": 1800,
+      "power_source": "Antimatter Reactor"
+    },
+    "cargo": {
+      "bays": [
+        {
+          "id": "Alpha",
+          "capacity_t": 300
+        },
+        {
+          "id": "Beta",
+          "capacity_t": 200
+        }
+      ]
+    },
+    "missions": [
+      {
+        "destination": "Kepler-442b",
+        "year": 2321,
+        "success": true
+      },
+      {
+        "destination": "Tau Ceti e",
+        "year": 2323,
+        "success": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+
+{
+  "museum": {
+    "name": "The Artisan's Gallery",
+    "location": {
+      "city": "New York",
+      "country": "USA"
+    },
+    "established_year": 1990,
+    "director": {
+      "name": "Emily J. Miller",
+      "tenure_years": 15
+    },
+    "exhibits": [
+      {
+        "title": "The Starry Night",
+        "artist": "Vincent van Gogh",
+        "year_created": 1889,
+        "medium": "oil on canvas",
+        "dimensions": {
+          "height_cm": 72.5,
+          "width_cm": 92.1
+        },
+        "on_display": true,
+        "provenance": {
+          "previous_owners": ["John D. Rockefeller", "The Museum of Modern Art"],
+          "acquisition_date": "2020-02-12T14:30:00Z"
+        }
+      }
+    ]
+  }
+}

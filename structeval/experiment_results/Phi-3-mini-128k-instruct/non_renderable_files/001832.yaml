@@ -1,0 +1,31 @@
+exhibit:
+  title: "Ancient Civilizations: A Journey Through Time"
+  curator:
+    name: "Dr. Jane Smith"
+    contact:
+      email: "jane.smith@museum.org"
+      phone: "+1-555-0100"
+  artifacts:
+    - name: "The Rosetta Stone Replica"
+      origin: "Egypt"
+      year: 196 BC
+      materials: ["limestone", "granite"]
+      dimensions:
+        height_cm: 12.5
+        width_cm: 7.9
+        depth_cm: 2.5
+      on_loan: false
+    - name: "The Terracotta Army Soldier"
+      origin: "China"
+      year: 210 BC
+      materials: ["clay", "paint"]
+      dimensions:
+        height_cm: 180
+        width_cm: 30
+        depth_cm: 20
+      on_loan: true
+      loan_info:
+        institution: "The National Museum of China"
+        return_date: "2023-12-31"
+  opening_date: "2023-05-01"
+  closing_date: "2023-08-31"

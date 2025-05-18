@@ -1,0 +1,35 @@
+
+[enchanted_forest]
+trees = [
+  {
+    species = "willow",
+    age = 150,
+    magical_properties = ["healing", "invisibility", "time manipulation"],
+    fruit = {
+      count = 42,
+      type = "pomegranate",
+      is_edible = true
+    }
+  }
+]
+inhabitants = [
+  {
+    name = "Elowen",
+    type = "sprite",
+    friendliness = 8,
+    last_seen = "2023-04-01T15:00:00Z"
+  }
+]
+mystical_events = [
+  {
+    event_name = "Moonlit Dance",
+    date = "2023-04-01T20:00:00Z",
+    participants = ["Elowen", "The Great Oak", "Silver Fox"]
+  }
+]
+guardian = {
+  name = "Eldrin",
+  species = "elf",
+  power_level = 85,
+  is_visible = true
+}

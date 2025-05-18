@@ -1,0 +1,61 @@
+python
+import csv
+import json
+
+# JSON data
+json_data = '''
+[
+  {
+    "AlienName": "Zyplor",
+    "HomePlanet": "Glarbax-7",
+    "NumberOfTentacles": 4,
+    "FavoriteSnack": "Quantum Jelly",
+    "FirstContactDate": "1987-04-13",
+    "IQ": 302
+  },
+  {
+    "AlienName": "Vreeb",
+    "HomePlanet": "Xenthos",
+    "NumberOfTentacles": 7,
+    "FavoriteSnack": "Plasma Noodles",
+    "FirstContactDate": "2001-11-22",
+    "IQ": 267
+  },
+  {
+    "AlienName": "Marnok",
+    "HomePlanet": "Zyra Prime",
+    "NumberOfTentacles": 3,
+    "FavoriteSnack": "Stellar Chips",
+    "FirstContactDate": "2017-08-05",
+    "IQ": 410
+  },
+  {
+    "AlienName": "Quib",
+    "HomePlanet": "Nebulon",
+    "NumberOfTentacles": 5,
+    "FavoriteSnack": "Meteor Mousse",
+    "FirstContactDate": "1995-02-19",
+    "IQ": 289
+  },
+  {
+    "AlienName": "Xyloz",
+    "HomePlanet": "Orionis",
+    "NumberOfTentacles": 6,
+    "FavoriteSnack": "Cosmic Crunch",
+    "FirstContactDate": "2023-06-30",
+    "IQ": 355
+  }
+]
+'''
+
+# Parse JSON data
+data = json.loads(json_data)
+
+# Write to CSV
+with open('aliens.csv', 'w', newline='') as file:
+    writer = csv.DictWriter(file, fieldnames=data[0].keys())
+    writer.writeheader()
+    for alien in data:
+        writer.writerow(alien)
+
+print("CSV file 'aliens.csv' has been created.")

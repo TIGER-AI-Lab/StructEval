@@ -1,0 +1,20 @@
+
+<museum>
+  <name>Museum of Imaginary Artifacts</name>
+  <location>
+    <city>Eldoria</city>
+    <country>Mythica</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Chrono Compass</title>
+      <artist>Lira Sundew</artist>
+      <year>1875</year>
+    </exhibit>
+    <exhibit>
+      <title>Feather of the Dawn Phoenix</title>
+      <artist>Unknown</artist>
+      <year null="true"></year>
+    </exhibit>
+  </exhibits>
+</museum>

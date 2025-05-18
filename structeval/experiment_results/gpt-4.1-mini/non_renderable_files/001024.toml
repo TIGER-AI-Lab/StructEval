@@ -1,0 +1,32 @@
+
+[recipe]
+title = "Spicy Mango Avocado Salsa"
+
+[recipe.chef]
+name = "Isabella Martinez"
+experience_years = 12
+
+[[recipe.ingredients]]
+name = "Mango"
+quantity = 2
+unit = "cups"
+
+[[recipe.ingredients]]
+name = "Avocado"
+quantity = 1
+unit = "cup"
+
+[[recipe.instructions]]
+step = "Dice the mango and avocado into small cubes."
+time_minutes = 10
+
+[[recipe.instructions]]
+step = "Mix diced mango and avocado with chopped red onion, jalapeÃ±o, cilantro, lime juice, and salt."
+time_minutes = 5
+
+[recipe.nutrition]
+calories = 180.5
+protein_grams = 2.3
+fat_grams = 11.0
+
+recipe.tags = ["vegan", "gluten-free", "appetizer", "fresh", "spicy"]

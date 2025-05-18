@@ -1,0 +1,34 @@
+museum = {
+    name = "The Metropolitan Museum of Art",
+    location = {
+        city = "New York",
+        country = "USA"
+    },
+    established_year = 1870,
+    director = {
+        full_name = "Thomas Campbell",
+        tenure_years = 10
+    },
+    exhibits = [
+        {
+            title = "The Starry Night",
+            artist = "Vincent van Gogh",
+            year_created = 1889,
+            medium = "Oil on canvas",
+            dimensions = {
+                height_cm = 73.7,
+                width_cm = 92.1
+            },
+            on_display = true,
+            tags = [
+                "Post-Impressionism",
+                "Astronomy",
+                "Nature"
+            ]
+        }
+    ],
+    opening_hours = {
+        weekdays = "10:00 AM - 5:30 PM",
+        weekends = "10:00 AM - 5:30 PM"
+    }
+}

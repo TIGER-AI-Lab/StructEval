@@ -1,0 +1,39 @@
+
+{
+    "novel": {
+        "title": "The Lost City",
+        "author": {
+            "name": "John Smith",
+            "birth_year": 1980
+        },
+        "publication": {
+            "year": 2022,
+            "publisher": "Random House"
+        },
+        "genres": ["Fantasy", "Adventure"],
+        "characters": [
+            {
+                "name": "Evelyn",
+                "role": "Protagonist",
+                "traits": ["Brave", "Curious"]
+            },
+            {
+                "name": "Marcus",
+                "role": "Antagonist",
+                "traits": ["Power-hungry", "Manipulative"]
+            }
+        ],
+        "chapters": [
+            {
+                "title": "The Discovery",
+                "word_count": 500,
+                "events": ["Evelyn finds an ancient map", "She decides to embark on a journey"]
+            },
+            {
+                "title": "The Journey Begins",
+                "word_count": 700,
+                "events": ["Evelyn meets Marcus", "They have a confrontation"]
+            }
+        ]
+    }
+}

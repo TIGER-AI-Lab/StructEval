@@ -1,0 +1,21 @@
+<museum>
+  <name>The Imaginary Museum of Clouds</name>
+  <location>
+    <city>Nimbusville</city>
+    <country>Skylandia</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Whispering Stratus</title>
+      <artist>Zephyr Alto</artist>
+      <year>2021</year>
+      <medium>Oil on Vapor</medium>
+    </exhibit>
+    <exhibit>
+      <title>Cumulus Dreams</title>
+      <artist>Cirro Stratus</artist>
+      <year>2019</year>
+      <medium>Watercolor on Air</medium>
+    </exhibit>
+  </exhibits>
+</museum>

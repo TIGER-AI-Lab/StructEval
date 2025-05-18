@@ -1,0 +1,7 @@
+
+book_id,title,author_name,author_birth_year,genre,publication_year,publisher_name,publisher_country,pages,language,series_name,series_number,isbn_13,average_rating,review_count
+1,"The Enchanted Forest","Alice Johnson",1980,"Fantasy",2010,"Magic Press","USA",350,"English","Mystic Tales",1,"9781234567890",4.5,1200
+2,"Space Odyssey","Bob Smith",1975,"Science Fiction",2015,"Galaxy Books","UK",420,"English","Star Journeys",3,"9780987654321",4.2,860
+3,"The Last Kingdom","Catherine Lee",1968,"Historical Fiction",2005,"Heritage House","Canada",500,"English",,"","9781122334455",4.7,1500
+4,"Mysteries of the Deep","David Brown",1985,"Thriller",2020,"Oceanic Publishing","Australia",380,"English","","","9781231231231",4.3,950
+5,"Journey Through Time","Eva Green",1990,"Science Fiction",2018,"Future Reads","USA",310,"English","Chrono Adventures",2,"9783213213213",4.6,1120

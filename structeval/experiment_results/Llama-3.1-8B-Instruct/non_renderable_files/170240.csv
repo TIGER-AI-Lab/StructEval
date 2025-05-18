@@ -1,0 +1,68 @@
+
+import xml.etree.ElementTree as ET
+import csv
+
+root = ET.fromstring('''
+<artifacts>
+  <artifact>
+    <ArtifactID>AX102</ArtifactID>
+    <Name>Singing Chalice</Name>
+    <DiscoveryDate>1924-07-12</DiscoveryDate>
+    <Material>Silver</Material>
+    <WeightGrams>450</WeightGrams>
+    <Era>Medieval</Era>
+    <IsCursed>true</IsCursed>
+  </artifact>
+  <artifact>
+    <ArtifactID>AX103</ArtifactID>
+    <Name>Obsidian Mirror</Name>
+    <DiscoveryDate>1987-03-25</DiscoveryDate>
+    <Material>Obsidian</Material>
+    <WeightGrams>325</WeightGrams>
+    <Era>Aztec</Era>
+    <IsCursed>false</IsCursed>
+  </artifact>
+  <artifact>
+    <ArtifactID>AX104</ArtifactID>
+    <Name>Clockwork Scarab</Name>
+    <DiscoveryDate>2002-11-08</DiscoveryDate>
+    <Material>Bronze</Material>
+    <WeightGrams>120</WeightGrams>
+    <Era>Victorian</Era>
+    <IsCursed>false</IsCursed>
+  </artifact>
+  <artifact>
+    <ArtifactID>AX105</ArtifactID>
+    <Name>Jade Compass</Name>
+    <DiscoveryDate>2015-01-17</DiscoveryDate>
+    <Material>Jade</Material>
+    <WeightGrams>210</WeightGrams>
+    <Era>Ming Dynasty</Era>
+    <IsCursed>true</IsCursed>
+  </artifact>
+  <artifact>
+    <ArtifactID>AX106</ArtifactID>
+    <Name>Crystal Flute</Name>
+    <DiscoveryDate>1978-05-04</DiscoveryDate>
+    <Material>Crystal</Material>
+    <WeightGrams>95</WeightGrams>
+    <Era>Baroque</Era>
+    <IsCursed>false</IsCursed>
+  </artifact>
+  <artifact>
+    <ArtifactID>AX107</ArtifactID>
+    <Name>Ivory Dice</Name>
+    <DiscoveryDate>1963-09-19</DiscoveryDate>
+    <Material>Ivory</Material>
+    <WeightGrams>50</WeightGrams>
+    <Era>Roman</Era>
+    <IsCursed>true</IsCursed>
+  </artifact>
+</artifacts>
+''')
+
+with open('output.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(['ArtifactID', 'Name', 'DiscoveryDate', 'Material', 'WeightGrams', 'Era', 'IsCursed'])
+    for artifact in root.findall('artifact'):
+        writer.writerow([artifact.find('ArtifactID').text, artifact.find('Name').text, artifact.find('DiscoveryDate').text, artifact.find('Material').text, artifact.find('WeightGrams').text, artifact.find('Era').text, artifact.find('IsCursed').text])

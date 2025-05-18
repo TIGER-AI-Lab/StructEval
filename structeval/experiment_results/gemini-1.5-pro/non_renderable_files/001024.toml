@@ -1,0 +1,30 @@
+[recipe]
+title = "Galactic Guacamole"
+[recipe.chef]
+name = "Gordon Ramsay Jr."
+experience_years = 15
+
+[[recipe.ingredients]]
+name = "Avocados"
+quantity = 3
+unit = "pieces"
+
+[[recipe.ingredients]]
+name = "Alien Peppers"
+quantity = 2
+unit = "pieces"
+
+[[recipe.instructions]]
+step = "Mash avocados in a bowl."
+time_minutes = 5
+
+[[recipe.instructions]]
+step = "Finely chop Alien Peppers and add to the bowl."
+time_minutes = 2
+
+[recipe.nutrition]
+calories = 250
+protein_grams = 5
+fat_grams = 20
+
+tags = ["appetizer", "spicy", "extraterrestrial"]

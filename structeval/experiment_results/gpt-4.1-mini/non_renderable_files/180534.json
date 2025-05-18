@@ -1,0 +1,48 @@
+{
+  "planet": {
+    "name": "Zephyron",
+    "atmosphere": {
+      "composition": "Oxygen-Nitrogen-Argon",
+      "pressure": 1.2,
+      "layers": [
+        {
+          "name": "Troposphere",
+          "altitude_range_km": [0, 15]
+        },
+        {
+          "name": "Stratosphere",
+          "altitude_range_km": [15, 50]
+        }
+      ]
+    },
+    "moons": [
+      {
+        "name": "Lira",
+        "diameter_km": 3200,
+        "features": [
+          "Ice geysers",
+          "Subsurface ocean"
+        ]
+      },
+      {
+        "name": "Pavo",
+        "diameter_km": 1200,
+        "features": [
+          "Cratered surface",
+          "Thin atmosphere"
+        ]
+      }
+    ],
+    "discovery": {
+      "year": 2219,
+      "discovered_by": "Dr. Elara Myles",
+      "telescope": "Celestia Array"
+    },
+    "orbital_period_days": 412,
+    "mass_kg": 7.1e24,
+    "rings": {
+      "present": true,
+      "composition": "Water ice and dust"
+    }
+  }
+}

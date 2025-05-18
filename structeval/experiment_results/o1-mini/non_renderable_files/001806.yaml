@@ -1,0 +1,31 @@
+
+brewery:
+  name: "Oakshire Craft Brewery"
+  location:
+    city: "Brewville"
+    country: "Hopslandia"
+  founded_year: 2015
+  owner: "Emily Thorn"
+  beers:
+    - name: "Sunset IPA"
+      style: "IPA"
+      abv: 6.8
+      awards:
+        - title: "Best IPA at National Craft Beer Awards"
+          year: 2022
+        - title: "Gold Medal at International Beer Competition"
+          year: 2023
+      ingredients:
+        hops:
+          - "Simcoe"
+          - "Amarillo"
+        malts:
+          - "Maris Otter"
+          - "Caramel 20L"
+        yeast: "Safale US-05"
+  tours:
+    available: true
+    schedule:
+      - day: "Saturday"
+        start_time: "14:00"
+        duration_minutes: 90

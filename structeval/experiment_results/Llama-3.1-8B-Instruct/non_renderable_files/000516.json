@@ -1,0 +1,36 @@
+
+{
+  "exhibit": {
+    "title": "Modern Art Collection",
+    "curator": {
+      "name": "Emily J. Miller",
+      "contact": {
+        "email": "emily.miller@example.com",
+        "phone": "+1 123 456 7890"
+      }
+    },
+    "artworks": [
+      {
+        "artist": "Pablo Picasso",
+        "title": "Guernica",
+        "year_created": 1937,
+        "medium": "Oil on canvas",
+        "dimensions": {
+          "height_cm": 349,
+          "width_cm": 764,
+          "depth_cm": 6
+        },
+        "provenance": [
+          {
+            "owner": "Reina Sofia Museum",
+            "acquisition_date": "1981-12-10T00:00:00Z"
+          }
+        ]
+      }
+    ],
+    "schedule": {
+      "opening_date": "2024-07-26T10:00:00Z",
+      "closing_date": "2024-09-15T17:00:00Z"
+    }
+  }
+}

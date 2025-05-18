@@ -1,0 +1,22 @@
+
+import csv
+from io import StringIO
+
+data = [
+  {"PotionName": "Moonlit Mirage", "Color": "Iridescent Blue", "PotencyLevel": 8, "BrewDate": "2023-11-03", "IngredientCount": 7, "IsExplosive": False},
+  {"PotionName": "Whispering Moss", "Color": "Emerald Green", "PotencyLevel": 5, "BrewDate": "2024-01-17", "IngredientCount": 5, "IsExplosive": False},
+  {"PotionName": "Solar Flare Elixir", "Color": "Glowing Amber", "PotencyLevel": 10, "BrewDate": "2023-08-29", "IngredientCount": 9, "IsExplosive": True},
+  {"PotionName": "Frostbite Draught", "Color": "Pale Silver", "PotencyLevel": 6, "BrewDate": "2024-03-14", "IngredientCount": 6, "IsExplosive": False},
+  {"PotionName": "Shadowmelt Serum", "Color": "Deep Violet", "PotencyLevel": 9, "BrewDate": "2023-12-21", "IngredientCount": 8, "IsExplosive": True},
+  {"PotionName": "Aurora Essence", "Color": "Opalescent Pink", "PotencyLevel": 7, "BrewDate": "2024-02-05", "IngredientCount": 6, "IsExplosive": False}
+]
+
+fields = ["PotionName", "Color", "PotencyLevel", "BrewDate", "IngredientCount", "IsExplosive"]
+
+with StringIO() as output:
+    writer = csv.DictWriter(output, fieldnames=fields)
+    writer.writeheader()
+    for potion in data:
+        writer.writerow(potion)
+
+print(output.getvalue())

@@ -1,0 +1,77 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Spaghetti Carbonara</name>
+    <author>Chef Giovanni Rossi</author>
+    <cuisine>Italian</cuisine>
+    <prepTime>PT15M</prepTime>
+    <cookTime>PT20M</cookTime>
+    <servings>4</servings>
+    <ingredients>
+        <ingredient>
+            <name>spaghetti</name>
+            <quantity>400</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>eggs</name>
+            <quantity>4</quantity>
+            <unit>units</unit>
+        </ingredient>
+        <ingredient>
+            <name>parmesan cheese</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>guanciale</name>
+            <quantity>150</quantity>
+            <unit>grams</unit>
+            <optional>true</optional>
+        </ingredient>
+        <ingredient>
+            <name>black pepper</name>
+            <quantity>to taste</quantity>
+            <unit>grams</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Boil the spaghetti in salted water until al dente.</description>
+            <duration>PT10M</duration>
+        </step>
+        <step>
+            <order>2</order>
+            <description>In a separate pan, cook the guanciale until crispy.</description>
+            <duration>PT10M</duration>
+        </step>
+        <step>
+            <order>3</order>
+            <description>Beat the eggs and mix in the grated parmesan cheese.</description>
+            <duration>PT5M</duration>
+        </step>
+        <step>
+            <order>4</order>
+            <description>Combine the spaghetti with the guanciale and remove from heat.</description>
+            <duration>PT2M</duration>
+        </step>
+        <step>
+            <order>5</order>
+            <description>Quickly mix in the egg and cheese mixture to create a creamy sauce.</description>
+            <duration>PT3M</duration>
+        </step>
+        <step>
+            <order>6</order>
+            <description>Season with freshly ground black pepper and serve immediately.</description>
+            <duration>PT1M</duration>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>550</calories>
+        <fat>20</fat>
+        <protein>25</protein>
+        <carbohydrates>60</carbohydrates>
+    </nutrition>
+</recipe>

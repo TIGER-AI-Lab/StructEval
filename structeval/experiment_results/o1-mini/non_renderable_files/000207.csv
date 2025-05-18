@@ -1,0 +1,3 @@
+
+species_id,common_name,latin_name,classification.kingdom,classification.phylum,classification.class,classification.order,classification.family,classification.genus,classification.species,habitat.primary,habitat.secondary,diet.type,diet.examples,conservation_status.status,conservation_status.iucn_code,discovery.year,discovery.discoverer
+SP001,Suncrest Lynx,Solaria leo,Animalia,Chordata,Mammalia,Carnivora,Felidae,Solaria,leo,Savanna,Woodland,Carnivore,Small mammals,Rare,CR,2023,Dr. Jane Smith

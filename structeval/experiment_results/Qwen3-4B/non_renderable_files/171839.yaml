@@ -1,0 +1,18 @@
+
+spaceStation:
+  name: Odyssey Orbital
+  crew:
+    - member:
+        name: Dr. Luna Vega
+        role: Commander
+    - member:
+        name: Alexei Petrov
+        role: Engineer
+  laboratories:
+    - lab:
+        labName: AstroBio Lab
+        experiments:
+          - title: Microbe Growth
+            status: In Progress
+          - title: Crystal Formation
+            status: Completed

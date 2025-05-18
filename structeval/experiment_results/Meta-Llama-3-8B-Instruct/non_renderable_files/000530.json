@@ -1,0 +1,30 @@
+
+{
+    "creature": {
+        "name": "Eira Shadowglow",
+        "species": "Shadow Elf",
+        "age": 250,
+        "attributes": {
+            "height": 170,
+            "color": "Midnight Blue",
+            "abilities": ["Shadow Travel", "Illusion Casting", "Stealth"]
+        },
+        "habitat": {
+            "location": "The Shadowlands",
+            "climate": "Temperate",
+            "resources": ["Moonstones", "Shadowwood"]
+        },
+        "companions": [
+            {
+                "name": "Arin the Brave",
+                "species": "Human",
+                "bond_level": 8
+            },
+            {
+                "name": "Lysander the Wise",
+                "species": "Dragon",
+                "bond_level": 9
+            }
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+<creature>
+    <name>Xylar</name>
+    <species>Crystallinus Sentiens</species>
+    <origin>
+        <planet>Xylos</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <traits>
+        <trait>
+            <type>bioluminescence</type>
+            <description>Emits a soft, pulsating glow.</description>
+            <rarity>uncommon</rarity>
+        </trait>
+        <trait>
+            <type>telepathy</type>
+            <description>Can communicate through thoughts.</description>
+            <rarity>rare</rarity>
+        </trait>
+    </traits>
+    <abilities>
+        <ability>
+            <name>Energy Blast</name>
+            <level>5</level>
+            <cooldown>10.5</cooldown>
+        </ability>
+        <ability>
+            <name>Regeneration</name>
+            <level>3</level>
+            <cooldown>60</cooldown>
+        </ability>
+    </abilities>
+    <appearance>
+        <height>250</height>
+        <color>Azure</color>
+        <appendages>
+            <count>6</count>
+            <type>tentacle</type>
+        </appendages>
+    </appearance>
+    <discovery>
+        <date>2024-09-26</date>
+        <discovered_by>Astrobiological Research Team</discovered_by>
+    </discovery>
+</creature>

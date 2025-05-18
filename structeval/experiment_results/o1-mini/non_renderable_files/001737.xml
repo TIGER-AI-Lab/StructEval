@@ -1,0 +1,70 @@
+<recipe>
+  <title>Classic Chocolate Chip Cookies</title>
+  <author>
+    <name>Jane Smith</name>
+    <contact>
+      <email>jane.smith@example.com</email>
+      <phone>+11234567890</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>All-purpose Flour</name>
+      <quantity>300</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Granulated Sugar</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Butter</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>2</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Chocolate Chips</name>
+      <quantity>250</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <!-- Additional ingredients can be added here -->
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Preheat the oven to 180Â°C (350Â°F) and line a baking sheet with parchment paper.</description>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <step>
+      <description>In a large bowl, cream together the butter and sugar until smooth.</description>
+      <duration_minutes>5</duration_minutes>
+    </step>
+    <step>
+      <description>Add the eggs one at a time, mixing well after each addition.</description>
+      <duration_minutes>3</duration_minutes>
+    </step>
+    <step>
+      <description>Gradually blend in the flour, then stir in the chocolate chips.</description>
+      <duration_minutes>7</duration_minutes>
+    </step>
+    <step>
+      <description>Drop spoonfuls of dough onto the prepared baking sheet and bake for 12-15 minutes.</description>
+      <duration_minutes>15</duration_minutes>
+    </step>
+    <step>
+      <description>Remove from oven and let cool on a wire rack before serving.</description>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <!-- Additional steps can be added here -->
+  </instructions>
+  <nutrition>
+    <calories>450</calories>
+    <fat_grams>20.5</fat_grams>
+    <carbohydrates_grams>60.0</carbohydrates_grams>
+  </nutrition>
+</recipe>

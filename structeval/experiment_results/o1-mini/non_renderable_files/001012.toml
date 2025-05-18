@@ -1,0 +1,34 @@
+
+[artifact]
+name = "Zyphorian Relic"
+
+[artifact.origin]
+civilization = "Zyphorian Empire"
+era = "Starfall Era"
+
+[[artifact.materials]]
+type = "Xenotium Alloy"
+quantity_grams = 2500.5
+
+[[artifact.materials]]
+type = "Eldran Crystal"
+quantity_grams = 1500.75
+
+[artifact.dimensions]
+height_cm = 45.0
+width_cm = 30.5
+depth_cm = 20.0
+
+[[artifact.inscriptions]]
+language = "Zyphon Script"
+translation = "Knowledge transcends time."
+
+[[artifact.inscriptions]]
+language = "Eldran Glyphs"
+translation = "Harmony with the cosmos."
+
+[artifact.discovery]
+date_iso = "2023-09-15"
+[artifact.discovery.location]
+latitude = -23.550520
+longitude = -46.633308

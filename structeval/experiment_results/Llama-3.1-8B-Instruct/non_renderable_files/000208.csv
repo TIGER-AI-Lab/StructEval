@@ -1,0 +1,79 @@
+
+import csv
+import json
+
+data = '''
+{
+    "species": "African Elephant",
+    "habitat": "Savannah",
+    "average_weight_kg": 4000,
+    "lifespan_years": 60,
+    "diet_type": "Herbivore",
+    "conservation_status": "Vulnerable",
+    "discovery": {
+        "year": 1738,
+        "discoverer": "Anders Sparrman",
+        "location": "South Africa"
+    },
+    "notable_features": [
+        {
+            "feature_name": "Large Ears",
+            "description": "Helps to regulate body temperature"
+        },
+        {
+            "feature_name": "Trunk",
+            "description": "Used for breathing, drinking and grasping objects"
+        }
+    ],
+    "related_species": [
+        "Asian Elephant",
+        "African Forest Elephant"
+    ]
+}
+'''
+
+def extract_info(data):
+    info = {
+        "species": data["species"],
+        "habitat": data["habitat"],
+        "average_weight_kg": data["average_weight_kg"],
+        "lifespan_years": data["lifespan_years"],
+        "diet_type": data["diet_type"],
+        "conservation_status": data["conservation_status"],
+        "discovery.year": data["discovery"]["year"],
+        "discovery.discoverer": data["discovery"]["discoverer"],
+        "discovery.location": data["discovery"]["location"],
+        "notable_features[0].feature_name": data["notable_features"][0]["feature_name"],
+        "notable_features[0].description": data["notable_features"][0]["description"],
+        "notable_features[1].feature_name": data["notable_features"][1]["feature_name"],
+        "notable_features[1].description": data["notable_features"][1]["description"],
+        "related_species[0]": data["related_species"][0],
+        "related_species[1]": data["related_species"][1]
+    }
+    return info
+
+data = json.loads(data)
+info = extract_info(data)
+
+with open('output.csv', 'w', newline='') as csvfile:
+    fieldnames = [
+        "species",
+        "habitat",
+        "average_weight_kg",
+        "lifespan_years",
+        "diet_type",
+        "conservation_status",
+        "discovery.year",
+        "discovery.discoverer",
+        "discovery.location",
+        "notable_features[0].feature_name",
+        "notable_features[0].description",
+        "notable_features[1].feature_name",
+        "notable_features[1].description",
+        "related_species[0]",
+        "related_species[1]"
+    ]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    writer.writerow(info)

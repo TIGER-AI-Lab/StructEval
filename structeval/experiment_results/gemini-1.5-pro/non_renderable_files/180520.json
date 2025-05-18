@@ -1,0 +1,56 @@
+{
+  "planet_name": "Zephyron",
+  "galactic_coordinates": {
+    "x": 2842.5,
+    "y": -192.4,
+    "z": 883.9
+  },
+  "atmosphere": {
+    "composition": [
+      "nitrogen",
+      "argon",
+      "trace_methane"
+    ],
+    "pressure": 1.3,
+    "temperature": -54
+  },
+  "inhabitants": {
+    "species": "Aerolith",
+    "population": 3500000,
+    "languages": [
+      "Zephyric",
+      "Old Aerolith"
+    ]
+  },
+  "flora": [
+    "skyvine",
+    "frostleaf",
+    "crystal moss"
+  ],
+  "fauna": [
+    "cloud serpent",
+    "shimmer beetle"
+  ],
+  "moons": [
+    {
+      "name": "Miralune",
+      "diameter_km": 2200,
+      "has_atmosphere": false
+    },
+    {
+      "name": "Thalos",
+      "diameter_km": 1750,
+      "has_atmosphere": true
+    }
+  ],
+  "notable_events": [
+    {
+      "year": 3145,
+      "description": "First contact with the Luminari"
+    },
+    {
+      "year": 3192,
+      "description": "Discovery of the floating gardens"
+    }
+  ]
+}

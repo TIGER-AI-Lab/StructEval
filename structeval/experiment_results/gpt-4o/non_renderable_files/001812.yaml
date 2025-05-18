@@ -1,0 +1,36 @@
+
+brewery:
+  name: "Mystic River Brewing Co."
+  location:
+    city: "Portland"
+    country: "USA"
+  founded_year: 2012
+  owner: "Alexandra Rivers"
+  beers:
+    - name: "Foggy IPA"
+      style: "IPA"
+      abv: 6.5
+      awards:
+        - title: "Best IPA"
+          year: 2020
+          organization: "Craft Beer Awards"
+    - name: "Dark Moon Stout"
+      style: "Stout"
+      abv: 7.2
+      awards:
+        - title: "Gold Medal Stout"
+          year: 2019
+          organization: "International Beer Challenge"
+    - name: "Sunset Lager"
+      style: "Lager"
+      abv: 5.0
+      awards:
+        - title: "Top Lager"
+          year: 2021
+          organization: "World Beer Cup"
+  tours:
+    available: true
+    schedule:
+      days: ["Friday", "Saturday", "Sunday"]
+      times: ["13:00", "15:00", "17:00"]
+    languages_supported: ["English", "Spanish"]

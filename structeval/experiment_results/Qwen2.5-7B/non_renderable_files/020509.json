@@ -1,0 +1,17 @@
+import pandas as pd
+import json
+
+# CSV data
+csv_data = """
+id,name,class,captain,first_officer,engineer_1_name,engineer_1_specialty,engineer_2_name,engineer_2_specialty,length_m,mass_tons,weapon_1_type,weapon_1_power_gw,weapon_2_type,weapon_2_power_gw,mission_1_name,mission_1_destination,mission_1_success,mission_2_name,mission_2_destination,mission_2_success
+SS-42,Starfire,Explorer,Jane Nova,Tom Quasar,Lila Sparks,Propulsion,Max Volt,Shields,120,5000,Plasma Cannon,2.5,Laser Array,1.1,Alpha Run,Proxima Centauri,TRUE,Rescue Dawn,Betelgeuse,FALSE
+"""
+
+# Convert CSV data to DataFrame
+df = pd.read_csv(pd.compat.StringIO(csv_data))
+
+# Convert DataFrame to JSON
+json_data = df.to_json(orient='records')
+
+# Print JSON data
+print(json_data)

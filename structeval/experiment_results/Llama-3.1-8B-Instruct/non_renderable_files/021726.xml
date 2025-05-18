@@ -1,0 +1,50 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<galaxies>
+  <galaxy>
+    <name>Andromeda</name>
+    <location>
+      <sector>Outer Rim</sector>
+      <quadrant>Alpha</quadrant>
+    </location>
+    <discovery>
+      <year>3021</year>
+      <team_lead>Dr. Lyra Voss</team_lead>
+      <team_members>Dr. Lyra Voss; Dr. Jin Tao; Dr. Mira Patel</team_members>
+    </discovery>
+    <notable_planets>
+      <planet>
+        <name>Xyphos</name>
+        <type>Gas Giant</type>
+        <population>2000000000</population>
+        <moons>
+          <moon>
+            <name>Phobos</name>
+            <diameter_km>12000</diameter_km>
+          </moon>
+        </moons>
+      </planet>
+      <planet>
+        <name>Zephira</name>
+        <type>Terrestrial</type>
+        <population>800000000</population>
+        <moons>
+          <moon>
+            <name>Selene</name>
+            <diameter_km>3400</diameter_km>
+          </moon>
+        </moons>
+      </planet>
+    </notable_planets>
+    <phenomena>
+      <event>
+        <name>Dark Rift</name>
+        <description>Massive gravitational anomaly</description>
+      </event>
+      <event>
+        <name>Starlight Veil</name>
+        <description>Unusual aurora phenomenon</description>
+      </event>
+    </phenomena>
+  </galaxy>
+</galaxies>

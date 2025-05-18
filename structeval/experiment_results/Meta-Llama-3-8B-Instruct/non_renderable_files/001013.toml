@@ -1,0 +1,26 @@
+
+[recipe]
+title = "Delicious Chicken Fajitas"
+author = { name = "John Doe", contact = { email = "john.doe@example.com" } }
+ingredients = [
+  { name = "Boneless, skinless chicken breasts", quantity = 500, unit = "g", notes = "Cut into thin strips", allergen = "none" },
+  { name = "Bell peppers", quantity = 200, unit = "g", notes = "Any color", allergen = "none" },
+  { name = "Onions", quantity = 100, unit = "g", notes = "Thinly sliced", allergen = "none" },
+  { name = "Fajita seasoning", quantity = 10, unit = "g", notes = "Homemade or store-bought", allergen = "none" },
+  { name = "Tortillas", quantity = 4, unit = "count", notes = "Warm before serving", allergen = "none" }
+]
+steps = [
+  { description = "Heat a large skillet over medium-high heat", duration_minutes = 5, equipment = "skillet" },
+  { description = "Add chicken and cook until browned", temperature_celsius = 180 },
+  { description = "Add bell peppers and onions and cook until tender", temperature_celsius = 180 },
+  { description = "Add fajita seasoning and stir to combine", temperature_celsius = 0 },
+  { description = "Warm tortillas by wrapping in a damp paper towel and microwaving for 20-30 seconds", temperature_celsius = 0 }
+]
+nutrition = {
+  calories = 400,
+  macronutrients = {
+    protein_g = 30,
+    carbs_g = 20,
+    fat_g = 20
+  }
+}

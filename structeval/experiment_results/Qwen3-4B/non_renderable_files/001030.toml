@@ -1,0 +1,24 @@
+
+planet = {
+    name = "Terra-7"
+    discovery = {
+        year = 2023
+        method = "transit"
+    }
+    orbit = {
+        semi_major_axis = 1.2
+        eccentricity = 0.1
+        period_days = 365
+    }
+    atmosphere = {
+        composition = [
+            { gas = "nitrogen", percentage = 70.0 },
+            { gas = "oxygen", percentage = 30.0 }
+        ]
+    }
+    satellites = [
+        { name = "Moon-1", diameter_km = 1000.0 },
+        { name = "Moon-2", diameter_km = 2000.0 }
+    ]
+    habitable = true
+}

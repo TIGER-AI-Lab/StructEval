@@ -1,0 +1,39 @@
+[creature]
+species = "Mythic Phoenix"
+habitat = {
+    region = "Eastern Highlands"
+    climate = "temperate"
+}
+appearance = {
+    size = "large"
+    color = "crimson and gold"
+}
+abilities = {
+    primary = "Regeneration"
+    secondary = "Pyrokinesis"
+}
+behavior = {
+    patterns = [
+        {
+            name = "Sunrise Ritual"
+            frequency = "dawn"
+            description = "The creature awakens at dawn, igniting the first light with its fiery plumage."
+        },
+        {
+            name = "Midnight Flight"
+            frequency = "nightly"
+            description = "The creature takes to the skies at midnight, circling the moon before returning to its nest."
+        }
+    ]
+}
+diet = {
+    type = "omnivore"
+    favorite_foods = [
+        "Moonberries",
+        "Starflower petals"
+    ]
+}
+discovery = {
+    discoverer = "Dr. Elara M. Kestrel"
+    year = 2023
+}

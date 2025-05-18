@@ -1,0 +1,23 @@
+
+museum:
+  name: The Artisan's Gallery
+  location:
+    city: Paris
+    country: France
+  founded_year: 1995
+  director:
+    name: Madame Colette Dupont
+    tenure_years: 10
+  exhibitions:
+    - title: Masterpieces of Impressionism
+      year: 2010
+      artworks:
+        - title: 'The Starry Night'
+          artist: Vincent van Gogh
+          medium: Oil on canvas
+          dimensions:
+            height_cm: 72
+            width_cm: 92
+          on_loan: false
+  visitor_statistics:
+    annual_visitors: 500000

@@ -1,0 +1,7 @@
+
+"species_id","species_name","classification","average_weight_kg","average_lifespan_years","planet_of_origin","primary_color","diet_type","habitat_type","notable_ability","intelligence_rating","social_structure","communication_method","number_of_limbs","endangered_status"
+"Alien1","Groggle","Reptilian",12.5,7,"Xylophia-IV","Green","Carnivore","Desert","Camouflage",6,"Colony","Chemical Signals",4,"No"
+"Alien2","Zorvath","Mammalian",35.0,10,"Nebulon-III","Blue","Herbivore","Forest","Bioluminescence",8,"Pack","Vocalizations",4,"No"
+"Alien3","Kraxlor","Insectoid",0.5,2,"Arcturus-IV","Red","Omnivore","Swamp","Stinging",3,"Swarm","Pheromones",6,"No"
+"Alien4","Throk","Amphibian",8.0,5,"Andromeda-IV","Brown","Omnivore","Wetlands","Web-spinning",5,"School","Vocalizations",4,"Yes"
+"Alien5","Glimmer","Avian",2.0,3,"Sirius-IV","Iridescent","Insectivore","Forest","Glowing Feathers",7,"Flock","Vocalizations",2,"No"

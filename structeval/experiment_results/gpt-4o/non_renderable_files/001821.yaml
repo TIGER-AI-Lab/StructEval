@@ -1,0 +1,25 @@
+expedition:
+  mission_name: "Deep Blue Discovery"
+  launch_date: "2024-06-15"
+  duration_days: 45
+  crew:
+    - name: "Dr. Emily Carter"
+      role: "Marine Biologist"
+      age: 38
+      skills:
+        - "Deep-sea diving"
+        - "Marine species identification"
+        - "Data analysis"
+    - name: "Captain James Rodriguez"
+      role: "Expedition Leader"
+      age: 45
+      skills:
+        - "Navigation"
+        - "Leadership"
+        - "Crisis management"
+  cargo:
+    manifest_id: "DBD-2024-001"
+    items:
+      - item_name: "Submersible Drone"
+        quantity: 2
+        weight_kg: 150.5

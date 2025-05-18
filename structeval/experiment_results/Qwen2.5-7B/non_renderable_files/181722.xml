@@ -1,0 +1,20 @@
+
+galaxy:
+  name: Andromeda
+  constellations:
+    constellation:
+      - Perseus
+      - Cassiopeia
+  planets:
+    planet:
+      - name: Zeta-5
+        rings: true
+        moons:
+          moon:
+            - Echo
+            - Lira
+      - name: Xylo-9
+        rings: false
+        moons:
+          moon:
+            - Vex

@@ -1,0 +1,41 @@
+{
+  "ecosystem": {
+    "name": "Lumina Rainforest",
+    "location": {
+      "region": "Tropical South America",
+      "coordinates": {
+        "latitude": -3.4653,
+        "longitude": -62.2159
+      }
+    },
+    "climate": {
+      "type": "tropical",
+      "average_temperature_celsius": 27.5,
+      "rainfall_mm_per_year": 3200
+    },
+    "species": [
+      {
+        "common_name": "Glowing Tree Frog",
+        "scientific_name": "Luminus arborealis",
+        "population_estimate": 15000,
+        "conservation_status": "Near Threatened",
+        "diet": {
+          "primary_foods": [
+            "insects",
+            "small spiders",
+            "larvae"
+          ]
+        },
+        "habitat": {
+          "description": "Moist canopy layers of the rainforest, often near bioluminescent fungi clusters.",
+          "area_sq_km": 1200
+        },
+        "notable_behaviors": [
+          "Emits a soft blue glow to attract mates during night",
+          "Camouflages by changing skin brightness",
+          "Feeds primarily at dusk and dawn"
+        ]
+      }
+    ]
+  }
+}

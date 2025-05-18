@@ -1,0 +1,36 @@
+
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "stars": [
+      {
+        "name": "Alpha Centauri",
+        "planets": [
+          {
+            "name": "Proxima b",
+            "type": "Terrestrial"
+          },
+          {
+            "name": "Proxima c",
+            "type": "Gas Giant"
+          }
+        ]
+      },
+      {
+        "name": "Betelgeuse",
+        "planets": [
+          {
+            "name": "Betel Prime",
+            "type": "Ice Giant",
+            "moons": ["Frost", "Glint"]
+          },
+          {
+            "name": "Betel Minor",
+            "type": "Dwarf",
+            "moons": ["Shimmer"]
+          }
+        ]
+      }
+    ]
+  }
+}

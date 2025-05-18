@@ -1,0 +1,49 @@
+{
+  "artifact": {
+    "name": "The Rosetta Stone",
+    "origin": {
+      "civilization": "Ptolemaic Kingdom",
+      "era": "Ptolemaic Period"
+    },
+    "materials": [
+      {
+        "type": "Granodiorite",
+        "provenance": "Nubia"
+      },
+      {
+        "type": "Unknown",
+        "provenance": "Unknown"
+      }
+    ],
+    "dimensions": {
+      "height_cm": 114.4,
+      "width_cm": 72.3,
+      "depth_cm": 27.9
+    },
+    "inscriptions": [
+      {
+        "language": "Ancient Greek",
+        "translation": "Decree of the Canopus",
+        "position": "Top"
+      },
+      {
+        "language": "Demotic",
+        "translation": "Decree of the Canopus",
+        "position": "Middle"
+      },
+      {
+        "language": "Hieroglyphic",
+        "translation": "Decree of the Canopus",
+        "position": "Bottom"
+      }
+    ],
+    "current_location": {
+      "museum": "British Museum",
+      "display_case": "Room 4"
+    },
+    "discovery": {
+      "date": "1799-07-15",
+      "discoverer": "French Expedition"
+    }
+  }
+}

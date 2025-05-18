@@ -1,0 +1,83 @@
+<recipe>
+    <title>Spicy Thai Basil Chicken</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>jane.doe@example.com</contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Chicken breast</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Thai basil leaves</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Garlic cloves</name>
+            <quantity>3</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Red chili</name>
+            <quantity>2</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Soy sauce</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Fish sauce</name>
+            <quantity>1</quantity>
+            <unit>tablespoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vegetable oil</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Slice the chicken breast into thin strips.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>Knife, Cutting board</tools>
+        </step>
+        <step>
+            <description>Chop the garlic and red chili finely.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>Knife, Cutting board</tools>
+        </step>
+        <step>
+            <description>Heat oil in a pan over medium heat and sautÃ© garlic and chili until fragrant.</description>
+            <duration_minutes>3</duration_minutes>
+            <tools>Pan, Stove</tools>
+        </step>
+        <step>
+            <description>Add chicken to the pan and cook until no longer pink.</description>
+            <duration_minutes>7</duration_minutes>
+            <tools>Pan, Stove</tools>
+        </step>
+        <step>
+            <description>Stir in soy sauce and fish sauce, then add Thai basil leaves and cook until wilted.</description>
+            <duration_minutes>5</duration_minutes>
+            <tools>Pan, Stove</tools>
+        </step>
+    </steps>
+    <metadata>
+        <cuisine>Thai</cuisine>
+        <difficulty>Medium</difficulty>
+        <servings>4</servings>
+        <prep_time>PT15M</prep_time>
+        <cook_time>PT20M</cook_time>
+    </metadata>
+    <nutrition>
+        <calories>250</calories>
+        <fat>10</fat>
+        <protein>30</protein>
+    </nutrition>
+</recipe>

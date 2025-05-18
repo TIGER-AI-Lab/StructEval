@@ -1,0 +1,45 @@
+{
+  "artifact": {
+    "name": "Rosetta Stone Fragment",
+    "discovery_date": "1799-07-15",
+    "origin": {
+      "civilization": "Ancient Egyptian",
+      "location": "Rosetta (Rashid), Egypt"
+    },
+    "materials": [
+      {
+        "type": "Granodiorite",
+        "purity": 95
+      },
+      {
+        "type": "Basalt",
+        "purity": 80
+      }
+    ],
+    "dimensions": {
+      "height_cm": 112.3,
+      "width_cm": 75.7,
+      "depth_cm": 28.4
+    },
+    "features": [
+      {
+        "description": "Contains inscriptions in three scripts: Hieroglyphic, Demotic, and Ancient Greek.",
+        "estimated_age_years": 2200
+      },
+      {
+        "description": "Fragment shows evidence of attempted erasure and damage over time.",
+        "estimated_age_years": 2200
+      }
+    ],
+    "current_location": {
+      "museum": "The British Museum",
+      "display_case": "Room 4 (Egyptian Sculpture)"
+    },
+    "historical_significance": {
+      "summary": "Key to deciphering Egyptian hieroglyphs, providing invaluable insights into ancient Egyptian language and culture.",
+      "references": [
+        "Parkinson, R. (2005). The Rosetta Stone. British Museum Press."
+      ]
+    }
+  }
+}

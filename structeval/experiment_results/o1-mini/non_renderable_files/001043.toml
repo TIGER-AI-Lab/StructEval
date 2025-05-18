@@ -1,0 +1,34 @@
+
+[museum]
+name = "Grand Exhibition Hall"
+founded_year = 1995
+
+[museum.location]
+city = "Metropolis"
+country = "Freedonia"
+
+[museum.director]
+name = "Samuel Thompson"
+tenure_years = 10
+
+[museum.opening_hours]
+weekdays = "08:00-20:00"
+weekends = "10:00-18:00"
+
+[[museum.galleries]]
+title = "Classical Masterpieces"
+theme = "Art from Antiquity to the Renaissance"
+
+  [[museum.galleries.artworks]]
+  title = "The Silent Echo"
+  artist = "Maria Garcia"
+  year = 1605
+  medium = "oil on canvas"
+  on_display = true
+
+  [[museum.galleries.artworks]]
+  title = "Twilight Symphony"
+  artist = "Leonardo Bianchi"
+  year = 1499
+  medium = "tempera on wood"
+  on_display = false

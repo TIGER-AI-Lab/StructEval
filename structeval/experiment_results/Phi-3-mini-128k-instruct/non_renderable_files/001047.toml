@@ -1,0 +1,41 @@
+[artifact]
+name = "The Rosetta Stone"
+origin = {
+    culture = "Egyptian"
+    period = "Ptolemaic Period"
+    discovery_date = "1799-07-15"
+}
+dimensions = {
+    height_cm = 114
+    width_cm = 27.9
+}
+materials = {
+    primary = "Granodiorite"
+    secondary = ""
+}
+condition = {
+    status = "intact"
+    restoration_notes = ""
+}
+exhibitions = [
+    {
+        title = "The Rosetta Stone: A Key to Ancient Egypt"
+        year = 2001
+        location = "British Museum, London"
+    },
+    {
+        title = "The Rosetta Stone: Unlocking the Past"
+        year = 2019
+        location = "National Geographic Museum, Washington, D.C."
+    }
+]
+images = [
+    {
+        url = "https://example.com/rosetta-stone-image1.jpg"
+        caption = "The Rosetta Stone in its display case at the British Museum."
+    },
+    {
+        url = "https://example.com/rosetta-stone-image2.jpg"
+        caption = "The Rosetta Stone at the National Geographic Museum."
+    }
+]

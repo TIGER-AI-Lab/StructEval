@@ -1,0 +1,91 @@
+
+{
+  "title": "Saffron Crusted Scallops with Smoked Paprika Aioli",
+  "cuisine": "Spanish",
+  "difficulty": "hard",
+  "prep_time_minutes": 20,
+  "cook_time_minutes": 15,
+  "ingredients": [
+    {
+      "name": "Scallops",
+      "quantity": 12,
+      "unit": "pieces",
+      "tools": []
+    },
+    {
+      "name": "Saffron threads",
+      "quantity": 0.5,
+      "unit": "teaspoons",
+      "tools": []
+    },
+    {
+      "name": "Smoked paprika",
+      "quantity": 2,
+      "unit": "teaspoons",
+      "tools": []
+    },
+    {
+      "name": "Garlic",
+      "quantity": 3,
+      "unit": "cloves",
+      "tools": []
+    },
+    {
+      "name": "Lemon juice",
+      "quantity": 2,
+      "unit": "tablespoons",
+      "tools": []
+    },
+    {
+      "name": "Olive oil",
+      "quantity": 1,
+      "unit": "tablespoon",
+      "tools": []
+    },
+    {
+      "name": "Salt",
+      "quantity": 1,
+      "unit": "teaspoon",
+      "tools": []
+    },
+    {
+      "name": "Black pepper",
+      "quantity": 0.5,
+      "unit": "teaspoon",
+      "tools": []
+    }
+  ],
+  "steps": [
+    {
+      "instruction": "Preheat the oven to 400Â°F (200Â°C).",
+      "duration_minutes": 5,
+      "tools": ["Oven"]
+    },
+    {
+      "instruction": "Rinse the scallops and pat them dry with paper towels.",
+      "duration_minutes": 5,
+      "tools": ["Paper towels"]
+    },
+    {
+      "instruction": "Mix the saffron threads, smoked paprika, garlic, lemon juice, olive oil, salt, and black pepper in a small bowl.",
+      "duration_minutes": 5,
+      "tools": ["Bowl"]
+    },
+    {
+      "instruction": "Coat the scallops with the saffron mixture, making sure they are evenly coated.",
+      "duration_minutes": 5,
+      "tools": ["Bowl"]
+    },
+    {
+      "instruction": "Place the scallops on a baking sheet lined with parchment paper and bake for 12-15 minutes or until cooked through.",
+      "duration_minutes": 15,
+      "tools": ["Baking sheet", "Parchment paper"]
+    }
+  ],
+  "nutrition": {
+    "calories": 240,
+    "protein_grams": 20,
+    "carbs_grams": 10,
+    "fat_grams": 10
+  }
+}

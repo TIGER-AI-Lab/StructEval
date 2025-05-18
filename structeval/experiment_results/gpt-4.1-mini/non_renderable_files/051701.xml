@@ -1,0 +1,24 @@
+
+<spaceZoo>
+  <planet>
+    <name>Xylon-5</name>
+    <species>
+      <speciesItem>
+        <name>Glowtail</name>
+        <diet>luminous algae</diet>
+        <features>
+          <feature>bioluminescent tail</feature>
+          <feature>hovering fins</feature>
+        </features>
+      </speciesItem>
+      <speciesItem>
+        <name>Crystacorn</name>
+        <diet>mineral shards</diet>
+        <features>
+          <feature>crystal horn</feature>
+          <feature>reflective shell</feature>
+        </features>
+      </speciesItem>
+    </species>
+  </planet>
+</spaceZoo>

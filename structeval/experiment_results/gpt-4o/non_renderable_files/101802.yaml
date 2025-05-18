@@ -1,0 +1,28 @@
+spaceship:
+  name: "Celestial Wanderer"
+  model: "XG-9000"
+  status: "operational"
+  crew:
+    captain: "Nova Stroud"
+    first_officer: "Jax Quill"
+    engineers:
+      - name: "Tara Voss"
+        specialty: "Propulsion"
+      - name: "Lin Zhi"
+        specialty: "Life Support"
+  missions:
+    - destination: "Kepler-442b"
+      success: true
+      cargo:
+        - "medical supplies"
+        - "research drones"
+    - destination: "Tau Ceti e"
+      success: false
+      cargo:
+        - "terraforming kits"
+  specs:
+    length_m: 382
+    mass_tons: 12000
+    fuel_types:
+      - "deuterium"
+      - "helium-3"

@@ -1,0 +1,55 @@
+
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "star_systems": {
+      "star_system": [
+        {
+          "system_name": "Alpha Centauri",
+          "planets": {
+            "planet": [
+              {
+                "planet_name": "Proxima b",
+                "inhabitants": {
+                  "inhabitant": [
+                    {
+                      "species": "Xenon",
+                      "population": 12000
+                    },
+                    {
+                      "species": "Helion",
+                      "population": 2000
+                    }
+                  ]
+                }
+              },
+              {
+                "planet_name": "Centauri Prime",
+                "inhabitants": {
+                  "inhabitant": {
+                    "species": "Terran",
+                    "population": 500
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "system_name": "Betelgeuse",
+          "planets": {
+            "planet": {
+              "planet_name": "Betel One",
+              "inhabitants": {
+                "inhabitant": {
+                  "species": "Orionid",
+                  "population": 8000
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

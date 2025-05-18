@@ -1,0 +1,58 @@
+
+<recipe>
+  <title>Spaghetti Bolognese</title>
+  <author>
+    <name>John Doe</name>
+    <role>Chef</role>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>400.0</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Tomato Sauce</name>
+      <quantity>2</quantity>
+      <unit>cups</unit>
+    </ingredient>
+    <ingredient>
+      <name>Ground Beef</name>
+      <quantity>500</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Mozzarella Cheese</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <instruction>Boil spaghetti in salted water until al dente.</instruction>
+      <duration_minutes>10</duration_minutes>
+      <tools>pot, pan</tools>
+    </step>
+    <step>
+      <instruction>SautÃ© ground beef in a pan until browned.</instruction>
+      <duration_minutes>8</duration_minutes>
+      <tools>pan, knife</tools>
+    </step>
+    <step>
+      <instruction>Combine cooked pasta with tomato sauce and beef.</instruction>
+      <duration_minutes>5</duration_minutes>
+      <tools>mixing bowl, spoon</tools>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>400</calories>
+    <protein_grams>20</protein_grams>
+    <fat_grams>10</fat_grams>
+    <carbohydrates_grams>50</carbohydrates_grams>
+  </nutrition>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>Easy</difficulty>
+    <published_date>2023-10-25</published_date>
+  </metadata>
+</recipe>

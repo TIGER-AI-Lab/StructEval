@@ -1,0 +1,68 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "starSystems": {
+      "starSystem": [
+        {
+          "name": "Alpha Centauri",
+          "planets": {
+            "planet": [
+              {
+                "name": "Proxima b",
+                "moons": {
+                  "moon": ["Luna Minor", "Luna Major"]
+                }
+              },
+              {
+                "name": "Proxima c",
+                "moons": {
+                  "moon": []
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "Sirius",
+          "planets": {
+            "planet": [
+              {
+                "name": "Sirius A-1",
+                "moons": {
+                  "moon": ["Io"]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
+'''
+
+def json_to_xml(json_data):
+    root = ET.Element("root")
+    galaxy = ET.SubElement(root, "galaxy")
+    galaxy.set("name", json_data["galaxy"]["name"])
+    starSystems = ET.SubElement(galaxy, "starSystems")
+    for starSystem in json_data["galaxy"]["starSystems"]["starSystem"]:
+        ss = ET.SubElement(starSystems, "starSystem")
+        ss.set("name", starSystem["name"])
+        planets = ET.SubElement(ss, "planets")
+        for planet in starSystem["planets"]["planet"]:
+            p = ET.SubElement(planets, "planet")
+            p.set("name", planet["name"])
+            if "moons" in planet:
+                moons = ET.SubElement(p, "moons")
+                for moon in planet["moons"]["moon"]:
+                    ET.SubElement(moons, "moon").text = moon
+    return ET.tostring(root, encoding="unicode")
+
+xml_data = json_to_xml(json.loads(json_data))
+print(xml_data)

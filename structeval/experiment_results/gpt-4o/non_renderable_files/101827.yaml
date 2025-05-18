@@ -1,0 +1,24 @@
+spaceship:
+  name: "Nebula Voyager"
+  model: "NVX-2024"
+  crew:
+    captain: "Juno Starling"
+    first_officer: "Milo Quark"
+    engineers:
+      - name: "Ari Vega"
+        specialty: "Warp Core"
+      - name: "Rin Kestrel"
+        specialty: "Life Support"
+  missions:
+    - destination: "Proxima Centauri"
+      year: 2124
+      success: true
+    - destination: "TRAPPIST-1e"
+      year: 2126
+      success: false
+  specs:
+    length_meters: 120.5
+    mass_tons: 3200
+    propulsion:
+      type: "Fusion Drive"
+      thrust_kn: 9500

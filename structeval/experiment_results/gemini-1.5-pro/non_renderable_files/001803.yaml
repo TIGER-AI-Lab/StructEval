@@ -1,0 +1,36 @@
+museum:
+  name: "Museum of Imaginary Arts"
+  location:
+    city: "Exemplar City"
+    country: "Fantasia"
+  founded_year: 1925
+  director:
+    full_name: "Dr. Amelia Curator"
+    tenure_years: 15
+  galleries:
+    - title: "Gallery of Dreams"
+      floor: 2
+      artworks:
+        - artist: "Aurora Nova"
+          title: "Whispers of the Stars"
+          year_created: 2008
+          medium: "Oil on canvas"
+          on_display: true
+        - artist: "Silas Dreamweaver"
+          title: "The Labyrinth of Time"
+          year_created: 1985
+          medium: "Sculpture - Bronze"
+          on_display: true
+    - title: "Gallery of Illusions"
+      floor: 3
+      artworks:
+        - artist: "Mirage Masters"
+          title: "The Shifting Sands"
+          year_created: 2015
+          medium: "Digital Art"
+          on_display: false
+        - artist: "Evelyn Enigma"
+          title: "Reflections of Reality"
+          year_created: 1992
+          medium: "Mixed Media"
+          on_display: true

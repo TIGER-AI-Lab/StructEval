@@ -1,0 +1,51 @@
+
+<creatures>
+  <creature>
+    <CreatureName>Glowtail</CreatureName>
+    <Habitat>Cavern</Habitat>
+    <NumberOfLegs>4</NumberOfLegs>
+    <DiscoveryDate>1998-07-12</DiscoveryDate>
+    <LuminosityScore>8.7</LuminosityScore>
+    <DietType>Herbivore</DietType>
+  </creature>
+  <creature>
+    <CreatureName>Velvet Moth</CreatureName>
+    <Habitat>Forest</Habitat>
+    <NumberOfLegs>6</NumberOfLegs>
+    <DiscoveryDate>2005-04-23</DiscoveryDate>
+    <LuminosityScore>5.1</LuminosityScore>
+    <DietType>Nectarivore</DietType>
+  </creature>
+  <creature>
+    <CreatureName>Crystal Hopper</CreatureName>
+    <Habitat>Desert</Habitat>
+    <NumberOfLegs>2</NumberOfLegs>
+    <DiscoveryDate>2012-11-03</DiscoveryDate>
+    <LuminosityScore>9.3</LuminosityScore>
+    <DietType>Omnivore</DietType>
+  </creature>
+  <creature>
+    <CreatureName>Frostfin</CreatureName>
+    <Habitat>Arctic Lake</Habitat>
+    <NumberOfLegs>0</NumberOfLegs>
+    <DiscoveryDate>2017-01-19</DiscoveryDate>
+    <LuminosityScore>2.4</LuminosityScore>
+    <DietType>Carnivore</DietType>
+  </creature>
+  <creature>
+    <CreatureName>Sunscale</CreatureName>
+    <Habitat>Mountain</Habitat>
+    <NumberOfLegs>4</NumberOfLegs>
+    <DiscoveryDate>2010-09-28</DiscoveryDate>
+    <LuminosityScore>7.8</LuminosityScore>
+    <DietType>Herbivore</DietType>
+  </creature>
+  <creature>
+    <CreatureName>Echo Lynx</CreatureName>
+    <Habitat>Canyon</Habitat>
+    <NumberOfLegs>4</NumberOfLegs>
+    <DiscoveryDate>2003-06-17</DiscoveryDate>
+    <LuminosityScore>3.9</LuminosityScore>
+    <DietType>Omnivore</DietType>
+  </creature>
+</creatures>

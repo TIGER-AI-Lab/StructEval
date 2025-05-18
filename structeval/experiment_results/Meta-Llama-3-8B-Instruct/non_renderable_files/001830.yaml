@@ -1,0 +1,28 @@
+
+artifact:
+  name: "The Golden Chalice"
+  origin:
+    culture: "Ancient Greek"
+    period: "Classical Era"
+  materials:
+    primary: "Gold"
+    secondary:
+      - "Copper"
+      - "Silver"
+  dimensions:
+    height_cm: 20
+    width_cm: 15
+    depth_cm: 10
+  current_location:
+    museum: "The British Museum"
+    room: "Gallery 12"
+    display_case: "Case 3"
+  inscriptions:
+    - language: "Ancient Greek"
+      text: "Îá¼°ÏÎ®Î½Î·Î½ Ïá¾¶ÏÎ¹Î½"
+      translation: "Peace to all"
+  provenance:
+    history:
+      - owner: "King Philip II of Macedon"
+        date_acquired: "336-335 BCE"
+        method_of_acquisition: "Inheritance"

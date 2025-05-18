@@ -1,0 +1,32 @@
+<creature>
+    <name>Glargon the Magnificent</name>
+    <species>Floopydian</species>
+    <origin>
+        <planet>Floopyd</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <stats>
+        <height>250</height>
+        <weight>120</weight>
+        <age>300</age>
+    </stats>
+    <abilities>
+        <ability>
+            <name>Telekinesis</name>
+            <power_level>95</power_level>
+            <type>Psychic</type>
+        </ability>
+        <ability>
+            <name>Shapeshifting</name>
+            <power_level>70</power_level>
+            <type>Transformation</type>
+        </ability>
+    </abilities>
+    <companions>
+        <companion>
+            <name>Bleep</name>
+            <species>Zorplian</species>
+            <role>Advisor</role>
+        </companion>
+    </companions>
+</creature>

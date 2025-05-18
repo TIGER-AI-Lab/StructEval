@@ -1,0 +1,29 @@
+
+recipe:
+  title: "Delicious Chicken Fajitas"
+  author:
+    name: "John Doe"
+    contact:
+      email: "johndoe@example.com"
+  ingredients:
+  - name: "Boneless Chicken Breast"
+    quantity: 500
+    unit: "grams"
+  - name: "Bell Peppers"
+    quantity: 200
+    unit: "grams"
+  steps:
+  - description: "Slice the chicken and bell peppers into thin strips."
+    duration_minutes: 10
+  - description: "Cook the chicken and bell peppers in a pan with some oil."
+    duration_minutes: 20
+  metadata:
+    cuisine: "Mexican"
+    difficulty: "medium"
+    tags:
+      - "fajitas"
+      - "chicken"
+      - "vegetarian"
+  nutrition:
+    calories: 400
+    protein_grams: 30

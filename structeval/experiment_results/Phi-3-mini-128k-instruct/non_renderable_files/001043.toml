@@ -1,0 +1,37 @@
+[museum]
+name = "Fictional Art Museum"
+location = {
+    city = "Imaginaria"
+    country = "Fictionland"
+}
+founded_year = 1992
+director = {
+    name = "John Doe"
+    tenure_years = 10
+}
+galleries = [
+    {
+        title = "Modern Marvels"
+        theme = "Contemporary Art"
+        artworks = [
+            {
+                title = "The Future Unveiled"
+                artist = "Jane Smith"
+                year = 2021
+                medium = "Digital Art"
+                on_display = true
+            },
+            {
+                title = "Tomorrow's Dreams"
+                artist = "Alex Johnson"
+                year = 2019
+                medium = "Mixed Media"
+                on_display = true
+            }
+        ]
+    }
+]
+opening_hours = {
+    weekdays = "09:00-17:00"
+    weekends = "10:00-18:00"
+}

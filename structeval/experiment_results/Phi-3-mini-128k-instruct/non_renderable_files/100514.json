@@ -1,0 +1,40 @@
+{
+  "spaceship": {
+    "name": "Star Wanderer",
+    "captain": "Lira Solis",
+    "crew_count": 42,
+    "specs": {
+      "length_m": 120.5,
+      "mass_tons": 8500,
+      "engines": ["Ion Drive", "Solar Sail"],
+      "shields": {
+        "type": "Plasma",
+        "strength": 95
+      }
+    },
+    "cargo": [
+      {
+        "item": "Quantum Crystals",
+        "quantity": 120
+      },
+      {
+        "item": "Alien Artifacts",
+        "quantity": 5
+      },
+      {
+        "item": "Medical Supplies",
+        "quantity": 230
+      }
+    ],
+    "missions": [
+      {
+        "name": "Survey Kepler-442b",
+        "status": "Completed"
+      },
+      {
+        "name": "Resupply Outpost Vega-9",
+        "status": "Ongoing"
+      }
+    ]
+  }
+}

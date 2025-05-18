@@ -1,0 +1,43 @@
+
+space_station = {
+  name = "Aurora Station",
+  location = {
+    orbiting_body = "Earth",
+    coordinates = [
+      {
+        latitude = 51.4766,
+        longitude = -0.0004
+      }
+    ]
+  },
+  modules = [
+    {
+      id = "module-1",
+      type = "habitation",
+      status = "active",
+      crew_capacity = 6,
+      experiments = [
+        {
+          experiment_id = "exp-1",
+          title = "Microgravity Effects on Plant Growth",
+          principal_investigator = "Dr. Jane Smith",
+          start_date = "2022-01-01",
+          status = "ongoing"
+        },
+        {
+          experiment_id = "exp-2",
+          title = "Astronaut Health in Space",
+          principal_investigator = "Dr. John Doe",
+          start_date = "2022-02-01",
+          status = "completed"
+        }
+      ]
+    }
+  ],
+  launch_history = [
+    {
+      date = "2022-01-01",
+      vehicle = "Falcon 9"
+    }
+  ]
+}

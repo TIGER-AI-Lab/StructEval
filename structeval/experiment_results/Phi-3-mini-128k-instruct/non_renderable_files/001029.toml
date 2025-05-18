@@ -1,0 +1,36 @@
+[artifact]
+name = "The Celestial Compass"
+origin = "Zyphorian"
+
+artifact.discovery = {
+    year = 2432,
+    location = "Sector G-7, Zyphorian Moons"
+}
+
+artifact.materials = [
+    {
+        type = "Crystalline Zyphorite",
+        percentage = 75.0
+    },
+    {
+        type = "Meteoric Iron",
+        percentage = 25.0
+    }
+]
+
+artifact.dimensions = {
+    height_cm = 120.0,
+    width_cm = 45.0,
+    depth_cm = 10.0
+}
+
+artifact.features = [
+    {
+        description = "Axes align with the Zyphorian moons' orbits",
+        is_encrypted = false
+    },
+    {
+        description = "Inscriptions in an unknown script",
+        is_encrypted = true
+    }
+]

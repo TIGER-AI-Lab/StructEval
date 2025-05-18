@@ -1,0 +1,34 @@
+[planet]
+name = "Kepler-186 f"
+
+[planet.discovery]
+year = 2014
+method = "transit"
+
+[planet.orbit]
+period_days = 129.9
+eccentricity = 0.04
+
+[[planet.atmosphere.composition]]
+gas = "Nitrogen"
+percentage = 78.0
+
+[[planet.atmosphere.composition]]
+gas = "Oxygen"
+percentage = 21.0
+
+[[planet.moons]]
+name = "Luna1"
+diameter_km = 3474.8
+
+[[planet.moons]]
+name = "Luna2"
+diameter_km = 200.0
+
+[planet.surface]
+temperature_c = 10.0
+has_liquid_water = true
+
+[[planet.surface.landmarks]]
+type = "crater"
+name = "Crater Alpha"

@@ -1,0 +1,36 @@
+
+{
+  "planet_name": "Aurelia",
+  "system": {
+    "star_name": "Helios",
+    "distance_from_earth_ly": "24.6",
+    "discovery": {
+      "year": 2214,
+      "method": "Transit",
+      "organizations": ["Interstellar Alliance", "Deep Space Research"]
+    }
+  },
+  "moons": [
+    {
+      "name": "Selene",
+      "diameter_km": 3120,
+      "has_atmosphere": true,
+      "surface_features": ["Ice Canyons", "Volcanic Plains"]
+    },
+    {
+      "name": "Nyx",
+      "diameter_km": 1987,
+      "has_atmosphere": false,
+      "surface_features": ["Rocky Plateaus", "Frost Fields"]
+    }
+  ],
+  "atmosphere": {
+    "composition": ["Nitrogen", "Oxygen"],
+    "pressure_atm": 0.9,
+    "has_clouds": true
+  },
+  "habitability": {
+    "score": 8.2,
+    "notes": "Potential for microbial life"
+  }
+}

@@ -1,0 +1,45 @@
+
+artifact = {
+  [name] = "The Celestial Sphere",
+  discovery_date = "2020-05-15",
+  origin = {
+    culture = "Ancient Greek",
+    region = "Mediterranean",
+    period = "Classical Antiquity"
+  },
+  dimensions = {
+    height_cm = 30.0,
+    width_cm = 20.0,
+    depth_cm = 10.0
+  },
+  materials = ["Gold", "Silver", "Ceramic"],
+  condition = {
+    current_state = "Good",
+    restoration_history = [
+      {
+        date = "2015-03-20",
+        description = "Conservation and stabilization of the artifact's surface"
+      }
+    ]
+  },
+  provenance = {
+    owners = [
+      {
+        name = "The Metropolitan Museum of Art",
+        acquisition_year = 1950
+      }
+    ]
+  },
+  exhibitions = [
+    {
+      title = "The Art of the Ancients",
+      location = "The Metropolitan Museum of Art",
+      year = 2020
+    },
+    {
+      title = "Treasures of the Mediterranean",
+      location = "The British Museum",
+      year = 2015
+    }
+  ]
+}

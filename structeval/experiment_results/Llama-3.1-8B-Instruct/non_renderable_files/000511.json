@@ -1,0 +1,30 @@
+
+{
+  "exhibit": {
+    "title": "Modern Art Collection",
+    "curator": {
+      "name": "John Doe",
+      "email": "john.doe@example.com"
+    },
+    "artworks": [
+      {
+        "artist": "Pablo Picasso",
+        "title": "Guernica",
+        "year_created": 1937,
+        "medium": "oil on canvas",
+        "dimensions": {
+          "height_cm": 349,
+          "width_cm": 764,
+          "depth_cm": 6
+        },
+        "provenance": {
+          "previous_owners": ["Private collector", "Museum of Modern Art"],
+          "acquisition_date": "2010-01-01"
+        },
+        "on_display": true,
+        "tags": ["Cubism", "War art"]
+      }
+    ],
+    "opening_date": "2024-08-01"
+  }
+}

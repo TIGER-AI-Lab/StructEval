@@ -1,0 +1,36 @@
+
+{
+  "exhibit": {
+    "title": "Modern Masterpieces",
+    "curator": {
+      "name": "Dr. Elena Martinez",
+      "contact": {
+        "email": "curator@example.com",
+        "phone": "+1 (202) 555-0198"
+      }
+    },
+    "artworks": [
+      {
+        "artist": "Jackson Pollock",
+        "title": "Number 1A, 1948",
+        "year_created": 1948,
+        "medium": "Oil on canvas",
+        "dimensions": {
+          "height_cm": 120,
+          "width_cm": 120,
+          "depth_cm": 3
+        },
+        "provenance": [
+          {
+            "owner": "The Museum of Modern Art",
+            "acquisition_date": "1949-05-15"
+          }
+        ]
+      }
+    ],
+    "schedule": {
+      "opening_date": "2023-11-01",
+      "closing_date": "2024-01-15"
+    }
+  }
+}

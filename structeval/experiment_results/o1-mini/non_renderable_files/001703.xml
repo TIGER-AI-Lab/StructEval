@@ -1,0 +1,136 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <title>Classic Chocolate Chip Cookies</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+            <phone>+1-555-123-4567</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>All-purpose flour</name>
+            <quantity>2.5</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Baking soda</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>0.5</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Unsalted butter</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Sugar</name>
+            <quantity>0.75</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Brown sugar</name>
+            <quantity>0.75</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vanilla extract</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <unit>units</unit>
+        </ingredient>
+        <ingredient>
+            <name>Chocolate chips</name>
+            <quantity>2</quantity>
+            <unit>cups</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <instruction>Preheat your oven to 350Â°F (175Â°C).</instruction>
+            <duration>
+                <minutes>10</minutes>
+            </duration>
+            <tools>Oven, Baking sheet, Parchment paper</tools>
+        </step>
+        <step>
+            <instruction>In a bowl, mix the flour, baking soda, and salt together.</instruction>
+            <duration>
+                <minutes>5</minutes>
+            </duration>
+            <tools>Mixing bowl, Whisk</tools>
+        </step>
+        <step>
+            <instruction>In another bowl, cream together the butter, sugar, and brown sugar until light and fluffy.</instruction>
+            <duration>
+                <minutes>5</minutes>
+            </duration>
+            <tools>Mixer, Mixing bowl</tools>
+        </step>
+        <step>
+            <instruction>Beat in the vanilla extract and eggs one at a time.</instruction>
+            <duration>
+                <minutes>3</minutes>
+            </duration>
+            <tools>Mixer</tools>
+        </step>
+        <step>
+            <instruction>Gradually add the dry ingredients to the wet mixture and mix until combined.</instruction>
+            <duration>
+                <minutes>4</minutes>
+            </duration>
+            <tools>Mixing bowl, Mixer</tools>
+        </step>
+        <step>
+            <instruction>Stir in the chocolate chips.</instruction>
+            <duration>
+                <minutes>2</minutes>
+            </duration>
+            <tools>Spoon or spatula</tools>
+        </step>
+        <step>
+            <instruction>Drop rounded tablespoons of dough onto the prepared baking sheet.</instruction>
+            <duration>
+                <minutes>10</minutes>
+            </duration>
+            <tools>Cookie scoop, Baking sheet</tools>
+        </step>
+        <step>
+            <instruction>Bake for 10-12 minutes or until edges are golden brown.</instruction>
+            <duration>
+                <minutes>12</minutes>
+            </duration>
+            <tools>Oven, Baking sheet</tools>
+        </step>
+        <step>
+            <instruction>Allow cookies to cool on the baking sheet for 5 minutes before transferring to a wire rack.</instruction>
+            <duration>
+                <minutes>10</minutes>
+            </duration>
+            <tools>Baking sheet, Wire rack</tools>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>250</calories>
+        <fat>12</fat>
+        <protein>3</protein>
+        <carbohydrates>35</carbohydrates>
+    </nutrition>
+    <tags>
+        <tag>dessert</tag>
+        <tag>chocolate</tag>
+        <tag>snack</tag>
+        <tag>classic</tag>
+    </tags>
+</recipe>

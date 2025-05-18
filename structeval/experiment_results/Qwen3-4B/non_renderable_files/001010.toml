@@ -1,0 +1,25 @@
+
+recipe = {
+    name = "Chicken Pasta"
+    author = "Jane Doe"
+    cuisine = "Italian"
+    difficulty = "medium"
+    prep_time = { minutes = 15 }
+    cook_time = { minutes = 30 }
+    ingredients = [
+        { name = "Chicken", quantity = 200, unit = "grams", optional = false },
+        { name = "Pasta", quantity = 200, unit = "grams", optional = true },
+        { name = "Tomato Sauce", quantity = 400, unit = "ml", optional = false }
+    ]
+    steps = [
+        { description = "Cook pasta according to package instructions", duration_minutes = 10 },
+        { description = "SautÃ© chicken in a pan", duration_minutes = 5 },
+        { description = "Combine with tomato sauce and serve", duration_minutes = 5 }
+    ]
+    nutrition = {
+        calories = 400
+        protein_grams = 20.5
+        fat_grams = 10.2
+        carbohydrates_grams = 50
+    }
+}

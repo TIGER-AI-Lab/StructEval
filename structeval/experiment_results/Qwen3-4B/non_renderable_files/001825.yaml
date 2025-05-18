@@ -1,0 +1,29 @@
+
+creature:
+  species: Luminara Serpent
+  habitat:
+    region: Amazonian Rainforest
+    climate: tropical
+  appearance:
+    color: iridescent blue and green
+    size: 2 meters
+  abilities:
+    primary: bioluminescent communication
+    secondary: thermoresistance
+  diet:
+    type: carnivore
+    frequency: daily
+  behavior:
+    social_structure: solitary
+    active_hours: nocturnal
+  offspring:
+    count: 2
+    - name: Luminara
+      age: 1
+      traits:
+        - iridescent scales
+        - bioluminescent markings
+        - sharp teeth
+  discovery:
+    year: 2023
+    discoverer: Dr. Elena Marquez and her team

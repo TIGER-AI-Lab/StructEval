@@ -1,0 +1,30 @@
+
+title = "Spaghetti Carbonara"
+
+[recipe.author]
+name = "John Doe"
+email = "johndoe@example.com"
+phone = "+1234567890"
+
+[[recipe.ingredients]]
+name = "Spaghetti"
+quantity = 200
+unit = "g"
+
+[[recipe.ingredients]]
+name = "Bacon"
+quantity = 100
+unit = "g"
+
+[[recipe.steps]]
+instruction = "Boil water and cook spaghetti until al dente."
+duration_minutes = 10
+
+[[recipe.steps]]
+instruction = "Fry bacon until crispy, then mix with spaghetti and add eggs."
+duration_minutes = 15
+
+[recipe.metadata]
+servings = 2
+cuisine = "Italian"
+difficulty = "medium"

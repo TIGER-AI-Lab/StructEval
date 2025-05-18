@@ -1,0 +1,38 @@
+
+{
+  "artifact": {
+    "name": "The Lion of Ur",
+    "period": "Bronze Age",
+    "origin": {
+      "civilization": "Sumerian",
+      "region": "Mesopotamia"
+    },
+    "discovery": {
+      "date": "2023-04-15",
+      "location": {
+        "latitude": 32.5,
+        "longitude": 44.3
+      }
+    },
+    "materials": ["bronze", "clay"],
+    "dimensions": {
+      "height_cm": 45,
+      "width_cm": 30,
+      "depth_cm": 15
+    },
+    "inscriptions": [
+      {
+        "language": "Sumerian",
+        "text": "LU.HU2.EN.GUR",
+        "translation": "The king of Ur is strong",
+        "condition": "intact"
+      },
+      {
+        "language": "Akkadian",
+        "text": "EN.GUR.LU.HU2",
+        "translation": "The king of Ur is strong",
+        "condition": "partially eroded"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+<planet>
+  <name>Exoplanet XJ-3</name>
+  <type>gas giant</type>
+  <discovery year="2025" method="space probe" observer="Dr. Jane Smith">
+    <moons>
+      <moon>
+        <name>Moon Alpha</name>
+        <diameter>5000</diameter>
+        <orbit_period>7</orbit_period>
+      </moon>
+      <moon>
+        <name>Moon Beta</name>
+        <diameter>3000</diameter>
+        <orbit_period>5</orbit_period>
+      </moon>
+    </moons>
+    <atmosphere>
+      <composition>Nitrogen, Oxygen, Argon</composition>
+      <pressure>101325</pressure>
+      <temperature>-50</temperature>
+    </atmosphere>
+    <rings>
+      <ring>
+        <width>100000</width>
+        <composition>Ice particles</composition>
+      </ring>
+    </rings>
+  </discovery>
+</planet>

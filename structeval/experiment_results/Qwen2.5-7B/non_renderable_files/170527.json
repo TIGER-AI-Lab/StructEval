@@ -1,0 +1,31 @@
+
+import xmltodict
+import json
+
+xml_data = """
+<museum>
+  <exhibits>
+    <artifact>
+      <name>Golden Scarab</name>
+      <origin>Ancient Egypt</origin>
+      <year>1323 BC</year>
+    </artifact>
+    <artifact>
+      <name>Moon Rock</name>
+      <origin>Apollo 17 Mission</origin>
+      <year>1972</year>
+    </artifact>
+  </exhibits>
+  <cafeteria>
+    <menu>
+      <item>Galactic Sandwich</item>
+      <item>Pharaoh's Salad</item>
+    </menu>
+  </cafeteria>
+</museum>
+"""
+
+data_dict = xmltodict.parse(xml_data)
+json_data = json.dumps(data_dict)
+
+print(json_data)

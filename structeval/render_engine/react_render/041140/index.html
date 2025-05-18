@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041140</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Document Title: Structured Layout Example</h1>
+        <p>This document demonstrates a complex yet clean layout that uses various HTML elements to form a visible structure.</p>
+      </header>
+
+      <nav>
+        <h2>Table of Contents</h2>
+        <ol>
+          <li>Introduction</li>
+          <li>Content Sections</li>
+          <li>Data Overview</li>
+          <li>Instructions</li>
+          <li>Conclusion</li>
+        </ol>
+      </nav>
+
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Welcome to this example page. The purpose of this document is to provide a detailed illustration of visible structure, layout, and formatted content. We include headings, subheadings, lists, paragraphs, and tables to show a range of HTML elements.
+        </p>
+      </section>
+
+      <section>
+        <h2>Content Sections</h2>
+        <article>
+          <h3>Subsection: Key Points</h3>
+          <ul>
+            <li>Clear headings and subheadings</li>
+            <li>Organized paragraphs and lists</li>
+            <li>Properly labeled data fields</li>
+            <li>Structured sections for readability</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Subsection: Additional Information</h3>
+          <p>
+            This article details the significance of having a well-structured layout. By using semantic tags and formatted content, the page becomes easier to navigate and more accessible.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Data Overview</h2>
+        <p>Below is a table with labeled values that show example data entries:</p>
+        <table border="1" cellSpacing="0" cellPadding="5">
+          <thead>
+            <tr>
+              <th>Field Label</th>
+              <th>Example Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>First Name</td>
+              <td>Jane</td>
+            </tr>
+            <tr>
+              <td>Last Name</td>
+              <td>Smith</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>jane.smith@example.com</td>
+            </tr>
+            <tr>
+              <td>Membership ID</td>
+              <td>987654</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>Active</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Instructions</h2>
+        <p>Please follow these steps to understand the layout:</p>
+        <ol>
+          <li>Review the Table of Contents at the top for navigation clues.</li>
+          <li>Read the Introduction to get an overview of the pageâs purpose.</li>
+          <li>Examine the Content Sections for detailed information.</li>
+          <li>Inspect the Data Overview for practical examples of labeled content.</li>
+          <li>Finish by reading the Conclusion.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Conclusion</h2>
+        <p>
+          This structured HTML document showcases a well-organized layout with distinct areas for content, data presentation, and instruction. By keeping the interface simple and straightforward, designers can achieve clarity and improved user experience.
+        </p>
+      </section>
+
+      <footer>
+        <hr />
+        <p>&copy; 2023 Structured Layout Examples Inc.</p>
+      </footer>
+    </div>
+  );
+};
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

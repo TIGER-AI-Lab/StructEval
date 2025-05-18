@@ -1,0 +1,22 @@
+creature:
+  name: "Sylvanis"
+  species: "Whispering Willow"
+  habitat:
+    type: "forest"
+    region: "Eldoria"
+    climate: "temperate"
+  abilities:
+    - name: "Photosynthetic Regeneration"
+      description: "Heals itself by absorbing sunlight."
+      cooldown_seconds: 120
+    - name: "Nature's Embrace"
+      description: "Releases a calming aura that pacifies nearby animals."
+      cooldown_seconds: 300
+  stats:
+    size_meters: 15.5
+    weight_kg: 2500
+    lifespan_years: 500
+    diet: "herbivore"
+  discovery:
+    discovered_by: "Elven Explorers Guild"
+    discovery_date: "1200-04-15"

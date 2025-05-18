@@ -1,0 +1,53 @@
+
+{
+  "space_station": {
+    "name": "Orion Outpost",
+    "operational": true,
+    "launch_date": "2087-03-15",
+    "energy_sources": [
+      "solar",
+      "fusion",
+      "backup-battery"
+    ],
+    "location": {
+      "planet": "Europa",
+      "coordinates": {
+        "latitude": 22.5,
+        "longitude": -45.3
+      }
+    },
+    "modules": [
+      {
+        "id": "hab-1",
+        "type": "habitation",
+        "status": "active"
+      },
+      {
+        "id": "lab-2",
+        "type": "laboratory",
+        "status": "maintenance"
+      },
+      {
+        "id": "comm-3",
+        "type": "communications",
+        "status": "active"
+      }
+    ],
+    "crew": [
+      {
+        "name": "Dr. Mira Chen",
+        "role": "Commander",
+        "species": "Human"
+      },
+      {
+        "name": "Zylox",
+        "role": "Engineer",
+        "species": "Andromedan"
+      }
+    ],
+    "mascot": {
+      "name": "Blinky",
+      "species": "Bioluminescent Jellycat"
+    }
+  }
+}

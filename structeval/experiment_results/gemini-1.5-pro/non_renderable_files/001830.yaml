@@ -1,0 +1,25 @@
+artifact:
+  name: "Golden Goblet of Ur"
+  origin:
+    culture: "Sumerian"
+    period: "Early Dynastic Period"
+  materials:
+    primary: "Gold"
+    secondary: ["Lapis Lazuli", "Shell"]
+  dimensions:
+    height_cm: 14.5
+    width_cm: 10.2
+    depth_cm: 7.8
+  current_location:
+    museum: "British Museum"
+    room: "56"
+    display_case: 12
+  inscriptions:
+    - language: "Sumerian Cuneiform"
+      text: "ðð­ððð "
+      translation: "Dedicated to the goddess Inanna"
+  provenance:
+    history:
+      - owner: "Leonard Woolley"
+        date_acquired: "1922-03-15"
+        method_of_acquisition: "Excavation"

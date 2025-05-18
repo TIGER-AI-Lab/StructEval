@@ -1,0 +1,35 @@
+
+expedition:
+  team:
+    name: "Galactic Expedition Team Alpha"
+    members:
+      - full_name: "John Doe"
+        role: "Pilot"
+        skills:
+          - "Astronaut Training"
+          - "Spacecraft Operations"
+        equipment:
+          - item: "Oxygen Mask"
+            quantity: 2
+          - item: "Communication Device"
+            quantity: 1
+  destination:
+    planet: "Xylophia-IV"
+    coordinates:
+      latitude: 43.2134
+      longitude: -122.4567
+  objectives:
+    primary: "Establish a permanent human settlement"
+    secondary:
+      - "Conduct geological surveys"
+      - "Search for signs of extraterrestrial life"
+  timeline:
+    departure_date: "2023-03-15T12:00:00Z"
+    estimated_arrival: "2023-04-15T12:00:00Z"
+  resources:
+    supplies:
+      food_kg: 500
+      water_liters: 1000
+    vehicles:
+      - "Spacecraft Alpha"
+      - "Lander Beta"

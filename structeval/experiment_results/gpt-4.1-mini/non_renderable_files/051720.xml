@@ -1,0 +1,31 @@
+
+<library>
+  <section>
+    <name>Speculative Fiction</name>
+    <book>
+      <title>The Infinite Paradox</title>
+      <authors>
+        <author>L. Quasar</author>
+        <author>M. Nova</author>
+      </authors>
+      <publishedYear>2042</publishedYear>
+    </book>
+    <book>
+      <title>Chronicles of the Clockwork Whale</title>
+      <authors>
+        <author>S. Gears</author>
+      </authors>
+      <publishedYear>2038</publishedYear>
+    </book>
+  </section>
+  <section>
+    <name>Quantum Poetry</name>
+    <book>
+      <title>Entangled Verses</title>
+      <authors>
+        <author>A. Photon</author>
+      </authors>
+      <publishedYear>2050</publishedYear>
+    </book>
+  </section>
+</library>

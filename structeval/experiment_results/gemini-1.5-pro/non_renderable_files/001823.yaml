@@ -1,0 +1,23 @@
+artifact:
+  name: "Golden Sun Disc"
+  origin:
+    culture: "Mycenaean"
+    period: "Late Bronze Age"
+  materials:
+    primary: "Gold"
+    secondary: "Silver"
+  dimensions:
+    height_cm: 30.5
+    width_cm: 30.5
+    depth_cm: 2.0
+  condition:
+    status: "Excellent"
+    notes: "Minor surface wear."
+  exhibitions:
+    - title: "Treasures of the Aegean"
+      date_range:
+        start: "2023-06-01"
+        end: "2024-01-15"
+      location:
+        museum: "National Archaeological Museum"
+        city: "Athens"

@@ -1,0 +1,19 @@
+
+galaxy:
+  name: Andromeda
+  constellations:
+    constellation:
+      - name: Pegasus
+        stars:
+          star:
+            - name: Alpha Pegasi
+              type: Supergiant
+            - name: Beta Pegasi
+              type: Giant
+      - name: Cassiopeia
+        stars:
+          star:
+            - name: Gamma Cassiopeiae
+              type: Variable
+            - name: Rho Cassiopeiae
+              type: Hypergiant

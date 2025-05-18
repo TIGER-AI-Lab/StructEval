@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spaceStation>
+  <name>Nebula Outpost</name>
+  <modules>
+    <module>
+      <name>Habitat Ring</name>
+      <equipment>
+        <item>Hydroponics Lab</item>
+        <item>Sleep Pods</item>
+        <item>Recreation Hub</item>
+      </equipment>
+    </module>
+    <module>
+      <name>Science Deck</name>
+      <equipment>
+        <item>Particle Accelerator</item>
+        <item>Observation Dome</item>
+      </equipment>
+    </module>
+  </modules>
+  <crew>
+    <crewMember>
+      <name>Dr. Vera Lin</name>
+      <role>Astrobiologist</role>
+    </crewMember>
+    <crewMember>
+      <name>Commander Jax Rami</name>
+      <role>Station Chief</role>
+    </crewMember>
+  </crew>
+</spaceStation>

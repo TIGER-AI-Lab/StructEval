@@ -1,0 +1,36 @@
+
+[artifact]
+name = "The Sun Disc of Tikal"
+discovery_date = "2021-06-15"
+
+[artifact.origin]
+civilization = "Maya"
+location = "Tikal, Guatemala"
+
+[artifact.dimensions]
+height_cm = 45.5
+width_cm = 45.5
+
+[[artifact.materials]]
+type = "Jade"
+percentage = 60.0
+
+[[artifact.materials]]
+type = "Gold"
+percentage = 40.0
+
+[[artifact.inscriptions]]
+language = "Maya Hieroglyphs"
+translation = "In the name of the sun, may prosperity endure."
+
+[[artifact.inscriptions]]
+language = "Latin"
+translation = "Eternal guardianship of the heavens."
+
+[[artifact.provenance.previous_owners]]
+owner_name = "Dr. Elena Martinez"
+acquisition_year = 1985
+
+[[artifact.provenance.previous_owners]]
+owner_name = "National Archaeological Museum"
+acquisition_year = 1995

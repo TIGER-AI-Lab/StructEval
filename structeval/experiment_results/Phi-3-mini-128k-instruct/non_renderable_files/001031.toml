@@ -1,0 +1,43 @@
+[artifact]
+name = "The Scepter of Pharaoh Amenhotep"
+discovery_date = "2023-04-15"
+origin = {
+    culture = "Ancient Egyptian"
+    region = "Thebes"
+    period = "New Kingdom"
+}
+dimensions = {
+    height_cm = 150
+    width_cm = 5
+    depth_cm = 2
+}
+materials = ["Gold", "Lapis Lazuli", "Emerald"]
+condition = {
+    current_state = "Excellent condition, minor surface wear"
+    restoration_history = [
+        {
+            date = "2018-06-22"
+            description = "Surface cleaning and minor structural reinforcement"
+        }
+    ]
+}
+provenance = {
+    owners = [
+        {
+            name = "The British Museum"
+            acquisition_year = 1923
+        }
+    ]
+}
+exhibitions = [
+    {
+        title = "Treasures of the Nile: Ancient Egypt"
+        location = "British Museum, London"
+        year = 2023
+    },
+    {
+        title = "Gems of the Pharaohs: A Journey Through Time"
+        location = "Metropolitan Museum of Art, New York"
+        year = 2022
+    }
+]

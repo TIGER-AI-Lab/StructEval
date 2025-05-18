@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001134</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const NewsletterSubscription = () => {
+  const [subscribed, setSubscribed] = useState(false);
+  const [email, setEmail] = useState('');
+  const [isValid, setIsValid] = useState(true);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (email === '' || !email.includes('@')) {
+      setIsValid(false);
+      return;
+    }
+
+    setSubscribed(true);
+    setIsValid(true);
+  };
+
+  return (
+    <div style={{ width: '400px', border: '1px solid lightgray', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+      <h1>Newsletter Subscription</h1>
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        style={{ marginBottom: '10px' }}
+      />
+      {!isValid && <p style={{ color: 'red' }}>Please enter a valid email address.</p>}
+      <button onClick={handleSubmit} style={{ backgroundColor: 'green', color: 'white', padding: '10px', border: 'none', cursor: 'pointer' }}>
+        Subscribe
+      </button>
+      {subscribed && <p>Thank you for subscribing!</p>}
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscription />);
+
+    </script>
+  </body>
+</html>

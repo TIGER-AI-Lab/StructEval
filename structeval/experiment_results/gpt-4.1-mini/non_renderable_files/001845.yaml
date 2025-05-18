@@ -1,0 +1,40 @@
+
+ecosystem:
+  name: Zephyria Rainforest
+  location:
+    planet: Veridion
+    region: Eastern Zephyria Basin
+  climate:
+    average_temperature_c: 27.5
+    seasonal_patterns:
+      - Wet Season
+      - Dry Season
+  flora:
+    - species: Lumina Vinea
+      population_estimate: 1200000
+      dominant_color: Bioluminescent Blue
+    - species: Crimson Spire Fern
+      population_estimate: 850000
+      dominant_color: Deep Red
+    - species: Silverleaf Canopy Tree
+      population_estimate: 450000
+      dominant_color: Silver-Green
+  fauna:
+    - species: Glider Hawk
+      population_estimate: 15000
+      diet_type: Carnivore
+      notable_behavior: Uses thermal currents to glide silently while hunting
+    - species: Verdant Strider
+      population_estimate: 300000
+      diet_type: Herbivore
+      notable_behavior: Migrates seasonally to follow the bloom of Lumina Vinea
+    - species: Echo Frog
+      population_estimate: 5000000
+      diet_type: Omnivore
+      notable_behavior: Emits complex vocal patterns for communication and mating
+  human_impact:
+    pollution_level: 42
+    conservation_status: Vulnerable
+    projects:
+      - project_name: Zephyria Rewilding Initiative
+        start_year: 2032

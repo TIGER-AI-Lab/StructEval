@@ -1,0 +1,12 @@
+
+"artifact_id","artifact_name","discovery_site","discovery_date","estimated_age_years","artifact_type","material_primary","material_secondary","dimensions_height_cm","dimensions_width_cm","dimensions_depth_cm","condition_status","current_location","associated_civilization","notable_inscriptions"
+"A-2024-001","Ancient Vase","Mesopotamia","2023-04-15",3500,"pottery","clay","","15.2","10.5","8.3","intact","National Museum of History","Sumerian",""
+"A-2024-002","Roman Coin","Rome","2023-05-22",2000,"currency","bronze","silver","2.5","1.2","0.3","fragmented","Rome History Museum","Roman Empire",""
+"A-2024-003","Medieval Sword","England","2023-06-30",700,"weapon","iron","steel","35","12","1.5","restored","British Museum","Medieval England",""
+"A-2024-004","Olmec Colossal Head","Mexico","2023-07-18",3000,"statue","basalt","","2.4","","","intact","Mexico National Museum","Olmec Civilization",""
+"A-2024-005","Greek Amphora","Greece","2023-08-10",2500,"pottery","terracotta","","20","15","10","intact","Acropolis Museum","Ancient Greece",""
+"A-2024-006","Mayan Jian Sword","Guatemala","2023-09-05",2000,"weapon","obsidian","jade","30","","","restored","Museum of the Maya","Mayan Civilization",""
+"A-2024-007","Egyptian Canopic Jar","Egypt","2023-10-21",3200,"funerary","alabaster","","","","intact","Cairo Museum","Egyptian Civilization",""
+"A-2024-008","Chinese Jian Sword","China","2023-11-15",2500,"weapon","steel","","35","","","restored","National Palace Museum","Chinese Civilization",""
+"A-2024-009","Indus Valley Seal","India","2023-12-01",4500,"seal","steatite","","","","intact","National Museum of India","Indus Valley Civilization",""
+"A-2024-010","Nubian Nubian Mask","Sudan","2024-01-12",2500,"funerary","wood","gold","","","","intact","National Museum of Sudan","Nubian Civilization",""

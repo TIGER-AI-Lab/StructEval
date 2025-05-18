@@ -1,0 +1,30 @@
+
+creature:
+  species: "Luminara spectrus"
+  habitat:
+    region: "The Misty Highlands of Eldoria"
+    climate: "temperate"
+  appearance:
+    color: "iridescent blue-green"
+    size: 1.2 meters
+  abilities:
+    primary: "bioluminescent camouflage"
+    secondary: "echolocation for navigation"
+  diet:
+    type: "omnivore"
+    frequency: "daily"
+  behavior:
+    social_structure: "small family groups"
+    active_hours: "crepuscular"
+  offspring:
+    count: 3
+    list:
+      - name: "Glint"
+        age: 2
+        traits:
+          - "glowing fur patches"
+          - "heightened auditory senses"
+          - "playful temperament"
+  discovery:
+    year: 2023
+    discoverer: "Dr. Elara Voss and the Eldoria Expedition Team"

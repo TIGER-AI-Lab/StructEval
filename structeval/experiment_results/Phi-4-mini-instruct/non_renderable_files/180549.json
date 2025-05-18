@@ -1,0 +1,39 @@
+
+{
+  "spaceship": {
+    "name": "Starhopper",
+    "model": "XJ-42",
+    "crew": {
+      "captain": "Zara Lin",
+      "pilot": "Jax Orion",
+      "engineer": "Miko Ren"
+    },
+    "cargo": [
+      {
+        "type": "Quantum Crystals",
+        "weight_kg": 500,
+        "destination": "Proxima Outpost"
+      },
+      {
+        "type": "Alien Artifacts",
+        "weight_kg": 120,
+        "destination": "Vega Station"
+      }
+    ],
+    "logbook": [
+      {
+        "stardate": 4523.5,
+        "event": "Departed Earth orbit"
+      },
+      {
+        "stardate": 4524.2,
+        "event": "Encountered meteor shower"
+      }
+    ],
+    "specs": {
+      "length_m": 120,
+      "width_m": 42,
+      "hyperdrive_rating": 1.2
+    }
+  }
+}

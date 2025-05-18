@@ -1,0 +1,39 @@
+python
+import toml
+import json
+
+# TOML code
+toml_code = """
+[planet]
+name = "Gliese 581d"
+discovery_year = 2007
+type = "Super-Earth"
+moons = ["Phobos-2", "Deimos-Alpha"]
+
+[planet.atmosphere]
+primary_gas = "CO2"
+secondary_gases = ["N2", "O2", "Ar"]
+pressure = 1.7
+
+[planet.rings]
+exists = true
+composition = "Silicate Dust"
+segments = ["A", "B", "C"]
+
+[[planet.exploration.missions]]
+name = "Dawnlight"
+year = 2021
+success = true
+
+[[planet.exploration.missions]]
+name = "Red Horizon"
+year = 2024
+success = false
+"""
+
+# Convert TOML to JSON
+json_data = toml.loads(toml_code)
+json_code = json.dumps(json_data, indent=4)
+
+# Output JSON code
+print(json_code)

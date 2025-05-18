@@ -1,0 +1,32 @@
+
+bryoery:
+  name: "Brew Haven"
+  location:
+    city: "Portland"
+    country: "Oregon"
+  founded_year: 2010
+  owner: "John Doe"
+  beers:
+    - name: "Haven Ale"
+      style: "Pale Ale"
+      abv: 5.2
+      awards:
+        - title: "Best Pale Ale"
+          year: 2015
+          organization: "American Beer Awards"
+    - name: "Mystic Porter"
+      style: "Porter"
+      abv: 6.5
+      awards:
+        - title: "Top 10 Porters"
+          year: 2018
+          organization: "International Beer Challenge"
+  tours:
+    available: true
+    schedule:
+      days: ["Monday", "Wednesday", "Friday"]
+      times: ["10:00", "14:00", "18:00"]
+    languages_supported:
+      - "English"
+      - "Spanish"
+      - "French"

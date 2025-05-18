@@ -1,0 +1,58 @@
+
+{
+  "museum": {
+    "name": "The Louvre",
+    "established_year": 1793,
+    "director": "FrÃ©dÃ©ric Mitterrand",
+    "opening_hours": {
+      "weekdays": "9:00 AM - 6:00 PM",
+      "weekends": "10:00 AM - 6:00 PM"
+    },
+    "location": {
+      "city": "Paris",
+      "country": "France"
+    },
+    "provenance": [
+      {
+        "owner": "King Francis I",
+        "acquisition_date": "1515-01-01T00:00:00Z"
+      }
+    ],
+    "exhibits": [
+      {
+        "title": "Mona Lisa",
+        "artist": "Leonardo da Vinci",
+        "year_created": 1503,
+        "medium": "Oil on poplar panel",
+        "dimensions": {
+          "height_cm": 77,
+          "width_cm": 53
+        },
+        "on_display": true,
+        "provenance": [
+          {
+            "owner": "King Francis I",
+            "acquisition_date": "1515-01-01T00:00:00Z"
+          }
+        ]
+      },
+      {
+        "title": "Venus de Milo",
+        "artist": "Unknown",
+        "year_created": 130-100 BCE,
+        "medium": "Marble",
+        "dimensions": {
+          "height_cm": 203,
+          "width_cm": 129
+        },
+        "on_display": true,
+        "provenance": [
+          {
+            "owner": "Unknown",
+            "acquisition_date": "1801-01-01T00:00:00Z"
+          }
+        ]
+      }
+    ]
+  }
+}

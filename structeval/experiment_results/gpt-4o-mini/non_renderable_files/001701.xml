@@ -1,0 +1,27 @@
+
+<planet name="Zyphoria" type="gas giant">
+    <discovery year="2045" method="space probe" observer="Galactic Exploration Team"/>
+    <moons>
+        <moon>
+            <name>Thalassa</name>
+            <diameter>3200</diameter>
+            <orbit_period>27</orbit_period>
+        </moon>
+        <moon>
+            <name>Nyx</name>
+            <diameter>1500</diameter>
+            <orbit_period>15</orbit_period>
+        </moon>
+    </moons>
+    <atmosphere>
+        <composition>Hydrogen, Helium, Methane</composition>
+        <pressure>120000</pressure>
+        <temperature>-150</temperature>
+    </atmosphere>
+    <rings>
+        <ring>
+            <width>5000</width>
+            <composition>Ice, Rock, Dust</composition>
+        </ring>
+    </rings>
+</planet>

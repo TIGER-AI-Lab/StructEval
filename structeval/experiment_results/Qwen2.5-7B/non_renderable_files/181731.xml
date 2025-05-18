@@ -1,0 +1,22 @@
+
+galacticCarnival:
+  attractions:
+    attraction:
+      - name: Nebula Coaster
+        type: rollercoaster
+        features:
+          feature:
+            - zero-gravity loops
+            - holographic tunnels
+      - name: Astro Maze
+        type: maze
+        features:
+          feature:
+            - shifting walls
+            - alien guides
+  snackStalls:
+    stall:
+      - name: Meteor Bites
+        specialty: asteroid donuts
+      - name: Cosmic Cones
+        specialty: anti-gravity ice cream

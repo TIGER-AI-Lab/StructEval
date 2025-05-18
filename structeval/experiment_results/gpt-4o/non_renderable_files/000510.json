@@ -1,0 +1,30 @@
+
+{
+  "museum": {
+    "name": "Imaginary Art Museum",
+    "location": {
+      "city": "Fictionville",
+      "country": "Imaginaria"
+    },
+    "established_year": 2023,
+    "director": {
+      "full_name": "Alexandra Dreamweaver",
+      "start_date": "2023-01-15"
+    },
+    "galleries": [
+      {
+        "title": "Gallery of Dreams",
+        "theme": "Surrealism and Fantasy",
+        "artworks": [
+          {
+            "title": "Whimsical Night",
+            "artist": "Luna Starry",
+            "year_created": 2022,
+            "medium": "Oil on Canvas",
+            "dimensions": "150x100 cm"
+          }
+        ]
+      }
+    ]
+  }
+}

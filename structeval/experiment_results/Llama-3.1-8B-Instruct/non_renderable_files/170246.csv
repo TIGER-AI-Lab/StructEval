@@ -1,0 +1,68 @@
+
+import csv
+from xml.etree import ElementTree as ET
+
+root = ET.fromstring('''
+<artifacts>
+  <artifact>
+    <ArtifactID>AX102</ArtifactID>
+    <Name>Obsidian Mirror</Name>
+    <DiscoveryDate>1998-07-14</DiscoveryDate>
+    <EstimatedAge>2500</EstimatedAge>
+    <Material>Obsidian</Material>
+    <CountryOfOrigin>Peru</CountryOfOrigin>
+    <IsCursed>true</IsCursed>
+  </artifact>
+  <artifact>
+    <ArtifactID>BX203</ArtifactID>
+    <Name>Golden Scarab</Name>
+    <DiscoveryDate>2005-03-21</DiscoveryDate>
+    <EstimatedAge>3400</EstimatedAge>
+    <Material>Gold</Material>
+    <CountryOfOrigin>Egypt</CountryOfOrigin>
+    <IsCursed>false</IsCursed>
+  </artifact>
+  <artifact>
+    <ArtifactID>CX304</ArtifactID>
+    <Name>Runic Tablet</Name>
+    <DiscoveryDate>2012-11-08</DiscoveryDate>
+    <EstimatedAge>1700</EstimatedAge>
+    <Material>Stone</Material>
+    <CountryOfOrigin>Norway</CountryOfOrigin>
+    <IsCursed>true</IsCursed>
+  </artifact>
+  <artifact>
+    <ArtifactID>DX405</ArtifactID>
+    <Name>Celestial Globe</Name>
+    <DiscoveryDate>1992-05-19</DiscoveryDate>
+    <EstimatedAge>800</EstimatedAge>
+    <Material>Bronze</Material>
+    <CountryOfOrigin>China</CountryOfOrigin>
+    <IsCursed>false</IsCursed>
+  </artifact>
+  <artifact>
+    <ArtifactID>EX506</ArtifactID>
+    <Name>Crystal Skull</Name>
+    <DiscoveryDate>1987-09-02</DiscoveryDate>
+    <EstimatedAge>1100</EstimatedAge>
+    <Material>Crystal</Material>
+    <CountryOfOrigin>Mexico</CountryOfOrigin>
+    <IsCursed>true</IsCursed>
+  </artifact>
+  <artifact>
+    <ArtifactID>FX607</ArtifactID>
+    <Name>Ivory Scepter</Name>
+    <DiscoveryDate>2018-02-25</DiscoveryDate>
+    <EstimatedAge>2100</EstimatedAge>
+    <Material>Ivory</Material>
+    <CountryOfOrigin>Kenya</CountryOfOrigin>
+    <IsCursed>false</IsCursed>
+  </artifact>
+</artifacts>
+''')
+
+with open('output.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(['ArtifactID', 'Name', 'DiscoveryDate', 'EstimatedAge', 'Material', 'CountryOfOrigin', 'IsCursed'])
+    for artifact in root.findall('artifact'):
+        writer.writerow([artifact.find('ArtifactID').text, artifact.find('Name').text, artifact.find('DiscoveryDate').text, artifact.find('EstimatedAge').text, artifact.find('Material').text, artifact.find('CountryOfOrigin').text, artifact.find('IsCursed').text])

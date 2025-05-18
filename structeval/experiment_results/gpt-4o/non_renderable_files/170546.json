@@ -1,0 +1,33 @@
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "constellations": [
+      {
+        "name": "Pegasus",
+        "stars": [
+          {
+            "name": "Markab",
+            "type": "Blue Giant"
+          },
+          {
+            "name": "Algenib",
+            "type": "Variable Star"
+          }
+        ]
+      },
+      {
+        "name": "Cassiopeia",
+        "stars": [
+          {
+            "name": "Shedir",
+            "type": "Red Giant"
+          },
+          {
+            "name": "Caph",
+            "type": "F-type Star"
+          }
+        ]
+      }
+    ]
+  }
+}

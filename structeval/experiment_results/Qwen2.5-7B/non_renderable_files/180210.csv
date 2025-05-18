@@ -1,0 +1,14 @@
+
+import pandas as pd
+
+data = [
+    {"constellation": "Lyra", "discovery_year": 1859, "distance_ly": 25.0, "star_type": "White Dwarf", "has_exoplanets": False, "last_observed": "2023-04-10"},
+    {"constellation": "Orion", "discovery_year": 1912, "distance_ly": 642.5, "star_type": "Red Supergiant", "has_exoplanets": True, "last_observed": "2024-01-15"},
+    {"constellation": "Cassiopeia", "discovery_year": 1774, "distance_ly": 228.0, "star_type": "Neutron Star", "has_exoplanets": False, "last_observed": "2022-11-03"},
+    {"constellation": "Andromeda", "discovery_year": 2001, "distance_ly": 44.6, "star_type": "Yellow Dwarf", "has_exoplanets": True, "last_observed": "2023-08-27"},
+    {"constellation": "Scorpius", "discovery_year": 1995, "distance_ly": 550.0, "star_type": "Blue Giant", "has_exoplanets": True, "last_observed": "2024-03-19"},
+    {"constellation": "Pegasus", "discovery_year": 1987, "distance_ly": 133.0, "star_type": "Red Dwarf", "has_exoplanets": False, "last_observed": "2023-12-01"}
+]
+
+df = pd.DataFrame(data)
+df.to_csv('constellations.csv', index=False)

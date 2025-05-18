@@ -1,0 +1,23 @@
+
+import pandas as pd
+
+def generate_csv_row(exhibit_id, artifact_name, artifact_origin, artifact_period, artifact_material, artifact_dimensions_height_cm, artifact_dimensions_width_cm, artifact_dimensions_depth_cm, artifact_condition, artifact_discovery_location, artifact_discovery_date, artifact_discovery_archaeologist, artifact_display_location, artifact_display_lighting, artifact_provenance_history):
+    data = {
+        'exhibit_id': [exhibit_id],
+        'artifact.name': [artifact_name],
+        'artifact.origin': [artifact_origin],
+        'artifact.period': [artifact_period],
+        'artifact.material': [artifact_material],
+        'artifact.dimensions.height_cm': [artifact_dimensions_height_cm],
+        'artifact.dimensions.width_cm': [artifact_dimensions_width_cm],
+        'artifact.dimensions.depth_cm': [artifact_dimensions_depth_cm],
+        'artifact.condition': [artifact_condition],
+        'artifact.discovery.location': [artifact_discovery_location],
+        'artifact.discovery.date': [artifact_discovery_date],
+        'artifact.discovery.archaeologist': [artifact_discovery_archaeologist],
+        'artifact.display.location': [artifact_display_location],
+        'artifact.display.lighting': [artifact_display_lighting],
+        'artifact.provenance.history': [artifact_provenance_history]
+    }
+    df = pd.DataFrame(data)
+    return df.to_csv(index=False)

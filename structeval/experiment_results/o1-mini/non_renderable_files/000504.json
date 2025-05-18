@@ -1,0 +1,47 @@
+{
+  "species": "Drakehorn Griffin",
+  "habitat": {
+    "region": "Elderwood Forest",
+    "climate": "Temperate",
+    "features": [
+      "Towering ancient trees",
+      "Crystal-clear streams"
+    ]
+  },
+  "appearance": {
+    "size": 3.5,
+    "color": {
+      "primary": "Sunset Orange",
+      "secondary": "Midnight Blue"
+    }
+  },
+  "abilities": [
+    {
+      "name": "Sky Dive",
+      "power_level": 7,
+      "cooldown_seconds": 120
+    },
+    {
+      "name": "Echo Roar",
+      "power_level": 5,
+      "cooldown_seconds": 60
+    }
+  ],
+  "behavior": {
+    "diet": {
+      "type": "Carnivore",
+      "favorite_foods": [
+        "Silverfish",
+        "Forest Elk"
+      ]
+    },
+    "social": {
+      "is_social": true,
+      "group_size": 4
+    }
+  },
+  "discovery": {
+    "discovery_date": "2023-09-15",
+    "discoverer": "Dr. Elara Moon"
+  }
+}

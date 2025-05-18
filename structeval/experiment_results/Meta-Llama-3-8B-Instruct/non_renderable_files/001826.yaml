@@ -1,0 +1,27 @@
+
+creature:
+  name: Zorvath, the Devourer
+  species: Carnivorous
+  origin:
+    planet: Xeridia-IV
+    galaxy: Andromeda
+  abilities:
+    - ability_name: Energy Projection
+      power_level: 80
+      cooldown_seconds: 30
+    - ability_name: Telekinesis
+      power_level: 40
+      cooldown_seconds: 10
+  appearance:
+    height_cm: 220
+    skin_color: Dark Green
+    eye_count: 2
+  inventory:
+    - item_name: Energy Crystal
+      quantity: 5
+      rarity: rare
+  allies:
+    - name: Xarath, the Wise
+      relationship: mentor
+    - name: Lyra, the Brave
+      relationship: friend

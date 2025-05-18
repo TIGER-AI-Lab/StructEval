@@ -1,0 +1,31 @@
+
+{
+  "planet": {
+    "name": "Xylophar",
+    "type": "Gas Giant",
+    "moons": ["Tethra", "Ophion", "Cyllene"],
+    "discovery": {
+      "year": 2387,
+      "method": "Gravitational Microlensing",
+      "team": [
+        {"name": "Dr. Lira Voss", "role": "Lead Astronomer"},
+        {"name": "Quin Jaro", "role": "Data Analyst"}
+      ]
+    },
+    "atmosphere": {
+      "pressure": 14.2,
+      "composition": [
+        {"gas": "Hydrogen", "percentage": 82.5},
+        {"gas": "Helium", "percentage": 17.3}
+      ]
+    },
+    "orbit": {
+      "distance_from_sun_au": 7.4,
+      "period_days": 2154
+    },
+    "habitability": {
+      "supports_life": false,
+      "surface_water_percentage": 0.0
+    }
+  }
+}

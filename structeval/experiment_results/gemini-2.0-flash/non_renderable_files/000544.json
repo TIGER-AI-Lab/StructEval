@@ -1,0 +1,42 @@
+{
+  "planet": {
+    "name": "Kepler-186 f",
+    "discovery": {
+      "year": 2014,
+      "method": "transit"
+    },
+    "orbital_parameters": {
+      "semi_major_axis": 0.39,
+      "eccentricity": 0.05,
+      "inclination": 90.0
+    },
+    "atmosphere": {
+      "composition": {
+        "primary_gas": "Nitrogen",
+        "trace_gases": [
+          "Oxygen",
+          "Carbon Dioxide",
+          "Methane"
+        ]
+      },
+      "pressure": 1.2
+    },
+    "moons": [
+      {
+        "name": "Luna Minor",
+        "diameter_km": 200,
+        "orbit": {
+          "period_days": 5.5,
+          "distance_km": 50000
+        }
+      }
+    ],
+    "rings": [
+      {
+        "name": "Alpha Ring",
+        "radius_inner_km": 80000,
+        "radius_outer_km": 90000
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "spaceStation": {
+    "name": "Aurora Outpost",
+    "location": {
+      "planet": "Kepler-442b",
+      "galaxy": "Andromeda"
+    },
+    "crewMembers": {
+      "crewMember": [
+        { "name": "Dr. Vega Lin", "role": "Biologist" },
+        { "name": "Commander Rilo", "role": "Pilot" }
+      ]
+    },
+    "researchLabs": {
+      "lab": [
+        { "labName": "Xenobotany", "field": "Alien Flora" },
+        { "labName": "AstroPhysics", "field": "Particle Analysis" }
+      ]
+    }
+  }
+}
+'''
+
+def json_to_xml(json_str):
+    data = json.loads(json_str)
+    root = ET.Element("root")
+    space_station = ET.SubElement(root, "spaceStation")
+    for key, value in data["spaceStation"].items():
+        if isinstance(value, dict):
+            sub_element = ET.SubElement(space_station, key)
+            for sub_key, sub_value in value.items():
+                sub_sub_element = ET.SubElement(sub_element, sub_key)
+                sub_sub_element.text = str(sub_value)
+        else:
+            ET.SubElement(space_station, key).text = str(value)
+    return ET.tostring(root, encoding="unicode")
+
+xml_output = json_to_xml(json_data)
+print(xml_output)

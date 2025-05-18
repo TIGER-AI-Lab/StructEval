@@ -1,0 +1,23 @@
+
+museum:
+  name: The Modern Art Museum
+  location:
+    city: New York
+    country: USA
+  founded_year: 1920
+  director:
+    name: Emily Johnson
+    tenure_years: 10
+  exhibitions:
+  - title: "The Evolution of Abstract Art"
+    year: 2015
+    artworks:
+    - title: "Untitled"
+      artist: "John Smith"
+      medium: "Oil on Canvas"
+      dimensions:
+        height_cm: 120
+        width_cm: 150
+      on_loan: false
+  visitor_statistics:
+    annual_visitors: 500000

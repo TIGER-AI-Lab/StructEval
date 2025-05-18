@@ -1,0 +1,29 @@
+
+[artifact]
+name = "Xel'Naga Obelisk"
+origin = "Xel'Naga Civilization"
+
+  [artifact.discovery]
+  year = 2347
+  location = "Sector 7G, Zeta Quadrant"
+
+  [[artifact.materials]]
+  type = "Neutronium"
+  percentage = 75.5
+
+  [[artifact.materials]]
+  type = "Quantum Crystal"
+  percentage = 24.5
+
+  [artifact.dimensions]
+  height_cm = 450.0
+  width_cm = 120.0
+  depth_cm = 80.0
+
+  [[artifact.features]]
+  description = "Emits a low-frequency harmonic resonance"
+  is_encrypted = true
+
+  [[artifact.features]]
+  description = "Surface inscriptions shift patterns periodically"
+  is_encrypted = false

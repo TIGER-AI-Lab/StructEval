@@ -1,0 +1,25 @@
+artifact:
+  name: "The Celestial Tablet"
+  origin:
+    civilization: "Ancient Sumerians"
+    estimated_age: 4500
+  materials:
+    - type: "clay"
+      provenance: "Mesopotamia"
+    - type: "lapis lazuli"
+      provenance: "Badakhshan, Afghanistan"
+  dimensions:
+    height_cm: 30.5
+    width_cm: 20.0
+    depth_cm: 5.0
+  inscriptions:
+    - language: "Sumerian"
+      text: "To the gods of the heavens, we offer this tribute."
+    - language: "Akkadian"
+      text: "May the stars guide us through the night."
+  current_location:
+    museum: "The British Museum"
+    display_case: "Ancient Mesopotamia Exhibit, Case 12"
+  discovery:
+    date: "1923-05-14"
+    location: "Ur, Iraq"

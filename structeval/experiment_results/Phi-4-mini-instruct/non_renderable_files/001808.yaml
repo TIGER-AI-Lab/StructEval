@@ -1,0 +1,24 @@
+
+creature:
+  name: "Luminara"
+  species: "Aetherial Drake"
+  age: 150
+  habitat:
+    region: "Mystic Mountains"
+    climate: "Temperate with frequent fog"
+  abilities:
+    - type: "Elemental Manipulation"
+      description: "Can control and manipulate elemental forces such as fire, water, and earth."
+      power_level: 9
+    - type: "Illumination"
+      description: "Can emit a powerful light that can blind and disorient enemies."
+      power_level: 8
+  appearance:
+    color: "Silver and Gold"
+    size:
+      height_cm: 250
+      weight_kg: 500
+  behavior:
+    - patterns: "Nocturnal hunting"
+    - patterns: "Communal nesting in caves"
+    - patterns: "Seasonal migration to warmer regions"

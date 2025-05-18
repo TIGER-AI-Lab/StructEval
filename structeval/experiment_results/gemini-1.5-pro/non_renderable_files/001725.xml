@@ -1,0 +1,38 @@
+<galaxy name="Milky Way" discoveryYear="1610" type="Spiral">
+    <stars>
+        <star name="Sun" spectralClass="G2V" ageMillionYears="4600" massSolar="1.0">
+            <planets>
+                <planet name="Earth" hasLife="true" orbitalPeriod="1.0" massEarths="1.0">
+                    <moons>
+                        <moon name="Moon" diameterKm="3474" discoveryDate="1609-01-01"/>
+                    </moons>
+                    <atmosphere>
+                        <composition>Nitrogen,Oxygen,Argon</composition>
+                        <pressureAtm>1.0</pressureAtm>
+                    </atmosphere>
+                </planet>
+                <planet name="Mars" hasLife="false" orbitalPeriod="1.88" massEarths="0.107">
+                    <moons>
+                        <moon name="Phobos" diameterKm="22" discoveryDate="1877-08-18"/>
+                        <moon name="Deimos" diameterKm="12" discoveryDate="1877-08-12"/>
+                    </moons>
+                    <atmosphere>
+                        <composition>Carbon Dioxide,Nitrogen,Argon</composition>
+                        <pressureAtm>0.006</pressureAtm>
+                    </atmosphere>
+                </planet>
+            </planets>
+        </star>
+        <star name="Proxima Centauri" spectralClass="M5.5Ve" ageMillionYears="4850" massSolar="0.122">
+            <planets>
+                <planet name="Proxima Centauri b" hasLife="false" orbitalPeriod="11.186" massEarths="1.27">
+                    <moons/>
+                    <atmosphere>
+                        <composition>Unknown</composition>
+                        <pressureAtm>0.0</pressureAtm>
+                    </atmosphere>
+                </planet>
+             </planets>
+        </star>
+    </stars>
+</galaxy>

@@ -1,0 +1,37 @@
+
+star = {
+  name = "HD 123456",
+  type = "G-type",
+  distance_lightyears = 10.5,
+  discovery = {
+    year = 2010,
+    method = "optical telescope"
+  },
+  planets = [
+    {
+      name = "Kepler-62f",
+      mass_earths = 1.4,
+      orbital_period_days = 267.3,
+      moons = [
+        {
+          name = "Kepler-62f-moon1",
+          diameter_km = 200,
+          composition = "rock"
+        },
+        {
+          name = "Kepler-62f-moon2",
+          diameter_km = 150,
+          composition = "ice"
+        }
+      ],
+      atmosphere = {
+        composition = ["N2", "O2", "CO2"],
+        pressure_atm = 0.8,
+        has_rings = false,
+        surface = {
+          temperature_celsius = 20
+        }
+      }
+    }
+  ]
+}

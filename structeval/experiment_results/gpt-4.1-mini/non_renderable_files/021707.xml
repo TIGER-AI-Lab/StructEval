@@ -1,0 +1,63 @@
+
+<planets>
+  <planet>
+    <planet_name>Zephyra</planet_name>
+    <galaxy>Andromeda</galaxy>
+    <star_system>Alpha-7</star_system>
+    <coordinates>
+      <x>349.1</x>
+      <y>482.0</y>
+      <z>110.5</z>
+    </coordinates>
+    <moons>
+      <moon>
+        <moon_name>Lunara</moon_name>
+        <diameter_km>1200</diameter_km>
+        <has_atmosphere>true</has_atmosphere>
+      </moon>
+      <moon>
+        <moon_name>Selene</moon_name>
+        <diameter_km>950</diameter_km>
+        <has_atmosphere>false</has_atmosphere>
+      </moon>
+    </moons>
+    <discovery>
+      <year>3077</year>
+      <discovered_by>Dr. Nova Starwind</discovered_by>
+    </discovery>
+    <rings>
+      <present>true</present>
+      <type>icy</type>
+    </rings>
+  </planet>
+  <planet>
+    <planet_name>Pyrrhos</planet_name>
+    <galaxy>Milky Way</galaxy>
+    <star_system>Beta-3</star_system>
+    <coordinates>
+      <x>223.4</x>
+      <y>145.2</y>
+      <z>999.0</z>
+    </coordinates>
+    <moons>
+      <moon>
+        <moon_name>Ember</moon_name>
+        <diameter_km>800</diameter_km>
+        <has_atmosphere>false</has_atmosphere>
+      </moon>
+      <moon>
+        <moon_name></moon_name>
+        <diameter_km></diameter_km>
+        <has_atmosphere></has_atmosphere>
+      </moon>
+    </moons>
+    <discovery>
+      <year>2999</year>
+      <discovered_by>Prof. Helio Blaze</discovered_by>
+    </discovery>
+    <rings>
+      <present>false</present>
+      <type></type>
+    </rings>
+  </planet>
+</planets>

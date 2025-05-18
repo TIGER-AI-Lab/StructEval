@@ -1,0 +1,17 @@
+planet:
+  name: Zephyra
+  type: Gas Giant
+  moons:
+  - name: Calliope
+    diameter_km: 1200
+    composition: Ice and Rock
+  - name: Thalia
+    diameter_km: 900
+    composition: Rock and Metal
+  atmosphere:
+    primary_gases: "Hydrogen;Helium"
+    pressure_atm: 2.5
+    temperature_c: 220
+  discovery:
+    discovery_date: "2201-03-14"
+    discovered_by: Dr. Lyra Mendez

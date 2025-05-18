@@ -1,0 +1,16 @@
+
+import pandas as pd
+
+data = {
+    "Planet": ["Zephyria", "Orbis", "Virelia", "Tarsis", "Eclipso", "Lumora"],
+    "Discovery Year": [2134, 2079, 2201, 2095, 2150, 2188],
+    "Distance (ly)": [82.5, 156.8, 45.2, 300.0, 210.7, 99.9],
+    "Has Rings": ["True", "False", "True", "False", "True", "False"],
+    "Dominant Gas": ["Helium", "Methane", "Hydrogen", "Nitrogen", "Oxygen", "Neon"],
+    "Surface Temp (Â°C)": [-120, -190, -60, -80, 15, -100],
+    "Last Observed": ["2124-11-03", "2123-06-19", "2122-12-25", "2124-01-10", "2124-05-14", "2123-09-07"]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("planets.csv", index=False)

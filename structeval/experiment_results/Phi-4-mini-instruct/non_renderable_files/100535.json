@@ -1,0 +1,31 @@
+{
+  "planet": {
+    "name": "Zyphora",
+    "moons": ["Ixis", "Verda", "Lunith"],
+    "atmosphere": {
+      "composition": "Methane-Nitrogen",
+      "pressure": 0.8,
+      "layers": [
+        {
+          "name": "Troposphere",
+          "altitude_range": "0-12km",
+          "gases": ["Methane", "Nitrogen"]
+        },
+        {
+          "name": "Stratosphere",
+          "altitude_range": "12-50km",
+          "gases": ["Nitrogen", "Argon"]
+        }
+      ]
+    },
+    "discovery": {
+      "year": 2347,
+      "discoverer": "Dr. Elara Quill",
+      "method": "Spectral Analysis"
+    },
+    "habitability": {
+      "supports_life": false,
+      "surface_water": false
+    }
+  }
+}

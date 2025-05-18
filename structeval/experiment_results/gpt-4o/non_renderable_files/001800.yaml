@@ -1,0 +1,23 @@
+
+creature:
+  name: "Luminara"
+  species: "Aetherial Draconis"
+  habitat:
+    type: "forest"
+    region: "Mystic Glade"
+    climate: "temperate"
+  abilities:
+    - name: "Ethereal Glow"
+      description: "Emits a soothing light that calms nearby creatures and heals minor wounds."
+      cooldown_seconds: 120
+    - name: "Phantom Flight"
+      description: "Allows the creature to become intangible and fly through obstacles."
+      cooldown_seconds: 300
+  stats:
+    size_meters: 4.5
+    weight_kg: 350
+    lifespan_years: 200
+    diet: "omnivore"
+  discovery:
+    discovered_by: "Dr. Elara Moonshadow"
+    discovery_date: "2023-07-15"

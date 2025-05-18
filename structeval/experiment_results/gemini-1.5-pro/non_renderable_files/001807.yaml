@@ -1,0 +1,34 @@
+creature:
+  name: Xylar
+  species: Luminaut
+  origin:
+    planet: Xylos
+    galaxy: Andromeda
+  abilities:
+    - type: Bioluminescence
+      description: Emits a bright, pulsating light from its skin.
+      power_level: 7
+    - type: Telepathy
+      description: Can communicate and influence thoughts over short distances.
+      power_level: 5
+  physical_traits:
+    height_cm: 250
+    coloration: Iridescent silver with blue bioluminescent markings
+    limbs:
+      count: 6
+      types:
+        - leg
+        - leg
+        - arm
+        - arm
+        - tentacle
+        - tentacle
+  history:
+    first_sighting:
+      date: "2042-08-15"
+      location: "Proxima Centauri b"
+    known_encounters:
+      - date: "2042-09-01"
+        description: Peaceful exchange of signals.
+      - date: "2042-10-20"
+        description: Xylar provided advanced energy technology blueprints.

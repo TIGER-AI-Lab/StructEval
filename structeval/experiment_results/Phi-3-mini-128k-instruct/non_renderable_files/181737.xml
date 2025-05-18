@@ -1,0 +1,30 @@
+
+  <galacticCarnival>
+    <name>Nebula Fest</name>
+    <location>
+      <planet>Zyphron</planet>
+      <galaxy>Andromeda</galaxy>
+    </location>
+    <attractions>
+      <attraction>
+        <name>Zero-Gravity Rollercoaster</name>
+        <type>Ride</type>
+        <capacity>40</capacity>
+      </attraction>
+      <attraction>
+        <name>Alien Petting Zoo</name>
+        <type>Exhibit</type>
+        <capacity>25</capacity>
+      </attraction>
+    </attractions>
+    <staff>
+      <member>
+        <name>Xeltra</name>
+        <role>Ringmaster</role>
+      </member>
+      <member>
+        <name>Blip</name>
+        <role>Engineer</role>
+      </member>
+    </staff>
+  </galacticCarnival>

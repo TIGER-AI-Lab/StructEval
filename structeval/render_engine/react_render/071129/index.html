@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 071129</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  return (
+    <div>
+      <h1>Project Title: Markdown Visual Layout Test</h1>
+
+      <h2>Overview</h2>
+      <p>This document serves as a comprehensive example of a Markdown file that is designed to test visual structure, layout, and formatted content. It includes headings, sections, lists, labeled values, and code samples.</p>
+      <p>The document covers:</p>
+      <ol>
+        <li>Introduction</li>
+        <li>Requirements</li>
+        <li>Setup & Installation</li>
+        <li>Configuration</li>
+        <li>Usage</li>
+        <li>Features</li>
+        <li>License</li>
+        <li>Contact Information</li>
+      </ol>
+
+      <hr />
+
+      <h2>Introduction</h2>
+      <p>Welcome to the Markdown Visual Layout Test. This document is intentionally detailed and structured to help demonstrate the following:</p>
+      <ul>
+        <li><strong>Visible Structure:</strong> Clear use of headings, subheadings, and sections.</li>
+        <li><strong>Layout Hierarchy:</strong> Organized lists, tables, checkboxes, and labeled values.</li>
+        <li><strong>Formatted Content:</strong> Example code blocks, JSON snippets, and step-by-step instructions.</li>
+      </ul>
+
+      <hr />
+
+      <h2>Requirements</h2>
+      <p>Before using or installing this project, ensure you have met the following requirements:</p>
+      <p><strong>Hardware:</strong></p>
+      <ul>
+        <li>Processor: Intel i5 (or equivalent)</li>
+        <li>RAM: 8GB minimum</li>
+        <li>Storage: 256GB SSD or higher</li>
+      </ul>
+      <p><strong>Software:</strong></p>
+      <ul>
+        <li>Operating System: Windows 10, macOS, or Linux</li>
+        <li>Python: Version 3.6 or above</li>
+      </ul>
+      <p><strong>Network:</strong></p>
+      <ul>
+        <li>Basic connectivity for project updates and dependency installations</li>
+      </ul>
+
+      <hr />
+
+      <h2>Setup & Installation</h2>
+      <p>Follow the steps below to set up and install the project.</p>
+      <ol>
+        <li><strong>Clone the Repository:</strong>
+          <pre><code>git clone repository.git
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

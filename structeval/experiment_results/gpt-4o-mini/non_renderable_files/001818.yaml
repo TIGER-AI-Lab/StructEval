@@ -1,0 +1,73 @@
+
+recipe:
+  title: "Creamy Garlic Tuscan Chicken"
+  author:
+    name: "Jane Doe"
+    profile_url: "https://www.example.com/janedoe"
+  ingredients:
+    - name: "Chicken Breast"
+      quantity: 500
+      unit: "grams"
+      optional: false
+    - name: "Heavy Cream"
+      quantity: 200
+      unit: "ml"
+      optional: false
+    - name: "Garlic"
+      quantity: 4
+      unit: "cloves"
+      optional: false
+    - name: "Spinach"
+      quantity: 100
+      unit: "grams"
+      optional: false
+    - name: "Parmesan Cheese"
+      quantity: 50
+      unit: "grams"
+      optional: true
+    - name: "Olive Oil"
+      quantity: 2
+      unit: "tablespoons"
+      optional: false
+    - name: "Salt"
+      quantity: 1
+      unit: "teaspoon"
+      optional: false
+    - name: "Black Pepper"
+      quantity: 1
+      unit: "teaspoon"
+      optional: false
+  steps:
+    - instruction: "Heat olive oil in a skillet over medium heat. Add chicken breasts and cook until golden brown on both sides."
+      duration_minutes: 10
+      tools:
+        - "Skillet"
+        - "Spatula"
+    - instruction: "Add minced garlic and sautÃ© for 1 minute until fragrant."
+      duration_minutes: 1
+      tools:
+        - "Knife"
+        - "Cutting Board"
+    - instruction: "Pour in heavy cream and bring to a simmer. Stir in spinach and cook until wilted."
+      duration_minutes: 5
+      tools:
+        - "Wooden Spoon"
+    - instruction: "Add grated Parmesan cheese, salt, and pepper. Stir until cheese is melted and sauce is creamy."
+      duration_minutes: 2
+      tools:
+        - "Whisk"
+  metadata:
+    cuisine: "Italian"
+    difficulty: "medium"
+    servings: 4
+    tags:
+      - "chicken"
+      - "creamy"
+      - "dinner"
+      - "Italian"
+  nutritional_info:
+    calories: 450
+    macros:
+      protein: 35
+      fat: 30
+      carbohydrates: 5

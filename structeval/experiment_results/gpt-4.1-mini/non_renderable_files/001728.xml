@@ -1,0 +1,103 @@
+
+<recipe>
+  <title>Spicy Thai Basil Chicken</title>
+  <author>
+    <name>Maria Gonzalez</name>
+    <role>Chef</role>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Chicken breast</name>
+      <quantity>300</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Thai basil leaves</name>
+      <quantity>20</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Garlic cloves</name>
+      <quantity>3</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Red chili</name>
+      <quantity>2</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Fish sauce</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>Soy sauce</name>
+      <quantity>1.5</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>Vegetable oil</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>White sugar</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <instruction>Chop the chicken breast into bite-sized pieces.</instruction>
+      <duration_minutes>5</duration_minutes>
+      <tools>knife, cutting board</tools>
+    </step>
+    <step>
+      <instruction>Crush garlic and slice red chili thinly.</instruction>
+      <duration_minutes>3</duration_minutes>
+      <tools>knife, mortar and pestle</tools>
+    </step>
+    <step>
+      <instruction>Heat vegetable oil in a wok over medium-high heat.</instruction>
+      <duration_minutes>2</duration_minutes>
+      <tools>wok, stove</tools>
+    </step>
+    <step>
+      <instruction>SautÃ© garlic and chili until fragrant.</instruction>
+      <duration_minutes>1</duration_minutes>
+      <tools>wok, spatula</tools>
+    </step>
+    <step>
+      <instruction>Add chicken pieces and stir-fry until cooked through.</instruction>
+      <duration_minutes>7</duration_minutes>
+      <tools>wok, spatula</tools>
+    </step>
+    <step>
+      <instruction>Mix in fish sauce, soy sauce, and sugar; cook for another 2 minutes.</instruction>
+      <duration_minutes>2</duration_minutes>
+      <tools>wok, spatula</tools>
+    </step>
+    <step>
+      <instruction>Turn off heat and stir in Thai basil leaves until wilted.</instruction>
+      <duration_minutes>1</duration_minutes>
+      <tools>wok, spatula</tools>
+    </step>
+    <step>
+      <instruction>Serve hot with steamed jasmine rice.</instruction>
+      <duration_minutes>1</duration_minutes>
+      <tools>plate, spoon</tools>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>350</calories>
+    <protein_grams>30</protein_grams>
+    <fat_grams>15</fat_grams>
+    <carbohydrates_grams>20</carbohydrates_grams>
+  </nutrition>
+  <metadata>
+    <cuisine>Thai</cuisine>
+    <difficulty>Intermediate</difficulty>
+    <published_date>2024-05-15</published_date>
+  </metadata>
+</recipe>

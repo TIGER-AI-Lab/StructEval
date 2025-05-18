@@ -1,0 +1,32 @@
+creature:
+  name: Zephyrion
+  species: Celestial Serpent
+  creature.origin:
+    planet: Nebulon-5
+    galaxy: Andromeda
+  creature.abilities:
+    - type: Teleportation
+      description: The creature can instantaneously move to any location within a 500-kilometer radius.
+      power_level: 9
+    - type: Invisibility
+      description: The creature can become invisible to the naked eye for up to 10 minutes.
+      power_level: 7
+  creature.physical_traits:
+    height_cm: 300
+    coloration: Iridescent silver with swirling patterns of deep violet
+    creature.physical_traits.limbs:
+      count: 4
+      types:
+      - Tentacle
+      - Tentacle
+      - Tentacle
+      - Tentacle
+  creature.history:
+    first_sighting:
+      date: "2023-04-15T14:30:00Z"
+      location: The Crystal Caverns of Nebulon-5
+    known_encounters:
+    - date: "2023-05-22T09:15:00Z"
+      description: A group of explorers witnessed the creature using its teleportation ability to escape a sudden sandstorm.
+    - date: "2023-06-30T16:45:00Z"
+      description: The creature was seen interacting with a native plant species, causing it to glow and release spores that could heal minor injuries.

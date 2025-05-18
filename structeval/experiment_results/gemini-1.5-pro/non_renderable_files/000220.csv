@@ -1,0 +1,5 @@
+species_id,species_name,classification,average_weight_kg,average_lifespan_years,planet_of_origin,primary_color,diet_type,habitat_type,notable_ability,intelligence_rating,social_structure,communication_method,number_of_limbs,endangered_status
+XZ-423,Kryll,Insectoid,15,25,Xylos,Chitinous Brown,Herbivore,Desert,Exoskeleton Regeneration,4,Hive,Pheromones,6,No
+FL-871,Froolian,Mammalian,80,60,Frool,Azure,Omnivore,Arctic,Echolocation,7,Clan,Vocalizations,4,Yes
+AR-992,Zephyrian,Avian,2,10,Zephyr,Golden,Carnivore,Aerial,Photosynthesis,3,Flock,Chirps,2,No
+KT-101,K'tharr,Reptilian,500,500,K'thar,Greyish-Green,Carnivore,Volcanic,Lava Resistance,8,Solitary,Telepathy,4,No

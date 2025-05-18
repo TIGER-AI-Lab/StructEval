@@ -1,0 +1,44 @@
+<creature>
+    <name>Xenomorph-Zeta</name>
+    <species>Xenomorph-Zeta</species>
+    <origin>
+        <planet>Zeta-Prime</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <traits>
+        <trait>
+            <type>agility</type>
+            <description>Can move at superluminal speeds.</description>
+            <rarity>rare</rarity>
+        </trait>
+        <trait>
+            <type>camouflage</type>
+            <description>Can blend into any environment seamlessly.</description>
+            <rarity>common</rarity>
+        </trait>
+    </traits>
+    <abilities>
+        <ability>
+            <name>Quantum Leap</name>
+            <level>95</level>
+            <cooldown>120</cooldown>
+        </ability>
+        <ability>
+            <name>Invisibility</name>
+            <level>85</level>
+            <cooldown>300</cooldown>
+        </ability>
+    </abilities>
+    <appearance>
+        <height>210</height>
+        <color>Crystalline Silver</color>
+        <appendages>
+            <count>4</count>
+            <type>tentacle</type>
+        </appendages>
+    </appearance>
+    <discovery>
+        <date>2023-04-01T14:30:00Z</date>
+        <discovered_by>Dr. Elara T. Vance</discovered_by>
+    </discovery>
+</creature>

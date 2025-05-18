@@ -1,0 +1,28 @@
+galaxy:
+  name: Andromeda Fantastica
+  type: Spiral
+  distance_light_years: 2540000
+  discovery:
+    year: 964
+    by: Abd al-Rahman al-Sufi
+  stars:
+    count: 1000000000000
+    types:
+      - Red Dwarf
+      - Yellow Dwarf
+      - Blue Giant
+      - White Dwarf
+  black_holes:
+    supermassive:
+      mass_solar: 140000000
+      spin: 0.98
+    stellar:
+      - mass_solar: 12
+        location: Sector 3-G
+      - mass_solar: 8
+        location: Sector 7-Q
+  notable_events:
+    - event: Gamma Ray Burst
+      year: 1523
+    - event: Supernova
+      year: 2001

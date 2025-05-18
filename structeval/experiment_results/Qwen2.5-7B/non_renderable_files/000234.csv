@@ -1,0 +1,50 @@
+
+import pandas as pd
+
+def create_artifact_csv_row(text):
+    # Extracting artifact details from the text
+    artifact_id = "A12345"
+    artifact_name = "Vase of the Nile"
+    artifact_type = "vase"
+    discovery_site = "Site X"
+    discovery_country = "Egypt"
+    discovery_year = 1982
+    estimated_age_years = 2000
+    material = "clay"
+    current_location = "British Museum"
+    dimensions_height_cm = 30.5
+    dimensions_width_cm = 20.2
+    dimensions_depth_cm = 10.8
+    condition_status = "intact"
+    associated_culture = "Ancient Egypt"
+    notable_features = "Depicts a scene of ancient Egyptian life"
+
+    # Creating a dictionary with the artifact details
+    artifact_details = {
+        "artifact_id": [artifact_id],
+        "artifact_name": [artifact_name],
+        "artifact_type": [artifact_type],
+        "discovery_site": [discovery_site],
+        "discovery_country": [discovery_country],
+        "discovery_year": [discovery_year],
+        "estimated_age_years": [estimated_age_years],
+        "material": [material],
+        "current_location": [current_location],
+        "dimensions_height_cm": [dimensions_height_cm],
+        "dimensions_width_cm": [dimensions_width_cm],
+        "dimensions_depth_cm": [dimensions_depth_cm],
+        "condition_status": [condition_status],
+        "associated_culture": [associated_culture],
+        "notable_features": [notable_features]
+    }
+
+    # Creating a DataFrame from the artifact details
+    artifact_df = pd.DataFrame(artifact_details)
+
+    # Returning the DataFrame as a CSV string
+    return artifact_df.to_csv(index=False)
+
+# Example usage
+text = "Vase of the Nile, clay, Site X, Egypt, 1982, 2000, intact, Ancient Egypt, Depicts a scene of ancient Egyptian life"
+csv_output = create_artifact_csv_row(text)
+print(csv_output)

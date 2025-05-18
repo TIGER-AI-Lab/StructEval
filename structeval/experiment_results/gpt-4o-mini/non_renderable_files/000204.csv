@@ -1,0 +1,3 @@
+
+species,habitat.region,habitat.climate,habitat.elevation_meters,diet.primary_food,diet.secondary_foods,diet.daily_caloric_intake,physical_traits.average_weight_kg,physical_traits.average_length_cm,physical_traits.coloration,behavior.activity_pattern,behavior.social_structure,behavior.migratory,conservation.status,conservation.population_estimate
+"Newly Discovered Animal","Amazon Rainforest","tropical",300,"fruits","insects;leaves",1500,5.5,60,"green with yellow spots","diurnal","solitary","no","Least Concern",10000

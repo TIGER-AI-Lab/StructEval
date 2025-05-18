@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041102</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Welcome to the Comprehensive HTML Document</h1>
+        <p>This document demonstrates a structured layout with various content sections.</p>
+        <hr />
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#details">Details</a></li>
+          <li><a href="#statistics">Statistics</a></li>
+          <li><a href="#contact">Contact Information</a></li>
+        </ul>
+        <hr />
+      </nav>
+
+      <main>
+        <section id="introduction">
+          <h2>Introduction</h2>
+          <p>
+            This HTML document is designed for a visual conversion task.
+            It contains a variety of sections, including headings, lists, definition lists,
+            tables, and more. The content hierarchy is intended to mimic a realistic
+            web page layout.
+          </p>
+          <p>
+            Read through the sections below to understand how different elements
+            contribute to the overall structure and presentation.
+          </p>
+        </section>
+        <hr />
+
+        <section id="features">
+          <h2>Features</h2>
+          <h3>Key Elements:</h3>
+          <ol>
+            <li>Header and Footer Components</li>
+            <li>Navigation Bar</li>
+            <li>Content Sections</li>
+            <li>Labeled Definitions</li>
+            <li>Formatted Lists</li>
+            <li>Data Tables</li>
+          </ol>
+          <p>
+            The ordered list above shows the primary features used in this document.
+          </p>
+          <h3>Additional Highlights:</h3>
+          <ul>
+            <li>Clear visual hierarchy</li>
+            <li>Well-structured layout</li>
+            <li>Readable and accessible content</li>
+            <li>Responsive considerations via viewport meta tag</li>
+          </ul>
+        </section>
+        <hr />
+
+        <section id="details">
+          <h2>Details</h2>
+          <p>This section provides further descriptive details using a definition list:</p>
+          <dl>
+            <dt>Purpose</dt>
+            <dd>
+              Illustrates a realistic static HTML layout while showcasing formatted content.
+            </dd>
+            <dt>Content Scope</dt>
+            <dd>
+              Includes headers, paragraphs, lists, and tables to create a full-page experience.
+            </dd>
+            <dt>Usage</dt>
+            <dd>
+              Mainly for testing visual conversion processes, content extraction, and layout parsing.
+            </dd>
+          </dl>
+        </section>
+        <hr />
+
+        <section id="statistics">
+          <h2>Statistics</h2>
+          <p>The table below includes sample data entries that reflect various metrics:</p>
+          <table border="1" cellPadding="5">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Value</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Total Users</td>
+                <td>1,250</td>
+                <td>The overall count of registered users.</td>
+              </tr>
+              <tr>
+                <td>Active Sessions</td>
+                <td>340</td>
+                <td>Sessions currently in progress.</td>
+              </tr>
+              <tr>
+                <td>Page Views</td>
+                <td>8,760</td>
+                <td>Total count of page views recorded this month.</td>
+              </tr>
+              <tr>
+                <td>Conversion Rate</td>
+                <td>4.2%</td>
+                <td>The percentage of visitors making a purchase.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <hr />
+
+        <section id="contact">
+          <h2>Contact Information</h2>
+          <p>For further details or inquiries, please refer to the following contact details:</p>
+          <address>
+            <strong>Customer Support:</strong><br />
+            1234 Web Lane<br />
+            Internet City, WebState, 98765<br />
+            Email: support@example.com<br />
+            Phone: (123) 456-7890
+          </address>
+          <p>
+            This information is static and provided solely for demonstration purposes.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <hr />
+        <p>&copy; 2023 Comprehensive HTML Document. All rights reserved.</p>
+        <p>This document is created to test structural layout, visual hierarchy, and readability.</p>
+      </footer>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

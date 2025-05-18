@@ -1,0 +1,30 @@
+
+{
+  "museum": {
+    "name": "The Imaginarium Art Museum",
+    "location": {
+      "city": "Fantasium",
+      "country": "Utopia"
+    },
+    "established_year": 1985,
+    "director": {
+      "full_name": "Dr. Lila Dreamweaver",
+      "start_date": "2010-05-15"
+    },
+    "galleries": [
+      {
+        "title": "The Enchanted Gallery",
+        "theme": "Magical Realism",
+        "artworks": [
+          {
+            "title": "Whispers of the Forest",
+            "artist": "Eldrin Moonshadow",
+            "year_created": 1995,
+            "medium": "Oil on canvas",
+            "dimensions": "200x150 cm"
+          }
+        ]
+      }
+    ]
+  }
+}

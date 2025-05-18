@@ -1,0 +1,36 @@
+
+{
+  "artifact": {
+    "name": "Ancient Artifact",
+    "discovery_date": "2022-01-01T00:00:00.000Z",
+    "origin": {
+      "civilization": "Ancient Civilization",
+      "era": "Bronze Age"
+    },
+    "materials": [
+      {
+        "type": "Gold",
+        "purity": 95.5
+      },
+      {
+        "type": "Copper",
+        "purity": 80.2
+      }
+    ],
+    "dimensions": {
+      "height_cm": 20,
+      "width_cm": 15,
+      "depth_cm": 10
+    },
+    "inscriptions": [
+      {
+        "language": "Ancient Language",
+        "translation": "Hello, World!"
+      }
+    ],
+    "current_location": {
+      "museum": "The Museum of Ancient Art",
+      "display_case": "Room 101"
+    }
+  }
+}

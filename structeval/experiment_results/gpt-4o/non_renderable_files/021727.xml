@@ -1,0 +1,49 @@
+<galaxy>
+    <name>Andromeda</name>
+    <discovery>
+        <year>1923</year>
+        <telescope>Hubble Space Telescope</telescope>
+        <astronomers>
+            <astronomer>
+                <name>Edwin Hubble</name>
+                <nationality>American</nationality>
+            </astronomer>
+            <astronomer>
+                <name>Cecilia Payne</name>
+                <nationality>British</nationality>
+            </astronomer>
+        </astronomers>
+    </discovery>
+    <planets>
+        <planet>
+            <name>Planet X</name>
+            <type>Gas Giant</type>
+            <moons>12</moons>
+            <inhabited>No</inhabited>
+            <atmosphere>
+                <composition>Hydrogen/Helium</composition>
+                <pressure>1500</pressure>
+            </atmosphere>
+        </planet>
+        <planet>
+            <name>Planet Y</name>
+            <type>Rocky</type>
+            <moons>2</moons>
+            <inhabited>Yes</inhabited>
+            <atmosphere>
+                <composition>Nitrogen/Oxygen</composition>
+                <pressure>101</pressure>
+            </atmosphere>
+        </planet>
+    </planets>
+    <notable_events>
+        <event>
+            <name>First Contact</name>
+            <year>2021</year>
+        </event>
+        <event>
+            <name>Supernova</name>
+            <year>1987</year>
+        </event>
+    </notable_events>
+</galaxy>

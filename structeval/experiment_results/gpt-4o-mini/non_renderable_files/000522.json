@@ -1,0 +1,59 @@
+
+{
+  "expedition": {
+    "mission_name": "Galactic Frontier Exploration",
+    "leader": {
+      "name": "Dr. Amelia Carter",
+      "rank": "Captain",
+      "contact": {
+        "email": "amelia.carter@spaceexpedition.org",
+        "phone": "+1-555-0199"
+      }
+    },
+    "crew": [
+      {
+        "name": "Lt. John Smith",
+        "role": "Pilot",
+        "skills": [
+          "Astrogation",
+          "Flight Operations",
+          "Emergency Response"
+        ]
+      },
+      {
+        "name": "Dr. Emily Zhang",
+        "role": "Biologist",
+        "skills": [
+          "Genetic Analysis",
+          "Field Research",
+          "Data Interpretation"
+        ]
+      }
+    ],
+    "destination": {
+      "planet": "Zyphor-7",
+      "coordinates": {
+        "latitude": -12.345,
+        "longitude": 67.890
+      }
+    },
+    "supply_list": [
+      {
+        "item": "Oxygen Tanks",
+        "quantity": 20
+      },
+      {
+        "item": "Food Rations",
+        "quantity": 100
+      },
+      {
+        "item": "Medical Supplies",
+        "quantity": 50
+      },
+      {
+        "item": "Fuel Cells",
+        "quantity": 10
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+[artifact]
+title = "The Rosetta Stone"
+
+[artifact.creator]
+name = "Unknown"
+affiliation = "Unknown"
+
+[artifact.year_created] = 196 BCE
+
+[artifact.dimensions]
+height_cm = 114.9
+width_cm = 72.3
+depth_cm = 27.9
+
+[artifact.materials]
+- "Granodiorite"
+
+[artifact.origin]
+country = "Egypt"
+city = "Rashid"
+
+[artifact.exhibition_history]
+- [0]
+  location = "British Museum, London"
+  year = 1802
+  curator = "John Horsley Palmer"
+
+[artifact.provenance]
+previous_owners = [
+  {
+    name = "French Army"
+    acquisition_date = "1801-09-01"
+  },
+  {
+    name = "British Government"
+    acquisition_date = "1802-09-10"
+  }
+]

@@ -1,0 +1,14 @@
+
+galaxy:
+  name: Andromeda
+  star_systems:
+  - system_name: Alpha Centauri
+    planets:
+      - planet_name: Proxima b
+        moons:
+          - Selene
+          - Luna Minor
+      - planet_name: Proxima c
+        moons: []
+  - system_name: Beta Centauri
+    planets: []

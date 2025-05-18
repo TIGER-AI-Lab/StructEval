@@ -1,0 +1,13 @@
+
+museum:
+  name: The Imaginary Artifacts Museum
+  location:
+    city: Cloudville
+    country: Dreamland
+  exhibits:
+    - title: Feather of the Moon
+      artist: Luna Skyweaver
+      year: 1780
+    - title: Clockwork Rainbow
+      artist: Aurora Ticktock
+      year: 1923

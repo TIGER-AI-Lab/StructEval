@@ -1,0 +1,49 @@
+{
+  "zoo": {
+    "animals": {
+      "animal": [
+        {
+          "name": "Gizmo",
+          "species": "Capybara",
+          "favoriteFoods": {
+            "food": [
+              "Watermelon",
+              "Sweet Potato"
+            ]
+          }
+        },
+        {
+          "name": "Nova",
+          "species": "Fennec Fox",
+          "favoriteFoods": {
+            "food": [
+              "Crickets",
+              "Eggs"
+            ]
+          }
+        }
+      ]
+    },
+    "staff": {
+      "keeper": [
+        {
+          "name": "Samira",
+          "assignedAnimals": {
+            "animalId": [
+              "1",
+              "2"
+            ]
+          }
+        },
+        {
+          "name": "Leon",
+          "assignedAnimals": {
+            "animalId": [
+              "2"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

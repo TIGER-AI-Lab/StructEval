@@ -1,0 +1,21 @@
+
+exhibit:
+  name: "Impressionist Masterpieces"
+  curator: "Dr. Emily Johnson"
+  opening_date: "2023-11-01"
+  rooms:
+    - title: "Room of Light"
+      artworks:
+        - artist: "Claude Monet"
+          title: "Water Lilies"
+          year: 1916
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 90
+            width_cm: 120
+            depth_cm: null
+          provenance: "Private collection, Paris"
+          on_loan: true
+          loan_details:
+            lender: "Museum of Modern Art, New York"
+            return_date: "2024-05-01"

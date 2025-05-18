@@ -1,0 +1,6 @@
+artifact_id,artifact_name,origin_civilization,discovery_date,material.primary,material.secondary,estimated_age_years,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,location.site_name,location.latitude,location.longitude,current_condition.status,current_condition.restoration_needed,notable_markings[0].type,notable_markings[0].description
+AR-001,Rosetta Stone,Egyptian,1799-07-15,Granodiorite,,2223,112.3,75.7,28.4,Rosetta,31.3917,30.4250,Fragmented,true,Inscription,Hieroglyphic, Demotic, and Greek texts
+AR-002,Tutankhamun's Mask,Egyptian,1922-11-04,Gold,Lapis Lazuli,3345,54,39.3,49,Valley of the Kings,25.7403,32.6015,Intact,false,Symbol,Uraeus and Vulture
+AR-003,Venus de Milo,Greek,1820-04-08,Marble,,2200,203,69,56,Milos,36.6944,24.4353,Fragmented,true,None,
+AR-004,Terracotta Army,Chinese,1974-03-29,Terracotta,,2247,180,50,45,Xi'an,34.3853,109.2753,Fragmented,true,None,
+AR-005,Sutton Hoo Helmet,Anglo-Saxon,1939-08-01,Iron,Bronze,1400,31.8,21.5,24.5,Sutton Hoo,52.0933,1.3594,Restored,false,Symbol,Embossed animal motifs

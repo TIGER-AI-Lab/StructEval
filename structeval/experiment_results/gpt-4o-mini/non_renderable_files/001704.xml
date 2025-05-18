@@ -1,0 +1,76 @@
+
+<recipe>
+    <title>Spaghetti Aglio e Olio</title>
+    <author>
+        <name>John Doe</name>
+        <contact>
+            <email>johndoe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Garlic</name>
+            <quantity>4</quantity>
+            <unit>cloves</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Olive Oil</name>
+            <quantity>60</quantity>
+            <unit>milliliters</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Red Pepper Flakes</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+            <optional>true</optional>
+        </ingredient>
+        <ingredient>
+            <name>Parsley</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+            <optional>true</optional>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Boil a large pot of salted water and cook the spaghetti according to package instructions until al dente.</description>
+            <duration_minutes>10</duration_minutes>
+            <tools>
+                <tool>
+                    <name>Pot</name>
+                    <required>true</required>
+                </tool>
+                <tool>
+                    <name>Colander</name>
+                    <required>true</required>
+                </tool>
+            </tools>
+        </step>
+        <step>
+            <description>In a large skillet, heat the olive oil over medium heat. Add the sliced garlic and red pepper flakes, cooking until the garlic is golden brown.</description>
+            <duration_minutes>5</duration_minutes>
+        </step>
+        <step>
+            <description>Add the cooked spaghetti to the skillet, tossing to coat in the garlic oil. Stir in chopped parsley before serving.</description>
+            <duration_minutes>2</duration_minutes>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>600</calories>
+        <fat_grams>30</fat_grams>
+        <protein_grams>15</protein_grams>
+    </nutrition>
+    <tags>
+        <tag>Pasta</tag>
+        <tag>Italian</tag>
+        <tag>Quick Meal</tag>
+    </tags>
+</recipe>

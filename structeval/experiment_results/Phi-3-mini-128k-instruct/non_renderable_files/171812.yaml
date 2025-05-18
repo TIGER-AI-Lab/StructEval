@@ -1,0 +1,10 @@
+planet:
+  name: Glimmeron
+  creatures:
+    - species: Glowfox
+      habitat: Mossy Caves
+    - species: Skyfin
+      habitat: Floating Lakes
+  minerals:
+    - Lumite
+    - Starcrystal

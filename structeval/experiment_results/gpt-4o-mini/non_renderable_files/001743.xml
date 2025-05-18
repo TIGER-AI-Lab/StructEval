@@ -1,0 +1,47 @@
+
+<creature>
+    <name>Glacius Draconis</name>
+    <species>Ice Dragon</species>
+    <habitat>
+        <region>Frostpeak Mountains</region>
+        <climate>Subarctic</climate>
+    </habitat>
+    <traits>
+        <trait>
+            <traitName>Frost Breath</traitName>
+            <severity>High</severity>
+            <description>Can exhale a freezing breath that encases enemies in ice.</description>
+        </trait>
+        <trait>
+            <traitName>Camouflage</traitName>
+            <severity>Medium</severity>
+            <description>Blends seamlessly with snowy environments to avoid detection.</description>
+        </trait>
+    </traits>
+    <abilities>
+        <ability>
+            <abilityName>Ice Shard</abilityName>
+            <cooldownSeconds>30</cooldownSeconds>
+            <effect>Launches sharp ice projectiles at high speed, causing piercing damage.</effect>
+        </ability>
+        <ability>
+            <abilityName>Blizzard Call</abilityName>
+            <cooldownSeconds>120</cooldownSeconds>
+            <effect>Summons a fierce blizzard that obscures vision and slows enemies.</effect>
+        </ability>
+    </abilities>
+    <appearance>
+        <color>
+            <primary>Ice Blue</primary>
+            <secondary>White</secondary>
+        </color>
+        <size>
+            <heightCm>250</heightCm>
+            <weightKg>300</weightKg>
+        </size>
+    </appearance>
+    <discovery>
+        <dateDiscovered>2023-10-15</dateDiscovered>
+        <discoveredBy>Dr. Elara Frost</discoveredBy>
+    </discovery>
+</creature>

@@ -1,0 +1,52 @@
+
+<recipe>
+    <title>Spaghetti Bolognese</title>
+    <description>A classic Italian pasta dish made with ground beef and tomato sauce.</description>
+    <cuisine>Italian</cuisine>
+    <servings>4</servings>
+    <prepTime>PT15M</prepTime>
+    <cookTime>PT30M</cookTime>
+    <ingredients>
+        <ingredient>
+            <name>Ground Beef</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Onion</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Tomato Sauce</name>
+            <quantity>250</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <order>1</order>
+            <instruction>Chop the onion and ground beef.</instruction>
+            <duration>PT5M</duration>
+        </step>
+        <step>
+            <order>2</order>
+            <instruction>Cook the ground beef and onion in a pan.</instruction>
+            <duration>PT10M</duration>
+        </step>
+        <step>
+            <order>3</order>
+            <instruction>Add the tomato sauce and simmer.</instruction>
+            <duration>PT15M</duration>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>1200</calories>
+        <protein>60</protein>
+        <fat>80</fat>
+        <carbohydrates>60</carbohydrates>
+    </nutrition>
+</recipe>

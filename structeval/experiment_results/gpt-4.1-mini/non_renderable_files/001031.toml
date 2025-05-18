@@ -1,0 +1,43 @@
+
+[artifact]
+name = "The Serpent's Eye Amulet"
+discovery_date = "1923-07-15"
+materials = ["Gold", "Lapis Lazuli", "Carnelian"]
+
+[artifact.origin]
+culture = "Ancient Mesopotamian"
+region = "Sumer, Southern Mesopotamia"
+period = "Early Dynastic Period, circa 2900â2350 BCE"
+
+[artifact.dimensions]
+height_cm = 12.5
+width_cm = 7.8
+depth_cm = 2.3
+
+[artifact.condition]
+current_state = "Well-preserved with minor surface wear"
+  
+  [[artifact.condition.restoration_history]]
+  date = "1950-05-10"
+  description = "Stabilization of gold inlay and cleaning of stone insets"
+
+[artifact.provenance]
+
+  [[artifact.provenance.owners]]
+  name = "Dr. Harold Finch"
+  acquisition_year = 1924
+
+[[artifact.exhibitions]]
+title = "Treasures of the Ancient World"
+location = "British Museum, London"
+year = 1930
+
+[[artifact.exhibitions]]
+title = "Mysteries of Mesopotamia"
+location = "Louvre Museum, Paris"
+year = 1985
+
+[[artifact.exhibitions]]
+title = "Ancient Civilizations Unearthed"
+location = "Metropolitan Museum of Art, New York"
+year = 2010

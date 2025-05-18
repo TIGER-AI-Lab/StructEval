@@ -1,0 +1,43 @@
+{
+  "expedition_id": "XJ-42",
+  "leader": {
+    "name": "Captain Lyra",
+    "rank": "Commander"
+  },
+  "crew_members": [
+    {
+      "name": "Dr. Zeek",
+      "role": "Science Officer",
+      "species": "Martian"
+    },
+    {
+      "name": "Ensign Ray",
+      "role": "Pilot",
+      "species": "Human"
+    }
+  ],
+  "destination": {
+    "planet": "Proxima-B",
+    "coordinates": {
+      "x": 102.5,
+      "y": 75.3,
+      "z": -43.2
+    }
+  },
+  "equipment": [
+    {
+      "type": "Plasma Drill",
+      "quantity": 2
+    },
+    {
+      "type": "Terraformer",
+      "quantity": 1
+    }
+  ],
+  "mission_objectives": [
+    "Study atmospheric anomalies",
+    "Collect soil samples"
+  ],
+  "launch_date": "2124-08-17",
+  "status": "Active"
+}

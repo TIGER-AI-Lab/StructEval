@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001111</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const FormContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+`;
+
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+`;
+
+const FullWidthInput = styled.input`
+  grid-column: 1 / span 2;
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+`;
+
+const RegisterButton = styled.button`
+  background-color: green;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+`;
+
+const ErrorDiv = styled.div`
+  border: 1px solid red;
+  color: red;
+  padding: 10px;
+  margin-bottom: 10px;
+`;
+
+const SignUpForm = () => {
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [registered, setRegistered] = useState(false);
+  const [error, setError] = useState(false);
+
+  const handleRegister = () => {
+    if (username && email && password) {
+      setRegistered(true);
+      setError(false);
+    } else {
+      setError(true);
+    }
+  };
+
+  const handleClear = () => {
+    setUsername('');
+    setEmail('');
+    setPassword('');
+    setRegistered(false);
+    setError(false);
+  };
+
+  return (
+    <FormContainer>
+      <h1>Join Our Community</h1>
+      <GridContainer>
+        <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <FullWidthInput type="password" placeholder="Enter Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+      </GridContainer>
+      {error && <ErrorDiv>Please fill in all fields.</ErrorDiv>}
+      <ButtonContainer>
+        <RegisterButton onClick={handleRegister}>Register</RegisterButton>
+        <button onClick={handleClear}>Clear</button>
+        <button>Cancel</button>
+      </ButtonContainer>
+      {registered && <p>Registration Complete</p>}
+    </FormContainer>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<SignUpForm />);
+
+    </script>
+  </body>
+</html>

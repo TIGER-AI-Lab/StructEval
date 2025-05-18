@@ -1,0 +1,28 @@
+
+artifact:
+  name: "The Golden Mask of Pharaoh Tutankhamun"
+  origin:
+    culture: "Ancient Egyptian"
+    period: "New Kingdom"
+  materials:
+    primary: "Gold"
+    secondary:
+      - "Lapis Lazuli"
+      - "Carnelian"
+  dimensions:
+    height_cm: 30.0
+    width_cm: 20.0
+    depth_cm: 10.0
+  current_location:
+    museum: "The Egyptian Museum"
+    room: "Gallery 101"
+    display_case: "Case 3"
+  inscriptions:
+    - language: "Ancient Egyptian Hieroglyphs"
+      text: "The great Pharaoh Tutankhamun, son of Ra, ruler of the Two Lands"
+      translation: "The great Pharaoh Tutankhamun, son of Ra, ruler of the Two Lands"
+  provenance:
+    history:
+      - owner: "Howard Carter"
+        date_acquired: "1922-11-04"
+        method_of_acquisition: "Excavation"

@@ -1,0 +1,38 @@
+
+{
+  "artifact": {
+    "name": "Golden Chalice",
+    "period": "Ancient Greek",
+    "origin": {
+      "civilization": "Ancient Greeks",
+      "region": "Mycenaean Greece"
+    },
+    "discovery": {
+      "date": "2022-01-01T00:00:00Z",
+      "location": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      }
+    },
+    "dimensions": {
+      "height_cm": 30,
+      "width_cm": 20,
+      "depth_cm": 10
+    },
+    "materials": ["gold", "silver"],
+    "inscriptions": [
+      {
+        "language": "Ancient Greek",
+        "text": "Îá½Ïá½´Î½",
+        "translation": "A prayer",
+        "condition": "intact"
+      },
+      {
+        "language": "Latin",
+        "text": "Salve, Roma",
+        "translation": "Hail, Rome",
+        "condition": "eroded"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+[expedition]
+name = "Interstellar Explorer"
+launch_date = "2023-07-15"
+[expedition.destination]
+planet = "Mars"
+region = "Valles Marineris"
+[expedition.crew]
+[[expedition.crew]]
+name = "John Doe"
+role = "Mission Commander"
+experience_years = 10
+certifications = ["Spaceflight Certification", "Astrophysics"]
+[[expedition.crew]]
+name = "Jane Smith"
+role = "Chief Engineer"
+experience_years = 15
+certifications = ["Rocket Propulsion", "Aerospace Engineering"]
+[expedition.equipment]
+[[expedition.equipment]]
+item = "Spacesuit"
+quantity = 5
+status = "operational"
+[[expedition.equipment]]
+item = "Lander"
+quantity = 1
+status = "damaged"
+[[expedition.equipment]]
+item = "Robotic Arm"
+quantity = 2
+status = "spare"
+[expedition.mission_objectives]
+primary = "Establish a research station on Mars"
+secondary = "Search for signs of past life"

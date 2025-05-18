@@ -1,0 +1,43 @@
+
+[planet]
+name = "Exoplanet-1234"
+discovery = {
+  year = 2022
+  method = "transit"
+}
+orbit = {
+  period_days = 365.25
+  eccentricity = 0.05
+}
+atmosphere = {
+  composition = [
+    {
+      gas = "Helium"
+      percentage = 20
+    }
+    {
+      gas = "Methane"
+      percentage = 30
+    }
+  ]
+}
+moons = [
+  {
+    name = "Moon-1"
+    diameter_km = 500
+  }
+  {
+    name = "Moon-2"
+    diameter_km = 300
+  }
+]
+surface = {
+  temperature_c = -10
+  has_liquid_water = true
+  landmarks = [
+    {
+      type = "crater"
+      name = "Crater-1"
+    }
+  ]
+}

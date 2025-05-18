@@ -1,0 +1,22 @@
+[ecosystem.planet]
+name = "Xylos"
+orbital_period_days = 420.0
+terrain_types = ["Crystal Plains", "Floating Islands", "Luminous Forests"]
+
+[ecosystem.planet.atmosphere]
+composition = ["Xenon", "Nitrogen", "Argon", "Trace Methane"]
+pressure_kpa = 150.0
+
+[[ecosystem.planet.native_species]]
+species_name = "Crystallus Sapiens"
+population_estimate = 1000000
+classification = "Crystalline Sentient"
+average_lifespan_years = 250.0
+diet = "Lithovore"
+notable_traits = ["Photosynthetic Crystals", "Telepathic Communication", "Regenerative Abilities"]
+
+[[ecosystem.planet.habitats]]
+habitat_name = "Crystal Plains"
+dominant_species = "Crystallus Sapiens"
+climate_type = "Arid"
+average_temperature_c = 45.0

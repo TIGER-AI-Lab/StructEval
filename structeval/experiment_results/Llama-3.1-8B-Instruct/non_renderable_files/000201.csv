@@ -1,0 +1,28 @@
+
+import csv
+
+data = [
+    ["Zorvath", "Iridescent blue", 180, "Swampy jungles", "Carnivore", 4, 50, "Vulnerable", "Xeridia-IV", "Bioluminescent camouflage", 2178, "Galactic Expedition 345", "Bioluminescent flashes", "Matriarchal colonies", 90],
+    ["N'Tari", "Deep purple", 120, "Caves", "Omnivore", 6, 30, "Not threatened", "N'Tar", "Telepathy", 1985, "Dr. Sophia Patel", "Mental images", "Hive mind", 60],
+    ["Kraelion", "Golden yellow", 250, "Deserts", "Herbivore", 2, 70, "Endangered", "Kraelion-Prime", "Enhanced vision", 2050, "Aurora Expedition", "Color changes", "Nomadic tribes", 120],
+    ["Vorx", "Dark grey", 150, "Underwater", "Carnivore", 8, 40, "Not threatened", "Vorx-III", "Enhanced strength", 1992, "Oceanic Research Team", "Sonic pulses", "Colony ships", 100],
+    ["Thrakos", "Iridescent green", 200, "Forests", "Omnivore", 4, 60, "Vulnerable", "Thrakos-Prime", "Shape-shifting", 2100, "Thrakos Expedition", "Mental images", "Matriarchal clans", 80],
+    ["Xeridian", "Deep blue", 220, "Swampy jungles", "Herbivore", 6, 80, "Not threatened", "Xeridia-IV", "Enhanced senses", 2080, "Xeridian Research Team", "Bioluminescent flashes", "Hive mind", 110],
+    ["Korvath", "Dark red", 280, "Deserts", "Carnivore", 2, 90, "Endangered", "Korvath-Prime", "Enhanced speed", 2150, "Korvath Expedition", "Color changes", "Nomadic tribes", 130],
+    ["N'Tek", "Iridescent silver", 160, "Caves", "Omnivore", 8, 50, "Not threatened", "N'Tar", "Telepathy", 2005, "Dr. Liam Chen", "Mental images", "Hive mind", 70],
+    ["Thrakkor", "Golden brown", 240, "Forests", "Herbivore", 4, 70, "Vulnerable", "Thrakos-Prime", "Enhanced strength", 2120, "Thrakkor Expedition", "Bioluminescent flashes", "Matriarchal clans", 100],
+    ["Vorxion", "Dark grey", 190, "Underwater", "Carnivore", 6, 60, "Not threatened", "Vorx-III", "Enhanced vision", 2010, "Vorxion Research Team", "Sonic pulses", "Colony ships", 90],
+    ["Kraelionix", "Iridescent blue", 260, "Deserts", "Omnivore", 2, 80, "Endangered", "Kraelion-Prime", "Shape-shifting", 2140, "Kraelionix Expedition", "Color changes", "Nomadic tribes", 120],
+    ["Xeridion", "Deep purple", 230, "Swampy jungles", "Herbivore", 8, 90, "Not threatened", "Xeridia-IV", "Enhanced senses", 2090, "Xeridian Research Team", "Bioluminescent flashes", "Hive mind", 110],
+    ["Thrakosian", "Iridescent green", 200, "Forests", "Omnivore", 4, 70, "Vulnerable", "Thrakos-Prime", "Telepathy", 2110, "Thrakos Expedition", "Mental images", "Matriarchal clans", 80],
+    ["Korvathian", "Dark red", 270, "Deserts", "Carnivore", 2, 90, "Endangered", "Korvath-Prime", "Enhanced speed", 2160, "Korvath Expedition", "Color changes", "Nomadic tribes", 130],
+    ["N'Tekian", "Iridescent silver", 180, "Caves", "Omnivore", 8, 50, "Not threatened", "N'Tar", "Shape-shifting", 2030, "Dr. Sophia Patel", "Mental images", "Hive mind", 70]
+]
+
+with open('alien_species.csv', 'w', newline='') as csvfile:
+    fieldnames = ["species_name", "primary_color", "average_height_cm", "habitat_type", "diet_classification", "number_of_legs", "average_lifespan_years", "endangered_status", "native_planet", "notable_ability", "first_discovered_year", "discovered_by", "communication_method", "social_structure", "reproduction_cycle_days"]
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in data:
+        writer.writerow({"species_name": row[0], "primary_color": row[1], "average_height_cm": row[2], "habitat_type": row[3], "diet_classification": row[4], "number_of_legs": row[5], "average_lifespan_years": row[6], "endangered_status": row[7], "native_planet": row[8], "notable_ability": row[9], "first_discovered_year": row[10], "discovered_by": row[11], "communication_method": row[12], "social_structure": row[13], "reproduction_cycle_days": row[14]})

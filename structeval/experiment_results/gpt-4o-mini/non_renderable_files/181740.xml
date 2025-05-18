@@ -1,0 +1,31 @@
+
+<planetarium>
+  <exhibits>
+    <exhibit>
+      <name>Cosmic Origins</name>
+      <type>Interactive</type>
+      <features>
+        <feature>Touchscreen Star Maps</feature>
+        <feature>Meteorite Samples</feature>
+      </features>
+    </exhibit>
+    <exhibit>
+      <name>Galactic Theater</name>
+      <type>Show</type>
+      <features>
+        <feature>360-degree Projection</feature>
+        <feature>Live Narration</feature>
+      </features>
+    </exhibit>
+  </exhibits>
+  <events>
+    <event>
+      <title>Stargazing Night</title>
+      <date>2024-07-15</date>
+    </event>
+    <event>
+      <title>Astronaut Q&A</title>
+      <date>2024-08-05</date>
+    </event>
+  </events>
+</planetarium>

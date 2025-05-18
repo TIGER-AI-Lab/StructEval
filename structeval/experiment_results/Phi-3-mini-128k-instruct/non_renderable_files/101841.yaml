@@ -1,0 +1,28 @@
+galactic_rescue_mission:
+  mission_name: "Operation Nebula Dawn"
+  launch_date: "2125-04-17T09:00:00Z"
+  crew:
+    - name: "Cmdr. Zora Lynx"
+      species: "Human"
+      role: "Mission Leader"
+    - name: "Dr. Vex Tharn"
+      species: "Andromedan"
+      role: "Science Officer"
+    - name: "R4X-9"
+      species: "Synthetic"
+      role: "Pilot"
+  ship:
+    name: "Starfire Eclipse"
+    type: "Explorer-Class"
+    auxiliary_systems: [ "Cloaking Device", "Quantum Drive" ]
+  destination:
+    planet: "Xyphos Prime"
+    coordinates:
+      x: 4821.7
+      y: -193.2
+      z: 889.0
+  objectives:
+    - "Rescue stranded researchers"
+    - "Retrieve lost artifact"
+    - "Avoid hostile patrols"
+  success_probability: 0.73

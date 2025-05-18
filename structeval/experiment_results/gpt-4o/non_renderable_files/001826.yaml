@@ -1,0 +1,27 @@
+
+creature:
+  name: "Zylox the Wanderer"
+  species: "Xenorian"
+  origin:
+    planet: "Xylaria"
+    galaxy: "Andromeda"
+  abilities:
+    - ability_name: "Telekinesis"
+      power_level: 85
+      cooldown_seconds: 10
+    - ability_name: "Invisibility"
+      power_level: 70
+      cooldown_seconds: 30
+  appearance:
+    height_cm: 210
+    skin_color: "Emerald Green"
+    eye_count: 3
+  inventory:
+    - item_name: "Quantum Blade"
+      quantity: 1
+      rarity: "legendary"
+  allies:
+    - name: "Kara the Wise"
+      relationship: "mentor"
+    - name: "Ryn the Swift"
+      relationship: "friend"

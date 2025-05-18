@@ -1,0 +1,28 @@
+
+[city]
+name = "Fictional City"
+country = "Fictionland"
+population = 123456
+founded = "1900"
+
+[mayor]
+name = "John Doe"
+term_start = "2023-01-01"
+term_end = "2027-01-01"
+
+[landmarks]
+- name = "Fictional Monument"
+  type = "monument"
+  year_built = 1920
+  architect = "Jane Smith"
+  visitors_per_year = 500000
+
+- name = "Fictional Park"
+  type = "park"
+  year_built = 1950
+  architect = "John Doe"
+  visitors_per_year = 2000000
+
+[transportation]
+modes = ["bus", "metro", "tram", "subway"]
+metro = { lines = 5, stations = 50 }

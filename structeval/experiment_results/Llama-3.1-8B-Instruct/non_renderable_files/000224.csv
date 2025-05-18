@@ -1,0 +1,62 @@
+
+import csv
+from io import StringIO
+
+books = [
+    {
+        "title": "The Name of the Wind",
+        "author_name": "Patrick Rothfuss",
+        "author_birth_year": 1967,
+        "genre": "Fantasy",
+        "publication_year": 2007,
+        "publisher_name": "DAW Books",
+        "publisher_country": "USA",
+        "pages": 720,
+        "language": "English",
+        "series_name": "",
+        "series_number": 0,
+        "isbn_13": "978-0756411248",
+        "average_rating": 4.62,
+        "review_count": 120000
+    },
+    {
+        "title": "The First Law",
+        "author_name": "Joe Abercrombie",
+        "author_birth_year": 1974,
+        "genre": "Fantasy",
+        "publication_year": 2006,
+        "publisher_name": "Gollancz",
+        "publisher_country": "UK",
+        "pages": 416,
+        "language": "English",
+        "series_name": "The First Law",
+        "series_number": 1,
+        "isbn_13": "978-0575099267",
+        "average_rating": 4.32,
+        "review_count": 20000
+    },
+    {
+        "title": "The Hitchhiker's Guide to the Galaxy",
+        "author_name": "Douglas Adams",
+        "author_birth_year": 1952,
+        "genre": "Science Fiction",
+        "publication_year": 1979,
+        "publisher_name": "Pan Books",
+        "publisher_country": "UK",
+        "pages": 320,
+        "language": "English",
+        "series_name": "The Hitchhiker's Guide to the Galaxy",
+        "series_number": 1,
+        "isbn_13": "978-0330288683",
+        "average_rating": 4.42,
+        "review_count": 50000
+    }
+]
+
+with StringIO() as f:
+    writer = csv.writer(f)
+    writer.writerow(["book_id", "title", "author_name", "author_birth_year", "genre", "publication_year", "publisher_name", "publisher_country", "pages", "language", "series_name", "series_number", "isbn_13", "average_rating", "review_count"])
+    for i, book in enumerate(books, start=1):
+        writer.writerow([i, book["title"], book["author_name"], book["author_birth_year"], book["genre"], book["publication_year"], book["publisher_name"], book["publisher_country"], book["pages"], book["language"], book["series_name"], book["series_number"], book["isbn_13"], book["average_rating"], book["review_count"]])
+
+    print(f.read())

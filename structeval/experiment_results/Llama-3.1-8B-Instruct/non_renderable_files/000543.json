@@ -1,0 +1,44 @@
+
+{
+  "artifact": {
+    "name": "Ancient Artifact 001",
+    "origin": {
+      "civilization": "Egyptian",
+      "era": "New Kingdom"
+    },
+    "discovery": {
+      "date": "2022-01-01T00:00:00Z",
+      "location": {
+        "latitude": 30.0,
+        "longitude": 30.0
+      }
+    },
+    "materials": [
+      {
+        "type": "Gold",
+        "percentage": 80
+      },
+      {
+        "type": "Copper",
+        "percentage": 20
+      }
+    ],
+    "inscriptions": [
+      {
+        "language": "Hieroglyphic",
+        "translation": "Greetings from the Pharaoh"
+      },
+      {
+        "language": "Demotic",
+        "translation": "May the gods protect us"
+      }
+    ],
+    "condition": {
+      "status": "Good",
+      "restoration": {
+        "last_date": "2020-01-01T00:00:00Z",
+        "notes": "Minor repairs to the gold plating"
+      }
+    }
+  }
+}

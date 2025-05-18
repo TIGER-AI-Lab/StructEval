@@ -1,0 +1,30 @@
+
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "starSystems": [
+      {
+        "name": "Alpha Centauri",
+        "planets": [
+          {
+            "name": "Proxima b",
+            "moons": ["Phobos", "Deimos"]
+          },
+          {
+            "name": "Proxima c",
+            "moons": []
+          }
+        ]
+      },
+      {
+        "name": "Betelgeuse",
+        "planets": [
+          {
+            "name": "Betelgeuse I",
+            "moons": ["Io"]
+          }
+        ]
+      }
+    ]
+  }
+}

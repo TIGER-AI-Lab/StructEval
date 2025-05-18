@@ -1,0 +1,12 @@
+
+[creature]
+species = "Drakthar"
+habitat = { region = "Mystic Mountains", climate = "temperate" }
+appearance = { size = "large", color = "emerald green with silver scales" }
+abilities = { primary = "telekinesis", secondary = "invisibility" }
+behavior_patterns = [
+  { name = "Moonlight Dance", frequency = "nightly", description = "Performs a mesmerizing dance under the full moon." },
+  { name = "Shadow Cloak", frequency = "3 times/day", description = "Shifts into a shadowy form to avoid detection." }
+]
+diet = { type = "omnivore", favorite_foods = ["mystic berries", "crystalized water"] }
+discovery = { discoverer = "Elena Vortex", year = 2023 }

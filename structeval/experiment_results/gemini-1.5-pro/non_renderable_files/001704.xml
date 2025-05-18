@@ -1,0 +1,54 @@
+<recipe>
+  <title>Galactic Guacamole</title>
+  <author>
+    <name>Cosmo Cook</name>
+    <contact>
+      <email>cosmo@cook.galaxy</email>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Avocados</name>
+      <quantity>2</quantity>
+      <unit>pieces</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Alien Lime</name>
+      <quantity>1</quantity>
+      <unit>piece</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Mash the avocados in a bowl.</description>
+      <duration_minutes>5</duration_minutes>
+      <tools>
+        <tool>
+          <name>Fork</name>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+    <step>
+      <description>Squeeze the Alien Lime juice into the bowl.</description>
+      <duration_minutes>2</duration_minutes>
+      <tools>
+        <tool>
+          <name>Juicer</name>
+          <required>false</required>
+        </tool>
+      </tools>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>250</calories>
+    <fat_grams>20.5</fat_grams>
+    <protein_grams>5</protein_grams>
+  </nutrition>
+  <tags>
+    <tag>Appetizer</tag>
+    <tag>Vegan</tag>
+  </tags>
+</recipe>

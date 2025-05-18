@@ -1,0 +1,26 @@
+spaceship:
+  name: Starhopper X7
+  model: ZX-Alpha
+  crew:
+    captain: Astra Nova
+    first_officer: Rex Volaris
+    engineers:
+      - name: Lira Quell
+        specialty: Warp Core
+      - name: Dax Orion
+        specialty: Shields
+  cargo:
+    - type: Quantum Crystals
+      weight_kg: 1500
+    - type: Alien Artifacts
+      weight_kg: 300
+  systems:
+    navigation:
+      status: Online
+    life_support:
+      oxygen_level: 98
+      status: Optimal
+  mission:
+    objective: Survey Exoplanet
+    destination: Kepler-442b
+    duration_days: 120

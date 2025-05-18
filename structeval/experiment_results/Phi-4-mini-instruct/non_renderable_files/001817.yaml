@@ -1,0 +1,25 @@
+
+artifact:
+  name: "Rosetta Stone"
+  origin:
+    civilization: "Ptolemaic Kingdom"
+    era: "Ptolemaic Period"
+  composition:
+    materials:
+      - type: "Granodiorite"
+        percentage: 95
+      - type: "Sandstone"
+        percentage: 5
+  dimensions:
+    height_cm: 114
+    width_cm: 72
+    depth_cm: 28
+  discovery:
+    country: "Egypt"
+    site: "Rosetta Bay"
+    date: "1799-07-15"
+  features:
+    - description: "Hieroglyphic, Demotic, and Greek inscriptions"
+      is_unique: true
+    - description: "Facsimile of the original stele"
+      is_unique: false

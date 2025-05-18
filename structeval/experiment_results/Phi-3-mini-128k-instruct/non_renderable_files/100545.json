@@ -1,0 +1,30 @@
+{
+  "planet": {
+    "name": "Xyloxis Prime",
+    "type": "Gas Giant",
+    "orbital_period_days": 412.7,
+    "moons": ["Zentha", "Quorra", "Lunaris"],
+    "discovery": {
+      "year": 2342,
+      "method": "Spectral Analysis"
+    },
+    "habitability": {
+      "atmosphere": "Hydrogen-Helium",
+      "temperature_celsius": -170,
+      "water_presence": false,
+      "life_signs": "None detected"
+    },
+    "missions": [
+      {
+        "name": "Voyager Omega",
+        "year": 2350,
+        "success": true
+      },
+      {
+        "name": "Helios Surveyor",
+        "year": 2357,
+        "success": false
+      }
+    ]
+  }
+}

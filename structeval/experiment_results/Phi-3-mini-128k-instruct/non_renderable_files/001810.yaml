@@ -1,0 +1,29 @@
+exhibit:
+  title: "Contemporary Visions: A Modern Art Journey"
+  curator:
+    name: "Alexandra Reed"
+    contact:
+      email: "alexandra.reed@modernartexpo.com"
+      phone: "+1-555-0123"
+  opening_date: "2023-06-01"
+  closing_date: "2023-09-30"
+  rooms:
+    - name: "The Dawn of Digital"
+      theme: "Exploration of digital media in modern art"
+      artworks:
+        - artist: "Jonathan Smith"
+          title: "Pixelated Reality"
+          year: 2021
+          medium: "Digital Painting"
+          dimensions:
+            height_cm: 120
+            width_cm: 80
+          provenance: "Acquired from the Digital Art Collective, 2021"
+        - artist: "Emily Chen"
+          title: "Virtual Landscapes"
+          year: 2022
+          medium: "3D Printing"
+          dimensions:
+            height_cm: 150
+            width_cm: 100
+          provenance: "Commissioned for the Virtual Art Project, 2022"

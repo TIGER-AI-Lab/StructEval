@@ -1,0 +1,31 @@
+[city]
+name = "Fictionopolis"
+country = "Imagistan"
+population = 500000
+founded = "1900"
+
+[city.mayor]
+name = "Alexandra Smith"
+term_start = "2020-01-15"
+term_end = "2024-01-14"
+
+[[city.landmarks]]
+name = "Liberty Tower"
+type = "Monument"
+year_built = 1985
+architect = "John Doe"
+visitors_per_year = 1000000
+
+[[city.landmarks]]
+name = "Central Park"
+type = "Park"
+year_built = 1920
+architect = "Jane Roe"
+visitors_per_year = 500000
+
+[city.transportation]
+modes = ["Bus", "Metro", "Tram"]
+
+[city.transportation.metro]
+lines = 5
+stations = 50

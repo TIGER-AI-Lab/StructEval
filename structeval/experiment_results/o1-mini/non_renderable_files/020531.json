@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Saturn",
+    "type": "Gas Giant",
+    "distance_from_sun_au": 9.58,
+    "has_rings": true,
+    "moons": 82,
+    "atmosphere": {
+      "composition": "Hydrogen/Helium",
+      "pressure": 140,
+      "layers": [
+        {
+          "name": "Troposphere",
+          "altitude_range_km": "0-250"
+        },
+        {
+          "name": "Stratosphere",
+          "altitude_range_km": "250-1000"
+        }
+      ]
+    },
+    "landing_sites": [
+      {
+        "site_name": "Enceladus Base",
+        "coordinates": {
+          "latitude": -2.5,
+          "longitude": 202.6
+        }
+      },
+      {
+        "site_name": "Titan Outpost",
+        "coordinates": {
+          "latitude": -1.3,
+          "longitude": 210.8
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mars",
+    "type": "Terrestrial",
+    "distance_from_sun_au": 1.52,
+    "has_rings": false,
+    "moons": 2,
+    "atmosphere": {
+      "composition": "CO2/N2/Ar",
+      "pressure": 0.6,
+      "layers": [
+        {
+          "name": "Troposphere",
+          "altitude_range_km": "0-40"
+        },
+        {
+          "name": "Stratosphere",
+          "altitude_range_km": "40-100"
+        }
+      ]
+    },
+    "landing_sites": [
+      {
+        "site_name": "Gale Crater",
+        "coordinates": {
+          "latitude": -5.4,
+          "longitude": 137.8
+        }
+      },
+      {
+        "site_name": "Olympus Base",
+        "coordinates": {
+          "latitude": 18.65,
+          "longitude": 226.2
+        }
+      }
+    ]
+  }
+]

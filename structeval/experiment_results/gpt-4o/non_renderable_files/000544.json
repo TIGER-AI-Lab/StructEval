@@ -1,0 +1,39 @@
+
+{
+  "planet": {
+    "name": "Xenon-5b",
+    "discovery": {
+      "year": 2147,
+      "method": "transit"
+    },
+    "orbital_parameters": {
+      "semi_major_axis": 1.2,
+      "eccentricity": 0.05,
+      "inclination": 89.5
+    },
+    "atmosphere": {
+      "composition": {
+        "primary_gas": "Hydrogen",
+        "trace_gases": ["Helium", "Methane", "Ammonia"]
+      },
+      "pressure": 1.5
+    },
+    "moons": [
+      {
+        "name": "Lunara",
+        "diameter_km": 3200,
+        "orbit": {
+          "period_days": 12.5,
+          "distance_km": 500000
+        }
+      }
+    ],
+    "rings": [
+      {
+        "name": "Aurelia",
+        "radius_inner_km": 70000,
+        "radius_outer_km": 120000
+      }
+    ]
+  }
+}

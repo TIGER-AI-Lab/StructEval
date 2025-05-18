@@ -1,0 +1,38 @@
+
+<recipe>
+  <title>Chocolate Cake</title>
+  <author>
+    <name>John Doe</name>
+    <contact>
+      <email>john.doe@example.com</email>
+      <phone>+1234567890</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Flour</name>
+      <quantity>2</quantity>
+      <unit>kilograms</unit>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Mix flour and eggs</description>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <step>
+      <description>Bake at 180Â°C for 30 minutes</description>
+      <duration_minutes>30</duration_minutes>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>450</calories>
+    <fat_grams>15</fat_grams>
+    <carbohydrates_grams>60</carbohydrates_grams>
+  </nutrition>
+</recipe>

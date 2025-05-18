@@ -1,0 +1,35 @@
+
+city = { 
+    name = "New Haven", 
+    country = "USA", 
+    population = 130000, 
+    founded = "1638", 
+    mayor = { 
+        name = "Jane Doe", 
+        term_start = "2021-01-01", 
+        term_end = "2025-01-01" 
+    }, 
+    landmarks = [ 
+        { 
+            name = "Yale University", 
+            type = "educational institution", 
+            year_built = 1701, 
+            architect = "Multiple", 
+            visitors_per_year = 2000000 
+        }, 
+        { 
+            name = "East Rock Park", 
+            type = "park", 
+            year_built = 1888, 
+            architect = "Frederick Law Olmsted", 
+            visitors_per_year = 500000 
+        } 
+    ], 
+    transportation = { 
+        modes = ["bus", "metro", "bicycle", "taxi"], 
+        metro = { 
+            lines = 3, 
+            stations = 25 
+        } 
+    } 
+}

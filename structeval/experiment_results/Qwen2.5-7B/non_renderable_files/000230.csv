@@ -1,0 +1,41 @@
+
+import pandas as pd
+
+def generate_recipe_csv(recipe_id, recipe_name, chef_name, cuisine_type, difficulty_level, prep_time_minutes, cook_time_minutes, servings, ingredients_list, steps_list, nutrition_calories, nutrition_protein_grams, nutrition_fat_grams, nutrition_carbs_grams):
+    recipe_data = {
+        'recipe_id': [recipe_id],
+        'recipe_name': [recipe_name],
+        'chef_name': [chef_name],
+        'cuisine_type': [cuisine_type],
+        'difficulty_level': [difficulty_level],
+        'prep_time_minutes': [prep_time_minutes],
+        'cook_time_minutes': [cook_time_minutes],
+        'servings': [servings],
+        'ingredients_list': [ingredients_list],
+        'steps_list': [steps_list],
+        'nutrition_calories': [nutrition_calories],
+        'nutrition_protein_grams': [nutrition_protein_grams],
+        'nutrition_fat_grams': [nutrition_fat_grams],
+        'nutrition_carbs_grams': [nutrition_carbs_grams]
+    }
+    recipe_df = pd.DataFrame(recipe_data)
+    return recipe_df.to_csv(index=False)
+
+# Example usage:
+recipe_id = '12345678-1234-5678-1234-567812345678'
+recipe_name = 'Spaghetti Carbonara'
+chef_name = 'Gennaro Contaldo'
+cuisine_type = 'Italian'
+difficulty_level = 'Easy'
+prep_time_minutes = 15
+cook_time_minutes = 10
+servings = 4
+ingredients_list = 'Spaghetti;Eggs;Parmesan cheese;Guanciale'
+steps_list = 'Cook spaghetti;Cook guanciale;Mix eggs and cheese;Combine with spaghetti'
+nutrition_calories = 500
+nutrition_protein_grams = 20
+nutrition_fat_grams = 25
+nutrition_carbs_grams = 40
+
+csv_output = generate_recipe_csv(recipe_id, recipe_name, chef_name, cuisine_type, difficulty_level, prep_time_minutes, cook_time_minutes, servings, ingredients_list, steps_list, nutrition_calories, nutrition_protein_grams, nutrition_fat_grams, nutrition_carbs_grams)
+print(csv_output)

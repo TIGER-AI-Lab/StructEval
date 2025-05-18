@@ -1,0 +1,17 @@
+[brewery]
+name = "Tasty Brews"
+location = { city = "Springfield", country = "USA" }
+founded_year = 2005
+owner = "John Doe"
+
+[beers]
+[beers.0]
+name = "Hoppy IPA"
+type = "IPA"
+abv = 6.2
+ingredients = { malts = ["Two-row", "Caramel"], hops = ["Cascade", "Centennial"], yeast = "US-05" }
+awards = [{ name = "Best IPA", year = 2018 }]
+
+[tours]
+available = true
+schedule = { day = "Saturday" }

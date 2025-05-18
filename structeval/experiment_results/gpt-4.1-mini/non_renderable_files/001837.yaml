@@ -1,0 +1,40 @@
+
+ecosystem:
+  name: "Verdantia Rainforest"
+  location:
+    region: "Equatorial Belt"
+    country: "Fictivia"
+  climate:
+    type: "tropical"
+    average_temperature_celsius: 27.5
+  flora:
+    - species: "Luminara grandis"
+      population_estimate: 120000
+      conservation_status: "Vulnerable"
+    - species: "Silva nocturna"
+      population_estimate: 85000
+      conservation_status: "Least Concern"
+  fauna:
+    - species: "Crimson Leafback Frog"
+      population_estimate: 45000
+      diet: "insectivore"
+      notable_behaviors:
+        - "Nocturnal vocalization to attract mates"
+        - "Camouflages with red leaves during the day"
+        - "Exhibits parental care by guarding eggs"
+    - species: "Glider-tailed Ocelot"
+      population_estimate: 3200
+      diet: "carnivore"
+      notable_behaviors:
+        - "Uses gliding to move between trees"
+        - "Solitary and territorial"
+  research_projects:
+    - title: "Biodiversity Assessment of Verdantia"
+      lead_scientist: "Dr. Elena Marquez"
+      start_year: 2018
+    - title: "Impact of Climate Change on Luminara grandis"
+      lead_scientist: "Prof. Samuel Kwan"
+      start_year: 2021
+    - title: "Behavioral Study of Crimson Leafback Frog"
+      lead_scientist: "Dr. Amina Patel"
+      start_year: 2019

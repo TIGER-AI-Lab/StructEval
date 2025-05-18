@@ -1,0 +1,42 @@
+
+artifact = {
+  name = "Golden Sarcophagus of Pharaoh Tutankhamun",
+  origin = "Ancient Egyptian",
+  discovery = {
+    year = 1922,
+    location = {
+      country = "Egypt",
+      site = "Valley of the Kings"
+    }
+  },
+  materials = [
+    {
+      type = "Gold",
+      age_estimate = 1320
+    },
+    {
+      type = "Lapis Lazuli",
+      age_estimate = 1320
+    }
+  ],
+  dimensions = {
+    height_cm = 1.5,
+    width_cm = 2.0
+  },
+  inscriptions = [
+    {
+      language = "Ancient Egyptian hieroglyphs",
+      content = "The pharaoh lives forever",
+      deciphered = true
+    },
+    {
+      language = "Ancient Egyptian hieroglyphs",
+      content = "The pharaoh's power is eternal",
+      deciphered = false
+    }
+  ],
+  current_location = {
+    museum = "Egyptian Museum in Cairo",
+    acquisition_date = "1922-11-04"
+  }
+}

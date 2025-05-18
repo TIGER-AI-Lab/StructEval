@@ -1,0 +1,82 @@
+<recipe>
+    <title>Spicy Thai Basil Chicken</title>
+    <author>
+        <name>Jane Doe</name>
+        <role>Chef</role>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Chicken breast</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Thai basil leaves</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Garlic cloves</name>
+            <quantity>4</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Red chili</name>
+            <quantity>2</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Soy sauce</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Fish sauce</name>
+            <quantity>1</quantity>
+            <unit>tablespoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vegetable oil</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <instruction>Slice the chicken breast into thin strips.</instruction>
+            <duration_minutes>10</duration_minutes>
+            <tools>Knife, Cutting board</tools>
+        </step>
+        <step>
+            <instruction>Chop the garlic and red chili finely.</instruction>
+            <duration_minutes>5</duration_minutes>
+            <tools>Knife, Cutting board</tools>
+        </step>
+        <step>
+            <instruction>Heat oil in a pan over medium heat and add garlic and chili.</instruction>
+            <duration_minutes>3</duration_minutes>
+            <tools>Pan, Stove</tools>
+        </step>
+        <step>
+            <instruction>Add chicken to the pan and stir-fry until cooked through.</instruction>
+            <duration_minutes>7</duration_minutes>
+            <tools>Pan, Stove, Spatula</tools>
+        </step>
+        <step>
+            <instruction>Add soy sauce, fish sauce, and basil leaves. Stir well.</instruction>
+            <duration_minutes>2</duration_minutes>
+            <tools>Pan, Stove, Spatula</tools>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>350</calories>
+        <protein_grams>30</protein_grams>
+        <fat_grams>15</fat_grams>
+        <carbohydrates_grams>10</carbohydrates_grams>
+    </nutrition>
+    <metadata>
+        <cuisine>Thai</cuisine>
+        <difficulty>Intermediate</difficulty>
+        <published_date>2023-10-15</published_date>
+    </metadata>
+</recipe>

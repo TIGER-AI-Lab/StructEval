@@ -1,0 +1,20 @@
+
+expedition:
+  mission_name: "Deep Ocean Survey X-6"
+  launch_date: "2023-11-15"
+  duration_days: 60
+  crew:
+    - name: "Captain Elena Marquez"
+      role: "Commander"
+      age: 45
+      skills: ["deep-sea navigation", "underwater vehicle operation", "emergency response"]
+    - name: "Dr. Raj Patel"
+      role: "Biologist"
+      age: 38
+      skills: ["deep-sea ecology", "sample analysis", "data collection"]
+  cargo:
+    manifest_id: "M-2023-11-15-001"
+    items:
+      - item_name: "pressure-resistant containers"
+        quantity: 10
+        weight_kg: 500

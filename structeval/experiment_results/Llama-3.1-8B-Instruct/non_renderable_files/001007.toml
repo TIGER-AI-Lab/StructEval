@@ -1,0 +1,41 @@
+
+robot = {
+  model = "Robot-X",
+  serial_number = "RBT-001",
+  manufacturer = {
+    name = "Robotix Inc.",
+    country = "USA"
+  },
+  operating_system = {
+    version = "v1.2.3",
+    release_date = "2022-01-01T00:00:00Z"
+  },
+  sensors = [
+    {
+      type = "lidar",
+      range_meters = 50.0,
+      calibrated = true
+    },
+    {
+      type = "camera",
+      range_meters = 10.0,
+      calibrated = false
+    }
+  ],
+  actuators = [
+    {
+      name = "Gripper",
+      max_force_newtons = 100.0,
+      status = "active"
+    },
+    {
+      name = "Wheel Motor",
+      max_force_newtons = 50.0,
+      status = "inactive"
+    }
+  ],
+  maintenance = {
+    last_service = "2022-06-01T00:00:00Z",
+    next_due = "2023-06-01T00:00:00Z"
+  }
+}

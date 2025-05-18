@@ -1,0 +1,30 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<planet type="terrestrial">
+    <name>Zephyria</name>
+    <atmosphere habitable="true">
+        <composition>Nitrogen, Oxygen, Carbon Dioxide</composition>
+        <pressure>101.3</pressure>
+    </atmosphere>
+    <satellites>
+        <satellite diameter="1234">
+            <name>Lunaris</name>
+            <orbit eccentricity="0.025">
+                <period>27.3</period>
+                <distance>384400</distance>
+            </orbit>
+        </satellite>
+    </satellites>
+    <lifeforms>
+        <lifeform intelligence="sentient">
+            <species>Virelians</species>
+            <population>5000000</population>
+        </lifeform>
+    </lifeforms>
+    <resources>
+        <resource>
+            <type>water</type>
+            <quantity>1000000 liters</quantity>
+        </resource>
+    </resources>
+</planet>

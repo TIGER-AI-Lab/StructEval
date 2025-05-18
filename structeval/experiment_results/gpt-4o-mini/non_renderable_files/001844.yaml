@@ -1,0 +1,29 @@
+
+creature:
+  name: Zylthar
+  species: Xylarian
+  age: 150
+  origin:
+    planet: Vortax
+    galaxy: Andromeda
+  abilities:
+    - type: Telekinesis
+      power_level: 85
+    - type: Bioluminescence
+      power_level: 60
+  appearance:
+    color: Iridescent blue
+    size: large
+    limbs:
+      count: 8
+      types:
+        - tentacles
+        - claws
+        - fins
+  companions:
+    - name: Glim
+      species: Luminara
+      role: Guide
+    - name: Thrax
+      species: Draconis
+      role: Protector

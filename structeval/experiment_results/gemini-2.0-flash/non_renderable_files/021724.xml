@@ -1,0 +1,39 @@
+
+<missions>
+  <mission>
+    <mission_name>Odyssey Alpha</mission_name>
+    <launch_date>2032-07-18</launch_date>
+    <status>Active</status>
+    <crew>
+      <crew_member>
+        <crew_name>Dr. Mira Chen</crew_name>
+        <crew_role>Commander</crew_role>
+        <crew_nationality>Canadian</crew_nationality>
+      </crew_member>
+      <crew_member>
+        <crew_name>Alexei Borodin</crew_name>
+        <crew_role>Engineer</crew_role>
+        <crew_nationality>Russian</crew_nationality>
+      </crew_member>
+    </crew>
+    <payloads>
+      <payload>
+        <payload_type>Satellite</payload_type>
+        <payload_mass_kg>1200</payload_mass_kg>
+        <payload_destination>Low Earth Orbit</payload_destination>
+      </payload>
+      <payload>
+        <payload_type>Rover</payload_type>
+        <payload_mass_kg>850</payload_mass_kg>
+        <payload_destination>Mars</payload_destination>
+      </payload>
+    </payloads>
+    <launch_vehicle>
+      <launch_vehicle_name>Starfire IX</launch_vehicle_name>
+      <launch_vehicle_manufacturer>AstroTech Dynamics</launch_vehicle_manufacturer>
+      <launch_vehicle_thrust_kN>7600</launch_vehicle_thrust_kN>
+    </launch_vehicle>
+    <mission_duration_days>365</mission_duration_days>
+    <successful>TRUE</successful>
+  </mission>
+</missions>

@@ -1,0 +1,27 @@
+
+&lt;galacticZoo&gt;
+  &lt;species&gt;
+    &lt;species&gt;
+      &lt;name&gt;Quazarion&lt;/name&gt;
+      &lt;originPlanet&gt;Zenthara&lt;/originPlanet&gt;
+      &lt;diet&gt;Plasma&lt;/diet&gt;
+      &lt;habitats&gt;
+        &lt;habitatType&gt;
+          &lt;habitatType&gt;Nebula Chamber&lt;/habitatType&gt;
+          &lt;habitatType&gt;Ion Lake&lt;/habitatType&gt;
+        &lt;/habitatType&gt;
+      &lt;/habitats&gt;
+    &lt;/species&gt;
+    &lt;species&gt;
+      &lt;name&gt;Lumifern&lt;/name&gt;
+      &lt;originPlanet&gt;Sylvax&lt;/originPlanet&gt;
+      &lt;diet&gt;Photosynthesis&lt;/diet&gt;
+      &lt;habitats&gt;
+        &lt;habitatType&gt;
+          &lt;habitatType&gt;Crystal Forest&lt;/habitatType&gt;
+          &lt;habitatType&gt;Luminous Meadow&lt;/habitatType&gt;
+        &lt;/habitatType&gt;
+      &lt;/habitats&gt;
+    &lt;/species&gt;
+  &lt;/species&gt;
+&lt;/galacticZoo&gt;

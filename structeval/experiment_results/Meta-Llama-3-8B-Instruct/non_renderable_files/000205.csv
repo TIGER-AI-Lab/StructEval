@@ -1,0 +1,5 @@
+
+"artifact_id","artifact_name","discovery_site","discovery_date","estimated_age_years","artifact_type","material_primary","material_secondary","dimensions_height_cm","dimensions_width_cm","dimensions_depth_cm","condition_status","current_location","associated_civilization","notable_inscriptions"
+"A-2024-001","Ancient Statue","Troy","2024-07-15","2500","statue","bronze","","100.5","30.2","20.1","intact","Troy Museum","Trojan Civilization",""
+"A-2024-002","Roman Vase","Rome","2024-08-20","2000","pottery","terracotta","","50.8","25.1","15.3","fragmented","Vatican Museums","Roman Civilization",""
+"A-2024-003","Egyptian Sarcophagus","Thebes","2024-09-10","3000","funerary","limestone","","150.2","60.5","30.8","restored","Egyptian Museum","Egyptian Civilization",""

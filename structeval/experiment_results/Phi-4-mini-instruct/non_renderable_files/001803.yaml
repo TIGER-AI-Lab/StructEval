@@ -1,0 +1,19 @@
+
+museum:
+  name: "The Fantasia Museum"
+  location:
+    city: "Metropolis"
+    country: "Utopia"
+  founded_year: 1985
+  director:
+    full_name: "Dr. Helena M. Vortex"
+    tenure_years: 12
+  galleries:
+    - title: "The Renaissance Gallery"
+      floor: 2
+      artworks:
+        - artist: "Leonardo da Vinci"
+          title: "The Last Supper"
+          year_created: 1498
+          medium: "Oil on plaster"
+          on_display: true

@@ -1,0 +1,16 @@
+species_name,primary_color,average_height_cm,habitat_type,diet_classification,number_of_legs,average_lifespan_years,endangered_status,native_planet,notable_ability,first_discovered_year,discovered_by,communication_method,social_structure,reproduction_cycle_days
+Kryll,violet,180,swamps,carnivore,6,80,not threatened,Xylos,camouflage,2145,Jaxx Exploration Team,pheromones,hive mind,450
+Zephyr,iridescent blue,150,mountainous,herbivore,4,120,vulnerable,Zephyria,wind manipulation,2200,Dr. Anya Sharma,melodic chirps,nomadic herds,600
+Gronk,grey,250,volcanic,omnivore,2,500,not threatened,Gron,lava immunity,1987,The Galactic Federation,low frequency rumbles,tribal,1200
+Flitterwing,golden,10,forests,herbivore,0,10,not threatened,Sylvan,flight,2301,Ranger Elara,bioluminescence,swarms,30
+Aquarian,deep blue,200,oceanic caves,carnivore,0,200,endangered,Aqua,echolocation,2250,Admiral Kaito,sonic pulses,solitary,730
+Lumiflora,glowing green,50,underground caverns,herbivore,2,30,not threatened,Subterra,photosynthesis,2190,Mining Guild 7,bioluminescence,small family groups,90
+Crystalline,clear,160,arctic plains,herbivore,4,150,vulnerable,Glacia,ice manipulation,2280,Polaris Expedition,telepathy,herd,500
+Sylvanian,brown,175,forests,omnivore,2,70,not threatened,Sylvan,shapeshifting,2301,Ranger Elara,vocalizations,tribal,365
+Nocturne,black,210,deserts,carnivore,6,100,not threatened,Aridus,night vision,2100,Nomad Clan,hisses and clicks,packs,400
+Solaris,bright yellow,100,deserts,herbivore,4,50,not threatened,Solara,energy absorption,2222,Solara Research Team,light pulses,herds,200
+Terraform,green,200,forests,omnivore,2,300,not threatened,Terra,plant manipulation,2050,Terraforming Initiative,psychic links,communal,800
+Sky Wanderer,silver,190,aerial,carnivore,2,180,vulnerable,Nimbus,weather manipulation,2350,Cloud City Observatory,air currents,solitary,650
+Rockhide,brown and grey,220,mountainous,herbivore,4,250,not threatened,Petra,rock camouflage,2175,Petra Geological Survey,vibrations,small groups,900
+Shadow Walker,dark purple,170,swamps,carnivore,2,90,endangered,Styx,shadow manipulation,2290,Styx Shadow Hunters,telepathy,lone wolves,550
+Mind Weaver,lavender,165,plains,omnivore,4,120,not threatened,Psion,telepathy,2320,Psionic Research Institute,mental projections,hive mind,700

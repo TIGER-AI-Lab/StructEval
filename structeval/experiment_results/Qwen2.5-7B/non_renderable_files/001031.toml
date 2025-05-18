@@ -1,0 +1,31 @@
+[artifact]
+name = "The Enigma Crystal"
+discovery_date = "1975-08-12"
+[artifact.origin]
+culture = "Unknown Civilization"
+region = "Lost City"
+period = "Prehistoric"
+[artifact.dimensions]
+height_cm = 15.5
+width_cm = 10.2
+depth_cm = 3.8
+[artifact.materials]
+- "Quartz"
+- "Gold"
+- "Lapis Lazuli"
+[artifact.condition]
+current_state = "Good"
+[artifact.condition.restoration_history]
+- date = "2005-06-15"
+  description = "Surface cleaning and minor repairs"
+[artifact.provenance]
+owners = [
+  { name = "Dr. Amelia Thompson", acquisition_year = 2005 }
+]
+[artifact.exhibitions]
+- title = "Ancient Treasures Exhibition"
+  location = "Smithsonian Museum"
+  year = 2010
+- title = "Lost Civilizations Showcase"
+  location = "British Museum"
+  year = 2015

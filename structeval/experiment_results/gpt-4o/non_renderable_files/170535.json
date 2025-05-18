@@ -1,0 +1,40 @@
+{
+  "planetarium": {
+    "planets": [
+      {
+        "name": "Zephyra",
+        "type": "Gas Giant",
+        "moons": [
+          {
+            "moon_name": "Cirrus",
+            "diameter_km": 1500,
+            "features": [
+              "Ice Caves",
+              "Volcanoes"
+            ]
+          },
+          {
+            "moon_name": "Stratus",
+            "diameter_km": 800,
+            "features": [
+              "Crystal Forests"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Solara",
+        "type": "Terrestrial",
+        "moons": [
+          {
+            "moon_name": "Lumen",
+            "diameter_km": 500,
+            "features": [
+              "Glowstone Canyons"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

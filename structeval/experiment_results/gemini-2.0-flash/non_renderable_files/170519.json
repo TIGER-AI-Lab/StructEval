@@ -1,0 +1,42 @@
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "stars": {
+      "star": [
+        {
+          "name": "Alpha Centauri",
+          "planets": {
+            "planet": [
+              {
+                "name": "Proxima b",
+                "moons": {
+                  "moon": [
+                    "Selene",
+                    "Luna"
+                  ]
+                }
+              },
+              {
+                "name": "Proxima c",
+                "moons": {
+                  "moon": "Umbra"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "Betelgeuse",
+          "planets": {
+            "planet": {
+              "name": "Betel One",
+              "moons": {
+                "moon": "Crimson"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

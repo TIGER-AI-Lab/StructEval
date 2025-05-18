@@ -1,0 +1,34 @@
+brewery:
+  name: "Foggy Mountain Brewhouse"
+  location:
+    city: "Asheville"
+    country: "USA"
+  founded_year: 2010
+  owner: "John Doe"
+  beers:
+    - name: "Misty Mountain IPA"
+      style: "IPA"
+      abv: 6.8
+      awards:
+        - title: "Gold Medal, Great American Beer Festival"
+          year: 2022
+        - title: "Best IPA, Asheville Beer Week"
+          year: 2023
+      ingredients:
+        hops:
+          - "Citra"
+          - "Mosaic"
+          - "Simcoe"
+        malts:
+          - "Pale Malt"
+          - "Crystal Malt"
+        yeast: "Ale Yeast"
+  tours:
+    available: true
+    schedule:
+      - day: "Saturday"
+        start_time: "14:00"
+        duration_minutes: 60
+      - day: "Sunday"
+        start_time: "12:00"
+        duration_minutes: 45

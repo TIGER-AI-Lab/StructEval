@@ -1,0 +1,29 @@
+creature:
+  name: Zephyr
+  species: Sky Serpent
+  age: 55
+  habitat:
+    type: Mountain Peaks
+    location: The Azure Range
+    features:
+      - Jagged cliffs
+      - High altitude winds
+      - Sparse vegetation
+  abilities:
+    - name: Wind Manipulation
+      description: Controls air currents to fly and create gusts.
+      power_level: 8
+    - name: Camouflage
+      description: Blends seamlessly with the sky.
+      power_level: 6
+  diet:
+    primary_food: Mountain Goats
+    secondary_foods:
+      - Birds
+      - Small Mammals
+    feeding_times:
+      - "07:00"
+      - "18:00"
+  social_behavior:
+    group_size: 3
+    hierarchy: Alpha-led

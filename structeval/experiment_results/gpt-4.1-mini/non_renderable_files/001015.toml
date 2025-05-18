@@ -1,0 +1,30 @@
+
+[artifact]
+title = "Celestial Orb of Aetheria"
+year_created = 1423
+
+[artifact.creator]
+name = "Liora Venn"
+affiliation = "Guild of Arcane Artisans"
+
+[artifact.dimensions]
+height_cm = 35.7
+width_cm = 35.7
+
+[[artifact.materials]]
+type = "Moonstone"
+source = "Lunar mines of Selene"
+
+[[artifact.materials]]
+type = "Silver filigree"
+source = "Riverbanks of Eldoria"
+
+[[artifact.exhibitions]]
+name = "Mysteries of the Ancient World"
+location = "Grand Museum of Antiquities, Eldoria"
+[artifact.exhibitions.date_range]
+start = "2019-05-10"
+end = "2019-11-30"
+
+[artifact.provenance]
+previous_owners = ["Duchess Marielle of Aetheria", "High Council of Eldoria", "Private collector J. H. Marston"]

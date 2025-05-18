@@ -1,0 +1,40 @@
+{
+  "artifact": {
+    "name": "The Enigmatic Disk",
+    "civilization": "Unknown",
+    "era": "Prehistoric",
+    "description": "A mysterious disk with unknown symbols and markings.",
+    "discovery": {
+      "date": "2021-07-15",
+      "location": {
+        "latitude": 34.0522,
+        "longitude": -118.2437
+      },
+      "team": [
+        {
+          "member_name": "Dr. Jane Smith",
+          "role": "Archaeologist"
+        },
+        {
+          "member_name": "Dr. John Doe",
+          "role": "Historian"
+        }
+      ]
+    },
+    "materials": [
+      {
+        "type": "stone",
+        "percentage": 75
+      },
+      {
+        "type": "metal",
+        "percentage": 25
+      }
+    ],
+    "dimensions": {
+      "height_cm": 10.5,
+      "width_cm": 8.2,
+      "depth_cm": 2.3
+    }
+  }
+}

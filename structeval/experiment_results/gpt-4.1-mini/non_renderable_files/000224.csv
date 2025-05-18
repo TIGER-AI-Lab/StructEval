@@ -1,0 +1,11 @@
+book_id,title,author_name,author_birth_year,genre,publication_year,publisher_name,publisher_country,pages,language,series_name,series_number,isbn_13,average_rating,review_count
+1,The Enchanted Forest,Lila Greenwood,1975,Fantasy,2010,Silver Oak Publishing,United States,432,English,Whispering Woods,1,9781234567897,4.3,1245
+2,Stars Beyond the Void,Marcus Eldridge,1982,Science Fiction,2015,Galactic Press,United Kingdom,389,English,Void Chronicles,2,9789876543210,4.7,987
+3,The Last Alchemist,Elena Voss,1968,Fantasy,2008,Dragonfly Books,Canada,510,English,, ,9781112223334,4.1,654
+4,Neon City Nights,Jason K. Lee,1990,Cyberpunk,2020,Neon Wave Publishing,South Korea,298,English,Neon City,1,9785556667778,3.9,432
+5,The Quantum Paradox,Sophia Martinez,1978,Science Fiction,2012,Infinity Press,United States,450,English,, ,9784445556661,4.5,789
+6,Whispers of the Ancients,Amara N'Diaye,1985,Historical Fantasy,2018,Heritage House,France,375,English,Ancient Echoes,3,9783334445552,4.2,321
+7,Galactic Outlaws,Victor Chen,1972,Space Opera,2011,Starbound Media,Australia,410,English,Starbound Saga,4,9782223334443,4.6,1100
+8,The Silent Horizon,Isabella Rossi,1988,Thriller,2019,Crimson Leaf Publishing,Italy,320,English,, ,9786667778889,3.8,215
+9,Realm of Shadows,David Kim,1979,Dark Fantasy,2013,Shadowspire Press,United States,480,English,Shadow Realm,2,9787778889990,4.4,540
+10,Chronicles of the Lost Empire,Anya Petrova,1965,Historical Fiction,2005,Imperial House,Russia,600,English,Empire Chronicles,1,9788889990001,4.0,430

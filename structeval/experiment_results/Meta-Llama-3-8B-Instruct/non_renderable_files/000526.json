@@ -1,0 +1,32 @@
+
+{
+  "museum": {
+    "name": "The Art Museum",
+    "location": {
+      "city": "New York",
+      "country": "USA"
+    },
+    "established_year": 1920,
+    "director": {
+      "name": "John Smith",
+      "tenure_years": 10
+    },
+    "exhibits": [
+      {
+        "title": "The Starry Night",
+        "artist": "Vincent van Gogh",
+        "year_created": 1889,
+        "medium": "oil on canvas",
+        "dimensions": {
+          "height_cm": 100,
+          "width_cm": 120
+        },
+        "on_display": true,
+        "provenance": {
+          "previous_owners": ["Private Collector", "Museum of Modern Art"],
+          "acquisition_date": "2020-02-15T12:00:00.000Z"
+        }
+      }
+    ]
+  }
+}

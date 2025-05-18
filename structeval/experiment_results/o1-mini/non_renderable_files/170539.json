@@ -1,0 +1,31 @@
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "planets": [
+      {
+        "name": "Zephyra",
+        "type": "Gas Giant",
+        "moons": [
+          {
+            "name": "Echo",
+            "diameter": 3400
+          },
+          {
+            "name": "Nyx",
+            "diameter": 2100
+          }
+        ]
+      },
+      {
+        "name": "Quillon",
+        "type": "Rocky",
+        "moons": [
+          {
+            "name": "Pyra",
+            "diameter": 800
+          }
+        ]
+      }
+    ]
+  }
+}

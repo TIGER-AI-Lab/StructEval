@@ -1,0 +1,13 @@
+
+museum:
+  name: "The Clockwork Gallery"
+  location:
+    city: "Gearford"
+    country: "Mechatronia"
+  exhibits:
+    - title: "The Steam Owl"
+      artist: "Ada Cogsworth"
+      year: 1877
+    - title: "Chrono Carousel"
+      artist: "Jules Ticktock"
+      year: 1883

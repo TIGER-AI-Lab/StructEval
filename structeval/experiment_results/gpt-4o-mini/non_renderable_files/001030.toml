@@ -1,0 +1,29 @@
+
+name = "Zyphoria"
+
+[planet.discovery]
+year = 2025
+method = "transit"
+
+[planet.orbit]
+semi_major_axis = 1.5
+eccentricity = 0.03
+period_days = 365
+
+[[planet.atmosphere.composition]]
+gas = "Nitrogen"
+percentage = 78.0
+
+[[planet.atmosphere.composition]]
+gas = "Oxygen"
+percentage = 21.0
+
+[[planet.satellites]]
+name = "Lunara"
+diameter_km = 3200.5
+
+[[planet.satellites]]
+name = "Celestra"
+diameter_km = 1500.2
+
+habitable = true

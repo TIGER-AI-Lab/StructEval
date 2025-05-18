@@ -1,0 +1,52 @@
+
+<creature>
+  <name>Celestial Luminaris</name>
+  <species>Stellar Draconid</species>
+  <habitat>
+    <region>Andromeda Nebula</region>
+    <climate>Low-gravity, ionized gas clouds with fluctuating electromagnetic storms</climate>
+  </habitat>
+  <traits>
+    <trait>
+      <traitName>Bioluminescence</traitName>
+      <severity>8</severity>
+      <description>Emits radiant light from scales to communicate and navigate dark nebulae.</description>
+    </trait>
+    <trait>
+      <traitName>Electromagnetic Sensitivity</traitName>
+      <severity>9</severity>
+      <description>Can sense and manipulate electromagnetic fields for defense and hunting.</description>
+    </trait>
+    <trait>
+      <traitName>Gravity Adaptation</traitName>
+      <severity>7</severity>
+      <description>Physiologically adapted to survive and move in near-zero gravity environments.</description>
+    </trait>
+  </traits>
+  <abilities>
+    <ability>
+      <abilityName>Stellar Flare</abilityName>
+      <cooldownSeconds>120</cooldownSeconds>
+      <effect>Releases a burst of intense light and electromagnetic energy to stun prey or enemies.</effect>
+    </ability>
+    <ability>
+      <abilityName>Phase Shift</abilityName>
+      <cooldownSeconds>300</cooldownSeconds>
+      <effect>Allows temporary intangible movement through solid matter by altering quantum state.</effect>
+    </ability>
+  </abilities>
+  <appearance>
+    <color>
+      <primary>Iridium Blue</primary>
+      <secondary>Silver White</secondary>
+    </color>
+    <size>
+      <heightCm>250</heightCm>
+      <weightKg>180</weightKg>
+    </size>
+  </appearance>
+  <discovery>
+    <dateDiscovered>2024-04-15</dateDiscovered>
+    <discoveredBy>Galactic Research Institute</discoveredBy>
+  </discovery>
+</creature>

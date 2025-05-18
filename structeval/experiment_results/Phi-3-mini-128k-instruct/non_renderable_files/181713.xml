@@ -1,0 +1,25 @@
+
+  <galacticZoo>
+    <species>
+      <name>Lumina Fox</name>
+      <originPlanet>Zephyra</originPlanet>
+      <diet>photonic nectar</diet>
+      <abilities>
+        <ability>
+          <LightBending/>
+          <TelepathicChirping/>
+        </ability>
+      </abilities>
+    </species>
+    <species>
+      <name>Nebula Tortoise</name>
+      <originPlanet>Orionis</originPlanet>
+      <diet>cosmic algae</diet>
+      <abilities>
+        <ability>
+          <TemporalShell/>
+          <StarMapping/>
+        </ability>
+      </abilities>
+    </species>
+  </galacticZoo>

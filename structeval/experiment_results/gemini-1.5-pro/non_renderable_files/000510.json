@@ -1,0 +1,49 @@
+{
+  "museum": {
+    "name": "Museum of Imaginary Arts",
+    "location": {
+      "city": "Dreamhaven",
+      "country": "Fantasia"
+    },
+    "established_year": 2005,
+    "director": {
+      "full_name": "Alistair Dreamweaver",
+      "start_date": "2018-03-15"
+    },
+    "galleries": [
+      {
+        "title": "Gallery of Dreamscapes",
+        "theme": "Surrealist and visionary art",
+        "artworks": [
+          {
+            "title": "Whispers of the Aether",
+            "artist": "Celestia Starfire",
+            "year_created": 2002,
+            "medium": "Oil on canvas",
+            "dimensions": "120x80 cm"
+          },
+          {
+            "title": "The Clockwork Heart",
+            "artist": "Geargrind Gremlin",
+            "year_created": 2015,
+            "medium": "Mixed media sculpture",
+            "dimensions": "60x40x30 cm"
+          }
+        ]
+      },
+      {
+        "title": "Hall of Illusions",
+        "theme": "Optical illusions and kinetic art",
+        "artworks": [
+          {
+            "title": "Twisted Perspectives",
+            "artist": "M.C. Escher Jr.",
+            "year_created": 2022,
+            "medium": "Digital print",
+            "dimensions": "80x60 cm"
+          }
+        ]
+      }
+    ]
+  }
+}

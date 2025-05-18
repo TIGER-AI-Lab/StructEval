@@ -1,0 +1,25 @@
+
+exhibit:
+  title: "Whispers of the Past"
+  curator:
+    name: "Dr. Helena M. Voss"
+    contact_email: "helena.voss@artmuseum.org"
+  opening_date: "2023-05-15"
+  closing_date: "2023-08-20"
+  artworks:
+    - artist: "Leonardo da Vinci"
+      title: "The Enigmatic Smile"
+      year_created: 1503
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 73
+        width_cm: 92
+      provenance:
+        previous_owners:
+          - "The Medici Family"
+          - "The British Museum"
+          - "The Louvre"
+        acquisition_date: "2023-01-10"
+      on_loan: false
+      gallery_location:
+        room_number: "5A"

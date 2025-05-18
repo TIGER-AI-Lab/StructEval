@@ -1,0 +1,40 @@
+{
+  "creature": {
+    "name": "Shadowstrider",
+    "species": "Nocturnus umbra",
+    "stats": {
+      "height_cm": 180,
+      "weight_kg": 75,
+      "lifespan_years": 150
+    },
+    "habitat": {
+      "type": "forest",
+      "location": "Shadowfen",
+      "climate": "temperate"
+    },
+    "abilities": [
+      {
+        "name": "Shadow Meld",
+        "description": "Allows the creature to merge with shadows, becoming virtually invisible.",
+        "power_level": 8
+      },
+      {
+        "name": "Silent Movement",
+        "description": "Enables near-silent locomotion, ideal for ambushing prey.",
+        "power_level": 6
+      }
+    ],
+    "diet": {
+      "primary_foods": [
+        "small mammals",
+        "birds",
+        "fish"
+      ],
+      "is_carnivorous": true
+    },
+    "social_behavior": {
+      "group_size": 2,
+      "hierarchy": "pair"
+    }
+  }
+}

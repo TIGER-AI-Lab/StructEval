@@ -1,0 +1,5 @@
+
+"creature_id","species_name","habitat.region","habitat.climate","habitat.elevation_range","features.size","features.color_pattern","features.average_lifespan_years","abilities[0].name","abilities[0].description","abilities[0].power_level","abilities[1].name","abilities[1.description","abilities[1].power_level","diet.primary_foods"
+"001","Mythical Phoenix","Sahara Desert","arid","sea level to 2000m","2 meters","golden with red flames","100","Rebirth","The creature can be reborn from its ashes after dying,","10","Transformation","The creature can transform into a human form for a short period","Fruits, seeds, small animals
+"002","Luminous Leviathan","Atlantic Ocean","marine","0 to 3000m","10 meters","iridescent scales","150","Bioluminescence","The creature emits a soft glow to attract prey,","8","Camouflage","The creature can blend into the ocean depths,","Fish, crustaceans, plankton
+"003","Celestial Centaur","Mount Olympus","temperate","0 to 2000m","5 meters","white with blue mane","120","Flight","The creature can fly using its wings,","7","Herbalism","The creature can heal wounds with its herbal knowledge","Grass, herbs, fruits

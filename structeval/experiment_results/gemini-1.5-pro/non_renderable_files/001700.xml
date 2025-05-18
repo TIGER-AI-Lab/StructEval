@@ -1,0 +1,81 @@
+<recipe>
+  <title>Galactic Guacamole</title>
+  <author>
+    <name>Cosmo Kramer</name>
+    <contact>
+      <email>kramer@example.com</email>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Avocados</name>
+      <quantity>3</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Space Dust (Edible Glitter)</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+    <ingredient>
+      <name>Neutron Star Nectar (Lime Juice)</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>Cosmic Salt</name>
+      <quantity>0.5</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <order>1</order>
+      <instruction>Halve the avocados and remove the pits.</instruction>
+      <duration>
+        <minutes>2</minutes>
+      </duration>
+    </step>
+    <step>
+      <order>2</order>
+      <instruction>Scoop the avocado flesh into a bowl.</instruction>
+      <duration>
+        <minutes>1</minutes>
+      </duration>
+    </step>
+    <step>
+      <order>3</order>
+      <instruction>Add the Neutron Star Nectar, Cosmic Salt, and Space Dust.</instruction>
+      <duration>
+        <minutes>1</minutes>
+      </duration>
+    </step>
+    <step>
+      <order>4</order>
+      <instruction>Mash everything together until desired consistency.</instruction>
+      <duration>
+        <minutes>3</minutes>
+      </duration>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>250</calories>
+    <fat>
+      <grams>20</grams>
+    </fat>
+    <protein>
+      <grams>3</grams>
+    </protein>
+    <carbohydrates>
+      <grams>10</grams>
+    </carbohydrates>
+  </nutrition>
+  <tags>
+    <tag>vegan</tag>
+    <tag>appetizer</tag>
+    <tag>space</tag>
+  </tags>
+  <metadata>
+    <created_at>2023-10-27T12:00:00Z</created_at>
+  </metadata>
+</recipe>

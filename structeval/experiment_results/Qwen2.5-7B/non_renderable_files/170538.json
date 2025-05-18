@@ -1,0 +1,55 @@
+python
+import xmltodict
+import json
+
+xml_data = """
+<galaxy>
+  <name>Andromeda</name>
+  <star_systems>
+    <star_system>
+      <system_name>Alpha Prime</system_name>
+      <planets>
+        <planet>
+          <planet_name>Zylox</planet_name>
+          <inhabitants>
+            <inhabitant>
+              <species>Glorbian</species>
+              <population>12000</population>
+            </inhabitant>
+            <inhabitant>
+              <species>Robots</species>
+              <population>3000</population>
+            </inhabitant>
+          </inhabitants>
+        </planet>
+      </planets>
+    </star_system>
+    <star_system>
+      <system_name>Beta Minor</system_name>
+      <planets>
+        <planet>
+          <planet_name>Quintar</planet_name>
+          <inhabitants>
+            <inhabitant>
+              <species>Humanoid</species>
+              <population>500</population>
+            </inhabitant>
+          </inhabitants>
+        </planet>
+        <planet>
+          <planet_name>Vortax</planet_name>
+          <inhabitants>
+            <inhabitant>
+              <species>Crystal Entity</species>
+              <population>42</population>
+            </inhabitant>
+          </inhabitants>
+        </planet>
+      </planets>
+    </star_system>
+  </star_systems>
+</galaxy>
+"""
+
+json_data = json.dumps(xmltodict.parse(xml_data), indent=4)
+print(json_data)

@@ -1,0 +1,29 @@
+
+alien_artifacts.csv:
+artifact_name,discovery_year,planet_of_origin,material,estimated_value_millions,last_auction_date
+'Zylox Prism',2187,'Vortax-3','Crystalline Alloy',12.5,'2321-05-22'
+'Nebulite Coin',2201,'Nebula Prime','Compressed Nebulite',3.2,'2323-11-09'
+'Quasar Relic',2199,'Quasar IV','Dark Matter Alloy',18.9,'2320-02-14'
+'Glython Tablet',2210,'Glython','Bio-metallic Stone',7.4,'2322-08-01'
+'Orion Sphere',2183,'Orion Delta','Luminescent Glass',14.7,'2324-03-18'
+'Tarnis Cube',2205,'Tarnis Minor','Quantum Steel',9.0,'2323-01-27'
+
+# To generate the CSV file, use the following Python code:
+import csv
+
+data = [
+  {'artifact_name': 'Zylox Prism', 'discovery_year': 2187, 'planet_of_origin': 'Vortax-3', 'material': 'Crystalline Alloy', 'estimated_value_millions': 12.5, 'last_auction_date': '2321-05-22'},
+  {'artifact_name': 'Nebulite Coin', 'discovery_year': 2201, 'planet_of_origin': 'Nebula Prime', 'material': 'Compressed Nebulite', 'estimated_value_millions': 3.2, 'last_auction_date': '2323-11-09'},
+  {'artifact_name': 'Quasar Relic', 'discovery_year': 2199, 'planet_of_origin': 'Quasar IV', 'material': 'Dark Matter Alloy', 'estimated_value_millions': 18.9, 'last_auction_date': '2320-02-14'},
+  {'artifact_name': 'Glython Tablet', 'discovery_year': 2210, 'planet_of_origin': 'Glython', 'material': 'Bio-metallic Stone', 'estimated_value_millions': 7.4, 'last_auction_date': '2322-08-01'},
+  {'artifact_name': 'Orion Sphere', 'discovery_year': 2183, 'planet_of_origin': 'Orion Delta', 'material': 'Luminescent Glass', 'estimated_value_millions': 14.7, 'last_auction_date': '2324-03-18'},
+  {'artifact_name': 'Tarnis Cube', 'discovery_year': 2205, 'planet_of_origin': 'Tarnis Minor', 'material': 'Quantum Steel', 'estimated_value_millions': 9.0, 'last_auction_date': '2323-01-27'}
+]
+
+with open('alien_artifacts.csv', 'w', newline='') as csvfile:
+  fieldnames = ['artifact_name', 'discovery_year', 'planet_of_origin', 'material', 'estimated_value_millions', 'last_auction_date']
+  writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+  writer.writeheader()
+  for row in data:
+    writer.writerow(row)

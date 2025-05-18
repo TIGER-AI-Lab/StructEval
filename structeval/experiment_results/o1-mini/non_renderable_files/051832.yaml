@@ -1,0 +1,28 @@
+
+spaceStation:
+  name: "Celestial Haven"
+  location:
+    planet: "Jovian Prime"
+    sector: "Gamma-4"
+  crew:
+    - name: "Dr. Zia Tran"
+      role: "Commander"
+      species: "Human"
+    - name: "R8-Unit 42"
+      role: "Engineer"
+      species: "Android"
+    - name: "Lumo"
+      role: "Biologist"
+      species: "Lumarian"
+  modules:
+    - id: "M-01"
+      type: "Habitat"
+      status: "Active"
+    - id: "M-02"
+      type: "Research"
+      status: "Maintenance"
+  powerCore:
+    outputMW: 250
+    fuelType: "Antimatter"
+  operational: true
+  launchDate: "2124-09-17"

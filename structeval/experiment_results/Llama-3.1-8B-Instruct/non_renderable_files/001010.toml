@@ -1,0 +1,49 @@
+
+recipe = {
+  [field] = "Tomato Pasta",
+  author = "John Doe",
+  cuisine = "Italian",
+  difficulty = "medium",
+  prep_time = {
+    [minutes] = 15
+  },
+  cook_time = {
+    [minutes] = 20
+  },
+  ingredients = [
+    {
+      [name] = "Tomatoes",
+      [quantity] = 2,
+      [unit] = "cups",
+      [optional] = false
+    },
+    {
+      [name] = "Pasta",
+      [quantity] = 1,
+      [unit] = "cup",
+      [optional] = false
+    },
+    {
+      [name] = "Basil",
+      [quantity] = 1,
+      [unit] = "tablespoon",
+      [optional] = true
+    }
+  ],
+  steps = [
+    {
+      [description] = "Boil the pasta in water.",
+      [duration_minutes] = 10
+    },
+    {
+      [description] = "Heat the tomatoes in a pan.",
+      [duration_minutes] = 5
+    }
+  ],
+  nutrition = {
+    [calories] = 250,
+    [protein_grams] = 10,
+    [fat_grams] = 10,
+    [carbohydrates_grams] = 30
+  }
+}

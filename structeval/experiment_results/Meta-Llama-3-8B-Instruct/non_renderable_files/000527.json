@@ -1,0 +1,34 @@
+
+{
+  "ecosystem": {
+    "name": "The Great Barrier Reef",
+    "location": {
+      "region": "Australia",
+      "coordinates": {
+        "latitude": -20.5,
+        "longitude": 146.5
+      }
+    },
+    "climate": {
+      "type": "tropical",
+      "average_temperature_celsius": 25.5,
+      "rainfall_mm_per_year": 1500
+    },
+    "species": [
+      {
+        "common_name": "Coral Trout",
+        "scientific_name": "Plectropomus leopardus",
+        "population_estimate": 100000,
+        "conservation_status": "Vulnerable",
+        "diet": {
+          "primary_foods": ["brine shrimp", "plankton"]
+        },
+        "habitat": {
+          "description": "Coral reefs and rocky crevices",
+          "area_sq_km": 10
+        },
+        "notable_behaviors": ["schooling behavior", "nocturnal feeding"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+
+creature:
+  name: Zorvath
+  species: Cephalopod
+  origin:
+    planet: Xeridia-IV
+    galaxy: Andromeda
+  abilities:
+  - type: Energy Projection
+    description: Zorvath can project energy blasts from its tentacles to stun or disorient its enemies.
+    power_level: 7
+  - type: Camouflage
+    description: Zorvath can change the color and texture of its skin to blend in with its surroundings, making it nearly invisible.
+    power_level: 5
+  physical_traits:
+    height_cm: 250
+    coloration: Iridescent blue and green stripes
+    limbs:
+      count: 8
+      types:
+      - arm
+      - tentacle
+  history:
+    first_sighting:
+      date: 2050-02-14T14:30:00Z
+      location: Neptune's orbit
+    known_encounters:
+    - date: 2055-08-20T10:45:00Z
+      description: Zorvath was spotted near a research station on Mars, but it did not interact with the humans.
+    - date: 2060-03-15T02:15:00Z
+      description: Zorvath was seen attacking a spaceship in the Kuiper Belt, but it was repelled by the ship's defenses.

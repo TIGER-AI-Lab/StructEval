@@ -1,0 +1,19 @@
+<museum>
+  <name>Museum of Imaginary Cartography</name>
+  <location>
+    <city>Eldoria</city>
+    <country>Fabeland</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Map of the Floating Isles</title>
+      <year>1723</year>
+      <artist>Lira Ventis</artist>
+    </exhibit>
+    <exhibit>
+      <title>Chart of the Subterranean Seas</title>
+      <year>1810</year>
+      <artist>Galen Deepwater</artist>
+    </exhibit>
+  </exhibits>
+</museum>

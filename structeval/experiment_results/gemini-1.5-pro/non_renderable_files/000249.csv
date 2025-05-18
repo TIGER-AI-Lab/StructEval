@@ -1,0 +1,8 @@
+character_name,species,home_planet,rank,assignment.mission_name,assignment.start_date,assignment.end_date,assignment.status,skills[0].skill_name,skills[0].proficiency,skills[1].skill_name,skills[1].proficiency,equipment[0].item_name,equipment[0].quantity,equipment[1].item_name
+James T. Kirk,Human,Earth,Captain,Exploration of the Galaxy,2264-01-01,,Active,Starship Command,10,Diplomacy,8,Phaser,1,Communicator
+Spock,Vulcan,Vulcan,Commander,Exploration of the Galaxy,2264-01-01,,Active,Science,10,Logic,9,Tricorder,1,Hypospray
+Leonard McCoy,Human,Earth,Chief Medical Officer,Exploration of the Galaxy,2264-01-01,,Active,Medicine,9,Sarcasm,7,Medical Tricorder,1,Hypospray
+Montgomery Scott,Human,Scotland,Chief Engineer,Exploration of the Galaxy,2264-01-01,,Active,Engineering,10,Whisky Appreciation,8,Warp Field Stabilizer,2,Toolkit
+Uhura,Human,United States of Africa,Lieutenant Commander,Exploration of the Galaxy,2264-01-01,,Active,Communications,9,Linguistics,10,Communicator,1,Ear Piece
+Hikaru Sulu,Human,San Francisco,Lieutenant,Exploration of the Galaxy,2264-01-01,,Active,Helmsmanship,9,Botany,6,Phaser,1,Communicator
+Pavel Chekov,Human,Soviet Union,Ensign,Exploration of the Galaxy,2264-01-01,,Active,Navigation,8,Chess,7,Phaser,1,Communicator

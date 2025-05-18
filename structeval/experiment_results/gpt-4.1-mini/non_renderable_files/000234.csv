@@ -1,0 +1,77 @@
+import csv
+import uuid
+
+def artifact_to_csv_row(artifact):
+    """
+    Convert an artifact dictionary to a CSV row with required fields.
+    The artifact dictionary should contain keys matching the required fields except artifact_id,
+    which will be generated uniquely.
+    """
+    artifact_id = str(uuid.uuid4()).replace('-', '')[:12]  # unique alphanumeric id (12 chars)
+    row = {
+        'artifact_id': artifact_id,
+        'artifact_name': artifact.get('artifact_name', ''),
+        'artifact_type': artifact.get('artifact_type', ''),
+        'discovery_site': artifact.get('discovery_site', ''),
+        'discovery_country': artifact.get('discovery_country', ''),
+        'discovery_year': int(artifact.get('discovery_year', 0)),
+        'estimated_age_years': int(artifact.get('estimated_age_years', 0)),
+        'material': artifact.get('material', ''),
+        'current_location': artifact.get('current_location', ''),
+        'dimensions_height_cm': float(artifact.get('dimensions_height_cm', 0)),
+        'dimensions_width_cm': float(artifact.get('dimensions_width_cm', 0)),
+        'dimensions_depth_cm': float(artifact.get('dimensions_depth_cm', 0)),
+        'condition_status': artifact.get('condition_status', ''),
+        'associated_culture': artifact.get('associated_culture', ''),
+        'notable_features': artifact.get('notable_features', '')
+    }
+    return row
+
+def write_artifacts_to_csv(artifacts, filename):
+    """
+    Write a list of artifact dictionaries to a CSV file with the required fields.
+    """
+    fieldnames = [
+        'artifact_id',
+        'artifact_name',
+        'artifact_type',
+        'discovery_site',
+        'discovery_country',
+        'discovery_year',
+        'estimated_age_years',
+        'material',
+        'current_location',
+        'dimensions_height_cm',
+        'dimensions_width_cm',
+        'dimensions_depth_cm',
+        'condition_status',
+        'associated_culture',
+        'notable_features'
+    ]
+    with open(filename, mode='w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for artifact in artifacts:
+            row = artifact_to_csv_row(artifact)
+            writer.writerow(row)
+
+# Example usage:
+# artifacts = [
+#     {
+#         'artifact_name': 'Venus of Willendorf',
+#         'artifact_type': 'statue',
+#         'discovery_site': 'Willendorf',
+#         'discovery_country': 'Austria',
+#         'discovery_year': 1908,
+#         'estimated_age_years': 25000,
+#         'material': 'limestone',
+#         'current_location': 'Natural History Museum, Vienna',
+#         'dimensions_height_cm': 11.1,
+#         'dimensions_width_cm': 5.6,
+#         'dimensions_depth_cm': 4.3,
+#         'condition_status': 'intact',
+#         'associated_culture': 'Paleolithic',
+#         'notable_features': 'Exaggerated female features, detailed hair pattern'
+#     }
+# ]
+# write_artifacts_to_csv(artifacts, 'artifacts.csv')

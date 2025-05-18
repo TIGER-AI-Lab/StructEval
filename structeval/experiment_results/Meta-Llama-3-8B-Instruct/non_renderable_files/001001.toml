@@ -1,0 +1,35 @@
+
+city = {
+  name = "Newhaven",
+  country = "United States",
+  population = 250000,
+  founded = "1850",
+  mayor = {
+    name = "Emily J. Wilson",
+    term_start = "2018-01-01",
+    term_end = "2022-12-31"
+  },
+  landmarks = [
+    {
+      name = "Newhaven Monument",
+      type = "monument",
+      year_built = 1880,
+      architect = "John Smith",
+      visitors_per_year = 50000
+    },
+    {
+      name = "Riverfront Park",
+      type = "park",
+      year_built = 2000,
+      architect = "Jane Doe",
+      visitors_per_year = 100000
+    }
+  ],
+  transportation = {
+    modes = ["bus", "train", "subway"],
+    metro = {
+      lines = 3,
+      stations = 20
+    }
+  }
+}

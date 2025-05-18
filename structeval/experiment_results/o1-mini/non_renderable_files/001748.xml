@@ -1,0 +1,116 @@
+
+<recipe>
+    <title>Classic Margherita Pizza</title>
+    <author>
+        <name>Maria Rossi</name>
+        <contact>maria.rossi@example.com</contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>All-purpose Flour</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Water</name>
+            <quantity>300</quantity>
+            <unit>ml</unit>
+        </ingredient>
+        <ingredient>
+            <name>Yeast</name>
+            <quantity>7</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>10</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Olive Oil</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Tomato Sauce</name>
+            <quantity>200</quantity>
+            <unit>ml</unit>
+        </ingredient>
+        <ingredient>
+            <name>Mozzarella Cheese</name>
+            <quantity>250</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Fresh Basil Leaves</name>
+            <quantity>15</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>to taste</quantity>
+            <unit></unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <stepNumber>1</stepNumber>
+            <description>In a large bowl, combine flour and salt. Dissolve yeast in warm water and add to the flour mixture along with olive oil. Mix until a dough forms.</description>
+            <timer>
+                <seconds>900</seconds>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>2</stepNumber>
+            <description>Knead the dough on a floured surface for about 10 minutes until smooth and elastic.</description>
+            <timer>
+                <seconds>600</seconds>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>3</stepNumber>
+            <description>Place the dough in a greased bowl, cover, and let it rise in a warm place for 1 hour.</description>
+            <timer>
+                <seconds>3600</seconds>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>4</stepNumber>
+            <description>Preheat the oven to 250Â°C (482Â°F). Roll out the dough onto a pizza stone or baking sheet.</description>
+            <timer>
+                <seconds>1200</seconds>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>5</stepNumber>
+            <description>Spread tomato sauce evenly over the dough. Sprinkle mozzarella cheese on top.</description>
+            <timer>
+                <seconds>300</seconds>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>6</stepNumber>
+            <description>Bake in the preheated oven for 10-12 minutes until the crust is golden and the cheese is bubbly.</description>
+            <timer>
+                <seconds>720</seconds>
+            </timer>
+        </step>
+        <step>
+            <stepNumber>7</stepNumber>
+            <description>Remove from oven, garnish with fresh basil leaves, slice, and serve hot.</description>
+            <timer>
+                <seconds>300</seconds>
+            </timer>
+        </step>
+    </instructions>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <difficulty>Medium</difficulty>
+        <servings>4</servings>
+    </metadata>
+    <nutrition>
+        <calories>300</calories>
+        <fat>12.5</fat>
+        <carbohydrates>35.0</carbohydrates>
+    </nutrition>
+</recipe>

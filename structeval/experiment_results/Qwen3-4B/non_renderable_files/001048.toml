@@ -1,0 +1,41 @@
+
+museum = {
+    name = "The Metropolitan Museum of Art"
+    location = {
+        city = "New York"
+        country = "USA"
+    }
+    founded_year = 1870
+    director = {
+        full_name = "John Doe"
+        tenure_years = 15
+    }
+    galleries = [
+        {
+            title = "Impressionist Masterpieces"
+            theme = "19th-century French art"
+            artworks = [
+                {
+                    artist = "Claude Monet"
+                    title = "Water Lilies"
+                    year_created = 1916
+                    medium = "oil on canvas"
+                    on_display = true
+                },
+                {
+                    artist = "Vincent van Gogh"
+                    title = "Starry Night"
+                    year_created = 1889
+                    medium = "oil on canvas"
+                    on_display = true
+                }
+            ]
+        }
+    ]
+    events = [
+        {
+            name = "Impressionist Art Exhibition"
+            date = "2023-11-15"
+        }
+    ]
+}

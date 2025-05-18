@@ -1,0 +1,40 @@
+
+ecosystem:
+  name: "Verdant Expanse"
+  location:
+    planet: "Elysium"
+    region: "Emerald Basin"
+  climate:
+    average_temperature_c: 22
+    seasonal_patterns:
+      - "Wet season from May to October"
+      - "Dry season from November to April"
+  flora:
+    - species: "Luminara Fern"
+      population_estimate: 150000
+      dominant_color: "Green"
+    - species: "Crimson Blossom"
+      population_estimate: 80000
+      dominant_color: "Red"
+    - species: "Azure Leaf Tree"
+      population_estimate: 50000
+      dominant_color: "Blue"
+  fauna:
+    - species: "Skywhale"
+      population_estimate: 2000
+      diet_type: "Herbivore"
+      notable_behavior: "Migrates in large pods during wet season"
+    - species: "Crimson Prowler"
+      population_estimate: 1200
+      diet_type: "Carnivore"
+      notable_behavior: "Uses camouflage to ambush prey"
+    - species: "Elysian Hummingbird"
+      population_estimate: 30000
+      diet_type: "Omnivore"
+      notable_behavior: "Pollinates flowers while feeding on nectar"
+  human_impact:
+    pollution_level: 3.5
+    conservation_status: "Vulnerable"
+    projects:
+      - project_name: "Emerald Restoration Initiative"
+        start_year: 2025

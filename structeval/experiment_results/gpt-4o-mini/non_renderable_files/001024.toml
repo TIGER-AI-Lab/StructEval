@@ -1,0 +1,36 @@
+
+recipe = { 
+    title = "Spicy Garlic Shrimp Tacos",
+    chef = { 
+        name = "Chef Maria Gonzalez",
+        experience_years = 10 
+    },
+    ingredients = [
+        { 
+            name = "Shrimp", 
+            quantity = 500, 
+            unit = "grams" 
+        },
+        { 
+            name = "Taco Shells", 
+            quantity = 8, 
+            unit = "pieces" 
+        }
+    ],
+    instructions = [
+        { 
+            step = "Marinate the shrimp in garlic, lime juice, and spices for 30 minutes.", 
+            time_minutes = 30 
+        },
+        { 
+            step = "Cook the shrimp in a skillet over medium heat for 5-7 minutes until pink.", 
+            time_minutes = 7 
+        }
+    ],
+    nutrition = { 
+        calories = 350, 
+        protein_grams = 25, 
+        fat_grams = 10 
+    },
+    tags = ["seafood", "tacos", "spicy", "quick meal"]
+}

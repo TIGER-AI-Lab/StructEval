@@ -1,0 +1,47 @@
+brewery:
+  name: "Starlight Brewing Co."
+  location:
+    city: "Portland"
+    country: "USA"
+  founded_year: 2015
+  owner: "Craft Brewers Inc."
+  beers:
+    - name: "Cosmic IPA"
+      style: "IPA"
+      abv: 6.8
+      awards:
+        - title: "Best IPA"
+          year: 2018
+        - title: "Gold Medal"
+          year: 2020
+      ingredients:
+        hops:
+          - "Citra"
+          - "Mosaic"
+        malts:
+          - "Pale Malt"
+          - "Caramel Malt"
+        yeast: "American Ale"
+    - name: "Dark Nebula Stout"
+      style: "Stout"
+      abv: 7.5
+      awards:
+        - title: "Great American Beer Festival - Silver"
+          year: 2022
+      ingredients:
+        hops:
+          - "Nugget"
+        malts:
+          - "Pale Malt"
+          - "Roasted Barley"
+          - "Chocolate Malt"
+        yeast: "Irish Ale"
+  tours:
+    available: true
+    schedule:
+      - day: "Saturday"
+        start_time: "14:00"
+        duration_minutes: 60
+      - day: "Sunday"
+        start_time: "11:00"
+        duration_minutes: 45

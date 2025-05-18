@@ -1,0 +1,89 @@
+
+<recipe>
+    <title>Spaghetti Aglio e Olio</title>
+    <author>
+        <name>Giovanni Rossi</name>
+        <contact>
+            <email>giovanni.rossi@example.com</email>
+            <phone>+39 123 456 7890</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>400</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Garlic</name>
+            <quantity>4</quantity>
+            <unit>cloves</unit>
+        </ingredient>
+        <ingredient>
+            <name>Olive Oil</name>
+            <quantity>60</quantity>
+            <unit>milliliters</unit>
+        </ingredient>
+        <ingredient>
+            <name>Red Pepper Flakes</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Parsley</name>
+            <quantity>30</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>to taste</quantity>
+            <unit></unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <instruction>Boil water in a large pot and add salt.</instruction>
+            <duration_minutes>5</duration_minutes>
+        </step>
+        <step>
+            <instruction>Add spaghetti and cook according to package instructions.</instruction>
+            <duration_minutes>10</duration_minutes>
+        </step>
+        <step>
+            <instruction>While the pasta cooks, heat olive oil in a pan over medium heat.</instruction>
+            <duration_minutes>2</duration_minutes>
+        </step>
+        <step>
+            <instruction>Add sliced garlic and red pepper flakes to the pan, sautÃ© until golden.</instruction>
+            <duration_minutes>3</duration_minutes>
+        </step>
+        <step>
+            <instruction>Drain the spaghetti and add it to the pan with garlic oil.</instruction>
+            <duration_minutes>1</duration_minutes>
+        </step>
+        <step>
+            <instruction>Toss well to combine and add chopped parsley.</instruction>
+            <duration_minutes>1</duration_minutes>
+        </step>
+        <step>
+            <instruction>Serve immediately with extra parsley on top.</instruction>
+            <duration_minutes>1</duration_minutes>
+        </step>
+    </steps>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <difficulty>Easy</difficulty>
+        <servings>4</servings>
+        <tags>
+            <tag>Vegetarian</tag>
+            <tag>Quick</tag>
+            <tag>Classic</tag>
+        </tags>
+    </metadata>
+    <nutrition>
+        <calories>400</calories>
+        <fat_grams>15</fat_grams>
+        <protein_grams>10</protein_grams>
+        <carbs_grams>60</carbs_grams>
+    </nutrition>
+</recipe>

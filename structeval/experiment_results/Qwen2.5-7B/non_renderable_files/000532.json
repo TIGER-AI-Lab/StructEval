@@ -1,0 +1,46 @@
+{
+  "museum": {
+    "name": "The Metropolitan Museum of Art",
+    "location": {
+      "city": "New York",
+      "country": "USA"
+    },
+    "founded_year": 1870,
+    "director": {
+      "name": "Max Hollein",
+      "tenure_years": 5
+    },
+    "collections": [
+      {
+        "title": "Egyptian Art",
+        "era": "Ancient",
+        "items": [
+          {
+            "name": "Statue of Pharaoh Ramesses II",
+            "type": "Sculpture",
+            "origin_country": "Egypt",
+            "year_acquired": 1900,
+            "on_display": true
+          }
+        ]
+      },
+      {
+        "title": "European Paintings",
+        "era": "Renaissance",
+        "items": [
+          {
+            "name": "Mona Lisa",
+            "type": "Oil Painting",
+            "origin_country": "Italy",
+            "year_acquired": 1815,
+            "on_display": false
+          }
+        ]
+      }
+    ],
+    "visitor_stats": {
+      "annual_visitors": 6,000,000,
+      "most_popular_collection": "European Paintings"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+
+[artifact]
+name = "Ancient Sphinx of Giza"
+origin = { culture = "Egyptian", period = "Old Kingdom", discovery_date = "1925-07-15" }
+dimensions = { height_cm = 20, width_cm = 19 }
+materials = { primary = "Limestone", secondary = "" }
+condition = { status = "intact", restoration_notes = "" }
+exhibitions = [
+  { title = "The Sphinx: A Timeless Wonder", year = 1999, location = "The British Museum" },
+  { title = "Echoes of the Pharaohs", year = 2005, location = "The Louvre" }
+]
+images = [
+  { url = "https://example.com/sphinx1.jpg", caption = "Sphinx in the Giza Plateau" },
+  { url = "https://example.com/sphinx2.jpg", caption = "Sphinx under restoration" }
+]

@@ -1,0 +1,67 @@
+
+import xml.etree.ElementTree as ET
+import csv
+
+root = ET.fromstring('''
+<artifacts>
+  <artifact>
+    <ArtifactName>Celestine Orb</ArtifactName>
+    <DiscoveryYear>3124</DiscoveryYear>
+    <Material>Crystal Alloy</Material>
+    <WeightKg>2.7</WeightKg>
+    <DiscoveryDate>3124-05-19</DiscoveryDate>
+    <OriginPlanet>Virelia</OriginPlanet>
+  </artifact>
+  <artifact>
+    <ArtifactName>Quantum Scepter</ArtifactName>
+    <DiscoveryYear>3118</DiscoveryYear>
+    <Material>Neutronium</Material>
+    <WeightKg>5.4</WeightKg>
+    <DiscoveryDate>3118-10-02</DiscoveryDate>
+    <OriginPlanet>Zephyra</OriginPlanet>
+  </artifact>
+  <artifact>
+    <ArtifactName>Stellar Prism</ArtifactName>
+    <DiscoveryYear>3122</DiscoveryYear>
+    <Material>Photonic Glass</Material>
+    <WeightKg>1.3</WeightKg>
+    <DiscoveryDate>3122-03-14</DiscoveryDate>
+    <OriginPlanet>Orionis</OriginPlanet>
+  </artifact>
+  <artifact>
+    <ArtifactName>Echo Coin</ArtifactName>
+    <DiscoveryYear>3119</DiscoveryYear>
+    <Material>Sonic Silver</Material>
+    <WeightKg>0.8</WeightKg>
+    <DiscoveryDate>3119-12-27</DiscoveryDate>
+    <OriginPlanet>Sonata</OriginPlanet>
+  </artifact>
+  <artifact>
+    <ArtifactName>Lumina Crown</ArtifactName>
+    <DiscoveryYear>3120</DiscoveryYear>
+    <Material>Plasma Gold</Material>
+    <WeightKg>3.1</WeightKg>
+    <DiscoveryDate>3120-07-08</DiscoveryDate>
+    <OriginPlanet>Aurelia</OriginPlanet>
+  </artifact>
+  <artifact>
+    <ArtifactName>Graviton Key</ArtifactName>
+    <DiscoveryYear>3123</DiscoveryYear>
+    <Material>Dark Iron</Material>
+    <WeightKg>4.6</WeightKg>
+    <DiscoveryDate>3123-09-25</DiscoveryDate>
+    <OriginPlanet>Umbra</OriginPlanet>
+  </artifact>
+</artifacts>
+''')
+
+with open('output.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(['ArtifactName', 'DiscoveryYear', 'Material', 'WeightKg', 'DiscoveryDate', 'OriginPlanet'])
+    for artifact in root.findall('artifact'):
+        writer.writerow([artifact.find('ArtifactName').text,
+                         artifact.find('DiscoveryYear').text,
+                         artifact.find('Material').text,
+                         artifact.find('WeightKg').text,
+                         artifact.find('DiscoveryDate').text,
+                         artifact.find('OriginPlanet').text])

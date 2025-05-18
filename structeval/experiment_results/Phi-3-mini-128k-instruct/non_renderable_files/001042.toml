@@ -1,0 +1,42 @@
+[brewery]
+name = "Hoppy Valley Brewing Co."
+founded_year = 2010
+location = {
+    city = "Boulder"
+    country = "United States"
+}
+
+flagship_beer = {
+    name = "Summit Stout"
+    abv = 8.5
+    awards = [
+        {
+            title = "Best Dark Beer"
+            year = 2018
+        }
+    ]
+}
+
+brewers = [
+    {
+        name = "Alice Johnson"
+        role = "Head Brewer"
+        years_experience = 10
+    },
+    {
+        name = "Bob Smith"
+        role = "Brewmaster"
+        years_experience = 12
+    }
+]
+
+tours = {
+    available = true
+    schedule = [
+        {
+            day = "Saturday"
+            start_time = "10:00"
+            language = "English"
+        }
+    ]
+}

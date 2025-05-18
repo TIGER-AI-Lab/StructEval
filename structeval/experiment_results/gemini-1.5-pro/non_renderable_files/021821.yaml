@@ -1,0 +1,42 @@
+- planet_name: Zyphora
+  system:
+    star_name: Helion
+    distance_from_earth_ly: 1200
+    discovery_date: 2150-07-12
+  atmosphere:
+    composition: "Oxygen;Nitrogen;Argon"
+    pressure_kpa: 101
+    temperature_c: 22
+  moons:
+    - Phobos
+    - Deimos
+  moons_diameter_km:
+    - 12
+    - 6
+  moons_has_rings:
+    - false
+    - true
+  surface:
+    topography: Mountainous
+    liquid_water_percent: 18
+- planet_name: Xelthar
+  system:
+    star_name: Solara
+    distance_from_earth_ly: 870
+    discovery_date: 2135-03-09
+  atmosphere:
+    composition: "Methane;Helium"
+    pressure_kpa: 87
+    temperature_c: 55
+  moons:
+    - Luna
+    - Selene
+  moons_diameter_km:
+    - 14
+    - 15
+  moons_has_rings:
+    - false
+    - false
+  surface:
+    topography: Plains
+    liquid_water_percent: 0

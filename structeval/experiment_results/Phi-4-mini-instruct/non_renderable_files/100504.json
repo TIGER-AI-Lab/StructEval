@@ -1,0 +1,38 @@
+{
+  "planet": {
+    "name": "Zephyria",
+    "type": "Gas Giant"
+  },
+  "planet.discovery": {
+    "year": 2378,
+    "method": "Gravitational Microlensing"
+  },
+  "planet.discovery.team": [
+    {
+      "name": "Dr. Linh Tran",
+      "role": "Lead Astronomer"
+    },
+    {
+      "name": "Prof. Omar Reyes",
+      "role": "Data Analyst"
+    }
+  ],
+  "planet.moons": [
+    {
+      "name": "Aurelia",
+      "diameter_km": 3122
+    },
+    {
+      "name": "Calyx",
+      "diameter_km": 1840
+    }
+  ],
+  "planet.atmosphere": {
+    "composition": ["Hydrogen", "Helium", "Methane"],
+    "pressure_atm": 28.6
+  },
+  "planet.habitability": {
+    "supports_life": false,
+    "surface_water_percent": 0.0
+  }
+}

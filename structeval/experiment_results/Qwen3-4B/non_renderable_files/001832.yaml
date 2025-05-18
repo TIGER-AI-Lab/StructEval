@@ -1,0 +1,25 @@
+
+exhibit:
+  title: "Ancient Civilizations"
+  opening_date: "2023-10-01"
+  closing_date: "2023-12-31"
+  curator:
+    name: "Dr. Elena Martinez"
+    contact:
+      email: "curator@example.com"
+      phone: "+1234567890"
+  artifacts:
+    - name: "Ancient Vase"
+      origin: "Egypt"
+      year: 2000
+      materials:
+        - "clay"
+        - "glaze"
+      dimensions:
+        height_cm: 30.5
+        width_cm: 20.3
+        depth_cm: 15.7
+      on_loan: true
+      loan_info:
+        institution: "Egyptian Museum"
+        return_date: "2023-12-31"

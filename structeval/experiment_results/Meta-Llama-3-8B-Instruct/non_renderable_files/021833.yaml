@@ -1,0 +1,36 @@
+
+species: Glowsquid
+  planet: Zephyra
+  characteristics:
+    size: Large
+    color: Blue
+    abilities: Bioluminescence;Levitation
+  diet:
+    primary: Phytoplankton
+    secondary: Small fish
+  habitat:
+    region: North Zephyra
+    climate: Temperate
+    notable_landmarks: ["Floating Islands", "Crystal Caves"]
+  discovery:
+    year: 3054
+    explorer: Dr. Lira Quen
+    notes: First observed during the blue aurora event.
+
+species: Frosthopper
+  planet: Glacium
+  characteristics:
+    size: Medium
+    color: White
+    abilities: Thermal vision;Extreme jumping
+  diet:
+    primary: Lichen
+    secondary: Insects
+  habitat:
+    region: South Glacium
+    climate: Arctic
+    notable_landmarks: ["Ice Spires", "Echo Valley"]
+  discovery:
+    year: 3021
+    explorer: Prof. Yuto Han
+    notes: Rarely seen in daylight.

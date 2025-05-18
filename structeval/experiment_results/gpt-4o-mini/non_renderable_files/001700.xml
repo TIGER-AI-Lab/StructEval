@@ -1,0 +1,87 @@
+
+<recipe>
+    <title>Spicy Chickpea Tacos</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Chickpeas</name>
+            <quantity>400</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Taco Shells</name>
+            <quantity>8</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Avocado</name>
+            <quantity>2</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Spices</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Lime Juice</name>
+            <quantity>1</quantity>
+            <unit>tablespoon</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <order>1</order>
+            <instruction>Rinse and drain the chickpeas.</instruction>
+            <duration>
+                <minutes>5</minutes>
+            </duration>
+        </step>
+        <step>
+            <order>2</order>
+            <instruction>Mix chickpeas with spices and lime juice.</instruction>
+            <duration>
+                <minutes>10</minutes>
+            </duration>
+        </step>
+        <step>
+            <order>3</order>
+            <instruction>Heat the mixture in a pan for 5 minutes.</instruction>
+            <duration>
+                <minutes>5</minutes>
+            </duration>
+        </step>
+        <step>
+            <order>4</order>
+            <instruction>Assemble tacos with chickpeas and avocado.</instruction>
+            <duration>
+                <minutes>5</minutes>
+            </duration>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>350</calories>
+        <fat>
+            <grams>10</grams>
+        </fat>
+        <protein>
+            <grams>15</grams>
+        </protein>
+        <carbohydrates>
+            <grams>50</grams>
+        </carbohydrates>
+    </nutrition>
+    <tags>
+        <tag>vegan</tag>
+        <tag>gluten-free</tag>
+        <tag>dinner</tag>
+    </tags>
+    <metadata>
+        <created_at>2023-10-01T12:00:00Z</created_at>
+    </metadata>
+</recipe>

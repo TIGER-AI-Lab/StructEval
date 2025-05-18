@@ -1,0 +1,49 @@
+
+{
+  "planet_name": "Tarsis",
+  "galaxy": "Andromeda",
+  "discovery": {
+    "year": 2245,
+    "method": "Transit Method",
+    "team": [
+      {
+        "name": "Dr. Xel",
+        "role": "Lead Astronomer"
+      },
+      {
+        "name": "Prof. Yani",
+        "role": "Astrobiologist"
+      }
+    ]
+  },
+  "moons": [
+    {
+      "name": "Phobos",
+      "diameter_km": 22.4,
+      "has_atmosphere": true
+    },
+    {
+      "name": "Deimos",
+      "diameter_km": 12.3,
+      "has_atmosphere": false
+    }
+  ],
+  "atmosphere": {
+    "composition": "Nitrogen-Oxygen",
+    "pressure_kpa": 101.3
+  },
+  "inhabitants": [
+    {
+      "civilizations": {
+        "name": "Azurians",
+        "population_millions": 850
+      }
+    },
+    {
+      "civilizations": {
+        "name": "Crystalians",
+        "population_millions": 120
+      }
+    }
+  ]
+}

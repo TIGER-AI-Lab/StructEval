@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001142</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const ProductReviewForm = () => {
+  const [productName, setProductName] = useState('');
+  const [rating, setRating] = useState(null);
+  const [reviewText, setReviewText] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!productName || rating === null) {
+      alert('Please enter a product name and select a rating.');
+      return;
+    }
+    setSubmitted(true);
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '300px' }}>
+        <h1>Product Review</h1>
+        <input type="text" placeholder="Enter product name" value={productName} onChange={(e) => setProductName(e.target.value)} />
+        <div>
+          <label>Rating:</label>
+          {[1, 2, 3, 4, 5].map((value) => (
+            <label key={value} style={{ marginRight: '0.5rem' }}>
+              <input type="radio" name="rating" value={value} checked={rating === value} onChange={() => setRating(value)} />
+              {value}
+            </label>
+          ))}
+        </div>
+        <textarea placeholder="Write your review here" rows={4} value={reviewText} onChange={(e) => setReviewText(e.target.value)} />
+        <button type="submit" style={{ backgroundColor: 'green', color: 'white' }}>Submit Review</button>
+        {submitted && <p>Thank you for your feedback!</p>}
+      </form>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<ProductReviewForm />);
+
+    </script>
+  </body>
+</html>

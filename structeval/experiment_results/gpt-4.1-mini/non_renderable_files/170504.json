@@ -1,0 +1,46 @@
+
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "star_systems": {
+      "star_system": [
+        {
+          "system_name": "Alpha Prime",
+          "planets": {
+            "planet": [
+              {
+                "planet_name": "Zephyria",
+                "moons": {
+                  "moon": [
+                    "Luna Minor",
+                    "Selene"
+                  ]
+                }
+              },
+              {
+                "planet_name": "Obsidian",
+                "moons": {
+                  "moon": "Umbra"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "system_name": "Beta Flux",
+          "planets": {
+            "planet": {
+              "planet_name": "Crystalis",
+              "moons": {
+                "moon": [
+                  "Prism",
+                  "Spectrum"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

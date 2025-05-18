@@ -1,0 +1,49 @@
+{
+  "artifact": {
+    "name": "Rosetta Stone",
+    "origin": {
+      "civilization": "Ancient Egyptian",
+      "era": "Ptolemaic Period"
+    },
+    "materials": [
+      {
+        "type": "Granodiorite",
+        "provenance": "Quarries near Aswan, Egypt"
+      },
+      {
+        "type": "Inscriptions in stone",
+        "provenance": "Memphis, Egypt"
+      }
+    ],
+    "dimensions": {
+      "height_cm": 114.4,
+      "width_cm": 72.3,
+      "depth_cm": 27.9
+    },
+    "inscriptions": [
+      {
+        "language": "Ancient Egyptian (Hieroglyphs)",
+        "translation": "Decree issued by King Ptolemy V",
+        "position": "Upper section of the stone"
+      },
+      {
+        "language": "Ancient Egyptian (Demotic)",
+        "translation": "Decree issued by King Ptolemy V",
+        "position": "Middle section of the stone"
+      },
+      {
+        "language": "Ancient Greek",
+        "translation": "Decree issued by King Ptolemy V",
+        "position": "Lower section of the stone"
+      }
+    ],
+    "current_location": {
+      "museum": "British Museum",
+      "display_case": "Room 4, Egyptian Sculpture Gallery"
+    },
+    "discovery": {
+      "date": "1799-07-15",
+      "discoverer": "Pierre-FranÃ§ois Bouchard"
+    }
+  }
+}

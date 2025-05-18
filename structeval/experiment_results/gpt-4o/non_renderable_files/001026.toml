@@ -1,0 +1,34 @@
+[exhibit]
+title = "Visions of the Future"
+opening_date = "2024-05-01"
+closing_date = "2024-09-30"
+
+[exhibit.curator]
+name = "Dr. Emily Carter"
+contact_email = "emily.carter@artexhibits.org"
+
+[[exhibit.galleries]]
+name = "Gallery of Modern Wonders"
+theme = "Futuristic Art and Innovation"
+
+[[exhibit.galleries.artworks]]
+title = "The Quantum Leap"
+artist = "Alex Rivera"
+year_created = 2022
+medium = "Digital Print"
+[exhibit.galleries.artworks.dimensions]
+height_cm = 150.0
+width_cm = 100.0
+on_loan = true
+provenance = "Private Collection of John Doe"
+
+[[exhibit.galleries.artworks]]
+title = "Neon Dreams"
+artist = "Samantha Lee"
+year_created = 2023
+medium = "Mixed Media"
+[exhibit.galleries.artworks.dimensions]
+height_cm = 120.0
+width_cm = 80.0
+on_loan = false
+provenance = "Acquired from the artist"

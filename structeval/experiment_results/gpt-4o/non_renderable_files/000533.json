@@ -1,0 +1,31 @@
+{
+  "planet": {
+    "name": "Exo-123b",
+    "type": "gas giant",
+    "discovery": {
+      "year": 2023,
+      "method": "transit"
+    },
+    "atmosphere": {
+      "composition": ["hydrogen", "helium", "methane"],
+      "pressure": 1500
+    },
+    "moons": [
+      {
+        "name": "Exo-123b-I",
+        "diameter_km": 3200,
+        "orbital_period_days": 12.5,
+        "features": [
+          {
+            "type": "crater",
+            "description": "A large impact crater with a central peak."
+          }
+        ]
+      }
+    ],
+    "surface": {
+      "temperature_c": -150,
+      "gravity_ms2": 24.79
+    }
+  }
+}

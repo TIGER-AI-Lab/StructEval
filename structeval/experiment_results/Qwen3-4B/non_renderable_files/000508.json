@@ -1,0 +1,40 @@
+
+{
+  "species": {
+    "name": "Glimmerfox",
+    "habitat": {
+      "type": "forest",
+      "climate": "temperate",
+      "continents": ["North America", "South America"]
+    },
+    "lifespan": {
+      "average_years": 15,
+      "max_recorded": 20
+    },
+    "diet": {
+      "primary": "meat",
+      "secondary": ["fruits", "insects"]
+    },
+    "appearance": {
+      "size": {
+        "length_cm": 60,
+        "weight_kg": 10
+      },
+      "coloration": ["silver", "amber"]
+    },
+    "behavior": {
+      "migration_patterns": "seasonal migration along river systems",
+      "social_structure": "pack-living"
+    },
+    "discovery": {
+      "date": "2023-04-15",
+      "discoverers": [
+        {
+          "name": "Dr. Elara Morn",
+          "affiliation": "Wildlife Research Institute",
+          "contribution": "discovered the species in the Amazon rainforest"
+        }
+      ]
+    }
+  }
+}

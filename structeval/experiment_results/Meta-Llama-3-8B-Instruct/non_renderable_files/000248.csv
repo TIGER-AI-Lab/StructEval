@@ -1,0 +1,5 @@
+
+"artifact_id","artifact_name","discovery.site","discovery.country","discovery.year","material.primary","material.secondary","dimensions.height_cm","dimensions.width_cm","dimensions.depth_cm","condition.current_state","condition.restoration_years","provenance.previous_owners","provenance.auction_history","exhibit.locations"
+"ART001","Minoan Vase","Knossos Palace","Greece","1500","Terracotta","None","23.45","15.67","8.90","Intact","None","King of Crete, British Museum","London, British Museum, Athens National Archaeological Museum"
+"ART002","Roman Coin","Rome, Italy","Italy","100","Copper","Silver","1.23","0.56","0.34","Fragmented","2000, 2010","Roman Emperor, Private Collector","Rome, Vatican Museums, New York Metropolitan Museum"
+"ART003","Egyptian Sarcophagus","Thebes, Egypt","Egypt","1200","Limestone","Gold","150.00","100.00","50.00","Restored","None","Pharaoh, British Museum","London, British Museum, Cairo Museum"

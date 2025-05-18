@@ -1,0 +1,41 @@
+<creature>
+  <name>Zyphor</name>
+  <species>Draconis</species>
+  <age>150</age>
+  <origin>
+    <planet>Zephyria</planet>
+    <galaxy>Andromeda</galaxy>
+  </origin>
+  <abilities>
+    <ability>
+      <type>Flight</type>
+      <level>9</level>
+      <description>Glides through the atmosphere with ease</description>
+    </ability>
+    <ability>
+      <type>Telepathy</type>
+      <level>7</level>
+      <description>Communicates with other beings telepathically</description>
+    </ability>
+  </abilities>
+  <companions>
+    <companion>
+      <name>Glimmer</name>
+      <species>Photon</species>
+      <bondStrength>0.95</bondStrength>
+    </companion>
+    <companion>
+      <name>Thalor</name>
+      <species>Stellar</species>
+      <bondStrength>0.85</bondStrength>
+    </companion>
+  </companions>
+  <physiology>
+    <height>250</height>
+    <weight>500</weight>
+    <coloration>
+      <primary>Azure</primary>
+      <secondary>Silver</secondary>
+    </coloration>
+  </physiology>
+</creature>

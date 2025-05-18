@@ -1,0 +1,41 @@
+
+{
+    "artifact": {
+        "name": "Mask of Tutankhamun",
+        "origin": {
+            "civilization": "Ancient Egypt",
+            "era": "New Kingdom"
+        },
+        "materials": {
+            "primary": "Gold",
+            "secondary": "Lapis Lazuli"
+        },
+        "dimensions": {
+            "height_cm": 54,
+            "width_cm": 39.3,
+            "depth_cm": 49
+        },
+        "features": [
+            {
+                "type": "inscription",
+                "description": "Hieroglyphic text on the back and shoulders",
+                "preservation_state": "Excellent"
+            },
+            {
+                "type": "ornamentation",
+                "description": "Inlaid with semi-precious stones",
+                "preservation_state": "Good"
+            }
+        ],
+        "discovery": {
+            "date_found": "1922-11-04",
+            "location": {
+                "country": "Egypt",
+                "coordinates": {
+                    "latitude": 25.7402,
+                    "longitude": 32.6014
+                }
+            }
+        }
+    }
+}

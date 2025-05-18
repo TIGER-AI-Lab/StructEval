@@ -1,0 +1,49 @@
+
+import csv
+
+def generate_csv_row(description):
+    artifact_id = "A12345"
+    artifact_name = "Example Artifact"
+    period = "Prehistoric"
+    origin_region = "Unknown Region"
+    material = "Stone"
+    dimensions_height_cm = 10.5
+    dimensions_width_cm = 8.2
+    dimensions_depth_cm = 5.1
+    discovery_date = "2000-01-01"
+    current_location = "Example Museum"
+    condition_status = "Intact"
+    historical_significance = "This artifact is significant for its historical value."
+    image_url = "https://example.com/image1.jpg"
+    image_description = "Image of the artifact"
+    restoration_date = "2010-01-01"
+    restoration_details = "Restoration details"
+
+    csv_row = {
+        "artifact_id": artifact_id,
+        "artifact_name": artifact_name,
+        "period": period,
+        "origin_region": origin_region,
+        "material": material,
+        "dimensions_height_cm": dimensions_height_cm,
+        "dimensions_width_cm": dimensions_width_cm,
+        "dimensions_depth_cm": dimensions_depth_cm,
+        "discovery_date": discovery_date,
+        "current_location": current_location,
+        "condition_status": condition_status,
+        "historical_significance": historical_significance,
+        "images[0].url": image_url,
+        "images[0].description": image_description,
+        "restoration_records[0].date": restoration_date,
+        "restoration_records[0].details": restoration_details
+    }
+
+    with open('artifact_metadata.csv', mode='w', newline='') as file:
+        writer = csv.DictWriter(file, fieldnames=csv_row.keys())
+        writer.writeheader()
+        writer.writerow(csv_row)
+
+    return csv_row
+
+description = "This is an example artifact description."
+generate_csv_row(description)

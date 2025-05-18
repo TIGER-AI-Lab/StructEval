@@ -1,0 +1,24 @@
+
+creature:
+  name: Zephyrian
+  species: Aetherial Sylph
+  age: 150
+  habitat:
+    region: Cloud Peaks of Aetheria
+    climate: Perpetual Mist and Thunderstorms
+  abilities:
+    - type: Elemental Manipulation
+      description: Controls wind currents and lightning storms with precise gestures
+      power_level: 8
+    - type: Bioluminescent Communication
+      description: Emits pulsating light patterns to convey complex messages
+      power_level: 7
+  appearance:
+    color: Celestial Silver
+    size:
+      height_cm: 250
+      weight_kg: 120
+  behavior:
+    - Mimics weather patterns to navigate storms
+    - Forms temporary bridges between floating islands
+    - Sings to calm turbulent skies

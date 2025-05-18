@@ -1,0 +1,143 @@
+recipe:
+  title: "Chicken Piccata"
+  author:
+    name: "Chef Julia Roberts"
+    profile_url: "https://www.chefjuliarbitraryprofile.com"
+  ingredients:
+    - name: "Chicken Breasts"
+      quantity: 4
+      unit: "pieces"
+      optional: false
+      instructions: "Pound the chicken breasts to an even thickness."
+      duration_minutes: 5
+      tools: ["meat mallet"]
+    - name: "Lemon"
+      quantity: 1
+      unit: "whole"
+      optional: true
+      instructions: "Cut the lemon into wedges."
+      duration_minutes: 2
+      tools: []
+    - name: "Capers"
+      quantity: 1/4
+      unit: "cup"
+      optional: true
+      instructions: "Rinse and drain capers."
+      duration_minutes: 1
+      tools: []
+    - name: "Garlic"
+      quantity: 3
+      unit: "cloves"
+      optional: false
+      instructions: "Peel and finely chop the garlic."
+      duration_minutes: 2
+      tools: []
+    - name: "Flour"
+      quantity: 1/2
+      unit: "cup"
+      optional: false
+      instructions: "Sift flour into a shallow dish."
+      duration_minutes: 1
+      tools: []
+    - name: "Butter"
+      quantity: 4
+      unit: "tablespoons"
+      optional: false
+      instructions: "Melt butter in a large skillet over medium heat."
+      duration_minutes: 3
+      tools: ["skillet"]
+    - name: "Chicken Stock"
+      quantity: 1/2
+      unit: "cup"
+      optional: false
+      instructions: "Heat chicken stock in a small saucepan."
+      duration_minutes: 5
+      tools: []
+    - name: "White Wine"
+      quantity: 1/2
+      unit: "cup"
+      optional: false
+      instructions: "Pour white wine into the skillet."
+      duration_minutes: 5
+      tools: []
+    - name: "Fresh Parsley"
+      quantity: 1/4
+      unit: "cup"
+      optional: true
+      instructions: "Chop parsley finely."
+      duration_minutes: 1
+      tools: []
+    - name: "Salt"
+      quantity: "to taste"
+      unit: "pinch"
+      optional: false
+      instructions: "Season chicken with salt."
+      duration_minutes: 1
+      tools: []
+    - name: "Black Pepper"
+      quantity: "to taste"
+      unit: "pinch"
+      optional: false
+      instructions: "Season chicken with black pepper."
+      duration_minutes: 1
+      tools: []
+  steps:
+    - instruction: "Pound the chicken breasts to an even thickness."
+      duration_minutes: 5
+      tools: ["meat mallet"]
+    - instruction: "Cut the lemon into wedges."
+      duration_minutes: 2
+      tools: []
+    - instruction: "Rinse and drain capers."
+      duration_minutes: 1
+      tools: []
+    - instruction: "Peel and finely chop the garlic."
+      duration_minutes: 2
+      tools: []
+    - instruction: "Sift flour into a shallow dish."
+      duration_minutes: 1
+      tools: []
+    - instruction: "Melt butter in a large skillet over medium heat."
+      duration_minutes: 3
+      tools: ["skillet"]
+    - instruction: "Heat chicken stock in a small saucepan."
+      duration_minutes: 5
+      tools: []
+    - instruction: "Pour white wine into the skillet."
+      duration_minutes: 5
+      tools: []
+    - instruction: "Combine flour, lemon juice, capers, and garlic in a bowl."
+      duration_minutes: 2
+      tools: []
+    - instruction: "Dredge chicken in flour mixture."
+      duration_minutes: 3
+      tools: []
+    - instruction: "Cook chicken in skillet until golden brown on both sides."
+      duration_minutes: 10
+      tools: ["skillet"]
+    - instruction: "Remove chicken and set aside."
+      duration_minutes: 2
+      tools: []
+    - instruction: "Add flour mixture to skillet and cook, stirring constantly, until thickened."
+      duration_minutes: 5
+      tools: []
+    - instruction: "Stir in chicken stock and simmer until sauce is slightly thickened."
+      duration_minutes: 10
+      tools: []
+    - instruction: "Return chicken to skillet and simmer until cooked through."
+      duration_minutes: 10
+      tools: ["skillet"]
+    - instruction: "Serve chicken topped with sauce and garnished with parsley."
+      duration_minutes: 2
+      tools: []
+  metadata:
+    cuisine: "Italian"
+    difficulty: "Medium"
+    servings: 4
+    tags: ["Chicken", "Piccata", "Italian"]
+  nutritional_info:
+    calories: 350
+    macros:
+      protein: 30
+      fat: 15
+      carbohydrates: 10

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<museum>
+  <name>Intergalactic Oddities Museum</name>
+  <location>
+    <city>Nebula Prime</city>
+    <galaxy>Andromeda</galaxy>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Singing Meteorite</title>
+      <type>Audio Sculpture</type>
+      <origin>
+        <planet>Gliese 581g</planet>
+      </origin>
+    </exhibit>
+    <exhibit>
+      <title>Antigravity Teacup</title>
+      <type>Kinetic Installation</type>
+      <origin>
+        <planet>Xandar</planet>
+      </origin>
+    </exhibit>
+  </exhibits>
+</museum>

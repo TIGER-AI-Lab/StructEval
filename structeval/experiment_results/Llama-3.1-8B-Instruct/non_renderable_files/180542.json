@@ -1,0 +1,48 @@
+
+{
+  "planet_name": "Zephyron",
+  "system": {
+    "star_name": "Solara Prime",
+    "distance_from_earth_ly": 47.2,
+    "number_of_planets": 5
+  },
+  "atmosphere": {
+    "composition": [
+      "nitrogen",
+      "argon",
+      "oxygen",
+      "trace_xenon"
+    ],
+    "pressure": 1.2,
+    "temperature_range": {
+      "min": -50,
+      "max": 68
+    }
+  },
+  "inhabitants": {
+    "species": "Aeroliths",
+    "population_estimate": 3200000,
+    "languages": [
+      "Zephyric",
+      "Trade Common"
+    ]
+  },
+  "landmarks": [
+    {
+      "name": "Skyspire Plateau",
+      "type": "geological formation",
+      "coordinates": {
+        "latitude": -12.34,
+        "longitude": 45.67
+      }
+    },
+    {
+      "name": "Luminous Caverns",
+      "type": "bioluminescent cave",
+      "coordinates": {
+        "latitude": 8.91,
+        "longitude": -23.45
+      }
+    }
+  ]
+}

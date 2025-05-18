@@ -1,0 +1,44 @@
+
+[ecosystem]
+name = "Xenon Biosphere"
+
+[ecosystem.location]
+planet = "Zyphera"
+region = "Vortex Plains"
+
+[ecosystem.discovery]
+year = 2450
+discoverer = "Dr. Aria Kepler"
+
+[[ecosystem.species]]
+name = "Lumifern"
+classification = "Flora"
+population_estimate = 1.2e6
+
+  [[ecosystem.species.traits]]
+  trait_name = "Bioluminescence"
+  trait_value = "Yes"
+
+  [[ecosystem.species.traits]]
+  trait_name = "Growth Rate"
+  trait_value = 3.5
+
+[[ecosystem.resources.water_sources]]
+type = "Crystal Lake"
+volume_liters = 5.6e9
+
+[[ecosystem.resources.water_sources]]
+type = "Silver River"
+volume_liters = 2.3e8
+
+[[ecosystem.resources.minerals]]
+mineral_name = "Xenonite"
+abundance_level = "High"
+
+[[ecosystem.resources.minerals]]
+mineral_name = "Zypheralite"
+abundance_level = 2.5
+
+[ecosystem.environment]
+average_temperature_celsius = 22.5
+atmosphere_composition = ["Nitrogen", "Oxygen", "Argon"]

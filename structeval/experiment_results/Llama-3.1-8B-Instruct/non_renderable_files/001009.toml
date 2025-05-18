@@ -1,0 +1,37 @@
+
+star = {
+  name = "HD 123456",
+  type = "G-type",
+  distance_lightyears = 10.5,
+  discovery = {
+    year = 2001,
+    method = "optical telescope"
+  },
+  planets = [
+    {
+      name = "Kepler-452b",
+      mass_earths = 5.0,
+      orbital_period_days = 385,
+      moons = [
+        {
+          name = "Kepler-452b I",
+          diameter_km = 1000,
+          composition = "rock"
+        },
+        {
+          name = "Kepler-452b II",
+          diameter_km = 500,
+          composition = "ice"
+        }
+      ],
+      atmosphere = {
+        composition = ["N2", "O2", "CO2"],
+        pressure_atm = 1.2,
+        has_rings = false
+      },
+      surface = {
+        temperature_celsius = 12.5
+      }
+    }
+  ]
+}

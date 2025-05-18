@@ -1,0 +1,98 @@
+<recipe>
+    <title>Creamy Mushroom Risotto</title>
+    <author>
+        <name>Chef Emily Stone</name>
+        <contact>
+            <email>emily.stone@example.com</email>
+            <phone>+1-555-123-4567</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Arborio rice</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Chicken stock</name>
+            <quantity>500</quantity>
+            <unit>ml</unit>
+        </ingredient>
+        <ingredient>
+            <name>White onion</name>
+            <quantity>1</quantity>
+            <unit>medium</unit>
+        </ingredient>
+        <ingredient>
+            <name>Garlic cloves</name>
+            <quantity>3</quantity>
+            <unit>pieces</unit>
+        </ingredient>
+        <ingredient>
+            <name>Mushrooms</name>
+            <quantity>300</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Parmesan cheese</name>
+            <quantity>50</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Butter</name>
+            <quantity>50</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>to taste</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Black pepper</name>
+            <quantity>to taste</quantity>
+            <unit>grams</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <instruction>Heat the chicken stock in a pot and keep it warm.</instruction>
+            <duration_minutes>5</duration_minutes>
+        </step>
+        <step>
+            <instruction>In a separate pan, melt butter and sautÃ© onions and garlic until translucent.</instruction>
+            <duration_minutes>10</duration_minutes>
+        </step>
+        <step>
+            <instruction>Add mushrooms and cook until browned.</instruction>
+            <duration_minutes>5</duration_minutes>
+        </step>
+        <step>
+            <instruction>Stir in Arborio rice and cook for 2 minutes.</instruction>
+            <duration_minutes>2</duration_minutes>
+        </step>
+        <step>
+            <instruction>Gradually add warm chicken stock, one ladle at a time, stirring constantly until the liquid is absorbed before adding more.</instruction>
+            <duration_minutes>20</duration_minutes>
+        </step>
+        <step>
+            <instruction>Once the rice is al dente, stir in Parmesan cheese and season with salt and pepper.</instruction>
+            <duration_minutes>3</duration_minutes>
+        </step>
+    </steps>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <difficulty>Medium</difficulty>
+        <servings>4</servings>
+        <tags>
+            <tag>Vegetarian</tag>
+            <tag>Gluten-Free</tag>
+        </tags>
+    </metadata>
+    <nutrition>
+        <calories>450</calories>
+        <fat_grams>15</fat_grams>
+        <protein_grams>12</protein_grams>
+        <carbs_grams>50</carbs_grams>
+    </nutrition>
+</recipe>

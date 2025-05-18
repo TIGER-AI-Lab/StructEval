@@ -1,0 +1,34 @@
+
+[brewery]
+name = "Copper Peak Brewery"
+founded_year = 2015
+
+[brewery.location]
+city = "Brewville"
+country = "Hopland"
+
+[brewery.flagship_beer]
+name = "Summit IPA"
+abv = 7.2
+
+[[brewery.flagship_beer.awards]]
+title = "Gold Medal at International Beer Awards"
+year = 2023
+
+[[brewery.brewers]]
+name = "Emily Hopsworth"
+role = "Master Brewer"
+years_experience = 12
+
+[[brewery.brewers]]
+name = "Liam Maltman"
+role = "Senior Brewer"
+years_experience = 8
+
+[brewery.tours]
+available = true
+
+[[brewery.tours.schedule]]
+day = "Saturday"
+start_time = "14:30"
+language = "English"

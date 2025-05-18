@@ -1,0 +1,48 @@
+{
+  "creature": {
+    "species": "Mythical Phoenix",
+    "region": "Sahara Desert",
+    "habitat": {
+      "features": [
+        "sand dunes and rocky outcrops",
+        "rare oasis pockets"
+      ]
+    },
+    "climate": "arid",
+    "appearance": {
+      "size": 1.5,
+      "color": {
+        "primary": "crimson",
+        "secondary": "golden"
+      }
+    },
+    "abilities": [
+      {
+        "name": "Fire Resurgence",
+        "power_level": 8,
+        "cooldown_seconds": 300
+      },
+      {
+        "name": "Healing Flames",
+        "power_level": 7,
+        "cooldown_seconds": 600
+      }
+    ],
+    "behavior": {
+      "diet": {
+        "type": "omnivore",
+        "favorite_foods": [
+          "cactus fruit"
+        ]
+      },
+      "social": {
+        "is_social": true,
+        "group_size": 10
+      }
+    },
+    "discovery": {
+      "date": "2023-04-12",
+      "discoverer": "Dr. Elara M. Kestrel"
+    }
+  }
+}

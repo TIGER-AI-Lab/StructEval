@@ -1,0 +1,78 @@
+
+<recipe>
+    <title>Spaghetti Carbonara</title>
+    <author>
+        <name>John Doe</name>
+        <contact>johndoe@example.com</contact>
+    </author>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <difficulty>Medium</difficulty>
+        <lastUpdated>2023-10-01</lastUpdated>
+    </metadata>
+    <nutrition>
+        <calories>600</calories>
+        <fat>20</fat>
+        <protein>25</protein>
+        <carbohydrates>80</carbohydrates>
+    </nutrition>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Pancetta</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>3</quantity>
+            <unit>large</unit>
+        </ingredient>
+        <ingredient>
+            <name>Parmesan cheese</name>
+            <quantity>50</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Black pepper</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Boil a large pot of salted water and cook the spaghetti according to package instructions until al dente.</description>
+            <duration>10</duration>
+            <tools>pot, stove, colander</tools>
+        </step>
+        <step>
+            <description>In a pan, cook the pancetta over medium heat until crispy.</description>
+            <duration>5</duration>
+            <tools>pan, stove</tools>
+        </step>
+        <step>
+            <description>In a bowl, whisk together the eggs and grated Parmesan cheese until well combined.</description>
+            <duration>2</duration>
+            <tools>mixing bowl, whisk</tools>
+        </step>
+        <step>
+            <description>Drain the spaghetti and add it to the pan with pancetta, removing from heat.</description>
+            <duration>2</duration>
+            <tools>colander, pan</tools>
+        </step>
+        <step>
+            <description>Quickly pour the egg and cheese mixture over the spaghetti, tossing to combine and create a creamy sauce.</description>
+            <duration>2</duration>
+            <tools>tongs, mixing bowl</tools>
+        </step>
+        <step>
+            <description>Season with black pepper and serve immediately.</description>
+            <duration>1</duration>
+            <tools>plate, serving utensils</tools>
+        </step>
+    </steps>
+</recipe>

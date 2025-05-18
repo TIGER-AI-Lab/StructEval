@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 161114</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+  const user = {
+    name: "Jane Doe",
+    email: "jane.doe@example.com",
+    membership: "Premium"
+  };
+  const metrics = {
+    logins: 125,
+    activeSessions: 3,
+    lastLogin: "2023-10-03 09:15 AM"
+  };
+  const activities = [
+    { date: "2023-10-03", description: "Logged into the system" },
+    { date: "2023-10-02", description: "Updated profile details" },
+    { date: "2023-10-01", description: "Changed password" },
+    { date: "2023-09-30", description: "Viewed account summary" }
+  ];
+  const notifications = [
+    { title: "Maintenance Update", message: "System maintenance scheduled for next weekend.", priority: "High" },
+    { title: "New Feature", message: "Try our new dashboard analytics tool.", priority: "Medium" },
+    { title: "Reminder", message: "Your subscription will renew soon.", priority: "Low" }
+  ];
+  const generatedOn = new Date().toLocaleString();
+
+  return (
+    <div>
+      <header>
+        <h1>Dashboard Report</h1>
+        <p>Overview of the system status and user activities</p>
+      </header>
+      <section>
+        <h2>User Profile</h2>
+        <div>
+          <label>Name: </label>
+          <span>{user.name}</span>
+        </div>
+        <div>
+          <label>Email: </label>
+          <span>{user.email}</span>
+        </div>
+        <div>
+          <label>Membership: </label>
+          <span>{user.membership}</span>
+        </div>
+      </section>
+      <section>
+        <h2>Account Metrics</h2>
+        <ul>
+          <li>Total Logins: {metrics.logins}</li>
+          <li>Active Sessions: {metrics.activeSessions}</li>
+          <li>Last Login: {metrics.lastLogin}</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Recent Activity</h2>
+        <ol>
+          {activities.map((activity, index) => (
+            <li key={index}>
+              <strong>{activity.date}:</strong> {activity.description}
+            </li>
+          ))}
+        </ol>
+      </section>
+      <section>
+        <h2>System Notifications</h2>
+        {notifications.length ? (
+          <ul>
+            {notifications.map((note, idx) => (
+              <li key={idx}>
+                <h3>{note.title}</h3>
+                <p>{note.message}</p>
+                <small>Priority: {note.priority}</small>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>No notifications at this time.</p>
+        )}
+      </section>
+      <footer>
+        <p>Report generated on: {generatedOn}</p>
+        <p>&copy; 2023 Vue Dashboard</p>
+      </footer>
+    </div>
+  );
+}
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<function />);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+
+import xml.etree.ElementTree as ET
+
+# Create the root element
+recipe = ET.Element("recipe")
+
+# Add title
+title = ET.SubElement(recipe, "title")
+title.text = "Spaghetti Carbonara"
+
+# Add author
+author = ET.SubElement(recipe, "author")
+name = ET.SubElement(author, "name")
+name.text = "John Doe"
+email = ET.SubElement(author, "email")
+email.text = "john.doe@example.com"
+
+# Add ingredients
+ingredients = ET.SubElement(recipe, "ingredients")
+ingredient1 = ET.SubElement(ingredients, "ingredient")
+name = ET.SubElement(ingredient1, "name")
+name.text = "Spaghetti"
+quantity = ET.SubElement(ingredient1, "quantity")
+quantity.text = "200"
+unit = ET.SubElement(ingredient1, "unit")
+unit.text = "grams"
+
+ingredient2 = ET.SubElement(ingredients, "ingredient")
+name = ET.SubElement(ingredient2, "name")
+name.text = "Eggs"
+quantity = ET.SubElement(ingredient2, "quantity")
+quantity.text = "4"
+unit = ET.SubElement(ingredient2, "unit")
+unit.text = "pieces"
+
+# Add steps
+steps = ET.SubElement(recipe, "steps")
+step1 = ET.SubElement(steps, "step")
+order = ET.SubElement(step1, "order")
+order.text = "1"
+instruction = ET.SubElement(step1, "instruction")
+instruction.text = "Cook spaghetti according to package instructions."
+minutes = ET.SubElement(step1, "minutes")
+minutes.text = "10"
+
+step2 = ET.SubElement(steps, "step")
+order = ET.SubElement(step2, "order")
+order.text = "2"
+instruction = ET.SubElement(step2, "instruction")
+instruction.text = "Beat eggs in a bowl."
+minutes = ET.SubElement(step2, "minutes")
+minutes.text = "0"
+
+# Add nutrition
+nutrition = ET.SubElement(recipe, "nutrition")
+calories = ET.SubElement(nutrition, "calories")
+calories.text = "500"
+fat = ET.SubElement(nutrition, "fat")
+grams = ET.SubElement(fat, "grams")
+grams.text = "20"
+protein = ET.SubElement(nutrition, "protein")
+grams = ET.SubElement(protein, "grams")
+grams.text = "15"
+carbohydrates = ET.SubElement(nutrition, "carbohydrates")
+grams = ET.SubElement(carbohydrates, "grams")
+grams.text = "30"
+
+# Add tags
+tags = ET.SubElement(recipe, "tags")
+tag1 = ET.SubElement(tags, "tag")
+tag1.text = "pasta"
+tag2 = ET.SubElement(tags, "tag")
+tag2.text = "italian"
+
+# Add metadata
+metadata = ET.SubElement(recipe, "metadata")
+created_at = ET.SubElement(metadata, "created_at")
+created_at.text = "2022-01-01T12:00:00Z"
+
+# Create the XML tree
+tree = ET.ElementTree(recipe)
+
+# Write the XML tree to a file
+tree.write("recipe.xml")

@@ -1,0 +1,31 @@
+{
+  "artifact": {
+    "name": "The Scribe's Tablet",
+    "origin": {
+      "civilization": "Minoan",
+      "estimated_age": 3500
+    },
+    "materials": {
+      "primary": "Limestone",
+      "secondary": "Gold leaf",
+      "composition_percentage": 95
+    },
+    "dimensions": {
+      "height_cm": 30,
+      "width_cm": 20,
+      "depth_cm": 1
+    },
+    "features": [
+      {
+        "type": "Inlay",
+        "description": "Intricate gold leaf inlay depicting a bull-leaping scene",
+        "preservation_state": "Intact"
+      },
+      {
+        "type": "Engraving",
+        "description": "Fine lines engraved along the edges, possibly representing a map or a calendar",
+        "preservation_state": "Worn"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+
+<planet>
+    <name>Xylophia-IV</name>
+    <orbitalPeriod>345</orbitalPeriod>
+    <discovery year="2057">
+        <method>Transit Method</method>
+        <telescope>Keck Observatory</telescope>
+    </discovery>
+    <atmosphere>
+        <composition>N2, O2, CO2</composition>
+        <pressure>120</pressure>
+        <temperature>250</temperature>
+    </atmosphere>
+    <moons>
+        <moon>
+            <name>Xylophia-IVb</name>
+            <diameter>1500</diameter>
+            <orbitalPeriod>30</orbitalPeriod>
+            <discoveredBy>Dr. Maria Rodriguez</discoveredBy>
+            <discoveryDate>2022-03-15T12:00:00Z</discoveryDate>
+        </moon>
+    </moons>
+    <surface>
+        <features>
+            <feature>
+                <type>Crater</type>
+                <coordinates>43.213, 12.456</coordinates>
+            </feature>
+        </features>
+    </surface>
+</planet>

@@ -1,0 +1,36 @@
+
+brewery:
+  name: "Silver Oak Craft Brewery"
+  location:
+    city: "Boulder"
+    country: "USA"
+  founded_year: 2012
+  owner: "Emily R. Thompson"
+  beers:
+    - name: "Mountain Haze IPA"
+      style: "IPA"
+      abv: 6.2
+      awards:
+        - title: "Best IPA"
+          year: 2019
+          organization: "National Craft Beer Awards"
+    - name: "Midnight Stout"
+      style: "Stout"
+      abv: 7.5
+      awards:
+        - title: "Gold Medal Stout"
+          year: 2021
+          organization: "International Beer Challenge"
+    - name: "Sunrise Wheat"
+      style: "Wheat Beer"
+      abv: 5.0
+      awards:
+        - title: "Silver Wheat Beer"
+          year: 2020
+          organization: "Craft Brewers Guild"
+  tours:
+    available: true
+    schedule:
+      days: ["Friday", "Saturday", "Sunday"]
+      times: ["13:00", "15:00", "17:00"]
+    languages_supported: ["English", "Spanish", "German"]

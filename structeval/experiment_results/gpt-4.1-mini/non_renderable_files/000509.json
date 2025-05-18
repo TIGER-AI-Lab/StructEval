@@ -1,0 +1,65 @@
+{
+  "game": {
+    "title": "Chronicles of Eldoria",
+    "release_year": 2023,
+    "developer": {
+      "name": "Silver Oak Studios",
+      "founded": 2010
+    },
+    "platforms": [
+      {
+        "name": "PC",
+        "release_date": "2023-09-15",
+        "features": [
+          {
+            "feature_name": "crossplay",
+            "is_multiplayer_supported": true
+          },
+          {
+            "feature_name": "ray tracing",
+            "is_multiplayer_supported": false
+          }
+        ]
+      },
+      {
+        "name": "PlayStation 5",
+        "release_date": "2023-10-01",
+        "features": [
+          {
+            "feature_name": "haptic feedback",
+            "is_multiplayer_supported": false
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "RPG",
+      "Adventure",
+      "Fantasy"
+    ],
+    "ratings": {
+      "ESRB": "T",
+      "PEGI": "16"
+    },
+    "awards": [
+      {
+        "award_name": "Best Narrative Design",
+        "year": 2023
+      },
+      {
+        "award_name": "Outstanding Visuals",
+        "year": 2024
+      }
+    ],
+    "characters": [
+      {
+        "name": "Aria Windrider",
+        "role": "protagonist"
+      },
+      {
+        "name": "Drax the Shadow",
+        "role": "antagonist"
+      }
+    ]
+  }
+}

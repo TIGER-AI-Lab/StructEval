@@ -1,0 +1,33 @@
+<creature>
+    <name>Zyloxian</name>
+    <species>Quintar</species>
+    <origin>
+        <planet>Xylophar</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <physiology>
+        <height>250</height>
+        <weight>120</weight>
+        <limbs>6</limbs>
+    </physiology>
+    <abilities>
+        <ability>
+            <name>Telekinetic Surge</name>
+            <powerLevel>85</powerLevel>
+            <type>psychic</type>
+            <cooldownSeconds>30</cooldownSeconds>
+        </ability>
+    </abilities>
+    <equipment>
+        <item>
+            <itemName>Photon Blade</itemName>
+            <rarity>legendary</rarity>
+            <acquiredFrom>Galactic Forge</acquiredFrom>
+            <enchantments>
+                <enchantment>
+                    <effect>Increases attack speed by 20%</effect>
+                </enchantment>
+            </enchantments>
+        </item>
+    </equipment>
+</creature>

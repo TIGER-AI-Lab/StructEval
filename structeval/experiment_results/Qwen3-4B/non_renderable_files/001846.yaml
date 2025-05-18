@@ -1,0 +1,27 @@
+
+artifact:
+  name: "Celestial Disk of Ur"
+  origin:
+    civilization: "Sumerian"
+    era: "Early Bronze Age"
+  materials:
+    primary: "bronze"
+    secondary: "lapis lazuli"
+  dimensions:
+    height_cm: 30
+    width_cm: 25
+    depth_cm: 15
+  features:
+    - type: "engraving"
+      description: "Engraved celestial map depicting constellations and deities"
+    - type: "mechanism"
+      description: "Central pivot mechanism allowing rotation"
+  provenance:
+    previous_owners:
+      - name: "British Museum"
+        acquisition_year: 1892
+      - name: "University of Chicago"
+        acquisition_year: 1958
+    discovery:
+      location: "Site of Ur, Mesopotamia"
+      date: "1920-04-15"

@@ -1,0 +1,7 @@
+constellation,star_name,apparent_magnitude,discovery_date,distance_ly,spectral_type
+Orion,Betelgeuse,0.42,1801-03-15,642.5,M1-2
+Lyra,Vega,0.03,1850-07-10,25.04,A0V
+Taurus,Aldebaran,0.85,1782-11-21,65.1,K5III
+Canis Major,Sirius,-1.46,1718-01-01,8.6,A1V
+Cygnus,Deneb,1.25,1866-09-13,2615,A2Ia
+Carina,Canopus,-0.72,1897-05-30,310,A9II

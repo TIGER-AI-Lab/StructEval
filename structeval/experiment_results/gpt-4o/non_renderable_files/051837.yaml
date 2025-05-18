@@ -1,0 +1,28 @@
+
+spaceship:
+  name: Starhopper X7
+  model: GX-9000
+  crew:
+    captain: Astra Nova
+    pilot: Rex Quasar
+    engineers:
+      - name: Luna Vega
+        specialty: Propulsion
+      - name: Jax Orion
+        specialty: Life Support
+  cargo:
+    - type: Alien Artifacts
+      weight_kg: 1200
+    - type: Synthetic Fuel
+      weight_kg: 5000
+  missions:
+    - destination: Europa
+      success: true
+    - destination: Kepler-442b
+      success: false
+  status: Docked
+  last_maintenance:
+    date: "2124-03-15"
+    engineer: Luna Vega
+  stats:
+    flight_hours: 8732

@@ -1,0 +1,50 @@
+
+{
+  "creature": {
+    "species": "Gigantopithecus",
+    "habitat": {
+      "region": "Southeast Asia",
+      "climate": "tropical",
+      "features": [
+        "dense rainforest",
+        "abundant vegetation"
+      ]
+    },
+    "appearance": {
+      "size": 3.5,
+      "color": {
+        "primary": "dark brown",
+        "secondary": null
+      }
+    },
+    "abilities": [
+      {
+        "name": "Enhanced Grip",
+        "power_level": 8,
+        "cooldown_seconds": 15
+      },
+      {
+        "name": "Strong Jaws",
+        "power_level": 9,
+        "cooldown_seconds": 20
+      }
+    ],
+    "behavior": {
+      "diet": {
+        "type": "omnivore",
+        "favorite_foods": [
+          "fruits",
+          "insects"
+        ]
+      },
+      "social": {
+        "is_social": true,
+        "group_size": 5
+      }
+    }
+  },
+  "discovery": {
+    "date": "1935-07-14",
+    "discoverer": "Dr. George Schaller"
+  }
+}

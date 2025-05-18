@@ -1,0 +1,36 @@
+{
+  "artifact": {
+    "name": "A1234",
+    "type": "tool",
+    "discovery": {
+      "date": "2024-03-15",
+      "location": {
+        "latitude": 34.56,
+        "longitude": -118.24
+      },
+      "team": [
+        {
+          "member_name": "Jane Doe",
+          "role": "archaeologist",
+          "experience_years": 10
+        }
+      ]
+    },
+    "materials": [
+      "stone",
+      "wood"
+    ],
+    "dimensions": {
+      "height_cm": 10.2,
+      "width_cm": 5.7,
+      "depth_cm": 2.1
+    },
+    "hypotheses": [
+      {
+        "theory": "Used for food preparation.",
+        "proposed_by": "Dr. Smith",
+        "evidence": "Microscopic analysis of residue."
+      }
+    ]
+  }
+}

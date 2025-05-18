@@ -1,0 +1,32 @@
+
+[recipe]
+title = "Spicy Mango Chicken"
+
+[recipe.chef]
+name = "Chef Alex Johnson"
+experience_years = 10
+
+[[recipe.ingredients]]
+name = "Chicken Breast"
+quantity = 2
+unit = "pieces"
+
+[[recipe.ingredients]]
+name = "Mango Salsa"
+quantity = 1.5
+unit = "cups"
+
+[[recipe.instructions]]
+step = "Season the chicken with salt and pepper, then grill until cooked through."
+time_minutes = 15
+
+[[recipe.instructions]]
+step = "Prepare the mango salsa by combining chopped mangoes, red onions, and cilantro."
+time_minutes = 10
+
+[recipe.nutrition]
+calories = 350.5
+protein_grams = 30.0
+fat_grams = 12.5
+
+tags = ["spicy", "gluten-free", "dinner", "chicken"]

@@ -1,0 +1,48 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def yaml_to_xml(yaml_data):
+    root = ET.Element("spaceStation")
+    for key, value in yaml_data.items():
+        if key == "name":
+            ET.SubElement(root, "name").text = value
+        elif key == "modules":
+            modules = ET.SubElement(root, "modules")
+            for module in value:
+                module_elem = ET.SubElement(modules, "module")
+                ET.SubElement(module_elem, "name").text = module["name"]
+                equipment = ET.SubElement(module_elem, "equipment")
+                for eq in module["equipment"]:
+                    ET.SubElement(equipment, "equipment").text = eq
+        elif key == "crew":
+            crew = ET.SubElement(root, "crew")
+            for crew_member in value:
+                crew_member_elem = ET.SubElement(crew, "crewMember")
+                ET.SubElement(crew_member_elem, "name").text = crew_member["name"]
+                ET.SubElement(crew_member_elem, "role").text = crew_member["role"]
+    return ET.tostring(root, encoding="unicode")
+
+yaml_data = yaml.safe_load("""
+spaceStation:
+  name: Nebula Outpost
+  modules:
+    module:
+      - name: Habitat Ring
+        equipment:
+          - Hydroponics Lab
+          - Sleep Pods
+          - Recreation Hub
+      - name: Science Deck
+        equipment:
+          - Particle Accelerator
+          - Observation Dome
+  crew:
+    crewMember:
+      - name: Dr. Vera Lin
+        role: Astrobiologist
+      - name: Commander Jax Rami
+        role: Station Chief
+""")
+
+print(yaml_to_xml(yaml_data))

@@ -1,0 +1,28 @@
+
+ecosystem:
+  name: "Verdant Expanse"
+  location:
+    latitude: -23.456
+    longitude: 45.678
+  climate:
+    type: "tropical"
+    average_temperature_celsius: 28
+  flora:
+    - species: "Giant Fern"
+      population_estimate: 15000
+      notable_features:
+        - "Can grow up to 5 meters tall"
+        - "Has large, frond-like leaves"
+        - "Thrives in humid environments"
+  fauna:
+    - species: "Emerald Tree Frog"
+      diet: "insectivore"
+      population_estimate: 8000
+      conservation_status: "least concern"
+  events:
+    - event_name: "Great Flood of 2021"
+      date: "2021-03-15"
+      impact_summary: "Significant loss of habitat for many species and increased nutrient runoff."
+    - event_name: "Forest Fire of 2022"
+      date: "2022-07-20"
+      impact_summary: "Destruction of large areas of flora, leading to a decline in animal populations."

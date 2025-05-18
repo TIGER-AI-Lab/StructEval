@@ -1,0 +1,33 @@
+[brewery]
+name = "Hoppy Trails Brewery"
+founded_year = 2012
+
+[brewery.location]
+city = "Portland"
+country = "USA"
+
+[brewery.flagship_beer]
+name = "Trailblazer IPA"
+abv = 6.5
+
+[[brewery.flagship_beer.awards]]
+title = "Best IPA"
+year = 2018
+
+[[brewery.brewers]]
+name = "John Doe"
+role = "Head Brewer"
+years_experience = 15
+
+[[brewery.brewers]]
+name = "Jane Smith"
+role = "Assistant Brewer"
+years_experience = 8
+
+[brewery.tours]
+available = true
+
+[[brewery.tours.schedule]]
+day = "Saturday"
+start_time = "14:00"
+language = "English"

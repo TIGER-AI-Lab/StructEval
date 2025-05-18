@@ -1,0 +1,50 @@
+
+import json
+
+def extract_artifact_info(text):
+    # Assuming the text is a string containing the artifact information
+    # This is a simplified example and actual implementation may vary based on the text format
+    artifact = {
+        "name": "Artifact Name",
+        "origin": {
+            "culture": "Ancient Civilization",
+            "estimated_period": "Late Bronze Age"
+        },
+        "materials": ["Material 1", "Material 2"],
+        "dimensions": {
+            "height_cm": 10,
+            "width_cm": 5,
+            "depth_cm": 2
+        },
+        "provenance": {
+            "previous_owners": [
+                {
+                    "name": "Owner 1",
+                    "acquisition_year": 2020
+                },
+                {
+                    "name": "Owner 2",
+                    "acquisition_year": 2019
+                }
+            ]
+        },
+        "restoration_history": [
+            {
+                "date": "2022-01-01",
+                "description": "Restoration Description",
+                "restorer": "Restorer Name"
+            }
+        ],
+        "exhibition_records": [
+            {
+                "venue": "Exhibition Venue 1"
+            },
+            {
+                "venue": "Exhibition Venue 2"
+            }
+        ]
+    }
+
+    return json.dumps(artifact, indent=4)
+
+print(extract_artifact_info("Artifact text"))

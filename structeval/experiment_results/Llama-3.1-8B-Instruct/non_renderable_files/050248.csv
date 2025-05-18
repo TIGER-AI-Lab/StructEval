@@ -1,0 +1,62 @@
+
+import csv
+import json
+
+data = '''[
+  {
+    "artifact_id": "XQ-301",
+    "planet_of_origin": "Zyphron",
+    "discovery_date": "2387-11-04",
+    "material": "crystallized plasma",
+    "mass_kg": 12.5,
+    "mystery_rating": 9.7
+  },
+  {
+    "artifact_id": "T9-204",
+    "planet_of_origin": "Luminara",
+    "discovery_date": "2391-02-18",
+    "material": "liquid obsidian",
+    "mass_kg": 7.2,
+    "mystery_rating": 8.3
+  },
+  {
+    "artifact_id": "GH-112",
+    "planet_of_origin": "Epsilon V",
+    "discovery_date": "2379-06-29",
+    "material": "unknown alloy",
+    "mass_kg": 34.8,
+    "mystery_rating": 9.9
+  },
+  {
+    "artifact_id": "KJ-877",
+    "planet_of_origin": "Quorra",
+    "discovery_date": "2385-12-12",
+    "material": "organic glass",
+    "mass_kg": 5.6,
+    "mystery_rating": 7.5
+  },
+  {
+    "artifact_id": "PL-390",
+    "planet_of_origin": "Deltara",
+    "discovery_date": "2393-03-22",
+    "material": "voidstone",
+    "mass_kg": 18.0,
+    "mystery_rating": 8.9
+  },
+  {
+    "artifact_id": "MN-042",
+    "planet_of_origin": "Xerxes Prime",
+    "discovery_date": "2382-08-15",
+    "material": "bioluminescent fiber",
+    "mass_kg": 2.3,
+    "mystery_rating": 8.1
+  }
+]'''
+
+data = json.loads(data)
+fields = data[0].keys()
+
+with open('output.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=fields)
+    writer.writeheader()
+    writer.writerows(data)

@@ -1,0 +1,17 @@
+
+[artifact]
+title = "Historical Artifact"
+creator = { name = "John Doe", affiliation = "The Museum" }
+year_created = 1850
+dimensions = { height_cm = 20.5, width_cm = 15.2, depth_cm = 3.8 }
+materials = ["wood", "metal", "glass"]
+origin = { country = "United States", city = "New York" }
+exhibition_history = [
+  { location = "The Metropolitan Museum of Art", year = 2010, curator = "Jane Smith" }
+]
+provenance = {
+  previous_owners = [
+    { name = "John Smith", acquisition_date = "2010-01-01T00:00:00Z" },
+    { name = "Jane Doe", acquisition_date = "2005-06-15T12:00:00Z" }
+  ]
+}

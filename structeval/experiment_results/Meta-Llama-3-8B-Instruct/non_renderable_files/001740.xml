@@ -1,0 +1,51 @@
+
+<creature>
+    <name>Grakkor</name>
+    <species>Dragonoid</species>
+    <age>250</age>
+    <habitat>
+        <type>Mountainous</type>
+        <location>The Spine of the World</location>
+        <temperature>10</temperature>
+    </habitat>
+    <abilities>
+        <ability>
+            <name>Fire Breath</name>
+            <level>8</level>
+            <cooldown>30</cooldown>
+        </ability>
+        <ability>
+            <name>Claw Swipe</name>
+            <level>5</level>
+            <cooldown>15</cooldown>
+        </ability>
+    </abilities>
+    <appearance>
+        <height>120</height>
+        <color>Scarlet</color>
+        <markings>Golden Scales</markings>
+    </appearance>
+    <history>
+        <origin>The Heart of the Mountain</origin>
+        <majorEvents>
+            <event>
+                <eventName>The Great Conquest</eventName>
+                <year>1000</year>
+            </event>
+            <event>
+                <eventName>The Great Betrayal</eventName>
+                <year>1050</year>
+            </event>
+        </majorEvents>
+    </history>
+    <relationships>
+        <relationship>
+            <relationType>Friend</relationType>
+            <individual>Araxys</individual>
+        </relationship>
+        <relationship>
+            <relationType>Rival</relationType>
+            <individual>Korvus</individual>
+        </relationship>
+    </relationships>
+</creature>

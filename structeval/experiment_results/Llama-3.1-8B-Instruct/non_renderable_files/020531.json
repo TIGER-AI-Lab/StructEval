@@ -1,0 +1,41 @@
+
+[
+  {
+    "planet.name": "Saturn",
+    "planet.type": "Gas Giant",
+    "planet.distance_from_sun_au": 9.58,
+    "planet.has_rings": true,
+    "planet.moons": 82,
+    "planet.atmosphere.composition": "Hydrogen/Helium",
+    "planet.atmosphere.pressure": 140,
+    "planet.atmosphere.layers[0].name": "Troposphere",
+    "planet.atmosphere.layers[0].altitude_range_km": "0-250",
+    "planet.atmosphere.layers[1].name": "Stratosphere",
+    "planet.atmosphere.layers[1].altitude_range_km": "250-1000",
+    "planet.landing_sites[0].site_name": "Enceladus Base",
+    "planet.landing_sites[0].coordinates.latitude": -2.5,
+    "planet.landing_sites[0].coordinates.longitude": 202.6,
+    "planet.landing_sites[1].site_name": "Titan Outpost",
+    "planet.landing_sites[1].coordinates.latitude": -1.3,
+    "planet.landing_sites[1].coordinates.longitude": 210.8
+  },
+  {
+    "planet.name": "Mars",
+    "planet.type": "Terrestrial",
+    "planet.distance_from_sun_au": 1.52,
+    "planet.has_rings": false,
+    "planet.moons": 2,
+    "planet.atmosphere.composition": "CO2/N2/Ar",
+    "planet.atmosphere.pressure": 0.6,
+    "planet.atmosphere.layers[0].name": "Troposphere",
+    "planet.atmosphere.layers[0].altitude_range_km": "0-40",
+    "planet.atmosphere.layers[1].name": "Stratosphere",
+    "planet.atmosphere.layers[1].altitude_range_km": "40-100",
+    "planet.landing_sites[0].site_name": "Gale Crater",
+    "planet.landing_sites[0].coordinates.latitude": -5.4,
+    "planet.landing_sites[0].coordinates.longitude": 137.8,
+    "planet.landing_sites[1].site_name": "Olympus Base",
+    "planet.landing_sites[1].coordinates.latitude": 18.65,
+    "planet.landing_sites[1].coordinates.longitude": 226.2
+  }
+]

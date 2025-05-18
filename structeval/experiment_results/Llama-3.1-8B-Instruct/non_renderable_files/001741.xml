@@ -1,0 +1,29 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<planet>
+    <name>Xylophia-IV</name>
+    <mass>1.23e24</mass>
+    <orbit>
+        <distance>2.5</distance>
+        <period>365</period>
+    </orbit>
+    <atmosphere>
+        <composition>N2, O2, CO2</composition>
+        <pressure>101.325</pressure>
+    </atmosphere>
+    <moons>
+        <moon>
+            <name>Xylophia-IV-1</name>
+            <radius>200.0</radius>
+            <discovered_by>John Smith</discovered_by>
+            <discovery_date>2020-01-01</discovery_date>
+        </moon>
+    </moons>
+    <rings>
+        <ring>
+            <inner_radius>100.0</inner_radius>
+            <outer_radius>500.0</outer_radius>
+            <composition>Ice, Rock</composition>
+        </ring>
+    </rings>
+</planet>

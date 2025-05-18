@@ -1,0 +1,67 @@
+<recipe>
+  <title>Quinoa Stuffed Bell Peppers</title>
+  <author>
+    <name>Jane Doe</name>
+    <email>jane.doe@example.com</email>
+  </author>
+  <contact>
+    <phone>+1234567890</phone>
+    <address>1234 Maple Street, Food City, Foodland</address>
+  </contact>
+  <ingredients>
+    <ingredient>
+      <name>Quinoa</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Bell Peppers</name>
+      <quantity>4</quantity>
+      <unit>medium</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Black Beans</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Tomato Sauce</name>
+      <quantity>1</quantity>
+      <unit>cup</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Preheat the oven to 375Â°F (190Â°C). Cook the quinoa according to package instructions.</description>
+      <duration_minutes>10</duration_minutes>
+      <tools>
+        <tool>
+          <name>Oven</name>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+    <step>
+      <description>Cut the tops off the bell peppers and remove the seeds and membranes.</description>
+      <duration_minutes>5</duration_minutes>
+      <tools>
+        <tool>
+          <name>Knife</name>
+          <required>true</required>
+        </tool>
+      </tools>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>350</calories>
+    <fat_grams>5</fat_grams>
+    <protein_grams>12</protein_grams>
+  </nutrition>
+  <tags>
+    <tag>Vegetarian</tag>
+  </tags>
+</recipe>

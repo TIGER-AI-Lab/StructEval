@@ -1,0 +1,34 @@
+[expedition]
+name = "Interplanetary Mission Alpha"
+launch_date = "2023-07-15"
+[expedition.destination]
+planet = "Mars"
+[expedition.destination.coordinates]
+latitude = 45.123
+longitude = -90.456
+[expedition.crew]
+[[expedition.crew]]
+name = "Alice Johnson"
+role = "Commander"
+age = 38
+certifications = ["Spaceflight", "Emergency Response"]
+[[expedition.crew]]
+name = "Bob Smith"
+role = "Engineer"
+age = 42
+certifications = ["Rocket Propulsion", "Life Support"]
+[[expedition.crew]]
+name = "Charlie Brown"
+role = "Scientist"
+age = 35
+certifications = ["Astrobiology", "Geology"]
+[expedition.cargo]
+[[expedition.cargo]]
+item = "Oxygen Tanks"
+quantity = 100
+[[expedition.cargo]]
+item = "Food Rations"
+quantity = 500
+[[expedition.cargo]]
+item = "Medical Supplies"
+quantity = 200

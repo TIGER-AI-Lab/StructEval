@@ -1,0 +1,48 @@
+python
+import json
+import xml.etree.ElementTree as ET
+
+xml_data = """
+<galaxy>
+  <name>Whirlpool</name>
+  <star_systems>
+    <star_system>
+      <name>Alpha Centauri</name>
+      <planets>
+        <planet>
+          <name>Zephyria</name>
+          <species>
+            <creature>Zephyrian Hawk</creature>
+            <creature>Wind Serpent</creature>
+          </species>
+        </planet>
+        <planet>
+          <name>Lumora</name>
+          <species>
+            <creature>Glow Beetle</creature>
+          </species>
+        </planet>
+      </planets>
+    </star_system>
+    <star_system>
+      <name>Betelgeuse</name>
+      <planets>
+        <planet>
+          <name>Crystalis</name>
+          <species>
+            <creature>Crystal Fox</creature>
+          </species>
+        </planet>
+      </planets>
+    </star_system>
+  </star_systems>
+</galaxy>
+"""
+
+def xml_to_json(xml_string):
+    root = ET.fromstring(xml_string)
+    json_data = json.dumps(ET.tostring(root, encoding='unicode'), indent=4)
+    return json_data
+
+json_data = xml_to_json(xml_data)
+print(json_data)

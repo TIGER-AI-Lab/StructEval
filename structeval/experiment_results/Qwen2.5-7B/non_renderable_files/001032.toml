@@ -1,0 +1,23 @@
+[gallery]
+title = "Museum of Modern Art"
+[curator]
+name = "John Doe"
+[contact]
+email = "john.doe@example.com"
+phone = "123-456-7890"
+[location]
+city = "New York"
+country = "USA"
+[exhibitions]
+[[exhibitions]]
+name = "Art of the 20th Century"
+start_date = "2023-01-01"
+end_date = "2023-03-31"
+[artworks]
+[[artworks]]
+artist = "Pablo Picasso"
+title = "Guernica"
+year = 1937
+[dimensions]
+height_cm = 349.3
+width_cm = 776.6

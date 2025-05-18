@@ -1,0 +1,39 @@
+{
+  "artifact": {
+    "name": "Rosetta Stone",
+    "origin": {
+      "civilization": "Ancient Egyptian",
+      "epoch": "Ptolemaic Period"
+    },
+    "materials": [
+      {
+        "type": "Granodiorite",
+        "provenance": "Likely from quarries in Upper Egypt"
+      },
+      {
+        "type": "Paint",
+        "provenance": "Organic pigments mixed with beeswax"
+      }
+    ],
+    "dimensions": {
+      "height_cm": 114.4,
+      "width_cm": 72.3,
+      "depth_cm": 27.9
+    },
+    "features": [
+      {
+        "description": "Fragmented, with a missing upper right corner and damage to the surface.",
+        "estimated_age_years": 2200
+      },
+      {
+        "description": "Contains inscriptions in three scripts: Hieroglyphic, Demotic, and Ancient Greek.",
+        "estimated_age_years": 2200
+      }
+    ],
+    "inscriptions": {
+      "language": "Hieroglyphic, Demotic, Ancient Greek",
+      "text": "Various decrees and religious texts (fragmentary)",
+      "translation": "Decree of Ptolemy V Epiphanes in three scripts"
+    }
+  }
+}

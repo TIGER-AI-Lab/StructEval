@@ -1,0 +1,89 @@
+[
+    {
+        "animal_id": "A001",
+        "species": "Red Panda",
+        "profile": {
+            "name": "Mei Lin",
+            "age": 4,
+            "gender": "Female",
+            "medical_history": [
+                {
+                    "condition": "Dental Issues",
+                    "year_diagnosed": 2022,
+                    "treatment": "Dental cleaning"
+                },
+                {
+                    "condition": "Allergy",
+                    "year_diagnosed": 2023,
+                    "treatment": "Antihistamines"
+                }
+            ]
+        },
+        "enclosure": {
+            "zone": "North",
+            "habitat_type": "Temperate Forest",
+            "companions": [
+                {
+                    "name": "Bao",
+                    "species": "Red Panda"
+                }
+            ]
+        },
+        "diet": {
+            "primary_foods": ["Bamboo", "Berries"],
+            "supplements": ["Vitamin C"]
+        },
+        "caretakers": [
+            {
+                "name": "Sam",
+                "shift": "Morning"
+            },
+            {
+                "name": "Priya",
+                "shift": "Evening"
+            }
+        ],
+        "enrichment_activities": ["Tree climbing", "Puzzle feeders"]
+    },
+    {
+        "animal_id": "A002",
+        "species": "Komodo Dragon",
+        "profile": {
+            "name": "Raja",
+            "age": 8,
+            "gender": "Male",
+            "medical_history": [
+                {
+                    "condition": "Arthritis",
+                    "year_diagnosed": 2021,
+                    "treatment": "Joint supplements"
+                }
+            ]
+        },
+        "enclosure": {
+            "zone": "East",
+            "habitat_type": "Desert",
+            "companions": [
+                {
+                    "name": "Sari",
+                    "species": "Komodo Dragon"
+                },
+                {
+                    "name": "Milo",
+                    "species": "Monitor Lizard"
+                }
+            ]
+        },
+        "diet": {
+            "primary_foods": ["Goat meat", "Fish"],
+            "supplements": ["Calcium"]
+        },
+        "caretakers": [
+            {
+                "name": "Alex",
+                "shift": "Night"
+            }
+        ],
+        "enrichment_activities": ["Sun basking", "Scent trails"]
+    }
+]

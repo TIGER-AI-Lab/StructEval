@@ -1,0 +1,36 @@
+
+{
+  "ecosystem": {
+    "name": "Mystic Rainforest",
+    "location": {
+      "latitude": -3.4653,
+      "longitude": -62.2159
+    },
+    "climate": {
+      "type": "tropical",
+      "average_temperature_celsius": 27.5
+    },
+    "dominant_species": "Jaguar",
+    "plant_species": [
+      {
+        "scientific_name": "Ficus elastica",
+        "common_name": "Rubber Tree",
+        "population_estimate": 50000
+      }
+    ],
+    "animal_species": [
+      {
+        "scientific_name": "Panthera onca",
+        "conservation_status": "near threatened",
+        "average_lifespan_years": 12,
+        "diet": "carnivore"
+      }
+    ],
+    "environmental_threats": [
+      {
+        "type": "deforestation",
+        "severity": "high"
+      }
+    ]
+  }
+}

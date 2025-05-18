@@ -1,0 +1,40 @@
+
+{
+  "expedition": {
+    "mission_name": "Stellar Horizon Expedition",
+    "leader": {
+      "name": "Dr. Elara Morn",
+      "rank": "Commander",
+      "contact": {
+        "email": "elara.morn@space.gov",
+        "phone": "+1 555 123 4567"
+      }
+    },
+    "crew": [
+      {
+        "name": "Dr. Kael Voss",
+        "role": "Lead Biologist",
+        "skills": ["Extraterrestrial Biology", "Sample Analysis", "Emergency Medicine"]
+      },
+      {
+        "name": "Lieutenant Taryn Rho",
+        "role": "Systems Engineer",
+        "skills": ["Astroengineering", "Robotics", "Crisis Management"]
+      }
+    ],
+    "destination": {
+      "planet": "Eos-9",
+      "coordinates": {
+        "latitude": 45.678,
+        "longitude": -123.456
+      }
+    },
+    "supply_list": [
+      {"item": "Oxygen Tanks", "quantity": 500},
+      {"item": "Fuel Reserves", "quantity": 10000},
+      {"item": "Food Rations", "quantity": 3000},
+      {"item": "Medical Kits", "quantity": 100},
+      {"item": "Communication Gear", "quantity": 20}
+    ]
+  }
+}

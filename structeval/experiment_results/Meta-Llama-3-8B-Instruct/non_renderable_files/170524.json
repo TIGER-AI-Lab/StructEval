@@ -1,0 +1,42 @@
+
+{
+  "name": "Andromeda",
+  "starSystems": [
+    {
+      "systemName": "Alpha Prime",
+      "planets": [
+        {
+          "planetName": "Zylox",
+          "inhabitants": [
+            {
+              "species": "Glorm",
+              "population": 12000
+            },
+            {
+              "species": "Human",
+              "population": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "systemName": "Beta Minor",
+      "planets": [
+        {
+          "planetName": "Vortax",
+          "inhabitants": [
+            {
+              "species": "Rilnar",
+              "population": 4500
+            }
+          ]
+        },
+        {
+          "planetName": "Eloria",
+          "inhabitants": []
+        }
+      ]
+    }
+  ]
+}

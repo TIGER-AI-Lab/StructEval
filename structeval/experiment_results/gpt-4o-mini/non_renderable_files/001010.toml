@@ -1,0 +1,28 @@
+
+recipe = { 
+    title = "Spaghetti Carbonara",
+    author = "Chef Mario",
+    cuisine = "Italian",
+    difficulty = "medium",
+    prep_time = { minutes = 15 },
+    cook_time = { minutes = 20 },
+    ingredients = [
+        { name = "Spaghetti", quantity = 200, unit = "grams", optional = false },
+        { name = "Pancetta", quantity = 100, unit = "grams", optional = false },
+        { name = "Eggs", quantity = 3, unit = "large", optional = false },
+        { name = "Parmesan cheese", quantity = 50, unit = "grams", optional = true },
+        { name = "Black pepper", quantity = 1, unit = "teaspoon", optional = true }
+    ],
+    steps = [
+        { description = "Cook the spaghetti in salted boiling water until al dente.", duration_minutes = 10 },
+        { description = "Fry the pancetta in a pan until crispy.", duration_minutes = 5 },
+        { description = "Whisk the eggs and mix with grated Parmesan cheese.", duration_minutes = 5 },
+        { description = "Combine spaghetti, pancetta, and egg mixture off the heat.", duration_minutes = 5 }
+    ],
+    nutrition = {
+        calories = 600,
+        protein_grams = 25,
+        fat_grams = 30,
+        carbohydrates_grams = 60
+    }
+}

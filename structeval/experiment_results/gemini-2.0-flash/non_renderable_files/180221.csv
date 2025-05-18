@@ -1,0 +1,8 @@
+
+artifact_id,discovery_site,material,estimated_age_years,discovery_date,current_location
+ART-001,"Gobekli Tepe",Limestone,11600,1994-10-12,"Sanliurfa Museum"
+ART-002,"Pyramid of Giza",Granite,4500,1880-03-02,"British Museum"
+ART-003,"Terracotta Army",Terracotta,2200,1974-03-29,"Emperor Qinshihuang's Mausoleum"
+ART-004,"Machu Picchu",Andesite,570,1911-07-24,"Cusco Museum"
+ART-005,"Easter Island",Tuff,800,1722-04-05,"Rapa Nui Museum"
+ART-006,Stonehenge,Bluestone,5000,1600-06-21,"English Heritage Trust"

@@ -1,0 +1,14 @@
+<zoo>
+  <enclosure id="E-42" theme="Rainforest">
+    <animal>
+      <name>Gizmo</name>
+      <species>Capybara</species>
+      <favorite_snack>Watermelon</favorite_snack>
+    </animal>
+    <animal>
+      <name>Mochi</name>
+      <species>Red Panda</species>
+      <favorite_snack>Bamboo Shoots</favorite_snack>
+    </animal>
+  </enclosure>
+</zoo>

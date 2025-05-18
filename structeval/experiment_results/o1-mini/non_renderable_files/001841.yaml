@@ -1,0 +1,24 @@
+
+artifact:
+  name: "Statue of Apollo"
+  type: "statue"
+  discovery_date: "2023-10-01"
+  origin:
+    civilization: "Ancient Greece"
+    era: "Classical Period"
+    location:
+      latitude: 37.9838
+      longitude: 23.7275
+  materials:
+    - name: "Marble"
+      percentage: 80
+    - name: "Gold"
+      percentage: 20
+  dimensions:
+    height_cm: 250
+    width_cm: 100
+  features:
+    - description: "Intricate carvings on the drapery"
+      significance: "Shows high craftsmanship and aesthetic standards"
+    - description: "Inlaid gemstones in the eyes"
+      significance: "Reflects advanced techniques in gem setting"

@@ -1,0 +1,34 @@
+<recipe>
+    <title>Spaghetti Bolognese</title>
+    <author>
+        <name>John Doe</name>
+        <id>12345</id>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Ground Beef</name>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <description>Boil the spaghetti in salted water until al dente.</description>
+            <duration_minutes>10</duration_minutes>
+        </step>
+        <step>
+            <description>Cook the ground beef in a pan until browned.</description>
+            <duration_minutes>15</duration_minutes>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>450</calories>
+        <protein_grams>25</protein_grams>
+        <fat_grams>15</fat_grams>
+        <carbs_grams>50</carbs_grams>
+    </nutrition>
+</recipe>

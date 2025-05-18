@@ -1,0 +1,25 @@
+
+artifact:
+  name: "The Celestial Sphere"
+  origin:
+    civilization: "Ancient Mesopotamia"
+    era: "Neo-Babylonian Period"
+  materials:
+    primary: "Lapis Lazuli"
+    secondary: "Gold"
+  dimensions:
+    height_cm: 25
+    width_cm: 18
+    depth_cm: 10
+  features:
+    - type: "Engraving"
+      description: "Intricate astronomical symbols and constellations"
+    - type: "Mechanism"
+      description: "A complex system of gears and dials for celestial calculations"
+  provenance:
+    previous_owners:
+      - name: "The British Museum"
+        acquisition_year: 1892
+    discovery:
+      location: "The ancient city of Babylon"
+      date: "2022-03-15"

@@ -1,0 +1,26 @@
+
+gallery.title = "Modern Art Gallery"
+
+[gallery.curator]
+name = "Alice Johnson"
+  [gallery.curator.contact]
+  email = "alice.johnson@example.com"
+  phone = "+1234567890"
+
+[gallery.location]
+city = "New York"
+country = "USA"
+
+[[gallery.exhibitions]]
+name = "Visions of the Future"
+start_date = "2023-10-01"
+end_date = "2023-12-15"
+
+  [[gallery.exhibitions.artworks]]
+  artist = "John Doe"
+  title = "Abstract Dreams"
+  year = 2021
+  medium = "Oil on Canvas"
+    [gallery.exhibitions.artworks.dimensions]
+    height_cm = 150
+    width_cm = 100

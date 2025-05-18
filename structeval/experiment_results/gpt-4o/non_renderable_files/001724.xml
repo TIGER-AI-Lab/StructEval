@@ -1,0 +1,31 @@
+<recipe>
+    <name>Spaghetti Carbonara</name>
+    <author>Chef John Doe</author>
+    <cuisine>Italian</cuisine>
+    <prepTime>PT15M</prepTime>
+    <cookTime>PT20M</cookTime>
+    <servings>4</servings>
+    <ingredients>
+        <ingredient>
+            <name>spaghetti</name>
+            <quantity>400</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <!-- Additional ingredients can be added here -->
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Boil water in a large pot and add spaghetti.</description>
+            <duration>PT10M</duration>
+        </step>
+        <!-- Additional steps can be added here -->
+    </instructions>
+    <nutrition>
+        <calories>500</calories>
+        <fat>20</fat>
+        <protein>15</protein>
+        <carbohydrates>60</carbohydrates>
+    </nutrition>
+</recipe>

@@ -1,0 +1,30 @@
+
+ecosystem = {
+    planet = {
+        name = "Virellis"
+        orbital_period_days = 220
+        atmosphere = {
+            composition = ["nitrogen", "oxygen", "argon", "carbon dioxide"]
+            pressure_kpa = 70
+        }
+        terrain_types = ["bioluminescent forests", "volcanic plains", "crystalline deserts", "tundra ridges"]
+        native_species = [
+            {
+                species_name = "Thryxen"
+                population_estimate = 1200000
+                classification = "mammal"
+                average_lifespan_years = 50
+                diet = "herbivore"
+                notable_traits = ["bioluminescent skin", "sonar communication", "thermoresponsive camouflage"]
+            }
+        ]
+        habitats = [
+            {
+                habitat_name = "Luminara Tundra"
+                dominant_species = "Thryxen"
+                climate_type = "temperate"
+                average_temperature_c = 18
+            }
+        ]
+    }
+}

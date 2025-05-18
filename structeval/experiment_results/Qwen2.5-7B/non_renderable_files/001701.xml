@@ -1,0 +1,12 @@
+
+<planet name="Jupiter" type="gas giant">
+  <discovery year="1610" method="telescope" observer="Galileo Galilei"/>
+  <moons>
+    <moon name="Io" diameter="3643" orbit_period="1.77"/>
+    <moon name="Europa" diameter="3122" orbit_period="3.55"/>
+  </moons>
+  <atmosphere composition="Hydrogen, Helium" pressure="1000000" temperature="-145"/>
+  <rings>
+    <ring width="10000" composition="Ice, Rock"/>
+  </rings>
+</planet>

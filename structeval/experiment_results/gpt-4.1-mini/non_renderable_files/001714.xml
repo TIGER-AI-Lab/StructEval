@@ -1,0 +1,31 @@
+
+<planet>
+  <name>Zephyria</name>
+  <type>gas giant</type>
+  <discovery>
+    <year>2147</year>
+    <method>gravitational microlensing</method>
+  </discovery>
+  <atmosphere>
+    <composition>hydrogen, helium, methane</composition>
+    <pressure>1200</pressure>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>Aurelia</name>
+      <diameter>3420</diameter>
+      <discovery_date>2150-08-12</discovery_date>
+      <features>
+        <feature>
+          <type>crater</type>
+          <description>Large impact crater with bright ejecta rays</description>
+        </feature>
+      </features>
+    </moon>
+  </moons>
+  <rings>
+    <ring>
+      <radius>75000</radius>
+    </ring>
+  </rings>
+</planet>

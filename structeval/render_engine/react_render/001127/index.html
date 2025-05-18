@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001127</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const NewsletterForm = () => {
+  const [email, setEmail] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!email) {
+      setErrorMessage('Email is required');
+    } else {
+      setErrorMessage('');
+      // Handle form submission, e.g., send data to API
+      console.log('Email submitted:', email);
+    }
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <div style={{ maxWidth: '400px', padding: '20px' }}>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <h1>Subscribe Now</h1>
+        </div>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          style={{ width: '100%', marginBottom: '10px' }}
+        />
+        <p style={{ fontSize: 'smaller' }}>Join our monthly newsletter for updates</p>
+        <button onClick={handleSubmit} style={{ backgroundColor: 'green', color: 'white', padding: '10px', width: '100%' }}>
+          Sign Up
+        </button>
+        {errorMessage && <span style={{ color: 'red' }}>{errorMessage}</span>}
+      </div>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterForm />);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+
+planetarium:
+  exhibits:
+    exhibit:
+      - name: "Cosmic Origins"
+        type: "Interactive"
+        features:
+          feature:
+            - "Touchscreen Star Maps"
+            - "Meteorite Samples"
+      - name: "Galactic Theater"
+        type: "Show"
+        features:
+          feature:
+            - "360-degree Projection"
+            - "Live Narration"
+  events:
+    event:
+      - title: "Stargazing Night"
+        date: "2024-07-15"
+      - title: "Astronaut Q&A"
+        date: "2024-08-05"

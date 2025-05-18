@@ -1,0 +1,40 @@
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "starSystems": [
+      {
+        "systemName": "Alpha",
+        "planets": [
+          {
+            "planetName": "Zyra",
+            "moons": [
+              {
+                "moonName": "Luna-Z"
+              },
+              {
+                "moonName": "Phobos-X"
+              }
+            ]
+          },
+          {
+            "planetName": "Orion",
+            "moons": [
+              {
+                "moonName": "Io-Prime"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "systemName": "Beta",
+        "planets": [
+          {
+            "planetName": "Vega",
+            "moons": []
+          }
+        ]
+      }
+    ]
+  }
+}

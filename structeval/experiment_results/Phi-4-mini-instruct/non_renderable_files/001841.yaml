@@ -1,0 +1,24 @@
+
+artifact:
+  name: "Rosetta Stone"
+  type: "inscription"
+  discovery_date: "1799-07-15"
+  origin:
+    civilization: "Ptolemaic Kingdom"
+    era: "Hellenistic Period"
+  origin.location:
+    latitude: 31.2085
+    longitude: 29.9187
+  materials:
+    - name: "Granodiorite"
+      percentage: 95
+    - name: "Limestone"
+      percentage: 5
+  dimensions:
+    height_cm: 114.4
+    width_cm: 72.3
+  features:
+    - description: "Contains a decree issued at Memphis in 196 BC."
+      significance: "Key to deciphering Egyptian hieroglyphs."
+    - description: "Text in three scripts: Greek, Demotic, and Hieroglyphic."
+      significance: "Trilingual inscription crucial for understanding ancient languages."

@@ -1,0 +1,29 @@
+
+<creature>
+    <species_key>Imaginary Species</species_key>
+    <habitat>
+        <region>Unknown Region</region>
+        <climate>Unknown Climate</climate>
+        <features>Unknown Features</features>
+    </habitat>
+    <anatomy>
+        <limbs>
+            <count>4</count>
+            <type>Legs</type>
+        </limbs>
+        <senses>
+            <sense name="Vision" range="100 meters"/>
+        </senses>
+    </anatomy>
+    <behavior>
+        <diet>Herbivore</diet>
+        <activity_cycle>Diurnal</activity_cycle>
+        <social_structure>Solitary</social_structure>
+    </behavior>
+    <abilities>
+        <ability name="Flight" description="The ability to fly long distances" rarity="rare"/>
+    </abilities>
+    <discovery>
+        <discovery_date>2022-01-01</discovery_date>
+    </discovery>
+</creature>

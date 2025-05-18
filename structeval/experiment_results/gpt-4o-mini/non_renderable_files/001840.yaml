@@ -1,0 +1,23 @@
+
+museum:
+  name: "The Art and History Museum"
+  location:
+    city: "Metropolis"
+    country: "Utopia"
+  founded_year: 1995
+  curators:
+    - name: "Dr. Jane Smith"
+      specialty: "Modern Art"
+      years_of_experience: 15
+  exhibits:
+    - title: "Reflections of Time"
+      artist: "John Doe"
+      year_created: 2020
+      medium: "Oil on Canvas"
+      dimensions:
+        height_cm: 150
+        width_cm: 100
+      on_display: true
+      provenance:
+        - "Private Collection"
+        - "Gallery of Modern Art"

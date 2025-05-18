@@ -1,0 +1,112 @@
+
+<recipe>
+    <title>Delicious Chocolate Cake</title>
+    <author>
+        <name>Jane Doe</name>
+        <contact>
+            <email>jane.doe@example.com</email>
+            <phone>555-123-4567</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Flour</name>
+            <quantity>2.5</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Sugar</name>
+            <quantity>1.75</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Cocoa Powder</name>
+            <quantity>0.75</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Baking Soda</name>
+            <quantity>1.5</quantity>
+            <unit>teaspoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Baking Powder</name>
+            <quantity>1.5</quantity>
+            <unit>teaspoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Eggs</name>
+            <quantity>2</quantity>
+            <unit></unit>
+        </ingredient>
+        <ingredient>
+            <name>Milk</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Vegetable Oil</name>
+            <quantity>0.5</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Boiling Water</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <instruction>
+            <stepNumber>1</stepNumber>
+            <description>Preheat oven to 350Â°F (175Â°C). Grease and flour a 9x13 inch pan.</description>
+        </instruction>
+        <instruction>
+            <stepNumber>2</stepNumber>
+            <description>In a large bowl, whisk together the flour, sugar, cocoa, baking soda, baking powder, and salt.</description>
+        </instruction>
+        <instruction>
+            <stepNumber>3</stepNumber>
+            <description>Add the eggs, milk, and oil to the dry ingredients. Beat for 2 minutes.</description>
+        </instruction>
+        <instruction>
+            <stepNumber>4</stepNumber>
+            <description>Stir in the boiling water. The batter will be thin.</description>
+            <timer>
+                <duration>PT1M</duration>
+            </timer>
+        </instruction>
+        <instruction>
+            <stepNumber>5</stepNumber>
+            <description>Pour the batter into the prepared pan.</description>
+        </instruction>
+        <instruction>
+            <stepNumber>6</stepNumber>
+            <description>Bake for 30-35 minutes, or until a toothpick inserted into the center comes out clean.</description>
+            <timer>
+                <duration>PT32M</duration>
+            </timer>
+        </instruction>
+        <instruction>
+            <stepNumber>7</stepNumber>
+            <description>Let cool completely before frosting.</description>
+        </instruction>
+    </instructions>
+    <nutrition>
+        <calories>350</calories>
+        <fat>15.5</fat>
+        <protein>5.2</protein>
+    </nutrition>
+    <tags>
+        <label>dessert</label>
+        <label>chocolate</label>
+        <label>cake</label>
+    </tags>
+    <metadata>
+        <createdDate>2023-10-26</createdDate>
+    </metadata>
+</recipe>

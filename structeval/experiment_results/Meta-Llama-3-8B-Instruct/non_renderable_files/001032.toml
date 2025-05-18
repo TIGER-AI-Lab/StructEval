@@ -1,0 +1,10 @@
+
+[gallery]
+title = "Art Gallery"
+curator = {name = "John Doe", contact = {email = "john.doe@example.com", phone = "1234567890"}}
+location = {city = "New York", country = "USA"}
+exhibitions = [
+  {name = "Exhibition 1", start_date = "2023-03-01", end_date = "2023-04-30", artworks = [
+    {artist = "Jane Smith", title = "Artwork 1", year = 2020, medium = "Painting", dimensions = {height_cm = 100, width_cm = 80}}
+  ]}
+]

@@ -1,0 +1,36 @@
+
+<recipe>
+  <title>Spaghetti Aglio e Olio</title>
+  <author>
+    <name>John Doe</name>
+    <profileUrl>https://example.com/author/johndoe</profileUrl>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <order>1</order>
+      <instruction>Boil spaghetti in salted water for 8-10 minutes until al dente.</instruction>
+      <timer>
+        <seconds>300</seconds>
+      </timer>
+      <notes>Stir occasionally to prevent sticking.</notes>
+    </step>
+  </steps>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <prepTimeMinutes>15</prepTimeMinutes>
+    <tags>
+      <tag>quick</tag>
+    </tags>
+  </metadata>
+  <nutrition>
+    <calories>400</calories>
+  </nutrition>
+</recipe>

@@ -1,0 +1,33 @@
+[artifact]
+title = "The Rosetta Stone"
+year_created = 196 BC
+
+[artifact.creator]
+name = "Ptolemaic Dynasty"
+affiliation = "Ancient Egyptian Kingdom"
+
+[artifact.dimensions]
+height_cm = 114.4
+width_cm = 72.3
+depth_cm = 27.9
+
+artifact.materials = ["Granodiorite"]
+
+[artifact.origin]
+country = "Egypt"
+city = "Memphis"
+
+[[artifact.exhibition_history]]
+location = "British Museum"
+year = 1802
+curator = "Edward Daniel Clarke"
+
+[artifact.provenance]
+
+[[artifact.provenance.previous_owners]]
+name = "Napoleon Bonaparte"
+acquisition_date = "1799-07-15"
+
+[[artifact.provenance.previous_owners]]
+name = "British Government"
+acquisition_date = "1801-06-01"

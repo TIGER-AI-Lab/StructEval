@@ -1,0 +1,62 @@
+{
+  "expedition": {
+    "mission_name": "Odyssey Beyond the Stars",
+    "leader": {
+      "name": "Dr. Elena Vasquez",
+      "rank": "Commander",
+      "contact": {
+        "email": "elena.vasquez@spaceagency.org",
+        "phone": "+1-555-123-4567"
+      }
+    },
+    "crew": [
+      {
+        "name": "Lt. Marcus Chen",
+        "role": "Chief Engineer",
+        "skills": [
+          "Mechanical Engineering",
+          "Robotics",
+          "System Diagnostics"
+        ]
+      },
+      {
+        "name": "Dr. Amina Patel",
+        "role": "Astrobiologist",
+        "skills": [
+          "Microbial Analysis",
+          "Planetary Geology",
+          "Data Interpretation"
+        ]
+      }
+    ],
+    "destination": {
+      "planet": "Kepler-442b",
+      "coordinates": {
+        "latitude": 12.3456,
+        "longitude": -98.7654
+      }
+    },
+    "supply_list": [
+      {
+        "item": "Oxygen Tanks",
+        "quantity": 50
+      },
+      {
+        "item": "Food Rations",
+        "quantity": 200
+      },
+      {
+        "item": "Water Containers",
+        "quantity": 100
+      },
+      {
+        "item": "Medical Kits",
+        "quantity": 20
+      },
+      {
+        "item": "Spare Parts",
+        "quantity": 75
+      }
+    ]
+  }
+}

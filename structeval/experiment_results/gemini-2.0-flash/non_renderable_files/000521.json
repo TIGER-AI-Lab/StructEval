@@ -1,0 +1,52 @@
+{
+  "museum": {
+    "name": "The Grand Museum of Art and History",
+    "location": {
+      "city": "Metropolis",
+      "country": "United States"
+    },
+    "established_year": 1925,
+    "director": {
+      "name": "Dr. Eleanor Vance",
+      "tenure_years": 7
+    },
+    "departments": [
+      {
+        "name": "Ancient Civilizations",
+        "head": "Professor Alistair Finch",
+        "collections": [
+          {
+            "title": "Pharaoh's Mask",
+            "year_acquired": 1950,
+            "artist": "Unknown",
+            "medium": "Gold",
+            "on_display": true
+          },
+          {
+            "title": "Roman Chariot Wheel",
+            "year_acquired": 1982,
+            "artist": "Unknown",
+            "medium": "Wood and Iron",
+            "on_display": false
+          },
+          {
+            "title": "Greek Amphora",
+            "year_acquired": 2001,
+            "artist": "Sophilos",
+            "medium": "Ceramic",
+            "on_display": true
+          }
+        ]
+      },
+      {
+        "name": "Modern Art",
+        "head": "Ms. Clara Bellwether",
+        "collections": []
+      }
+    ],
+    "opening_hours": {
+      "weekdays": "10:00 AM - 6:00 PM",
+      "weekends": "11:00 AM - 8:00 PM"
+    }
+  }
+}

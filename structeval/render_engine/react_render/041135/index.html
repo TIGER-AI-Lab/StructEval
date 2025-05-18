@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041135</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>My Website</h1>
+        <p>Welcome to our informational site. Please browse to learn more about us.</p>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section id="about">
+        <h2>About Us</h2>
+        <article>
+          <h3>Our Mission</h3>
+          <p>
+            Our mission is to deliver quality content and innovative solutions that empower communities and drive change.
+          </p>
+        </article>
+        <article>
+          <h3>Our History</h3>
+          <p>
+            Founded in 2010, we have grown from a small start-up to a key player in our industry. Our journey is fueled by passion, dedication, and the spirit of continuous improvement.
+          </p>
+        </article>
+      </section>
+
+      <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>
+            <h4>Consulting</h4>
+            <p>We offer expert consulting services in various industries to help your business reach its full potential.</p>
+          </li>
+          <li>
+            <h4>Development</h4>
+            <p>Our development team creates robust, scalable, and user-friendly software solutions tailored to your needs.</p>
+          </li>
+          <li>
+            <h4>Design</h4>
+            <p>Our creative designers craft visually appealing and functional designs that enhance your brand identity.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div>
+          <article>
+            <h3>Project One: Responsive Redesign</h3>
+            <p><strong>Client:</strong> ABC Corporation</p>
+            <section>
+              <h4>Project Overview</h4>
+              <p>
+                This project involved a complete redesign of the client's website ensuring responsive design and improved user engagement.
+              </p>
+              <ul>
+                <li>Responsive layout</li>
+                <li>Cross-browser compatibility</li>
+                <li>Enhanced navigation</li>
+              </ul>
+            </section>
+          </article>
+
+          <article>
+            <h3>Project Two: E-commerce Platform</h3>
+            <p><strong>Client:</strong> XYZ Enterprises</p>
+            <section>
+              <h4>Project Overview</h4>
+              <p>
+                Developed a feature-rich e-commerce platform offering secure payment options and a seamless customer shopping experience.
+              </p>
+              <dl>
+                <dt>Technology:</dt>
+                <dd>Python, Django</dd>
+                <dt>Key Features:</dt>
+                <dd>Shopping cart, secure payments, user accounts</dd>
+              </dl>
+            </section>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <div>
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </div>
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="user_email" />
+          </div>
+          <div>
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="user_message"></textarea>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

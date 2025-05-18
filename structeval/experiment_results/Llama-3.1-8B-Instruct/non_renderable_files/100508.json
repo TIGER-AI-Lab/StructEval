@@ -1,0 +1,58 @@
+
+{
+  "space_station": {
+    "name": "Aurora Haven",
+    "launch_date": "2077-03-15",
+    "operational": true,
+    "location": {
+      "planet": "Ganymede",
+      "galaxy": "Milky Way"
+    },
+    "modules": [
+      {
+        "id": "M-01",
+        "type": "Habitation",
+        "crew_capacity": 12,
+        "equipment": [
+          "beds",
+          "kitchen",
+          "gym"
+        ],
+        "power_usage_kw": 1500
+      },
+      {
+        "id": "M-02",
+        "type": "Research",
+        "crew_capacity": 8,
+        "equipment": [
+          "lab benches",
+          "microscopes",
+          "spectrometer"
+        ],
+        "power_usage_kw": 2000
+      },
+      {
+        "id": "M-03",
+        "type": "Hydroponics",
+        "crew_capacity": 4,
+        "equipment": [
+          "grow lights",
+          "nutrient tanks"
+        ],
+        "power_usage_kw": 1200
+      }
+    ],
+    "visitor_logs": [
+      {
+        "visitor_name": "Dr. Linya Patel",
+        "arrival_date": "2080-07-21",
+        "purpose": "Botanical Research"
+      },
+      {
+        "visitor_name": "Cmdr. Alexei Volkov",
+        "arrival_date": "2080-08-03",
+        "purpose": "Systems Inspection"
+      }
+    ]
+  }
+}

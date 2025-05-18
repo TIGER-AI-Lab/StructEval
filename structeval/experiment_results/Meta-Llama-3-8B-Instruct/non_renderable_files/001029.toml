@@ -1,0 +1,31 @@
+
+[artifact]
+name = "Zorvathian Orb"
+origin = "Xeridia"
+
+[artifact.discovery]
+year = 2345
+location = "Galactic Coordinates: 43.7212Â° N, 12.3456Â° E"
+
+[artifact.materials]
+[[artifact.materials]]
+type = "Quasarite"
+percentage = 80.5
+
+[[artifact.materials]]
+type = "Nebulon"
+percentage = 19.5
+
+[artifact.dimensions]
+height_cm = 25.0
+width_cm = 15.0
+depth_cm = 10.0
+
+[artifact.features]
+[[artifact.features]]
+description = "Energy resonance chamber"
+is_encrypted = true
+
+[[artifact.features]]
+description = "Data storage matrix"
+is_encrypted = false

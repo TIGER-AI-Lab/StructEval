@@ -1,0 +1,17 @@
+
+[recipe]
+title = "Spicy Tuna Avocado Salad"
+chef = { name = "Chef Maria Lopez", experience_years = 15 }
+ingredients = [
+  { name = "Canned Tuna", quantity = 1, unit = "can" },
+  { name = "Avocado", quantity = 1, unit = "whole" },
+  { name = "Lemon Juice", quantity = 2, unit = "tablespoons" },
+  { name = "Red Onion", quantity = 1, unit = "small" }
+]
+instructions = [
+  { step = "Drain and flake the canned tuna.", time_minutes = 5 },
+  { step = "Dice the avocado and red onion.", time_minutes = 10 }
+]
+nutrition = { calories = 350, protein_grams = 30, fat_grams = 20 }
+tags = ["salad", "tuna", "avocado", "healthy"]
+

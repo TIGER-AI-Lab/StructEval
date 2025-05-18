@@ -1,0 +1,43 @@
+
+{
+    "artifact": {
+        "name": "The Golden Chalice of the Ancients",
+        "origin": {
+            "civilization": "Egyptian",
+            "era": "New Kingdom"
+        },
+        "description": "A golden chalice with intricate hieroglyphics and a delicate handle, believed to have been used in ancient Egyptian rituals.",
+        "discovery": {
+            "date": "2022-03-15T14:30:00.000Z",
+            "location": {
+                "latitude": 25.7325,
+                "longitude": 32.5678
+            },
+            "team": [
+                {
+                    "member_name": "Dr. Maria Rodriguez",
+                    "role": "Archaeologist"
+                },
+                {
+                    "member_name": "Dr. John Lee",
+                    "role": "Geologist"
+                }
+            ]
+        }
+    },
+    "materials": [
+        {
+            "type": "Gold",
+            "percentage": 80
+        },
+        {
+            "type": "Copper",
+            "percentage": 20
+        }
+    ],
+    "dimensions": {
+        "height_cm": 15,
+        "width_cm": 10,
+        "depth_cm": 5
+    }
+}

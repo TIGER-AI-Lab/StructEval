@@ -1,0 +1,31 @@
+<planet>
+  <name>Xylo</name>
+  <mass>2.5</mass>
+  <atmosphere>
+    <composition>Nitrogen, Oxygen, Argon</composition>
+    <pressure>1.2</pressure>
+    <layers>
+      <layer>
+        <name>Troposphere</name>
+        <altitude_range>0-15</altitude_range>
+        <temperature>20</temperature>
+      </layer>
+    </layers>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>Luna X</name>
+      <diameter>3500</diameter>
+      <discovered_by>A. Scientist</discovered_by>
+      <discovery_date>2024-03-15</discovery_date>
+    </moon>
+  </moons>
+  <rings>
+    <ring>
+      <composition>Ice particles</composition>
+      <radius>120000</radius>
+    </ring>
+  </rings>
+  <orbital_period>450</orbital_period>
+  <distance_from_star>1.8</distance_from_star>
+</planet>

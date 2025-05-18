@@ -1,0 +1,38 @@
+
+<recipe>
+  <title>Classic Tomato Soup</title>
+  <author>
+    <id>001</id>
+    <name>Jane Doe</name>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Tomatoes</name>
+      <quantity>500</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Onion</name>
+      <quantity>100</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Chop the tomatoes and onions, then sautÃ© them in a pot.</description>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <step>
+      <description>Blend the mixture until smooth, then add water and simmer.</description>
+      <duration_minutes>20</duration_minutes>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>150</calories>
+    <protein_grams>2</protein_grams>
+    <fat_grams>0</fat_grams>
+    <carbs_grams>30</carbs_grams>
+  </nutrition>
+</recipe>

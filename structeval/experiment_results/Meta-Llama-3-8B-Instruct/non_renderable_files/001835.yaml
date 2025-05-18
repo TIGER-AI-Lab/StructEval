@@ -1,0 +1,27 @@
+
+exhibit:
+  title: "Curated Art Exhibit"
+  curator:
+    name: "John Doe"
+    contact_email: "johndoe@example.com"
+  artworks:
+  - artist: "Jane Smith"
+    title: "Artwork 1"
+    year_created: 2010
+    medium: "Oil on Canvas"
+    dimensions:
+      height_cm: 100
+      width_cm: 150
+    provenance:
+      previous_owners:
+        - "Private Collector"
+        - "Museum of Modern Art"
+      acquisition_date: "2015-02-15T00:00:00Z"
+    awards:
+      - name: "Best Artwork"
+        year: 2012
+      - name: "Artistic Achievement"
+        year: 2015
+  schedule:
+    opening_date: "2023-03-01T00:00:00Z"
+    closing_date: "2023-04-30T00:00:00Z"

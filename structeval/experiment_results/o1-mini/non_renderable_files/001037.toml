@@ -1,0 +1,29 @@
+
+[brewery]
+name = "Cascade Crest Brewery"
+founded_year = 2010
+owner = "Emily Thompson"
+
+[brewery.location]
+city = "Denver"
+country = "USA"
+
+[[brewery.beers]]
+name = "Summit IPA"
+type = "India Pale Ale"
+abv = 6.8
+
+  [brewery.beers.ingredients]
+  malts = ["Pale Malt", "Crystal 20"]
+  hops = ["Citra", "Simcoe"]
+  yeast = "American Ale Yeast"
+
+  [[brewery.beers.awards]]
+  name = "Gold Medal at Denver Brew Fest"
+  year = 2022
+
+[brewery.tours]
+available = true
+
+  [[brewery.tours.schedule]]
+  day = "Saturday"

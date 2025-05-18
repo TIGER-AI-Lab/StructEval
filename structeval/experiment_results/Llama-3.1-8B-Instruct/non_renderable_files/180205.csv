@@ -1,0 +1,15 @@
+
+import pandas as pd
+
+data = {
+    "planet_name": ["Zephyron", "Quarnyx", "Virdis", "Xylo", "Lumora", "Pyrrhos"],
+    "discovery_year": [2331, 2298, 2387, 2312, 2360, 2345],
+    "orbital_period_days": [412.5, 98.2, 690.0, 321.7, 555.4, 210.9],
+    "has_rings": ["true", "false", "true", "false", "true", "false"],
+    "dominant_gas": ["Methane", "Oxygen", "Hydrogen", "Helium", "Nitrogen", "Carbon Dioxide"],
+    "last_observed": ["2401-05-18", "2402-01-03", "2403-11-22", "2400-09-14", "2401-12-08", "2403-03-27"]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("planets.csv", index=False)

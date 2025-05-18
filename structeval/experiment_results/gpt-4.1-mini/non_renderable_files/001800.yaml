@@ -1,0 +1,23 @@
+
+creature:
+  name: Lumispecter
+  species: Phantasmal Felid
+  habitat:
+    type: forest
+    region: Whispering Glades
+    climate: temperate
+  abilities:
+    - name: Shadowmeld
+      description: Allows the Lumispecter to become nearly invisible by blending into shadows, evading predators and prey alike.
+      cooldown_seconds: 120
+    - name: Echo Howl
+      description: Emits a haunting howl that disorients nearby creatures, causing confusion and temporary paralysis.
+      cooldown_seconds: 300
+  stats:
+    size_meters: 1.2
+    weight_kg: 35
+    lifespan_years: 18
+    diet: carnivore
+  discovery:
+    discovered_by: Dr. Elara Voss
+    discovery_date: 2023-09-14

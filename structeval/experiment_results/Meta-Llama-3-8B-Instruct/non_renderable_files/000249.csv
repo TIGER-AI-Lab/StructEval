@@ -1,0 +1,3 @@
+
+"column_character_name","species","home_planet","rank","assignment.mission_name","assignment.start_date","assignment.end_date","assignment.status","skills[0].skill_name","skills[0].proficiency","skills[1].skill_name","skills[1].proficiency","equipment[0].item_name","equipment[0].quantity","equipment[1].item_name"
+"John Smith","Human","Earth","Lieutenant","Mission Alpha","2022-01-01","2022-01-31","Active","Tactical Analysis","8","Leadership","6","Phaser Rifle","2","Tricorder"

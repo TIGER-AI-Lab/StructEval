@@ -1,0 +1,17 @@
+
+galaxy:
+  name: Andromeda
+  star_systems:
+    - name: Alpha Centauri
+      planets:
+        - name: Proxima b
+          inhabitants:
+            - Glorms
+            - Blips
+        - name: Proxima c
+          inhabitants: []
+    - name: Betelgeuse
+      planets:
+        - name: Betel Prime
+          inhabitants:
+            - Zylox

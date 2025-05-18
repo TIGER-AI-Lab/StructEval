@@ -1,0 +1,64 @@
+
+import csv
+import json
+
+data = '''[
+  {
+    "artifact_name": "Celestial Compass",
+    "discovery_year": 1892,
+    "material": "Meteorite Iron",
+    "estimated_value_usd": 2500000,
+    "current_location": "Nova Terra Museum",
+    "date_last_examined": "2023-08-17"
+  },
+  {
+    "artifact_name": "Phantom Lyre",
+    "discovery_year": 1971,
+    "material": "Crystal",
+    "estimated_value_usd": 120000,
+    "current_location": "Harmonia Archives",
+    "date_last_examined": "2022-11-03"
+  },
+  {
+    "artifact_name": "Gilded Scarab",
+    "discovery_year": 2006,
+    "material": "Gold",
+    "estimated_value_usd": 570000,
+    "current_location": "Sunspire Gallery",
+    "date_last_examined": "2024-01-25"
+  },
+  {
+    "artifact_name": "Nebula Vase",
+    "discovery_year": 1918,
+    "material": "Porcelain",
+    "estimated_value_usd": 43000,
+    "current_location": "Celestia Vault",
+    "date_last_examined": "2023-03-12"
+  },
+  {
+    "artifact_name": "Echoing Coin",
+    "discovery_year": 1855,
+    "material": "Silver",
+    "estimated_value_usd": 9800,
+    "current_location": "Eclipse Treasury",
+    "date_last_examined": "2022-06-08"
+  },
+  {
+    "artifact_name": "Twilight Pendant",
+    "discovery_year": 1999,
+    "material": "Obsidian",
+    "estimated_value_usd": 15200,
+    "current_location": "Mystic Relic Lab",
+    "date_last_examined": "2024-02-14"
+  }
+]'''
+
+data = json.loads(data)
+
+with open('output.csv', 'w', newline='') as csvfile:
+    fieldnames = ['artifact_name', 'discovery_year', 'material', 'estimated_value_usd', 'current_location', 'date_last_examined']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for item in data:
+        writer.writerow(item)

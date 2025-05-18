@@ -1,0 +1,34 @@
+
+game:
+  title: "Epic Quest"
+  release_year: 2021
+  genre: "RPG"
+  platforms:
+    - name: "PC"
+      release_date: "2021-09-15"
+      supported_languages:
+        - "English"
+        - "Spanish"
+        - "French"
+  developer:
+    name: "Epic Games Studio"
+    founded: 2001
+    location:
+      city: "San Francisco"
+      country: "USA"
+  reviews:
+    - reviewer: "GameSpot"
+      score: 9
+      date: "2021-10-01"
+      comment: "A fantastic RPG with immersive gameplay and stunning visuals."
+    - reviewer: "IGN"
+      score: 8
+      date: "2021-10-05"
+      comment: "Great story and characters, but some bugs in the early stages."
+  expansions:
+    - title: "Epic Quest: Shadowlands"
+      release_year: 2022
+      features:
+        - "New character classes"
+        - "Expanded storyline"
+        - "New dungeons and quests"

@@ -1,0 +1,17 @@
+
+galaxy:
+  name: Andromeda
+  starSystems:
+    starSystem:
+      - name: Alpha-X
+        planets:
+          planet:
+            - name: Zephyra
+              hasLife: true
+            - name: Pyxis
+              hasLife: false
+      - name: Beta-Y
+        planets:
+          planet:
+            - name: Lira
+              hasLife: true

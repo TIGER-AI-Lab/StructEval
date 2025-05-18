@@ -1,0 +1,33 @@
+
+{
+  "zoo": {
+    "animals": [
+      {
+        "name": "Gizmo",
+        "species": "Capybara",
+        "favoriteFoods": [
+          "Watermelon",
+          "Sweet Potato"
+        ]
+      },
+      {
+        "name": "Nova",
+        "species": "Fennec Fox",
+        "favoriteFoods": [
+          "Crickets",
+          "Eggs"
+        ]
+      }
+    ],
+    "staff": [
+      {
+        "name": "Samira",
+        "assignedAnimals": [1, 2]
+      },
+      {
+        "name": "Leon",
+        "assignedAnimals": [2]
+      }
+    ]
+  }
+}

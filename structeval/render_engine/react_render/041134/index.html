@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041134</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+const App = () => {
+  return (
+    <>
+      <header>
+        <h1>Welcome to the Visual Test Page</h1>
+        <p>This page is designed to evaluate structural layout, visual hierarchy, and clearly formatted content. Please review the sections below.</p>
+      </header>
+
+      <section>
+        <h2>Overview</h2>
+        <p>This section gives you an insight into the structure and content provided on this page. It includes several important elements such as headers, paragraphs, lists, and tables.</p>
+        <ul>
+          <li>Structured Header Information</li>
+          <li>Organized Sections</li>
+          <li>Detailed Lists</li>
+          <li>Tabulated Data</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Personal Information</h2>
+        <div>
+          <h3>Basic Details</h3>
+          <p><strong>Name:</strong> Jane Doe</p>
+          <p><strong>Age:</strong> 28</p>
+          <p><strong>Occupation:</strong> Web Developer</p>
+        </div>
+        <div>
+          <h3>Contact Details</h3>
+          <p><strong>Email:</strong> janedoe@example.com</p>
+          <p><strong>Phone:</strong> 555-123-4567</p>
+          <p><strong>Address:</strong> 456 Elm Street, Somewhere, USA</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Project Portfolio</h2>
+        <ol>
+          <li>
+            <h4>Project Sunrise</h4>
+            <p>A dynamic website aimed at providing an excellent user experience through intuitive design and responsive content.</p>
+          </li>
+          <li>
+            <h4>Project Horizon</h4>
+            <p>An application developed to manage and visualize large sets of data in various formats with ease.</p>
+          </li>
+          <li>
+            <h4>Project Eclipse</h4>
+            <p>A system focusing on real-time interaction and analysis, ensuring seamless performance under heavy use.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Timeline</h2>
+        <table border="1" cellPadding="5" cellSpacing="0">
+          <tr>
+            <th>Year</th>
+            <th>Milestone</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>2017</td>
+            <td>Conceptualization</td>
+            <td>Initial ideation and planning of projects.</td>
+          </tr>
+          <tr>
+            <td>2018</td>
+            <td>Development Start</td>
+            <td>Beginning the development and prototyping phase.</td>
+          </tr>
+          <tr>
+            <td>2019</td>
+            <td>Launch</td>
+            <td>Official launch of the first project and beta testing.</td>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>Expansion</td>
+            <td>Enhancing features and expanding the user base.</td>
+          </tr>
+          <tr>
+            <td>2021</td>
+            <td>Modernization</td>
+            <td>Incorporating modern design trends and technology updates.</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>Feedback Form</h2>
+        <p>Your feedback is valuable. Please fill in the form below to send us your thoughts:</p>
+        <form>
+          <label htmlFor="user-name">Name:</label><br />
+          <input type="text" id="user-name" name="user-name" /><br /><br />
+
+          <label htmlFor="user-email">Email:</label><br />
+          <input type="email" id="user-email" name="user-email" /><br /><br />
+
+          <label htmlFor="user-comments">Comments:</label><br />
+          <textarea id="user-comments" name="user-comments" rows="4" cols="50"></textarea><br /><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </>
+  );
+};
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

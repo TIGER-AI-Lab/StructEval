@@ -1,0 +1,23 @@
+artifact:
+  name: "Mask of Agamemnon"
+  type: "mask"
+  discovery_date: "1876-11-30"
+  origin:
+    civilization: "Mycenaean"
+    era: "Late Bronze Age"
+    location:
+      latitude: 37.9375
+      longitude: 23.7267
+  materials:
+    - name: "gold"
+      percentage: 90
+    - name: "silver"
+      percentage: 10
+  dimensions:
+    height_cm: 25
+    width_cm: 20
+  features:
+    - description: "Beaten gold construction"
+      significance: "Indicates advanced metalworking skills"
+    - description: "Lifelike facial features"
+      significance: "Possibly a portrait of a king or warrior"

@@ -1,0 +1,3 @@
+
+recipe_name,chef_name,cuisine_type,prep_time_minutes,cook_time_minutes,total_time_minutes,difficulty_level,servings,ingredient_list,ingredient_quantities,ingredient_units,step_descriptions,step_order,equipment_needed,nutrition_calories,nutrition_protein_g,nutrition_fat_g,nutrition_carbs_g
+"Spaghetti Carbonara","Chef Mario","Italian",10,20,30,"Medium",4,"spaghetti, pancetta, eggs, parmesan cheese, black pepper","400,150,3,100,1","g,g,pcs,g,tsp","Boil spaghetti, Cook pancetta, Whisk eggs and cheese, Combine all ingredients, Serve with black pepper","1,2,3,4,5","pot, frying pan, whisk, serving plate",600,25,20,70

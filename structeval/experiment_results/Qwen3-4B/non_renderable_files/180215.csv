@@ -1,0 +1,8 @@
+
+creature_name,bio, number_of_legs,discovery_date,venomous,favorite_food
+Glimmerbeetle,Crystal Caverns,8,2020-04-18,true,Luminous moss
+Thundertuft,Storm Peaks,4,2018-09-02,false,Charged berries
+Frosthopper,Frozen Marsh,6,2021-12-11,false,Ice algae
+Emberling,Volcanic Plains,2,2019-07-23,true,Magma worms
+Shadowgrazer,Twilight Thicket,5,2022-03-30,false,Moonlit ferns
+Zephyrix,Cloud Forest,3,2017-11-14,true,Skyfruit

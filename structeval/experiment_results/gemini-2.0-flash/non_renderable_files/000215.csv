@@ -1,0 +1,2 @@
+species_id,species_name,habitat.region,habitat.climate,habitat.elevation_meters,physical_traits.height_cm,physical_traits.weight_kg,physical_traits.skin_color,diet.primary_food,diet.secondary_food,diet.is_carnivorous,reproduction.offspring_per_year,reproduction.mating_season_months,conservation_status.status,conservation_status.population_estimate
+SPC-008,Giant Azure Beetle,Amazon Rainforest,tropical,150,5,0.02,iridescent blue,rotting fruit,nectar,false,500,November,December,Least Concern,1000000

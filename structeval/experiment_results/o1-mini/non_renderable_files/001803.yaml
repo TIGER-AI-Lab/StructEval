@@ -1,0 +1,32 @@
+
+museum:
+  name: "Elysium Art Museum"
+  location:
+    city: "Arcadia"
+    country: "Utopia"
+  founded_year: 1895
+  director:
+    full_name: "Dr. Isabella Hart"
+    tenure_years: 15
+  galleries:
+    - title: "Modern Masterpieces"
+      floor: 2
+      artworks:
+        - artist: "Luna Veritas"
+          title: "Eternal Dawn"
+          year_created: 2020
+          medium: "Mixed Media"
+          on_display: true
+        - artist: "Kairos Blake"
+          title: "Silent Echoes"
+          year_created: 2018
+          medium: "Acrylic on canvas"
+          on_display: false
+    - title: "Classical Collection"
+      floor: 1
+      artworks:
+        - artist: "Marcus Aurelius"
+          title: "The Philosopher"
+          year_created: 1805
+          medium: "Marble Sculpture"
+          on_display: true

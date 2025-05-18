@@ -1,0 +1,24 @@
+
+import pandas as pd
+import xml.etree.ElementTree as ET
+
+# Parse the XML data
+tree = ET.parse('artifacts.xml')
+root = tree.getroot()
+
+# Extract the data from the XML elements
+data = []
+for artifact in root.findall('artifact'):
+    artifact_id = artifact.find('ArtifactID').text
+    discovery_site = artifact.find('DiscoverySite').text
+    era = artifact.find('Era').text
+    material = artifact.find('Material').text
+    estimated_value_usd = artifact.find('EstimatedValueUSD').text
+    date_discovered = artifact.find('DateDiscovered').text
+    data.append([artifact_id, discovery_site, era, material, estimated_value_usd, date_discovered])
+
+# Create a DataFrame from the extracted data
+df = pd.DataFrame(data, columns=['ArtifactID', 'DiscoverySite', 'Era', 'Material', 'EstimatedValueUSD', 'DateDiscovered'])
+
+# Save the DataFrame to a CSV file
+df.to_csv('artifacts.csv', index=False)

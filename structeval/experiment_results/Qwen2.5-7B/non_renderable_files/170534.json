@@ -1,0 +1,54 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+xml_data = '''
+<planetaryZoo>
+  <planets>
+    <planet>
+      <name>Gliese Prime</name>
+      <creatures>
+        <creature>
+          <species>Glowtail</species>
+          <diet>Luminescent moss</diet>
+        </creature>
+        <creature>
+          <species>Frosthopper</species>
+          <diet>Ice crystals</diet>
+        </creature>
+      </creatures>
+    </planet>
+    <planet>
+      <name>Zephyra</name>
+      <creatures>
+        <creature>
+          <species>Skywhale</species>
+          <diet>Cloud plankton</diet>
+        </creature>
+        <creature>
+          <species>Windmole</species>
+          <diet>Floating seeds</diet>
+        </creature>
+      </creatures>
+    </planet>
+  </planets>
+</planetaryZoo>
+'''
+
+def xml_to_json(xml_string):
+    root = ET.fromstring(xml_string)
+    json_data = {}
+    for planet in root.findall('planets/planet'):
+        planet_name = planet.find('name').text
+        creatures = []
+        for creature in planet.findall('creatures/creature'):
+            creature_data = {
+                'species': creature.find('species').text,
+                'diet': creature.find('diet').text
+            }
+            creatures.append(creature_data)
+        json_data[planet_name] = {'creatures': creatures}
+    return json.dumps(json_data, indent=2)
+
+json_output = xml_to_json(xml_data)
+print(json_output)

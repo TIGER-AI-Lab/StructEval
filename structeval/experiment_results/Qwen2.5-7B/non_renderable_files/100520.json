@@ -1,0 +1,49 @@
+python
+import toml
+import json
+
+# TOML code
+toml_code = """
+[spaceship]
+name = "Starhopper X7"
+captain = "Juno Vega"
+is_operational = true
+last_maintenance = 2023-11-18T14:30:00Z
+
+  [[spaceship.crew]]
+  name = "Rex Solaris"
+  role = "Pilot"
+  species = "Andromedan"
+
+  [[spaceship.crew]]
+  name = "Lyra Quark"
+  role = "Engineer"
+  species = "Terran"
+
+  [[spaceship.crew]]
+  name = "Mira Flux"
+  role = "Navigator"
+  species = "Venusian"
+
+  [spaceship.specs]
+  length_m = 72.5
+  mass_tons = 4300
+  fuel_type = "Antimatter Plasma"
+
+  [[spaceship.missions]]
+  name = "Nebula Drift"
+  destination = "Orion Sector"
+  year = 2124
+
+  [[spaceship.missions]]
+  name = "Celestial Relay"
+  destination = "Proxima Outpost"
+  year = 2126
+"""
+
+# Convert TOML to JSON
+json_data = toml.loads(toml_code)
+json_code = json.dumps(json_data, indent=2)
+
+# Output JSON code
+print(json_code)

@@ -1,0 +1,15 @@
+galaxy:
+  name: Andromeda
+  star_systems:
+    - name: Alpha Prime
+      planets:
+        - name: Zephyria
+          has_life: true
+        - name: Orbis
+          has_life: false
+    - name: Beta Lux
+      planets:
+        - name: Nova
+          has_life: false
+        - name: Celestia
+          has_life: true

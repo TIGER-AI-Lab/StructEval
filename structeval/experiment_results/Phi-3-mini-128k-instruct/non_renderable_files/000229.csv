@@ -1,0 +1,3 @@
+
+artifact_id,artifact_name,period,origin_region,material,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,discovery_date,current_location,condition_status,historical_significance,images[0].url,images[0].description,restoration_records[0].date,restoration_records[0].details
+"A123456789", "Bronze Age Sword", "Bronze Age", "Mesopotamia", "bronze", 70, 15, 2, "2023-01-15", "The British Museum", "intact", "This sword is a prime example of early metallurgy and weaponry in the Bronze Age.", "https://example.com/images/a123456789_01.jpg", "A well-preserved Bronze Age sword", "2023-02-10", "The sword underwent a careful cleaning and stabilization process to prevent further corrosion."

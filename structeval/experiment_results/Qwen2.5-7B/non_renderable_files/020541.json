@@ -1,0 +1,17 @@
+import pandas as pd
+import json
+
+# Read the CSV data
+data = """animal_id,species,profile.name,profile.age,profile.gender,profile.medical_history,profile.medical_history,profile.medical_history,enclosure.zone,enclosure.habitat_type,enclosure.companions,enclosure.companions,diet.primary_foods,diet.supplements,caretakers,caretakers,enrichment_activities
+A001,Red Panda,Mei Lin,4,Female,"[{""condition"":""Dental Issues"",""year_diagnosed"":2022,""treatment"":""Dental cleaning""},{""condition"":""Allergy"",""year_diagnosed"":2023,""treatment"":""Antihistamines""}]",,,North,Temperate Forest,"[{""name"":""Bao"",""species"":""Red Panda""}]",,["Bamboo","Berries"],["Vitamin C"],[{"name":"Sam","shift":"Morning"},{"name":"Priya","shift":"Evening"}],["Tree climbing","Puzzle feeders"]
+A002,Komodo Dragon,Raja,8,Male,"[{""condition"":""Arthritis"",""year_diagnosed"":2021,""treatment"":""Joint supplements""}]",,,East,Desert,"[{""name"":""Sari"",""species"":""Komodo Dragon""},{""name"":""Milo"",""species"":""Monitor Lizard""}]",,["Goat meat","Fish"],["Calcium"],[{"name":"Alex","shift":"Night"}],["Sun basking","Scent trails"]
+"""
+
+# Convert the CSV data to a DataFrame
+df = pd.read_csv(pd.compat.StringIO(data), sep=',')
+
+# Convert the DataFrame to a JSON string
+json_data = df.to_json(orient='records')
+
+# Print the JSON data
+print(json_data)

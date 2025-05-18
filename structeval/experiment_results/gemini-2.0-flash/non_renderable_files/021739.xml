@@ -1,0 +1,58 @@
+<planets>
+  <planet>
+    <PlanetName>Zyphora</PlanetName>
+    <System>
+      <StarName>Helion</StarName>
+      <DistanceFromEarthLY>120</DistanceFromEarthLY>
+    </System>
+    <Atmosphere>
+      <Composition>Hydrogen-Helium</Composition>
+      <PressureAtSurface>2.3</PressureAtSurface>
+    </Atmosphere>
+    <Moons>
+      <Moon>
+        <MoonName>Phobos</MoonName>
+        <DiameterKM>22.2</DiameterKM>
+        <HasVolcanoes>Yes</HasVolcanoes>
+      </Moon>
+      <Moon>
+        <MoonName>Deimos</MoonName>
+        <DiameterKM>12.4</DiameterKM>
+        <HasVolcanoes>No</HasVolcanoes>
+      </Moon>
+    </Moons>
+    <Discovery>
+      <DiscoveredBy>Dr. Lira Voss</DiscoveredBy>
+      <Year>2148</Year>
+      <Telescope>DeepSky Array</Telescope>
+    </Discovery>
+  </planet>
+  <planet>
+    <PlanetName>Talmera</PlanetName>
+    <System>
+      <StarName>Solara</StarName>
+      <DistanceFromEarthLY>350</DistanceFromEarthLY>
+    </System>
+    <Atmosphere>
+      <Composition>Nitrogen-Methane</Composition>
+      <PressureAtSurface>1.1</PressureAtSurface>
+    </Atmosphere>
+    <Moons>
+      <Moon>
+        <MoonName>Selene</MoonName>
+        <DiameterKM>31.1</DiameterKM>
+        <HasVolcanoes>No</HasVolcanoes>
+      </Moon>
+      <Moon>
+        <MoonName>Nyx</MoonName>
+        <DiameterKM>15.7</DiameterKM>
+        <HasVolcanoes>Yes</HasVolcanoes>
+      </Moon>
+    </Moons>
+    <Discovery>
+      <DiscoveredBy>Prof. Kenji Ito</DiscoveredBy>
+      <Year>2120</Year>
+      <Telescope>StellarScope</Telescope>
+    </Discovery>
+  </planet>
+</planets>

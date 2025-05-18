@@ -1,0 +1,38 @@
+
+exhibit:
+  title: "Visions of Modernity"
+  curator:
+    name: "Isabella Martinez"
+    contact:
+      email: "isabella.martinez@example.com"
+      phone: "+1-415-555-1234"
+  opening_date: "2024-09-15"
+  closing_date: "2025-01-15"
+  rooms:
+    - name: "Abstract Expressions"
+      theme: "Exploring emotional intensity through abstract forms and colors"
+      artworks:
+        - artist: "Jackson Pollock"
+          title: "Number 31"
+          year: 1950
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 260
+            width_cm: 530
+          provenance: "Private collection, New York"
+        - artist: "Wassily Kandinsky"
+          title: "Composition VIII"
+          year: 1923
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 140
+            width_cm: 201
+          provenance: "Museum of Modern Art, New York"
+        - artist: "Mark Rothko"
+          title: "No. 61 (Rust and Blue)"
+          year: 1953
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 275
+            width_cm: 213
+          provenance: "Tate Modern, London"

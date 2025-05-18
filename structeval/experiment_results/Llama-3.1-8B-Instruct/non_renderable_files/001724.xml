@@ -1,0 +1,53 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe>
+    <name>Delicious Chicken Fettuccine</name>
+    <author>John Doe</author>
+    <cuisine>Italian</cuisine>
+    <prepTime>PT30M</prepTime>
+    <cookTime>PT45M</cookTime>
+    <servings>4</servings>
+    <ingredients>
+        <ingredient>
+            <name>flour</name>
+            <quantity>250</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>eggs</name>
+            <quantity>2</quantity>
+            <unit>pieces</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>chicken breast</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Prepare the ingredients.</description>
+            <duration>PT10M</duration>
+        </step>
+        <step>
+            <order>2</order>
+            <description>Cook the fettuccine.</description>
+            <duration>PT15M</duration>
+        </step>
+        <step>
+            <order>3</order>
+            <description>Prepare the sauce.</description>
+            <duration>PT10M</duration>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>500</calories>
+        <fat>20</fat>
+        <protein>30</protein>
+        <carbohydrates>40</carbohydrates>
+    </nutrition>
+</recipe>

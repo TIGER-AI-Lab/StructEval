@@ -1,0 +1,23 @@
+
+[brewery]
+name = "Hops & Barley Brewery"
+founded_year = 2010
+location = { city = "Portland", country = "Oregon" }
+
+[brewery.flagship_beer]
+name = "Cascade Ale"
+abv = 5.2
+awards = [
+  { title = "Best Craft Beer", year = 2018 }
+]
+
+[brewery.brewers]
+- { name = "John Doe", role = "Master Brewer", years_experience = 15 }
+- { name = "Jane Smith", role = "Head Brewer", years_experience = 10 }
+- { name = "Emily Johnson", role = "Brewing Technician", years_experience = 5 }
+
+[brewery.tours]
+available = true
+schedule = [
+  { day = "Saturday", start_time = "10:00", language = "English" }
+]

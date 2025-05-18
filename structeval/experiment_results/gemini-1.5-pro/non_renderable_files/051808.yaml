@@ -1,0 +1,35 @@
+galacticZoo:
+  name: Stellar Menagerie
+  location:
+    planet: Zyphron-4
+    sector: Gamma Spiral Arm
+  establishedYear: 2478
+  director:
+    name: Dr. Quarnix Vell
+    species: Zyphronian
+  habitats:
+    - type: CryoDome
+      climate: Arctic
+      inhabitants:
+        - species: Frost Wyrm
+          count: 3
+          dangerLevel: High
+          favoriteFood: Nebula Fish
+        - species: Glacial Mite
+          count: 5000
+          dangerLevel: Low
+          favoriteFood: Cosmic Lichen
+    - type: PlasmaTerrarium
+      climate: Volcanic
+      inhabitants:
+        - species: Lava Serpent
+          count: 8
+          dangerLevel: Medium
+          favoriteFood: Molten Rocks
+  openToPublic: true
+  specialEvents:
+    - eventName: Celestial Hatchling Parade
+      date: "2480-07-21"
+      featuredSpecies:
+        - Frost Wyrm
+        - Lava Serpent

@@ -1,0 +1,26 @@
+[biome]
+name = "Whispering Sands"
+climate = "arid"
+average_temperature_celsius = 35.5
+
+[[biome.flora]]
+species = "Sand Lily"
+population_estimate = 5000
+[biome.flora.edibility]
+is_edible = false
+toxicity_level = "mild"
+
+[[biome.fauna]]
+species = "Dune Strider"
+average_weight_kg = 45.2
+diet = "herbivore"
+conservation_status = "vulnerable"
+
+[[biome.water_sources]]
+type = "oasis"
+freshwater = true
+average_depth_m = 3.7
+
+[biome.geology]
+dominant_rock_type = "sandstone"
+mineral_resources = ["quartz", "gypsum"]

@@ -1,0 +1,46 @@
+{
+  "ecosystem": {
+    "name": "Azure Forest",
+    "location": {
+      "latitude": 15.5,
+      "longitude": -47.3
+    },
+    "climate": {
+      "type": "tropical",
+      "average_temperature_celsius": 26
+    },
+    "dominant_species": "Blue-winged Parrot",
+    "plant_species": [
+      {
+        "scientific_name": "Cecropia peltata",
+        "common_name": "Cecropia",
+        "population_estimate": 12000,
+        "threats": {
+          "environmental_threats": [
+            {
+              "type": "deforestation",
+              "severity": "high"
+            }
+          ]
+        }
+      }
+    ],
+    "animal_species": [
+      {
+        "scientific_name": "Amazona aestiva",
+        "common_name": "Blue-winged Parrot",
+        "conservation_status": "vulnerable",
+        "average_lifespan_years": 20,
+        "diet": "omnivore",
+        "threats": {
+          "environmental_threats": [
+            {
+              "type": "habitat loss",
+              "severity": "medium"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

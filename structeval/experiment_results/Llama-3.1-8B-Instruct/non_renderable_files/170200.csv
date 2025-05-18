@@ -1,0 +1,21 @@
+
+import xml.etree.ElementTree as ET
+import csv
+
+tree = ET.parse('stars.xml')
+root = tree.getroot()
+
+with open('stars.csv', 'w', newline='') as csvfile:
+    fieldnames = ['Constellation', 'StarName', 'ApparentMagnitude', 'DiscoveryDate', 'SpectralType', 'DistanceLY']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in root.findall('row'):
+        writer.writerow({
+            'Constellation': row.find('Constellation').text,
+            'StarName': row.find('StarName').text,
+            'ApparentMagnitude': row.find('ApparentMagnitude').text,
+            'DiscoveryDate': row.find('DiscoveryDate').text,
+            'SpectralType': row.find('SpectralType').text,
+            'DistanceLY': row.find('DistanceLY').text
+        })

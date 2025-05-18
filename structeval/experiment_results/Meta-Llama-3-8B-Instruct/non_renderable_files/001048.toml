@@ -1,0 +1,41 @@
+
+museum = {
+  name = "The Modern Art Museum",
+  location = {
+    city = "New York",
+    country = "USA"
+  },
+  founded_year = 1920,
+  director = {
+    full_name = "John Smith",
+    tenure_years = 10
+  },
+  galleries = [
+    {
+      title = "Abstract Expressionism",
+      theme = "Exploring the world of abstract art",
+      artworks = [
+        {
+          artist = "Jackson Pollock",
+          title = "Mural on Indian Red Ground",
+          year_created = 1950,
+          medium = "Oil and enamel paint on canvas",
+          on_display = true
+        },
+        {
+          artist = "Willem de Kooning",
+          title = "Woman I",
+          year_created = 1950,
+          medium = "Oil on canvas",
+          on_display = true
+        }
+      ]
+    }
+  ],
+  events = [
+    {
+      name = "Art and Music Night",
+      date = "2023-03-15"
+    }
+  ]
+}

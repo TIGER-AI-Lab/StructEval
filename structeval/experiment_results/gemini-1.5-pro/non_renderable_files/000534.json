@@ -1,0 +1,46 @@
+{
+  "artifact": {
+    "name": "Egyptian Sarcophagus of Pa-di-imen",
+    "origin": {
+      "culture": "Ancient Egyptian",
+      "estimated_period": "Late Period"
+    },
+    "materials": [
+      "Wood",
+      "Stucco",
+      "Pigment"
+    ],
+    "dimensions": {
+      "height_cm": 180,
+      "width_cm": 60,
+      "depth_cm": 50
+    },
+    "provenance": {
+      "previous_owners": [
+        {
+          "name": "Giovanni Belzoni",
+          "acquisition_year": 1817
+        },
+        {
+          "name": "British Museum",
+          "acquisition_year": 1824
+        }
+      ]
+    },
+    "restoration_history": [
+      {
+        "date": "1985-03-15",
+        "description": "Cleaning and consolidation of stucco surface",
+        "restorer": "British Museum Conservation Department"
+      }
+    ],
+    "exhibition_records": [
+      {
+        "venue": "British Museum, London"
+      },
+      {
+        "venue": "Metropolitan Museum of Art, New York"
+      }
+    ]
+  }
+}

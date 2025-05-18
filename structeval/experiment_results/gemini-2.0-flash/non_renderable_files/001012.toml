@@ -1,0 +1,34 @@
+[artifact]
+name = "Xylosian Obelisk"
+
+[artifact.origin]
+civilization = "Xylosians"
+era = "The Great Expansion"
+
+[[artifact.materials]]
+type = "Xylosium Alloy"
+quantity_grams = 540.2
+
+[[artifact.materials]]
+type = "Crystalline Matrix"
+quantity_grams = 215.8
+
+[artifact.dimensions]
+height_cm = 120.5
+width_cm = 45.3
+depth_cm = 30.1
+
+[[artifact.inscriptions]]
+language = "Xylosian Script"
+translation = "Knowledge is the key."
+
+[[artifact.inscriptions]]
+language = "Unknown Pictograms"
+translation = "Translation pending."
+
+[artifact.discovery]
+date_iso = "2242-08-15"
+
+[artifact.discovery.location]
+latitude = 34.0522
+longitude = -118.2437

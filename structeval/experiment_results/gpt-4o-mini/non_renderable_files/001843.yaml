@@ -1,0 +1,29 @@
+
+festival:
+  name: "Harmony Fest 2024"
+  location:
+    city: "Los Angeles"
+    venue: "Griffith Park"
+  dates:
+    start: "2024-06-15"
+    end: "2024-06-17"
+  lineup:
+    - artist: "The Lumineers"
+      set_time: "20:00"
+      stage: "Main Stage"
+      special_guests: []
+    - artist: "Hozier"
+      set_time: "18:00"
+      stage: "Sunset Stage"
+      special_guests: []
+  tickets:
+    types:
+      - category: "General Admission"
+        price: 150.00
+        availability: 5000
+  sponsors:
+    main: "MusicCorp"
+    secondary:
+      - "SoundWave"
+      - "Echo Music"
+      - "Vibe Records"

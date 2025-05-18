@@ -1,0 +1,42 @@
+
+{
+  "name": "Artifact Name",
+  "origin": {
+    "civilization": "Civilization Name",
+    "era": "Historical Period"
+  },
+  "discovery": {
+    "date": "YYYY-MM-DD",
+    "location": {
+      "latitude": 0.0,
+      "longitude": 0.0
+    }
+  },
+  "materials": [
+    {
+      "type": "Material Type 1",
+      "percentage": 0.0
+    },
+    {
+      "type": "Material Type 2",
+      "percentage": 0.0
+    }
+  ],
+  "inscriptions": [
+    {
+      "language": "Language 1",
+      "translation": "Translation 1"
+    },
+    {
+      "language": "Language 2",
+      "translation": "Translation 2"
+    }
+  ],
+  "condition": {
+    "status": "Condition Status",
+    "restoration": {
+      "last_date": "YYYY-MM-DD",
+      "notes": "Restoration Notes"
+    }
+  }
+}

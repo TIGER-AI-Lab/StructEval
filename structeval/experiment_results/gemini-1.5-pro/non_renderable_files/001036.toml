@@ -1,0 +1,14 @@
+[festival]
+name = "Global Harmony Fest"
+location = { city = "Barcelona", country = "Spain" }
+year = 2024
+organizer = { name = "Soundwave Events", contact = { email = "info@soundwaveevents.com", phone = "+1-555-123-4567" } }
+[[festival.events]]
+title = "Opening Night Concert"
+date = "2024-07-20"
+performers = ["Anika", "The Rhythm Riders", "DJ Pulse"]
+tickets = { price = 75.00, available = 500, types = ["VIP", "General"] }
+
+[[festival.events]]
+title = "World Music Fusion"
+performers = ["Kora Collective", "Nomad Souls", "Echo Bridge"]

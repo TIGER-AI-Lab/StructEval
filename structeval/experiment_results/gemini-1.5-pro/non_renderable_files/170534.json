@@ -1,0 +1,32 @@
+{
+  "planetaryZoo": {
+    "planets": [
+      {
+        "name": "Gliese Prime",
+        "creatures": [
+          {
+            "species": "Glowtail",
+            "diet": "Luminescent moss"
+          },
+          {
+            "species": "Frosthopper",
+            "diet": "Ice crystals"
+          }
+        ]
+      },
+      {
+        "name": "Zephyra",
+        "creatures": [
+          {
+            "species": "Skywhale",
+            "diet": "Cloud plankton"
+          },
+          {
+            "species": "Windmole",
+            "diet": "Floating seeds"
+          }
+        ]
+      }
+    ]
+  }
+}

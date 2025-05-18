@@ -1,0 +1,54 @@
+
+<creature>
+    <name>Zorvath Xylonix</name>
+    <species>Xyloxian</species>
+    <origin>
+        <planet>Xylox-IV</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <abilities>
+        <ability>
+            <type>Telekinesis</type>
+            <description>The ability to manipulate objects with one's mind.</description>
+            <level>8</level>
+        </ability>
+        <ability>
+            <type>Shape-shifting</type>
+            <description>The ability to change one's physical form at will.</description>
+            <level>5</level>
+        </ability>
+        <ability>
+            <type>Energy Projection</type>
+            <description>The ability to project energy blasts from one's hands.</description>
+            <level>9</level>
+        </ability>
+    </abilities>
+    <physical_traits>
+        <height>250</height>
+        <weight>120</weight>
+        <eye_color>Amber</eye_color>
+        <limbs>
+            <count>6</count>
+            <type>Tentacle</type>
+        </limbs>
+    </physical_traits>
+    <history>
+        <events>
+            <event>
+                <title>Birth</title>
+                <year>2256</year>
+                <impact>Marked the beginning of Zorvath's life.</impact>
+            </event>
+            <event>
+                <title>Discovery of Telekinesis</title>
+                <year>2260</year>
+                <impact>Allowed Zorvath to develop his telekinetic abilities.</impact>
+            </event>
+            <event>
+                <title>First Shape-shifting Incident</title>
+                <year>2265</year>
+                <impact>Resulted in Zorvath's first accidental shape-shifting.</impact>
+            </event>
+        </events>
+    </history>
+</creature>

@@ -1,0 +1,2 @@
+species,habitat.region,habitat.climate,habitat.elevation_meters,diet.primary_food,diet.secondary_foods,diet.daily_caloric_intake,physical_traits.average_weight_kg,physical_traits.average_length_cm,physical_traits.coloration,behavior.activity_pattern,behavior.social_structure,behavior.migratory,conservation.status,conservation.population_estimate
+Silky Sifaka,Madagascar,Tropical,800,Leaves,Fruits;Flowers,2000,6,50,Silky white fur,Diurnal,Small family groups,no,Endangered,1000

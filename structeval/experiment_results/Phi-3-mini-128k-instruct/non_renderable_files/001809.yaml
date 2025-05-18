@@ -1,0 +1,26 @@
+artifact:
+  name: The Scepter of Ages
+  origin: Ancient Egypt
+  discovery:
+    date: "2023-04-15T14:30:00Z"
+    location: "Thebes, Egypt"
+  dimensions:
+    height_cm: 150
+    width_cm: 5
+  materials:
+    - Gold
+    - Lapis Lazuli
+    - Turquoise
+  inscriptions:
+    - language: Hieroglyphics
+      text: "To the eternal pharaoh, may your reign be as enduring as the stars."
+    - language: Greek
+      text: "á¼© Î²Î±ÏÎ¹Î»ÎµÎ¯Î± Ïá¿¶Î½ á¼ÎµÎ¯Î¼Î±ÏÏÏÎ½ ÏÎ±Î¯Î½ÎµÏÎ±Î¹ Î´Î¹Î±ÏÎ­ÏÎµÎ¹Î½ á¼Ïá½¸ Ïá¿¶Î½ á¼ÏÎ¿Î»ÏÏÏÎ½ á¼Î½Î¸ÏÏÏÏÎ½."
+  current_location:
+    museum: The British Museum
+    city: London
+  restorations:
+    - year: 1985
+      description: "Restoration of the hieroglyphic inscriptions using laser cleaning techniques."
+    - year: 2001
+      description: "Reconstruction of the damaged gold plating with a gold alloy to match the original."

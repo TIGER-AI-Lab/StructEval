@@ -1,0 +1,22 @@
+galaxy:
+  name: Andromeda
+  star_systems:
+    - star_system:
+        name: Alpha Prime
+        planets:
+          - planet:
+              name: Zyphera
+              moons:
+                - Lunara
+                - Selene
+          - planet:
+              name: Obsidian
+              moons:
+                - Charon
+    - star_system:
+        name: Beta Echo
+        planets:
+          - planet:
+              name: Verdantia
+              moons:
+                - Emerald

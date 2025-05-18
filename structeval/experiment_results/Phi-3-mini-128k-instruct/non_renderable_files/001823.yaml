@@ -1,0 +1,23 @@
+artifact:
+  name: "The Scepter of the Ancients"
+  origin:
+    culture: "Minoan Civilization"
+    period: "Late Bronze Age"
+  materials:
+    primary: "Gold"
+    secondary: "Lapis Lazuli"
+  dimensions:
+    height_cm: 35
+    width_cm: 5
+    depth_cm: 2
+  condition:
+    status: "Excellent"
+    notes: "No restoration needed"
+  exhibitions:
+    - title: "Treasures of Crete: A Minoan Legacy"
+      date_range:
+        start: "2023-05-15"
+        end: "2023-08-30"
+      location:
+        museum: "Heraklion Archaeological Museum"
+        city: "Heraklion"

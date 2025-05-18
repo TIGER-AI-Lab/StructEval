@@ -1,0 +1,27 @@
+[biome]
+name = "Mystic Highlands"
+climate = "temperate"
+average_temperature_celsius = 15.5
+
+[[biome.flora]]
+species = "Mystic Oak"
+population_estimate = 5000
+
+[biome.flora.edibility]
+is_edible = true
+toxicity_level = "none"
+
+[[biome.fauna]]
+species = "Highland Lynx"
+average_weight_kg = 25.0
+diet = "carnivore"
+conservation_status = "least concern"
+
+[[biome.water_sources]]
+type = "lake"
+freshwater = true
+average_depth_m = 30.0
+
+[biome.geology]
+dominant_rock_type = "granite"
+mineral_resources = ["quartz", "feldspar", "mica"]

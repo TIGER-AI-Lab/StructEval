@@ -1,0 +1,26 @@
+planet:
+  name: "Xyphora"
+  type: "Gas Giant"
+  moons:
+    - "Zenthos"
+    - "Crylia"
+    - "Marn"
+  atmosphere:
+    composition:
+      - "Hydrogen"
+      - "Helium"
+      - "Ammonia"
+    pressure: 150.2
+  discovery:
+    year: 2345
+    method: "Transit Photometry"
+    observers:
+      - name: "Dr. Elin Voss"
+        role: "Lead Astronomer"
+      - name: "Prof. Taro Min"
+        role: "Spectroanalyst"
+  features:
+    - name: "Great Azure Spot"
+      type: "Storm System"
+    - name: "Crystal Rings"
+      type: "Ring System"

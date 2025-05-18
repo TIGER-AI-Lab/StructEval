@@ -1,0 +1,4 @@
+artifact_id,artifact_name,origin_culture,origin_period,discovery_location,estimated_age_years,material_composition,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,current_location,condition_status,inscriptions_present,inscription_languages,notable_features,related_artifacts
+1,"Golden Mask","Ancient Egyptian","New Kingdom","Valley of the Kings",3300,"gold",54.0,39.0,22.0,"Cairo Museum","intact",true,"Ancient Egyptian","Intricate gold work with inlaid stones","2,3"
+2,"Ceramic Vase","Ancient Greek","Classical Period","Athens",2500,"clay",30.0,20.0,20.0,"British Museum","fragmented",false,"","Red-figure pottery style","1"
+3,"Bronze Sword","Celtic","Iron Age","Hallstatt",2800,"bronze",85.0,5.0,1.5,"Louvre Museum","intact",false,"","Decorative hilt with spiral patterns","1"

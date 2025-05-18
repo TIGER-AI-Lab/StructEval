@@ -1,0 +1,3 @@
+
+recipe_id,recipe_name,chef_name,cuisine_type,difficulty_level,prep_time_minutes,cook_time_minutes,servings,ingredient_list,ingredient_quantities,steps,step_times,equipment_needed,nutrition_calories,nutrition_protein_grams,nutrition_fat_grams,nutrition_carbs_grams
+1,"Spaghetti Carbonara","Chef Luigi","Italian","Intermediate",15,20,4,"spaghetti;eggs;parmesan cheese;pancetta;black pepper","400g;4;100g;150g;1 tsp","Boil water and cook spaghetti;Fry pancetta until crispy;Whisk eggs and parmesan;Combine spaghetti with pancetta and egg mixture;Season with black pepper",10;5;5;5;2,"pot;frying pan;whisk",600,25,20,75

@@ -1,0 +1,42 @@
+
+exhibit = {
+  title = "Echoes in the Abyss",
+  curator = {
+    name = "Dr. Sophia Patel",
+    contact_email = "sophia.patel@artmuseum.org"
+  },
+  opening_date = "2023-02-15T10:00:00Z",
+  closing_date = "2023-04-15T17:00:00Z",
+  galleries = [
+    {
+      name = "The Dark Side of the Soul",
+      theme = "Exploring the Human Psyche",
+      artworks = [
+        {
+          title = "The Weight of Memories",
+          artist = "Emily J. Miller",
+          year_created = 2018,
+          medium = "Mixed Media",
+          dimensions = {
+            height_cm = 120,
+            width_cm = 90
+          },
+          on_loan = true,
+          provenance = "Private Collection, acquired in 2020"
+        },
+        {
+          title = "The Silence of the Night",
+          artist = "James R. Thompson",
+          year_created = 2015,
+          medium = "Oil on Canvas",
+          dimensions = {
+            height_cm = 150,
+            width_cm = 200
+          },
+          on_loan = false,
+          provenance = "Museum of Modern Art, acquired in 2018"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+python
+import xml.etree.ElementTree as ET
+
+# CSV data as a string
+csv_data = """planet_name,discovery.year,discovery.method,discovery.observatories[0].name,discovery.observatories[0].country,discovery.observatories[1].name,discovery.observatories[1].country,atmosphere.composition[0].gas,atmosphere.composition[0].percentage,atmosphere.composition[1].gas,atmosphere.composition[1].percentage,moons[0].moon_name,moons[0].diameter_km,moons[0].orbital_period_days,moons[1].moon_name,moons[1].diameter_km,moons[1].orbital_period_days,rings.present,rings.count,exploration.missions[0].name,exploration.missions[0].year_launched,exploration.missions[0].success,exploration.missions[1].name,exploration.missions[1].year_launched,exploration.missions[1].success
+Aurelia,2245,Transit,Kepler Observatory,USA,Gaia Station,France,Nitrogen,78,Oxygen,21,Selene,3474,27.3,Phobos,22.2,0.3,Yes,3,StellarQuest,2250,True,AtmosProbe,2260,False"""
+
+# Remove the header row
+header = csv_data.split('
+')[0]
+data = csv_data.split('
+')[1:]
+
+# Create the root element
+root = ET.Element("planets")
+
+# Function to create XML elements from CSV data
+def create_xml_element(parent, key, value):
+    element = ET.SubElement(parent, key)
+    element.text = value
+
+# Parse the CSV data and create XML elements
+for row in data:
+    planet = ET.SubElement(root, "planet")
+    for i, key in enumerate(header.split(',')):
+        value = row.split(',')[i]
+        create_xml_element(planet, key, value)
+
+# Generate the XML string
+xml_str = ET.tostring(root, encoding='unicode')
+
+# Output the XML string
+print(xml_str)

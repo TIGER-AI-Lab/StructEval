@@ -1,0 +1,59 @@
+
+import csv
+from datetime import date
+
+def create_artifact_csv_row():
+    artifact_id = "ART-001"
+    artifact_name = "Ancient Greek Vase"
+    discovery_location = "Santorini, Greece"
+    discovery_date_found = date(1456, 6, 15).isoformat()
+    discovery_expedition_leader = "John Smith"
+    discovery_team_members = 5
+    artifact_type = "Sculpture"
+    material_primary = "Terracotta"
+    material_secondary = ""
+    dimensions_height_cm = 30.5
+    dimensions_width_cm = 20.8
+    dimensions_depth_cm = 10.2
+    condition_status = "Excellent"
+    condition_restoration_needed = False
+    historical_period = "Ancient Greece"
+    display_location_gallery = "Gallery 1"
+    display_location_shelf_number = "A-12"
+    provenance_previous_owners = ""
+    provenance_acquisition_method = "Excavation"
+
+    with open('artifact.csv', 'w', newline='') as csvfile:
+        fieldnames = ["artifact_id", "artifact_name", "discovery.location", "discovery.date_found", 
+                      "discovery.expedition_leader", "discovery.team_members", "artifact_type", 
+                      "material.primary", "material.secondary", "dimensions.height_cm", 
+                      "dimensions.width_cm", "dimensions.depth_cm", "condition.status", 
+                      "condition.restoration_needed", "historical_period", "display_location.gallery", 
+                      "display_location.shelf_number", "provenance.previous_owners", 
+                      "provenance.acquisition_method"]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+        writer.writerow({
+            "artifact_id": artifact_id,
+            "artifact_name": artifact_name,
+            "discovery.location": discovery_location,
+            "discovery.date_found": discovery_date_found,
+            "discovery.expedition_leader": discovery_expedition_leader,
+            "discovery.team_members": discovery_team_members,
+            "artifact_type": artifact_type,
+            "material.primary": material_primary,
+            "material.secondary": material_secondary,
+            "dimensions.height_cm": dimensions_height_cm,
+            "dimensions.width_cm": dimensions_width_cm,
+            "dimensions.depth_cm": dimensions_depth_cm,
+            "condition.status": condition_status,
+            "condition.restoration_needed": condition_restoration_needed,
+            "historical_period": historical_period,
+            "display_location.gallery": display_location_gallery,
+            "display_location.shelf_number": display_location_shelf_number,
+            "provenance.previous_owners": provenance_previous_owners,
+            "provenance.acquisition_method": provenance_acquisition_method
+        })
+
+create_artifact_csv_row()

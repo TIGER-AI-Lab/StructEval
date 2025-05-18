@@ -1,0 +1,56 @@
+python
+import csv
+import yaml
+
+# YAML data as a string
+data = """
+planets:
+  - planet_name: Zephyra
+    distance_from_earth_ly: 45.2
+    discovered_by: Dr. Lira Voss
+    discovery_date: 2019-08-13
+    number_of_moons: 3
+    atmosphere_composition: Nitrogen-Oxygen
+  - planet_name: Orbis Prime
+    distance_from_earth_ly: 102.7
+    discovered_by: Prof. Kenji Ito
+    discovery_date: 2015-03-22
+    number_of_moons: 1
+    atmosphere_composition: Methane-Rich
+  - planet_name: Virelia
+    distance_from_earth_ly: 67.9
+    discovered_by: Dr. Amara Singh
+    discovery_date: 2021-11-05
+    number_of_moons: 2
+    atmosphere_composition: Carbon Dioxide
+  - planet_name: Thalassa
+    distance_from_earth_ly: 88.4
+    discovered_by: Capt. Hugo Stern
+    discovery_date: 2018-06-29
+    number_of_moons: 5
+    atmosphere_composition: Oxygen-Argon
+  - planet_name: Pyrrhos
+    distance_from_earth_ly: 130.6
+    discovered_by: Dr. Mei Chen
+    discovery_date: 2016-12-11
+    number_of_moons: 0
+    atmosphere_composition: Sulfur Dioxide
+  - planet_name: Ecliptor
+    distance_from_earth_ly: 59.3
+    discovered_by: Prof. Omar Haddad
+    discovery_date: 2020-02-17
+    number_of_moons: 4
+    atmosphere_composition: Neon-Helium
+"""
+
+# Parse the YAML data
+parsed_data = yaml.safe_load(data)
+
+# Write to CSV
+with open('planets.csv', 'w', newline='') as csvfile:
+    fieldnames = parsed_data[0].keys()
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for planet in parsed_data['planets']:
+        writer.writerow(planet)

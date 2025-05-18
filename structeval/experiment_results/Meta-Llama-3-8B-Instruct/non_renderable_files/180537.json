@@ -1,0 +1,59 @@
+
+{
+  "galactic_museum": {
+    "name": "Celestial Wonders Museum",
+    "location": {
+      "planet": "Xylox Prime",
+      "galaxy": "Andromeda"
+    },
+    "established": 3124,
+    "curator": {
+      "name": "Dr. Zephra Qul",
+      "species": "Quorian",
+      "years_of_service": 42
+    },
+    "exhibits": [
+      {
+        "title": "Stellar Fossils",
+        "origin": "Nebulae Sector 7",
+        "artifact_count": 128,
+        "interactive": true,
+        "notable_items": [
+          "Pulsar Shell Fragment",
+          "Ancient Meteorite Core"
+        ]
+      },
+      {
+        "title": "Alien Artifacts",
+        "origin": "Galactic Rim",
+        "artifact_count": 76,
+        "interactive": false,
+        "notable_items": [
+          "Quantum Painting",
+          "Zero-Gravity Sculpture"
+        ]
+      }
+    ],
+    "visitor_stats": {
+      "annual": 120000,
+      "species_breakdown": {
+        "Human": 55000,
+        "Andromedan": 40000
+      }
+    },
+    "shop": {
+      "items": [
+        {
+          "name": "Mini Star Globe",
+          "price": 35.5,
+          "in_stock": true
+        },
+        {
+          "name": "Nebula Postcard Set",
+          "price": 12.0,
+          "in_stock": false
+        }
+      ]
+    }
+  }
+}

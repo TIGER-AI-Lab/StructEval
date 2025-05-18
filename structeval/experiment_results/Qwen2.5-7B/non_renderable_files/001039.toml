@@ -1,0 +1,26 @@
+[creature]
+species = "Glimmerwing"
+[creature.habitat]
+region = "Enchanted Forest"
+climate = "Mystical"
+[creature.appearance]
+size = "2 meters"
+color = "Iridescent"
+[creature.abilities]
+primary = "Flight"
+secondary = "Glowing Wings"
+[creature.behavior.patterns]
+[creature.behavior.patterns.first]
+name = "Nocturnal Hunting"
+frequency = "Nightly"
+description = "Glimmerwings hunt for prey under the moonlight."
+[creature.behavior.patterns.second]
+name = "Social Gatherings"
+frequency = "3 times/week"
+description = "They gather in groups to share information and resources."
+[creature.diet]
+type = "Omnivore"
+favorite_foods = ["Fruit", "Insects"]
+[creature.discovery]
+discoverer = "Dr. Elara Myles"
+year = 2021

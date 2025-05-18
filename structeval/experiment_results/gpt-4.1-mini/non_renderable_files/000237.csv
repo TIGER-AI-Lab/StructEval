@@ -1,0 +1,2 @@
+artifact_id,artifact_name,origin_civilization,discovery_site,discovery_date,material.primary,material.secondary,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,estimated_age_years,current_condition,inscriptions.language,inscriptions.translation,inscriptions.meaning,display_status,museum_location
+"ART-0001","Bronze Age Ceremonial Dagger","Minoan","Knossos, Crete","1900-07-15","bronze","wood",35,5,2,3500,"intact","Linear A","Sacred offering","Religious ritual inscription","on public display","Heraklion Archaeological Museum"

@@ -1,0 +1,34 @@
+
+<spaceOpera>
+  <crew>
+    <member>
+      <name>Captain Zira</name>
+      <role>Commander</role>
+      <species>Andromedan</species>
+    </member>
+    <member>
+      <name>Flux</name>
+      <role>Engineer</role>
+      <species>Cyborg</species>
+    </member>
+    <member>
+      <name>Pipp</name>
+      <role>Navigator</role>
+      <species>Human</species>
+    </member>
+  </crew>
+  <ship>
+    <name>Star Whisperer</name>
+    <class>Explorer</class>
+  </ship>
+  <missions>
+    <mission>
+      <title>Rescue at Nebula 9</title>
+      <destination>Nebula 9</destination>
+    </mission>
+    <mission>
+      <title>The Lost Planet</title>
+      <destination>Xyloxis Prime</destination>
+    </mission>
+  </missions>
+</spaceOpera>

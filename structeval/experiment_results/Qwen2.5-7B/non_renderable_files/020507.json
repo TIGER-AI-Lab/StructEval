@@ -1,0 +1,20 @@
+import json
+import csv
+
+data = []
+
+with open('planets.csv', 'r') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        moons_list = []
+        for moon in row['moons'].strip('[]').split(','):
+            moon_data = {}
+            moon_data['name'] = moon.split(',')[0].strip()
+            moon_data['diameter_km'] = moon.split(',')[1].strip()
+            moon_data['has_rings'] = moon.split(',')[2].strip() == 'True'
+            moons_list.append(moon_data)
+        row['moons'] = moons_list
+        data.append(row)
+
+with open('planets.json', 'w') as jsonfile:
+    json.dump(data, jsonfile, indent=4)

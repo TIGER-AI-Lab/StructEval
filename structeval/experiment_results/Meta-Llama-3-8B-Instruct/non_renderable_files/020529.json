@@ -1,0 +1,36 @@
+
+{
+  "mission_name": "Odyssey Alpha",
+  "launch": {
+    "date": "2042-11-05",
+    "site": "Cape Canaveral"
+  },
+  "crew": [
+    {
+      "name": "Dr. Jane Liu",
+      "role": "Commander",
+      "experience_years": 12
+    },
+    {
+      "name": "Alexei Petrov",
+      "role": "Pilot",
+      "experience_years": 8
+    }
+  ],
+  "payload": {
+    "cargo_type": "Scientific Instruments",
+    "weight_kg": 4500,
+    "equipment_list": [
+      "Seismometer",
+      "Drill"
+    ]
+  },
+  "destination": {
+    "planet": "Mars",
+    "coordinates": {
+      "lat": -4.5895,
+      "lon": 137.4417
+    }
+  },
+  "status": "En Route"
+}

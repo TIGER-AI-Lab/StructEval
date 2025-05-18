@@ -1,0 +1,33 @@
+<creature>
+    <name>Zyphlotron</name>
+    <species>Xenomorph</species>
+    <origin>
+        <planet>Zyphoria</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <physiology>
+        <height>210</height>
+        <weight>450</weight>
+        <limbs>6</limbs>
+    </physiology>
+    <abilities>
+        <ability>
+            <name>Gravitational Pull</name>
+            <powerLevel>90</powerLevel>
+            <type>Physical</type>
+            <cooldownSeconds>120</cooldownSeconds>
+        </ability>
+        <!-- Additional abilities can be added here -->
+    </abilities>
+    <equipment>
+        <item>
+            <name>Quantum Shield</name>
+            <rarity>Legendary</rarity>
+            <acquiredFrom>Interstellar Trade</acquiredFrom>
+            <enchantment>
+                <effect>Creates a protective energy barrier that deflects incoming attacks.</effect>
+            </enchantment>
+        </item>
+        <!-- Additional items can be added here -->
+    </equipment>
+</creature>

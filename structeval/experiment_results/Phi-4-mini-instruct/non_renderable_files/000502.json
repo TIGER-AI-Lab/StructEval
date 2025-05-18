@@ -1,0 +1,32 @@
+
+{
+  "artifact": {
+    "name": "Insert Artifact Name Here",
+    "origin": {
+      "civilization": "Insert Civilization Name Here",
+      "estimated_age": Insert Estimated Age Here
+    },
+    "materials": {
+      "primary": "Insert Primary Material Here",
+      "secondary": null,
+      "composition_percentage": 0
+    },
+    "dimensions": {
+      "height_cm": 0,
+      "width_cm": 0,
+      "depth_cm": 0
+    },
+    "features": [
+      {
+        "type": "Insert Feature Type Here",
+        "description": "Insert Feature Description Here",
+        "preservation_state": "Insert Preservation State Here"
+      },
+      {
+        "type": "Insert Second Feature Type Here",
+        "description": "Insert Second Feature Description Here",
+        "preservation_state": "Insert Second Preservation State Here"
+      }
+    ]
+  }
+}

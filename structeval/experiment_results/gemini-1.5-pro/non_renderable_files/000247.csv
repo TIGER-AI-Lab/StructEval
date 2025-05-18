@@ -1,0 +1,6 @@
+creature_id,species_name,habitat.region,habitat.terrain_type,habitat.temperature_celsius,physical_traits.height_meters,physical_traits.weight_kilograms,physical_traits.skin_color,physical_traits.eye_count,abilities[0].name,abilities[0].power_level,abilities[1].name,abilities[1].power_level,diet.primary_food,diet.secondary_food
+CR001,Shadow Wanderer,Shadowfen,Swamp,25,2.1,150,Dark Grey,3,Shadow Meld,9,Night Vision,7,Fish,Insects
+CR002,Sunstone Basilisk,Sunstone Desert,Desert,45,0.8,50,Golden Yellow,2,Petrification Gaze,8,Venomous Bite,6,Small Mammals,Lizards
+CR003,Cloud Serpent,Skyreach Mountains,Mountain,10,15,500,Sky Blue,4,Flight,10,Lightning Breath,9,Large Birds,Mountain Goats
+CR004,Forest Sprite,Whispering Woods,Forest,20,0.2,1,Emerald Green,2,Illusion Casting,7,Nature's Touch,8,Berries,Nuts
+CR005,Deep Sea Leviathan,Abyssal Depths,Ocean,-2,50,10000,Deep Blue,1,Echolocation,6,Immense Pressure Resistance,10,Giant Squid,Deep Sea Fish

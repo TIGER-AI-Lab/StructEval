@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creature>
+    <name>Draklor</name>
+    <species>Dragonkin</species>
+    <age>350</age>
+    <habitat>
+        <type>forest</type>
+        <location>Enchanted Woods</location>
+        <temperature>22.5</temperature>
+    </habitat>
+    <abilities>
+        <ability>
+            <name>Fire Breath</name>
+            <level>8</level>
+            <cooldown>60.0</cooldown>
+        </ability>
+        <ability>
+            <name>Flight</name>
+            <level>9</level>
+            <cooldown>30.0</cooldown>
+        </ability>
+        <ability>
+            <name>Invisibility</name>
+            <level>5</level>
+            <cooldown>120.0</cooldown>
+        </ability>
+    </abilities>
+    <appearance>
+        <height>250.0</height>
+        <color>Emerald Green</color>
+        <markings>Scale patterns resembling vines</markings>
+    </appearance>
+    <history>
+        <origin>Birthed from the heart of the ancient oak tree.</origin>
+        <majorEvents>
+            <event>
+                <eventName>The Great Forest Fire</eventName>
+                <year>150</year>
+            </event>
+            <event>
+                <eventName>Alliance with Elven Tribes</eventName>
+                <year>200</year>
+            </event>
+        </majorEvents>
+    </history>
+    <relationships>
+        <relationship>
+            <relationType>friend</relationType>
+            <individual>Elara the Elf</individual>
+        </relationship>
+        <relationship>
+            <relationType>rival</relationType>
+            <individual>Gorak the Orc</individual>
+        </relationship>
+        <relationship>
+            <relationType>offspring</relationType>
+            <individual>Smokey</individual>
+        </relationship>
+    </relationships>
+</creature>

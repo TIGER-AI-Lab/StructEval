@@ -1,0 +1,36 @@
+
+<recipe>
+    <title>Spaghetti Carbonara</title>
+    <author>
+        <name>John Doe</name>
+        <contact>
+            <email>johndoe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Bacon</name>
+            <quantity>100</quantity>
+            <unit>grams</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Boil water in a large pot and cook the spaghetti according to package instructions until al dente.</description>
+        </step>
+        <step>
+            <order>2</order>
+            <description>In a pan, cook the bacon until crispy, then mix with the cooked spaghetti and add beaten eggs and cheese.</description>
+        </step>
+    </instructions>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <prepTime>PT20M</prepTime>
+    </metadata>
+</recipe>

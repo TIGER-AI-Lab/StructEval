@@ -1,0 +1,8 @@
+
+PlanetName,DistanceFromSun_AU,DiscoveryDate,SurfaceTemperature_C,HasRings,DominantElement
+Gliese 581g,20.3,2010-09-29,-37,false,Carbon
+Kepler-22b,600,2011-12-05,22,false,Oxygen
+HD 189733 b,63,2005-10-05,1200,true,Hydrogen
+TRAPPIST-1e,39.5,2017-02-22,0,false,Nitrogen
+Proxima Centauri b,4.24,2016-08-24,-39,false,Iron
+WASP-12b,870,2008-04-01,2500,true,Helium

@@ -1,0 +1,36 @@
+
+recipe = {
+    title = "Spaghetti Aglio e Olio",
+    author = {
+        name = "Jane Doe",
+        contact = {
+            email = "jane.doe@example.com"
+        }
+    },
+    cuisine = "Italian",
+    servings = 4,
+    prep_time_minutes = 10,
+    cook_time_minutes = 20,
+    ingredients = [
+        {
+            name = "Spaghetti",
+            quantity = 400.0,
+            unit = "grams"
+        },
+        {
+            name = "Garlic",
+            quantity = 6.0,
+            unit = "cloves"
+        }
+    ],
+    instructions = [
+        {
+            step_number = 1,
+            description = "Cook spaghetti in salted boiling water until al dente."
+        },
+        {
+            step_number = 2,
+            description = "SautÃ© minced garlic in olive oil until fragrant, then toss with cooked spaghetti."
+        }
+    ]
+}

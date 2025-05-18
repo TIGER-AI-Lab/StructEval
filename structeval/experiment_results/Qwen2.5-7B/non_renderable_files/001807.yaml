@@ -1,0 +1,31 @@
+
+creature:
+  name: "Zorblatt"
+  species: "Xenomorph"
+  origin:
+    planet: "Zorblatt-III"
+    galaxy: "Milky Way"
+  abilities:
+    - type: "telepathy"
+      description: "Allows the creature to read and influence the thoughts of others."
+      power_level: 8
+    - type: "regeneration"
+      description: "Can rapidly heal from injuries and regenerate lost limbs."
+      power_level: 9
+  physical_traits:
+    height_cm: 180.5
+    coloration: "Multicolored with iridescent scales"
+    limbs:
+      count: 4
+      types:
+        - "arms"
+        - "legs"
+  history:
+    first_sighting:
+      date: "2020-01-01"
+      location: "Orion Arm"
+    known_encounters:
+      - date: "2020-01-02"
+        description: "Encountered by a group of explorers; managed to escape without injury."
+      - date: "2020-01-03"
+        description: "Observed from a distance by a scientific team; no interaction occurred."

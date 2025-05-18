@@ -1,0 +1,33 @@
+
+spaceStation:
+  name: Aurora Haven
+  location:
+    planet: Kepler-442b
+    galaxy: Andromeda
+  modules:
+  - id: M-01
+    type: Habitation
+    status: Operational
+    crew:
+    - name: Zara Quill
+      role: Commander
+      species: Human
+    - name: Jex Rylos
+      role: Engineer
+      species: Andronian
+  - id: M-02
+    type: Research
+    status: Under Maintenance
+    crew:
+    - name: Fenn Voss
+      role: Scientist
+      species: Terran
+  supplyLevels:
+    oxygen: 78
+    water: 56
+    food: 42
+  activeMissions:
+  - missionName: Crystal Harvest
+    status: In Progress
+  - missionName: Nebula Mapping
+    status: Scheduled

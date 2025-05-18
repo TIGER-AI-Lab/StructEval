@@ -1,0 +1,31 @@
+
+planet:
+  name: "Zyphora"
+  galaxy: "Andromeda"
+  moons:
+    - "Lunara"
+    - "Phobos"
+    - "Demos"
+  discovery:
+    year: 3125
+    astronomers:
+      - "Dr. Elan Turov"
+      - "Prof. Mira Chen"
+  habitats:
+    - species: "Glith"
+      population: 120000
+      biomes:
+        - "crimson forest"
+        - "crystal plains"
+    - species: "Vortan"
+      population: 45000
+      biomes:
+        - "acidic marsh"
+        - "obsidian hills"
+  resources:
+    minerals: 670000
+    water: 140000
+    energy: "solar, geothermal"
+  weather:
+    average_temp: -45.8
+    storms_per_year: 17

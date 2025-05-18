@@ -1,0 +1,24 @@
+
+artifact:
+  name: "The Celestial Sphere"
+  discovery_date: "2020-05-15"
+  origin:
+    civilization: "Ancient Egyptians"
+    era: "New Kingdom Period"
+  materials:
+    - type: "Lapis Lazuli"
+      provenance: "Egyptian mines in the Sinai Peninsula"
+    - type: "Gold"
+      provenance: "Nubian mines in present-day Sudan"
+  dimensions:
+    height_cm: 30.0
+    width_cm: 20.0
+    depth_cm: 10.0
+  features:
+    - description: "Intricate hieroglyphic inscriptions"
+      condition: "Well-preserved, with minor fading"
+    - description: "Delicate astronomical symbols"
+      condition: "Some damage from past handling"
+  current_location:
+    museum: "The Egyptian Museum in Cairo"
+    display_case: "Case 101, Room 3"

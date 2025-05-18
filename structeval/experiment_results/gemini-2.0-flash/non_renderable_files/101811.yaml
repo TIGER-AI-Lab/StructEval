@@ -1,0 +1,26 @@
+space_mission:
+  name: "Odyssey IX"
+  launch_date: 2042-08-15T13:45:00Z
+  status: "en route"
+  duration_days: 372
+  crew:
+    - name: "Dr. Lana Voss"
+      role: "Commander"
+      age: 41
+    - name: "Akio Tanaka"
+      role: "Engineer"
+      age: 36
+    - name: "Priya Nair"
+      role: "Biologist"
+      age: 33
+  destination:
+    planet: "Europa"
+    landing_sites: ["Conamara Chaos", "Thrace Macula", "Tara Regio"]
+  cargo:
+    manifest:
+      - item: "Habitat Module"
+        quantity: 2
+      - item: "Rover"
+        quantity: 1
+      - item: "Food Supplies"
+        quantity: 120

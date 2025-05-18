@@ -1,0 +1,5 @@
+species_name,habitat.region,habitat.climate,habitat.elevation_meters,average_lifespan_years,diet.primary_food,diet.secondary_food,diet.is_carnivorous,physical_traits.height_cm,physical_traits.weight_kg,physical_traits.fur_color,physical_traits.has_wings,social_structure.group_size,social_structure.dominant_gender,notable_behaviors[0].behavior_name,notable_behaviors[0].frequency_per_day,notable_behaviors[1].behavior_name,notable_behaviors[1].frequency_per_day
+Glowing Forest Prowler,Enchanted Woods,temperate,500,12,glowberries,moonlight nectar,false,75,30,emerald,false,5,none,Nocturnal Glow,3,Silent Stalk,5
+Crimson Sky Flitter,Crimson Peaks,arid,1500,5,sky pollen,,true,15,0.5,crimson,true,20,female,Aerial Dance,10,Sunrise Chorus,2
+Aqua Whisperer,Coral Reefs,tropical,0,20,seaweed,small fish,false,30,10,azure,false,8,male,Wave Riding,4,Coral Weaving,1
+Frosty Tundra Hopper,Frozen Plains,polar,100,8,ice moss,,false,50,20,white,false,12,none,Ice Skating,6,Snow Burrowing,3

@@ -1,0 +1,66 @@
+
+<recipe>
+    <title>Creative Recipe</title>
+    <author>
+        <name>John Doe</name>
+        <contact>
+            <email>johndoe@example.com</email>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Ingredient 1</name>
+            <quantity>2</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Ingredient 2</name>
+            <quantity>3</quantity>
+            <unit>cups</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Step 1 description</description>
+            <duration>
+                <minutes>10</minutes>
+            </duration>
+            <tools>
+                <tool>
+                    <toolName>Tool 1</toolName>
+                    <required>true</required>
+                </tool>
+                <tool>
+                    <toolName>Tool 2</toolName>
+                    <required>false</required>
+                </tool>
+            </tools>
+        </step>
+        <step>
+            <description>Step 2 description</description>
+            <duration>
+                <minutes>20</minutes>
+            </duration>
+            <tools>
+                <tool>
+                    <toolName>Tool 3</toolName>
+                    <required>true</required>
+                </tool>
+            </tools>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>1000</calories>
+        <fat>
+            <grams>50</grams>
+        </fat>
+        <protein>
+            <grams>30</grams>
+        </protein>
+    </nutrition>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <difficulty>medium</difficulty>
+        <published date="2022-01-01T00:00:00Z"/>
+    </metadata>
+</recipe>

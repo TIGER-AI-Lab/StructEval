@@ -1,0 +1,22 @@
+
+spaceStation:
+  name: Odyssey
+  modules:
+    - module:
+        moduleName: Habitation
+        experiments:
+          - experiment:
+              experimentName: Plant Growth
+              result: Successful
+          - experiment:
+              experimentName: Water Recycling
+              result: Ongoing
+    - module:
+        moduleName: Science Lab
+        experiments:
+          - experiment:
+              experimentName: Microgravity Physics
+              result: Pending
+          - experiment:
+              experimentName: Cosmic Ray Analysis
+              result: Successful

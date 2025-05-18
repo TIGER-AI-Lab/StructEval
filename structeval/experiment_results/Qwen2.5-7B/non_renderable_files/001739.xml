@@ -1,0 +1,79 @@
+
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <author>
+    <name>John Doe</name>
+    <profileUrl>https://example.com/johndoe</profileUrl>
+  </author>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <prepTimeMinutes>30</prepTimeMinutes>
+    <tags>
+      <tag>vegetarian</tag>
+      <tag>quick</tag>
+    </tags>
+  </metadata>
+  <nutrition>
+    <calories>500</calories>
+  </nutrition>
+  <ingredients>
+    <ingredient>
+      <name>Pasta</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Guanciale</name>
+      <quantity>200</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Black Pepper</name>
+      <quantity>1</quantity>
+      <unit>grinds</unit>
+      <optional>true</optional>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <order>1</order>
+      <instruction>Boil water and cook pasta</instruction>
+      <timer>
+        <seconds>10</seconds>
+      </timer>
+      <notes>Stir occasionally</notes>
+    </step>
+    <step>
+      <order>2</order>
+      <instruction>Prepare guanciale</instruction>
+      <timer>
+        <seconds>5</seconds>
+      </timer>
+      <notes>Cut into small pieces</notes>
+    </step>
+    <step>
+      <order>3</order>
+      <instruction>Make sauce</instruction>
+      <timer>
+        <seconds>10</seconds>
+      </timer>
+      <notes>Whisk eggs and add guanciale</notes>
+    </step>
+    <step>
+      <order>4</order>
+      <instruction>Combine pasta and sauce</instruction>
+      <timer>
+        <seconds>5</seconds>
+      </timer>
+      <notes>Season with black pepper</notes>
+    </step>
+  </steps>
+</recipe>

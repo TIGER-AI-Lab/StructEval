@@ -1,0 +1,52 @@
+{
+  "museum": {
+    "name": "Fictional Art Museum",
+    "location": {
+      "city": "Imaginaria",
+      "country": "Fictionland"
+    },
+    "established_year": 1985,
+    "director": {
+      "name": "Alexandria Muse",
+      "tenure_years": 10
+    },
+    "exhibits": [
+      {
+        "title": "The Dreamer's Vision",
+        "artist": "Evelyn Starweaver",
+        "year_created": 1992,
+        "medium": "oil on canvas",
+        "dimensions": {
+          "height_cm": 150,
+          "width_cm": 200
+        },
+        "on_display": true,
+        "provenance": {
+          "previous_owners": [
+            "The Imaginaria Gallery",
+            "Private Collector: Mr. A. R. Imaginarius"
+          ],
+          "acquisition_date": "1995-06-15"
+        }
+      },
+      {
+        "title": "Whispers of the Past",
+        "artist": "Lorenzo Echo",
+        "year_created": 1988,
+        "medium": "mixed media",
+        "dimensions": {
+          "height_cm": 120,
+          "width_cm": 180
+        },
+        "on_display": false,
+        "provenance": {
+          "previous_owners": [
+            "The Fictional Art Foundation",
+            "Private Collection: Ms. L. F. Fiction"
+          ],
+          "acquisition_date": "1990-09-22"
+        }
+      }
+    ]
+  }
+}

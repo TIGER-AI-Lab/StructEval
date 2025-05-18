@@ -1,0 +1,20 @@
+
+<museum>
+  <name>The Imaginary Gadget Museum</name>
+  <location>
+    <city>Technopolis</city>
+    <country>Utopia</country>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Perpetual Motion Teacup</title>
+      <artist>Ada Lovelace</artist>
+      <year>1843</year>
+    </exhibit>
+    <exhibit>
+      <title>Quantum Umbrella</title>
+      <artist>SchrÃ¶dinger</artist>
+      <year>1935</year>
+    </exhibit>
+  </exhibits>
+</museum>

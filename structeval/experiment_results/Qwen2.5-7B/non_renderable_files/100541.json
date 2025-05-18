@@ -1,0 +1,41 @@
+python
+import toml
+import json
+
+# TOML code
+toml_code = """
+[planet]
+name = "Zyphora"
+discovery_year = 2271
+orbital_period_days = 412.5
+habitable = true
+moons = ["Pharos", "Luneth", "Cindar"]
+
+[planet.composition]
+core = "Nickel-Iron"
+mantle = "Silicate"
+crust = "Basaltic"
+
+[planet.atmosphere]
+primary_gas = "Nitrogen"
+trace_gases = ["Argon", "Methane", "Krypton"]
+pressure_kpa = 98.7
+
+[[planet.expeditions]]
+mission_name = "Aurora Dawn"
+year = 2290
+success = true
+crew = ["Lt. Vega", "Dr. Shirin", "Cmdr. Taro"]
+
+[[planet.expeditions]]
+mission_name = "Helios Venture"
+year = 2297
+success = false
+crew = ["Dr. Lin", "Ensign Ro", "Pilot Yara"]
+"""
+
+# Convert TOML to JSON
+json_data = toml.loads(toml_code)
+json_code = json.dumps(json_data, indent=4)
+
+print(json_code)

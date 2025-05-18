@@ -1,0 +1,15 @@
+
+<planet name="Virellia" type="terrestrial">
+  <atmosphere composition="Nitrogen, Oxygen, Argon, Carbon Dioxide" pressure="12000" habitable="true"/>
+  <satellites>
+    <satellite name="Lunara" diameter="1500">
+      <orbit period="30" distance="100000" eccentricity="0.15"/>
+    </satellite>
+  </satellites>
+  <lifeforms>
+    <lifeform species="Virellians" population="5000000" intelligence="sentient"/>
+  </lifeforms>
+  <resources>
+    <resource type="Water" quantity="1.2e12"/>
+  </resources>
+</planet>

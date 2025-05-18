@@ -1,0 +1,15 @@
+
+import pandas as pd
+
+data = {
+    "planet_name": ["Zephyria", "Glimmarion", "Volturna", "Quarion", "Eldoria", "Saphyra"],
+    "gravity_g": [1.2, 0.7, 2.5, 0.95, 1.8, 1.1],
+    "discovery_year": [2042, 2099, 2183, 2066, 2120, 2175],
+    "has_rings": ["true", "false", "true", "false", "true", "false"],
+    "moon_count": [3, 1, 5, 2, 4, 0],
+    "atmosphere": ["Neon-rich", "Methane", "Oxygen-Nitrogen", "Carbon Dioxide", "Ammonia", "Helium"]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("planets.csv", index=False)

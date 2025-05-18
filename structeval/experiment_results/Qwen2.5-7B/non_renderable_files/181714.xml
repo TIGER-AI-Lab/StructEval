@@ -1,0 +1,29 @@
+
+galacticCarnival:
+  attractions:
+    attraction:
+      - name: Zero-G Rollercoaster
+        speciesAllowed:
+          species:
+            - Human
+            - Martian
+            - Andromedan
+        heightRequirement: 120cm
+      - name: Cosmic Funhouse
+        speciesAllowed:
+          species:
+            - Venusian
+            - Human
+        heightRequirement: 100cm
+  snackBooths:
+    booth:
+      - name: Star Popcorn
+        specialtyTreats:
+          treat:
+            - Nebula Caramel
+            - Black Hole Butter
+      - name: Meteorite Sweets
+        specialtyTreats:
+          treat:
+            - Comet Candy
+            - Asteroid Fudge

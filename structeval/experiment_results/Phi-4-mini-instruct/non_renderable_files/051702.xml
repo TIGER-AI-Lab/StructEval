@@ -1,0 +1,21 @@
+
+&lt;spaceStation name="Aurora Outpost">
+  &lt;modules>
+    &lt;module type="Habitation">
+      &lt;crewMember>
+        &lt;name>Dr. Vega Lin</name>
+        &lt;role>Biologist</role>
+      &lt;/crewMember>
+      &lt;crewMember>
+        &lt;name>Samir Patel</name>
+        &lt;role>Engineer</role>
+      &lt;/crewMember>
+    &lt;/module>
+    &lt;module type="Research">
+      &lt;crewMember>
+        &lt;name>Lena Torres</name>
+        &lt;role>Physicist</role>
+      &lt;/crewMember>
+    &lt;/module>
+  &lt;/modules>
+&lt;/spaceStation>

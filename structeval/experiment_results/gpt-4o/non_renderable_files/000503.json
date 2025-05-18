@@ -1,0 +1,77 @@
+
+{
+  "recipe": {
+    "title": "Spicy Mango Avocado Tacos",
+    "author": "Chef Alex Rivera",
+    "cuisine": "Fusion",
+    "servings": 4,
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 10,
+    "ingredients": [
+      {
+        "name": "Mango",
+        "quantity": 1,
+        "unit": "whole"
+      },
+      {
+        "name": "Avocado",
+        "quantity": 2,
+        "unit": "whole"
+      },
+      {
+        "name": "Corn Tortillas",
+        "quantity": 8,
+        "unit": "pieces"
+      },
+      {
+        "name": "Red Onion",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Cilantro",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "name": "Lime",
+        "quantity": 1,
+        "unit": "whole"
+      },
+      {
+        "name": "JalapeÃ±o",
+        "quantity": 1,
+        "unit": "whole"
+      },
+      {
+        "name": "Salt",
+        "quantity": 1,
+        "unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      {
+        "description": "Dice the mango and avocado, and finely chop the red onion, cilantro, and jalapeÃ±o.",
+        "duration_minutes": 5
+      },
+      {
+        "description": "In a bowl, combine the mango, avocado, red onion, cilantro, and jalapeÃ±o. Squeeze lime juice over the mixture and add salt to taste.",
+        "duration_minutes": 5
+      },
+      {
+        "description": "Warm the corn tortillas in a pan over medium heat for about 1 minute on each side.",
+        "duration_minutes": 5
+      },
+      {
+        "description": "Assemble the tacos by placing the mango-avocado mixture onto each tortilla.",
+        "duration_minutes": 5
+      }
+    ],
+    "nutrition": {
+      "calories": 250,
+      "fat_grams": 12,
+      "protein_grams": 4,
+      "carbohydrates_grams": 32
+    }
+  }
+}

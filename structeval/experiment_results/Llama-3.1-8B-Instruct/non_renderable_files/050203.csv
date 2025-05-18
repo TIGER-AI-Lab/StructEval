@@ -1,0 +1,63 @@
+
+import pandas as pd
+import json
+
+data = '''[
+  {
+    "CreatureName": "Glitterfin Sparrow",
+    "Habitat": "Crystal Caves",
+    "Wingspan_cm": 24.5,
+    "Diet": "Luminous Insects",
+    "DiscoveryDate": "2012-04-18",
+    "Luminescence_Level": 7
+  },
+  {
+    "CreatureName": "Mossback Tortoise",
+    "Habitat": "Emerald Marsh",
+    "Wingspan_cm": 0,
+    "Diet": "Algae",
+    "DiscoveryDate": "2008-09-05",
+    "Luminescence_Level": 2
+  },
+  {
+    "CreatureName": "Sunflare Moth",
+    "Habitat": "Solar Meadows",
+    "Wingspan_cm": 13.2,
+    "Diet": "Nectar",
+    "DiscoveryDate": "2017-06-21",
+    "Luminescence_Level": 9
+  },
+  {
+    "CreatureName": "Shadowtail Fox",
+    "Habitat": "Twilight Woods",
+    "Wingspan_cm": 0,
+    "Diet": "Small Rodents",
+    "DiscoveryDate": "2011-11-03",
+    "Luminescence_Level": 4
+  },
+  {
+    "CreatureName": "Opaline Beetle",
+    "Habitat": "Rainbow Cliffs",
+    "Wingspan_cm": 3.8,
+    "Diet": "Mineral Lichen",
+    "DiscoveryDate": "2015-02-14",
+    "Luminescence_Level": 6
+  },
+  {
+    "CreatureName": "Azure Glider",
+    "Habitat": "Skywater Falls",
+    "Wingspan_cm": 55.0,
+    "Diet": "Floating Seeds",
+    "DiscoveryDate": "2019-08-30",
+    "Luminescence_Level": 8
+  }
+]'''
+
+# Load JSON data
+data = json.loads(data)
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Convert DataFrame to CSV
+df.to_csv('output.csv', index=False)

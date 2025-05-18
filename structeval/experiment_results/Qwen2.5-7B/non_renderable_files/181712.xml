@@ -1,0 +1,68 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def yaml_to_xml(yaml_data):
+    root = ET.Element("root")
+    space_station = yaml.load(yaml_data, Loader=yaml.FullLoader)
+    for key, value in space_station.items():
+        if key == "crewMembers":
+            crew_members = ET.SubElement(root, "crewMembers")
+            for member in value:
+                crew_member = ET.SubElement(crew_members, "crewMember")
+                for m_key, m_value in member.items():
+                    ET.SubElement(crew_member, m_key).text = str(m_value)
+        elif key == "laboratories":
+            laboratories = ET.SubElement(root, "laboratories")
+            for lab in value:
+                laboratory = ET.SubElement(laboratories, "laboratory")
+                for l_key, l_value in lab.items():
+                    if l_key == "experiments":
+                        experiments = ET.SubElement(laboratory, "experiments")
+                        for exp in l_value:
+                            experiment = ET.SubElement(experiments, "experiment")
+                            ET.SubElement(experiment, "title").text = exp["title"]
+                            for e_key, e_value in exp.items():
+                                if e_key == "experiments":
+                                    for sub_exp in e_value:
+                                        ET.SubElement(experiment, "experiment").text = sub_exp
+                    else:
+                        ET.SubElement(laboratory, l_key).text = str(l_value)
+        else:
+            ET.SubElement(root, key).text = str(value)
+    return ET.tostring(root, encoding="unicode")
+
+yaml_data = """
+spaceStation:
+  name: Nebula Outpost
+  location:
+    planet: Gliese 581g
+    coordinates:
+      latitude: -16.3
+      longitude: 42.7
+  crewMembers:
+    crewMember:
+      - name: Zira Quarn
+        role: Commander
+        species: Human
+      - name: Lox Vrell
+        role: Botanist
+        species: Xelorian
+      - name: Pip
+        role: Engineer
+        species: AI
+  laboratories:
+    laboratory:
+      - title: Hydroponics Lab
+        experiments:
+          experiment:
+            - Plant Growth in Microgravity
+            - Algae-Based Oxygen Production
+      - title: Quantum Physics Lab
+        experiments:
+          experiment:
+            - Entanglement Testing
+            - Dark Matter Detection
+"""
+
+print(yaml_to_xml(yaml_data))

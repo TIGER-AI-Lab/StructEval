@@ -1,0 +1,40 @@
+{
+  "creature": {
+    "name": "Xylar",
+    "species": "Crystalline Entity",
+    "origin": {
+      "planet": "Kryllos",
+      "galaxy": "Andromeda"
+    },
+    "abilities": [
+      {
+        "type": "Energy Absorption",
+        "description": "Xylar can absorb and redirect energy from any source.",
+        "power_level": 95
+      },
+      {
+        "type": "Telekinesis",
+        "description": "Xylar can move objects with its mind.",
+        "power_level": 70
+      }
+    ],
+    "appearance": {
+      "height_cm": 250,
+      "skin_color": "Azure",
+      "eye_count": 3
+    },
+    "history": {
+      "first_sighting": "2023-03-15T00:00:00Z",
+      "known_encounters": [
+        {
+          "location": "Amazon Rainforest",
+          "date": "2023-04-20T00:00:00Z"
+        },
+        {
+          "location": "Gobi Desert",
+          "date": "2023-07-01T00:00:00Z"
+        }
+      ]
+    }
+  }
+}

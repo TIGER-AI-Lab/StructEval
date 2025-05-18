@@ -1,0 +1,30 @@
+<planet>
+    <name>Zephyria</name>
+    <orbitalPeriod>400</orbitalPeriod>
+    <discovery year="2205">
+        <method>Transit Photometry</method>
+        <telescope>Hubble Space Telescope</telescope>
+    </discovery>
+    <atmosphere>
+        <composition>Nitrogen, Oxygen, Argon</composition>
+        <pressure>101.3</pressure>
+        <temperature>288</temperature>
+    </atmosphere>
+    <moons>
+        <moon>
+            <name>Lunara</name>
+            <diameter>3475</diameter>
+            <orbitalPeriod>27</orbitalPeriod>
+            <discoveredBy>Dr. Elena Smith</discoveredBy>
+            <discoveryDate>2250-06-15</discoveryDate>
+        </moon>
+    </moons>
+    <surface>
+        <features>
+            <feature>
+                <type>Mountain</type>
+                <coordinates>45.0N, 120.0W</coordinates>
+            </feature>
+        </features>
+    </surface>
+</planet>

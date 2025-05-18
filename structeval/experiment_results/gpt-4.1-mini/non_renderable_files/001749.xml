@@ -1,0 +1,33 @@
+
+<planet>
+  <name>Zephyria</name>
+  <type>ice giant</type>
+  <orbitalPeriod>687</orbitalPeriod>
+  <discovery year="2147">
+    <method>direct imaging</method>
+    <discoverer>Dr. Elena Voss and Team</discoverer>
+  </discovery>
+  <atmosphere>
+    <composition>hydrogen, helium, methane</composition>
+    <pressure>1.8</pressure>
+  </atmosphere>
+  <moons>
+    <moon>
+      <name>Thalassa</name>
+      <diameter>1450</diameter>
+      <hasSubsurfaceOcean>true</hasSubsurfaceOcean>
+    </moon>
+    <moon>
+      <name>Nyx</name>
+      <diameter>980</diameter>
+      <hasSubsurfaceOcean>false</hasSubsurfaceOcean>
+    </moon>
+  </moons>
+  <rings>
+    <hasRings>true</hasRings>
+    <ring>
+      <width>12000</width>
+      <composition>ice particles, rock debris</composition>
+    </ring>
+  </rings>
+</planet>

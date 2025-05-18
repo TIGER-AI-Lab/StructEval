@@ -1,0 +1,54 @@
+
+<recipe>
+  <title>Spaghetti Bolognese</title>
+  <author>
+    <name>John Doe</name>
+    <contact>john@example.com</contact>
+  </author>
+  <ingredients>
+    <item>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+    </item>
+    <item>
+      <name>Tomato Sauce</name>
+      <quantity>2</quantity>
+      <unit>cups</unit>
+    </item>
+    <item>
+      <name>Onion</name>
+      <quantity>1</quantity>
+      <unit>medium</unit>
+    </item>
+  </ingredients>
+  <steps>
+    <step>
+      <description>Boil spaghetti according to package instructions.</description>
+      <duration_minutes>10</duration_minutes>
+      <tools>pot, stove</tools>
+    </step>
+    <step>
+      <description>Cook tomato sauce with onions until softened.</description>
+      <duration_minutes>15</duration_minutes>
+      <tools>pan, stove</tools>
+    </step>
+    <step>
+      <description>Combine cooked spaghetti and sauce, serve immediately.</description>
+      <duration_minutes>5</duration_minutes>
+      <tools>plate, fork</tools>
+    </step>
+  </steps>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>Medium</difficulty>
+    <servings>4</servings>
+    <prep_time>PT15M</prep_time>
+    <cook_time>PT30M</cook_time>
+  </metadata>
+  <nutrition>
+    <calories>400</calories>
+    <fat>10</fat>
+    <protein>20</protein>
+  </nutrition>
+</recipe>

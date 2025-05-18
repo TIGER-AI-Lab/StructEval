@@ -1,98 +1,137 @@
-import os
-import logging
-import re
-import subprocess
-import tempfile
+import os, re, subprocess, tempfile, logging, shutil, time
 from pdf2image import convert_from_path
 
-def render_latex_to_png(latex_code, output_path, dpi=300):
-    """
-    Renders LaTeX code to a PNG image using pdflatex + pdf2image.
 
-    Args:
-        latex_code (str): The LaTeX code (can be full doc or just snippet).
-        output_path (str): Full path to save the PNG file.
-        dpi (int): Resolution of the output image.
-
-    Returns:
-        bool: True if successful, False otherwise.
+# ---------------------------- helper -------------------------------- #
+def _build_document(body: str) -> str:
     """
+    Wrap a TikZ/LaTeX fragment in a minimal standalone document.
+    Loads the packages most TikZ pictures need.
+    """
+    packages = r"""
+\usepackage{amsmath,amssymb,graphicx,xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+"""
+    return (
+        r"\documentclass[tikz,border=2pt]{standalone}" "\n"
+        f"{packages}\n"
+        r"\begin{document}"          "\n"
+        f"{body}\n"
+        r"\end{document}"            "\n"
+    )
+
+
+# ---------------------------- core ---------------------------------- #
+def render_latex_to_png(latex_code: str, output_path: str, task_id: str, dpi: int = 300) -> bool:
+    """
+    Compile LaTeX → PDF → PNG.  Returns True on success.
+    """
+    # ---- 20‑second overall timeout ----
+
+    # print(output_path)
+    start_time = time.time()
+    def _remaining():
+        """seconds left before hitting the 20‑second wall (≥1)."""
+        return max(1, int(20 - (time.time() - start_time)))
+
     try:
-        with tempfile.TemporaryDirectory() as tmpdir:
-            tex_path = os.path.join(tmpdir, "doc.tex")
-            pdf_path = os.path.join(tmpdir, "doc.pdf")
+        with tempfile.TemporaryDirectory() as tmp:
+            tex_file = os.path.join(tmp, "doc.tex")
+            pdf_file = os.path.join(tmp, "doc.pdf")
 
-            # Wrap in a minimal document if not full LaTeX
-            if "\\begin{document}" not in latex_code:
-                latex_code = (
-                    "\\documentclass{article}\n"
-                    "\\usepackage{amsmath, tikz}\n"
-                    "\\pagestyle{empty}\n"
-                    "\\begin{document}\n"
-                    f"{latex_code}\n"
-                    "\\end{document}"
-                )
+            # Wrap a fragment only if it has no \begin{document}
+            if r"\begin{document}" not in latex_code:
+                latex_code = _build_document(latex_code)   # ★
 
-            with open(tex_path, "w") as f:
+            with open(tex_file, "w", encoding="utf8") as f:
                 f.write(latex_code)
 
-            subprocess.run(
-                ["pdflatex", "-interaction=nonstopmode", "-output-directory", tmpdir, tex_path],
-                check=True,
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL
-            )
+            # ----- compile: try Tectonic first, then pdflatex ----------
+            pdf_ok = False
+            if shutil.which("tectonic"):
+                try:
+                    subprocess.run(
+                        ["tectonic", "-X", "compile",
+                         "--outdir", tmp, tex_file],
+                        check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                        timeout=_remaining()
+                    )
+                    pdf_ok = os.path.isfile(pdf_file) and os.path.getsize(pdf_file) > 0
+                except subprocess.CalledProcessError:
+                    logging.warning("Tectonic failed – falling back to pdflatex.")
 
-            images = convert_from_path(pdf_path, dpi=dpi)
+            if not pdf_ok:
+                # Run pdflatex (no -halt-on-error) and DO NOT stop on non‑zero exit status.
+                cmd = ["pdflatex", "-interaction=nonstopmode", "-file-line-error",
+                       "-output-directory", tmp, tex_file]
+
+                for _ in range(2):         # two passes for references/TikZ sizes
+                    proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=_remaining())
+
+                # even if return‑code ≠ 0, accept the run provided a PDF exists
+                pdf_ok = os.path.isfile(pdf_file) and os.path.getsize(pdf_file) > 0
+                if not pdf_ok:
+                    # show log excerpt then bail
+                    print("❌ pdflatex produced no PDF. Last run log:")
+                    print(proc.stdout.decode(errors="ignore")[-1000:])  # tail
+                    print(proc.stderr.decode(errors="ignore")[-200:])
+                    raise RuntimeError("pdflatex failed without output")
+
+            # sanity‑check that the PDF exists now
+            if not os.path.isfile(pdf_file) or os.path.getsize(pdf_file) == 0:
+                raise RuntimeError("pdflatex/tectonic produced no usable PDF file")
+
+            images = convert_from_path(pdf_file, dpi=dpi, first_page=1, last_page=1)
+
+            # abort if the total render time has exceeded 20 s
+            if time.time() - start_time > 6:
+                raise TimeoutError("Rendering exceeded 6 seconds")
+
             if not images:
-                raise RuntimeError("No image generated from LaTeX.")
+                raise RuntimeError("No page produced by pdflatex")
+            
+            # ensure the output directory itself exists
+            if not os.path.isdir(output_path):
+                os.makedirs(output_path, exist_ok=True)
 
-            os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
-            images[0].save(output_path, "PNG")
-            return True
+            screenshot_path = os.path.join(output_path, f"{task_id}.png")
+            images[0].save(screenshot_path, "PNG")
+            print(f"✅ Saved screenshot for {task_id} → {screenshot_path}")
+            return 1
 
+    except subprocess.CalledProcessError as e:           # ★ show real log
+        print("❌ pdflatex error:")
+        print(e.stdout.decode(errors="ignore"))
+        print(e.stderr.decode(errors="ignore"))
     except Exception as e:
         print(f"❌ LaTeX render failed: {e}")
-        return False
-
-def render_latex_and_screenshot(task_id, latex_code, img_output_path):
-    """
-    Wrapper that maps your task-based logic to the simpler LaTeX renderer.
-    """
-    if not latex_code:
-        logging.warning(f"No LaTeX content for task {task_id}")
+    except TimeoutError as e:
+        print(f"⏰ Timeout: {e}")
         return 0
 
-    if os.path.splitext(img_output_path)[1] == "":
-        os.makedirs(img_output_path, exist_ok=True)
-        output_file = os.path.join(img_output_path, f"{task_id}.png")
-    else:
-        os.makedirs(os.path.dirname(img_output_path) or ".", exist_ok=True)
-        output_file = img_output_path
+    return 0
 
-    success = render_latex_to_png(latex_code, output_file)
-    if success:
-        logging.info(f"LaTeX rendered image saved: {output_file}")
-        return 1
-    else:
-        logging.error(f"LaTeX rendering failed for task {task_id}")
-        return 0
-
-def extract_latex_from_code_tag(generation):
+def extract_latex_from_code_tag(generation, output_type):
     """
     Extract LaTeX code from <code> tags and clean it up.
     Removes control characters and converts double backslashes to single ones.
     """
-    match = re.search(r"<code>(.*?)</code>", generation, re.DOTALL)
-    latex_code = match.group(1) if match else None
+    pattern = rf"""
+        (?:<code>|```(?:{re.escape(output_type)}|[^\n]*)\n)  # opening tag / header
+        (?:\s*S\s*\n)?                                       # optional lone 'S' line
+        (.*?)                                                # the real code
+        (?:</code>|```)                                      # closing tag / fence
+    """
+    match = re.search(pattern, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+    if match:
+        code = match.group(1).strip()
+    else: 
+        code = generation.strip()
 
-    if latex_code:
+    if code:
         # Remove control characters (ASCII 0-31, excluding \t, \n, \r)
-        latex_code = re.sub(r'[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]', '', latex_code)
+        code = re.sub(r'[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]', '', code)
 
-        # Replace every double backslash with a single backslash
-        #latex_code = latex_code.replace('\\\\', '\\')
-
-        #logging.info(f"Cleaned LaTeX code: {latex_code}")
-
-    return latex_code
+    return code

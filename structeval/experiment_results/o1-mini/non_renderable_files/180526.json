@@ -1,0 +1,51 @@
+{
+  "expedition": {
+    "name": "Voyager Alpha",
+    "launch_date": "2087-11-15",
+    "crew_members": [
+      "Dr. Linh Tran",
+      "Captain Omar Reyes",
+      "Engineer Zoe Patel"
+    ],
+    "destination": {
+      "planet": "Proxima b",
+      "coordinates": {
+        "x": 4.23,
+        "y": -1.09,
+        "z": 0.56
+      }
+    },
+    "cargo": {
+      "supplies": {
+        "food": "Freeze-dried meals",
+        "water": "Recycled H2O"
+      },
+      "equipment": [
+        "Terraforming kit",
+        "Radiation shields",
+        "Nano-drones"
+      ]
+    },
+    "mission_objectives": [
+      "Establish base camp",
+      "Analyze soil samples",
+      "Deploy communication beacon"
+    ],
+    "communication": {
+      "schedule": [
+        {
+          "time": "Day 1 06:00 UTC",
+          "message": "Launch confirmation"
+        },
+        {
+          "time": "Day 3 12:00 UTC",
+          "message": "Systems check-in"
+        }
+      ]
+    },
+    "emergency_protocols": [
+      "Oxygen depletion: activate reserve tanks",
+      "Hull breach: initiate auto-seal system"
+    ]
+  }
+}

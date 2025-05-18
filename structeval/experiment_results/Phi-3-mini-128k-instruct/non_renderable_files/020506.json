@@ -1,0 +1,264 @@
+{
+  "species": [
+    {
+      "name": "Xyloquian",
+      "planet": "Arboris",
+      "discovery": {
+        "year": 3021,
+        "mission": "DeepRoot"
+      },
+      "habitat": {
+        "type": "Forest",
+        "atmosphere": "Oxygen-rich",
+        "gravity": 0.8
+      },
+      "biology": {
+        "limbs": "Infrared|Auditory",
+        "senses": "Photosynthetic|Regenerative",
+        "traits": "Cellulose"
+      },
+      "diet": {
+        "primary": "Cellulose",
+        "secondary": "Water"
+      },
+      "culture": {
+        "language": "Advanced",
+        "technology_level": "Leaf-sculpture|Sap-instrument"
+      }
+    },
+    {
+      "name": "Glimmerfin",
+      "planet": "Aquarion",
+      "discovery": {
+        "year": 2987,
+        "mission": "BlueWave"
+      },
+      "habitat": {
+        "type": "Ocean",
+        "atmosphere": "Hydrogen-oxygen",
+        "gravity": 1.1
+      },
+      "biology": {
+        "limbs": "Electroreception|Vision",
+        "senses": "Reflective-scales|Bioluminescent",
+        "traits": "Plankton|Algae"
+      },
+      "diet": {
+        "primary": "Plankton",
+        "secondary": "Algae"
+      },
+      "culture": {
+        "language": "Primitive",
+        "technology_level": "Shell-necklace|Coral-carving"
+      }
+    },
+    {
+      "name": "Pyrrhian",
+      "planet": "Volcanis",
+      "discovery": {
+        "year": 3050,
+        "mission": "EmberQuest"
+      },
+      "habitat": {
+        "type": "Lava-cave",
+        "atmosphere": "Sulfur-rich",
+        "gravity": 2.3
+      },
+      "biology": {
+        "limbs": "Thermal|Olfactory",
+        "senses": "Heat-resistant|Rock-mimicry",
+        "traits": "Minerals"
+      },
+      "diet": {
+        "primary": "Minerals",
+        "secondary": "Lava-moss"
+      },
+      "culture": {
+        "language": "Intermediate",
+        "technology_level": "Obsidian-chisel|Ash-painting"
+      }
+    },
+    {
+      "name": "Aerolith",
+      "planet": "Skytopia",
+      "discovery": {
+        "year": 2999,
+        "mission": "CloudReach"
+      },
+      "habitat": {
+        "type": "Cloud-city",
+        "atmosphere": "Nitrogen-oxygen",
+        "gravity": 0.4
+      },
+      "biology": {
+        "limbs": "Sonar|Vision",
+        "senses": "Floatation-sacs",
+        "traits": "Transparent-skin"
+      },
+      "diet": {
+        "primary": "Wind-seeds",
+        "secondary": "Condensation"
+      },
+      "culture": {
+        "language": "Advanced",
+        "technology_level": "Wind-chime|Sky-tapestry"
+      }
+    },
+    {
+      "name": "Noctilume",
+      "planet": "Shadowmere",
+      "discovery": {
+        "year": 3012,
+        "mission": "NightStalk"
+      },
+      "habitat": {
+        "type": "Underground",
+        "atmosphere": "Argon-methane",
+        "gravity": 1.5
+      },
+      "biology": {
+        "limbs": "Echolocation|Chemoreception",
+        "senses": "Light-absorption",
+        "traits": "Fungi|Insects"
+      },
+      "diet": {
+        "primary": "Fungi",
+        "secondary": "Insects"
+      },
+      "culture": {
+        "language": "Primitive",
+        "technology_level": "Crystal-lens|Glow-paint"
+      }
+    },
+    {
+      "name": "Frostvine",
+      "planet": "Glacialis",
+      "discovery": {
+        "year": 3065,
+        "mission": "IceBloom"
+      },
+      "habitat": {
+        "type": "Glacier",
+        "atmosphere": "CO2-rich",
+        "gravity": 0.9
+      },
+      "biology": {
+        "limbs": "UV-Vision",
+        "senses": "Tactile",
+        "traits": "Antifreeze-blood"
+      },
+      "diet": {
+        "primary": "Lichen",
+        "secondary": "Ice-moss"
+      },
+      "culture": {
+        "language": "Intermediate",
+        "technology_level": "Snow-etching|Snow-sculpture"
+      }
+    },
+    {
+      "name": "Thornback",
+      "planet": "Desicca",
+      "discovery": {
+        "year": 3040,
+        "mission": "DuneWalker"
+      },
+      "habitat": {
+        "type": "Desert",
+        "atmosphere": "Sand-dust",
+        "gravity": 1.3
+      },
+      "biology": {
+        "limbs": "Vibration|Olfactory",
+        "senses": "Spiked-carapace",
+        "traits": "Moisture-hoarding"
+      },
+      "diet": {
+        "primary": "Cacti",
+        "secondary": "Insects"
+      },
+      "culture": {
+        "language": "Primitive",
+        "technology_level": "Stone-totem|Sand-painting"
+      }
+    },
+    {
+      "name": "Lumicrest",
+      "planet": "Solara",
+      "discovery": {
+        "year": 3077,
+        "mission": "SunGlide"
+      },
+      "habitat": {
+        "type": "Plateau",
+        "atmosphere": "Ozone-rich",
+        "gravity": 1.0
+      },
+      "biology": {
+        "limbs": "Vision|Magnetoreception",
+        "senses": "Reflective-wings",
+        "traits": "Solar-storage"
+      },
+      "diet": {
+        "primary": "Nectar",
+        "secondary": "Fruit"
+      },
+      "culture": {
+        "language": "Advanced",
+        "technology_level": "Sun-dial|Feather-weave"
+      }
+    },
+    {
+      "name": "Mireling",
+      "planet": "Bogmire",
+      "discovery": {
+        "year": 3033,
+        "mission": "MudSlog"
+      },
+      "habitat": {
+        "type": "Swamp",
+        "atmosphere": "Methane-rich",
+        "gravity": 1.2
+      },
+      "biology": {
+        "limbs": "Tactile|Chemical",
+        "senses": "Absorbent-skin",
+        "traits": "Mud-camouflage"
+      },
+      "diet": {
+        "primary": "Algae",
+        "secondary": "Small-animals"
+      },
+      "culture": {
+        "language": "Intermediate",
+        "technology_level": "Clay-idol|Reed-flute"
+      }
+    },
+    {
+      "name": "Shardtail",
+      "planet": "Crystara",
+      "discovery": {
+        "year": 3082,
+        "mission": "FacetFind"
+      },
+      "habitat": {
+        "type": "Crystal-cavern",
+        "atmosphere": "Helium-argon",
+        "gravity": 0.7
+      },
+      "biology": {
+        "limbs": "Vibration|Light",
+        "senses": "Prismatic-scales",
+        "traits": "Sound-resonance"
+      },
+      "diet": {
+        "primary": "Minerals",
+        "secondary": "Crystals"
+      },
+      "culture": {
+        "language": "Advanced",
+        "technology_level": "Crystal-harp|Gem-inlay"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+
+[creature]
+species = "Luminara Serpentis"
+
+[creature.habitat]
+region = "Mistwood Forest"
+climate = "temperate"
+
+[creature.appearance]
+size = "3 meters"
+color = "iridescent blue-green scales"
+
+[creature.abilities]
+primary = "bioluminescent camouflage"
+secondary = "telepathic communication"
+
+[[creature.behavior.patterns]]
+name = "Nocturnal Gliding"
+frequency = "nightly"
+description = "The creature silently glides through the forest canopy under the cover of darkness."
+
+[[creature.behavior.patterns]]
+name = "Sunlight Soaking"
+frequency = "daily"
+description = "During dawn, it basks in sunlight to recharge its bioluminescent abilities."
+
+[creature.diet]
+type = "omnivore"
+favorite_foods = ["glowing fungi", "forest insects"]
+
+[creature.discovery]
+discoverer = "Dr. Elara Voss"
+year = 2023

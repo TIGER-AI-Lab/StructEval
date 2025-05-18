@@ -1,0 +1,56 @@
+[
+  {
+    "galaxy_name": "Andromeda",
+    "location": {
+      "sector": "Alpha",
+      "quadrant": 3
+    },
+    "discovery": {
+      "year": 2398,
+      "method": "Gravitational Lensing"
+    },
+    "notable_planets": [
+      {
+        "name": "Mira",
+        "type": "Gas Giant",
+        "habitability_score": 4.2,
+        "moons": ["Phobos", "Deimos"]
+      },
+      {
+        "name": "Talos",
+        "type": "Terrestrial",
+        "habitability_score": 8.7,
+        "moons": ["Luna"]
+      }
+    ],
+    "famous_events": [
+      {
+        "name": "First Contact",
+        "year": 2401,
+        "description": "First meeting with Xalaxians"
+      },
+      {
+        "name": "Nova Burst",
+        "year": 2410,
+        "description": "Massive supernova event"
+      }
+    ],
+    "galactic_council_members": [
+      {
+        "name": "Zara",
+        "species": "Human",
+        "role": "Chancellor"
+      },
+      {
+        "name": "Krel",
+        "species": "Xalaxian",
+        "role": "Ambassador"
+      },
+      {
+        "name": "Mino",
+        "species": "Droth",
+        "role": "Scientist"
+      }
+    ]
+  }
+]

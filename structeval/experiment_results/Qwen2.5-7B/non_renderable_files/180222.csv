@@ -1,0 +1,13 @@
+import pandas as pd
+
+data = {
+    'planet_name': ['Zephyra', 'Luminaris', 'Pyrrhos', 'Aquarion', 'Verdantia', 'Cryostella'],
+    'distance_from_earth_ly': [42.7, 128.3, 87.5, 300.0, 59.8, 215.2],
+    'dominant_lifeform': ['Cloud Serpents', 'Luminous Fungi', 'Fire Beetles', 'Liquid Intelligences', 'Walking Trees', 'Ice Crystals'],
+    'climate_type': ['Windy', 'Bioluminescent Forests', 'Volcanic', 'Oceanic', 'Temperate', 'Frozen'],
+    'discovery_date': ['2087-09-14', '2112-03-22', '2099-12-01', '2135-06-30', '2105-11-17', '2120-02-08'],
+    'number_of_moons': [3, 1, 2, 5, 4, 0]
+}
+
+df = pd.DataFrame(data)
+df.to_csv('planets.csv', index=False)

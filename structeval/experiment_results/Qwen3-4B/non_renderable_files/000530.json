@@ -1,0 +1,30 @@
+
+{
+  "creature": {
+    "name": "Ignarion",
+    "species": "Fire Drake",
+    "age": 150,
+    "attributes": {
+      "height": 250,
+      "color": "Scarlet",
+      "abilities": ["Breath of Flames", "Flight", "Thermal Vision"]
+    },
+    "habitat": {
+      "location": "Mountains of Pyralis",
+      "climate": "Tropical",
+      "resources": ["Volcanic Rock", "Rare Minerals", "Hot Springs"]
+    },
+    "companions": [
+      {
+        "name": "Shade",
+        "species": "Shadow Wolf",
+        "bond_level": 8
+      },
+      {
+        "name": "Zephyra",
+        "species": "Storm Phoenix",
+        "bond_level": 7
+      }
+    ]
+  }
+}

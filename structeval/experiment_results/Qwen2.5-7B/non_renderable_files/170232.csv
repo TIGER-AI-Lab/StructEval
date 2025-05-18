@@ -1,0 +1,50 @@
+
+import pandas as pd
+
+xml_data = """
+<spaceships>
+  <row>
+    <SpaceshipID>ZX-001</SpaceshipID>
+    <CaptainName>Lira Moon</CaptainName>
+    <LaunchDate>2124-03-17</LaunchDate>
+    <FuelLevel>87.5</FuelLevel>
+    <Destination>Europa</Destination>
+    <CrewCount>5</CrewCount>
+  </row>
+  <row>
+    <SpaceshipID>ZX-002</SpaceshipID>
+    <CaptainName>Viktor Sol</CaptainName>
+    <LaunchDate>2124-04-02</LaunchDate>
+    <FuelLevel>65.2</FuelLevel>
+    <Destination>Ganymede</Destination>
+    <CrewCount>7</CrewCount>
+  </row>
+  <row>
+    <SpaceshipID>ZX-003</SpaceshipID>
+    <CaptainName>Asha Ray</CaptainName>
+    <LaunchDate>2124-05-21</LaunchDate>
+    <FuelLevel>92.8</FuelLevel>
+    <Destination>Callisto</Destination>
+    <CrewCount>6</CrewCount>
+  </row>
+  <row>
+    <SpaceshipID>ZX-004</SpaceshipID>
+    <CaptainName>Juno Vega</CaptainName>
+    <LaunchDate>2124-06-09</LaunchDate>
+    <FuelLevel>74.3</FuelLevel>
+    <Destination>Titan</Destination>
+    <CrewCount>8</CrewCount>
+  </row>
+  <row>
+    <SpaceshipID>ZX-005</SpaceshipID>
+    <CaptainName>Milo Drake</CaptainName>
+    <LaunchDate>2124-07-15</LaunchDate>
+    <FuelLevel>81.0</FuelLevel>
+    <Destination>Enceladus</Destination>
+    <CrewCount>4</CrewCount>
+  </row>
+</spaceships>
+"""
+
+df = pd.read_xml(xml_data)
+df.to_csv('spaceships.csv', index=False)

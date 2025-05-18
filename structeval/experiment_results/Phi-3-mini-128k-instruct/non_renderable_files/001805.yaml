@@ -1,0 +1,53 @@
+brewery:
+  name: "Hoppy Valley Brews"
+  location:
+    city: "Boulder"
+    country: "USA"
+  established_year: 2010
+  specialties:
+    - "Ale"
+    - "Stout"
+    - "IPA"
+  master_brewer:
+    name: "Jane Doe"
+    experience_years: 15
+    awards:
+      - title: "Best Brewmaster Award"
+        year: 2021
+  beers:
+    - name: "Summit Ale"
+      style: "Ale"
+      abv: 5.5
+      ingredients:
+        malts:
+        - "Maris Otter"
+        - "Pilsner Malt"
+        hops:
+        - "Centennial"
+        - "Cascade"
+      release_dates:
+        - "2021-06-15"
+    - name: "Boulder Stout"
+      style: "Stout"
+      abv: 6.0
+      ingredients:
+        malts:
+        - "Chocolate Malt"
+        - "Roasted Barley"
+        hops:
+        - "Fuggles"
+        - "Saaz"
+      release_dates:
+        - "2021-08-20"
+    - name: "Hoppy Valley IPA"
+      style: "IPA"
+      abv: 6.5
+      ingredients:
+        malts:
+        - "Crystal Malt"
+        - "Golden Promise"
+        hops:
+        - "Centennial"
+        - "East Kent Golding"
+      release_dates:
+        - "2021-09-05"

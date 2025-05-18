@@ -1,0 +1,52 @@
+{
+  "space_mission": {
+    "mission_name": "Nebula Voyager",
+    "launch_date": "2087-03-15",
+    "crew": [
+      {
+        "name": "Dr. Zara Lin",
+        "role": "Commander",
+        "experience_years": 14,
+        "specializations": [
+          "Astrophysics",
+          "Navigation"
+        ]
+      },
+      {
+        "name": "Lt. Marco Reyes",
+        "role": "Engineer",
+        "experience_years": 9,
+        "specializations": [
+          "Robotics",
+          "Life Support Systems"
+        ]
+      }
+    ],
+    "destination": {
+      "planet": "Gliese 581g",
+      "coordinates": {
+        "x": 31.5,
+        "y": -45.2,
+        "z": 102.8
+      }
+    },
+    "equipment": [
+      {
+        "type": "Rover",
+        "serial_number": "RV-2045A",
+        "status": "Operational"
+      },
+      {
+        "type": "Habitat Module",
+        "serial_number": "HM-1187Q",
+        "status": "Standby"
+      }
+    ],
+    "duration_days": 540,
+    "objectives": [
+      "Study planetary atmosphere",
+      "Search for microbial life",
+      "Test long-term habitat sustainability"
+    ]
+  }
+}

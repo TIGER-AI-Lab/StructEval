@@ -1,0 +1,28 @@
+<ecosystem>
+    <planet>
+        <name>Auroria</name>
+        <type>Terrestrial</type>
+        <orbitalPeriod>400</orbitalPeriod>
+        <atmosphere>
+            <composition>Nitrogen, Oxygen, Argon</composition>
+            <pressure>1.2</pressure>
+            <temperature>295</temperature>
+        </atmosphere>
+        <moons>
+            <moon>
+                <name>Lunaris</name>
+                <diameter>3500</diameter>
+                <hasWater>true</hasWater>
+                <discovery year="2150" method="Telescope"/>
+            </moon>
+        </moons>
+        <lifeforms>
+            <lifeform>
+                <species>Florae sapiens</species>
+                <population>5000000</population>
+                <intelligenceLevel>Sentient</intelligenceLevel>
+                <firstObserved date="2205-07-16"/>
+            </lifeform>
+        </lifeforms>
+    </planet>
+</ecosystem>

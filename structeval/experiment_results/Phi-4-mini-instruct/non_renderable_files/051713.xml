@@ -1,0 +1,26 @@
+
+&lt;spaceStation>
+  &lt;name>Aurora Outpost</name>
+  &lt;location>
+    &lt;planet>Kepler-442b</planet>
+    &lt;galaxy>Andromeda</galaxy>
+  &lt;location>
+  &lt;crewMembers>
+    &lt;crewMember>
+      &lt;name>Dr. Vega Lin</name>
+      &lt;role>Biologist</role>
+    &lt;crewMember>
+    &lt;crewMember>
+      &lt;name>Commander Rilo</name>
+      &lt;role>Pilot</role>
+    &lt;crewMember>
+  &lt;researchLabs>
+    &lt;lab>
+      &lt;labName>Xenobotany</labName>
+      &lt;field>Alien Flora</field>
+    &lt;lab>
+    &lt;lab>
+      &lt;labName>AstroPhysics</labName>
+      &lt;field>Particle Analysis</field>
+    &lt;lab>
+  &lt;researchLabs>

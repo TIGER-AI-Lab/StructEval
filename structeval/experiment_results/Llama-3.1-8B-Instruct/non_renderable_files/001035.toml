@@ -1,0 +1,35 @@
+
+ecosystem = {
+  name = "Arida Desert Ecosystem",
+  location = {
+    latitude = 23.432,
+    longitude = -102.432
+  },
+  climate = {
+    type = "arid",
+    average_temperature_c = 22.5,
+    annual_rainfall_mm = 250
+  },
+  species = [
+    {
+      common_name = "Arida Desert Tortoise",
+      scientific_name = "Testudines arida",
+      population_estimate = 5000,
+      conservation_status = "Vulnerable",
+      notable_characteristics = [
+        "Long lifespan",
+        "Specialized shell for water conservation"
+      ]
+    },
+    {
+      common_name = "Arida Desert Vulture",
+      scientific_name = "Vultur arida",
+      population_estimate = 2000,
+      conservation_status = "Near Threatened",
+      notable_characteristics = [
+        "Scavenging behavior",
+        "Large wingspan for thermoregulation"
+      ]
+    }
+  ]
+}

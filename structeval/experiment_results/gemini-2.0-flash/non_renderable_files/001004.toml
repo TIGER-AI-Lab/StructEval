@@ -1,0 +1,28 @@
+[museum]
+name = "The Grand Gallery"
+established_year = 1888
+
+[museum.location]
+city = "Metropolis"
+country = "United States"
+
+[museum.director]
+full_name = "Dr. Eleanor Vance"
+tenure_years = 7
+
+[[museum.exhibits]]
+title = "Starry Night Over the Metropolis"
+artist = "Vincent van Gogh (Inspired)"
+year_created = 2042
+medium = "Holographic Projection"
+
+[museum.exhibits[0].dimensions]
+height_cm = 150.5
+width_cm = 220.0
+
+museum.exhibits[0].on_display = true
+museum.exhibits[0].tags = ["futuristic", "cityscape", "night", "hologram"]
+
+[museum.opening_hours]
+weekdays = "10:00 AM - 6:00 PM"
+weekends = "12:00 PM - 8:00 PM"

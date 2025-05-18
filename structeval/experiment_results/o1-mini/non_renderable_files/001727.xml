@@ -1,0 +1,84 @@
+
+<recipe>
+    <name>Spaghetti Bolognese</name>
+    <author>John Doe</author>
+    <cuisine>Italian</cuisine>
+    <prepTime>20</prepTime>
+    <cookTime>60</cookTime>
+    <servings>4</servings>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>400</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Olive Oil</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </ingredient>
+        <ingredient>
+            <name>Ground Beef</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Onion</name>
+            <quantity>1</quantity>
+            <unit>large</unit>
+        </ingredient>
+        <ingredient>
+            <name>Garlic Cloves</name>
+            <quantity>2</quantity>
+            <unit>units</unit>
+        </ingredient>
+        <ingredient>
+            <name>Tomato Sauce</name>
+            <quantity>800</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Salt</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Black Pepper</name>
+            <quantity>0.5</quantity>
+            <unit>teaspoon</unit>
+        </ingredient>
+        <ingredient>
+            <name>Parmesan Cheese</name>
+            <quantity>50</quantity>
+            <unit>grams</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Boil the spaghetti according to package instructions until al dente.</description>
+        </step>
+        <step>
+            <order>2</order>
+            <description>Heat olive oil in a large pan over medium heat. Add finely chopped onion and garlic, sautÃ© until translucent.</description>
+        </step>
+        <step>
+            <order>3</order>
+            <description>Add ground beef to the pan and cook until browned. Drain excess fat.</description>
+        </step>
+        <step>
+            <order>4</order>
+            <description>Pour in tomato sauce, add salt and pepper, then simmer for 30 minutes.</description>
+        </step>
+        <step>
+            <order>5</order>
+            <description>Serve the sauce over cooked spaghetti and sprinkle with grated Parmesan cheese.</description>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>600</calories>
+        <protein>25.0</protein>
+        <fat>20.5</fat>
+        <carbohydrates>80.3</carbohydrates>
+    </nutrition>
+</recipe>

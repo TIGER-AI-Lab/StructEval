@@ -1,0 +1,32 @@
+
+spaceport:
+  name: "Celestial Gateway Alpha"
+  operational_since: 2095
+  location:
+    planet: "Mars"
+    region: "Valles Marineris"
+    coordinates:
+      latitude: -14.235
+      longitude: 75.123
+  launch_pads:
+    - pad_id: "A1"
+      status: "active"
+      supported_vehicles:
+        - "Falcon X"
+        - "Red Dragon"
+    - pad_id: "B2"
+      status: "maintenance"
+      supported_vehicles:
+        - "Starhopper"
+        - "Orion"
+  crew:
+    count: 42
+    roles:
+      - "Commander"
+      - "Engineer"
+      - "Medical Officer"
+      - "Pilot"
+  facilities:
+    mission_control: true
+    hangar: true
+    medical_bay: false

@@ -1,0 +1,5 @@
+
+"species_id","species_name","classification","habitat_type","average_lifespan_years","discovery_date","is_endangered","average_height_cm","diet","origin_planet","notable_traits","first_observed_by","color_variations","reproduction_method","population_estimate"
+"Xylophia-1","Xylophianus galacticus","Mammal","Terrestrial","10","2022-01-01","FALSE","150","Herbivore","Xylophia-IV","Semi-aquatic, large ears; ability to change color","John Doe","Gray, brown, white","Oviparous","5000"
+"Zorvath-2","Zorvathianus aerius","Reptile","Aerial","20","2020-06-15","TRUE","30","Carnivore","Zorvath-III","Wingspan, venomous fangs; ability to fly","Jane Smith","Brown, gray, black","Viviparous","1000"
+"Gloopern-3","Gloopernianus aquaticus","Other","Aquatic","15","2018-03-20","FALSE","50","Omnivore","Gloopern-IV","Bioluminescent, ability to change shape","Bob Johnson","Blue, green, yellow","Oviparous","20000"

@@ -1,0 +1,22 @@
+galaxy:
+  name: Andromeda
+  type: Spiral
+  distance_mly: 2.537
+  discovery:
+    year: 964
+    telescope: Hooker Telescope
+  stars:
+    count: 1e12
+    types: G, K, M
+    notable_stars:
+      - name: Alpheratz
+        magnitude: 2.06
+        spectral_type: B8IV
+      - name: Mirach
+        magnitude: 2.07
+        spectral_type: A5V
+  black_holes:
+    count: 35
+    largest:
+      mass_solar: 1.1e8
+      type: Supermassive

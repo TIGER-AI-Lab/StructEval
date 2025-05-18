@@ -1,0 +1,20 @@
+
+<museum>
+  <name>Galactic Oddities Archive</name>
+  <location>
+    <city>Nebulon Heights</city>
+    <planet>Xanthea IV</planet>
+  </location>
+  <exhibits>
+    <exhibit>
+      <title>Singing Meteorites</title>
+      <species>Asteroidus Vocalis</species>
+      <year_discovered>3087</year_discovered>
+    </exhibit>
+    <exhibit>
+      <title>Quantum Jellyfish</title>
+      <species>Medusae Quantica</species>
+      <year_discovered>3092</year_discovered>
+    </exhibit>
+  </exhibits>
+</museum>

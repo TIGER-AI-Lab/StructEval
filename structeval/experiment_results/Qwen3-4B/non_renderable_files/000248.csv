@@ -1,0 +1,3 @@
+
+artifact_id,artifact_name,discovery.site,discovery.country,discovery.year,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.current_state,condition.restoration_years,provenance.previous_owners,provenance.auction_history,exhibit.locations
+"ART001","Ceramic Vase","Minoan Site","Greece",1950,"clay","glaze",35.50,20.75,15.25,"intact",,"Museum of Antiquities","Sold at Sotheby's 2005","Louvre, British Museum"

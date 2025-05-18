@@ -1,0 +1,102 @@
+{
+  "recipe": {
+    "title": "Spiced Pumpkin & Chorizo Risotto with Crispy Sage",
+    "author": "GPT Chef",
+    "cuisine": "Fusion",
+    "servings": 4,
+    "prep_time_minutes": 20,
+    "cook_time_minutes": 35,
+    "ingredients": [
+      {
+        "name": "Arborio Rice",
+        "quantity": 1.5,
+        "unit": "cups"
+      },
+      {
+        "name": "Pumpkin Puree",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Chorizo Sausage",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "name": "Chicken Broth",
+        "quantity": 6,
+        "unit": "cups"
+      },
+      {
+        "name": "Onion",
+        "quantity": 1,
+        "unit": "medium"
+      },
+      {
+        "name": "Garlic",
+        "quantity": 3,
+        "unit": "cloves"
+      },
+      {
+        "name": "Sage Leaves",
+        "quantity": 12,
+        "unit": "leaves"
+      },
+      {
+        "name": "Parmesan Cheese",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Olive Oil",
+        "quantity": 2,
+        "unit": "tablespoons"
+      },
+      {
+        "name": "Spiced Pumpkin Pie Spice",
+        "quantity": 1,
+        "unit": "teaspoon"
+      }
+    ],
+    "steps": [
+      {
+        "description": "Finely chop the onion and garlic. Remove chorizo from casing and crumble.",
+        "duration_minutes": 5
+      },
+      {
+        "description": "Heat olive oil in a large pan over medium heat. Add onion and cook until softened, about 5 minutes. Add garlic and chorizo and cook until chorizo is browned.",
+        "duration_minutes": 10
+      },
+      {
+        "description": "Add Arborio rice to the pan and toast for 1-2 minutes, stirring constantly.",
+        "duration_minutes": 2
+      },
+      {
+        "description": "Add spiced pumpkin pie spice and stir to combine.",
+        "duration_minutes": 1
+      },
+      {
+        "description": "Begin adding chicken broth, one cup at a time, stirring constantly and allowing the rice to absorb the liquid before adding more. Repeat until all broth is used and rice is creamy.",
+        "duration_minutes": 20
+      },
+      {
+        "description": "Stir in pumpkin puree and Parmesan cheese.",
+        "duration_minutes": 2
+      },
+      {
+        "description": "While risotto is cooking, fry sage leaves in a small amount of olive oil until crispy. Drain on paper towels.",
+        "duration_minutes": 5
+      },
+      {
+        "description": "Serve risotto topped with crispy sage leaves.",
+        "duration_minutes": 0
+      }
+    ],
+    "nutrition": {
+      "calories": 450,
+      "fat_grams": 25,
+      "protein_grams": 20,
+      "carbohydrates_grams": 40
+    }
+  }
+}

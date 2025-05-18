@@ -1,0 +1,14 @@
+
+import pandas as pd
+
+data = [
+    {'creature_name': 'Glimmerfox', 'element': 'Light', 'number_of_legs': 4, 'discovery_date': '2011-07-22', 'habitat': 'Crystal Woods', 'luminosity_rating': 8.5},
+    {'creature_name': 'Thundertail', 'element': 'Storm', 'number_of_legs': 2, 'discovery_date': '2015-03-14', 'habitat': 'Sky Peaks', 'luminosity_rating': 9.1},
+    {'creature_name': 'Mossbeard', 'element': 'Earth', 'number_of_legs': 6, 'discovery_date': '2008-11-03', 'habitat': 'Ancient Grove', 'luminosity_rating': 6.7},
+    {'creature_name': 'Emberwing', 'element': 'Fire', 'number_of_legs': 2, 'discovery_date': '2019-05-29', 'habitat': 'Volcanic Ridge', 'luminosity_rating': 7.9},
+    {'creature_name': 'Frostpaw', 'element': 'Ice', 'number_of_legs': 4, 'discovery_date': '2013-01-18', 'habitat': 'Frozen Lake', 'luminosity_rating': 7.4},
+    {'creature_name': 'Shadowleap', 'element': 'Shadow', 'number_of_legs': 0, 'discovery_date': '2017-09-10', 'habitat': 'Midnight Caverns', 'luminosity_rating': 5.8}
+]
+
+df = pd.DataFrame(data)
+df.to_csv('creatures.csv', index=False)

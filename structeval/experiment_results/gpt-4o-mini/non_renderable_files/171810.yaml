@@ -1,0 +1,20 @@
+
+galacticZoo:
+  animals:
+    - animal:
+        species: Starlion
+        originPlanet: Orion-5
+        favoriteFoods:
+          food:
+            - Comet Berries
+            - Solar Grass
+    - animal:
+        species: Nebula Fox
+        originPlanet: Vega Prime
+        favoriteFoods:
+          food:
+            - Plasma Grapes
+            - Moonlight Mushrooms
+  zookeeper:
+    name: Zarnax
+    species: Andromedan

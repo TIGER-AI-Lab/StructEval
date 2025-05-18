@@ -1,0 +1,30 @@
+
+{
+  "creature": {
+    "name": "Eldrin",
+    "species": "Dragon",
+    "age": 150,
+    "attributes": {
+      "height": 300,
+      "color": "Emerald Green",
+      "abilities": ["Fire Breathing", "Flight", "Invisibility"]
+    },
+    "habitat": {
+      "location": "Mystic Mountains",
+      "climate": "Temperate",
+      "resources": ["Gold", "Silver", "Magic Crystals"]
+    },
+    "companions": [
+      {
+        "name": "Luna",
+        "species": "Wolf",
+        "bond_level": 8
+      },
+      {
+        "name": "Thorn",
+        "species": "Phoenix",
+        "bond_level": 9
+      }
+    ]
+  }
+}

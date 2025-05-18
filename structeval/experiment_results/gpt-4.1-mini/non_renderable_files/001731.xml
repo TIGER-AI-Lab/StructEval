@@ -1,0 +1,103 @@
+
+<recipe>
+  <title>Spicy Thai Basil Chicken</title>
+  <author>
+    <name>Maria Nguyen</name>
+    <contact>
+      <email>maria.nguyen@example.com</email>
+      <phone>+1-415-555-1234</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Chicken breast</name>
+      <quantity>500</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Fresh basil leaves</name>
+      <quantity>30</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Garlic cloves</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Red chili peppers</name>
+      <quantity>2</quantity>
+      <unit>pieces</unit>
+    </ingredient>
+    <ingredient>
+      <name>Soy sauce</name>
+      <quantity>3</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>Oyster sauce</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>Vegetable oil</name>
+      <quantity>2</quantity>
+      <unit>tablespoons</unit>
+    </ingredient>
+    <ingredient>
+      <name>White sugar</name>
+      <quantity>1</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <instruction>Chop the chicken breast into bite-sized pieces.</instruction>
+      <duration_minutes>5</duration_minutes>
+    </step>
+    <step>
+      <instruction>Crush garlic and slice red chili peppers thinly.</instruction>
+      <duration_minutes>3</duration_minutes>
+    </step>
+    <step>
+      <instruction>Heat vegetable oil in a wok over medium-high heat.</instruction>
+      <duration_minutes>2</duration_minutes>
+    </step>
+    <step>
+      <instruction>SautÃ© garlic and chili until fragrant.</instruction>
+      <duration_minutes>2</duration_minutes>
+    </step>
+    <step>
+      <instruction>Add chicken pieces and stir-fry until cooked through.</instruction>
+      <duration_minutes>7</duration_minutes>
+    </step>
+    <step>
+      <instruction>Mix in soy sauce, oyster sauce, and sugar; cook for another 2 minutes.</instruction>
+      <duration_minutes>2</duration_minutes>
+    </step>
+    <step>
+      <instruction>Stir in fresh basil leaves and cook until wilted.</instruction>
+      <duration_minutes>1</duration_minutes>
+    </step>
+    <step>
+      <instruction>Serve hot with steamed jasmine rice.</instruction>
+      <duration_minutes>1</duration_minutes>
+    </step>
+  </steps>
+  <metadata>
+    <cuisine>Thai</cuisine>
+    <difficulty>Medium</difficulty>
+    <servings>4</servings>
+    <tags>
+      <tag>Spicy</tag>
+      <tag>Gluten-Free</tag>
+      <tag>Quick</tag>
+    </tags>
+  </metadata>
+  <nutrition>
+    <calories>320</calories>
+    <fat_grams>12.5</fat_grams>
+    <protein_grams>35.0</protein_grams>
+    <carbs_grams>8.0</carbs_grams>
+  </nutrition>
+</recipe>

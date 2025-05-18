@@ -1,0 +1,35 @@
+
+galactic_zoo:
+  name: "Starlight Menagerie"
+  established: 3042
+  director: "Zyra Qel"
+
+  location:
+    planet: "Nebulon-5"
+    sector: "Gamma Quadrant"
+
+  species_list:
+  - name: "Lumina Panther"
+    classification: "Mammal"
+    origin: "Aurora Rift"
+    diet: "Carnivore"
+    enclosure:
+      size: "200 sqm"
+      atmosphere: "Oxygen-rich"
+
+  - name: "Crystal Moth"
+    classification: "Insectoid"
+    origin: "Icelis Belt"
+    diet: "Mineralivore"
+    enclosure:
+      size: "50 sqm"
+      atmosphere: "Methane"
+
+  open_hours:
+    weekdays: "09:00-18:00"
+    weekends: "10:00-20:00"
+
+  facilities:
+    cafeteria: true
+    gift_shop: true
+    teleport_station: false

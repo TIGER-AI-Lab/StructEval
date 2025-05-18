@@ -1,0 +1,24 @@
+
+artifact:
+  name: "Artifact Name"
+  origin:
+    culture: "Civilization or Group"
+    period: "Historical Era"
+  materials:
+    primary: "Primary Material"
+    secondary: "Secondary Material"
+  dimensions:
+    height_cm: 100
+    width_cm: 50
+    depth_cm: 30
+  condition:
+    status: "Excellent"
+    notes: "Additional remarks about the artifact's state."
+  exhibitions:
+    - title: "Exhibition Title"
+      date_range:
+        start: "2023-01-01"
+        end: "2023-12-31"
+      location:
+        museum: "Museum Name"
+        city: "City Name"

@@ -1,0 +1,22 @@
+museum:
+  name: "The Metropolitan Museum of Art"
+  location:
+    city: "New York"
+    country: "USA"
+  founded_year: 1870
+  director:
+    name: "Max Hollein"
+    tenure_years: 5
+  exhibitions:
+    - title: "Impressionism, Fashion, and Modernity"
+      year: 2019
+      artworks:
+        - title: "Luncheon of the Boating Party"
+          artist: "Pierre-Auguste Renoir"
+          medium: "Oil on canvas"
+          dimensions:
+            height_cm: 71.1
+            width_cm: 94.5
+          on_loan: false
+  visitor_statistics:
+    annual_visitors: 7,000,000

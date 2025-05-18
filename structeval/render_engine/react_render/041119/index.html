@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041119</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Conversion Test Page</h1>
+        <p>This page is designed to test structural layout, visual hierarchy, and formatted content.</p>
+      </header>
+
+      <section>
+        <h2>Introduction</h2>
+        <p>Welcome to our sample page. This example uses clear headings, sections, and labeled data to illustrate how content is structured in a standalone HTML document. The layout demonstrates both semantic organization and content clarity.</p>
+      </section>
+
+      <section>
+        <h2>Data Summary</h2>
+
+        <article>
+          <h3>Personal Information</h3>
+          <ul>
+            <li><strong>Name:</strong> John Doe</li>
+            <li><strong>Job Title:</strong> Software Developer</li>
+            <li><strong>Location:</strong> New York, USA</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Contact Details</h3>
+          <dl>
+            <dt>Email:</dt>
+            <dd>john.doe@example.com</dd>
+            <dt>Phone:</dt>
+            <dd>(123) 456-7890</dd>
+          </dl>
+        </article>
+
+        <article>
+          <h3>Professional Experience</h3>
+          <ol>
+            <li>
+              <strong>Company:</strong> Tech Innovators Inc.
+              <br />
+              <strong>Role:</strong> Lead Developer
+            </li>
+            <li>
+              <strong>Company:</strong> Web Solutions LLC.
+              <br />
+              <strong>Role:</strong> Front-end Engineer
+            </li>
+            <li>
+              <strong>Company:</strong> Digital Ventures
+              <br />
+              <strong>Role:</strong> Junior Developer
+            </li>
+          </ol>
+        </article>
+      </section>
+
+      <section>
+        <h2>Services Offered</h2>
+        <p>Our company offers a range of services designed to meet your needs:</p>
+        <ul>
+          <li>Web Development</li>
+          <li>Mobile Application Development</li>
+          <li>UI/UX Design</li>
+          <li>Cloud Integration</li>
+          <li>Quality Assurance</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Testimonials</h2>
+        <blockquote>
+          <p>"The quality of work is exceptional and the turnaround time is impressively fast. A truly dependable partner in technology."</p>
+          <footer>- A Satisfied Client</footer>
+        </blockquote>
+        <blockquote>
+          <p>"Their innovative approach combined with deep technical skill sets makes them stand out in the industry. Highly recommended!"</p>
+          <footer>- Another Satisfied Client</footer>
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>Frequently Asked Questions</h2>
+        <dl>
+          <dt>What services do you offer?</dt>
+          <dd>We provide web development, mobile app development, UI/UX design, cloud solutions, and quality assurance services.</dd>
+          <dt>How can I contact you?</dt>
+          <dd>You can reach us via email at john.doe@example.com or by phone at (123) 456-7890.</dd>
+        </dl>
+      </section>
+
+      <footer>
+        <p>&copy; 2023 Conversion Test Page. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

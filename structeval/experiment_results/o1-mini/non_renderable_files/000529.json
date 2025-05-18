@@ -1,0 +1,43 @@
+
+{
+  "creature": {
+    "name": "Xelarion",
+    "species": "Thrylorian",
+    "origin": {
+      "planet": "Vortania",
+      "galaxy": "Andromeda"
+    },
+    "abilities": [
+      {
+        "type": "Quantum Manipulation",
+        "strength": 90,
+        "cooldown_seconds": 300
+      },
+      {
+        "type": "Telepathic Communication",
+        "strength": 75,
+        "cooldown_seconds": 180
+      }
+    ],
+    "appearance": {
+      "color": "Emerald Green",
+      "size_meters": 3.2,
+      "features": [
+        "Bioluminescent skin patterns",
+        "Six multi-jointed limbs"
+      ]
+    },
+    "companions": [
+      {
+        "name": "Lumi",
+        "species": "Glintwing",
+        "role": "Navigator"
+      },
+      {
+        "name": "Kara",
+        "species": "Synthi",
+        "role": "Guardian"
+      }
+    ]
+  }
+}

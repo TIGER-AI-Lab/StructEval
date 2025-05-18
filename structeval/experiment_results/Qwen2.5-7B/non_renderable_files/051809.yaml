@@ -1,0 +1,27 @@
+
+planet:
+  name: Zyphora-9
+  atmosphere:
+    composition:
+    - argon
+    - methane
+    - helium
+    pressure: 2.8
+  moons:
+  - Klym
+  - Reth
+  - Solix
+  surface:
+    lakes: 7
+    mountains:
+    - name: Vor Peak
+      height_km: 19.2
+    - name: Jarn Ridge
+      height_km: 12.5
+    volcanoes:
+      active: 3
+      extinct: 11
+  discovery:
+    year: 2347
+    telescope: Starlance Array
+    discovered_by: Dr. Minerva Choi

@@ -1,0 +1,40 @@
+
+{
+  "ecosystem": {
+    "name": "Emerald Rainforest",
+    "location": {
+      "region": "Central America",
+      "coordinates": {
+        "latitude": 9.145,
+        "longitude": -83.7534
+      }
+    },
+    "climate": {
+      "type": "tropical",
+      "average_temperature_celsius": 25,
+      "rainfall_mm_per_year": 3000
+    },
+    "species": [
+      {
+        "common_name": "Red-eyed Tree Frog",
+        "scientific_name": "Agalychnis callidryas",
+        "population_estimate": 150000,
+        "conservation_status": "Least Concern",
+        "diet": {
+          "primary_foods": [
+            "insects",
+            "spiders"
+          ]
+        },
+        "habitat": {
+          "description": "Found in the humid lowland rainforests, often near water bodies.",
+          "area_sq_km": 50
+        },
+        "notable_behaviors": [
+          "Vocalizes loudly during mating season",
+          "Exhibits bright coloration to warn predators"
+        ]
+      }
+    ]
+  }
+}

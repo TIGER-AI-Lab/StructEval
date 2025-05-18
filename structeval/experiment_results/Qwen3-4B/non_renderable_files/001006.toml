@@ -1,0 +1,24 @@
+
+recipe = {
+  title = "Classic Italian Spaghetti Bolognese",
+  author = {
+    name = "Mario Rossi",
+    contact = {
+      email = "mario.rossi@example.com",
+      phone = "+39123456789"
+    }
+  },
+  ingredients = [
+    { name = "Spaghetti", quantity = 200, unit = "g" },
+    { name = "Ground beef", quantity = 500, unit = "g" }
+  ],
+  steps = [
+    { instruction = "SautÃ© onions and garlic in a pan until fragrant.", duration_minutes = 10 },
+    { instruction = "Add cooked spaghetti and beef, stir until combined.", duration_minutes = 30 }
+  ],
+  metadata = {
+    servings = 4,
+    cuisine = "Italian",
+    difficulty = "medium"
+  }
+}

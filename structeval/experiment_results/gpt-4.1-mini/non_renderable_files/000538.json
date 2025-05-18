@@ -1,0 +1,35 @@
+{
+  "creature": {
+    "name": "Lumivora",
+    "species": "Glowing Drakonid",
+    "age": 120,
+    "traits": {
+      "color": "iridescent blue",
+      "size": "large",
+      "abilities": [
+        {
+          "name": "Photon Burst",
+          "power_level": 8
+        },
+        {
+          "name": "Shadow Glide",
+          "power_level": 6
+        }
+      ]
+    },
+    "habitat": {
+      "region": "Eldermyst Forest",
+      "climate": "temperate",
+      "features": [
+        {
+          "type": "bioluminescent river",
+          "description": "A glowing river that illuminates the forest floor with soft blue light at night."
+        },
+        {
+          "type": "ancient caves",
+          "description": "Deep caves filled with rare crystals that resonate with magical energy."
+        }
+      ]
+    }
+  }
+}

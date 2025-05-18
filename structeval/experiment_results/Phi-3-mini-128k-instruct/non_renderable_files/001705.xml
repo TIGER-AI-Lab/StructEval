@@ -1,0 +1,132 @@
+<recipe>
+    <metadata>
+        <title>Classic Lasagna</title>
+        <author>
+            <name>John Doe</name>
+            <contact>johndoe@example.com</contact>
+        </author>
+        <cuisine>Italian</cuisine>
+        <difficulty>Medium</difficulty>
+        <lastUpdated>2023-04-01</lastUpdated>
+    </metadata>
+    <nutrition>
+        <calories>850</calories>
+        <fat>30g</fat>
+        <protein>40g</protein>
+        <carbohydrates>70g</carbohydrates>
+    </nutrition>
+    <ingredients>
+        <item>
+            <name>Ground beef</name>
+            <quantity>500</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Ricotta cheese</name>
+            <quantity>250</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Mozzarella cheese</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Parmesan cheese</name>
+            <quantity>50</quantity>
+            <unit>grams</unit>
+        </item>
+        <item>
+            <name>Lasagna noodles</name>
+            <quantity>12</quantity>
+            <unit>pieces</unit>
+        </item>
+        <item>
+            <name>Tomato sauce</name>
+            <quantity>800</quantity>
+            <unit>milliliters</unit>
+        </item>
+        <item>
+            <name>Garlic</name>
+            <quantity>3</quantity>
+            <unit>cloves</unit>
+        </item>
+        <item>
+            <name>Onion</name>
+            <quantity>1</quantity>
+            <unit>piece</unit>
+        </item>
+        <item>
+            <name>Olive oil</name>
+            <quantity>2</quantity>
+            <unit>tablespoons</unit>
+        </item>
+        <item>
+            <name>Salt</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </item>
+        <item>
+            <name>Black pepper</name>
+            <quantity>1</quantity>
+            <unit>teaspoon</unit>
+        </item>
+    </ingredients>
+    <steps>
+        <step>
+            <description>Preheat the oven to 180Â°C (350Â°F).</description>
+            <duration>5</duration>
+            <tools>Oven</tools>
+        </step>
+        <step>
+            <description>In a large skillet, cook the ground beef over medium heat until browned. Drain the excess fat.</description>
+            <duration>10</duration>
+            <tools>Skillet, spatula</tools>
+        </step>
+        <step>
+            <description>In a mixing bowl, combine ricotta cheese, 1 cup of mozzarella cheese, parmesan cheese, garlic, onion, salt, and pepper.</description>
+            <duration>5</duration>
+            <tools>Mixing bowl, spoon</tools>
+        </step>
+        <step>
+            <description>In a baking dish, spread a thin layer of tomato sauce.</description>
+            <duration>2</duration>
+            <tools>Baking dish</tools>
+        </step>
+        <step>
+            <description>Place a layer of lasagna noodles over the sauce.</description>
+            <duration>2</duration>
+            <tools>Lasagna noodles</tools>
+        </step>
+        <step>
+            <description>Spread half of the cheese mixture over the noodles.</description>
+            <duration>5</duration>
+            <tools>Spoon</tools>
+        </step>
+        <step>
+            <description>Top with a layer of ground beef and a layer of tomato sauce.</description>
+            <duration>5</duration>
+            <tools>Skillet, spoon</tools>
+        </step>
+        <step>
+            <description>Repeat the layers of noodles, cheese mixture, ground beef, and sauce.</description>
+            <duration>10</duration>
+            <tools>Lasagna noodles, spoon, skillet</tools>
+        </step>
+        <step>
+            <description>Top with the remaining mozzarella cheese.</description>
+            <duration>2</duration>
+            <tools>Spoon</tools>
+        </step>
+        <step>
+            <description>Cover the baking dish with aluminum foil and bake for 25 minutes.</description>
+            <duration>25</duration>
+            <tools>Aluminum foil</tools>
+        </step>
+        <step>
+            <description>Remove the foil and bake for an additional 25 minutes, or until the cheese is bubbly and golden brown.</description>
+            <duration>25</duration>
+            <tools>Aluminum foil</tools>
+        </step>
+    </steps>
+</recipe>

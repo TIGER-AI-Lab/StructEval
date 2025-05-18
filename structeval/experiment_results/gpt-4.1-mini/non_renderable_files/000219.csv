@@ -1,0 +1,2 @@
+recipe_id,recipe_name,chef_name,cuisine_type,difficulty_level,prep_time_minutes,cook_time_minutes,ingredient_list,ingredient_count,main_ingredient,steps,servings,calories_per_serving,is_vegetarian,user_rating
+1,Spicy Mango Chicken,Chef Aiden,Asian,Intermediate,20,30,"chicken;mango;chili;garlic;soy sauce;lime;cilantro;salt;pepper",9,chicken,"Marinate chicken with chili and garlic;Prepare mango salsa with mango, lime, and cilantro;Cook chicken until golden;Add salsa on top;Serve hot",4,350,FALSE,4.5

@@ -1,0 +1,32 @@
+
+spaceship:
+  name: Star Wanderer
+  model: XJ-9000
+  crew:
+    captain: Lira Solis
+    officers:
+      - name: Jax Orion
+        role: First Officer
+      - name: Mira Tane
+        role: Science Officer
+    engineers:
+      - Vex Tora
+      - Daru Lin
+  specs:
+    length_m: 312.5
+    mass_tons: 45000
+    warp_drive:
+      enabled: true
+      max_factor: 7.2
+  cargo:
+    - type: Quantum Crystals
+      quantity: 40
+    - type: Alien Artifacts
+      quantity: 5
+  missions:
+    - name: Nebula Drift
+      destination: Zeta Cloud
+      success: true
+    - name: Asteroid Harvest
+      destination: Belt Alpha
+      success: false

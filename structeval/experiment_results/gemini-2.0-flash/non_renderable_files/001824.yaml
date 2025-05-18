@@ -1,0 +1,25 @@
+artifact:
+  name: "The Serpent's Eye Amulet"
+  origin:
+    civilization: "Ophidian Empire"
+    estimated_age: 3500
+  materials:
+    - type: "obsidian"
+      provenance: "Volcanic peaks of Mount Cinder"
+    - type: "gold"
+      provenance: "Riverbeds of the Serpent's Tail Valley"
+  dimensions:
+    height_cm: 12.5
+    width_cm: 7.8
+    depth_cm: 3.1
+  inscriptions:
+    - language: "Ophidian Hieroglyphs"
+      text: "Kalas'sha na'tal, protector of the sacred flame."
+    - language: "Ancient Common Tongue"
+      text: "Beware the gaze of the serpent."
+  current_location:
+    museum: "The Grand Museum of Antiquities"
+    display_case: "Hall of Lost Empires, Case 7B"
+  discovery:
+    date: "1922-07-15"
+    location: "Ruins of the Serpent's Temple, Ophidia"

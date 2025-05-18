@@ -1,0 +1,32 @@
+
+[star]
+name = "Xenon-47"
+type = "K-type"
+distance_lightyears = 134.7
+
+[star.discovery]
+year = 2124
+method = "infrared survey"
+
+[[star.planets]]
+name = "Aurelia"
+mass_earths = 2.8
+orbital_period_days = 412.5
+
+  [[star.planets.moons]]
+  name = "Selene"
+  diameter_km = 3200
+  composition = "rock"
+
+  [[star.planets.moons]]
+  name = "Thalassa"
+  diameter_km = 1500
+  composition = "ice"
+
+  [star.planets.atmosphere]
+  composition = ["nitrogen", "oxygen", "argon", "trace methane"]
+  pressure_atm = 1.15
+  has_rings = false
+
+  [star.planets.surface]
+  temperature_celsius = 22.4

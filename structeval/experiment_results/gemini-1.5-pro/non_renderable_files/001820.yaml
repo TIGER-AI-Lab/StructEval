@@ -1,0 +1,44 @@
+ecosystem:
+  name: "Atherton Tablelands Rainforest"
+  location:
+    region: "North Queensland, Australia"
+    latitude: -17.2667
+    longitude: 145.4667
+  climate:
+    type: "Tropical Rainforest"
+    average_temperature_celsius: 25.0
+    rainfall_mm_per_year: 2000.0
+  species:
+    - common_name: "Lumholtz's Tree-kangaroo"
+      scientific_name: "Dendrolagus lumholtzi"
+      population_estimate: 1000
+      conservation_status: "Least Concern"
+      diet: "Herbivore (leaves, flowers, fruits)"
+      notable_adaptations:
+        - "Strong claws for climbing"
+        - "Prehensile tail for balance"
+      sightings:
+        - date: "2024-03-15"
+          location_description: "Near Curtain Fig Tree"
+    - common_name: "Green-eyed Tree Frog"
+      scientific_name: "Litoria serrata"
+      population_estimate: 5000
+      conservation_status: "Least Concern"
+      diet: "Carnivore (insects, small invertebrates)"
+      notable_adaptations:
+        - "Sticky toe pads for climbing"
+        - "Camouflage in green foliage"
+      sightings:
+        - date: "2024-03-20"
+          location_description: "Along the Peterson Creek"
+    - common_name: "Atherton Scrubwren"
+      scientific_name: "Sericornis keri"
+      population_estimate: 2000
+      conservation_status: "Near Threatened"
+      diet: "Insectivore"
+      notable_adaptations:
+        - "Strong legs for hopping on the forest floor"
+        - "Short, rounded wings for maneuvering through dense vegetation"
+      sightings:
+        - date: "2024-03-25"
+          location_description: "Dense rainforest understory near Mount Bartle Frere"

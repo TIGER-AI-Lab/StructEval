@@ -1,0 +1,62 @@
+
+{
+  "planet_name": "Zephyra",
+  "atmosphere": {
+    "composition": {
+      "nitrogen": "68%",
+      "oxygen": "21%",
+      "argon": "8%",
+      "neon": "3%"
+    },
+    "pressure": 1.2,
+    "layers": [
+      {
+        "name": "Troposphere",
+        "altitude_range_km": "0-15"
+      },
+      {
+        "name": "Stratosphere",
+        "altitude_range_km": "15-50"
+      }
+    ]
+  },
+  "moons": [
+    {
+      "name": "Lira",
+      "diameter_km": 3200,
+      "features": [
+        "ice_canyons",
+        "magnetic_field"
+      ]
+    },
+    {
+      "name": "Orpheon",
+      "diameter_km": 1200,
+      "features": [
+        "volcanic_activity",
+        "thin_atmosphere"
+      ]
+    }
+  ],
+  "rings": {
+    "exists": true,
+    "composition": "water_ice, silicate_dust"
+  },
+  "surface": {
+    "temperature_c": -45,
+    "terrain_types": [
+      "crystalline_plains",
+      "floating_islands"
+    ]
+  },
+  "notable_events": [
+    {
+      "year": 2331,
+      "description": "First landing by the Aether Expedition."
+    },
+    {
+      "year": 2355,
+      "description": "Discovery of bioluminescent lifeforms."
+    }
+  ]
+}

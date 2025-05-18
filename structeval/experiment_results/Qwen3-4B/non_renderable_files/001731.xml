@@ -1,0 +1,48 @@
+
+<recipe>
+  <title>Spaghetti Bolognese</title>
+  <author>
+    <name>John Doe</name>
+    <contact>
+      <email>john.doe@example.com</email>
+      <phone>+1234567890</phone>
+    </contact>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Tomato Sauce</name>
+      <quantity>2</quantity>
+      <unit>cups</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <instruction>Cook spaghetti according to package instructions.</instruction>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <step>
+      <instruction>Prepare and cook the Bolognese sauce.</instruction>
+      <duration_minutes>25</duration_minutes>
+    </step>
+  </steps>
+  <metadata>
+    <cuisine>Italian</cuisine>
+    <difficulty>Medium</difficulty>
+    <servings>4</servings>
+    <tags>
+      <tag>Vegan</tag>
+      <tag>Gluten-Free</tag>
+    </tags>
+  </metadata>
+  <nutrition>
+    <calories>400</calories>
+    <fat_grams>10.5</fat_grams>
+    <protein_grams>20</protein_grams>
+    <carbs_grams>50</carbs_grams>
+  </nutrition>
+</recipe>

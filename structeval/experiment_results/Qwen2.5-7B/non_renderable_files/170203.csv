@@ -1,0 +1,28 @@
+
+import csv
+import xml.etree.ElementTree as ET
+
+# Parse the XML code
+tree = ET.parse('artifacts.xml')
+root = tree.getroot()
+
+# Create a list to store the CSV data
+csv_data = []
+
+# Loop through each artifact and extract the data
+for artifact in root.findall('artifact'):
+    artifact_id = artifact.find('ArtifactID').text
+    era = artifact.find('Era').text
+    material = artifact.find('Material').text
+    discovery_date = artifact.find('DiscoveryDate').text
+    estimated_value_usd = artifact.find('EstimatedValueUSD').text
+    country_of_origin = artifact.find('CountryOfOrigin').text
+    
+    # Append the data to the CSV list
+    csv_data.append([artifact_id, era, material, discovery_date, estimated_value_usd, country_of_origin])
+
+# Write the CSV data to a file
+with open('artifacts.csv', 'w', newline='') as csvfile:
+    csvwriter = csv.writer(csvfile)
+    csvwriter.writerow(['ArtifactID', 'Era', 'Material', 'DiscoveryDate', 'EstimatedValueUSD', 'CountryOfOrigin'])
+    csvwriter.writerows(csv_data)

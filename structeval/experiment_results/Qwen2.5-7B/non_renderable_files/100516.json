@@ -1,0 +1,50 @@
+python
+import toml
+import json
+
+# TOML code
+toml_code = """
+[spaceship]
+name = "Stellar Nomad"
+model = "XJ-9"
+
+[spaceship.crew]
+captain = "Zara Quell"
+engineer = "Milo Dex"
+pilot = "Rin Sato"
+
+[[spaceship.crew.members]]
+name = "Lira"
+role = "Navigator"
+
+[[spaceship.crew.members]]
+name = "Vex"
+role = "Medic"
+
+[[spaceship.cargo]]
+type = "Helium-3"
+quantity = 120
+
+[[spaceship.cargo]]
+type = "Alien Artifacts"
+quantity = 5
+
+[[spaceship.missions]]
+destination = "Epsilon Prime"
+success = true
+
+[[spaceship.missions]]
+destination = "Orion Outpost"
+success = false
+
+[spaceship.specs]
+length_m = 72
+mass_tons = 450
+max_speed_kps = 310
+"""
+
+# Convert TOML to JSON
+json_data = toml.loads(toml_code)
+json_code = json.dumps(json_data, indent=4)
+
+print(json_code)

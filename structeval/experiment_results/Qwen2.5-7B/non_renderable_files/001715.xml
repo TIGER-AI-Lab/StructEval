@@ -1,0 +1,45 @@
+
+<creature>
+  <name>Qyntarion</name>
+  <species>Quadrupedal Xylophage</species>
+  <origin>
+    <planet>Galaxia</planet>
+    <galaxy>Andromeda</galaxy>
+  </origin>
+  <abilities>
+    <item>
+      <type>Telepathy</type>
+      <description>Ability to read and influence minds</description>
+      <level>8</level>
+    </item>
+    <item>
+      <type>Regeneration</type>
+      <description>Can regenerate lost body parts</description>
+      <level>9</level>
+    </item>
+  </abilities>
+  <physical_traits>
+    <height>150</height>
+    <weight>120</weight>
+    <eye_color>Amethyst</eye_color>
+    <limbs>
+      <count>4</count>
+      <type>Prehensile</type>
+    </limbs>
+  </physical_traits>
+  <history>
+    <birth_date>1987-05-12</birth_date>
+    <events>
+      <item>
+        <title>Discovery</title>
+        <year>1990</year>
+        <impact>Discovered by a team of intergalactic explorers</impact>
+      </item>
+      <item>
+        <title>First Contact</title>
+        <year>1995</year>
+        <impact>Established diplomatic relations with the United Galactic Federation</impact>
+      </item>
+    </events>
+  </history>
+</creature>

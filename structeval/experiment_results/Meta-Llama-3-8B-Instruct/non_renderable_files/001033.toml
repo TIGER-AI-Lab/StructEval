@@ -1,0 +1,22 @@
+
+[botanical_garden]
+name = "The Verdant Oasis"
+established_year = 1995
+
+[location]
+country = "United States"
+city = "San Francisco"
+
+[opening_hours]
+weekdays = ["08:00", "17:00"]
+weekends = ["09:00", "18:00"]
+
+[greenhouses]
+- [0]
+  name = "Tropical Oasis"
+  area_sqm = 500
+  climate_type = "Tropical"
+  plants = [
+    {species = "Ficus religiosa", origin_region = "Southeast Asia", is_endangered = false, year_introduced = 2001}
+    {species = "Bromeliaceae", origin_region = "Central America", is_endangered = true, year_introduced = 2005}
+  ]

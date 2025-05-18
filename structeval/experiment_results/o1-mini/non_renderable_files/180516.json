@@ -1,0 +1,51 @@
+{
+  "galactic_zoo": {
+    "name": "Nebula Fauna Reserve",
+    "location": {
+      "sector": "Andromeda-5",
+      "planet": "Xylon",
+      "coordinates": {
+        "x": 1024.7,
+        "y": -58.2,
+        "z": 300.0
+      }
+    },
+    "opening_year": 3125,
+    "visitor_stats": {
+      "annual_visitors": 1200000,
+      "highest_traffic_day": "Stellar Equinox"
+    },
+    "habitats": [
+      {
+        "name": "Crystal Caverns",
+        "species": [
+          "Luminescent Mothlion",
+          "Echo Gecko"
+        ],
+        "environment": "Subterranean",
+        "features": [
+          "Bioluminescent Walls",
+          "Echo Chambers"
+        ]
+      },
+      {
+        "name": "Floating Mangroves",
+        "species": [
+          "Aeroquatic Swarmfish"
+        ],
+        "environment": "Aerial-Aquatic",
+        "features": [
+          "Anti-gravity Pools"
+        ]
+      }
+    ],
+    "staff": {
+      "director": "Zara Quinox",
+      "curators": [
+        "Dr. Vex Lumin",
+        "Pax Orion"
+      ],
+      "robotic_assistants": 17
+    }
+  }
+}

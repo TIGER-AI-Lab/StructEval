@@ -1,0 +1,30 @@
+
+{
+  "galaxy": {
+    "name": "Andromeda",
+    "star_systems": [
+      {
+        "system_name": "Zeta Prime",
+        "planets": [
+          {
+            "planet_name": "Obelisk",
+            "moons": ["Calliope", "Thalassa"]
+          },
+          {
+            "planet_name": "Helion",
+            "moons": ["Nyx"]
+          }
+        ]
+      },
+      {
+        "system_name": "Gamma Echo",
+        "planets": [
+          {
+            "planet_name": "Vesper",
+            "moons": ["Lira"]
+          }
+        ]
+      }
+    ]
+  }
+}

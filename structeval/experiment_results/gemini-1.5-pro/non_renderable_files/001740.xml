@@ -1,0 +1,50 @@
+<creature>
+    <name>Sylvanus</name>
+    <species>Forest Guardian</species>
+    <age>500</age>
+    <habitat>
+        <type>Forest</type>
+        <location>Whispering Woods</location>
+        <temperature>20</temperature>
+    </habitat>
+    <abilities>
+        <ability>
+            <name>Nature's Embrace</name>
+            <level>8</level>
+            <cooldown>60</cooldown>
+        </ability>
+        <ability>
+            <name>Whispering Wind</name>
+            <level>5</level>
+            <cooldown>15</cooldown>
+        </ability>
+    </abilities>
+    <appearance>
+        <height>250</height>
+        <color>Green</color>
+        <markings>Vine-like patterns</markings>
+    </appearance>
+    <history>
+        <origin>Born from the heart of the ancient oak</origin>
+        <majorEvents>
+            <event>
+                <eventName>The Great Fire</eventName>
+                <year>1200</year>
+            </event>
+            <event>
+                <eventName>The Whispering Plague</eventName>
+                <year>1450</year>
+            </event>
+        </majorEvents>
+    </history>
+    <relationships>
+        <relation>
+            <relationType>Friend</relation>
+            <individual>Willow</individual>
+        </relation>
+        <relation>
+            <relationType>Rival</relation>
+            <individual>Emberclaw</individual>
+        </relation>
+    </relationships>
+</creature>

@@ -1,0 +1,51 @@
+
+import csv
+import xml.etree.ElementTree as ET
+
+# Create the root element
+root = ET.Element("missions")
+
+# Read the CSV file
+with open("missions.csv", "r") as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        # Create a new mission element
+        mission = ET.SubElement(root, "mission")
+        # Add attributes to the mission element
+        for key, value in row.items():
+            if key != "payload.satellites[0].sat_id" and key != "payload.satellites[1].sat_id":
+                ET.SubElement(mission, key).text = value
+        # Add payload element
+        payload = ET.SubElement(mission, "payload")
+        # Add satellites element
+        satellites = ET.SubElement(payload, "satellites")
+        # Add first satellite element
+        sat1 = ET.SubElement(satellites, "satellite")
+        ET.SubElement(sat1, "sat_id").text = row["payload.satellites[0].sat_id"]
+        ET.SubElement(sat1, "type").text = row["payload.satellites[0].type"]
+        ET.SubElement(sat1, "purpose").text = row["payload.satellites[0].purpose"]
+        # Add second satellite element
+        sat2 = ET.SubElement(satellites, "satellite")
+        ET.SubElement(sat2, "sat_id").text = row["payload.satellites[1].sat_id"]
+        ET.SubElement(sat2, "type").text = row["payload.satellites[1].type"]
+        ET.SubElement(sat2, "purpose").text = row["payload.satellites[1].purpose"]
+        # Add crew element
+        crew = ET.SubElement(mission, "crew")
+        # Add first crew member element
+        crew1 = ET.SubElement(crew, "crew_member")
+        ET.SubElement(crew1, "astronaut_id").text = row["crew[0].astronaut_id"]
+        ET.SubElement(crew1, "name").text = row["crew[0].name"]
+        ET.SubElement(crew1, "role").text = row["crew[0].role"]
+        ET.SubElement(crew1, "nationality").text = row["crew[0].nationality"]
+        # Add second crew member element
+        crew2 = ET.SubElement(crew, "crew_member")
+        ET.SubElement(crew2, "astronaut_id").text = row["crew[1].astronaut_id"]
+        ET.SubElement(crew2, "name").text = row["crew[1].name"]
+        ET.SubElement(crew2, "role").text = row["crew[1].role"]
+        ET.SubElement(crew2, "nationality").text = row["crew[1].nationality"]
+
+# Create the XML tree
+tree = ET.ElementTree(root)
+
+# Write the XML tree to a file
+tree.write("missions.xml")

@@ -1,0 +1,2 @@
+recipe_id,recipe_name,chef_name,cuisine_type,difficulty_level,prep_time_minutes,cook_time_minutes,ingredient_list,ingredient_count,main_ingredient,steps,servings,calories_per_serving,is_vegetarian,user_rating
+"123","Spicy Vegan Tacos","Chef Maria Rodriguez","Mexican","Easy",15,20,"Black beans;Corn;Red onion;Avocado;Lime;Cilantro;Chili powder;Cumin;Tortillas",9,"Black beans","Prepare the black bean mixture;Dice the red onion and avocado;Warm the tortillas;Assemble the tacos",4,350,"TRUE",4.5

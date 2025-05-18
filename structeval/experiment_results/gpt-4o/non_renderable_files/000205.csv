@@ -1,0 +1,4 @@
+artifact_id,artifact_name,discovery_site,discovery_date,estimated_age_years,artifact_type,material_primary,material_secondary,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,condition_status,current_location,associated_civilization,notable_inscriptions
+"A-2024-001","Ancient Vase","Giza Plateau","2023-05-14",4500,"pottery","clay","paint",25.5,15.0,15.0,"intact","Cairo Museum","Ancient Egyptian","Hieroglyphs"
+"A-2024-002","Bronze Sword","Pompeii","2022-08-30",2000,"weapon","bronze","wood",90.0,5.0,1.5,"fragmented","Naples National Archaeological Museum","Roman",""
+"A-2024-003","Stone Tablet","Mesopotamia","2021-11-12",5000,"tablet","stone","",30.0,20.0,2.0,"restored","British Museum","Sumerian","Cuneiform script"

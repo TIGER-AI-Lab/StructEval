@@ -1,0 +1,51 @@
+
+<recipe>
+    <title>Creative Recipe</title>
+    <author>
+        <name>John Doe</name>
+        <profileUrl>https://example.com/johndoe</profileUrl>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Ingredient 1</name>
+            <quantity>2</quantity>
+            <unit>grams</unit>
+            <optional>false</optional>
+        </ingredient>
+        <ingredient>
+            <name>Ingredient 2</name>
+            <quantity>3</quantity>
+            <unit>cups</unit>
+            <optional>true</optional>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <order>1</order>
+            <instruction>Step 1 instruction</instruction>
+            <timer>
+                <seconds>120</seconds>
+            </timer>
+            <notes>Additional information for step 1</notes>
+        </step>
+        <step>
+            <order>2</order>
+            <instruction>Step 2 instruction</instruction>
+            <timer>
+                <seconds>90</seconds>
+            </timer>
+            <notes>Additional information for step 2</notes>
+        </step>
+    </steps>
+    <metadata>
+        <cuisine>Italian</cuisine>
+        <prepTimeMinutes>30</prepTimeMinutes>
+        <tags>
+            <tag>vegetarian</tag>
+            <tag>quick</tag>
+        </tags>
+    </metadata>
+    <nutrition>
+        <calories>500</calories>
+    </nutrition>
+</recipe>

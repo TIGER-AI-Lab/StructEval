@@ -1,0 +1,3 @@
+
+"brewery_id","brewery_name","brewery_location","year_established","brewery_type","main_brewer","signature_beer","signature_beer_abv","signature_beer_ibu","tour_available","tour_days","tour_duration_minutes","award_count","annual_production_liters","website_url"
+1,"Mystic River Brewing Co.","Salem, USA",2015,"microbrewery","John Doe","Enchanted IPA",6.5,55,"yes","Friday,Saturday,Sunday",90,12,500000,"http://www.mysticriverbrewing.com"

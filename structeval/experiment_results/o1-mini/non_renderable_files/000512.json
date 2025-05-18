@@ -1,0 +1,41 @@
+{
+  "puzzle": {
+    "title": "Mystery of the Missing Necklace",
+    "description": "A classic logic puzzle where you deduce who took the necklace based on given clues.",
+    "difficulty": {
+      "level": "medium",
+      "estimated_time_minutes": 15
+    },
+    "author": {
+      "name": "Jane Doe",
+      "contact": {
+        "email": "jane.doe@example.com",
+        "website": "https://janedoe.com"
+      }
+    },
+    "hints": [
+      {
+        "text": "Consider the alibis of each suspect carefully.",
+        "relevance_score": 0.8
+      },
+      {
+        "text": "Look for inconsistencies in the statements provided.",
+        "relevance_score": 0.6
+      }
+    ],
+    "steps": [
+      {
+        "instruction": "Identify all the suspects involved.",
+        "expected_answer": "John, Mary, and Alex are the suspects."
+      },
+      {
+        "instruction": "Analyze the alibis provided by each suspect.",
+        "expected_answer": "Mary's alibi doesn't hold up under scrutiny."
+      }
+    ],
+    "metadata": {
+      "tags": ["logic", "deduction", "mystery"],
+      "date_created": "2023-08-15"
+    }
+  }
+}

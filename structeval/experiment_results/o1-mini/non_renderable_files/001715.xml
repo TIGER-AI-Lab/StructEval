@@ -1,0 +1,56 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<creature>
+  <name>Zorath Prime</name>
+  <species>Xenon</species>
+  <origin>
+    <planet>Nebulon</planet>
+    <galaxy>Andromeda</galaxy>
+  </origin>
+  <abilities>
+    <ability>
+      <type>Telepathy</type>
+      <description>Communicate thoughts directly between minds.</description>
+      <level>9</level>
+    </ability>
+    <ability>
+      <type>Telekinesis</type>
+      <description>Manipulate objects with the mind.</description>
+      <level>7</level>
+    </ability>
+    <ability>
+      <type>Invisibility</type>
+      <description>Become unseen to the naked eye.</description>
+      <level>6</level>
+    </ability>
+  </abilities>
+  <physical_traits>
+    <height>180</height>
+    <weight>75</weight>
+    <eye_color>Silver</eye_color>
+    <limbs>
+      <count>6</count>
+      <type>Tentacle</type>
+    </limbs>
+  </physical_traits>
+  <history>
+    <birth_date>2150-04-12</birth_date>
+    <events>
+      <event>
+        <title>Discovery of Telepathy</title>
+        <year>2175</year>
+        <impact>Enhanced communication with species across the galaxy.</impact>
+      </event>
+      <event>
+        <title>First Intergalactic Alliance</title>
+        <year>2200</year>
+        <impact>Established peace among multiple alien races.</impact>
+      </event>
+      <event>
+        <title>Technological Singularity</title>
+        <year>2225</year>
+        <impact>Achieved advanced AI integration, revolutionizing society.</impact>
+      </event>
+    </events>
+  </history>
+</creature>

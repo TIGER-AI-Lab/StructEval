@@ -1,0 +1,67 @@
+
+<recipe>
+    <title>Creamy Tomato Pasta</title>
+    <author>
+        <name>John Doe</name>
+        <contact>
+            <email>johndoe@example.com</email>
+            <phone>+1 123 456 7890</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Tomatoes</name>
+            <quantity>2</quantity>
+            <unit>cups</unit>
+        </ingredient>
+        <ingredient>
+            <name>Pasta</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+        <ingredient>
+            <name>Garlic</name>
+            <quantity>3</quantity>
+            <unit>cloves</unit>
+        </ingredient>
+        <ingredient>
+            <name>Heavy Cream</name>
+            <quantity>1</quantity>
+            <unit>cup</unit>
+        </ingredient>
+    </ingredients>
+    <steps>
+        <step>
+            <instruction>Boil the pasta according to package instructions.</instruction>
+            <duration>
+                <minutes>8</minutes>
+            </duration>
+            <tools>Large pot, colander</tools>
+        </step>
+        <step>
+            <instruction>Heat the olive oil in a pan over medium heat.</instruction>
+            <duration>
+                <minutes>3</minutes>
+            </duration>
+            <tools>Large pan, olive oil</tools>
+        </step>
+        <step>
+            <instruction>Add the garlic and cook for 1 minute.</instruction>
+            <duration>
+                <minutes>1</minutes>
+            </duration>
+            <tools>Large pan, garlic press</tools>
+        </step>
+    </steps>
+    <nutrition>
+        <calories>500</calories>
+        <fat>20g</fat>
+        <protein>15g</protein>
+        <carbohydrates>60g</carbohydrates>
+    </nutrition>
+    <tags>
+        <tag>Italian</tag>
+        <tag>Vegetarian</tag>
+        <tag>Pasta</tag>
+    </tags>
+</recipe>

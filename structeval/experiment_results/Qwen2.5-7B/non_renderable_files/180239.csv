@@ -1,0 +1,15 @@
+import pandas as pd
+
+data = [
+    {'artifact_name': 'Luminar Crystal', 'discovery_site': 'Zephyra Caverns', 'planet': 'Orbis IV', 'composition': 'Silicate', 'age_million_years': 120.5, 'discovery_date': '2321-07-14'},
+    {'artifact_name': 'Chrono Tablet', 'discovery_site': 'Meridian Plateau', 'planet': 'Xylen Prime', 'composition': 'Alloy', 'age_million_years': 87.2, 'discovery_date': '2315-03-22'},
+    {'artifact_name': 'Echo Sphere', 'discovery_site': 'Harmonic Dunes', 'planet': 'Virella', 'composition': 'Crystal', 'age_million_years': 310.8, 'discovery_date': '2332-11-05'},
+    {'artifact_name': 'Nebula Idol', 'discovery_site': 'Solace Trench', 'planet': 'Quorra', 'composition': 'Organic', 'age_million_years': 45.9, 'discovery_date': '2327-09-30'},
+    {'artifact_name': 'Starlace Pendant', 'discovery_site': 'Aurora Fields', 'planet': 'Orbis IV', 'composition': 'Metal', 'age_million_years': 205.4, 'discovery_date': '2330-01-18'},
+    {'artifact_name': 'Prism Totem', 'discovery_site': 'Mirage Basin', 'planet': 'Xylen Prime', 'composition': 'Gemstone', 'age_million_years': 155.0, 'discovery_date': '2333-05-27'}
+]
+
+df = pd.DataFrame(data)
+csv_data = df.to_csv(index=False)
+
+print(f'<code>{csv_data}

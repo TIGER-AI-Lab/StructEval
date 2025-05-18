@@ -1,0 +1,30 @@
+
+{
+  "exhibit": {
+    "title": "Modern Masters",
+    "curator": {
+      "name": "Dr. Emily Thompson",
+      "email": "emily.thompson@museum.org"
+    },
+    "artworks": [
+      {
+        "artist": "Pablo Picasso",
+        "title": "Les Demoiselles d'Avignon",
+        "year_created": 1907,
+        "medium": "oil on canvas",
+        "dimensions": {
+          "height_cm": 120,
+          "width_cm": 90,
+          "depth_cm": 0
+        },
+        "provenance": {
+          "previous_owners": ["Paul Rosenberg", "The Museum of Modern Art"],
+          "acquisition_date": "2015-03-15"
+        },
+        "on_display": true,
+        "tags": ["Cubism", "Modern Art", "20th Century"]
+      }
+    ],
+    "opening_date": "2023-11-01"
+  }
+}

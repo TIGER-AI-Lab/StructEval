@@ -1,0 +1,30 @@
+<galacticCarnival>
+  <rides>
+    <ride>
+      <name>Nebula Coaster</name>
+      <galaxy>Andromeda</galaxy>
+      <capacity>24</capacity>
+    </ride>
+    <ride>
+      <name>Star Spinner</name>
+      <galaxy>Milky Way</galaxy>
+      <capacity>16</capacity>
+    </ride>
+  </rides>
+  <snackBooths>
+    <booth>
+      <type>Meteor Munchies</type>
+      <menu>
+        <item>Cosmic Corn</item>
+        <item>Pluto Pops</item>
+      </menu>
+    </booth>
+    <booth>
+      <type>Saturn Sweets</type>
+      <menu>
+        <item>Ring Donuts</item>
+        <item>Icy Comets</item>
+      </menu>
+    </booth>
+  </snackBooths>
+</galacticCarnival>

@@ -1,0 +1,35 @@
+
+<recipe>
+  <title>Chocolate Cake</title>
+  <author>
+    <name>John Doe</name>
+    <id>12345</id>
+  </author>
+  <ingredients>
+    <ingredient name="flour" quantity="2" unit="cups" optional="true">
+      <description>all-purpose flour</description>
+    </ingredient>
+    <ingredient name="eggs" quantity="3" unit="pieces">
+      <description>large eggs</description>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Mix flour and eggs</description>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <step>
+      <description>Bake at 350Â°F for 25 minutes</description>
+      <duration_minutes>25</duration_minutes>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>300</calories>
+    <fat_grams>10</fat_grams>
+    <protein_grams>15</protein_grams>
+  </nutrition>
+  <tags>
+    <tag>dessert</tag>
+    <tag>baking</tag>
+  </tags>
+</recipe>

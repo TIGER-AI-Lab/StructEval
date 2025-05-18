@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 001132</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+function App() {
+  const [tasks, setTasks] = useState([]);
+  const [taskTitle, setTaskTitle] = useState('');
+  const [taskDetails, setTaskDetails] = useState('');
+  const [completed, setCompleted] = useState(false);
+
+  const addTask = () => {
+    if (taskTitle.trim() === '') {
+      return;
+    }
+
+    setTasks([...tasks, { title: taskTitle, details: taskDetails }]);
+    setTaskTitle('');
+    setTaskDetails('');
+  };
+
+  const clearAll = () => {
+    setTasks([]);
+    setCompleted(false);
+  };
+
+  const markCompleted = () => {
+    setCompleted(true);
+  };
+
+  return (
+    <div className="App">
+      <div className="container">
+        <h1>Daily Planner</h1>
+        <input
+          type="text"
+          placeholder="Task Title"
+          value={taskTitle}
+          onChange={(e) => setTaskTitle(e.target.value)}
+        />
+        <ul>
+          {tasks.map((task, index) => (
+            <li key={index} style={{ textDecoration: completed ? 'line-through' : 'none' }}>
+              <strong>{task.title}</strong>: {task.details}
+            </li>
+          ))}
+        </ul>
+        <textarea
+          placeholder="Task Details"
+          rows={4}
+          value={taskDetails}
+          onChange={(e) => setTaskDetails(e.target.value)}
+        />
+        <div className="buttons">
+          <button style={{ backgroundColor: 'green' }} onClick={addTask}>Add Task</button>
+          <button onClick={clearAll}>Clear All</button>
+          <button onClick={markCompleted}>Mark Completed</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+
+import csv
+import xml.etree.ElementTree as ET
+
+# Create the root element
+root = ET.Element("planets")
+
+# Read the CSV file
+with open("planets.csv", "r") as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        # Create a new planet element
+        planet = ET.SubElement(root, "planet")
+        
+        # Add attributes to the planet element
+        for key, value in row.items():
+            if key != "planet.moons[0].name" and key != "planet.moons[1].name":
+                ET.SubElement(planet, key).text = value
+            else:
+                moon = ET.SubElement(planet, "moon")
+                ET.SubElement(moon, "name").text = value
+
+# Create the XML tree
+tree = ET.ElementTree(root)
+
+# Write the XML tree to a file
+tree.write("planets.xml")

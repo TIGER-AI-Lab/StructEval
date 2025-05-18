@@ -1,0 +1,38 @@
+
+{
+  "artifact": {
+    "name": "The Golden Idol",
+    "origin": {
+      "culture": "Ancient Egyptian",
+      "period": "New Kingdom"
+    },
+    "materials": {
+      "primary": "Gold",
+      "secondary": "Copper"
+    },
+    "dimensions": {
+      "height_cm": 30,
+      "width_cm": 20,
+      "depth_cm": 0
+    },
+    "location": {
+      "current_museum": "The British Museum",
+      "room": "Gallery 33"
+    },
+    "provenance": {
+      "history": [
+        {
+          "event": "discovered",
+          "date": "2020-01-01",
+          "location": "Egypt"
+        }
+      ]
+    },
+    "images": [
+      {
+        "url": "https://example.com/image1.jpg",
+        "description": "Front view of the Golden Idol"
+      }
+    ]
+  }
+}

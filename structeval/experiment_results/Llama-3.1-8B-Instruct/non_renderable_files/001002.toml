@@ -1,0 +1,39 @@
+
+ecosystem = {
+  name = "Xylophia-IV",
+  location = {
+    planet = "Xylophia",
+    region = "The Great Plains"
+  },
+  discovery = {
+    year = 2154,
+    discoverer = "Dr. Sophia Patel and Team"
+  },
+  species = [
+    {
+      name = "Xylophian Glimmerwings",
+      classification = "Insectoid",
+      population_estimate = 1000000,
+      traits = [
+        { trait_name = "Bioluminescence", trait_value = "True" },
+        { trait_name = "Wing Span", trait_value = 30.5 }
+      ]
+    }
+  ],
+  resources = {
+    water_sources = [
+      {
+        type = "River",
+        volume_liters = 1000000000
+      }
+    ],
+    minerals = [
+      { mineral_name = "Xylophanite", abundance_level = 0.5 },
+      { mineral_name = "Glimmerstone", abundance_level = 0.2 }
+    ]
+  },
+  environment = {
+    average_temperature_celsius = 22.5,
+    atmosphere_composition = "Nitrogen 70%, Oxygen 20%, Carbon Dioxide 10%"
+  }
+}

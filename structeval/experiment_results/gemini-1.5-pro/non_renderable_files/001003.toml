@@ -1,0 +1,35 @@
+[artifact]
+name = "Golden Goblet of Gladius"
+origin = "Roman Empire"
+discovery_date = "1922-07-15"
+
+[artifact.materials]
+primary = "gold"
+secondary = "garnet"
+
+[artifact.dimensions]
+height_cm = 25.5
+width_cm = 15.0
+depth_cm = 10.2
+
+[[artifact.inscriptions.list]]
+language = "Latin"
+translation = "To the glory of Emperor Gladius"
+location_on_artifact = "base"
+
+[[artifact.inscriptions.list]]
+language = "Greek"
+translation = "Gift of the Athenian delegation"
+location_on_artifact = "rim"
+
+
+[artifact.exhibit]
+current_location = "National Museum of Antiquities"
+
+[[artifact.exhibit.previous_locations]]
+museum = "British Museum"
+year_range = "1925â1950"
+
+[[artifact.exhibit.previous_locations]]
+museum = "Louvre Museum"
+year_range = "1951â1985"

@@ -1,0 +1,33 @@
+[ecosystem]
+name = "The Whispering Caves of Xylos"
+
+[ecosystem.location]
+latitude = -23.5
+longitude = 140.2
+
+[ecosystem.climate]
+type = "Subtropical Highland"
+average_temperature_c = 18.5
+annual_rainfall_mm = 1200
+
+[[ecosystem.species]]
+common_name = "Xylos Cave Salamander"
+scientific_name = "Speleomander xylosi"
+population_estimate = 5000
+conservation_status = "Vulnerable"
+notable_characteristics = [
+  "Bioluminescent markings",
+  "Completely blind",
+  "Sensitive to vibrations"
+]
+
+[[ecosystem.species]]
+common_name = "Giant Xylos Cave Cricket"
+scientific_name = "Titanogryllus maximus"
+population_estimate = 25000
+conservation_status = "Least Concern"
+notable_characteristics = [
+  "Reaches up to 15cm in length",
+  "Feeds on fungi and detritus",
+  "Communicates through stridulation"
+]

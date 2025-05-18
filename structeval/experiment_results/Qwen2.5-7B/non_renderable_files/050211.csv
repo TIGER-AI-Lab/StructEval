@@ -1,0 +1,74 @@
+python
+import json
+import csv
+
+# JSON data
+json_data = '''
+{
+  "fantasy_creatures": [
+    {
+      "CreatureName": "Glimmerfox",
+      "Habitat": "Crystal Forest",
+      "NumberOfLegs": 4,
+      "Bioluminescent": true,
+      "DiscoveryDate": "2017-03-12",
+      "AverageLengthMeters": 1.2
+    },
+    {
+      "CreatureName": "Mosswing",
+      "Habitat": "Emerald Marsh",
+      "NumberOfLegs": 6,
+      "Bioluminescent": false,
+      "DiscoveryDate": "2019-07-23",
+      "AverageLengthMeters": 0.8
+    },
+    {
+      "CreatureName": "Cinderbeetle",
+      "Habitat": "Volcanic Plains",
+      "NumberOfLegs": 8,
+      "Bioluminescent": true,
+      "DiscoveryDate": "2015-11-02",
+      "AverageLengthMeters": 0.3
+    },
+    {
+      "CreatureName": "Whisperfin",
+      "Habitat": "Silver Lake",
+      "NumberOfLegs": 0,
+      "Bioluminescent": false,
+      "DiscoveryDate": "2020-01-15",
+      "AverageLengthMeters": 2.7
+    },
+    {
+      "CreatureName": "Thornback",
+      "Habitat": "Bramble Thicket",
+      "NumberOfLegs": 4,
+      "Bioluminescent": false,
+      "DiscoveryDate": "2018-05-30",
+      "AverageLengthMeters": 1.5
+    },
+    {
+      "CreatureName": "Auroracorn",
+      "Habitat": "Frozen Tundra",
+      "NumberOfLegs": 4,
+      "Bioluminescent": true,
+      "DiscoveryDate": "2021-09-09",
+      "AverageLengthMeters": 2.1
+    }
+  ]
+}
+'''
+
+# Parse JSON data
+data = json.loads(json_data)
+
+# Extract headers from the first dictionary
+headers = data['fantasy_creatures'][0].keys()
+
+# Write to CSV
+with open('fantasy_creatures.csv', 'w', newline='') as file:
+    writer = csv.DictWriter(file, fieldnames=headers)
+    writer.writeheader()
+    for creature in data['fantasy_creatures']:
+        writer.writerow(creature)
+
+print("CSV file has been created successfully.")

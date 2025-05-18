@@ -1,0 +1,27 @@
+{
+  "planet_name": "Aurelia",
+  "system": {
+    "star_name": "Helion",
+    "distance_from_star_au": 0.9,
+    "star_type": "G-type"
+  },
+  "moons": [
+    {
+      "moon_name": "Selene",
+      "diameter_km": 3200,
+      "features": "craters;ice geysers"
+    },
+    {
+      "moon_name": "Phobos",
+      "diameter_km": 1500,
+      "features": "volcanoes;subsurface ocean"
+    }
+  ],
+  "atmosphere": {
+    "composition": "N2-O2",
+    "pressure_atm": 1.2,
+    "has_clouds": true
+  },
+  "discovered_by": "Dr. Xel'Naga",
+  "discovery_year": 2378
+}

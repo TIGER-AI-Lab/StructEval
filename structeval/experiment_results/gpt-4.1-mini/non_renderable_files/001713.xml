@@ -1,0 +1,40 @@
+
+<recipe>
+  <title>Spiced Pumpkin Soup</title>
+  <author>
+    <name>Emily Johnson</name>
+    <id>AJX-2024-789</id>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Pumpkin puree</name>
+      <quantity>500</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Coconut milk</name>
+      <quantity>400</quantity>
+      <unit>ml</unit>
+    </ingredient>
+  </ingredients>
+  <instructions>
+    <step>
+      <description>Heat the pumpkin puree in a large pot over medium heat.</description>
+      <duration_minutes>10</duration_minutes>
+    </step>
+    <step>
+      <description>Stir in the coconut milk and simmer for 15 minutes until smooth.</description>
+      <duration_minutes>15</duration_minutes>
+    </step>
+  </instructions>
+  <nutrition>
+    <calories>250</calories>
+    <fat_grams>12.5</fat_grams>
+    <protein_grams>4.2</protein_grams>
+  </nutrition>
+  <tags>
+    <tag>Vegetarian</tag>
+    <tag>Fall</tag>
+  </tags>
+</recipe>

@@ -1,0 +1,31 @@
+
+planet = {
+    name = "Exo-123b",
+    discovery = {
+        year = 2023,
+        method = "transit"
+    },
+    orbit = {
+        period_days = 365.25,
+        eccentricity = 0.1
+    },
+    atmosphere = {
+        composition = [
+            { gas = "Nitrogen", percentage = 78.08 },
+            { gas = "Oxygen", percentage = 20.95 }
+        ]
+    },
+    moons = [
+        { name = "Moon A", diameter_km = 1000 },
+        { name = "Moon B", diameter_km = 1500 }
+    ],
+    surface = {
+        temperature_c = 25,
+        has_liquid_water = true
+    },
+    surface = {
+        landmarks = [
+            { type = "crater", name = "Asteroid Crater" }
+        ]
+    }
+}

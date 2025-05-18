@@ -1,0 +1,52 @@
+brewery:
+  name: "Golden Cascade Brewery"
+  location:
+    city: "Bend"
+    country: "USA"
+  established_year: 2012
+  specialties:
+    - "West Coast IPAs"
+    - "Barrel-Aged Stouts"
+    - "German Lagers"
+  master_brewer:
+    name: "Heidi Schmidt"
+    experience_years: 15
+    awards:
+      - title: "Brewer of the Year"
+        year: 2018
+  beers:
+    - name: "Cascade Comet IPA"
+      style: "West Coast IPA"
+      abv: 6.8
+      ingredients:
+        malts:
+          - "Pale Malt"
+          - "Crystal Malt"
+        hops:
+          - "Cascade"
+          - "Comet"
+      release_dates:
+        - "2013-05-15"
+    - name: "Midnight Ember Stout"
+      style: "Imperial Stout"
+      abv: 9.2
+      ingredients:
+        malts:
+          - "Pale Malt"
+          - "Roasted Barley"
+          - "Chocolate Malt"
+        hops:
+          - "Nugget"
+      release_dates:
+        - "2014-11-01"
+    - name: "Oktoberfest Lager"
+      style: "MÃ¤rzen"
+      abv: 5.8
+      ingredients:
+        malts:
+          - "Munich Malt"
+          - "Vienna Malt"
+        hops:
+          - "Hallertau MittelfrÃ¼h"
+      release_dates:
+        - "2015-09-01"

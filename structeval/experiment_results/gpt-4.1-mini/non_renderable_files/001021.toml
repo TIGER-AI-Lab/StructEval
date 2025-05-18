@@ -1,0 +1,25 @@
+
+[museum]
+name = "The Celestial Art Museum"
+established_year = 1987
+director = "Dr. Helena Voss"
+
+[museum.location]
+city = "Luminara"
+country = "Ardonia"
+
+[[museum.exhibits]]
+title = "Starlight Reverie"
+artist = "Elara Moon"
+year = 1995
+medium = "Oil on canvas"
+on_display = true
+
+[museum.exhibits.dimensions]
+height_cm = 120.5
+width_cm = 85.0
+
+[museum.exhibits.provenance]
+previous_owners = ["Lysander Gallery", "Marcel Dupont"]
+acquisition_date = "2001-09-15"
+acquisition_method = "donation"

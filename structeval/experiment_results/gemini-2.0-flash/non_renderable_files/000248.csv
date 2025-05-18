@@ -1,0 +1,6 @@
+artifact_id,artifact_name,discovery.site,discovery.country,discovery.year,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.current_state,condition.restoration_years,provenance.previous_owners,provenance.auction_history,exhibit.locations
+AR1001,Rosetta Stone,Rosetta,Egypt,1799,Granodiorite,,114.40,72.30,27.90,Fragmented,,Unknown,"Unknown",British Museum
+AR1002,Tutankhamun's Mask,Valley of the Kings,Egypt,1922,Gold,Lapis Lazuli,54.00,39.30,49.00,Intact,,Lord Carnarvon,Unknown,Egyptian Museum
+AR1003,Venus de Milo,Milos,Greece,1820,Marble,,203.00,0.00,0.00,Fragmented,1821,Marquis de RiviÃ¨re,Unknown,Louvre Museum
+AR1004,Terracotta Army Warrior,Lintong,China,1974,Terracotta,,180.00,50.00,45.00,Restored,1975,Unknown,Unknown,Emperor Qinshihuang's Mausoleum Site Museum
+AR1005,Bust of Nefertiti,Amarna,Egypt,1912,Limestone,Gypsum,48.00,0.00,0.00,Intact,,James Simon,Unknown,Neues Museum

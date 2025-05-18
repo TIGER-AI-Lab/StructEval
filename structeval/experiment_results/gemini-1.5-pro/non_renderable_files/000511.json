@@ -1,0 +1,36 @@
+{
+  "exhibit": {
+    "title": "Masterpieces of Modern Art",
+    "curator": {
+      "name": "Dr. Emily Carter",
+      "email": "emily.carter@museum.org"
+    },
+    "artworks": [
+      {
+        "artist": "Pablo Picasso",
+        "title": "Guernica",
+        "year_created": 1937,
+        "medium": "Oil on canvas",
+        "dimensions": {
+          "height_cm": 349.3,
+          "width_cm": 776.6,
+          "depth_cm": 0
+        },
+        "provenance": {
+          "previous_owners": [
+            "Spanish Republic",
+            "Museum of Modern Art (MoMA)"
+          ],
+          "acquisition_date": "1981-09-15"
+        },
+        "on_display": true,
+        "tags": [
+          "Cubism",
+          "War",
+          "20th Century"
+        ]
+      }
+    ],
+    "opening_date": "2024-03-01"
+  }
+}

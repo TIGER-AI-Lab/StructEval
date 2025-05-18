@@ -1,0 +1,34 @@
+planet:
+  name: Zyphora
+  atmosphere:
+    composition:
+      - Nitrogen
+      - Argon
+      - Helium
+    pressure: 0.92
+    layers:
+      - name: Troposphere
+        altitude_range: 0-15 km
+      - name: Stratosphere
+        altitude_range: 15-50 km
+  continents:
+    - name: Virelia
+      area: 32000000
+      major_species:
+        - name: Glint Fox
+          population: 1200000
+        - name: Sky Manta
+          population: 800000
+    - name: Orun
+      area: 21000000
+      major_species:
+        - name: Moss Hound
+          population: 500000
+  moons:
+    - name: Ilo
+      diameter: 3200
+    - name: Ress
+      diameter: 1800
+  discovery:
+    year: 2478
+    by: Dr. Elara Voss

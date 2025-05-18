@@ -1,0 +1,14 @@
+
+import pandas as pd
+
+data = {
+    "star_name": ["Zyphron", "Quintara", "Luminex", "Vespera", "Seraphel", "Tirion"],
+    "constellation": ["Andromeda", "Orion", "Cassiopeia", "Cygnus", "Lyra", "Pegasus"],
+    "distance_light_years": [450.2, 1342.7, 872.0, 611.5, 1200.3, 954.9],
+    "discovery_date": ["1998-08-14", "2005-11-03", "1986-03-22", "2012-06-09", "1993-01-17", "2009-09-30"],
+    "spectral_type": ["B2V", "O9III", "A0V", "F5IV", "K3III", "G2V"],
+    "apparent_magnitude": [4.3, 2.1, 5.6, 3.8, 6.2, 4.9]
+}
+
+df = pd.DataFrame(data)
+df.to_csv("stars.csv", index=False)

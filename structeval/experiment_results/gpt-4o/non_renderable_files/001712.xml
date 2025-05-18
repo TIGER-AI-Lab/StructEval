@@ -1,0 +1,32 @@
+<creature>
+    <name>Zylox the Wanderer</name>
+    <species>Quintarian</species>
+    <origin>
+        <planet>Quintara</planet>
+        <galaxy>Andromeda</galaxy>
+    </origin>
+    <stats>
+        <height>250</height>
+        <weight>120</weight>
+        <age>300</age>
+    </stats>
+    <abilities>
+        <ability>
+            <name>Mind Meld</name>
+            <power_level>85</power_level>
+            <type>telepathy</type>
+        </ability>
+        <ability>
+            <name>Quantum Leap</name>
+            <power_level>90</power_level>
+            <type>teleportation</type>
+        </ability>
+    </abilities>
+    <companions>
+        <companion>
+            <name>Gorak the Brave</name>
+            <species>Draconian</species>
+            <role>Guardian</role>
+        </companion>
+    </companions>
+</creature>

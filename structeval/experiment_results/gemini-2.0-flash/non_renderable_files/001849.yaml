@@ -1,0 +1,34 @@
+game:
+  title: "Starlight Odyssey"
+  release_year: 2024
+  genre: "RPG"
+  platforms:
+    - name: "PC"
+      release_date: "2024-03-15"
+      supported_languages:
+        - "English"
+        - "French"
+        - "German"
+        - "Spanish"
+  developer:
+    name: "Nova Studios"
+    founded: 2010
+    location:
+      city: "Vancouver"
+      country: "Canada"
+  reviews:
+    - reviewer: "IGN"
+      score: 8.5
+      date: "2024-03-14"
+      comment: "A captivating RPG with stunning visuals and a rich storyline."
+    - reviewer: "GameSpot"
+      score: 7.9
+      date: "2024-03-16"
+      comment: "Solid gameplay mechanics, but some technical issues hold it back."
+  expansions:
+    - title: "Cosmic Dawn"
+      release_year: 2025
+      features:
+        - "New playable class: Star Weaver"
+        - "Expanded storyline with new quests"
+        - "New planets and environments to explore"

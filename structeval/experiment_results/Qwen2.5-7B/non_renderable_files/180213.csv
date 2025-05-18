@@ -1,0 +1,13 @@
+import pandas as pd
+
+data = [
+    {'constellation': 'Orion', 'star_name': 'Betelgeuse', 'apparent_magnitude': 0.42, 'discovery_date': '1801-03-15', 'distance_ly': 642.5, 'spectral_type': 'M1-2'},
+    {'constellation': 'Lyra', 'star_name': 'Vega', 'apparent_magnitude': 0.03, 'discovery_date': '1850-07-10', 'distance_ly': 25.04, 'spectral_type': 'A0V'},
+    {'constellation': 'Taurus', 'star_name': 'Aldebaran', 'apparent_magnitude': 0.85, 'discovery_date': '1782-11-21', 'distance_ly': 65.1, 'spectral_type': 'K5III'},
+    {'constellation': 'Canis Major', 'star_name': 'Sirius', 'apparent_magnitude': -1.46, 'discovery_date': '1718-01-01', 'distance_ly': 8.6, 'spectral_type': 'A1V'},
+    {'constellation': 'Cygnus', 'star_name': 'Deneb', 'apparent_magnitude': 1.25, 'discovery_date': '1866-09-13', 'distance_ly': 2615, 'spectral_type': 'A2Ia'},
+    {'constellation': 'Carina', 'star_name': 'Canopus', 'apparent_magnitude': -0.72, 'discovery_date': '1897-05-30', 'distance_ly': 310, 'spectral_type': 'A9II'}
+]
+
+df = pd.DataFrame(data)
+df.to_csv('stars.csv', index=False)

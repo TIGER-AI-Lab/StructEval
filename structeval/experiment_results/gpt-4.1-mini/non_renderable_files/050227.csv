@@ -1,0 +1,6 @@
+PlanetName,DiscoveryYear,DistanceFromEarth_ly,SurfaceTemperature_K,HasRings,PrimaryElement
+Zyphora,2087,54.3,210,true,Methane
+Kronis,2121,112.8,390,false,Silicon
+Virelia,2099,76.2,150,true,Ammonia
+Drithon,2104,201.5,320,false,Hydrogen
+Elyssia,2110,88.7,275,true,Oxygen

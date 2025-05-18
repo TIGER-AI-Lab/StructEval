@@ -1,0 +1,43 @@
+
+{
+  "planet": {
+    "name": "Zyphor-7",
+    "discovery": {
+      "year": 2025,
+      "method": "transit"
+    },
+    "orbital_parameters": {
+      "semi_major_axis": 1.2,
+      "eccentricity": 0.03,
+      "inclination": 5.2
+    },
+    "atmosphere": {
+      "composition": {
+        "primary_gas": "nitrogen",
+        "trace_gases": [
+          "argon",
+          "carbon dioxide",
+          "methane"
+        ]
+      },
+      "pressure": 1.1
+    },
+    "moons": [
+      {
+        "name": "Lunara",
+        "diameter_km": 1500,
+        "orbit": {
+          "period_days": 30,
+          "distance_km": 50000
+        }
+      }
+    ],
+    "rings": [
+      {
+        "name": "Aether Ring",
+        "radius_inner_km": 20000,
+        "radius_outer_km": 25000
+      }
+    ]
+  }
+}

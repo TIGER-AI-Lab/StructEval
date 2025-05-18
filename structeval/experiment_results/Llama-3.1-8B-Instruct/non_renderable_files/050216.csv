@@ -1,0 +1,57 @@
+
+import pandas as pd
+import json
+
+data = '''[
+  {
+    "Constellation": "Lyra",
+    "DiscoveryYear": 1850,
+    "StarType": "White Dwarf",
+    "DistanceLY": 25.3,
+    "ApparentMagnitude": 12.7,
+    "LastObserved": "2023-10-14"
+  },
+  {
+    "Constellation": "Orion",
+    "DiscoveryYear": 1702,
+    "StarType": "Red Giant",
+    "DistanceLY": 642.5,
+    "ApparentMagnitude": 0.5,
+    "LastObserved": "2024-01-02"
+  },
+  {
+    "Constellation": "Cassiopeia",
+    "DiscoveryYear": 1912,
+    "StarType": "Neutron Star",
+    "DistanceLY": 11000,
+    "ApparentMagnitude": 16.0,
+    "LastObserved": "2022-05-27"
+  },
+  {
+    "Constellation": "Scorpius",
+    "DiscoveryYear": 1777,
+    "StarType": "Blue Supergiant",
+    "DistanceLY": 735,
+    "ApparentMagnitude": 1.6,
+    "LastObserved": "2023-08-19"
+  },
+  {
+    "Constellation": "Cygnus",
+    "DiscoveryYear": 1983,
+    "StarType": "Binary Star",
+    "DistanceLY": 1500,
+    "ApparentMagnitude": 8.9,
+    "LastObserved": "2024-03-11"
+  },
+  {
+    "Constellation": "Ursa Major",
+    "DiscoveryYear": 1665,
+    "StarType": "Yellow Dwarf",
+    "DistanceLY": 79.7,
+    "ApparentMagnitude": 5.2,
+    "LastObserved": "2023-12-05"
+  }
+]'''
+
+df = pd.json_normalize(json.loads(data))
+df.to_csv('stars.csv', index=False)

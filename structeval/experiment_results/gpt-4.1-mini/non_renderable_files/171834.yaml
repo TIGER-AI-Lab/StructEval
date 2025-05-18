@@ -1,0 +1,18 @@
+
+spaceStation:
+  name: Odyssey Outpost
+  crew:
+    member:
+      - name: Dr. Luna Vega
+        role: Commander
+      - name: Axel Orion
+        role: Engineer
+  laboratories:
+    laboratory:
+      - labName: AstroBotany Lab
+        experiments:
+          experiment:
+            - title: Zero-G Photosynthesis
+              status: Ongoing
+            - title: Martian Soil Simulation
+              status: Completed

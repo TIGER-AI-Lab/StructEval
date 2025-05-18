@@ -1,0 +1,28 @@
+artifact:
+  name: "The Celestial Orb of Xylo"
+  origin: "Ancient Xylos Civilization"
+  discovery:
+    year: 1923
+    discoverer: "Professor Amelia Stone"
+  materials:
+    - "Obsidian"
+    - "Gold"
+    - "Unknown Alloy"
+  dimensions:
+    height_cm: 25.4
+    width_cm: 25.4
+    depth_cm: 25.4
+  features:
+    - type: "Engraving"
+      description: "Intricate carvings depicting celestial bodies and constellations."
+      condition: "Well-preserved"
+    - type: "Runes"
+      description: "Undeciphered symbols covering the lower half of the orb."
+  provenance:
+    previous_owners:
+      - "Lord Harrington"
+      - "The Royal Xylos Museum"
+    auction_history:
+      - date: "1925-03-15"
+        price_usd: 100000
+        auction_house: "Sotheby's London"

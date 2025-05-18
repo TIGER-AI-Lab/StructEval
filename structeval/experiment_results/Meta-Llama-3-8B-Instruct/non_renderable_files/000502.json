@@ -1,0 +1,32 @@
+
+{
+  "artifact": {
+    "name": "Ancient Vessel",
+    "origin": {
+      "civilization": "Egyptian",
+      "estimated_age": 2500
+    },
+    "materials": {
+      "primary": "Copper",
+      "secondary": null,
+      "composition_percentage": 90
+    },
+    "dimensions": {
+      "height_cm": 30,
+      "width_cm": 20,
+      "depth_cm": 15
+    },
+    "features": [
+      {
+        "type": "Engraving",
+        "description": "Decorative pattern on the side",
+        "preservation_state": "Intact"
+      },
+      {
+        "type": "Inlay",
+        "description": "Small gemstone in the center",
+        "preservation_state": "Worn"
+      }
+    ]
+  }
+}

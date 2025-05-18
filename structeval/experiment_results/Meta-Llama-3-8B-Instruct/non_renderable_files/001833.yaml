@@ -1,0 +1,22 @@
+
+planet:
+  name: Xylophia-IV
+  type: terrestrial
+  discovery:
+    year: 2154
+    method: telescope
+  atmosphere:
+    composition:
+      - nitrogen
+      - oxygen
+      - carbon dioxide
+    pressure: 101.325
+    temperature: 288.15
+  moons:
+    - name: Xylophia-IVb
+      diameter_km: 3500
+      orbital_period_days: 27.321
+      surface_features:
+        - feature_type: crater
+          description: A large impact crater formed by a meteorite that struck the moon's surface.
+          coordinates: 43.21Â° N, 122.45Â° W

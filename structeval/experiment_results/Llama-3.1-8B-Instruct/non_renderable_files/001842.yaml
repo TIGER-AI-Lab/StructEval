@@ -1,0 +1,24 @@
+
+museum:
+  name: "The Imaginary Art Museum"
+  location:
+    city: "New York"
+    country: "USA"
+  founding_year: 1990
+  director:
+    full_name: "John Doe"
+    tenure_years: 15
+  exhibits:
+    - title: "The Starry Night"
+      artist: "Vincent van Gogh"
+      year_created: 1889
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 72.5
+        width_cm: 92.1
+      on_display: true
+      provenance:
+        previous_owners:
+          - "Van Gogh's family"
+          - "Private collector"
+        acquisition_date: "1992-02-15"

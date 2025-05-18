@@ -1,0 +1,28 @@
+creature:
+  name: "Xylar-7"
+  species: "Nebulan Glider"
+  age: 42
+  origin:
+    planet: "Xylos"
+    galaxy: "Andromeda"
+  abilities:
+    - type: "Telekinesis"
+      power_level: 75
+    - type: "Energy Shielding"
+      power_level: 60
+  appearance:
+    color: "Iridescent Purple"
+    size: "Medium"
+    limbs:
+      count: 6
+      types:
+        - "Wing"
+        - "Tentacle"
+        - "Claw"
+  companions:
+    - name: "Gleepglorp"
+      species: "Symbiotic Fungus"
+      role: "Nutrient Provider"
+    - name: "Zorp"
+      species: "Rock Hound"
+      role: "Navigation Assistant"

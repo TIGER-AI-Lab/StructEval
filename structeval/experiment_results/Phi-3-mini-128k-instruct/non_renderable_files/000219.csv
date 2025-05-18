@@ -1,0 +1,3 @@
+
+recipe_id,recipe_name,chef_name,cuisine_type,difficulty_level,prep_time_minutes,cook_time_minutes,ingredient_list,ingredient_count,main_ingredient,steps,servings,calories_per_serving,is_vegetarian,user_rating
+12345,"Spicy Thai Basil Chicken","Chef Aroma","Thai",Intermediate,15,20,"chicken breast; basil leaves; garlic; chili peppers; soy sauce; oyster sauce; sugar; salt; pepper; vegetable oil",9,"chicken breast","1. Heat oil in a wok. 2. Add garlic and chili peppers, stir-fry for 1 minute. 3. Add chicken and stir-fry until browned. 4. Add basil leaves, soy sauce, oyster sauce, sugar, salt, and pepper. 5. Stir-fry for another 5 minutes. 6. Serve hot.",4,250,FALSE,4.5

@@ -1,0 +1,34 @@
+
+[creature]
+species = "Luminara Draconis"
+
+[creature.habitat]
+region = "Enchanted Forest of Eldoria"
+climate = "temperate"
+
+[creature.appearance]
+size = "3 meters"
+color = "iridescent blue with golden scales"
+
+[creature.abilities]
+primary = "Invisibility at will"
+secondary = "Healing touch"
+
+[creature.behavior]
+[[creature.behavior.patterns]]
+name = "Nocturnal Gliding"
+frequency = "nightly"
+description = "The creature glides silently through the trees under the cover of darkness, hunting for food."
+
+[[creature.behavior.patterns]]
+name = "Daytime Sunbathing"
+frequency = "2 times/day"
+description = "During the day, it basks in the sun to absorb energy, often seen perched on high branches."
+
+[creature.diet]
+type = "omnivore"
+favorite_foods = ["glowing mushrooms", "nectar from enchanted flowers"]
+
+[creature.discovery]
+discoverer = "Dr. Elara Moonshadow"
+year = 2023

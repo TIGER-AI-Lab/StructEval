@@ -1,0 +1,23 @@
+galaxy_name: Andromeda
+location:
+  quadrant: Alpha
+  sector: 42
+age_million_years: 10000
+inhabited_planets:
+  - planet_name: Veridia
+    dominant_species: Veridians
+    population_billion: 12
+    notable_landmarks:
+      - Crystal Spires
+      - Emerald Forest
+  - planet_name: Xylox
+    dominant_species: Xylons
+    population_billion: 5
+    notable_landmarks:
+      - Obsidian Caves
+      - Azure Lakes
+black_holes:
+  count: 3
+  largest_mass_solar: 23
+discovered_by: Dr. Mira Celeste
+observation_notes: Nearest major galaxy to the Milky Way

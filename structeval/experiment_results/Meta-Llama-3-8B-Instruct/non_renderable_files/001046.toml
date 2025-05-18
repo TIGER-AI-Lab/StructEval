@@ -1,0 +1,31 @@
+
+planet = {
+  name = "Xylophia-IV",
+  discovery = {
+    year = 2053,
+    method = "Transit method"
+  },
+  orbit = {
+    period_days = 365.25,
+    eccentricity = 0.05,
+    semi_major_axis_au = 1.2
+  },
+  atmosphere = {
+    composition = ["Nitrogen", "Oxygen", "Carbon dioxide"],
+    pressure_atm = 0.9,
+    temperature_kelvin = 288
+  },
+  moons = [
+    {
+      name = "Xylophia-IV b",
+      diameter_km = 3500,
+      orbital_period_days = 27.3,
+      features = [
+        {
+          type = "Crater",
+          description = "A large impact crater with a diameter of 100 km"
+        }
+      ]
+    }
+  ]
+}

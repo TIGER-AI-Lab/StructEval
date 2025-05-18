@@ -1,0 +1,27 @@
+
+expedition:
+  mission_name: "Deep-Sea Discovery Expedition"
+  launch_date: "2023-03-01T00:00:00Z"
+  duration_days: 30
+  crew:
+  - name: "John Doe"
+    role: "Captain"
+    age: 42
+    skills:
+      - "Marine Biology"
+      - "Submarine Operations"
+  - name: "Jane Smith"
+    role: "Biologist"
+    age: 38
+    skills:
+      - "Marine Biology"
+      - "Sample Collection"
+  cargo:
+    manifest_id: "DSDE-001"
+    items:
+    - item_name: "Submarine Propulsion System"
+      quantity: 1
+      weight_kg: 500.0
+    - item_name: "Marine Life Sampling Equipment"
+      quantity: 2
+      weight_kg: 100.0

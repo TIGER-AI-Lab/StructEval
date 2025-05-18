@@ -1,0 +1,33 @@
+<planet>
+  <name>Zephyria</name>
+  <type>terrestrial</type>
+  <atmosphere>
+    <composition>Nitrogen, Oxygen, Argon, Carbon Dioxide</composition>
+    <pressure>101.3</pressure>
+    <habitable>true</habitable>
+  </atmosphere>
+  <satellites>
+    <satellite>
+      <name>Zephyria I</name>
+      <diameter>4,000</diameter>
+      <orbit>
+        <period>365.25</period>
+        <distance>384,400</distance>
+        <eccentricity>0.0167</eccentricity>
+      </orbit>
+    </satellite>
+  </satellites>
+  <lifeforms>
+    <lifeform>
+      <species>Zephyrian Fauna</species>
+      <population>5000000</population>
+      <intelligence>sentient</intelligence>
+    </lifeform>
+  </lifeforms>
+  <resources>
+    <resource>
+      <type>water</type>
+      <quantity>5000000</quantity>
+    </resource>
+  </resources>
+</planet>

@@ -1,0 +1,41 @@
+
+{
+  "spaceship": {
+    "name": "Starfire Odyssey",
+    "class": "Explorer",
+    "crew": {
+      "captain": "Zara Quell",
+      "first_officer": "Milo Jax",
+      "engineers": [
+        {
+          "name": "Tiko",
+          "species": "Andronian"
+        },
+        {
+          "name": "Vera Lynx",
+          "species": "Terran"
+        }
+      ]
+    },
+    "missions": [
+      {
+        "destination": "Nebula X-7",
+        "objective": "Chart uncharted space",
+        "success": true
+      },
+      {
+        "destination": "Aurelius IV",
+        "objective": "Diplomatic envoy",
+        "success": false
+      }
+    ],
+    "specs": {
+      "length_m": 312,
+      "armament": {
+        "primary": "Plasma cannons",
+        "secondary": "Deflector torpedoes"
+      },
+      "max_speed_warp": 9.7
+    }
+  }
+}

@@ -1,0 +1,4 @@
+recipe_id,recipe_name,chef_name,cuisine_type,servings,prep_time_minutes,cook_time_minutes,ingredient[0].name,ingredient[0].quantity,ingredient[0].unit,ingredient[1].name,ingredient[1].quantity,ingredient[1].unit,step[0].instruction,step[0].duration_minutes
+REC001,Spicy Mango Salsa Salmon,Gordon Ramsay,Fusion,2,15,20,Salmon Fillets,2,pieces,Mango,1,large,Marinate salmon with spices and diced mango.,10
+REC002,Coconut Curry Chicken,Padma Lakshmi,Thai,4,20,30,Chicken Breast,1.5,lbs,Coconut Milk,1,can,SautÃ© chicken and simmer in coconut curry sauce.,25
+REC003,Truffle Risotto,Massimo Bottura,Italian,3,25,35,Arborio Rice,1.5,cups,Truffle Oil,2,tablespoons,Slowly cook rice with broth and truffle oil.,30

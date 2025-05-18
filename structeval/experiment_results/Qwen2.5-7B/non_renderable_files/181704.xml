@@ -1,0 +1,24 @@
+
+galacticCarnival:
+  name: Nebula Fest
+  location:
+    planet: Zephyros
+    galaxy: Andromeda
+  attractions:
+    attraction:
+      - name: Zero-G Rollercoaster
+        type: Ride
+        operatingHours:
+          open: 09:00
+          close: 22:00
+      - name: Alien Cuisine Court
+        type: Food
+        operatingHours:
+          open: 11:00
+          close: 23:00
+  staff:
+    member:
+      - name: Quorax
+        role: Ringmaster
+      - name: Lira
+        role: Engineer

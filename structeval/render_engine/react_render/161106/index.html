@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 161106</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const PortfolioPage = () => {
+  const [projects, setProjects] = useState([
+    {
+      id: 1,
+      name: "E-Commerce Platform",
+      description: "A fully-featured online shopping platform with user authentication and payment processing.",
+      year: 2022,
+      tech: ["Vue.js", "Node.js", "MongoDB", "Stripe API"]
+    },
+    {
+      id: 2,
+      name: "Task Manager App",
+      description: "A productivity application for managing tasks with reminders and collaborative features.",
+      year: 2021,
+      tech: ["React", "Firebase", "Material UI"]
+    },
+    {
+      id: 3,
+      name: "Personal Blog",
+      description: "A blog platform with content management system and integrated analytics.",
+      year: 2020,
+      tech: ["Vue.js", "Express", "PostgreSQL"]
+    }
+  ]);
+  const [contact, setContact] = useState({
+    email: "developer@example.com",
+    phone: "+1 (555) 123-4567",
+    social: [
+      { platform: "LinkedIn", handle: "@devportfolio" },
+      { platform: "GitHub", handle: "@codedeveloper" },
+      { platform: "Twitter", handle: "@webdevexample" }
+    ]
+  });
+
+  useEffect(() => {
+    console.log("Portfolio component mounted");
+  }, []);
+
+  return (
+    <div className="container">
+      <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>A showcase of my work and interests</p>
+      </header>
+      <section className="about">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate developer with experience in building dynamic web applications.
+          My expertise spans a variety of modern web technologies and frameworks.
+        </p>
+        <ul>
+          <li><strong>Experience:</strong> 5+ years in the industry</li>
+          <li><strong>Expertise:</strong> Vue, React, Node.js</li>
+          <li><strong>Education:</strong> B.Sc. in Computer Science</li>
+        </ul>
+      </section>
+      <section className="projects">
+        <h2>Featured Projects</h2>
+        <div className="project-list">
+          {projects.map(project => (
+            <div className="project" key={project.id}>
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
+              <ul className="project-details">
+                <li><strong>Year:</strong> {project.year}</li>
+                <li>
+                  <strong>Tech Stack:</strong>
+                  {project.tech.map((tech, index) => (
+                    <span key={index}>
+                      {tech}{index < project.tech.length - 1 && ", "}
+                    </span>
+                  ))}
+                </li>
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="contact">
+        <h2>Contact Information</h2>
+        <div className="contact-item">
+          <p><strong>Email:</strong> {contact.email}</p>
+          <p><strong>Phone:</strong> {contact.phone}</p>
+        </div>
+        <div className="social-links">
+          <h3>Social Presence</h3>
+          <ul>
+            {contact.social.map((link, index) => (
+              <li key={index}>
+                <strong>{link.platform}:</strong> {link.handle}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<PortfolioPage />);
+
+    </script>
+  </body>
+</html>

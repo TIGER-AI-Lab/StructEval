@@ -1,0 +1,22 @@
+
+garden:
+  name: "Green Haven Botanical Garden"
+  location:
+    city: "Springfield"
+    country: "USA"
+  size_sq_meters: 50000
+  established_year: 1985
+  sections:
+    - section_name: "Tropical Plants"
+      plants:
+        - species: "Ficus lyrata"
+          age_years: 12
+          height_cm: 350
+          is_perennial: true
+          flowering_months:
+            - "June"
+            - "July"
+            - "August"
+          care:
+            last_watered: "2024-06-10"
+            fertilizer_type: "Organic compost"

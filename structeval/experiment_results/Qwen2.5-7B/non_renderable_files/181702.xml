@@ -1,0 +1,38 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def convert_yaml_to_xml(yaml_data):
+    data = yaml.safe_load(yaml_data)
+    root = ET.Element("spaceStation")
+    for key, value in data.items():
+        if key == "crewMembers":
+            crew_members = ET.SubElement(root, key)
+            for member in value:
+                member_elem = ET.SubElement(crew_members, "member")
+                for sub_key, sub_value in member.items():
+                    sub_elem = ET.SubElement(member_elem, sub_key)
+                    sub_elem.text = str(sub_value)
+        else:
+            sub_elem = ET.SubElement(root, key)
+            sub_elem.text = str(value)
+    return ET.tostring(root, encoding="unicode")
+
+yaml_data = """
+spaceStation:
+  name: Nebula Haven
+  location:
+    planet: Gliese 581g
+    galaxy: Andromeda
+  crewMembers:
+    member:
+      - name: Zora Quill
+        role: Astrobotanist
+        favoriteSnack: Lunar Grapes
+      - name: Milo Drift
+        role: Quantum Engineer
+        favoriteSnack: Meteorite Crunchies
+"""
+
+xml_data = convert_yaml_to_xml(yaml_data)
+print(xml_data)

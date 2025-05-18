@@ -1,0 +1,35 @@
+
+{
+  "exhibit": {
+    "title": "Renaissance Masterpieces",
+    "curator": {
+      "name": "Dr. Jane Smith",
+      "contact": {
+        "email": "jane.smith@museum.org",
+        "phone": "+1-555-123-4567"
+      }
+    },
+    "artifacts": [
+      {
+        "id": "artifact-001",
+        "name": "The Birth of Venus",
+        "artist": "Sandro Botticelli",
+        "year": 1486,
+        "medium": "Tempera on canvas",
+        "provenance": {
+          "previous_owners": [
+            "Private Collection, Florence",
+            "Art Dealer, Paris"
+          ],
+          "acquisition_date": "2020-05-15"
+        },
+        "on_display": true,
+        "dimensions": {
+          "height_cm": 172.5,
+          "width_cm": 278.9,
+          "depth_cm": 5.0
+        }
+      }
+    ]
+  }
+}

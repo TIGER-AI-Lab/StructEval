@@ -1,0 +1,27 @@
+robot_id: RX-2024-77
+model: NeonTiger X7
+manufacturer:
+  name: Robodyne Systems
+  country: Japan
+specs:
+  height_cm: 185
+  weight_kg: 120
+  power_source: Fusion Cell
+  sensors:
+    - type: LIDAR
+      quantity: 2
+    - type: Thermal Camera
+      quantity: 1
+abilities:
+  primary: Hazardous Environment Navigation
+  secondary: Material Handling
+  tools:
+    - Plasma Cutter
+    - Multi-grip Arm
+maintenance:
+  last_service_date: "2024-03-15"
+  service_history:
+    - date: "2023-12-01"
+      description: Replaced left actuator
+    - date: "2024-01-20"
+      description: Firmware update v3.2

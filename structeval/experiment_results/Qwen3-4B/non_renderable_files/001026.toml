@@ -1,0 +1,42 @@
+
+exhibit = {
+    title = "Modern Visions",
+    curator = {
+        name = "Dr. Elena Martinez",
+        contact_email = "elena.martinez@example.com"
+    },
+    opening_date = "2023-11-01",
+    closing_date = "2023-12-15",
+    galleries = [
+        {
+            name = "Contemporary Masterpieces",
+            theme = "Exploring Modern Art",
+            artworks = [
+                {
+                    title = "Urban Echoes",
+                    artist = "Alex Rivera",
+                    year_created = 2021,
+                    medium = "Acrylic on Canvas",
+                    dimensions = {
+                        height_cm = 120,
+                        width_cm = 160
+                    },
+                    on_loan = true,
+                    provenance = "Acquired from a private collection in 2021"
+                },
+                {
+                    title = "Silent Horizons",
+                    artist = "Lila Chen",
+                    year_created = 2019,
+                    medium = "Mixed Media",
+                    dimensions = {
+                        height_cm = 90,
+                        width_cm = 120
+                    },
+                    on_loan = false,
+                    provenance = "Gift from the artist's family"
+                }
+            ]
+        }
+    ]
+}

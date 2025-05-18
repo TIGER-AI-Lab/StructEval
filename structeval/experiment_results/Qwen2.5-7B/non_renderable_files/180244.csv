@@ -1,0 +1,63 @@
+python
+import csv
+import yaml
+
+# YAML data as a string
+data = """
+artifacts:
+  - artifact_name: Nebula Compass
+    discovery_year: 2387
+    material: Quantum Alloy
+    weight_kg: 3.2
+    origin_planet: Zephyron
+    last_inspection_date: 2424-03-12
+  - artifact_name: Chrono Locket
+    discovery_year: 2412
+    material: Temporal Crystal
+    weight_kg: 0.8
+    origin_planet: Chronosia
+    last_inspection_date: 2424-01-19
+  - artifact_name: Starlit Harp
+    discovery_year: 2399
+    material: Harmonic Fiber
+    weight_kg: 2.5
+    origin_planet: Lyraxis
+    last_inspection_date: 2424-05-07
+  - artifact_name: Void Lantern
+    discovery_year: 2405
+    material: Dark Matter Glass
+    weight_kg: 1.1
+    origin_planet: Umbra Prime
+    last_inspection_date: 2424-02-28
+  - artifact_name: Aurora Prism
+    discovery_year: 2417
+    material: Spectral Gemstone
+    weight_kg: 0.6
+    origin_planet: Borealis VI
+    last_inspection_date: 2424-04-15
+  - artifact_name: Echo Medallion
+    discovery_year: 2382
+    material: Resonant Metal
+    weight_kg: 1.7
+    origin_planet: Sonoria
+    last_inspection_date: 2424-06-01
+"""
+
+# Parse the YAML data
+parsed_data = yaml.safe_load(data)
+
+# Extract headers from the first artifact
+headers = list(parsed_data['artifacts'][0].keys())
+
+# Write to CSV
+with open('artifacts.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=headers)
+    writer.writeheader()
+    for artifact in parsed_data['artifacts']:
+        writer.writerow(artifact)
+
+# Read and print the CSV content
+with open('artifacts.csv', 'r') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        print(row)

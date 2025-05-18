@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 071128</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  return (
+    <div>
+      <h1>Project Title: Structurally Rich Markdown Example</h1>
+
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#details-configuration">Details & Configuration</a></li>
+        <li><a href="#objectives">Objectives</a></li>
+        <li><a href="#code-example">Code Example</a></li>
+        <li><a href="#summary">Summary and Future Work</a></li>
+      </ol>
+
+      <hr />
+
+      <h3 id="introduction">Introduction</h3>
+      <p>This Markdown document is designed to test the visual conversion task by showcasing a detailed hierarchical layout. It includes elements such as headings, sections, lists, labeled values, and code blocks.</p>
+
+      <h4>Key Elements:</h4>
+      <ul>
+        <li><strong>Visible Structure</strong></li>
+        <li><strong>Hierarchical Layout</strong></li>
+        <li><strong>Labeled Values and Configuration</strong></li>
+        <li><strong>Multiple Sections and Lists</strong></li>
+      </ul>
+
+      <hr />
+
+      <h3 id="details-configuration">Details & Configuration</h3>
+
+      <p><strong>Version:</strong> <code>v1.0.0
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

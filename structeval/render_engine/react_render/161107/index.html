@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 161107</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const DashboardOverview = () => {
+  const user = {
+    name: "John Doe",
+    email: "john.doe@example.com",
+    role: "Administrator"
+  };
+  const stats = {
+    posts: 34,
+    comments: 120,
+    likes: 230
+  };
+  const activities = [
+    { timestamp: "2023-10-01 10:00", description: "Logged in" },
+    { timestamp: "2023-10-01 10:05", description: "Created a post" },
+    { timestamp: "2023-10-01 10:15", description: "Commented on a post" }
+  ];
+  const achievements = [
+    "Completed Profile Setup",
+    "First Post Published",
+    "Reached 100 Likes"
+  ];
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <div className="container">
+      <header className="header">
+        <h1>Dashboard Overview</h1>
+        <p>Welcome to the overview page of our sample Vue component.</p>
+      </header>
+      <section className="section user-info">
+        <h2>User Information</h2>
+        <div className="info-list">
+          <div className="info-item">
+            <label>Name:</label>
+            <span>{user.name}</span>
+          </div>
+          <div className="info-item">
+            <label>Email:</label>
+            <span>{user.email}</span>
+          </div>
+          <div className="info-item">
+            <label>Role:</label>
+            <span>{user.role}</span>
+          </div>
+        </div>
+      </section>
+      <section className="section stats">
+        <h2>Statistics</h2>
+        <ul>
+          <li>Posts: {stats.posts}</li>
+          <li>Comments: {stats.comments}</li>
+          <li>Likes: {stats.likes}</li>
+        </ul>
+      </section>
+      <section className="section additional-info">
+        <h2>Additional Information</h2>
+        <div className="sub-section recent-activity">
+          <h3>Recent Activity</h3>
+          <ul>
+            {activities.map((activity, index) => (
+              <li key={index}>
+                <span className="timestamp">{activity.timestamp}</span> - 
+                <strong>{activity.description}</strong>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="sub-section achievements">
+          <h3>Achievements</h3>
+          <ol>
+            {achievements.map((achievement, index) => (
+              <li key={index}>{achievement}</li>
+            ))}
+          </ol>
+        </div>
+      </section>
+      <footer className="footer">
+        <hr />
+        <p>&copy; {currentYear} Sample Vue Application</p>
+      </footer>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<DashboardOverview />);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+galacticZoo:
+  animals:
+    - name: Zog
+      species: Luminox
+      origin:
+        planet: Virelia
+        galaxy: Andromeda
+    - name: Qira
+      species: Stellarfin
+      origin:
+        planet: Ophion
+        galaxy: MilkyWay

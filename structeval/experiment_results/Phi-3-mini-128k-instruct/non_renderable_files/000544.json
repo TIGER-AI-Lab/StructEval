@@ -1,0 +1,38 @@
+{
+  "planet": {
+    "name": "Kepler-22b",
+    "discovery": {
+      "year": 2011,
+      "method": "transit"
+    },
+    "orbital_parameters": {
+      "semi_major_axis": 0.85,
+      "eccentricity": 0.0,
+      "inclination": 89.7
+    },
+    "atmosphere": {
+      "composition": {
+        "primary_gas": "Hydrogen",
+        "trace_gases": ["Helium", "Methane"]
+      },
+      "pressure": 1.0
+    },
+    "moons": [
+      {
+        "name": "Kepler-22b I",
+        "diameter_km": 12000,
+        "orbit": {
+          "period_days": 28.5,
+          "distance_km": 400000
+        }
+      }
+    ],
+    "rings": [
+      {
+        "name": "Kepler-22b B",
+        "radius_inner_km": 10000,
+        "radius_outer_km": 15000
+      }
+    ]
+  }
+}

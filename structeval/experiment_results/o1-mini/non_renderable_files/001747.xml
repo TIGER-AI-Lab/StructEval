@@ -1,0 +1,49 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<planet>
+    <name>Kepler-22b</name>
+    <type>terrestrial</type>
+    <discovery date="2011-12-05" method="transit" telescope="Kepler Space Telescope"/>
+    <orbit>
+        <period>289.9</period>
+        <eccentricity>0.02</eccentricity>
+        <semi_major_axis>0.85</semi_major_axis>
+    </orbit>
+    <atmosphere>
+        <composition>Nitrogen, Oxygen, Carbon Dioxide</composition>
+        <pressure>1.0</pressure>
+    </atmosphere>
+    <moons>
+        <moon>
+            <name>Calisto</name>
+            <diameter>4820</diameter>
+            <discovery year="2020"> 
+                <composition>Rocky</composition>
+            </discovery>
+        </moon>
+        <moon>
+            <name>Europa</name>
+            <diameter>3121</diameter>
+            <discovery year="2015">
+                <composition>Ice</composition>
+            </discovery>
+        </moon>
+    </moons>
+    <rings present="true">
+        <count>3</count>
+        <details>
+            <ring>
+                <material>Ice</material>
+                <width>70000</width>
+            </ring>
+            <ring>
+                <material>Rock</material>
+                <width>50000</width>
+            </ring>
+            <ring>
+                <material>Dust</material>
+                <width>30000</width>
+            </ring>
+        </details>
+    </rings>
+</planet>

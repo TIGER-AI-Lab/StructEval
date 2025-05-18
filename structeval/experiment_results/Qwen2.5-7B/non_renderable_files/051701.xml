@@ -1,0 +1,46 @@
+
+import json
+import xml.etree.ElementTree as ET
+
+json_data = '''
+{
+  "spaceZoo": {
+    "planet": {
+      "name": "Xylon-5",
+      "species": [
+        {
+          "name": "Glowtail",
+          "diet": "luminous algae",
+          "features": ["bioluminescent tail", "hovering fins"]
+        },
+        {
+          "name": "Crystacorn",
+          "diet": "mineral shards",
+          "features": ["crystal horn", "reflective shell"]
+        }
+      ]
+    }
+  }
+}
+'''
+
+data = json.loads(json_data)
+
+def json_to_xml(data, parent=None):
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if parent is None:
+                root = ET.Element(key)
+                json_to_xml(value, root)
+                tree = ET.ElementTree(root)
+                tree.write('output.xml')
+            else:
+                sub_element = ET.SubElement(parent, key)
+                json_to_xml(value, sub_element)
+    elif isinstance(data, list):
+        for item in data:
+            json_to_xml(item, parent)
+    else:
+        parent.text = str(data)
+
+json_to_xml(data)

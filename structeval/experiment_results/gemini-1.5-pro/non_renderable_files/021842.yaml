@@ -1,0 +1,44 @@
+- galaxy:
+    name: Andromeda
+    type: Spiral
+    distance_mly: 2.537
+    discovery:
+      year: 964
+      telescope: Hooker Telescope
+    stars:
+      count: 1e12
+      types: "G, K, M"
+      notable_stars:
+        - name: Alpheratz
+          magnitude: 2.06
+          spectral_type: B8IV
+        - name: Mirach
+          magnitude: 2.07
+          spectral_type: M0III
+    black_holes:
+      count: 35
+      largest:
+        mass_solar: 1.1e8
+        type: Supermassive
+- galaxy:
+    name: Whirlpool
+    type: Spiral
+    distance_mly: 23
+    discovery:
+      year: 1773
+      telescope: Leviathan of Parsonstown
+    stars:
+      count: 1e11
+      types: "O, B, A"
+      notable_stars:
+        - name: "NGC 5195 Star"
+          magnitude: 4.5
+          spectral_type: G2V
+        - name: "M51-ULS-1"
+          magnitude: 7.2
+          spectral_type: A5V
+    black_holes:
+      count: 12
+      largest:
+        mass_solar: 3.8e7
+        type: Stellar-mass

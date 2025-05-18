@@ -1,0 +1,33 @@
+expedition:
+  team:
+    name: "Interplanetary Exploration Corps"
+    members:
+      - full_name: "John Doe"
+        role: "Commander"
+        skills:
+          - Leadership
+          - Navigation
+          - Medical
+        equipment:
+          - item: "Spacesuit"
+            quantity: 1
+  destination:
+    planet: "Mars"
+    coordinates:
+      latitude: 45.1234
+      longitude: 90.5432
+  objectives:
+    primary: "Establish a research station"
+    secondary:
+      - "Collect soil samples"
+      - "Assess potential for human habitation"
+  timeline:
+    departure_date: "2023-09-15"
+    estimated_arrival: "2023-11-20"
+  resources:
+    supplies:
+      food_kg: 5000
+      water_liters: 3000
+    vehicles:
+      - "Lander"
+      - "Exploration Rover"

@@ -1,0 +1,56 @@
+
+{
+  "game": {
+    "title": "Eldoria: Chronicles of the Lost Realm",
+    "release_year": 2023,
+    "developer": {
+      "name": "Nexon Interactive",
+      "founded": 1998
+    },
+    "platforms": [
+      {
+        "name": "PC",
+        "release_date": "2023-11-15",
+        "features": [
+          {
+            "feature_name": "crossplay",
+            "is_multiplayer_supported": true
+          },
+          {
+            "feature_name": "VR support",
+            "is_multiplayer_supported": false
+          }
+        ]
+      }
+    ],
+    "genres": ["RPG", "Adventure", "Strategy"],
+    "ratings": {
+      "ESRB": "T",
+      "PEGI": "12"
+    },
+    "awards": [
+      {
+        "award_name": "Best RPG of the Year",
+        "year": 2023
+      },
+      {
+        "award_name": "Innovation in Gaming",
+        "year": 2022
+      }
+    ],
+    "characters": [
+      {
+        "name": "Kael",
+        "role": "protagonist"
+      },
+      {
+        "name": "Vex",
+        "role": "antagonist"
+      },
+      {
+        "name": "Lira",
+        "role": "companion"
+      }
+    ]
+  }
+}

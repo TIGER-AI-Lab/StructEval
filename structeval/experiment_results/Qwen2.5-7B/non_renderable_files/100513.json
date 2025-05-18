@@ -1,0 +1,44 @@
+python
+import toml
+import json
+
+# TOML code
+toml_code = """
+galactic_resort = { name = "Nebula Vista", operational_since = 3021, rating = 4.8 }
+
+[galactic_resort.location]
+planet = "Auroria"
+sector = "Zeta-5"
+galaxy = "Andromeda"
+
+# List of amenities
+amenities = ["Zero-G Pool", "Quantum Spa", "Holo-Theater", "Stellar Observatory"]
+
+# List of transport options
+transport_options = ["Teleportation Pad", "Shuttle Dock", "Wormhole Access"]
+
+[[galactic_resort.rooms]]
+type = "Celestial Suite"
+view = "Supernova"
+features = ["Anti-gravity bed", "Panoramic Dome", "Personal AI Concierge"]
+
+[[galactic_resort.rooms]]
+type = "Meteorite Cabin"
+view = "Asteroid Belt"
+features = ["Meteor Shower Simulator", "Cosmic Mini-bar"]
+
+[[galactic_resort.staff]]
+name = "Zyra Qel"
+species = "Andromedan"
+role = "Hospitality Director"
+
+[[galactic_resort.staff]]
+name = "Rex Volar"
+species = "Earthling"
+role = "Chief Engineer"
+"""
+
+# Convert TOML to JSON
+json_code = json.dumps(toml.loads(toml_code), indent=4)
+
+print(json_code)

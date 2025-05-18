@@ -1,0 +1,30 @@
+[recipe]
+title = "Spicy Mango Salsa Salmon"
+cuisine = "Fusion"
+servings = 2
+prep_time_minutes = 15
+cook_time_minutes = 20
+
+[recipe.author]
+name = "Alice Smith"
+
+[recipe.author.contact]
+email = "alice.smith@example.com"
+
+[[recipe.ingredients]]
+name = "Salmon Fillets"
+quantity = 2
+unit = "fillets"
+
+[[recipe.ingredients]]
+name = "Mango"
+quantity = 1
+unit = "medium"
+
+[[recipe.instructions]]
+step_number = 1
+description = "Preheat oven to 400Â°F (200Â°C). Place salmon fillets on a baking sheet lined with parchment paper."
+
+[[recipe.instructions]]
+step_number = 2
+description = "Dice the mango and combine with red onion, cilantro, jalapeÃ±o, lime juice, and a pinch of salt. Spoon the mango salsa over the salmon fillets and bake for 15-20 minutes, or until the salmon is cooked through."

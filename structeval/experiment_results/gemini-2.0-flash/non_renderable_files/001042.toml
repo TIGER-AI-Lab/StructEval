@@ -1,0 +1,33 @@
+[brewery]
+name = "Starlight Brewing Co."
+founded_year = 2015
+
+[brewery.location]
+city = "Portland"
+country = "USA"
+
+[brewery.flagship_beer]
+name = "Cosmic IPA"
+abv = 6.8
+
+[[brewery.flagship_beer.awards]]
+title = "Best IPA"
+year = 2018
+
+[[brewery.brewers]]
+name = "Alice Brewer"
+role = "Head Brewer"
+years_experience = 12
+
+[[brewery.brewers]]
+name = "Bob Hopsman"
+role = "Assistant Brewer"
+years_experience = 5
+
+[brewery.tours]
+available = true
+
+[[brewery.tours.schedule]]
+day = "Saturday"
+start_time = "14:00"
+language = "English"

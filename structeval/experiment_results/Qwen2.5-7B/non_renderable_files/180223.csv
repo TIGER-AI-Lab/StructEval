@@ -1,0 +1,14 @@
+
+import pandas as pd
+
+data = [
+    {"planet_name": "Zephyra", "distance_from_earth_ly": 124.7, "discovery_date": "2011-08-17", "primary_element": "Helium", "rings": True, "surface_temperature_c": -180},
+    {"planet_name": "Voraxus", "distance_from_earth_ly": 302.1, "discovery_date": "1998-04-03", "primary_element": "Iron", "rings": False, "surface_temperature_c": 67},
+    {"planet_name": "Lumora", "distance_from_earth_ly": 56.3, "discovery_date": "2020-12-29", "primary_element": "Carbon", "rings": True, "surface_temperature_c": 12},
+    {"planet_name": "Quellin", "distance_from_earth_ly": 214.0, "discovery_date": "2005-05-14", "primary_element": "Oxygen", "rings": False, "surface_temperature_c": -60},
+    {"planet_name": "Trionis", "distance_from_earth_ly": 411.8, "discovery_date": "2017-11-22", "primary_element": "Neon", "rings": True, "surface_temperature_c": -220},
+    {"planet_name": "Surnia", "distance_from_earth_ly": 88.2, "discovery_date": "2013-03-19", "primary_element": "Nitrogen", "rings": False, "surface_temperature_c": -100}
+]
+
+df = pd.DataFrame(data)
+df.to_csv('planets.csv', index=False)

@@ -1,0 +1,36 @@
+
+import yaml
+from xml.etree import ElementTree as ET
+
+def yaml_to_xml(yaml_data):
+    root = ET.Element("root")
+    space_station = ET.SubElement(root, "spaceStation")
+    space_station.set("name", yaml_data["spaceStation"]["name"])
+    modules = ET.SubElement(space_station, "modules")
+    for module in yaml_data["spaceStation"]["modules"]["module"]:
+        module_elem = ET.SubElement(modules, "module")
+        module_elem.set("name", module["name"])
+        scientists = ET.SubElement(module_elem, "scientists")
+        for scientist in module["scientists"]["scientist"]:
+            ET.SubElement(scientists, "scientist").text = scientist
+    return ET.tostring(root, encoding="unicode")
+
+yaml_data = yaml.safe_load("""
+spaceStation:
+  name: "Odyssey Orbital"
+  modules:
+    module:
+      - name: "Habitat"
+        scientists:
+          scientist:
+            - "Dr. Lila Moon"
+            - "Prof. Orion Vega"
+      - name: "Research"
+        scientists:
+          scientist:
+            - "Dr. Cassio Nova"
+            - "Dr. Stella Ray"
+""")
+
+xml_data = yaml_to_xml(yaml_data)
+print(xml_data)

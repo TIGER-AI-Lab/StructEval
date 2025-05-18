@@ -1,0 +1,25 @@
+artifact:
+  name: "Rosetta Stone"
+  origin:
+    civilization: "Ancient Egyptian"
+    era: "Ptolemaic Period"
+  composition:
+    materials:
+      - type: "Granodiorite"
+        percentage: 70
+      - type: "Basalt"
+        percentage: 30
+  dimensions:
+    height_cm: 112.3
+    width_cm: 75.7
+    depth_cm: 28.4
+  discovery:
+    location:
+      country: "Egypt"
+      site: "Fort Julien, Rashid (Rosetta)"
+    date: "1799-07-15"
+  features:
+    - description: "Contains inscriptions in three scripts: Hieroglyphic, Demotic, and Ancient Greek."
+      is_unique: true
+    - description: "Played a crucial role in deciphering Egyptian hieroglyphs."
+      is_unique: false

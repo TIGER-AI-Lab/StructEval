@@ -1,0 +1,45 @@
+
+[
+  {
+    "planet_name": "Aurelia",
+    "system": {
+      "star_name": "Helios",
+      "distance_from_earth_ly": 42,
+      "discovery_year": 2077,
+      "planets": [
+        {
+          "name": "Thalassa",
+          "type": "Oceanic",
+          "moons": 2,
+          "atmosphere": {
+            "composition": "[O2, N2, Ar]",
+            "pressure": 1.2,
+            "habitable": true
+          }
+        },
+        {
+          "name": "Pyra",
+          "type": "Rocky",
+          "moons": 0,
+          "atmosphere": {
+            "composition": "[CO2, N2]",
+            "pressure": 0.9,
+            "habitable": false
+          }
+        }
+      ],
+      "observation_missions": [
+        {
+          "mission_name": "StellarEye",
+          "year": 2080,
+          "instruments": "[Spectrometer, IR Camera]"
+        },
+        {
+          "mission_name": "DeepScan",
+          "year": 2083,
+          "instruments": "[Radio Array, Magnetometer]"
+        }
+      ]
+    }
+  }
+]

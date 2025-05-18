@@ -1,0 +1,56 @@
+{
+  "galactic_post_office": {
+    "name": "Andromeda Central",
+    "services": [
+      "mail",
+      "parcel",
+      "teleportation"
+    ],
+    "location": {
+      "sector": "Zeta-9",
+      "planet": "Nereid",
+      "coordinates": {
+        "x": 82.15,
+        "y": -140.7
+      }
+    },
+    "operating_hours": {
+      "open": "08:00",
+      "close": "22:00"
+    },
+    "staff": [
+      {
+        "name": "Zyra Nox",
+        "species": "Quarian",
+        "roles": [
+          "Postmaster",
+          "Quantum Handler"
+        ]
+      },
+      {
+        "name": "Grell Vex",
+        "species": "Andromedan",
+        "roles": [
+          "Courier"
+        ]
+      }
+    ],
+    "delivery_routes": [
+      {
+        "route_id": "A1",
+        "planets_covered": [
+          "Nereid",
+          "Talos IV",
+          "Vega Minor"
+        ]
+      },
+      {
+        "route_id": "B7",
+        "planets_covered": [
+          "Nereid",
+          "Omega Prime"
+        ]
+      }
+    ]
+  }
+}

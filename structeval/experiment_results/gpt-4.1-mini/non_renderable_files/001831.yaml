@@ -1,0 +1,45 @@
+
+exhibit:
+  title: "Impressionist Masterpieces"
+  curator:
+    name: "Dr. Emily Carter"
+    contact:
+      email: "emily.carter@museum.org"
+      phone: "+1-202-555-0147"
+  schedule:
+    opening_date: "2024-09-15"
+    closing_date: "2025-01-15"
+  artworks:
+    - id: "ART001"
+      artist: "Claude Monet"
+      title: "Water Lilies"
+      year: 1916
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 100.0
+        width_cm: 200.0
+      provenance:
+        - owner: "The National Gallery"
+          acquisition_date: "1920-05-10"
+    - id: "ART002"
+      artist: "Edgar Degas"
+      title: "The Ballet Class"
+      year: 1874
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 85.0
+        width_cm: 75.0
+      provenance:
+        - owner: "Louvre Museum"
+          acquisition_date: "1905-11-22"
+    - id: "ART003"
+      artist: "Pierre-Auguste Renoir"
+      title: "Dance at Le Moulin de la Galette"
+      year: 1876
+      medium: "Oil on canvas"
+      dimensions:
+        height_cm: 131.0
+        width_cm: 175.0
+      provenance:
+        - owner: "MusÃ©e d'Orsay"
+          acquisition_date: "1929-03-15"

@@ -1,0 +1,29 @@
+artifact:
+  metadata:
+    name: "Ancient Artifact X"
+    discovery_date: "2021-07-15"
+    origin_civilization: "Unknown Civilization"
+    current_location: "Smithsonian Museum"
+  dimensions:
+    length_cm: 12.5
+    width_cm: 8.3
+    height_cm: 3.7
+  specifications:
+    materials: ["Bronze", "Gold", "Lapis Lazuli"]
+    age_years: 2500
+  analysis:
+    hypotheses:
+      - summary: "This artifact may have been used as a ceremonial object."
+        confidence_score: 0.85
+      - summary: "It could also be a tool for astronomical calculations."
+        confidence_score: 0.65
+    researchers:
+      - name: "Dr. Jane Smith"
+        institution: "University of Oxford"
+        contribution: "Conducted initial analysis and hypothesis formulation."
+      - name: "Dr. John Doe"
+        institution: "Harvard University"
+        contribution: "Provided historical context and additional hypotheses."
+  related_artifacts:
+    - "Artifact Y"
+    - "Artifact Z"

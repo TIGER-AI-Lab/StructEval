@@ -1,0 +1,39 @@
+{
+  "name": "Artifact-1234",
+  "origin": {
+    "period": "Prehistoric",
+    "region": "Mesoamerica"
+  },
+  "materials": [
+    {
+      "type": "Stone",
+      "provenance": "Local"
+    },
+    {
+      "type": "Metal",
+      "provenance": "Trade"
+    }
+  ],
+  "dimensions": {
+    "height_cm": 15.5,
+    "width_cm": 10.2,
+    "depth_cm": 5.8
+  },
+  "features": [
+    {
+      "description": "Carved human figure",
+      "condition": "Good"
+    },
+    {
+      "description": "Inlaid with precious stones",
+      "condition": "Fair"
+    }
+  ],
+  "discovery": {
+    "location": {
+      "latitude": 19.4321,
+      "longitude": -99.0123
+    },
+    "date_found": "2021-07-15"
+  }
+}

@@ -1,0 +1,34 @@
+
+exhibit:
+  title: "Masterpieces of the Renaissance"
+  curator:
+    name: "Dr. Emily Johnson"
+    contact:
+      email: "emily.johnson@museum.org"
+      phone: "+1-234-567-8901"
+  artworks:
+    - id: "art001"
+      artist: "Leonardo da Vinci"
+      title: "Mona Lisa"
+      year: 1503
+      medium: "Oil on poplar panel"
+      dimensions:
+        height_cm: 77
+        width_cm: 53
+      provenance:
+        - owner: "Louvre Museum"
+          acquisition_date: "1797-08-01"
+    - id: "art002"
+      artist: "Michelangelo"
+      title: "David"
+      year: 1504
+      medium: "Marble"
+      dimensions:
+        height_cm: 517
+        width_cm: 199
+      provenance:
+        - owner: "Accademia di Belle Arti"
+          acquisition_date: "1504-01-01"
+  schedule:
+    opening_date: "2023-11-01"
+    closing_date: "2024-02-28"

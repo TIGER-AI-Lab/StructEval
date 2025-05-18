@@ -1,0 +1,35 @@
+{
+  "artifact": {
+    "name": "Example Artifact Name",
+    "origin": {
+      "civilization": "Civilization Name",
+      "epoch": "Historical Period"
+    },
+    "materials": [
+      {
+        "type": "Primary Material",
+        "provenance": "Source of Primary Material"
+      },
+      {
+        "type": "Additional Material",
+        "provenance": "Source of Additional Material"
+      }
+    ],
+    "dimensions": {
+      "height_cm": 100,
+      "width_cm": 50,
+      "depth_cm": 25
+    },
+    "features": [
+      {
+        "description": "Notable Feature Description",
+        "estimated_age_years": 2000
+      }
+    ],
+    "inscriptions": {
+      "language": "Language Name",
+      "text": "Original Inscription Text",
+      "translation": "English Translation of Inscription"
+    }
+  }
+}

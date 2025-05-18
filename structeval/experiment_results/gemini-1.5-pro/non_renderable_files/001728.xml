@@ -1,0 +1,77 @@
+<recipe>
+  <title>Galactic Garlic Noodles</title>
+  <author>
+    <name>Commander Corvus</name>
+    <role>Galactic Chef</role>
+  </author>
+  <ingredients>
+    <ingredient>
+      <name>Nebula Noodles</name>
+      <quantity>250</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Cosmic Garlic</name>
+      <quantity>6</quantity>
+      <unit>cloves</unit>
+    </ingredient>
+    <ingredient>
+      <name>Asteroid Butter</name>
+      <quantity>50</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Stardust Parmesan</name>
+      <quantity>100</quantity>
+      <unit>grams</unit>
+    </ingredient>
+    <ingredient>
+      <name>Void Salt</name>
+      <quantity>0.5</quantity>
+      <unit>teaspoon</unit>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <instruction>Boil Nebula Noodles according to package directions.</instruction>
+      <duration_minutes>5</duration_minutes>
+      <tools>Pot, Strainer</tools>
+    </step>
+    <step>
+      <instruction>Mince Cosmic Garlic.</instruction>
+      <duration_minutes>2</duration_minutes>
+      <tools>Knife, Cutting Board</tools>
+    </step>
+    <step>
+      <instruction>Melt Asteroid Butter in a pan.</instruction>
+      <duration_minutes>3</duration_minutes>
+      <tools>Pan</tools>
+    </step>
+    <step>
+      <instruction>Add minced Cosmic Garlic to melted butter and sautÃ© until fragrant.</instruction>
+      <duration_minutes>2</duration_minutes>
+      <tools>Pan, Spatula</tools>
+    </step>
+    <step>
+      <instruction>Add cooked Nebula Noodles to the pan and toss with garlic butter.</instruction>
+      <duration_minutes>1</duration_minutes>
+      <tools>Pan, Tongs</tools>
+    </step>
+    <step>
+      <instruction>Add Stardust Parmesan and Void Salt. Toss until cheese is melted and noodles are coated.</instruction>
+      <duration_minutes>2</duration_minutes>
+      <tools>Pan, Tongs</tools>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>450</calories>
+    <protein_grams>15</protein_grams>
+    <fat_grams>25</fat_grams>
+    <carbohydrates_grams>50</carbohydrates_grams>
+  </nutrition>
+  <metadata>
+    <cuisine>Cosmic</cuisine>
+    <difficulty>Easy</difficulty>
+    <published_date>2023-10-27</published_date>
+  </metadata>
+</recipe>

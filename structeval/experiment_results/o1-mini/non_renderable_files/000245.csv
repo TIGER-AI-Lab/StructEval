@@ -1,0 +1,78 @@
+
+import csv
+import uuid
+from datetime import datetime
+
+def extract_artifact_details(text):
+    # Placeholder for extraction logic
+    # Replace the following sample data with actual extraction code
+    artifact_id = str(uuid.uuid4())
+    artifact_name = "Sample Artifact"
+    origin_civilization = "Ancient Civilization"
+    discovery_date = "2023-10-10"
+    material_composition = "Stone;Gold"
+    estimated_age_years = 2500
+    current_location = "National Museum"
+    condition_status = "intact"
+    dimensions_height_cm = 50.0
+    dimensions_width_cm = 30.0
+    dimensions_depth_cm = 20.0
+    notable_features = "Intricate carvings;Symbolic motifs"
+    restoration_history = "none"
+    associated_myths = "Legend of the Eternal Flame"
+    exhibit_status = "on public display"
+    
+    return [
+        artifact_id,
+        artifact_name,
+        origin_civilization,
+        discovery_date,
+        material_composition,
+        estimated_age_years,
+        current_location,
+        condition_status,
+        dimensions_height_cm,
+        dimensions_width_cm,
+        dimensions_depth_cm,
+        notable_features,
+        restoration_history,
+        associated_myths,
+        exhibit_status
+    ]
+
+def write_to_csv(artifact_details, filename='artifacts.csv'):
+    header = [
+        "artifact_id",
+        "artifact_name",
+        "origin_civilization",
+        "discovery_date",
+        "material_composition",
+        "estimated_age_years",
+        "current_location",
+        "condition_status",
+        "dimensions_height_cm",
+        "dimensions_width_cm",
+        "dimensions_depth_cm",
+        "notable_features",
+        "restoration_history",
+        "associated_myths",
+        "exhibit_status"
+    ]
+    
+    file_exists = False
+    try:
+        with open(filename, 'r', newline='', encoding='utf-8') as csvfile:
+            file_exists = True
+    except FileNotFoundError:
+        file_exists = False
+    
+    with open(filename, 'a', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+        if not file_exists:
+            writer.writerow(header)
+        writer.writerow(artifact_details)
+
+# Example usage
+sample_text = "Description of the newly discovered artifact..."
+artifact_details = extract_artifact_details(sample_text)
+write_to_csv(artifact_details)

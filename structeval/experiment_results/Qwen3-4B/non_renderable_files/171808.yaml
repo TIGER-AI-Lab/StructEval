@@ -1,0 +1,18 @@
+
+galacticZoo:
+  - species:
+      name: Quazarion
+      originPlanet: Zyphos
+      diet:
+        type: Herbivore
+        favoriteFoods:
+          - Glow Ferns
+          - Starlight Berries
+  - species:
+      name: Luminoid
+      originPlanet: Orionis
+      diet:
+        type: Carnivore
+        favoriteFoods:
+          - Solar Fish
+          - Comet Crabs

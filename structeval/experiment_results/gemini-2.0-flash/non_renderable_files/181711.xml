@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<galacticZoo>
+  <species>
+    <name>Luminoct</name>
+    <originPlanet>Nebulon-5</originPlanet>
+    <features>
+      <feature>Bioluminescent fur</feature>
+      <feature>Telepathic communication</feature>
+    </features>
+  </species>
+  <species>
+    <name>Quorblin</name>
+    <originPlanet>Xythera</originPlanet>
+    <features>
+      <feature>Triple eyes</feature>
+      <feature>Sonic screech</feature>
+    </features>
+  </species>
+</galacticZoo>

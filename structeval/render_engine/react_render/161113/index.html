@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 161113</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  const [totalEmployees, setTotalEmployees] = useState(342);
+  const [currentProjects, setCurrentProjects] = useState(28);
+  const [openPositions, setOpenPositions] = useState(15);
+  const [financials, setFinancials] = useState([
+    { name: 'Q1', revenue: 2.4, expenses: 1.8, profit: 0.6 },
+    { name: 'Q2', revenue: 3.2, expenses: 2.1, profit: 1.1 },
+    { name: 'Q3', revenue: 2.9, expenses: 1.9, profit: 1.0 },
+    { name: 'Q4', revenue: 3.8, expenses: 2.3, profit: 1.5 }
+  ]);
+  const [events, setEvents] = useState([
+    {
+      date: 'June 15, 2023',
+      title: 'Quarterly Review Meeting',
+      description: 'All department heads will present their quarterly reports.'
+    },
+    {
+      date: 'July 2, 2023',
+      title: 'Company Picnic',
+      description: 'Annual gathering at Sunshine Park for all employees and their families.'
+    },
+    {
+      date: 'July 25, 2023',
+      title: 'New Product Launch',
+      description: 'Official launch of our latest product line.'
+    }
+  ]);
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  const [lastUpdated, setLastUpdated] = useState('May 12, 2023');
+
+  useEffect(() => {
+    const updateDashboard = () => {
+      console.log('Dashboard updated');
+      // Additional update logic would go here
+    };
+    updateDashboard();
+  }, []);
+
+
+  return (
+    <div id="app">
+      <header>
+        <h1>Company Dashboard</h1>
+        <p>Welcome to the corporate overview. This page provides all the essential metrics and departmental details.</p>
+      </header>
+      <section>
+        <h2>Overview</h2>
+        <div className="info-panel">
+          <div className="info-item">
+            <span className="label">Total Employees:</span>
+            <span>{totalEmployees}</span>
+          </div>
+          <div className="info-item">
+            <span className="label">Current Projects:</span>
+            <span>{currentProjects}</span>
+          </div>
+          <div className="info-item">
+            <span className="label">Open Positions:</span>
+            <span>{openPositions}</span>
+          </div>
+        </div>
+        <article>
+          <h3>Company News</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in mauris vitae odio dictum
+            suscipit. Nulla facilisi. Sed vitae euismod nisi. Cras bibendum, massa at suscipit placerat, nulla justo
+            lacinia enim, ut fermentum justo urna a metus.
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2>Department Details</h2>
+        <div className="department">
+          <h3>Human Resources</h3>
+          <ul>
+            <li>Recruitment: 5 open roles</li>
+            <li>New Hires: 7 in the last month</li>
+            <li>Training Sessions: 3 upcoming seminars</li>
+          </ul>
+        </div>
+        <div className="department">
+          <h3>Engineering</h3>
+          <ul>
+            <li>Software Projects: 12 active projects</li>
+            <li>Hardware Developments: 4 prototypes in production</li>
+            <li>QA: 8 test cases in review</li>
+          </ul>
+        </div>
+        <div className="department">
+          <h3>Marketing</h3>
+          <ul>
+            <li>Campaigns: 7 upcoming events</li>
+            <li>Lead Generation: 15 ongoing leads</li>
+            <li>Brand Strategy: Updated for Q3</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>Financial Summary</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Quarter</th>
+              <th>Revenue</th>
+              <th>Expenses</th>
+              <th>Profit</th>
+            </tr>
+          </thead>
+          <tbody>
+            {financials.map((quarter, index) => (
+              <tr key={index}>
+                <td>{quarter.name}</td>
+                <td>${quarter.revenue}M</td>
+                <td>${quarter.expenses}M</td>
+                <td>${quarter.profit}M</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Upcoming Events</h2>
+        <ol>
+          {events.map((event, index) => (
+            <li key={index}>
+              <strong>{event.date}</strong> - {event.title}
+              <p>{event.description}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+      <footer>
+        <p>&copy; {currentYear} Corporate Dashboard. All rights reserved.</p>
+        <p>Last Updated: {lastUpdated}</p>
+      </footer>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

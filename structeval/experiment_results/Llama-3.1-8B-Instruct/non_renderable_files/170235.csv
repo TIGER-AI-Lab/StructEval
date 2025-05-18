@@ -1,0 +1,59 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<stars>
+  <star>
+    <Constellation>Orion</Constellation>
+    <DiscoveryYear>1781</DiscoveryYear>
+    <StarType>Red Giant</StarType>
+    <DistanceLY>642.5</DistanceLY>
+    <HasExoplanets>false</HasExoplanets>
+    <PeakMagnitude>0.5</PeakMagnitude>
+    <LastObserved>2023-11-12</LastObserved>
+  </star>
+  <star>
+    <Constellation>Lyra</Constellation>
+    <DiscoveryYear>1850</DiscoveryYear>
+    <StarType>White Dwarf</StarType>
+    <DistanceLY>25.0</DistanceLY>
+    <HasExoplanets>true</HasExoplanets>
+    <PeakMagnitude>0.03</PeakMagnitude>
+    <LastObserved>2024-02-09</LastObserved>
+  </star>
+  <star>
+    <Constellation>Draco</Constellation>
+    <DiscoveryYear>1932</DiscoveryYear>
+    <StarType>Neutron Star</StarType>
+    <DistanceLY>3000.2</DistanceLY>
+    <HasExoplanets>false</HasExoplanets>
+    <PeakMagnitude>1.2</PeakMagnitude>
+    <LastObserved>2022-08-27</LastObserved>
+  </star>
+  <star>
+    <Constellation>Centaurus</Constellation>
+    <DiscoveryYear>2001</DiscoveryYear>
+    <StarType>Binary System</StarType>
+    <DistanceLY>4.37</DistanceLY>
+    <HasExoplanets>true</HasExoplanets>
+    <PeakMagnitude>-0.27</PeakMagnitude>
+    <LastObserved>2023-04-18</LastObserved>
+  </star>
+  <star>
+    <Constellation>Pegasus</Constellation>
+    <DiscoveryYear>1670</DiscoveryYear>
+    <StarType>Blue Supergiant</StarType>
+    <DistanceLY>1200.0</DistanceLY>
+    <HasExoplanets>false</HasExoplanets>
+    <PeakMagnitude>2.4</PeakMagnitude>
+    <LastObserved>2022-12-01</LastObserved>
+  </star>
+  <star>
+    <Constellation>Aquila</Constellation>
+    <DiscoveryYear>1995</DiscoveryYear>
+    <StarType>Pulsar</StarType>
+    <DistanceLY>5200.7</DistanceLY>
+    <HasExoplanets>true</HasExoplanets>
+    <PeakMagnitude>1.9</PeakMagnitude>
+    <LastObserved>2023-07-15</LastObserved>
+  </star>
+</stars>
+

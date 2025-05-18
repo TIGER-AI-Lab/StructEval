@@ -1,0 +1,38 @@
+
+{
+  "artifact": {
+    "name": "The Serpentine Vase",
+    "origin": {
+      "culture": "Ancient Mesopotamian",
+      "period": "Middle Bronze Age"
+    },
+    "materials": {
+      "primary": "Ceramic",
+      "secondary": "Gold Inlay"
+    },
+    "dimensions": {
+      "height_cm": 45.0,
+      "width_cm": 30.0,
+      "depth_cm": 0
+    },
+    "location": {
+      "current_museum": "National Museum of Archaeology",
+      "room": "Gallery 5B"
+    },
+    "provenance": {
+      "history": [
+        {
+          "event": "discovered",
+          "date": "1923-05-14",
+          "location": "Tell Asmar, Iraq"
+        }
+      ]
+    },
+    "images": [
+      {
+        "url": "https://www.nationalmuseumarchaeology/images/serpentine_vase.jpg",
+        "description": "Front view of the Serpentine Vase showcasing intricate gold inlays."
+      }
+    ]
+  }
+}

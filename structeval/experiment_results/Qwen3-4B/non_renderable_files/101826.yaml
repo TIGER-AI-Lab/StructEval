@@ -1,0 +1,33 @@
+
+galactic_cafe:
+  name: "Nebula Brew House"
+  established_year: 2457
+  has_zero_gravity_zone: true
+  location:
+    planet: "Zyphron"
+    city: "Starlight Port"
+    coordinates:
+      latitude: 42.7
+      longitude: -13.2
+  menu:
+    drinks:
+      - name: "Cosmic Latte"
+        ingredients: ["stellar milk", "moon sugar", "asteroid espresso"]
+        price: 7.5
+      - name: "Red Dwarf Tea"
+        ingredients: ["solar leaves", "hydrogen honey"]
+        price: 5.0
+    snacks:
+      - name: "Meteorite Muffin"
+        allergens: ["gluten"]
+        price: 3.25
+  staff:
+    - name: "Zara Quark"
+      species: "Andromedan"
+      role: "Barista"
+    - name: "Lumo Flux"
+      species: "Human"
+      role: "Chef"
+  open_hours:
+    weekdays: "08:00-22:00"
+    weekends: "10:00-02:00"

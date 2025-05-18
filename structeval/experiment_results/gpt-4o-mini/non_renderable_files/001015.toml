@@ -1,0 +1,40 @@
+
+artifact = { 
+    title = "The Celestial Globe",
+    year_created = 1595,
+    dimensions = { 
+        height_cm = 30.5, 
+        width_cm = 25.0 
+    },
+    creator = { 
+        name = "Johannes Kepler", 
+        affiliation = "Imperial Court of Rudolf II" 
+    },
+    materials = [
+        { 
+            type = "Brass", 
+            source = "Germany" 
+        },
+        { 
+            type = "Wood", 
+            source = "Local Forest" 
+        }
+    ],
+    exhibitions = [
+        { 
+            name = "Wonders of the Universe", 
+            location = "Vienna Museum of History", 
+            date_range = { 
+                start = "2022-05-01", 
+                end = "2022-09-30" 
+            } 
+        }
+    ],
+    provenance = { 
+        previous_owners = [
+            "Emperor Rudolf II",
+            "Count Hans von Hohenberg",
+            "Private Collector in Prague"
+        ] 
+    }
+}

@@ -1,0 +1,30 @@
+
+creature:
+  name: Zephyra
+  species: Lumisylph
+  age: 120
+  habitat:
+    type: forest
+    location: Whispering Glade, Eastern Verdant Woods
+    features:
+      - dense canopy with bioluminescent flora
+      - mist-covered underbrush
+      - crystal-clear streams
+  abilities:
+    - name: Lightweaving
+      description: The ability to manipulate and bend light to create illusions or become invisible.
+      power_level: 9
+    - name: Sonic Bloom
+      description: Emits a resonant frequency that can calm aggressive creatures or disorient predators.
+      power_level: 6
+  diet:
+    primary_food: nectar from luminescent flowers
+    secondary_foods:
+      - small insects
+      - dew drops
+    feeding_times:
+      - "05:30"
+      - "18:45"
+  social_behavior:
+    group_size: 12
+    hierarchy: alpha-led

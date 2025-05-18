@@ -1,0 +1,37 @@
+
+ecosystem = { 
+    name = "Emerald Rainforest", 
+    location = { 
+        latitude = -3.4653, 
+        longitude = -62.2159 
+    }, 
+    climate = { 
+        type = "tropical", 
+        average_temperature_c = 27.5, 
+        annual_rainfall_mm = 3000 
+    }, 
+    species = [ 
+        { 
+            common_name = "Golden Tree Frog", 
+            scientific_name = "Phyllomedusa hypochondrialis", 
+            population_estimate = 15000, 
+            conservation_status = "Least Concern", 
+            notable_characteristics = [ 
+                "Vibrant golden coloration", 
+                "Ability to change skin color", 
+                "Nocturnal behavior" 
+            ] 
+        }, 
+        { 
+            common_name = "Jaguar", 
+            scientific_name = "Panthera onca", 
+            population_estimate = 2000, 
+            conservation_status = "Near Threatened", 
+            notable_characteristics = [ 
+                "Powerful build and strong jaws", 
+                "Solitary and territorial", 
+                "Excellent swimmer" 
+            ] 
+        } 
+    ] 
+}

@@ -1,0 +1,63 @@
+<recipe>
+    <title>Spaghetti Bolognese</title>
+    <author>
+        <name>John Doe</name>
+        <contact>
+            <email>johndoe@example.com</email>
+            <phone>+1234567890</phone>
+        </contact>
+    </author>
+    <ingredients>
+        <ingredient>
+            <name>Spaghetti</name>
+            <quantity>200</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Ground Beef</name>
+            <quantity>300</quantity>
+            <unit>grams</unit>
+        </ingredient>
+        <ingredient>
+            <name>Tomato Sauce</name>
+            <quantity>400</quantity>
+            <unit>ml</unit>
+        </ingredient>
+    </ingredients>
+    <instructions>
+        <step>
+            <order>1</order>
+            <description>Boil the spaghetti in salted water until al dente.</description>
+            <duration>
+                <minutes>10</minutes>
+            </duration>
+        </step>
+        <step>
+            <order>2</order>
+            <description>Cook the ground beef in a pan until browned.</description>
+            <duration>
+                <minutes>8</minutes>
+            </duration>
+        </step>
+        <step>
+            <order>3</order>
+            <description>Add the tomato sauce to the beef and simmer.</description>
+            <duration>
+                <minutes>15</minutes>
+            </duration>
+        </step>
+    </instructions>
+    <nutrition>
+        <calories>600</calories>
+        <fat>
+            <grams>20</grams>
+            <type>unsaturated</type>
+        </fat>
+        <carbohydrates>
+            <grams>75</grams>
+        </carbohydrates>
+        <protein>
+            <grams>30</grams>
+        </protein>
+    </nutrition>
+</recipe>

@@ -1,0 +1,30 @@
+
+[biome]
+name = "Verdant Expanse"
+climate = "temperate"
+average_temperature_celsius = 15.5
+
+[biome.flora]
+[[flora]]
+species = "Sylvan Fern"
+population_estimate = 25000
+[flora.edibility]
+is_edible = true
+toxicity_level = "none"
+
+[biome.fauna]
+[[fauna]]
+species = "Glowwing Stag"
+average_weight_kg = 12.3
+diet = "herbivore"
+conservation_status = "least concern"
+
+[biome.water_sources]
+[[water_sources]]
+type = "spring"
+freshwater = true
+average_depth_m = 2.4
+
+[biome.geology]
+dominant_rock_type = "granite"
+mineral_resources = ["quartz", "mica", "iron ore"]

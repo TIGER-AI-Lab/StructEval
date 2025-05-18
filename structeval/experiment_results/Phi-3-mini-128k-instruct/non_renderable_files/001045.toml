@@ -1,0 +1,50 @@
+biome = [
+    {
+        name = "Emerald Canopy",
+        climate = "tropical",
+        average_temperature_celsius = 25,
+        flora = [
+            {
+                species = "Verdantium lushus",
+                population_estimate = 15000,
+                edibility = {
+                    is_edible = true,
+                    toxicity_level = "none"
+                }
+            },
+            {
+                species = "Crimson Orchid",
+                population_estimate = 8000,
+                edibility = {
+                    is_edible = false,
+                    toxicity_level = "high"
+                }
+            }
+        ],
+        fauna = [
+            {
+                species = "Sapphire Parrot",
+                average_weight_kg = 0.5,
+                diet = "omnivore",
+                conservation_status = "least concern"
+            },
+            {
+                species = "Emerald Tiger",
+                average_weight_kg = 120,
+                diet = "carnivore",
+                conservation_status = "endangered"
+            }
+        ],
+        water_sources = [
+            {
+                type = "river",
+                freshwater = true,
+                average_depth_m = 5
+            }
+        ],
+        geology = {
+            dominant_rock_type = "limestone",
+            mineral_resources = ["calcite", "gypsum"]
+        }
+    }
+]

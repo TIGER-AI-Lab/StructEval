@@ -1,0 +1,28 @@
+planet:
+  name: "Zyphora"
+  discovery_year: 2347
+  moons:
+    - "Lunara"
+    - "Ecliptix"
+    - "Thalos"
+  atmosphere:
+    composition:
+      - "argon"
+      - "xenon"
+      - "neon"
+    pressure: 0.7
+  missions:
+    - name: "Voyager Omega"
+      year: 2350
+      success: true
+      crew:
+        - name: "Dr. Nira Voss"
+          role: "Commander"
+        - name: "Eli Morn"
+          role: "Engineer"
+    - name: "Stellar Quest"
+      year: 2355
+      success: false
+      crew:
+        - name: "Ravi Kint"
+          role: "Pilot"

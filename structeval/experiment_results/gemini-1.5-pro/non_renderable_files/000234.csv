@@ -1,0 +1,6 @@
+artifact_id,artifact_name,artifact_type,discovery_site,discovery_country,discovery_year,estimated_age_years,material,current_location,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,condition_status,associated_culture,notable_features
+A123,Terracotta Army Soldier,Statue,Emperor Qin Shi Huang's Mausoleum,China,1974,2200,Terracotta,Mausoleum of the First Qin Emperor,180,60,60,Fragmented,Qin Dynasty,Detailed armor and weaponry
+B456,Rosetta Stone,Stele,Rashid (Rosetta),Egypt,1799,2200,Granodiorite,British Museum,112.3,75.7,28.4,Intact,Ptolemaic Kingdom,Inscriptions in three scripts
+C789,Venus de Milo,Statue,Milos,Greece,1820,2100,Marble,Louvre Museum,203,,,Damaged,Hellenistic Greece,Missing arms
+D012,Antikythera Mechanism,Clockwork device,Antikythera shipwreck,Greece,1901,2200,Bronze,National Archaeological Museum,Athens,34,18,9,Fragmented,Ancient Greece,Complex gear system
+E345,Tutankhamun's Mask,Funerary mask,Valley of the Kings,Egypt,1922,3300,Gold,Egyptian Museum,Cairo,54,39.3,49,Intact,Eighteenth Dynasty,Inlaid with semi-precious stones

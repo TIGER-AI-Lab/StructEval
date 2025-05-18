@@ -1,0 +1,48 @@
+{
+  "planet": {
+    "name": "Zyphora",
+    "atmosphere": {
+      "composition": [
+        "Argon",
+        "Methane",
+        "Oxygen"
+      ],
+      "pressure": 2.3,
+      "layers": [
+        {
+          "name": "Troposphere",
+          "altitude_range": "0-15km"
+        },
+        {
+          "name": "Stratosphere",
+          "altitude_range": "15-60km"
+        }
+      ]
+    },
+    "moons": [
+      {
+        "name": "Lumina",
+        "diameter_km": 3200,
+        "has_volcanoes": true
+      },
+      {
+        "name": "Umbra",
+        "diameter_km": 1700,
+        "has_volcanoes": false
+      }
+    ],
+    "discovery": {
+      "year": 2478,
+      "method": "Gravitational Microlensing",
+      "discovered_by": "Dr. Nira Voss"
+    },
+    "habitability": {
+      "supports_life": false,
+      "surface_temperature_c": -120,
+      "water_sources": [
+        "Subsurface ice",
+        "Atmospheric vapor"
+      ]
+    }
+  }
+}

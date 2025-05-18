@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 041142</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Structured Layout Test</h1>
+        <nav>
+          <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#data">Data Overview</a></li>
+            <li><a href="#summary">Summary</a></li>
+          </ul>
+        </nav>
+        <hr />
+      </header>
+
+      <main>
+        <section id="introduction">
+          <h2>Introduction</h2>
+          <p>
+            Welcome to the Structured Layout Test Page. This page is designed to test visual conversion,
+            ensuring clear hierarchy and content organization. The following sections demonstrate various HTML
+            elements such as headings, lists, tables, and articles.
+          </p>
+        </section>
+
+        <section id="features">
+          <h2>Features</h2>
+          <article>
+            <h3>Key Structural Elements</h3>
+            <p>The page makes use of a variety of structural HTML elements including:</p>
+            <ul>
+              <li>Headings and Sub-headings</li>
+              <li>Paragraphs of Informative Text</li>
+              <li>Ordered and Unordered Lists</li>
+              <li>Definition Lists for Labeled Values</li>
+              <li>Tables with Labeled Data</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Accessibility</h3>
+            <p>
+              All sections are clearly labeled to support both screen readers and visual layout tasks. This
+              emphasizes the importance of a well-organized document.
+            </p>
+            <dl>
+              <dt>Navigation</dt>
+              <dd>A clear menu at the top links to all major sections of the page.</dd>
+              <dt>Content</dt>
+              <dd>Hierarchical headings structure the visible content effectively.</dd>
+            </dl>
+          </article>
+        </section>
+
+        <section id="details">
+          <h2>Details</h2>
+          <article>
+            <h3>Content Structure</h3>
+            <p>
+              The intention of this test page is to provide a realistic example of a multi-sectioned HTML
+              document. Below is a step-by-step breakdown of the important parts:
+            </p>
+            <ol>
+              <li>Header and Navigation Menu</li>
+              <li>Main Content Sections with Subsections</li>
+              <li>Organized Lists and Definition Lists</li>
+              <li>Data Table Displaying Information</li>
+              <li>Footer with Copyright Information</li>
+            </ol>
+          </article>
+
+          <article>
+            <h3>Additional Information</h3>
+            <p>
+              Each article within the sections is designed to demonstrate deep hierarchy and precise formatting for
+              clear visual conversion. Consistent use of white space and semantic tags ensure the page is both
+              valid HTML and easy to understand.
+            </p>
+          </article>
+        </section>
+
+        <section id="data">
+          <h2>Data Overview</h2>
+          <table border="1" cellPadding="5" cellSpacing="0">
+            <caption>Summary Table of Key Values</caption>
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Parameter 1</td>
+                <td>Defines the layout structure.</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Parameter 2</td>
+                <td>Controls navigation links.</td>
+                <td>Enabled</td>
+              </tr>
+              <tr>
+                <td>Parameter 3</td>
+                <td>Handles content sections.</td>
+                <td>Operational</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="summary">
+          <h2>Summary</h2>
+          <p>
+            In conclusion, this test page provides a balanced mix of structural elements needed for visual conversion
+            tasks. All HTML components have been carefully arranged to offer a comprehensive and easily navigable layout.
+          </p>
+          <div>
+            <h4>Key Takeaways</h4>
+            <ul>
+              <li>Semantic tags enhance accessibility.</li>
+              <li>Properly structured content improves readability.</li>
+              <li>The layout demonstrates both hierarchy and visual clarity.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <hr />
+        <p>Â© 2023 Structured Layout Example. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+
+[festival]
+name = "Global Harmony Music Fest"
+year = 2024
+
+[festival.location]
+city = "Barcelona"
+country = "Spain"
+
+[festival.organizer]
+name = "Harmony Events Ltd."
+
+[festival.organizer.contact]
+email = "info@harmonyevents.com"
+phone = "+34-912-345-678"
+
+[[festival.events]]
+title = "Opening Night Gala"
+date = "2024-07-10"
+performers = ["Luna Waves", "The Echoes", "DJ Solaris"]
+
+[festival.events.tickets]
+price = 75.50
+available = 1200
+types = ["VIP", "General", "Student"]
+
+[[festival.events]]
+title = "Sunset Acoustic Session"
+performers = ["Mira Sol", "The Quiet Ones", "Acoustic Pulse"]

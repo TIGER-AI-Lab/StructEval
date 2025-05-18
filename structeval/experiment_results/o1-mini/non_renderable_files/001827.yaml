@@ -1,0 +1,49 @@
+
+expedition:
+  team:
+    name: "Stellar Pioneers Alpha"
+    members:
+      - full_name: "Dr. Elena Martinez"
+        role: "Commander"
+        skills:
+          - "Leadership"
+          - "Astrophysics"
+          - "Navigation"
+        equipment:
+          - item: "Laser Cutter"
+            quantity: 2
+          - item: "Portable Lab"
+            quantity: 1
+      - full_name: "Captain Liam O'Connor"
+        role: "Pilot"
+        skills:
+          - "Aeronautics"
+          - "Mechanics"
+          - "Spacecraft Operation"
+        equipment:
+          - item: "Flight Suit"
+            quantity: 3
+          - item: "Toolkit"
+            quantity: 1
+  destination:
+    planet: "Astra Nova"
+    coordinates:
+      latitude: 23.5
+      longitude: 45.7
+  objectives:
+    primary: "Analyze the atmospheric composition for signs of habitability."
+    secondary:
+      - "Map the surface geology."
+      - "Deploy research drones."
+      - "Collect soil samples."
+  timeline:
+    departure_date: "2025-06-15"
+    estimated_arrival: "2025-12-20"
+  resources:
+    supplies:
+      food_kg: 1500.5
+      water_liters: 3000.75
+    vehicles:
+      - "Lunar Rover"
+      - "Habitation Module"
+      - "Solar Collector"

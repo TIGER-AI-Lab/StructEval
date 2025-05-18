@@ -1,0 +1,13 @@
+
+library:
+  section:
+    - name: Cryptozoology
+      books:
+        - title: The Loch Ness Mystery
+          author: Dr. Ada Ripple
+        - title: Chasing Chupacabra
+          author: Sammy Shadows
+    - name: Time Travel Diaries
+      books:
+        - title: The Paradox Papers
+          author: Prof. Chronos

@@ -1,0 +1,29 @@
+
+<planetaryEcosystem>
+    <planet>
+        <name>Veridion</name>
+        <type>terrestrial</type>
+        <orbitalPeriod>365</orbitalPeriod>
+        <atmosphere>
+            <composition>Nitrogen, Oxygen, Argon</composition>
+            <pressure>1.0</pressure>
+            <temperature>288</temperature>
+        </atmosphere>
+        <moons>
+            <moon>
+                <name>Thalassa</name>
+                <diameter>4000</diameter>
+                <hasWater>true</hasWater>
+                <discovery year="2025" method="telescope"/>
+            </moon>
+        </moons>
+        <lifeforms>
+            <lifeform>
+                <species>Veridian Sapien</species>
+                <population>1000000</population>
+                <intelligenceLevel>sentient</intelligenceLevel>
+                <firstObserved date="2026-04-15T00:00:00Z"/>
+            </lifeform>
+        </lifeforms>
+    </planet>
+</planetaryEcosystem>

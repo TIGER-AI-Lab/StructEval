@@ -1,0 +1,42 @@
+
+{
+  "spaceship": {
+    "name": "Celestial Voyager",
+    "model": "XJ-9000",
+    "is_operational": true,
+    "crew": {
+      "captain": "Astra Nova",
+      "first_officer": "Rex Quantum",
+      "engineers": [
+        {
+          "name": "Luna Forge",
+          "specialty": "Warp Drives"
+        },
+        {
+          "name": "Orion Pulse",
+          "specialty": "Shield Systems"
+        }
+      ]
+    },
+    "specs": {
+      "length_m": 120.5,
+      "mass_tons": 4500,
+      "propulsion": {
+        "type": "Antimatter",
+        "fuel": "Deuterium"
+      }
+    },
+    "missions": [
+      {
+        "name": "Andromeda Survey",
+        "destination": "Andromeda Galaxy",
+        "success": true
+      },
+      {
+        "name": "Nebula Rescue",
+        "destination": "Omega Nebula",
+        "success": false
+      }
+    ]
+  }
+}

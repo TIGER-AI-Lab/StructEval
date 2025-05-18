@@ -1,0 +1,46 @@
+{
+  "planet_name": "Xylophar-7",
+  "discovery": {
+    "year": 2342,
+    "method": "Transit Photometry",
+    "telescope": "StellarVision Array",
+    "team": [
+      {
+        "name": "Dr. Linh Voss",
+        "role": "Lead Astronomer"
+      },
+      {
+        "name": "Arjun Patel",
+        "role": "Data Analyst"
+      }
+    ]
+  },
+  "atmosphere": {
+    "pressure": 1.2,
+    "composition": [
+      {
+        "gas": "Nitrogen",
+        "percentage": 72.5
+      },
+      {
+        "gas": "Argon",
+        "percentage": 18.3
+      }
+    ]
+  },
+  "moons": [
+    {
+      "name": "Phobos Minor",
+      "diameter_km": 16.2
+    },
+    {
+      "name": "Deimos Maximus",
+      "diameter_km": 23.8
+    }
+  ],
+  "surface": {
+    "temperature_celsius": -78,
+    "has_liquid_water": false,
+    "features": ["craters", "ice geysers"]
+  }
+}

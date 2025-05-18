@@ -1,0 +1,24 @@
+
+museum:
+  name: "The Grand Artistry Museum"
+  location:
+    city: "Paris"
+    country: "France"
+  founded_year: 1892
+  curators:
+    - name: "Dr. Eleanor Voss"
+      specialty: "Modern Art History"
+      years_of_experience: 35
+  exhibits:
+    - title: "The Eternal Dawn"
+      artist: "Leonardo Marquez"
+      year_created: 1923
+      medium: "Oil on Canvas"
+      dimensions:
+        height_cm: 120.5
+        width_cm: 160.2
+      on_display: true
+      provenance:
+        previous_owners:
+          - "Private Collection, 1923-1950"
+          - "The Metropolitan Society, 1950-1985"

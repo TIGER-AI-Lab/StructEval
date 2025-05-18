@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React Render – 161105</title>
+    <!-- React 18 UMD bundles -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for on-the-fly JSX transform -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>body{margin:0;font-family:sans-serif;}</style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- User component -->
+    <script type="text/babel">
+    const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
+
+
+const App = () => {
+  const [message, setMessage] = useState('This content is for demonstration only');
+  const [timestamp] = useState(new Date().toLocaleDateString());
+
+  useEffect(() => {
+    console.log('React Visualization component mounted successfully');
+  }, []);
+
+  const logMessage = () => {
+    console.log(message);
+  };
+
+  return (
+    <div className="container">
+      <header>
+        <h1>Welcome to the React Visualization</h1>
+        <p>This is a demonstration of a structured layout using React.</p>
+      </header>
+
+      <section className="intro">
+        <h2>Introduction</h2>
+        <p>
+          Explore various structural elements such as headings, sections, lists, tables, and labeled values.
+          This page is designed to show a clear visual hierarchy and layout using only one page.
+        </p>
+      </section>
+      <section className="details">
+        <h2>Details</h2>
+        <div className="info-block">
+          <h3>Key Information</h3>
+          <ul>
+            <li><strong>Version:</strong> React {React.version}</li>
+            <li><strong>Components:</strong> Functional Component</li>
+            <li><strong>Layout:</strong> JSX</li>
+          </ul>
+        </div>
+        <div className="info-block">
+          <h3>Contact Information</h3>
+          <p><strong>Email:</strong> react@example.com</p>
+          <p><strong>Phone:</strong> +123-456-7890</p>
+        </div>
+      </section>
+      <section className="list-section">
+        <h2>Features List</h2>
+        <ol>
+          <li>Clear and Responsive Design</li>
+          <li>Component-Based Architecture</li>
+          <li>Easy to Read and Maintain</li>
+          <li>Structured and Hierarchical Layout</li>
+          <li>Static and Renderable One-Page Content</li>
+        </ol>
+      </section>
+      <section className="table-section">
+        <h2>Data Overview</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Active Users</td>
+              <td>1,023</td>
+            </tr>
+            <tr>
+              <td>Sessions</td>
+              <td>2,500</td>
+            </tr>
+            <tr>
+              <td>Conversions</td>
+              <td>150</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section className="pricing-section">
+        <h2>Pricing Plans</h2>
+        <div className="plan">
+          <h3>Basic Plan</h3>
+          <p>$9.99/month</p>
+          <ul>
+            <li>Feature A</li>
+            <li>Feature B</li>
+            <li>Feature C</li>
+          </ul>
+        </div>
+        <div className="plan">
+          <h3>Premium Plan</h3>
+          <p>$19.99/month</p>
+          <ul>
+            <li>All Basic Features</li>
+            <li>Feature D</li>
+            <li>Feature E</li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2023 React Visualization Project</p>
+      </footer>
+    </div>
+  );
+};
+
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+    </script>
+  </body>
+</html>

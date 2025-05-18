@@ -1,0 +1,31 @@
+[star]
+name = "Xylia-42"
+type = "K-type"
+distance_lightyears = 36.5
+
+[star.discovery]
+year = 2042
+method = "Transit photometry"
+
+[[star.planets]]
+name = "Aethel"
+mass_earths = 1.8
+orbital_period_days = 450
+
+[[star.planets[0].moons]]
+name = "Luna-A"
+diameter_km = 1200
+composition = "Rock"
+
+[[star.planets[0].moons]]
+name = "Luna-B"
+diameter_km = 900
+composition = "Ice"
+
+[star.planets[0].atmosphere]
+composition = ["Nitrogen", "Oxygen", "Argon"]
+pressure_atm = 1.2
+has_rings = false
+
+[star.planets[0].surface]
+temperature_celsius = 22

@@ -1,0 +1,36 @@
+
+brewery = {
+    name = "The Hoppy Haven"
+    location = {
+        city = "Briarwood"
+        country = "United States"
+    }
+    founded_year = 2010
+    owner = "James Thompson"
+    beers = [
+        {
+            name = "Sunrise IPA"
+            type = "IPA"
+            abv = 6.5
+            ingredients = {
+                malts = ["Pale Malt", "Crystal Malt"]
+                hops = ["Cascade", "Simcoe"]
+                yeast = "Wyeast 1056"
+            }
+            awards = [
+                {
+                    name = "Best IPAs in the Region"
+                    year = 2021
+                }
+            ]
+        }
+    ]
+    tours = {
+        available = true
+        schedule = [
+            {
+                day = "Monday"
+            }
+        ]
+    }
+}

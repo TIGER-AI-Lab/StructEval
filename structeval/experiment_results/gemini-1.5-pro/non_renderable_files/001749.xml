@@ -1,0 +1,32 @@
+<planet>
+    <name>Xylia</name>
+    <type>Gas Giant</type>
+    <orbitalPeriod>450.25</orbitalPeriod>
+    <discovery year="2042">
+        <method>Transit</method>
+        <discoverer>Kepler-III Team</discoverer>
+    </discovery>
+    <atmosphere>
+        <composition>Hydrogen, Helium, Methane</composition>
+        <pressure>1.5</pressure>
+    </atmosphere>
+    <moons>
+        <moon>
+            <name>Luna-A</name>
+            <diameter>3500</diameter>
+            <hasSubsurfaceOcean>true</hasSubsurfaceOcean>
+        </moon>
+        <moon>
+            <name>Luna-B</name>
+            <diameter>2200</diameter>
+            <hasSubsurfaceOcean>false</hasSubsurfaceOcean>
+        </moon>
+    </moons>
+    <rings>
+        <hasRings>true</hasRings>
+        <ring>
+            <width>15000</width>
+            <composition>Ice particles</composition>
+        </ring>
+    </rings>
+</planet>

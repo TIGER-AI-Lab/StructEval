@@ -1,0 +1,39 @@
+museum:
+  name: "The Grand Museum of Art and History"
+  location:
+    city: "Metropolis"
+    country: "United States"
+  founded_year: 1925
+  curators:
+    - name: "Dr. Eleanor Vance"
+      specialty: "Renaissance Art"
+      years_of_experience: 20
+    - name: "Mr. James Sterling"
+      specialty: "Modern Sculpture"
+      years_of_experience: 15
+  exhibits:
+    - title: "The Metropolis Diamond"
+      artist: "Unknown"
+      year_created: 1888
+      medium: "Diamond, Platinum"
+      dimensions:
+        height_cm: 10.5
+        width_cm: 7.2
+      on_display: true
+      provenance:
+        previous_owners:
+          - "Lord Harrington"
+          - "The Royal Family of Eldoria"
+          - "John D. Rockefeller"
+    - title: "Abstract Forms in Motion"
+      artist: "Jackson Pollock"
+      year_created: 1950
+      medium: "Oil on Canvas"
+      dimensions:
+        height_cm: 240
+        width_cm: 300
+      on_display: false
+      provenance:
+        previous_owners:
+          - "Peggy Guggenheim"
+          - "David Geffen"

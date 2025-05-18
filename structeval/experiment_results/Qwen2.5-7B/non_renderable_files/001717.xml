@@ -1,0 +1,68 @@
+
+<recipe>
+  <title>Spaghetti Carbonara</title>
+  <description>A classic Italian dish made with spaghetti, eggs, cheese, and pancetta.</description>
+  <cuisine>Italian</cuisine>
+  <servings>4</servings>
+  <prepTime>PT15M</prepTime>
+  <cookTime>PT10M</cookTime>
+  <ingredients>
+    <ingredient>
+      <name>Spaghetti</name>
+      <quantity>400</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Eggs</name>
+      <quantity>4</quantity>
+      <unit>pieces</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Pancetta</name>
+      <quantity>150</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+    <ingredient>
+      <name>Grated Parmesan Cheese</name>
+      <quantity>100</quantity>
+      <unit>grams</unit>
+      <optional>false</optional>
+    </ingredient>
+  </ingredients>
+  <steps>
+    <step>
+      <order>1</order>
+      <instruction>Boil water and cook spaghetti according to package instructions.</instruction>
+      <duration>PT10M</duration>
+    </step>
+    <step>
+      <order>2</order>
+      <instruction>While spaghetti is cooking, fry pancetta until crispy.</instruction>
+      <duration>PT5M</duration>
+    </step>
+    <step>
+      <order>3</order>
+      <instruction>Beat eggs with grated cheese and set aside.</instruction>
+      <duration>PT0M</duration>
+    </step>
+    <step>
+      <order>4</order>
+      <instruction>Drain spaghetti and add it to the pan with pancetta.</instruction>
+      <duration>PT2M</duration>
+    </step>
+    <step>
+      <order>5</order>
+      <instruction>Pour egg and cheese mixture over spaghetti and toss to combine.</instruction>
+      <duration>PT2M</duration>
+    </step>
+  </steps>
+  <nutrition>
+    <calories>1200</calories>
+    <protein>40</protein>
+    <fat>50</fat>
+    <carbohydrates>100</carbohydrates>
+  </nutrition>
+</recipe>

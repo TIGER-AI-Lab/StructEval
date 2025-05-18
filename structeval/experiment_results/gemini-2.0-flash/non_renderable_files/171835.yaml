@@ -1,0 +1,14 @@
+
+galacticZoo:
+  animals:
+    - animal:
+        species: Quargle
+        originPlanet: Xylophar
+        diet: Plasma
+    - animal:
+        species: Bliptor
+        originPlanet: Zeebulon
+        diet: Cosmic Dust
+  curator:
+    name: Dr. Vex
+    species: Andromedan

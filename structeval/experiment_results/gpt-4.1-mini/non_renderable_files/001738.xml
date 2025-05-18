@@ -1,0 +1,29 @@
+
+<planet type="terrestrial">
+  <name>Zephyria</name>
+  <atmosphere habitable="true">
+    <composition>nitrogen, oxygen, argon, carbon dioxide</composition>
+    <pressure>101.3</pressure>
+  </atmosphere>
+  <satellites>
+    <satellite diameter="3474">
+      <name>Lunara</name>
+      <orbit eccentricity="0.05">
+        <period>27.3</period>
+        <distance>384400</distance>
+      </orbit>
+    </satellite>
+  </satellites>
+  <lifeforms>
+    <lifeform intelligence="sentient">
+      <species>Zephyrian Sylph</species>
+      <population>1200000</population>
+    </lifeform>
+  </lifeforms>
+  <resources>
+    <resource>
+      <type>crystal minerals</type>
+      <quantity>2.5 million tons</quantity>
+    </resource>
+  </resources>
+</planet>

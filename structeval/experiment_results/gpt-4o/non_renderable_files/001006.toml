@@ -1,0 +1,32 @@
+[recipe]
+title = "Spaghetti Carbonara"
+
+[recipe.author]
+name = "John Doe"
+
+[recipe.author.contact]
+email = "johndoe@example.com"
+phone = "+1234567890"
+
+[[recipe.ingredients]]
+name = "Spaghetti"
+quantity = 200
+unit = "g"
+
+[[recipe.ingredients]]
+name = "Pancetta"
+quantity = 100
+unit = "g"
+
+[[recipe.steps]]
+instruction = "Boil the spaghetti in salted water until al dente."
+duration_minutes = 10
+
+[[recipe.steps]]
+instruction = "Fry the pancetta until crispy, then mix with cooked spaghetti and beaten eggs."
+duration_minutes = 15
+
+[recipe.metadata]
+servings = 4
+cuisine = "Italian"
+difficulty = "medium"

@@ -1,0 +1,3 @@
+
+recipe_id,recipe_name,chef_name,cuisine_type,difficulty_level,prep_time_minutes,cook_time_minutes,servings,ingredients_list,ingredients_count,main_ingredient,steps_list,steps_count,nutrition_calories,nutrition_protein_grams,nutrition_fat_grams,nutrition_carbs_grams
+"123e4567-e89b-12d3-a456-426614174000","Spaghetti Carbonara","Unknown","Italian","Medium",10,20,4,"spaghetti;eggs;parmesan cheese;guanciale;black pepper;salt",6,"spaghetti","Boil water;Cook spaghetti;Fry guanciale;Mix eggs and cheese;Combine spaghetti and guanciale;Add egg mixture;Serve",7,600,25,20,70
