@@ -13,6 +13,31 @@ conda activate structeval
 
 # Install the package in development mode
 pip install -e .
+
+# Install playwright browsers (required for web rendering)
+playwright install
+```
+
+### System Dependencies
+
+The following system packages will be installed automatically through conda:
+- `ghostscript` and `poppler`: Required for PDF processing
+- `nodejs`: Required for Playwright
+- `graphviz`: Required for visualization
+- `imagemagick`: Required for image processing
+
+If you encounter any issues with system dependencies, you can install them manually using your system's package manager:
+
+```bash
+# Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install ghostscript poppler-utils nodejs graphviz imagemagick
+
+# CentOS/RHEL
+sudo yum install ghostscript poppler nodejs graphviz ImageMagick
+
+# macOS
+brew install ghostscript poppler node graphviz imagemagick
 ```
 
 ## CLI Usage
