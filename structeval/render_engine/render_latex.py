@@ -118,16 +118,27 @@ def extract_latex_from_code_tag(generation, output_type):
     Extract LaTeX code from <code> tags and clean it up.
     Removes control characters and converts double backslashes to single ones.
     """
-    pattern = rf"""
-        (?:<code>|```(?:{re.escape(output_type)}|[^\n]*)\n)  # opening tag / header
-        (?:\s*S\s*\n)?                                       # optional lone 'S' line
-        (.*?)                                                # the real code
-        (?:</code>|```)                                      # closing tag / fence
+    tag_or_fence = rf"""
+        (?:                             # 1) <code> … </code>
+            <code>\n?
+            (?:[^\n]*\n)?               # optional junk line
+            (?P<payload1>.*?)           # capture
+            (?:</code>|$)
+        )
+        |
+        (?:                             # 2) ```fenced``` block
+            ```(?:{re.escape(output_type)}|[^\n]*)\n?
+            (?:[^\n]*\n)?               # optional junk line
+            (?P<payload2>.*?)           # capture
+            (?:```|$)
+        )
     """
-    match = re.search(pattern, generation, re.DOTALL | re.IGNORECASE | re.VERBOSE)
-    if match:
-        code = match.group(1).strip()
-        print(code)
+
+    m = re.search(tag_or_fence, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+    if m:
+        # whichever group matched, return it
+        payload = m.group("payload1") or m.group("payload2")
+        code = payload.strip()
 
     if code:
         # Remove control characters (ASCII 0-31, excluding \t, \n, \r)

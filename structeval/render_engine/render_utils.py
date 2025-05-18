@@ -10,6 +10,7 @@ from playwright.async_api import async_playwright
 import xmltodict
 import toml
 
+
 # Copy of TYPE_CODES from main.py to avoid circular imports
 TYPE_CODES = {
     "Text": "00",
@@ -74,25 +75,40 @@ def determine_output_type(task_id):
                 return key.lower()
     return ""
 
-import re
-
 def extract_renderable_code(text: str, output_type: str = "") -> str:
     """
-    Grab the code buried in <code>…</code> tags or ``` fences.
-    Handles any header (python, yaml, blank, you name it) and
-    tosses out a leading 'S' line if the model sprinkled one in.
-    """
-    pattern = rf"""
-        (?:<code>|```(?:{re.escape(output_type)}|[^\n]*)\n)  # opening tag / header
-        (?:\s*S\s*\n)?                                       # optional lone 'S' line
-        (.*?)                                                # the real code
-        (?:</code>|```)                                      # closing tag / fence
-    """
-    match = re.search(pattern, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
-    if match:
-        print(match.group(1).strip())
-        return match.group(1).strip()
+    Return whatever looks like the code payload.
 
+    Priority:
+      1. Anything between <code> … </code>
+      2. Anything in a ```fenced``` block (any header, or matching output_type)
+      3. Otherwise, the whole text (trimmed)
+
+    Works even if closing tags / fences are missing.
+    """
+    tag_or_fence = rf"""
+        (?:                             # 1) <code> … </code>
+            <code>\n?
+            (?:[^\n]*\n)?               # optional junk line
+            (?P<payload1>.*?)           # capture
+            (?:</code>|$)
+        )
+        |
+        (?:                             # 2) ```fenced``` block
+            ```(?:{re.escape(output_type)}|[^\n]*)\n?
+            (?:[^\n]*\n)?               # optional junk line
+            (?P<payload2>.*?)           # capture
+            (?:```|$)
+        )
+    """
+
+    m = re.search(tag_or_fence, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+    if m:
+        # whichever group matched, return it
+        payload = m.group("payload1") or m.group("payload2")
+        return payload.strip()
+
+    # 3) fallback: nothing matched—return everything (trimmed)
     raise ValueError("No renderable code found")
 
 def extract_code_and_save(text, task_id, output_dir):
@@ -116,24 +132,27 @@ def extract_code_and_save(text, task_id, output_dir):
     except Exception:
         pass  # If decoding fails, use the original string
 
-    # 1. Try to extract from <code>...</code>
-    match = re.search(r"<code>(.*?)</code>", text, re.DOTALL)
-    if match:
-        code = match.group(1)
-    else:
-        # 2. Try to extract from ```<output_type>``` fenced block
-        code_fence_pattern = rf"```{output_type}\s*(.*?)```"
-        match = re.search(code_fence_pattern, text, re.DOTALL)
-        if match:
-            code = match.group(1).strip() if match else text.strip()
-        else:
-            fence_pattern = r"```\s*(.*?)```"
-            match = re.search(fence_pattern, text, re.DOTALL)
-            if match:
-                code = match.group(1).strip() if match else text.strip()
-            else:
-                raise ValueError("Parsing error: No correct tag found")
+    tag_or_fence = rf"""
+        (?:                             # 1) <code> … </code>
+            <code>\n?
+            (?:[^\n]*\n)?               # optional junk line
+            (?P<payload1>.*?)           # capture
+            (?:</code>|$)
+        )
+        |
+        (?:                             # 2) ```fenced``` block
+            ```(?:{re.escape(output_type)}|[^\n]*)\n?
+            (?:[^\n]*\n)?               # optional junk line
+            (?P<payload2>.*?)           # capture
+            (?:```|$)
+        )
+    """
 
+    m = re.search(tag_or_fence, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+    if m:
+        # whichever group matched, return it
+        payload = m.group("payload1") or m.group("payload2")
+        code =payload.strip()
 
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)

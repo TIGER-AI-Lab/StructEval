@@ -55,8 +55,8 @@ if __name__ == "__main__":
     base_output_dir = "experiment_results"
 
     models = [
-        # "meta-llama/Meta-Llama-3-8B-Instruct",
-        "meta-llama/Llama-3.1-8B-Instruct",
+         "meta-llama/Meta-Llama-3-8B-Instruct",
+        #"meta-llama/Llama-3.1-8B-Instruct",
         # "Qwen/Qwen2.5-7B",
         # "Qwen/Qwen3-4B"
         # "microsoft/Phi-3-mini-128k-instruct",
@@ -72,8 +72,8 @@ if __name__ == "__main__":
     for model in models:
         model_id = model.split("/")[-1]
         output_dir = os.path.join(base_output_dir, model_id)
-        infer_output = os.path.join(output_dir, "angular.json")
-        img_output_path = os.path.join(output_dir, "angular_rendered")
+        infer_output = os.path.join(output_dir, "markdown.json")
+        img_output_path = os.path.join(output_dir, "markdown_rendered")
         non_renderable_output_dir = os.path.join(output_dir, "non_renderable_files")
         asyncio.run(
             run_render(infer_output, img_output_path, non_renderable_output_dir)
