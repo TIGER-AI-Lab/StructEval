@@ -1,3 +1,0 @@
-
-artifact_id,artifact_name,discovery.location,discovery.date_found,discovery.expedition_leader,discovery.team_members,artifact_type,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.status,condition.restoration_needed,historical_period,display_location.gallery,display_location.shelf_number,provenance.previous_owners,provenance.acquisition_method
-A123B,Ancient Vase,Valley of Kings,2023-04-15,Dr. Sarah Lee,12,Vase,Clay,Gold,35.5,20.0,20.0,excellent,false,Egyptian,Gallery 3,12B,,Excavation

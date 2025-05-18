@@ -1,4 +1,0 @@
-artifact_id,artifact_name,origin_civilization,discovery_date,material.primary,material.secondary,estimated_age_years,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,location.site_name,location.latitude,location.longitude,current_condition.status,current_condition.restoration_needed,notable_markings[0].type,notable_markings[0].description
-A123,"Golden Goblet of Ur",Sumerian,1922-09-20,Gold,Silver,4500,25.5,12.7,30.2,"Royal Cemetery of Ur",30.9238,46.1192,Restored,false,Inscription,"Cuneiform inscription detailing the reign of King Ur-Nammu"
-B456,"Terracotta Army Soldier",Qin Dynasty,1974-03-29,Terracotta,,2200,180,40,40,"Mausoleum of the First Qin Emperor",34.395,109.278,Fragmented,true,Paint,"Traces of red and black paint"
-C789,"Rosetta Stone",Ancient Egyptian,1799-07-15,Granodiorite,,2200,112.3,75.7,28.4,"Fort Julien, Rosetta",31.4015,30.4126,Intact,false,Inscription,"Inscriptions in hieroglyphic, demotic, and Greek scripts"

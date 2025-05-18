@@ -1,6 +1,0 @@
-artifact_id,artifact_name,discovery_site,discovery_date,estimated_age_years,artifact_type,material_primary,material_secondary,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,condition_status,current_location,associated_civilization,notable_inscriptions
-A-2024-001,Terracotta Army Soldier,Emperor Qin Shi Huang's Mausoleum,1974-03-29,2200,statue,terracotta,,210,60,40,fragmented,Mausoleum Site Museum,Qin Dynasty,
-A-2024-002,Rosetta Stone,Rashid (Rosetta),1799-07-15,2224,stele,granodiorite,,76,114,28,intact,British Museum,Ancient Egypt,hieroglyphic and demotic scripts
-A-2024-003,Antikythera Mechanism,Antikythera shipwreck,1901-05-17,2050,mechanical device,bronze,wood,34,18,9,fragmented,National Archaeological Museum,Athens,astronomical inscriptions
-A-2024-004,Venus of Willendorf,Willendorf,Austria,1908-08-07,30000,figurine,oolitic limestone,,11,6,4,intact,Natural History Museum,Vienna,
-A-2024-005,Ishtar Gate,Babylon,1899-03-20,2550,gate,brick,glazed brick,14,47,4,reconstructed,Pergamon Museum,Neo-Babylonian Empire,cuneiform inscriptions

@@ -1,6 +1,0 @@
-artifact_id,artifact_name,discovery.site,discovery.date_found,discovery.discoverer,origin.culture,origin.estimated_age,origin.materials,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,condition.status,condition.restoration_needed,current_location.museum,current_location.exhibit_hall
-"A-123","Rosetta Stone","Rosetta, Egypt","1799-07-15","Pierre-FranÃ§ois Bouchard","Ancient Egyptian",2200,"Granodiorite",112.3,75.7,28.4,"Fragmentary",true,"British Museum","Egyptian Sculpture Gallery"
-"C-456","Tutankhamun's Mask","Valley of the Kings, Egypt","1925-11-04","Howard Carter","Ancient Egyptian",3300,"Gold;Lapis Lazuli;Glass",54.0,39.3,49.0,"Intact",false,"Egyptian Museum","Tutankhamun Collection"
-"B-789","Venus de Milo","Milos, Greece","1820-04-08","Yorgos Kentrotas","Ancient Greek",2100,"Marble",203.0,0.0,0.0,"Fragmentary",true,"Louvre Museum","Greek Antiquities"
-"D-012","Terracotta Army Warrior","Xi'an, China","1974-03-29","Local Farmers","Qin Dynasty",2200,"Terracotta",180.0,50.0,0.0,"Restored",false,"Emperor Qinshihuang's Mausoleum Site Museum","Pit 1"
-"E-345","Sutton Hoo Helmet","Sutton Hoo, UK","1939-08-01","Basil Brown","Anglo-Saxon",1400,"Iron;Bronze;Garnet",31.8,21.5,0.0,"Restored",true,"British Museum","Room 41: Europe 300-1100"

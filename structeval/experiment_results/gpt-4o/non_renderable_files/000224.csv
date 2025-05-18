@@ -1,6 +1,0 @@
-book_id,title,author_name,author_birth_year,genre,publication_year,publisher_name,publisher_country,pages,language,series_name,series_number,isbn_13,average_rating,review_count
-1,"The Enchanted Forest","Alice B. Writer",1975,"Fantasy",2020,"Magic Books Publishing","USA",350,"English","The Forest Chronicles",1,"9781234567890",4.5,1200
-2,"Galactic Odyssey","John Q. Author",1980,"Science Fiction",2018,"Space Tales Ltd.","UK",420,"English","",,"9780987654321",4.2,950
-3,"Mystery of the Lost City","Emma C. Novelist",1965,"Mystery",2015,"Whodunit Press","Canada",280,"English","The Detective Series",3,"9781122334455",4.0,500
-4,"The Last Kingdom","Robert D. Storyteller",1990,"Historical Fiction",2021,"History House","Australia",500,"English","",,"9782233445566",4.8,300
-5,"Journey to the Unknown","Sophia E. Scribe",1985,"Adventure",2019,"Adventure Works","New Zealand",310,"English","",,"9783344556677",3.9,750

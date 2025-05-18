@@ -1,3 +1,0 @@
-
-character_name,species,home_planet,rank,assignment.mission_name,assignment.start_date,assignment.end_date,assignment.status,skills[0].skill_name,skills[0].proficiency,skills[1].skill_name,skills[1].proficiency,equipment[0].item_name,equipment[0].quantity,equipment[1].item_name
-Jane Smith,Andorian,Andoria,Lieutenant,Deep Space Exploration,2023-05-20,,Active,Astrogation,9,Engineering,7,Photon Blaster,5,Communications Module

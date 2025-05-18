@@ -1,3 +1,0 @@
-
-recipe_id,recipe_name,chef_name,cuisine_type,difficulty_level,prep_time_minutes,cook_time_minutes,servings,ingredient_list,ingredient_quantities,steps,step_times,equipment_needed,nutrition_calories,nutrition_protein_grams,nutrition_fat_grams,nutrition_carbs_grams
-1,Spaghetti Carbonara,Chef Mario,Italian,Intermediate,10,20,4,spaghetti;eggs;parmesan cheese;guanciale;black pepper;salt,400g;4;100g;150g;to taste;to taste,cook spaghetti;whisk eggs and cheese;fry guanciale;combine all ingredients;serve,8;2;5;2;1;1,pot;whisk;frying pan;serving plate,600,25,20,70

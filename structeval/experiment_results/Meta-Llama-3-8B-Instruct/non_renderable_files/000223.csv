@@ -1,5 +1,0 @@
-
-"artifact_id","artifact_name","discovery.site","discovery.date_found","discovery.discoverer","origin.culture","origin.estimated_age","origin.materials","dimensions.length_cm","dimensions.width_cm","dimensions.height_cm","condition.status","condition.restoration_needed","current_location.museum","current_location.exhibit_hall"
-"ART001","Roman Coin","Rome, Italy","2022-01-01","John Smith","Roman Empire",2000,"Gold; Copper; Silver",10.5,5.2,2.8,"Intact",false,"Vatican Museums","Hall of Ancient Coins"
-"ART002","Egyptian Sarcophagus","Thebes, Egypt","2010-06-15","Team of Archaeologists","Ancient Egyptians",3000,"Limestone; Paint",120.0,60.0,30.0,"Fragmentary",true,"Egyptian Museum","Sarcophagus Gallery"
-"ART003","Greek Vase","Athens, Greece","1995-03-20","Dr. Maria Johnson","Ancient Greeks",2500,"Terracotta; Paint",30.0,20.0,15.0,"Intact",false,"National Archaeological Museum","Vase Collection"

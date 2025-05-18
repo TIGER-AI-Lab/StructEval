@@ -1,2 +1,0 @@
-species,habitat,average_weight_kg,lifespan_years,diet_type,conservation_status,discovery.year,discovery.discoverer,discovery.location,notable_features[0].feature_name,notable_features[0].description,notable_features[1].feature_name,notable_features[1].description,related_species[0],related_species[1]
-"Example Animal","Rainforest",12.5,15,"Herbivore","Endangered",2023,"Dr. Jane Doe","Amazon Rainforest","Colorful Plumage","Brightly colored feathers used for mating displays","Unique Call","Distinctive sound used for communication","Species A","Species B"

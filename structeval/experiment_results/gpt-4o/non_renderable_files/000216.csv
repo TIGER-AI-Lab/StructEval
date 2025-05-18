@@ -1,7 +1,0 @@
-
-recipe_id,recipe_name,chef_name,cuisine_type,preparation_time_minutes,cooking_time_minutes,servings,difficulty_level,main_ingredient,ingredient_list,ingredient_quantities,cooking_method,calories_per_serving,allergen_warnings,vegetarian_friendly,seasonality
-1,"Spaghetti Carbonara","Chef Luigi","Italian",15,20,4,"Medium","Spaghetti","Spaghetti, Eggs, Parmesan Cheese, Pancetta, Black Pepper, Salt","200g, 4, 100g, 150g, 1 tsp, 1 tsp","Boiling",600,"Dairy","No","All Year"
-2,"Vegetable Stir Fry","Chef Mei","Chinese",10,15,2,"Easy","Mixed Vegetables","Broccoli, Carrot, Bell Pepper, Soy Sauce, Garlic, Ginger","100g, 50g, 50g, 2 tbsp, 2 cloves, 1 inch","Stir Frying",250,"Soy","Yes","All Year"
-3,"Chicken Tikka Masala","Chef Anjali","Indian",20,30,4,"Hard","Chicken","Chicken Breast, Yogurt, Tomato Puree, Onion, Garlic, Ginger, Garam Masala","500g, 200g, 150g, 1, 3 cloves, 1 inch, 2 tsp","Grilling",700,"Dairy","No","All Year"
-4,"Caprese Salad","Chef Maria","Italian",10,0,2,"Easy","Tomato","Tomato, Mozzarella, Basil, Olive Oil, Balsamic Vinegar, Salt, Pepper","2, 150g, 10 leaves, 2 tbsp, 1 tbsp, 1 tsp, 1 tsp","No Cooking",300,"Dairy","Yes","Summer"
-5,"Pumpkin Soup","Chef John","American",15,25,4,"Medium","Pumpkin","Pumpkin, Onion, Garlic, Vegetable Broth, Cream, Nutmeg, Salt, Pepper","500g, 1, 2 cloves, 500ml, 100ml, 1 tsp, 1 tsp, 1 tsp","Boiling",150,"Dairy","Yes","Autumn"

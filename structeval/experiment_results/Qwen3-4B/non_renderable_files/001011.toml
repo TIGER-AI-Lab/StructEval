@@ -1,9 +1,0 @@
-
-artifact.title = "Rosetta Stone"
-artifact.creator = { name = "Unknown", affiliation = "Ancient Egyptian priesthood" }
-artifact.year_created = 196
-artifact.dimensions = { height_cm = 112.0, width_cm = 72.0, depth_cm = 3.0 }
-artifact.materials = [ "basalt" ]
-artifact.origin = { country = "Egypt", city = "Alexandria" }
-artifact.exhibition_history = [ { location = "British Museum", year = 1890, curator = "Sir William Flinders Petrie" } ]
-artifact.provenance = { previous_owners = [ { name = "Pharaoh Ptolemy V", acquisition_date = "295 BCE" }, { name = "British Museum", acquisition_date = "1799" } ] }

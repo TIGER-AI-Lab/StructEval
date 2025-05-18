@@ -1,5 +1,0 @@
-
-artifact_id,artifact_name,origin_culture,origin_period,discovery_location,estimated_age_years,material_composition,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,current_location,condition_status,inscriptions_present,inscription_languages,notable_features,related_artifacts
-1,"Golden Mask of Tutankhamun","Ancient Egyptian","New Kingdom","Valley of the Kings, Egypt",3300,"gold, lapis lazuli",54,39,28,"Egyptian Museum, Cairo","intact","true","Egyptian","Intricate design, inlaid with precious stones","2,3"
-2,"Rosetta Stone","Ancient Egyptian","Ptolemaic Period","Rashid, Egypt",2200,"granodiorite","114, 72, 28","British Museum, London","fragmented","true","Egyptian, Greek, Demotic","Bilingual inscriptions, key to deciphering hieroglyphs",""
-3,"Venus of Willendorf","Paleolithic","Upper Paleolithic","Willendorf, Austria",25000,"limestone, ochre","11.1, 4.4, 4.4","Naturhistorisches Museum, Vienna","intact","false","","Small size, exaggerated female features",""

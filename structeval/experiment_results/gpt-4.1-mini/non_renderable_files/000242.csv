@@ -1,2 +1,0 @@
-brewery_id,brewery_name,brewery_location,year_established,brewery_type,main_brewer,signature_beer,signature_beer_abv,signature_beer_ibu,tour_available,tour_days,tour_duration_minutes,award_count,annual_production_liters,website_url
-101,Silver Oak Craft Brewery,Portland, USA,2012,microbrewery,Emma Johnson,Midnight Stout,6.5,45,yes,Saturday,Sunday,90,12,500000,https://www.silveroakbrewery.com

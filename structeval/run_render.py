@@ -21,8 +21,8 @@ if __name__ == "__main__":
     base_output_dir = "experiment_results"
 
     models = [
-        #"meta-llama/Meta-Llama-3-8B-Instruct",
-        "meta-llama/Llama-3.1-8B-Instruct",
+        "meta-llama/Meta-Llama-3-8B-Instruct",
+        #"meta-llama/Llama-3.1-8B-Instruct",
         #"Qwen/Qwen2.5-7B",
         #"Qwen/Qwen3-4B"
         #"microsoft/Phi-3-mini-128k-instruct",

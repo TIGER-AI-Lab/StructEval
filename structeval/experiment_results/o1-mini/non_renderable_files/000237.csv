@@ -1,3 +1,0 @@
-
-artifact_id,artifact_name,origin_civilization,discovery_site,discovery_date,material.primary,material.secondary,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,estimated_age_years,current_condition,inscriptions.language,inscriptions.translation,inscriptions.meaning,display_status,museum_location
-A001,Sun Dial of Alexandria,Ancient Egypt,Alexandria Harbor,2023-04-15,bronze,,35,35,10,2300,intact,,,"Used to measure time during the day",public display,Museum of Alexandria

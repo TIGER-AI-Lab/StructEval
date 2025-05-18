@@ -1,2 +1,0 @@
-species_id,common_name,latin_name,classification.kingdom,classification.phylum,classification.class,classification.order,classification.family,classification.genus,classification.species,habitat.primary,habitat.secondary,diet.type,diet.examples,conservation_status.status,conservation_status.iucn_code,discovery.year,discovery.discoverer
-"sp-4928","Gloomwing","Nocturnis tristis","Animalia","Chordata","Aves","Strigiformes","Nocturnidae","Nocturnis","tristis","Dark forests","Caves","Carnivore","Insects, small mammals, fish","Least Concern","LC",1884,"Dr. Alistair Fairbanks"

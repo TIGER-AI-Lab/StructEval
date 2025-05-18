@@ -1,2 +1,0 @@
-species_name,habitat.region,habitat.climate,habitat.elevation_meters,average_lifespan_years,diet.primary_food,diet.secondary_food,diet.is_carnivorous,physical_traits.height_cm,physical_traits.weight_kg,physical_traits.fur_color,physical_traits.has_wings,social_structure.group_size,social_structure.dominant_gender,notable_behaviors[0].behavior_name,notable_behaviors[0].frequency_per_day,notable_behaviors[1].behavior_name,notable_behaviors[1].frequency_per_day
-Glittering Glider,Enchanted Forest,Temperate,150,12,Sunlight,Insects,True,50,5,Silver,True,5,5,Gliding,3,Soaring,2

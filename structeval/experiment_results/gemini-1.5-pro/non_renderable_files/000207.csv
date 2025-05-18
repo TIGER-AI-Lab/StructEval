@@ -1,4 +1,0 @@
-species_id,common_name,latin_name,classification.kingdom,classification.phylum,classification.class,classification.order,classification.family,classification.genus,classification.species,habitat.primary,habitat.secondary,diet.type,diet.examples,conservation_status.status,conservation_status.iucn_code,discovery.year,discovery.discoverer
-species_001,Skymantas,Nimbus volans,Animalia,Chordata,Aves,Apodiformes,Apodidae,Nimbus,volans,Tropical Rainforest,Cloud Forests,Herbivore,Skyfruit,Vulnerable,VU,2023,Dr. Anya Sharma
-species_002,Gloomfang,Tenebris mordax,Animalia,Chordata,Mammalia,Carnivora,Felidae,Tenebris,mordax,Temperate Forest,Caves,Carnivore,Small mammals, rodents,Least Concern,LC,1932,Professor Silas Blackwood
-species_003,Sunstone Serpent,Sol gemma,Animalia,Chordata,Reptilia,Squamata,Serpentes,Sol,gemma,Desert,Rocky outcrops,Carnivore,Insects, lizards,Endangered,EN,1888,Lady Beatrice Worthington

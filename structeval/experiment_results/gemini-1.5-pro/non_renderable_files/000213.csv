@@ -1,6 +1,0 @@
-artifact_id,artifact_name,discovery.site,discovery.country,discovery.year,discovery.method,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.current_status,condition.restoration_history,significance.cultural_importance,significance.estimated_value_usd
-A1234567,Ancient Clay Pot,Teotihuacan,Mexico,1987,Excavation,Clay,,"25.5","20",15,Intact,,Used for storing food and water,2500
-BC789012,Gold Necklace,Tutankhamun's Tomb,Egypt,1922,Archaeological Dig,Gold,Lapis Lazuli,12,30,2,Restored,Repaired broken clasp,Symbol of royal power,1000000
-XY345678,Stone Axe,Stonehenge,England,2003,Ground Penetrating Radar,Stone,,15,8,3,Fragmented,,Used for hunting and woodworking,5000
-GH901234,Bronze Mirror,Pompeii,Italy,1879,Excavation,Bronze,Obsidian,20,15,1,Intact,,Used for personal grooming,7500
-IJ567890,Ceramic Figurine,Machu Picchu,Peru,1911,Exploration,Ceramic,,10,5,5,Fragmented,Reconstructed from several pieces,Religious significance,10000

@@ -1,7 +1,0 @@
-
-artifact_id,artifact_name,origin_civilization,discovery_date,material.primary,material.secondary,estimated_age_years,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,location.site_name,location.latitude,location.longitude,current_condition.status,current_condition.restoration_needed,notable_markings[0].type,notable_markings[0].description
-"001","Bronze Age Jian Sword","Ancient China","2023-01-15","Bronze","None","3000","100","5","3","Terracotta Army Site","34.299","103.834","intact","false","inscription","Ancient Chinese script on the blade"
-"002","Roman Coin","Ancient Rome","2022-07-21","Gold","Silver","2000","2","0.5","0.2","Capitoline Hill","41.890","12.492","fragmented","true","symbol","The image of a Roman eagle"
-"003","Nok Terracotta Head","Nok Civilization","2021-11-30","Clay","None","2000","15","10","8","Nok Culture Site","9.000","7.500","restored","true","symbol","A distinctive hairstyle"
-"004","Iron Age Pottery Shard","Mesopotamia","2020-05-18","Clay","None","3500","5","10","2","Uruk","31.322","44.420","fragmented","false","inscription","Cuneiform text"
-"005","Greek Amphora","Ancient Greece","2019-09-05","Clay","Paint","2500","30","20","15","Delphi","38.482","22.500","intact","false","symbol","A depiction of a Greek goddess"

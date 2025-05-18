@@ -1,3 +1,0 @@
-
-recipe_id,recipe_name,chef_name,cuisine_type,prep_time_minutes,cook_time_minutes,difficulty_level,ingredient_list,ingredient_quantities,ingredient_units,step_descriptions,step_timers,servings,vegetarian,allergen_warnings,rating_average,review_count
-1,Spaghetti Aglio e Olio,Chef Mario,Italian,10,15,Easy,"spaghetti;garlic;olive oil;parsley;red pepper flakes","200;4;60;10;1","grams;cloves;ml;grams;grams","Boil water and cook spaghetti;SautÃ© garlic in olive oil;Add red pepper flakes;Mix in cooked spaghetti;Garnish with parsley","10;5;2;0;0",2,TRUE,"","4.5",150

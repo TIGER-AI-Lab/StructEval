@@ -1,2 +1,0 @@
-planet_id,planet_name,system_name,discovery_year,mass_earths,radius_km,orbital_period_days,atmosphere_composition,has_rings,rings_count,largest_moon_name,largest_moon_diameter_km,surface_temperature_c,discovered_by,notes
-Kepler-186f,Kepler-186f,Kepler-186,2014,1.4,7340,130,Nitrogen,Oxygen,FALSE,0,,"",10,Kepler Team,Located in the habitable zone

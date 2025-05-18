@@ -1,4 +1,0 @@
-recipe_id,recipe_name,chef_name,cuisine_type,preparation_time_minutes,cooking_time_minutes,servings,difficulty_level,main_ingredient,ingredient_list,ingredient_quantities,cooking_method,calories_per_serving,allergen_warnings,vegetarian_friendly,seasonality
-1,Classic Margherita Pizza,Giovanni Rossi,Italian,20,15,4,Medium,Tomato,"Flour,Tomato Sauce,Mozzarella,Basil,Olive Oil,Yeast,Salt","2 cups,1 cup,200g,10 leaves,2 tbsp,1 tsp,1 tsp",Baking,300,Dairy,Yes,All Year
-2,Thai Green Curry,Anong Chai,Thai,15,30,4,Hard,Chicken,"Chicken,Coconut Milk,Green Curry Paste,Bamboo Shoots,Basil,Fish Sauce,Sugar","500g,400ml,3 tbsp,100g,10 leaves,2 tbsp,1 tsp",Simmering,450,Fish,Dairy,No,Summer
-3,Vegetable Stir Fry,Linda Chen,Chinese,10,10,2,Easy,Mixed Vegetables,"Broccoli,Carrots,Bell Peppers,Soy Sauce,Garlic,Ginger,Vegetable Oil","1 cup,1 cup,1 cup,2 tbsp,2 cloves,1 inch,2 tbsp",Stir-frying,200,None,Yes,All Year

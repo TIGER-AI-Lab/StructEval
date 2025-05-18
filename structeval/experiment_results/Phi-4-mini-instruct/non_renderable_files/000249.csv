@@ -1,2 +1,0 @@
-character_name,species,home_planet,rank,assignment.mission_name,assignment.start_date,assignment.end_date,assignment.status,skills[0].skill_name,skills[0].proficiency,skills[1].skill_name,skills[1].proficiency,equipment[0].item_name,equipment[0].quantity,equipment[1].item_name,equipment[1].quantity
-John Doe,Human,Earth,Commander,Operation Stellar Shield,2023-04-01,2023-04-30,Active,Starship Navigation,9,First Aid,2,Photon Blaster,1,Quantum Scanner,2

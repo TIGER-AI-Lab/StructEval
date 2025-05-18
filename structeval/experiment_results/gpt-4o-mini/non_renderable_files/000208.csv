@@ -1,3 +1,0 @@
-
-species,habitat,average_weight_kg,lifespan_years,diet_type,conservation_status,discovery.year,discovery.discoverer,discovery.location,notable_features[0].feature_name,notable_features[0].description,notable_features[1].feature_name,notable_features[1].description,related_species[0],related_species[1]
-"Newly Discovered Animal","rainforest",15.5,10,"omnivore","endangered",2023,"Dr. Jane Smith","Amazon Basin","Vibrant coloration","The animal has bright blue and green scales that shimmer in the light.","Unique vocalization","It produces a series of melodic sounds that can be heard from a distance.","Related Species A","Related Species B"

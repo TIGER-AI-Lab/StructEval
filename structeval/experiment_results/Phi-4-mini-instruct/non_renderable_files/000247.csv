@@ -1,6 +1,0 @@
-creature_id,species_name,habitat.region,habitat.terrain_type,habitat.temperature_celsius,physical_traits.height_meters,physical_traits.weight_kilograms,physical_traits.skin_color,physical_traits.eye_count,abilities[0].name,abilities[0].power_level,abilities[1].name,abilities[1].power_level,diet.primary_food,diet.secondary_food
-"001","Drakthar","Mystic Mountains","Rocky Mountains","-5","2.5","150","Emerald Green","2","Fire Breath","High","Ice Shard","Frozen Fish","Frozen Vegetables"
-"002","Luminae","Luminous Forest","Dense Forest","25","1.2","30","Silver","4","Glow","Medium","Light Beam","Glowworms","Bioluminescent Algae"
-"003","Skyraider","Cloud Peaks","Mountainous","-10","3.5","200","Cloud White","2","Flight","High","Wind Gust","Cloud Seeds","Cloud Mites"
-"004","Glimmerfox","Crystal Caves","Cave System","15","0.5","20","Glimmer Blue","2","Stealth","Low","Shadow Cloak","Crystal Berries","Crystal Insects"
-"005","Terraquatic","Deep Ocean","Ocean","4","1.8","500","Dark Blue","2","Water Breathing","High","Water Manipulation","Seaweed","Sea Creatures"

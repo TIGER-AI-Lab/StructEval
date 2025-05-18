@@ -1,3 +1,0 @@
-
-"species","habitat.region","habitat.climate","habitat.elevation_meters","diet.primary_food","diet.secondary_foods","diet.daily_caloric_intake","physical_traits.average_weight_kg","physical_traits.average_length_cm","physical_traits.coloration","behavior.activity_pattern","behavior.social_structure","behavior.migratory","conservation.status","conservation.population_estimate"
-"Example Animal","Amazon Rainforest","tropical",200,"fruits","insects;leaves",1500,12.5,75,"green with yellow spots","diurnal","pair","no","Vulnerable",5000

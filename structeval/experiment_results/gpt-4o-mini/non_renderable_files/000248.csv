@@ -1,5 +1,0 @@
-
-artifact_id,artifact_name,discovery.site,discovery.country,discovery.year,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.current_state,condition.restoration_years,provenance.previous_owners,provenance.auction_history,exhibit.locations
-"ART001","Ancient Vase","Pompeii","Italy",79,"Ceramic","Paint","30.50","20.00","15.00","intact","1990,2005","John Doe, Jane Smith","Sold in 1990 at Sotheby's, Sold in 2005 at Christie's","The Louvre, British Museum"
-"ART002","Roman Coin","Rome","Italy",200,"Gold","Silver","2.00","2.00","0.20","fragmented","2010","Museum of Antiquities","Auctioned in 2010 at Heritage Auctions","National Museum of Rome, Vatican Museums"
-"ART003","Egyptian Scarab","Thebes","Egypt",1922,"Lapis Lazuli","Gold","5.00","3.00","1.00","restored","1995","Dr. Ahmed El-Sayed","Purchased in 1995 at Bonhams","Egyptian Museum, Metropolitan Museum of Art"

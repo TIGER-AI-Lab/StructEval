@@ -1,2 +1,0 @@
-brewery_id,brewery_name,brewery_location,year_established,brewery_type,main_brewer,signature_beer,signature_beer_abv,signature_beer_ibu,tour_available,tour_days,tour_duration_minutes,award_count,annual_production_liters,website_url
-"123","Starlight Brewing Co.","Portland, USA",2015,"Microbrewery","Alice Smith","Cosmic IPA",6.8,70,"yes","Saturday,Sunday",60,5,500000,"https://www.starlightbrewing.com"

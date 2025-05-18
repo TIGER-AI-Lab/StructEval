@@ -1,3 +1,0 @@
-
-artifact_id,artifact_name,discovery.location,discovery.date_found,discovery.team_leader,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,material.primary,material.secondary,estimated_age.years,estimated_age.method,current_condition.status,current_condition.last_inspection,exhibition_history[0].museum,exhibition_history[0].start_date,exhibition_history[0].end_date
-"A12345", "Ancient Bronze Jian Sword", "Xi'an, China", "2021-03-15", "Dr. Li Hua", 70, 15, 2, "bronze", "iron", 2300, "radiocarbon dating", "excellent", "2023-01-10", "The National Museum of China", "2023-01-15", ""

@@ -1,6 +1,0 @@
-artifact_id,artifact_name,discovery.location,discovery.date_found,discovery.expedition_leader,discovery.team_members,artifact_type,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.status,condition.restoration_needed,historical_period,display_location.gallery,display_location.shelf_number,provenance.previous_owners,provenance.acquisition_method
-A1234567,Golden Goblet of Ur,Ur,2900-01-01,Sir Leonard Woolley,25,Goblet,Gold,Silver,15.2,10.1,10.1,Excellent,false,Early Dynastic Period,Mesopotamian Art,12A,King Shulgi of Ur;Royal Family of Ur,Excavation
-B8901234,Terracotta Army Soldier,Xi'an,1974-03-29,Yang Zhifa,7,Sculpture,Terracotta,,200,50,50,Good,false,Qin Dynasty,Ancient Chinese Art,3C,,Excavation
-C5678901,Diamond Necklace of Marie Antoinette,Paris,1793-10-16,Antoine Quentin Fouquier-Tinville,5,Jewelry,Diamond,Gold,25,20,5,Damaged,true,18th Century,French Revolution,5B,Marie Antoinette;French Royal Family,Confiscation
-D2345678,Stonehenge Monolith,Wiltshire,1620-09-10,Inigo Jones,10,Monument,Stone,,1000,250,100,Weathered,false,Neolithic,British Prehistory,Outdoor Exhibit,1,Unknown,Discovery
-E9012345,Rosetta Stone,Rashid,1799-07-15,Pierre-FranÃ§ois Bouchard,15,Tablet,Stone,,72,114,28,Fair,false,Ptolemaic Period,Egyptian Antiquities,7A,Ptolemaic Dynasty,Discovery

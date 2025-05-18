@@ -1,2 +1,0 @@
-character_name,species,home_planet,rank,assignment.mission_name,assignment.start_date,assignment.end_date,assignment.status,skills[0].skill_name,skills[0].proficiency,skills[1].skill_name,skills[1].proficiency,equipment[0].item_name,equipment[0].quantity,equipment[1].item_name
-"Jean-Luc Picard",Human,Earth,Captain,"Exploration of the Neutral Zone",2364-01-01,,Active,Diplomacy,10,Tactical Strategy,9,Phaser,1,Tricorder

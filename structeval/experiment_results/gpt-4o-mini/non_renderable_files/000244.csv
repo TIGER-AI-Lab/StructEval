@@ -1,7 +1,0 @@
-
-species_name,habitat.region,habitat.climate,habitat.elevation_meters,average_lifespan_years,diet.primary_food,diet.secondary_food,diet.is_carnivorous,physical_traits.height_cm,physical_traits.weight_kg,physical_traits.fur_color,physical_traits.has_wings,social_structure.group_size,social_structure.dominant_gender,notable_behaviors[0].behavior_name,notable_behaviors[0].frequency_per_day,notable_behaviors[1].behavior_name,notable_behaviors[1].frequency_per_day
-"Skywing Falcon","North America","temperate",1500,15,"small mammals","insects",true,60,1.5,"brown","true",3,"male","hunting","5","nesting","3"
-"Forest Glider","Australia","tropical",200,10,"fruits","nectar",false,30,0.5,"green","false",10,"none","gliding","20","foraging","15"
-"Desert Crawler","Sahara","arid",500,8,"cacti","small rodents",false,25,0.8,"tan","false",5,"female","burrowing","10","sunning","8"
-"Mountain Stalker","Himalayas","cold",3000,20,"mountain goats","berries",true,75,40,"gray","false",4,"male","stalking","2","howling","1"
-"Swamp Dancer","Amazon","humid",100,12,"fish","insects",true,50,3,"dark green","false",6,"female","dancing","15","calling","10"

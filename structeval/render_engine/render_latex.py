@@ -124,11 +124,10 @@ def extract_latex_from_code_tag(generation, output_type):
         (.*?)                                                # the real code
         (?:</code>|```)                                      # closing tag / fence
     """
-    match = re.search(pattern, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+    match = re.search(pattern, generation, re.DOTALL | re.IGNORECASE | re.VERBOSE)
     if match:
         code = match.group(1).strip()
-    else: 
-        code = generation.strip()
+        print(code)
 
     if code:
         # Remove control characters (ASCII 0-31, excluding \t, \n, \r)

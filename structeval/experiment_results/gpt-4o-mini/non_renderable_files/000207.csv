@@ -1,3 +1,0 @@
-
-species_id,common_name,latin_name,classification.kingdom,classification.phylum,classification.class,classification.order,classification.family,classification.genus,classification.species,habitat.primary,habitat.secondary,diet.type,diet.examples,conservation_status.status,conservation_status.iucn_code,discovery.year,discovery.discoverer
-"SP001","Glowing Forest Wyrm","Luminis draconis","Animalia","Chordata","Reptilia","Squamata","Lacertidae","Luminis","draconis","Tropical Rainforest","Deciduous Forest","Carnivore","small insects, fruits","Vulnerable","VU",2022,"Dr. Jane Smith"

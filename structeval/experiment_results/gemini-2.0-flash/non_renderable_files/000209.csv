@@ -1,2 +1,0 @@
-planet_id,planet_name,system_name,discovery_year,mass_earths,radius_km,orbital_period_days,atmosphere_composition,has_rings,rings_count,largest_moon_name,largest_moon_diameter_km,surface_temperature_c,discovered_by,notes
-KXJ-42b,Gliese 581g,Gliese 581,2009,3.1,7500,37,Carbon Dioxide,FALSE,0,,,-12,"Vogt, Steven S.; et al.",Potentially habitable super-Earth.

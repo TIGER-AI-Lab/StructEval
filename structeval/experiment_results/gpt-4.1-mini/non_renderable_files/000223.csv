@@ -1,2 +1,0 @@
-artifact_id,artifact_name,discovery.site,discovery.date_found,discovery.discoverer,origin.culture,origin.estimated_age,origin.materials,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,condition.status,condition.restoration_needed,current_location.museum,current_location.exhibit_hall
-"ART12345","Ancient Bronze Dagger","Valley of the Kings, Egypt","1922-11-04","Howard Carter","Ancient Egyptian",3300,"bronze;wood",35.5,5.2,2.1,"intact",false,"Egyptian Museum","Hall 3 - Bronze Age Artifacts"

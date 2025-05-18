@@ -1,7 +1,0 @@
-PlanetName,DistanceFromEarth_ly,DiscoveryDate,HasLife,AtmosphereType,SurfaceTemp_C
-Zephyria,210.5,2210-03-15,true,Methane-rich,-120
-Orionis,45.9,2097-11-02,false,Oxygen-nitrogen,22
-Virelia,312.2,2256-06-27,true,Carbon dioxide,65
-Thalassa,78.4,2183-09-14,false,Hydrogen,-40
-Kronos,501.7,2301-01-08,false,Helium,310
-Solara,12.6,2150-04-22,true,Oxygen-rich,33

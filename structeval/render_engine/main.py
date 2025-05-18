@@ -115,7 +115,9 @@ async def process_json_file(json_file_path, img_output_path, non_renderable_dir)
                     task["render_score"] = 0
 
             elif output_type == "latex" or output_type == "tikz":
+                #print("hello world")
                 try:
+                    
                     content = extract_latex_from_code_tag(generation, output_type)
                     task["render_score"] = render_latex_to_png(content, img_output_path, task_id)
                     #exit()

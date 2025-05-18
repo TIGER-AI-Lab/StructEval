@@ -1,3 +1,0 @@
-
-artifact_id,artifact_name,origin_civilization,discovery_date,material.primary,material.secondary,estimated_age_years,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,location.site_name,location.latitude,location.longitude,current_condition.status,current_condition.restoration_needed,notable_markings[0].type,notable_markings[0].description
-"ART001","Ancient Vase","Mycenaeans","2020-05-15","Terracotta","Glaze",3000,35,15,10,"Myceana Site",38.0,25.0,"Intact",false,"Inscription","Ancient Greek inscription"

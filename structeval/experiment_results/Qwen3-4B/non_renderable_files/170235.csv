@@ -1,8 +1,0 @@
-
-Constellation,DiscoveryYear,StarType,DistanceLY,HasExoplanets,PeakMagnitude,LastObserved
-Orion,1781,Red Giant,642.5,false,0.5,2023-11-12
-Lyra,1850,White Dwarf,25.0,true,0.03,2024-02-09
-Draco,1932,Neutron Star,3000.2,false,1.2,2022-08-27
-Centaurus,2001,Binary System,4.37,true,-0.27,2023-04-18
-Pegasus,1670,Blue Supergiant,1200.0,false,2.4,2022-12-01
-Aquila,1995,Pulsar,5200.7,true,1.9,2023-07-15

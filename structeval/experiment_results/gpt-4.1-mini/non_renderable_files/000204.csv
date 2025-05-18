@@ -1,2 +1,0 @@
-species,habitat.region,habitat.climate,habitat.elevation_meters,diet.primary_food,diet.secondary_foods,diet.daily_caloric_intake,physical_traits.average_weight_kg,physical_traits.average_length_cm,physical_traits.coloration,behavior.activity_pattern,behavior.social_structure,behavior.migratory,conservation.status,conservation.population_estimate
-"Azure Spotted Lizard","Amazon Rainforest","tropical",250,"insects","fruits;small reptiles",150,"2.5","35","bright blue with black spots","diurnal","solitary","no","Least Concern",120000

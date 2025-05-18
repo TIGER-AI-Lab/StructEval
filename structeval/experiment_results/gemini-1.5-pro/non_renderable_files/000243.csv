@@ -1,4 +1,0 @@
-artifact_id,artifact_name,discovery.location,discovery.date_found,discovery.team_leader,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,material.primary,material.secondary,estimated_age.years,estimated_age.method,current_condition.status,current_condition.last_inspection,exhibition_history[0].museum,exhibition_history[0].start_date,exhibition_history[0].end_date
-A1234,"Golden Goblet of Ur","Ur, Mesopotamia","2900-01-01","Sir Leonard Woolley",25.5,15.2,10,"Gold","Lapis Lazuli",4900,"Relative Chronology","Excellent","2023-10-26","British Museum","2023-05-01","2023-09-30"
-B5678,"Terracotta Army Soldier","Xi'an, China","1974-03-29","Yang Zhifa",180,40,30,"Terracotta","","2200,"Thermoluminescence","Good","2024-01-15","Museum of the Terracotta Army","2024-02-01",""
-C9012,"Rosetta Stone","Rashid (Rosetta), Egypt","1799-07-15","Pierre-FranÃ§ois Bouchard",72,114,28,"Granodiorite","","2200,"Historical Records","Fair","2023-12-01","British Museum","2023-11-01",""

@@ -1,5 +1,0 @@
-
-artifact_id,artifact_name,artifact_type,origin_country,origin_city,era,discovery_date,material,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,current_location_museum,current_location_gallery,condition,estimated_value_usd,notable_inscriptions,related_figures
-"ART12345","Bust of Nefertiti","Sculpture","Egypt","Amarna","New Kingdom","1912-12-06","Limestone","48.00","0","0","Neues Museum","Room 2.10","Intact","200000000","None","Nefertiti"
-"ART67890","Terracotta Army Soldier","Sculpture","China","Xi'an","Qin Dynasty","1974-03-29","Terracotta","180.00","50.00","50.00","Museum of the Terracotta Army","Exhibit Hall 1","Restored","1000000","None","Qin Shi Huang"
-"ART54321","Rosetta Stone","Stone Slab","Egypt","Rashid","Ptolemaic Period","1799-07-15","Granodiorite","114.00","72.00","28.00","British Museum","Room 4","Intact","550000000","Hieroglyphs;Demotic;Greek","Ptolemy V"

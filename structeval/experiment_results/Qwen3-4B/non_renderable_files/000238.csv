@@ -1,3 +1,0 @@
-
-"recipe_id";"recipe_name";"chef_name";"cuisine_type";"difficulty_level";"prep_time_minutes";"cook_time_minutes";"servings";"ingredient_list";"ingredient_quantities";"steps";"step_times";"equipment_needed";"nutrition_calories";"nutrition_protein_grams";"nutrition_fat_grams";"nutrition_carbs_grams"
-"12345";"Spaghetti Carbonara";"Chef Giovanni";"Italian";"Intermediate";20;30;4;"Spaghetti;Pancetta;Eggs;Parmesan;Black Pepper";"500g;100g;2;100g;1 tsp";"Cook spaghetti;Mix pancetta and eggs;Add Parmesan and pepper;Combine all ingredients";"10;5;3;5";"Large pot;Whisk;Mixing bowl";450;20;15;50

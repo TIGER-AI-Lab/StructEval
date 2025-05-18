@@ -1,7 +1,0 @@
-
-artifact_id,artifact_name,origin_culture,origin_period,discovery_location,estimated_age_years,material_composition,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,current_location,condition_status,inscriptions_present,inscription_languages,notable_features,related_artifacts
-1001,Bronze Age Jian Sword,Chinese,Bronze Age,Terracotta Army Site,3000,bronze,50,10,1,National Museum of China,intact,true,Chinese,Jian sword with inscriptions,1002
-1002,Roman Gladius,Roman,Roman Empire,Gladius Site,2000,iron,90,15,1,British Museum,fragmented,false,,Roman sword,1003
-1003,Egyptian Canopic Jar,Egyptian,New Kingdom,Valley of the Kings,3500,limestone,30,20,10,Cairo Museum of Egyptian Art,intact,false,,Canopic jar,1004
-1004,Mayan Stela 1,Maya,Classic Maya,Tikal,1500,limestone,2.5,1.5,0.5,Museum of Pre-Columbian Art,intact,true,Mayan stela with hieroglyphs,1005
-1005,Greek Amphora,Greek,Hellenistic Period,Athens,2000,clay,50,30,20,National Archaeological Museum of Athens,intact,false,,Greek amphora,

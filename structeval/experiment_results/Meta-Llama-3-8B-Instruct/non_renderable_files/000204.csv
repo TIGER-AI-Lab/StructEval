@@ -1,3 +1,0 @@
-
-"species","habitat.region","habitat.climate","habitat.elevation_meters","diet.primary_food","diet.secondary_foods","diet.daily_caloric_intake","physical_traits.average_weight_kg","physical_traits.average_length_cm","physical_traits.coloration","behavior.activity_pattern","behavior.social_structure","behavior.migratory","conservation.status","conservation.population_estimate"
-"Species Name","Region","Climate","Elevation (m)","Primary Food","Secondary Foods","Daily Caloric Intake (kcal)","Average Weight (kg)","Average Length (cm)","Coloration","Activity Pattern","Social Structure","Migratory","Conservation Status","Population Estimate"

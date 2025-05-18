@@ -1,7 +1,0 @@
-star_name,constellation,discovery_year,apparent_magnitude,distance_light_years,spectral_type,last_observed
-Vega,Lyra,1850,0.03,25,A0V,2023-11-12
-Betelgeuse,Orion,1836,0.42,642,M2Iab,2024-01-03
-Sirius,Canis Major,1862,-1.46,8.6,A1V,2024-02-14
-Antares,Scorpius,1846,1.06,550,M1.5Iab,2023-09-27
-Rigel,Orion,1852,0.12,860,B8Ia,2024-03-19
-Altair,Aquila,1855,0.77,16.7,A7V,2023-12-05

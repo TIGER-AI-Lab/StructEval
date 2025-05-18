@@ -1,3 +1,0 @@
-
-creature_id,species_name,habitat.region,habitat.climate,habitat.elevation_range,features.size,features.color_pattern,features.average_lifespan_years,abilities[0].name,abilities[0].description,abilities[0].power_level,abilities[1].name,abilities[1].description,abilities[1].power_level,diet.primary_foods
-CR001,Luminara Serpent,Mountains of Elyria,temperate,1000m to 3000m,5 meters,iridescent scales,150,Light Manipulation,Can project beams of light to illuminate areas,9,Shadow Stealth,Can blend into shadows to avoid detection,7,"bioluminescent insects, moonfruit"

@@ -1,3 +1,0 @@
-
-creature_id,species_name,habitat.region,habitat.terrain_type,habitat.temperature_celsius,physical_traits.height_meters,physical_traits.weight_kilograms,physical_traits.skin_color,physical_traits.eye_count,abilities[0].name,abilities[0].power_level,abilities[1].name,abilities[1].power_level,diet.primary_food,diet.secondary_food
-"CR001","Giant Luminara","Amazon Rainforest","Forest",25.5,2.5,150,"Bioluminescent Blue",2,"Light Absorption",90,"Telekinetic Surge",85,"Raw Fruits","Insect Proteins"

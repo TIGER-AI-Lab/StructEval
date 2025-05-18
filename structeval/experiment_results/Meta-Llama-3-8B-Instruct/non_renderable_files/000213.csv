@@ -1,5 +1,0 @@
-
-"artifact_id","artifact_name","discovery.site","discovery.country","discovery.year","discovery.method","material.primary","material.secondary","dimensions.height_cm","dimensions.width_cm","dimensions.depth_cm","condition.current_status","condition.restoration_history","significance.cultural_importance","significance.estimated_value_usd"
-"ART001","Ancient Vase","Troy Site","Turkey",1985,"Excavation","Terracotta","None",20,15,5,"Intact","None","Symbol of ancient Greek culture","10000"
-"ART002","Roman Coin","Rome Site","Italy",1990,"Digging","Copper","Silver",1,1,0.5,"Fragmented","Some restoration work done","Symbol of Roman Empire","500"
-"ART003","Egyptian Sarcophagus","Saqqara Site","Egypt",2000,"Excavation","Limestone","None",200,150,50,"Intact","None","Symbol of ancient Egyptian culture","200000"

@@ -1,2 +1,0 @@
-recipe_id,title,chef_name,cuisine_type,difficulty_level,prep_time_minutes,cook_time_minutes,servings,main_ingredient,ingredients[0].name,ingredients[0].quantity,ingredients[0].unit,steps[0].step_number,steps[0].instruction,nutrition.calories,nutrition.protein_grams,nutrition.fat_grams
-"RX9T2B7F","Truffle-Infused Wild Mushroom Risotto","Isabella Martinez","Fusion","Hard",25,40,4,"Arborio Rice","Arborio Rice",200,"grams",1,"Rinse the Arborio rice under cold water and set aside.","450",12.5,15.3

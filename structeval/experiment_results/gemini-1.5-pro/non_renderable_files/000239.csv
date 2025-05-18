@@ -1,4 +1,0 @@
-species_id,species_name,classification,habitat_type,average_lifespan_years,discovery_date,is_endangered,average_height_cm,diet,origin_planet,notable_traits,first_observed_by,color_variations,reproduction_method,population_estimate
-XYZ123,Floresia gigantica,Plantae,Terrestrial,500,2023-10-26,FALSE,3000,Photosynthetic,Xylo,Giant size;Bioluminescent flowers;Nocturnal blooming,Dr. Vivian Holloway,Green;Blue;Purple,Spores,10000
-ABC456,Kryll marinus,Crustacea,Aquatic,10,2024-01-15,TRUE,5,Carnivore,Aqua,Chitinous exoskeleton;Bioluminescent eyes;Fast reproduction,Oceanographic Institute,Red;Orange;Yellow,Oviparous,5000000
-QRS789,Zephyrus volans,Aves,Aerial,25,2023-05-01,FALSE,75,Omnivore,Zephyr,Winged flight;Migratory;Communicative,Dr. Anya Sharma,Blue;Green;White,Oviparous,200000

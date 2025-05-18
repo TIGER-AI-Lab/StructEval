@@ -1,5 +1,0 @@
-species_name,habitat.region,habitat.climate,habitat.elevation_meters,average_lifespan_years,diet.primary_food,diet.secondary_food,diet.is_carnivorous,physical_traits.height_cm,physical_traits.weight_kg,physical_traits.fur_color,physical_traits.has_wings,social_structure.group_size,social_structure.dominant_gender,notable_behaviors[0].behavior_name,notable_behaviors[0].frequency_per_day,notable_behaviors[1].behavior_name,notable_behaviors[1].frequency_per_day
-Cloud Leopard,Himalayan Mountains,Temperate,3000,15,Blue Sheep,Marmots,true,60,20,Gray with black spots,false,2,None,"Hunting Prey",2,"Climbing Trees",10
-Sky Wanderer,Floating Islands,Tropical,10000,50,Sky Fruit,Sun Dew,false,30,5,White,true,10,Female,"Cloud Surfing",5,"Singing",20
-Groundhog,North American Plains,Temperate,500,5,Grass,Roots,false,50,4,Brown,false,5,None,"Digging Burrows",3,"Eating",5
-Night Howler,Amazon Rainforest,Tropical,100,10,Insects,Fruit,true,20,1,Black,false,20,Male,"Howling",10,"Hunting",5

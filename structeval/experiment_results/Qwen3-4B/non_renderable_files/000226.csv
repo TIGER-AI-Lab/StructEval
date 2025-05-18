@@ -1,3 +1,0 @@
-
-"species_name","classification.kingdom","classification.phylum","classification.class","classification.order","classification.family","classification.genus","habitat.primary","habitat.secondary","population.estimate","population.status","discovery.year","discovery.location","notable_features[0].name","notable_features[0].description","notable_features[1].name","notable_features[1].description"
-"Polarisaurus novus","Animalia","Chordata","Mammalia","Carnivora","Ursidae","Polarisaurus","Arctic tundra","coastal regions",5000,"Endangered",2023,"Antarctica","Bioluminescent fur","This fur glows in the dark to deter predators","Specialized blubber","Insulates against extreme cold"

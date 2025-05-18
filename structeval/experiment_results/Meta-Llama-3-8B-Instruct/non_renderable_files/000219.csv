@@ -1,3 +1,0 @@
-
-"recipe_id","recipe_name","chef_name","cuisine_type","difficulty_level","prep_time_minutes","cook_time_minutes","ingredient_list","ingredient_count","main_ingredient","steps","servings","calories_per_serving","is_vegetarian","user_rating"
-"R001","Creamy Tomato Pasta","Chef Emma","Italian","Easy",15,20,"Tomato sauce;Pasta;Mozzarella;Basil;Olive oil;Salt;Pepper;Garlic","5","Tomato sauce","Cook pasta according to package instructions;Heat tomato sauce in a pan with olive oil;Combine cooked pasta and tomato sauce;Top with Mozzarella and Basil","4","250","TRUE","4.5"

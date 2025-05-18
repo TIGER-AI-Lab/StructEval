@@ -1,5 +1,0 @@
-
-artifact_id,artifact_name,artifact_type,discovery_site,discovery_country,discovery_year,estimated_age_years,material,current_location,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,condition_status,associated_culture,notable_features
-A12345,Bronze Age Jian Sword,Sword,Tomb of Qin Shi Huang,China,1974,2300,Bronze,The British Museum,55,10,1.5,intact,China,Intricately carved with dragon motifs
-A12346,Rosetta Stone,Tablet,Rosetta,Egypt,1799,2000,Granodiorite,The British Museum,75,90,25,intact,Egypt,Inscriptions in three scripts
-A12347,Venus of Willendorf,Figurine,Willendorf,Austria,1908,25000,Limestone,Museum of Natural History,11,5,2,fragmented,Prehistoric Europe,Small, rounded body with exaggerated features

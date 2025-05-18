@@ -1,3 +1,0 @@
-
-brewery_id,brewery_name,brewery_location,year_established,brewery_type,main_brewer,signature_beer,signature_beer_abv,signature_beer_ibu,tour_available,tour_days,tour_duration_minutes,award_count,annual_production_liters,website_url
-1,"Crafted Dreams Brewery","Portland, USA",2015,"microbrewery","Alice Johnson","Hoppy Sunrise",6.5,45,"yes","Friday,Saturday,Sunday",60,10,50000,"http://www.crafteddreamsbrewery.com"

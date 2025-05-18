@@ -1,3 +1,0 @@
-
-planet_id,planet_name,system_name,discovery_year,mass_earths,radius_km,orbital_period_days,atmosphere_composition,has_rings,rings_count,largest_moon_name,largest_moon_diameter_km,surface_temperature_c,discovered_by,notes
-"EXO-001","Zyphor-7","Alpha Centauri",2025,2.5,9500,365,"Nitrogen, Oxygen, Argon",TRUE,3,"Zyphus",400,15,"Galactic Exploration Team","Potential for supporting life."

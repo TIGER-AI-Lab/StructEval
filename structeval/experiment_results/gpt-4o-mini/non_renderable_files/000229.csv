@@ -1,3 +1,0 @@
-
-artifact_id,artifact_name,period,origin_region,material,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,discovery_date,current_location,condition_status,historical_significance,images[0].url,images[0].description,restoration_records[0].date,restoration_records[0].details
-"ART12345","Ancient Clay Tablet","Bronze Age","Mesopotamia","clay",15,10,2,"2020-05-15","National Museum of Antiquities","intact","This tablet provides insight into early writing systems and trade practices.","http://example.com/image1.jpg","A close-up view of the ancient clay tablet.","2021-06-01","Cleaned and stabilized to prevent further degradation."

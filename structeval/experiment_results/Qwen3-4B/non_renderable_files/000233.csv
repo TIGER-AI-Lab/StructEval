@@ -1,5 +1,0 @@
-
-recipe_id,recipe_name,chef_name,cuisine_type,difficulty_level,prep_time_minutes,cook_time_minutes,servings,ingredient_list,ingredient_quantities,ingredient_units,steps,main_ingredient,vegetarian,date_published
-1,Martian Fusion,Dr. Lila Voss,Martian,Medium,30,45,4,Martian Dust;Synth-Flour;Quantum Sauce,20g;150g;50ml,g;g;ml,Mix ingredients | Heat in a vacuum chamber | Serve with nano-nutrients,Martian Dust,FALSE,2023-10-05
-2,Molecular Sushi,Dr. Kael Ren,Neo-Japanese,Easy,20,30,6,Bio-Seafood;Enzyme-Flour;Nano-Scallion,100g;200g;10ml,g;g;ml,Prepare sushi rice | Add enzymes | Use nano-technology,Bio-Seafood,TRUE,2023-10-06
-3,Cosmic Stew,Dr. Zara Tien,Molecular,Hard,60,90,8,Cosmic Beans;Solar Syrup;Nebula Spice,300g;150ml;20g,g;ml;g,Blend ingredients | Add solar syrup | Simmer in a zero-gravity pot,Cosmic Beans,FALSE,2023-10-07

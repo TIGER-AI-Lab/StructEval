@@ -1,3 +1,0 @@
-
-artifact_id,artifact_name,origin_civilization,discovery_site,discovery_date,material.primary,material.secondary,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,estimated_age_years,current_condition,inscriptions.language,inscriptions.translation,inscriptions.meaning,display_status,museum_location
-"001","Rosetta Stone","Ptolemaic Egypt","Rosetta, Egypt","1799-07-15","granodiorite","granite","70.0, 28.4, 19.3","2300","intact","Greek, Demotic, Hieroglyphic","The decree of Ptolemy III Euergetes, dating from 196 BC, is inscribed on the stone.","on public display","British Museum"

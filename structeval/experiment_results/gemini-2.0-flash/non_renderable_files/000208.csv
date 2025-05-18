@@ -1,3 +1,0 @@
-
-species,habitat,average_weight_kg,lifespan_years,diet_type,conservation_status,discovery.year,discovery.discoverer,discovery.location,notable_features[0].feature_name,notable_features[0].description,notable_features[1].feature_name,notable_features[1].description,related_species[0],related_species[1]
-"Andean Whispering Frog","Cloud forests of the Andes",0.05,5,"Insectivore","Vulnerable",2023,"Dr. Sofia Mendes","Ecuadorian Andes","Camouflage","Skin patterns mimic lichen, aiding in predator evasion.","Vocalization","Produces a high-pitched, almost inaudible call, hence the name.","Phyllomedusa sauvagii","Agalychnis callidryas"

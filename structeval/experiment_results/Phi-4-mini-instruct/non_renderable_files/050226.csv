@@ -1,8 +1,0 @@
-
-Constellation,Star_Name,Apparent_Magnitude,Discovery_Year,Distance_Light_Years,Spectral_Type,Last_Observed
-Orion,Betelgeuse,0.42,1836,642.5,M1-2 Ia-ab,2023-12-15
-Lyra,Vega,0.03,1850,25.0,A0V,2024-02-01
-Canis Major,Sirius,-1.46,1862,8.6,A1V,2024-03-27
-Carina,Canopus,-0.72,1897,310,A9II,2023-11-20
-Auriga,Capella,0.08,1899,42.9,G8III,2024-01-10
-BoÃ¶tes,Arcturus,-0.05,1905,36.7,K1.5III,2024-04-05

@@ -1,3 +1,0 @@
-
-artifact_id,artifact_name,discovery.site,discovery.date_found,discovery.discoverer,origin.culture,origin.estimated_age,origin.materials,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,condition.status,condition.restoration_needed,current_location.museum,current_location.exhibit_hall
-"12345","Ancient Vase","Athens, Greece","2020-05-15","Dr. Jane Smith","Mycenaeans",3000;"clay","15.5",10.2,5.8,"intact",false,"National Museum of Athens","Exhibit Hall A"

@@ -1,3 +1,0 @@
-
-"recipe_name","chef_name","cuisine_type","prep_time_minutes","cook_time_minutes","total_time_minutes","difficulty_level","servings","ingredient_list","ingredient_quantities","ingredient_units","step_descriptions","step_order","equipment_needed","nutrition_calories","nutrition_protein_g","nutrition_fat_g","nutrition_carbs_g"
-"Spaghetti Aglio e Olio","Massimo Bottura","Italian",15,20,35,"Medium",2,"spaghetti,garlic,olive oil,red pepper flakes,Parmesan","400g,4 cloves,200ml,1 tsp,50g","grams,cloves,milliliters,teaspoons,grams","1. SautÃ© garlic in olive oil..., 2. Add red pepper flakes..., 3. Toss with pasta..., 4. Serve...","1,2,3,4,5,6","pan,pasta pot,colander",450,15,20,60

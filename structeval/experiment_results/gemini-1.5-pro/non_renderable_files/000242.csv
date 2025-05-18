@@ -1,4 +1,0 @@
-brewery_id,brewery_name,brewery_location,year_established,brewery_type,main_brewer,signature_beer,signature_beer_abv,signature_beer_ibu,tour_available,tour_days,tour_duration_minutes,award_count,annual_production_liters,website_url
-1,"The Hoppy Hippo Brewing Company","San Diego, USA",2018,Microbrewery,"Jane Doe","Hippo Haze IPA",6.8,60,yes,"Saturday,Sunday",60,3,50000,"https://www.thehoppyhippo.com"
-2,"Brewtiful Minds Brewery","London, UK",2015,Nanobrewery,"John Smith","Mindful Malt",4.5,20,no,"",0,1,10000,"https://www.brewtifulminds.co.uk"
-3,"Der Biergarten Brauhaus","Munich, Germany",1992,Brewpub,"Hans MÃ¼ller","Dunkel Lager",5.0,25,yes,"Monday,Wednesday,Friday",90,10,1000000,"https://www.biergartenbrauhaus.de"

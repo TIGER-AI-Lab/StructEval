@@ -1,7 +1,0 @@
-
-recipe_id,recipe_name,chef_name,cuisine_type,preparation_time_minutes,cooking_time_minutes,servings,difficulty_level,main_ingredient,ingredient_list,ingredient_quantities,cooking_method,calories_per_serving,allergen_warnings,vegetarian_friendly,seasonality
-1,Spaghetti Carbonara,Chef Mario,Italian,10,20,4,Medium,Pasta,"spaghetti, eggs, pancetta, parmesan cheese, black pepper","200g, 3, 150g, 50g, to taste","boiling, frying",600,None,Yes,All Year
-2,Pad Thai,Chef Somchai,Thai,15,15,2,Medium,Noodles,"rice noodles, shrimp, eggs, bean sprouts, peanuts, lime","200g, 150g, 2, 100g, 50g, 1","stir-frying",500,Nuts,No,All Year
-3,Chocolate Cake,Chef Anna,Dessert,20,30,8,Hard,Chocolate,"flour, sugar, cocoa powder, eggs, butter, baking powder","200g, 300g, 100g, 3, 150g, 1 tsp","baking",350,Dairy,No,All Year
-4,Vegetable Stir Fry,Chef Li,Chinese,10,15,4,Easy,Vegetables,"broccoli, bell pepper, carrots, soy sauce, garlic","200g, 100g, 100g, 50ml, 2 cloves","stir-frying",200,None,Yes,All Year
-5,Beef Tacos,Chef Carlos,Mexican,15,10,6,Medium,Beef,"taco shells, ground beef, lettuce, tomato, cheese, salsa","6, 500g, 100g, 100g, 50g, 100g","frying",400,Dairy,No,All Year

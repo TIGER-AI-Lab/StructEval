@@ -1,7 +1,0 @@
-PlanetName,System,DiscoveryYear,Gravity_m_s2,HasRings,AtmosphereType
-Azura,Kepler-442,2031,12.5,True,Nitrogen-Oxygen
-Verdant,TRAPPIST-1,2027,8.9,False,Methane-Rich
-Cinder,Gliese 581,2029,15.3,True,Carbon Dioxide
-Nimbus,LHS 1140,2033,11.7,False,Hydrogen-Helium
-Solace,Proxima Centauri,2025,9.2,False,Ammonia
-Echo,Tau Ceti,2030,10.4,True,Sulfur Dioxide

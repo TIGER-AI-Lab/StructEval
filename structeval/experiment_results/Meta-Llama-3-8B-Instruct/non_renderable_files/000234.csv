@@ -1,5 +1,0 @@
-
-"artifact_id","artifact_name","artifact_type","discovery_site","discovery_country","discovery_year","estimated_age_years","material","current_location","dimensions_height_cm","dimensions_width_cm","dimensions_depth_cm","condition_status","associated_culture","notable_features"
-"ART001","Vase of the Gods","Vase","Tomb of the Pharaohs","Egypt","1982",3000,"clay","British Museum",20,15,10,"intact","Ancient Egypt","Decorated with intricate hieroglyphics"
-"ART002","Statue of the Sun God","Statue","Temple of the Sun God","Mexico","1995",2000,"stone","National Museum of Anthropology",50,20,15,"restored","Aztec","Decorated with gold and precious stones"
-"ART003","Tool of the Hunter-Gatherer","Tool","Cave of the Ancients","Australia","2010",10000,"stone","Australian Museum",10,5,3,"fragmented","Aboriginal","Decorated with animal motifs"

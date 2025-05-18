@@ -1,2 +1,0 @@
-album_id,album_title,artist_name,release_year,genre,label,producer,tracklist,tracklist_count,tracklist_first_title,tracklist_first_duration,tracklist_last_title,tracklist_last_duration,total_duration,cover_url
-ALB001,Echoes of the Nebula,AstroVoyager,2042,Space Ambient,Cosmic Records,Dr. Stellaris,"Nebula Sunrise;Cosmic Drift;Andromeda's Call;Stardust Serenade;Black Hole Blues;Celestial Echoes;Quantum Leap;Void Walker;Supernova Symphony;Galactic Lullaby",10,Nebula Sunrise,04:32,Galactic Lullaby,05:18,48:55,https://example.com/echoes_of_the_nebula.jpg

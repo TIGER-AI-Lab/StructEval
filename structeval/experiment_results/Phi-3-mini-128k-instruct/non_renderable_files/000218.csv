@@ -1,3 +1,0 @@
-
-"exhibit_id","artifact.name","artifact.origin","artifact.period","artifact.material","artifact.dimensions","artifact.condition","artifact.discovery_date","artifact.discovery_location","artifact.curator","artifact.estimated_value","artifact.images[0].url","artifact.images[0].caption","artifact.images[1].url","artifact.images[1].caption"
-"EXHIBIT123","Ancient Egyptian Canopic Jar","Egypt","New Kingdom","Porcelain","12cm x 8cm x 6cm","excellent","2023-01-15","Thebes","Dr. Jane Smith","50000","https://example.com/images/canopic-jar-01.jpg","A Canopic Jar used for storing organs","https://example.com/images/canopic-jar-02.jpg","A close-up of the jar's inscriptions"

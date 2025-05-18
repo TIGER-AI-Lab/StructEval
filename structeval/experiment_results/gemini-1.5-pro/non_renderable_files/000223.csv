@@ -1,6 +1,0 @@
-artifact_id,artifact_name,discovery.site,discovery.date_found,discovery.discoverer,origin.culture,origin.estimated_age,origin.materials,dimensions.length_cm,dimensions.width_cm,dimensions.height_cm,condition.status,condition.restoration_needed,current_location.museum,current_location.exhibit_hall
-A1234,"Spearhead of Horus",Egypt,1922-04-05,Howard Carter,Ancient Egyptian,3200,Obsidian,25.5,4.2,1.8,Intact,false,Egyptian Museum,Tutankhamun Galleries
-BC5678,"Terracotta Army Soldier",Xi'an,1974-03-29,Local Farmers,Qin Dynasty,2200,Terracotta,190,20,185,Fragmentary,true,Museum of the Terracotta Army,Pit 1
-DE8901,"Venus of Willendorf",Willendorf,1908-08-07,Josef Szombathy,Paleolithic,30000,Limestone,11.1,5.7,4.3,Intact,false,Natural History Museum Vienna,Prehistory Collection
-FG2345,"Rosetta Stone",Rashid,1799-07-15,Pierre-FranÃ§ois Bouchard,Ancient Egyptian;Ptolemaic Kingdom,2200,Granodiorite,112.3,75.7,28.4,Fragmentary,false,British Museum,Egyptian Sculpture Gallery
-HI6789,"Antikythera Mechanism",Antikythera,1901,Sponge Divers,Ancient Greek,2000,Bronze,34,18,9,Fragmentary,true,National Archaeological Museum,Bronze Collection

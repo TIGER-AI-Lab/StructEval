@@ -1,3 +1,0 @@
-
-artifact_id,artifact_name,period,origin_region,material,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,discovery_date,current_location,condition_status,historical_significance,images[0].url,images[0].description,restoration_records[0].date,restoration_records[0].details
-A12345,"Golden Amulet","Iron Age","Celtic Europe","gold, enamel",5,3,2,"1804-07-21","National Museum of Ireland","intact","Represents Celtic artistry and religious beliefs.","http://example.com/images/amulet.jpg","Close-up of the golden amulet depicting a Celtic knot.","1900-08-15","Cleaned surface and stabilized enamel inlays."

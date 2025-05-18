@@ -1,2 +1,0 @@
-recipe_id,recipe_name,chef_name,cuisine_type,difficulty_level,prep_time_minutes,cook_time_minutes,ingredient_list,ingredient_count,main_ingredient,steps,servings,calories_per_serving,is_vegetarian,user_rating
-1234,Spicy Chicken Tacos,Chef Maria,Mexican,Intermediate,30,45,"ground chicken, taco shells, lettuce, cheese, salsa, spices",6,"ground chicken", "1. Season chicken with spices. 2. Cook chicken until done. 3. Warm taco shells. 4. Assemble tacos with chicken, lettuce, cheese, and salsa.",4,500,TRUE,4.5

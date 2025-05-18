@@ -1,4 +1,0 @@
-
-artifact_id,artifact_name,discovery.site,discovery.country,discovery.year,discovery.method,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.current_status,condition.restoration_history,significance.cultural_importance,significance.estimated_value_usd
-A001,Mighty Hammer,Valley of Kings,Egypt,1922,Systematic Excavation,Granite,,150,50,50,intact,None,Represents tools of ancient Egyptian craftsmen,75000
-A002,Ancient Pottery,Stonehenge,United Kingdom,2005,Survey and Dig,Clay,Glaze,30,25,25,fragmented,Repaired in 2010,Important for understanding Neolithic daily life,12000

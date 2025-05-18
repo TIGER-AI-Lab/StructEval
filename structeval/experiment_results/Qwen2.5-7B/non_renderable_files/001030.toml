@@ -1,7 +1,0 @@
-[planet]
-name = "Kepler-452b"
-discovery = { year = 2015, method = "transit" }
-orbit = { semi_major_axis = 1.0, eccentricity = 0.1, period_days = 360 }
-atmosphere = { composition = [ { gas = "Nitrogen", percentage = 78.0 }, { gas = "Oxygen", percentage = 21.0 } ] }
-satellites = [ { name = "Kepler-452b-I", diameter_km = 6000.0 }, { name = "Kepler-452b-II", diameter_km = 4000.0 } ]
-habitable = true

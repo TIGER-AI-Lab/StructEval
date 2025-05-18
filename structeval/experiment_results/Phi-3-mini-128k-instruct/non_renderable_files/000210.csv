@@ -1,3 +1,0 @@
-species_name,biome.primary_type,biome.secondary_types,habitat.region,habitat.elevation_meters,habitat.climate,physical_traits.average_height_cm,physical_traits.average_weight_kg,physical_traits.color_variations,diet.primary_food,diet.secondary_foods,population.estimated_count,population.status,behavior.daily_activity_pattern,behavior.social_structure
-
-Fictitious Flufftail,forest,grassland;wetlands;desert,South America,100-1200,tropical,150,4.5,grey,brown,green;red,grass,fruit,12000,least concern,diurnal,pack

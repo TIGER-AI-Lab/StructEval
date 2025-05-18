@@ -1,3 +1,0 @@
-
-"species_name","biome.primary_type","biome.secondary_types","habitat.region","habitat.elevation_meters","habitat.climate","physical_traits.average_height_cm","physical_traits.average_weight_kg","physical_traits.color_variations","diet.primary_food","diet.secondary_foods","population.estimated_count","population.status","behavior.daily_activity_pattern","behavior.social_structure"
-"Glimmerfox","Forest","Tundra;Swamp","Antarctica","1500-3000","Polar","45",3.2,"Silver,Amber,Blue","Berries","Insects;Small Mammals",1200,"Least Concern","Nocturnal","Solitary"

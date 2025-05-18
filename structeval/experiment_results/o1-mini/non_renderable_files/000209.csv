@@ -1,3 +1,0 @@
-
-planet_id,planet_name,system_name,discovery_year,mass_earths,radius_km,orbital_period_days,atmosphere_composition,has_rings,rings_count,largest_moon_name,largest_moon_diameter_km,surface_temperature_c,discovered_by,notes
-EXO-001,Eris Prime,Solaris,2023,1.5,12000,400,"Nitrogen,Oxygen,Argon",TRUE,2,Thalassa,1500,25,Dr. Jane Smith,"Potential for liquid water"

@@ -1,5 +1,0 @@
-
-"artifact_id","artifact_name","discovery.location","discovery.date_found","discovery.team_leader","dimensions.height_cm","dimensions.width_cm","dimensions.depth_cm","material.primary","material.secondary","estimated_age.years","estimated_age.method","current_condition.status","current_condition.last_inspection","exhibition_history[0].museum","exhibition_history[0].start_date","exhibition_history[0].end_date"
-"ART001","Ancient Warrior Helmet","Troy, Turkey","2022-07-15","Dr. Maria Rodriguez",12,8,5,"bronze","","1000","radiocarbon dating","excellent","2022-08-01","Museum of Ancient History","2022-09-01","2022-12-31"
-"ART002","Roman Coin","Rome, Italy","2018-03-20","Dr. John Smith",2,2,0.5,"gold","silver","500","coin dating","fair","2018-04-01","National Roman Museum","2018-05-01","2022-02-28"
-"ART003","Egyptian Sarcophagus","Giza, Egypt","2015-11-10","Dr. Jane Doe",120,80,30,"limestone","","2000","radiocarbon dating","poor","2015-12-01","Egyptian Museum","2016-01-01","2020-12-31"

@@ -1,3 +1,0 @@
-
-brewery_id,brewery_name,brewery_location,year_established,brewery_type,main_brewer,signature_beer,signature_beer_abv,signature_beer_ibu,tour_available,tour_days,tour_duration_minutes,award_count,annual_production_liters,website_url
-1,"Hoppy Trails Brewery","Portland, USA",2015,"microbrewery","Jane Doe","Cascade IPA",6.5,60,"yes","Saturday,Sunday",90,12,50000,"https://www.hoppytrailsbrewery.com"

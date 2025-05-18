@@ -1,8 +1,0 @@
-
-[planet]
-name = "Exoplanet XJ-3"
-discovery = { year = 2025, method = "transit" }
-mass = { value = 5.2, unit = "Earth masses" }
-orbit = { semi_major_axis = 1.1, eccentricity = 0.05, period_days = 365.25 }
-atmosphere = { composition = [{ gas = "Nitrogen", percentage = 78.0 }, { gas = "Oxygen", percentage = 20.0 }] }
-moons = [ { name = "Moon Alpha", diameter_km = 3.5, discovery_date = "2026-05-17" }, { name = "Moon Beta", diameter_km = 1.2, discovery_date = "2026-05-18" } ]

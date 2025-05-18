@@ -1,5 +1,0 @@
-
-recipe_id,recipe_name,chef_name,cuisine_type,difficulty_level,prep_time_minutes,cook_time_minutes,servings,ingredient_list,ingredient_quantities,ingredient_units,steps,main_ingredient,vegetarian,date_published
-1,Neon Noodle Fusion,Akira Tanaka,Neo-Japanese,Medium,20,15,2,Glow Noodles;Synth Soy Sauce;Bioluminescent Tofu;Quantum Vegetables,"200;50;150;100","grams;ml;grams;grams","Boil noodles in synth soy sauce|SautÃ© bioluminescent tofu and quantum vegetables|Combine and serve warm",Tofu,TRUE,2024-04-10
-2,Mars Marsala Steak,Elena Vega,Martian,Hard,30,45,4,Mars-grown Beef;Meteor Mushrooms;Crystalline Marsala;Red Dust Seasoning,"500;200;100;5","grams;grams;ml;teaspoons","Season Mars-grown beef with red dust seasoning|Cook steak to desired doneness|SautÃ© meteor mushrooms|Prepare crystalline marsala sauce|Combine and serve",Beef,FALSE,2024-03-22
-3,Quantum Quinoa Salad,Liam O'Connor,Molecular,Easy,15,0,3,Quantum Quinoa;Photon Peppers;Hyper Hydrated Cucumber;Nano Nuts,"150;50;100;30","grams;grams;grams;grams","Cook quinoa and let cool|Chop photon peppers and hyper hydrated cucumber|Mix all ingredients with nano nuts|Serve chilled",Quinoa,TRUE,2024-05-05

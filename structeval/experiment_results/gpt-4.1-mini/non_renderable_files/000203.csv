@@ -1,2 +1,0 @@
-album_id,album_title,artist_name,release_year,genre,label,producer,tracklist,tracklist_count,tracklist_first_title,tracklist_first_duration,tracklist_last_title,tracklist_last_duration,total_duration,cover_url
-"ALB001","Echoes of Tomorrow","The Midnight Voyage",2023,"Synthwave","Neon Pulse Records","Lara Voss","Dawn Horizon;Starlit Drive;Neon Dreams;Midnight Run;Celestial Tide",5,"Dawn Horizon","04:12","Celestial Tide","05:08","22:45","https://example.com/covers/echoes_of_tomorrow.jpg"

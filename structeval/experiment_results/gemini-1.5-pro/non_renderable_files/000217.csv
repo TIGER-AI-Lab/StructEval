@@ -1,6 +1,0 @@
-artifact_id,artifact_name,origin_culture,origin_period,discovery_location,estimated_age_years,material_composition,dimensions_height_cm,dimensions_width_cm,dimensions_depth_cm,current_location,condition_status,inscriptions_present,inscription_languages,notable_features,related_artifacts
-1,"Mask of Agamemnon",Mycenaean,"Late Bronze Age",Mycenae,3500,"gold",25,30,2,National Archaeological Museum,Athens,"intact",true,Greek,"Funerary mask, intricate details",
-2,"Terracotta Army",Qin Dynasty,"Warring States period",Xi'an,2200,"terracotta",185,60,50,Mausoleum of the First Qin Emperor,"fragmented",false,,"Life-sized statues of soldiers",
-3,"Rosetta Stone",Ancient Egypt,"Ptolemaic period",Rashid (Rosetta),2200,"granodiorite",114,72,28,British Museum,London,"partially fragmented",true,"Egyptian hieroglyphs, Demotic script, Ancient Greek","Key to deciphering hieroglyphs",
-4,"Antikythera Mechanism",Greek,"Hellenistic period",Antikythera,2000,"bronze",33,17,9,National Archaeological Museum,Athens,"fragmented",false,,"Complex astronomical calculator",
-5,"Venus of Willendorf",Paleolithic,"Upper Paleolithic",Willendorf,30000,"oolitic limestone",11,6,4,Natural History Museum,Vienna,"intact",false,,"Early depiction of human form",

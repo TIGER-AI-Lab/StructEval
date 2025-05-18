@@ -1,4 +1,0 @@
-artifact_id,artifact_name,discovery.site,discovery.country,discovery.year,material.primary,material.secondary,dimensions.height_cm,dimensions.width_cm,dimensions.depth_cm,condition.current_state,condition.restoration_years,provenance.previous_owners,provenance.auction_history,exhibit.locations
-"001","Ancient Vase","Pompeii","Italy",1875,"Ceramic","Paint","25.50","15.00","15.00","intact","1920,1985","John Doe, Jane Smith","Sotheby's 1990, Christie's 2005","Louvre, British Museum"
-"002","Golden Amulet","Giza","Egypt",1922,"Gold","Copper,Enamel","5.00","3.00","1.00","restored","1950,2000","Carter Family","Bonhams 1980","Metropolitan Museum of Art, Egyptian Museum"
-"003","Bronze Statue","Olympia","Greece",1896,"Bronze","Marble","150.00","50.00","40.00","fragmented","1975","Athens Museum","Christie's 1995","National Archaeological Museum, Getty Villa"

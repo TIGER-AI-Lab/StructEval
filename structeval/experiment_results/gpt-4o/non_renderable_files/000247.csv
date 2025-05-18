@@ -1,3 +1,0 @@
-creature_id,species_name,habitat.region,habitat.terrain_type,habitat.temperature_celsius,physical_traits.height_meters,physical_traits.weight_kilograms,physical_traits.skin_color,physical_traits.eye_count,abilities[0].name,abilities[0].power_level,abilities[1].name,abilities[1].power_level,diet.primary_food,diet.secondary_food
-"creature_001","Glimmerwing","Enchanted Forest","forest",22.5,1.2,15.0,"iridescent",4,"Invisibility",8,"Flight",7,"nectar","small insects"
-"creature_002","Sandstrider","Desert Plains","desert",35.0,2.5,120.0,"sandy brown",2,"Sandstorm",9,"Heat Resistance",6,"cacti","small mammals"

@@ -1,4 +1,0 @@
-
-"recipe_id","recipe_name","chef_name","cuisine_type","difficulty_level","prep_time_minutes","cook_time_minutes","servings","ingredient_list","ingredient_quantities","steps","step_times","equipment_needed","nutrition_calories","nutrition_protein_grams","nutrition_fat_grams","nutrition_carbs_grams"
-"1","Creamy Tomato Pasta","Chef Emma","Italian","Easy","15","20","4","tomato sauce; pasta; parmesan cheese; olive oil","2 cups; 1 cup; 1/2 cup; 1/4 cup","Cook pasta, heat sauce, combine, serve","10; 5; 2; 1","colander; saucepan; whisk","250","20","15","30"
-"2","Spicy Tuna Sushi Rolls","Chef Kenji","Japanese","Intermediate","10","15","8","sushi rice; tuna; nori seaweed; soy sauce; wasabi","1 cup; 1/2 cup; 1 sheet; 2 tbsp; 1 tsp","Prepare rice, cut tuna, assemble rolls, serve","5; 3; 2; 1; 1","sushi mat; sharp knife; cutting board","400","30","20","50"

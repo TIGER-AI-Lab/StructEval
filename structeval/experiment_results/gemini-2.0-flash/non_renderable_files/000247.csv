@@ -1,6 +1,0 @@
-creature_id,species_name,habitat.region,habitat.terrain_type,habitat.temperature_celsius,physical_traits.height_meters,physical_traits.weight_kilograms,physical_traits.skin_color,physical_traits.eye_count,abilities[0].name,abilities[0].power_level,abilities[1].name,abilities[1].power_level,diet.primary_food,diet.secondary_food
-CR001,Forest Sprite,Amazon Rainforest,Tropical Rainforest,28,0.3,0.5,Green,2,Camouflage,7,Illusion,5,Insects,Fruit
-CR002,Desert Sandworm,Sahara Desert,Sandy Desert,40,5,500,Brown,0,Burrowing,9,Sandstorm Generation,6,Cactus,Small Animals
-CR003,Mountain Yeti,Himalayas,Snowy Mountains,-10,2.5,200,White,2,Super Strength,8,Ice Manipulation,7,Mountain Goats,Berries
-CR004,Swamp Lurker,Everglades,Swamp,25,1.8,80,Grey,2,Invisibility,6,Venomous Bite,8,Fish,Birds
-CR005,Ocean Leviathan,Pacific Ocean,Deep Sea,5,20,5000,Blue,2,Hydrokinesis,10,Sonic Blast,9,Giant Squid,Whales

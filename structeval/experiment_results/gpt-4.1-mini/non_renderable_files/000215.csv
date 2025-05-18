@@ -1,2 +1,0 @@
-species_id,species_name,habitat.region,habitat.climate,habitat.elevation_meters,physical_traits.height_cm,physical_traits.weight_kg,physical_traits.skin_color,diet.primary_food,diet.secondary_food,diet.is_carnivorous,reproduction.offspring_per_year,reproduction.mating_season_months,conservation_status.status,conservation_status.population_estimate
-SPC-042,Crimson Forest Lynx,Northern Highlands,temperate,1500,85,22,reddish-brown,small mammals,birds,true,3,February,March,Endangered,1200
