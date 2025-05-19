@@ -24,3 +24,4 @@ def run_inference(model_name: str, llm_engine: str, queries: list[str], **kwargs
     responses = llm.batch_call_model(model_name, queries,num_proc=32, timeout=None,  disable_batch_api=True, temperature=0.0, max_tokens=None)
     return responses
     
+    

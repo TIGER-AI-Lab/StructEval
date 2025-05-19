@@ -119,19 +119,17 @@ def extract_latex_from_code_tag(generation, output_type):
     Removes control characters and converts double backslashes to single ones.
     """
     tag_or_fence = rf"""
-        (?:                             # 1) <code> … </code>
-            <code>\n?
-            (?:[^\n]*\n)?               # optional junk line
-            (?P<payload1>.*?)           # capture
-            (?:</code>|$)
-        )
-        |
-        (?:                             # 2) ```fenced``` block
-            ```(?:{re.escape(output_type)}|[^\n]*)\n?
-            (?:[^\n]*\n)?               # optional junk line
-            (?P<payload2>.*?)           # capture
-            (?:```|$)
-        )
+    (?:                             # 1) <code> … </code>
+        <code>[ \t]*\n              # opener (+ newline it ends with)
+        (?P<payload1>.*?)           # capture ALL lines that follow
+        (?:</code>|$)               # until </code> or end-of-string
+    )
+    |
+    (?:                             # 2) ``` fenced block
+        ```(?:{re.escape(output_type)}|[^\n]*)[ \t]*\n
+        (?P<payload2>.*?)           # capture payload
+        (?:```|$)                   # until closing fence or EOS
+    )
     """
 
     m = re.search(tag_or_fence, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)

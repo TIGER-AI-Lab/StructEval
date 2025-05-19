@@ -87,19 +87,17 @@ def extract_renderable_code(text: str, output_type: str = "") -> str:
     Works even if closing tags / fences are missing.
     """
     tag_or_fence = rf"""
-        (?:                             # 1) <code> … </code>
-            <code>\n?
-            (?:[^\n]*\n)?               # optional junk line
-            (?P<payload1>.*?)           # capture
-            (?:</code>|$)
-        )
-        |
-        (?:                             # 2) ```fenced``` block
-            ```(?:{re.escape(output_type)}|[^\n]*)\n?
-            (?:[^\n]*\n)?               # optional junk line
-            (?P<payload2>.*?)           # capture
-            (?:```|$)
-        )
+    (?:                             # 1) <code> … </code>
+        <code>[ \t]*\n              # opener (+ newline it ends with)
+        (?P<payload1>.*?)           # capture ALL lines that follow
+        (?:</code>|$)               # until </code> or end-of-string
+    )
+    |
+    (?:                             # 2) ``` fenced block
+        ```(?:{re.escape(output_type)}|[^\n]*)[ \t]*\n
+        (?P<payload2>.*?)           # capture payload
+        (?:```|$)                   # until closing fence or EOS
+    )
     """
 
     m = re.search(tag_or_fence, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
@@ -133,26 +131,24 @@ def extract_code_and_save(text, task_id, output_dir):
         pass  # If decoding fails, use the original string
 
     tag_or_fence = rf"""
-        (?:                             # 1) <code> … </code>
-            <code>\n?
-            (?:[^\n]*\n)?               # optional junk line
-            (?P<payload1>.*?)           # capture
-            (?:</code>|$)
-        )
-        |
-        (?:                             # 2) ```fenced``` block
-            ```(?:{re.escape(output_type)}|[^\n]*)\n?
-            (?:[^\n]*\n)?               # optional junk line
-            (?P<payload2>.*?)           # capture
-            (?:```|$)
-        )
+    (?:                             # 1) <code> … </code>
+        <code>[ \t]*\n              # opener (+ newline it ends with)
+        (?P<payload1>.*?)           # capture ALL lines that follow
+        (?:</code>|$)               # until </code> or end-of-string
+    )
+    |
+    (?:                             # 2) ``` fenced block
+        ```(?:{re.escape(output_type)}|[^\n]*)[ \t]*\n
+        (?P<payload2>.*?)           # capture payload
+        (?:```|$)                   # until closing fence or EOS
+    )
     """
 
     m = re.search(tag_or_fence, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
     if m:
         # whichever group matched, return it
         payload = m.group("payload1") or m.group("payload2")
-        code =payload.strip()
+        code = payload.strip()
 
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
@@ -167,6 +163,9 @@ def extract_code_and_save(text, task_id, output_dir):
     }
     extension = ext_map.get(output_type, ".txt")
     filename = os.path.join(output_dir, f"{task_id}{extension}")
+
+    print(code)
+    print("hello world")
     
     # Save extracted code to file
     try:
