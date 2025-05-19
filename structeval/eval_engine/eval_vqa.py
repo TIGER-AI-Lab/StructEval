@@ -121,7 +121,8 @@ def vqa_eval(
                         "text": (
                             "You are given an image and a list of question-answer pairs. "
                             "For each pair, verify if the image content supports the expected answer based on the corresponding question. "
-                            "Base your judgment solely on the visual content of the provided image, and the question. "
+                            "If the image is fully white, then you should always output false"
+                            "Base your judgment solely on the visual content of the provided image, and the question. Do not imagine anything. "
                             "Do not use any external information or common-sense reasoning beyond what is visible. "
                             "Respond with a JSON object mapping each question number to true or false (e.g., {\"1\": true, \"2\": false}). "
                             "If the image is unclear or does not contain enough information to answer, use null for that question. "
