@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,74 +84,126 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
+const DashboardReport = () => {
   const user = {
     name: "Jane Doe",
     email: "jane.doe@example.com",
     membership: "Premium"
   };
+
   const metrics = {
     logins: 125,
     activeSessions: 3,
     lastLogin: "2023-10-03 09:15 AM"
   };
+
   const activities = [
     { date: "2023-10-03", description: "Logged into the system" },
     { date: "2023-10-02", description: "Updated profile details" },
     { date: "2023-10-01", description: "Changed password" },
     { date: "2023-09-30", description: "Viewed account summary" }
   ];
+
   const notifications = [
     { title: "Maintenance Update", message: "System maintenance scheduled for next weekend.", priority: "High" },
     { title: "New Feature", message: "Try our new dashboard analytics tool.", priority: "Medium" },
     { title: "Reminder", message: "Your subscription will renew soon.", priority: "Low" }
   ];
+
   const generatedOn = new Date().toLocaleString();
 
+  const styles = {
+    container: {
+      padding: '16px',
+      fontFamily: 'Arial, sans-serif'
+    },
+    header: {
+      borderBottom: '2px solid #ccc',
+      marginBottom: '20px'
+    },
+    headerTitle: {
+      fontSize: '26px',
+      margin: '0'
+    },
+    section: {
+      marginBottom: '20px'
+    },
+    sectionTitle: {
+      fontSize: '22px',
+      marginBottom: '10px',
+      color: '#333'
+    },
+    sectionDiv: {
+      marginBottom: '8px'
+    },
+    label: {
+      fontWeight: 'bold'
+    },
+    list: {
+      margin: '0',
+      paddingLeft: '20px'
+    },
+    listItem: {
+      marginBottom: '8px'
+    },
+    footer: {
+      borderTop: '2px solid #ccc',
+      paddingTop: '10px',
+      fontSize: '14px',
+      color: '#555',
+      textAlign: 'center'
+    }
+  };
+
   return (
-    <div>
-      <header>
-        <h1>Dashboard Report</h1>
+    <div style={styles.container}>
+      <header style={styles.header}>
+        <h1 style={styles.headerTitle}>Dashboard Report</h1>
         <p>Overview of the system status and user activities</p>
       </header>
-      <section>
-        <h2>User Profile</h2>
-        <div>
-          <label>Name: </label>
+      
+      <section style={styles.section}>
+        <h2 style={styles.sectionTitle}>User Profile</h2>
+        <div style={styles.sectionDiv}>
+          <label style={styles.label}>Name: </label>
           <span>{user.name}</span>
         </div>
-        <div>
-          <label>Email: </label>
+        <div style={styles.sectionDiv}>
+          <label style={styles.label}>Email: </label>
           <span>{user.email}</span>
         </div>
-        <div>
-          <label>Membership: </label>
+        <div style={styles.sectionDiv}>
+          <label style={styles.label}>Membership: </label>
           <span>{user.membership}</span>
         </div>
       </section>
-      <section>
-        <h2>Account Metrics</h2>
-        <ul>
-          <li>Total Logins: {metrics.logins}</li>
-          <li>Active Sessions: {metrics.activeSessions}</li>
-          <li>Last Login: {metrics.lastLogin}</li>
+      
+      <section style={styles.section}>
+        <h2 style={styles.sectionTitle}>Account Metrics</h2>
+        <ul style={styles.list}>
+          <li style={styles.listItem}>Total Logins: {metrics.logins}</li>
+          <li style={styles.listItem}>Active Sessions: {metrics.activeSessions}</li>
+          <li style={styles.listItem}>Last Login: {metrics.lastLogin}</li>
         </ul>
       </section>
-      <section>
-        <h2>Recent Activity</h2>
-        <ol>
+      
+      <section style={styles.section}>
+        <h2 style={styles.sectionTitle}>Recent Activity</h2>
+        <ol style={styles.list}>
           {activities.map((activity, index) => (
-            <li key={index}>
+            <li key={index} style={styles.listItem}>
               <strong>{activity.date}:</strong> {activity.description}
             </li>
           ))}
         </ol>
       </section>
-      <section>
-        <h2>System Notifications</h2>
-        {notifications.length ? (
-          <ul>
+      
+      <section style={styles.section}>
+        <h2 style={styles.sectionTitle}>System Notifications</h2>
+        {notifications.length > 0 ? (
+          <ul style={styles.list}>
             {notifications.map((note, idx) => (
-              <li key={idx}>
+              <li key={idx} style={styles.listItem}>
                 <h3>{note.title}</h3>
                 <p>{note.message}</p>
                 <small>Priority: {note.priority}</small>
@@ -96,16 +214,18 @@
           <p>No notifications at this time.</p>
         )}
       </section>
-      <footer>
+      
+      <footer style={styles.footer}>
         <p>Report generated on: {generatedOn}</p>
         <p>&copy; 2023 Vue Dashboard</p>
       </footer>
     </div>
   );
-}
+};
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<function />);
+ReactDOM.createRoot(document.getElementById('root')).render(<DashboardReport />);
 
     </script>
   </body>

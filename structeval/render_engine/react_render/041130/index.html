@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -20,14 +86,14 @@
 
 const App = () => {
   return (
-    <div>
+    <>
       <header>
         <h1>My Website</h1>
         <p>Welcome to the site showcasing basic structural layout and content hierarchy.</p>
       </header>
-
+      
       <hr />
-
+      
       <section>
         <h2>Introduction</h2>
         <p>This section introduces the content of the page. Below is an overview of the topics covered:</p>
@@ -37,14 +103,14 @@ const App = () => {
           <li>Summary and Conclusion</li>
         </ol>
       </section>
-
+      
       <section>
         <h2>Overview of the Structure</h2>
         <article>
           <h3>Header Area</h3>
           <p>The header contains the website title and a brief welcome message that sets the tone for visitors.</p>
         </article>
-
+        
         <article>
           <h3>Main Content Area</h3>
           <p>This is the primary section containing multiple subsections, lists, and detailed content that illustrate the visual hierarchy.</p>
@@ -54,31 +120,35 @@ const App = () => {
             <li><strong>Section C:</strong> Case Studies</li>
           </ul>
         </article>
-
+        
         <article>
           <h3>Data Presentation</h3>
           <p>The following labeled values indicate some example information:</p>
           <table border="1" cellPadding="5" cellSpacing="0">
-            <tr>
-              <th>Label</th>
-              <th>Value</th>
-            </tr>
-            <tr>
-              <td>Visitors</td>
-              <td>1560</td>
-            </tr>
-            <tr>
-              <td>Articles</td>
-              <td>45</td>
-            </tr>
-            <tr>
-              <td>Comments</td>
-              <td>87</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Label</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Visitors</td>
+                <td>1560</td>
+              </tr>
+              <tr>
+                <td>Articles</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <td>Comments</td>
+                <td>87</td>
+              </tr>
+            </tbody>
           </table>
         </article>
       </section>
-
+      
       <section>
         <h2>Detailed Content</h2>
         <div>
@@ -91,7 +161,7 @@ const App = () => {
             <li>Demographic Insights</li>
           </ul>
         </div>
-
+        
         <div>
           <h3>Subsection: Reviews</h3>
           <p>A collection of feedback from various users of the website.</p>
@@ -103,7 +173,7 @@ const App = () => {
           </blockquote>
         </div>
       </section>
-
+      
       <section>
         <h2>Summary and Conclusion</h2>
         <p>This final section wraps up the overall presentation and discusses the implications of the structured layout.</p>
@@ -115,12 +185,12 @@ const App = () => {
           <li>Concise summary providing overall context.</li>
         </ul>
       </section>
-
+      
       <footer>
         <p>Contact: info@example.com</p>
         <small>&copy; 2023 My Website. All rights reserved.</small>
       </footer>
-    </div>
+    </>
   );
 };
 

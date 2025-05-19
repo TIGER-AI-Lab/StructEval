@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -17,186 +83,183 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-<template>
-  <div id="app">
-    <header>
-      <h1>My Vue Visual Layout</h1>
-      <p>This page demonstrates a detailed structure with headings, sections, and labeled values.</p>
-    </header>
-    
-    <section class="overview">
-      <h2>Overview</h2>
-      <p>The following sections are designed to showcase the structural layout and visual hierarchy.</p>
-      <ul>
-        <li>Introduction</li>
-        <li>Details</li>
-        <li>Summary</li>
-      </ul>
-    </section>
-    
-    <section class="introduction">
-      <h2>Introduction</h2>
-      <div class="content">
-        <p>This introduction explains the overall purpose of the visual conversion task.</p>
-        <ul>
-          <li><strong>Purpose:</strong> To test structural layout.</li>
-          <li><strong>Focus:</strong> Visible structure and formatted content.</li>
-          <li><strong>Constraints:</strong> No external resources, only valid Vue code.</li>
-        </ul>
-      </div>
-    </section>
-    
-    <section class="details">
-      <h2>Details</h2>
-      <article>
-        <header>
-          <h3>Section Details</h3>
-        </header>
-        <div class="info-block">
-          <p>This block contains descriptive content for the details section.</p>
-          <table>
-            <thead>
-              <tr>
-                <th>Label</th>
-                <th>Value</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Title</td>
-                <td>{{ details.title }}</td>
-              </tr>
-              <tr>
-                <td>Version</td>
-                <td>{{ details.version }}</td>
-              </tr>
-              <tr>
-                <td>Status</td>
-                <td>{{ details.status }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </article>
+
+const VisualLayout = () => {
+  const details = {
+    title: "Visual Conversion Task",
+    version: "1.0.0",
+    status: "Active"
+  };
+
+  const configuration = {
+    A: "Enabled",
+    B: "Disabled",
+    C: "Pending"
+  };
+
+  return (
+    <div id="app">
+      <style>{`
+        #app {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          color: #333;
+        }
+
+        header, footer {
+          background-color: #f5f5f5;
+          padding: 15px;
+          text-align: center;
+        }
+
+        h1 {
+          margin-bottom: 10px;
+        }
+
+        h2 {
+          color: #444;
+          margin-top: 20px;
+          border-bottom: 1px solid #ccc;
+          padding-bottom: 5px;
+        }
+
+        h3 {
+          color: #555;
+          margin: 15px 0 10px 0;
+        }
+
+        section {
+          margin-bottom: 30px;
+        }
+
+        ul, ol {
+          margin-left: 20px;
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 10px;
+        }
+
+        table, th, td {
+          border: 1px solid #ddd;
+        }
+
+        th, td {
+          padding: 8px;
+          text-align: left;
+        }
+
+        blockquote {
+          margin: 15px 20px;
+          padding-left: 15px;
+          border-left: 4px solid #ccc;
+          font-style: italic;
+        }
+
+        .conclusion {
+          background-color: #fafafa;
+          padding: 15px;
+          border: 1px solid #e0e0e0;
+        }
+      `}</style>
+
+      <header>
+        <h1>My Vue Visual Layout</h1>
+        <p>This page demonstrates a detailed structure with headings, sections, and labeled values.</p>
+      </header>
       
-      <article>
-        <header>
-          <h3>Configuration List</h3>
-        </header>
-        <div class="configuration">
-          <ol>
-            <li>Configuration A: {{ configuration.A }}</li>
-            <li>Configuration B: {{ configuration.B }}</li>
-            <li>Configuration C: {{ configuration.C }}</li>
-          </ol>
+      <section className="overview">
+        <h2>Overview</h2>
+        <p>The following sections are designed to showcase the structural layout and visual hierarchy.</p>
+        <ul>
+          <li>Introduction</li>
+          <li>Details</li>
+          <li>Summary</li>
+        </ul>
+      </section>
+      
+      <section className="introduction">
+        <h2>Introduction</h2>
+        <div className="content">
+          <p>This introduction explains the overall purpose of the visual conversion task.</p>
+          <ul>
+            <li><strong>Purpose:</strong> To test structural layout.</li>
+            <li><strong>Focus:</strong> Visible structure and formatted content.</li>
+            <li><strong>Constraints:</strong> No external resources, only valid Vue code.</li>
+          </ul>
         </div>
-      </article>
-    </section>
-    
-    <section class="summary">
-      <h2>Summary</h2>
-      <div class="conclusion">
-        <p>The above sections demonstrate a clear visual hierarchy. All content is statically rendered in one page without interactive elements.</p>
-        <blockquote>
-          "A well-organized layout leads to a better user experience."
-        </blockquote>
-        <p>Thank you for reviewing our demonstration of Vue structural layout.</p>
-      </div>
-    </section>
-    
-    <footer>
-      <p>&copy; 2023 My Vue Application</p>
-    </footer>
-  </div>
-</template>
-
-<script>
-  name: "VisualLayout",
-  data() {
-    return {
-      details: {
-        title: "Visual Conversion Task",
-        version: "1.0.0",
-        status: "Active"
-      },
-      configuration: {
-        A: "Enabled",
-        B: "Disabled",
-        C: "Pending"
-      }
-    };
-  }
+      </section>
+      
+      <section className="details">
+        <h2>Details</h2>
+        <article>
+          <header>
+            <h3>Section Details</h3>
+          </header>
+          <div className="info-block">
+            <p>This block contains descriptive content for the details section.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Label</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Title</td>
+                  <td>{details.title}</td>
+                </tr>
+                <tr>
+                  <td>Version</td>
+                  <td>{details.version}</td>
+                </tr>
+                <tr>
+                  <td>Status</td>
+                  <td>{details.status}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+        
+        <article>
+          <header>
+            <h3>Configuration List</h3>
+          </header>
+          <div className="configuration">
+            <ol>
+              <li>Configuration A: {configuration.A}</li>
+              <li>Configuration B: {configuration.B}</li>
+              <li>Configuration C: {configuration.C}</li>
+            </ol>
+          </div>
+        </article>
+      </section>
+      
+      <section className="summary">
+        <h2>Summary</h2>
+        <div className="conclusion">
+          <p>The above sections demonstrate a clear visual hierarchy. All content is statically rendered in one page without interactive elements.</p>
+          <blockquote>
+            "A well-organized layout leads to a better user experience."
+          </blockquote>
+          <p>Thank you for reviewing our demonstration of Vue structural layout.</p>
+        </div>
+      </section>
+      
+      <footer>
+        <p>&copy; 2023 My Vue Application</p>
+      </footer>
+    </div>
+  );
 };
-</script>
 
-<style scoped>
-#app {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  color: #333;
-}
-
-header, footer {
-  background-color: #f5f5f5;
-  padding: 15px;
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 10px;
-}
-
-h2 {
-  color: #444;
-  margin-top: 20px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
-}
-
-h3 {
-  color: #555;
-  margin: 15px 0 10px 0;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-ul, ol {
-  margin-left: 20px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-
-table, th, td {
-  border: 1px solid #ddd;
-}
-
-th, td {
-  padding: 8px;
-  text-align: left;
-}
-
-blockquote {
-  margin: 15px 20px;
-  padding-left: 15px;
-  border-left: 4px solid #ccc;
-  font-style: italic;
-}
-
-.conclusion {
-  background-color: #fafafa;
-  padding: 15px;
-  border: 1px solid #e0e0e0;
-}
-</style>
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<{ />);
+ReactDOM.createRoot(document.getElementById('root')).render(<VisualLayout />);
 
     </script>
   </body>

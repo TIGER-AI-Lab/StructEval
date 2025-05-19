@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,7 +84,7 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
+function VisualConversionTestPage() {
   return (
     <div>
       <header>
@@ -32,17 +98,17 @@ const App = () => {
           </ul>
         </nav>
       </header>
-
+      
       <section>
         <h2>Introduction</h2>
         <p>
           Welcome to the Visual Conversion Test Page. This HTML document is designed to showcase a clear structure with visible headings, sections, lists, tables, and formatted content.
         </p>
       </section>
-
+      
       <section>
         <h2>Content Overview</h2>
-
+        
         <article>
           <h3>Article 1: Basics of HTML Structure</h3>
           <p>
@@ -54,7 +120,7 @@ const App = () => {
             <li>Articles and Sections</li>
           </ul>
         </article>
-
+        
         <article>
           <h3>Article 2: Detailed Formatting</h3>
           <p>
@@ -67,7 +133,7 @@ const App = () => {
           </ol>
         </article>
       </section>
-
+      
       <aside>
         <h2>Additional Information</h2>
         <p>
@@ -88,7 +154,7 @@ const App = () => {
           </dd>
         </dl>
       </aside>
-
+      
       <section>
         <h2>Data Table</h2>
         <table border="1" cellSpacing="0" cellPadding="5">
@@ -118,7 +184,7 @@ const App = () => {
           </tbody>
         </table>
       </section>
-
+      
       <section>
         <h2>List of Features</h2>
         <ul>
@@ -128,7 +194,7 @@ const App = () => {
           <li>Data presentation using tables and lists</li>
         </ul>
       </section>
-
+      
       <footer>
         <h2>Footer Information</h2>
         <p>
@@ -137,11 +203,11 @@ const App = () => {
       </footer>
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<VisualConversionTestPage />);
 
     </script>
   </body>

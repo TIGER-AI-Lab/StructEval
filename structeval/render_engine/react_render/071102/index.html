@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,9 +84,9 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
+const Document = () => {
   return (
-    <div>
+    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
       <h1>Project Title: Visual Conversion Test</h1>
 
       <h2>Table of Contents</h2>
@@ -36,7 +102,9 @@ const App = () => {
       <hr />
 
       <h2 id="introduction">Introduction</h2>
-      <p>This document is designed to represent a long and detailed markdown structure for testing visual conversion tasks. The layout includes multiple sections, lists, tables, code blocks, and blockquotes. The purpose of this document is to:</p>
+      <p>
+        This document is designed to represent a long and detailed markdown structure for testing visual conversion tasks. The layout includes multiple sections, lists, tables, code blocks, and blockquotes. The purpose of this document is to:
+      </p>
       <ul>
         <li>Test the structural layout</li>
         <li>Verify visual hierarchy</li>
@@ -47,12 +115,14 @@ const App = () => {
 
       <h2 id="project-overview">Project Overview</h2>
       <p><strong>Project Name:</strong> Visual Layout Tester<br />
-        <strong>Version:</strong> 1.0.0<br />
-        <strong>Author:</strong> Jane Doe</p>
+      <strong>Version:</strong> 1.0.0<br />
+      <strong>Author:</strong> Jane Doe</p>
+
       <p><strong>Description:</strong><br />
-        Visual Layout Tester is built to test how well structured content is rendered on a single static page. Every component, from headings to paragraphs and lists, is included to analyze the conversion and display processes.</p>
+      Visual Layout Tester is built to test how well structured content is rendered on a single static page. Every component, from headings to paragraphs and lists, is included to analyze the conversion and display processes.</p>
+
       <blockquote>
-        <p><strong>Note:</strong> This project deliberately avoids external resources such as images, scripts, and stylesheets.</p>
+        <strong>Note:</strong> This project deliberately avoids external resources such as images, scripts, and stylesheets.
       </blockquote>
 
       <hr />
@@ -85,6 +155,7 @@ const App = () => {
       <hr />
 
       <h2 id="usage">Usage</h2>
+
       <h3>Step 1: Read the Documentation</h3>
       <p>Review each section to understand the layout and purpose of the content. This documentation covers:</p>
       <ul>
@@ -106,15 +177,94 @@ const App = () => {
       <h3>Step 3: Visual Analysis</h3>
       <p>Use the following checklist:</p>
       <pre>
-        <code>
-[ ] Headings are bold and prominent.
+{`[ ] Headings are bold and prominent.
 [ ] Lists are indented and clearly marked.
 [ ] Code blocks maintain their formatting.
 [ ] All sections have a distinct separation.
-[ ] No external images or hyperlinks are used.
+[ ] No external images or hyperlinks are used.`}
+      </pre>
+
+      <hr />
+
+      <h2>Detailed Components</h2>
+
+      <h3>Code Block Example</h3>
+      <pre>
+{`def main():
+    print("Hello, world!")
+    
+if __name__ == "__main__":
+    main()`}
+      </pre>
+
+      <h3>Table Example</h3>
+      <table border="1" cellPadding="5" cellSpacing="0">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Headings</td>
+            <td>Main titles and section headers</td>
+          </tr>
+          <tr>
+            <td>Lists</td>
+            <td>Ordered and unordered items</td>
+          </tr>
+          <tr>
+            <td>Code Blocks</td>
+            <td>Inline code examples and blocks</td>
+          </tr>
+          <tr>
+            <td>Blockquotes</td>
+            <td>Quoted remarks and notes</td>
+          </tr>
+          <tr>
+            <td>Future Improvements</td>
+            <td>Planned updates and enhancements</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Blockquote Example</h3>
+      <blockquote>
+        "Consistency is key. Each element contributes significantly to the overall structure."<br />
+        â Project Lead
+      </blockquote>
+
+      <hr />
+
+      <h2 id="future-improvements">Future Improvements</h2>
+      <ul>
+        <li>[ ] Enhance the markdown structure for different screen sizes.</li>
+        <li>[ ] Include more explanatory comments and annotations.</li>
+        <li>[ ] Add additional sections for broader testing.</li>
+        <li>[ ] Experiment with alternative layout formats.</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="contact">Contact</h2>
+      <p>For additional details or support, please use the following contact information:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:info@visualconversiontest.com">info@visualconversiontest.com</a></li>
+        <li><strong>Phone:</strong> +1-234-567-8901</li>
+        <li><strong>Address:</strong> 123 Test Avenue, Suite 100, Example City, EX 12345</li>
+      </ul>
+
+      <hr />
+
+      <p>End of Document.</p>
+    </div>
+  );
+};
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<Document />);
 
     </script>
   </body>

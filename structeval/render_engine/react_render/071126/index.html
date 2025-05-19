@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,49 +84,49 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
-  return (
-    <div>
-      <h1>Project Phoenix: Comprehensive Guide</h1>
-      <p>Welcome to the Project Phoenix documentation. This file contains detailed instructions, configuration guidelines, and feature outlines.</p>
-
-      <hr />
-
-      <h2>Table of Contents</h2>
-      <ol>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#configuration">Configuration</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#troubleshooting">Troubleshooting</a></li>
-        <li><a href="#changelog">Changelog</a></li>
-        <li><a href="#license">License</a></li>
-      </ol>
-
-      <hr />
-
-      <h2 id="overview">Overview</h2>
-      <p>Project Phoenix is a modular system designed for rapid development of scalable applications. It emphasizes flexible configurations and clean code organization.</p>
-
-      <h3>Key Points</h3>
-      <ul>
-        <li><strong>Modular Design:</strong> Highly extensible modules.</li>
-        <li><strong>Scalability:</strong> Performance optimized.</li>
-        <li><strong>Ease of Use:</strong> Clear and concise documentation.</li>
-        <li><strong>Community Driven:</strong> Contributions welcome.</li>
-      </ul>
-
-      <hr />
-
-      <h2 id="installation">Installation</h2>
-      <ol>
-        <li><strong>Clone the Repository</strong>
-          <pre><code>git clone https://example.com/project-phoenix.git
+const ProjectPhoenixDocs = () => (
+  <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <h1>Project Phoenix: Comprehensive Guide</h1>
+    <p>
+      Welcome to the Project Phoenix documentation. This file contains detailed instructions, configuration guidelines, and feature outlines.
+    </p>
+    <hr />
+    <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#usage">Usage</a></li>
+      <li><a href="#configuration">Configuration</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#troubleshooting">Troubleshooting</a></li>
+      <li><a href="#changelog">Changelog</a></li>
+      <li><a href="#license">License</a></li>
+    </ol>
+    <hr />
+    <h2 id="overview">Overview</h2>
+    <p>
+      Project Phoenix is a modular system designed for rapid development of scalable applications. It emphasizes flexible configurations and clean code organization.
+    </p>
+    <h3>Key Points</h3>
+    <ul>
+      <li><strong>Modular Design:</strong> Highly extensible modules.</li>
+      <li><strong>Scalability:</strong> Performance optimized.</li>
+      <li><strong>Ease of Use:</strong> Clear and concise documentation.</li>
+      <li><strong>Community Driven:</strong> Contributions welcome.</li>
+    </ul>
+    <hr />
+    <h2 id="installation">Installation</h2>
+    <p>Follow these steps to install and set up Project Phoenix:</p>
+    <ol>
+      <li>
+        <strong>Clone the Repository</strong>
+        <pre>
+          <code>
+git clone https://example.com/project-phoenix.git
 cd project-phoenix
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<ProjectPhoenixDocs />);
 
     </script>
   </body>

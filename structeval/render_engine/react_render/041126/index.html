@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -17,7 +83,8 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-const App = () => {
+
+function App() {
   return (
     <div>
       <header>
@@ -90,11 +157,21 @@ const App = () => {
         <section>
           <h2>Project Timeline</h2>
           <ol>
-            <li><strong>2019:</strong> Conceptualization and initial planning stage</li>
-            <li><strong>2020:</strong> Research and development of prototypes</li>
-            <li><strong>2021:</strong> Beta testing and feedback collection</li>
-            <li><strong>2022:</strong> Official product launch and marketing rollout</li>
-            <li><strong>2023:</strong> Expansion into new markets and continuous improvement stage</li>
+            <li>
+              <strong>2019:</strong> Conceptualization and initial planning stage
+            </li>
+            <li>
+              <strong>2020:</strong> Research and development of prototypes
+            </li>
+            <li>
+              <strong>2021:</strong> Beta testing and feedback collection
+            </li>
+            <li>
+              <strong>2022:</strong> Official product launch and marketing rollout
+            </li>
+            <li>
+              <strong>2023:</strong> Expansion into new markets and continuous improvement stage
+            </li>
           </ol>
         </section>
 
@@ -147,9 +224,15 @@ const App = () => {
       <aside>
         <h2>Latest News</h2>
         <ul>
-          <li><strong>March 2023:</strong> Launch of our new product line.</li>
-          <li><strong>February 2023:</strong> Expansion into international markets.</li>
-          <li><strong>January 2023:</strong> Major update to our flagship product.</li>
+          <li>
+            <strong>March 2023:</strong> Launch of our new product line.
+          </li>
+          <li>
+            <strong>February 2023:</strong> Expansion into international markets.
+          </li>
+          <li>
+            <strong>January 2023:</strong> Major update to our flagship product.
+          </li>
         </ul>
         <h3>Upcoming Events</h3>
         <p>
@@ -167,7 +250,8 @@ const App = () => {
       </footer>
     </div>
   );
-};
+}
+
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

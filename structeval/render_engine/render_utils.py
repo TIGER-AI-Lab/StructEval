@@ -103,13 +103,31 @@ def extract_renderable_code(text: str, output_type: str = "") -> str:
         (?:```|$)                   # until closing fence or EOS
     )
     """
-
+    
     m = re.search(tag_or_fence, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+    if not m:
+        # Fallback regex allowing no newline after <code> or ``` tag
+        tag_or_fence_inline = rf"""
+        (?:                             # 1) <code> … </code> (inline)
+            <code>[ \t]*               # opener (no mandatory newline)
+            (?P<payload1>.*?)           # capture ALL following chars
+            (?:</code>|$)               # until </code> or EOS
+        )
+        |
+        (?:                             # 2) ``` fenced block (inline)
+            ```(?:{re.escape(output_type)}|[^\n`]*)[ \t]*\n?  # header line, optional newline
+            (?P<payload2>.*?)           # capture payload
+            (?:```|$)                   # until closing fence or EOS
+        )
+        """
+        m = re.search(tag_or_fence_inline, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+
     if m:
         # whichever group matched, return it
         payload = m.group("payload1") or m.group("payload2")
-        print(payload.strip())
+        #print(payload.strip())
         return payload.strip()
+        
 
     # For HTML output, use the text verbatim
     if text.startswith("<html>"):
@@ -140,6 +158,7 @@ def extract_code_and_save(text, task_id, output_dir):
     # Decode unicode escape sequences
     try:
         text = text.replace("&lt;", "<").replace("&gt;", ">")
+        text = text.replace("<think>\n\n</think>\n\n", "")
         text = codecs.decode(text, "unicode_escape")
     except Exception:
         pass  # If decoding fails, use the original string
@@ -159,10 +178,30 @@ def extract_code_and_save(text, task_id, output_dir):
     """
 
     m = re.search(tag_or_fence, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+    if not m:
+        # Fallback regex allowing no newline after <code> or ``` tag
+        tag_or_fence_inline = rf"""
+        (?:                             # 1) <code> … </code> (inline)
+            <code>[ \t]*               # opener (no mandatory newline)
+            (?P<payload1>.*?)           # capture ALL following chars
+            (?:</code>|$)               # until </code> or EOS
+        )
+        |
+        (?:                             # 2) ``` fenced block (inline)
+            ```(?:{re.escape(output_type)}|[^\n`]*)[ \t]*\n?  # header line, optional newline
+            (?P<payload2>.*?)           # capture payload
+            (?:```|$)                   # until closing fence or EOS
+        )
+        """
+        m = re.search(tag_or_fence_inline, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+
     if m:
         # whichever group matched, return it
         payload = m.group("payload1") or m.group("payload2")
         code = payload.strip()
+    else:
+        # If still no match, fall back to entire text (trimmed) to avoid undefined variable
+        code = text.strip()
 
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
@@ -178,8 +217,8 @@ def extract_code_and_save(text, task_id, output_dir):
     extension = ext_map.get(output_type, ".txt")
     filename = os.path.join(output_dir, f"{task_id}{extension}")
 
-    print(code)
-    print("hello world")
+    #print(code)
+    #print("hello world")
 
     # Save extracted code to file
     try:

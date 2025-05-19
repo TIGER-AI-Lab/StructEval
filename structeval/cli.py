@@ -29,10 +29,13 @@ class StructEvalCLI:
         queries = [
             f"""{item['query']}
             \n\nIMPORTANT: Only output the required renderable or executable code. You must start the code with <code> and end the code with </code> (they are code block indicators, not HTML tags). No other text output (explanation, comments, etc.) are allowed.
-            {"\n\n/no_think" if llm_model_name == "Qwen/Qwen3-4B-Base" else ""}
+            {"\n\n/no_think" if llm_model_name == "Qwen/Qwen3-4B" else ""}
             """
             for item in data
         ]
+
+        if llm_model_name == "Qwen/Qwen3-4B":
+            print("Qwen3-4B I'm here")
 
         generations = run_inference(llm_model_name, llm_engine, queries, **kwargs)
 

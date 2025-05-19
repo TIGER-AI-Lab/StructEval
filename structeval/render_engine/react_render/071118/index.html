@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,11 +84,11 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
+const ProjectDocumentation = () => {
   return (
     <div>
       <h1>Project Documentation</h1>
-
+      
       <h2>Table of Contents</h2>
       <ul>
         <li><a href="#project-overview">Project Overview</a></li>
@@ -36,55 +102,67 @@ const App = () => {
         <li><a href="#license">License</a></li>
         <li><a href="#appendix">Appendix</a></li>
       </ul>
-
+      
       <hr />
-
+      
       <h2 id="project-overview">Project Overview</h2>
-      <p>This documentation outlines the project structure and provides detailed guidance on the formatting, layout, and content expected in the Markdown file. This project is designed to test visual structure, hierarchy, and content clarity.</p>
+      <p>
+        This documentation outlines the project structure and provides detailed guidance on the formatting, layout, and content expected in the Markdown file. This project is designed to test visual structure, hierarchy, and content clarity.
+      </p>
+      
       <strong>Objectives:</strong>
       <ul>
         <li>Demonstrate visible structure with headings and sections.</li>
         <li>Showcase lists, tables, and formatted content.</li>
         <li>Provide a comprehensive guide for setup and usage.</li>
       </ul>
-
+      
       <hr />
-
+      
       <h2 id="features">Features</h2>
+      
       <h3>Core Features</h3>
       <ol>
         <li><strong>Modular Structure:</strong> Content is divided into distinct sections.</li>
         <li><strong>Clear Formatting:</strong> Utilizes headings, lists, and code blocks.</li>
         <li><strong>User Guidance:</strong> Detailed instructions and troubleshooting tips included.</li>
       </ol>
+      
       <h3>Additional Features</h3>
       <ul>
         <li>Responsive design for a variety of Markdown viewers.</li>
         <li>Easy navigation using a table of contents.</li>
         <li>Customizable configuration settings.</li>
       </ul>
-
+      
       <hr />
-
+      
       <h2 id="system-requirements">System Requirements</h2>
-      <p>The system requirements to view and edit this documentation are minimal, ensuring accessibility for all users.</p>
+      <p>
+        The system requirements to view and edit this documentation are minimal, ensuring accessibility for all users.
+      </p>
+      
       <h3>Hardware</h3>
       <ul>
         <li><strong>Processor:</strong> Intel i5 or equivalent.</li>
         <li><strong>RAM:</strong> 8GB minimum (16GB recommended).</li>
         <li><strong>Storage:</strong> At least 500MB of free space.</li>
       </ul>
+      
       <h3>Software</h3>
       <ul>
         <li><strong>Operating Systems:</strong> Windows, macOS, or Linux.</li>
         <li><strong>Editors:</strong> Any Markdown-supported editor (e.g., Visual Studio Code, Sublime Text).</li>
         <li><strong>Viewer:</strong> A Markdown viewer capable of rendering extended Markdown syntax.</li>
       </ul>
-
+      
       <hr />
-
+      
       <h2 id="installation">Installation</h2>
-      <p>Follow these steps to set up your environment and view the documentation correctly:</p>
+      <p>
+        Follow these steps to set up your environment and view the documentation correctly:
+      </p>
+      
       <h3>Step-by-Step Instructions</h3>
       <ol>
         <li><strong>Download Repository:</strong> Obtain the repository containing this documentation.</li>
@@ -92,24 +170,28 @@ const App = () => {
         <li><strong>Read Instructions:</strong> Review the sections below for configuration and usage.</li>
         <li><strong>Launch Markdown Viewer:</strong> Use a compatible viewer to render the Markdown file.</li>
       </ol>
-      <strong>Note:</strong> No external libraries or assets are required.
-
+      <p><strong>Note:</strong> No external libraries or assets are required.</p>
+      
       <hr />
-
+      
       <h2 id="usage">Usage</h2>
       <p>This section explains how to navigate and interact with the documentation.</p>
+      
       <h3>Viewing the Documentation</h3>
       <ul>
         <li>Open the file in any Markdown editor to view the raw text.</li>
         <li>Render the file using a Markdown viewer to see the formatted output.</li>
         <li>Alternatively, use a terminal-based tool such as "Glow" for a text-based view.</li>
       </ul>
+      
       <h3>Example Command</h3>
       <p>To view the file in a terminal (assuming "Glow" is installed), use:</p>
-      <pre><code>$ glow README.md
+      <pre>
+<code>
+$ glow README.md
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<ProjectDocumentation />);
 
     </script>
   </body>

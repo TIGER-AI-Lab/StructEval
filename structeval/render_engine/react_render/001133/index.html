@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,93 +84,80 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const Card = styled.div`
-  width: 400px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh; 
-`;
-
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
-`;
-
-const Label = styled.label`
-  display: block;
-  margin-bottom: 5px;
-`;
-
-const Input = styled.input`
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-`;
-
-const CheckboxContainer = styled.div`
-  display: flex;
-  gap: 20px;
-  align-items: center;
-`;
-
-const Button = styled.button`
-  background-color: green;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-`;
-
-
-const App = () => {
-  const [travelDate, setTravelDate] = useState('');
-
-  const handleDateChange = (event) => {
-    setTravelDate(event.target.value);
-  };
-
+const FlightBooking = () => {
   const today = new Date().toISOString().split('T')[0];
 
+  const containerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+  };
+
+  const cardStyle = {
+    width: '400px',
+    padding: '20px',
+    boxShadow: '0 0 10px rgba(0,0,0,0.1)',
+    borderRadius: '5px',
+  };
+
+  const formStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+  };
+
+  const checkboxContainer = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    marginBottom: '15px',
+  };
+
+  const buttonStyle = {
+    backgroundColor: 'green',
+    color: 'white',
+    padding: '10px',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+  };
+
   return (
-    <Card>
-      <h1>Flight Booking</h1>
-      <Form>
-        <Label htmlFor="departureCity">Departure City</Label>
-        <Input type="text" id="departureCity" placeholder="Enter departure city" />
-
-        <Label htmlFor="arrivalCity">Arrival City</Label>
-        <Input type="text" id="arrivalCity" placeholder="Enter destination city" />
-
-        <Label htmlFor="travelDate">Travel Date</Label>
-        <Input type="date" id="travelDate" value={travelDate} onChange={handleDateChange} min={today} />
-
-        <CheckboxContainer>
+    <div style={containerStyle}>
+      <div style={cardStyle}>
+        <h1 style={{ textAlign: 'center' }}>Flight Booking</h1>
+        <form style={formStyle}>
           <label>
-            <input type="checkbox" /> Direct Flight
+            Departure City:
+            <input type="text" placeholder="Enter departure city" />
           </label>
           <label>
-            <input type="checkbox" /> Economy Class
+            Arrival City:
+            <input type="text" placeholder="Enter destination city" />
           </label>
-        </CheckboxContainer>
-
-        <Button type="submit">Book Now</Button>
-      </Form>
-    </Card>
+          <label>
+            Travel Date:
+            <input type="date" min={today} />
+          </label>
+          <div style={checkboxContainer}>
+            <label>
+              <input type="checkbox" />
+              Direct Flight
+            </label>
+            <label>
+              <input type="checkbox" />
+              Economy Class
+            </label>
+          </div>
+          <button type="submit" style={buttonStyle}>Book Now</button>
+        </form>
+      </div>
+    </div>
   );
 };
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<FlightBooking />);
 
     </script>
   </body>

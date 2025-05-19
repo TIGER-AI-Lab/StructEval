@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -22,7 +88,9 @@ const ProjectOverview = () => {
   return (
     <div>
       <h1>Project Overview</h1>
-      <p>Welcome to the <strong>Project Overview</strong> document. This document is designed to test structural layout, visual hierarchy, and visible content organization. Read on to get a full introduction to our project.</p>
+      <p>
+        Welcome to the <strong>Project Overview</strong> document. This Markdown file is designed to test structural layout, visual hierarchy, and visible content organization. Read on to get a full introduction to our project.
+      </p>
       <hr />
       <h2>Table of Contents</h2>
       <ol>
@@ -39,7 +107,9 @@ const ProjectOverview = () => {
       </ol>
       <hr />
       <h2 id="introduction">Introduction</h2>
-      <p>Welcome to the <strong>Project</strong>! This document provides an extensive look at our project. Here, you will find everything from the initial setup to advanced configuration details.</p>
+      <p>
+        Welcome to the <strong>Project</strong>! This document provides an extensive look at our project. Here, you will find everything from the initial setup to advanced configuration details.
+      </p>
       <h3>Goals</h3>
       <ul>
         <li><strong>Simplicity:</strong> Easy to understand and use.</li>
@@ -47,19 +117,23 @@ const ProjectOverview = () => {
         <li><strong>Efficiency:</strong> Optimized performance and design.</li>
       </ul>
       <h3>Background</h3>
-      <p>Our project was started with the intention of providing a seamless user experience without unnecessary bloat. We aim to integrate modern design principles with a comprehensive feature set.</p>
+      <p>
+        Our project was started with the intention of providing a seamless user experience without unnecessary bloat. We aim to integrate modern design principles with a comprehensive feature set.
+      </p>
       <hr />
       <h2 id="features">Features</h2>
       <p>The core features of this project are grouped into the following segments:</p>
       <h3>Core Functionality</h3>
       <ul>
-        <li><strong>Responsive Design</strong>
+        <li>
+          <strong>Responsive Design</strong>
           <ul>
             <li>Adapts to different screen sizes.</li>
             <li>Provides a clean and modern UI.</li>
           </ul>
         </li>
-        <li><strong>Modularity</strong>
+        <li>
+          <strong>Modularity</strong>
           <ul>
             <li>Easy integration of additional components.</li>
             <li>Plug-and-play architecture.</li>
@@ -68,18 +142,21 @@ const ProjectOverview = () => {
       </ul>
       <h3>Advanced Features</h3>
       <ol>
-        <li><strong>Data Visualization</strong>
+        <li>
+          <strong>Data Visualization</strong>
           <ul>
             <li>Render tables and graphs without external dependencies.</li>
           </ul>
         </li>
-        <li><strong>Real-Time Updates</strong>
+        <li>
+          <strong>Real-Time Updates</strong>
           <ul>
             <li>Dynamic content updating.</li>
             <li>Seamless transitions between states.</li>
           </ul>
         </li>
-        <li><strong>Accessibility</strong>
+        <li>
+          <strong>Accessibility</strong>
           <ul>
             <li>Fully compliant with WCAG standards.</li>
             <li>Keyboard navigation and screen-reader support.</li>
@@ -94,20 +171,25 @@ const ProjectOverview = () => {
       </ul>
       <hr />
       <h2 id="installation">Installation</h2>
+      <p>Follow these steps to install the project:</p>
       <ol>
-        <li><strong>Prerequisites</strong>: Ensure you have the following installed:
+        <li>
+          <strong>Prerequisites</strong>: Ensure you have the following installed:
           <ul>
             <li>Python 3.8+</li>
             <li>Node.js 12+</li>
             <li>Git</li>
           </ul>
         </li>
-        <li><strong>Clone the Repository</strong>
-          <pre><code>git clone https://github.com/yourusername/yourproject.git
-cd yourproject
+        <li>
+          <strong>Clone the Repository</strong>
+          <pre>
+            <code>
+              git clone https://github.com/yourusername/yourproject.git
+              cd yourproject
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<ProjectOverview />);
 
     </script>
   </body>

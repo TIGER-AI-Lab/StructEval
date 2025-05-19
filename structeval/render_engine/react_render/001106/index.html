@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -23,53 +89,93 @@ const CommentForm = () => {
   const [comment, setComment] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  const handleNameChange = (event) => {
-    setName(event.target.value);
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+    setSubmitted(false);
   };
 
-  const handleCommentChange = (event) => {
-    setComment(event.target.value);
+  const handleCommentChange = (e) => {
+    setComment(e.target.value);
+    setSubmitted(false);
   };
 
-  const handleSubmit = () => {
-    if (name.trim() !== '' && comment.trim() !== '') {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (name.trim() && comment.trim()) {
       setSubmitted(true);
-      setName('');
-      setComment('');
     }
   };
 
   const handleClear = () => {
     setName('');
     setComment('');
+    setSubmitted(false);
+  };
+
+  const isFormValid = name.trim() !== '' && comment.trim() !== '';
+
+  const containerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    padding: '20px',
+  };
+
+  const formStyle = {
+    display: 'grid',
+    gridTemplateRows: 'auto auto auto',
+    gap: '15px',
+    maxWidth: '500px',
+    width: '100%',
+  };
+
+  const headerStyle = {
+    textAlign: 'center',
+  };
+
+  const buttonContainerStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+  };
+
+  const postButtonStyle = {
+    backgroundColor: 'darkgreen',
+    color: 'white',
+    border: 'none',
+    padding: '10px 20px',
+    cursor: isFormValid ? 'pointer' : 'not-allowed',
+    opacity: isFormValid ? 1 : 0.6,
+  };
+
+  const clearButtonStyle = {
+    backgroundColor: '#f0f0f0',
+    border: 'none',
+    padding: '10px 20px',
+    cursor: 'pointer',
   };
 
   return (
-    <div style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
-      <form style={{ display: 'grid', gap: '10px', maxWidth: '500px', width: '100%' }}>
-        <h1 style={{ textAlign: 'center' }}>Leave a Comment</h1>
+    <div style={containerStyle}>
+      <form style={formStyle} onSubmit={handleSubmit}>
+        <h1 style={headerStyle}>Leave a Comment</h1>
         <input
           type="text"
           placeholder="Your Name"
           value={name}
           onChange={handleNameChange}
+          required
         />
         <textarea
           placeholder="Enter your comment"
-          rows={4}
+          rows="4"
           value={comment}
           onChange={handleCommentChange}
+          required
         />
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <button
-            type="button"
-            onClick={handleSubmit}
-            disabled={name.trim() === '' || comment.trim() === ''}
-            style={{ backgroundColor: 'darkgreen', color: 'white' }}
-          >
+        <div style={buttonContainerStyle}>
+          <button type="submit" style={postButtonStyle} disabled={!isFormValid}>
             Post Comment
           </button>
-          <button type="button" onClick={handleClear}>
+          <button type="button" style={clearButtonStyle} onClick={handleClear}>
             Clear Form
           </button>
         </div>

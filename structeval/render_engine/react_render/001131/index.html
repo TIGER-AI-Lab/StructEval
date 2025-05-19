@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,53 +84,127 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function ProductSurvey() {
-  const [rating, setRating] = useState(null);
-  const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-  const [validationError, setValidationError] = useState(false);
+const ProductSurvey = () => {
+    const [rating, setRating] = useState('');
+    const [email, setEmail] = useState('');
+    const [error, setError] = useState('');
+    const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!rating || email.trim() === '') {
-      setValidationError(true);
-      return;
-    }
-    setSubmitted(true);
-    setValidationError(false);
-  };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!rating || !email) {
+            setError('Please select a rating and enter your email.');
+            return;
+        }
+        setError('');
+        setSubmitted(true);
+    };
 
-  const handleClear = () => {
-    setRating(null);
-    setEmail('');
-    setSubmitted(false);
-    setValidationError(false);
-  };
+    const handleClear = () => {
+        setRating('');
+        setEmail('');
+        setError('');
+        setSubmitted(false);
+    };
 
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
-      <h2 style={{ textAlign: 'center' }}>Product Survey</h2>
-      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '300px', padding: '20px', border: '1px solid #ccc', borderRadius: '5px' }}>
-        {[1, 2, 3, 4, 5].map((value) => (
-          <label key={value} style={{ display: 'inline-flex', alignItems: 'center', margin: '5px' }}>
-            <input type="radio" name="rating" value={value} checked={rating === value} onChange={(e) => setRating(parseInt(e.target.value, 10))} style={{ marginRight: '5px' }} />
-            {value}
-          </label>
-        ))}
-        <div style={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
-          <input type="email" placeholder="Your Email" value={email} onChange={(e) => setEmail(e.target.value)} style={{ padding: '8px', border: '1px solid #ccc', borderRadius: '5px', marginRight: '5px' }} />
-          {validationError && email.trim() === '' && <p style={{ color: 'red' }}>Email is required</p>}
+    const containerStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100vh',
+    };
+
+    const formStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        border: '1px solid #ccc',
+        padding: '20px',
+        borderRadius: '5px',
+    };
+
+    const radioGroupStyle = {
+        display: 'flex',
+        justifyContent: 'center',
+        margin: '10px 0',
+    };
+
+    const inputStyle = {
+        padding: '8px',
+        margin: '5px 0',
+        width: '200px',
+    };
+
+    const errorStyle = {
+        color: 'red',
+        marginTop: '5px',
+    };
+
+    const buttonContainerStyle = {
+        display: 'flex',
+        justifyContent: 'space-between',
+        width: '220px',
+        marginTop: '10px',
+    };
+
+    const submitButtonStyle = {
+        backgroundColor: 'green',
+        color: 'white',
+        padding: '10px 20px',
+        border: 'none',
+        cursor: 'pointer',
+    };
+
+    const clearButtonStyle = {
+        backgroundColor: '#f0f0f0',
+        color: 'black',
+        padding: '10px 20px',
+        border: 'none',
+        cursor: 'pointer',
+    };
+
+    const thankYouStyle = {
+        marginTop: '20px',
+        color: 'green',
+    };
+
+    return (
+        <div style={containerStyle}>
+            <h2>Product Survey</h2>
+            <form style={formStyle} onSubmit={handleSubmit}>
+                <div style={radioGroupStyle}>
+                    {[1, 2, 3, 4, 5].map((num) => (
+                        <label key={num} style={{ margin: '0 10px' }}>
+                            <input
+                                type="radio"
+                                value={num}
+                                checked={rating === num.toString()}
+                                onChange={(e) => setRating(e.target.value)}
+                            />
+                            {num}
+                        </label>
+                    ))}
+                </div>
+                <div>
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        style={inputStyle}
+                    />
+                    {error && <p style={errorStyle}>{error}</p>}
+                </div>
+                <div style={buttonContainerStyle}>
+                    <button type="submit" style={submitButtonStyle}>Submit</button>
+                    <button type="button" onClick={handleClear} style={clearButtonStyle}>Clear</button>
+                </div>
+            </form>
+            {submitted && <div style={thankYouStyle}>Thank you for your feedback!</div>}
         </div>
-        {validationError && !rating && <p style={{ color: 'red', marginTop: '5px' }}>Please select a rating</p>}
-        <div style={{ marginTop: '20px' }}>
-          <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '10px 15px', border: 'none', borderRadius: '5px', marginRight: '10px', cursor: 'pointer' }}>Submit</button>
-          <button type="button" onClick={handleClear} style={{ padding: '10px 15px', border: '1px solid #ccc', borderRadius: '5px', cursor: 'pointer' }}>Clear</button>
-        </div>
-      </form>
-      {submitted && <div style={{ marginTop: '20px' }}>Thank you for your feedback!</div>}
-    </div>
-  );
-}
+    );
+};
 
 
 // Auto‑generated mount

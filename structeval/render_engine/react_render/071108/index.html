@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,35 +84,43 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
+const VisualConverterTool = () => {
   return (
     <div>
       <h1>Project Title: Visual Converter Tool</h1>
-
-      <p>Welcome to the Visual Converter Tool, a CLI application designed to convert and format data for various visual display tasks. This document outlines the structure, key features, usage, installation, and configuration details.</p>
-
+      
+      <p>
+        Welcome to the Visual Converter Tool, a CLI application designed to convert and format data for various visual display tasks. This document outlines the structure, key features, usage, installation, and configuration details.
+      </p>
+      
       <hr />
-
+      
       <h2>Overview</h2>
-
-      <p>The Visual Converter Tool provides:</p>
+      
       <ul>
         <li>Clear visual hierarchy and structural layout.</li>
         <li>Detailed documentation for step-by-step processes.</li>
         <li>Consistent formatting across different sections.</li>
       </ul>
-
+      
       <h3>Key Features</h3>
+      
       <ol>
-        <li><strong>Structured Layouts:</strong> Predefined templates for visual conversion.</li>
-        <li><strong>Multi-format Support:</strong> Compatible with various data types.</li>
-        <li><strong>User-Friendly CLI:</strong> Simple command syntax with ample help.</li>
+        <li>
+          <strong>Structured Layouts:</strong> Predefined templates for visual conversion.
+        </li>
+        <li>
+          <strong>Multi-format Support:</strong> Compatible with various data types.
+        </li>
+        <li>
+          <strong>User-Friendly CLI:</strong> Simple command syntax with ample help.
+        </li>
       </ol>
-
+      
       <hr />
-
+      
       <h2>Table of Contents</h2>
-
+      
       <ol>
         <li><a href="#introduction">Introduction</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -56,43 +130,33 @@ const App = () => {
         <li><a href="#license">License</a></li>
         <li><a href="#appendix">Appendix</a></li>
       </ol>
-
+      
       <hr />
-
+      
       <h2 id="introduction">Introduction</h2>
-
-      <p>The Visual Converter Tool is designed with ease-of-use in mind. It is ideal for developers and content creators who need to render visually structured documents without external dependencies.</p>
-
+      
+      <p>
+        The Visual Converter Tool is designed with ease-of-use in mind. It is ideal for developers and content creators who need to render visually structured documents without external dependencies.
+      </p>
+      
       <ul>
         <li><strong>Purpose:</strong> Simplify the conversion of raw data to formatted, visual content.</li>
         <li><strong>Scope:</strong> Handle multiple text formats in a clean, readable layout.</li>
       </ul>
-
+      
       <h3>Sample Layout</h3>
-
-      <pre>
-        {`Section Title: Header Information
+      
+      <pre><code>
+Section Title: Header Information
 -------------------------------
 Description: This section contains key header details.
 Items:
   - Name: "Visual Converter"
   - Version: "v1.0.0"
-  - Date: "2023-10-10"`}
-      </pre>
-
-      <hr />
-
-      <h2 id="installation">Installation</h2>
-
-      <p>To install the Visual Converter Tool, follow these steps:</p>
-
-      <ol>
-        <li><strong>Clone the Repository:</strong>
-          <ul>
-            <li>Run: <code>git clone local-repository-path
+  - Date: "2023-10-10"
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<VisualConverterTool />);
 
     </script>
   </body>

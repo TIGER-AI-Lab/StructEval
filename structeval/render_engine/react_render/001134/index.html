@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -19,37 +85,56 @@
 
 
 const NewsletterSubscription = () => {
-  const [subscribed, setSubscribed] = useState(false);
   const [email, setEmail] = useState('');
-  const [isValid, setIsValid] = useState(true);
+  const [subscribed, setSubscribed] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (email === '' || !email.includes('@')) {
-      setIsValid(false);
-      return;
+  const handleSubscribe = () => {
+    if (email.trim() !== '' && email.includes('@')) {
+      setSubscribed(true);
+    } else {
+      alert('Please enter a valid email address.');
     }
+  };
 
-    setSubscribed(true);
-    setIsValid(true);
+  const containerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+  };
+
+  const moduleStyle = {
+    width: '400px',
+    border: '1px solid lightgray',
+    padding: '20px',
+    boxSizing: 'border-box',
+    textAlign: 'center',
+  };
+
+  const buttonStyle = {
+    backgroundColor: 'green',
+    color: 'white',
+    border: 'none',
+    padding: '10px 20px',
+    cursor: 'pointer',
   };
 
   return (
-    <div style={{ width: '400px', border: '1px solid lightgray', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-      <h1>Newsletter Subscription</h1>
-      <input
-        type="email"
-        placeholder="Enter your email address"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        style={{ marginBottom: '10px' }}
-      />
-      {!isValid && <p style={{ color: 'red' }}>Please enter a valid email address.</p>}
-      <button onClick={handleSubmit} style={{ backgroundColor: 'green', color: 'white', padding: '10px', border: 'none', cursor: 'pointer' }}>
-        Subscribe
-      </button>
-      {subscribed && <p>Thank you for subscribing!</p>}
+    <div style={containerStyle}>
+      <div style={moduleStyle}>
+        <h1>Newsletter Subscription</h1>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          style={{ width: '100%', padding: '10px', marginBottom: '10px' }}
+        />
+        <button style={buttonStyle} onClick={handleSubscribe}>
+          Subscribe
+        </button>
+        {subscribed && <p>Thank you for subscribing!</p>}
+      </div>
     </div>
   );
 };

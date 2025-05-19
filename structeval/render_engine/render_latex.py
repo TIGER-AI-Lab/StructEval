@@ -132,7 +132,7 @@ def extract_latex_from_code_tag(generation, output_type):
     )
     """
 
-    m = re.search(tag_or_fence, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+    m = re.search(tag_or_fence, generation, re.DOTALL | re.IGNORECASE | re.VERBOSE)
     if m:
         # whichever group matched, return it
         payload = m.group("payload1") or m.group("payload2")

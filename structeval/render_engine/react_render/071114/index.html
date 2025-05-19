@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,40 +84,43 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const MyComponent = () => {
-  return (
-    <div>
-      <h1>My Project Documentation</h1>
+const Documentation = () => (
+  <div>
+    <h1>My Project Documentation</h1>
 
-      <h2>Table of Contents</h2>
-      <ol>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#project-structure">Project Structure</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#contributing">Contributing</a></li>
-        <li><a href="#license">License</a></li>
-        <li><a href="#changelog">Changelog</a></li>
-        <li><a href="#appendix">Appendix</a></li>
-      </ol>
+    <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#project-structure">Project Structure</a></li>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#usage">Usage</a></li>
+      <li><a href="#contributing">Contributing</a></li>
+      <li><a href="#license">License</a></li>
+      <li><a href="#changelog">Changelog</a></li>
+      <li><a href="#appendix">Appendix</a></li>
+    </ol>
 
-      <hr />
+    <hr />
 
-      <h2 id="introduction">Introduction</h2>
-      <p>Welcome to the documentation for <strong>My Project</strong>. This file outlines the structure, installation process, and usage instructions for our project. It is designed to be readable both as code and as a rendered Markdown file.</p>
-      <p><strong>Key Points:</strong></p>
-      <ul>
-        <li>Organized and modular project layout.</li>
-        <li>Clearly defined sections for ease of navigation.</li>
-        <li>Step-by-step instructions for installation and usage.</li>
-      </ul>
+    <h2 id="introduction">Introduction</h2>
+    <p>Welcome to the documentation for <strong>My Project</strong>. This file outlines the structure, installation process, and usage instructions for our project. It is designed to be readable both as code and as a rendered Markdown file.</p>
 
-      <hr />
+    <p><strong>Key Points:</strong></p>
+    <ul>
+      <li>Organized and modular project layout.</li>
+      <li>Clearly defined sections for ease of navigation.</li>
+      <li>Step-by-step instructions for installation and usage.</li>
+    </ul>
 
-      <h2 id="project-structure">Project Structure</h2>
-      <h3>Directory Layout</h3>
-      <pre>
-        {`my_project/
+    <hr />
+
+    <h2 id="project-structure">Project Structure</h2>
+
+    <h3>Directory Layout</h3>
+    <p>The project is organized into several directories and files. Below is the hierarchical structure:</p>
+    <pre>
+<code className="language-bash">
+my_project/
 âââ README.md           # Main documentation file
 âââ LICENSE             # License file
 âââ CONTRIBUTING.md     # Contribution guidelines
@@ -69,35 +138,9 @@ const MyComponent = () => {
 âââ tests/
     âââ test_module1.md    # Module 1 tests
     âââ test_module2.md    # Module 2 tests
-`}
-      </pre>
-
-      <h3>Detailed Components</h3>
-      <ul>
-        <li><strong>Module 1:</strong>
-          <ul>
-            <li><em>Component A</em>: Processes raw data and performs initial normalization.</li>
-            <li><em>Component B</em>: Provides interfaces for data manipulation and communication.</li>
-          </ul>
-        </li>
-        <li><strong>Module 2:</strong>
-          <ul>
-            <li><em>Main</em>: Contains the core program logic and initialization routines.</li>
-            <li><em>Utils</em>: Offers support functions such as logging, error handling, and configurations.</li>
-          </ul>
-        </li>
-      </ul>
-
-      <h3>Build Process</h3>
-      <pre>
-        {`bash
-$ make build
-`}
-      </pre>
-      <p>After a successful build, the executable files and resources will be available in the <code>bin/
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<Documentation />);
 
     </script>
   </body>

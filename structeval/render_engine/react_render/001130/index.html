@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,97 +84,134 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-`;
-
-const FormContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-`;
-
-const FormField = styled.div`
-  margin-bottom: 10px;
-`;
-
-const Button = styled.button`
-  padding: 10px;
-  margin: 5px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: ${props => props.green ? 'green' : 'grey'};
-  color: white;
-`;
-
-const ConfirmationMessage = styled.p`
-  margin-top: 10px;
-  color: green;
-`;
-
-
-function ReservationForm() {
+const ReservationForm = () => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
-  const [guests, setGuests] = useState('Select number of guests');
-  const [isConfirmed, setIsConfirmed] = useState(false);
+  const [partySize, setPartySize] = useState('');
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (name && phone && date && time && guests !== 'Select number of guests') {
-      setIsConfirmed(true);
+    if (name && phone && date && time && partySize) {
+      setSubmitted(true);
     } else {
       alert('Please fill in all fields.');
     }
   };
 
+  const handleCancel = () => {
+    setName('');
+    setPhone('');
+    setDate('');
+    setTime('');
+    setPartySize('');
+    setSubmitted(false);
+  };
+
+  const containerStyle = {
+    display: 'flex',
+    height: '100vh',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f2f2f2',
+  };
+
+  const formStyle = {
+    backgroundColor: '#fff',
+    padding: '20px',
+    borderRadius: '8px',
+    boxShadow: '0 0 10px rgba(0,0,0,0.1)',
+    width: '300px',
+    textAlign: 'center',
+  };
+
+  const inputStyle = {
+    width: '100%',
+    padding: '10px',
+    margin: '10px 0',
+    boxSizing: 'border-box',
+  };
+
+  const buttonContainerStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    marginTop: '10px',
+  };
+
+  const bookNowStyle = {
+    backgroundColor: 'green',
+    color: 'white',
+    border: 'none',
+    padding: '10px 20px',
+    cursor: 'pointer',
+  };
+
+  const cancelStyle = {
+    backgroundColor: '#ccc',
+    border: 'none',
+    padding: '10px 20px',
+    cursor: 'pointer',
+  };
+
   return (
-    <Container>
-      <h1>Reserve Your Table</h1>
-      <FormContainer>
-        <FormField>
-          <input type="text" placeholder="Enter your full name" value={name} onChange={(e) => setName(e.target.value)} />
-        </FormField>
-        <FormField>
-          <input type="tel" placeholder="Enter your phone number" value={phone} onChange={(e) => setPhone(e.target.value)} />
-        </FormField>
-        <FormField>
-          <label htmlFor="reservationDate">Reservation Date:</label>
-          <input type="date" id="reservationDate" value={date} onChange={(e) => setDate(e.target.value)} />
-        </FormField>
-        <FormField>
-          <label htmlFor="reservationTime">Reservation Time:</label>
-          <input type="time" id="reservationTime" value={time} onChange={(e) => setTime(e.target.value)} />
-        </FormField>
-        <FormField>
-          <select value={guests} onChange={(e) => setGuests(e.target.value)}>
-            <option disabled>Select number of guests</option>
-            {[...Array(10)].map((_, i) => (
-              <option key={i + 1} value={i + 1}>{i + 1}</option>
-            ))}
-          </select>
-        </FormField>
-        <Button green onClick={handleSubmit}>Book Now</Button>
-        <Button onClick={() => { /* Handle Cancel action */ }}>Cancel</Button>
-        {isConfirmed && <ConfirmationMessage>Reservation confirmed!</ConfirmationMessage>}
-      </FormContainer>
-    </Container>
+    <div style={containerStyle}>
+      <form style={formStyle} onSubmit={handleSubmit}>
+        <h1>Reserve Your Table</h1>
+        <input
+          type="text"
+          placeholder="Enter your full name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          style={inputStyle}
+        />
+        <input
+          type="tel"
+          placeholder="Enter your phone number"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+          style={inputStyle}
+        />
+        <div>
+          <label>Reservation Date:</label>
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            style={inputStyle}
+          />
+        </div>
+        <div>
+          <label>Reservation Time:</label>
+          <input
+            type="time"
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+            style={inputStyle}
+          />
+        </div>
+        <select
+          value={partySize}
+          onChange={(e) => setPartySize(e.target.value)}
+          style={inputStyle}
+        >
+          <option value="">Select number of guests</option>
+          {[...Array(10)].map((_, i) => (
+            <option key={i + 1} value={i +1}>{i +1}</option>
+          ))}
+        </select>
+        <div style={buttonContainerStyle}>
+          <button type="submit" style={bookNowStyle}>Book Now</button>
+          <button type="button" style={cancelStyle} onClick={handleCancel}>Cancel</button>
+        </div>
+        {submitted && <p>Reservation confirmed!</p>}
+      </form>
+    </div>
   );
-}
+};
 
-
-// Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<ReservationForm />);
-
     </script>
   </body>
 </html>

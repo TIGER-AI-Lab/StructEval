@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,31 +84,118 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
+const DashboardContainer = styled.div`
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  header {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  h1, h2 {
+    color: #343a40;
+  }
+
+  ul, ol {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .statistics ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .statistics li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .statistics li:last-child {
+    border-bottom: none;
+  }
+
+  .label {
+    font-weight: bold;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  th {
+    background-color: #e9ecef;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    color: #6c757d;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+
+    section {
+      padding: 15px;
+    }
+  }
+`;
+
 const Dashboard = () => {
-  const [user, setUser] = useState({
+  const user = {
     name: 'John Doe',
     email: 'john.doe@example.com',
     memberSince: 'January 15, 2022'
-  });
-  const [stats, setStats] = useState({
+  };
+
+  const stats = {
     posts: 24,
     comments: 85,
     likes: 421,
     followers: 56
-  });
-  const [recentActivities, setRecentActivities] = useState([
+  };
+
+  const recentActivities = [
     { date: '2023-04-22', description: 'Posted a new article about web development' },
     { date: '2023-04-20', description: 'Commented on "React vs Vue" discussion' },
     { date: '2023-04-18', description: 'Updated profile information' },
     { date: '2023-04-15', description: 'Joined a new community group' }
-  ]);
-  const [tasks, setTasks] = useState([
+  ];
+
+  const tasks = [
     { id: 1, title: 'Complete project proposal', priority: 'High', status: 'In Progress' },
     { id: 2, title: 'Review team submissions', priority: 'Medium', status: 'Pending' },
     { id: 3, title: 'Update documentation', priority: 'Low', status: 'Completed' },
     { id: 4, title: 'Schedule team meeting', priority: 'Medium', status: 'Not Started' }
-  ]);
-  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  ];
+
+  const currentYear = new Date().getFullYear();
 
   const refreshData = () => {
     console.log('Refreshing dashboard data...');
@@ -55,7 +208,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className="dashboard">
+    <DashboardContainer className="dashboard">
       <header>
         <h1>Dashboard Overview</h1>
         <p>Welcome to the main dashboard page. Here you'll find key information, statistics, and recent updates about your account.</p>
@@ -132,7 +285,7 @@ const Dashboard = () => {
       <footer>
         <p>&copy; {currentYear} Dashboard System. All rights reserved.</p>
       </footer>
-    </div>
+    </DashboardContainer>
   );
 };
 

@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -17,14 +83,15 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-const App = () => {
+
+function MyWebsite() {
   return (
     <div>
       <header>
         <h1>My Website Title</h1>
         <p>Welcome to our dynamic and content-rich page.</p>
       </header>
-
+      
       <nav>
         <ul>
           <li><a href="#introduction">Introduction</a></li>
@@ -79,9 +146,15 @@ const App = () => {
             <h3>Section Details</h3>
             <p>The page is divided into clearly demarcated sections, where each segment focuses on a particular aspect of the content.</p>
             <ul>
-              <li><strong>Layout:</strong> Organized with headers, paragraphs, and lists.</li>
-              <li><strong>Visual Hierarchy:</strong> Elements are arranged to showcase importance, from titles to explanatory notes.</li>
-              <li><strong>Content Blocks:</strong> Use of articles and side notes to improve readability.</li>
+              <li>
+                <strong>Layout:</strong> Organized with headers, paragraphs, and lists.
+              </li>
+              <li>
+                <strong>Visual Hierarchy:</strong> Elements are arranged to showcase importance, from titles to explanatory notes.
+              </li>
+              <li>
+                <strong>Content Blocks:</strong> Use of articles and side notes to improve readability.
+              </li>
             </ul>
           </article>
           <article>
@@ -89,14 +162,16 @@ const App = () => {
             <p>Further details regarding the design ideas include consistency in structure and attention to spacing between written elements. This naturally guides the reader through a concise narrative.</p>
           </article>
         </section>
-
+        
         <section id="contact">
           <h2>Contact Information</h2>
           <address>
             <p><strong>Corporate Office:</strong></p>
-            <p>1234 Example Road<br />
+            <p>
+              1234 Example Road<br />
               Suite 100<br />
-              Citytown, CT 67890</p>
+              Citytown, CT 67890
+            </p>
             <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
             <p>Telephone: (555) 123-4567</p>
           </address>
@@ -106,17 +181,18 @@ const App = () => {
           </div>
         </section>
       </main>
-
+      
       <footer>
         <p>&copy; 2023 My Website. All rights reserved.</p>
         <p>This standalone HTML page is designed to demonstrate complex layout and structured content purely with HTML elements.</p>
       </footer>
     </div>
   );
-};
+}
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<MyWebsite />);
 
     </script>
   </body>

@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -17,125 +83,127 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-const App = () => {
-  return (
-    <>
-      <header>
-        <h1>Welcome to Our Website</h1>
-        <p>This document serves as a demonstration of a deeply structured HTML layout.</p>
-      </header>
 
-      <nav>
-        <ul>
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#details">Details</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+function App() {
+    return (
+        <>
+            <header>
+                <h1>Welcome to Our Website</h1>
+                <p>This document serves as a demonstration of a deeply structured HTML layout.</p>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#details">Details</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <main>
+                <section id="introduction">
+                    <h2>Introduction</h2>
+                    <p>This section introduces the purpose of the document. It covers the layout, structure, and the visible content.</p>
+                    <p>The document is organized into several key sections, each clarified with headings, subheadings, and informative text.</p>
+                </section>
+                
+                <section id="features">
+                    <h2>Features Overview</h2>
+                    <article>
+                        <h3>Easy Navigation</h3>
+                        <p>No external links or images clutter the design. Navigation is straightforward.</p>
+                    </article>
+                    <article>
+                        <h3>Clear Hierarchy</h3>
+                        <p>Various levels of headings and subheadings illustrate the clear flow of information.</p>
+                    </article>
+                    <article>
+                        <h3>Semantic Structure</h3>
+                        <p>The document uses semantic HTML elements such as <header>, <nav>, <main>, and <footer>.</p>
+                    </article>
+                </section>
+                
+                <section id="details">
+                    <h2>Detailed Information</h2>
+                    <div>
+                        <h3>Data Summary</h3>
+                        <p>The table below provides a label-value display for multiple entries:</p>
+                        <dl>
+                            <dt>Name:</dt>
+                            <dd>John Doe</dd>
+                            <dt>Age:</dt>
+                            <dd>29</dd>
+                            <dt>Occupation:</dt>
+                            <dd>Web Developer</dd>
+                            <dt>Location:</dt>
+                            <dd>New York, USA</dd>
+                        </dl>
+                    </div>
+                    
+                    <div>
+                        <h3>List of Items</h3>
+                        <p>A curated list that displays a prioritized plan:</p>
+                        <ol>
+                            <li>Setup Environment</li>
+                            <li>Design Layout</li>
+                            <li>Develop Features</li>
+                            <li>Conduct Testing</li>
+                            <li>Launch Product</li>
+                        </ol>
+                    </div>
+                    
+                    <div>
+                        <h3>Steps to Follow</h3>
+                        <p>Follow the steps below for a successful process:</p>
+                        <ul>
+                            <li>Review the specifications</li>
+                            <li>Gather necessary materials</li>
+                            <li>Execute the plan carefully</li>
+                            <li>Verify results for accuracy</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section id="resources">
+                    <h2>Additional Resources</h2>
+                    <article>
+                        <h3>Documentation</h3>
+                        <p>This section contains further details and supporting materials that are useful for a deep dive into the contents.</p>
+                        <p>Although no external scripts or stylesheets are used, the text is formatted to showcase the potential of structural HTML.</p>
+                    </article>
+                    <article>
+                        <h3>FAQs</h3>
+                        <p>Common Questions Answered:</p>
+                        <ul>
+                            <li><strong>Q:</strong> What is the purpose of this document?</li>
+                            <li><strong>A:</strong> To demonstrate a well-structured static HTML page.</li>
+                            <li><strong>Q:</strong> Does it have interactive elements?</li>
+                            <li><strong>A:</strong> No, it is designed to be static and readable.</li>
+                        </ul>
+                    </article>
+                </section>
+                
+                <section id="contact">
+                    <h2>Contact Information</h2>
+                    <p>If you have further questions, please refer to the contact details below:</p>
+                    <address>
+                        <strong>Email:</strong> info@example.com<br />
+                        <strong>Phone:</strong> +1 (555) 123-4567<br />
+                        <strong>Location:</strong> 789 Main Street, Anytown, USA
+                    </address>
+                </section>
+            </main>
+            
+            <footer>
+                <p>&copy; 2023 Structured HTML Demo. All rights reserved.</p>
+                <p>This document is intended for educational and demonstrative purposes.</p>
+            </footer>
+        </>
+    );
+}
 
-      <main>
-        <section id="introduction">
-          <h2>Introduction</h2>
-          <p>This section introduces the purpose of the document. It covers the layout, structure, and the visible content.</p>
-          <p>The document is organized into several key sections, each clarified with headings, subheadings, and informative text.</p>
-        </section>
-
-        <section id="features">
-          <h2>Features Overview</h2>
-          <article>
-            <h3>Easy Navigation</h3>
-            <p>No external links or images clutter the design. Navigation is straightforward.</p>
-          </article>
-          <article>
-            <h3>Clear Hierarchy</h3>
-            <p>Various levels of headings and subheadings illustrate the clear flow of information.</p>
-          </article>
-          <article>
-            <h3>Semantic Structure</h3>
-            <p>The document uses semantic HTML elements such as &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt;.</p>
-          </article>
-        </section>
-
-        <section id="details">
-          <h2>Detailed Information</h2>
-          <div>
-            <h3>Data Summary</h3>
-            <p>The table below provides a label-value display for multiple entries:</p>
-            <dl>
-              <dt>Name:</dt>
-              <dd>John Doe</dd>
-              <dt>Age:</dt>
-              <dd>29</dd>
-              <dt>Occupation:</dt>
-              <dd>Web Developer</dd>
-              <dt>Location:</dt>
-              <dd>New York, USA</dd>
-            </dl>
-          </div>
-
-          <div>
-            <h3>List of Items</h3>
-            <p>A curated list that displays a prioritized plan:</p>
-            <ol>
-              <li>Setup Environment</li>
-              <li>Design Layout</li>
-              <li>Develop Features</li>
-              <li>Conduct Testing</li>
-              <li>Launch Product</li>
-            </ol>
-          </div>
-
-          <div>
-            <h3>Steps to Follow</h3>
-            <p>Follow the steps below for a successful process:</p>
-            <ul>
-              <li>Review the specifications</li>
-              <li>Gather necessary materials</li>
-              <li>Execute the plan carefully</li>
-              <li>Verify results for accuracy</li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="resources">
-          <h2>Additional Resources</h2>
-          <article>
-            <h3>Documentation</h3>
-            <p>This section contains further details and supporting materials that are useful for a deep dive into the contents.</p>
-            <p>Although no external scripts or stylesheets are used, the text is formatted to showcase the potential of structural HTML.</p>
-          </article>
-          <article>
-            <h3>FAQs</h3>
-            <p>Common Questions Answered:</p>
-            <ul>
-              <li><strong>Q:</strong> What is the purpose of this document?</li>
-              <li><strong>A:</strong> To demonstrate a well-structured static HTML page.</li>
-              <li><strong>Q:</strong> Does it have interactive elements?</li>
-              <li><strong>A:</strong> No, it is designed to be static and readable.</li>
-            </ul>
-          </article>
-        </section>
-
-        <section id="contact">
-          <h2>Contact Information</h2>
-          <p>If you have further questions, please refer to the contact details below:</p>
-          <address>
-            <strong>Email:</strong> info@example.com<br />
-            <strong>Phone:</strong> +1 (555) 123-4567<br />
-            <strong>Location:</strong> 789 Main Street, Anytown, USA
-          </address>
-        </section>
-      </main>
-
-      <footer>
-        <p>&copy; 2023 Structured HTML Demo. All rights reserved.</p>
-        <p>This document is intended for educational and demonstrative purposes.</p>
-      </footer>
-    </>
-  );
-};
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

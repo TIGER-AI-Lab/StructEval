@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -19,41 +85,69 @@
 
 
 const HotelBookingForm = () => {
-  const [checkInDate, setCheckInDate] = useState('');
-  const [checkOutDate, setCheckOutDate] = useState('');
-  const [guestCount, setGuestCount] = useState('');
+  const [checkIn, setCheckIn] = useState('');
+  const [checkOut, setCheckOut] = useState('');
+  const [guests, setGuests] = useState('');
   const [roomType, setRoomType] = useState('');
 
-  const handleReservation = () => {
-    if (!checkInDate || !checkOutDate || !guestCount || !roomType) {
-      alert('Please fill in all fields.');
-      return;
-    }
+  const handleReserve = () => {
     alert('Reservation Successful');
   };
 
   const handleClear = () => {
-    setCheckInDate('');
-    setCheckOutDate('');
-    setGuestCount('');
+    setCheckIn('');
+    setCheckOut('');
+    setGuests('');
     setRoomType('');
   };
 
+  const isFormValid = checkIn && checkOut && guests && roomType;
+
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      <form style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
-        <h1>Hotel Booking Form</h1>
-        <input type="date" placeholder="Check-in Date" value={checkInDate} onChange={e => setCheckInDate(e.target.value)} />
-        <input type="date" placeholder="Check-out Date" value={checkOutDate} onChange={e => setCheckOutDate(e.target.value)} />
-        <input type="number" placeholder="Number of Guests" value={guestCount} onChange={e => setGuestCount(e.target.value)} />
-        <select value={roomType} onChange={e => setRoomType(e.target.value)}>
+    <div style={{ display: 'flex', height: '100vh', justifyContent: 'center', alignItems: 'center' }}>
+      <form style={{ display: 'flex', flexDirection: 'column', width: '300px', gap: '10px' }}>
+        <h1 style={{ textAlign: 'center' }}>Hotel Booking Form</h1>
+        <input
+          type="date"
+          placeholder="Check-in Date"
+          value={checkIn}
+          onChange={(e) => setCheckIn(e.target.value)}
+        />
+        <input
+          type="date"
+          placeholder="Check-out Date"
+          value={checkOut}
+          onChange={(e) => setCheckOut(e.target.value)}
+        />
+        <input
+          type="number"
+          placeholder="Number of Guests"
+          value={guests}
+          onChange={(e) => setGuests(e.target.value)}
+        />
+        <select value={roomType} onChange={(e) => setRoomType(e.target.value)}>
           <option value="">Select Room Type</option>
           <option value="Single">Single</option>
           <option value="Double">Double</option>
           <option value="Suite">Suite</option>
         </select>
-        <button style={{ backgroundColor: 'green' }} onClick={handleReservation}>Reserve</button>
-        <button style={{ backgroundColor: 'red' }} onClick={handleClear}>Clear</button>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <button
+            type="button"
+            onClick={handleReserve}
+            style={{ backgroundColor: 'green', color: 'white', padding: '10px', border: 'none', cursor: 'pointer' }}
+            disabled={!isFormValid}
+          >
+            Reserve
+          </button>
+          <button
+            type="button"
+            onClick={handleClear}
+            style={{ backgroundColor: 'red', color: 'white', padding: '10px', border: 'none', cursor: 'pointer' }}
+          >
+            Clear
+          </button>
+        </div>
       </form>
     </div>
   );

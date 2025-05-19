@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,9 +84,14 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
+function StructuredLayoutTest() {
   return (
-    <div>
+    <>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <title>Structured Layout Test Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Helmet>
       <header>
         <h1>Structured Layout Test</h1>
         <nav>
@@ -34,7 +105,7 @@ const App = () => {
         </nav>
         <hr />
       </header>
-
+      
       <main>
         <section id="introduction">
           <h2>Introduction</h2>
@@ -44,7 +115,7 @@ const App = () => {
             elements such as headings, lists, tables, and articles.
           </p>
         </section>
-
+        
         <section id="features">
           <h2>Features</h2>
           <article>
@@ -58,7 +129,7 @@ const App = () => {
               <li>Tables with Labeled Data</li>
             </ul>
           </article>
-
+          
           <article>
             <h3>Accessibility</h3>
             <p>
@@ -73,7 +144,7 @@ const App = () => {
             </dl>
           </article>
         </section>
-
+        
         <section id="details">
           <h2>Details</h2>
           <article>
@@ -90,7 +161,7 @@ const App = () => {
               <li>Footer with Copyright Information</li>
             </ol>
           </article>
-
+          
           <article>
             <h3>Additional Information</h3>
             <p>
@@ -100,7 +171,7 @@ const App = () => {
             </p>
           </article>
         </section>
-
+        
         <section id="data">
           <h2>Data Overview</h2>
           <table border="1" cellPadding="5" cellSpacing="0">
@@ -131,7 +202,7 @@ const App = () => {
             </tbody>
           </table>
         </section>
-
+        
         <section id="summary">
           <h2>Summary</h2>
           <p>
@@ -148,18 +219,18 @@ const App = () => {
           </div>
         </section>
       </main>
-
+      
       <footer>
         <hr />
         <p>Â© 2023 Structured Layout Example. All rights reserved.</p>
       </footer>
-    </div>
+    </>
   );
-};
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<StructuredLayoutTest />);
 
     </script>
   </body>

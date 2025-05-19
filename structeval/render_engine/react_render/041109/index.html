@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -17,14 +83,15 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-const App = () => {
+
+function App() {
   return (
     <div>
       <header>
         <h1>Main Title of the Page</h1>
         <p>This page is designed to demonstrate a fully structured HTML layout with clear visual hierarchy and formatted content.</p>
       </header>
-
+      
       <nav>
         <ul>
           <li>Home</li>
@@ -34,7 +101,7 @@ const App = () => {
           <li>Contact</li>
         </ul>
       </nav>
-
+      
       <section>
         <h2>Section 1: Overview</h2>
         <p>Welcome to the overview section. Below you will find a list of the main features included in this layout:</p>
@@ -45,7 +112,7 @@ const App = () => {
           <li>Additional useful information</li>
         </ol>
       </section>
-
+      
       <section>
         <h2>Section 2: Detailed Information</h2>
         <article>
@@ -57,7 +124,7 @@ const App = () => {
           </ul>
           <p>These statistics provide insight into the daily operations and user engagement.</p>
         </article>
-
+        
         <article>
           <h3>Subsection 2.2: Analysis</h3>
           <p>The following analysis explains the trends observed over recent months:</p>
@@ -68,7 +135,7 @@ const App = () => {
           <p>Our researchers have correlated the increased activity with recent product updates and community events.</p>
         </article>
       </section>
-
+      
       <aside>
         <h2>Additional Resources</h2>
         <p>For further reading, please review these informative sections:</p>
@@ -79,7 +146,7 @@ const App = () => {
           <dd>A collection of data insights and performance metrics over the last quarter.</dd>
         </dl>
       </aside>
-
+      
       <section>
         <h2>Section 3: FAQs</h2>
         <h4>Frequently Asked Questions</h4>
@@ -89,7 +156,7 @@ const App = () => {
           <li><strong>Where can I find more information?</strong> Refer to the Additional Resources section.</li>
         </ul>
       </section>
-
+      
       <footer>
         <hr />
         <p>Contact us at: support@example.com</p>
@@ -97,7 +164,8 @@ const App = () => {
       </footer>
     </div>
   );
-};
+}
+
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

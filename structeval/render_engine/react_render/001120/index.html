@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,62 +84,116 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function App() {
+function TaskManager() {
   const [tasks, setTasks] = useState([]);
-  const [newTask, setNewTask] = useState('');
+  const [input, setInput] = useState('');
 
   const addTask = () => {
-    if (newTask.trim() !== '') {
-      setTasks([...tasks, { text: newTask, completed: false }]);
-      setNewTask('');
-    }
+    if (input.trim() === '') return;
+    setTasks([...tasks, { text: input, completed: false }]);
+    setInput('');
   };
 
-  const toggleTask = (index) => {
-    const updatedTasks = [...tasks];
-    updatedTasks[index].completed = !updatedTasks[index].completed;
-    setTasks(updatedTasks);
+  const toggleTask = index => {
+    const newTasks = tasks.map((task, i) => {
+      if (i === index) {
+        return { ...task, completed: !task.completed };
+      }
+      return task;
+    });
+    setTasks(newTasks);
   };
 
-  const clearAllTasks = () => {
+  const clearAll = () => {
     setTasks([]);
   };
 
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
-      <h3 style={{ marginBottom: '20px' }}>Task Manager</h3>
+  const containerStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100vh',
+  };
 
-      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
+  const inputContainerStyle = {
+    display: 'flex',
+    margin: '20px 0',
+  };
+
+  const addButtonStyle = {
+    backgroundColor: 'green',
+    color: 'white',
+    border: 'none',
+    padding: '5px 10px',
+    marginLeft: '10px',
+    cursor: 'pointer',
+  };
+
+  const clearButtonStyle = {
+    backgroundColor: 'red',
+    color: 'white',
+    border: 'none',
+    padding: '5px 10px',
+    marginTop: '20px',
+    cursor: 'pointer',
+  };
+
+  const taskListStyle = {
+    listStyleType: 'none',
+    padding: 0,
+  };
+
+  const taskItemStyle = completed => ({
+    textDecoration: completed ? 'line-through' : 'none',
+    display: 'flex',
+    alignItems: 'center',
+    margin: '5px 0',
+  });
+
+  return (
+    <div style={containerStyle}>
+      <h3>Task Manager</h3>
+      <div style={inputContainerStyle}>
         <input
           type="text"
           placeholder="Enter new task"
-          value={newTask}
-          onChange={(e) => setNewTask(e.target.value)}
-          style={{ marginRight: '10px' }}
+          value={input}
+          onChange={e => setInput(e.target.value)}
         />
-        <button onClick={addTask} style={{ backgroundColor: 'green', color: 'white', padding: '8px 16px', border: 'none', borderRadius: '4px' }}>Add Task</button>
+        <button style={addButtonStyle} onClick={addTask}>
+          Add Task
+        </button>
       </div>
-
-      {tasks.length === 0 ? (
-        <p>No tasks available</p>
-      ) : (
-        <ul>
+      {tasks.length > 0 ? (
+        <ul style={taskListStyle}>
           {tasks.map((task, index) => (
-            <li key={index} style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
-              <input type="checkbox" checked={task.completed} onChange={() => toggleTask(index)} /> {task.text}
+            <li key={index} style={taskItemStyle(task.completed)}>
+              <input
+                type="checkbox"
+                checked={task.completed}
+                onChange={() => toggleTask(index)}
+                style={{ marginRight: '10px' }}
+              />
+              {task.text}
             </li>
           ))}
         </ul>
+      ) : (
+        <p>No tasks available</p>
       )}
-
-      <button onClick={clearAllTasks} style={{ backgroundColor: 'red', color: 'white', padding: '8px 16px', border: 'none', borderRadius: '4px', marginTop: '20px' }}>Clear All</button>
+      {tasks.length > 0 && (
+        <button style={clearButtonStyle} onClick={clearAll}>
+          Clear All
+        </button>
+      )}
     </div>
   );
 }
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<TaskManager />);
 
     </script>
   </body>

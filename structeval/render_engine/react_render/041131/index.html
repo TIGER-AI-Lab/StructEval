@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,15 +84,17 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
+function ProjectStructuralLayout() {
   return (
     <div>
+      {/* Header Section */}
       <header>
         <h1>Main Project Overview</h1>
         <p>This page provides a comprehensive look at the structural layout, visual hierarchy, and rendered content.</p>
         <hr />
       </header>
 
+      {/* Navigation Menu */}
       <nav>
         <ul>
           <li>Home</li>
@@ -37,11 +105,13 @@ const App = () => {
         <hr />
       </nav>
 
+      {/* Introduction Section */}
       <section id="introduction">
         <h2>Introduction</h2>
         <p>Welcome to our project page. This page is designed to test the visual arrangement and structure of HTML elements such as headings, paragraphs, lists, tables, and more. The content below demonstrates the way information is organized within a single HTML document.</p>
       </section>
 
+      {/* Details Section */}
       <section id="details">
         <h2>Project Details</h2>
         <article>
@@ -70,20 +140,30 @@ const App = () => {
         </article>
       </section>
 
+      {/* Content Section */}
       <section id="content">
         <h2>Main Content</h2>
         <p>The body of this document is composed of various sections that structure the content in a logical manner. Each section contains headers, paragraphs, and lists to illustrate different types of information.</p>
         <div>
           <h3>Content Blocks</h3>
           <ol>
-            <li><strong>Block 1:</strong> Introduction and background information.</li>
-            <li><strong>Block 2:</strong> Detailed project specifications and goals.</li>
-            <li><strong>Block 3:</strong> Statistical data presented in tabular format.</li>
-            <li><strong>Block 4:</strong> Concluding remarks and future directions.</li>
+            <li>
+              <strong>Block 1:</strong> Introduction and background information.
+            </li>
+            <li>
+              <strong>Block 2:</strong> Detailed project specifications and goals.
+            </li>
+            <li>
+              <strong>Block 3:</strong> Statistical data presented in tabular format.
+            </li>
+            <li>
+              <strong>Block 4:</strong> Concluding remarks and future directions.
+            </li>
           </ol>
         </div>
       </section>
 
+      {/* Statistics Section */}
       <section id="statistics">
         <h2>Data and Statistics</h2>
         <p>Below is a table summarizing some sample data related to the project. This table is designed to present labeled values clearly.</p>
@@ -120,6 +200,7 @@ const App = () => {
         </table>
       </section>
 
+      {/* Additional Information Section */}
       <section id="additional-info">
         <h2>Additional Information</h2>
         <p>This section includes extra details that further demonstrate the use of a variety of HTML elements to structure content effectively.</p>
@@ -132,6 +213,7 @@ const App = () => {
         <p>The goal is to maintain clarity and readability on a single standalone page without reliance on external resources or scripts.</p>
       </section>
 
+      {/* Footer Section */}
       <footer>
         <hr />
         <p>&copy; 2023 Project Structural Layout. All rights reserved.</p>
@@ -139,11 +221,11 @@ const App = () => {
       </footer>
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<ProjectStructuralLayout />);
 
     </script>
   </body>

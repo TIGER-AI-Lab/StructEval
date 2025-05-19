@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,41 +84,41 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
-  return (
-    <div>
-      <h1>Project Title: Structurally Rich Markdown Example</h1>
+const StructurallyRichMarkdownExample = () => (
+  <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif', fontSize: '14px' }}>
+    <h1>Project Title: Structurally Rich Markdown Example</h1>
 
-      <h2>Table of Contents</h2>
-      <ol>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#details-configuration">Details & Configuration</a></li>
-        <li><a href="#objectives">Objectives</a></li>
-        <li><a href="#code-example">Code Example</a></li>
-        <li><a href="#summary">Summary and Future Work</a></li>
-      </ol>
+    <h2>Table of Contents</h2>
+    <ol>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#details-configuration">Details &amp; Configuration</a></li>
+      <li><a href="#objectives">Objectives</a></li>
+      <li><a href="#code-example">Code Example</a></li>
+      <li><a href="#summary-and-future-work">Summary and Future Work</a></li>
+    </ol>
 
-      <hr />
+    <hr />
 
-      <h3 id="introduction">Introduction</h3>
-      <p>This Markdown document is designed to test the visual conversion task by showcasing a detailed hierarchical layout. It includes elements such as headings, sections, lists, labeled values, and code blocks.</p>
+    <h3 id="introduction">Introduction</h3>
+    <p>
+      This Markdown document is designed to test the visual conversion task by showcasing a detailed hierarchical layout. It includes elements such as headings, sections, lists, labeled values, and code blocks.
+    </p>
 
-      <h4>Key Elements:</h4>
-      <ul>
-        <li><strong>Visible Structure</strong></li>
-        <li><strong>Hierarchical Layout</strong></li>
-        <li><strong>Labeled Values and Configuration</strong></li>
-        <li><strong>Multiple Sections and Lists</strong></li>
-      </ul>
+    <h4>Key Elements:</h4>
+    <ul>
+      <li><strong>Visible Structure</strong></li>
+      <li><strong>Hierarchical Layout</strong></li>
+      <li><strong>Labeled Values and Configuration</strong></li>
+      <li><strong>Multiple Sections and Lists</strong></li>
+    </ul>
 
-      <hr />
+    <hr />
 
-      <h3 id="details-configuration">Details & Configuration</h3>
-
-      <p><strong>Version:</strong> <code>v1.0.0
+    <h3 id="details-configuration">Details &amp; Configuration</h3>
+    <p><strong>Version:</strong> <code>v1.0.0
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<StructurallyRichMarkdownExample />);
 
     </script>
   </body>

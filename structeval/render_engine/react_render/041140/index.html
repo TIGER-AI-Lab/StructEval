@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -17,14 +83,15 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-const App = () => {
+
+function App() {
   return (
-    <div>
+    <>
       <header>
         <h1>Document Title: Structured Layout Example</h1>
         <p>This document demonstrates a complex yet clean layout that uses various HTML elements to form a visible structure.</p>
       </header>
-
+      
       <nav>
         <h2>Table of Contents</h2>
         <ol>
@@ -35,14 +102,14 @@ const App = () => {
           <li>Conclusion</li>
         </ol>
       </nav>
-
+      
       <section>
         <h2>Introduction</h2>
         <p>
           Welcome to this example page. The purpose of this document is to provide a detailed illustration of visible structure, layout, and formatted content. We include headings, subheadings, lists, paragraphs, and tables to show a range of HTML elements.
         </p>
       </section>
-
+      
       <section>
         <h2>Content Sections</h2>
         <article>
@@ -54,7 +121,7 @@ const App = () => {
             <li>Structured sections for readability</li>
           </ul>
         </article>
-
+        
         <article>
           <h3>Subsection: Additional Information</h3>
           <p>
@@ -62,7 +129,7 @@ const App = () => {
           </p>
         </article>
       </section>
-
+      
       <section>
         <h2>Data Overview</h2>
         <p>Below is a table with labeled values that show example data entries:</p>
@@ -97,7 +164,7 @@ const App = () => {
           </tbody>
         </table>
       </section>
-
+      
       <section>
         <h2>Instructions</h2>
         <p>Please follow these steps to understand the layout:</p>
@@ -109,21 +176,22 @@ const App = () => {
           <li>Finish by reading the Conclusion.</li>
         </ol>
       </section>
-
+      
       <section>
         <h2>Conclusion</h2>
         <p>
           This structured HTML document showcases a well-organized layout with distinct areas for content, data presentation, and instruction. By keeping the interface simple and straightforward, designers can achieve clarity and improved user experience.
         </p>
       </section>
-
+      
       <footer>
         <hr />
         <p>&copy; 2023 Structured Layout Examples Inc.</p>
       </footer>
-    </div>
+    </>
   );
-};
+}
+
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -19,30 +85,100 @@
 
 
 const ContactForm = () => {
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
 
-  const handleEmailChange = (e) => setEmail(e.target.value);
-  const handleSubjectChange = (e) => setSubject(e.target.value);
-  const handleMessageChange = (e) => setMessage(e.target.value);
+    const isFormValid = email.trim() !== '' && subject.trim() !== '' && message.trim() !== '';
 
-  const isFormValid = email && subject && message;
+    const handleClear = () => {
+        setEmail('');
+        setSubject('');
+        setMessage('');
+    };
 
-  return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      <form style={{ display: 'flex', flexDirection: 'column', gap: '10px', width: '300px' }}>
-        <h2 style={{ textAlign: 'center' }}>Contact Us</h2>
-        <input type="email" placeholder="Your Email" value={email} onChange={handleEmailChange} />
-        <input type="text" placeholder="Subject" value={subject} onChange={handleSubjectChange} />
-        <textarea placeholder="Write your message here" rows={3} value={message} onChange={handleMessageChange} />
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <button type="submit" disabled={!isFormValid} style={{ backgroundColor: 'darkgreen', color: 'white' }}>Send</button>
-          <button type="button" onClick={() => { setEmail(''); setSubject(''); setMessage(''); }}>Clear</button>
+    const handleSend = () => {
+        // Handle send action
+    };
+
+    const containerStyle = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+    };
+
+    const formStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        width: '300px',
+    };
+
+    const buttonContainerStyle = {
+        display: 'flex',
+        justifyContent: 'space-between',
+        marginTop: '10px',
+    };
+
+    const sendButtonStyle = {
+        backgroundColor: 'darkgreen',
+        color: 'white',
+        padding: '8px 16px',
+        border: 'none',
+        cursor: 'pointer',
+    };
+
+    const clearButtonStyle = {
+        padding: '8px 16px',
+        border: '1px solid #ccc',
+        cursor: 'pointer',
+    };
+
+    return (
+        <div style={containerStyle}>
+            <form style={formStyle}>
+                <h2 style={{ textAlign: 'center' }}>Contact Us</h2>
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    style={{ marginBottom: '10px', padding: '8px' }}
+                />
+                <input
+                    type="text"
+                    placeholder="Subject"
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
+                    style={{ marginBottom: '10px', padding: '8px' }}
+                />
+                <textarea
+                    placeholder="Write your message here"
+                    rows="3"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    style={{ marginBottom: '10px', padding: '8px' }}
+                ></textarea>
+                <div style={buttonContainerStyle}>
+                    <button
+                        type="button"
+                        onClick={handleSend}
+                        disabled={!isFormValid}
+                        style={sendButtonStyle}
+                    >
+                        Send
+                    </button>
+                    <button
+                        type="button"
+                        onClick={handleClear}
+                        style={clearButtonStyle}
+                    >
+                        Clear
+                    </button>
+                </div>
+            </form>
         </div>
-      </form>
-    </div>
-  );
+    );
 };
 
 

@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,60 +84,87 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const BankingLoginForm = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+function LoginForm() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
 
-  const handleLogin = () => {
-    if (!email || !password) {
-      setErrorMessage('Email and password are required.');
-    } else if (!email.includes('@')) {
-      setErrorMessage('Please enter a valid email address.');
-    } else {
-      setErrorMessage('');
-      // Perform login logic here
-      console.log('Logging in with:', email, password);
-    }
-  };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!email || !password) {
+            setError('Email and password are required.');
+        } else if (!email.includes('@')) {
+            setError('Please enter a valid email address.');
+        } else {
+            // Handle successful login
+            console.log('Logging in with', email, password);
+        }
+    };
 
-  const handleClear = () => {
-    setEmail('');
-    setPassword('');
-    setErrorMessage('');
-  };
+    const handleClear = () => {
+        setEmail('');
+        setPassword('');
+        setError('');
+    };
 
-  return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      <div style={{ maxWidth: '400px', width: '100%', padding: '20px', border: '1px solid #ccc', borderRadius: '5px' }}>
-        <h2 style={{ textAlign: 'center' }}>Banking Login</h2>
-        <input
-          type="text"
-          placeholder="Enter your email address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={{ width: '100%', padding: '10px', marginBottom: '10px', boxSizing: 'border-box' }}
-        />
-        <input
-          type="password"
-          placeholder="Enter your password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          style={{ width: '100%', padding: '10px', marginBottom: '10px', boxSizing: 'border-box' }}
-        />
-        {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <button onClick={handleLogin} style={{ backgroundColor: 'green', color: 'white', padding: '10px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>Login</button>
-          <button onClick={handleClear} style={{ padding: '10px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>Clear</button>
+    const containerStyle = {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100vh',
+    };
+
+    const formStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '1rem',
+        maxWidth: '400px',
+        width: '100%',
+    };
+
+    const loginButtonStyle = {
+        backgroundColor: 'green',
+        color: 'white',
+        padding: '0.5rem',
+        border: 'none',
+        cursor: 'pointer',
+    };
+
+    const clearButtonStyle = {
+        padding: '0.5rem',
+        border: '1px solid #ccc',
+        cursor: 'pointer',
+    };
+
+    return (
+        <div style={containerStyle}>
+            <form style={formStyle} onSubmit={handleSubmit}>
+                <h2>Banking Login</h2>
+                <input
+                    type="text"
+                    placeholder="Enter your email address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+                <input
+                    type="password"
+                    placeholder="Enter your password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                {error && <p style={{ color: 'red' }}>{error}</p>}
+                <div style={{ display: 'flex', gap: '1rem' }}>
+                    <button type="submit" style={loginButtonStyle}>Login</button>
+                    <button type="button" style={clearButtonStyle} onClick={handleClear}>Clear</button>
+                </div>
+            </form>
         </div>
-      </div>
-    </div>
-  );
-};
+    );
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<BankingLoginForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<LoginForm />);
 
     </script>
   </body>

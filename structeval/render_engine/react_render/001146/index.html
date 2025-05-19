@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,71 +84,105 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const NewsletterForm = () => {
+function NewsletterSubscription() {
   const [email, setEmail] = useState('');
   const [receiveUpdates, setReceiveUpdates] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
+
+  const validateEmail = (email) => {
+    return /\S+@\S+\.\S+/.test(email);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (!email) {
-      setError('Email is required');
-      return;
-    }
-
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      setError('Invalid email format');
-      return;
-    }
-
-    if (!receiveUpdates) {
-      setError('Please check the box to receive updates');
-      return;
-    }
-
     setError('');
-    setSubmitted(true);
+    setSuccess(false);
+    if (!email) {
+      setError('Email is required.');
+      return;
+    }
+    if (!validateEmail(email)) {
+      setError('Please enter a valid email address.');
+      return;
+    }
+    if (!receiveUpdates) {
+      setError('You must agree to receive updates.');
+      return;
+    }
+    setSuccess(true);
+  };
+
+  const containerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+  };
+
+  const formStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  };
+
+  const inputGroupStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    marginBottom: '10px',
+  };
+
+  const buttonStyle = {
+    backgroundColor: 'green',
+    color: 'white',
+    padding: '10px 20px',
+    border: 'none',
+    cursor: 'pointer',
+  };
+
+  const errorStyle = {
+    color: 'red',
+    fontSize: '12px',
+    marginBottom: '10px',
+  };
+
+  const successStyle = {
+    color: 'green',
+    marginTop: '10px',
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      <div>
+    <div style={containerStyle}>
+      <form onSubmit={handleSubmit} style={formStyle}>
         <h1>Subscribe Now</h1>
-        {submitted ? (
-          <p>Thank you for subscribing!</p>
-        ) : (
-          <form onSubmit={handleSubmit}>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                style={{ marginRight: '10px' }}
-              />
-              <input
-                type="checkbox"
-                checked={receiveUpdates}
-                onChange={() => setReceiveUpdates(!receiveUpdates)}
-              />
-              <label>Receive Updates</label>
-            </div>
-            {error && <span style={{ color: 'red' }}>{error}</span>}
-            <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '10px 20px', border: 'none', cursor: 'pointer' }}>
-              Sign Up
-            </button>
-          </form>
-        )}
-      </div>
+        <div style={inputGroupStyle}>
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            style={{ marginRight: '10px' }}
+          />
+          <label>
+            <input
+              type="checkbox"
+              checked={receiveUpdates}
+              onChange={(e) => setReceiveUpdates(e.target.checked)}
+            />
+            Receive Updates
+          </label>
+        </div>
+        {error && <span style={errorStyle}>{error}</span>}
+        <button type="submit" style={buttonStyle}>Sign Up</button>
+        {success && <p style={successStyle}>Thank you for subscribing!</p>}
+      </form>
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscription />);
 
     </script>
   </body>

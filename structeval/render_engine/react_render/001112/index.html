@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -19,55 +85,229 @@
 
 
 const RegistrationForm = () => {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [gender, setGender] = useState('');
-  const [country, setCountry] = useState('');
-  const [terms, setTerms] = useState(false);
-  const [registrationSuccess, setRegistrationSuccess] = useState(false);
+  const [form, setForm] = useState({
+    username: '',
+    email: '',
+    password: '',
+    gender: '',
+    country: 'USA',
+    terms: false,
+  });
+
+  const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setForm({
+      ...form,
+      [name]: type === 'checkbox' ? checked : value,
+    });
+    setErrors({
+      ...errors,
+      [name]: '',
+    });
+  };
+
+  const validate = () => {
+    const newErrors = {};
+    if (!form.username.trim()) newErrors.username = 'Username is required';
+    if (!form.email.trim()) {
+      newErrors.email = 'Email is required';
+    } else if (!form.email.includes('@')) {
+      newErrors.email = 'Email must contain "@"';
+    }
+    if (!form.password) newErrors.password = 'Password is required';
+    if (!form.terms) newErrors.terms = 'You must accept the terms';
+    return newErrors;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (!username || !email || !password || !terms) {
-      alert('Please fill in all required fields and accept the terms.');
-      return;
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length === 0) {
+      setSubmitted(true);
+    } else {
+      setErrors(validationErrors);
+      setSubmitted(false);
     }
+  };
 
-    if (!email.includes('@')) {
-      alert('Please enter a valid email address.');
-      return;
-    }
+  const handleCancel = () => {
+    setForm({
+      username: '',
+      email: '',
+      password: '',
+      gender: '',
+      country: 'USA',
+      terms: false,
+    });
+    setErrors({});
+    setSubmitted(false);
+  };
 
-    setRegistrationSuccess(true);
+  const containerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    backgroundColor: '#f2f2f2',
+  };
+
+  const formStyle = {
+    backgroundColor: '#fff',
+    padding: '20px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0,0,0,0.1)',
+    width: '300px',
+  };
+
+  const headerStyle = {
+    textAlign: 'center',
+    marginBottom: '20px',
+  };
+
+  const inputStyle = {
+    width: '100%',
+    padding: '8px',
+    margin: '5px 0 10px 0',
+    boxSizing: 'border-box',
+  };
+
+  const labelStyle = {
+    display: 'block',
+    marginBottom: '5px',
+  };
+
+  const errorStyle = {
+    color: 'red',
+    fontSize: '12px',
+    marginBottom: '10px',
+  };
+
+  const buttonContainerStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+  };
+
+  const registerButtonStyle = {
+    backgroundColor: 'green',
+    color: '#fff',
+    border: 'none',
+    padding: '10px 20px',
+    cursor: 'pointer',
+  };
+
+  const cancelButtonStyle = {
+    backgroundColor: '#ccc',
+    color: '#000',
+    border: 'none',
+    padding: '10px 20px',
+    cursor: 'pointer',
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
-        <h1>Register Now</h1>
-        <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
-        <input type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        <div>Gender:</div>
-        <div style={{ display: 'flex' }}>
-          <label><input type="radio" name="gender" value="Male" checked={gender === 'Male'} onChange={(e) => setGender(e.target.value)} /> Male</label>
-          <label><input type="radio" name="gender" value="Female" checked={gender === 'Female'} onChange={(e) => setGender(e.target.value)} /> Female</label>
-        </div>
-        <select value={country} onChange={(e) => setCountry(e.target.value)}>
-          <option value="">Country</option>
-          <option value="USA">USA</option>
-          <option value="Canada">Canada</option>
-          <option value="Mexico">Mexico</option>
-        </select>
-        <label><input type="checkbox" checked={terms} onChange={(e) => setTerms(e.target.value)} /> Accept Terms and Conditions</label>
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <button type="submit" style={{ backgroundColor: 'green' }}>Register</button>
-          <button type="button">Cancel</button>
-        </div>
-        {registrationSuccess && <div>Registration Successful</div>}
-      </form>
+    <div style={containerStyle}>
+      <div>
+        <form style={formStyle} onSubmit={handleSubmit}>
+          <h1 style={headerStyle}>Register Now</h1>
+
+          <label style={labelStyle} htmlFor="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            value={form.username}
+            onChange={handleChange}
+            style={inputStyle}
+          />
+          {errors.username && <div style={errorStyle}>{errors.username}</div>}
+
+          <label style={labelStyle} htmlFor="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            value={form.email}
+            onChange={handleChange}
+            style={inputStyle}
+          />
+          {errors.email && <div style={errorStyle}>{errors.email}</div>}
+
+          <label style={labelStyle} htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            value={form.password}
+            onChange={handleChange}
+            style={inputStyle}
+          />
+          {errors.password && <div style={errorStyle}>{errors.password}</div>}
+
+          <div style={{ marginBottom: '10px' }}>
+            <span>Gender:</span>
+            <label style={{ marginLeft: '10px' }}>
+              <input
+                type="radio"
+                name="gender"
+                value="Male"
+                checked={form.gender === 'Male'}
+                onChange={handleChange}
+              /> Male
+            </label>
+            <label style={{ marginLeft: '10px' }}>
+              <input
+                type="radio"
+                name="gender"
+                value="Female"
+                checked={form.gender === 'Female'}
+                onChange={handleChange}
+              /> Female
+            </label>
+          </div>
+
+          <div style={{ marginBottom: '10px' }}>
+            <label style={labelStyle} htmlFor="country">Country</label>
+            <select
+              id="country"
+              name="country"
+              value={form.country}
+              onChange={handleChange}
+              style={inputStyle}
+            >
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="Mexico">Mexico</option>
+            </select>
+          </div>
+
+          <div style={{ marginBottom: '10px' }}>
+            <label>
+              <input
+                type="checkbox"
+                name="terms"
+                checked={form.terms}
+                onChange={handleChange}
+              /> Accept Terms and Conditions
+            </label>
+            {errors.terms && <div style={errorStyle}>{errors.terms}</div>}
+          </div>
+
+          <div style={buttonContainerStyle}>
+            <button type="submit" style={registerButtonStyle}>Register</button>
+            <button type="button" onClick={handleCancel} style={cancelButtonStyle}>Cancel</button>
+          </div>
+        </form>
+        {submitted && (
+          <div style={{ textAlign: 'center', marginTop: '20px', color: 'green' }}>
+            Registration Successful
+          </div>
+        )}
+      </div>
     </div>
   );
 };

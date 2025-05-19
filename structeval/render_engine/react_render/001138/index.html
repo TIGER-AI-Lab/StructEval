@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,44 +84,51 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const JobApplication = () => {
+function JobApplicationForm() {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
-    phone: '',
+    phoneNumber: '',
     position: '',
     coverLetter: '',
   });
 
+  const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
-  const [validationErrors, setValidationErrors] = useState({});
+
+  const positions = [
+    'Software Engineer',
+    'Product Manager',
+    'Designer',
+  ];
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+    setErrors({ ...errors, [name]: '' });
+    setSubmitted(false);
+  };
+
+  const validate = () => {
+    let tempErrors = {};
+    if (!formData.fullName) tempErrors.fullName = 'Full Name is required';
+    if (!formData.email) {
+      tempErrors.email = 'Email is required';
+    } else if (!formData.email.includes('@')) {
+      tempErrors.email = 'Email is invalid';
+    }
+    if (!formData.phoneNumber) tempErrors.phoneNumber = 'Phone Number is required';
+    if (!formData.position) tempErrors.position = 'Position is required';
+    if (!formData.coverLetter) tempErrors.coverLetter = 'Cover Letter is required';
+    setErrors(tempErrors);
+    return Object.keys(tempErrors).length === 0;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const errors = {};
-    if (!formData.fullName) errors.fullName = 'Full Name is required';
-    if (!formData.email) errors.email = 'Email is required';
-    if (!formData.email && !formData.email.includes('@')) errors.email = 'Invalid email format';
-    if (!formData.phone) errors.phone = 'Phone Number is required';
-    if (!formData.position) errors.position = 'Position is required';
-    if (!formData.coverLetter) errors.coverLetter = 'Cover Letter is required';
-
-    setValidationErrors(errors);
-
-    if (Object.keys(errors).length === 0) {
+    if (validate()) {
       setSubmitted(true);
-      setFormData({
-        fullName: '',
-        email: '',
-        phone: '',
-        position: '',
-        coverLetter: '',
-      });
+      // Here you can handle form submission, e.g., send data to a server
     }
   };
 
@@ -63,79 +136,121 @@ const JobApplication = () => {
     setFormData({
       fullName: '',
       email: '',
-      phone: '',
+      phoneNumber: '',
       position: '',
       coverLetter: '',
     });
-    setValidationErrors({});
+    setErrors({});
+    setSubmitted(false);
   };
 
+  const gridStyle = {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    gap: '10px',
+    maxWidth: '600px',
+    margin: '0 auto',
+  };
+
+  const buttonContainerStyle = {
+    gridColumn: 'span 2',
+    display: 'flex',
+    justifyContent: 'flex-start',
+    gap: '10px',
+  };
+
+  const submitButtonStyle = {
+    backgroundColor: 'darkgreen',
+    color: 'white',
+    padding: '10px 20px',
+    border: 'none',
+    cursor: 'pointer',
+  };
+
+  const resetButtonStyle = {
+    padding: '10px 20px',
+    border: '1px solid #ccc',
+    cursor: 'pointer',
+  };
+
+  const confirmationStyle = {
+    marginTop: '20px',
+    color: 'green',
+    textAlign: 'center',
+  };
 
   return (
-    <div>
+    <form onSubmit={handleSubmit}>
       <h1>Job Application</h1>
-      <form onSubmit={handleSubmit}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+      <div style={gridStyle}>
+        <div>
+          <label>Full Name</label>
           <input
             type="text"
             name="fullName"
-            placeholder="Full Name"
+            placeholder="Enter your full name"
             value={formData.fullName}
             onChange={handleChange}
           />
-          {validationErrors.fullName && <p style={{ color: 'red' }}>{validationErrors.fullName}</p>}
-
+          {errors.fullName && <span style={{ color: 'red' }}>{errors.fullName}</span>}
+        </div>
+        <div>
+          <label>Email</label>
           <input
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder="Enter your email address"
             value={formData.email}
             onChange={handleChange}
           />
-          {validationErrors.email && <p style={{ color: 'red' }}>{validationErrors.email}</p>}
-
+          {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
+        </div>
+        <div>
+          <label>Phone Number</label>
           <input
             type="tel"
-            name="phone"
-            placeholder="Phone Number"
-            value={formData.phone}
+            name="phoneNumber"
+            placeholder="Enter your phone number"
+            value={formData.phoneNumber}
             onChange={handleChange}
           />
-          {validationErrors.phone && <p style={{ color: 'red' }}>{validationErrors.phone}</p>}
-
+          {errors.phoneNumber && <span style={{ color: 'red' }}>{errors.phoneNumber}</span>}
+        </div>
+        <div>
+          <label>Position Applied For</label>
           <select name="position" value={formData.position} onChange={handleChange}>
-            <option value="">Position Applied For</option>
-            <option value="Software Engineer">Software Engineer</option>
-            <option value="Data Scientist">Data Scientist</option>
-            <option value="Project Manager">Project Manager</option>
+            <option value="">Select a position</option>
+            {positions.map((pos, index) => (
+              <option key={index} value={pos}>{pos}</option>
+            ))}
           </select>
-          {validationErrors.position && <p style={{ color: 'red' }}>{validationErrors.position}</p>}
-
+          {errors.position && <span style={{ color: 'red' }}>{errors.position}</span>}
+        </div>
+        <div style={{ gridColumn: 'span 2' }}>
+          <label>Cover Letter</label>
           <textarea
             name="coverLetter"
-            placeholder="Cover Letter"
             rows="4"
+            placeholder="Write your cover letter here"
             value={formData.coverLetter}
             onChange={handleChange}
-          />
-          {validationErrors.coverLetter && <p style={{ color: 'red' }}>{validationErrors.coverLetter}</p>}
+            style={{ width: '100%' }}
+          ></textarea>
+          {errors.coverLetter && <span style={{ color: 'red' }}>{errors.coverLetter}</span>}
         </div>
-        <button type="submit" style={{ backgroundColor: 'darkgreen', color: 'white' }}>Apply</button>
-        <button type="button" onClick={handleReset} style={{ marginLeft: '10px' }}>Clear</button>
-      </form>
-
-      {submitted && (
-        <div>
-          <p>Application submitted successfully!</p>
+        <div style={buttonContainerStyle}>
+          <button type="submit" style={submitButtonStyle}>Apply</button>
+          <button type="button" onClick={handleReset} style={resetButtonStyle}>Clear</button>
         </div>
-      )}
-    </div>
+      </div>
+      {submitted && <div style={confirmationStyle}>Your application has been submitted successfully!</div>}
+    </form>
   );
-};
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<JobApplication />);
+ReactDOM.createRoot(document.getElementById('root')).render(<JobApplicationForm />);
 
     </script>
   </body>

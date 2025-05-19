@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -20,37 +86,106 @@
 
 const ProductReviewForm = () => {
   const [productName, setProductName] = useState('');
-  const [rating, setRating] = useState(null);
-  const [reviewText, setReviewText] = useState('');
+  const [rating, setRating] = useState('');
+  const [review, setReview] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [errors, setErrors] = useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!productName || rating === null) {
-      alert('Please enter a product name and select a rating.');
-      return;
+    let formErrors = {};
+    if (!productName.trim()) {
+      formErrors.productName = 'Product name is required.';
     }
-    setSubmitted(true);
+    if (!rating) {
+      formErrors.rating = 'Rating is required.';
+    }
+    setErrors(formErrors);
+    if (Object.keys(formErrors).length === 0) {
+      setSubmitted(true);
+      // Optionally reset form fields here
+    }
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '300px' }}>
-        <h1>Product Review</h1>
-        <input type="text" placeholder="Enter product name" value={productName} onChange={(e) => setProductName(e.target.value)} />
-        <div>
-          <label>Rating:</label>
-          {[1, 2, 3, 4, 5].map((value) => (
-            <label key={value} style={{ marginRight: '0.5rem' }}>
-              <input type="radio" name="rating" value={value} checked={rating === value} onChange={() => setRating(value)} />
-              {value}
-            </label>
-          ))}
-        </div>
-        <textarea placeholder="Write your review here" rows={4} value={reviewText} onChange={(e) => setReviewText(e.target.value)} />
-        <button type="submit" style={{ backgroundColor: 'green', color: 'white' }}>Submit Review</button>
-        {submitted && <p>Thank you for your feedback!</p>}
-      </form>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+      }}
+    >
+      <div>
+        <form
+          onSubmit={handleSubmit}
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            width: '300px',
+          }}
+        >
+          <h1 style={{ textAlign: 'center' }}>Product Review</h1>
+          <input
+            type="text"
+            placeholder="Enter product name"
+            value={productName}
+            onChange={(e) => setProductName(e.target.value)}
+            style={{ marginBottom: '10px', padding: '8px' }}
+          />
+          {errors.productName && (
+            <span style={{ color: 'red', marginBottom: '10px' }}>
+              {errors.productName}
+            </span>
+          )}
+          <div style={{ marginBottom: '10px' }}>
+            <label style={{ display: 'block', marginBottom: '5px' }}>Rating:</label>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              {[1, 2, 3, 4, 5].map((num) => (
+                <label key={num}>
+                  <input
+                    type="radio"
+                    name="rating"
+                    value={num}
+                    checked={rating === String(num)}
+                    onChange={(e) => setRating(e.target.value)}
+                  />
+                  {num}
+                </label>
+              ))}
+            </div>
+            {errors.rating && (
+              <span style={{ color: 'red', display: 'block', marginTop: '5px' }}>
+                {errors.rating}
+              </span>
+            )}
+          </div>
+          <textarea
+            placeholder="Write your review here"
+            rows="4"
+            value={review}
+            onChange={(e) => setReview(e.target.value)}
+            style={{ marginBottom: '10px', padding: '8px' }}
+          />
+          <button
+            type="submit"
+            style={{
+              backgroundColor: 'green',
+              color: 'white',
+              padding: '10px',
+              border: 'none',
+              cursor: 'pointer',
+            }}
+          >
+            Submit Review
+          </button>
+        </form>
+        {submitted && (
+          <p style={{ textAlign: 'center', marginTop: '20px' }}>
+            Thank you for your feedback!
+          </p>
+        )}
+      </div>
     </div>
   );
 };

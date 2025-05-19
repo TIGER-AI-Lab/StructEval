@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -19,63 +85,72 @@
 
 
 const NoteTaker = () => {
-  const [noteTitle, setNoteTitle] = useState('');
-  const [noteContent, setNoteContent] = useState('');
-  const [isImportant, setIsImportant] = useState(false);
-  const [savedNote, setSavedNote] = useState(null);
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+  const [important, setImportant] = useState(false);
+  const [notes, setNotes] = useState([]);
 
-  const handleSaveNote = () => {
-    if (!noteTitle || !noteContent) {
-      alert('Please fill in both title and content.');
+  const handleSave = (e) => {
+    e.preventDefault();
+    if (title.trim() === '' || content.trim() === '') {
       return;
     }
-    setSavedNote({ title: noteTitle, content: noteContent, important: isImportant });
+    const newNote = { title, content, important };
+    setNotes([...notes, newNote]);
+    setTitle('');
+    setContent('');
+    setImportant(false);
   };
 
   const handleClear = () => {
-    setNoteTitle('');
-    setNoteContent('');
-    setIsImportant(false);
-    setSavedNote(null);
+    setTitle('');
+    setContent('');
+    setImportant(false);
   };
 
   return (
-    <div style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
-      <h1>Note Taker</h1>
-      <input
-        type="text"
-        placeholder="Enter note title"
-        value={noteTitle}
-        onChange={(e) => setNoteTitle(e.target.value)}
-        style={{ width: '300px' }}
-      />
-      <textarea
-        placeholder="Enter your note"
-        rows={4}
-        value={noteContent}
-        onChange={(e) => setNoteContent(e.target.value)}
-      />
-      <div>
-        <input
-          type="checkbox"
-          checked={isImportant}
-          onChange={(e) => setIsImportant(e.target.checked)}
+    <div style={{
+      display: 'grid',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh'
+    }}>
+      <form onSubmit={handleSave} style={{ display: 'grid', gap: '10px' }}>
+        <h1>Note Taker</h1>
+        <input 
+          type="text" 
+          placeholder="Enter note title" 
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          style={{ width: '300px' }}
         />
-        <label>Mark as Important</label>
-      </div>
-      <button onClick={handleSaveNote} style={{ backgroundColor: 'green' }}>
-        Save Note
-      </button>
-      <button onClick={handleClear} style={{ backgroundColor: 'red' }}>
-        Clear
-      </button>
-      {savedNote && (
+        <textarea 
+          placeholder="Enter your note" 
+          rows="4" 
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+        />
         <div>
-          <h2>{savedNote.title}</h2>
-          <p>{savedNote.content}</p>
-          {savedNote.important && <p>Important!</p>}
+          <input 
+            type="checkbox" 
+            checked={important} 
+            onChange={(e) => setImportant(e.target.checked)} 
+            id="important"
+          />
+          <label htmlFor="important">Mark as Important</label>
         </div>
-      )}
+        <div>
+          <button type="submit" style={{ backgroundColor: 'green', color: 'white', marginRight: '10px' }}>Save Note</button>
+          <button type="button" onClick={handleClear} style={{ backgroundColor: 'red', color: 'white' }}>Clear</button>
+        </div>
+      </form>
+      {notes.map((note, index) => (
+        <div key={index} style={{ marginTop: '20px', width: '300px', textAlign: 'left' }}>
+          <h2>{note.title}</h2>
+          <p>{note.content}</p>
+          {note.important && <p><strong>Important</strong></p>}
+        </div>
+      ))}
     </div>
   );
 };

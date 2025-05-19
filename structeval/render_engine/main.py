@@ -104,112 +104,228 @@ async def process_json_file(json_file_path, img_output_path, non_renderable_dir)
                 try:
                     generation = safe_unicode_decode(generation)
                     content = extract_renderable_code(generation, output_type)
-                    task["render_score"] = await render_html_and_screenshot(task_id, content, img_output_path)
+                    task["parsed_code"] = content
+                    task['extract_error'] = None
                 except Exception as e:
-                    logging.error(f"[{task_id}] Error processing HTML: {str(e)}")
+                    task["extract_error"] = str(e)
+                    task["parsed_code"] = None
+                    logging.error(f"[{task_id}] Error extracting HTML from code tag: {str(e)}")
+
+                try:
+                    task["render_score"] = await render_html_and_screenshot(task_id, content, img_output_path)
+                    task["render_error"] = None
+                except Exception as e:
+                    task["render_error"] = str(e)
                     task["render_score"] = 0
+                    logging.error(f"[{task_id}] Error processing HTML: {str(e)}")
 
             elif output_type == "react":
                 try:
                     generation = safe_unicode_decode(generation)
                     content = extract_renderable_code(generation, output_type)
-                    task["render_score"] = await render_react_and_screenshot(task_id, content, img_output_path)
+                    task["parsed_code"] = content
+                    task['extract_error'] = None
                 except Exception as e:
-                    logging.error(f"[{task_id}] Error processing React: {str(e)}")
+                    task["extract_error"] = str(e)
+                    task["parsed_code"] = None
+                    logging.error(f"[{task_id}] Error extracting React from code tag: {str(e)}")
+
+                try:
+                    task["render_score"] = await render_react_and_screenshot(task_id, content, img_output_path)
+                    task["render_error"] = None
+                except Exception as e:
+                    task["render_error"] = str(e)
                     task["render_score"] = 0
+                    logging.error(f"[{task_id}] Error processing React: {str(e)}")
 
             elif output_type == "latex" or output_type == "tikz":
-                #print("hello world")
                 try:
-                    
                     content = extract_latex_from_code_tag(generation, output_type)
-                    task["render_score"] = render_latex_to_png(content, img_output_path, task_id)
-                    #exit()
+                    task["parsed_code"] = content
+                    task['extract_error'] = None
                 except Exception as e:
-                    logging.error(f"[{task_id}] Error processing LaTeX/Tikz: {str(e)}")
+                    task["extract_error"] = str(e)
+                    task["parsed_code"] = None
+                    logging.error(f"[{task_id}] Error extracting LaTeX from code tag: {str(e)}")
+
+                try:
+                    task["render_score"] = render_latex_to_png(content, img_output_path, task_id)
+                    task["render_error"] = None
+                except Exception as e:
+                    task["render_error"] = str(e)
                     task["render_score"] = 0
-                    #exit()
+                    logging.error(f"[{task_id}] Error processing LaTeX/Tikz: {str(e)}")
 
             elif output_type == "markdown":
                 try:
                     generation = safe_unicode_decode(generation)
                     content = extract_renderable_code(generation, output_type)
-                    task["render_score"] = await render_markdown_and_screenshot(task_id, content, img_output_path)
+                    task["parsed_code"] = content
+                    task['extract_error'] = None
                 except Exception as e:
-                    logging.error(f"[{task_id}] Error processing Markdown: {str(e)}")
+                    task["extract_error"] = str(e)
+                    task["parsed_code"] = None
+                    logging.error(f"[{task_id}] Error extracting Markdown from code tag: {str(e)}")
+
+                try:
+                    task["render_score"] = await render_markdown_and_screenshot(task_id, content, img_output_path)
+                    task["render_error"] = None
+                except Exception as e:
+                    task["render_error"] = str(e)
                     task["render_score"] = 0
+                    logging.error(f"[{task_id}] Error processing Markdown: {str(e)}")
 
             elif output_type == "matplotlib":
                 try:
                     generation = safe_unicode_decode(generation)
                     content = extract_renderable_code(generation, output_type)
-                    task["render_score"] = render_matplotlib_and_screenshot(task_id, content, img_output_path)
+                    task["parsed_code"] = content
+                    task['extract_error'] = None
                 except Exception as e:
-                    logging.error(f"[{task_id}] Error processing Matplotlib: {str(e)}")
+                    task["extract_error"] = str(e)
+                    task["parsed_code"] = None
+                    logging.error(f"[{task_id}] Error extracting Matplotlib from code tag: {str(e)}")
+
+                try:
+                    task["render_score"] = render_matplotlib_and_screenshot(task_id, content, img_output_path)
+                    task["render_error"] = None
+                except Exception as e:
+                    task["render_error"] = str(e)
                     task["render_score"] = 0
+                    logging.error(f"[{task_id}] Error processing Matplotlib: {str(e)}")
 
             elif output_type == "canvas":
                 try:
                     generation = safe_unicode_decode(generation)
                     content = extract_renderable_code(generation, output_type)
-                    task["render_score"] = await render_canvas_and_screenshot(task_id, content, img_output_path)
+                    task["parsed_code"] = content
+                    task['extract_error'] = None
                 except Exception as e:
-                    logging.error(f"[{task_id}] Error processing Canvas: {str(e)}")
+                    task["extract_error"] = str(e)
+                    task["parsed_code"] = None
+                    logging.error(f"[{task_id}] Error extracting Canvas from code tag: {str(e)}")
+
+                try:
+                    task["render_score"] = await render_canvas_and_screenshot(task_id, content, img_output_path)
+                    task["render_error"] = None
+                except Exception as e:
+                    task["render_error"] = str(e)
                     task["render_score"] = 0
+                    logging.error(f"[{task_id}] Error processing Canvas: {str(e)}")
 
             elif output_type == "angular":
                 try:
                     generation = safe_unicode_decode(generation)
                     content = extract_renderable_code(generation, output_type)
-                    task["render_score"] = await render_angular_and_screenshot(task_id, content, img_output_path)
+                    task["parsed_code"] = content
+                    task['extract_error'] = None
                 except Exception as e:
-                    logging.error(f"[{task_id}] Error processing Angular: {str(e)}")
+                    task["extract_error"] = str(e)
+                    task["parsed_code"] = None
+                    logging.error(f"[{task_id}] Error extracting Angular from code tag: {str(e)}")
+
+                try:
+                    task["render_score"] = await render_angular_and_screenshot(task_id, content, img_output_path)
+                    task["render_error"] = None
+                except Exception as e:
+                    task["render_error"] = str(e)
                     task["render_score"] = 0
+                    logging.error(f"[{task_id}] Error processing Angular: {str(e)}")
 
             elif output_type == "mermaid":
                 try:
                     generation = safe_unicode_decode(generation)
                     content = extract_renderable_code(generation, output_type)
-                    task["render_score"] = await render_mermaid_and_screenshot(task_id, content, img_output_path)
+                    task["parsed_code"] = content
+                    task['extract_error'] = None
                 except Exception as e:
-                    logging.error(f"[{task_id}] Error processing Mermaid: {str(e)}")
+                    task["extract_error"] = str(e)
+                    task["parsed_code"] = None
+                    logging.error(f"[{task_id}] Error extracting Mermaid from code tag: {str(e)}")
+
+                try:
+                    task["render_score"] = await render_mermaid_and_screenshot(task_id, content, img_output_path)
+                    task["render_error"] = None
+                except Exception as e:
+                    task["render_error"] = str(e)
                     task["render_score"] = 0
+                    logging.error(f"[{task_id}] Error processing Mermaid: {str(e)}")
 
             elif output_type == "svg":
                 try:
                     generation = safe_unicode_decode(generation)
                     content = extract_renderable_code(generation, output_type)
-                    task["render_score"] = await render_svg_and_screenshot(task_id, content, img_output_path)
+                    task["parsed_code"] = content
+                    task['extract_error'] = None
                 except Exception as e:
-                    logging.error(f"[{task_id}] Error processing SVG: {str(e)}")
+                    task["extract_error"] = str(e)
+                    task["parsed_code"] = None
+                    logging.error(f"[{task_id}] Error extracting SVG from code tag: {str(e)}")
+
+                try:
+                    task["render_score"] = await render_svg_and_screenshot(task_id, content, img_output_path)
+                    task["render_error"] = None
+                except Exception as e:
+                    task["render_error"] = str(e)
                     task["render_score"] = 0
+                    logging.error(f"[{task_id}] Error processing SVG: {str(e)}")
 
             elif output_type == "typst":
                 try:
                     generation = safe_unicode_decode(generation)
                     content = extract_renderable_code(generation, output_type)
-                    task["render_score"] = render_typst_and_screenshot(task_id, content, img_output_path)
+                    task["parsed_code"] = content
+                    task['extract_error'] = None
                 except Exception as e:
-                    logging.error(f"[{task_id}] Error processing Typst: {str(e)}")
+                    task["extract_error"] = str(e)
+                    task["parsed_code"] = None
+                    logging.error(f"[{task_id}] Error extracting Typst from code tag: {str(e)}")
+
+                try:
+                    task["render_score"] = render_typst_and_screenshot(task_id, content, img_output_path)
+                    task["render_error"] = None
+                except Exception as e:
+                    task["render_error"] = str(e)
                     task["render_score"] = 0
+                    logging.error(f"[{task_id}] Error processing Typst: {str(e)}")
 
             elif output_type == "vega":
                 try:
                     generation = safe_unicode_decode(generation)
                     content = extract_renderable_code(generation, output_type)
-                    task["render_score"] = await render_vega_and_screenshot(task_id, content, img_output_path)
+                    task["parsed_code"] = content
+                    task['extract_error'] = None
                 except Exception as e:
-                    logging.error(f"[{task_id}] Error processing Vega: {str(e)}")
+                    task["extract_error"] = str(e)
+                    task["parsed_code"] = None
+                    logging.error(f"[{task_id}] Error extracting Vega from code tag: {str(e)}")
+
+                try:
+                    task["render_score"] = await render_vega_and_screenshot(task_id, content, img_output_path)
+                    task["render_error"] = None
+                except Exception as e:
+                    task["render_error"] = str(e)
                     task["render_score"] = 0
+                    logging.error(f"[{task_id}] Error processing Vega: {str(e)}")
 
             elif output_type == "vue":
                 try:
                     generation = safe_unicode_decode(generation)
                     content = extract_renderable_code(generation, output_type)
-                    task["render_score"] = await render_vue_and_screenshot(task_id, content, img_output_path)
+                    task["parsed_code"] = content
+                    task['extract_error'] = None
                 except Exception as e:
-                    logging.error(f"[{task_id}] Error processing Vue: {str(e)}")
+                    task["extract_error"] = str(e)
+                    task["parsed_code"] = None
+                    logging.error(f"[{task_id}] Error extracting Vue from code tag: {str(e)}")
+
+                try:
+                    task["render_score"] = await render_vue_and_screenshot(task_id, content, img_output_path)
+                    task["render_error"] = None
+                except Exception as e:
+                    task["render_error"] = str(e)
                     task["render_score"] = 0
+                    logging.error(f"[{task_id}] Error processing Vue: {str(e)}")
             else:
                 raise ValueError(f"Unsupported output type: {output_type}")
 

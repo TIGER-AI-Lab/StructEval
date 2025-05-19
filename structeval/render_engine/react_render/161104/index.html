@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -19,56 +85,56 @@
 
 
 const DashboardPortal = () => {
-  const [summary, setSummary] = useState({
+  const [summary] = useState({
     totalUsers: 5823,
     activeSessions: 342,
-    serverLoad: '38%'
+    serverLoad: '38%',
   });
 
-  const [details, setDetails] = useState({
+  const [details] = useState({
     cpuUsage: {
       status: 'Normal',
-      value: 42
+      value: 42,
     },
     memoryUsage: {
       status: 'Normal',
-      value: 65
+      value: 65,
     },
     diskSpace: {
       status: 'Warning',
-      value: 128
+      value: 128,
     },
     userEngagement: {
       newRegistrations: 156,
       feedbacks: 27,
-      activeUsers: 3241
-    }
+      activeUsers: 3241,
+    },
   });
 
-  const [activityLogs, setActivityLogs] = useState([
+  const [activityLogs] = useState([
     {
       type: 'User Login',
       description: 'Administrator logged in',
-      timestamp: '10:23 AM'
+      timestamp: '10:23 AM',
     },
     {
       type: 'System Update',
       description: 'Database backup completed',
-      timestamp: '09:45 AM'
+      timestamp: '09:45 AM',
     },
     {
       type: 'User Action',
       description: 'New project created by user #4592',
-      timestamp: '09:12 AM'
+      timestamp: '09:12 AM',
     },
     {
       type: 'System Alert',
       description: 'Low disk space warning triggered',
-      timestamp: '08:30 AM'
-    }
+      timestamp: '08:30 AM',
+    },
   ]);
 
-  const [lastUpdated, setLastUpdated] = useState('April 26, 2023');
+  const [lastUpdated] = useState('April 26, 2023');
 
   const refreshDashboard = () => {
     console.log('Dashboard refreshed');
@@ -151,8 +217,8 @@ const DashboardPortal = () => {
           <ol>
             {activityLogs.map((activity, index) => (
               <li key={index}>
-                <strong>{activity.type}:</strong> {activity.description}
-                <span className="timestamp"> at {activity.timestamp}</span>
+                <strong>{activity.type}:</strong> {activity.description} 
+                <span className="timestamp">at {activity.timestamp}</span>
               </li>
             ))}
           </ol>
@@ -167,6 +233,95 @@ const DashboardPortal = () => {
   );
 };
 
+
+/* DashboardPortal.css */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.app-header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.summary-section {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.summary-section ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
+.details-section {
+  margin-bottom: 20px;
+}
+
+.detail-section {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #e9ecef;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
+.timestamp {
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+.app-footer {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .summary-section ul {
+    flex-direction: column;
+  }
+  
+  .summary-section li {
+    margin-bottom: 10px;
+  }
+}
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<DashboardPortal />);

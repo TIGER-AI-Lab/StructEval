@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,10 +84,11 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
+const AwesomeMarkdownLayout = () => {
   return (
     <div>
       <h1>Project Title: Awesome Markdown Layout</h1>
+      
       <h2>Table of Contents</h2>
       <ol>
         <li><a href="#introduction">Introduction</a></li>
@@ -31,10 +98,16 @@ const App = () => {
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#license">License</a></li>
       </ol>
+      
       <hr />
+      
       <h2 id="introduction">Introduction</h2>
       <p>Welcome to the <strong>Awesome Markdown Layout</strong> project. This document provides a detailed overview of the project's features, installation instructions, and usage guidelines.</p>
-      <blockquote>Note: This document is a self-contained reference designed to showcase structured layout and formatted content using Markdown.</blockquote>
+      
+      <blockquote>
+        <p>Note: This document is a self-contained reference designed to showcase structured layout and formatted content using Markdown.</p>
+      </blockquote>
+      
       <h2 id="features">Features</h2>
       <ul>
         <li><strong>Readable Syntax</strong>: Utilizes clear and concise Markdown formatting.</li>
@@ -42,35 +115,129 @@ const App = () => {
         <li><strong>User-Friendly Navigation</strong>: Logical ordering of content with a table of contents.</li>
         <li><strong>Detailed Examples</strong>: Includes step-by-step instructions and code samples.</li>
       </ul>
+      
       <h3>Detailed Features List</h3>
       <ol>
-        <li><strong>Simplicity</strong>
+        <li>
+          <strong>Simplicity</strong>
           <ul>
             <li>Easy to edit and maintain.</li>
             <li>Reusable template for different projects.</li>
           </ul>
         </li>
-        <li><strong>Flexibility</strong>
+        <li>
+          <strong>Flexibility</strong>
           <ul>
             <li>Suitable for varied types of content.</li>
             <li>Adaptable to multiple use cases.</li>
           </ul>
         </li>
-        <li><strong>Accessibility</strong>
+        <li>
+          <strong>Accessibility</strong>
           <ul>
             <li>Readable on any platform with plain text support.</li>
             <li>No external scripts or dependencies required.</li>
           </ul>
         </li>
       </ol>
+      
       <h2 id="installation">Installation</h2>
       <p>Follow these simple steps to set up the project:</p>
       <ol>
-        <li>Clone the repository from your local mirror:
-          <pre><code>git clone local_repo_path
+        <li>
+          Clone the repository from your local mirror:
+          <pre><code>git clone local_repo_path</code></pre>
+        </li>
+        <li>
+          Navigate into the project directory:
+          <pre><code>cd awesome-markdown-layout</code></pre>
+        </li>
+        <li>
+          Install required dependencies:
+          <ul>
+            <li>Ensure Python 3 is installed on your system.</li>
+            <li>Run the following command to install dependencies:
+              <pre><code>pip install -r requirements.txt</code></pre>
+            </li>
+          </ul>
+        </li>
+      </ol>
+      
+      <h2 id="usage-guide">Usage Guide</h2>
+      <h3>Basic Usage</h3>
+      <p>To start using the project, run the main module:</p>
+      <pre><code>python main.py</code></pre>
+      
+      <h3>Advanced Options</h3>
+      <p>For enhanced functionality, explore the advanced modules:</p>
+      <ul>
+        <li><strong>Data Processing Module</strong>
+          <pre><code>python main.py --module data</code></pre>
+        </li>
+        <li><strong>Visualization Module</strong>
+          <pre><code>python main.py --module visual</code></pre>
+        </li>
+      </ul>
+      
+      <h3>Configuration Options</h3>
+      <p>Customize the project by editing the configuration settings:</p>
+      <ul>
+        <li><strong>Option A:</strong> Set the logging level.
+          <ul>
+            <li>Example: <code>logging: DEBUG</code></li>
+          </ul>
+        </li>
+        <li><strong>Option B:</strong> Define the output directory.
+          <ul>
+            <li>Example: <code>output: ./results</code></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <h2 id="faq">FAQ</h2>
+      <p><strong>Q:</strong> What versions of Python are supported?<br />
+      <strong>A:</strong> Python 3.6 and above are officially supported.</p>
+      
+      <p><strong>Q:</strong> How do I submit a bug report?<br />
+      <strong>A:</strong> Please include detailed information about the issue within your report.</p>
+      
+      <p><strong>Q:</strong> Where can I find additional documentation?<br />
+      <strong>A:</strong> All documentation is contained within this file, ensuring a standalone guide.</p>
+      
+      <h2 id="license">License</h2>
+      <p>Distributed under the MIT License. See the <code>LICENSE</code> file for further details.</p>
+      
+      <hr />
+      
+      <h3>Contact Information</h3>
+      <ul>
+        <li><strong>Project Lead:</strong> Jane Smith</li>
+        <li><strong>Email:</strong> jane at localmail dot com</li>
+        <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+      </ul>
+      
+      <h4>Revision History</h4>
+      <ul>
+        <li><strong>v1.0.0</strong> â Initial release.</li>
+        <li><strong>v1.1.0</strong> â Added advanced options, FAQ section, and revision history.</li>
+        <li><strong>v1.2.0</strong> â Updated installation instructions and configuration options.</li>
+      </ul>
+      
+      <hr />
+      
+      <h3>Additional Notes</h3>
+      <ul>
+        <li>This Markdown document is formatted to be a single-page reference.</li>
+        <li>It intentionally avoids any external links, images, or interactive elements.</li>
+        <li>Feel free to use this template for any project requiring a well-structured Markdown guide.</li>
+      </ul>
+    </div>
+  );
+};
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<AwesomeMarkdownLayout />);
 
     </script>
   </body>

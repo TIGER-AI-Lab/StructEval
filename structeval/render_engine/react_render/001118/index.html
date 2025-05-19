@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -18,57 +84,123 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const UserRegistration = () => {
+const RegistrationForm = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [terms, setTerms] = useState(false);
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [error, setError] = useState('');
 
-  const handleRegister = () => {
-    if (!username || !email || !password || !terms) {
-      setError('All fields are required and terms must be accepted.');
-      return;
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!username || !email || !password) {
+      setError('All fields are required.');
+    } else if (!emailRegex.test(email)) {
+      setError('Please enter a valid email address.');
+    } else {
+      setError('');
+      // Registration logic can be added here
     }
-
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      setError('Invalid email format.');
-      return;
-    }
-
-    // In a real application, you would handle registration logic here
-    console.log('User registered:', { username, email, password });
   };
 
   const handleCancel = () => {
     setUsername('');
     setEmail('');
     setPassword('');
-    setTerms(false);
+    setAcceptedTerms(false);
     setError('');
   };
 
+  const formStyle = {
+    display: 'grid',
+    gridTemplateColumns: '150px 1fr',
+    gap: '10px',
+    maxWidth: '400px',
+    margin: '0 auto'
+  };
+
+  const labelStyle = {
+    textAlign: 'right',
+    paddingRight: '10px'
+  };
+
+  const inputStyle = {
+    padding: '5px'
+  };
+
+  const buttonContainerStyle = {
+    gridColumn: 'span 2',
+    display: 'flex',
+    justifyContent: 'space-between',
+    marginTop: '10px'
+  };
+
+  const registerButtonStyle = {
+    backgroundColor: 'green',
+    color: 'white',
+    padding: '10px 20px',
+    border: 'none',
+    cursor: 'pointer'
+  };
+
+  const cancelButtonStyle = {
+    padding: '10px 20px',
+    border: 'none',
+    cursor: 'pointer'
+  };
+
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', maxWidth: '400px', margin: '0 auto' }}>
-      <h2>User Registration</h2>
-      <label htmlFor="username">Username:</label>
-      <input type="text" id="username" placeholder="Enter Username" value={username} onChange={e => setUsername(e.target.value)} />
-      <label htmlFor="email">Email:</label>
-      <input type="email" id="email" placeholder="Enter Email" value={email} onChange={e => setEmail(e.target.value)} />
-      <label htmlFor="password">Password:</label>
-      <input type="password" id="password" placeholder="Enter Password" value={password} onChange={e => setPassword(e.target.value)} />
-      <input type="checkbox" id="terms" checked={terms} onChange={e => setTerms(e.target.checked)} />
-      <label htmlFor="terms">Accept Terms and Conditions</label>
-      {error && <p style={{ color: 'red', gridColumn: '1 / span 2' }}>{error}</p>}
-      <button style={{ backgroundColor: 'green', color: 'white' }} onClick={handleRegister}>Register</button>
-      <button onClick={handleCancel}>Cancel</button>
-    </div>
+    <form style={formStyle} onSubmit={handleRegister}>
+      <h2 style={{ gridColumn: 'span 2', textAlign: 'center' }}>User Registration</h2>
+      <label style={labelStyle} htmlFor="username">Username:</label>
+      <input
+        style={inputStyle}
+        type="text"
+        id="username"
+        placeholder="Enter Username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      />
+      <label style={labelStyle} htmlFor="email">Email:</label>
+      <input
+        style={inputStyle}
+        type="email"
+        id="email"
+        placeholder="Enter Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <label style={labelStyle} htmlFor="password">Password:</label>
+      <input
+        style={inputStyle}
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <div style={{ gridColumn: 'span 2', display: 'flex', alignItems: 'center' }}>
+        <input
+          type="checkbox"
+          id="terms"
+          checked={acceptedTerms}
+          onChange={(e) => setAcceptedTerms(e.target.checked)}
+        />
+        <label htmlFor="terms" style={{ marginLeft: '5px' }}>Accept Terms and Conditions</label>
+      </div>
+      {error && <p style={{ gridColumn: 'span 2', color: 'red' }}>{error}</p>}
+      <div style={buttonContainerStyle}>
+        <button type="submit" style={registerButtonStyle}>Register</button>
+        <button type="button" style={cancelButtonStyle} onClick={handleCancel}>Cancel</button>
+      </div>
+    </form>
   );
 };
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<UserRegistration />);
+ReactDOM.createRoot(document.getElementById('root')).render(<RegistrationForm />);
 
     </script>
   </body>

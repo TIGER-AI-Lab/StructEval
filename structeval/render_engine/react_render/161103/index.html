@@ -8,7 +8,73 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{margin:0;font-family:sans-serif;}</style>
+    <style>
+    
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -19,41 +85,57 @@
 
 
 const VisualLayoutComponent = () => {
-  const [stats, setStats] = useState({
+  const [stats] = useState({
     totalUsers: 10234,
     activeSessions: 235,
-    newSignups: 87,
+    newSignups: 87
   });
 
-  const [articles, setArticles] = useState([
+  const [articles] = useState([
     {
       id: 1,
       title: 'Understanding Vue Lifecycle Methods',
       summary: 'Explore how Vue lifecycle hooks work and how they can enhance your apps.',
       author: 'Jane Doe',
-      date: 'March 15, 2023',
+      date: 'March 15, 2023'
     },
     {
       id: 2,
       title: 'Vue 3 Composition API',
       summary: 'Learn how to leverage the power of the Composition API in your projects.',
       author: 'John Smith',
-      date: 'March 10, 2023',
+      date: 'March 10, 2023'
     },
     {
       id: 3,
       title: 'State Management with Vuex',
       summary: 'Discover effective patterns for managing application state with Vuex.',
       author: 'Lisa Johnson',
-      date: 'March 5, 2023',
-    },
+      date: 'March 5, 2023'
+    }
   ]);
 
-  const [quickLinks, setQuickLinks] = useState([
-    { id: 1, label: 'Documentation', value: 'View Docs' },
-    { id: 2, label: 'Repository', value: 'GitHub' },
-    { id: 3, label: 'Support', value: 'Contact Us' },
-    { id: 4, label: 'Updates', value: 'Weekly' },
+  const [quickLinks] = useState([
+    {
+      id: 1,
+      label: 'Documentation',
+      value: 'View Docs'
+    },
+    {
+      id: 2,
+      label: 'Repository',
+      value: 'GitHub'
+    },
+    {
+      id: 3,
+      label: 'Support',
+      value: 'Contact Us'
+    },
+    {
+      id: 4,
+      label: 'Updates',
+      value: 'Weekly'
+    }
   ]);
 
   useEffect(() => {
@@ -61,6 +143,7 @@ const VisualLayoutComponent = () => {
   }, []);
 
   const updateStatistics = () => {
+    // Method to update statistics
     console.log('Statistics updated');
   };
 
@@ -91,7 +174,7 @@ const VisualLayoutComponent = () => {
         <article className="article-section">
           <h2>Latest Articles</h2>
           <ul className="article-list">
-            {articles.map((article) => (
+            {articles.map(article => (
               <li key={article.id}>
                 <h3>{article.title}</h3>
                 <p>{article.summary}</p>
@@ -105,7 +188,7 @@ const VisualLayoutComponent = () => {
         <aside className="sidebar-section">
           <h2>Quick Links</h2>
           <ul className="link-list">
-            {quickLinks.map((link) => (
+            {quickLinks.map(link => (
               <li key={link.id}>
                 <span className="link-label">{link.label}: </span>
                 <span className="link-value">{link.value}</span>
@@ -118,13 +201,16 @@ const VisualLayoutComponent = () => {
         <h2>Contact Information</h2>
         <div className="contact-details">
           <div className="contact-item">
-            <strong>Address:</strong> 123 Vue Street, Framework City, JS Country
+            <strong>Address:</strong>
+            123 Vue Street, Framework City, JS Country
           </div>
           <div className="contact-item">
-            <strong>Phone:</strong> +1234567890
+            <strong>Phone:</strong>
+            +1234567890
           </div>
           <div className="contact-item">
-            <strong>Email:</strong> contact@vueappdemo.com
+            <strong>Email:</strong>
+            contact@vueappdemo.com
           </div>
         </div>
       </section>
