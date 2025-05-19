@@ -6,7 +6,7 @@ def split_by_rendering(input_file, renderable_file):
         data = json.load(f)
 
     # Partition based on the "rendering" field
-    renderable = [entry for entry in data if entry.get("output_type") == "SVG"]
+    renderable = [entry for entry in data if entry.get("output_type") == "Typst"]
 
     # Write to output files
     with open(renderable_file, 'w') as f:
@@ -18,4 +18,4 @@ def split_by_rendering(input_file, renderable_file):
 
 
 split_by_rendering(
-    input_file= "renderable.json",renderable_file= "SVG.json")
+    input_file= "renderable.json",renderable_file= "typst.json")

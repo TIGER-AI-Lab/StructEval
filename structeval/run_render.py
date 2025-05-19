@@ -72,7 +72,7 @@ if __name__ == "__main__":
     for model in models:
         model_id = model.split("/")[-1]
         output_dir = os.path.join(base_output_dir, model_id)
-        infer_output = os.path.join(output_dir, "angular.json")
+        infer_output = os.path.join(output_dir, "inference_angular.json")
         img_output_path = os.path.join(output_dir, "angular_rendered")
         non_renderable_output_dir = os.path.join(output_dir, "non_renderable_files")
         asyncio.run(

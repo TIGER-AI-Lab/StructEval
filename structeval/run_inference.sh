@@ -5,7 +5,7 @@ export OPENAI_API_KEY=""
 export GEMINI_API_KEY=""
 
 # Simple script to run inference for multiple models
-INPUT_PATH="../dataset/angular.json"
+INPUT_PATH="../dataset/typst.json"
 BASE_OUTPUT_DIR="experiment_results"
 
 # List of models to run
@@ -21,11 +21,11 @@ BASE_OUTPUT_DIR="experiment_results"
 #  "gpt-4.1-mini"
  # "o1-mini"
 MODELS=(
-  "meta-llama/Llama-3.1-8B-Instruct"
+  #"meta-llama/Llama-3.1-8B-Instruct"
   #"gemini-1.5-pro"
   #"microsoft/Phi-3-mini-128k-instruct"
   #"microsoft/Phi-4-mini-instruct"
-  #"meta-llama/Meta-Llama-3-8B-Instruct"
+  "meta-llama/Meta-Llama-3-8B-Instruct"
   #"Qwen/Qwen2.5-7B"
   #"meta-llama/Llama-3.1-8B-Instruct"
   #"Qwen/Qwen3-4B"
@@ -54,7 +54,7 @@ cli.inference(
     llm_model_name='${MODEL}',
     llm_engine='vllm',
     input_path='${INPUT_PATH}',
-    output_path='${OUTPUT_DIR}/inference_angular.json',
+    output_path='${OUTPUT_DIR}/inference_typst.json',
     **{
        'additional_args': ['--gpu-memory-utilization', '0.7', '--max-model-len', '4096', '--max-num-batched-tokens', '4096', '--max-num-seqs', '64', '--tensor-parallel-size', '1']
     }
