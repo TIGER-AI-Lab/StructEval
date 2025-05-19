@@ -25,32 +25,66 @@ def extract_vue_code_from_tag(generation):
     2. Single File Component (SFC) format with <template>, <script> tags
     3. Modern Vue format with imports and Composition API
     4. Component with export default
+    5. <script setup> syntax (Vue 3)
 
     Converts all formats to object format that can be used with Vue.createApp.
+    Returns a tuple of (component_code, style_content)
     """
+    # Always decode HTML entities - this is crucial for properly rendering Vue components
+    generation = html.unescape(generation)
+
     # Check if we have code tags
     match = re.search(r"<code>(.*?)</code>", generation, re.DOTALL)
     if not match:
-        # Try without code tags
         vue_code = generation.strip()
     else:
         vue_code = match.group(1).strip()
 
-    # Always decode HTML entities - this is crucial for properly rendering Vue components
-    vue_code = html.unescape(vue_code)
-
-    # Check if it's already in object format (starts with a curly brace)
-    if vue_code.strip().startswith("{") and vue_code.strip().endswith("}"):
-        return vue_code
-
-    # Check if it's in SFC format with <template>, <script>, and <style> tags
+    # SFC: Extract <template>, <script>, and <style>
     template_match = re.search(r"<template>(.*?)</template>", vue_code, re.DOTALL)
-    if template_match:
-        template_content = template_match.group(1).strip()
-        return "{\n  template: `" + template_content + "`\n}"
+    script_match = re.search(r"<script>(.*?)</script>", vue_code, re.DOTALL)
+    script_setup_match = re.search(
+        r"<script\s+setup.*?>(.*?)</script>", vue_code, re.DOTALL
+    )
+    style_match = re.search(r"<style.*?>(.*?)</style>", vue_code, re.DOTALL)
 
-    # Final fallback: treat whole code as template (this is a simplification)
-    return "{\n  template: `<pre>${escapeTemplate(`" + vue_code + "`)}</pre>`\n}"
+    template = template_match.group(1).strip() if template_match else None
+    script = script_match.group(1).strip() if script_match else None
+    script_setup = script_setup_match.group(1).strip() if script_setup_match else None
+    style = style_match.group(1).strip() if style_match else None
+
+    # Prepare the component code
+    component_code = ""
+
+    # Handle <script setup> syntax for Vue 3
+    if template and script_setup:
+        # For script setup, we need to convert it to options API format
+        # This is a simplified conversion - in a real-world scenario, you'd need
+        # a more sophisticated parser for complete support
+        setup_code = f"setup() {{ {script_setup} return {{ }}; }}"
+        component_code = "{\n  template: `" + template + "`,\n" + setup_code + "\n}"
+    # If both template and script exist, merge them
+    elif template and script:
+        # Remove export default and surrounding braces if present
+        script = script.strip()
+        if script.startswith("export default"):
+            script = script[len("export default") :].strip()
+        if script.startswith("{") and script.endswith("}"):
+            script = script[1:-1].strip()
+        # Compose the component object
+        component_code = "{\n  template: `" + template + "`,\n" + script + "\n}"
+    elif template:
+        component_code = "{\n  template: `" + template + "`\n}"
+    # Check if it's already in object format (starts with a curly brace)
+    elif vue_code.strip().startswith("{") and vue_code.strip().endswith("}"):
+        component_code = vue_code
+    else:
+        # Final fallback: treat whole code as template (this is a simplification)
+        component_code = (
+            "{\n  template: `<pre>${escapeTemplate(`" + vue_code + "`)}</pre>`\n}"
+        )
+
+    return component_code, style
 
 
 def escapeTemplate(text):
@@ -107,11 +141,15 @@ async def render_vue_and_screenshot(task_id, vue_code, img_output_path):
     # Process the Vue code before rendering
     try:
         # Extract Vue component code from the raw text
-        processed_vue_code = extract_vue_code_from_tag(vue_code)
+        processed_vue_code, style_content = extract_vue_code_from_tag(vue_code)
         logging.info(f"[{task_id}] Successfully processed Vue component")
     except Exception as e:
         logging.error(f"[{task_id}] Error processing Vue component: {e}")
-        processed_vue_code = vue_code  # Use original code as fallback
+        # Create a fallback component wrapping the raw code in a pre element
+        processed_vue_code = (
+            "{\n  template: `<pre>${escapeTemplate(`" + vue_code + "`)}</pre>`\n}"
+        )
+        style_content = None
 
     # Ensure template exists
     if not ensure_vue_template_exists():
@@ -151,10 +189,32 @@ app.mount('#app');
                 f.write(formatted_vue_code)
             logging.info(f"[{task_id}] Component code injected.")
 
+            # If style is present, inject it into index.html
+            if style_content:
+                logging.info(f"[{task_id}] Injecting style content...")
+                index_html_path = os.path.join(project_dir, "index.html")
+                with open(index_html_path, "r") as f:
+                    html_content = f.read()
+
+                # Insert style before </head>
+                html_content = html_content.replace(
+                    "</head>", f"<style>{style_content}</style></head>"
+                )
+
+                with open(index_html_path, "w") as f:
+                    f.write(html_content)
+                logging.info(f"[{task_id}] Style content injected.")
+
             # For debugging, also write the processed component to a file
             debug_file = os.path.join(img_output_path, f"{task_id}_component.js")
             with open(debug_file, "w") as f:
                 f.write(formatted_vue_code)
+
+            # Also save style content for debugging if present
+            if style_content:
+                debug_style_file = os.path.join(img_output_path, f"{task_id}_style.css")
+                with open(debug_style_file, "w") as f:
+                    f.write(style_content)
 
             # Find a free port and start the HTTP server
             port = find_free_port()

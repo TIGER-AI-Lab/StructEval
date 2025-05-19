@@ -1,9 +1,13 @@
 import os
 import logging
 import re
+import html
 from .render_utils import start_browser
 
-REACT_RENDER_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "react_render")
+REACT_RENDER_DIR = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), "react_render"
+)
+
 
 def extract_react_from_code_tag(generation):
     """
@@ -11,7 +15,9 @@ def extract_react_from_code_tag(generation):
     Greedy match ensures we keep multi‑segment code blocks intact.
     """
     match = re.search(r"<code>(.*)</code>", generation, re.DOTALL)
-    return match.group(1).strip() if match else generation.strip()
+    extracted_code = match.group(1).strip() if match else generation.strip()
+    return html.unescape(extracted_code)  # Decode HTML entities
+
 
 def create_simple_react_app(task_id, react_content):
     task_dir = os.path.join(REACT_RENDER_DIR, task_id)
@@ -22,7 +28,7 @@ def create_simple_react_app(task_id, react_content):
 
     # Remove outer <code> tags if present
     if processed_react.startswith("<code>") and processed_react.endswith("</code>"):
-        processed_react = processed_react[len("<code>"):-len("</code>")].strip()
+        processed_react = processed_react[len("<code>") : -len("</code>")].strip()
 
     # Split into lines and filter out all import and export lines
     lines = processed_react.splitlines()
@@ -45,13 +51,21 @@ def create_simple_react_app(task_id, react_content):
     hook_boilerplate = "const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;"
     processed_react = hook_boilerplate + "\n\n" + processed_react
 
-    # Extract component name
-    match = re.search(r"function (\w+)", processed_react)
-    component_name = match.group(1) if match else "App"
+    # Extract component name - support both function declaration and arrow function syntax
+    fn_match = re.search(r"function (\w+)", processed_react)
+    const_match = re.search(r"const (\w+)\s*=", processed_react)
+    component_name = None
+
+    if fn_match:
+        component_name = fn_match.group(1)
+    elif const_match:
+        component_name = const_match.group(1)
+    else:
+        component_name = "App"
 
     # ------------------------------------------------------------------
-    # Auto‑fix mounting so code written for React ≤17 still works with
-    # the React 18 UMD bundle we inject, *and* add a mount if the user
+    # Auto‑fix mounting so code written for React ≤17 still works with
+    # the React 18 UMD bundle we inject, *and* add a mount if the user
     # supplied none at all.
     # ------------------------------------------------------------------
     has_old_render = re.search(r"ReactDOM\.render\s*\(", processed_react)
@@ -70,13 +84,78 @@ def create_simple_react_app(task_id, react_content):
     if not has_create_root:
         # Try to grab the exported component name, otherwise fall back to the first function‑component match
         export_match = re.search(r"export\s+default\s+(\w+)", processed_react)
-        first_fn_match = re.search(r"function\s+(\w+)\s*\(", processed_react)
-        component_to_mount = export_name or (first_fn_match.group(1) if first_fn_match else component_name)
+        component_to_mount = export_name or component_name
         processed_react += (
             f"\n\n// Auto‑generated mount\n"
             f"ReactDOM.createRoot(document.getElementById('root')).render(<{component_to_mount} />);\n"
         )
 
+    # Add default CSS for better display of dashboard and other components
+    default_css = """
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+    }
+    #app, #root {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      min-height: 100vh;
+    }
+    header {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    h2 {
+      color: #42b983;
+      margin-top: 1.5em;
+    }
+    section, article {
+      margin-bottom: 20px;
+    }
+    aside {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 20px 0;
+      border-left: 3px solid #42b983;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+    }
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+      color: #666;
+      font-size: 0.9em;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    """
 
     html_template = f"""<!DOCTYPE html>
 <html>
@@ -88,7 +167,9 @@ def create_simple_react_app(task_id, react_content):
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel for on-the-fly JSX transform -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <style>body{{margin:0;font-family:sans-serif;}}</style>
+    <style>
+    {default_css}
+    </style>
   </head>
   <body>
     <div id="root"></div>
@@ -110,8 +191,10 @@ def create_simple_react_app(task_id, react_content):
         logging.error(f"React app creation failed for {task_id}: {e}")
         return None
 
+
 async def render_react_and_screenshot(task_id, react_content, img_output_path):
-    os.makedirs(img_output_path, exist_ok=True)
+    img_output_path_abs = os.path.abspath(img_output_path)
+    os.makedirs(img_output_path_abs, exist_ok=True)
     render_score = 0
 
     if not react_content:
@@ -126,13 +209,20 @@ async def render_react_and_screenshot(task_id, react_content, img_output_path):
     try:
         await page.goto(f"file://{html_path}")
         await page.wait_for_load_state("networkidle")
-        screenshot_path = os.path.join(img_output_path, f"{task_id}.png")
+
+        # Extra time to ensure React fully renders
+        await page.wait_for_timeout(2000)
+
+        screenshot_path = os.path.join(img_output_path_abs, f"{task_id}.png")
         await page.screenshot(path=screenshot_path, full_page=True)
         logging.info(f"React screenshot saved: {screenshot_path}")
         render_score = 1
     except Exception as e:
         logging.error(f"React rendering error for {task_id}: {e}")
     finally:
-        await page.close(); await context.close(); await browser.close(); await playwright.stop()
+        await page.close()
+        await context.close()
+        await browser.close()
+        await playwright.stop()
 
     return render_score
