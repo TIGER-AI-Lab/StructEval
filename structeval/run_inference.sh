@@ -1,8 +1,8 @@
 #!/bin/bash
-export CUDA_VISIBLE_DEVICES=5
+export CUDA_VISIBLE_DEVICES=1
 export HF_TOKEN="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"
-export OPENAI_API_KEY=""
-export GEMINI_API_KEY=""
+export OPENAI_API_KEY="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"
+export GEMINI_API_KEY="AIzaSyBtt_VKPnXPPqJLHMDn7TaHpNVVxATeqA4"
 
 # Simple script to run inference for multiple models
 INPUT_PATH="../dataset/typst.json"

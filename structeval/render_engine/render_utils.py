@@ -108,6 +108,7 @@ def extract_renderable_code(text: str, output_type: str = "") -> str:
     if m:
         # whichever group matched, return it
         payload = m.group("payload1") or m.group("payload2")
+        print(payload.strip())
         return payload.strip()
 
     # For HTML output, use the text verbatim

@@ -17,137 +17,200 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const App = () => {
-  const version = '1.0.0';
-  const currentYear = new Date().getFullYear();
-  const lastUpdated = '2023-04-15';
-  const educationList = [
-    {
-      degree: 'Master of Science in Computer Science',
-      institution: 'Stanford University',
-      year: 2018
-    },
-    {
-      degree: 'Bachelor of Science in Information Technology',
-      institution: 'MIT',
-      year: 2015
-    }
-  ];
-  const workExperience = [
-    {
-      title: 'Senior Software Engineer',
-      company: 'Tech Solutions Inc.',
-      startDate: 'Jan 2020',
-      endDate: null,
-      description: 'Leading the development team for web applications using modern JavaScript frameworks.'
-    },
-    {
-      title: 'Software Developer',
-      company: 'Digital Innovations',
-      startDate: 'Jun 2018',
-      endDate: 'Dec 2019',
-      description: 'Developed and maintained client-side applications using Vue.js.'
-    }
-  ];
-  const skills = [
-    { name: 'JavaScript', level: 'Expert' },
-    { name: 'Vue.js', level: 'Expert' },
-    { name: 'React', level: 'Intermediate' },
-    { name: 'Node.js', level: 'Advanced' },
-    { name: 'Python', level: 'Intermediate' }
-  ];
-  const projects = [
-    {
-      name: 'E-commerce Platform',
-      description: 'A full-stack e-commerce solution with payment integration.',
-      technology: 'Vue.js, Node.js, MongoDB',
-      year: 2022
-    },
-    {
-      name: 'Task Management App',
-      description: 'A responsive web application for team task management.',
-      technology: 'React, Firebase',
-      year: 2021
-    }
-  ];
-
-  return (
-    <div id="app">
-      <header>
-        <h1>Welcome to My Profile Page</h1>
-        <p>Application Version: {version}</p>
-      </header>
-      <section className="personal-information">
-        <h2>Personal Information</h2>
-        <article className="info-box">
-          <h3>Basic Details</h3>
-          <p><strong>Name:</strong> John Doe</p>
-          <p><strong>Age:</strong> 32</p>
-          <p><strong>Location:</strong> San Francisco, CA</p>
-        </article>
-        <article className="info-box">
-          <h3>Contact Details</h3>
-          <ul>
-            <li><strong>Email:</strong> john.doe@example.com</li>
-            <li><strong>Phone:</strong> +1 555 123 4567</li>
-            <li><strong>Address:</strong> 456 Market Street, San Francisco, CA</li>
-          </ul>
-        </article>
-      </section>
-      <section className="education">
-        <h2>Educational Background</h2>
-        {educationList.map((edu, index) => (
-          <div className="education-entry" key={index}>
-            <h3>{edu.degree}</h3>
-            <p><strong>Institution:</strong> {edu.institution}</p>
-            <p><strong>Year of Graduation:</strong> {edu.year}</p>
-          </div>
-        ))}
-      </section>
-      <section className="work-experience">
-        <h2>Work Experience</h2>
-        {workExperience.map((job, index) => (
-          <div className="experience-entry" key={index}>
-            <h3>{job.title}</h3>
-            <p><strong>Company:</strong> {job.company}</p>
-            <p><strong>Duration:</strong> {job.startDate} - {job.endDate || 'Present'}</p>
-            <p><strong>Description:</strong> {job.description}</p>
-          </div>
-        ))}
-      </section>
-      <section className="skills">
-        <h2>Skills</h2>
-        <ul className="skills-list">
-          {skills.map((skill, index) => (
-            <li key={index}>
-              {skill.name} - <span className="skill-level">{skill.level}</span>
-            </li>
-          ))}
+<template>
+  <div id="app">
+    <header>
+      <h1>Welcome to My Profile Page</h1>
+      <p>Application Version: {{ version }}</p>
+    </header>
+    <section class="personal-information">
+      <h2>Personal Information</h2>
+      <article class="info-box">
+        <h3>Basic Details</h3>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Age:</strong> 32</p>
+        <p><strong>Location:</strong> San Francisco, CA</p>
+      </article>
+      <article class="info-box">
+        <h3>Contact Details</h3>
+        <ul>
+          <li><strong>Email:</strong> john.doe@example.com</li>
+          <li><strong>Phone:</strong> +1 555 123 4567</li>
+          <li><strong>Address:</strong> 456 Market Street, San Francisco, CA</li>
         </ul>
-      </section>
-      <section className="projects">
-        <h2>Projects</h2>
-        {projects.map((project, index) => (
-          <div className="project-entry" key={index}>
-            <h3>{project.name}</h3>
-            <p><strong>Description:</strong> {project.description}</p>
-            <p><strong>Technology:</strong> {project.technology}</p>
-            <p><strong>Year:</strong> {project.year}</p>
-          </div>
-        ))}
-      </section>
-      <footer>
-        <p>&copy; {currentYear} John Doe. All rights reserved.</p>
-        <p>Last Updated: {lastUpdated}</p>
-      </footer>
-    </div>
-  );
-};
+      </article>
+    </section>
+    <section class="education">
+      <h2>Educational Background</h2>
+      <div class="education-entry" v-for="(edu, index) in educationList" :key="index">
+        <h3>{{ edu.degree }}</h3>
+        <p><strong>Institution:</strong> {{ edu.institution }}</p>
+        <p><strong>Year of Graduation:</strong> {{ edu.year }}</p>
+      </div>
+    </section>
+    <section class="work-experience">
+      <h2>Work Experience</h2>
+      <div class="experience-entry" v-for="(job, index) in workExperience" :key="index">
+        <h3>{{ job.title }}</h3>
+        <p><strong>Company:</strong> {{ job.company }}</p>
+        <p><strong>Duration:</strong> {{ job.startDate }} - {{ job.endDate || 'Present' }}</p>
+        <p><strong>Description:</strong> {{ job.description }}</p>
+      </div>
+    </section>
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li v-for="(skill, index) in skills" :key="index">
+          {{ skill.name }} - <span class="skill-level">{{ skill.level }}</span>
+        </li>
+      </ul>
+    </section>
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-entry" v-for="(project, index) in projects" :key="index">
+        <h3>{{ project.name }}</h3>
+        <p><strong>Description:</strong> {{ project.description }}</p>
+        <p><strong>Technology:</strong> {{ project.technology }}</p>
+        <p><strong>Year:</strong> {{ project.year }}</p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; {{ currentYear }} John Doe. All rights reserved.</p>
+      <p>Last Updated: {{ lastUpdated }}</p>
+    </footer>
+  </div>
+</template>
 
+<script>
+  name: 'App',
+  data() {
+    return {
+      version: '1.0.0',
+      currentYear: new Date().getFullYear(),
+      lastUpdated: '2023-04-15',
+      educationList: [
+        {
+          degree: 'Master of Science in Computer Science',
+          institution: 'Stanford University',
+          year: 2018
+        },
+        {
+          degree: 'Bachelor of Science in Information Technology',
+          institution: 'MIT',
+          year: 2015
+        }
+      ],
+      workExperience: [
+        {
+          title: 'Senior Software Engineer',
+          company: 'Tech Solutions Inc.',
+          startDate: 'Jan 2020',
+          endDate: null,
+          description: 'Leading the development team for web applications using modern JavaScript frameworks.'
+        },
+        {
+          title: 'Software Developer',
+          company: 'Digital Innovations',
+          startDate: 'Jun 2018',
+          endDate: 'Dec 2019',
+          description: 'Developed and maintained client-side applications using Vue.js.'
+        }
+      ],
+      skills: [
+        { name: 'JavaScript', level: 'Expert' },
+        { name: 'Vue.js', level: 'Expert' },
+        { name: 'React', level: 'Intermediate' },
+        { name: 'Node.js', level: 'Advanced' },
+        { name: 'Python', level: 'Intermediate' }
+      ],
+      projects: [
+        {
+          name: 'E-commerce Platform',
+          description: 'A full-stack e-commerce solution with payment integration.',
+          technology: 'Vue.js, Node.js, MongoDB',
+          year: 2022
+        },
+        {
+          name: 'Task Management App',
+          description: 'A responsive web application for team task management.',
+          technology: 'React, Firebase',
+          year: 2021
+        }
+      ]
+    }
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.info-box, .education-entry, .experience-entry, .project-entry {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background-color: #e9ecef;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.skill-level {
+  color: #007bff;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  font-size: 0.9em;
+  color: #666;
+}
+</style>
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<{ />);
 
     </script>
   </body>
