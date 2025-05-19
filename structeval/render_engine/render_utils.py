@@ -31,8 +31,9 @@ TYPE_CODES = {
     "Vega": "15",
     "Vue": "16",
     "XML": "17",
-    "YAML": "18"
+    "YAML": "18",
 }
+
 
 async def start_browser(headless=True):
     playwright = await async_playwright().start()
@@ -40,6 +41,7 @@ async def start_browser(headless=True):
     context = await browser.new_context(ignore_https_errors=True)
     page = await context.new_page()
     return browser, context, page, playwright
+
 
 async def close_browser(browser, context, page, playwright):
     """
@@ -57,13 +59,14 @@ async def close_browser(browser, context, page, playwright):
     except Exception as e:
         logging.error(f"Error closing browser: {e}")
 
+
 def determine_output_type(task_id):
     """
     Determine output type from task_id.
-    
+
     Args:
         task_id: Task identifier
-        
+
     Returns:
         Output format type (json, yaml, csv, toml, xml)
     """
@@ -74,6 +77,7 @@ def determine_output_type(task_id):
             if value == type_code:
                 return key.lower()
     return ""
+
 
 def extract_renderable_code(text: str, output_type: str = "") -> str:
     """
@@ -106,27 +110,32 @@ def extract_renderable_code(text: str, output_type: str = "") -> str:
         payload = m.group("payload1") or m.group("payload2")
         return payload.strip()
 
+    # For HTML output, use the text verbatim
+    if text.startswith("<html>"):
+        return text.strip()
+
     # 3) fallback: nothing matched—return everything (trimmed)
     raise ValueError("No renderable code found")
+
 
 def extract_code_and_save(text, task_id, output_dir):
     """
     Extract code from <code>...</code> or ```<type>``` blocks, and save to file.
-    
+
     Args:
         text: The input string possibly containing code blocks.
         task_id: Task identifier to infer output type and for filename.
         output_dir: Directory to save extracted file.
-        
+
     Returns:
         Tuple of (extracted code, filename, success flag)
     """
     # Determine output type
     output_type = determine_output_type(task_id).lower()
-    
+
     # Decode unicode escape sequences
     try:
-        text = codecs.decode(text, 'unicode_escape')
+        text = codecs.decode(text, "unicode_escape")
     except Exception:
         pass  # If decoding fails, use the original string
 
@@ -152,21 +161,21 @@ def extract_code_and_save(text, task_id, output_dir):
 
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
-    
+
     # Create filename with appropriate extension
     ext_map = {
         "json": ".json",
         "yaml": ".yaml",
         "csv": ".csv",
         "toml": ".toml",
-        "xml": ".xml"
+        "xml": ".xml",
     }
     extension = ext_map.get(output_type, ".txt")
     filename = os.path.join(output_dir, f"{task_id}{extension}")
 
     print(code)
     print("hello world")
-    
+
     # Save extracted code to file
     try:
         with open(filename, "w", encoding="utf-8") as f:
@@ -176,57 +185,60 @@ def extract_code_and_save(text, task_id, output_dir):
         logging.error(f"Error saving code for task {task_id}: {str(e)}")
         return code, None, False
 
+
 def score_non_renderable(task, non_renderable_dir):
     """
     Process and score a non-renderable task. Extracts code, saves to file, and validates format.
-    
+
     Args:
         task: The task to process
         non_renderable_dir: Directory to save non-renderable files
-        
+
     Returns:
         Updated task with render_score
     """
     task_id = task.get("task_id", "unknown")
     generation = task.get("generation", "")
     output_type = task.get("output_type", "unknown").lower()
-    
+
     # Extract code and save to file
-    code, file_path, success = extract_code_and_save(generation, task_id, non_renderable_dir)
-    
+    code, file_path, success = extract_code_and_save(
+        generation, task_id, non_renderable_dir
+    )
+
     # Set file path in task for evaluation engine to use
     task["output_file"] = file_path if success else None
-    
+
     score = 0.0
-    
+
     if success:
         try:
             if output_type == "json":
-                with open(file_path, 'r', encoding='utf-8') as f:
+                with open(file_path, "r", encoding="utf-8") as f:
                     result = json.load(f)
             elif output_type == "yaml":
-                with open(file_path, 'r', encoding='utf-8') as f:
+                with open(file_path, "r", encoding="utf-8") as f:
                     result = yaml.safe_load(f)
             elif output_type == "toml":
-                with open(file_path, 'r', encoding='utf-8') as f:
+                with open(file_path, "r", encoding="utf-8") as f:
                     result = toml.load(f)
             elif output_type == "xml":
-                with open(file_path, 'r', encoding='utf-8') as f:
+                with open(file_path, "r", encoding="utf-8") as f:
                     result = xmltodict.parse(f.read())
             elif output_type == "csv":
-                with open(file_path, 'r', encoding='utf-8') as f:
+                with open(file_path, "r", encoding="utf-8") as f:
                     result = csv.DictReader(f)
             else:
                 raise Valuerror("Unsupported file format.")
-            
+
             # if file not empty, but valid format files, then score = 1
-            if result: 
+            if result:
                 score = 1
 
         except Exception as e:
             logging.error(f"Error loading file {file_path}: {str(e)}")
             task["render_score"] = score
             return None, 0
-    
+
     task["render_score"] = score
     return task

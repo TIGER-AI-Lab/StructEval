@@ -389,6 +389,13 @@ export class TestComponent {{
                 render_score = 1
             except Exception as e:
                 logging.error(f"Angular rendering failed for task {task_id}: {e}")
+                # Reset browser resources upon exception
+                await page.close()
+                await context.close()
+                await browser.close()
+                await playwright.stop()
+                # Restart browser with fresh resources
+                browser, context, page, playwright = await start_browser()
             finally:
                 await page.close()
                 await context.close()
