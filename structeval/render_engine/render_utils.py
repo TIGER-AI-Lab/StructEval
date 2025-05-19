@@ -135,6 +135,7 @@ def extract_code_and_save(text, task_id, output_dir):
 
     # Decode unicode escape sequences
     try:
+        text = text.replace("&lt;", "<").replace("&gt;", ">")
         text = codecs.decode(text, "unicode_escape")
     except Exception:
         pass  # If decoding fails, use the original string

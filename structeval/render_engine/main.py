@@ -50,7 +50,11 @@ def safe_unicode_decode(text):
     If an error occurs, return the original text.
     """
     try:
+        #replace &lt; with < , and &gt; with >
+        text = text.replace("&lt;", "<").replace("&gt;", ">")
+        
         return codecs.decode(text, 'unicode_escape')
+
     except Exception as e:
         logging.warning(f"Unicode decode error: {str(e)}")
         # Try to escape any problematic sequences
