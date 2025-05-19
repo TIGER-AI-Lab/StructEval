@@ -72,8 +72,10 @@ async def render_angular_and_screenshot(task_id, angular_code, img_output_path):
                     "@angular/common": "^16.0.0",
                     "@angular/compiler": "^16.0.0",
                     "@angular/core": "^16.0.0",
+                    "@angular/forms": "^16.0.0",
                     "@angular/platform-browser": "^16.0.0",
                     "@angular/platform-browser-dynamic": "^16.0.0",
+                    "@angular/router": "^16.0.0",
                     "rxjs": "~7.8.0",
                     "tslib": "^2.3.0",
                     "zone.js": "~0.13.0",
@@ -268,7 +270,7 @@ export class TestComponent {{
             "outputPath": "dist/angular-render",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.json",
             "assets": [],
             "styles": [],
@@ -327,6 +329,14 @@ export class TestComponent {{
 """
                 )
 
+            # Create polyfills.ts
+            with open("src/polyfills.ts", "w") as f:
+                f.write(
+                    """
+import 'zone.js';
+"""
+                )
+
             # Install Angular CLI globally if not already installed
             try:
                 subprocess.run(
@@ -344,7 +354,7 @@ export class TestComponent {{
             logging.info("Installing Angular dependencies...")
             try:
                 subprocess.run(
-                    ["npm", "install"],
+                    ["npm", "install", "--legacy-peer-deps"],
                     check=True,
                     stdout=subprocess.DEVNULL,
                     stderr=subprocess.DEVNULL,
@@ -373,7 +383,7 @@ export class TestComponent {{
 
             # Wait for server to start (this might take some time)
             logging.info("Waiting for Angular server to start...")
-            await asyncio.sleep(30)  # Give more time for Angular to compile and start
+            await asyncio.sleep(45)  # Give more time for Angular to compile and start
 
             # Use Playwright to screenshot
             browser, context, page, playwright = await start_browser()

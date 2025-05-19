@@ -28,7 +28,7 @@ class StructEvalCLI:
 
         queries = [
             f"""{item['query']}
-            \n\nIMPORTANT: Only output the executable code. You must start the code with <code> and end the code with </code> tags. No other text explanation or comments are allowed.
+            \n\nIMPORTANT: Only output the required renderable or executable code. You must start the code with <code> and end the code with </code> (they are code block indicators, not HTML tags). No other text output (explanation, comments, etc.) are allowed.
             {"\n\n/no_think" if llm_model_name == "Qwen/Qwen3-4B-Base" else ""}
             """
             for item in data
