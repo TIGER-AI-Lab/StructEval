@@ -114,6 +114,9 @@ def extract_renderable_code(text: str, output_type: str = "") -> str:
     if text.startswith("<html>"):
         return text.strip()
 
+    if text.startswith(" <div class"):
+        return text.strip()
+
     # 3) fallback: nothing matched—return everything (trimmed)
     raise ValueError("No renderable code found")
 

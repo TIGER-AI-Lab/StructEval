@@ -5,6 +5,7 @@ import subprocess
 import tempfile
 import asyncio
 import json
+import random
 from .render_utils import start_browser
 
 
@@ -46,6 +47,11 @@ async def render_angular_and_screenshot(task_id, angular_code, img_output_path):
     if not angular_code:
         logging.warning(f"No Angular content for task {task_id}")
         return render_score
+
+    # Use a random port to avoid conflicts with previous servers
+    port = str(random.randint(4300, 9000))
+    server_process = None
+    browser = context = page = playwright = None
 
     try:
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -363,65 +369,136 @@ import 'zone.js';
                 logging.error(f"Failed to install dependencies: {e}")
                 raise
 
-            # Start Angular development server
-            logging.info("Starting Angular development server...")
-            port = "4200"
-            server_process = subprocess.Popen(
-                [
-                    "npx",
-                    "ng",
-                    "serve",
-                    "--port",
-                    port,
-                    "--host",
-                    "localhost",
-                    "--disable-host-check",
-                ],
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
-            )
+            # Start Angular development server with output capture for error detection
+            logging.info(f"Starting Angular development server on port {port}...")
+            server_output_file = os.path.join(tmpdir, "server_output.log")
+            with open(server_output_file, "w") as output_file:
+                server_process = subprocess.Popen(
+                    [
+                        "npx",
+                        "ng",
+                        "serve",
+                        "--port",
+                        port,
+                        "--host",
+                        "localhost",
+                        "--disable-host-check",
+                    ],
+                    stdout=output_file,
+                    stderr=output_file,
+                )
 
-            # Wait for server to start (this might take some time)
+            # Wait for server to start
             logging.info("Waiting for Angular server to start...")
-            await asyncio.sleep(45)  # Give more time for Angular to compile and start
+            start_time = asyncio.get_event_loop().time()
+            max_wait_time = 60  # Maximum wait time in seconds
+            compiled_successfully = False
+            
+            # Check for compilation status periodically
+            while (asyncio.get_event_loop().time() - start_time) < max_wait_time:
+                await asyncio.sleep(5)  # Check every 5 seconds
+                
+                # Check if server process is still running
+                if server_process.poll() is not None:
+                    logging.error(f"Angular server process exited with code {server_process.returncode}")
+                    break
+                
+                # Check log file for compilation status
+                with open(server_output_file, "r") as f:
+                    log_content = f.read()
+                    if "Compiled successfully" in log_content:
+                        logging.info("Angular compilation successful")
+                        compiled_successfully = True
+                        break
+                    elif "Error: " in log_content or "ERROR in" in log_content:
+                        logging.error("Angular compilation failed with errors")
+                        break
 
-            # Use Playwright to screenshot
+            # If compilation wasn't successful after max wait time, log a warning
+            if not compiled_successfully:
+                logging.warning(f"Angular compilation status uncertain after {max_wait_time} seconds")
+
+            # Start browser and take screenshot
             browser, context, page, playwright = await start_browser()
+            
             try:
-                await page.goto(f"http://localhost:{port}", timeout=60000)
+                await page.goto(f"http://localhost:{port}", timeout=30000)
                 await page.wait_for_load_state("networkidle")
-                await page.wait_for_timeout(
-                    5000
-                )  # Extra time for Angular app to render
-                screenshot_path = os.path.join(img_output_path_abs, f"{task_id}.png")
+                await page.wait_for_timeout(3000)  # Wait for Angular to render
+                
+                # Check if compilation error appears on page
+                error_element = await page.query_selector("text=/Error:/")
+                if error_element:
+                    logging.error(f"Angular rendering shows compilation error for task {task_id}")
+                    # Still take screenshot to document the error
+                    screenshot_path = os.path.join(img_output_path_abs, f"{task_id}_error.png")
+                else:
+                    screenshot_path = os.path.join(img_output_path_abs, f"{task_id}.png")
+                    render_score = 1
+                
                 await page.screenshot(path=screenshot_path, full_page=True)
                 logging.info(f"Angular screenshot saved: {screenshot_path}")
-                render_score = 1
+                
             except Exception as e:
                 logging.error(f"Angular rendering failed for task {task_id}: {e}")
-                # Reset browser resources upon exception
-                await page.close()
-                await context.close()
-                await browser.close()
-                await playwright.stop()
-                # Restart browser with fresh resources
-                browser, context, page, playwright = await start_browser()
             finally:
-                await page.close()
-                await context.close()
-                await browser.close()
-                await playwright.stop()
+                # Ensure browser is fully cleaned up
+                if page:
+                    await page.close()
+                if context:
+                    await context.close()
+                if browser:
+                    await browser.close()
+                if playwright:
+                    await playwright.stop()
 
-                # Terminate the server
+                # Terminate the server with force
                 if server_process:
                     server_process.terminate()
                     try:
-                        server_process.wait(timeout=10)
+                        server_process.wait(timeout=5)
                     except subprocess.TimeoutExpired:
                         server_process.kill()
+                        server_process.wait(timeout=5)
+                    
+                    # Additional cleanup - kill any remaining process on the port
+                    try:
+                        subprocess.run(
+                            ["fuser", "-k", f"{port}/tcp"],
+                            stdout=subprocess.DEVNULL,
+                            stderr=subprocess.DEVNULL,
+                        )
+                    except:
+                        pass
     except Exception as e:
         logging.error(f"Angular setup failed for task {task_id}: {e}")
     finally:
+        # Extra cleanup outside the tempdir context
+        # Ensure browser is closed
+        if browser or context or page or playwright:
+            try:
+                if page:
+                    await page.close()
+                if context:
+                    await context.close()
+                if browser:
+                    await browser.close()
+                if playwright:
+                    await playwright.stop()
+            except Exception as e:
+                logging.error(f"Error cleaning up browser: {e}")
+                
+        # Ensure server is terminated
+        if server_process and server_process.poll() is None:
+            try:
+                server_process.terminate()
+                server_process.wait(timeout=5)
+            except:
+                try:
+                    server_process.kill()
+                except:
+                    pass
+
         # Restore the original working directory
         os.chdir(original_dir)
 
