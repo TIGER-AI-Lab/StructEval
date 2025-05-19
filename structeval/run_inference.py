@@ -14,7 +14,7 @@ def run_inference(input_file, output_dir, llm_model_name):
 
 
     os.makedirs(output_dir, exist_ok=True)
-    infer_output = os.path.join(output_dir, "inference_output.json")
+    infer_output = os.path.join(output_dir, "inference_angular.json")
 
     cli = StructEvalCLI()
     llm_engine = "vllm"
@@ -28,18 +28,18 @@ def run_inference(input_file, output_dir, llm_model_name):
     )
 
 if __name__ == "__main__":
-    input_path = "../scripts/NewCleanedDataset.json"
+    input_path = "../dataset/angular.json"
     base_output_dir = "experiment_results"
 
     models = [
-        "meta-llama/Meta-Llama-3-8B-Instruct",
-        "Qwen/Qwen1.5-7B-Chat",
-        "Qwen/Qwen1.5-14B-Chat",
-        "Qwen/Qwen2.5-7B",
-        "Qwen/Qwen3-4B-Base",
-        "microsoft/Phi-3-mini-128k-instruct",
-        "microsoft/Phi-4-mini-instruct",
-        "meta-llama/Llama-3.1-8B-Instruct",
+        #"meta-llama/Meta-Llama-3-8B-Instruct",
+        #"Qwen/Qwen1.5-7B-Chat",
+        #"Qwen/Qwen1.5-14B-Chat",
+        #"Qwen/Qwen2.5-7B",
+        #"Qwen/Qwen3-4B-Base",
+        #"microsoft/Phi-3-mini-128k-instruct",
+        #"microsoft/Phi-4-mini-instruct",
+        "meta-llama/Llama-3.1-8B-Instruct"
     ]
 
     for model in models:

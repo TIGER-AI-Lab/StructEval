@@ -12,7 +12,7 @@ def extract_latex_tikz_objects(root_dir):
                     try:
                         data = json.load(f)
                         if isinstance(data, list):
-                            filtered = [obj for obj in data if obj.get("output_type") in ("Latex", "TikZ", "Tikz")]
+                            filtered = [obj for obj in data if obj.get("output_type") in ("Angular")]
                             if filtered:
                                 output_path = os.path.join(model_dir, 'inference_latex.json')
                                 with open(output_path, 'w', encoding='utf-8') as out_f:
