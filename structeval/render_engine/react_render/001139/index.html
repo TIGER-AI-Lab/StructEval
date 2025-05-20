@@ -84,27 +84,22 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function App() {
+function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
+  const validateForm = () => {
+    return email.includes('@') && password !== '';
   };
 
   const handleLogin = () => {
-    if (!email || !password || !email.includes('@')) {
+    if (!validateForm()) {
       setError('Please enter a valid email and password.');
-    } else {
-      setError('');
-      // Perform login logic here
-      console.log('Logging in with:', email, password);
+      return;
     }
+    setError('');
+    // Add login logic here
   };
 
   const handleClear = () => {
@@ -113,43 +108,41 @@ function App() {
     setError('');
   };
 
-  const isLoginDisabled = !email || !password || !email.includes('@');
-
   return (
-    <div className="container">
-      <h1>User Login</h1>
-      <form className="form">
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <h1>User Login</h1>
         <input
-          type="email"
-          placeholder="Enter Email"
+          type='email'
+          placeholder='Enter Email'
           value={email}
-          onChange={handleEmailChange}
+          onChange={(e) => setEmail(e.target.value)}
+          style={{ marginBottom: '10px' }}
         />
         <input
-          type="password"
-          placeholder="Enter Password"
+          type='password'
+          placeholder='Enter Password'
           value={password}
-          onChange={handlePasswordChange}
+          onChange={(e) => setPassword(e.target.value)}
+          style={{ marginBottom: '10px' }}
         />
-        <div className="buttons">
-          <button
-            style={{ backgroundColor: 'green', borderRadius: '4px' }}
-            onClick={handleLogin}
-            disabled={isLoginDisabled}
-          >
-            Login
-          </button>
-          <button onClick={handleClear}>Clear</button>
-        </div>
-      </form>
-      {error && <div className="error">{error}</div>}
+        <button
+          onClick={handleLogin}
+          style={{ backgroundColor: 'green', borderRadius: '4px', marginBottom: '10px' }}
+          disabled={!validateForm()}
+        >
+          Login
+        </button>
+        <button onClick={handleClear}>Clear</button>
+        {error && <div style={{ color: 'red', marginTop: '10px' }}>{error}</div>}
+      </div>
     </div>
   );
 }
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<LoginForm />);
 
     </script>
   </body>

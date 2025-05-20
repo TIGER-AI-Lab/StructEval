@@ -87,58 +87,58 @@
 const App = () => {
   return (
     <div>
-      <header>
+      <header style={styles.header}>
         <h1>My Website</h1>
         <p>Welcome to our informational site. Please browse to learn more about us.</p>
       </header>
-
-      <nav>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+      
+      <nav style={styles.nav}>
+        <ul style={styles.navUl}>
+          <li style={styles.navLi}><a href="#about" style={styles.a}>About Us</a></li>
+          <li style={styles.navLi}><a href="#services" style={styles.a}>Services</a></li>
+          <li style={styles.navLi}><a href="#portfolio" style={styles.a}>Portfolio</a></li>
+          <li style={styles.navLi}><a href="#contact" style={styles.a}>Contact</a></li>
         </ul>
       </nav>
-
-      <section id="about">
-        <h2>About Us</h2>
-        <article>
+      
+      <section id="about" style={styles.section}>
+        <h2 style={styles.sectionH2}>About Us</h2>
+        <article style={styles.article}>
           <h3>Our Mission</h3>
           <p>
             Our mission is to deliver quality content and innovative solutions that empower communities and drive change.
           </p>
         </article>
-        <article>
+        <article style={styles.article}>
           <h3>Our History</h3>
           <p>
             Founded in 2010, we have grown from a small start-up to a key player in our industry. Our journey is fueled by passion, dedication, and the spirit of continuous improvement.
           </p>
         </article>
       </section>
-
-      <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-          <li>
+      
+      <section id="services" style={styles.section}>
+        <h2 style={styles.sectionH2}>Our Services</h2>
+        <ul style={styles.servicesUl}>
+          <li style={styles.servicesLi}>
             <h4>Consulting</h4>
             <p>We offer expert consulting services in various industries to help your business reach its full potential.</p>
           </li>
-          <li>
+          <li style={styles.servicesLi}>
             <h4>Development</h4>
             <p>Our development team creates robust, scalable, and user-friendly software solutions tailored to your needs.</p>
           </li>
-          <li>
+          <li style={styles.servicesLi}>
             <h4>Design</h4>
             <p>Our creative designers craft visually appealing and functional designs that enhance your brand identity.</p>
           </li>
         </ul>
       </section>
-
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div>
-          <article>
+      
+      <section id="portfolio" style={styles.section}>
+        <h2 style={styles.sectionH2}>Portfolio</h2>
+        <div style={styles.portfolioDiv}>
+          <article style={styles.portfolioArticle}>
             <h3>Project One: Responsive Redesign</h3>
             <p><strong>Client:</strong> ABC Corporation</p>
             <section>
@@ -153,8 +153,8 @@ const App = () => {
               </ul>
             </section>
           </article>
-
-          <article>
+          
+          <article style={styles.portfolioArticle}>
             <h3>Project Two: E-commerce Platform</h3>
             <p><strong>Client:</strong> XYZ Enterprises</p>
             <section>
@@ -172,29 +172,119 @@ const App = () => {
           </article>
         </div>
       </section>
-
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
+      
+      <section id="contact" style={styles.section}>
+        <h2 style={styles.sectionH2}>Contact Us</h2>
+        <form action="#" method="post" style={styles.contactForm}>
           <div>
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="user_name" />
+            <label htmlFor="name" style={styles.contactLabel}>Name:</label>
+            <input type="text" id="name" name="user_name" style={styles.contactInput} />
           </div>
           <div>
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="user_email" />
+            <label htmlFor="email" style={styles.contactLabel}>Email:</label>
+            <input type="email" id="email" name="user_email" style={styles.contactInput} />
           </div>
           <div>
-            <label htmlFor="message">Message:</label>
-            <textarea id="message" name="user_message"></textarea>
+            <label htmlFor="message" style={styles.contactLabel}>Message:</label>
+            <textarea id="message" name="user_message" style={styles.contactTextarea}></textarea>
           </div>
           <div>
-            <button type="submit">Submit</button>
+            <button type="submit" style={styles.contactButton}>Submit</button>
           </div>
         </form>
       </section>
     </div>
   );
+};
+
+const styles = {
+  header: {
+    backgroundColor: '#f0f0f0',
+    padding: '20px',
+    textAlign: 'center',
+  },
+  nav: {
+    backgroundColor: '#333',
+    color: 'white',
+    padding: '10px',
+  },
+  navUl: {
+    listStyle: 'none',
+    padding: '0',
+    margin: '0',
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  navLi: {
+    margin: '0 15px',
+  },
+  a: {
+    color: 'white',
+    textDecoration: 'none',
+  },
+  section: {
+    padding: '20px',
+    margin: '20px 0',
+  },
+  sectionH2: {
+    borderBottom: '2px solid #ddd',
+    paddingBottom: '10px',
+  },
+  article: {
+    marginBottom: '20px',
+  },
+  servicesUl: {
+    listStyle: 'none',
+    padding: '0',
+  },
+  servicesLi: {
+    backgroundColor: '#f9f9f9',
+    padding: '15px',
+    marginBottom: '10px',
+    borderRadius: '5px',
+  },
+  portfolioDiv: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+  },
+  portfolioArticle: {
+    width: '45%',
+    border: '1px solid #ddd',
+    padding: '15px',
+    marginBottom: '20px',
+    boxSizing: 'border-box',
+  },
+  contactForm: {
+    display: 'flex',
+    flexDirection: 'column',
+    maxWidth: '400px',
+    margin: '0 auto',
+  },
+  contactLabel: {
+    marginTop: '10px',
+  },
+  contactInput: {
+    padding: '8px',
+    marginTop: '5px',
+    border: '1px solid #ddd',
+    borderRadius: '4px',
+  },
+  contactTextarea: {
+    padding: '8px',
+    marginTop: '5px',
+    border: '1px solid #ddd',
+    borderRadius: '4px',
+  },
+  contactButton: {
+    backgroundColor: '#4CAF50',
+    color: 'white',
+    padding: '10px 15px',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    marginTop: '10px',
+  },
 };
 
 

@@ -83,12 +83,69 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\begin{equation}
-\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
-\end{equation}
+
+function DailyPlanner() {
+  const [tasks, setTasks] = useState([]);
+  const [taskTitle, setTaskTitle] = useState('');
+  const [taskDetails, setTaskDetails] = useState('');
+  const [isCompleted, setIsCompleted] = useState(false);
+
+  const handleAddTask = () => {
+    if (taskTitle.trim() === '') return;
+    setTasks([...tasks, { title: taskTitle, details: taskDetails }]);
+    setTaskTitle('');
+    setTaskDetails('');
+  };
+
+  const handleClearAll = () => {
+    setTasks([]);
+  };
+
+  const handleMarkCompleted = () => {
+    setIsCompleted(prev => !prev);
+  };
+
+  return (
+    <div className="planner-container">
+      <h1>Daily Planner</h1>
+      <div className="planner-inputs">
+        <input
+          type="text"
+          placeholder="Task Title"
+          value={taskTitle}
+          onChange={(e) => setTaskTitle(e.target.value)}
+        />
+        <ul className={`task-list ${isCompleted ? 'completed' : ''}`}>
+          {tasks.map((task, index) => (
+            <li key={index}>
+              <strong>{task.title}</strong> - {task.details}
+            </li>
+          ))}
+        </ul>
+        <textarea
+          placeholder="Task Details"
+          rows="4"
+          value={taskDetails}
+          onChange={(e) => setTaskDetails(e.target.value)}
+        />
+        <div className="planner-buttons">
+          <button 
+            onClick={handleAddTask}
+            style={{ backgroundColor: 'green' }}
+          >
+            Add Task
+          </button>
+          <button onClick={handleClearAll}>Clear All</button>
+          <button onClick={handleMarkCompleted}>Mark Completed</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<DailyPlanner />);
 
     </script>
   </body>

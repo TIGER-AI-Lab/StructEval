@@ -84,32 +84,63 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-# Generate 15 random data points for observations
-np.random.seed(0)
-speed = np.random.uniform(0, 120, 15)
-distance = np.random.uniform(0, 100, 15)
+const ProductReviewForm = () => {
+    const [productName, setProductName] = React.useState('');
+    const [rating, setRating] = React.useState(null);
 
-# Create scatter plot
-plt.scatter(speed, distance, marker='o', color='red')
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (!productName || rating === null) {
+            alert('Please enter a product name and select a rating.');
+            return;
+        }
+        alert('Thank you for your feedback!');
+    };
 
-# Set labels for axes
-plt.xlabel("Speed (km/h)")
-plt.ylabel("Distance (km)")
+    return (
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh'}}>
+            <form onSubmit={handleSubmit} style={{textAlign: 'center', width: '80%', max_width: '300px'}}>
+                <h1 style={{marginBottom: '20px'}}>Product Review</h1>
+                <input 
+                    type="text" 
+                    placeholder="Enter product name" 
+                    value={productName} 
+                    onChange={(e) => setProductName(e.target.value)} 
+                    style={{width: '80%', maxWidth: '200px', marginBottom: '20px'}} 
+                />
+                <div style={{display: 'flex', marginBottom: '20px'}}>
+                    {[...Array(5).keys()].map((i) => (
+                        <label key={i} style={{marginRight: '10px'}}>
+                            <input 
+                                type="radio" 
+                                name="rating" 
+                                value={i + 1} 
+                                checked={rating === i + 1} 
+                                onChange={(e) => setRating(parseInt(e.target.value))}
+                                style={{ marginRight: '5px' }} 
+                            />
+                            {i + 1}
+                        </label>
+                    ))}
+                </div>
+                <textarea 
+                    placeholder="Write your review here"
+                    rows="4"
+                    value={productName} // Placeholder for demo, should be controlled by state
+                    onChange={(e) => setProductName(e.target.value)}
+                ></textarea>
+                <button type="submit" style={{backgroundColor: 'green', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px', marginTop: '20px'}}>
+                    Submit Review
+                </button>
+            </form>
+            <p style={{marginTop: '20px', textAlign: 'center', color: 'gray'}}></p>
+        </div>
+    );
+};
 
-# Set title
-plt.title("Speed vs Distance Analysis")
-
-# Add grid lines
-plt.grid(True, axis='both')
-
-# Add legend at the bottom right corner
-plt.legend(['Observation Points'], loc='lower right')
-
-# Display the plot
-plt.show()
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<ProductReviewForm />);
 
     </script>
   </body>

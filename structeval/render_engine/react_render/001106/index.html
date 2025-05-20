@@ -83,12 +83,68 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\begin{equation}
-\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
-\end{equation}
+
+const CommentForm = () => {
+  const [name, setName] = useState('');
+  const [comment, setComment] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleCommentChange = (event) => {
+    setComment(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (name && comment) {
+      setSubmitted(true);
+    }
+  };
+
+  const handleClear = () => {
+    setName('');
+    setComment('');
+    setSubmitted(false);
+  };
+
+  return (
+    <div className="form-container">
+      <h1>Leave a Comment</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Your Name"
+          value={name}
+          onChange={handleNameChange}
+          required
+        />
+        <textarea
+          placeholder="Enter your comment"
+          rows="4"
+          value={comment}
+          onChange={handleCommentChange}
+          required
+        />
+        <div className="button-container">
+          <button type="submit" disabled={!name || !comment} style={{ backgroundColor: 'darkgreen' }}>
+            Post Comment
+          </button>
+          <button type="button" onClick={handleClear}>
+            Clear Form
+          </button>
+        </div>
+      </form>
+      {submitted && <p>Comment submitted!</p>}
+    </div>
+  );
+};
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<CommentForm />);
 
     </script>
   </body>

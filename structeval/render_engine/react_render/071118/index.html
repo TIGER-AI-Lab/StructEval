@@ -84,179 +84,184 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
-  return (
-    <div>
-      <h1>Project Documentation</h1>
+const Documentation = () => (
+  <div>
+    <h1>Project Documentation</h1>
 
-      <h2>Table of Contents</h2>
-      <ul>
-        <li><a href="#project-overview">Project Overview</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#system-requirements">System Requirements</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#configuration">Configuration</a></li>
-        <li><a href="#troubleshooting">Troubleshooting</a></li>
-        <li><a href="#contributors">Contributors</a></li>
-        <li><a href="#license">License</a></li>
-        <li><a href="#appendix">Appendix</a></li>
-      </ul>
+    <h2>Table of Contents</h2>
+    <ul>
+      <li><a href="#project-overview">Project Overview</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#system-requirements">System Requirements</a></li>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#usage">Usage</a></li>
+      <li><a href="#configuration">Configuration</a></li>
+      <li><a href="#troubleshooting">Troubleshooting</a></li>
+      <li><a href="#contributors">Contributors</a></li>
+      <li><a href="#license">License</a></li>
+      <li><a href="#appendix">Appendix</a></li>
+    </ul>
 
-      <hr />
+    <hr />
 
-      <h2 id="project-overview">Project Overview</h2>
-      <p>This documentation outlines the project structure and provides detailed guidance on the formatting, layout, and content expected in the Markdown file. This project is designed to test visual structure, hierarchy, and content clarity.</p>
-      <strong>Objectives:</strong>
-      <ul>
-        <li>Demonstrate visible structure with headings and sections.</li>
-        <li>Showcase lists, tables, and formatted content.</li>
-        <li>Provide a comprehensive guide for setup and usage.</li>
-      </ul>
+    <h2 id="project-overview">Project Overview</h2>
+    <p>This documentation outlines the project structure and provides detailed guidance on the formatting, layout, and content expected in the Markdown file. This project is designed to test visual structure, hierarchy, and content clarity.</p>
+    <h3>Objectives:</h3>
+    <ul>
+      <li>Demonstrate visible structure with headings and sections.</li>
+      <li>Showcase lists, tables, and formatted content.</li>
+      <li>Provide a comprehensive guide for setup and usage.</li>
+    </ul>
 
-      <hr />
+    <hr />
 
-      <h2 id="features">Features</h2>
-      <h3>Core Features</h3>
-      <ol>
-        <li><strong>Modular Structure:</strong> Content is divided into distinct sections.</li>
-        <li><strong>Clear Formatting:</strong> Utilizes headings, lists, and code blocks.</li>
-        <li><strong>User Guidance:</strong> Detailed instructions and troubleshooting tips included.</li>
-      </ol>
-      <h3>Additional Features</h3>
-      <ul>
-        <li>Responsive design for a variety of Markdown viewers.</li>
-        <li>Easy navigation using a table of contents.</li>
-        <li>Customizable configuration settings.</li>
-      </ul>
+    <h2 id="features">Features</h2>
+    <h3>Core Features</h3>
+    <ol>
+      <li><strong>Modular Structure:</strong> Content is divided into distinct sections.</li>
+      <li><strong>Clear Formatting:</strong> Utilizes headings, lists, and code blocks.</li>
+      <li><strong>User Guidance:</strong> Detailed instructions and troubleshooting tips included.</li>
+    </ol>
 
-      <hr />
+    <h3>Additional Features</h3>
+    <ul>
+      <li>Responsive design for a variety of Markdown viewers.</li>
+      <li>Easy navigation using a table of contents.</li>
+      <li>Customizable configuration settings.</li>
+    </ul>
 
-      <h2 id="system-requirements">System Requirements</h2>
-      <p>The system requirements to view and edit this documentation are minimal, ensuring accessibility for all users.</p>
-      <h3>Hardware</h3>
-      <ul>
-        <li><strong>Processor:</strong> Intel i5 or equivalent.</li>
-        <li><strong>RAM:</strong> 8GB minimum (16GB recommended).</li>
-        <li><strong>Storage:</strong> At least 500MB of free space.</li>
-      </ul>
-      <h3>Software</h3>
-      <ul>
-        <li><strong>Operating Systems:</strong> Windows, macOS, or Linux.</li>
-        <li><strong>Editors:</strong> Any Markdown-supported editor (e.g., Visual Studio Code, Sublime Text).</li>
-        <li><strong>Viewer:</strong> A Markdown viewer capable of rendering extended Markdown syntax.</li>
-      </ul>
+    <hr />
 
-      <hr />
+    <h2 id="system-requirements">System Requirements</h2>
+    <p>The system requirements to view and edit this documentation are minimal, ensuring accessibility for all users.</p>
+    <h3>Hardware</h3>
+    <ul>
+      <li><strong>Processor:</strong> Intel i5 or equivalent.</li>
+      <li><strong>RAM:</strong> 8GB minimum (16GB recommended).</li>
+      <li><strong>Storage:</strong> At least 500MB of free space.</li>
+    </ul>
 
-      <h2 id="installation">Installation</h2>
-      <p>Follow these steps to set up your environment and view the documentation correctly:</p>
-      <h3>Step-by-Step Instructions</h3>
-      <ol>
-        <li><strong>Download Repository:</strong> Obtain the repository containing this documentation.</li>
-        <li><strong>Open in Editor:</strong> Launch your preferred Markdown editor and open the downloaded folder.</li>
-        <li><strong>Read Instructions:</strong> Review the sections below for configuration and usage.</li>
-        <li><strong>Launch Markdown Viewer:</strong> Use a compatible viewer to render the Markdown file.</li>
-      </ol>
-      <p><strong>Note:</strong> No external libraries or assets are required.</p>
+    <h3>Software</h3>
+    <ul>
+      <li><strong>Operating Systems:</strong> Windows, macOS, or Linux.</li>
+      <li><strong>Editors:</strong> Any Markdown-supported editor (e.g., Visual Studio Code, Sublime Text).</li>
+      <li><strong>Viewer:</strong> A Markdown viewer capable of rendering extended Markdown syntax.</li>
+    </ul>
 
-      <hr />
+    <hr />
 
-      <h2 id="usage">Usage</h2>
-      <p>This section explains how to navigate and interact with the documentation.</p>
-      <h3>Viewing the Documentation</h3>
-      <ul>
-        <li>Open the file in any Markdown editor to view the raw text.</li>
-        <li>Render the file using a Markdown viewer to see the formatted output.</li>
-        <li>Alternatively, use a terminal-based tool such as "Glow" for a text-based view.</li>
-      </ul>
-      <h3>Example Command</h3>
-      <p>To view the file in a terminal (assuming "Glow" is installed), use:</p>
-      <pre><code>$ glow README.md</code></pre>
+    <h2 id="installation">Installation</h2>
+    <p>Follow these steps to set up your environment and view the documentation correctly:</p>
+    <h3>Step-by-Step Instructions</h3>
+    <ol>
+      <li><strong>Download Repository:</strong> Obtain the repository containing this documentation.</li>
+      <li><strong>Open in Editor:</strong> Launch your preferred Markdown editor and open the downloaded folder.</li>
+      <li><strong>Read Instructions:</strong> Review the sections below for configuration and usage.</li>
+      <li><strong>Launch Markdown Viewer:</strong> Use a compatible viewer to render the Markdown file.</li>
+    </ol>
+    <p><strong>Note:</strong> No external libraries or assets are required.</p>
 
-      <hr />
+    <hr />
 
-      <h2 id="configuration">Configuration</h2>
-      <p>This section contains options for adjusting the formatting and behavior of the documentation.</p>
-      <h3>Configuration Options</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Option</th>
-            <th>Default Value</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Theme</td>
-            <td>Light</td>
-            <td>Determines the overall color scheme.</td>
-          </tr>
-          <tr>
-            <td>Font Size</td>
-            <td>14px</td>
-            <td>Default text size for content display.</td>
-          </tr>
-          <tr>
-            <td>Line Spacing</td>
-            <td>1.5</td>
-            <td>Spacing between lines of text.</td>
-          </tr>
-          <tr>
-            <td>Display Table of Contents</td>
-            <td>True</td>
-            <td>Whether to show the table of contents.</td>
-          </tr>
-          <tr>
-            <td>Enable Syntax Highlighting</td>
-            <td>True</td>
-            <td>Highlights code within code blocks.</td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Customization Guidelines</h3>
-      <ul>
-        <li>Edit the configuration file or section as needed.</li>
-        <li>Ensure consistency in the values used, particularly for fonts and themes.</li>
-      </ul>
+    <h2 id="usage">Usage</h2>
+    <p>This section explains how to navigate and interact with the documentation.</p>
 
-      <hr />
+    <h3>Viewing the Documentation</h3>
+    <ul>
+      <li>Open the file in any Markdown editor to view the raw text.</li>
+      <li>Render the file using a Markdown viewer to see the formatted output.</li>
+      <li>Alternatively, use a terminal-based tool such as "Glow" for a text-based view.</li>
+    </ul>
 
-      <h2 id="troubleshooting">Troubleshooting</h2>
-      <p>Here are some common issues and solutions related to the documentation layout and formatting.</p>
-      <h3>Common Issues</h3>
-      <ul>
-        <li><strong>Formatting Errors:</strong> Verify that your Markdown viewer supports the extended syntax used.</li>
-        <li><strong>Layout Discrepancies:</strong> Check that your viewer does not override default Markdown styles.</li>
-        <li><strong>Installation Problems:</strong> Re-download the repository if the file seems corrupted.</li>
-      </ul>
-      <h3>FAQ</h3>
-      <p><strong>Q:</strong> Why does the document not render correctly in my viewer?<br />
-        <strong>A:</strong> Your Markdown viewer might not support certain extended features; try a different viewer.</p>
-      <p><strong>Q:</strong> How can I suggest changes or report bugs?<br />
-        <strong>A:</strong> Report issues in the designated project forum or contact one of the contributors.</p>
+    <h3>Example Command</h3>
+    <p>To view the file in a terminal (assuming "Glow" is installed), use:</p>
 
-      <hr />
+    <pre>
+      <code>$ glow README.md</code>
+    </pre>
 
-      <h2 id="contributors">Contributors</h2>
-      <ul>
-        <li>Alice Johnson</li>
-        <li>Bob Smith</li>
-      </ul>
+    <hr />
 
-      <h2 id="license">License</h2>
-      {/* Placeholder for License content */}
+    <h2 id="configuration">Configuration</h2>
+    <p>This section contains options for adjusting the formatting and behavior of the documentation.</p>
 
-      <h2 id="appendix">Appendix</h2>
-      {/* Placeholder for Appendix content */}
-    </div>
-  );
-};
+    <h3>Configuration Options</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Option</th>
+          <th>Default Value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Theme</td>
+          <td>Light</td>
+          <td>Determines the overall color scheme.</td>
+        </tr>
+        <tr>
+          <td>Font Size</td>
+          <td>14px</td>
+          <td>Default text size for content display.</td>
+        </tr>
+        <tr>
+          <td>Line Spacing</td>
+          <td>1.5</td>
+          <td>Spacing between lines of text.</td>
+        </tr>
+        <tr>
+          <td>Display Table of Contents</td>
+          <td>True</td>
+          <td>Whether to show the table of contents.</td>
+        </tr>
+        <tr>
+          <td>Enable Syntax Highlighting</td>
+          <td>True</td>
+          <td>Highlights code within code blocks.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Customization Guidelines</h3>
+    <ul>
+      <li>Edit the configuration file or section as needed.</li>
+      <li>Ensure consistency in the values used, particularly for fonts and themes.</li>
+    </ul>
+
+    <hr />
+
+    <h2 id="troubleshooting">Troubleshooting</h2>
+    <p>Here are some common issues and solutions related to the documentation layout and formatting.</p>
+
+    <h3>Common Issues</h3>
+    <ul>
+      <li><strong>Formatting Errors:</strong> Verify that your Markdown viewer supports the extended syntax used.</li>
+      <li><strong>Layout Discrepancies:</strong> Check that your viewer does not override default Markdown styles.</li>
+      <li><strong>Installation Problems:</strong> Re-download the repository if the file seems corrupted.</li>
+    </ul>
+
+    <h3>FAQ</h3>
+    <p><strong>Q:</strong> Why does the document not render correctly in my viewer?<br />
+      <strong>A:</strong> Your Markdown viewer might not support certain extended features; try a different viewer.</p>
+    <p><strong>Q:</strong> How can I suggest changes or report bugs?<br />
+      <strong>A:</strong> Report issues in the designated project forum or contact one of the contributors.</p>
+
+    <hr />
+
+    <h2 id="contributors">Contributors</h2>
+    <p>The following individuals contributed to the creation of this documentation:</p>
+    <ul>
+      <li>Alice Johnson</li>
+      <li>Bob Smith</li>
+    </ul>
+
+  </div>
+);
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<Documentation />);
 
     </script>
   </body>

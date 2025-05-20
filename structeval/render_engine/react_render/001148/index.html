@@ -84,95 +84,99 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const EventRegistrationForm = () => {
-  const [email, setEmail] = useState('');
-  const [eventType, setEventType] = useState('');
-  const [eventDate, setEventDate] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [eventTypeError, setEventTypeError] = useState('');
+function EventRegistrationForm() {
+    const [email, setEmail] = useState('');
+    const [eventType, setEventType] = useState('');
+    const [date, setDate] = useState('');
+    const [error, setError] = useState('');
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-    setEmailError('');
-  };
+    const validateEmail = (email) => {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+    };
 
-  const handleEventTypeChange = (e) => {
-    setEventType(e.target.value);
-    setEventTypeError('');
-  };
+    const handleRegister = () => {
+        if (!email || !validateEmail(email)) {
+            setError('Please enter a valid email address.');
+            return;
+        }
+        if (!eventType) {
+            setError('Please select an event type.');
+            return;
+        }
+        setError('');
+        // Submit logic here
+        alert('Registered Successfully!');
+    };
 
-  const handleDateChange = (e) => {
-    setEventDate(e.target.value);
-  };
+    const handleClear = () => {
+        setEmail('');
+        setEventType('');
+        setDate('');
+        setError('');
+    };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+    return (
+        <div style={styles.container}>
+            <h1>Event Registration</h1>
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                style={styles.input}
+            />
+            <select
+                value={eventType}
+                onChange={(e) => setEventType(e.target.value)}
+                style={styles.input}
+            >
+                <option value="">Select Event Type</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Webinar">Webinar</option>
+                <option value="Seminar">Seminar</option>
+            </select>
+            <input
+                type="date"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+                style={styles.input}
+            />
+            {error && <p style={styles.error}>{error}</p>}
+            <div style={styles.buttonContainer}>
+                <button style={{ ...styles.button, backgroundColor: 'green' }} onClick={handleRegister}>Register</button>
+                <button style={{ ...styles.button, backgroundColor: 'red' }} onClick={handleClear}>Clear</button>
+            </div>
+        </div>
+    );
+}
 
-    let isValid = true;
-
-    if (!email) {
-      setEmailError('Email is required');
-      isValid = false;
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      setEmailError('Invalid email format');
-      isValid = false;
+const styles = {
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100vh',
+    },
+    input: {
+        margin: '10px 0',
+        padding: '10px',
+        width: '200px',
+    },
+    buttonContainer: {
+        display: 'flex',
+        gap: '10px',
+    },
+    button: {
+        color: 'white',
+        border: 'none',
+        padding: '10px 20px',
+        cursor: 'pointer',
+    },
+    error: {
+        color: 'red',
     }
-
-    if (!eventType) {
-      setEventTypeError('Event type is required');
-      isValid = false;
-    }
-
-    if (isValid) {
-      // Handle form submission, e.g., send data to server
-      console.log('Form submitted:', { email, eventType, eventDate });
-    }
-  };
-
-  const handleClear = () => {
-    setEmail('');
-    setEventType('');
-    setEventDate('');
-    setEmailError('');
-    setEventTypeError('');
-  };
-
-  return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      <form style={{ width: '300px' }} onSubmit={handleSubmit}>
-        <h1 style={{ textAlign: 'center' }}>Event Registration</h1>
-        <input
-          type="email"
-          placeholder="Enter your email address"
-          value={email}
-          onChange={handleEmailChange}
-          style={{ width: '100%', padding: '8px', marginBottom: '8px' }}
-        />
-        {emailError && <p style={{ color: 'red' }}>{emailError}</p>}
-        <select
-          value={eventType}
-          onChange={handleEventTypeChange}
-          style={{ width: '100%', padding: '8px', marginBottom: '8px' }}
-        >
-          <option value="">Select Event Type</option>
-          <option value="workshop">Workshop</option>
-          <option value="webinar">Webinar</option>
-          <option value="seminar">Seminar</option>
-        </select>
-        {eventTypeError && <p style={{ color: 'red' }}>{eventTypeError}</p>}
-        <label htmlFor="eventDate" style={{ display: 'block', marginBottom: '4px' }}>Event Date:</label>
-        <input
-          type="date"
-          id="eventDate"
-          value={eventDate}
-          onChange={handleDateChange}
-          style={{ width: '100%', padding: '8px', marginBottom: '8px' }}
-        />
-        <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '8px', width: '48%', marginRight: '4%' }}>Register</button>
-        <button type="button" onClick={handleClear} style={{ backgroundColor: 'red', color: 'white', padding: '8px', width: '48%' }}>Clear</button>
-      </form>
-    </div>
-  );
 };
 
 

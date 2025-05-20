@@ -84,58 +84,91 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const QuizComponent = () => {
-  const [result, setResult] = useState('');
+const Quiz = () => {
+  const [message, setMessage] = useState('');
 
   const handleClick = (answer) => {
     if (answer === 'Paris') {
-      setResult('Correct!');
+      setMessage('Correct!');
     } else {
-      setResult('Incorrect!');
+      setMessage('Incorrect!');
     }
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
-      <h2 style={{ textAlign: 'center' }}>Quiz Time</h2>
+    <div className="quiz-container">
+      <h2>Quiz Time</h2>
       <p>What is the capital of France?</p>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+      <div className="buttons">
         <button
-          style={{ backgroundColor: 'green', padding: '10px', border: 'none', borderRadius: '5px', cursor: 'pointer', transition: 'background-color 0.3s ease', ':hover': { backgroundColor: 'lightgreen' } }}
+          className="answer-button correct"
           onClick={() => handleClick('Paris')}
         >
           Paris
         </button>
-        <button
-          style={{ padding: '10px', border: 'none', borderRadius: '5px', cursor: 'pointer', transition: 'background-color 0.3s ease', ':hover': { backgroundColor: 'lightgray' } }}
-          onClick={() => handleClick('Berlin')}
-        >
+        <button className="answer-button" onClick={() => handleClick('Berlin')}>
           Berlin
         </button>
-        <button
-          style={{ padding: '10px', border: 'none', borderRadius: '5px', cursor: 'pointer', transition: 'background-color 0.3s ease', ':hover': { backgroundColor: 'lightgray' } }}
-          onClick={() => handleClick('Madrid')}
-        >
+        <button className="answer-button" onClick={() => handleClick('Madrid')}>
           Madrid
         </button>
-        <button
-          style={{ padding: '10px', border: 'none', borderRadius: '5px', cursor: 'pointer', transition: 'background-color 0.3s ease', ':hover': { backgroundColor: 'lightgray' } }}
-          onClick={() => handleClick('Rome')}
-        >
+        <button className="answer-button" onClick={() => handleClick('Rome')}>
           Rome
         </button>
       </div>
-      <p>{result}</p>
-      <div style={{ width: '100%', backgroundColor: 'lightgray', marginTop: '20px' }}>
-        <div style={{ width: '20%', backgroundColor: 'green', height: '20px' }}></div>
+      {message && <p>{message}</p>}
+      <div className="progress-bar">
+        <div className="progress" style={{ width: '20%' }}></div>
       </div>
     </div>
   );
 };
 
 
+/* Assume this CSS is in Quiz.css */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.answer-button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.correct {
+  background-color: green;
+  color: white;
+}
+
+.answer-button:hover {
+  background-color: #ddd;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.progress {
+  width: 20%;
+  height: 10px;
+  background-color: green;
+}
+
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<QuizComponent />);
+ReactDOM.createRoot(document.getElementById('root')).render(<Quiz />);
 
     </script>
   </body>

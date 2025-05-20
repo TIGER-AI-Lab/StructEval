@@ -83,90 +83,148 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\documentclass{article}
-\usepackage{tikz}
+```jsx
 
-\begin{document}
+function App() {
+  return (
+    <div>
+      <header>
+        <h1>Structured Layout Test</h1>
+        <nav>
+          <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#data">Data Overview</a></li>
+            <li><a href="#summary">Summary</a></li>
+          </ul>
+        </nav>
+        <hr />
+      </header>
 
-\begin{tikzpicture}
-% Grid
-\draw [thin, step=1cm] (0,0) grid (10,1);
+      <main>
+        <section id="introduction">
+          <h2>Introduction</h2>
+          <p>
+            Welcome to the Structured Layout Test Page. This page is designed to test visual conversion,
+            ensuring clear hierarchy and content organization. The following sections demonstrate various HTML
+            elements such as headings, lists, tables, and articles.
+          </p>
+        </section>
 
-% Plot Sin
-\draw [thin, blue, <->] plot[smooth] coordinates {
-(0,0)
-(1,0.84147098)
-(2,0.90929743)
-(3,0.14112001)
-(4,-0.7568025)
-(5,-0.9589243)
-(6,-0.2794155)
-(7,0.9589243)
-(8,0.6569866)
-(9,0.7568025)
-(10,0.84147098)
-};
+        <section id="features">
+          <h2>Features</h2>
+          <article>
+            <h3>Key Structural Elements</h3>
+            <p>The page makes use of a variety of structural HTML elements including:</p>
+            <ul>
+              <li>Headings and Sub-headings</li>
+              <li>Paragraphs of Informative Text</li>
+              <li>Ordered and Unordered Lists</li>
+              <li>Definition Lists for Labeled Values</li>
+              <li>Tables with Labeled Data</li>
+            </ul>
+          </article>
 
-% Plot Cos
-\draw [thin, green, <->] plot[smooth] coordinates {
-(0,1)
-(1,0.5403023)
-(2,0.4161468)
-(3,0.9899925)
-(4,0.9899925)
-(5,0.4161468)
-(6,-0.5403023)
-(7,-1)
-(8,-0.9899925)
-(9,-0.4161468)
-(10,-0.9899925)
-};
+          <article>
+            <h3>Accessibility</h3>
+            <p>
+              All sections are clearly labeled to support both screen readers and visual layout tasks. This
+              emphasizes the importance of a well-organized document.
+            </p>
+            <dl>
+              <dt>Navigation</dt>
+              <dd>A clear menu at the top links to all major sections of the page.</dd>
+              <dt>Content</dt>
+              <dd>Hierarchical headings structure the visible content effectively.</dd>
+            </dl>
+          </article>
+        </section>
 
-% Plot Tan (Limited Range)
-\draw [thin, red, <->] plot[smooth] coordinates {
-(0,0)
-(1,0.0174524)
-(2,0.1900227)
-(3,0.8485772)
-(4,1.4296471)
-(5,2.0000000)
-(6,4.0792891)
-(7,8.4371791)
-(8,16)
-};
+        <section id="details">
+          <h2>Details</h2>
+          <article>
+            <h3>Content Structure</h3>
+            <p>
+              The intention of this test page is to provide a realistic example of a multi-sectioned HTML
+              document. Below is a step-by-step breakdown of the important parts:
+            </p>
+            <ol>
+              <li>Header and Navigation Menu</li>
+              <li>Main Content Sections with Subsections</li>
+              <li>Organized Lists and Definition Lists</li>
+              <li>Data Table Displaying Information</li>
+              <li>Footer with Copyright Information</li>
+            </ol>
+          </article>
 
-% Annotation Peak Value
-\node at (2.5,1) [above, fill=black!] {Peak Value};
+          <article>
+            <h3>Additional Information</h3>
+            <p>
+              Each article within the sections is designed to demonstrate deep hierarchy and precise formatting for
+              clear visual conversion. Consistent use of white space and semantic tags ensure the page is both
+              valid HTML and easy to understand.
+            </p>
+          </article>
+        </section>
 
-% Text Summary
-\node [fill=white, text width=4cm] at (0.02,0.95) {
-Summary:
---------------------------\\
-1. sin(x) and cos(x) exhibit classic periodic\\
-behavior.\\
-2. tan(x) shows asymptotic trends near\\
-odd multiples of pi/2.\\
-3. Data generated using NumPy functions.\\
-4. Plots incorporate grids, legends,\\
-and clear annotations.
-};
+        <section id="data">
+          <h2>Data Overview</h2>
+          <table border="1" cellPadding="5" cellSpacing="0">
+            <caption>Summary Table of Key Values</caption>
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Parameter 1</td>
+                <td>Defines the layout structure.</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Parameter 2</td>
+                <td>Controls navigation links.</td>
+                <td>Enabled</td>
+              </tr>
+              <tr>
+                <td>Parameter 3</td>
+                <td>Handles content sections.</td>
+                <td>Operational</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-% Statistics Text
-\node [fill=white, text width=4cm] at (0.7,0.5) {
-Statistics:
-------------------\\
-Sine\\
-  Mean: 0.00\\
-  Std:  0.99\\
-Cosine\\
-  Mean: 0.00\\
-  Std:  0.71\\
-Tangent (|value| < 10)\\
-  Mean: 0.00\\
-  Std:  0.71
-};
+        <section id="summary">
+          <h2>Summary</h2>
+          <p>
+            In conclusion, this test page provides a balanced mix of structural elements needed for visual conversion
+            tasks. All HTML components have been carefully arranged to offer a comprehensive and easily navigable layout.
+          </p>
+          <div>
+            <h4>Key Takeaways</h4>
+            <ul>
+              <li>Semantic tags enhance accessibility.</li>
+              <li>Properly structured content improves readability.</li>
+              <li>The layout demonstrates both hierarchy and visual clarity.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
 
-\end{tikzpicture}
+      <footer>
+        <hr />
+        <p>Â© 2023 Structured Layout Example. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
+
+```
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

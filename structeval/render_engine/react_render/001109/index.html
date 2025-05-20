@@ -84,72 +84,96 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const RegistrationForm = () => {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [agreed, setAgreed] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
+function RegistrationForm() {
+  const [formState, setFormState] = useState({
+    username: '',
+    email: '',
+    password: '',
+    agreeToTerms: false,
+  });
+
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormState({
+      ...formState,
+      [name]: type === 'checkbox' ? checked : value,
+    });
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formState.username) newErrors.username = 'Username is required';
+    if (!formState.email) newErrors.email = 'Email is required';
+    if (!formState.password) newErrors.password = 'Password is required';
+    if (!formState.agreeToTerms) newErrors.agreeToTerms = 'You must agree to the terms';
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username && email && password && agreed) {
-      setSubmitted(true);
+    if (validateForm()) {
+      setSuccessMessage('Registration successful!');
     }
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', minHeight: '100vh' }}>
       <h1>Registration</h1>
-      <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', width: '300px' }}>
+      <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', maxWidth: '400px', width: '100%' }}>
         <input
           type="text"
+          name="username"
           placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          value={formState.username}
+          onChange={handleChange}
+          style={{ gridColumn: 'span 2' }}
         />
+        {errors.username && <p style={{ gridColumn: 'span 2', color: 'red' }}>{errors.username}</p>}
+        
         <input
           type="email"
+          name="email"
           placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={formState.email}
+          onChange={handleChange}
+          style={{ gridColumn: 'span 2' }}
         />
+        {errors.email && <p style={{ gridColumn: 'span 2', color: 'red' }}>{errors.email}</p>}
+
         <input
           type="password"
+          name="password"
           placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          value={formState.password}
+          onChange={handleChange}
+          style={{ gridColumn: 'span 2' }}
         />
-        <div style={{ gridColumn: '1 / span 2' }}>
-          <label>
-            <input
-              type="checkbox"
-              checked={agreed}
-              onChange={(e) => setAgreed(e.target.checked)}
-            />{' '}
-            I agree to the Terms
-          </label>
+        {errors.password && <p style={{ gridColumn: 'span 2', color: 'red' }}>{errors.password}</p>}
+
+        <div style={{ gridColumn: 'span 2' }}>
+          <input
+            type="checkbox"
+            name="agreeToTerms"
+            checked={formState.agreeToTerms}
+            onChange={handleChange}
+          />
+          <label>I agree to the Terms</label>
         </div>
-        <button
-          type="submit"
-          style={{
-            gridColumn: '1 / span 2',
-            backgroundColor: 'green',
-            color: 'white',
-            padding: '10px',
-            border: 'none',
-            cursor: 'pointer',
-          }}
-        >
+        {errors.agreeToTerms && <p style={{ gridColumn: 'span 2', color: 'red' }}>{errors.agreeToTerms}</p>}
+
+        <button type="submit" style={{ gridColumn: 'span 2', backgroundColor: 'green', color: 'white', padding: '10px', border: 'none', cursor: 'pointer' }}>
           Register
         </button>
       </form>
-      {submitted && (
-        <p style={{ marginTop: '20px' }}>Registration successful!</p>
-      )}
+      {successMessage && <p>{successMessage}</p>}
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount

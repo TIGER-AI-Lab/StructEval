@@ -84,16 +84,18 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
+const MarkdownVisualLayoutTest = () => {
   return (
     <div>
       <h1>Project Title: Markdown Visual Layout Test</h1>
+      
       <p>A short description of the project for layout testing purposes.</p>
-
+      
       <h2>Table of Contents</h2>
       <ul>
         <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#usage-instructions">Usage Instructions</a>
+        <li>
+          <a href="#usage-instructions">Usage Instructions</a>
           <ul>
             <li><a href="#step-1-setup-environment">Step 1: Setup Environment</a></li>
             <li><a href="#step-2-validate-layout">Step 2: Validate Layout</a></li>
@@ -116,6 +118,7 @@ const App = () => {
         <li>Visual hierarchy</li>
         <li>Properly formatted content</li>
       </ul>
+
       <p>Key objectives:</p>
       <ul>
         <li>Demonstrate the use of headings and sub-headings.</li>
@@ -134,6 +137,7 @@ const App = () => {
         <li>Validate the installed Markdown viewer.</li>
         <li>Confirm that no additional scripts or external resources are required.</li>
       </ul>
+
       <p>Checklist:</p>
       <ul>
         <li>[x] Open your text editor.</li>
@@ -148,6 +152,7 @@ const App = () => {
         <li><strong>Body:</strong> Split into detailed sections like instructions, features, configuration, and examples.</li>
         <li><strong>Footer:</strong> Concludes with licensing and future work.</li>
       </ol>
+
       <p>Confirm that the layout follows these steps:</p>
       <ul>
         <li>All headings are correctly formatted.</li>
@@ -180,7 +185,8 @@ const App = () => {
       <h2 id="configuration">Configuration</h2>
       <p>Below is an example configuration snippet in YAML-style format:</p>
       <pre>
-        {`settings:
+        <code>
+settings:
   theme: "default"
   layout: "vertical"
   sections:
@@ -192,7 +198,8 @@ const App = () => {
         items: 5
     - footer:
         enabled: true
-        text: "End of Document"`}
+        text: "End of Document"
+        </code>
       </pre>
       <p>Note: This is a simulated configuration for demonstration purposes only.</p>
 
@@ -200,11 +207,10 @@ const App = () => {
 
       <h2 id="examples">Examples</h2>
 
-      <h3 id="basic-example">Basic Example</h3>
-      <p>Simple formatted note:</p>
-      <blockquote><strong>Note:</strong> Review your Markdown rendering engine to ensure best compatibility with this layout.</blockquote>
+      <h3>Basic Example</h3>
+      <p><strong>Note:</strong> Review your Markdown rendering engine to ensure best compatibility with this layout.</p>
 
-      <h4 id="detailed-example">Detailed Example</h4>
+      <h4>Detailed Example</h4>
       <p>Follow these steps:</p>
       <ol>
         <li>Create a new Markdown file and paste in the content.</li>
@@ -217,6 +223,7 @@ const App = () => {
         </li>
         <li>Modify any section to tailor the layout to your testing needs.</li>
       </ol>
+
       <p>Labeled values example:</p>
       <ul>
         <li><strong>Project Name:</strong> Markdown Visual Layout Test</li>
@@ -230,7 +237,8 @@ const App = () => {
       <h2 id="license">License</h2>
       <p>Licensed under the MIT License:</p>
       <pre>
-        {`MIT License
+        <code>
+MIT License
 -----------
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -238,7 +246,8 @@ of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions...`}
+furnished to do so, subject to the following conditions...
+        </code>
       </pre>
       <p>Please review the complete license for full details.</p>
 
@@ -252,6 +261,7 @@ furnished to do so, subject to the following conditions...`}
         <li>Extended configuration options for dynamic testing.</li>
         <li>Continuous updates to refine the visual layout further.</li>
       </ul>
+
       <p>This document will serve as the base for testing structural layout and visible content rendering across different scenarios.</p>
 
       <hr />
@@ -263,7 +273,7 @@ furnished to do so, subject to the following conditions...`}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<MarkdownVisualLayoutTest />);
 
     </script>
   </body>

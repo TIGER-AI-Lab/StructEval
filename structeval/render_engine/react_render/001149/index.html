@@ -83,83 +83,87 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-<form>
-  <div className="container">
-    <h1>Register Now</h1>
-    <div className="register-inputs">
-      <label htmlFor="email">Email Address</label>
-      <input type="email" id="email" placeholder="Email Address" required />
-      <span></span>
-    </div>
 
-    <div className="register-inputs">
-      <label htmlFor="password">Password</label>
-      <input type="password" id="password" placeholder="Password" required autoComplete="new-password" />
-      <span></span>
-    </div>
-
-    <div className="register-inputs">
-      <label htmlFor="terms">Agree to Terms</label>
-      <input type="checkbox" id="terms" required />
-    </div>
-
-    <div className="register-buttons">
-      <button type="submit">Register</button>
-      <button type="reset">Clear</button>
-      <button type="button">Back to Login</button>
-    </div>
-  </div>
-
-  <p>Your registration was successful!</p>
-</form>
-
-<style>
-.container {
+const registerStyle = css`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   align-items: center;
-  gap: 10px;
-  margin: 20px;
-  text-align: center;
-}
+  justify-content: center;
+`;
 
-.register-buttons {
-  display: flex;
-  justify-content: flex-end;
-}
+const buttonStyle = css`
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+`;
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background: #f0f0f0;
-  border: none;
-  cursor: pointer;
-}
+const validateEmail = (email) => {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+};
 
-button:last-child {
-  background-color: #ccc;
-}
-</style>
+const RegistrationForm = () => {
+  const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
+  const [emailError, setEmailError] = React.useState(false);
 
-<script>
-// Inline validation for email input
-document.getElementById('email').addEventListener('input', function(event) {
-  const messageContainer = event.target.nextElementSibling;
-  if (!validatesEmail(event.target.value)) {
-    messageContainer.textContent = 'Please enter a valid email address.';
-  } else {
-    messageContainer.textContent = '';
-  }
-});
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Simulate successful registration
+    if (validateEmail(email)) {
+      console.log('Registration successful!');
+      document.querySelector('#successMessage').innerText = 'Registration Successful!';
+    } else {
+      console.log('Invalid email format');
+      document.querySelector('#successMessage').innerText = 'Invalid email format';
+    }
+  };
 
-function validatesEmail(email) {
-  const re = /^(([^<>()\[\]\.,;:\s@"]+(\.[^<>()\[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
-}
-</script>
+  return (
+    <div css={registerStyle}>
+      <h1>Register Now</h1>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="email">Email Address</label>
+          <input
+            id="email"
+            type="text"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          {emailError && <span>Invalid email format</span>}
+        </div>
+        <div>
+          <label htmlFor="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <label htmlFor="agree">Agree to Terms</label>
+          <input id="agree" type="checkbox" />
+        </div>
+        <div>
+          <button type="submit" style={{ backgroundColor: 'green' }}>
+            Register
+          </button>
+          <button type="button" onClick={() => {}} style={{ backgroundColor: '#ddd' }} >
+            Clear
+          </button>
+          <button type="button" onClick={() => {}} style={{ backgroundColor: '#ddd' }}>
+            Back to Login
+          </button>
+        </div>
+        <p id="successMessage"></p>
+      </form>
+    </div>
+  );
+};
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<validatesEmail />);
+ReactDOM.createRoot(document.getElementById('root')).render(<RegistrationForm />);
 
     </script>
   </body>

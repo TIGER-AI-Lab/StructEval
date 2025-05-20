@@ -84,76 +84,115 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function App() {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [gender, setGender] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+const RegistrationForm = () => {
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    gender: ''
+  });
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (username && email && password) {
-      setSubmitted(true);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (formData.username && formData.email && formData.password && formData.gender) {
+      setFormSubmitted(true);
     }
   };
 
   return (
-    <div className="App">
-      <div className="form-container">
+    <div className="registration-container">
+      <form className="registration-form" onSubmit={handleSubmit}>
         <h1>Register Now</h1>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <input
-            type="email"
-            placeholder="Email Address"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <div>
-            <label>
-              <input
-                type="radio"
-                value="Male"
-                checked={gender === 'Male'}
-                onChange={(e) => setGender(e.target.value)}
-              />
-              Male
-            </label>
-            <label>
-              <input
-                type="radio"
-                value="Female"
-                checked={gender === 'Female'}
-                onChange={(e) => setGender(e.target.value)}
-              />
-              Female
-            </label>
-          </div>
-          <button type="submit" style={{ backgroundColor: 'green' }}>
-            Create Account
-          </button>
-        </form>
-        {submitted && <p>Registration Successful</p>}
-      </div>
+        <input 
+          type="text" 
+          name="username" 
+          placeholder="Username" 
+          value={formData.username} 
+          onChange={handleChange} 
+          required 
+        />
+        <input 
+          type="email" 
+          name="email" 
+          placeholder="Email Address" 
+          value={formData.email} 
+          onChange={handleChange} 
+          required 
+        />
+        <input 
+          type="password" 
+          name="password" 
+          placeholder="Password" 
+          value={formData.password} 
+          onChange={handleChange} 
+          required 
+        />
+        <div className="gender-selection">
+          <label>
+            <input 
+              type="radio" 
+              name="gender" 
+              value="Male" 
+              checked={formData.gender === 'Male'} 
+              onChange={handleChange} 
+              required 
+            />
+            Male
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              name="gender" 
+              value="Female" 
+              checked={formData.gender === 'Female'} 
+              onChange={handleChange} 
+              required 
+            />
+            Female
+          </label>
+        </div>
+        <button type="submit" style={{ backgroundColor: 'green' }}>Create Account</button>
+        {formSubmitted && <p>Registration Successful</p>}
+      </form>
     </div>
   );
+};
+
+
+/* RegistrationForm.css */
+.registration-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.gender-selection {
+  display: flex;
+  gap: 20px;
+}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<RegistrationForm />);
 
     </script>
   </body>

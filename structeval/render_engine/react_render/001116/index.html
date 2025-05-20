@@ -86,37 +86,62 @@
 
 const NewsletterSignup = () => {
   const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleInputChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleFormSubmit = (e) => {
     e.preventDefault();
     if (email.includes('@')) {
-      setSubmitted(true);
-      setEmail('');
+      setIsSubmitted(true);
+    } else {
+      alert('Please enter a valid email address.');
     }
   };
 
   return (
-    <div style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
+    <div style={styles.container}>
       <h1>Subscribe Now!</h1>
-      {!submitted && (
-        <form onSubmit={handleSubmit}>
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <button type="submit" style={{ backgroundColor: 'green' }}>
-            Sign Up
-          </button>
-        </form>
-      )}
-      {submitted && (
-        <p style={{ color: 'green' }}>Subscription successful!</p>
-      )}
+      <form onSubmit={handleFormSubmit}>
+        <input
+          type="text"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={handleInputChange}
+          style={styles.input}
+        />
+        <button type="submit" style={styles.button}>Sign Up</button>
+      </form>
+      {isSubmitted && <p style={styles.successMessage}>Subscription successful!</p>}
     </div>
   );
+};
+
+const styles = {
+  container: {
+    display: 'grid',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    textAlign: 'center'
+  },
+  input: {
+    padding: '10px',
+    marginRight: '10px'
+  },
+  button: {
+    backgroundColor: 'green',
+    color: 'white',
+    padding: '10px 15px',
+    border: 'none',
+    cursor: 'pointer'
+  },
+  successMessage: {
+    color: 'green',
+    marginTop: '10px'
+  }
 };
 
 

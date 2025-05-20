@@ -83,12 +83,135 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\begin{equation}
-\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
-\end{equation}
+
+const RegistrationForm = () => {
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    gender: '',
+    country: '',
+  });
+  const [errors, setErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validate = () => {
+    const newErrors = {};
+    if (!formData.username) newErrors.username = 'Username is required';
+    if (!formData.email) newErrors.email = 'Email is required';
+    if (!formData.password) newErrors.password = 'Password is required';
+    if (!formData.gender) newErrors.gender = 'Gender is required';
+    if (!formData.country) newErrors.country = 'Country selection is required';
+    return newErrors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newErrors = validate();
+    setErrors(newErrors);
+    if (Object.keys(newErrors).length === 0) {
+      setIsSubmitted(true);
+    } else {
+      setIsSubmitted(false);
+    }
+  };
+
+  const handleClear = () => {
+    setFormData({
+      username: '',
+      email: '',
+      password: '',
+      gender: '',
+      country: '',
+    });
+    setErrors({});
+    setIsSubmitted(false);
+  };
+
+  return (
+    <div style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
+      <form onSubmit={handleSubmit} style={{ display: 'grid', gap: '15px' }}>
+        <h1>User Registration</h1>
+        <div>
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+            value={formData.username}
+            onChange={handleChange}
+          />
+          {errors.username && <span style={{ color: 'red' }}>{errors.username}</span>}
+        </div>
+        <div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+          {errors.password && <span style={{ color: 'red' }}>{errors.password}</span>}
+        </div>
+        <div>
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="Male"
+              checked={formData.gender === 'Male'}
+              onChange={handleChange}
+            />
+            Male
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="Female"
+              checked={formData.gender === 'Female'}
+              onChange={handleChange}
+            />
+            Female
+          </label>
+          {errors.gender && <span style={{ color: 'red', display: 'block' }}>{errors.gender}</span>}
+        </div>
+        <div>
+          <select name="country" value={formData.country} onChange={handleChange}>
+            <option value="">Select Country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="Mexico">Mexico</option>
+          </select>
+          {errors.country && <span style={{ color: 'red' }}>{errors.country}</span>}
+        </div>
+        <div>
+          <button type="submit" style={{ backgroundColor: 'green', color: 'white' }}>Register</button>
+          <button type="button" onClick={handleClear}>Clear</button>
+        </div>
+        {isSubmitted && <p>Registration Successful</p>}
+      </form>
+    </div>
+  );
+};
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<RegistrationForm />);
 
     </script>
   </body>

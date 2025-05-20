@@ -84,14 +84,17 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const NewsletterSignup = () => {
+const NewsletterSubscription = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('Please enter a valid email');
 
+  const validateEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (emailRegex.test(email)) {
+    if (validateEmail(email)) {
       setMessage('Thank you for subscribing!');
     } else {
       setMessage('Please enter a valid email');
@@ -99,7 +102,13 @@ const NewsletterSignup = () => {
   };
 
   return (
-    <div style={{ width: '400px', border: '1px solid gray', margin: '0 auto' }}>
+    <div style={{
+      maxWidth: '400px',
+      margin: '0 auto',
+      border: '1px solid gray',
+      padding: '20px',
+      textAlign: 'center'
+    }}>
       <h1>Join Our Newsletter</h1>
       <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '10px' }}>
         <input
@@ -107,9 +116,9 @@ const NewsletterSignup = () => {
           placeholder="Enter your email address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          style={{ width: '100%' }}
+          style={{ width: '100%', padding: '8px' }}
         />
-        <button type="submit" style={{ backgroundColor: 'green', color: 'white' }}>
+        <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '8px 16px' }}>
           Subscribe
         </button>
       </form>
@@ -120,7 +129,7 @@ const NewsletterSignup = () => {
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSignup />);
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscription />);
 
     </script>
   </body>

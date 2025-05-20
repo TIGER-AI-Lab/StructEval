@@ -84,59 +84,90 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function App() {
+function TodoList() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState('');
-  const [message, setMessage] = useState('');
+  const [taskAdded, setTaskAdded] = useState(false);
 
-  const addTask = () => {
-    if (newTask.trim() === '') {
-      return;
+  const handleAddTask = () => {
+    if (newTask.trim() !== '') {
+      setTasks([...tasks, newTask]);
+      setNewTask('');
+      setTaskAdded(true);
+      setTimeout(() => setTaskAdded(false), 2000);
     }
-
-    setTasks([...tasks, newTask]);
-    setNewTask('');
-    setMessage('Task added!');
-    setTimeout(() => {
-      setMessage('');
-    }, 1500);
   };
 
-  const deleteTask = (index) => {
-    const updatedTasks = tasks.filter((_, i) => i !== index);
-    setTasks(updatedTasks);
+  const handleDeleteTask = (index) => {
+    setTasks(tasks.filter((_, i) => i !== index));
   };
 
   return (
-    <div className="container">
-      <div className="todo-container">
-        <h2>To-Do List</h2>
-        <div className="input-area">
-          <input
-            type="text"
-            placeholder="New Task"
-            value={newTask}
-            onChange={(e) => setNewTask(e.target.value)}
-          />
-          <button onClick={addTask}>Add Task</button>
-        </div>
-        <ul>
-          {tasks.map((task, index) => (
-            <li key={index} className={index === tasks.length - 1 ? 'recent' : ''}>
-              {task}
-              <button onClick={() => deleteTask(index)}>Delete</button>
-            </li>
-          ))}
-        </ul>
-        <p>{message}</p>
-      </div>
+    <div className="todo-container">
+      <h2>To-Do List</h2>
+      <input 
+        type="text" 
+        placeholder="New Task" 
+        value={newTask} 
+        onChange={(e) => setNewTask(e.target.value)} 
+      />
+      <button onClick={handleAddTask}>Add Task</button>
+      <ul>
+        {tasks.map((task, index) => (
+          <li key={index} className={index === tasks.length - 1 ? 'highlight' : ''}>
+            {task}
+            <button onClick={() => handleDeleteTask(index)}>Delete</button>
+          </li>
+        ))}
+      </ul>
+      {taskAdded && <p>Task added!</p>}
     </div>
   );
 }
 
 
+// CSS in App.css
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 300px;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+button {
+  margin-left: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<TodoList />);
 
     </script>
   </body>

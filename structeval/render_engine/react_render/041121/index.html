@@ -83,7 +83,8 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-const App = () => {
+
+const StructuredLayoutExample = () => {
   return (
     <div>
       <header>
@@ -146,7 +147,7 @@ const App = () => {
         <div className="list-section">
           <h3>Steps to Build This Page</h3>
           <ol>
-            <li>Declare the document type using <code><!DOCTYPE html></code>.</li>
+            <li>Declare the document type using {'<!DOCTYPE html>'}.</li>
             <li>Set up the head with proper meta tags.</li>
             <li>Create a header with primary information.</li>
             <li>Organize content into multiple sections.</li>
@@ -168,8 +169,9 @@ const App = () => {
   );
 };
 
+
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<StructuredLayoutExample />);
 
     </script>
   </body>

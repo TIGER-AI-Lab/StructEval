@@ -83,80 +83,59 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-<script type="text/babel">
-const { useState } = React;
-const { useEffect } = React;
 
-function NewsletterSubscriptionForm() {
+constNewsletterSubscriptionForm = () => {
   const [email, setEmail] = useState('');
-  const [isChecked, setIsChecked] = useState(false);
+  const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
+  const [isValidEmail, setIsValidEmail] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
+  const [isValidSubmit, setIsValidSubmit] = useState(false);
 
-  const checkEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email.match(emailRegex)) {
-      setSuccess(true);
-    } else {
-      setError('Please enter a valid email address');
-      setSuccess(false);
-    }
+  const handleEmailChange = (e) => {
+    const emailValue = e.target.value;
+    setIsValidEmail(validateEmail(emailValue));
+    setError('');
+    setEmail(emailValue);
+  };
+
+  const handleCheckboxChange = (e) => {
+    setIsCheckboxChecked(e.target.checked);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!email || !isChecked) {
-      setError('Please fill out all fields.');
-    } else {
-      checkEmail(email);
-    }
+    if (!isValidEmail || !isCheckboxChecked) return;
+    setSuccess(true);
+    console.log('Form submitted with email:', email);
+  };
+
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(String(email).toLowerCase());
   };
 
   return (
-    <div className="subscription-form">
-      <h1>Subscribe Now</h1>
-      <div className="flex-container">
-        <input
-          type="text"
-          placeholder="Enter your email address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="checkbox"
-          checked={isChecked}
-          onChange={() => setIsChecked(!isChecked)}
-        />
-        <label htmlFor="email">Receive Updates</label>
-        <button className="sign-up-btn" onClick={handleSubmit}>Sign Up</button>
-      </div>
-      {error && <span style={{ color: 'red' }}>{error}</span>}
-      {success && <p>Thank you for subscribing!</p>}
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', maxWidth: '300px', padding: '20px', border: '1px solid #ccc', borderRadius: '5px' }}>
+        <h1 style={{ marginBottom: '20px' }}> Subscribe Now </h1>
+        <input type="text" value={email} onChange={handleEmailChange} placeholder="Enter your email address" style={{ marginBottom: '10px', padding: '10px', border: '1px solid #ddd', borderRadius: '3px' }} />
+        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+          <input type="checkbox" checked={isCheckboxChecked} onChange={handleCheckboxChange} style={{ marginRight: '10px' }} />
+          <label style={{ marginRight: 'auto' }}>Receive Updates</label>
+        </div>
+        <button type="submit" disabled={!isValidSubmit} style={{ backgroundColor: isValidSubmit ? 'green' : 'grey', color: 'white', padding: '10px', borderRadius: '3px', cursor: 'pointer' }}> Sign Up </button>
+        {isValidEmail && <span style={{ color: 'red' }}>{error}</span>}
+        {success && <p style={{ color: 'green', marginTop: '10px' }}> Thank you! You have been subscribed. </p>}
+      </form>
     </div>
   );
-}
+};
 
-ReactDOM.render(<NewsletterSubscriptionForm />, document.getElementById('app'));
-</script>
 
-<style>
-  .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .subscription-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .sign-up-btn {
-    background-color: green;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-</style>
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscriptionForm />);
+
     </script>
   </body>
 </html>

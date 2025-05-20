@@ -89,15 +89,13 @@ const NewsletterSignup = () => {
   const [frequency, setFrequency] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubscribe = (e) => {
     e.preventDefault();
-
-    if (!email.includes('@') || !frequency) {
+    if (validateEmail() && frequency) {
+      setMessage('Thank you for subscribing!');
+    } else {
       setMessage('Please enter a valid email and select a frequency.');
-      return;
     }
-
-    setMessage('Thank you for subscribing!');
   };
 
   const handleClear = () => {
@@ -106,29 +104,57 @@ const NewsletterSignup = () => {
     setMessage('');
   };
 
+  const validateEmail = () => {
+    return email.includes('@');
+  };
+
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      <div>
-        <h2 style={{ textAlign: 'center' }}>Newsletter Signup</h2>
-        <input
-          type="email"
-          placeholder="Enter your email address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={{ width: '100%', marginBottom: '10px' }}
-        />
-        <select value={frequency} onChange={(e) => setFrequency(e.target.value)} style={{ width: '100%', marginBottom: '10px' }}>
-          <option value="">Select Frequency</option>
-          <option value="daily">Daily</option>
-          <option value="weekly">Weekly</option>
-          <option value="monthly">Monthly</option>
-        </select>
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <button onClick={handleSubmit} style={{ backgroundColor: 'green', color: 'white' }}>Subscribe</button>
-          <button onClick={handleClear} style={{ border: '1px solid red' }}>Clear Form</button>
-        </div>
-        <p>{message}</p>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      minHeight: '100vh'
+    }}>
+      <h2>Newsletter Signup</h2>
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        style={{ marginBottom: '10px' }}
+      />
+      <select
+        value={frequency}
+        onChange={(e) => setFrequency(e.target.value)}
+        style={{ marginBottom: '20px' }}
+      >
+        <option value="">Select Frequency</option>
+        <option value="Daily">Daily</option>
+        <option value="Weekly">Weekly</option>
+        <option value="Monthly">Monthly</option>
+      </select>
+
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        width: '200px'
+      }}>
+        <button 
+          onClick={handleSubscribe} 
+          style={{ backgroundColor: 'green', color: 'white' }}
+        >
+          Subscribe
+        </button>
+        <button 
+          onClick={handleClear} 
+          style={{ borderColor: 'red', borderWidth: '1px', borderStyle: 'solid' }}
+        >
+          Clear Form
+        </button>
       </div>
+
+      <p>{message}</p>
     </div>
   );
 };

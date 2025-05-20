@@ -83,12 +83,109 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\begin{equation}
-\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
-\end{equation}
+
+function NewsletterSignup() {
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
+  const [checkbox, setCheckbox] = useState(false);
+  const emailRef = useRef(null);
+
+  const handleSubscribe = () => {
+    if (!/\S+@\S+\.\S+/.test(email)) {
+      setError('Please enter a valid email address.');
+      setSuccess(false);
+      return;
+    }
+    if (!checkbox) {
+      setError('Please agree to receive updates.');
+      setSuccess(false);
+      return;
+    }
+    setError('');
+    setSuccess(true);
+  };
+
+  const handleClear = () => {
+    setEmail('');
+    setError('');
+    setSuccess(false);
+    setCheckbox(false);
+    emailRef.current.focus();
+  };
+
+  React.useEffect(() => {
+    if (emailRef.current) {
+      emailRef.current.focus();
+    }
+  }, []);
+
+  return (
+    <div style={{
+      display: 'grid',
+      height: '100vh',
+      placeItems: 'center'
+    }}>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+      }}>
+        <h1>Newsletter Signup</h1>
+        <input
+          ref={emailRef}
+          type="email"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          style={{
+            marginBottom: '8px',
+            padding: '8px',
+            width: '200px'
+          }}
+        />
+        {error && <p style={{ color: 'red', margin: '0 0 8px 0' }}>{error}</p>}
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          marginBottom: '8px'
+        }}>
+          <input
+            type="checkbox"
+            checked={checkbox}
+            onChange={() => setCheckbox(!checkbox)}
+          />
+          <label style={{ marginLeft: '8px' }}>Agree to receive updates</label>
+        </div>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          width: '200px'
+        }}>
+          <button onClick={handleSubscribe} style={{
+            backgroundColor: 'green',
+            color: 'white',
+            padding: '8px',
+            border: 'none',
+            cursor: 'pointer'
+          }}>Subscribe</button>
+          <button onClick={handleClear} style={{
+            backgroundColor: 'gray',
+            color: 'white',
+            padding: '8px',
+            border: 'none',
+            cursor: 'pointer'
+          }}>Clear</button>
+        </div>
+        {success && <p style={{ color: 'green', marginTop: '16px' }}>Subscription successful</p>}
+      </div>
+    </div>
+  );
+}
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSignup />);
 
     </script>
   </body>

@@ -84,101 +84,115 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function App() {
-  const [isConfirmed, setIsConfirmed] = useState(false);
+const ReservationForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    date: '',
-    time: '',
-    guests: '',
+    fullName: '',
+    phoneNumber: '',
+    reservationDate: '',
+    reservationTime: '',
+    partySize: '',
   });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validateForm = () => {
+    const { fullName, phoneNumber, reservationDate, reservationTime, partySize } = formData;
+    return fullName && phoneNumber && reservationDate && reservationTime && partySize;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (Object.values(formData).every(Boolean)) {
-      setIsConfirmed(true);
+    if (validateForm()) {
+      setIsSubmitted(true);
     } else {
-      alert('Please fill in all fields.');
+      alert("Please fill in all fields.");
     }
   };
 
+  const handleCancel = () => {
+    setFormData({
+      fullName: '',
+      phoneNumber: '',
+      reservationDate: '',
+      reservationTime: '',
+      partySize: '',
+    });
+    setIsSubmitted(false);
+  };
+
   return (
-    <div className="container">
+    <div style={{
+      display: 'flex',
+      height: '100vh',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'column'
+    }}>
       <h1>Reserve Your Table</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <input
           type="text"
-          name="name"
+          name="fullName"
           placeholder="Enter your full name"
-          value={formData.name}
-          onChange={handleChange}
-          required
+          value={formData.fullName}
+          onChange={handleInputChange}
+          style={{ margin: '5px' }}
         />
         <input
           type="tel"
-          name="phone"
+          name="phoneNumber"
           placeholder="Enter your phone number"
-          value={formData.phone}
-          onChange={handleChange}
-          required
+          value={formData.phoneNumber}
+          onChange={handleInputChange}
+          style={{ margin: '5px' }}
         />
-        <label htmlFor="date">Reservation Date:</label>
-        <input
-          type="date"
-          name="date"
-          id="date"
-          value={formData.date}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="time">Reservation Time:</label>
-        <input
-          type="time"
-          name="time"
-          id="time"
-          value={formData.time}
-          onChange={handleChange}
-          required
-        />
+        <div style={{ margin: '5px' }}>
+          <label>Reservation Date:</label>
+          <input
+            type="date"
+            name="reservationDate"
+            value={formData.reservationDate}
+            onChange={handleInputChange}
+          />
+        </div>
+        <div style={{ margin: '5px' }}>
+          <label>Reservation Time:</label>
+          <input
+            type="time"
+            name="reservationTime"
+            value={formData.reservationTime}
+            onChange={handleInputChange}
+          />
+        </div>
         <select
-          name="guests"
-          value={formData.guests}
-          onChange={handleChange}
-          required
+          name="partySize"
+          value={formData.partySize}
+          onChange={handleInputChange}
+          style={{ margin: '5px' }}
         >
           <option value="">Select number of guests</option>
           {[...Array(10)].map((_, i) => (
-            <option key={i + 1} value={i + 1}>
-              {i + 1}
-            </option>
+            <option key={i + 1} value={i + 1}>{i + 1}</option>
           ))}
         </select>
-        <div className="buttons">
-          <button type="submit" style={{ backgroundColor: 'green' }}>
-            Book Now
-          </button>
-          <button type="button" onClick={() => setFormData({
-            name: '',
-            phone: '',
-            date: '',
-            time: '',
-            guests: '',
-          })}>Cancel</button>
+        <div style={{ marginTop: '10px' }}>
+          <button type="submit" style={{ backgroundColor: 'green', color: 'white', marginRight: '5px' }}>Book Now</button>
+          <button type="button" onClick={handleCancel}>Cancel</button>
         </div>
       </form>
-      {isConfirmed && <p>Reservation confirmed!</p>}
+      {isSubmitted && <p>Reservation confirmed!</p>}
     </div>
   );
-}
+};
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<ReservationForm />);
 
     </script>
   </body>

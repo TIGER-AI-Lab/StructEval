@@ -82,8 +82,19 @@ async def process_json_file(json_file_path, img_output_path, non_renderable_dir)
     # Process each task with error handling
     counter = 0 
     for task in tasks:
-        #print the progress of rendering by task id and number of tasks rendered out of total tasks
         counter += 1
+
+        # #if image already exists in rendered_image, then skip this task 
+        # task_id = task.get("task_id", "unknown")
+        # output_type = task.get("output_type", "unknown").lower()
+        # image_path = os.path.join(img_output_path, f"{task_id}.png")
+        
+
+        # if output_type != "latex" and output_type != "tikz":
+        #     print(f"Image for task {task_id} already exists. Skipping rendering.")
+        #     continue
+        
+
         print(f"Rendering task {task['task_id']} of {counter} out of {renderable_count}")
         try:
             task_id = task.get("task_id", "unknown")

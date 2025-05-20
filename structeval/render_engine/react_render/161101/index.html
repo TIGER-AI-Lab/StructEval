@@ -83,90 +83,182 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\documentclass{article}
-\usepackage{tikz}
+```jsx
 
-\begin{document}
+function App() {
+  const details = {
+    title: "Visual Conversion Task",
+    version: "1.0.0",
+    status: "Active"
+  };
 
-\begin{tikzpicture}
-% Grid
-\draw [thin, step=1cm] (0,0) grid (10,1);
+  const configuration = {
+    A: "Enabled",
+    B: "Disabled",
+    C: "Pending"
+  };
 
-% Plot Sin
-\draw [thin, blue, <->] plot[smooth] coordinates {
-(0,0)
-(1,0.84147098)
-(2,0.90929743)
-(3,0.14112001)
-(4,-0.7568025)
-(5,-0.9589243)
-(6,-0.2794155)
-(7,0.9589243)
-(8,0.6569866)
-(9,0.7568025)
-(10,0.84147098)
-};
+  return (
+    <div id="app">
+      <header>
+        <h1>My Vue Visual Layout</h1>
+        <p>This page demonstrates a detailed structure with headings, sections, and labeled values.</p>
+      </header>
 
-% Plot Cos
-\draw [thin, green, <->] plot[smooth] coordinates {
-(0,1)
-(1,0.5403023)
-(2,0.4161468)
-(3,0.9899925)
-(4,0.9899925)
-(5,0.4161468)
-(6,-0.5403023)
-(7,-1)
-(8,-0.9899925)
-(9,-0.4161468)
-(10,-0.9899925)
-};
+      <section className="overview">
+        <h2>Overview</h2>
+        <p>The following sections are designed to showcase the structural layout and visual hierarchy.</p>
+        <ul>
+          <li>Introduction</li>
+          <li>Details</li>
+          <li>Summary</li>
+        </ul>
+      </section>
 
-% Plot Tan (Limited Range)
-\draw [thin, red, <->] plot[smooth] coordinates {
-(0,0)
-(1,0.0174524)
-(2,0.1900227)
-(3,0.8485772)
-(4,1.4296471)
-(5,2.0000000)
-(6,4.0792891)
-(7,8.4371791)
-(8,16)
-};
+      <section className="introduction">
+        <h2>Introduction</h2>
+        <div className="content">
+          <p>This introduction explains the overall purpose of the visual conversion task.</p>
+          <ul>
+            <li><strong>Purpose:</strong> To test structural layout.</li>
+            <li><strong>Focus:</strong> Visible structure and formatted content.</li>
+            <li><strong>Constraints:</strong> No external resources, only valid Vue code.</li>
+          </ul>
+        </div>
+      </section>
 
-% Annotation Peak Value
-\node at (2.5,1) [above, fill=black!] {Peak Value};
+      <section className="details">
+        <h2>Details</h2>
+        <article>
+          <header>
+            <h3>Section Details</h3>
+          </header>
+          <div className="info-block">
+            <p>This block contains descriptive content for the details section.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Label</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Title</td>
+                  <td>{details.title}</td>
+                </tr>
+                <tr>
+                  <td>Version</td>
+                  <td>{details.version}</td>
+                </tr>
+                <tr>
+                  <td>Status</td>
+                  <td>{details.status}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
 
-% Text Summary
-\node [fill=white, text width=4cm] at (0.02,0.95) {
-Summary:
---------------------------\\
-1. sin(x) and cos(x) exhibit classic periodic\\
-behavior.\\
-2. tan(x) shows asymptotic trends near\\
-odd multiples of pi/2.\\
-3. Data generated using NumPy functions.\\
-4. Plots incorporate grids, legends,\\
-and clear annotations.
-};
+        <article>
+          <header>
+            <h3>Configuration List</h3>
+          </header>
+          <div className="configuration">
+            <ol>
+              <li>Configuration A: {configuration.A}</li>
+              <li>Configuration B: {configuration.B}</li>
+              <li>Configuration C: {configuration.C}</li>
+            </ol>
+          </div>
+        </article>
+      </section>
 
-% Statistics Text
-\node [fill=white, text width=4cm] at (0.7,0.5) {
-Statistics:
-------------------\\
-Sine\\
-  Mean: 0.00\\
-  Std:  0.99\\
-Cosine\\
-  Mean: 0.00\\
-  Std:  0.71\\
-Tangent (|value| < 10)\\
-  Mean: 0.00\\
-  Std:  0.71
-};
+      <section className="summary">
+        <h2>Summary</h2>
+        <div className="conclusion">
+          <p>The above sections demonstrate a clear visual hierarchy. All content is statically rendered in one page without interactive elements.</p>
+          <blockquote>
+            "A well-organized layout leads to a better user experience."
+          </blockquote>
+          <p>Thank you for reviewing our demonstration of Vue structural layout.</p>
+        </div>
+      </section>
 
-\end{tikzpicture}
+      <footer>
+        <p>&copy; 2023 My Vue Application</p>
+      </footer>
+    </div>
+  );
+}
+
+```
+
+<style>
+#app {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: #333;
+}
+
+header, footer {
+  background-color: #f5f5f5;
+  padding: 15px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #444;
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #555;
+  margin: 15px 0 10px 0;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+blockquote {
+  margin: 15px 20px;
+  padding-left: 15px;
+  border-left: 4px solid #ccc;
+  font-style: italic;
+}
+
+.conclusion {
+  background-color: #fafafa;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+}
+</style>
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

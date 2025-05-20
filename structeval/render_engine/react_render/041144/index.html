@@ -83,15 +83,18 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-const App = () => {
+
+function App() {
   return (
-    <>
+    <div>
+      {/* Header Section */}
       <header>
         <h1>Test Document for Visual Conversion</h1>
         <p>This document is designed to test structural layout, visual hierarchy, and formatted content.</p>
         <hr />
       </header>
 
+      {/* Navigation Section */}
       <nav>
         <h2>Navigation</h2>
         <ul>
@@ -104,13 +107,16 @@ const App = () => {
         <hr />
       </nav>
 
+      {/* Main Content Section */}
       <main>
+        {/* Introduction Section */}
         <section id="introduction">
           <h2>Introduction</h2>
           <p>Welcome to the test document. The purpose of this page is to showcase a mix of different HTML elements arranged in a clear and organized manner.</p>
           <p>This page contains headings, paragraphs, lists, and definition lists. All content is formatted to create a visible structure that encourages easy reading and conversion tasks.</p>
         </section>
 
+        {/* Profile Information Section */}
         <section id="profile">
           <h2>Profile Information</h2>
           <dl>
@@ -125,6 +131,7 @@ const App = () => {
           </dl>
         </section>
 
+        {/* Project Details Section */}
         <section id="projects">
           <h2>Project Details</h2>
           <p>The following list presents key milestones and achievements in recent projects:</p>
@@ -136,6 +143,7 @@ const App = () => {
           </ol>
         </section>
 
+        {/* Features Section */}
         <section id="features">
           <h2>Features</h2>
           <p>This section outlines the main features of the project that stand out due to their design and functionality:</p>
@@ -147,6 +155,7 @@ const App = () => {
             <li>Optimized for mobile devices</li>
           </ul>
 
+          {/* Nested Subsection for Additional Features */}
           <section>
             <h3>Additional Details</h3>
             <p>Further details on the additional features include:</p>
@@ -158,6 +167,7 @@ const App = () => {
           </section>
         </section>
 
+        {/* Conclusion Section */}
         <section id="conclusion">
           <h2>Conclusion</h2>
           <p>In summary, this document showcases a variety of HTML elements organized into a cohesive structure. It serves as a testbed for visual conversion tasks, focusing on the importance of layout, hierarchy, and formatted content.</p>
@@ -165,6 +175,7 @@ const App = () => {
         </section>
       </main>
 
+      {/* Footer Section */}
       <footer>
         <hr />
         <p>&copy; 2023 Test Document. All rights reserved.</p>
@@ -174,9 +185,10 @@ const App = () => {
           <p><strong>Phone:</strong> (123) 456-7890</p>
         </section>
       </footer>
-    </>
+    </div>
   );
-};
+}
+
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

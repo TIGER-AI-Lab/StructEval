@@ -84,15 +84,17 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function App() {
-  const [submitted, setSubmitted] = useState(false);
+function QuizSubmission() {
   const [email, setEmail] = useState('');
   const [difficulty, setDifficulty] = useState('');
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email && difficulty) {
       setSubmitted(true);
+    } else {
+      alert('Please provide a valid email and select a difficulty level.');
     }
   };
 
@@ -103,35 +105,65 @@ function App() {
   };
 
   return (
-    <div className="container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
-        <h1 style={{ textAlign: 'center' }}>Quiz Submission</h1>
-        <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} style={{ marginBottom: '10px' }} />
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '100vh',
+      flexDirection: 'column',
+      textAlign: 'center'
+    }}>
+      <h1>Quiz Submission</h1>
+      <form onSubmit={handleSubmit} style={{ marginTop: '20px' }}>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          style={{ display: 'block', marginBottom: '20px', padding: '10px', width: '200px' }}
+        />
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginBottom: '20px' }}>
           <label>
-            <input type="radio" value="Easy" checked={difficulty === 'Easy'} onChange={(e) => setDifficulty(e.target.value)} /> Easy
+            <input
+              type="radio"
+              value="Easy"
+              checked={difficulty === 'Easy'}
+              onChange={(e) => setDifficulty(e.target.value)}
+            /> Easy
           </label>
           <label>
-            <input type="radio" value="Medium" checked={difficulty === 'Medium'} onChange={(e) => setDifficulty(e.target.value)} /> Medium
+            <input
+              type="radio"
+              value="Medium"
+              checked={difficulty === 'Medium'}
+              onChange={(e) => setDifficulty(e.target.value)}
+            /> Medium
           </label>
           <label>
-            <input type="radio" value="Hard" checked={difficulty === 'Hard'} onChange={(e) => setDifficulty(e.target.value)} /> Hard
+            <input
+              type="radio"
+              value="Hard"
+              checked={difficulty === 'Hard'}
+              onChange={(e) => setDifficulty(e.target.value)}
+            /> Hard
           </label>
         </div>
-        <textarea placeholder="Your Comments" rows={4} style={{ marginBottom: '10px' }} />
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <button type="submit" style={{ backgroundColor: 'orange' }}>Submit Quiz</button>
-          <button type="button" onClick={handleClear}>Clear</button>
-        </div>
-        {submitted && <p>Congratulations! Your quiz has been submitted.</p>}
+        <textarea
+          placeholder="Your Comments"
+          rows="4"
+          style={{ display: 'block', margin: '0 auto 20px', padding: '10px', width: '90%' }}
+        />
+        <button type="submit" style={{ backgroundColor: 'orange', padding: '10px 20px', marginRight: '10px' }}>Submit Quiz</button>
+        <button type="button" onClick={handleClear} style={{ padding: '10px 20px' }}>Clear</button>
       </form>
+      {submitted && <p>Congratulations on submitting your quiz!</p>}
     </div>
   );
 }
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<QuizSubmission />);
 
     </script>
   </body>

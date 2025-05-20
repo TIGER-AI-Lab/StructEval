@@ -83,12 +83,48 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\begin{equation}
-\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
-\end{equation}
+
+const NewsletterForm = () => {
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+
+  const handleSignUp = () => {
+    if (!email) {
+      setError('Email is required');
+    } else {
+      // Logic for signing up user goes here
+      setError('');
+      alert('Signed Up!');
+    }
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <div style={{ maxWidth: '400px', padding: '20px', textAlign: 'center', border: '1px solid #ccc', borderRadius: '8px' }}>
+        <h1>Subscribe Now</h1>
+        <input 
+          type="email" 
+          placeholder="Enter your email address" 
+          value={email} 
+          onChange={(e) => setEmail(e.target.value)} 
+          style={{ width: '100%', padding: '10px', marginBottom: '10px', borderRadius: '4px', border: '1px solid #ccc' }}
+        />
+        <p style={{ fontSize: 'small', margin: '10px 0' }}>Join our monthly newsletter for updates</p>
+        <button 
+          onClick={handleSignUp} 
+          style={{ backgroundColor: 'green', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+        >
+          Sign Up
+        </button>
+        {error && <span style={{ color: 'red', display: 'block', marginTop: '10px' }}>{error}</span>}
+      </div>
+    </div>
+  );
+};
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterForm />);
 
     </script>
   </body>

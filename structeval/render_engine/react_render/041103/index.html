@@ -83,7 +83,8 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-const App = () => {
+
+function App() {
   return (
     <div>
       <header>
@@ -172,26 +173,30 @@ const App = () => {
           <h2>Contact Us</h2>
           <p>If you have any inquiries or would like more information, please find our contact details below:</p>
           <table border="1" cellPadding="5" cellSpacing="0">
-            <tr>
-              <th>Department</th>
-              <th>Phone</th>
-              <th>Email</th>
-            </tr>
-            <tr>
-              <td>Sales</td>
-              <td>+1 234 567 890</td>
-              <td>sales@example.com</td>
-            </tr>
-            <tr>
-              <td>Support</td>
-              <td>+1 234 567 891</td>
-              <td>support@example.com</td>
-            </tr>
-            <tr>
-              <td>HR</td>
-              <td>+1 234 567 892</td>
-              <td>hr@example.com</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Department</th>
+                <th>Phone</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sales</td>
+                <td>+1 234 567 890</td>
+                <td>sales@example.com</td>
+              </tr>
+              <tr>
+                <td>Support</td>
+                <td>+1 234 567 891</td>
+                <td>support@example.com</td>
+              </tr>
+              <tr>
+                <td>HR</td>
+                <td>+1 234 567 892</td>
+                <td>hr@example.com</td>
+              </tr>
+            </tbody>
           </table>
         </section>
       </main>
@@ -203,7 +208,8 @@ const App = () => {
       </footer>
     </div>
   );
-};
+}
+
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

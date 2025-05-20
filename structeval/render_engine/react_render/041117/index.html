@@ -83,90 +83,138 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\documentclass{article}
-\usepackage{tikz}
+```jsx
 
-\begin{document}
+function App() {
+  return (
+    <>
+      {/* Header Section */}
+      <header>
+        <h1>Welcome to the Visual Layout Test Page</h1>
+        <p>This page is designed to showcase various elements such as headings, sections, lists, and formatted content.</p>
+      </header>
 
-\begin{tikzpicture}
-% Grid
-\draw [thin, step=1cm] (0,0) grid (10,1);
+      {/* Main Navigation */}
+      <nav>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#details">Details</a></li>
+          <li><a href="#info">Additional Info</a></li>
+          <li><a href="#summary">Summary</a></li>
+        </ul>
+      </nav>
 
-% Plot Sin
-\draw [thin, blue, <->] plot[smooth] coordinates {
-(0,0)
-(1,0.84147098)
-(2,0.90929743)
-(3,0.14112001)
-(4,-0.7568025)
-(5,-0.9589243)
-(6,-0.2794155)
-(7,0.9589243)
-(8,0.6569866)
-(9,0.7568025)
-(10,0.84147098)
-};
+      {/* Main Content Area */}
+      <main>
+        {/* Overview Section */}
+        <section id="overview">
+          <h2>Overview</h2>
+          <p>This section provides an overview of the currently displayed content. The visual hierarchy is maintained using various heading levels and structured content segments.</p>
+          <ul>
+            <li>Clear headings and subheadings</li>
+            <li>Paragraphs and lists for structured information</li>
+            <li>Sectioned layout for readability</li>
+          </ul>
+        </section>
 
-% Plot Cos
-\draw [thin, green, <->] plot[smooth] coordinates {
-(0,1)
-(1,0.5403023)
-(2,0.4161468)
-(3,0.9899925)
-(4,0.9899925)
-(5,0.4161468)
-(6,-0.5403023)
-(7,-1)
-(8,-0.9899925)
-(9,-0.4161468)
-(10,-0.9899925)
-};
+        {/* Details Section */}
+        <section id="details">
+          <h2>Details</h2>
+          <article>
+            <header>
+              <h3>Formatted Data &amp; Lists</h3>
+            </header>
+            <p>The following definitions illustrate the precise data values we expect:</p>
+            <dl>
+              <dt>Project Name:</dt>
+              <dd>Visual Conversion Task</dd>
+              <dt>Version:</dt>
+              <dd>1.0</dd>
+              <dt>Author:</dt>
+              <dd>Test Engineer</dd>
+            </dl>
+            <p>Below is an example of a numbered list detailing steps:</p>
+            <ol>
+              <li>Analyze the content structure</li>
+              <li>Create the HTML skeleton</li>
+              <li>Add visible content and structured data</li>
+              <li>Review the design for consistency</li>
+            </ol>
+          </article>
+        </section>
 
-% Plot Tan (Limited Range)
-\draw [thin, red, <->] plot[smooth] coordinates {
-(0,0)
-(1,0.0174524)
-(2,0.1900227)
-(3,0.8485772)
-(4,1.4296471)
-(5,2.0000000)
-(6,4.0792891)
-(7,8.4371791)
-(8,16)
-};
+        {/* Additional Information Section */}
+        <section id="info">
+          <h2>Additional Info</h2>
+          <article>
+            <header>
+              <h3>Sectioned Content and Labeled Values</h3>
+            </header>
+            <table border="1" cellSpacing="0" cellPadding="5">
+              <thead>
+                <tr>
+                  <th>Label</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Location</td>
+                  <td>Test Lab</td>
+                </tr>
+                <tr>
+                  <td>Priority</td>
+                  <td>High</td>
+                </tr>
+                <tr>
+                  <td>Status</td>
+                  <td>Ongoing</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>This table demonstrates how labeled values can be formatted in a clear layout.</p>
+          </article>
+        </section>
 
-% Annotation Peak Value
-\node at (2.5,1) [above, fill=black!] {Peak Value};
+        {/* Summary Section */}
+        <section id="summary">
+          <h2>Summary</h2>
+          <article>
+            <header>
+              <h3>Key Takeaways</h3>
+            </header>
+            <p>This section summarizes the key points of the visual layout:</p>
+            <ul>
+              <li>Use semantic HTML to build a clear structure.</li>
+              <li>Headers, sections, articles, and lists promote readability.</li>
+              <li>Formatted content, such as definition lists and tables, provide detailed information.</li>
+            </ul>
+            <p>Remember, the purpose of this test is to evaluate layout, visual hierarchy, and visible content without relying on external resources.</p>
+          </article>
+        </section>
+      </main>
 
-% Text Summary
-\node [fill=white, text width=4cm] at (0.02,0.95) {
-Summary:
---------------------------\\
-1. sin(x) and cos(x) exhibit classic periodic\\
-behavior.\\
-2. tan(x) shows asymptotic trends near\\
-odd multiples of pi/2.\\
-3. Data generated using NumPy functions.\\
-4. Plots incorporate grids, legends,\\
-and clear annotations.
-};
+      {/* Aside Section for Supplementary Content */}
+      <aside>
+        <h2>Notes and Reminders</h2>
+        <p>Please be informed that:</p>
+        <ul>
+          <li>This page is standalone and requires no external CSS or JavaScript.</li>
+          <li>It is designed purely for visual structural testing.</li>
+          <li>All content is static and rendered in one page.</li>
+        </ul>
+        <p>Thank you for reviewing this layout test example.</p>
+      </aside>
 
-% Statistics Text
-\node [fill=white, text width=4cm] at (0.7,0.5) {
-Statistics:
-------------------\\
-Sine\\
-  Mean: 0.00\\
-  Std:  0.99\\
-Cosine\\
-  Mean: 0.00\\
-  Std:  0.71\\
-Tangent (|value| < 10)\\
-  Mean: 0.00\\
-  Std:  0.71
-};
+      {/* Footer Section */}
+      <footer>
+        <p>&copy; 2023 Visual Layout Test. All rights reserved.</p>
+      </footer>
+    </>
+  );
+}
 
-\end{tikzpicture}
+```
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

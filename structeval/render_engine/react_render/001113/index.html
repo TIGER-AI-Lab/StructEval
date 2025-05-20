@@ -83,12 +83,61 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\begin{equation}
-\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
-\end{equation}
+
+function NewsletterSubscription() {
+    const [email, setEmail] = useState('');
+    const [error, setError] = useState(false);
+    const [agreed, setAgreed] = useState(false);
+
+    const handleSubscribe = (e) => {
+        e.preventDefault();
+        if (!email.includes('@')) {
+            setError(true);
+        } else {
+            setError(false);
+            alert('Subscribed successfully!');
+        }
+    };
+
+    const handleClear = () => {
+        setEmail('');
+        setError(false);
+        setAgreed(false);
+    };
+
+    return (
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+            <div style={{ border: '2px solid black', padding: '20px', textAlign: 'center' }}>
+                <h1>Subscribe Now</h1>
+                <form onSubmit={handleSubscribe}>
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        style={{ marginBottom: '10px', display: 'block' }}
+                    />
+                    <div style={{ marginBottom: '10px' }}>
+                        <input
+                            type="checkbox"
+                            checked={agreed}
+                            onChange={(e) => setAgreed(e.target.checked)}
+                            id="termsCheckbox"
+                        />
+                        <label htmlFor="termsCheckbox"> Agree to terms & conditions</label>
+                    </div>
+                    <button type="submit" style={{ backgroundColor: 'green', color: 'white', marginRight: '10px' }}>Subscribe</button>
+                    <button type="button" style={{ backgroundColor: 'grey', color: 'white' }} onClick={handleClear}>Clear</button>
+                </form>
+                {error && <p style={{ color: 'red' }}>Invalid email.</p>}
+            </div>
+        </div>
+    );
+}
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscription />);
 
     </script>
   </body>

@@ -84,13 +84,13 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const ProjectHomepage = () => {
+function ProjectHomepage() {
   return (
     <div>
       <h1>Project Homepage</h1>
-
-      <p>Welcome to the <strong>Project Homepage</strong>. This document serves as a sample layout to test structural hierarchy, visual layout, and formatted content in Markdown.</p>
-
+      <p>
+        Welcome to the <strong>Project Homepage</strong>. This document serves as a sample layout to test structural hierarchy, visual layout, and formatted content in Markdown.
+      </p>
       <hr />
 
       <h2>Table of Contents</h2>
@@ -101,49 +101,47 @@ const ProjectHomepage = () => {
         <li><a href="#project-structure">Project Structure</a></li>
         <li><a href="#additional-information">Additional Information</a></li>
       </ol>
-
       <hr />
 
       <h2 id="introduction">Introduction</h2>
-
-      <p>The goal of this project is to create a <strong>standalone Markdown</strong> layout that demonstrates:</p>
+      <p>
+        The goal of this project is to create a <strong>standalone Markdown</strong> layout that demonstrates:
+      </p>
       <ul>
         <li><strong>Visible Structure</strong></li>
         <li><strong>Content Hierarchy</strong></li>
         <li><strong>Formatted Content</strong></li>
       </ul>
-
       <p>This simple layout includes headings, lists, tables, and text blocks to simulate a real-world document.</p>
 
       <h3>Project Summary</h3>
-
       <ul>
         <li><strong>Title:</strong> Project Homepage</li>
         <li><strong>Author:</strong> Jane Smith</li>
         <li><strong>Date:</strong> 2023-10-01</li>
         <li><strong>Version:</strong> 1.0.0</li>
       </ul>
-
       <hr />
 
       <h2 id="features">Features</h2>
-
       <p>Below are some primary features:</p>
-
       <ul>
-        <li><strong>Responsive Layout:</strong>
+        <li>
+          <strong>Responsive Layout:</strong>
           <ul>
             <li>Adapts to various screen sizes</li>
             <li>Maintains clear hierarchies and spacing</li>
           </ul>
         </li>
-        <li><strong>Easy Navigation:</strong>
+        <li>
+          <strong>Easy Navigation:</strong>
           <ul>
             <li>Contains a structured table of contents</li>
             <li>Clearly labeled sections and headings</li>
           </ul>
         </li>
-        <li><strong>Standalone Document:</strong>
+        <li>
+          <strong>Standalone Document:</strong>
           <ul>
             <li>No external images, links, or scripts required</li>
             <li>Fully self-contained content</li>
@@ -152,7 +150,6 @@ const ProjectHomepage = () => {
       </ul>
 
       <h3>Detailed Feature Breakdown</h3>
-
       <table>
         <thead>
           <tr>
@@ -175,70 +172,57 @@ const ProjectHomepage = () => {
           </tr>
         </tbody>
       </table>
-
       <hr />
 
       <h2 id="usage-instructions">Usage Instructions</h2>
-
       <p>To view and use this Markdown layout:</p>
-
       <ol>
         <li><strong>Copy the entire code block</strong> between the <code><code></code> and <code></code></code> tags.</li>
         <li><strong>Paste</strong> the content into your preferred Markdown renderer or text editor.</li>
         <li><strong>Edit</strong> sections as needed, ensuring the structure remains intact.</li>
         <li><strong>Save</strong> and preview your file in any Markdown-capable viewer.</li>
       </ol>
-
       <p>Below is an example command for rendering your Markdown file into HTML:</p>
-
       <pre>
         <code>$ markdown-render input.md -o output.html</code>
       </pre>
-
       <p><em>Note:</em> This command is for illustrative purposes and may vary based on your environment.</p>
-
       <hr />
 
       <h2 id="project-structure">Project Structure</h2>
-
       <p>The simulated project structure is outlined below:</p>
-
       <pre>
         <code>
-Project Homepage/
-âââ README.md           # Main documentation file
-âââ docs/
-â   âââ overview.md     # Extended overview and additional details
-âââ assets/
-â   âââ logo.png        # Placeholder for a logo (not used in Markdown)
-âââ src/
-    âââ main.md         # Primary content file
-    âââ config.md       # Configuration and settings
+          Project Homepage/
+          âââ README.md           # Main documentation file
+          âââ docs/
+          â   âââ overview.md     # Extended overview and additional details
+          âââ assets/
+          â   âââ logo.png        # Placeholder for a logo (not used in Markdown)
+          âââ src/
+              âââ main.md         # Primary content file
+              âââ config.md       # Configuration and settings
         </code>
       </pre>
-
       <p>This structure showcases a rigorous approach to organizing project files.</p>
-
       <hr />
 
       <h2 id="additional-information">Additional Information</h2>
 
       <h3>Contact Details</h3>
-
       <ul>
         <li><strong>Email:</strong> contact@example.com</li>
         <li><strong>Phone:</strong> +123-456-7890</li>
       </ul>
 
       <h3>Inspirational Quote</h3>
-
       <blockquote>
-        <p>"Markdown is not just a markup language; it's a medium for clear and effective communication."</p>
-        <footer>â An Enthusiastic Developer</footer>
+        "Markdown is not just a markup language; it's a medium for clear and effective communication."
+        <br />
+        â An Enthusiastic Developer
       </blockquote>
 
       <h3>Future Enhancements</h3>
-
       <ul>
         <li><strong>Interactive Documentation:</strong> Explore advanced Markdown features.</li>
         <li><strong>Extended Sections:</strong> Add more detailed subsections.</li>
@@ -246,21 +230,18 @@ Project Homepage/
       </ul>
 
       <h3>Key Metrics</h3>
-
       <ul>
         <li><strong>User Satisfaction:</strong> 95%</li>
         <li><strong>Performance Rating:</strong> High</li>
         <li><strong>Completed Tasks:</strong> 150+</li>
       </ul>
-
       <hr />
 
       <p>Thank you for reviewing this sample Markdown document. This example is designed to be easily adaptable for various visual conversion tasks while being entirely self-contained.</p>
-
       <p>Happy Coding!</p>
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount

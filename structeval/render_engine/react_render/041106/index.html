@@ -83,142 +83,111 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-const App = () => {
+
+function App() {
   return (
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <title>Visual Conversion Test Page</title>
-      </head>
-      <body>
-        <header>
-          <h1>Welcome to the Visual Conversion Test Page</h1>
-          <p>
-            This page is designed to test visual layout, structure, and content
-            formatting.
-          </p>
-        </header>
+    <div>
+      <header>
+        <h1>Welcome to the Visual Conversion Test Page</h1>
+        <p>This page is designed to test visual layout, structure, and content formatting.</p>
+      </header>
 
-        <section>
-          <h2>Introduction</h2>
-          <p>
-            The HTML snippet below employs various structural elements including
-            headings, lists, blockquotes, and labeled values. It is intended for
-            use in testing structural layout and visual hierarchy.
-          </p>
-          <ul>
-            <li>Headings and subheadings</li>
-            <li>Paragraph texts and descriptions</li>
-            <li>Ordered and unordered lists</li>
-            <li>Blockquotes to emphasize important notes</li>
-            <li>Definition lists for labeled data</li>
-          </ul>
-        </section>
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          The HTML snippet below employs various structural elements including headings, lists, blockquotes, and labeled values. It is intended for use in testing structural layout and visual hierarchy.
+        </p>
+        <ul>
+          <li>Headings and subheadings</li>
+          <li>Paragraph texts and descriptions</li>
+          <li>Ordered and unordered lists</li>
+          <li>Blockquotes to emphasize important notes</li>
+          <li>Definition lists for labeled data</li>
+        </ul>
+      </section>
 
-        <section>
-          <h2>Content Sections</h2>
-          <div>
-            <h3>Section 1: Overview</h3>
-            <p>
-              This section breaks down the primary aspects of the visual
-              conversion test:
-            </p>
-            <ol>
-              <li>
-                <strong>Background:</strong> Provides context and rationale.
-              </li>
-              <li>
-                <strong>Objective:</strong> Outlines the goals of the test.
-              </li>
-              <li>
-                <strong>Method:</strong> Describes the approach and structure
-                used.
-              </li>
-            </ol>
-          </div>
-
-          <div>
-            <h3>Section 2: Detailed Information</h3>
-            <p>Detailed explanations and labeled values are provided below:</p>
-            <dl>
-              <dt>Author:</dt>
-              <dd>Jane Doe</dd>
-              <dt>Date:</dt>
-              <dd>October 1, 2023</dd>
-              <dt>Version:</dt>
-              <dd>1.0</dd>
-            </dl>
-          </div>
-        </section>
-
-        <section>
-          <h2>Additional Information</h2>
-          <p>
-            Further insights and best practices are included to support visual
-            consistency.
-          </p>
-          <blockquote>
-            <p>
-              "Attention to detail in structure and formatting significantly
-              improves the conversion process."
-            </p>
-            <footer>â Test Engineer</footer>
-          </blockquote>
-
-          <article>
-            <h3>Article: HTML Best Practices for Conversion</h3>
-            <p>
-              Maintaining a clear and organized layout in HTML is essential for
-              successful visual conversion tasks. Consider the following
-              recommendations:
-            </p>
-            <ul>
-              <li>Employ semantic HTML tags to structure content meaningfully.</li>
-              <li>Use headings in a hierarchical manner to define sections.</li>
-              <li>Organize related information into well-defined blocks.</li>
-              <li>
-                Label data using appropriate elements such as definition lists.
-              </li>
-              <li>Ensure that the content is accessible and readable.</li>
-            </ul>
-          </article>
-        </section>
-
-        <section>
-          <h2>Summary</h2>
-          <p>
-            In summary, this page has been structured to include various elements
-            that allow for testing of visual hierarchy and content layout. The key
-            elements integrated into this page include:
-          </p>
-          <ul>
-            <li>Header and introductory sections describing the purpose.</li>
+      <section>
+        <h2>Content Sections</h2>
+        <div>
+          <h3>Section 1: Overview</h3>
+          <p>This section breaks down the primary aspects of the visual conversion test:</p>
+          <ol>
             <li>
-              Multiple sections with clear headings and descriptive content.
+              <strong>Background:</strong> Provides context and rationale.
             </li>
-            <li>Ordered and unordered lists to delineate important points.</li>
-            <li>Definition lists to showcase labeled data.</li>
-            <li>Blockquotes to highlight significant thoughts.</li>
+            <li>
+              <strong>Objective:</strong> Outlines the goals of the test.
+            </li>
+            <li>
+              <strong>Method:</strong> Describes the approach and structure used.
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>Section 2: Detailed Information</h3>
+          <p>Detailed explanations and labeled values are provided below:</p>
+          <dl>
+            <dt>Author:</dt>
+            <dd>Jane Doe</dd>
+            <dt>Date:</dt>
+            <dd>October 1, 2023</dd>
+            <dt>Version:</dt>
+            <dd>1.0</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section>
+        <h2>Additional Information</h2>
+        <p>Further insights and best practices are included to support visual consistency.</p>
+        <blockquote>
+          <p>"Attention to detail in structure and formatting significantly improves the conversion process."</p>
+          <footer>â Test Engineer</footer>
+        </blockquote>
+
+        <article>
+          <h3>Article: HTML Best Practices for Conversion</h3>
+          <p>
+            Maintaining a clear and organized layout in HTML is essential for successful visual conversion tasks. Consider the following recommendations:
+          </p>
+          <ul>
+            <li>Employ semantic HTML tags to structure content meaningfully.</li>
+            <li>Use headings in a hierarchical manner to define sections.</li>
+            <li>Organize related information into well-defined blocks.</li>
+            <li>Label data using appropriate elements such as definition lists.</li>
+            <li>Ensure that the content is accessible and readable.</li>
           </ul>
-          <p>
-            This format serves as a template to render a clear and organized
-            visual hierarchy on a single standalone page.
-          </p>
-        </section>
+        </article>
+      </section>
 
-        <footer>
-          <p>
-            Page created solely for visual conversion testing purposes. All
-            elements are rendered without reliance on external resources.
-          </p>
-          <p>&copy; 2023 Test Corporation</p>
-        </footer>
-      </body>
-    </html>
+      <section>
+        <h2>Summary</h2>
+        <p>
+          In summary, this page has been structured to include various elements that allow for testing of visual hierarchy and content layout. The key elements integrated into this page include:
+        </p>
+        <ul>
+          <li>Header and introductory sections describing the purpose.</li>
+          <li>Multiple sections with clear headings and descriptive content.</li>
+          <li>Ordered and unordered lists to delineate important points.</li>
+          <li>Definition lists to showcase labeled data.</li>
+          <li>Blockquotes to highlight significant thoughts.</li>
+        </ul>
+        <p>This format serves as a template to render a clear and organized visual hierarchy on a single standalone page.</p>
+      </section>
+
+      <footer>
+        <p>Page created solely for visual conversion testing purposes. All elements are rendered without reliance on external resources.</p>
+        <p>&copy; 2023 Test Corporation</p>
+      </footer>
+    </div>
   );
-};
+}
 
+
+// Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
     </script>
   </body>
 </html>

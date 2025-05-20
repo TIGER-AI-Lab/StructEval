@@ -84,11 +84,10 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const MyComponent = () => {
+const Documentation = () => {
   return (
     <div>
       <h1>My Project Documentation</h1>
-
       <h2>Table of Contents</h2>
       <ol>
         <li><a href="#introduction">Introduction</a></li>
@@ -100,26 +99,29 @@ const MyComponent = () => {
         <li><a href="#changelog">Changelog</a></li>
         <li><a href="#appendix">Appendix</a></li>
       </ol>
-
+      
       <hr />
-
+      
       <h2 id="introduction">Introduction</h2>
-      <p>Welcome to the documentation for <strong>My Project</strong>. This file outlines the structure, installation process, and usage instructions for our project. It is designed to be readable both as code and as a rendered Markdown file.</p>
-
-      <strong>Key Points:</strong>
+      <p>
+        Welcome to the documentation for <strong>My Project</strong>. This file outlines the structure,
+        installation process, and usage instructions for our project. It is designed to be readable both
+        as code and as a rendered Markdown file.
+      </p>
+      <p><strong>Key Points:</strong></p>
       <ul>
         <li>Organized and modular project layout.</li>
         <li>Clearly defined sections for ease of navigation.</li>
         <li>Step-by-step instructions for installation and usage.</li>
       </ul>
-
+      
       <hr />
-
+      
       <h2 id="project-structure">Project Structure</h2>
-
       <h3>Directory Layout</h3>
       <pre>
-        {`my_project/
+        {`
+my_project/
 âââ README.md           # Main documentation file
 âââ LICENSE             # License file
 âââ CONTRIBUTING.md     # Contribution guidelines
@@ -137,7 +139,7 @@ const MyComponent = () => {
 âââ tests/
     âââ test_module1.md    # Module 1 tests
     âââ test_module2.md    # Module 2 tests
-`}
+        `}
       </pre>
 
       <h3>Detailed Components</h3>
@@ -145,14 +147,14 @@ const MyComponent = () => {
       <ul>
         <li><strong>Module 1:</strong>
           <ul>
-            <li><em>Component A</em>: Processes raw data and performs initial normalization.</li>
-            <li><em>Component B</em>: Provides interfaces for data manipulation and communication.</li>
+            <li><em>Component A:</em> Processes raw data and performs initial normalization.</li>
+            <li><em>Component B:</em> Provides interfaces for data manipulation and communication.</li>
           </ul>
         </li>
         <li><strong>Module 2:</strong>
           <ul>
-            <li><em>Main</em>: Contains the core program logic and initialization routines.</li>
-            <li><em>Utils</em>: Offers support functions such as logging, error handling, and configurations.</li>
+            <li><em>Main:</em> Contains the core program logic and initialization routines.</li>
+            <li><em>Utils:</em> Offers support functions such as logging, error handling, and configurations.</li>
           </ul>
         </li>
       </ul>
@@ -161,19 +163,155 @@ const MyComponent = () => {
       <p>To build the project, execute the build command from the root directory. The following code block demonstrates the command:</p>
       <pre>
         {`bash
-$ make build
-`}
+$ make build`}
       </pre>
       <p>After a successful build, the executable files and resources will be available in the <code>bin/</code> directory.</p>
 
-      {/* ... rest of the content similarly ... */}
+      <hr />
+
+      <h2 id="installation">Installation</h2>
+      <p>Follow these steps to install <strong>My Project</strong>:</p>
+      <ol>
+        <li><strong>Clone the Repository:</strong>
+          <pre>
+            {`bash
+$ git clone https://example.com/my_project.git`}
+          </pre>
+        </li>
+        <li><strong>Run the Installation Script:</strong>
+          <pre>
+            {`bash
+$ cd my_project
+$ ./install.sh`}
+          </pre>
+        </li>
+        <li><strong>Verify the Installation:</strong>
+          <ul>
+            <li>Check that all environment variables are set.</li>
+            <li>Ensure that dependencies have been installed.</li>
+            <li>Navigate to the project directory and run:
+              <pre>
+                {`bash
+$ ./run.sh --version`}
+              </pre>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      <hr />
+
+      <h2 id="usage">Usage</h2>
+      <p>To get started using <strong>My Project</strong>, follow these procedures:</p>
+      <ul>
+        <li><strong>Configuration:</strong>
+          <ul>
+            <li>Edit the <code>config.yaml</code> file to set custom parameters such as port and database connections.</li>
+          </ul>
+        </li>
+        <li><strong>Execution:</strong>
+          <ul>
+            <li>Run the main executable with the command:
+              <pre>
+                {`bash
+$ ./run.sh`}
+              </pre>
+            </li>
+          </ul>
+        </li>
+        <li><strong>Command-Line Options:</strong>
+          <ul>
+            <li><code>--help</code>: Displays help and available commands.</li>
+            <li><code>--config <file></code>: Specifies a custom configuration file.</li>
+            <li><code>--debug</code>: Enables debug mode for troubleshooting.</li>
+          </ul>
+        </li>
+        <li><strong>List of Common Commands:</strong>
+          <ul>
+            <li>Start the server: <code>$ ./run.sh start</code></li>
+            <li>Stop the server: <code>$ ./run.sh stop</code></li>
+            <li>View logs: <code>$ tail -f logs/app.log</code></li>
+          </ul>
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2 id="contributing">Contributing</h2>
+      <p>We welcome contributions from the community! Hereâs how you can help:</p>
+      <ul>
+        <li><strong>Fork</strong> the repository and create your feature branch.</li>
+        <li>Make your changes, ensuring to follow the project's coding guidelines.</li>
+        <li>Submit a <strong>pull request</strong> for review.</li>
+        <li>Review our <a href="#">Contribution Guidelines</a> in <code>CONTRIBUTING.md</code> for more details.</li>
+      </ul>
+
+      <p><strong>Contributors Must:</strong></p>
+      <ul>
+        <li>Maintain clean, readable code.</li>
+        <li>Write documentation for significant changes.</li>
+        <li>Update tests accordingly.</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="license">License</h2>
+      <p>
+        <strong>My Project</strong> is licensed under the MIT License. All contributions are subject to this license. For more details,
+        view the <code>LICENSE</code> file.
+      </p>
+
+      <hr />
+
+      <h2 id="changelog">Changelog</h2>
+      <h3>Version 1.2.0</h3>
+      <ul>
+        <li>Updated installation script.</li>
+        <li>Improved build process with automated dependency checks.</li>
+        <li>Enhanced error logging in Module 2.</li>
+      </ul>
+      
+      <h3>Version 1.1.0</h3>
+      <ul>
+        <li>Added comprehensive component documentation.</li>
+        <li>Included tests for Module 1.</li>
+      </ul>
+
+      <h3>Version 1.0.0</h3>
+      <ul>
+        <li>Initial project release with basic functionality and structure.</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="appendix">Appendix</h2>
+      <h3>Configuration Details</h3>
+      <p>The following is a summary of the default configuration settings found in <code>config.yaml</code>:</p>
+      <ul>
+        <li><strong>host:</strong> <code>localhost</code></li>
+        <li><strong>port:</strong> <code>8080</code></li>
+        <li><strong>database:</strong> <code>my_project_db</code></li>
+        <li><strong>cache:</strong> <code>enabled</code></li>
+        <li><strong>log_level:</strong> <code>info</code></li>
+      </ul>
+
+      <h3>Notes</h3>
+      <ul>
+        <li>For any issues or clarifications, please refer back to this document.</li>
+        <li>Ensure that your local environment satisfies all the prerequisites mentioned in the installation section.</li>
+        <li>The documentation will be regularly updated with new changes and features.</li>
+      </ul>
+
+      <hr />
+      
+      <p>This concludes the comprehensive documentation for <strong>My Project</strong>. Follow the sections above for detailed information on structure, installation, and usage.</p>
     </div>
   );
 };
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<MyComponent />);
+ReactDOM.createRoot(document.getElementById('root')).render(<Documentation />);
 
     </script>
   </body>

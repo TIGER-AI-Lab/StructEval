@@ -88,31 +88,37 @@ const DashboardOverview = () => {
   const user = {
     name: "John Doe",
     email: "john.doe@example.com",
-    role: "Administrator"
+    role: "Administrator",
   };
+
   const stats = {
     posts: 34,
     comments: 120,
-    likes: 230
+    likes: 230,
   };
+
   const activities = [
     { timestamp: "2023-10-01 10:00", description: "Logged in" },
     { timestamp: "2023-10-01 10:05", description: "Created a post" },
-    { timestamp: "2023-10-01 10:15", description: "Commented on a post" }
+    { timestamp: "2023-10-01 10:15", description: "Commented on a post" },
   ];
+
   const achievements = [
     "Completed Profile Setup",
     "First Post Published",
-    "Reached 100 Likes"
+    "Reached 100 Likes",
   ];
+
   const currentYear = new Date().getFullYear();
 
   return (
     <div className="container">
+      {/* Header Section */}
       <header className="header">
         <h1>Dashboard Overview</h1>
         <p>Welcome to the overview page of our sample Vue component.</p>
       </header>
+      {/* User Information Section */}
       <section className="section user-info">
         <h2>User Information</h2>
         <div className="info-list">
@@ -130,6 +136,7 @@ const DashboardOverview = () => {
           </div>
         </div>
       </section>
+      {/* Statistics Section */}
       <section className="section stats">
         <h2>Statistics</h2>
         <ul>
@@ -138,19 +145,22 @@ const DashboardOverview = () => {
           <li>Likes: {stats.likes}</li>
         </ul>
       </section>
+      {/* Additional Information Section */}
       <section className="section additional-info">
         <h2>Additional Information</h2>
+
         <div className="sub-section recent-activity">
           <h3>Recent Activity</h3>
           <ul>
             {activities.map((activity, index) => (
               <li key={index}>
-                <span className="timestamp">{activity.timestamp}</span> - 
+                <span className="timestamp">{activity.timestamp}</span> -{" "}
                 <strong>{activity.description}</strong>
               </li>
             ))}
           </ul>
         </div>
+
         <div className="sub-section achievements">
           <h3>Achievements</h3>
           <ol>
@@ -160,6 +170,7 @@ const DashboardOverview = () => {
           </ol>
         </div>
       </section>
+      {/* Footer Section */}
       <footer className="footer">
         <hr />
         <p>&copy; {currentYear} Sample Vue Application</p>

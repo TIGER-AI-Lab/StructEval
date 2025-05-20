@@ -84,32 +84,54 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-# Generate 15 random data points for observations
-np.random.seed(0)
-speed = np.random.uniform(0, 120, 15)
-distance = np.random.uniform(0, 100, 15)
+function NewsletterForm() {
+    const [email, setEmail] = useState('');
+    const [confirmed, setConfirmed] = useState(false);
+    const [isValidEmail, setIsValidEmail] = useState(true);
 
-# Create scatter plot
-plt.scatter(speed, distance, marker='o', color='red')
+    const handleEmailChange = (e) => {
+        const emailValue = e.target.value;
+        setIsValidEmail(/\S+@\S+\.\S+/.test(emailValue));
+        setEmail(emailValue);
+    };
 
-# Set labels for axes
-plt.xlabel("Speed (km/h)")
-plt.ylabel("Distance (km)")
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (isValidEmail) {
+            setConfirmed(true);
+        }
+    };
 
-# Set title
-plt.title("Speed vs Distance Analysis")
+    const handleClear = () => {
+        setEmail('');
+        setConfirmed(false);
+    };
 
-# Add grid lines
-plt.grid(True, axis='both')
+    return (
+        <div style={{ border: '2px solid #000', padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+            <h2 style={{ marginBottom: '20px' }}>Newsletter Subscription</h2>
+            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', width: '100%', maxWidth: '500px' }}>
+                <input 
+                    type="email" 
+                    placeholder="Enter your email address"
+                    onChange={handleEmailChange}
+                    value={email} 
+                    style={{ marginBottom: '10px', padding: '10px', width: '100%' }} 
+                />
+                <label style={{ marginBottom: '10px' }}>
+                    <input type="checkbox" /> I agree to receive emails
+                </label>
+                <button type="submit" style={{ backgroundColor: 'green', color: '#fff', padding: '10px', margin: '10px 0' }}>Subscribe</button>
+                <button type="button" onClick={handleClear} style={{ backgroundColor: 'red', color: '#fff', padding: '10px', margin: '0 10px' }}>Clear</button>
+                {confirmed && <p style={{ marginTop: '10px', color: 'green' }}>Thank you for subscribing!</p>}
+            </form>
+        </div>
+    );
+}
 
-# Add legend at the bottom right corner
-plt.legend(['Observation Points'], loc='lower right')
-
-# Display the plot
-plt.show()
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterForm />);
 
     </script>
   </body>

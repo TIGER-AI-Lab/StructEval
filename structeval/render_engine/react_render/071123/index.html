@@ -84,15 +84,16 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
+const ProjectOverview = () => {
   return (
     <div>
       <h1>Project Overview</h1>
-
-      <p>This document provides a detailed breakdown of the visual conversion task which emphasizes structural layout, proper hierarchy, and formatted content.</p>
-
+      <p>
+        This document provides a detailed breakdown of the visual conversion task which emphasizes
+        structural layout, proper hierarchy, and formatted content.
+      </p>
+      
       <h2>Table of Contents</h2>
-
       <ol>
         <li><a href="#project-summary">Project Summary</a></li>
         <li><a href="#requirements">Requirements</a></li>
@@ -107,25 +108,24 @@ const App = () => {
         <li><a href="#testing-plan">Testing Plan</a></li>
         <li><a href="#appendix">Appendix</a></li>
       </ol>
-
+      
       <hr />
-
+      
       <h2 id="project-summary">Project Summary</h2>
-
-      <p>The aim of this project is to translate visual layouts into a standalone Markdown document that is both structurally detailed and visually organized. The focus is on:</p>
-
+      <p>
+        The aim of this project is to translate visual layouts into a standalone Markdown document
+        that is both structurally detailed and visually organized. The focus is on:
+      </p>
       <ul>
         <li><strong>Visible Structure:</strong> Emphasizing headings, sub-sections, lists, and tables.</li>
         <li><strong>Visual Hierarchy:</strong> Establishing clear levels of importance using different header levels.</li>
         <li><strong>Formatted Content:</strong> Demonstrating formatted text, bullet points, and labeled sections.</li>
       </ul>
-
+      
       <hr />
-
+      
       <h2 id="requirements">Requirements</h2>
-
       <p>This project should meet the following criteria:</p>
-
       <ol>
         <li>It must be a valid Markdown document.</li>
         <li>The information is self-contained and renderable on one page.</li>
@@ -133,46 +133,41 @@ const App = () => {
         <li>Focus exclusively on visible text, headers, lists, and tables.</li>
         <li>The document must include detailed sections with labeled values and multiple levels of indentation.</li>
       </ol>
-
+      
       <hr />
-
+      
       <h2 id="design-specifications">Design Specifications</h2>
-
-      <h3 >Layout Guidelines</h3>
-
+      
+      <h3>Layout Guidelines</h3>
       <ul>
         <li><strong>Sectioning:</strong> Use H1 for main title, H2 for major sections, and H3 for detailed subsections.</li>
         <li><strong>Lists:</strong> Combine both ordered and unordered lists where applicable.</li>
         <li><strong>Tables:</strong> Use tables to display structured data cleanly.</li>
         <li><strong>Code Blocks:</strong> Incorporate code blocks for examples and technical specifications.</li>
       </ul>
-
-      <h3 >Visual Hierarchy</h3>
-
+      
+      <h3>Visual Hierarchy</h3>
       <p>The following heading structure should be maintained:</p>
-
+      
       <h4>Primary Headings (H1)</h4>
       <p>Used for major parts of the content (e.g., "Project Overview").</p>
-
+      
       <h4>Secondary Headings (H2)</h4>
       <p>Utilized for primary sections like "Requirements" or "Development Guidelines".</p>
-
+      
       <h4>Tertiary Headings (H3)</h4>
       <p>Employed for further breakdown, such as "Layout Guidelines" or "Visual Hierarchy".</p>
-
-
-      <h3 >Formatted Content Examples</h3>
-
+      
+      <h3>Formatted Content Examples</h3>
+      
       <h4>Example of a Labeled List:</h4>
-
       <ul>
         <li><strong>Username:</strong> user123</li>
         <li><strong>Role:</strong> Developer</li>
         <li><strong>Status:</strong> Active</li>
       </ul>
-
+      
       <h4>Example Table:</h4>
-
       <table>
         <thead>
           <tr>
@@ -204,13 +199,11 @@ const App = () => {
           </tr>
         </tbody>
       </table>
-
+      
       <hr />
-
+      
       <h2 id="development-guidelines">Development Guidelines</h2>
-
       <p>Follow these steps to ensure proper structure:</p>
-
       <ol>
         <li><strong>Outline the Document:</strong>
           <ul>
@@ -243,13 +236,11 @@ const App = () => {
           </ul>
         </li>
       </ol>
-
+      
       <hr />
-
+      
       <h2 id="testing-plan">Testing Plan</h2>
-
       <p>Conduct the following tests to verify correctness:</p>
-
       <ul>
         <li><input type="checkbox" /> <strong>Structure Test:</strong> Check that all headings and subheadings render correctly.</li>
         <li><input type="checkbox" /> <strong>Content Test:</strong> Ensure lists, tables, and code blocks are displayed without errors.</li>
@@ -257,13 +248,11 @@ const App = () => {
         <li><input type="checkbox" /> <strong>Visual Hierarchy Test:</strong> Confirm that the document reflects proper visual hierarchy.</li>
         <li><input type="checkbox" /> <strong>Overall Usability:</strong> Review using a Markdown previewer to ensure consistency.</li>
       </ul>
-
+      
       <hr />
-
+      
       <h2 id="appendix">Appendix</h2>
-
       <p>Additional information and future considerations:</p>
-
       <ul>
         <li><strong>Validation Tools:</strong> Use Markdown linters and validators to ensure syntax correctness.</li>
         <li><strong>Improvements:</strong> Consider feedback from team reviews for further refinements.</li>
@@ -271,23 +260,22 @@ const App = () => {
         <li><strong>Formatting Best Practices:</strong> Avoid non-standard Markdown syntax to ensure broad compatibility.</li>
         <li><strong>Collaboration:</strong> Ensure all contributors follow these guidelines to maintain uniformity.</li>
       </ul>
-
+      
       <hr />
-
-      <h3 >Final Notes</h3>
-
-      <p>A well-structured Markdown document enhances clarity and ensures that the visual and hierarchical structure is maintained. This document serves as both a guideline and a reference point for converting visual layouts into clean, readable Markdown text.</p>
-
-      <hr />
-      <p>--- End of Document ---</p>
-
+      
+      <h3>Final Notes</h3>
+      <p>
+        A well-structured Markdown document enhances clarity and ensures that the visual and
+        hierarchical structure is maintained. This document serves as both a guideline and a
+        reference point for converting visual layouts into clean, readable Markdown text.
+      </p>
     </div>
   );
 };
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<ProjectOverview />);
 
     </script>
   </body>

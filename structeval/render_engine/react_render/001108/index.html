@@ -84,74 +84,64 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const NewsletterSubscription = () => {
+function NewsletterSubscription() {
   const [email, setEmail] = useState('');
   const [agreed, setAgreed] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const [subscriptionSuccessful, setSubscriptionSuccessful] = useState(false);
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-    setErrorMessage('');
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
   };
 
-  const handleCheckboxChange = (event) => {
-    setAgreed(event.target.checked);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    if (!email) {
-      setErrorMessage('Email is required');
-      return;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!email || !validateEmail(email)) {
+      setErrorMessage('Please enter a valid email address.');
+    } else if (!agreed) {
+      setErrorMessage('You must agree to the terms and conditions.');
+    } else {
+      setErrorMessage('');
+      setShowConfirmation(true);
     }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      setErrorMessage('Invalid email format');
-      return;
-    }
-
-    if (!agreed) {
-      setErrorMessage('Please agree to the terms and conditions');
-      return;
-    }
-
-    setSubscriptionSuccessful(true);
   };
 
   return (
-    <div style={{ border: '1px solid #ccc', padding: '20px' }}>
-      <h3 style={{ textAlign: 'center' }}>Subscribe to Our Newsletter</h3>
-      {subscriptionSuccessful ? (
-        <div>Subscription successful</div>
-      ) : (
-        <form onSubmit={handleSubmit} style={{ marginTop: '20px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '10px' }}>
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              value={email}
-              onChange={handleEmailChange}
-            />
-            <span>{email.length}</span>
+    <div style={{ border: '1px solid black', padding: '20px', maxWidth: '400px', margin: '0 auto' }}>
+      {!showConfirmation ? (
+        <form onSubmit={handleSubmit}>
+          <h3 style={{ textAlign: 'center' }}>Subscribe to Our Newsletter</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: '10px' }}>
+            <div>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                style={{ width: '100%' }}
+              />
+              <span>{email.length} characters</span>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                checked={agreed}
+                onChange={() => setAgreed(!agreed)}
+                id="terms"
+              />
+              <label htmlFor="terms">I agree to the terms and conditions</label>
+            </div>
           </div>
-          {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr', marginTop: '10px' }}>
-            <label>
-              <input type="checkbox" checked={agreed} onChange={handleCheckboxChange} />
-              I agree to the terms and conditions
-            </label>
-          </div>
-          <button type="submit" style={{ backgroundColor: 'green', color: 'white', marginTop: '10px' }}>
-            Subscribe
-          </button>
+          {errorMessage && <div style={{ color: 'red' }}>{errorMessage}</div>}
+          <button type="submit" style={{ backgroundColor: 'green', color: 'white', marginTop: '10px' }}>Subscribe</button>
         </form>
+      ) : (
+        <div style={{ textAlign: 'center', marginTop: '10px' }}>Subscription successful</div>
       )}
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount

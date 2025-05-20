@@ -84,32 +84,75 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-# Generate 15 random data points for observations
-np.random.seed(0)
-speed = np.random.uniform(0, 120, 15)
-distance = np.random.uniform(0, 100, 15)
+class RegistrationCard extends React.Component {
+  state = {
+    username: '',
+    email: '',
+    password: '',
+    registrationSuccess: false
+  }
 
-# Create scatter plot
-plt.scatter(speed, distance, marker='o', color='red')
+  handleInputChange = (e) => {
+    const {name, value} = e.target;
+    this.setState({
+      [name]: value
+    });
+  }
 
-# Set labels for axes
-plt.xlabel("Speed (km/h)")
-plt.ylabel("Distance (km)")
+  handleSubmit = (e) => {
+    e.preventDefault();
+    if (this.state.username && this.state.email && this.state.password) {
+      this.setState({registrationSuccess: true});
+    } else {
+      alert('All fields are required');
+    }
+  }
 
-# Set title
-plt.title("Speed vs Distance Analysis")
+  render() {
+    return (
+      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px'}}>
+        <h1 style={{textAlign: 'center'}}>Register Now</h1>
+        <p>Please complete the form below to join.</p>
+        <input 
+          type="text" 
+          name="username" 
+          placeholder="Enter your username" 
+          value={this.state.username} 
+          onChange={this.handleInputChange} 
+          style={{border: '1px solid #ccc', padding: '5px'}} 
+          required 
+        />
+        <input 
+          type="email" 
+          name="email" 
+          placeholder="Enter your email" 
+          value={this.state.email} 
+          onChange={this.handleInputChange} 
+          style={{border: '1px solid #ccc', padding: '5px'}} 
+          required 
+        />
+        <input 
+          type="password" 
+          name="password" 
+          placeholder="Enter your password" 
+          value={this.state.password} 
+          onChange={this.handleInputChange} 
+          style={{border: '1px solid #ccc', padding: '5px'}} 
+          required 
+        />
+        <form onSubmit={this.handleSubmit}>
+          <button type="submit" style={{backgroundColor: 'green', color: 'white', padding: '10px', width: '100%', margin: '5px 0'}}>Register</button>
+          <button type="button" onClick={() => this.setState({username: '', email: '', password: ''})} style={{backgroundColor: 'red', color: 'white', padding: '10px', width: '100%'}}>Clear</button>
+        </form>
+        {this.state.registrationSuccess && <div style={{color: 'green', textAlign: 'center'}}>Registration Successful</div>}
+      </div>
+    );
+  }
+}
 
-# Add grid lines
-plt.grid(True, axis='both')
-
-# Add legend at the bottom right corner
-plt.legend(['Observation Points'], loc='lower right')
-
-# Display the plot
-plt.show()
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<RegistrationCard />);
 
     </script>
   </body>

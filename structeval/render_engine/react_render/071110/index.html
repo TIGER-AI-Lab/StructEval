@@ -84,13 +84,13 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const Documentation = () => {
+function PhoenixDocumentation() {
   return (
-    <div>
+    <div className="phoenix-documentation">
       <h1>Project Phoenix Documentation</h1>
-
-      <p>Welcome to the documentation for <strong>Project Phoenix</strong>, a revolutionary tool designed to streamline workflows and boost productivity.</p>
-
+      <p>
+        Welcome to the documentation for <strong>Project Phoenix</strong>, a revolutionary tool designed to streamline workflows and boost productivity.
+      </p>
       <hr />
 
       <h2>Table of Contents</h2>
@@ -102,15 +102,17 @@ const Documentation = () => {
         <li><a href="#configuration">Configuration</a></li>
         <li><a href="#troubleshooting">Troubleshooting</a></li>
         <li><a href="#contributing">Contributing</a></li>
-        <li><a href="#license--credits">License & Credits</a></li>
+        <li><a href="#license-credits">License & Credits</a></li>
       </ol>
-
       <hr />
 
       <h2 id="overview">Overview</h2>
-      <p>Project Phoenix is a comprehensive solution tailored for small and medium enterprises. It offers tools for managing projects, tracking tasks, and reporting analytics.</p>
-
-      <blockquote>âEfficiency is doing things right; effectiveness is doing the right things.â â Peter Drucker</blockquote>
+      <p>
+        Project Phoenix is a comprehensive solution tailored for small and medium enterprises. It offers tools for managing projects, tracking tasks, and reporting analytics.
+      </p>
+      <blockquote>
+        âEfficiency is doing things right; effectiveness is doing the right things.â â Peter Drucker
+      </blockquote>
 
       <h3>Key Highlights:</h3>
       <ul>
@@ -118,7 +120,6 @@ const Documentation = () => {
         <li>Real-time analytics dashboard</li>
         <li>User-friendly interface</li>
       </ul>
-
       <hr />
 
       <h2 id="features">Features</h2>
@@ -129,14 +130,12 @@ const Documentation = () => {
         <li><strong>Collaboration Tools</strong>: In-app messaging and comment threads.</li>
         <li><strong>Security</strong>: Role-based access control and data encryption.</li>
       </ul>
-
       <h3>Additional Tools</h3>
       <ul>
         <li>Calendar Integration</li>
         <li>Email Notifications</li>
         <li>Customizable Dashboards</li>
       </ul>
-
       <hr />
 
       <h2 id="installation">Installation</h2>
@@ -146,36 +145,38 @@ const Documentation = () => {
         <li>Node.js 12.x+</li>
         <li>PostgreSQL 10+</li>
       </ul>
-
       <h3>Step-by-Step Guide</h3>
       <ol>
         <li>Clone the repository:
-          <pre><code>git clone https://github.com/example/project-phoenix.git</code></pre>
+          <pre>{`git clone https://github.com/example/project-phoenix.git`}</pre>
         </li>
         <li>Navigate to the project directory:
-          <pre><code>cd project-phoenix</code></pre>
+          <pre>{`cd project-phoenix`}</pre>
         </li>
         <li>Install dependencies:
-          <pre><code>pip install -r requirements.txt
-npm install</code></pre>
+          <pre>
+            {`pip install -r requirements.txt`}
+            <br />
+            {`npm install`}
+          </pre>
         </li>
         <li>Setup the database:
-          <pre><code>psql -U username -d phoenix_db -f setup.sql</code></pre>
+          <pre>{`psql -U username -d phoenix_db -f setup.sql`}</pre>
         </li>
       </ol>
-
-      <blockquote><strong>Note:</strong> Replace placeholder values with your actual configuration.</blockquote>
-
+      <blockquote>
+        <strong>Note:</strong> Replace placeholder values with your actual configuration.
+      </blockquote>
       <hr />
 
       <h2 id="usage">Usage</h2>
       <p>Once the installation is complete, start the server:</p>
-      <pre><code>python manage.py runserver</code></pre>
+      <pre>{`python manage.py runserver`}</pre>
       <p>The dashboard will be available at <code>http://localhost:8000</code>.</p>
 
       <h3>Running Tests</h3>
       <p>To ensure everything is functioning correctly, run:</p>
-      <pre><code>pytest --maxfail=1 --disable-warnings -q</code></pre>
+      <pre>{`pytest --maxfail=1 --disable-warnings -q`}</pre>
 
       <h3>Command Line Options</h3>
       <table>
@@ -200,14 +201,13 @@ npm install</code></pre>
           </tr>
         </tbody>
       </table>
-
       <hr />
 
       <h2 id="configuration">Configuration</h2>
       <p>Customize the application settings in the <code>config.yaml</code> file.</p>
-
       <p>Example snippet from <code>config.yaml</code>:</p>
-      <pre><code>server:
+      <pre>
+        {`server:
   host: "0.0.0.0"
   port: 8000
 
@@ -219,9 +219,9 @@ database:
 
 logging:
   level: "INFO"
-  file: "logs/app.log"</code></pre>
+  file: "logs/app.log"`}
+      </pre>
       <p>Ensure you secure the configuration file and restrict access to sensitive values.</p>
-
       <hr />
 
       <h2 id="troubleshooting">Troubleshooting</h2>
@@ -232,7 +232,6 @@ logging:
         <li><strong>Dependency issues:</strong> Run <code>pip install -r requirements.txt</code> and <code>npm install</code> again.</li>
       </ul>
       <p>For persistent issues, consult the log file at <code>logs/app.log</code>.</p>
-
       <hr />
 
       <h2 id="contributing">Contributing</h2>
@@ -240,18 +239,17 @@ logging:
       <ol>
         <li>Fork the repository.</li>
         <li>Create a feature branch:
-          <pre><code>git checkout -b feature-branch</code></pre>
+          <pre>{`git checkout -b feature-branch`}</pre>
         </li>
         <li>Commit your changes:
-          <pre><code>git commit -m "Add new feature"</code></pre>
+          <pre>{`git commit -m "Add new feature"`}</pre>
         </li>
         <li>Push and open a pull request.</li>
       </ol>
       <p>Ensure that your code follows the <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a> guidelines and includes appropriate tests.</p>
-
       <hr />
 
-      <h2 id="license--credits">License & Credits</h2>
+      <h2 id="license-credits">License & Credits</h2>
       <p><strong>Project Phoenix</strong> is available under the MIT License.</p>
 
       <h3>Credits</h3>
@@ -262,17 +260,16 @@ logging:
       </ul>
 
       <p>Thank you for using Project Phoenix! For further assistance, refer back to this documentation or contact the development team.</p>
-
       <hr />
 
       <p><em>Last updated: October 2023</em></p>
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<Documentation />);
+ReactDOM.createRoot(document.getElementById('root')).render(<PhoenixDocumentation />);
 
     </script>
   </body>

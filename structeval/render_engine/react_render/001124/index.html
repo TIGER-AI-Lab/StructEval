@@ -85,45 +85,45 @@
 
 
 function NewsletterForm() {
-  const [subscribed, setSubscribed] = useState(false);
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
+  const [isSubscribed, setIsSubscribed] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubscribe = () => {
     if (fullName && email) {
-      setSubscribed(true);
+      setIsSubscribed(true);
     }
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      <div>
-        <h1 style={{ textAlign: 'center' }}>Subscribe to our Newsletter</h1>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Full Name"
-            value={fullName}
-            onChange={(e) => setFullName(e.target.value)}
-            style={{ width: '100%', marginBottom: '10px' }}
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <div style={{ textAlign: 'center' }}>
+        <h1>Subscribe to our Newsletter</h1>
+        <div>
+          <input 
+            type="text" 
+            placeholder="Full Name" 
+            value={fullName} 
+            onChange={(e) => setFullName(e.target.value)} 
+            style={{ margin: '5px', padding: '10px', width: '200px' }}
           />
-          <input
-            type="email"
-            placeholder="Email Address"
+        </div>
+        <div>
+          <input 
+            type="email" 
+            placeholder="Email Address" 
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            style={{ width: '100%', marginBottom: '10px' }}
+            style={{ margin: '5px', padding: '10px', width: '200px' }}
           />
-          <button type="submit" style={{ backgroundColor: 'white', color: 'red', width: '100%' }}>
-            Subscribe
-          </button>
-        </form>
-        {subscribed && (
-          <div style={{ marginTop: '10px' }}>
-            <p style={{ fontWeight: 'bold' }}>Subscription Successful!</p>
-          </div>
-        )}
+        </div>
+        <button 
+          onClick={handleSubscribe} 
+          style={{ margin: '10px', padding: '10px', backgroundColor: 'white', color: 'red', border: '1px solid red', cursor: 'pointer' }}
+        >
+          Subscribe
+        </button>
+        {isSubscribed && <div style={{ fontWeight: 'bold' }}>Subscription Successful!</div>}
       </div>
     </div>
   );

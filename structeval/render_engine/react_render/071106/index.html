@@ -84,17 +84,19 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
+const VisualConversionTask = () => {
   return (
     <div>
       <h1>Project Title: Visual Conversion Task</h1>
-      <p>This document provides a detailed breakdown of the code structure used for visual conversion tests. Its purpose is to assess:</p>
+      <p>
+        This document provides a detailed breakdown of the code structure used for visual conversion tests. Its purpose is to assess:
+      </p>
       <ul>
         <li>Visible structure</li>
         <li>Layout hierarchy</li>
         <li>Rendered content formatting</li>
       </ul>
-
+      
       <h2>Table of Contents</h2>
       <ol>
         <li><a href="#introduction">Introduction</a></li>
@@ -109,17 +111,29 @@ const App = () => {
       <hr />
 
       <h2 id="introduction">Introduction</h2>
-      <p>Welcome to the visual conversion task sample Markdown document. This file demonstrates various Markdown features including headings, lists, tables, block quotes, and code blocks. It is designed to test the structural layout and visible content rendered on one static page.</p>
-      <blockquote>Remember: The goal is to ensure clarity and organization without any external dependencies or interactive elements.</blockquote>
+      <p>
+        Welcome to the visual conversion task sample Markdown document. This file demonstrates various Markdown features including headings, lists, tables, block quotes, and code blocks. It is designed to test the structural layout and visible content rendered on one static page.
+      </p>
+      <blockquote>
+        Remember: The goal is to ensure clarity and organization without any external dependencies or interactive elements.
+      </blockquote>
 
       <hr />
 
       <h2 id="project-requirements">Project Requirements</h2>
       <ul>
-        <li><strong>Visible Structure:</strong> The document should exhibit an organized layout with distinct sections and hierarchy.</li>
-        <li><strong>Formatted Content:</strong> Use markdown elements such as headings, lists, tables, code blocks, and block quotes.</li>
-        <li><strong>Self-Contained:</strong> This document does not rely on external images, links, scripts, or stylesheets.</li>
-        <li><strong>Static Layout:</strong> No animations, hover effects, or clickable interactivity.</li>
+        <li>
+          <strong>Visible Structure:</strong> The document should exhibit an organized layout with distinct sections and hierarchy.
+        </li>
+        <li>
+          <strong>Formatted Content:</strong> Use markdown elements such as headings, lists, tables, code blocks, and block quotes.
+        </li>
+        <li>
+          <strong>Self-Contained:</strong> This document does not rely on external images, links, scripts, or stylesheets.
+        </li>
+        <li>
+          <strong>Static Layout:</strong> No animations, hover effects, or clickable interactivity.
+        </li>
       </ul>
 
       <h3>Key Objectives</h3>
@@ -132,7 +146,6 @@ const App = () => {
       <hr />
 
       <h2 id="visual-structure-layout">Visual Structure Layout</h2>
-
       <h3>Section 1: Document Header</h3>
       <ul>
         <li><strong>Title:</strong> Clearly defined at the top.</li>
@@ -141,13 +154,12 @@ const App = () => {
 
       <h3>Section 2: Main Content</h3>
       <ul>
-        <li><strong>Subsections</strong> that describe the project's component parts:
-          <ul>
-            <li>Introduction to Markdown usage.</li>
-            <li>Detailed project requirements.</li>
-            <li>Example code for demonstration.</li>
-          </ul>
-        </li>
+        <li><strong>Subsections</strong> that describe the project's component parts:</li>
+        <ul>
+          <li>Introduction to Markdown usage.</li>
+          <li>Detailed project requirements.</li>
+          <li>Example code for demonstration.</li>
+        </ul>
       </ul>
 
       <h3>Section 3: Supplementary Data</h3>
@@ -194,9 +206,13 @@ const App = () => {
       <hr />
 
       <h2 id="code-sample">Code Sample</h2>
-      <p>Below is a Python code snippet included to illustrate how code blocks can be embedded within the document. It is designed to be both simple and instructive:</p>
+      <p>
+        Below is a Python code snippet included to illustrate how code blocks can be embedded within the document. It is designed to be both simple and instructive:
+      </p>
+
       <pre>
-        {`def greet(name):
+        <code>
+{`def greet(name):
     """
     Greet the user with a friendly message.
     If no name is provided, default to 'World'.
@@ -217,14 +233,14 @@ if __name__ == "__main__":
     # Prompt for the user's name
     user_name = input("Enter your name: ")
     greet(user_name)`}
+        </code>
       </pre>
 
       <hr />
 
       <h2 id="additional-elements">Additional Elements</h2>
-
       <h3>Data Table</h3>
-      <p>The following table summarizes key project parameters used in this test:</p>
+
       <table>
         <thead>
           <tr>
@@ -258,26 +274,32 @@ if __name__ == "__main__":
       </table>
 
       <h3>Block Quotes and Callouts</h3>
-      <blockquote>"A well-structured document leads to a clear and effective presentation."  
-      â Project Lead</blockquote>
+
+      <blockquote>
+        "A well-structured document leads to a clear and effective presentation." - Project Lead
+      </blockquote>
 
       <hr />
 
       <h2 id="conclusion">Conclusion</h2>
-      <p>This document serves as a comprehensive example of a long, realistic Markdown code snippet aimed at testing visual and structural conversion. It encapsulates:</p>
+      <p>
+        This document serves as a comprehensive example of a long, realistic Markdown code snippet aimed at testing visual and structural conversion. It encapsulates:
+      </p>
       <ul>
         <li>A <strong>clear hierarchy</strong> through headings and subheadings.</li>
         <li>Varied Markdown <strong>elements</strong> such as lists, tables, and code blocks.</li>
         <li>A <strong>self-contained</strong> format without reliance on any external resources.</li>
       </ul>
-      <p>Thank you for reviewing this Markdown sample. Use this as a template for future projects focusing on visual layout and</p>
+      <p>
+        Thank you for reviewing this Markdown sample. Use this as a template for future projects focusing on visual layout and
+      </p>
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<VisualConversionTask />);
 
     </script>
   </body>

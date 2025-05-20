@@ -84,32 +84,68 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-# Generate 15 random data points for observations
-np.random.seed(0)
-speed = np.random.uniform(0, 120, 15)
-distance = np.random.uniform(0, 100, 15)
+class NewsletterForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      firstName: '',
+      emailAddress: '',
+      subscriptionSuccess: false
+    };
+    this handleSubmit = this.handleSubmit.bind(this);
+    this handleInputChange = this.handleInputChange.bind(this);
+  }
 
-# Create scatter plot
-plt.scatter(speed, distance, marker='o', color='red')
+  handleSubmit(event) {
+    event.preventDefault();
+    if (this.state.firstName.trim() === '' || this.state.emailAddress.trim() === '') {
+      alert('Both fields are required!');
+      return;
+    }
+    this.setState({ subscriptionSuccess: true });
+  }
 
-# Set labels for axes
-plt.xlabel("Speed (km/h)")
-plt.ylabel("Distance (km)")
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
 
-# Set title
-plt.title("Speed vs Distance Analysis")
+    this.setState({
+      [name]: value
+    });
+  }
 
-# Add grid lines
-plt.grid(True, axis='both')
+  render() {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <form onSubmit={this.handleSubmit} style={{ display: 'flex', flexDirection: 'column' }}>
+          <h1>Subscribe to our Newsletter</h1>
+          <input 
+            type="text" 
+            name="firstName" 
+            placeholder="Enter First Name"
+            value={this.state.firstName}
+            onChange={this.handleInputChange}
+            style={{ marginBottom: '5px' }}
+          />
+          <input 
+            type="email" 
+            name="emailAddress" 
+            placeholder="Enter Email Address"
+            value={this.state.emailAddress}
+            onChange={this.handleInputChange}
+          />
+          <button type="submit" style={{ backgroundColor: 'green', padding: '10px 20px', color: 'white', marginTop: '10px' }}>Subscribe</button>
+        </form>
+        {this.state.subscriptionSuccess && <div style={{ color: 'green', marginTop: '20px' }}>Subscription Successful</div>}
+      </div>
+    );
+  }
+}
 
-# Add legend at the bottom right corner
-plt.legend(['Observation Points'], loc='lower right')
-
-# Display the plot
-plt.show()
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterForm />);
 
     </script>
   </body>

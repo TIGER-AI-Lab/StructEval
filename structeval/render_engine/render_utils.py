@@ -163,6 +163,12 @@ def extract_code_and_save(text, task_id, output_dir):
         # If still no match, fall back to entire text (trimmed) to avoid undefined variable
         code = text.strip()
 
+    # check again for fence_pat
+    m = re.search(fence_pat, text, re.DOTALL | re.IGNORECASE)
+    if m:
+        payload = m.group("payload2")
+        code = payload.strip()
+
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
 

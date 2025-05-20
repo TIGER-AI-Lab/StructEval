@@ -85,35 +85,59 @@
 
 
 const NewsletterSubscription = () => {
-  const [subscribed, setSubscribed] = useState(false);
   const [email, setEmail] = useState('');
-  const [isValid, setIsValid] = useState(true);
+  const [subscribed, setSubscribed] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = () => {
-    if (email === '' || !email.includes('@')) {
-      setIsValid(false);
+  const handleSubscribe = () => {
+    if (email.trim() === '' || !email.includes('@')) {
+      setError('Please enter a valid email address.');
       return;
     }
-
+    setError('');
     setSubscribed(true);
-    setIsValid(true);
   };
 
   return (
-    <div style={{ width: '400px', border: '1px solid lightgray', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-      <h1>Newsletter Subscription</h1>
-      <input
-        type="email"
-        placeholder="Enter your email address"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        style={{ marginBottom: '10px' }}
-      />
-      {!isValid && <p style={{ color: 'red' }}>Please enter a valid email address.</p>}
-      <button onClick={handleSubmit} style={{ backgroundColor: 'green', color: 'white', padding: '10px', border: 'none', cursor: 'pointer' }}>
-        Subscribe
-      </button>
-      {subscribed && <p>Thank you for subscribing!</p>}
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+      }}
+    >
+      <div
+        style={{
+          width: '400px',
+          border: '1px solid lightgray',
+          padding: '20px',
+          textAlign: 'center',
+        }}
+      >
+        <h1>Newsletter Subscription</h1>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          style={{ width: '100%', marginBottom: '10px', padding: '8px' }}
+        />
+        <button
+          onClick={handleSubscribe}
+          style={{
+            backgroundColor: 'green',
+            color: 'white',
+            padding: '10px 20px',
+            border: 'none',
+            cursor: 'pointer',
+          }}
+        >
+          Subscribe
+        </button>
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+        {subscribed && <p>Thank you for subscribing!</p>}
+      </div>
     </div>
   );
 };

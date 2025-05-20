@@ -83,27 +83,42 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+
 function App() {
   return (
     <div>
       <header>
         <h1>Welcome to Our Page</h1>
-        <p>This is a sample page showcasing structured layout, clear visual hierarchy, and formatted content.</p>
+        <p>
+          This is a sample page showcasing structured layout, clear visual
+          hierarchy, and formatted content.
+        </p>
       </header>
 
       <nav>
         <ul>
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#details">Details</a></li>
-          <li><a href="#summary">Summary</a></li>
-          <li><a href="#data">Data</a></li>
+          <li>
+            <a href="#overview">Overview</a>
+          </li>
+          <li>
+            <a href="#details">Details</a>
+          </li>
+          <li>
+            <a href="#summary">Summary</a>
+          </li>
+          <li>
+            <a href="#data">Data</a>
+          </li>
         </ul>
       </nav>
 
       <main>
         <section id="overview">
           <h2>Overview Section</h2>
-          <p>The overview section provides a brief explanation of our page's structured layout. The key features include:</p>
+          <p>
+            The overview section provides a brief explanation of our page's
+            structured layout. The key features include:
+          </p>
           <ul>
             <li>Clear headings and subheadings</li>
             <li>Ordered and unordered lists</li>
@@ -118,7 +133,10 @@ function App() {
             <header>
               <h3>Sub-section A: Introduction</h3>
             </header>
-            <p>This sub-section offers an introductory insight into the various components of this document.</p>
+            <p>
+              This sub-section offers an introductory insight into the various
+              components of this document.
+            </p>
             <dl>
               <dt>Author</dt>
               <dd>John Doe</dd>
@@ -133,49 +151,70 @@ function App() {
             <header>
               <h3>Sub-section B: Analysis</h3>
             </header>
-            <p>Here, we present a simple analysis with a data table that represents various metrics:</p>
+            <p>
+              Here, we present a simple analysis with a data table that
+              represents various metrics:
+            </p>
             <table border="1" cellPadding="5">
-              <tr>
-                <th>Metric</th>
-                <th>Value</th>
-              </tr>
-              <tr>
-                <td>Users</td>
-                <td>350</td>
-              </tr>
-              <tr>
-                <td>Sessions</td>
-                <td>1250</td>
-              </tr>
-              <tr>
-                <td>Conversion Rate</td>
-                <td>4.7%</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>Metric</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Users</td>
+                  <td>350</td>
+                </tr>
+                <tr>
+                  <td>Sessions</td>
+                  <td>1250</td>
+                </tr>
+                <tr>
+                  <td>Conversion Rate</td>
+                  <td>4.7%</td>
+                </tr>
+              </tbody>
             </table>
           </article>
         </section>
 
         <section id="summary">
           <h2>Summary</h2>
-          <p>This section recaps the main points and provides additional insights to consolidate the page information. The key takeaways are:</p>
+          <p>
+            This section recaps the main points and provides additional insights
+            to consolidate the page information. The key takeaways are:
+          </p>
           <ol>
             <li>Consistent structure with multiple levels of headings</li>
             <li>Use of lists, tables, and labeled details</li>
             <li>Comprehensive breakdown of content into sections</li>
-            <li>Standalone HTML demonstration suitable for visual conversion tasks</li>
+            <li>
+              Standalone HTML demonstration suitable for visual conversion tasks
+            </li>
           </ol>
         </section>
 
         <section id="data">
           <h2>Additional Data Section</h2>
-          <p>This section features further structured data, ensuring a complete visual representation of different content types.</p>
+          <p>
+            This section features further structured data, ensuring a complete
+            visual representation of different content types.
+          </p>
 
           <div>
             <h3>Contact Information</h3>
             <ul>
-              <li><strong>Email:</strong> example@example.com</li>
-              <li><strong>Phone:</strong> 123-456-7890</li>
-              <li><strong>Address:</strong> 123 Main Street, Anytown, Country</li>
+              <li>
+                <strong>Email:</strong> example@example.com
+              </li>
+              <li>
+                <strong>Phone:</strong> 123-456-7890
+              </li>
+              <li>
+                <strong>Address:</strong> 123 Main Street, Anytown, Country
+              </li>
             </ul>
           </div>
 

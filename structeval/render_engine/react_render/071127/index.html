@@ -83,117 +83,66 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-<|BEGIN_CODE|>
 
-function ProjectOverview() {
+const ProjectOverview = () => {
   return (
     <div>
-      <h1>Project Overview</h1>
-
-      <p>
-        Welcome to the <strong>Project Insights</strong> report. This document outlines the key components, strategies, and detailed action plans for the project. Use the <strong>Table of Contents</strong> below to navigate through the document.
-      </p>
+      <Heading level={1}>Project Overview</Heading>
+      <p>Welcome to the <strong>Project Insights</strong> report. This document outlines the key components, strategies, and detailed action plans for the project. Use the <strong>Table of Contents</strong> below to navigate through the document.</p>
 
       <hr />
 
-      <h2>Table of Contents</h2>
-
+      <Heading level={2}>Table of Contents</Heading>
       <ol>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#project-goals">Project Goals</a></li>
-        <li><a href="#detailed-analysis">Detailed Analysis</a>
-          <ul>
-            <li><a href="#market-trends">Market Trends</a></li>
-            <li><a href="#swot-analysis">SWOT Analysis</a></li>
-          </ul>
+        <li><Link to="#introduction">Introduction</Link></li>
+        <li><Link to="#project-goals">Project Goals</Link></li>
+        <li>
+          <Link to="#detailed-analysis">Detailed Analysis</Link>
+          <ol>
+            <li><Link to="#market-trends">Market Trends</Link></li>
+            <li><Link to="#swot-analysis">SWOT Analysis</Link></li>
+          </ol>
         </li>
-        <li><a href="#implementation-strategy">Implementation Strategy</a></li>
-        <li><a href="#milestones--timeline">Milestones & Timeline</a></li>
-        <li><a href="#resource-allocation">Resource Allocation</a></li>
-        <li><a href="#risk-management">Risk Management</a></li>
-        <li><a href="#summary">Summary</a></li>
-        <li><a href="#appendix">Appendix</a></li>
+        <li><Link to="#implementation-strategy">Implementation Strategy</Link></li>
+        <li><Link to="#milestones--timeline">Milestones &amp; Timeline</Link></li>
+        <li><Link to="#resource-allocation">Resource Allocation</Link></li>
+        <li><Link to="#risk-management">Risk Management</Link></li>
+        <li><Link to="#summary">Summary</Link></li>
+        <li><Link to="#appendix">Appendix</Link></li>
       </ol>
 
-      <hr />
+      <Heading level={3}>Introduction</Heading>
+      <p>The purpose of this document is to provide a comprehensive overview of our project initiatives. The following sections will detail the methods, insights, and planned execution strategy that are instrumental to the project's success.</p>
+      <blockquote>This document is intended to be used as a standalone guide and does not require any external references.</blockquote>
 
-      <h2 id="introduction">Introduction</h2>
-
-      <p>
-        The purpose of this document is to provide a comprehensive overview of our project initiatives. The following sections will detail the methods, insights, and planned execution strategy that are instrumental to the project's success.
-      </p>
-
-      <blockquote>
-        Note: This document is intended to be used as a standalone guide and does not require any external references.
-      </blockquote>
-
-      <hr />
-
-      <h2 id="project-goals">Project Goals</h2>
-
-      <p>Our primary objectives include:</p>
-
+      <Heading level={3}>Project Goals</Heading>
       <ul>
-        <li><strong>Innovation</strong>: Develop a cutting-edge solution.</li>
-        <li><strong>Efficiency</strong>: Optimize current processes.</li>
-        <li><strong>Sustainability</strong>: Ensure environmental and economic sustainability.</li>
+        <li><strong>Innovation:</strong> Develop a cutting-edge solution.</li>
+        <li><strong>Efficiency:</strong> Optimize current processes.</li>
+        <li><strong>Sustainability:</strong> Ensure environmental and economic sustainability.</li>
       </ul>
-
-      <p><strong>Key Metrics:</strong></p>
-
+      <h4>Key Metrics:</h4>
       <ul>
         <li>Customer Satisfaction: Target 95%</li>
         <li>Process Improvement: Reduce costs by 20%</li>
         <li>Market Penetration: Increase shares by 15%</li>
       </ul>
 
-      <hr />
-
-      <h2 id="detailed-analysis">Detailed Analysis</h2>
-
-      <h3 id="market-trends">Market Trends</h3>
-
-      <p>Recent trends have shown:</p>
-
+      <Heading level={3}>Detailed Analysis</Heading>
+      <h4>Market Trends</h4>
       <ul>
         <li>A shift towards digital transformation.</li>
-        <li>Increased demand for personalized experiences.</li>
+        <liIncreased demand for personalized experiences.</li>
         <li>Growth in remote and hybrid workforce management.</li>
       </ul>
-
-      <h4>Sub-trends:</h4>
+      <h5>Sub-trends:</h5>
       <ul>
-        <li><strong>Automation</strong>: Accelerating technological adoption.</li>
-        <li><strong>Analytics</strong>: Driving better insights.</li>
-        <li><strong>Agility</strong>: Importance of responsive business models.</li>
+        <li><strong>Automation:</strong> Accelerating technological adoption.</li>
+        <li><strong>Analytics:</strong> Driving better insights.</li>
+        <li><strong>Agility:</strong> Importance of responsive business models.</li>
       </ul>
 
-      <h3 id="swot-analysis">SWOT Analysis</h3>
-
-      <p><strong>Strengths:</strong></p>
-      <ul>
-        <li>Strong leadership team.</li>
-        <li>Robust financial backing.</li>
-      </ul>
-
-      <p><strong>Weaknesses:</strong></p>
-      <ul>
-        <li>Limited market exposure.</li>
-        <li>Legacy processes in need of modernization.</li>
-      </ul>
-
-      <p><strong>Opportunities:</strong></p>
-      <ul>
-        <li>Emerging markets expansion.</li>
-        <li>New technology adoption.</li>
-      </ul>
-
-      <p><strong>Threats:</strong></p>
-      <ul>
-        <li>Competitive landscape.</li>
-        <li>Regulatory challenges.</li>
-      </ul>
-
+      <Heading level={4}>SWOT Analysis</Heading>
       <table>
         <thead>
           <tr>
@@ -208,57 +157,49 @@ function ProjectOverview() {
           </tr>
           <tr>
             <td>Weaknesses</td>
-            <td>Outdated systems, low agility</td>
+            <td>Limited market exposure, legacy processes in need of modernization</td>
           </tr>
           <tr>
-            <td>Opportunities</td>
-            <td>Global expansion, innovative products</td>
+            <td opportunitie><strong>opportunities</strong></td>
+            <td>Emerging markets expansion, new technology adoption</td>
           </tr>
           <tr>
             <td>Threats</td>
-            <td>Market volatility, legal constraints</td>
+            <td>Competitive landscape, regulatory challenges</td>
           </tr>
         </tbody>
       </table>
 
-      <hr />
-
-      <h2 id="implementation-strategy">Implementation Strategy</h2>
-
-      <p>A step-by-step plan is outlined below:</p>
-
-      <ol>
-        <li><strong>Phase 1: Preparation</strong>
+      <Heading level={3}>Implementation Strategy</Heading>
+      <ul>
+        <li>
+          <strong>Phase 1: Preparation</strong>
           <ul>
             <li>Conduct feasibility studies.</li>
             <li>Assemble the project team.</li>
             <li>Set up initial frameworks.</li>
           </ul>
         </li>
-        <li><strong>Phase 2: Execution</strong>
+        <li>
+          <strong>Phase 2: Execution</strong>
           <ul>
             <li>Initiate development cycles.</li>
             <li>Regular review meetings and iterations.</li>
             <li>Use agile methodologies to adapt quickly.</li>
           </ul>
         </li>
-        <li><strong>Phase 3: Evaluation</strong>
+        <li>
+          <strong>Phase 3: Evaluation</strong>
           <ul>
             <li>Analyze outcomes.</li>
             <li>Gather feedback.</li>
             <li>Prepare for scaling operations.</li>
           </ul>
         </li>
-      </ol>
+      </ul>
+      <blockquote>Focus on quality and detail at each phase to ensure project success.</blockquote>
 
-      <blockquote>
-        Focus on quality and detail at each phase to ensure project success.
-      </blockquote>
-
-      <hr />
-
-      <h2 id="milestones--timeline">Milestones & Timeline</h2>
-
+      <Heading level={3}>Milestones &amp; Timeline</Heading>
       <table>
         <thead>
           <tr>
@@ -296,17 +237,19 @@ function ProjectOverview() {
         </tbody>
       </table>
 
-      <hr />
-
-      <h2 id="resource-allocation">Resource Allocation</h2>
-
-      <p>Resources have been distributed as follows:</p>
-
+      <Heading level={3}>Resource Allocation</Heading>
       <ul>
-        <li><strong>Development Team:</strong> 8 members</li>
-        <li><strong>Marketing Team:</strong> 5 members</li>
-        <li><strong>Support Team:</strong> 4 members</li>
-        <li><strong>Budget:</strong>
+        <li>
+          <strong>Development Team:</strong> 8 members
+        </li>
+        <li>
+          <strong>Marketing Team:</strong> 5 members
+        </li>
+        <li>
+          <strong>Support Team:</strong> 4 members
+        </li>
+        <li>
+          <strong>Budget:</strong>
           <ul>
             <li>Research: $50,000</li>
             <li>Development: $200,000</li>
@@ -314,83 +257,58 @@ function ProjectOverview() {
           </ul>
         </li>
       </ul>
-
-      <h3>Hardware & Software</h3>
-
+      <h4>Hardware &amp; Software</h4>
       <ul>
-        <li><strong>Servers:</strong> High-performance cloud instances.</li>
-        <li><strong>Tools:</strong>
-          <ul>
-            <li>Version Control: Git</li>
-            <li>Collaboration: Slack & Trello (conceptual, not linked)</li>
-            <li>Testing: Proprietary in-house solutions</li>
-          </ul>
-        </li>
+        <li><small>Servers:</small> High-performance cloud instances.</li>
+        <li><small>Tools:</small> Version Control: Git, Collaboration: Slack &amp; Trello (conceptual, not linked), Testing: Proprietary in-house solutions</li>
       </ul>
 
-      <hr />
-
-      <h2 id="risk-management">Risk Management</h2>
-
-      <p>Potential risks and mitigation strategies:</p>
-
+      <Heading level={3}>Risk Management</Heading>
+      <h5>Potential risks and mitigation strategies:</h5>
       <ul>
-        <li><strong>Technical Risks:</strong>
+        <li>
+          <strong>Technical Risks:</strong>
           <ul>
             <li>Risk: Integration issues</li>
             <li>Mitigation: Regular integration testing</li>
           </ul>
         </li>
-
-        <li><strong>Market Risks:</strong>
+        <li>
+          <strong>Market Risks:</strong>
           <ul>
             <li>Risk: Market volatility</li>
             <li>Mitigation: Diversified product portfolio</li>
           </ul>
         </li>
-
-        <li><strong>Operational Risks:</strong>
+        <li>
+          <strong>Operational Risks:</strong>
           <ul>
             <li>Risk: Delays in execution</li>
             <li>Mitigation: Agile project management</li>
           </ul>
         </li>
       </ul>
+      <blockquote>Continuous monitoring and contingency planning are essential.</blockquote>
 
-      <blockquote>
-        Continuous monitoring and contingency planning are essential.
-      </blockquote>
-
-      <hr />
-
-      <h2 id="summary">Summary</h2>
-
+      <Heading level={3}>Summary</Heading>
       <p>To summarize, the project focuses on innovation, efficiency, and sustainability. With a clear roadmap, resource allocation, and risk management in place, we are well-prepared to address current challenges and seize future opportunities.</p>
 
-      <hr />
-
-      <h2 id="appendix">Appendix</h2>
-
-      <h3>Glossary</h3>
-
-      <ul>
-        <li><strong>Agile:</strong> A methodology based on iterative development.</li>
-        <li><strong>SWOT:</strong> Analysis of Strengths, Weaknesses, Opportunities, and Threats.</li>
-        <li><strong>KPIs:</strong> Key Performance Indicators, which measure project success.</li>
-      </ul>
-
-      <h3>Acknowledgments</h3>
-
+      <Heading level={3}>Appendix</Heading>
+      <h4>Glossary</h4>
+      <dl>
+        <dt>Agile:</dt>
+        <dd>A methodology based on iterative development.</dd>
+        <dt>SWOT:</dt>
+        <dd>Analysis of Strengths, Weaknesses, Opportunities, and Threats.</dd>
+        <dt>KPIs:</dt>
+        <dd>Key Performance Indicators, which measure project success.</dd>
+      </dl>
+      <h4>Acknowledgments</h4>
       <p>We appreciate the collaborative efforts of all team members and stakeholders who contributed to this report.</p>
-
-      <hr />
-
-      <p>Keep this document for future reference and updates. For additional details, consult internal documentation given offline.</p>
     </div>
   );
-}
+};
 
-<|END_CODE|>
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<ProjectOverview />);

@@ -84,22 +84,26 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
+function Dashboard() {
   const user = {
     name: 'Jane Smith',
     age: 28,
     email: 'jane.smith@example.com'
   };
+
   const notifications = [
     { type: 'Info', message: 'You have 5 unread messages.' },
     { type: 'Warning', message: 'Your password will expire in 7 days.' },
     { type: 'Alert', message: 'Suspicious login attempt detected.' }
   ];
+
   const activities = [
     { id: 1, date: '2023-10-01', description: 'Logged in from IP 192.168.1.10' },
     { id: 2, date: '2023-10-02', description: 'Updated profile picture' },
     { id: 3, date: '2023-10-03', description: 'Changed account settings' },
     { id: 4, date: '2023-10-04', description: 'Logged out' }
   ];
+
   const projects = [
     { id: 1, name: 'Redesign Website', status: 'In Progress' },
     { id: 2, name: 'Mobile App Launch', status: 'Completed' },
@@ -190,8 +194,9 @@
   );
 }
 
+
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<function />);
+ReactDOM.createRoot(document.getElementById('root')).render(<Dashboard />);
 
     </script>
   </body>

@@ -84,9 +84,9 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const App = () => {
-  const [message, setMessage] = useState('This content is for demonstration only');
-  const [timestamp, setTimestamp] = useState(new Date().toLocaleDateString());
+const VueVisualization = () => {
+  const message = 'This content is for demonstration only';
+  const timestamp = new Date().toLocaleDateString();
 
   useEffect(() => {
     console.log('React Visualization component mounted successfully');
@@ -99,14 +99,14 @@ const App = () => {
   return (
     <div className="container">
       <header>
-        <h1>Welcome to the React Visualization</h1>
+        <h1>Welcome to the Vue Visualization</h1>
         <p>This is a demonstration of a structured layout using React.</p>
       </header>
-
+      
       <section className="intro">
         <h2>Introduction</h2>
         <p>
-          Explore various structural elements such as headings, sections, lists, tables, and labeled values.
+          Explore various structural elements such as headings, sections, lists, tables, and labeled values. 
           This page is designed to show a clear visual hierarchy and layout using only one page.
         </p>
       </section>
@@ -115,14 +115,14 @@ const App = () => {
         <div className="info-block">
           <h3>Key Information</h3>
           <ul>
-            <li><strong>Version:</strong> React {React.version}</li>
-            <li><strong>Components:</strong> Functional Component</li>
-            <li><strong>Layout:</strong> JSX</li>
+            <li><strong>Version:</strong> Vue 3</li>
+            <li><strong>Components:</strong> Single File Component</li>
+            <li><strong>Layout:</strong> Template, Script, Style</li>
           </ul>
         </div>
         <div className="info-block">
           <h3>Contact Information</h3>
-          <p><strong>Email:</strong> react@example.com</p>
+          <p><strong>Email:</strong> vue@example.com</p>
           <p><strong>Phone:</strong> +123-456-7890</p>
         </div>
       </section>
@@ -183,7 +183,7 @@ const App = () => {
         </div>
       </section>
       <footer>
-        <p>&copy; 2023 React Visualization Project</p>
+        <p>&copy; 2023 Vue Visualization Project</p>
       </footer>
     </div>
   );
@@ -191,7 +191,7 @@ const App = () => {
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<VueVisualization />);
 
     </script>
   </body>

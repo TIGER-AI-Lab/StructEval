@@ -83,12 +83,118 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\begin{equation}
-\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
-\end{equation}
+
+function UserRegistrationForm() {
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    termsAccepted: false,
+  });
+  
+  const [error, setError] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === 'checkbox' ? checked : value,
+    });
+  };
+
+  const validateEmail = (email) => {
+    // Simple email regex for basic validation
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+  const handleRegister = () => {
+    const { username, email, password } = formData;
+    if (!username || !email || !password || !validateEmail(email)) {
+      setError('Please fill in all fields with a valid email and accept terms.');
+    } else {
+      setError('');
+      alert('Registration Successful!');
+      // Submit form or perform desired actions on successful validation
+    }
+  };
+
+  const handleCancel = () => {
+    setFormData({
+      username: '',
+      email: '',
+      password: '',
+      termsAccepted: false,
+    });
+    setError('');
+  };
+
+  return (
+    <div>
+      <h2>User Registration</h2>
+      <form style={{ display: 'grid', gap: '10px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', alignItems: 'center' }}>
+          <label>Username:</label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="username"
+            value={formData.username}
+            onChange={handleChange}
+          />
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', alignItems: 'center' }}>
+          <label>Email:</label>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', alignItems: 'center' }}>
+          <label>Password:</label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+        </div>
+        <div style={{ gridColumn: '1 / 3' }}>
+          <label>
+            <input
+              type="checkbox"
+              name="termsAccepted"
+              checked={formData.termsAccepted}
+              onChange={handleChange}
+            />
+            Accept Terms and Conditions
+          </label>
+        </div>
+        <div style={{ gridColumn: '1 / 3' }}>
+          <button
+            type="button"
+            style={{ backgroundColor: 'green', color: 'white', marginRight: '10px' }}
+            onClick={handleRegister}
+          >
+            Register
+          </button>
+          <button type="button" onClick={handleCancel}>
+            Cancel
+          </button>
+        </div>
+        {error && <p style={{ color: 'red', gridColumn: '1 / 3' }}>{error}</p>}
+      </form>
+    </div>
+  );
+}
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<UserRegistrationForm />);
 
     </script>
   </body>

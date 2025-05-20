@@ -84,41 +84,45 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function Dashboard() {
+const Dashboard = () => {
   const [user, setUser] = useState({
     name: 'John Doe',
     email: 'john.doe@example.com',
-    memberSince: 'January 15, 2022'
+    memberSince: 'January 15, 2022',
   });
+
   const [stats, setStats] = useState({
     posts: 24,
     comments: 85,
     likes: 421,
-    followers: 56
+    followers: 56,
   });
+
   const [recentActivities, setRecentActivities] = useState([
     { date: '2023-04-22', description: 'Posted a new article about web development' },
     { date: '2023-04-20', description: 'Commented on "React vs Vue" discussion' },
     { date: '2023-04-18', description: 'Updated profile information' },
-    { date: '2023-04-15', description: 'Joined a new community group' }
+    { date: '2023-04-15', description: 'Joined a new community group' },
   ]);
+
   const [tasks, setTasks] = useState([
     { id: 1, title: 'Complete project proposal', priority: 'High', status: 'In Progress' },
     { id: 2, title: 'Review team submissions', priority: 'Medium', status: 'Pending' },
     { id: 3, title: 'Update documentation', priority: 'Low', status: 'Completed' },
-    { id: 4, title: 'Schedule team meeting', priority: 'Medium', status: 'Not Started' }
+    { id: 4, title: 'Schedule team meeting', priority: 'Medium', status: 'Not Started' },
   ]);
-  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  const [currentYear] = useState(new Date().getFullYear());
 
   useEffect(() => {
-    const refreshData = () => {
-      console.log('Refreshing dashboard data...');
-      // Logic to refresh data would go here
-    };
-
     refreshData();
     console.log('Dashboard component mounted');
   }, []);
+
+  const refreshData = () => {
+    console.log('Refreshing dashboard data...');
+    // Logic to refresh data would go here
+  };
 
   return (
     <div className="dashboard">
@@ -200,7 +204,7 @@ function Dashboard() {
       </footer>
     </div>
   );
-}
+};
 
 
 // Auto‑generated mount

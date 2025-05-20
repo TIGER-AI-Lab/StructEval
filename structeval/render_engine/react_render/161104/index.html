@@ -83,93 +83,246 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\documentclass{article}
-\usepackage{tikz}
 
-\begin{document}
+function DashboardPortal() {
+  const [summary, setSummary] = useState({
+    totalUsers: 5823,
+    activeSessions: 342,
+    serverLoad: '38%'
+  });
+  const [details, setDetails] = useState({
+    cpuUsage: {
+      status: 'Normal',
+      value: 42
+    },
+    memoryUsage: {
+      status: 'Normal',
+      value: 65
+    },
+    diskSpace: {
+      status: 'Warning',
+      value: 128
+    },
+    userEngagement: {
+      newRegistrations: 156,
+      feedbacks: 27,
+      activeUsers: 3241
+    }
+  });
+  const [activityLogs, setActivityLogs] = useState([
+    {
+      type: 'User Login',
+      description: 'Administrator logged in',
+      timestamp: '10:23 AM'
+    },
+    {
+      type: 'System Update',
+      description: 'Database backup completed',
+      timestamp: '09:45 AM'
+    },
+    {
+      type: 'User Action',
+      description: 'New project created by user #4592',
+      timestamp: '09:12 AM'
+    },
+    {
+      type: 'System Alert',
+      description: 'Low disk space warning triggered',
+      timestamp: '08:30 AM'
+    }
+  ]);
+  const [lastUpdated, setLastUpdated] = useState('April 26, 2023');
 
-\begin{tikzpicture}
-% Grid
-\draw [thin, step=1cm] (0,0) grid (10,1);
+  const refreshDashboard = () => {
+    console.log('Dashboard refreshed');
+  };
 
-% Plot Sin
-\draw [thin, blue, <->] plot[smooth] coordinates {
-(0,0)
-(1,0.84147098)
-(2,0.90929743)
-(3,0.14112001)
-(4,-0.7568025)
-(5,-0.9589243)
-(6,-0.2794155)
-(7,0.9589243)
-(8,0.6569866)
-(9,0.7568025)
-(10,0.84147098)
-};
+  useEffect(() => {
+    console.log('Dashboard component mounted');
+    refreshDashboard();
+  }, []);
 
-% Plot Cos
-\draw [thin, green, <->] plot[smooth] coordinates {
-(0,1)
-(1,0.5403023)
-(2,0.4161468)
-(3,0.9899925)
-(4,0.9899925)
-(5,0.4161468)
-(6,-0.5403023)
-(7,-1)
-(8,-0.9899925)
-(9,-0.4161468)
-(10,-0.9899925)
-};
+  return (
+    <div className="app-container">
+      <header className="app-header">
+        <h1>Dashboard Portal</h1>
+        <p>Welcome to the Dashboard. Please review the summarized information below.</p>
+      </header>
 
-% Plot Tan (Limited Range)
-\draw [thin, red, <->] plot[smooth] coordinates {
-(0,0)
-(1,0.0174524)
-(2,0.1900227)
-(3,0.8485772)
-(4,1.4296471)
-(5,2.0000000)
-(6,4.0792891)
-(7,8.4371791)
-(8,16)
-};
+      <section className="summary-section">
+        <h2>Summary</h2>
+        <ul>
+          <li><strong>Total Users:</strong> {summary.totalUsers}</li>
+          <li><strong>Active Sessions:</strong> {summary.activeSessions}</li>
+          <li><strong>Server Load:</strong> {summary.serverLoad}</li>
+        </ul>
+      </section>
 
-% Annotation Peak Value
-\node at (2.5,1) [above, fill=black!] {Peak Value};
+      <section className="details-section">
+        <h2>Detailed Information</h2>
 
-% Text Summary
-\node [fill=white, text width=4cm] at (0.02,0.95) {
-Summary:
---------------------------\\
-1. sin(x) and cos(x) exhibit classic periodic\\
-behavior.\\
-2. tan(x) shows asymptotic trends near\\
-odd multiples of pi/2.\\
-3. Data generated using NumPy functions.\\
-4. Plots incorporate grids, legends,\\
-and clear annotations.
-};
+        <article className="detail-section">
+          <h3>System Health</h3>
+          <p>
+            Our system health is thoroughly monitored. Below are the current performance metrics for key resources.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Status</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CPU Usage</td>
+                <td>{details.cpuUsage.status}</td>
+                <td>{details.cpuUsage.value}%</td>
+              </tr>
+              <tr>
+                <td>Memory Usage</td>
+                <td>{details.memoryUsage.status}</td>
+                <td>{details.memoryUsage.value}%</td>
+              </tr>
+              <tr>
+                <td>Disk Space</td>
+                <td>{details.diskSpace.status}</td>
+                <td>{details.diskSpace.value} GB</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
 
-% Statistics Text
-\node [fill=white, text width=4cm] at (0.7,0.5) {
-Statistics:
-------------------\\
-Sine\\
-  Mean: 0.00\\
-  Std:  0.99\\
-Cosine\\
-  Mean: 0.00\\
-  Std:  0.71\\
-Tangent (|value| < 10)\\
-  Mean: 0.00\\
-  Std:  0.71
-};
+        <article className="detail-section">
+          <h3>User Engagement</h3>
+          <p>
+            Engagement metrics provide insights into our community's activity over the last period.
+          </p>
+          <ul>
+            <li>New Registrations: {details.userEngagement.newRegistrations}</li>
+            <li>Feedbacks Received: {details.userEngagement.feedbacks}</li>
+            <li>Active Users: {details.userEngagement.activeUsers}</li>
+          </ul>
+        </article>
 
-\end{tikzpicture}
+        <article className="detail-section">
+          <h3>Recent Activities</h3>
+          <p>
+            A log of recent system activities that highlights key user actions.
+          </p>
+          <ol>
+            {activityLogs.map((activity, index) => (
+              <li key={index}>
+                <strong>{activity.type}:</strong> {activity.description} 
+                <span className="timestamp">at {activity.timestamp}</span>
+              </li>
+            ))}
+          </ol>
+        </article>
+      </section>
+
+      <footer className="app-footer">
+        <p>&copy; 2023 Dashboard Portal. All rights reserved.</p>
+        <p>Last updated: {lastUpdated}</p>
+      </footer>
+    </div>
+  );
+}
+
+
+<style scoped>
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.app-header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.summary-section {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.summary-section ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
+.details-section {
+  margin-bottom: 20px;
+}
+
+.detail-section {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #e9ecef;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
+.timestamp {
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+.app-footer {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .summary-section ul {
+    flex-direction: column;
+  }
+  
+  .summary-section li {
+    margin-bottom: 10px;
+  }
+}
+</style>
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<DashboardPortal />);
 
     </script>
   </body>

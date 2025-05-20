@@ -83,90 +83,127 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\documentclass{article}
-\usepackage{tikz}
 
-\begin{document}
+function App() {
+  return (
+    <div>
+      <header>
+        <h1>Welcome to My Document</h1>
+        <p>This document demonstrates a realistic layout with headings, sections, and structured content.</p>
+      </header>
+      <nav>
+        <ul>
+          <li><strong>Home</strong></li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          In this section, we provide an overview of the main topics discussed in the document.
+          The content is organized into various segments to display a clear structure and hierarchy.
+        </p>
+        <ol>
+          <li>Overview of the project</li>
+          <li>Details on implementation</li>
+          <li>Future work and enhancements</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Details</h2>
+        <article>
+          <h3>Project Overview</h3>
+          <p>
+            The project is structured to provide insights into structural layout, visual hierarchy,
+            and clear content formatting. Each segment contains detailed points and nested structures.
+          </p>
+          <ul>
+            <li>Clear headings and subheadings</li>
+            <li>Logical grouping of related content</li>
+            <li>Readable lists and data representation</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Implementation</h3>
+          <p>
+            The implementation uses simple HTML structures. Attention is given to visible formatting
+            such as the following:
+          </p>
+          <dl>
+            <dt>Name:</dt>
+            <dd>Project Alpha</dd>
+            <dt>Version:</dt>
+            <dd>1.0</dd>
+            <dt>Status:</dt>
+            <dd>Under Development</dd>
+          </dl>
+          <p>
+            These labeled values help in understanding the content at a glance.
+          </p>
+        </article>
+        <article>
+          <h3>Future Considerations</h3>
+          <p>
+            Future updates will include more interactive sections and improved content layout.
+            However, the current focus remains on delivering a static, clearly structured format.
+          </p>
+          <ul>
+            <li>Enhanced accessibility features</li>
+            <li>Additional content sections</li>
+            <li>Refined layout for better mobile support</li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <h2>Data Overview</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ID</td>
+              <td>Unique identifier for each record</td>
+            </tr>
+            <tr>
+              <td>Name</td>
+              <td>The reported name value</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>The current status of the project</td>
+            </tr>
+            <tr>
+              <td>Updated Date</td>
+              <td>The last modified date</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <aside>
+        <h2>Additional Notes</h2>
+        <p>
+          This document is intended to serve as a template for visual conversion tasks. The hierarchical
+          layout and structured content are key components in ensuring clarity and readability.
+        </p>
+        <ol>
+          <li>Ensure all sections are clearly distinguished.</li>
+          <li>Use semantic tags where applicable.</li>
+          <li>Maintain a consistent style throughout the document.</li>
+        </ol>
+      </aside>
+      <footer>
+        <p>&copy; 2023 Example Documentation. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
 
-\begin{tikzpicture}
-% Grid
-\draw [thin, step=1cm] (0,0) grid (10,1);
-
-% Plot Sin
-\draw [thin, blue, <->] plot[smooth] coordinates {
-(0,0)
-(1,0.84147098)
-(2,0.90929743)
-(3,0.14112001)
-(4,-0.7568025)
-(5,-0.9589243)
-(6,-0.2794155)
-(7,0.9589243)
-(8,0.6569866)
-(9,0.7568025)
-(10,0.84147098)
-};
-
-% Plot Cos
-\draw [thin, green, <->] plot[smooth] coordinates {
-(0,1)
-(1,0.5403023)
-(2,0.4161468)
-(3,0.9899925)
-(4,0.9899925)
-(5,0.4161468)
-(6,-0.5403023)
-(7,-1)
-(8,-0.9899925)
-(9,-0.4161468)
-(10,-0.9899925)
-};
-
-% Plot Tan (Limited Range)
-\draw [thin, red, <->] plot[smooth] coordinates {
-(0,0)
-(1,0.0174524)
-(2,0.1900227)
-(3,0.8485772)
-(4,1.4296471)
-(5,2.0000000)
-(6,4.0792891)
-(7,8.4371791)
-(8,16)
-};
-
-% Annotation Peak Value
-\node at (2.5,1) [above, fill=black!] {Peak Value};
-
-% Text Summary
-\node [fill=white, text width=4cm] at (0.02,0.95) {
-Summary:
---------------------------\\
-1. sin(x) and cos(x) exhibit classic periodic\\
-behavior.\\
-2. tan(x) shows asymptotic trends near\\
-odd multiples of pi/2.\\
-3. Data generated using NumPy functions.\\
-4. Plots incorporate grids, legends,\\
-and clear annotations.
-};
-
-% Statistics Text
-\node [fill=white, text width=4cm] at (0.7,0.5) {
-Statistics:
-------------------\\
-Sine\\
-  Mean: 0.00\\
-  Std:  0.99\\
-Cosine\\
-  Mean: 0.00\\
-  Std:  0.71\\
-Tangent (|value| < 10)\\
-  Mean: 0.00\\
-  Std:  0.71
-};
-
-\end{tikzpicture}
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

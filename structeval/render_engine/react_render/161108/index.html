@@ -83,93 +83,128 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\documentclass{article}
-\usepackage{tikz}
 
-\begin{document}
+function DashboardComponent() {
+  const [user, setUser] = useState({
+    username: 'johndoe',
+    email: 'john.doe@example.com',
+    membership: 'Premium'
+  });
 
-\begin{tikzpicture}
-% Grid
-\draw [thin, step=1cm] (0,0) grid (10,1);
+  const [stats, setStats] = useState({
+    posts: 42,
+    comments: 128,
+    likes: 256
+  });
 
-% Plot Sin
-\draw [thin, blue, <->] plot[smooth] coordinates {
-(0,0)
-(1,0.84147098)
-(2,0.90929743)
-(3,0.14112001)
-(4,-0.7568025)
-(5,-0.9589243)
-(6,-0.2794155)
-(7,0.9589243)
-(8,0.6569866)
-(9,0.7568025)
-(10,0.84147098)
-};
+  const [activities, setActivities] = useState([
+    {
+      title: 'New Post Created',
+      description: 'You created a new post about web development.',
+      date: '2023-04-15',
+      status: 'Completed'
+    },
+    {
+      title: 'Comment Added',
+      description: 'You commented on a post about React vs Vue.',
+      date: '2023-04-14',
+      status: 'Completed'
+    },
+    {
+      title: 'Profile Updated',
+      description: 'You updated your profile information.',
+      date: '2023-04-10',
+      status: 'Completed'
+    }
+  ]);
 
-% Plot Cos
-\draw [thin, green, <->] plot[smooth] coordinates {
-(0,1)
-(1,0.5403023)
-(2,0.4161468)
-(3,0.9899925)
-(4,0.9899925)
-(5,0.4161468)
-(6,-0.5403023)
-(7,-1)
-(8,-0.9899925)
-(9,-0.4161468)
-(10,-0.9899925)
-};
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
 
-% Plot Tan (Limited Range)
-\draw [thin, red, <->] plot[smooth] coordinates {
-(0,0)
-(1,0.0174524)
-(2,0.1900227)
-(3,0.8485772)
-(4,1.4296471)
-(5,2.0000000)
-(6,4.0792891)
-(7,8.4371791)
-(8,16)
-};
+  const handleRefreshData = () => {
+    console.log('Refreshing dashboard data...');
+  };
 
-% Annotation Peak Value
-\node at (2.5,1) [above, fill=black!] {Peak Value};
+  return (
+    <div className="container">
+      <header className="main-header">
+        <h1>Dashboard Overview</h1>
+        <p>Welcome to your personal dashboard. Here you will find your details, statistics, and recent activities.</p>
+      </header>
 
-% Text Summary
-\node [fill=white, text width=4cm] at (0.02,0.95) {
-Summary:
---------------------------\\
-1. sin(x) and cos(x) exhibit classic periodic\\
-behavior.\\
-2. tan(x) shows asymptotic trends near\\
-odd multiples of pi/2.\\
-3. Data generated using NumPy functions.\\
-4. Plots incorporate grids, legends,\\
-and clear annotations.
-};
+      <section className="user-info">
+        <h2>User Information</h2>
+        <div className="info-item">
+          <label>Username:</label>
+          <span>{user.username}</span>
+        </div>
+        <div className="info-item">
+          <label>Email:</label>
+          <span>{user.email}</span>
+        </div>
+        <div className="info-item">
+          <label>Membership:</label>
+          <span>{user.membership}</span>
+        </div>
+      </section>
 
-% Statistics Text
-\node [fill=white, text width=4cm] at (0.7,0.5) {
-Statistics:
-------------------\\
-Sine\\
-  Mean: 0.00\\
-  Std:  0.99\\
-Cosine\\
-  Mean: 0.00\\
-  Std:  0.71\\
-Tangent (|value| < 10)\\
-  Mean: 0.00\\
-  Std:  0.71
-};
+      <section className="stats">
+        <h2>Activity Statistics</h2>
+        <ul>
+          <li><strong>Posts:</strong> {stats.posts}</li>
+          <li><strong>Comments:</strong> {stats.comments}</li>
+          <li><strong>Likes:</strong> {stats.likes}</li>
+        </ul>
+      </section>
 
-\end{tikzpicture}
+      <section className="recent-activities">
+        <h2>Recent Activities</h2>
+        {activities.map((activity, index) => (
+          <div key={index} className="activity-item">
+            <h3>Activity {index + 1}</h3>
+            <p className="activity-title">{activity.title}</p>
+            <p className="activity-desc">{activity.description}</p>
+            <div className="activity-meta">
+              <span><strong>Date:</strong> {activity.date}</span>
+              <span><strong>Status:</strong> {activity.status}</span>
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <section className="additional-info">
+        <h2>More Details</h2>
+        <div className="detail-section">
+          <h3>Settings</h3>
+          <p>Adjust your profile settings and preferences below.</p>
+          <ul>
+            <li>Notification Preferences</li>
+            <li>Privacy Settings</li>
+            <li>Language Options</li>
+          </ul>
+        </div>
+        <div className="detail-section">
+          <h3>Support</h3>
+          <p>If you encounter any issues, please review our support guidelines.</p>
+          <ul>
+            <li>FAQ</li>
+            <li>Contact Support via email</li>
+            <li>Live Chat Support</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer className="main-footer">
+        <p>&copy; {currentYear} Dashboard System</p>
+      </footer>
+
+      <button onClick={handleRefreshData}>Refresh Data</button>
+    </div>
+  );
+}
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<DashboardComponent />);
 
     </script>
   </body>

@@ -83,12 +83,80 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\begin{equation}
-\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
-\end{equation}
+
+function NoteTaker() {
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+  const [important, setImportant] = useState(false);
+  const [note, setNote] = useState(null);
+
+  const handleSaveNote = () => {
+    if (title.trim() !== '' && content.trim() !== '') {
+      setNote({
+        title,
+        content,
+      });
+      setTitle('');
+      setContent('');
+      setImportant(false);
+    } else {
+      alert("Please fill out the note title and content before saving.");
+    }
+  };
+
+  const handleClear = () => {
+    setTitle('');
+    setContent('');
+    setImportant(false);
+    setNote(null);
+  };
+
+  return (
+    <div className="note-taker-container">
+      <h1>Note Taker</h1>
+      <div className="note-form">
+        <input
+          type="text"
+          placeholder="Enter note title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          style={{ width: '300px' }}
+        />
+        <textarea
+          placeholder="Enter your note"
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+          rows="4"
+          style={{ width: '302px' }}
+        />
+        <div className="important-checkbox">
+          <input
+            type="checkbox"
+            checked={important}
+            onChange={(e) => setImportant(e.target.checked)}
+          />
+          <label>Mark as Important</label>
+        </div>
+        <button style={{ backgroundColor: 'green' }} onClick={handleSaveNote}>
+          Save Note
+        </button>
+        <button style={{ backgroundColor: 'red' }} onClick={handleClear}>
+          Clear
+        </button>
+      </div>
+      {note && (
+        <div className="note-display">
+          <h2>{note.title}</h2>
+          <p>{note.content}</p>
+        </div>
+      )}
+    </div>
+  );
+}
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<NoteTaker />);
 
     </script>
   </body>

@@ -83,12 +83,106 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-\begin{equation}
-\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
-\end{equation}
+
+const TravelBookingForm = () => {
+  const [formData, setFormData] = useState({
+    departureCity: '',
+    arrivalCity: '',
+    travelDate: '',
+    directFlight: false,
+    economyClass: false,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === 'checkbox' ? checked : value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Booking logic can be added here
+    console.log('Form submitted with data:', formData);
+  };
+
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <div style={{ width: '300px', border: '1px solid #ccc', padding: '20px', borderRadius: '5px' }}>
+        <h1 style={{ textAlign: 'center' }}>Flight Booking</h1>
+        <form onSubmit={handleSubmit}>
+          <div style={{ marginBottom: '10px' }}>
+            <label>
+              Departure City
+              <input
+                type="text"
+                name="departureCity"
+                placeholder="Enter departure city"
+                value={formData.departureCity}
+                onChange={handleChange}
+                style={{ width: '100%', padding: '8px', marginTop: '5px' }}
+              />
+            </label>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
+            <label>
+              Arrival City
+              <input
+                type="text"
+                name="arrivalCity"
+                placeholder="Enter destination city"
+                value={formData.arrivalCity}
+                onChange={handleChange}
+                style={{ width: '100%', padding: '8px', marginTop: '5px' }}
+              />
+            </label>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
+            <label>
+              Travel Date
+              <input
+                type="date"
+                name="travelDate"
+                value={formData.travelDate}
+                onChange={handleChange}
+                style={{ width: '100%', padding: '8px', marginTop: '5px' }}
+                min={new Date().toISOString().split('T')[0]}
+              />
+            </label>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
+            <label>
+              <input
+                type="checkbox"
+                name="directFlight"
+                checked={formData.directFlight}
+                onChange={handleChange}
+              />
+              Direct Flight
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="economyClass"
+                checked={formData.economyClass}
+                onChange={handleChange}
+              />
+              Economy Class
+            </label>
+          </div>
+          <button type="submit" style={{ width: '100%', padding: '10px', backgroundColor: 'green', color: 'white', border: 'none', borderRadius: '5px' }}>
+            Book Now
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<TravelBookingForm />);
 
     </script>
   </body>
