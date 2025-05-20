@@ -83,123 +83,120 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const App = () => (
+function App() {
+  return (
     <div>
-        <header>
-            <h1>Welcome to Our Page</h1>
-            <p>This is a sample page showcasing structured layout, clear visual hierarchy, and formatted content.</p>
-        </header>
-        
-        <nav>
+      <header>
+        <h1>Welcome to Our Page</h1>
+        <p>This is a sample page showcasing structured layout, clear visual hierarchy, and formatted content.</p>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#details">Details</a></li>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#data">Data</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="overview">
+          <h2>Overview Section</h2>
+          <p>The overview section provides a brief explanation of our page's structured layout. The key features include:</p>
+          <ul>
+            <li>Clear headings and subheadings</li>
+            <li>Ordered and unordered lists</li>
+            <li>Labeled data and value pairs</li>
+            <li>Data tables for metrics</li>
+          </ul>
+        </section>
+
+        <section id="details">
+          <h2>Detailed Information</h2>
+          <article>
+            <header>
+              <h3>Sub-section A: Introduction</h3>
+            </header>
+            <p>This sub-section offers an introductory insight into the various components of this document.</p>
+            <dl>
+              <dt>Author</dt>
+              <dd>John Doe</dd>
+              <dt>Version</dt>
+              <dd>1.0</dd>
+              <dt>Date</dt>
+              <dd>October 2023</dd>
+            </dl>
+          </article>
+
+          <article>
+            <header>
+              <h3>Sub-section B: Analysis</h3>
+            </header>
+            <p>Here, we present a simple analysis with a data table that represents various metrics:</p>
+            <table border="1" cellPadding="5">
+              <tr>
+                <th>Metric</th>
+                <th>Value</th>
+              </tr>
+              <tr>
+                <td>Users</td>
+                <td>350</td>
+              </tr>
+              <tr>
+                <td>Sessions</td>
+                <td>1250</td>
+              </tr>
+              <tr>
+                <td>Conversion Rate</td>
+                <td>4.7%</td>
+              </tr>
+            </table>
+          </article>
+        </section>
+
+        <section id="summary">
+          <h2>Summary</h2>
+          <p>This section recaps the main points and provides additional insights to consolidate the page information. The key takeaways are:</p>
+          <ol>
+            <li>Consistent structure with multiple levels of headings</li>
+            <li>Use of lists, tables, and labeled details</li>
+            <li>Comprehensive breakdown of content into sections</li>
+            <li>Standalone HTML demonstration suitable for visual conversion tasks</li>
+          </ol>
+        </section>
+
+        <section id="data">
+          <h2>Additional Data Section</h2>
+          <p>This section features further structured data, ensuring a complete visual representation of different content types.</p>
+
+          <div>
+            <h3>Contact Information</h3>
             <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#details">Details</a></li>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#data">Data</a></li>
+              <li><strong>Email:</strong> example@example.com</li>
+              <li><strong>Phone:</strong> 123-456-7890</li>
+              <li><strong>Address:</strong> 123 Main Street, Anytown, Country</li>
             </ul>
-        </nav>
-        
-        <main>
-            <section id="overview">
-                <h2>Overview Section</h2>
-                <p>The overview section provides a brief explanation of our page's structured layout. The key features include:</p>
-                <ul>
-                    <li>Clear headings and subheadings</li>
-                    <li>Ordered and unordered lists</li>
-                    <li>Labeled data and value pairs</li>
-                    <li>Data tables for metrics</li>
-                </ul>
-            </section>
-            
-            <section id="details">
-                <h2>Detailed Information</h2>
-                <article>
-                    <header>
-                        <h3>Sub-section A: Introduction</h3>
-                    </header>
-                    <p>This sub-section offers an introductory insight into the various components of this document.</p>
-                    <dl>
-                        <dt>Author</dt>
-                        <dd>John Doe</dd>
-                        <dt>Version</dt>
-                        <dd>1.0</dd>
-                        <dt>Date</dt>
-                        <dd>October 2023</dd>
-                    </dl>
-                </article>
-                
-                <article>
-                    <header>
-                        <h3>Sub-section B: Analysis</h3>
-                    </header>
-                    <p>Here, we present a simple analysis with a data table that represents various metrics:</p>
-                    <table border="1" cellPadding="5">
-                        <thead>
-                            <tr>
-                                <th>Metric</th>
-                                <th>Value</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Users</td>
-                                <td>350</td>
-                            </tr>
-                            <tr>
-                                <td>Sessions</td>
-                                <td>1250</td>
-                            </tr>
-                            <tr>
-                                <td>Conversion Rate</td>
-                                <td>4.7%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
-            </section>
-            
-            <section id="summary">
-                <h2>Summary</h2>
-                <p>This section recaps the main points and provides additional insights to consolidate the page information. The key takeaways are:</p>
-                <ol>
-                    <li>Consistent structure with multiple levels of headings</li>
-                    <li>Use of lists, tables, and labeled details</li>
-                    <li>Comprehensive breakdown of content into sections</li>
-                    <li>Standalone HTML demonstration suitable for visual conversion tasks</li>
-                </ol>
-            </section>
-            
-            <section id="data">
-                <h2>Additional Data Section</h2>
-                <p>This section features further structured data, ensuring a complete visual representation of different content types.</p>
-                
-                <div>
-                    <h3>Contact Information</h3>
-                    <ul>
-                        <li><strong>Email:</strong> example@example.com</li>
-                        <li><strong>Phone:</strong> 123-456-7890</li>
-                        <li><strong>Address:</strong> 123 Main Street, Anytown, Country</li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3>Frequently Asked Questions</h3>
-                    <dl>
-                        <dt>What is this page about?</dt>
-                        <dd>This page demonstrates structured HTML layout.</dd>
-                        <dt>How can I contact support?</dt>
-                        <dd>Use the email provided in the contact information section.</dd>
-                    </dl>
-                </div>
-            </section>
-        </main>
-        
-        <footer>
-            <p>&copy; 2023 Example Company. All rights reserved.</p>
-        </footer>
+          </div>
+
+          <div>
+            <h3>Frequently Asked Questions</h3>
+            <dl>
+              <dt>What is this page about?</dt>
+              <dd>This page demonstrates structured HTML layout.</dd>
+              <dt>How can I contact support?</dt>
+              <dd>Use the email provided in the contact information section.</dd>
+            </dl>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2023 Example Company. All rights reserved.</p>
+      </footer>
     </div>
-);
+  );
+}
 
 
 // Auto‑generated mount

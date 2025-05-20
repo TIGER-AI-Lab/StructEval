@@ -83,88 +83,12 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-function NewsletterSubscription() {
-  const [email, setEmail] = useState('');
-  const [agree, setAgree] = useState(false);
-  const [error, setError] = useState('');
-
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (!email || !email.includes('@')) {
-      setError('Invalid email.');
-    } else {
-      setError('');
-      // Proceed with subscription logic
-      alert('Subscribed successfully!');
-    }
-  };
-
-  const handleClear = () => {
-    setEmail('');
-    setAgree(false);
-    setError('');
-  };
-
-  return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh'
-      }}
-    >
-      <form
-        onSubmit={handleSubscribe}
-        style={{
-          border: '2px solid black',
-          padding: '20px',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'flex-start'
-        }}
-      >
-        <h1>Subscribe Now</h1>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={{ marginBottom: '10px', width: '100%' }}
-        />
-        <label style={{ marginBottom: '10px' }}>
-          <input
-            type="checkbox"
-            checked={agree}
-            onChange={(e) => setAgree(e.target.checked)}
-          />{' '}
-          Agree to terms & conditions
-        </label>
-        <div style={{ marginBottom: '10px' }}>
-          <button
-            type="submit"
-            style={{ backgroundColor: 'green', color: 'white', marginRight: '10px', padding: '5px 10px' }}
-          >
-            Subscribe
-          </button>
-          <button
-            type="button"
-            style={{ backgroundColor: 'grey', color: 'white', padding: '5px 10px' }}
-            onClick={handleClear}
-          >
-            Clear
-          </button>
-        </div>
-        {error && <p style={{ color: 'red' }}>Invalid email.</p>}
-      </form>
-    </div>
-  );
-}
-
+\begin{equation}
+\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
+\end{equation}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscription />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

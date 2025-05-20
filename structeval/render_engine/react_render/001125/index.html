@@ -83,79 +83,12 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const HotelBookingForm = () => {
-  const [checkIn, setCheckIn] = useState('');
-  const [checkOut, setCheckOut] = useState('');
-  const [guests, setGuests] = useState('');
-  const [roomType, setRoomType] = useState('');
-
-  const handleReserve = () => {
-    alert('Reservation Successful');
-  };
-
-  const handleClear = () => {
-    setCheckIn('');
-    setCheckOut('');
-    setGuests('');
-    setRoomType('');
-  };
-
-  const isFormValid = checkIn && checkOut && guests && roomType;
-
-  return (
-    <div style={{ display: 'flex', height: '100vh', justifyContent: 'center', alignItems: 'center' }}>
-      <form style={{ display: 'flex', flexDirection: 'column', width: '300px', gap: '10px' }}>
-        <h1 style={{ textAlign: 'center' }}>Hotel Booking Form</h1>
-        <input
-          type="date"
-          placeholder="Check-in Date"
-          value={checkIn}
-          onChange={(e) => setCheckIn(e.target.value)}
-        />
-        <input
-          type="date"
-          placeholder="Check-out Date"
-          value={checkOut}
-          onChange={(e) => setCheckOut(e.target.value)}
-        />
-        <input
-          type="number"
-          placeholder="Number of Guests"
-          value={guests}
-          onChange={(e) => setGuests(e.target.value)}
-        />
-        <select value={roomType} onChange={(e) => setRoomType(e.target.value)}>
-          <option value="">Select Room Type</option>
-          <option value="Single">Single</option>
-          <option value="Double">Double</option>
-          <option value="Suite">Suite</option>
-        </select>
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <button
-            type="button"
-            onClick={handleReserve}
-            style={{ backgroundColor: 'green', color: 'white', padding: '10px', border: 'none', cursor: 'pointer' }}
-            disabled={!isFormValid}
-          >
-            Reserve
-          </button>
-          <button
-            type="button"
-            onClick={handleClear}
-            style={{ backgroundColor: 'red', color: 'white', padding: '10px', border: 'none', cursor: 'pointer' }}
-          >
-            Clear
-          </button>
-        </div>
-      </form>
-    </div>
-  );
-};
-
+\begin{equation}
+\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
+\end{equation}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<HotelBookingForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

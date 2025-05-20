@@ -83,75 +83,12 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const NewsletterSubscriptionForm = () => {
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState('');
-
-  const handleSignUp = () => {
-    if (email.trim() === '') {
-      setError('Please enter a valid email address.');
-    } else {
-      setError('');
-      // Handle successful sign up
-    }
-  };
-
-  return (
-    <div style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh'
-    }}>
-      <div style={{
-        maxWidth: '400px',
-        padding: '20px',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
-      }}>
-        <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-          <h1>Subscribe Now</h1>
-        </div>
-        <input
-          type="email"
-          placeholder="Enter your email address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={{
-            width: '100%',
-            padding: '10px',
-            marginTop: '10px'
-          }}
-        />
-        <p style={{
-          fontSize: '0.9em',
-          textAlign: 'center',
-          marginTop: '5px'
-        }}>Join our monthly newsletter for updates</p>
-        <button
-          onClick={handleSignUp}
-          style={{
-            backgroundColor: 'green',
-            color: 'white',
-            padding: '10px 20px',
-            marginTop: '10px',
-            border: 'none',
-            cursor: 'pointer'
-          }}
-        >
-          Sign Up
-        </button>
-        {error && <span style={{ color: 'red', marginTop: '10px' }}>{error}</span>}
-      </div>
-    </div>
-  );
-};
-
+\begin{equation}
+\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
+\end{equation}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscriptionForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

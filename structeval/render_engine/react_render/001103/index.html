@@ -84,96 +84,59 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function LibraryBookSearch() {
-    const [searchQuery, setSearchQuery] = useState('');
-    const [searchResults, setSearchResults] = useState([]);
-    const [errorMessage, setErrorMessage] = useState('');
+const BookSearch = () => {
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState([]);
+  const [error, setError] = useState('');
 
-    const handleSearch = () => {
-        if (searchQuery.trim() === '') {
-            setErrorMessage('Please enter a book title to search.');
-            setSearchResults([]);
-        } else {
-            // Mock search results
-            const allBooks = [
-                'The Great Gatsby',
-                'To Kill a Mockingbird',
-                '1984',
-                'Pride and Prejudice',
-                'The Catcher in the Rye',
-                'The Lord of the Rings',
-                'Harry Potter and the Sorcerer's Stone',
-                'The Hobbit',
-                'Fahrenheit 451',
-                'Jane Eyre'
-            ];
+  const handleSearch = () => {
+    if (query.trim() === '') {
+      setError('Please enter a search query.');
+      setResults([]);
+      return;
+    }
 
-            const results = allBooks.filter(title => 
-                title.toLowerCase().includes(searchQuery.toLowerCase())
-            ).slice(0, 5);
+    // Replace with actual API call or data fetching logic
+    const mockResults = [
+      'Book 1', 'Book 2', 'Book 3', 'Book 4', 'Book 5',
+    ].filter(title => title.toLowerCase().includes(query.toLowerCase())).slice(0, 5);
 
-            setSearchResults(results);
-            setErrorMessage('');
-        }
-    };
+    setResults(mockResults);
+    setError('');
+  };
 
-    const handleClear = () => {
-        setSearchQuery('');
-        setSearchResults([]);
-        setErrorMessage('');
-    };
+  const handleClear = () => {
+    setQuery('');
+    setResults([]);
+    setError('');
+  };
 
-    const gridStyle = {
-        display: 'grid',
-        gridTemplateColumns: '1fr auto auto',
-        gap: '10px',
-        justifyItems: 'center',
-        alignItems: 'center',
-        marginBottom: '20px'
-    };
-
-    const searchButtonStyle = {
-        backgroundColor: 'green',
-        color: 'white',
-        border: 'none',
-        padding: '8px 16px',
-        cursor: 'pointer'
-    };
-
-    const clearButtonStyle = {
-        backgroundColor: 'gray',
-        color: 'white',
-        border: 'none',
-        padding: '8px 16px',
-        cursor: 'pointer'
-    };
-
-    return (
-        <div style={{ textAlign: 'center', padding: '20px' }}>
-            <h1>Library Book Search</h1>
-            <div style={gridStyle}>
-                <input 
-                    type="text" 
-                    placeholder="Type book title here" 
-                    value={searchQuery}
-                    onChange={e => setSearchQuery(e.target.value)}
-                />
-                <button style={searchButtonStyle} onClick={handleSearch}>Search</button>
-                <button style={clearButtonStyle} onClick={handleClear}>Clear</button>
-            </div>
-            <ul style={{ listStyleType: 'none', padding: 0 }}>
-                {searchResults.map((book, index) => (
-                    <li key={index}>{book}</li>
-                ))}
-            </ul>
-            {errorMessage && <div style={{ color: 'red' }}>{errorMessage}</div>}
-        </div>
-    );
-}
+  return (
+    <div>
+      <h1 style={{ textAlign: 'center' }}>Library Book Search</h1>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr auto auto', gap: '10px', alignItems: 'center' }}>
+        <input
+          type="text"
+          placeholder="Type book title here"
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+        />
+        <button style={{ backgroundColor: 'green', color: 'white' }} onClick={handleSearch}>Search</button>
+        <button onClick={handleClear}>Clear</button>
+      </div>
+      <ul>
+        {results.map((result, index) => (
+          <li key={index}>{result}</li>
+        ))}
+      </ul>
+      {error && <div style={{ color: 'red' }}>{error}</div>}
+    </div>
+  );
+};
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<LibraryBookSearch />);
+ReactDOM.createRoot(document.getElementById('root')).render(<BookSearch />);
 
     </script>
   </body>

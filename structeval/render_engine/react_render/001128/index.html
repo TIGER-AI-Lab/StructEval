@@ -84,132 +84,59 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const ToDoList = () => {
+function App() {
   const [tasks, setTasks] = useState([]);
-  const [input, setInput] = useState('');
-  const [showMessage, setShowMessage] = useState(false);
+  const [newTask, setNewTask] = useState('');
+  const [message, setMessage] = useState('');
 
-  const handleInputChange = (e) => {
-    setInput(e.target.value);
+  const addTask = () => {
+    if (newTask.trim() === '') {
+      return;
+    }
+
+    setTasks([...tasks, newTask]);
+    setNewTask('');
+    setMessage('Task added!');
+    setTimeout(() => {
+      setMessage('');
+    }, 1500);
   };
 
-  const handleAddTask = () => {
-    if (input.trim() === '') return;
-    setTasks([...tasks, input.trim()]);
-    setInput('');
-    setShowMessage(true);
-    setTimeout(() => setShowMessage(false), 3000);
-  };
-
-  const handleDeleteTask = (index) => {
-    const newTasks = tasks.filter((_, i) => i !== index);
-    setTasks(newTasks);
-  };
-
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-  };
-
-  const boxStyle = {
-    border: '2px solid #000',
-    padding: '20px',
-    borderRadius: '8px',
-    width: '300px',
-    boxSizing: 'border-box',
-  };
-
-  const headerStyle = {
-    textAlign: 'center',
-    marginBottom: '20px',
-  };
-
-  const inputStyle = {
-    width: '100%',
-    padding: '8px',
-    boxSizing: 'border-box',
-    marginBottom: '10px',
-  };
-
-  const buttonStyle = {
-    width: '100%',
-    padding: '8px',
-    marginBottom: '10px',
-    cursor: 'pointer',
-  };
-
-  const messageStyle = {
-    textAlign: 'center',
-    color: 'green',
-    marginBottom: '10px',
-  };
-
-  const ulStyle = {
-    listStyleType: 'none',
-    padding: 0,
-  };
-
-  const liStyle = (isLast) => ({
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: isLast ? '#d1ffd1' : '#f0f0f0',
-    padding: '8px',
-    borderRadius: '4px',
-    marginBottom: '5px',
-  });
-
-  const deleteButtonStyle = {
-    backgroundColor: '#ff4d4d',
-    border: 'none',
-    color: 'white',
-    padding: '4px 8px',
-    borderRadius: '4px',
-    cursor: 'pointer',
+  const deleteTask = (index) => {
+    const updatedTasks = tasks.filter((_, i) => i !== index);
+    setTasks(updatedTasks);
   };
 
   return (
-    <div style={containerStyle}>
-      <div style={boxStyle}>
-        <h2 style={headerStyle}>To-Do List</h2>
-        {showMessage && <p style={messageStyle}>Task added!</p>}
-        <input
-          type="text"
-          placeholder="New Task"
-          value={input}
-          onChange={handleInputChange}
-          style={inputStyle}
-        />
-        <button
-          onClick={handleAddTask}
-          disabled={input.trim() === ''}
-          style={buttonStyle}
-        >
-          Add Task
-        </button>
-        <ul style={ulStyle}>
+    <div className="container">
+      <div className="todo-container">
+        <h2>To-Do List</h2>
+        <div className="input-area">
+          <input
+            type="text"
+            placeholder="New Task"
+            value={newTask}
+            onChange={(e) => setNewTask(e.target.value)}
+          />
+          <button onClick={addTask}>Add Task</button>
+        </div>
+        <ul>
           {tasks.map((task, index) => (
-            <li key={index} style={liStyle(index === tasks.length - 1)}>
+            <li key={index} className={index === tasks.length - 1 ? 'recent' : ''}>
               {task}
-              <button
-                onClick={() => handleDeleteTask(index)}
-                style={deleteButtonStyle}
-              >
-                Delete
-              </button>
+              <button onClick={() => deleteTask(index)}>Delete</button>
             </li>
           ))}
         </ul>
+        <p>{message}</p>
       </div>
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<ToDoList />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

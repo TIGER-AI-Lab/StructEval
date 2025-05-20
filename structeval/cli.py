@@ -28,12 +28,12 @@ class StructEvalCLI:
 
         queries = [
             f"""{item['query']}
-            \n\nIMPORTANT: Only output the required renderable or executable code. You must start the code with <code> and end the code with </code> (they are code block indicators, not HTML tags). No other text output (explanation, comments, etc.) are allowed.
+            \n\nIMPORTANT: Only output the required output format. You must start the format/code with <|BEGIN_CODE|> and end the format/code with  <|END_CODE|>. No other text output (explanation, comments, etc.) are allowed.  Do not use markdown code fences.
             {"\n\n/no_think" if llm_model_name == "Qwen/Qwen3-4B" else ""}
             """
             for item in data
         ]
-
+ 
         if llm_model_name == "Qwen/Qwen3-4B":
             print("Qwen3-4B I'm here")
 
@@ -186,8 +186,9 @@ def main():
 
         return wrapper
 
-    StructEvalCLI.run_pipeline = async_to_sync(StructEvalCLI.run_pipeline)
     StructEvalCLI.render = async_to_sync(StructEvalCLI.render)
+    StructEvalCLI.evaluate = async_to_sync(StructEvalCLI.evaluate)
+    StructEvalCLI.inference = async_to_sync(StructEvalCLI.inference)
 
     fire.Fire(StructEvalCLI)
 

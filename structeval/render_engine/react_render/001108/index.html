@@ -85,71 +85,72 @@
 
 
 const NewsletterSubscription = () => {
-    const [email, setEmail] = useState('');
-    const [agree, setAgree] = useState(false);
-    const [error, setError] = useState('');
-    const [success, setSuccess] = useState(false);
+  const [email, setEmail] = useState('');
+  const [agreed, setAgreed] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [subscriptionSuccessful, setSubscriptionSuccessful] = useState(false);
 
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-        setError('');
-        setSuccess(false);
-    };
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+    setErrorMessage('');
+  };
 
-    const handleAgreeChange = (e) => {
-        setAgree(e.target.checked);
-    };
+  const handleCheckboxChange = (event) => {
+    setAgreed(event.target.checked);
+  };
 
-    const validateEmail = (email) => {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(String(email).toLowerCase());
-    };
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (email === '' || !validateEmail(email)) {
-            setError('Please enter a valid email address.');
-            setSuccess(false);
-        } else if (!agree) {
-            setError('You must agree to the terms and conditions.');
-            setSuccess(false);
-        } else {
-            setError('');
-            setSuccess(true);
-        }
-    };
+    if (!email) {
+      setErrorMessage('Email is required');
+      return;
+    }
 
-    return (
-        <form onSubmit={handleSubmit} style={{ border: '1px solid #ccc', padding: '20px', maxWidth: '400px', margin: '0 auto' }}>
-            <h3 style={{ textAlign: 'center' }}>Subscribe to Our Newsletter</h3>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', alignItems: 'center' }}>
-                <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <input
-                        type="email"
-                        placeholder="Enter your email address"
-                        value={email}
-                        onChange={handleEmailChange}
-                        style={{ padding: '8px', width: '100%' }}
-                    />
-                    <span>{email.length} characters</span>
-                </div>
-                <label style={{ display: 'flex', alignItems: 'center' }}>
-                    <input
-                        type="checkbox"
-                        checked={agree}
-                        onChange={handleAgreeChange}
-                        style={{ marginRight: '5px' }}
-                    />
-                    I agree to the terms and conditions
-                </label>
-            </div>
-            <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '10px 20px', border: 'none', cursor: 'pointer', marginTop: '10px' }}>
-                Subscribe
-            </button>
-            {error && <div style={{ color: 'red', marginTop: '10px' }}>{error}</div>}
-            {success && <div style={{ color: 'green', marginTop: '10px' }}>Subscription successful</div>}
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setErrorMessage('Invalid email format');
+      return;
+    }
+
+    if (!agreed) {
+      setErrorMessage('Please agree to the terms and conditions');
+      return;
+    }
+
+    setSubscriptionSuccessful(true);
+  };
+
+  return (
+    <div style={{ border: '1px solid #ccc', padding: '20px' }}>
+      <h3 style={{ textAlign: 'center' }}>Subscribe to Our Newsletter</h3>
+      {subscriptionSuccessful ? (
+        <div>Subscription successful</div>
+      ) : (
+        <form onSubmit={handleSubmit} style={{ marginTop: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '10px' }}>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              value={email}
+              onChange={handleEmailChange}
+            />
+            <span>{email.length}</span>
+          </div>
+          {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', marginTop: '10px' }}>
+            <label>
+              <input type="checkbox" checked={agreed} onChange={handleCheckboxChange} />
+              I agree to the terms and conditions
+            </label>
+          </div>
+          <button type="submit" style={{ backgroundColor: 'green', color: 'white', marginTop: '10px' }}>
+            Subscribe
+          </button>
         </form>
-    );
+      )}
+    </div>
+  );
 };
 
 

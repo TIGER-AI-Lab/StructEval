@@ -83,127 +83,90 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+\documentclass{article}
+\usepackage{tikz}
 
-function App() {
-    return (
-        <>
-            <header>
-                <h1>Welcome to Our Website</h1>
-                <p>This document serves as a demonstration of a deeply structured HTML layout.</p>
-            </header>
-            
-            <nav>
-                <ul>
-                    <li><a href="#introduction">Introduction</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#details">Details</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        
-            <main>
-                <section id="introduction">
-                    <h2>Introduction</h2>
-                    <p>This section introduces the purpose of the document. It covers the layout, structure, and the visible content.</p>
-                    <p>The document is organized into several key sections, each clarified with headings, subheadings, and informative text.</p>
-                </section>
-                
-                <section id="features">
-                    <h2>Features Overview</h2>
-                    <article>
-                        <h3>Easy Navigation</h3>
-                        <p>No external links or images clutter the design. Navigation is straightforward.</p>
-                    </article>
-                    <article>
-                        <h3>Clear Hierarchy</h3>
-                        <p>Various levels of headings and subheadings illustrate the clear flow of information.</p>
-                    </article>
-                    <article>
-                        <h3>Semantic Structure</h3>
-                        <p>The document uses semantic HTML elements such as <header>, <nav>, <main>, and <footer>.</p>
-                    </article>
-                </section>
-                
-                <section id="details">
-                    <h2>Detailed Information</h2>
-                    <div>
-                        <h3>Data Summary</h3>
-                        <p>The table below provides a label-value display for multiple entries:</p>
-                        <dl>
-                            <dt>Name:</dt>
-                            <dd>John Doe</dd>
-                            <dt>Age:</dt>
-                            <dd>29</dd>
-                            <dt>Occupation:</dt>
-                            <dd>Web Developer</dd>
-                            <dt>Location:</dt>
-                            <dd>New York, USA</dd>
-                        </dl>
-                    </div>
-                    
-                    <div>
-                        <h3>List of Items</h3>
-                        <p>A curated list that displays a prioritized plan:</p>
-                        <ol>
-                            <li>Setup Environment</li>
-                            <li>Design Layout</li>
-                            <li>Develop Features</li>
-                            <li>Conduct Testing</li>
-                            <li>Launch Product</li>
-                        </ol>
-                    </div>
-                    
-                    <div>
-                        <h3>Steps to Follow</h3>
-                        <p>Follow the steps below for a successful process:</p>
-                        <ul>
-                            <li>Review the specifications</li>
-                            <li>Gather necessary materials</li>
-                            <li>Execute the plan carefully</li>
-                            <li>Verify results for accuracy</li>
-                        </ul>
-                    </div>
-                </section>
-                
-                <section id="resources">
-                    <h2>Additional Resources</h2>
-                    <article>
-                        <h3>Documentation</h3>
-                        <p>This section contains further details and supporting materials that are useful for a deep dive into the contents.</p>
-                        <p>Although no external scripts or stylesheets are used, the text is formatted to showcase the potential of structural HTML.</p>
-                    </article>
-                    <article>
-                        <h3>FAQs</h3>
-                        <p>Common Questions Answered:</p>
-                        <ul>
-                            <li><strong>Q:</strong> What is the purpose of this document?</li>
-                            <li><strong>A:</strong> To demonstrate a well-structured static HTML page.</li>
-                            <li><strong>Q:</strong> Does it have interactive elements?</li>
-                            <li><strong>A:</strong> No, it is designed to be static and readable.</li>
-                        </ul>
-                    </article>
-                </section>
-                
-                <section id="contact">
-                    <h2>Contact Information</h2>
-                    <p>If you have further questions, please refer to the contact details below:</p>
-                    <address>
-                        <strong>Email:</strong> info@example.com<br />
-                        <strong>Phone:</strong> +1 (555) 123-4567<br />
-                        <strong>Location:</strong> 789 Main Street, Anytown, USA
-                    </address>
-                </section>
-            </main>
-            
-            <footer>
-                <p>&copy; 2023 Structured HTML Demo. All rights reserved.</p>
-                <p>This document is intended for educational and demonstrative purposes.</p>
-            </footer>
-        </>
-    );
-}
+\begin{document}
 
+\begin{tikzpicture}
+% Grid
+\draw [thin, step=1cm] (0,0) grid (10,1);
+
+% Plot Sin
+\draw [thin, blue, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.84147098)
+(2,0.90929743)
+(3,0.14112001)
+(4,-0.7568025)
+(5,-0.9589243)
+(6,-0.2794155)
+(7,0.9589243)
+(8,0.6569866)
+(9,0.7568025)
+(10,0.84147098)
+};
+
+% Plot Cos
+\draw [thin, green, <->] plot[smooth] coordinates {
+(0,1)
+(1,0.5403023)
+(2,0.4161468)
+(3,0.9899925)
+(4,0.9899925)
+(5,0.4161468)
+(6,-0.5403023)
+(7,-1)
+(8,-0.9899925)
+(9,-0.4161468)
+(10,-0.9899925)
+};
+
+% Plot Tan (Limited Range)
+\draw [thin, red, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.0174524)
+(2,0.1900227)
+(3,0.8485772)
+(4,1.4296471)
+(5,2.0000000)
+(6,4.0792891)
+(7,8.4371791)
+(8,16)
+};
+
+% Annotation Peak Value
+\node at (2.5,1) [above, fill=black!] {Peak Value};
+
+% Text Summary
+\node [fill=white, text width=4cm] at (0.02,0.95) {
+Summary:
+--------------------------\\
+1. sin(x) and cos(x) exhibit classic periodic\\
+behavior.\\
+2. tan(x) shows asymptotic trends near\\
+odd multiples of pi/2.\\
+3. Data generated using NumPy functions.\\
+4. Plots incorporate grids, legends,\\
+and clear annotations.
+};
+
+% Statistics Text
+\node [fill=white, text width=4cm] at (0.7,0.5) {
+Statistics:
+------------------\\
+Sine\\
+  Mean: 0.00\\
+  Std:  0.99\\
+Cosine\\
+  Mean: 0.00\\
+  Std:  0.71\\
+Tangent (|value| < 10)\\
+  Mean: 0.00\\
+  Std:  0.71
+};
+
+\end{tikzpicture}
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

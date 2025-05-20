@@ -83,123 +83,12 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const EventRegistration = () => {
-  const [fullName, setFullName] = useState('');
-  const [email, setEmail] = useState('');
-  const [eventType, setEventType] = useState('');
-  const [eventDate, setEventDate] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const isFormValid = fullName && email && eventType && eventDate;
-
-  const handleRegister = (e) => {
-    e.preventDefault();
-    setIsSubmitted(true);
-  };
-
-  const handleClear = () => {
-    setFullName('');
-    setEmail('');
-    setEventType('');
-    setEventDate('');
-    setIsSubmitted(false);
-  };
-
-  const formStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    gap: '15px',
-    maxWidth: '400px',
-    margin: '0 auto',
-  };
-
-  const buttonContainerStyle = {
-    display: 'flex',
-    gap: '10px',
-  };
-
-  const registerButtonStyle = {
-    backgroundColor: 'green',
-    color: 'white',
-    padding: '10px 20px',
-    border: 'none',
-    cursor: isFormValid ? 'pointer' : 'not-allowed',
-    opacity: isFormValid ? 1 : 0.6,
-  };
-
-  const clearButtonStyle = {
-    padding: '10px 20px',
-    border: '1px solid #ccc',
-    backgroundColor: 'white',
-    cursor: 'pointer',
-  };
-
-  return (
-    <form style={formStyle} onSubmit={handleRegister}>
-      <h1 style={{ textAlign: 'center' }}>Event Registration</h1>
-      <input
-        type="text"
-        placeholder="Full Name"
-        value={fullName}
-        onChange={(e) => setFullName(e.target.value)}
-        required
-        style={{ width: '100%', padding: '8px' }}
-      />
-      <input
-        type="email"
-        placeholder="Email Address"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-        style={{ width: '100%', padding: '8px' }}
-      />
-      <select
-        value={eventType}
-        onChange={(e) => setEventType(e.target.value)}
-        required
-        style={{ width: '100%', padding: '8px' }}
-      >
-        <option value="">Select Event Type</option>
-        <option value="Workshop">Workshop</option>
-        <option value="Seminar">Seminar</option>
-        <option value="Webinar">Webinar</option>
-      </select>
-      <label>
-        Event Date:
-        <input
-          type="date"
-          value={eventDate}
-          onChange={(e) => setEventDate(e.target.value)}
-          required
-          style={{ width: '100%', padding: '8px', marginTop: '5px' }}
-        />
-      </label>
-      <div style={buttonContainerStyle}>
-        <button
-          type="submit"
-          disabled={!isFormValid}
-          style={registerButtonStyle}
-        >
-          Register
-        </button>
-        <button
-          type="button"
-          onClick={handleClear}
-          style={clearButtonStyle}
-        >
-          Clear Form
-        </button>
-      </div>
-      {isSubmitted && <p>Registration successful!</p>}
-    </form>
-  );
-};
-
+\begin{equation}
+\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
+\end{equation}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<EventRegistration />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

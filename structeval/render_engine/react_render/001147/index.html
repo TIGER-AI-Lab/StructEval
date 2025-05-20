@@ -83,134 +83,32 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const LoginForm = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [loginSuccess, setLoginSuccess] = useState(false);
-  const [errors, setErrors] = useState({});
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-    let validationErrors = {};
-    if (!username) validationErrors.username = 'Username is required';
-    if (!password) validationErrors.password = 'Password is required';
-    setErrors(validationErrors);
-    if (Object.keys(validationErrors).length === 0) {
-      setLoginSuccess(true);
-    } else {
-      setLoginSuccess(false);
-    }
-  };
-
-  const handleClear = () => {
-    setUsername('');
-    setPassword('');
-    setErrors({});
-    setLoginSuccess(false);
-  };
-
-  const handleForgotPassword = () => {
-    alert('Forgot Password functionality is not implemented.');
-  };
-
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    minHeight: '100vh',
-    flexDirection: 'column',
-    backgroundColor: '#f2f2f2',
-  };
-
-  const formStyle = {
-    border: '1px solid #ccc',
-    boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-    padding: '20px',
-    backgroundColor: '#fff',
-    borderRadius: '5px',
-  };
-
-  const inputContainerStyle = {
-    margin: '10px 0',
-  };
-
-  const buttonContainerStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    marginTop: '20px',
-  };
-
-  const buttonStyle = {
-    padding: '10px 20px',
-    border: 'none',
-    borderRadius: '3px',
-    cursor: 'pointer',
-  };
-
-  const loginButtonStyle = {
-    ...buttonStyle,
-    backgroundColor: 'green',
-    color: '#fff',
-  };
-
-  const clearButtonStyle = {
-    ...buttonStyle,
-    backgroundColor: '#f0f0f0',
-  };
-
-  const forgotButtonStyle = {
-    ...buttonStyle,
-    backgroundColor: '#f0f0f0',
-  };
-
-  const footerStyle = {
-    position: 'absolute',
-    bottom: '10px',
-    textAlign: 'center',
-    width: '100%',
-    color: '#777',
-  };
-
-  return (
-    <div style={containerStyle}>
-      <form style={formStyle} onSubmit={handleLogin}>
-        <h2 style={{ textAlign: 'center' }}>Bank Account Login</h2>
-        <div style={inputContainerStyle}>
-          <input
-            type="text"
-            placeholder="Enter Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            style={{ width: '100%', padding: '8px' }}
-          />
-          {errors.username && <span style={{ color: 'red', fontSize: '12px' }}>{errors.username}</span>}
+<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', padding: '20px', border: '1px solid #ddd', boxShadow: '0 2px 4px rgba(0,0,0,0.1)', margin: '0 auto' }}>
+    <h2>Bank Account Login</h2>
+    <form>
+        <div style={{ margin: '10px' }}>
+            <label htmlFor="username">UserID:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" />
         </div>
-        <div style={inputContainerStyle}>
-          <input
-            type="password"
-            placeholder="Enter Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            style={{ width: '100%', padding: '8px' }}
-          />
-          {errors.password && <span style={{ color: 'red', fontSize: '12px' }}>{errors.password}</span>}
+        <div style={{ margin: '10px' }}>
+            <label htmlFor="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" />
         </div>
-        <div style={buttonContainerStyle}>
-          <button type="submit" style={loginButtonStyle}>Login</button>
-          <button type="button" style={clearButtonStyle} onClick={handleClear}>Clear</button>
-          <button type="button" style={forgotButtonStyle} onClick={handleForgotPassword}>Forgot Password</button>
+        <div style={{ margin: '10px' }}>
+            <button style={{ backgroundColor: 'green' }} type="button">Login</button>
+            <button type="button">Clear</button>
+            <button type="button">Forgot Password</button>
         </div>
-        {loginSuccess && <p style={{ textAlign: 'center', color: 'green', marginTop: '20px' }}>Welcome back!</p>}
-      </form>
-      <footer style={footerStyle}>Powered by MobileBank</footer>
-    </div>
-  );
-};
-
+    </form>
+    {/* Assuming state change to this condition */}
+    <p style={{ color: 'green' }}>Welcome back!</p>
+</div>
+<footer style={{ textAlign: 'center', padding: '10px', marginTop: '20px' }}>
+    Powered by MobileBank
+</footer>
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<LoginForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

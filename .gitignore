@@ -172,3 +172,14 @@ cython_debug/
 
 /test.py
 experiment_results
+run_all_evaluations.sh
+run_all_renders.sh
+run_inference1.sh
+run_inference2.sh
+run_inference3.sh
+run_inference1copy.sh
+run_inference2copy.sh
+run_inference3copy.sh
+summary_outputs
+render_logs
+debug_images

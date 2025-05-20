@@ -84,134 +84,102 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const ReservationForm = () => {
-  const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
-  const [date, setDate] = useState('');
-  const [time, setTime] = useState('');
-  const [partySize, setPartySize] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+function App() {
+  const [isConfirmed, setIsConfirmed] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    date: '',
+    time: '',
+    guests: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name && phone && date && time && partySize) {
-      setSubmitted(true);
+    if (Object.values(formData).every(Boolean)) {
+      setIsConfirmed(true);
     } else {
       alert('Please fill in all fields.');
     }
   };
 
-  const handleCancel = () => {
-    setName('');
-    setPhone('');
-    setDate('');
-    setTime('');
-    setPartySize('');
-    setSubmitted(false);
-  };
-
-  const containerStyle = {
-    display: 'flex',
-    height: '100vh',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f2f2f2',
-  };
-
-  const formStyle = {
-    backgroundColor: '#fff',
-    padding: '20px',
-    borderRadius: '8px',
-    boxShadow: '0 0 10px rgba(0,0,0,0.1)',
-    width: '300px',
-    textAlign: 'center',
-  };
-
-  const inputStyle = {
-    width: '100%',
-    padding: '10px',
-    margin: '10px 0',
-    boxSizing: 'border-box',
-  };
-
-  const buttonContainerStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    marginTop: '10px',
-  };
-
-  const bookNowStyle = {
-    backgroundColor: 'green',
-    color: 'white',
-    border: 'none',
-    padding: '10px 20px',
-    cursor: 'pointer',
-  };
-
-  const cancelStyle = {
-    backgroundColor: '#ccc',
-    border: 'none',
-    padding: '10px 20px',
-    cursor: 'pointer',
-  };
-
   return (
-    <div style={containerStyle}>
-      <form style={formStyle} onSubmit={handleSubmit}>
-        <h1>Reserve Your Table</h1>
+    <div className="container">
+      <h1>Reserve Your Table</h1>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
+          name="name"
           placeholder="Enter your full name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          style={inputStyle}
+          value={formData.name}
+          onChange={handleChange}
+          required
         />
         <input
           type="tel"
+          name="phone"
           placeholder="Enter your phone number"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          style={inputStyle}
+          value={formData.phone}
+          onChange={handleChange}
+          required
         />
-        <div>
-          <label>Reservation Date:</label>
-          <input
-            type="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-            style={inputStyle}
-          />
-        </div>
-        <div>
-          <label>Reservation Time:</label>
-          <input
-            type="time"
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-            style={inputStyle}
-          />
-        </div>
+        <label htmlFor="date">Reservation Date:</label>
+        <input
+          type="date"
+          name="date"
+          id="date"
+          value={formData.date}
+          onChange={handleChange}
+          required
+        />
+        <label htmlFor="time">Reservation Time:</label>
+        <input
+          type="time"
+          name="time"
+          id="time"
+          value={formData.time}
+          onChange={handleChange}
+          required
+        />
         <select
-          value={partySize}
-          onChange={(e) => setPartySize(e.target.value)}
-          style={inputStyle}
+          name="guests"
+          value={formData.guests}
+          onChange={handleChange}
+          required
         >
           <option value="">Select number of guests</option>
           {[...Array(10)].map((_, i) => (
-            <option key={i + 1} value={i +1}>{i +1}</option>
+            <option key={i + 1} value={i + 1}>
+              {i + 1}
+            </option>
           ))}
         </select>
-        <div style={buttonContainerStyle}>
-          <button type="submit" style={bookNowStyle}>Book Now</button>
-          <button type="button" style={cancelStyle} onClick={handleCancel}>Cancel</button>
+        <div className="buttons">
+          <button type="submit" style={{ backgroundColor: 'green' }}>
+            Book Now
+          </button>
+          <button type="button" onClick={() => setFormData({
+            name: '',
+            phone: '',
+            date: '',
+            time: '',
+            guests: '',
+          })}>Cancel</button>
         </div>
-        {submitted && <p>Reservation confirmed!</p>}
       </form>
+      {isConfirmed && <p>Reservation confirmed!</p>}
     </div>
   );
-};
+}
 
-ReactDOM.createRoot(document.getElementById('root')).render(<ReservationForm />);
+
+// Auto‑generated mount
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
     </script>
   </body>
 </html>

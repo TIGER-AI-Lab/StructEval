@@ -84,121 +84,9 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function App() {
+const App = () => {
   return (
-    <>
-      <style>
-        {`
-          body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-          }
-
-          header {
-            background-color: #f0f0f0;
-            padding: 20px;
-            text-align: center;
-          }
-
-          nav {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-          }
-
-          nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-          }
-
-          nav li {
-            margin: 0 15px;
-          }
-
-          nav a {
-            color: white;
-            text-decoration: none;
-          }
-
-          section {
-            padding: 20px;
-            margin: 20px 0;
-          }
-
-          section h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-          }
-
-          article {
-            margin-bottom: 20px;
-          }
-
-          article h3 {
-            margin-top: 0;
-          }
-
-          #services ul {
-            list-style: none;
-            padding: 0;
-          }
-
-          #services li {
-            background-color: #f9f9f9;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-          }
-
-          #portfolio div {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-          }
-
-          #portfolio article {
-            width: 45%;
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-          }
-
-          #contact form {
-            display: flex;
-            flex-direction: column;
-            max-width: 400px;
-            margin: 0 auto;
-          }
-
-          #contact label {
-            margin-top: 10px;
-          }
-
-          #contact input,
-          #contact textarea {
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-          }
-
-          #contact button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-top: 10px;
-          }
-        `}
-      </style>
+    <div>
       <header>
         <h1>My Website</h1>
         <p>Welcome to our informational site. Please browse to learn more about us.</p>
@@ -305,9 +193,9 @@ function App() {
           </div>
         </form>
       </section>
-    </>
+    </div>
   );
-}
+};
 
 
 // Auto‑generated mount

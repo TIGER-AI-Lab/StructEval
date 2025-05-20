@@ -84,43 +84,42 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const Documentation = () => (
-  <div>
-    <h1>My Project Documentation</h1>
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>My Project Documentation</h1>
 
-    <h2>Table of Contents</h2>
-    <ol>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#project-structure">Project Structure</a></li>
-      <li><a href="#installation">Installation</a></li>
-      <li><a href="#usage">Usage</a></li>
-      <li><a href="#contributing">Contributing</a></li>
-      <li><a href="#license">License</a></li>
-      <li><a href="#changelog">Changelog</a></li>
-      <li><a href="#appendix">Appendix</a></li>
-    </ol>
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#project-structure">Project Structure</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#contributing">Contributing</a></li>
+        <li><a href="#license">License</a></li>
+        <li><a href="#changelog">Changelog</a></li>
+        <li><a href="#appendix">Appendix</a></li>
+      </ol>
 
-    <hr />
+      <hr />
 
-    <h2 id="introduction">Introduction</h2>
-    <p>Welcome to the documentation for <strong>My Project</strong>. This file outlines the structure, installation process, and usage instructions for our project. It is designed to be readable both as code and as a rendered Markdown file.</p>
+      <h2 id="introduction">Introduction</h2>
+      <p>Welcome to the documentation for <strong>My Project</strong>. This file outlines the structure, installation process, and usage instructions for our project. It is designed to be readable both as code and as a rendered Markdown file.</p>
 
-    <p><strong>Key Points:</strong></p>
-    <ul>
-      <li>Organized and modular project layout.</li>
-      <li>Clearly defined sections for ease of navigation.</li>
-      <li>Step-by-step instructions for installation and usage.</li>
-    </ul>
+      <strong>Key Points:</strong>
+      <ul>
+        <li>Organized and modular project layout.</li>
+        <li>Clearly defined sections for ease of navigation.</li>
+        <li>Step-by-step instructions for installation and usage.</li>
+      </ul>
 
-    <hr />
+      <hr />
 
-    <h2 id="project-structure">Project Structure</h2>
+      <h2 id="project-structure">Project Structure</h2>
 
-    <h3>Directory Layout</h3>
-    <p>The project is organized into several directories and files. Below is the hierarchical structure:</p>
-    <pre>
-<code className="language-bash">
-my_project/
+      <h3>Directory Layout</h3>
+      <pre>
+        {`my_project/
 âââ README.md           # Main documentation file
 âââ LICENSE             # License file
 âââ CONTRIBUTING.md     # Contribution guidelines
@@ -138,9 +137,43 @@ my_project/
 âââ tests/
     âââ test_module1.md    # Module 1 tests
     âââ test_module2.md    # Module 2 tests
+`}
+      </pre>
+
+      <h3>Detailed Components</h3>
+      <p>Below is a list of the primary components and their responsibilities:</p>
+      <ul>
+        <li><strong>Module 1:</strong>
+          <ul>
+            <li><em>Component A</em>: Processes raw data and performs initial normalization.</li>
+            <li><em>Component B</em>: Provides interfaces for data manipulation and communication.</li>
+          </ul>
+        </li>
+        <li><strong>Module 2:</strong>
+          <ul>
+            <li><em>Main</em>: Contains the core program logic and initialization routines.</li>
+            <li><em>Utils</em>: Offers support functions such as logging, error handling, and configurations.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Build Process</h3>
+      <p>To build the project, execute the build command from the root directory. The following code block demonstrates the command:</p>
+      <pre>
+        {`bash
+$ make build
+`}
+      </pre>
+      <p>After a successful build, the executable files and resources will be available in the <code>bin/</code> directory.</p>
+
+      {/* ... rest of the content similarly ... */}
+    </div>
+  );
+};
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<Documentation />);
+ReactDOM.createRoot(document.getElementById('root')).render(<MyComponent />);
 
     </script>
   </body>

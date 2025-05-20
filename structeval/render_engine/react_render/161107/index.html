@@ -83,7 +83,6 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-// DashboardOverview.jsx
 
 const DashboardOverview = () => {
   const user = {
@@ -91,36 +90,29 @@ const DashboardOverview = () => {
     email: "john.doe@example.com",
     role: "Administrator"
   };
-
   const stats = {
     posts: 34,
     comments: 120,
     likes: 230
   };
-
   const activities = [
     { timestamp: "2023-10-01 10:00", description: "Logged in" },
     { timestamp: "2023-10-01 10:05", description: "Created a post" },
     { timestamp: "2023-10-01 10:15", description: "Commented on a post" }
   ];
-
   const achievements = [
     "Completed Profile Setup",
     "First Post Published",
     "Reached 100 Likes"
   ];
-
   const currentYear = new Date().getFullYear();
 
   return (
     <div className="container">
-      {/* Header Section */}
       <header className="header">
         <h1>Dashboard Overview</h1>
-        <p>Welcome to the overview page of our sample React component.</p>
+        <p>Welcome to the overview page of our sample Vue component.</p>
       </header>
-      
-      {/* User Information Section */}
       <section className="section user-info">
         <h2>User Information</h2>
         <div className="info-list">
@@ -138,8 +130,6 @@ const DashboardOverview = () => {
           </div>
         </div>
       </section>
-      
-      {/* Statistics Section */}
       <section className="section stats">
         <h2>Statistics</h2>
         <ul>
@@ -148,22 +138,19 @@ const DashboardOverview = () => {
           <li>Likes: {stats.likes}</li>
         </ul>
       </section>
-      
-      {/* Additional Information Section */}
       <section className="section additional-info">
         <h2>Additional Information</h2>
-        
         <div className="sub-section recent-activity">
           <h3>Recent Activity</h3>
           <ul>
             {activities.map((activity, index) => (
               <li key={index}>
-                <span className="timestamp">{activity.timestamp}</span> - <strong>{activity.description}</strong>
+                <span className="timestamp">{activity.timestamp}</span> - 
+                <strong>{activity.description}</strong>
               </li>
             ))}
           </ul>
         </div>
-        
         <div className="sub-section achievements">
           <h3>Achievements</h3>
           <ol>
@@ -173,77 +160,14 @@ const DashboardOverview = () => {
           </ol>
         </div>
       </section>
-      
-      {/* Footer Section */}
       <footer className="footer">
         <hr />
-        <p>&copy; {currentYear} Sample React Application</p>
+        <p>&copy; {currentYear} Sample Vue Application</p>
       </footer>
     </div>
   );
 };
 
-
-// DashboardOverview.css
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.section {
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.info-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.info-item {
-  margin-bottom: 8px;
-}
-
-.info-item label {
-  font-weight: bold;
-  margin-right: 5px;
-}
-
-.sub-section {
-  margin-top: 15px;
-}
-
-.sub-section h3 {
-  margin-bottom: 10px;
-}
-
-.footer {
-  text-align: center;
-  font-size: 0.9em;
-  color: #777;
-}
-
-.timestamp {
-  color: #999;
-  font-size: 0.85em;
-}
-
-ul, ol {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 5px;
-}
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<DashboardOverview />);

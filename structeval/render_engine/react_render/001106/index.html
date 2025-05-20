@@ -83,111 +83,12 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const CommentForm = () => {
-  const [name, setName] = useState('');
-  const [comment, setComment] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-    setSubmitted(false);
-  };
-
-  const handleCommentChange = (e) => {
-    setComment(e.target.value);
-    setSubmitted(false);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (name.trim() && comment.trim()) {
-      setSubmitted(true);
-    }
-  };
-
-  const handleClear = () => {
-    setName('');
-    setComment('');
-    setSubmitted(false);
-  };
-
-  const isFormValid = name.trim() !== '' && comment.trim() !== '';
-
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    padding: '20px',
-  };
-
-  const formStyle = {
-    display: 'grid',
-    gridTemplateRows: 'auto auto auto',
-    gap: '15px',
-    maxWidth: '500px',
-    width: '100%',
-  };
-
-  const headerStyle = {
-    textAlign: 'center',
-  };
-
-  const buttonContainerStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-  };
-
-  const postButtonStyle = {
-    backgroundColor: 'darkgreen',
-    color: 'white',
-    border: 'none',
-    padding: '10px 20px',
-    cursor: isFormValid ? 'pointer' : 'not-allowed',
-    opacity: isFormValid ? 1 : 0.6,
-  };
-
-  const clearButtonStyle = {
-    backgroundColor: '#f0f0f0',
-    border: 'none',
-    padding: '10px 20px',
-    cursor: 'pointer',
-  };
-
-  return (
-    <div style={containerStyle}>
-      <form style={formStyle} onSubmit={handleSubmit}>
-        <h1 style={headerStyle}>Leave a Comment</h1>
-        <input
-          type="text"
-          placeholder="Your Name"
-          value={name}
-          onChange={handleNameChange}
-          required
-        />
-        <textarea
-          placeholder="Enter your comment"
-          rows="4"
-          value={comment}
-          onChange={handleCommentChange}
-          required
-        />
-        <div style={buttonContainerStyle}>
-          <button type="submit" style={postButtonStyle} disabled={!isFormValid}>
-            Post Comment
-          </button>
-          <button type="button" style={clearButtonStyle} onClick={handleClear}>
-            Clear Form
-          </button>
-        </div>
-        {submitted && <p>Comment submitted!</p>}
-      </form>
-    </div>
-  );
-};
-
+\begin{equation}
+\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
+\end{equation}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<CommentForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

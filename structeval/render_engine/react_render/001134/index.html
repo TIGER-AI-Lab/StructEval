@@ -85,56 +85,35 @@
 
 
 const NewsletterSubscription = () => {
-  const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
+  const [email, setEmail] = useState('');
+  const [isValid, setIsValid] = useState(true);
 
-  const handleSubscribe = () => {
-    if (email.trim() !== '' && email.includes('@')) {
-      setSubscribed(true);
-    } else {
-      alert('Please enter a valid email address.');
+  const handleSubmit = () => {
+    if (email === '' || !email.includes('@')) {
+      setIsValid(false);
+      return;
     }
-  };
 
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-  };
-
-  const moduleStyle = {
-    width: '400px',
-    border: '1px solid lightgray',
-    padding: '20px',
-    boxSizing: 'border-box',
-    textAlign: 'center',
-  };
-
-  const buttonStyle = {
-    backgroundColor: 'green',
-    color: 'white',
-    border: 'none',
-    padding: '10px 20px',
-    cursor: 'pointer',
+    setSubscribed(true);
+    setIsValid(true);
   };
 
   return (
-    <div style={containerStyle}>
-      <div style={moduleStyle}>
-        <h1>Newsletter Subscription</h1>
-        <input
-          type="email"
-          placeholder="Enter your email address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={{ width: '100%', padding: '10px', marginBottom: '10px' }}
-        />
-        <button style={buttonStyle} onClick={handleSubscribe}>
-          Subscribe
-        </button>
-        {subscribed && <p>Thank you for subscribing!</p>}
-      </div>
+    <div style={{ width: '400px', border: '1px solid lightgray', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+      <h1>Newsletter Subscription</h1>
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        style={{ marginBottom: '10px' }}
+      />
+      {!isValid && <p style={{ color: 'red' }}>Please enter a valid email address.</p>}
+      <button onClick={handleSubmit} style={{ backgroundColor: 'green', color: 'white', padding: '10px', border: 'none', cursor: 'pointer' }}>
+        Subscribe
+      </button>
+      {subscribed && <p>Thank you for subscribing!</p>}
     </div>
   );
 };

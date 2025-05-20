@@ -83,114 +83,90 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+\documentclass{article}
+\usepackage{tikz}
 
-function App() {
-  return (
-    <div>
-      <header>
-        <h1>Main Title of the Document</h1>
-        <p>This page is designed to test the visual conversion process by demonstrating structural layout, visual hierarchy, and clearly formatted content.</p>
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-      </header>
+\begin{document}
 
-      <main>
-        <section>
-          <h2>Section One: Introduction</h2>
-          <p>This section is intended to provide an overview and introduction to the main topics. The following articles provide more detailed information.</p>
-          
-          <article>
-            <header>
-              <h3>Article 1: Getting Started</h3>
-            </header>
-            <p>This article introduces the basic configuration and steps necessary for setting up the initial framework.</p>
-            <ul>
-              <li>Step One: Install the required components</li>
-              <li>Step Two: Configure parameters</li>
-              <li>Step Three: Verify installation</li>
-            </ul>
-          </article>
+\begin{tikzpicture}
+% Grid
+\draw [thin, step=1cm] (0,0) grid (10,1);
 
-          <article>
-            <header>
-              <h3>Article 2: Detailed Overview</h3>
-            </header>
-            <p>This article delves into a more detailed exploration of the system's functionalities and best practices.</p>
-            <ol>
-              <li>Detail One: Understanding the architecture</li>
-              <li>Detail Two: System configuration and fine tuning</li>
-              <li>Detail Three: Reviewing outcomes</li>
-            </ol>
-          </article>
-        </section>
+% Plot Sin
+\draw [thin, blue, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.84147098)
+(2,0.90929743)
+(3,0.14112001)
+(4,-0.7568025)
+(5,-0.9589243)
+(6,-0.2794155)
+(7,0.9589243)
+(8,0.6569866)
+(9,0.7568025)
+(10,0.84147098)
+};
 
-        <section>
-          <h2>Section Two: Data and Structured Information</h2>
-          <p>This section includes data tables, labeled lists, and descriptions that provide additional clarity.</p>
-          
-          <dl>
-            <dt>Identifier Alpha</dt>
-            <dd>A primary identifier used to mark essential data points in the system.</dd>
-            <dt>Identifier Beta</dt>
-            <dd>A secondary value representing the supporting metrics of the platform.</dd>
-            <dt>Identifier Gamma</dt>
-            <dd>This field is used for auxiliary processes and logging information.</dd>
-          </dl>
-          
-          <table border="1">
-            <caption>Parameter Overview</caption>
-            <thead>
-              <tr>
-                <th>Parameter</th>
-                <th>Value</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Parameter One</td>
-                <td>100</td>
-                <td>Base setting for general operations.</td>
-              </tr>
-              <tr>
-                <td>Parameter Two</td>
-                <td>200</td>
-                <td>Enhanced mode configuration value.</td>
-              </tr>
-              <tr>
-                <td>Parameter Three</td>
-                <td>300</td>
-                <td>Optimized threshold value for specific tasks.</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+% Plot Cos
+\draw [thin, green, <->] plot[smooth] coordinates {
+(0,1)
+(1,0.5403023)
+(2,0.4161468)
+(3,0.9899925)
+(4,0.9899925)
+(5,0.4161468)
+(6,-0.5403023)
+(7,-1)
+(8,-0.9899925)
+(9,-0.4161468)
+(10,-0.9899925)
+};
 
-        <aside>
-          <h2>Additional Notes</h2>
-          <p>This side section includes extra details and supplementary items that may be useful for in-depth analysis.</p>
-          <ul>
-            <li>Supplementary Item A</li>
-            <li>Supplementary Item B</li>
-            <li>Supplementary Item C</li>
-          </ul>
-        </aside>
-      </main>
+% Plot Tan (Limited Range)
+\draw [thin, red, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.0174524)
+(2,0.1900227)
+(3,0.8485772)
+(4,1.4296471)
+(5,2.0000000)
+(6,4.0792891)
+(7,8.4371791)
+(8,16)
+};
 
-      <footer>
-        <p>Contact us at: info@example.com | +1 234 567 890</p>
-        <p>&copy; 2023 All rights reserved.</p>
-      </footer>
-    </div>
-  );
-}
+% Annotation Peak Value
+\node at (2.5,1) [above, fill=black!] {Peak Value};
 
+% Text Summary
+\node [fill=white, text width=4cm] at (0.02,0.95) {
+Summary:
+--------------------------\\
+1. sin(x) and cos(x) exhibit classic periodic\\
+behavior.\\
+2. tan(x) shows asymptotic trends near\\
+odd multiples of pi/2.\\
+3. Data generated using NumPy functions.\\
+4. Plots incorporate grids, legends,\\
+and clear annotations.
+};
+
+% Statistics Text
+\node [fill=white, text width=4cm] at (0.7,0.5) {
+Statistics:
+------------------\\
+Sine\\
+  Mean: 0.00\\
+  Std:  0.99\\
+Cosine\\
+  Mean: 0.00\\
+  Std:  0.71\\
+Tangent (|value| < 10)\\
+  Mean: 0.00\\
+  Std:  0.71
+};
+
+\end{tikzpicture}
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

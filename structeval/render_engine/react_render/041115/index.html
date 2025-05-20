@@ -83,125 +83,90 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+\documentclass{article}
+\usepackage{tikz}
 
-function App() {
-  return (
-    <div>
-      <header>
-        <h1>Welcome to the Comprehensive HTML Structure</h1>
-        <p>This page demonstrates a wide range of HTML elements, structured for visual clarity and layout.</p>
-      </header>
+\begin{document}
 
-      <nav>
-        <ul>
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#details">Details</a></li>
-          <li><a href="#summary">Summary</a></li>
-        </ul>
-      </nav>
+\begin{tikzpicture}
+% Grid
+\draw [thin, step=1cm] (0,0) grid (10,1);
 
-      <section id="introduction">
-        <h2 className="content-heading">Introduction</h2>
-        <p>
-          This HTML document is designed to showcase a variety of structural elements used to build a complete and comprehensive webpage. The objective is to test the visual layout, hierarchy, and rendering of content such as headings, sections, lists, and more.
-        </p>
-        <article>
-          <h3>Background</h3>
-          <p>
-            HTML is the backbone of web pages. This example includes multiple layers of content organization, making it easier to understand how semantic HTML works to improve accessibility and structure.
-          </p>
-        </article>
-      </section>
+% Plot Sin
+\draw [thin, blue, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.84147098)
+(2,0.90929743)
+(3,0.14112001)
+(4,-0.7568025)
+(5,-0.9589243)
+(6,-0.2794155)
+(7,0.9589243)
+(8,0.6569866)
+(9,0.7568025)
+(10,0.84147098)
+};
 
-      <section id="features">
-        <h2 className="content-heading">Features</h2>
-        
-        <div className="labeled-value">
-          <span className="label">Feature 1:</span><span>Responsive layout created using only HTML and inline CSS.</span>
-        </div>
-        <div className="labeled-value">
-          <span className="label">Feature 2:</span><span>Semantic elements like section, article, and aside enhance the document structure.</span>
-        </div>
-        <div className="labeled-value">
-          <span className="label">Feature 3:</span><span>Clear visual hierarchy with headings and subheadings from H1 to H4.</span>
-        </div>
+% Plot Cos
+\draw [thin, green, <->] plot[smooth] coordinates {
+(0,1)
+(1,0.5403023)
+(2,0.4161468)
+(3,0.9899925)
+(4,0.9899925)
+(5,0.4161468)
+(6,-0.5403023)
+(7,-1)
+(8,-0.9899925)
+(9,-0.4161468)
+(10,-0.9899925)
+};
 
-        <h3>Key Elements</h3>
-        <ul>
-          <li>Headers and Footers</li>
-          <li>Navigation Menus</li>
-          <li>Content Sections</li>
-          <li>Lists: Ordered and Unordered</li>
-          <li>Blockquotes and Preformatted Text</li>
-        </ul>
+% Plot Tan (Limited Range)
+\draw [thin, red, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.0174524)
+(2,0.1900227)
+(3,0.8485772)
+(4,1.4296471)
+(5,2.0000000)
+(6,4.0792891)
+(7,8.4371791)
+(8,16)
+};
 
-        <h3>Ordered List Example</h3>
-        <ol>
-          <li>Item One: Introduction to HTML Structure</li>
-          <li>Item Two: Detailed Content Sections</li>
-          <li>Item Three: Final Remarks and Summary</li>
-        </ol>
-      </section>
+% Annotation Peak Value
+\node at (2.5,1) [above, fill=black!] {Peak Value};
 
-      <section id="details">
-        <h2 className="content-heading">Details</h2>
-        <article>
-          <h3>Subsection: Data Representation</h3>
-          <p>
-            This subsection shows a range of detailed HTML components, including labeled values for dynamic content representation. The labels and their corresponding values are clearly defined.
-          </p>
-          <div className="labeled-value">
-            <span className="label">Username:</span><span>example_user</span>
-          </div>
-          <div className="labeled-value">
-            <span className="label">Email:</span><span>user@example.com</span>
-          </div>
-          <div className="labeled-value">
-            <span className="label">Status:</span><span>Active</span>
-          </div>
-        </article>
+% Text Summary
+\node [fill=white, text width=4cm] at (0.02,0.95) {
+Summary:
+--------------------------\\
+1. sin(x) and cos(x) exhibit classic periodic\\
+behavior.\\
+2. tan(x) shows asymptotic trends near\\
+odd multiples of pi/2.\\
+3. Data generated using NumPy functions.\\
+4. Plots incorporate grids, legends,\\
+and clear annotations.
+};
 
-        <article>
-          <h3>Subsection: Code Snippet Display</h3>
-          <p>The following is a code snippet example displayed using the preformatted text block:</p>
-          <pre>
-{`<div class="example">
-  <h4>Example Heading</h4>
-  <p>This is an example of a code snippet inside a <pre> tag.</p>
-</div>`}
-          </pre>
-        </article>
+% Statistics Text
+\node [fill=white, text width=4cm] at (0.7,0.5) {
+Statistics:
+------------------\\
+Sine\\
+  Mean: 0.00\\
+  Std:  0.99\\
+Cosine\\
+  Mean: 0.00\\
+  Std:  0.71\\
+Tangent (|value| < 10)\\
+  Mean: 0.00\\
+  Std:  0.71
+};
 
-        <aside>
-          <h3>Additional Notes</h3>
-          <p>
-            The aside element is used here to provide supplementary information that complements the main content but stands apart from it. This is useful for sidebar-like content or additional tips.
-          </p>
-        </aside>
-      </section>
-
-      <section id="summary">
-        <h2 className="content-heading">Summary</h2>
-        <p>
-          In summary, this HTML document is a fully structured piece containing headers, navigations, sections, articles, and aside elements to form a realistic webpage. The layout is designed for a clear visual hierarchy and structural integrity.
-        </p>
-        <blockquote>
-          <p>"Simplicity is the key to brilliance."</p>
-          <footer>â Anonymous</footer>
-        </blockquote>
-        <p>
-          Please review the content and structure to verify that all elements render correctly in a browser. This page intends to highlight the importance of semantic HTML when building web pages.
-        </p>
-      </section>
-
-      <footer>
-        <p>&copy; 2023 Comprehensive HTML Example. All rights reserved.</p>
-      </footer>
-    </div>
-  );
-}
-
+\end{tikzpicture}
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

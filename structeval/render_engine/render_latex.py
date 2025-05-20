@@ -118,21 +118,21 @@ def extract_latex_from_code_tag(generation, output_type):
     Extract LaTeX code from <code> tags and clean it up.
     Removes control characters and converts double backslashes to single ones.
     """
-    tag_or_fence = rf"""
-    (?:                             # 1) <code> … </code>
-        <code>[ \t]*\n              # opener (+ newline it ends with)
-        (?P<payload1>.*?)           # capture ALL lines that follow
-        (?:</code>|$)               # until </code> or end-of-string
+    begin_end_pat = (
+        r"<\|BEGIN_CODE\|\>[ \t]*\n?"        # literal opener (pipes escaped)
+        r"(?P<payload1>.*?)"                 # everything after it…
+        r"(?:<\|END_CODE\|\>|$)"             # …until END tag *or* EOS
     )
-    |
-    (?:                             # 2) ``` fenced block
-        ```(?:{re.escape(output_type)}|[^\n]*)[ \t]*\n
-        (?P<payload2>.*?)           # capture payload
-        (?:```|$)                   # until closing fence or EOS
-    )
-    """
 
-    m = re.search(tag_or_fence, generation, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+    # 2)  ``` fenced block  (closing fence optional)
+    fence_pat = (
+        rf"```(?:{re.escape(output_type)}|[^\n]*)[ \t]*\n"  # header
+        r"(?P<payload2>.*?)"                               # payload
+        r"(?:```|$)"                                       # end fence or EOS
+    )
+
+    pattern = rf"(?:{begin_end_pat})|(?:{fence_pat})"
+    m = re.search(pattern, text, re.DOTALL | re.IGNORECASE)
     if m:
         # whichever group matched, return it
         payload = m.group("payload1") or m.group("payload2")

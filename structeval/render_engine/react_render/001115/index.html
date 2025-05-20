@@ -83,88 +83,12 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-function LoginForm() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!email || !password) {
-            setError('Email and password are required.');
-        } else if (!email.includes('@')) {
-            setError('Please enter a valid email address.');
-        } else {
-            // Handle successful login
-            console.log('Logging in with', email, password);
-        }
-    };
-
-    const handleClear = () => {
-        setEmail('');
-        setPassword('');
-        setError('');
-    };
-
-    const containerStyle = {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh',
-    };
-
-    const formStyle = {
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '1rem',
-        maxWidth: '400px',
-        width: '100%',
-    };
-
-    const loginButtonStyle = {
-        backgroundColor: 'green',
-        color: 'white',
-        padding: '0.5rem',
-        border: 'none',
-        cursor: 'pointer',
-    };
-
-    const clearButtonStyle = {
-        padding: '0.5rem',
-        border: '1px solid #ccc',
-        cursor: 'pointer',
-    };
-
-    return (
-        <div style={containerStyle}>
-            <form style={formStyle} onSubmit={handleSubmit}>
-                <h2>Banking Login</h2>
-                <input
-                    type="text"
-                    placeholder="Enter your email address"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <input
-                    type="password"
-                    placeholder="Enter your password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                />
-                {error && <p style={{ color: 'red' }}>{error}</p>}
-                <div style={{ display: 'flex', gap: '1rem' }}>
-                    <button type="submit" style={loginButtonStyle}>Login</button>
-                    <button type="button" style={clearButtonStyle} onClick={handleClear}>Clear</button>
-                </div>
-            </form>
-        </div>
-    );
-}
-
+\begin{equation}
+\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
+\end{equation}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<LoginForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

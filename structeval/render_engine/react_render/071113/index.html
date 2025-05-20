@@ -84,17 +84,16 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const MarkdownVisualLayoutTest = () => {
+const App = () => {
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <div>
       <h1>Project Title: Markdown Visual Layout Test</h1>
       <p>A short description of the project for layout testing purposes.</p>
-      
+
       <h2>Table of Contents</h2>
       <ul>
         <li><a href="#introduction">Introduction</a></li>
-        <li>
-          <a href="#usage-instructions">Usage Instructions</a>
+        <li><a href="#usage-instructions">Usage Instructions</a>
           <ul>
             <li><a href="#step-1-setup-environment">Step 1: Setup Environment</a></li>
             <li><a href="#step-2-validate-layout">Step 2: Validate Layout</a></li>
@@ -117,7 +116,7 @@ const MarkdownVisualLayoutTest = () => {
         <li>Visual hierarchy</li>
         <li>Properly formatted content</li>
       </ul>
-      <p><strong>Key objectives:</strong></p>
+      <p>Key objectives:</p>
       <ul>
         <li>Demonstrate the use of headings and sub-headings.</li>
         <li>Organize information into clear sections.</li>
@@ -137,12 +136,9 @@ const MarkdownVisualLayoutTest = () => {
       </ul>
       <p>Checklist:</p>
       <ul>
-        <li>â
- Open your text editor.</li>
-        <li>â
- Create a new file.</li>
-        <li>â
- Paste this Markdown content.</li>
+        <li>[x] Open your text editor.</li>
+        <li>[x] Create a new file.</li>
+        <li>[x] Paste this Markdown content.</li>
       </ul>
 
       <h3 id="step-2-validate-layout">Step 2: Validate Layout</h3>
@@ -184,8 +180,7 @@ const MarkdownVisualLayoutTest = () => {
       <h2 id="configuration">Configuration</h2>
       <p>Below is an example configuration snippet in YAML-style format:</p>
       <pre>
-<code>
-settings:
+        {`settings:
   theme: "default"
   layout: "vertical"
   sections:
@@ -197,10 +192,78 @@ settings:
         items: 5
     - footer:
         enabled: true
-        text: "End of Document"
+        text: "End of Document"`}
+      </pre>
+      <p>Note: This is a simulated configuration for demonstration purposes only.</p>
+
+      <hr />
+
+      <h2 id="examples">Examples</h2>
+
+      <h3 id="basic-example">Basic Example</h3>
+      <p>Simple formatted note:</p>
+      <blockquote><strong>Note:</strong> Review your Markdown rendering engine to ensure best compatibility with this layout.</blockquote>
+
+      <h4 id="detailed-example">Detailed Example</h4>
+      <p>Follow these steps:</p>
+      <ol>
+        <li>Create a new Markdown file and paste in the content.</li>
+        <li>Preview the document in your Markdown viewer.</li>
+        <li>Validate that:
+          <ul>
+            <li>The header, body, and footer sections are clearly visible.</li>
+            <li>Formatting such as bold text, lists, and code blocks are rendered accurately.</li>
+          </ul>
+        </li>
+        <li>Modify any section to tailor the layout to your testing needs.</li>
+      </ol>
+      <p>Labeled values example:</p>
+      <ul>
+        <li><strong>Project Name:</strong> Markdown Visual Layout Test</li>
+        <li><strong>Version:</strong> 1.0.0</li>
+        <li><strong>Author:</strong> Your Name</li>
+        <li><strong>Status:</strong> Active</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="license">License</h2>
+      <p>Licensed under the MIT License:</p>
+      <pre>
+        {`MIT License
+-----------
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions...`}
+      </pre>
+      <p>Please review the complete license for full details.</p>
+
+      <hr />
+
+      <h2 id="future-work">Future Work</h2>
+      <p>Planned enhancements for the document:</p>
+      <ul>
+        <li>Additional formatting examples including tables and code fences.</li>
+        <li>More in-depth usage scenarios for testing various Markdown renderers.</li>
+        <li>Extended configuration options for dynamic testing.</li>
+        <li>Continuous updates to refine the visual layout further.</li>
+      </ul>
+      <p>This document will serve as the base for testing structural layout and visible content rendering across different scenarios.</p>
+
+      <hr />
+
+      <p>End of Document.</p>
+    </div>
+  );
+};
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<MarkdownVisualLayoutTest />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

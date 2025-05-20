@@ -83,15 +83,14 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-function App() {
+const App = () => {
   return (
-    <>
+    <div>
       <header>
         <h1>Document Title: Structured Layout Example</h1>
         <p>This document demonstrates a complex yet clean layout that uses various HTML elements to form a visible structure.</p>
       </header>
-      
+
       <nav>
         <h2>Table of Contents</h2>
         <ol>
@@ -102,14 +101,14 @@ function App() {
           <li>Conclusion</li>
         </ol>
       </nav>
-      
+
       <section>
         <h2>Introduction</h2>
         <p>
           Welcome to this example page. The purpose of this document is to provide a detailed illustration of visible structure, layout, and formatted content. We include headings, subheadings, lists, paragraphs, and tables to show a range of HTML elements.
         </p>
       </section>
-      
+
       <section>
         <h2>Content Sections</h2>
         <article>
@@ -121,7 +120,7 @@ function App() {
             <li>Structured sections for readability</li>
           </ul>
         </article>
-        
+
         <article>
           <h3>Subsection: Additional Information</h3>
           <p>
@@ -129,7 +128,7 @@ function App() {
           </p>
         </article>
       </section>
-      
+
       <section>
         <h2>Data Overview</h2>
         <p>Below is a table with labeled values that show example data entries:</p>
@@ -164,7 +163,7 @@ function App() {
           </tbody>
         </table>
       </section>
-      
+
       <section>
         <h2>Instructions</h2>
         <p>Please follow these steps to understand the layout:</p>
@@ -176,22 +175,21 @@ function App() {
           <li>Finish by reading the Conclusion.</li>
         </ol>
       </section>
-      
+
       <section>
         <h2>Conclusion</h2>
         <p>
           This structured HTML document showcases a well-organized layout with distinct areas for content, data presentation, and instruction. By keeping the interface simple and straightforward, designers can achieve clarity and improved user experience.
         </p>
       </section>
-      
+
       <footer>
         <hr />
         <p>&copy; 2023 Structured Layout Examples Inc.</p>
       </footer>
-    </>
+    </div>
   );
-}
-
+};
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

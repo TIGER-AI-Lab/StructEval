@@ -83,133 +83,93 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+\documentclass{article}
+\usepackage{tikz}
 
-const VisualConversionTest = () => {
-  return (
-    <>
-      <header>
-        <h1>Welcome to the Visual Conversion Test</h1>
-        <p>This page is designed to test structural layout, visual hierarchy, and content formatting.</p>
-      </header>
-      
-      <nav>
-        <ul>
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#details">Details</a></li>
-          <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
-      </nav>
-      
-      <main>
-        <section id="overview">
-          <h2>Overview</h2>
-          <p>
-            The main purpose of this page is to serve as a test case for a visual conversion task.
-            The layout has multiple sections including headings, paragraphs, lists, and structured elements.
-          </p>
-          <hr />
-        </section>
-        
-        <section id="features">
-          <h2>Key Features</h2>
-          <p>This document highlights several features:</p>
-          <ul>
-            <li>Clear Hierarchical Structure</li>
-            <li>Sectioned Content</li>
-            <li>Accessible Navigation</li>
-            <li>Formatted Content Blocks</li>
-          </ul>
-          <p>Below is an ordered list of additional attributes:</p>
-          <ol>
-            <li>Semantic Markup</li>
-            <li>Consistent Formatting</li>
-            <li>Responsive Basics</li>
-            <li>Easy to Parse</li>
-          </ol>
-          <hr />
-        </section>
-        
-        <section id="details">
-          <h2>Detailed Information</h2>
-          <div>
-            <h3>Section 1: Introduction</h3>
-            <p>
-              This section provides an introduction to the conversion task requirements.
-              It includes several paragraphs, headings, and sub-headings broken down into smaller blocks.
-            </p>
-            <div>
-              <h4>Subsection: Background</h4>
-              <p>
-                Background information is essential for setting context. Here, we ensure that the layout is logical and easy to follow.
-              </p>
-            </div>
-          </div>
-          
-          <div>
-            <h3>Section 2: Data Display</h3>
-            <p>
-              The following list shows labeled data fields that reinforce the structured nature of this document.
-            </p>
-            <dl>
-              <dt>Field One</dt>
-              <dd>This is the first data field. It contains a brief description relevant to the conversion task.</dd>
-              <dt>Field Two</dt>
-              <dd>This field provides additional context and numerical values.</dd>
-              <dt>Field Three</dt>
-              <dd>This field highlights important characteristics of the rendered layout.</dd>
-            </dl>
-          </div>
-          
-          <div>
-            <h3>Section 3: Further Details</h3>
-            <p>
-              More details are provided in a multi-column layout simulation using sectioning.
-            </p>
-            <ul>
-              <li><strong>Point A:</strong> Explanation A with elaboration.</li>
-              <li><strong>Point B:</strong> Explanation B with further details.</li>
-              <li><strong>Point C:</strong> Explanation C to ensure clarity.</li>
-            </ul>
-          </div>
-          <hr />
-        </section>
-        
-        <section id="conclusion">
-          <h2>Conclusion</h2>
-          <p>
-            In conclusion, this document is structured to test the conversion of visual elements.
-            Each section and subsection has been set up to showcase a variety of HTML constructs.
-          </p>
-          <p>
-            Please review the layout and content to ensure it meets the expected standards for structure and clarity.
-          </p>
-        </section>
-      </main>
-      
-      <aside>
-        <h2>Additional Notes</h2>
-        <p>
-          This side note area is provided as an extra test element. Although not part of the main content flow,
-          it is intended to offer supplementary information.
-        </p>
-        <ul>
-          <li>Note 1: Ensure responsiveness</li>
-          <li>Note 2: Check accessibility</li>
-          <li>Note 3: Validate HTML standards</li>
-        </ul>
-      </aside>
-      
-      <footer>
-        <p>&copy; 2023 Visual Conversion Test. All rights reserved.</p>
-      </footer>
-    </>
-  );
+\begin{document}
+
+\begin{tikzpicture}
+% Grid
+\draw [thin, step=1cm] (0,0) grid (10,1);
+
+% Plot Sin
+\draw [thin, blue, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.84147098)
+(2,0.90929743)
+(3,0.14112001)
+(4,-0.7568025)
+(5,-0.9589243)
+(6,-0.2794155)
+(7,0.9589243)
+(8,0.6569866)
+(9,0.7568025)
+(10,0.84147098)
 };
 
+% Plot Cos
+\draw [thin, green, <->] plot[smooth] coordinates {
+(0,1)
+(1,0.5403023)
+(2,0.4161468)
+(3,0.9899925)
+(4,0.9899925)
+(5,0.4161468)
+(6,-0.5403023)
+(7,-1)
+(8,-0.9899925)
+(9,-0.4161468)
+(10,-0.9899925)
+};
+
+% Plot Tan (Limited Range)
+\draw [thin, red, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.0174524)
+(2,0.1900227)
+(3,0.8485772)
+(4,1.4296471)
+(5,2.0000000)
+(6,4.0792891)
+(7,8.4371791)
+(8,16)
+};
+
+% Annotation Peak Value
+\node at (2.5,1) [above, fill=black!] {Peak Value};
+
+% Text Summary
+\node [fill=white, text width=4cm] at (0.02,0.95) {
+Summary:
+--------------------------\\
+1. sin(x) and cos(x) exhibit classic periodic\\
+behavior.\\
+2. tan(x) shows asymptotic trends near\\
+odd multiples of pi/2.\\
+3. Data generated using NumPy functions.\\
+4. Plots incorporate grids, legends,\\
+and clear annotations.
+};
+
+% Statistics Text
+\node [fill=white, text width=4cm] at (0.7,0.5) {
+Statistics:
+------------------\\
+Sine\\
+  Mean: 0.00\\
+  Std:  0.99\\
+Cosine\\
+  Mean: 0.00\\
+  Std:  0.71\\
+Tangent (|value| < 10)\\
+  Mean: 0.00\\
+  Std:  0.71
+};
+
+\end{tikzpicture}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<VisualConversionTest />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

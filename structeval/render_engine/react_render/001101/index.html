@@ -84,122 +84,68 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const EventRegistrationForm = () => {
-    const [formData, setFormData] = useState({
-        username: '',
-        email: '',
-        eventType: 'Workshop',
-        guests: 1
-    });
+function App() {
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [eventType, setEventType] = useState('Workshop');
+  const [numGuests, setNumGuests] = useState(1);
+  const [message, setMessage] = useState('');
 
-    const [errors, setErrors] = useState({});
-    const [confirmation, setConfirmation] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
-    };
+    if (!username || !email) {
+      setMessage('Username and Email are required.');
+      return;
+    }
 
-    const validate = () => {
-        const newErrors = {};
-        if (!formData.username.trim()) {
-            newErrors.username = 'Username is required';
-        }
-        if (!formData.email) {
-            newErrors.email = 'Email is required';
-        } else {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(formData.email)) {
-                newErrors.email = 'Invalid email format';
-            }
-        }
-        return newErrors;
-    };
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setMessage('Invalid email format.');
+      return;
+    }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const validationErrors = validate();
-        if (Object.keys(validationErrors).length === 0) {
-            setConfirmation('Registration successful!');
-            setErrors({});
-            // Optionally reset form
-        } else {
-            setErrors(validationErrors);
-            setConfirmation('');
-        }
-    };
+    setMessage('Registration successful!');
+  };
 
-    return (
-        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-            <h1 style={{ textAlign: 'center' }}>Event Registration</h1>
-            <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', maxWidth: '600px', margin: '0 auto' }}>
-                <div>
-                    <label>Username</label>
-                    <input
-                        type="text"
-                        name="username"
-                        placeholder="Enter your username"
-                        value={formData.username}
-                        onChange={handleChange}
-                        style={{ width: '100%', padding: '8px' }}
-                    />
-                    {errors.username && <span style={{ color: 'red' }}>{errors.username}</span>}
-                </div>
-                <div>
-                    <label>Email</label>
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Enter your email address"
-                        value={formData.email}
-                        onChange={handleChange}
-                        style={{ width: '100%', padding: '8px' }}
-                    />
-                    {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
-                </div>
-                <div>
-                    <label>Event Type</label>
-                    <select
-                        name="eventType"
-                        value={formData.eventType}
-                        onChange={handleChange}
-                        style={{ width: '100%', padding: '8px' }}
-                    >
-                        <option value="Workshop">Workshop</option>
-                        <option value="Seminar">Seminar</option>
-                        <option value="Meetup">Meetup</option>
-                    </select>
-                </div>
-                <div>
-                    <label>Number of Guests</label>
-                    <input
-                        type="number"
-                        name="guests"
-                        min="1"
-                        placeholder="Guests"
-                        value={formData.guests}
-                        onChange={handleChange}
-                        style={{ width: '100%', padding: '8px' }}
-                    />
-                </div>
-                <div style={{ gridColumn: '1 / -1', textAlign: 'center' }}>
-                    <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '10px 20px', border: 'none', cursor: 'pointer' }}>
-                        Register
-                    </button>
-                </div>
-            </form>
-            {confirmation && <div style={{ textAlign: 'center', marginTop: '20px' }}>{confirmation}</div>}
-            <footer style={{ marginTop: 'auto', textAlign: 'center', padding: '10px 0' }}>2023 Event Registration</footer>
-        </div>
-    );
-};
+  return (
+    <div>
+      <h1 style={{ textAlign: 'center' }}>Event Registration</h1>
+      <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+        <input
+          type="text"
+          placeholder="Enter your username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <select value={eventType} onChange={(e) => setEventType(e.target.value)}>
+          <option value="Workshop">Workshop</option>
+          <option value="Seminar">Seminar</option>
+          <option value="Meetup">Meetup</option>
+        </select>
+        <input
+          type="number"
+          placeholder="Guests"
+          min="1"
+          value={numGuests}
+          onChange={(e) => setNumGuests(parseInt(e.target.value, 10))}
+        />
+        <button type="submit" style={{ backgroundColor: 'green', color: 'white', gridColumn: 'span 2' }}>Register</button>
+      </form>
+      <div>{message}</div>
+      <footer style={{ textAlign: 'center', marginTop: '20px' }}>2023 Event Registration</footer>
+    </div>
+  );
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<EventRegistrationForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

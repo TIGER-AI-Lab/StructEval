@@ -84,173 +84,110 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function JobApplicationForm() {
-  const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    position: '',
-    coverLetter: '',
-  });
-
-  const [errors, setErrors] = useState({});
+function JobApplication() {
+  const [formData, setFormData] = useState({});
   const [submitted, setSubmitted] = useState(false);
-
-  const positions = [
-    'Software Engineer',
-    'Product Manager',
-    'Designer',
-  ];
+  const [validationErrors, setValidationErrors] = useState({});
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-    setErrors({ ...errors, [name]: '' });
-    setSubmitted(false);
-  };
-
-  const validate = () => {
-    let tempErrors = {};
-    if (!formData.fullName) tempErrors.fullName = 'Full Name is required';
-    if (!formData.email) {
-      tempErrors.email = 'Email is required';
-    } else if (!formData.email.includes('@')) {
-      tempErrors.email = 'Email is invalid';
-    }
-    if (!formData.phoneNumber) tempErrors.phoneNumber = 'Phone Number is required';
-    if (!formData.position) tempErrors.position = 'Position is required';
-    if (!formData.coverLetter) tempErrors.coverLetter = 'Cover Letter is required';
-    setErrors(tempErrors);
-    return Object.keys(tempErrors).length === 0;
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setValidationErrors({ ...validationErrors, [e.target.name]: '' });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validate()) {
+    const errors = {};
+
+    if (!formData.fullName) {
+      errors.fullName = 'Full Name is required';
+    }
+    if (!formData.email) {
+      errors.email = 'Email is required';
+    } else if (!formData.email.includes('@')) {
+      errors.email = 'Invalid email format';
+    }
+    if (!formData.phone) {
+      errors.phone = 'Phone Number is required';
+    }
+    if (!formData.position) {
+      errors.position = 'Position Applied For is required';
+    }
+    if (!formData.coverLetter) {
+      errors.coverLetter = 'Cover Letter is required';
+    }
+
+    setValidationErrors(errors);
+
+    if (Object.keys(errors).length === 0) {
       setSubmitted(true);
-      // Here you can handle form submission, e.g., send data to a server
+      setFormData({});
     }
   };
 
   const handleReset = () => {
-    setFormData({
-      fullName: '',
-      email: '',
-      phoneNumber: '',
-      position: '',
-      coverLetter: '',
-    });
-    setErrors({});
+    setFormData({});
+    setValidationErrors({});
     setSubmitted(false);
   };
 
-  const gridStyle = {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gap: '10px',
-    maxWidth: '600px',
-    margin: '0 auto',
-  };
-
-  const buttonContainerStyle = {
-    gridColumn: 'span 2',
-    display: 'flex',
-    justifyContent: 'flex-start',
-    gap: '10px',
-  };
-
-  const submitButtonStyle = {
-    backgroundColor: 'darkgreen',
-    color: 'white',
-    padding: '10px 20px',
-    border: 'none',
-    cursor: 'pointer',
-  };
-
-  const resetButtonStyle = {
-    padding: '10px 20px',
-    border: '1px solid #ccc',
-    cursor: 'pointer',
-  };
-
-  const confirmationStyle = {
-    marginTop: '20px',
-    color: 'green',
-    textAlign: 'center',
-  };
-
   return (
-    <form onSubmit={handleSubmit}>
+    <div>
       <h1>Job Application</h1>
-      <div style={gridStyle}>
-        <div>
-          <label>Full Name</label>
-          <input
-            type="text"
-            name="fullName"
-            placeholder="Enter your full name"
-            value={formData.fullName}
-            onChange={handleChange}
-          />
-          {errors.fullName && <span style={{ color: 'red' }}>{errors.fullName}</span>}
-        </div>
-        <div>
-          <label>Email</label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your email address"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
-        </div>
-        <div>
-          <label>Phone Number</label>
-          <input
-            type="tel"
-            name="phoneNumber"
-            placeholder="Enter your phone number"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-          />
-          {errors.phoneNumber && <span style={{ color: 'red' }}>{errors.phoneNumber}</span>}
-        </div>
-        <div>
-          <label>Position Applied For</label>
-          <select name="position" value={formData.position} onChange={handleChange}>
-            <option value="">Select a position</option>
-            {positions.map((pos, index) => (
-              <option key={index} value={pos}>{pos}</option>
-            ))}
-          </select>
-          {errors.position && <span style={{ color: 'red' }}>{errors.position}</span>}
-        </div>
-        <div style={{ gridColumn: 'span 2' }}>
-          <label>Cover Letter</label>
-          <textarea
-            name="coverLetter"
-            rows="4"
-            placeholder="Write your cover letter here"
-            value={formData.coverLetter}
-            onChange={handleChange}
-            style={{ width: '100%' }}
-          ></textarea>
-          {errors.coverLetter && <span style={{ color: 'red' }}>{errors.coverLetter}</span>}
-        </div>
-        <div style={buttonContainerStyle}>
-          <button type="submit" style={submitButtonStyle}>Apply</button>
-          <button type="button" onClick={handleReset} style={resetButtonStyle}>Clear</button>
-        </div>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+        <input
+          type="text"
+          name="fullName"
+          placeholder="Full Name"
+          value={formData.fullName || ''}
+          onChange={handleChange}
+        />
+        {validationErrors.fullName && <p>{validationErrors.fullName}</p>}
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={formData.email || ''}
+          onChange={handleChange}
+        />
+        {validationErrors.email && <p>{validationErrors.email}</p>}
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone Number"
+          value={formData.phone || ''}
+          onChange={handleChange}
+        />
+        {validationErrors.phone && <p>{validationErrors.phone}</p>}
+        <select name="position" value={formData.position || ''} onChange={handleChange}>
+          <option value="">Position Applied For</option>
+          <option value="Software Engineer">Software Engineer</option>
+          <option value="Data Scientist">Data Scientist</option>
+          <option value="Project Manager">Project Manager</option>
+        </select>
+        {validationErrors.position && <p>{validationErrors.position}</p>}
+        <textarea
+          name="coverLetter"
+          placeholder="Cover Letter"
+          rows="4"
+          value={formData.coverLetter || ''}
+          onChange={handleChange}
+        />
+        {validationErrors.coverLetter && <p>{validationErrors.coverLetter}</p>}
       </div>
-      {submitted && <div style={confirmationStyle}>Your application has been submitted successfully!</div>}
-    </form>
+      <button style={{ backgroundColor: 'darkgreen' }} onClick={handleSubmit}>
+        Apply
+      </button>
+      <button style={{ float: 'right' }} onClick={handleReset}>
+        Clear
+      </button>
+      {submitted && <div>Application submitted successfully!</div>}
+    </div>
   );
 }
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<JobApplicationForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<JobApplication />);
 
     </script>
   </body>

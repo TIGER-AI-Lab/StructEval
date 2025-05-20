@@ -84,111 +84,54 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function NewsletterSignup() {
+const NewsletterSignup = () => {
   const [email, setEmail] = useState('');
   const [frequency, setFrequency] = useState('');
-  const [confirmationMessage, setConfirmationMessage] = useState('');
+  const [message, setMessage] = useState('');
 
-  const handleSubscribe = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (!email.includes('@')) {
-      alert('Please enter a valid email address.');
+
+    if (!email.includes('@') || !frequency) {
+      setMessage('Please enter a valid email and select a frequency.');
       return;
     }
-    if (!frequency) {
-      alert('Please select a newsletter frequency.');
-      return;
-    }
-    setConfirmationMessage(`Thank you for subscribing! You have chosen to receive ${frequency} updates.`);
+
+    setMessage('Thank you for subscribing!');
   };
 
   const handleClear = () => {
     setEmail('');
     setFrequency('');
-    setConfirmationMessage('');
-  };
-
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-  };
-
-  const formStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    gap: '10px',
-  };
-
-  const buttonContainerStyle = {
-    display: 'flex',
-    gap: '10px',
-  };
-
-  const subscribeButtonStyle = {
-    backgroundColor: 'green',
-    color: 'white',
-    padding: '8px 16px',
-    border: 'none',
-    cursor: 'pointer',
-  };
-
-  const clearButtonStyle = {
-    border: '2px solid red',
-    backgroundColor: 'white',
-    color: 'red',
-    padding: '6px 14px',
-    cursor: 'pointer',
-  };
-
-  const inputStyle = {
-    padding: '8px',
-    width: '250px',
-  };
-
-  const selectStyle = {
-    padding: '8px',
-    width: '266px',
+    setMessage('');
   };
 
   return (
-    <div style={containerStyle}>
-      <form style={formStyle} onSubmit={handleSubscribe}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <div>
         <h2 style={{ textAlign: 'center' }}>Newsletter Signup</h2>
         <input
           type="email"
           placeholder="Enter your email address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          style={inputStyle}
-          required
+          style={{ width: '100%', marginBottom: '10px' }}
         />
-        <select
-          value={frequency}
-          onChange={(e) => setFrequency(e.target.value)}
-          style={selectStyle}
-          required
-        >
-          <option value="">Select frequency</option>
-          <option value="Daily">Daily</option>
-          <option value="Weekly">Weekly</option>
-          <option value="Monthly">Monthly</option>
+        <select value={frequency} onChange={(e) => setFrequency(e.target.value)} style={{ width: '100%', marginBottom: '10px' }}>
+          <option value="">Select Frequency</option>
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
         </select>
-        <div style={buttonContainerStyle}>
-          <button type="submit" style={subscribeButtonStyle}>
-            Subscribe
-          </button>
-          <button type="button" onClick={handleClear} style={clearButtonStyle}>
-            Clear Form
-          </button>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <button onClick={handleSubmit} style={{ backgroundColor: 'green', color: 'white' }}>Subscribe</button>
+          <button onClick={handleClear} style={{ border: '1px solid red' }}>Clear Form</button>
         </div>
-        {confirmationMessage && <p>{confirmationMessage}</p>}
-      </form>
+        <p>{message}</p>
+      </div>
     </div>
   );
-}
+};
 
 
 // Auto‑generated mount

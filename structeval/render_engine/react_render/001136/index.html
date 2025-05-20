@@ -83,72 +83,64 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+<|BEGIN_CODE|>
 
-const NewsletterSubscription = () => {
+function NewsletterForm() {
   const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isValidEmail, setIsValidEmail] = useState(true);
 
-  const handleChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (email && email.includes('@')) {
-      setSubmitted(true);
-      setEmail('');
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (email !== '' && email.includes('@')) {
+      setIsSubmitted(true);
+      setIsValidEmail(true);
+    } else {
+      setIsValidEmail(false);
+      setIsSubmitted(false);
     }
   };
 
-  const containerStyle = {
-    maxWidth: '400px',
-    margin: '0 auto',
-    textAlign: 'center',
-  };
-
-  const formStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: '10px',
-  };
-
-  const inputStyle = {
-    flex: '1',
-    padding: '10px',
-    fontSize: '16px',
-  };
-
-  const buttonStyle = {
-    padding: '10px 20px',
-    backgroundColor: 'white',
-    color: 'red',
-    border: '1px solid red',
-    cursor: 'pointer',
-  };
-
   return (
-    <div style={containerStyle}>
+    <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
       <h3>Subscribe to Our Newsletter</h3>
-      <form onSubmit={handleSubmit} style={formStyle}>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={handleChange}
-          style={inputStyle}
-        />
-        <button type="submit" style={buttonStyle}>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="email" style={{ display: 'block', marginBottom: '5px' }}>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            style={{ marginRight: '10px', padding: '8px', border: '1px solid #ccc', borderRadius: '4px' }}
+          />
+        </label>
+        <button
+          type="submit"
+          style={{
+            backgroundColor: 'white',
+            color: 'red',
+            padding: '8px 16px',
+            border: '1px solid red',
+            borderRadius: '4px',
+            cursor: 'pointer',
+          }}
+        >
           Subscribe Now
         </button>
+         {!isValidEmail && (
+            <p style={{ color: 'red' }}>Please enter a valid email address.</p>
+          )}
       </form>
-      {submitted && <p>Thank you for subscribing!</p>}
+      {isSubmitted && <p>Thank you for subscribing!</p>}
     </div>
   );
-};
+}
 
+<|END_CODE|>
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscription />);
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterForm />);
 
     </script>
   </body>

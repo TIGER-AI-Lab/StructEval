@@ -83,115 +83,12 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const RSVPForm = () => {
-  const [fullName, setFullName] = useState('');
-  const [email, setEmail] = useState('');
-  const [ticketType, setTicketType] = useState('');
-  const [attendance, setAttendance] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = () => {
-    if (fullName && email && ticketType && attendance) {
-      setSubmitted(true);
-    } else {
-      setSubmitted(false);
-      alert('Please fill in all fields.');
-    }
-  };
-
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-  };
-
-  const formStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    width: '300px',
-  };
-
-  const buttonStyle = {
-    backgroundColor: 'green',
-    color: 'white',
-    padding: '10px',
-    border: 'none',
-    cursor: 'pointer',
-    marginTop: '10px',
-  };
-
-  const messageStyle = {
-    marginTop: '20px',
-    textAlign: 'center',
-    color: 'green',
-  };
-
-  return (
-    <div style={containerStyle}>
-      <div style={formStyle}>
-        <h1 style={{ textAlign: 'center' }}>Event RSVP</h1>
-        <input
-          type="text"
-          placeholder="Full Name"
-          value={fullName}
-          onChange={(e) => setFullName(e.target.value)}
-          style={{ marginBottom: '10px', padding: '8px' }}
-        />
-        <input
-          type="email"
-          placeholder="Email Address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={{ marginBottom: '10px', padding: '8px' }}
-        />
-        <select
-          value={ticketType}
-          onChange={(e) => setTicketType(e.target.value)}
-          style={{ marginBottom: '10px', padding: '8px' }}
-        >
-          <option value="" disabled>
-            Select Ticket Type
-          </option>
-          <option>General Admission</option>
-          <option>VIP</option>
-          <option>Student</option>
-        </select>
-        <div style={{ marginBottom: '10px' }}>
-          <label>
-            <input
-              type="radio"
-              name="attendance"
-              value="In-Person"
-              checked={attendance === 'In-Person'}
-              onChange={(e) => setAttendance(e.target.value)}
-            />
-            In-Person
-          </label>
-          <label style={{ marginLeft: '10px' }}>
-            <input
-              type="radio"
-              name="attendance"
-              value="Virtual"
-              checked={attendance === 'Virtual'}
-              onChange={(e) => setAttendance(e.target.value)}
-            />
-            Virtual
-          </label>
-        </div>
-        <button style={buttonStyle} onClick={handleSubmit}>
-          Confirm RSVP
-        </button>
-        {submitted && <div style={messageStyle}>RSVP Received</div>}
-      </div>
-    </div>
-  );
-};
-
+\begin{equation}
+\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
+\end{equation}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<RSVPForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

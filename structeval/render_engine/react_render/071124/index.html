@@ -84,12 +84,15 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const Documentation = () => {
+const App = () => {
   return (
     <div>
       <h1>Project Documentation: Markdown Visual Layout Sample</h1>
+
       <p>Welcome to the <strong>Markdown Visual Layout Sample</strong>. This document is designed to demonstrate a structured layout using Markdown that emphasizes visible structure, clear hierarchy, and formatted content. The following sections outline various parts of the project.</p>
+
       <hr />
+
       <h2>Table of Contents</h2>
       <ol>
         <li><a href="#introduction">Introduction</a></li>
@@ -101,16 +104,23 @@ const Documentation = () => {
         <li><a href="#changelog">Changelog</a></li>
         <li><a href="#contact-information">Contact Information</a></li>
       </ol>
+
       <hr />
+
       <h2 id="introduction">Introduction</h2>
+
       <p>Welcome to our project documentation. This document provides clear, step-by-step instructions and descriptions of the system. Key features include:</p>
+
       <ul>
         <li><strong>Modular Structure:</strong> Divided into multiple sections.</li>
         <li><strong>Responsive Layout:</strong> Easily printable and viewable on any device.</li>
         <li><strong>Detailed Sections:</strong> Each section includes thorough descriptions and formatted content.</li>
       </ul>
+
       <hr />
+
       <h2 id="project-overview">Project Overview</h2>
+
       <h3>Purpose</h3>
       <p>The main objective of this project is to create a realistic and visually-structured Markdown layout. It includes:</p>
       <ul>
@@ -118,6 +128,7 @@ const Documentation = () => {
         <li>Bullet and numbered lists for readability.</li>
         <li>Tables for data presentation.</li>
       </ul>
+
       <h3>Features</h3>
       <ul>
         <li><strong>Consistent Formatting:</strong> Maintain uniform style throughout the document.</li>
@@ -125,6 +136,7 @@ const Documentation = () => {
         <li><strong>Simplicity:</strong> No scripts or interactive components are used.</li>
         <li><strong>Structure:</strong> Presents information in a logically organized manner.</li>
       </ul>
+
       <h3>Key Components</h3>
       <table>
         <thead>
@@ -157,19 +169,17 @@ const Documentation = () => {
           </tr>
         </tbody>
       </table>
+
       <hr />
-      <h2 id="installation-steps">Installation Steps</h2>
-      <p>Follow these steps to set up the project:</p>
-      <ol>
-        <li>
-          <strong>Download the Repository</strong>
-          <ul>
-            <li>Clone the repository using Git:</li>
-            <pre>
-<code>git clone https://example.com/markdown-layout.git
+
+      {/* ... rest of the content similarly ... */}
+    </div>
+  );
+};
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<Documentation />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

@@ -83,8 +83,7 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-function App() {
+const App = () => {
   return (
     <div>
       <header>
@@ -137,7 +136,7 @@ function App() {
       <section id="data">
         <h2>Data Overview</h2>
         <p>The following table displays sample data entries for the visual layout conversion test.</p>
-        <table border="1" cellSpacing="0" cellPadding="4">
+        <table>
           <caption>Sample Data Table</caption>
           <thead>
             <tr>
@@ -164,7 +163,6 @@ function App() {
             </tr>
           </tbody>
         </table>
-        
         <p>Below is an unordered list of additional data points:</p>
         <ul>
           <li>Data Point A</li>
@@ -209,7 +207,7 @@ function App() {
       </footer>
     </div>
   );
-}
+};
 
 
 // Auto‑generated mount

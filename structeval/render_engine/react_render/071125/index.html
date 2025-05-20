@@ -83,109 +83,124 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+<|BEGIN_CODE|>
 
-const ProjectOverview = () => (
-  <div>
-    <h1>Project Overview</h1>
-    
-    <p>This document outlines the <strong>Project Alpha</strong> strategy, scope, and implementation timeline.</p>
-    
-    <h2>Table of Contents</h2>
-    <ol>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#requirements">Requirements</a></li>
-      <li><a href="#design">Design</a></li>
-      <li><a href="#implementation">Implementation</a></li>
-      <li><a href="#testing--quality-assurance">Testing &amp; Quality Assurance</a></li>
-      <li><a href="#deployment">Deployment</a></li>
-      <li><a href="#appendix">Appendix</a></li>
-    </ol>
-    
-    <hr />
-    
-    <h2 id="introduction">Introduction</h2>
-    <p>Project Alpha is envisioned as a comprehensive solution to address the needs of modern enterprises. Its primary focus is on scalability, efficiency, and user experience.</p>
-    
-    <ul>
-      <li><strong>Mission:</strong> Deliver a robust, scalable platform that meets modern enterprise demands.</li>
-      <li><strong>Vision:</strong> Simplify complex enterprise challenges through innovative technology.</li>
-    </ul>
-    
-    <h3>Key Benefits</h3>
-    <ul>
-      <li>Efficient resource management</li>
-      <li>User-friendly interface</li>
-      <li>Enhanced security and data protection</li>
-    </ul>
-    
-    <hr />
-    
-    <h2 id="requirements">Requirements</h2>
-    
-    <p><strong>Functional Requirements:</strong></p>
-    <ul>
-      <li>User Registration &amp; Authentication</li>
-      <li>Data Encryption &amp; Backup</li>
-      <li>Reporting Dashboard</li>
-      <li>API Integration</li>
-    </ul>
-    
-    <p><strong>Non-Functional Requirements:</strong></p>
-    <ul>
-      <li>High Availability and Scalability</li>
-      <li>Performance Optimization</li>
-      <li>Ease of Use and Accessibility</li>
-      <li>Data Integrity &amp; Security</li>
-    </ul>
-    
-    <hr />
-    
-    <h2 id="design">Design</h2>
-    
-    <h3>System Architecture</h3>
-    <ul>
-      <li><strong>Client:</strong> Web-based interface built with HTML and CSS.</li>
-      <li><strong>Server:</strong> RESTful API developed using a modern backend framework.</li>
-      <li><strong>Database:</strong> Relational database, e.g., PostgreSQL.</li>
-    </ul>
-    
-    <h4>Basic Architecture Diagram</h4>
-    <pre><code>
-{`
+function ProjectOverview() {
+  return (
+    <div className="project-overview">
+      <h1>Project Overview</h1>
+
+      <p>
+        This document outlines the <b>Project Alpha</b> strategy, scope, and implementation timeline.
+      </p>
+
+      <h2>Table of Contents</h2>
+
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#implementation">Implementation</a></li>
+        <li><a href="#testing--quality-assurance">Testing & Quality Assurance</a></li>
+        <li><a href="#deployment">Deployment</a></li>
+        <li><a href="#appendix">Appendix</a></li>
+      </ol>
+
+      <hr />
+
+      <h2 id="introduction">Introduction</h2>
+
+      <p>
+        Project Alpha is envisioned as a comprehensive solution to address the needs of modern enterprises. Its primary focus is on scalability, efficiency, and user experience.
+      </p>
+
+      <ul>
+        <li><b>Mission:</b> Deliver a robust, scalable platform that meets modern enterprise demands.</li>
+        <li><b>Vision:</b> Simplify complex enterprise challenges through innovative technology.</li>
+      </ul>
+
+      <h3>Key Benefits</h3>
+
+      <ul>
+        <li>Efficient resource management</li>
+        <li>User-friendly interface</li>
+        <li>Enhanced security and data protection</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="requirements">Requirements</h2>
+
+      <p><b>Functional Requirements:</b></p>
+
+      <ul>
+        <li>User Registration & Authentication</li>
+        <li>Data Encryption & Backup</li>
+        <li>Reporting Dashboard</li>
+        <li>API Integration</li>
+      </ul>
+
+      <p><b>Non-Functional Requirements:</b></p>
+
+      <ul>
+        <li>High Availability and Scalability</li>
+        <li>Performance Optimization</li>
+        <li>Ease of Use and Accessibility</li>
+        <li>Data Integrity & Security</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="design">Design</h2>
+
+      <h3>System Architecture</h3>
+
+      <ul>
+        <li><b>Client:</b> Web-based interface built with HTML and CSS.</li>
+        <li><b>Server:</b> RESTful API developed using a modern backend framework.</li>
+        <li><b>Database:</b> Relational database, e.g., PostgreSQL.</li>
+      </ul>
+
+      <h4>Basic Architecture Diagram</h4>
+
+      <pre>
+<code>
     [ Client Browser ]
             |
         [ REST API ]
             |
       [ PostgreSQL DB ]
-`}
-    </code></pre>
-    
-    <h3>User Interface Outline</h3>
-    <ol>
-      <li>Login Page</li>
-      <li>Dashboard Overview</li>
-      <li>Detailed Analytics</li>
-      <li>Account Settings</li>
-    </ol>
-    
-    <hr />
-    
-    <h2 id="implementation">Implementation</h2>
-    
-    <h3>Milestones</h3>
-    <ul>
-      <li>â Initial Setup and Planning</li>
-      <li>â¬ Phase 1: Develop User Authentication Module</li>
-      <li>â¬ Phase 2: Core Feature Development</li>
-      <li>â¬ Phase 3: Testing and Quality Assurance</li>
-    </ul>
-    
-    <h3>Example Code Snippet</h3>
-    
-    <p>Below is a simple example showing the setup of our server using Python and Flask:</p>
-    
-    <pre><code>
-{`
+</code>
+      </pre>
+
+      <h3>User Interface Outline</h3>
+
+      <ol>
+        <li>Login Page</li>
+        <li>Dashboard Overview</li>
+        <li>Detailed Analytics</li>
+        <li>Account Settings</li>
+      </ol>
+
+      <hr />
+
+      <h2 id="implementation">Implementation</h2>
+
+      <h3>Milestones</h3>
+
+      <ul>
+        <li><mark>â</mark> Initial Setup and Planning</li>
+        <li><mark> </mark> Phase 1: Develop User Authentication Module</li>
+        <li><mark> </mark> Phase 2: Core Feature Development</li>
+        <li><mark> </mark> Phase 3: Testing and Quality Assurance</li>
+      </ul>
+
+      <h3>Example Code Snippet</h3>
+
+      <p>Below is a simple example showing the setup of our server using Python and Flask:</p>
+
+      <pre>
+<code>
 def start_server():
     from flask import Flask, jsonify
 
@@ -203,12 +218,13 @@ def start_server():
         app.run(debug=True)
 
 start_server()
-`}
-    </code></pre>
-    
-    <h3>Directory Structure</h3>
-    <pre><code>
-{`
+</code>
+      </pre>
+
+      <h3>Directory Structure</h3>
+
+      <pre>
+<code>
 ProjectAlpha/
 âââ docs/
 â   âââ README.md
@@ -220,55 +236,61 @@ ProjectAlpha/
     âââ test_auth.py
     âââ test_utils.py
     âââ test_integration.py
-`}
-    </code></pre>
-    
-    <hr />
-    
-    <h2 id="testing--quality-assurance">Testing &amp; Quality Assurance</h2>
-    
-    <h3>Testing Strategy</h3>
-    <ol>
-      <li><strong>Unit Testing:</strong> For individual modules/components.</li>
-      <li><strong>Integration Testing:</strong> To verify complete workflows.</li>
-      <li><strong>Stress Testing:</strong> To determine performance under high load.</li>
-    </ol>
-    
-    <p><strong>Note:</strong> Automated tests will run on every commit via continuous integration to ensure stability.</p>
-    
-    <hr />
-    
-    <h2 id="deployment">Deployment</h2>
-    <ul>
-      <li><strong>Stage 1:</strong> Deploy on a staging server for initial user acceptance testing (UAT).</li>
-      <li><strong>Stage 2:</strong> Move to production post-UAT approval.</li>
-      <li><strong>Stage 3:</strong> Monitor performance, security, and rollout periodic updates.</li>
-    </ul>
-    
-    <hr />
-    
-    <h2 id="appendix">Appendix</h2>
-    
-    <h3>Glossary</h3>
-    <ul>
-      <li><strong>API:</strong> Application Programming Interface.</li>
-      <li><strong>UAT:</strong> User Acceptance Testing.</li>
-      <li><strong>QA:</strong> Quality Assurance.</li>
-      <li><strong>CI/CD:</strong> Continuous Integration / Continuous Deployment.</li>
-    </ul>
-    
-    <h3>Contact Information</h3>
-    <p>For more details regarding the project, please contact the Project Lead.</p>
-    <ul>
-      <li><strong>Email:</strong> <a href="mailto:project.alpha@example.com">project.alpha@example.com</a></li>
-      <li><strong>Phone:</strong> +123-456-7890</li>
-    </ul>
-    
-    <hr />
-    
-    <p>End of Documentation.</p>
-  </div>
-);
+</code>
+      </pre>
+
+      <hr />
+
+      <h2 id="testing--quality-assurance">Testing & Quality Assurance</h2>
+
+      <h3>Testing Strategy</h3>
+
+      <ol>
+        <li><b>Unit Testing:</b> For individual modules/components.</li>
+        <li><b>Integration Testing:</b> To verify complete workflows.</li>
+        <li><b>Stress Testing:</b> To determine performance under high load.</li>
+      </ol>
+
+      <p><b>Note:</b> Automated tests will run on every commit via continuous integration to ensure stability.</p>
+
+      <hr />
+
+      <h2 id="deployment">Deployment</h2>
+
+      <ul>
+        <li><b>Stage 1:</b> Deploy on a staging server for initial user acceptance testing (UAT).</li>
+        <li><b>Stage 2:</b> Move to production post-UAT approval.</li>
+        <li><b>Stage 3:</b> Monitor performance, security, and rollout periodic updates.</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="appendix">Appendix</h2>
+
+      <h3>Glossary</h3>
+
+      <ul>
+        <li><b>API:</b> Application Programming Interface.</li>
+        <li><b>UAT:</b> User Acceptance Testing.</li>
+        <li><b>QA:</b> Quality Assurance.</li>
+        <li><b>CI/CD:</b> Continuous Integration / Continuous Deployment.</li>
+      </ul>
+
+      <h3>Contact Information</h3>
+
+      <p>For more details regarding the project, please contact the Project Lead.</p>
+
+      <ul>
+        <li><b>Email:</b> project.alpha@example.com</li>
+        <li><b>Phone:</b> +123-456-7890</li>
+      </ul>
+
+      <hr />
+
+      <p>End of Documentation.</p>
+    </div>
+  );
+}
 
 
 // Auto‑generated mount

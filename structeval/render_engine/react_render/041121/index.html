@@ -83,15 +83,14 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-function App() {
+const App = () => {
   return (
-    <>
+    <div>
       <header>
         <h1>Structured Layout Example</h1>
         <p>A demonstration of visible structure, layout, and formatted content.</p>
       </header>
-      
+
       <nav>
         <ul>
           <li><a href="#introduction">Introduction</a></li>
@@ -100,12 +99,12 @@ function App() {
           <li><a href="#conclusion">Conclusion</a></li>
         </ul>
       </nav>
-      
+
       <section id="introduction">
         <h2>Introduction</h2>
         <p>This page is designed to showcase a rich HTML structure using multiple semantic elements. The focus is on headings, sections, lists, and labeled values that outline the content neatly.</p>
       </section>
-      
+
       <section id="features">
         <h2>Key Features</h2>
         <ul>
@@ -116,7 +115,7 @@ function App() {
           <li>Readable and maintainable plain HTML code</li>
         </ul>
       </section>
-      
+
       <section id="details">
         <h2>Detailed Content</h2>
         <article>
@@ -125,13 +124,13 @@ function App() {
             <p><strong>Published:</strong> October 2023</p>
           </header>
           <p>This article explains the rationale behind the use of proper HTML structure. By organizing content into sections, articles, and divisions, we ensure that both users and search engines can navigate the information easily.</p>
-          
+
           <details>
             <summary>Expand for Additional Information</summary>
             <p>The design choices in this example prioritize semantic clarity over visual complexity. Each section serves a distinct purpose and contributes to the overall hierarchy of the document.</p>
           </details>
         </article>
-        
+
         <div className="info-section">
           <h3>Labeled Details</h3>
           <dl>
@@ -143,11 +142,11 @@ function App() {
             <dd>1.0</dd>
           </dl>
         </div>
-        
+
         <div className="list-section">
           <h3>Steps to Build This Page</h3>
           <ol>
-            <li>Declare the document type using <!DOCTYPE html>.</li>
+            <li>Declare the document type using <code><!DOCTYPE html></code>.</li>
             <li>Set up the head with proper meta tags.</li>
             <li>Create a header with primary information.</li>
             <li>Organize content into multiple sections.</li>
@@ -156,19 +155,18 @@ function App() {
           </ol>
         </div>
       </section>
-      
+
       <section id="conclusion">
         <h2>Conclusion</h2>
         <p>This example illustrates the importance of a well-structured HTML document. It is designed for visual conversion tasks and serves as a template to assess layout, hierarchy, and content formatting.</p>
       </section>
-      
+
       <footer>
         <p>&copy; 2023 Structured Layout Example. All rights reserved.</p>
       </footer>
-    </>
+    </div>
   );
-}
-
+};
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

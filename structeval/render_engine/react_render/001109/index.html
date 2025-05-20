@@ -84,46 +84,24 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function RegistrationForm() {
+const RegistrationForm = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [agree, setAgree] = useState(false);
-  const [success, setSuccess] = useState(false);
+  const [agreed, setAgreed] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username && email && password) {
-      setSuccess(true);
-    } else {
-      setSuccess(false);
+    if (username && email && password && agreed) {
+      setSubmitted(true);
     }
   };
 
-  const formStyle = {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gap: '10px',
-    maxWidth: '400px',
-    margin: '0 auto',
-  };
-
-  const fullWidthStyle = {
-    gridColumn: 'span 2',
-  };
-
-  const buttonStyle = {
-    backgroundColor: 'green',
-    color: 'white',
-    padding: '10px',
-    border: 'none',
-    cursor: 'pointer',
-  };
-
   return (
-    <form onSubmit={handleSubmit}>
-      <h1 style={{ textAlign: 'center' }}>Registration</h1>
-      <div style={formStyle}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <h1>Registration</h1>
+      <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', width: '300px' }}>
         <input
           type="text"
           placeholder="Username"
@@ -142,24 +120,36 @@ function RegistrationForm() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <div style={fullWidthStyle}>
+        <div style={{ gridColumn: '1 / span 2' }}>
           <label>
             <input
               type="checkbox"
-              checked={agree}
-              onChange={(e) => setAgree(e.target.checked)}
-            />
+              checked={agreed}
+              onChange={(e) => setAgreed(e.target.checked)}
+            />{' '}
             I agree to the Terms
           </label>
         </div>
-        <button type="submit" style={buttonStyle}>
+        <button
+          type="submit"
+          style={{
+            gridColumn: '1 / span 2',
+            backgroundColor: 'green',
+            color: 'white',
+            padding: '10px',
+            border: 'none',
+            cursor: 'pointer',
+          }}
+        >
           Register
         </button>
-      </div>
-      {success && <p>Registration successful!</p>}
-    </form>
+      </form>
+      {submitted && (
+        <p style={{ marginTop: '20px' }}>Registration successful!</p>
+      )}
+    </div>
   );
-}
+};
 
 
 // Auto‑generated mount

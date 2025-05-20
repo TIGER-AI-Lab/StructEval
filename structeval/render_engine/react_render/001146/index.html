@@ -83,107 +83,80 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+<script type="text/babel">
+const { useState } = React;
+const { useEffect } = React;
 
-function NewsletterSubscription() {
+function NewsletterSubscriptionForm() {
   const [email, setEmail] = useState('');
-  const [receiveUpdates, setReceiveUpdates] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
 
-  const validateEmail = (email) => {
-    return /\S+@\S+\.\S+/.test(email);
+  const checkEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email.match(emailRegex)) {
+      setSuccess(true);
+    } else {
+      setError('Please enter a valid email address');
+      setSuccess(false);
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setError('');
-    setSuccess(false);
-    if (!email) {
-      setError('Email is required.');
-      return;
+    if (!email || !isChecked) {
+      setError('Please fill out all fields.');
+    } else {
+      checkEmail(email);
     }
-    if (!validateEmail(email)) {
-      setError('Please enter a valid email address.');
-      return;
-    }
-    if (!receiveUpdates) {
-      setError('You must agree to receive updates.');
-      return;
-    }
-    setSuccess(true);
-  };
-
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-  };
-
-  const formStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  };
-
-  const inputGroupStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    marginBottom: '10px',
-  };
-
-  const buttonStyle = {
-    backgroundColor: 'green',
-    color: 'white',
-    padding: '10px 20px',
-    border: 'none',
-    cursor: 'pointer',
-  };
-
-  const errorStyle = {
-    color: 'red',
-    fontSize: '12px',
-    marginBottom: '10px',
-  };
-
-  const successStyle = {
-    color: 'green',
-    marginTop: '10px',
   };
 
   return (
-    <div style={containerStyle}>
-      <form onSubmit={handleSubmit} style={formStyle}>
-        <h1>Subscribe Now</h1>
-        <div style={inputGroupStyle}>
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            style={{ marginRight: '10px' }}
-          />
-          <label>
-            <input
-              type="checkbox"
-              checked={receiveUpdates}
-              onChange={(e) => setReceiveUpdates(e.target.checked)}
-            />
-            Receive Updates
-          </label>
-        </div>
-        {error && <span style={errorStyle}>{error}</span>}
-        <button type="submit" style={buttonStyle}>Sign Up</button>
-        {success && <p style={successStyle}>Thank you for subscribing!</p>}
-      </form>
+    <div className="subscription-form">
+      <h1>Subscribe Now</h1>
+      <div className="flex-container">
+        <input
+          type="text"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="checkbox"
+          checked={isChecked}
+          onChange={() => setIsChecked(!isChecked)}
+        />
+        <label htmlFor="email">Receive Updates</label>
+        <button className="sign-up-btn" onClick={handleSubmit}>Sign Up</button>
+      </div>
+      {error && <span style={{ color: 'red' }}>{error}</span>}
+      {success && <p>Thank you for subscribing!</p>}
     </div>
   );
 }
 
+ReactDOM.render(<NewsletterSubscriptionForm />, document.getElementById('app'));
+</script>
 
-// Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscription />);
-
+<style>
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .subscription-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sign-up-btn {
+    background-color: green;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+</style>
     </script>
   </body>
 </html>

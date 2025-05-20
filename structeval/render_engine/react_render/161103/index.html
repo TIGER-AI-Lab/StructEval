@@ -85,57 +85,41 @@
 
 
 const VisualLayoutComponent = () => {
-  const [stats] = useState({
+  const [stats, setStats] = useState({
     totalUsers: 10234,
     activeSessions: 235,
-    newSignups: 87
+    newSignups: 87,
   });
 
-  const [articles] = useState([
+  const [articles, setArticles] = useState([
     {
       id: 1,
       title: 'Understanding Vue Lifecycle Methods',
       summary: 'Explore how Vue lifecycle hooks work and how they can enhance your apps.',
       author: 'Jane Doe',
-      date: 'March 15, 2023'
+      date: 'March 15, 2023',
     },
     {
       id: 2,
       title: 'Vue 3 Composition API',
       summary: 'Learn how to leverage the power of the Composition API in your projects.',
       author: 'John Smith',
-      date: 'March 10, 2023'
+      date: 'March 10, 2023',
     },
     {
       id: 3,
       title: 'State Management with Vuex',
       summary: 'Discover effective patterns for managing application state with Vuex.',
       author: 'Lisa Johnson',
-      date: 'March 5, 2023'
-    }
+      date: 'March 5, 2023',
+    },
   ]);
 
-  const [quickLinks] = useState([
-    {
-      id: 1,
-      label: 'Documentation',
-      value: 'View Docs'
-    },
-    {
-      id: 2,
-      label: 'Repository',
-      value: 'GitHub'
-    },
-    {
-      id: 3,
-      label: 'Support',
-      value: 'Contact Us'
-    },
-    {
-      id: 4,
-      label: 'Updates',
-      value: 'Weekly'
-    }
+  const [quickLinks, setQuickLinks] = useState([
+    { id: 1, label: 'Documentation', value: 'View Docs' },
+    { id: 2, label: 'Repository', value: 'GitHub' },
+    { id: 3, label: 'Support', value: 'Contact Us' },
+    { id: 4, label: 'Updates', value: 'Weekly' },
   ]);
 
   useEffect(() => {
@@ -143,7 +127,6 @@ const VisualLayoutComponent = () => {
   }, []);
 
   const updateStatistics = () => {
-    // Method to update statistics
     console.log('Statistics updated');
   };
 
@@ -174,7 +157,7 @@ const VisualLayoutComponent = () => {
         <article className="article-section">
           <h2>Latest Articles</h2>
           <ul className="article-list">
-            {articles.map(article => (
+            {articles.map((article) => (
               <li key={article.id}>
                 <h3>{article.title}</h3>
                 <p>{article.summary}</p>
@@ -188,7 +171,7 @@ const VisualLayoutComponent = () => {
         <aside className="sidebar-section">
           <h2>Quick Links</h2>
           <ul className="link-list">
-            {quickLinks.map(link => (
+            {quickLinks.map((link) => (
               <li key={link.id}>
                 <span className="link-label">{link.label}: </span>
                 <span className="link-value">{link.value}</span>
@@ -201,16 +184,13 @@ const VisualLayoutComponent = () => {
         <h2>Contact Information</h2>
         <div className="contact-details">
           <div className="contact-item">
-            <strong>Address:</strong>
-            123 Vue Street, Framework City, JS Country
+            <strong>Address:</strong> 123 Vue Street, Framework City, JS Country
           </div>
           <div className="contact-item">
-            <strong>Phone:</strong>
-            +1234567890
+            <strong>Phone:</strong> +1234567890
           </div>
           <div className="contact-item">
-            <strong>Email:</strong>
-            contact@vueappdemo.com
+            <strong>Email:</strong> contact@vueappdemo.com
           </div>
         </div>
       </section>

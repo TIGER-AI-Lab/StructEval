@@ -84,12 +84,12 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const VueVisualization = () => {
-  const message = 'This content is for demonstration only';
-  const timestamp = new Date().toLocaleDateString();
+const App = () => {
+  const [message, setMessage] = useState('This content is for demonstration only');
+  const [timestamp, setTimestamp] = useState(new Date().toLocaleDateString());
 
   useEffect(() => {
-    console.log('Vue Visualization component mounted successfully');
+    console.log('React Visualization component mounted successfully');
   }, []);
 
   const logMessage = () => {
@@ -99,14 +99,14 @@ const VueVisualization = () => {
   return (
     <div className="container">
       <header>
-        <h1>Welcome to the Vue Visualization</h1>
-        <p>This is a demonstration of a structured layout using Vue.js.</p>
+        <h1>Welcome to the React Visualization</h1>
+        <p>This is a demonstration of a structured layout using React.</p>
       </header>
-      
+
       <section className="intro">
         <h2>Introduction</h2>
         <p>
-          Explore various structural elements such as headings, sections, lists, tables, and labeled values. 
+          Explore various structural elements such as headings, sections, lists, tables, and labeled values.
           This page is designed to show a clear visual hierarchy and layout using only one page.
         </p>
       </section>
@@ -115,14 +115,14 @@ const VueVisualization = () => {
         <div className="info-block">
           <h3>Key Information</h3>
           <ul>
-            <li><strong>Version:</strong> Vue 3</li>
-            <li><strong>Components:</strong> Single File Component</li>
-            <li><strong>Layout:</strong> Template, Script, Style</li>
+            <li><strong>Version:</strong> React {React.version}</li>
+            <li><strong>Components:</strong> Functional Component</li>
+            <li><strong>Layout:</strong> JSX</li>
           </ul>
         </div>
         <div className="info-block">
           <h3>Contact Information</h3>
-          <p><strong>Email:</strong> vue@example.com</p>
+          <p><strong>Email:</strong> react@example.com</p>
           <p><strong>Phone:</strong> +123-456-7890</p>
         </div>
       </section>
@@ -183,115 +183,15 @@ const VueVisualization = () => {
         </div>
       </section>
       <footer>
-        <p>Â© 2023 Vue Visualization Project</p>
+        <p>&copy; 2023 React Visualization Project</p>
       </footer>
-      <style>
-        {`
-        .container {
-          max-width: 1000px;
-          margin: 0 auto;
-          padding: 20px;
-          font-family: Arial, sans-serif;
-        }
-        
-        header {
-          background-color: #f3f4f6;
-          padding: 20px;
-          border-radius: 5px;
-          margin-bottom: 20px;
-          text-align: center;
-        }
-        
-        section {
-          margin-bottom: 30px;
-        }
-        
-        h1 {
-          color: #2c3e50;
-        }
-        
-        h2 {
-          color: #3498db;
-          border-bottom: 2px solid #eaeaea;
-          padding-bottom: 10px;
-        }
-        
-        h3 {
-          color: #2980b9;
-        }
-        
-        .info-block {
-          background-color: #f8f9fa;
-          padding: 15px;
-          border-radius: 5px;
-          margin-bottom: 15px;
-        }
-        
-        .list-section ol {
-          padding-left: 20px;
-        }
-        
-        .table-section table {
-          width: 100%;
-          border-collapse: collapse;
-        }
-        
-        .table-section th, .table-section td {
-          border: 1px solid #ddd;
-          padding: 8px;
-          text-align: left;
-        }
-        
-        .table-section th {
-          background-color: #f2f2f2;
-        }
-        
-        .pricing-section {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-        }
-        
-        .plan {
-          flex: 1;
-          min-width: 200px;
-          background-color: #f8f9fa;
-          padding: 15px;
-          border-radius: 5px;
-          margin-right: 15px;
-        }
-        
-        .plan:last-child {
-          margin-right: 0;
-        }
-        
-        footer {
-          text-align: center;
-          margin-top: 40px;
-          padding-top: 20px;
-          border-top: 1px solid #eaeaea;
-          color: #7f8c8d;
-        }
-        
-        @media (max-width: 768px) {
-          .pricing-section {
-            flex-direction: column;
-          }
-          
-          .plan {
-            margin-right: 0;
-            margin-bottom: 15px;
-          }
-        }
-        `}
-      </style>
     </div>
   );
 };
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<VueVisualization />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

@@ -83,173 +83,90 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+\documentclass{article}
+\usepackage{tikz}
 
-function App() {
-  return (
-    <div>
-      {/* Header Section */}
-      <header>
-        <h1>Welcome to Our Company</h1>
-        <p>Striving for excellence in every project we undertake</p>
-      </header>
-      
-      {/* Navigation Bar */}
-      <nav>
-        <ul>
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#team">Our Team</a></li>
-          <li><a href="#news">Latest News</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      
-      {/* Main Content Area */}
-      <main>
-        {/* Overview Section */}
-        <section id="overview">
-          <h2>Company Overview</h2>
-          <p>Our company has been a leader in innovative solutions for over 20 years. We specialize in a range of services tailored to meet the unique needs of our clients.</p>
-          <article>
-            <header>
-              <h3>History &amp; Milestones</h3>
-            </header>
-            <ul>
-              <li>Founded in 2000</li>
-              <li>First major breakthrough in 2005</li>
-              <li>Expanded globally in 2010</li>
-              <li>Launched innovative tech solutions in 2018</li>
-            </ul>
-          </article>
-        </section>
-        
-        {/* Services Section */}
-        <section id="services">
-          <h2>Our Services</h2>
-          <p>We offer a variety of services to help you achieve your business goals.</p>
-          <div>
-            <h3>Consulting</h3>
-            <p>Expert advice to optimize your business strategies and improve operational efficiency.</p>
-          </div>
-          <div>
-            <h3>Technology Solutions</h3>
-            <p>Custom software solutions and IT infrastructure setup tailored to your specific needs.</p>
-          </div>
-          <div>
-            <h3>Training &amp; Support</h3>
-            <p>Comprehensive training programs and ongoing support to ensure smooth operations.</p>
-          </div>
-          <article>
-            <header>
-              <h3>Service Highlights</h3>
-            </header>
-            <ol>
-              <li>24/7 Customer Support</li>
-              <li>Tailored Consultation Packages</li>
-              <li>Proven Track Record in Innovation</li>
-              <li>Competitive Pricing &amp; Packages</li>
-            </ol>
-          </article>
-        </section>
-        
-        {/* Team Section */}
-        <section id="team">
-          <h2>Meet Our Team</h2>
-          <p>Our professionals are at the core of everything we do.</p>
-          <article>
-            <header>
-              <h3>Leadership Team</h3>
-            </header>
-            <ul>
-              <li><strong>Jane Doe</strong> - Chief Executive Officer</li>
-              <li><strong>John Smith</strong> - Chief Technology Officer</li>
-              <li><strong>Emily Johnson</strong> - Head of Marketing</li>
-              <li><strong>Michael Brown</strong> - Director of Operations</li>
-            </ul>
-          </article>
-          <article>
-            <header>
-              <h3>Key Contributors</h3>
-            </header>
-            <ul>
-              <li>Senior Consultant - Alex Carter</li>
-              <li>Lead Developer - Samantha Lee</li>
-              <li>Project Manager - Robert Davis</li>
-              <li>Design Expert - Linda Martinez</li>
-            </ul>
-          </article>
-        </section>
-        
-        {/* News Section */}
-        <section id="news">
-          <h2>Latest News</h2>
-          <article>
-            <header>
-              <h3>New Headquarters Opening</h3>
-              <p><em>Date: March 15, 2023</em></p>
-            </header>
-            <p>We are excited to announce the opening of our new headquarters located in the heart of the city. The new facility is designed to foster creativity and collaboration among our teams.</p>
-          </article>
-          <article>
-            <header>
-              <h3>Innovative Product Launch</h3>
-              <p><em>Date: June 10, 2023</em></p>
-            </header>
-            <p>Our latest product is set to transform the tech industry. With state-of-the-art features and an intuitive design, it will set a new industry standard for innovation.</p>
-          </article>
-        </section>
-        
-        {/* Contact Section */}
-        <section id="contact">
-          <h2>Contact Us</h2>
-          <p>Please reach out to us using the details below:</p>
-          <table border="1" cellPadding="5" cellSpacing="0">
-            <thead>
-              <tr>
-                <th>Office</th>
-                <th>Location</th>
-                <th>Phone Number</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Headquarters</td>
-                <td>123 Main Street, Cityville</td>
-                <td>(123) 456-7890</td>
-              </tr>
-              <tr>
-                <td>European Office</td>
-                <td>456 Elm Street, Eurotown</td>
-                <td>(098) 765-4321</td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <h3>Send Us a Message</h3>
-          <form>
-            <label htmlFor="name">Name:</label><br />
-            <input type="text" id="name" name="name" size="40" /><br /><br />
-            
-            <label htmlFor="email">Email:</label><br />
-            <input type="email" id="email" name="email" size="40" /><br /><br />
-            
-            <label htmlFor="message">Message:</label><br />
-            <textarea id="message" name="message" rows="5" cols="40"></textarea><br /><br />
-            
-            <input type="submit" value="Submit" />
-          </form>
-        </section>
-      </main>
-      
-      {/* Footer Section */}
-      <footer>
-        <p>&copy; 2023 Our Company. All rights reserved.</p>
-        <p>123 Business Road, Industrial Park, Worktown</p>
-      </footer>
-    </div>
-  );
-}
+\begin{document}
 
+\begin{tikzpicture}
+% Grid
+\draw [thin, step=1cm] (0,0) grid (10,1);
+
+% Plot Sin
+\draw [thin, blue, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.84147098)
+(2,0.90929743)
+(3,0.14112001)
+(4,-0.7568025)
+(5,-0.9589243)
+(6,-0.2794155)
+(7,0.9589243)
+(8,0.6569866)
+(9,0.7568025)
+(10,0.84147098)
+};
+
+% Plot Cos
+\draw [thin, green, <->] plot[smooth] coordinates {
+(0,1)
+(1,0.5403023)
+(2,0.4161468)
+(3,0.9899925)
+(4,0.9899925)
+(5,0.4161468)
+(6,-0.5403023)
+(7,-1)
+(8,-0.9899925)
+(9,-0.4161468)
+(10,-0.9899925)
+};
+
+% Plot Tan (Limited Range)
+\draw [thin, red, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.0174524)
+(2,0.1900227)
+(3,0.8485772)
+(4,1.4296471)
+(5,2.0000000)
+(6,4.0792891)
+(7,8.4371791)
+(8,16)
+};
+
+% Annotation Peak Value
+\node at (2.5,1) [above, fill=black!] {Peak Value};
+
+% Text Summary
+\node [fill=white, text width=4cm] at (0.02,0.95) {
+Summary:
+--------------------------\\
+1. sin(x) and cos(x) exhibit classic periodic\\
+behavior.\\
+2. tan(x) shows asymptotic trends near\\
+odd multiples of pi/2.\\
+3. Data generated using NumPy functions.\\
+4. Plots incorporate grids, legends,\\
+and clear annotations.
+};
+
+% Statistics Text
+\node [fill=white, text width=4cm] at (0.7,0.5) {
+Statistics:
+------------------\\
+Sine\\
+  Mean: 0.00\\
+  Std:  0.99\\
+Cosine\\
+  Mean: 0.00\\
+  Std:  0.71\\
+Tangent (|value| < 10)\\
+  Mean: 0.00\\
+  Std:  0.71
+};
+
+\end{tikzpicture}
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

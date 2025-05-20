@@ -83,108 +83,12 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const DailyPlanner = () => {
-  const [tasks, setTasks] = useState([]);
-  const [title, setTitle] = useState('');
-  const [details, setDetails] = useState('');
-  const [completed, setCompleted] = useState(false);
-
-  const addTask = () => {
-    if (title.trim() === '') return;
-    setTasks([...tasks, { title, details }]);
-    setTitle('');
-    setDetails('');
-  };
-
-  const clearAll = () => {
-    setTasks([]);
-    setCompleted(false);
-  };
-
-  const markCompleted = () => {
-    setCompleted(true);
-  };
-
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-  };
-
-  const plannerStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    width: '300px',
-    gap: '10px',
-  };
-
-  const buttonStyle = {
-    padding: '8px 16px',
-    margin: '5px 0',
-  };
-
-  const addButtonStyle = {
-    ...buttonStyle,
-    backgroundColor: 'green',
-    color: 'white',
-    border: 'none',
-    cursor: 'pointer',
-  };
-
-  const otherButtonStyle = {
-    ...buttonStyle,
-    border: '1px solid #ccc',
-    cursor: 'pointer',
-  };
-
-  const taskStyle = {
-    textDecoration: completed ? 'line-through' : 'none',
-  };
-
-  return (
-    <div style={containerStyle}>
-      <div style={plannerStyle}>
-        <h1>Daily Planner</h1>
-        <input
-          type="text"
-          placeholder="Task Title"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <ul style={{ width: '100%', padding: 0 }}>
-          {tasks.map((task, index) => (
-            <li key={index} style={taskStyle}>
-              <strong>{task.title}</strong>: {task.details}
-            </li>
-          ))}
-        </ul>
-        <textarea
-          placeholder="Task Details"
-          rows="4"
-          value={details}
-          onChange={(e) => setDetails(e.target.value)}
-          style={{ width: '100%' }}
-        />
-        <button style={addButtonStyle} onClick={addTask}>
-          Add Task
-        </button>
-        <button style={otherButtonStyle} onClick={clearAll}>
-          Clear All
-        </button>
-        <button style={otherButtonStyle} onClick={markCompleted}>
-          Mark Completed
-        </button>
-      </div>
-    </div>
-  );
-};
-
+\begin{equation}
+\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
+\end{equation}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<DailyPlanner />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

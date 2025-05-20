@@ -83,112 +83,113 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1>Structural and Visual Layout Demo</h1>
+        <p>This page demonstrates a structured HTML layout with a clear visual hierarchy and formatted content.</p>
+      </header>
 
-const App = () => (
-  <div>
-    <header>
-      <h1>Structural and Visual Layout Demo</h1>
-      <p>This page demonstrates a structured HTML layout with a clear visual hierarchy and formatted content.</p>
-    </header>
-    
-    <section>
-      <h2>Introduction</h2>
-      <p>This section provides an introduction to the layout and its various components. The content is arranged in a logical order to assist in visual conversion tasks and structure recognition.</p>
-      <ul>
-        <li>Clean, semantic HTML</li>
-        <li>Hierarchical headings</li>
-        <li>Lists and paragraph elements</li>
-        <li>Definition lists for labeled values</li>
-        <li>Tables for data display</li>
-      </ul>
-    </section>
-    
-    <section>
-      <h2>Content Overview</h2>
-      <article>
-        <h3>Article Heading: The Importance of Layout</h3>
-        <p>The arrangement of content into clearly defined sections is essential. Below is a list summarizing the key points:</p>
+      <section>
+        <h2>Introduction</h2>
+        <p>This section provides an introduction to the layout and its various components. The content is arranged in a logical order to assist in visual conversion tasks and structure recognition.</p>
+        <ul>
+          <li>Clean, semantic HTML</li>
+          <li>Hierarchical headings</li>
+          <li>Lists and paragraph elements</li>
+          <li>Definition lists for labeled values</li>
+          <li>Tables for data display</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Content Overview</h2>
+        <article>
+          <h3>Article Heading: The Importance of Layout</h3>
+          <p>The arrangement of content into clearly defined sections is essential. Below is a list summarizing the key points:</p>
+          <ol>
+            <li>Clear visual cues improve readability.</li>
+            <li>Structured content facilitates accessibility.</li>
+            <li>Proper formatting distinguishes content significance.</li>
+          </ol>
+        </article>
+
+        <article>
+          <h3>Article Heading: Detailed Analysis</h3>
+          <p>This article provides in-depth details about designing a well-structured web page. Consider the following labeled values:</p>
+          <dl>
+            <dt>Project Name</dt>
+            <dd>Structural Layout Test</dd>
+            <dt>Version</dt>
+            <dd>1.0</dd>
+            <dt>Release Date</dt>
+            <dd>October 2023</dd>
+            <dt>Author</dt>
+            <dd>HTML Demo Generator</dd>
+          </dl>
+        </article>
+      </section>
+
+      <section>
+        <h2>Data Table Overview</h2>
+        <table border="1" cellSpacing="0" cellPadding="5">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Section A</td>
+              <td>Introduction to the layout principles.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Section B</td>
+              <td>Detailed analysis and content breakdown.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Section C</td>
+              <td>Examples and additional information.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Additional Content</h2>
+        <p>This segment is reserved for additional notes that further explain the functionality and design strategy employed in this layout. Special emphasis is placed on maintaining a user-friendly visual hierarchy.</p>
+
+        <h3>Key Features</h3>
+        <ul>
+          <li>Semantically structured headers</li>
+          <li>Clear separation between sections</li>
+          <li>Data organization through tables and lists</li>
+          <li>Descriptive labels for content clarity</li>
+        </ul>
+
+        <h3>Usage Tips</h3>
         <ol>
-          <li>Clear visual cues improve readability.</li>
-          <li>Structured content facilitates accessibility.</li>
-          <li>Proper formatting distinguishes content significance.</li>
+          <li>Keep section headings descriptive.</li>
+          <li>Use lists to break down complex information.</li>
+          <li>Employ tables for data that benefits from a grid layout.</li>
+          <li>Utilize definition lists for labeled value pairs.</li>
         </ol>
-      </article>
-      
-      <article>
-        <h3>Article Heading: Detailed Analysis</h3>
-        <p>This article provides in-depth details about designing a well-structured web page. Consider the following labeled values:</p>
-        <dl>
-          <dt>Project Name</dt>
-          <dd>Structural Layout Test</dd>
-          <dt>Version</dt>
-          <dd>1.0</dd>
-          <dt>Release Date</dt>
-          <dd>October 2023</dd>
-          <dt>Author</dt>
-          <dd>HTML Demo Generator</dd>
-        </dl>
-      </article>
-    </section>
-    
-    <section>
-      <h2>Data Table Overview</h2>
-      <table border="1" cellSpacing="0" cellPadding="5">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Section A</td>
-            <td>Introduction to the layout principles.</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Section B</td>
-            <td>Detailed analysis and content breakdown.</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Section C</td>
-            <td>Examples and additional information.</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    
-    <section>
-      <h2>Additional Content</h2>
-      <p>This segment is reserved for additional notes that further explain the functionality and design strategy employed in this layout. Special emphasis is placed on maintaining a user-friendly visual hierarchy.</p>
-      
-      <h3>Key Features</h3>
-      <ul>
-        <li>Semantically structured headers</li>
-        <li>Clear separation between sections</li>
-        <li>Data organization through tables and lists</li>
-        <li>Descriptive labels for content clarity</li>
-      </ul>
-      
-      <h3>Usage Tips</h3>
-      <ol>
-        <li>Keep section headings descriptive.</li>
-        <li>Use lists to break down complex information.</li>
-        <li>Employ tables for data that benefits from a grid layout.</li>
-        <li>Utilize definition lists for labeled value pairs.</li>
-      </ol>
-    </section>
-    
-    <footer>
-      <h2>Footer Information</h2>
-      <p>&copy; 2023 HTML Demo Generator. All rights reserved.</p>
-      <p>For additional inquiries, please refer to the information provided above.</p>
-    </footer>
-  </div>
-);
+      </section>
+
+      <footer>
+        <h2>Footer Information</h2>
+        <p>&copy; 2023 HTML Demo Generator. All rights reserved.</p>
+        <p>For additional inquiries, please refer to the information provided above.</p>
+      </footer>
+    </div>
+  );
+};
 
 
 // Auto‑generated mount

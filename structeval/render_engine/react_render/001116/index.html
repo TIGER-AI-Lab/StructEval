@@ -84,62 +84,40 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function NewsletterSignup() {
-    const [email, setEmail] = useState('');
-    const [success, setSuccess] = useState(false);
+const NewsletterSignup = () => {
+  const [email, setEmail] = useState('');
+  const [submitted, setSubmitted] = useState(false);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (email.includes('@')) {
-            setSuccess(true);
-            setEmail('');
-        }
-    };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (email.includes('@')) {
+      setSubmitted(true);
+      setEmail('');
+    }
+  };
 
-    const containerStyle = {
-        display: 'grid',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-    };
-
-    const formStyle = {
-        display: 'grid',
-        gap: '10px',
-        width: '300px',
-    };
-
-    const buttonStyle = {
-        backgroundColor: 'green',
-        color: 'white',
-        border: 'none',
-        padding: '10px',
-        cursor: 'pointer',
-    };
-
-    const successStyle = {
-        color: 'green',
-        textAlign: 'center',
-        marginTop: '10px',
-    };
-
-    return (
-        <div style={containerStyle}>
-            <form onSubmit={handleSubmit} style={formStyle}>
-                <h1 style={{ textAlign: 'center' }}>Subscribe Now!</h1>
-                <input
-                    type="email"
-                    placeholder="Enter your email address"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                />
-                <button type="submit" style={buttonStyle}>Sign Up</button>
-            </form>
-            {success && <p style={successStyle}>Subscription successful!</p>}
-        </div>
-    );
-}
+  return (
+    <div style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
+      <h1>Subscribe Now!</h1>
+      {!submitted && (
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <button type="submit" style={{ backgroundColor: 'green' }}>
+            Sign Up
+          </button>
+        </form>
+      )}
+      {submitted && (
+        <p style={{ color: 'green' }}>Subscription successful!</p>
+      )}
+    </div>
+  );
+};
 
 
 // Auto‑generated mount

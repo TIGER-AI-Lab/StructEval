@@ -83,118 +83,93 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+\documentclass{article}
+\usepackage{tikz}
 
-const PortfolioPage = () => {
-  const projects = [
-    {
-      id: 1,
-      name: "E-Commerce Platform",
-      description: "A fully-featured online shopping platform with user authentication and payment processing.",
-      year: 2022,
-      tech: ["Vue.js", "Node.js", "MongoDB", "Stripe API"]
-    },
-    {
-      id: 2,
-      name: "Task Manager App",
-      description: "A productivity application for managing tasks with reminders and collaborative features.",
-      year: 2021,
-      tech: ["React", "Firebase", "Material UI"]
-    },
-    {
-      id: 3,
-      name: "Personal Blog",
-      description: "A blog platform with content management system and integrated analytics.",
-      year: 2020,
-      tech: ["Vue.js", "Express", "PostgreSQL"]
-    }
-  ];
+\begin{document}
 
-  const contact = {
-    email: "developer@example.com",
-    phone: "+1 (555) 123-4567",
-    social: [
-      { platform: "LinkedIn", handle: "@devportfolio" },
-      { platform: "GitHub", handle: "@codedeveloper" },
-      { platform: "Twitter", handle: "@webdevexample" }
-    ]
-  };
+\begin{tikzpicture}
+% Grid
+\draw [thin, step=1cm] (0,0) grid (10,1);
 
-  const openProject = (id) => {
-    console.log(`Opening project ${id}`);
-    // Code to open project details would go here
-  };
-
-  useEffect(() => {
-    console.log("Portfolio component mounted");
-  }, []);
-
-  return (
-    <div className="container">
-      <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>A showcase of my work and interests</p>
-      </header>
-      <section className="about">
-        <h2>About Me</h2>
-        <p>
-          I am a passionate developer with experience in building dynamic web applications.
-          My expertise spans a variety of modern web technologies and frameworks.
-        </p>
-        <ul>
-          <li><strong>Experience:</strong> 5+ years in the industry</li>
-          <li><strong>Expertise:</strong> Vue, React, Node.js</li>
-          <li><strong>Education:</strong> B.Sc. in Computer Science</li>
-        </ul>
-      </section>
-      <section className="projects">
-        <h2>Featured Projects</h2>
-        <div className="project-list">
-          {projects.map(project => (
-            <div className="project" key={project.id}>
-              <h3>{project.name}</h3>
-              <p>{project.description}</p>
-              <ul className="project-details">
-                <li><strong>Year:</strong> {project.year}</li>
-                <li>
-                  <strong>Tech Stack:</strong> 
-                  {project.tech.map((tech, index) => (
-                    <span key={index}>
-                      {tech}{index < project.tech.length - 1 ? ', ' : ''}
-                    </span>
-                  ))}
-                </li>
-              </ul>
-            </div>
-          ))}
-        </div>
-      </section>
-      <section className="contact">
-        <h2>Contact Information</h2>
-        <div className="contact-item">
-          <p><strong>Email:</strong> {contact.email}</p>
-          <p><strong>Phone:</strong> {contact.phone}</p>
-        </div>
-        <div className="social-links">
-          <h3>Social Presence</h3>
-          <ul>
-            {contact.social.map((link, index) => (
-              <li key={index}>
-                <strong>{link.platform}:</strong> {link.handle}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-      <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-      </footer>
-    </div>
-  );
+% Plot Sin
+\draw [thin, blue, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.84147098)
+(2,0.90929743)
+(3,0.14112001)
+(4,-0.7568025)
+(5,-0.9589243)
+(6,-0.2794155)
+(7,0.9589243)
+(8,0.6569866)
+(9,0.7568025)
+(10,0.84147098)
 };
 
+% Plot Cos
+\draw [thin, green, <->] plot[smooth] coordinates {
+(0,1)
+(1,0.5403023)
+(2,0.4161468)
+(3,0.9899925)
+(4,0.9899925)
+(5,0.4161468)
+(6,-0.5403023)
+(7,-1)
+(8,-0.9899925)
+(9,-0.4161468)
+(10,-0.9899925)
+};
+
+% Plot Tan (Limited Range)
+\draw [thin, red, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.0174524)
+(2,0.1900227)
+(3,0.8485772)
+(4,1.4296471)
+(5,2.0000000)
+(6,4.0792891)
+(7,8.4371791)
+(8,16)
+};
+
+% Annotation Peak Value
+\node at (2.5,1) [above, fill=black!] {Peak Value};
+
+% Text Summary
+\node [fill=white, text width=4cm] at (0.02,0.95) {
+Summary:
+--------------------------\\
+1. sin(x) and cos(x) exhibit classic periodic\\
+behavior.\\
+2. tan(x) shows asymptotic trends near\\
+odd multiples of pi/2.\\
+3. Data generated using NumPy functions.\\
+4. Plots incorporate grids, legends,\\
+and clear annotations.
+};
+
+% Statistics Text
+\node [fill=white, text width=4cm] at (0.7,0.5) {
+Statistics:
+------------------\\
+Sine\\
+  Mean: 0.00\\
+  Std:  0.99\\
+Cosine\\
+  Mean: 0.00\\
+  Std:  0.71\\
+Tangent (|value| < 10)\\
+  Mean: 0.00\\
+  Std:  0.71
+};
+
+\end{tikzpicture}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<PortfolioPage />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

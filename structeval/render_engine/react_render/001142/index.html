@@ -84,115 +84,32 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const ProductReviewForm = () => {
-  const [productName, setProductName] = useState('');
-  const [rating, setRating] = useState('');
-  const [review, setReview] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-  const [errors, setErrors] = useState({});
+# Generate 15 random data points for observations
+np.random.seed(0)
+speed = np.random.uniform(0, 120, 15)
+distance = np.random.uniform(0, 100, 15)
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    let formErrors = {};
-    if (!productName.trim()) {
-      formErrors.productName = 'Product name is required.';
-    }
-    if (!rating) {
-      formErrors.rating = 'Rating is required.';
-    }
-    setErrors(formErrors);
-    if (Object.keys(formErrors).length === 0) {
-      setSubmitted(true);
-      // Optionally reset form fields here
-    }
-  };
+# Create scatter plot
+plt.scatter(speed, distance, marker='o', color='red')
 
-  return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-      }}
-    >
-      <div>
-        <form
-          onSubmit={handleSubmit}
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            width: '300px',
-          }}
-        >
-          <h1 style={{ textAlign: 'center' }}>Product Review</h1>
-          <input
-            type="text"
-            placeholder="Enter product name"
-            value={productName}
-            onChange={(e) => setProductName(e.target.value)}
-            style={{ marginBottom: '10px', padding: '8px' }}
-          />
-          {errors.productName && (
-            <span style={{ color: 'red', marginBottom: '10px' }}>
-              {errors.productName}
-            </span>
-          )}
-          <div style={{ marginBottom: '10px' }}>
-            <label style={{ display: 'block', marginBottom: '5px' }}>Rating:</label>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              {[1, 2, 3, 4, 5].map((num) => (
-                <label key={num}>
-                  <input
-                    type="radio"
-                    name="rating"
-                    value={num}
-                    checked={rating === String(num)}
-                    onChange={(e) => setRating(e.target.value)}
-                  />
-                  {num}
-                </label>
-              ))}
-            </div>
-            {errors.rating && (
-              <span style={{ color: 'red', display: 'block', marginTop: '5px' }}>
-                {errors.rating}
-              </span>
-            )}
-          </div>
-          <textarea
-            placeholder="Write your review here"
-            rows="4"
-            value={review}
-            onChange={(e) => setReview(e.target.value)}
-            style={{ marginBottom: '10px', padding: '8px' }}
-          />
-          <button
-            type="submit"
-            style={{
-              backgroundColor: 'green',
-              color: 'white',
-              padding: '10px',
-              border: 'none',
-              cursor: 'pointer',
-            }}
-          >
-            Submit Review
-          </button>
-        </form>
-        {submitted && (
-          <p style={{ textAlign: 'center', marginTop: '20px' }}>
-            Thank you for your feedback!
-          </p>
-        )}
-      </div>
-    </div>
-  );
-};
+# Set labels for axes
+plt.xlabel("Speed (km/h)")
+plt.ylabel("Distance (km)")
 
+# Set title
+plt.title("Speed vs Distance Analysis")
+
+# Add grid lines
+plt.grid(True, axis='both')
+
+# Add legend at the bottom right corner
+plt.legend(['Observation Points'], loc='lower right')
+
+# Display the plot
+plt.show()
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<ProductReviewForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

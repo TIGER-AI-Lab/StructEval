@@ -83,28 +83,23 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-// Dashboard.js
 
-const Dashboard = () => {
   const user = {
     name: 'Jane Smith',
     age: 28,
     email: 'jane.smith@example.com'
   };
-
   const notifications = [
     { type: 'Info', message: 'You have 5 unread messages.' },
     { type: 'Warning', message: 'Your password will expire in 7 days.' },
     { type: 'Alert', message: 'Suspicious login attempt detected.' }
   ];
-
   const activities = [
     { id: 1, date: '2023-10-01', description: 'Logged in from IP 192.168.1.10' },
     { id: 2, date: '2023-10-02', description: 'Updated profile picture' },
     { id: 3, date: '2023-10-03', description: 'Changed account settings' },
     { id: 4, date: '2023-10-04', description: 'Logged out' }
   ];
-
   const projects = [
     { id: 1, name: 'Redesign Website', status: 'In Progress' },
     { id: 2, name: 'Mobile App Launch', status: 'Completed' },
@@ -193,74 +188,10 @@ const Dashboard = () => {
       </footer>
     </div>
   );
-};
-
-
-// Dashboard.css
-.container {
-  font-family: sans-serif;
-  margin: 20px;
-  line-height: 1.6;
-}
-
-header {
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  margin: 0;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-.user-info, .notifications, .activities, .project-list {
-  background-color: #f7f7f7;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-h2 {
-  color: #333;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-}
-
-.field {
-  margin-bottom: 8px;
-}
-
-.field label {
-  font-weight: bold;
-  margin-right: 8px;
-}
-
-.activity-item, .project-item {
-  margin-bottom: 10px;
-}
-
-.activity-item label, .project-item label {
-  font-weight: bold;
-}
-
-ul, ol {
-  padding-left: 20px;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  color: #555;
-  border-top: 1px solid #ccc;
-  padding-top: 10px;
 }
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<Dashboard />);
+ReactDOM.createRoot(document.getElementById('root')).render(<function />);
 
     </script>
   </body>

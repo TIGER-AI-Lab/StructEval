@@ -84,104 +84,32 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const NewsletterSubscription = () => {
-  const [email, setEmail] = useState('');
-  const [agreed, setAgreed] = useState(false);
-  const [message, setMessage] = useState('');
+# Generate 15 random data points for observations
+np.random.seed(0)
+speed = np.random.uniform(0, 120, 15)
+distance = np.random.uniform(0, 100, 15)
 
-  const validateEmail = (email) => {
-    // Simple email regex
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-  };
+# Create scatter plot
+plt.scatter(speed, distance, marker='o', color='red')
 
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (!validateEmail(email)) {
-      setMessage('Please enter a valid email address.');
-      return;
-    }
-    if (!agreed) {
-      setMessage('You must agree to receive emails.');
-      return;
-    }
-    setMessage('Thank you for subscribing!');
-  };
+# Set labels for axes
+plt.xlabel("Speed (km/h)")
+plt.ylabel("Distance (km)")
 
-  const handleClear = () => {
-    setEmail('');
-    setAgreed(false);
-    setMessage('');
-  };
+# Set title
+plt.title("Speed vs Distance Analysis")
 
-  return (
-    <div style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh'
-    }}>
-      <div style={{ border: '2px solid black', padding: '20px' }}>
-        <h2 style={{ textAlign: 'center' }}>Newsletter Subscription</h2>
-        <form onSubmit={handleSubscribe}>
-          <div>
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              style={{ width: '100%', padding: '8px', marginBottom: '10px' }}
-            />
-          </div>
-          <div>
-            <label>
-              <input
-                type="checkbox"
-                checked={agreed}
-                onChange={(e) => setAgreed(e.target.checked)}
-              />{' '}
-              I agree to receive emails
-            </label>
-          </div>
-          <div style={{ marginTop: '10px' }}>
-            <button
-              type="submit"
-              style={{
-                backgroundColor: 'green',
-                color: 'white',
-                marginRight: '10px',
-                padding: '8px 16px',
-                border: 'none',
-                cursor: 'pointer'
-              }}
-            >
-              Subscribe
-            </button>
-            <button
-              type="button"
-              onClick={handleClear}
-              style={{
-                backgroundColor: 'red',
-                color: 'white',
-                padding: '8px 16px',
-                border: 'none',
-                cursor: 'pointer'
-              }}
-            >
-              Clear
-            </button>
-          </div>
-        </form>
-        {message && <p>{message}</p>}
-      </div>
-    </div>
-  );
-};
+# Add grid lines
+plt.grid(True, axis='both')
 
+# Add legend at the bottom right corner
+plt.legend(['Observation Points'], loc='lower right')
+
+# Display the plot
+plt.show()
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscription />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

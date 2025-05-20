@@ -83,132 +83,90 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+\documentclass{article}
+\usepackage{tikz}
 
-function App() {
-  return (
-    <div>
-      <header>
-        <h1>Welcome to Our Visual Layout Page</h1>
-        <p>This page is designed to showcase structure, visual hierarchy, and formatted content with HTML only.</p>
-      </header>
+\begin{document}
 
-      <nav>
-        <ul>
-          <li><strong>Home</strong></li>
-          <li><strong>About Us</strong></li>
-          <li><strong>Services</strong></li>
-          <li><strong>Contact</strong></li>
-        </ul>
-      </nav>
+\begin{tikzpicture}
+% Grid
+\draw [thin, step=1cm] (0,0) grid (10,1);
 
-      <section>
-        <h2>Introduction</h2>
-        <p>
-          The purpose of this document is to demonstrate a variety of HTML elements arranged to fit a visual narrative. This includes headings, sections, lists, tables, and clearly labeled values for good user understanding.
-        </p>
-      </section>
+% Plot Sin
+\draw [thin, blue, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.84147098)
+(2,0.90929743)
+(3,0.14112001)
+(4,-0.7568025)
+(5,-0.9589243)
+(6,-0.2794155)
+(7,0.9589243)
+(8,0.6569866)
+(9,0.7568025)
+(10,0.84147098)
+};
 
-      <section>
-        <h2>Detailed Information</h2>
-        <article>
-          <h3>Profile Overview</h3>
-          <p><strong>Name:</strong> John Doe</p>
-          <p><strong>Occupation:</strong> Web Developer</p>
-          <p><strong>Location:</strong> Cityville</p>
-        </article>
+% Plot Cos
+\draw [thin, green, <->] plot[smooth] coordinates {
+(0,1)
+(1,0.5403023)
+(2,0.4161468)
+(3,0.9899925)
+(4,0.9899925)
+(5,0.4161468)
+(6,-0.5403023)
+(7,-1)
+(8,-0.9899925)
+(9,-0.4161468)
+(10,-0.9899925)
+};
 
-        <article>
-          <h3>Project Highlights</h3>
-          <ol>
-            <li>
-              <h4>Project A - Website Redesign</h4>
-              <p>Description: A full redesign of a corporate website ensuring clarity and responsive design.</p>
-            </li>
-            <li>
-              <h4>Project B - E-commerce Solution</h4>
-              <p>Description: Developed an online shopping platform with detailed catalog pages and shopping cart functionality.</p>
-            </li>
-            <li>
-              <h4>Project C - Content Management System</h4>
-              <p>Description: Implemented a customized CMS to allow non-technical staff to manage website content.</p>
-            </li>
-          </ol>
-        </article>
-      </section>
+% Plot Tan (Limited Range)
+\draw [thin, red, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.0174524)
+(2,0.1900227)
+(3,0.8485772)
+(4,1.4296471)
+(5,2.0000000)
+(6,4.0792891)
+(7,8.4371791)
+(8,16)
+};
 
-      <section>
-        <h2>Resource List</h2>
-        <ul>
-          <li>
-            <strong>Documentation:</strong>
-            <ul>
-              <li><em>User Guides</em> - Step-by-step instructions</li>
-              <li><em>Design Docs</em> - Detailed design plans</li>
-              <li><em>API References</em> - Programming interfaces</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Support Contacts:</strong>
-            <ul>
-              <li>Technical Support: 1-800-TECHSUP</li>
-              <li>Customer Service: 1-800-CUSTSRV</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
+% Annotation Peak Value
+\node at (2.5,1) [above, fill=black!] {Peak Value};
 
-      <section>
-        <h2>Data Table</h2>
-        <table border="1" cellSpacing="0">
-          <thead>
-            <tr>
-              <th>Item ID</th>
-              <th>Description</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>101</td>
-              <td>Initial Design Draft</td>
-              <td>Completed</td>
-            </tr>
-            <tr>
-              <td>102</td>
-              <td>Client Feedback</td>
-              <td>Pending</td>
-            </tr>
-            <tr>
-              <td>103</td>
-              <td>Final Implementation</td>
-              <td>In Progress</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+% Text Summary
+\node [fill=white, text width=4cm] at (0.02,0.95) {
+Summary:
+--------------------------\\
+1. sin(x) and cos(x) exhibit classic periodic\\
+behavior.\\
+2. tan(x) shows asymptotic trends near\\
+odd multiples of pi/2.\\
+3. Data generated using NumPy functions.\\
+4. Plots incorporate grids, legends,\\
+and clear annotations.
+};
 
-      <aside>
-        <h2>Side Note</h2>
-        <p>
-          This section contains additional remarks and pointers. It is useful for noting extra information without interrupting the main content flow.
-        </p>
-        <ul>
-          <li>Remember to proofread your work.</li>
-          <li>Keep your HTML semantic for better accessibility.</li>
-          <li>Practice modular code for maintainability.</li>
-        </ul>
-      </aside>
+% Statistics Text
+\node [fill=white, text width=4cm] at (0.7,0.5) {
+Statistics:
+------------------\\
+Sine\\
+  Mean: 0.00\\
+  Std:  0.99\\
+Cosine\\
+  Mean: 0.00\\
+  Std:  0.71\\
+Tangent (|value| < 10)\\
+  Mean: 0.00\\
+  Std:  0.71
+};
 
-      <footer>
-        <h2>Contact Information</h2>
-        <p><strong>Email:</strong> contact@example.com</p>
-        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-        <p>&copy; 2023 Visual Layout Inc.</p>
-      </footer>
-    </div>
-  );
-}
-
+\end{tikzpicture}
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

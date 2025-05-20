@@ -84,47 +84,198 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const Documentation = () => (
-  <div>
-    <h1>Project Documentation</h1>
-    
-    <h2>Table of Contents</h2>
-    <ol>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#setup-instructions">Setup Instructions</a></li>
-      <li><a href="#usage-guidelines">Usage Guidelines</a></li>
-      <li><a href="#configuration-settings">Configuration Settings</a></li>
-      <li><a href="#troubleshooting-and-faq">Troubleshooting and FAQ</a></li>
-      <li><a href="#conclusion">Conclusion</a></li>
-    </ol>
-    
-    <hr />
-    
-    <h2 id="introduction">Introduction</h2>
-    <p>Welcome to the project documentation. This guide covers all aspects of the project including setup, usage, troubleshooting, and configuration.</p>
-    
-    <h3>Key Features:</h3>
-    <ul>
-      <li>Easy installation process</li>
-      <li>High configurability</li>
-      <li>Comprehensive documentation</li>
-      <li>Clear command examples</li>
-    </ul>
-    
-    <hr />
-    
-    <h2 id="setup-instructions">Setup Instructions</h2>
-    <p>Follow these steps to set up your environment:</p>
-    
-    <ol>
-      <li>
-        <strong>Clone the Repository</strong>
-        <ul>
-          <li>Open your terminal and run:</li>
-          <pre><code>git clone project.git
+const ProjectDocumentation = () => {
+  return (
+    <div>
+      <h1>Project Documentation</h1>
+
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#setup-instructions">Setup Instructions</a></li>
+        <li><a href="#usage-guidelines">Usage Guidelines</a></li>
+        <li><a href="#configuration-settings">Configuration Settings</a></li>
+        <li><a href="#troubleshooting-and-faq">Troubleshooting and FAQ</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ol>
+
+      <hr />
+
+      <h2 id="introduction">Introduction</h2>
+      <p>Welcome to the project documentation. This guide covers all aspects of the project including setup, usage, troubleshooting, and configuration.</p>
+
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Easy installation process</li>
+        <li>High configurability</li>
+        <li>Comprehensive documentation</li>
+        <li>Clear command examples</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="setup-instructions">Setup Instructions</h2>
+      <p>Follow these steps to set up your environment:</p>
+      <ol>
+        <li>
+          <strong>Clone the Repository</strong>
+          <pre><code>git clone project.git</code></pre>
+        </li>
+        <li>
+          <strong>Install Dependencies</strong>
+          <pre><code>npm install</code></pre>
+        </li>
+        <li>
+          <strong>Configure Your Environment</strong>
+          <pre><code>cp config.sample.json config.json</code></pre>
+          <p>Open the file and update parameters as needed:</p>
+          <ul>
+            <li>Database credentials</li>
+            <li>API keys</li>
+            <li>Port settings</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Build the Project</strong>
+          <pre><code>npm run build</code></pre>
+        </li>
+      </ol>
+
+      <hr />
+
+      <h2 id="usage-guidelines">Usage Guidelines</h2>
+      <p>After successfully setting up the project, follow these guidelines:</p>
+
+      <ul>
+        <li>
+          <strong>Start in Development Mode:</strong>
+          <p>Command: <code>npm run dev</code></p>
+          <p>Suitable for testing and local modifications.</p>
+        </li>
+        <li>
+          <strong>Launch in Production Mode:</strong>
+          <p>Command: <code>npm start</code></p>
+          <p>For running the finalized project.</p>
+        </li>
+      </ul>
+
+      <h3>Running Common Tasks:</h3>
+      <ul>
+        <li><strong>Executing Tests:</strong> <code>npm test</code></li>
+        <li><strong>Code Linting:</strong> <code>npm run lint</code></li>
+        <li><strong>Watching Files for Changes:</strong> <code>npm run watch</code></li>
+      </ul>
+
+      <h3>Environment Variables:</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Variable</th>
+            <th>Description</th>
+            <th>Default Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PORT</td>
+            <td>Server port number</td>
+            <td>3000</td>
+          </tr>
+          <tr>
+            <td>DEBUG</td>
+            <td>Debug mode flag (true/false)</td>
+            <td>false</td>
+          </tr>
+          <tr>
+            <td>API_KEY</td>
+            <td>API key for authentication</td>
+            <td>N/A</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr />
+
+      <h2 id="configuration-settings">Configuration Settings</h2>
+      <p>Below is an overview of primary configuration settings:</p>
+
+      <h3>Server Configuration:</h3>
+      <ul>
+        <li>Hostname: localhost</li>
+        <li>Port: 3000</li>
+      </ul>
+
+      <h3>Database Configuration:</h3>
+      <ul>
+        <li>Database Type: PostgreSQL</li>
+        <li>Host Address: localhost</li>
+        <li>Username: user</li>
+        <li>Password: secret</li>
+      </ul>
+
+      <h3>Feature Flags:</h3>
+      <ul>
+        <li>Feature A: Enabled</li>
+        <li>Feature B: Disabled</li>
+        <li>Feature C: Experimental</li>
+      </ul>
+
+      <h3>Additional Options:</h3>
+      <ul>
+        <li>Log Level: INFO</li>
+        <li>Max Connections: 100</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="troubleshooting-and-faq">Troubleshooting and FAQ</h2>
+
+      <h3>Troubleshooting Tips:</h3>
+      <ul>
+        <li>
+          <strong>Installation Issues:</strong>
+          <p>Ensure your development environment (e.g., Node.js version) meets project requirements.</p>
+        </li>
+        <li>
+          <strong>Configuration Errors:</strong>
+          <p>Double-check values in config.json, especially API keys and database credentials.</p>
+        </li>
+        <li>
+          <strong>Build Failures:</strong>
+          <p>Try deleting the <code>node_modules</code> directory and reinstall dependencies.</p>
+        </li>
+      </ul>
+
+      <h3>Frequently Asked Questions:</h3>
+      <ol>
+        <li>
+          <strong>Q: How do I update the configuration?</strong>
+          <p>A: Edit the <code>config.json</code> file and restart the server to apply changes.</p>
+        </li>
+        <li>
+          <strong>Q: What should I do if tests fail?</strong>
+          <p>A: Verify your local environment settings and ensure all dependencies are installed properly.</p>
+        </li>
+        <li>
+          <strong>Q: Who can I contact for additional support?</strong>
+          <p>A: For further assistance, please refer to the project's internal support documentation.</p>
+        </li>
+      </ol>
+
+      <hr />
+
+      <h2 id="conclusion">Conclusion</h2>
+      <p>Thank you for reviewing the project documentation.</p>
+      <p><em>Remember to run all commands from the root project directory.</em></p>
+      <blockquote>"Good documentation is the foundation of a successful project."</blockquote>
+      <p><em>End of documentation.</em></p>
+    </div>
+  );
+};
+
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<Documentation />);
+ReactDOM.createRoot(document.getElementById('root')).render(<ProjectDocumentation />);
 
     </script>
   </body>

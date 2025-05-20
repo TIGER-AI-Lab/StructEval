@@ -83,124 +83,12 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const RegistrationForm = () => {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [acceptedTerms, setAcceptedTerms] = useState(false);
-  const [error, setError] = useState('');
-
-  const handleRegister = (e) => {
-    e.preventDefault();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!username || !email || !password) {
-      setError('All fields are required.');
-    } else if (!emailRegex.test(email)) {
-      setError('Please enter a valid email address.');
-    } else {
-      setError('');
-      // Registration logic can be added here
-    }
-  };
-
-  const handleCancel = () => {
-    setUsername('');
-    setEmail('');
-    setPassword('');
-    setAcceptedTerms(false);
-    setError('');
-  };
-
-  const formStyle = {
-    display: 'grid',
-    gridTemplateColumns: '150px 1fr',
-    gap: '10px',
-    maxWidth: '400px',
-    margin: '0 auto'
-  };
-
-  const labelStyle = {
-    textAlign: 'right',
-    paddingRight: '10px'
-  };
-
-  const inputStyle = {
-    padding: '5px'
-  };
-
-  const buttonContainerStyle = {
-    gridColumn: 'span 2',
-    display: 'flex',
-    justifyContent: 'space-between',
-    marginTop: '10px'
-  };
-
-  const registerButtonStyle = {
-    backgroundColor: 'green',
-    color: 'white',
-    padding: '10px 20px',
-    border: 'none',
-    cursor: 'pointer'
-  };
-
-  const cancelButtonStyle = {
-    padding: '10px 20px',
-    border: 'none',
-    cursor: 'pointer'
-  };
-
-  return (
-    <form style={formStyle} onSubmit={handleRegister}>
-      <h2 style={{ gridColumn: 'span 2', textAlign: 'center' }}>User Registration</h2>
-      <label style={labelStyle} htmlFor="username">Username:</label>
-      <input
-        style={inputStyle}
-        type="text"
-        id="username"
-        placeholder="Enter Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <label style={labelStyle} htmlFor="email">Email:</label>
-      <input
-        style={inputStyle}
-        type="email"
-        id="email"
-        placeholder="Enter Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <label style={labelStyle} htmlFor="password">Password:</label>
-      <input
-        style={inputStyle}
-        type="password"
-        id="password"
-        placeholder="Enter Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <div style={{ gridColumn: 'span 2', display: 'flex', alignItems: 'center' }}>
-        <input
-          type="checkbox"
-          id="terms"
-          checked={acceptedTerms}
-          onChange={(e) => setAcceptedTerms(e.target.checked)}
-        />
-        <label htmlFor="terms" style={{ marginLeft: '5px' }}>Accept Terms and Conditions</label>
-      </div>
-      {error && <p style={{ gridColumn: 'span 2', color: 'red' }}>{error}</p>}
-      <div style={buttonContainerStyle}>
-        <button type="submit" style={registerButtonStyle}>Register</button>
-        <button type="button" style={cancelButtonStyle} onClick={handleCancel}>Cancel</button>
-      </div>
-    </form>
-  );
-};
-
+\begin{equation}
+\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
+\end{equation}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<RegistrationForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

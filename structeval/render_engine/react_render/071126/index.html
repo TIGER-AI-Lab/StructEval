@@ -83,50 +83,278 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+<|BEGIN_CODE|>
 
-const ProjectPhoenixDocs = () => (
-  <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-    <h1>Project Phoenix: Comprehensive Guide</h1>
-    <p>
-      Welcome to the Project Phoenix documentation. This file contains detailed instructions, configuration guidelines, and feature outlines.
-    </p>
-    <hr />
-    <h2>Table of Contents</h2>
-    <ol>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#installation">Installation</a></li>
-      <li><a href="#usage">Usage</a></li>
-      <li><a href="#configuration">Configuration</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#troubleshooting">Troubleshooting</a></li>
-      <li><a href="#changelog">Changelog</a></li>
-      <li><a href="#license">License</a></li>
-    </ol>
-    <hr />
-    <h2 id="overview">Overview</h2>
-    <p>
-      Project Phoenix is a modular system designed for rapid development of scalable applications. It emphasizes flexible configurations and clean code organization.
-    </p>
-    <h3>Key Points</h3>
-    <ul>
-      <li><strong>Modular Design:</strong> Highly extensible modules.</li>
-      <li><strong>Scalability:</strong> Performance optimized.</li>
-      <li><strong>Ease of Use:</strong> Clear and concise documentation.</li>
-      <li><strong>Community Driven:</strong> Contributions welcome.</li>
-    </ul>
-    <hr />
-    <h2 id="installation">Installation</h2>
-    <p>Follow these steps to install and set up Project Phoenix:</p>
-    <ol>
-      <li>
-        <strong>Clone the Repository</strong>
-        <pre>
-          <code>
-git clone https://example.com/project-phoenix.git
-cd project-phoenix
+function ProjectPhoenixDocumentation() {
+  return (
+    <div>
+      <h1>Project Phoenix: Comprehensive Guide</h1>
+
+      <p>Welcome to the Project Phoenix documentation. This file contains detailed instructions, configuration guidelines, and feature outlines.</p>
+
+      <hr />
+
+      <h2>Table of Contents</h2>
+
+      <ol>
+        <li><HashLink to="#overview">Overview</HashLink></li>
+        <li><HashLink to="#installation">Installation</HashLink></li>
+        <li><HashLink to="#usage">Usage</HashLink></li>
+        <li><HashLink to="#configuration">Configuration</HashLink></li>
+        <li><HashLink to="#features">Features</HashLink></li>
+        <li><HashLink to="#troubleshooting">Troubleshooting</HashLink></li>
+        <li><HashLink to="#changelog">Changelog</HashLink></li>
+        <li><HashLink to="#license">License</HashLink></li>
+      </ol>
+
+      <hr />
+
+      <h2 id="overview">Overview</h2>
+
+      <p>Project Phoenix is a modular system designed for rapid development of scalable applications. It emphasizes flexible configurations and clean code organization.</p>
+
+      <h3>Key Points</h3>
+
+      <ul>
+        <li><strong>Modular Design:</strong> Highly extensible modules.</li>
+        <li><strong>Scalability:</strong> Performance optimized.</li>
+        <li><strong>Ease of Use:</strong> Clear and concise documentation.</li>
+        <li><strong>Community Driven:</strong> Contributions welcome.</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="installation">Installation</h2>
+
+      <p>Follow these steps to install and set up Project Phoenix:</p>
+
+      <ol>
+        <li><strong>Clone the Repository</strong>
+          <pre><code>
+            git clone https://example.com/project-phoenix.git
+            <br />
+            cd project-phoenix
+          </code></pre>
+        </li>
+
+        <li><strong>Install Dependencies</strong>
+          <ul>
+            <li>Ensure you have Python 3.8+ installed.</li>
+            <li>Run the following command:
+              <pre><code>
+                pip install -r requirements.txt
+              </code></pre>
+            </li>
+          </ul>
+        </li>
+
+        <li><strong>Initial Configuration</strong>
+          <ul>
+            <li>Copy the sample configuration:
+              <pre><code>
+                cp config_sample.yml config.yml
+              </code></pre>
+            </li>
+            <li>Edit <em>config.yml</em> to suit your environment needs.</li>
+          </ul>
+        </li>
+
+        <li><strong>Run Setup Script</strong>
+          <pre><code>
+            python setup.py --init
+          </code></pre>
+        </li>
+      </ol>
+
+      <hr />
+
+      <h2 id="usage">Usage</h2>
+
+      <p>To start Project Phoenix, execute:</p>
+
+      <pre><code>
+        python main.py
+      </code></pre>
+
+      <h3>Command-Line Options</h3>
+
+      <ul>
+        <li><code>--debug</code> : Launches the application in debug mode.</li>
+        <li><code>--config=<file></code> : Specifies a custom configuration file.</li>
+        <li><code>--version</code> : Displays the current version of Project Phoenix.</li>
+      </ul>
+
+      <h4>Example Command</h4>
+
+      <pre><code>
+        python main.py --debug --config=config.yml
+      </code></pre>
+
+      <hr />
+
+      <h2 id="configuration">Configuration</h2>
+
+      <p>Project configuration is managed via a YAML file. Below is a sample snippet of <em>config.yml</em>:</p>
+
+      <pre><code>
+        # Basic Settings
+        <br />
+        app_name: "Project Phoenix"
+        <br />
+        version: "1.2.0"
+        <br />
+        environment: "development"
+        <br /><br />
+        # Database Configuration
+        <br />
+        database:
+        <br />
+        &nbsp;&nbsp;host: "localhost"
+        <br />
+        &nbsp;&nbsp;port: 5432
+        <br />
+        &nbsp;&nbsp;user: "phoenix_user"
+        <br />
+        &nbsp;&nbsp;password: "securepassword"
+        <br />
+        &nbsp;&nbsp;db_name: "phoenix_db"
+        <br /><br />
+        # Logging Options
+        <br />
+        logging:
+        <br />
+        &nbsp;&nbsp;level: "DEBUG"
+        <br />
+        &nbsp;&nbsp;file: "logs/app.log"
+      </code></pre>
+
+      <p><strong>Important:</strong> Ensure to secure your configuration settings appropriately before deploying in production.</p>
+
+      <hr />
+
+      <h2 id="features">Features</h2>
+
+      <p>Project Phoenix includes several advanced features:</p>
+
+      <ol>
+        <li><strong>Dynamic Module Loader</strong>
+          <ul>
+            <li>Automatically detects and loads plugins from the <code>/modules</code> directory.</li>
+            <li>Supports hot reloading for rapid development cycles.</li>
+          </ul>
+        </li>
+
+        <li><strong>Robust Error Handling</strong>
+          <ul>
+            <li>Exception logger for both runtime and debug errors.</li>
+            <li>Notified via internal logging when critical failures occur.</li>
+          </ul>
+        </li>
+
+        <li><strong>Interactive Dashboard</strong>
+          <ul>
+            <li>Command-line based dashboard for monitoring system status.</li>
+            <li>Provides real-time analytics using built-in metrics.</li>
+          </ul>
+        </li>
+
+        <li><strong>API Integration</strong>
+          <ul>
+            <li>RESTful API for external integrations.</li>
+            <li>Secure endpoints and token-based authentication.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <hr />
+
+      <h2 id="troubleshooting">Troubleshooting</h2>
+
+      <p>If you encounter issues, consider the following steps:</p>
+
+      <ol>
+        <li><strong>Step 1:</strong> Verify installation by checking the version:
+          <pre><code>
+            python main.py --version
+          </code></pre>
+        </li>
+
+        <li><strong>Step 2:</strong> Check the log file located at <code>logs/app.log</code> for error messages.</li>
+
+        <li><strong>Step 3:</strong> Update dependencies by running:
+          <pre><code>
+            pip install --upgrade -r requirements.txt
+          </code></pre>
+        </li>
+
+        <li><strong>Step 4:</strong> Consult the list of known issues in the <code>CHANGELOG.md</code> file.</li>
+      </ol>
+
+      <h3>Common Problems</h3>
+
+      <ul>
+        <li><em>Database Connection Fails</em>
+          <ul>
+            <li>Verify credentials in <em>config.yml</em>.</li>
+            <li>Ensure the database server is running on the specified host and port.</li>
+          </ul>
+        </li>
+
+        <li><em>Module Load Error</em>
+          <ul>
+            <li>Check the module directory for proper file permissions.</li>
+            <li>Confirm that each module contains an <code>__init__.py</code> file.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2 id="changelog">Changelog</h2>
+
+      <p><strong>Version 1.2.0</strong></p>
+      <ul>
+        <li>Added enhanced logging capabilities.</li>
+        <li>Improved scalability with a modular design.</li>
+        <li>Bug fixes related to module hot reloading.</li>
+      </ul>
+
+      <p><strong>Version 1.1.0</strong></p>
+      <ul>
+        <li>Introduced RESTful API integration.</li>
+        <li>Updated installation instructions for clarity.</li>
+      </ul>
+
+      <p><strong>Version 1.0.0</strong></p>
+      <ul>
+        <li>Initial release with core features and basic configurations.</li>
+      </ul>
+
+      <hr />
+
+      <h2 id="license">License</h2>
+
+      <p>Project Phoenix is released under the MIT License.</p>
+
+      <pre><code>
+        MIT License
+        <br /><br />
+        Permission is hereby granted, free of charge, to any person obtaining a copy...
+      </code></pre>
+
+      <p>For full license text, refer to the LICENSE file in the repository.</p>
+
+      <hr />
+
+      <p>End of documentation.</p>
+    </div>
+  );
+}
+
+<|END_CODE|>
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<ProjectPhoenixDocs />);
+ReactDOM.createRoot(document.getElementById('root')).render(<ProjectPhoenixDocumentation />);
 
     </script>
   </body>

@@ -85,43 +85,44 @@
 
 
 const NewsletterSignup = () => {
+  const [subscribed, setSubscribed] = useState(false);
   const [email, setEmail] = useState('');
   const [firstName, setFirstName] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email.trim() !== '' && firstName.trim() !== '') {
+    if (email && firstName) {
       setSubscribed(true);
     }
   };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <section style={{ backgroundColor: '#f7f7f7', padding: '20px', borderRadius: '5px' }}>
-        <h1 style={{ textAlign: 'center' }}>Newsletter Signup</h1>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            style={{ display: 'block', margin: '10px 0', width: '100%', padding: '8px' }}
-          />
-          <input
-            type="text"
-            placeholder="Your First Name"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-            required
-            style={{ display: 'block', margin: '10px 0', width: '100%', padding: '8px' }}
-          />
-          <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '10px 20px', border: 'none', cursor: 'pointer' }}>
-            Subscribe
-          </button>
-        </form>
-        {subscribed && <p>Thank you for subscribing!</p>}
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <section style={{ backgroundColor: '#f7f7f7', padding: '20px', borderRadius: '8px' }}>
+        <h1>Newsletter Signup</h1>
+        {!subscribed ? (
+          <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <input
+              type="text"
+              placeholder="Your First Name"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              required
+            />
+            <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '10px' }}>
+              Subscribe
+            </button>
+          </form>
+        ) : (
+          <p>Thank you for subscribing!</p>
+        )}
       </section>
     </div>
   );

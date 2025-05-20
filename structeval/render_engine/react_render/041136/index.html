@@ -83,103 +83,103 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+const App = () => {
+  return (
+    <>
+      <header>
+        <h1>Welcome to Our Sample Page</h1>
+        <p>This page demonstrates a realistic HTML layout with structured sections, lists, and formatted content.</p>
+      </header>
 
-const SamplePage = () => (
-  <div>
-    <header>
-      <h1>Welcome to Our Sample Page</h1>
-      <p>This page demonstrates a realistic HTML layout with structured sections, lists, and formatted content.</p>
-    </header>
-    
-    <nav>
-      <ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#details">Detailed Information</a></li>
-        <li><a href="#contact">Contact Info</a></li>
-      </ul>
-    </nav>
-    
-    <main>
-      <section id="introduction">
-        <h2>Introduction</h2>
-        <p>This section provides an overview of the layout and structure used within the page. It includes headings, paragraphs, lists, and other formatted text to demonstrate hierarchy.</p>
-        <article>
-          <h3>Purpose</h3>
-          <p>The purpose of this page is to showcase how different structural elements can be used to create a visually organized layout.</p>
-        </article>
-        <article>
-          <h3>Scope</h3>
-          <p>The example covers common HTML elements and their arrangement, focusing solely on visible content without using external resources.</p>
-        </article>
-      </section>
-      
-      <section id="features">
-        <h2>Features</h2>
+      <nav>
         <ul>
-          <li>Structured headings and subheadings</li>
-          <li>Clearly divided sections</li>
-          <li>Ordered and unordered lists for organization</li>
-          <li>Accessible navigation system</li>
-          <li>Formatted paragraphs and descriptive texts</li>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#details">Detailed Information</a></li>
+          <li><a href="#contact">Contact Info</a></li>
         </ul>
-        <p>All features are implemented strictly using plain HTML to maintain simplicity and clarity in the layout.</p>
-      </section>
-      
-      <section id="details">
-        <h2>Detailed Information</h2>
-        
-        <article>
-          <h3>Section A: Basic Information</h3>
-          <dl>
-            <dt>Author</dt>
-            <dd>Jane Doe</dd>
-            <dt>Date</dt>
-            <dd>October 1, 2023</dd>
-            <dt>Version</dt>
-            <dd>1.0</dd>
-          </dl>
-          <p>This article details the basic information about the layout and the content presented in this page. Each data point is clearly labeled and formatted.</p>
-        </article>
-        
-        <article>
-          <h3>Section B: Contact Details</h3>
-          <p>If you need further information, please refer to the contact section at the bottom of the page.</p>
-          <ol>
-            <li>Customer Support: support@example.com</li>
-            <li>Sales Inquiries: sales@example.com</li>
-            <li>Feedback: feedback@example.com</li>
-          </ol>
-        </article>
-        
-        <article>
-          <h3>Section C: Miscellaneous Information</h3>
-          <p>This part includes additional descriptive text that provides context to the layout. It is meant to serve as a placeholder for any type of information you might want to display.</p>
-        </article>
-      </section>
-    </main>
-    
-    <aside>
-      <h2>Side Notes</h2>
-      <p>This sidebar contains supplementary information and tips regarding the layout of the page. It is meant to be an additional resource for users.</p>
-      <ul>
-        <li>Tip 1: Ensure consistent formatting across sections.</li>
-        <li>Tip 2: Use descriptive titles for better clarity.</li>
-        <li>Tip 3: Organize content logically.</li>
-      </ul>
-    </aside>
-    
-    <footer id="contact">
-      <h2>Contact Information</h2>
-      <p>For further inquiries or feedback, please send a message to our support email: contact@example.com</p>
-      <p>&copy; 2023 Sample Page. All rights reserved.</p>
-    </footer>
-  </div>
-);
+      </nav>
 
+      <main>
+        <section id="introduction">
+          <h2>Introduction</h2>
+          <p>This section provides an overview of the layout and structure used within the page. It includes headings, paragraphs, lists, and other formatted text to demonstrate hierarchy.</p>
+          <article>
+            <h3>Purpose</h3>
+            <p>The purpose of this page is to showcase how different structural elements can be used to create a visually organized layout.</p>
+          </article>
+          <article>
+            <h3>Scope</h3>
+            <p>The example covers common HTML elements and their arrangement, focusing solely on visible content without using external resources.</p>
+          </article>
+        </section>
+
+        <section id="features">
+          <h2>Features</h2>
+          <ul>
+            <li>Structured headings and subheadings</li>
+            <li>Clearly divided sections</li>
+            <li>Ordered and unordered lists for organization</li>
+            <li>Accessible navigation system</li>
+            <li>Formatted paragraphs and descriptive texts</li>
+          </ul>
+          <p>All features are implemented strictly using plain HTML to maintain simplicity and clarity in the layout.</p>
+        </section>
+
+        <section id="details">
+          <h2>Detailed Information</h2>
+
+          <article>
+            <h3>Section A: Basic Information</h3>
+            <dl>
+              <dt>Author</dt>
+              <dd>Jane Doe</dd>
+              <dt>Date</dt>
+              <dd>October 1, 2023</dd>
+              <dt>Version</dt>
+              <dd>1.0</dd>
+            </dl>
+            <p>This article details the basic information about the layout and the content presented in this page. Each data point is clearly labeled and formatted.</p>
+          </article>
+
+          <article>
+            <h3>Section B: Contact Details</h3>
+            <p>If you need further information, please refer to the contact section at the bottom of the page.</p>
+            <ol>
+              <li>Customer Support: support@example.com</li>
+              <li>Sales Inquiries: sales@example.com</li>
+              <li>Feedback: feedback@example.com</li>
+            </ol>
+          </article>
+
+          <article>
+            <h3>Section C: Miscellaneous Information</h3>
+            <p>This part includes additional descriptive text that provides context to the layout. It is meant to serve as a placeholder for any type of information you might want to display.</p>
+          </article>
+        </section>
+      </main>
+
+      <aside>
+        <h2>Side Notes</h2>
+        <p>This sidebar contains supplementary information and tips regarding the layout of the page. It is meant to be an additional resource for users.</p>
+        <ul>
+          <li>Tip 1: Ensure consistent formatting across sections.</li>
+          <li>Tip 2: Use descriptive titles for better clarity.</li>
+          <li>Tip 3: Organize content logically.</li>
+        </ul>
+      </aside>
+
+      <footer id="contact">
+        <h2>Contact Information</h2>
+        <p>For further inquiries or feedback, please send a message to our support email: contact@example.com</p>
+        <p>&copy; 2023 Sample Page. All rights reserved.</p>
+      </footer>
+    </>
+  );
+};
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<SamplePage />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

@@ -83,141 +83,125 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+<|BEGIN_CODE|>
 
-const MarkdownVisualLayoutTest = () => (
-  <div>
-    <h1>Project Title: Markdown Visual Layout Test</h1>
+function MarkdownVisualLayoutTest() {
+  return (
+    <div>
+      <h1>Project Title: Markdown Visual Layout Test</h1>
 
-    <h2>Table of Contents</h2>
-    <ol>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#overview">Overview</a></li>
-      <li>
-        Details
-        <ul>
-          <li><a href="#section-a-content-breakdown">Section A: Content Breakdown</a></li>
-          <li><a href="#section-b-data-analysis">Section B: Data Analysis</a></li>
-        </ul>
-      </li>
-      <li><a href="#conclusion">Conclusion</a></li>
-      <li><a href="#references">References</a></li>
-    </ol>
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#details">Details</a>
+          <ul>
+            <li><a href="#section-a-content-breakdown">Section A: Content Breakdown</a></li>
+            <li><a href="#section-b-data-analysis">Section B: Data Analysis</a></li>
+          </ul>
+        </li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#references">References</a></li>
+      </ol>
 
-    <h2 id="introduction">Introduction</h2>
-    <p>
-      Welcome to the Markdown Visual Layout Test. This document has been designed to examine the
-      visual hierarchy, content organization, and structural layout inherent in Markdown.
-    </p>
+      <h2 id="introduction">Introduction</h2>
+      <p>Welcome to the Markdown Visual Layout Test. This document has been designed to examine the visual hierarchy, content organization, and structural layout inherent in Markdown.</p>
 
-    <h3>Purpose</h3>
-    <ul>
-      <li>Validate rendering of headings, lists, quotes, and code blocks.</li>
-      <li>Provide a comprehensive test for structured content.</li>
-      <li>Demonstrate proper nesting of elements.</li>
-    </ul>
+      <h3>Purpose</h3>
+      <ul>
+        <li>Validate rendering of headings, lists, quotes, and code blocks.</li>
+        <li>Provide a comprehensive test for structured content.</li>
+        <li>Demonstrate proper nesting of elements.</li>
+      </ul>
 
-    <h2 id="overview">Overview</h2>
-    <p>
-      The following sections outline the project's structure and identify key components:
-    </p>
+      <h2 id="overview">Overview</h2>
+      <p>The following sections outline the project's structure and identify key components:</p>
 
-    <p>
-      <strong>Project Objective:</strong>
-      <br />
-      To develop a well-organized Markdown document showcasing multiple elements and
-      hierarchies that are rendered consistently.
-    </p>
+      <p><strong>Project Objective:</strong><br/>
+        To develop a well-organized Markdown document showcasing multiple elements and hierarchies that are rendered consistently.</p>
 
-    <p><strong>Key Features:</strong></p>
-    <ul>
-      <li>Multiple heading levels (H1 through H6)</li>
-      <li>Ordered and unordered lists</li>
-      <li>Code snippet examples</li>
-      <li>Blockquotes and formatted text</li>
-      <li>Tables and labeled content</li>
-    </ul>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Multiple heading levels (H1 through H6)</li>
+        <li>Ordered and unordered lists</li>
+        <li>Code snippet examples</li>
+        <li>Blockquotes and formatted text</li>
+        <li>Tables and labeled content</li>
+      </ul>
 
-    <h2 id="details">Details</h2>
+      <h2 id="details">Details</h2>
 
-    <h3 id="section-a-content-breakdown">Section A: Content Breakdown</h3>
+      <h3 id="section-a-content-breakdown">Section A: Content Breakdown</h3>
 
-    <h4>Subsection A1: Descriptive Items</h4>
-    <ol>
-      <li>
-        <strong>Item Alpha:</strong> Core functionality is implemented.
-      </li>
-      <li>
-        <strong>Item Beta:</strong> Backup functionality ensures redundancy.
-      </li>
-      <li>
-        <strong>Item Gamma:</strong> Additional features for extended usability.
-      </li>
-    </ol>
+      <h4>Subsection A1: Descriptive Items</h4>
+      <ol>
+        <li><strong>Item Alpha:</strong> Core functionality is implemented.</li>
+        <li><strong>Item Beta:</strong> Backup functionality ensures redundancy.</li>
+        <li><strong>Item Gamma:</strong> Additional features for extended usability.</li>
+      </ol>
 
-    <h4>Subsection A2: Technical Specifications</h4>
-    <ul>
-      <li><strong>Version:</strong> 1.0.0</li>
-      <li><strong>Status:</strong> Active</li>
-      <li><strong>Release Date:</strong> April 27, 2023</li>
-    </ul>
+      <h4>Subsection A2: Technical Specifications</h4>
+      <ul>
+        <li><strong>Version:</strong> 1.0.0</li>
+        <li><strong>Status:</strong> Active</li>
+        <li><strong>Release Date:</strong> April 27, 2023</li>
+      </ul>
 
-    <blockquote>
-      <p>
-        Note: Keep technical specifications updated. The current configuration should be
-        referenced in the project documentation.
-      </p>
-    </blockquote>
+      <blockquote>
+        Note: Keep technical specifications updated. The current configuration should be referenced in the project documentation.
+      </blockquote>
 
-    <h3 id="section-b-data-analysis">Section B: Data Analysis</h3>
+      <h3 id="section-b-data-analysis">Section B: Data Analysis</h3>
 
-    <h4>Data Metrics</h4>
-    <p>Below is a list of significant performance metrics:</p>
-    <ul>
-      <li><strong>Metric 1:</strong> Accuracy Rate</li>
-      <li><strong>Metric 2:</strong> Response Time (in seconds)</li>
-      <li><strong>Metric 3:</strong> Error Ratio (%)</li>
-    </ul>
+      <h4>Data Metrics</h4>
+      <p>Below is a list of significant performance metrics:</p>
+      <ul>
+        <li><strong>Metric 1:</strong> Accuracy Rate</li>
+        <li><strong>Metric 2:</strong> Response Time (in seconds)</li>
+        <li><strong>Metric 3:</strong> Error Ratio (%)</li>
+      </ul>
 
-    <h4>Data Table</h4>
-    <table>
-      <thead>
-        <tr>
-          <th>Parameter</th>
-          <th>Value</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Sample Size</strong></td>
-          <td>500 Units</td>
-          <td>Total number of processed items</td>
-        </tr>
-        <tr>
-          <td><strong>Avg. Time</strong></td>
-          <td>1.2 sec</td>
-          <td>Mean execution time</td>
-        </tr>
-        <tr>
-          <td><strong>Failure Rate</strong></td>
-          <td>0.03%</td>
-          <td>Percentage of system failures</td>
-        </tr>
-      </tbody>
-    </table>
+      <h4>Data Table</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Sample Size</strong></td>
+            <td>500 Units</td>
+            <td>Total number of processed items</td>
+          </tr>
+          <tr>
+            <td><strong>Avg. Time</strong></td>
+            <td>1.2 sec</td>
+            <td>Mean execution time</td>
+          </tr>
+          <tr>
+            <td><strong>Failure Rate</strong></td>
+            <td>0.03%</td>
+            <td>Percentage of system failures</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <h4>Additional Notes</h4>
-    <ul>
-      <li>Consistent monitoring of metrics is essential.</li>
-      <li>All changes are logged in the revision history.</li>
-      <li>Optimization is an ongoing process.</li>
-    </ul>
+      <h4>Additional Notes</h4>
+      <ul>
+        <li>Consistent monitoring of metrics is essential.</li>
+        <li>All changes are logged in the revision history.</li>
+        <li>Optimization is an ongoing process.</li>
+      </ul>
 
-    <h4>Code Snippet Example</h4>
-    <p>Below is a sample Python code snippet illustrating a simple function:</p>
-    <pre>
-      <code>
-def compute_square(x):
+      <h3>Code Snippet Example</h3>
+      <p>Below is a sample Python code snippet illustrating a simple function:</p>
+
+      <pre>
+        <code>
+{`def compute_square(x):
     """
     Computes the square of a number.
     
@@ -237,6 +221,32 @@ print("The square of 5 is:", result)
 numbers = [2, 3, 4, 5]
 squares = [compute_square(num) for num in numbers]
 print("Squares List:", squares)
+`}
+        </code>
+      </pre>
+
+      <h2 id="conclusion">Conclusion</h2>
+      <p>This document exhibits a range of Markdown features intended to test:</p>
+      <ul>
+        <li>Structural layout</li>
+        <li>Visual hierarchy</li>
+        <li>Proper formatting of content</li>
+      </ul>
+      <p>By following this layout, maintain consistent structure and readability throughout any Markdown-based documentation.</p>
+
+      <h2 id="references">References</h2>
+      <ul>
+        <li><strong>Revision History:</strong> All amendments are recorded at the bottom of the project log.</li>
+        <li><strong>Support:</strong> For issues or questions, refer to the project support documentation.</li>
+      </ul>
+
+      <p><em>Final Note:</em><br/>
+        In this test, ensure that each section is clearly defined and that the formatting retains integrity across various devices and viewers.</p>
+    </div>
+  );
+}
+
+<|END_CODE|>
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<MarkdownVisualLayoutTest />);

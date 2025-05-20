@@ -84,15 +84,14 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const QuizSubmissionForm = () => {
+function App() {
+  const [submitted, setSubmitted] = useState(false);
   const [email, setEmail] = useState('');
   const [difficulty, setDifficulty] = useState('');
-  const [comments, setComments] = useState('');
-  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateEmail(email) && difficulty) {
+    if (email && difficulty) {
       setSubmitted(true);
     }
   };
@@ -100,112 +99,39 @@ const QuizSubmissionForm = () => {
   const handleClear = () => {
     setEmail('');
     setDifficulty('');
-    setComments('');
     setSubmitted(false);
   };
 
-  const validateEmail = (email) => {
-    const re = /\S+@\S+\.\S+/;
-    return re.test(email);
-  };
-
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-  };
-
-  const formStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    width: '300px',
-  };
-
-  const radioGroupStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '100%',
-    margin: '10px 0',
-  };
-
-  const buttonGroupStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '100%',
-    marginTop: '10px',
-  };
-
   return (
-    <div style={containerStyle}>
-      <form style={formStyle} onSubmit={handleSubmit}>
+    <div className="container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
         <h1 style={{ textAlign: 'center' }}>Quiz Submission</h1>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={{ width: '100%', padding: '8px', margin: '10px 0' }}
-        />
-        <div style={radioGroupStyle}>
+        <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} style={{ marginBottom: '10px' }} />
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
           <label>
-            <input
-              type="radio"
-              name="difficulty"
-              value="Easy"
-              checked={difficulty === 'Easy'}
-              onChange={(e) => setDifficulty(e.target.value)}
-            />
-            Easy
+            <input type="radio" value="Easy" checked={difficulty === 'Easy'} onChange={(e) => setDifficulty(e.target.value)} /> Easy
           </label>
           <label>
-            <input
-              type="radio"
-              name="difficulty"
-              value="Medium"
-              checked={difficulty === 'Medium'}
-              onChange={(e) => setDifficulty(e.target.value)}
-            />
-            Medium
+            <input type="radio" value="Medium" checked={difficulty === 'Medium'} onChange={(e) => setDifficulty(e.target.value)} /> Medium
           </label>
           <label>
-            <input
-              type="radio"
-              name="difficulty"
-              value="Hard"
-              checked={difficulty === 'Hard'}
-              onChange={(e) => setDifficulty(e.target.value)}
-            />
-            Hard
+            <input type="radio" value="Hard" checked={difficulty === 'Hard'} onChange={(e) => setDifficulty(e.target.value)} /> Hard
           </label>
         </div>
-        <textarea
-          placeholder="Your Comments"
-          rows="4"
-          value={comments}
-          onChange={(e) => setComments(e.target.value)}
-          style={{ width: '100%', padding: '8px', margin: '10px 0' }}
-        />
-        <div style={buttonGroupStyle}>
-          <button type="submit" style={{ backgroundColor: 'orange', padding: '8px 16px' }}>
-            Submit Quiz
-          </button>
-          <button type="button" onClick={handleClear} style={{ padding: '8px 16px' }}>
-            Clear
-          </button>
+        <textarea placeholder="Your Comments" rows={4} style={{ marginBottom: '10px' }} />
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <button type="submit" style={{ backgroundColor: 'orange' }}>Submit Quiz</button>
+          <button type="button" onClick={handleClear}>Clear</button>
         </div>
-        {submitted && (
-          <p>Congratulations! Your quiz has been submitted successfully.</p>
-        )}
+        {submitted && <p>Congratulations! Your quiz has been submitted.</p>}
       </form>
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<QuizSubmissionForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

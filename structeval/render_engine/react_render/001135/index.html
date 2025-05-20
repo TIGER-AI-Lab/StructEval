@@ -83,96 +83,95 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+<|BEGIN_CODE|>
 
-const NewsletterSubscription = () => {
-    const [email, setEmail] = useState('');
-    const [agreed, setAgreed] = useState(false);
-    const [error, setError] = useState('');
+const NewsletterForm = () => {
+  const [email, setEmail] = useState('');
+  const [agree, setAgree] = useState(false);
+  const [error, setError] = useState('');
 
-    const validateEmail = (email) => {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(String(email).toLowerCase());
-    };
+  const isValidEmail = (email) => {
+    // Basic email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!validateEmail(email)) {
-            setError('Please enter a valid email address.');
-            return;
-        }
-        if (!agreed) {
-            setError('You must agree to the terms and conditions.');
-            return;
-        }
-        setError('');
-        // Handle successful subscription here
-        alert('Subscribed successfully!');
-    };
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-    const containerStyle = {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-        flexDirection: 'column',
-    };
+    if (!isValidEmail(email)) {
+      setError('Please enter a valid email address.');
+      return;
+    }
 
-    const inputStyle = {
-        padding: '10px',
-        border: '1px solid #ccc',
-        borderRadius: '4px',
-        width: '300px',
-        marginBottom: '10px',
-    };
+    if (!agree) {
+      setError('Please agree to the terms and conditions.');
+      return;
+    }
 
-    const checkboxStyle = {
-        marginBottom: '20px',
-    };
+    // Handle successful submission here (e.g., send data to an API)
+    console.log('Submitting:', { email, agree });
+    setError(''); // Clear error message on successful validation
+  };
 
-    const buttonStyle = {
-        padding: '10px 20px',
-        backgroundColor: 'green',
-        color: 'white',
-        border: 'none',
-        borderRadius: '4px',
-        cursor: 'pointer',
-    };
-
-    const errorStyle = {
-        color: 'red',
-        marginTop: '10px',
-    };
-
-    return (
-        <div style={containerStyle}>
-            <h1>Subscribe to Our Newsletter</h1>
-            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <input
-                    type="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    style={inputStyle}
-                    required
-                />
-                <label style={checkboxStyle}>
-                    <input
-                        type="checkbox"
-                        checked={agreed}
-                        onChange={(e) => setAgreed(e.target.checked)}
-                    />{' '}
-                    I agree to the terms and conditions
-                </label>
-                <button type="submit" style={buttonStyle}>Subscribe</button>
-                {error && <div style={errorStyle}>{error}</div>}
-            </form>
-        </div>
-    );
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <form
+        onSubmit={handleSubmit}
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          padding: '20px',
+          border: '1px solid #ccc',
+          borderRadius: '5px',
+        }}
+      >
+        <h1>Subscribe to Our Newsletter</h1>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          style={{
+            padding: '10px',
+            margin: '10px 0',
+            border: '1px solid #ccc',
+            borderRadius: '4px',
+          }}
+        />
+        <label>
+          <input
+            type="checkbox"
+            checked={agree}
+            onChange={(e) => setAgree(e.target.checked)}
+          />
+          I agree to the terms and conditions
+        </label>
+        <button
+          type="submit"
+          style={{
+            padding: '10px 20px',
+            backgroundColor: 'green',
+            color: 'white',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            margin: '10px 0',
+          }}
+        >
+          Subscribe
+        </button>
+        {error && <div style={{ color: 'red' }}>{error}</div>}
+      </form>
+    </div>
+  );
 };
 
+<|END_CODE|>
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscription />);
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterForm />);
 
     </script>
   </body>

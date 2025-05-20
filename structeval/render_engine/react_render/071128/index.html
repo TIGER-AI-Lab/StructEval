@@ -83,42 +83,160 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+<|BEGIN_CODE|>
 
-const StructurallyRichMarkdownExample = () => (
-  <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif', fontSize: '14px' }}>
-    <h1>Project Title: Structurally Rich Markdown Example</h1>
+const MarkdownToReact = () => {
+  return (
+    <div>
+      <h1>Project Title: Structurally Rich Markdown Example</h1>
 
-    <h2>Table of Contents</h2>
-    <ol>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#details-configuration">Details &amp; Configuration</a></li>
-      <li><a href="#objectives">Objectives</a></li>
-      <li><a href="#code-example">Code Example</a></li>
-      <li><a href="#summary-and-future-work">Summary and Future Work</a></li>
-    </ol>
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#details-configuration">Details & Configuration</a></li>
+        <li><a href="#objectives">Objectives</a></li>
+        <li><a href="#code-example">Code Example</a></li>
+        <li><a href="#summary">Summary and Future Work</a></li>
+      </ol>
 
-    <hr />
+      <hr />
 
-    <h3 id="introduction">Introduction</h3>
-    <p>
-      This Markdown document is designed to test the visual conversion task by showcasing a detailed hierarchical layout. It includes elements such as headings, sections, lists, labeled values, and code blocks.
-    </p>
+      <h3 id="introduction">Introduction</h3>
+      <p>This Markdown document is designed to test the visual conversion task by showcasing a detailed hierarchical layout. It includes elements such as headings, sections, lists, labeled values, and code blocks.</p>
 
-    <h4>Key Elements:</h4>
-    <ul>
-      <li><strong>Visible Structure</strong></li>
-      <li><strong>Hierarchical Layout</strong></li>
-      <li><strong>Labeled Values and Configuration</strong></li>
-      <li><strong>Multiple Sections and Lists</strong></li>
-    </ul>
+      <h4>Key Elements:</h4>
+      <ul>
+        <li><b>Visible Structure</b></li>
+        <li><b>Hierarchical Layout</b></li>
+        <li><b>Labeled Values and Configuration</b></li>
+        <li><b>Multiple Sections and Lists</b></li>
+      </ul>
 
-    <hr />
+      <hr />
 
-    <h3 id="details-configuration">Details &amp; Configuration</h3>
-    <p><strong>Version:</strong> <code>v1.0.0
+      <h3 id="details-configuration">Details & Configuration</h3>
+
+      <p><b>Version:</b> <code>v1.0.0</code></p>
+      <p><b>Status:</b> Active</p>
+      <p><b>Author:</b> John Doe</p>
+      <p><b>Date:</b> 2023-10-20</p>
+
+      <h4>Configuration Overview:</h4>
+      <p>Below is a sample configuration in JSON format:</p>
+      <pre>
+        <code>
+          {`{
+  "theme": "default",
+  "layout": "single-page",
+  "fontSettings": {
+    "fontFamily": "Arial, sans-serif",
+    "fontSize": "14px"
+  },
+  "spacing": {
+    "margin": "10px",
+    "padding": "5px"
+  },
+  "features": [
+    "responsive",
+    "accessible",
+    "print-friendly"
+  ]
+}`}
+        </code>
+      </pre>
+      <p><em>Note:</em> The above configuration is provided solely for structural testing.</p>
+
+      <hr />
+
+      <h3 id="objectives">Objectives</h3>
+
+      <ol>
+        <li>Establish a clear hierarchical structure.</li>
+        <li>Emphasize visible formatting for content.
+          <ul>
+            <li><b>Bold</b> and <em>Italic</em> text examples.</li>
+            <li>Usage of inline <code>code</code> and block code.</li>
+          </ul>
+        </li>
+        <li>Include detailed labeled sections and real content.</li>
+        <li>Demonstrate both ordered and unordered lists.</li>
+      </ol>
+
+      <h4>Detailed Objectives List:</h4>
+      <ul>
+        <li><input type="checkbox" checked readOnly /> Use multiple heading levels (H1, H2, H3, etc.)</li>
+        <li><input type="checkbox" checked readOnly /> Incorporate labeled values and configurations.</li>
+        <li><input type="checkbox" checked readOnly /> Provide well-structured demonstration of lists and code blocks.</li>
+        <li><input type="checkbox" checked readOnly /> Ensure a single-page standalone view.</li>
+      </ul>
+
+      <hr />
+
+      <h3 id="code-example">Code Example</h3>
+
+      <p>Below is a useful snippet demonstrating a basic command-line tool:</p>
+
+      <p>Inline code usage: For instance, use <code>echo "Hello, World!"</code> in your terminal.</p>
+
+      <pre>
+        <code>
+          {`#!/bin/bash
+# This script demonstrates listing directory details
+echo "Current Directory File Listing:"
+ls -lh
+echo "End of Listing."`}
+        </code>
+      </pre>
+
+      <blockquote>
+        Note: The Bash script above is for demonstration purposes only.
+      </blockquote>
+
+      <p>Additional observations:</p>
+      <ul>
+        <li>This sample code block mimics terminal commands.</li>
+        <li>Simple commands like <code>cat</code>, <code>grep</code>, or <code>sed</code> can be tested in a similar manner.</li>
+      </ul>
+
+      <hr />
+
+      <h3 id="summary">Summary and Future Work</h3>
+
+      <p>This document has showcased various Markdown elements designed to test visual conversion tasks. The structure and layout include:</p>
+
+      <ul>
+        <li>Multiple headings and subheadings for clear hierarchy.</li>
+        <li>Rich content including lists, tables, and code blocks.</li>
+        <li>A mix of inline code and block code for demonstration of commands.</li>
+      </ul>
+
+      <h4>Future Enhancements:</h4>
+      <ul>
+        <li>Expanding the document with nested lists for deeper testing.</li>
+        <li>Including additional configuration areas to test various formatting scenarios.</li>
+        <li>Incorporating more detailed labeled sections to test readability and layout.</li>
+      </ul>
+
+      <hr />
+
+      <h4>Changelog</h4>
+
+      <ul>
+        <li><b>2023-10-20</b>: Initial version v1.0.0 created with structural layout examples.</li>
+        <li><b>2023-10-21</b>: Updated configuration and included additional code examples.</li>
+      </ul>
+
+      <blockquote>
+        End of Markdown Document
+      </blockquote>
+    </div>
+  );
+};
+
+<|END_CODE|>
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<StructurallyRichMarkdownExample />);
+ReactDOM.createRoot(document.getElementById('root')).render(<MarkdownToReact />);
 
     </script>
   </body>

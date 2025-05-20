@@ -81,62 +81,37 @@ def determine_output_type(task_id):
 
 def extract_renderable_code(text: str, output_type: str = "") -> str:
     """
-    Return whatever looks like the code payload.
+    Grab whatever looks like renderable code.
 
     Priority:
-      1. Anything between <code> … </code>
-      2. Anything in a ```fenced``` block (any header, or matching output_type)
-      3. Otherwise, the whole text (trimmed)
+      1. <|BEGIN_CODE|> … <|END_CODE|>   (closing tag optional)
+      2. ```fenced``` block (any header, or matching `output_type`)
+      3. Otherwise: raise
+    """
+    # 1)  <|BEGIN_CODE|> … <|END_CODE|>   ─ closing tag optional
+    begin_end_pat = (
+        r"<\|BEGIN_CODE\|\>[ \t]*\n?"        # literal opener (pipes escaped)
+        r"(?P<payload1>.*?)"                 # everything after it…
+        r"(?:<\|END_CODE\|\>|$)"             # …until END tag *or* EOS
+    )
 
-    Works even if closing tags / fences are missing.
-    """
-    tag_or_fence = rf"""
-    (?:                             # 1) <code> … </code>
-        <code>[ \t]*\n              # opener (+ newline it ends with)
-        (?P<payload1>.*?)           # capture ALL lines that follow
-        (?:</code>|$)               # until </code> or end-of-string
+    # 2)  ``` fenced block  (closing fence optional)
+    fence_pat = (
+        rf"```(?:{re.escape(output_type)}|[^\n]*)[ \t]*\n"  # header
+        r"(?P<payload2>.*?)"                               # payload
+        r"(?:```|$)"                                       # end fence or EOS
     )
-    |
-    (?:                             # 2) ``` fenced block
-        ```(?:{re.escape(output_type)}|[^\n]*)[ \t]*\n
-        (?P<payload2>.*?)           # capture payload
-        (?:```|$)                   # until closing fence or EOS
-    )
-    """
-    
-    m = re.search(tag_or_fence, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
-    if not m:
-        # Fallback regex allowing no newline after <code> or ``` tag
-        tag_or_fence_inline = rf"""
-        (?:                             # 1) <code> … </code> (inline)
-            <code>[ \t]*               # opener (no mandatory newline)
-            (?P<payload1>.*?)           # capture ALL following chars
-            (?:</code>|$)               # until </code> or EOS
-        )
-        |
-        (?:                             # 2) ``` fenced block (inline)
-            ```(?:{re.escape(output_type)}|[^\n`]*)[ \t]*\n?  # header line, optional newline
-            (?P<payload2>.*?)           # capture payload
-            (?:```|$)                   # until closing fence or EOS
-        )
-        """
-        m = re.search(tag_or_fence_inline, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+
+    pattern = rf"(?:{begin_end_pat})|(?:{fence_pat})"
+    m = re.search(pattern, text, re.DOTALL | re.IGNORECASE)
 
     if m:
-        # whichever group matched, return it
-        payload = m.group("payload1") or m.group("payload2")
-        #print(payload.strip())
-        return payload.strip()
-        
+        return (m.group("payload1") or m.group("payload2")).strip()
 
-    # For HTML output, use the text verbatim
-    if text.startswith("<html>"):
+    # If you purposely want raw HTML back:
+    if text.lstrip().startswith(("<html>", "<div class")):
         return text.strip()
 
-    if text.startswith(" <div class"):
-        return text.strip()
-
-    # 3) fallback: nothing matched—return everything (trimmed)
     raise ValueError("No renderable code found")
 
 
@@ -163,37 +138,22 @@ def extract_code_and_save(text, task_id, output_dir):
     except Exception:
         pass  # If decoding fails, use the original string
 
-    tag_or_fence = rf"""
-    (?:                             # 1) <code> … </code>
-        <code>[ \t]*\n              # opener (+ newline it ends with)
-        (?P<payload1>.*?)           # capture ALL lines that follow
-        (?:</code>|$)               # until </code> or end-of-string
+    # 1)  <|BEGIN_CODE|> … <|END_CODE|>   ─ closing tag optional
+    begin_end_pat = (
+        r"<\|BEGIN_CODE\|\>[ \t]*\n?"        # literal opener (pipes escaped)
+        r"(?P<payload1>.*?)"                 # everything after it…
+        r"(?:<\|END_CODE\|\>|$)"             # …until END tag *or* EOS
     )
-    |
-    (?:                             # 2) ``` fenced block
-        ```(?:{re.escape(output_type)}|[^\n]*)[ \t]*\n
-        (?P<payload2>.*?)           # capture payload
-        (?:```|$)                   # until closing fence or EOS
-    )
-    """
 
-    m = re.search(tag_or_fence, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
-    if not m:
-        # Fallback regex allowing no newline after <code> or ``` tag
-        tag_or_fence_inline = rf"""
-        (?:                             # 1) <code> … </code> (inline)
-            <code>[ \t]*               # opener (no mandatory newline)
-            (?P<payload1>.*?)           # capture ALL following chars
-            (?:</code>|$)               # until </code> or EOS
-        )
-        |
-        (?:                             # 2) ``` fenced block (inline)
-            ```(?:{re.escape(output_type)}|[^\n`]*)[ \t]*\n?  # header line, optional newline
-            (?P<payload2>.*?)           # capture payload
-            (?:```|$)                   # until closing fence or EOS
-        )
-        """
-        m = re.search(tag_or_fence_inline, text, re.DOTALL | re.IGNORECASE | re.VERBOSE)
+    # 2)  ``` fenced block  (closing fence optional)
+    fence_pat = (
+        rf"```(?:{re.escape(output_type)}|[^\n]*)[ \t]*\n"  # header
+        r"(?P<payload2>.*?)"                               # payload
+        r"(?:```|$)"                                       # end fence or EOS
+    )
+
+    pattern = rf"(?:{begin_end_pat})|(?:{fence_pat})"
+    m = re.search(pattern, text, re.DOTALL | re.IGNORECASE)
 
     if m:
         # whichever group matched, return it

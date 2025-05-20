@@ -84,7 +84,7 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const NewsletterSubscription = () => {
+const NewsletterSignup = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('Please enter a valid email');
 
@@ -93,28 +93,25 @@ const NewsletterSubscription = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailRegex.test(email)) {
       setMessage('Thank you for subscribing!');
-      setEmail('');
     } else {
       setMessage('Please enter a valid email');
     }
   };
 
   return (
-    <div style={{ width: '400px', border: '1px solid gray', margin: '0 auto', padding: '20px', boxSizing: 'border-box' }}>
+    <div style={{ width: '400px', border: '1px solid gray', margin: '0 auto' }}>
       <h1>Join Our Newsletter</h1>
-      <form onSubmit={handleSubmit}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '10px' }}>
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            style={{ width: '100%', padding: '8px', boxSizing: 'border-box' }}
-          />
-          <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '8px 16px', border: 'none', cursor: 'pointer' }}>
-            Subscribe
-          </button>
-        </div>
+      <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '10px' }}>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          style={{ width: '100%' }}
+        />
+        <button type="submit" style={{ backgroundColor: 'green', color: 'white' }}>
+          Subscribe
+        </button>
       </form>
       <p>{message}</p>
     </div>
@@ -123,7 +120,7 @@ const NewsletterSubscription = () => {
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscription />);
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSignup />);
 
     </script>
   </body>

@@ -84,74 +84,54 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const NewsletterSubscription = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+function NewsletterForm() {
   const [subscribed, setSubscribed] = useState(false);
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
 
-  const handleSubscribe = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (name.trim() !== '' && email.trim() !== '') {
+    if (fullName && email) {
       setSubscribed(true);
     }
   };
 
-  const containerStyle = {
-    display: 'flex',
-    minHeight: '100vh',
-    justifyContent: 'center',
-    alignItems: 'center',
-  };
-
-  const formStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  };
-
-  const buttonStyle = {
-    color: 'red',
-    backgroundColor: 'white',
-    padding: '10px 20px',
-    border: '1px solid red',
-    cursor: 'pointer',
-    marginTop: '10px',
-  };
-
   return (
-    <div style={containerStyle}>
-      <div style={formStyle}>
-        <h1>Subscribe to our Newsletter</h1>
-        <input
-          type="text"
-          placeholder="Full Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          style={{ margin: '5px 0', padding: '8px', width: '200px' }}
-        />
-        <input
-          type="email"
-          placeholder="Email Address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={{ margin: '5px 0', padding: '8px', width: '200px' }}
-        />
-        <button style={buttonStyle} onClick={handleSubscribe}>
-          Subscribe
-        </button>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <div>
+        <h1 style={{ textAlign: 'center' }}>Subscribe to our Newsletter</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Full Name"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            style={{ width: '100%', marginBottom: '10px' }}
+          />
+          <input
+            type="email"
+            placeholder="Email Address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            style={{ width: '100%', marginBottom: '10px' }}
+          />
+          <button type="submit" style={{ backgroundColor: 'white', color: 'red', width: '100%' }}>
+            Subscribe
+          </button>
+        </form>
         {subscribed && (
-          <div>
-            <strong>Subscription Successful!</strong>
+          <div style={{ marginTop: '10px' }}>
+            <p style={{ fontWeight: 'bold' }}>Subscription Successful!</p>
           </div>
         )}
       </div>
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterSubscription />);
+ReactDOM.createRoot(document.getElementById('root')).render(<NewsletterForm />);
 
     </script>
   </body>

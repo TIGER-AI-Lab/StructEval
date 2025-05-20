@@ -88,31 +88,44 @@ const EventRegistrationForm = () => {
   const [email, setEmail] = useState('');
   const [eventType, setEventType] = useState('');
   const [eventDate, setEventDate] = useState('');
-  const [errors, setErrors] = useState({});
+  const [emailError, setEmailError] = useState('');
+  const [eventTypeError, setEventTypeError] = useState('');
 
-  const validate = () => {
-    const newErrors = {};
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    setEmailError('');
+  };
+
+  const handleEventTypeChange = (e) => {
+    setEventType(e.target.value);
+    setEventTypeError('');
+  };
+
+  const handleDateChange = (e) => {
+    setEventDate(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    let isValid = true;
+
     if (!email) {
-      newErrors.email = 'Email is required.';
-    } else if (!emailRegex.test(email)) {
-      newErrors.email = 'Invalid email format.';
+      setEmailError('Email is required');
+      isValid = false;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setEmailError('Invalid email format');
+      isValid = false;
     }
 
     if (!eventType) {
-      newErrors.eventType = 'Please select an event type.';
+      setEventTypeError('Event type is required');
+      isValid = false;
     }
 
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleRegister = (e) => {
-    e.preventDefault();
-    if (validate()) {
-      // Handle successful registration
-      console.log({ email, eventType, eventDate });
-      alert('Registration successful!');
+    if (isValid) {
+      // Handle form submission, e.g., send data to server
+      console.log('Form submitted:', { email, eventType, eventDate });
     }
   };
 
@@ -120,113 +133,43 @@ const EventRegistrationForm = () => {
     setEmail('');
     setEventType('');
     setEventDate('');
-    setErrors({});
-  };
-
-  const styles = {
-    container: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh',
-      backgroundColor: '#f0f0f0',
-    },
-    form: {
-      backgroundColor: '#fff',
-      padding: '20px',
-      borderRadius: '8px',
-      boxShadow: '0 0 10px rgba(0,0,0,0.1)',
-      display: 'flex',
-      flexDirection: 'column',
-      width: '300px',
-    },
-    header: {
-      textAlign: 'center',
-      marginBottom: '20px',
-    },
-    input: {
-      marginBottom: '10px',
-      padding: '8px',
-      fontSize: '16px',
-    },
-    label: {
-      marginBottom: '5px',
-      fontWeight: 'bold',
-    },
-    select: {
-      marginBottom: '10px',
-      padding: '8px',
-      fontSize: '16px',
-    },
-    buttonContainer: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      marginTop: '20px',
-    },
-    registerButton: {
-      backgroundColor: 'green',
-      color: '#fff',
-      border: 'none',
-      padding: '10px 20px',
-      cursor: 'pointer',
-      borderRadius: '4px',
-      flex: '1',
-      marginRight: '10px',
-    },
-    clearButton: {
-      backgroundColor: 'red',
-      color: '#fff',
-      border: 'none',
-      padding: '10px 20px',
-      cursor: 'pointer',
-      borderRadius: '4px',
-      flex: '1',
-    },
-    error: {
-      color: 'red',
-      fontSize: '12px',
-      marginBottom: '10px',
-    },
+    setEmailError('');
+    setEventTypeError('');
   };
 
   return (
-    <div style={styles.container}>
-      <form style={styles.form} onSubmit={handleRegister}>
-        <h1 style={styles.header}>Event Registration</h1>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <form style={{ width: '300px' }} onSubmit={handleSubmit}>
+        <h1 style={{ textAlign: 'center' }}>Event Registration</h1>
         <input
           type="email"
           placeholder="Enter your email address"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={styles.input}
+          onChange={handleEmailChange}
+          style={{ width: '100%', padding: '8px', marginBottom: '8px' }}
         />
-        {errors.email && <div style={styles.error}>{errors.email}</div>}
+        {emailError && <p style={{ color: 'red' }}>{emailError}</p>}
         <select
           value={eventType}
-          onChange={(e) => setEventType(e.target.value)}
-          style={styles.select}
+          onChange={handleEventTypeChange}
+          style={{ width: '100%', padding: '8px', marginBottom: '8px' }}
         >
           <option value="">Select Event Type</option>
-          <option value="Workshop">Workshop</option>
-          <option value="Webinar">Webinar</option>
-          <option value="Seminar">Seminar</option>
+          <option value="workshop">Workshop</option>
+          <option value="webinar">Webinar</option>
+          <option value="seminar">Seminar</option>
         </select>
-        {errors.eventType && <div style={styles.error}>{errors.eventType}</div>}
-        <label style={styles.label}>Event Date</label>
+        {eventTypeError && <p style={{ color: 'red' }}>{eventTypeError}</p>}
+        <label htmlFor="eventDate" style={{ display: 'block', marginBottom: '4px' }}>Event Date:</label>
         <input
           type="date"
+          id="eventDate"
           value={eventDate}
-          onChange={(e) => setEventDate(e.target.value)}
-          style={styles.input}
+          onChange={handleDateChange}
+          style={{ width: '100%', padding: '8px', marginBottom: '8px' }}
         />
-        <div style={styles.buttonContainer}>
-          <button type="submit" style={styles.registerButton}>
-            Register
-          </button>
-          <button type="button" style={styles.clearButton} onClick={handleClear}>
-            Clear
-          </button>
-        </div>
+        <button type="submit" style={{ backgroundColor: 'green', color: 'white', padding: '8px', width: '48%', marginRight: '4%' }}>Register</button>
+        <button type="button" onClick={handleClear} style={{ backgroundColor: 'red', color: 'white', padding: '8px', width: '48%' }}>Clear</button>
       </form>
     </div>
   );

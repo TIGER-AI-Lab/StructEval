@@ -84,237 +84,119 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const RegistrationForm = () => {
-  const [form, setForm] = useState({
-    username: '',
-    email: '',
-    password: '',
-    gender: '',
-    country: 'USA',
-    terms: false,
-  });
-
-  const [errors, setErrors] = useState({});
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setForm({
-      ...form,
-      [name]: type === 'checkbox' ? checked : value,
-    });
-    setErrors({
-      ...errors,
-      [name]: '',
-    });
-  };
-
-  const validate = () => {
-    const newErrors = {};
-    if (!form.username.trim()) newErrors.username = 'Username is required';
-    if (!form.email.trim()) {
-      newErrors.email = 'Email is required';
-    } else if (!form.email.includes('@')) {
-      newErrors.email = 'Email must contain "@"';
-    }
-    if (!form.password) newErrors.password = 'Password is required';
-    if (!form.terms) newErrors.terms = 'You must accept the terms';
-    return newErrors;
-  };
+function App() {
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [gender, setGender] = useState('');
+  const [country, setCountry] = useState('');
+  const [terms, setTerms] = useState(false);
+  const [registrationSuccess, setRegistrationSuccess] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const validationErrors = validate();
-    if (Object.keys(validationErrors).length === 0) {
-      setSubmitted(true);
-    } else {
-      setErrors(validationErrors);
-      setSubmitted(false);
+
+    if (!username || !email || !password || !terms) {
+      alert('Please fill in all required fields and accept the terms.');
+      return;
     }
-  };
 
-  const handleCancel = () => {
-    setForm({
-      username: '',
-      email: '',
-      password: '',
-      gender: '',
-      country: 'USA',
-      terms: false,
-    });
-    setErrors({});
-    setSubmitted(false);
-  };
+    if (!email.includes('@')) {
+      alert('Please enter a valid email address.');
+      return;
+    }
 
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    backgroundColor: '#f2f2f2',
-  };
-
-  const formStyle = {
-    backgroundColor: '#fff',
-    padding: '20px',
-    borderRadius: '5px',
-    boxShadow: '0 0 10px rgba(0,0,0,0.1)',
-    width: '300px',
-  };
-
-  const headerStyle = {
-    textAlign: 'center',
-    marginBottom: '20px',
-  };
-
-  const inputStyle = {
-    width: '100%',
-    padding: '8px',
-    margin: '5px 0 10px 0',
-    boxSizing: 'border-box',
-  };
-
-  const labelStyle = {
-    display: 'block',
-    marginBottom: '5px',
-  };
-
-  const errorStyle = {
-    color: 'red',
-    fontSize: '12px',
-    marginBottom: '10px',
-  };
-
-  const buttonContainerStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
-  };
-
-  const registerButtonStyle = {
-    backgroundColor: 'green',
-    color: '#fff',
-    border: 'none',
-    padding: '10px 20px',
-    cursor: 'pointer',
-  };
-
-  const cancelButtonStyle = {
-    backgroundColor: '#ccc',
-    color: '#000',
-    border: 'none',
-    padding: '10px 20px',
-    cursor: 'pointer',
+    setRegistrationSuccess(true);
   };
 
   return (
-    <div style={containerStyle}>
-      <div>
-        <form style={formStyle} onSubmit={handleSubmit}>
-          <h1 style={headerStyle}>Register Now</h1>
+    <div className="container">
+      <h1>Register Now</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email Address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
 
-          <label style={labelStyle} htmlFor="username">Username</label>
+        <div>
+          <label>Gender:</label>
+          <label>
+            <input
+              type="radio"
+              value="Male"
+              checked={gender === 'Male'}
+              onChange={(e) => setGender(e.target.value)}
+            />
+            Male
+          </label>
+          <label>
+            <input
+              type="radio"
+              value="Female"
+              checked={gender === 'Female'}
+              onChange={(e) => setGender(e.target.value)}
+            />
+            Female
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="country">Country:</label>
+          <select
+            id="country"
+            value={country}
+            onChange={(e) => setCountry(e.target.value)}
+          >
+            <option value="">Select Country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="Mexico">Mexico</option>
+          </select>
+        </div>
+
+        <div>
           <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Username"
-            value={form.username}
-            onChange={handleChange}
-            style={inputStyle}
+            type="checkbox"
+            checked={terms}
+            onChange={(e) => setTerms(e.target.checked)}
+            required
           />
-          {errors.username && <div style={errorStyle}>{errors.username}</div>}
+          <label>Accept Terms and Conditions</label>
+        </div>
 
-          <label style={labelStyle} htmlFor="email">Email Address</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email Address"
-            value={form.email}
-            onChange={handleChange}
-            style={inputStyle}
-          />
-          {errors.email && <div style={errorStyle}>{errors.email}</div>}
+        <button type="submit" style={{ backgroundColor: 'green' }}>
+          Register
+        </button>
+        <button type="button">Cancel</button>
+      </form>
 
-          <label style={labelStyle} htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Password"
-            value={form.password}
-            onChange={handleChange}
-            style={inputStyle}
-          />
-          {errors.password && <div style={errorStyle}>{errors.password}</div>}
-
-          <div style={{ marginBottom: '10px' }}>
-            <span>Gender:</span>
-            <label style={{ marginLeft: '10px' }}>
-              <input
-                type="radio"
-                name="gender"
-                value="Male"
-                checked={form.gender === 'Male'}
-                onChange={handleChange}
-              /> Male
-            </label>
-            <label style={{ marginLeft: '10px' }}>
-              <input
-                type="radio"
-                name="gender"
-                value="Female"
-                checked={form.gender === 'Female'}
-                onChange={handleChange}
-              /> Female
-            </label>
-          </div>
-
-          <div style={{ marginBottom: '10px' }}>
-            <label style={labelStyle} htmlFor="country">Country</label>
-            <select
-              id="country"
-              name="country"
-              value={form.country}
-              onChange={handleChange}
-              style={inputStyle}
-            >
-              <option value="USA">USA</option>
-              <option value="Canada">Canada</option>
-              <option value="Mexico">Mexico</option>
-            </select>
-          </div>
-
-          <div style={{ marginBottom: '10px' }}>
-            <label>
-              <input
-                type="checkbox"
-                name="terms"
-                checked={form.terms}
-                onChange={handleChange}
-              /> Accept Terms and Conditions
-            </label>
-            {errors.terms && <div style={errorStyle}>{errors.terms}</div>}
-          </div>
-
-          <div style={buttonContainerStyle}>
-            <button type="submit" style={registerButtonStyle}>Register</button>
-            <button type="button" onClick={handleCancel} style={cancelButtonStyle}>Cancel</button>
-          </div>
-        </form>
-        {submitted && (
-          <div style={{ textAlign: 'center', marginTop: '20px', color: 'green' }}>
-            Registration Successful
-          </div>
-        )}
-      </div>
+      {registrationSuccess && (
+        <div>Registration Successful</div>
+      )}
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<RegistrationForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

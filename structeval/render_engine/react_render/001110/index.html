@@ -83,100 +83,12 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const RegistrationForm = () => {
-    const [username, setUsername] = useState('');
-    const [email, setEmail]       = useState('');
-    const [password, setPassword] = useState('');
-    const [agree, setAgree]       = useState(false);
-    const [error, setError]       = useState('');
-
-    const handleRegister = (e) => {
-        e.preventDefault();
-        if (!username || !email || !password) {
-            setError('All fields are required.');
-        } else {
-            setError('');
-            // Proceed with registration
-        }
-    }
-
-    const containerStyle = {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh',
-    };
-
-    const formStyle = {
-        display: 'flex',
-        flexDirection: 'column',
-        width: '300px',
-    };
-
-    const divStyle = {
-        marginBottom: '10px',
-    };
-
-    const buttonStyle = {
-        backgroundColor: 'green',
-        color: 'white',
-        padding: '10px',
-        border: 'none',
-        cursor: 'pointer',
-    };
-
-    return (
-        <div style={containerStyle}>
-            <form style={formStyle} onSubmit={handleRegister}>
-                <h2 style={{ textAlign: 'center' }}>Create an Account</h2>
-                <div style={divStyle}>
-                    <input
-                        type="text"
-                        placeholder="Username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                        style={{ width: '100%', padding: '8px' }}
-                    />
-                </div>
-                <div style={divStyle}>
-                    <input
-                        type="email"
-                        placeholder="Email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        style={{ width: '100%', padding: '8px' }}
-                    />
-                </div>
-                <div style={divStyle}>
-                    <input
-                        type="password"
-                        placeholder="Password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        style={{ width: '100%', padding: '8px' }}
-                    />
-                </div>
-                <div style={divStyle}>
-                    <label>
-                        <input
-                            type="checkbox"
-                            checked={agree}
-                            onChange={(e) => setAgree(e.target.checked)}
-                        />{' '}
-                        I agree to the Terms and Conditions
-                    </label>
-                </div>
-                <button type="submit" style={buttonStyle}>Register</button>
-                {error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
-            </form>
-        </div>
-    );
-}
-
+\begin{equation}
+\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
+\end{equation}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<RegistrationForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

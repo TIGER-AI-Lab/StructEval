@@ -83,134 +83,90 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+\documentclass{article}
+\usepackage{tikz}
 
-const App = () => {
-  const version = '1.0.0';
-  const currentYear = new Date().getFullYear();
-  const lastUpdated = '2023-04-15';
-  const educationList = [
-    {
-      degree: 'Master of Science in Computer Science',
-      institution: 'Stanford University',
-      year: 2018
-    },
-    {
-      degree: 'Bachelor of Science in Information Technology',
-      institution: 'MIT',
-      year: 2015
-    }
-  ];
-  const workExperience = [
-    {
-      title: 'Senior Software Engineer',
-      company: 'Tech Solutions Inc.',
-      startDate: 'Jan 2020',
-      endDate: null,
-      description: 'Leading the development team for web applications using modern JavaScript frameworks.'
-    },
-    {
-      title: 'Software Developer',
-      company: 'Digital Innovations',
-      startDate: 'Jun 2018',
-      endDate: 'Dec 2019',
-      description: 'Developed and maintained client-side applications using Vue.js.'
-    }
-  ];
-  const skills = [
-    { name: 'JavaScript', level: 'Expert' },
-    { name: 'Vue.js', level: 'Expert' },
-    { name: 'React', level: 'Intermediate' },
-    { name: 'Node.js', level: 'Advanced' },
-    { name: 'Python', level: 'Intermediate' }
-  ];
-  const projects = [
-    {
-      name: 'E-commerce Platform',
-      description: 'A full-stack e-commerce solution with payment integration.',
-      technology: 'Vue.js, Node.js, MongoDB',
-      year: 2022
-    },
-    {
-      name: 'Task Management App',
-      description: 'A responsive web application for team task management.',
-      technology: 'React, Firebase',
-      year: 2021
-    }
-  ];
+\begin{document}
 
-  return (
-    <div id="app" style={{ fontFamily: 'Arial, sans-serif', maxWidth: '800px', margin: '0 auto', padding: '20px', color: '#333' }}>
-      <header style={{ textAlign: 'center', marginBottom: '30px', paddingBottom: '20px', borderBottom: '1px solid #eee' }}>
-        <h1>Welcome to My Profile Page</h1>
-        <p>Application Version: {version}</p>
-      </header>
-      <section className="personal-information" style={{ marginBottom: '30px' }}>
-        <h2 style={{ color: '#2c3e50', borderBottom: '2px solid #eee', paddingBottom: '10px' }}>Personal Information</h2>
-        <article className="info-box" style={{ backgroundColor: '#f9f9f9', padding: '15px', marginBottom: '15px', borderRadius: '5px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-          <h3>Basic Details</h3>
-          <p><strong>Name:</strong> John Doe</p>
-          <p><strong>Age:</strong> 32</p>
-          <p><strong>Location:</strong> San Francisco, CA</p>
-        </article>
-        <article className="info-box" style={{ backgroundColor: '#f9f9f9', padding: '15px', marginBottom: '15px', borderRadius: '5px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-          <h3>Contact Details</h3>
-          <ul>
-            <li><strong>Email:</strong> john.doe@example.com</li>
-            <li><strong>Phone:</strong> +1 555 123 4567</li>
-            <li><strong>Address:</strong> 456 Market Street, San Francisco, CA</li>
-          </ul>
-        </article>
-      </section>
-      <section className="education" style={{ marginBottom: '30px' }}>
-        <h2 style={{ color: '#2c3e50', borderBottom: '2px solid #eee', paddingBottom: '10px' }}>Educational Background</h2>
-        {educationList.map((edu, index) => (
-          <div className="education-entry" key={index} style={{ backgroundColor: '#f9f9f9', padding: '15px', marginBottom: '15px', borderRadius: '5px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-            <h3>{edu.degree}</h3>
-            <p><strong>Institution:</strong> {edu.institution}</p>
-            <p><strong>Year of Graduation:</strong> {edu.year}</p>
-          </div>
-        ))}
-      </section>
-      <section className="work-experience" style={{ marginBottom: '30px' }}>
-        <h2 style={{ color: '#2c3e50', borderBottom: '2px solid #eee', paddingBottom: '10px' }}>Work Experience</h2>
-        {workExperience.map((job, index) => (
-          <div className="experience-entry" key={index} style={{ backgroundColor: '#f9f9f9', padding: '15px', marginBottom: '15px', borderRadius: '5px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-            <h3>{job.title}</h3>
-            <p><strong>Company:</strong> {job.company}</p>
-            <p><strong>Duration:</strong> {job.startDate} - {job.endDate || 'Present'}</p>
-            <p><strong>Description:</strong> {job.description}</p>
-          </div>
-        ))}
-      </section>
-      <section className="skills" style={{ marginBottom: '30px' }}>
-        <h2 style={{ color: '#2c3e50', borderBottom: '2px solid #eee', paddingBottom: '10px' }}>Skills</h2>
-        <ul className="skills-list" style={{ listStyleType: 'none', padding: '0', display: 'flex', flexWrap: 'wrap' }}>
-          {skills.map((skill, index) => (
-            <li key={index} style={{ backgroundColor: '#e9ecef', padding: '8px 15px', margin: '5px', borderRadius: '20px' }}>
-              {skill.name} - <span className="skill-level" style={{ color: '#007bff', fontWeight: 'bold' }}>{skill.level}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section className="projects" style={{ marginBottom: '30px' }}>
-        <h2 style={{ color: '#2c3e50', borderBottom: '2px solid #eee', paddingBottom: '10px' }}>Projects</h2>
-        {projects.map((project, index) => (
-          <div className="project-entry" key={index} style={{ backgroundColor: '#f9f9f9', padding: '15px', marginBottom: '15px', borderRadius: '5px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-            <h3>{project.name}</h3>
-            <p><strong>Description:</strong> {project.description}</p>
-            <p><strong>Technology:</strong> {project.technology}</p>
-            <p><strong>Year:</strong> {project.year}</p>
-          </div>
-        ))}
-      </section>
-      <footer style={{ textAlign: 'center', paddingTop: '30px', marginTop: '30px', borderTop: '1px solid #eee', fontSize: '0.9em', color: '#666' }}>
-        <p>&copy; {currentYear} John Doe. All rights reserved.</p>
-        <p>Last Updated: {lastUpdated}</p>
-      </footer>
-    </div>
-  );
-}
+\begin{tikzpicture}
+% Grid
+\draw [thin, step=1cm] (0,0) grid (10,1);
 
+% Plot Sin
+\draw [thin, blue, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.84147098)
+(2,0.90929743)
+(3,0.14112001)
+(4,-0.7568025)
+(5,-0.9589243)
+(6,-0.2794155)
+(7,0.9589243)
+(8,0.6569866)
+(9,0.7568025)
+(10,0.84147098)
+};
+
+% Plot Cos
+\draw [thin, green, <->] plot[smooth] coordinates {
+(0,1)
+(1,0.5403023)
+(2,0.4161468)
+(3,0.9899925)
+(4,0.9899925)
+(5,0.4161468)
+(6,-0.5403023)
+(7,-1)
+(8,-0.9899925)
+(9,-0.4161468)
+(10,-0.9899925)
+};
+
+% Plot Tan (Limited Range)
+\draw [thin, red, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.0174524)
+(2,0.1900227)
+(3,0.8485772)
+(4,1.4296471)
+(5,2.0000000)
+(6,4.0792891)
+(7,8.4371791)
+(8,16)
+};
+
+% Annotation Peak Value
+\node at (2.5,1) [above, fill=black!] {Peak Value};
+
+% Text Summary
+\node [fill=white, text width=4cm] at (0.02,0.95) {
+Summary:
+--------------------------\\
+1. sin(x) and cos(x) exhibit classic periodic\\
+behavior.\\
+2. tan(x) shows asymptotic trends near\\
+odd multiples of pi/2.\\
+3. Data generated using NumPy functions.\\
+4. Plots incorporate grids, legends,\\
+and clear annotations.
+};
+
+% Statistics Text
+\node [fill=white, text width=4cm] at (0.7,0.5) {
+Statistics:
+------------------\\
+Sine\\
+  Mean: 0.00\\
+  Std:  0.99\\
+Cosine\\
+  Mean: 0.00\\
+  Std:  0.71\\
+Tangent (|value| < 10)\\
+  Mean: 0.00\\
+  Std:  0.71
+};
+
+\end{tikzpicture}
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

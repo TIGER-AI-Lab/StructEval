@@ -83,117 +83,12 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-function TaskManager() {
-  const [tasks, setTasks] = useState([]);
-  const [input, setInput] = useState('');
-
-  const addTask = () => {
-    if (input.trim() === '') return;
-    setTasks([...tasks, { text: input, completed: false }]);
-    setInput('');
-  };
-
-  const toggleTask = index => {
-    const newTasks = tasks.map((task, i) => {
-      if (i === index) {
-        return { ...task, completed: !task.completed };
-      }
-      return task;
-    });
-    setTasks(newTasks);
-  };
-
-  const clearAll = () => {
-    setTasks([]);
-  };
-
-  const containerStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100vh',
-  };
-
-  const inputContainerStyle = {
-    display: 'flex',
-    margin: '20px 0',
-  };
-
-  const addButtonStyle = {
-    backgroundColor: 'green',
-    color: 'white',
-    border: 'none',
-    padding: '5px 10px',
-    marginLeft: '10px',
-    cursor: 'pointer',
-  };
-
-  const clearButtonStyle = {
-    backgroundColor: 'red',
-    color: 'white',
-    border: 'none',
-    padding: '5px 10px',
-    marginTop: '20px',
-    cursor: 'pointer',
-  };
-
-  const taskListStyle = {
-    listStyleType: 'none',
-    padding: 0,
-  };
-
-  const taskItemStyle = completed => ({
-    textDecoration: completed ? 'line-through' : 'none',
-    display: 'flex',
-    alignItems: 'center',
-    margin: '5px 0',
-  });
-
-  return (
-    <div style={containerStyle}>
-      <h3>Task Manager</h3>
-      <div style={inputContainerStyle}>
-        <input
-          type="text"
-          placeholder="Enter new task"
-          value={input}
-          onChange={e => setInput(e.target.value)}
-        />
-        <button style={addButtonStyle} onClick={addTask}>
-          Add Task
-        </button>
-      </div>
-      {tasks.length > 0 ? (
-        <ul style={taskListStyle}>
-          {tasks.map((task, index) => (
-            <li key={index} style={taskItemStyle(task.completed)}>
-              <input
-                type="checkbox"
-                checked={task.completed}
-                onChange={() => toggleTask(index)}
-                style={{ marginRight: '10px' }}
-              />
-              {task.text}
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p>No tasks available</p>
-      )}
-      {tasks.length > 0 && (
-        <button style={clearButtonStyle} onClick={clearAll}>
-          Clear All
-        </button>
-      )}
-    </div>
-  );
-}
-
+\begin{equation}
+\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
+\end{equation}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<TaskManager />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

@@ -83,120 +83,47 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+  <h1>Restaurant Order Form</h1>
+  <input type="text" placeholder="Enter your name" required />
+  <select name="seating" required>
+    <option value="">Select Seating</option>
+    <option value="indoor">Indoor</option>
+    <option value="outdoor">Outdoor</option>
+    <option value="bar">Bar</option>
+  </select>
+  <fieldset>
+    <legend>Meal Time</legend>
+    <input type="radio" name="mealType" value="lunch" /> Lunch
+    <input type="radio" name="mealType" value="dinner" /> Dinner
+  </fieldset>
+  <input type="number" placeholder="Enter quantity" min="1" required />
+  <button type="button" style={{ backgroundColor: 'green' }} onClick={handlePlaceOrder}>Place Order</button>
+  <button type="button" onClick={handleClearForm}>Clear Form</button>
+  <p id="confirmationMessage" style={{ display: 'none' }}>Thank you for your order!</p>
+</div>
 
-const RestaurantOrderForm = () => {
-  const [name, setName] = useState('');
-  const [seating, setSeating] = useState('Indoor');
-  const [mealType, setMealType] = useState('Lunch');
-  const [quantity, setQuantity] = useState(1);
-  const [confirmation, setConfirmation] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (name.trim() === '') {
-      alert('Please enter your name.');
+<script>
+  const handlePlaceOrder = () => {
+    const name = document.querySelector('input[type="text"]').value;
+    const mealType = document.querySelector('input[name="mealType"]:checked').value;
+    const quantity = parseInt(document.querySelector('input[type="number"]').value);
+    
+    if (!name || quantity < 1) {
+      alert('Please enter a name and choose a quantity of at least 1.');
       return;
     }
-    if (quantity < 1) {
-      alert('Quantity must be at least 1.');
-      return;
-    }
-    setConfirmation(`Thank you, ${name}! Your order for ${quantity} ${mealType} has been placed.`);
+
+    document.querySelector('#confirmationMessage').style.display = 'block';
   };
 
-  const handleClear = () => {
-    setName('');
-    setSeating('Indoor');
-    setMealType('Lunch');
-    setQuantity(1);
-    setConfirmation('');
+  const handleClearForm = () => {
+    document.querySelector('#confirmationMessage').style.display = 'none';
   };
-
-  const formStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    gap: '15px',
-    maxWidth: '400px',
-    margin: '0 auto',
-  };
-
-  const buttonContainerStyle = {
-    display: 'flex',
-    gap: '10px',
-  };
-
-  const placeOrderStyle = {
-    backgroundColor: 'green',
-    color: 'white',
-    border: 'none',
-    padding: '10px 20px',
-    cursor: 'pointer',
-  };
-
-  const clearFormStyle = {
-    padding: '10px 20px',
-    cursor: 'pointer',
-  };
-
-  return (
-    <div>
-      <h1 style={{ textAlign: 'center' }}>Restaurant Order Form</h1>
-      <form style={formStyle} onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Enter your name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <select value={seating} onChange={(e) => setSeating(e.target.value)}>
-          <option value="Indoor">Indoor</option>
-          <option value="Outdoor">Outdoor</option>
-          <option value="Bar">Bar</option>
-        </select>
-        <div>
-          <label>
-            <input
-              type="radio"
-              value="Lunch"
-              checked={mealType === 'Lunch'}
-              onChange={(e) => setMealType(e.target.value)}
-            />
-            Lunch
-          </label>
-          <label style={{ marginLeft: '10px' }}>
-            <input
-              type="radio"
-              value="Dinner"
-              checked={mealType === 'Dinner'}
-              onChange={(e) => setMealType(e.target.value)}
-            />
-            Dinner
-          </label>
-        </div>
-        <input
-          type="number"
-          min="1"
-          value={quantity}
-          onChange={(e) => setQuantity(parseInt(e.target.value))}
-        />
-        <div style={buttonContainerStyle}>
-          <button type="submit" style={placeOrderStyle}>
-            Place Order
-          </button>
-          <button type="button" style={clearFormStyle} onClick={handleClear}>
-            Clear Form
-          </button>
-        </div>
-      </form>
-      {confirmation && <p style={{ textAlign: 'center' }}>{confirmation}</p>}
-    </div>
-  );
-};
-
+</script>
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<RestaurantOrderForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<handlePlaceOrder />);
 
     </script>
   </body>

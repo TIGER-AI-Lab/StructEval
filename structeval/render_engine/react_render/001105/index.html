@@ -85,100 +85,44 @@
 
 
 const ContactForm = () => {
-    const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('');
-    const [message, setMessage] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
 
-    const isFormValid = email.trim() !== '' && subject.trim() !== '' && message.trim() !== '';
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
 
-    const handleClear = () => {
-        setEmail('');
-        setSubject('');
-        setMessage('');
-    };
+  const handleSubjectChange = (event) => {
+    setSubject(event.target.value);
+  };
 
-    const handleSend = () => {
-        // Handle send action
-    };
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
 
-    const containerStyle = {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-    };
+  const handleClear = () => {
+    setEmail('');
+    setSubject('');
+    setMessage('');
+  };
 
-    const formStyle = {
-        display: 'flex',
-        flexDirection: 'column',
-        width: '300px',
-    };
+  const isFormValid = email && subject && message;
 
-    const buttonContainerStyle = {
-        display: 'flex',
-        justifyContent: 'space-between',
-        marginTop: '10px',
-    };
-
-    const sendButtonStyle = {
-        backgroundColor: 'darkgreen',
-        color: 'white',
-        padding: '8px 16px',
-        border: 'none',
-        cursor: 'pointer',
-    };
-
-    const clearButtonStyle = {
-        padding: '8px 16px',
-        border: '1px solid #ccc',
-        cursor: 'pointer',
-    };
-
-    return (
-        <div style={containerStyle}>
-            <form style={formStyle}>
-                <h2 style={{ textAlign: 'center' }}>Contact Us</h2>
-                <input
-                    type="email"
-                    placeholder="Your Email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    style={{ marginBottom: '10px', padding: '8px' }}
-                />
-                <input
-                    type="text"
-                    placeholder="Subject"
-                    value={subject}
-                    onChange={(e) => setSubject(e.target.value)}
-                    style={{ marginBottom: '10px', padding: '8px' }}
-                />
-                <textarea
-                    placeholder="Write your message here"
-                    rows="3"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    style={{ marginBottom: '10px', padding: '8px' }}
-                ></textarea>
-                <div style={buttonContainerStyle}>
-                    <button
-                        type="button"
-                        onClick={handleSend}
-                        disabled={!isFormValid}
-                        style={sendButtonStyle}
-                    >
-                        Send
-                    </button>
-                    <button
-                        type="button"
-                        onClick={handleClear}
-                        style={clearButtonStyle}
-                    >
-                        Clear
-                    </button>
-                </div>
-            </form>
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Your Email" value={email} onChange={handleEmailChange} />
+        <input type="text" placeholder="Subject" value={subject} onChange={handleSubjectChange} />
+        <textarea placeholder="Write your message here" rows={3} value={message} onChange={handleMessageChange} />
+        <div>
+          <button style={{ backgroundColor: 'darkgreen' }} disabled={!isFormValid}>Send</button>
+          <button onClick={handleClear}>Clear</button>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 

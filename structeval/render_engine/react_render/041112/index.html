@@ -83,90 +83,90 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
+\documentclass{article}
+\usepackage{tikz}
 
-const App = () => (
-  <div>
-    <header>
-      <h1>Visual Conversion Test Layout</h1>
-      <p>This document serves as a sample layout to test structural hierarchy and visible content.</p>
-    </header>
-    
-    <section>
-      <h2>Overview</h2>
-      <p>The following sections demonstrate a complex layout including headings, lists, labeled values, and multiple sections. All content is static and is intended to be rendered on a single page.</p>
-    </section>
-    
-    <section>
-      <h2>Details</h2>
-      <article>
-        <h3>Basic Information</h3>
-        <ul>
-          <li><strong>Project Name:</strong> Visual Converter</li>
-          <li><strong>Version:</strong> 1.0</li>
-          <li><strong>Date:</strong> October 2023</li>
-        </ul>
-        <p>Please review the details carefully to understand the purpose and structure of this layout.</p>
-      </article>
-  
-      <article>
-        <h3>Technical Specifications</h3>
-        <ol>
-          <li>Valid HTML structure including DOCTYPE, head, and body.</li>
-          <li>Use of semantic HTML elements such as header, section, and article.</li>
-          <li>No external dependencies; all styles and scripts are excluded.</li>
-        </ol>
-        <p>This layout is designed to showcase the proper use of HTML's semantic elements while remaining entirely self-contained.</p>
-      </article>
-    </section>
-    
-    <section>
-      <h2>Team Information</h2>
-      <article>
-        <h3>Team Members</h3>
-        <ul>
-          <li>
-            <strong>Name:</strong> Alice Johnson<br />
-            <span>Role: Lead Developer</span>
-          </li>
-          <li>
-            <strong>Name:</strong> Bob Smith<br />
-            <span>Role: Project Manager</span>
-          </li>
-          <li>
-            <strong>Name:</strong> Carol White<br />
-            <span>Role: UX Designer</span>
-          </li>
-        </ul>
-      </article>
-      
-      <article>
-        <h3>Contact Information</h3>
-        <dl>
-          <dt>Email:</dt>
-          <dd>team@visualconverter.com</dd>
-          <dt>Phone:</dt>
-          <dd>+1 234 567 890</dd>
-          <dt>Address:</dt>
-          <dd>123 Main Street, Suite 100<br />Cityville, ST 12345</dd>
-        </dl>
-      </article>
-    </section>
-    
-    <section>
-      <h2>Additional Notes</h2>
-      <p>This page is constructed without any images, external URLs, icons, or interactivity. Its primary function is to test visual layout and content structure.</p>
-      <blockquote>
-        <p>"The essence of design is in the details and the simplicity of structure."</p>
-        <footer>â Design Expert</footer>
-      </blockquote>
-    </section>
-    
-    <footer>
-      <p>&copy; 2023 Visual Converter - All rights reserved.</p>
-    </footer>
-  </div>
-);
+\begin{document}
 
+\begin{tikzpicture}
+% Grid
+\draw [thin, step=1cm] (0,0) grid (10,1);
+
+% Plot Sin
+\draw [thin, blue, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.84147098)
+(2,0.90929743)
+(3,0.14112001)
+(4,-0.7568025)
+(5,-0.9589243)
+(6,-0.2794155)
+(7,0.9589243)
+(8,0.6569866)
+(9,0.7568025)
+(10,0.84147098)
+};
+
+% Plot Cos
+\draw [thin, green, <->] plot[smooth] coordinates {
+(0,1)
+(1,0.5403023)
+(2,0.4161468)
+(3,0.9899925)
+(4,0.9899925)
+(5,0.4161468)
+(6,-0.5403023)
+(7,-1)
+(8,-0.9899925)
+(9,-0.4161468)
+(10,-0.9899925)
+};
+
+% Plot Tan (Limited Range)
+\draw [thin, red, <->] plot[smooth] coordinates {
+(0,0)
+(1,0.0174524)
+(2,0.1900227)
+(3,0.8485772)
+(4,1.4296471)
+(5,2.0000000)
+(6,4.0792891)
+(7,8.4371791)
+(8,16)
+};
+
+% Annotation Peak Value
+\node at (2.5,1) [above, fill=black!] {Peak Value};
+
+% Text Summary
+\node [fill=white, text width=4cm] at (0.02,0.95) {
+Summary:
+--------------------------\\
+1. sin(x) and cos(x) exhibit classic periodic\\
+behavior.\\
+2. tan(x) shows asymptotic trends near\\
+odd multiples of pi/2.\\
+3. Data generated using NumPy functions.\\
+4. Plots incorporate grids, legends,\\
+and clear annotations.
+};
+
+% Statistics Text
+\node [fill=white, text width=4cm] at (0.7,0.5) {
+Statistics:
+------------------\\
+Sine\\
+  Mean: 0.00\\
+  Std:  0.99\\
+Cosine\\
+  Mean: 0.00\\
+  Std:  0.71\\
+Tangent (|value| < 10)\\
+  Mean: 0.00\\
+  Std:  0.71
+};
+
+\end{tikzpicture}
 
 // Auto‑generated mount
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

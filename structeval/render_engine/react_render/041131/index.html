@@ -84,17 +84,15 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-function ProjectStructuralLayout() {
+const App = () => {
   return (
     <div>
-      {/* Header Section */}
       <header>
         <h1>Main Project Overview</h1>
         <p>This page provides a comprehensive look at the structural layout, visual hierarchy, and rendered content.</p>
         <hr />
       </header>
 
-      {/* Navigation Menu */}
       <nav>
         <ul>
           <li>Home</li>
@@ -105,13 +103,11 @@ function ProjectStructuralLayout() {
         <hr />
       </nav>
 
-      {/* Introduction Section */}
       <section id="introduction">
         <h2>Introduction</h2>
         <p>Welcome to our project page. This page is designed to test the visual arrangement and structure of HTML elements such as headings, paragraphs, lists, tables, and more. The content below demonstrates the way information is organized within a single HTML document.</p>
       </section>
 
-      {/* Details Section */}
       <section id="details">
         <h2>Project Details</h2>
         <article>
@@ -140,30 +136,20 @@ function ProjectStructuralLayout() {
         </article>
       </section>
 
-      {/* Content Section */}
       <section id="content">
         <h2>Main Content</h2>
         <p>The body of this document is composed of various sections that structure the content in a logical manner. Each section contains headers, paragraphs, and lists to illustrate different types of information.</p>
         <div>
           <h3>Content Blocks</h3>
           <ol>
-            <li>
-              <strong>Block 1:</strong> Introduction and background information.
-            </li>
-            <li>
-              <strong>Block 2:</strong> Detailed project specifications and goals.
-            </li>
-            <li>
-              <strong>Block 3:</strong> Statistical data presented in tabular format.
-            </li>
-            <li>
-              <strong>Block 4:</strong> Concluding remarks and future directions.
-            </li>
+            <li><strong>Block 1:</strong> Introduction and background information.</li>
+            <li><strong>Block 2:</strong> Detailed project specifications and goals.</li>
+            <li><strong>Block 3:</strong> Statistical data presented in tabular format.</li>
+            <li><strong>Block 4:</strong> Concluding remarks and future directions.</li>
           </ol>
         </div>
       </section>
 
-      {/* Statistics Section */}
       <section id="statistics">
         <h2>Data and Statistics</h2>
         <p>Below is a table summarizing some sample data related to the project. This table is designed to present labeled values clearly.</p>
@@ -200,7 +186,6 @@ function ProjectStructuralLayout() {
         </table>
       </section>
 
-      {/* Additional Information Section */}
       <section id="additional-info">
         <h2>Additional Information</h2>
         <p>This section includes extra details that further demonstrate the use of a variety of HTML elements to structure content effectively.</p>
@@ -213,7 +198,6 @@ function ProjectStructuralLayout() {
         <p>The goal is to maintain clarity and readability on a single standalone page without reliance on external resources or scripts.</p>
       </section>
 
-      {/* Footer Section */}
       <footer>
         <hr />
         <p>&copy; 2023 Project Structural Layout. All rights reserved.</p>
@@ -221,11 +205,11 @@ function ProjectStructuralLayout() {
       </footer>
     </div>
   );
-}
+};
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<ProjectStructuralLayout />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

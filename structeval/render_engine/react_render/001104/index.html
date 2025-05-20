@@ -83,81 +83,12 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const NoteTaker = () => {
-  const [title, setTitle] = useState('');
-  const [content, setContent] = useState('');
-  const [important, setImportant] = useState(false);
-  const [notes, setNotes] = useState([]);
-
-  const handleSave = (e) => {
-    e.preventDefault();
-    if (title.trim() === '' || content.trim() === '') {
-      return;
-    }
-    const newNote = { title, content, important };
-    setNotes([...notes, newNote]);
-    setTitle('');
-    setContent('');
-    setImportant(false);
-  };
-
-  const handleClear = () => {
-    setTitle('');
-    setContent('');
-    setImportant(false);
-  };
-
-  return (
-    <div style={{
-      display: 'grid',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh'
-    }}>
-      <form onSubmit={handleSave} style={{ display: 'grid', gap: '10px' }}>
-        <h1>Note Taker</h1>
-        <input 
-          type="text" 
-          placeholder="Enter note title" 
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          style={{ width: '300px' }}
-        />
-        <textarea 
-          placeholder="Enter your note" 
-          rows="4" 
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
-        />
-        <div>
-          <input 
-            type="checkbox" 
-            checked={important} 
-            onChange={(e) => setImportant(e.target.checked)} 
-            id="important"
-          />
-          <label htmlFor="important">Mark as Important</label>
-        </div>
-        <div>
-          <button type="submit" style={{ backgroundColor: 'green', color: 'white', marginRight: '10px' }}>Save Note</button>
-          <button type="button" onClick={handleClear} style={{ backgroundColor: 'red', color: 'white' }}>Clear</button>
-        </div>
-      </form>
-      {notes.map((note, index) => (
-        <div key={index} style={{ marginTop: '20px', width: '300px', textAlign: 'left' }}>
-          <h2>{note.title}</h2>
-          <p>{note.content}</p>
-          {note.important && <p><strong>Important</strong></p>}
-        </div>
-      ))}
-    </div>
-  );
-};
-
+\begin{equation}
+\vec{v}_f = \int_{t_i}^{t_f} \left( \frac{\vec{F}}{m} - \vec{g} \right) \, dt = \vec{v}_i + \frac{\vec{F}}{m} \cdot (t_f - t_i) - \vec{g} \cdot (t_f - t_i)
+\end{equation}
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<NoteTaker />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

@@ -84,21 +84,26 @@
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
 
-const UserLogin = () => {
+function App() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-    if (!email || !password) {
-      setError('Email and Password are required.');
-    } else if (!email.includes('@')) {
-      setError('Email must contain @.');
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleLogin = () => {
+    if (!email || !password || !email.includes('@')) {
+      setError('Please enter a valid email and password.');
     } else {
       setError('');
       // Perform login logic here
-      console.log('Logged in successfully');
+      console.log('Logging in with:', email, password);
     }
   };
 
@@ -108,53 +113,43 @@ const UserLogin = () => {
     setError('');
   };
 
-  const isLoginEnabled = email && password && email.includes('@');
+  const isLoginDisabled = !email || !password || !email.includes('@');
 
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      height: '100vh',
-      justifyContent: 'center'
-    }}>
+    <div className="container">
       <h1>User Login</h1>
-      <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', width: '300px' }}>
+      <form className="form">
         <input
           type="email"
           placeholder="Enter Email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={{ marginBottom: '10px', padding: '8px' }}
+          onChange={handleEmailChange}
         />
         <input
           type="password"
           placeholder="Enter Password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          style={{ marginBottom: '10px', padding: '8px' }}
+          onChange={handlePasswordChange}
         />
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <button type="submit" disabled={!isLoginEnabled} style={{
-            backgroundColor: 'green',
-            borderRadius: '4px',
-            padding: '8px 16px',
-            color: 'white',
-            border: 'none'
-          }}>Login</button>
-          <button type="button" onClick={handleClear} style={{
-            padding: '8px 16px'
-          }}>Clear</button>
+        <div className="buttons">
+          <button
+            style={{ backgroundColor: 'green', borderRadius: '4px' }}
+            onClick={handleLogin}
+            disabled={isLoginDisabled}
+          >
+            Login
+          </button>
+          <button onClick={handleClear}>Clear</button>
         </div>
       </form>
-      {error && <div style={{ color: 'red', marginTop: '10px' }}>{error}</div>}
+      {error && <div className="error">{error}</div>}
     </div>
   );
-};
+}
 
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<UserLogin />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
     </script>
   </body>

@@ -83,135 +83,83 @@
     <script type="text/babel">
     const { useState, useEffect, useRef, useContext, useReducer, useMemo, useCallback } = React;
 
-
-const RegisterForm = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [agreeToTerms, setAgreeToTerms] = useState(false);
-  const [emailError, setEmailError] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(e.target.value)) {
-      setEmailError('Invalid email address');
-    } else {
-      setEmailError('');
-    }
-  };
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
-
-  const handleAgreeToTermsChange = (e) => {
-    setAgreeToTerms(e.target.checked);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (emailError === '' && email !== '' && password !== '' && agreeToTerms) {
-      setSuccessMessage('Registration successful!');
-      setEmail('');
-      setPassword('');
-      setAgreeToTerms(false);
-    } else {
-      setSuccessMessage('');
-    }
-  };
-
-  const handleClear = () => {
-    setEmail('');
-    setPassword('');
-    setAgreeToTerms(false);
-    setEmailError('');
-    setSuccessMessage('');
-  };
-
-  const handleBackToLogin = () => {
-    handleClear();
-  };
-
-  const formStyle = {
-    display: 'grid',
-    gridTemplateColumns: '1fr 2fr',
-    gap: '10px',
-    maxWidth: '400px',
-    margin: '0 auto',
-  };
-
-  const buttonContainerStyle = {
-    gridColumn: '1 / -1',
-    display: 'flex',
-    justifyContent: 'space-between',
-  };
-
-  const registerButtonStyle = {
-    backgroundColor: 'green',
-    color: 'white',
-    border: 'none',
-    padding: '10px 20px',
-    cursor: 'pointer',
-  };
-
-  const otherButtonStyle = {
-    backgroundColor: 'grey',
-    color: 'white',
-    border: 'none',
-    padding: '10px 20px',
-    cursor: 'pointer',
-  };
-
-  return (
-    <div>
-      <h1 style={{ textAlign: 'center' }}>Register Now</h1>
-      <form onSubmit={handleSubmit} style={formStyle}>
-        <label htmlFor="email">Email:</label>
-        <div>
-          <input
-            type="email"
-            id="email"
-            placeholder="Email Address"
-            value={email}
-            onChange={handleEmailChange}
-            required
-          />
-          {emailError && <span style={{ color: 'red' }}>{emailError}</span>}
-        </div>
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          placeholder="Password"
-          value={password}
-          onChange={handlePasswordChange}
-          required
-        />
-        <label></label>
-        <div>
-          <input
-            type="checkbox"
-            id="agree"
-            checked={agreeToTerms}
-            onChange={handleAgreeToTermsChange}
-          />
-          <label htmlFor="agree"> Agree to Terms</label>
-        </div>
-        <div style={buttonContainerStyle}>
-          <button type="submit" style={registerButtonStyle}>Register</button>
-          <button type="button" style={otherButtonStyle} onClick={handleClear}>Clear</button>
-          <button type="button" style={otherButtonStyle} onClick={handleBackToLogin}>Back to Login</button>
-        </div>
-      </form>
-      {successMessage && <p>{successMessage}</p>}
+<form>
+  <div className="container">
+    <h1>Register Now</h1>
+    <div className="register-inputs">
+      <label htmlFor="email">Email Address</label>
+      <input type="email" id="email" placeholder="Email Address" required />
+      <span></span>
     </div>
-  );
-};
 
+    <div className="register-inputs">
+      <label htmlFor="password">Password</label>
+      <input type="password" id="password" placeholder="Password" required autoComplete="new-password" />
+      <span></span>
+    </div>
+
+    <div className="register-inputs">
+      <label htmlFor="terms">Agree to Terms</label>
+      <input type="checkbox" id="terms" required />
+    </div>
+
+    <div className="register-buttons">
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
+      <button type="button">Back to Login</button>
+    </div>
+  </div>
+
+  <p>Your registration was successful!</p>
+</form>
+
+<style>
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.register-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}
+
+button:last-child {
+  background-color: #ccc;
+}
+</style>
+
+<script>
+// Inline validation for email input
+document.getElementById('email').addEventListener('input', function(event) {
+  const messageContainer = event.target.nextElementSibling;
+  if (!validatesEmail(event.target.value)) {
+    messageContainer.textContent = 'Please enter a valid email address.';
+  } else {
+    messageContainer.textContent = '';
+  }
+});
+
+function validatesEmail(email) {
+  const re = /^(([^<>()\[\]\.,;:\s@"]+(\.[^<>()\[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+</script>
 
 // Auto‑generated mount
-ReactDOM.createRoot(document.getElementById('root')).render(<RegisterForm />);
+ReactDOM.createRoot(document.getElementById('root')).render(<validatesEmail />);
 
     </script>
   </body>
