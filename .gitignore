@@ -183,3 +183,8 @@ run_inference3copy.sh
 summary_outputs
 render_logs
 debug_images
+render_logs_nonrenderable
+eval_logs_nonrenderable
+eval_logs
+splitAngular.py
+splitRenderable.py
