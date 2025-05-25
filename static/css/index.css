@@ -1,0 +1,280 @@
+body {
+	font-family: "Noto Sans", sans-serif;
+}
+
+.footer .icon-link {
+	font-size: 25px;
+	color: #000;
+}
+
+.link-block a {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.publication-title,
+.publication-authors {
+	font-family: "Google Sans", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 18px !important;
+}
+
+.publication-title img {
+	margin-bottom: -10px !important;
+	margin-right: -5px !important;
+	max-width: 100px !important;
+}
+
+@media (min-width: 900px) {
+	.publication-subtitle {
+		white-space: nowrap;
+	}
+
+	.half {
+		width: 50%;
+	}
+}
+
+.half {
+	width: 100%;
+}
+
+.publication-subtitle {
+	font-weight: 500;
+	font-family: "Google Sans", sans-serif;
+	color: #555;
+	margin-top: -20px !important;
+}
+
+.publication-links {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.publication-authors {
+	font-family: "Google Sans", sans-serif;
+	color: #666;
+}
+
+.author-block {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+/* Leaderboard Styles */
+.open_source {
+	background-color: rgba(249, 242, 248, 1);
+}
+
+.proprietary {
+	background-color: rgba(255, 208, 80, 0.15);
+}
+
+.leaderboard-label {
+	display: inline-block;
+	padding: 6px 12px;
+	margin: 5px;
+	border-radius: 4px;
+	font-size: 0.9em;
+	font-weight: 500;
+}
+
+.leaderboard-label.open_source {
+	background-color: rgba(249, 242, 248, 1);
+}
+
+.leaderboard-label.proprietary {
+	background-color: rgba(255, 208, 80, 0.15);
+}
+
+/* Table Styles */
+.table-wrapper {
+	overflow-x: auto;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#structeval-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.95em;
+}
+
+#structeval-table th,
+#structeval-table td {
+	text-align: center;
+	padding: 12px;
+	border: 1px solid #ddd;
+}
+
+#structeval-table th {
+	background-color: #f8f9fa;
+	font-weight: 600;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+#structeval-table tbody tr:hover {
+	background-color: #f5f5f5;
+}
+
+#structeval-table td:first-child {
+	text-align: left !important;
+	font-weight: 500;
+}
+
+.sortable {
+	cursor: pointer;
+	user-select: none;
+}
+
+.sortable:hover {
+	background-color: #e9ecef;
+}
+
+.sortable.asc::after {
+	content: " ↑";
+	font-size: 0.8em;
+}
+
+.sortable.desc::after {
+	content: " ↓";
+	font-size: 0.8em;
+}
+
+/* Box Styles */
+.box {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	padding: 1.5rem;
+}
+
+.box h5 {
+	margin-bottom: 0.5rem;
+}
+
+/* Code Styles */
+pre {
+	background-color: #f8f9fa;
+	border: 1px solid #dee2e6;
+	border-radius: 4px;
+	padding: 1rem;
+	overflow-x: auto;
+}
+
+code {
+	background-color: #f8f9fa;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-size: 0.9em;
+}
+
+/* Hero Section */
+.hero.teaser {
+	background-color: #fafafa;
+}
+
+/* Navbar */
+.navbar {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-item {
+	font-weight: 500;
+}
+
+/* Section Spacing */
+.section {
+	padding: 3rem 1.5rem;
+}
+
+hr {
+	background-color: #e9ecef;
+	height: 1px;
+	margin: 2rem 0;
+}
+
+/* Image Styles */
+.image img {
+	border-radius: 4px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tab Styles */
+.tabs.is-boxed a {
+	border-radius: 4px 4px 0 0;
+}
+
+.tabs.is-boxed li.is-active a {
+	background-color: white;
+	border-color: #dbdbdb;
+	border-bottom-color: transparent;
+}
+
+/* Example Content */
+.example-content {
+	margin-top: 2rem;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+	.publication-links {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.link-block {
+		width: 100%;
+		max-width: 300px;
+	}
+
+	#structeval-table {
+		font-size: 0.85em;
+	}
+
+	#structeval-table th,
+	#structeval-table td {
+		padding: 8px;
+	}
+}
+
+/* Chart Container */
+canvas {
+	max-height: 400px;
+}
+
+/* Format Grid Image */
+.content img {
+	margin: 0 auto;
+	display: block;
+}
+
+/* Highlight Styles */
+.has-background-info-light {
+	background-color: rgb(207 226 243 / 75%) !important;
+}
+
+.has-background-light {
+	background-color: rgb(216 233 210 / 60%) !important;
+}
+
+/* Footer */
+.footer {
+	background-color: #fafafa;
+	padding: 2rem 0;
+}
+
+/* Animation */
+.box {
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
