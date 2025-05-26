@@ -53,8 +53,7 @@ class StructEvalCLI:
         self, input_path: str, img_output_path: str, non_renderable_output_dir: str
     ):
         """
-        Render the generated code to images using the comprehensive render engine.
-        Supports multiple output formats based on task type code.
+        Render the generated code to images using the render engine.
         """
         os.makedirs(img_output_path, exist_ok=True)
         os.makedirs(non_renderable_output_dir, exist_ok=True)
@@ -93,12 +92,7 @@ class StructEvalCLI:
         **kwargs,
     ):
         """
-        Evaluate the generated code using different strategies based on input/output types:
-
-        1. Input: text, Output: renderable - Raw output metric + VQA on screenshots
-        2. Input: text, Output: non-renderable - Dictionary validation + key checking
-        3. Input: non-text, Output: renderable - Same as case 1
-        4. Input: non-text, Output: non-renderable - Structure comparison with partial scoring
+        Evaluate the generated code from the LLM.
         """
         print(f"Evaluating model with vlm_model_name: {vlm_model_name}")
 

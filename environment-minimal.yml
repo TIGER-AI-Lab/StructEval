@@ -1,0 +1,23 @@
+name: structeval-minimal
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12.2
+  - pip=25.0.1
+  - pip:
+      - accelerate==1.4.0
+      - torch==2.6.0
+      - transformers==4.51.3
+      - numpy==1.26.4
+      - pandas==2.2.3
+      - matplotlib==3.10.1
+      - huggingface-hub==0.30.2
+      - datasets==3.3.2
+      - tqdm==4.67.1
+      - scikit-learn
+      - openai==1.63.2
+      - anthropic==0.46.0
+      - llm-engines==0.0.22
+      - sglang==0.4.2
+      - fire==0.7.0 

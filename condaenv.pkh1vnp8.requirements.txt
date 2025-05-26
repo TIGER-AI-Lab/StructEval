@@ -1,0 +1,12 @@
+accelerate
+torch
+transformers
+numpy
+pandas
+matplotlib
+huggingface-hub
+datasets
+tqdm
+scikit-learn
+openai
+anthropic

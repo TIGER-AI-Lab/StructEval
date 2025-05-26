@@ -6,7 +6,7 @@ setup(
     description='',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    author='Dongfu Jiang',
+    author='Jialin Yang, Dongfu Jiang, Tony He, Sherman Siu, Yuxuan Zhang, Disen Liao, Zhuofeng Li, Huaye Zeng, Yiming Jia, Haozhe Wang, Benjamin Schneider, Chi Ruan, Wentao Ma, Zhiheng Lyu, Yifei Wang, Yi Lu, Quy Duc Do, Ziyan Jiang, Ping Nie, Wenhu Chen',
     author_email='dongfu.jiang@uwaterloo.ca',
     packages=find_packages(),
     url='https://github.com/TIGER-AI-Lab/StructEval',

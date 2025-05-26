@@ -94,8 +94,8 @@ async def process_json_file(json_file_path, img_output_path, non_renderable_dir)
         #     print(f"Image for task {task_id} already exists. Skipping rendering.")
         #     continue
         
-
-        print(f"Rendering task {task['task_id']} of {counter} out of {renderable_count}")
+      
+        print(f"Rendering task {task['task_id']} of {counter} out of {len(tasks)}")
         try:
             task_id = task.get("task_id", "unknown")
             output_type = task.get("output_type", "unknown").lower()

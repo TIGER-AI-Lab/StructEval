@@ -84,11 +84,11 @@ def calculate_final_score(item: Dict[str, Any]) -> None:
     
     if is_renderable:
         # Renderable output
-        # 40% render + 20% raw output + 40% VQA
+        # 20% render + 10% raw output + 70% VQA
         final_score = (0.2 * render_score) + (0.1 * raw_output_score) + (0.7 * vqa_score)
     else:
         # Non-renderable output
-        # 40% render (syntax validity) + 60% path validation
+        # 20% render (syntax validity) + 80% path validation
         key_validation_score = item.get("key_validation_score", 0)
         if (render_score == 0):
             print("zero render score")
