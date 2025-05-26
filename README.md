@@ -8,17 +8,23 @@ StructEval is a framework for evaluating language models on structured outputs, 
 
 ```bash
 # Create and activate the conda environment from the environment.yml file
-conda env create -f environment.yml
+conda create -n structeval python=3.12
 conda activate structeval
 
-# Install the package in development mode
-pip install -e .
+# Install all required packages(required)
+pip install -r requirements.txt
 
-# Install playwright browsers (required for web rendering)
+# Separately install the llm-engines(required for inference)
+pip install git+https://github.com/jdf-prog/LLM-Engines.git
+
+# Install playwright browsers (required for rendering)
 playwright install
+
+# You could also install the package in development mode(optional)
+pip install -e .
 ```
 
-### System Dependencies
+### System Dependencies(Optional to read)
 
 The following system packages will be installed automatically through conda:
 - `ghostscript` and `poppler`: Required for PDF processing

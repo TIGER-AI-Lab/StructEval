@@ -13,11 +13,18 @@ setup(
     entry_points={"console_scripts": ["structeval = structeval.cli:main"]},
     install_requires=[
         "fire",
+        "llm-engines",
+        "playwright",
         "transformers",
         "sentencepiece",
         "torch",
         "accelerate",
-        "llm-engines"
+        "xmltodict",
+        "toml",
+        "pdf2image",
+        "dotenv",
+        "markdown",
+        "matplotlib"
     ],
     extras_require={}
 )
