@@ -820,8 +820,7 @@ formats:
 									<div class="box" style="height: 100%; display: flex; flex-direction: column;">
 										<h5 class="title is-5" style="min-height: 60px; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 15px;">✓ Syntax Score (T)</h5>
 										<p style="text-align: left; flex: 1;">
-											Verifies structural correctness using format-specific
-											parsers or rendering engines
+											Verifies structural correctness (existence of required keys, relationships between keys, etc.) using dot-path rules. Calculated as the percentage of dot-path rules satisfied by the generated output format.
 										</p>
 									</div>
 								</div>
@@ -829,8 +828,7 @@ formats:
 									<div class="box" style="height: 100%; display: flex; flex-direction: column;">
 										<h5 class="title is-5" style="min-height: 60px; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 15px;">🔍 Keyword Matching (V)</h5>
 										<p style="text-align: left; flex: 1;">
-											Evaluates presence of required structural elements using
-											path-based rules
+											Evaluates presence of desired keywords using exact string matching. Calculated as the percentage of keywords found in the raw generated output code.
 										</p>
 									</div>
 								</div>
@@ -838,8 +836,7 @@ formats:
 									<div class="box" style="height: 100%; display: flex; flex-direction: column;">
 										<h5 class="title is-5" style="min-height: 60px; display: flex; align-items: center; justify-content: center; text-align: center; margin-bottom: 15px;">👁️ VQA Score (V)</h5>
 										<p style="text-align: left; flex: 1;">
-											Assesses visual correctness through GPT-4V-based question
-											answering (V tasks only)
+											Assesses visual correctness of rendered content through question-answer pairs. Calculated as the percentage of Q&A pairs satisfied by the rendered output.
 										</p>
 									</div>
 								</div>
