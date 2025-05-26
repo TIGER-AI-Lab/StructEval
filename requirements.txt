@@ -1,0 +1,8 @@
+fire
+python-dotenv
+playwright
+xmltodict
+toml
+pdf2image
+markdown
+matplotlib
