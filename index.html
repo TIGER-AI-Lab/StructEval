@@ -805,9 +805,18 @@ formats:
 							/>
 						</div>
 						<div class="content has-text-justified">
-							<p>Our evaluation framework employs three core metrics:</p>
+							<p>Our evaluation framework employs four core metrics:</p>
 							<div class="columns" style="margin-top: 10px">
-								<div class="column is-4">
+								<div class="column is-3">
+									<div class="box">
+										<h5 class="title is-5">🔧 Render Score (T/V)</h5>
+										<p style="text-align: left">
+											Binary metric (0 or 1) indicating whether the generated code can be
+											successfully loaded or rendered without syntax errors
+										</p>
+									</div>
+								</div>
+								<div class="column is-3">
 									<div class="box">
 										<h5 class="title is-5">✓ Syntax Score (T)</h5>
 										<p style="text-align: left">
@@ -816,7 +825,7 @@ formats:
 										</p>
 									</div>
 								</div>
-								<div class="column is-4">
+								<div class="column is-3">
 									<div class="box">
 										<h5 class="title is-5">🔍 Keyword Matching (V)</h5>
 										<p style="text-align: left">
@@ -825,13 +834,44 @@ formats:
 										</p>
 									</div>
 								</div>
-								<div class="column is-4">
+								<div class="column is-3">
 									<div class="box">
 										<h5 class="title is-5">👁️ VQA Score (V)</h5>
 										<p style="text-align: left">
 											Assesses visual correctness through GPT-4V-based question
 											answering (V tasks only)
 										</p>
+									</div>
+								</div>
+							</div>
+							
+							<div style="margin-top: 40px">
+								<h3 class="title is-4 has-text-centered">Score Aggregation Methods</h3>
+								<div class="columns" style="margin-top: 20px">
+									<div class="column is-6">
+										<div class="box has-background-info-light">
+											<h5 class="title is-5 has-text-centered">🎨 Renderable Formats</h5>
+											<p class="has-text-centered" style="margin-bottom: 15px">
+												<em>HTML, React, SVG, LaTeX, Mermaid, etc.</em>
+											</p>
+											<div class="content">
+												<pre style="background: #f5f5f5; padding: 15px; border-radius: 5px; font-size: 0.9em;">final_score = (0.2 × render_score) + 
+              (0.1 × keyword_matching) + 
+              (0.7 × vqa_score)</pre>
+											</div>
+										</div>
+									</div>
+									<div class="column is-6">
+										<div class="box has-background-light">
+											<h5 class="title is-5 has-text-centered">📝 Non-Renderable Formats</h5>
+											<p class="has-text-centered" style="margin-bottom: 15px">
+												<em>JSON, XML, YAML, CSV, TOML</em>
+											</p>
+											<div class="content">
+												<pre style="background: #f5f5f5; padding: 15px; border-radius: 5px; font-size: 0.9em;">final_score = (0.2 × render_score) + 
+              (0.8 × syntax_score)</pre>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
