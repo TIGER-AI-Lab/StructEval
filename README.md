@@ -215,3 +215,17 @@ The evaluation result contains additional scoring fields:
 - `raw_output_eval`: Array of boolean values indicating whether each raw output metric was satisfied
 - `raw_output_score`: Score from the raw output evaluation
 - `final_eval_score`: Overall evaluation score between 0 and 1
+
+## Citation
+Please cite us with the following bibtex:
+```
+@misc{yang2025structeval,
+  title={StructEval: Benchmarking LLMs' Capabilities to Generate Structural Outputs},
+  author={Jialin Yang and Dongfu Jiang and Lipeng He and Sherman Siu and Yuxuan Zhang and Disen Liao and Zhuofeng Li and Huaye Zeng and Yiming Jia and Haozhe Wang and Benjamin Schneider and Chi Ruan and Wentao Ma and Zhiheng Lyu and Yifei Wang and Yi Lu and Quy Duc Do and Ziyan Jiang and Ping Nie and Wenhu Chen},
+  year={2025},
+  eprint={2505.20139},
+  archivePrefix={arXiv},
+  primaryClass={cs.SE},
+  doi={10.48550/arXiv.2505.20139}
+}
+```
