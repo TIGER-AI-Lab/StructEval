@@ -1,6 +1,6 @@
 # StructEval
 
-StructEval is a framework for evaluating language models on structured outputs, supporting rendering and evaluation of generated code.
+StructEval is a framework for evaluating language models on structured outputs, supporting rendering and evaluation of generated code. Our paper has been accepted by TMLR 2025.
 
 ## Installation
 
