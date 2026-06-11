@@ -188,3 +188,5 @@ eval_logs_nonrenderable
 eval_logs
 splitAngular.py
 splitRenderable.py
+pid
+structeval/render_engine/react_render/

@@ -1,21 +1,54 @@
-import os
-import logging
-from typing import Dict, List, Any, Optional
-from PIL import Image
-import torch
+from __future__ import annotations
+
+import asyncio
 import json
-import sys
+import logging
+import os
+import re
+from typing import Any
 
-# Make sure llm_engines is in the path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from structeval.model_client import LiteLLMClient, LiteLLMSettings, image_to_data_url
 
-def vqa_eval(
+
+def build_vqa_prompt(vqa_questions: list[dict[str, Any]]) -> str:
+    qa_list = ""
+    for idx, vqa in enumerate(vqa_questions, 1):
+        qa_list += (
+            f"{idx}. Question: {vqa['question']} "
+            f"Expected Answer: {vqa['answer']}\n"
+        )
+    return (
+        "You are given an image and a list of question-answer pairs. "
+        "For each pair, verify if the image content supports the expected answer "
+        "based on the corresponding question. If the image is fully white, then "
+        "you should always output false. Base your judgment solely on the visual "
+        "content of the provided image, and the question. Do not imagine anything. "
+        "Do not use any external information or common-sense reasoning beyond "
+        "what is visible. Respond with a JSON object mapping each question number "
+        "to true or false (e.g., {\"1\": true, \"2\": false}). If the image is "
+        "unclear or does not contain enough information to answer, use null for "
+        "that question. Here are the question-answer pairs:\n"
+        f"{qa_list}"
+    )
+
+
+def parse_vqa_response(response: str) -> dict[str, Any]:
+    try:
+        return json.loads(response)
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", response, re.DOTALL)
+        if match:
+            return json.loads(match.group(0))
+        raise
+
+
+async def vqa_eval_async(
     model_name: str,
-    vlm_engine: str,
-    data: List[Dict[str, Any]] = None,
-    images: Dict[str, str] = None,
+    vlm_engine: str | None = None,
+    data: list[dict[str, Any]] | None = None,
+    images: dict[str, str] | None = None,
     **kwargs
-) -> List[Dict[str, Any]]:
+) -> list[dict[str, Any]]:
     """
     Visual Question Answering evaluation for renderable outputs.
     
@@ -35,112 +68,61 @@ def vqa_eval(
     if images is None:
         images = {}
         
-    try:
-        from llm_engines import LLMEngine
-    except ImportError:
-        logging.error("LLMEngine not found. VQA evaluation not available.")
-        for item in data:
-            item["VQA_score"] = 0.0
-            item["VQAeval"] = ["NONE"]
-        return data
-    
     logging.info(f"Running VQA evaluation with model {model_name} on {len(data)} tasks")
-    
-    llm = LLMEngine()
-    
-    try:
-        llm.load_model(
-            model_name=model_name,
-            engine=vlm_engine,
-            use_cache=False,
-            **kwargs
+
+    client = LiteLLMClient(
+        LiteLLMSettings(
+            model=model_name,
+            temperature=kwargs.get("temperature", 0.0),
+            max_tokens=kwargs.get("max_tokens"),
+            timeout=kwargs.get("timeout"),
+            max_retries=kwargs.get("max_retries", 2),
+            api_base=kwargs.get("api_base"),
+            api_key_env=kwargs.get("api_key_env"),
+            litellm_params=kwargs.get("litellm_params") or {},
         )
-    except Exception as e:
-        logging.error(f"Failed to load VLM model: {e}")
-        for item in data:
-            item["VQA_score"] = 0.0
-            item["VQAeval"] = ["FAILURE: Model loading error"]
-        return data
-    
-    # Ensure debug images directory exists
-    os.makedirs("debug_images", exist_ok=True)
-    
-    output_data = []
-    counter = 0
-    for item in data:
-        counter += 1
-        print(f"Evaluating VQA task {counter} of {len(data)}")
-        
+    )
+
+    concurrency = max(1, int(kwargs.get("concurrency", 4)))
+    semaphore = asyncio.Semaphore(concurrency)
+    output_data: list[dict[str, Any] | None] = [None] * len(data)
+
+    async def evaluate_one(index: int, item: dict[str, Any]) -> None:
         task_id = item.get("task_id")
         img_file = images.get(task_id)
 
-        # Load image if available
-        if img_file and os.path.exists(img_file):
-            try:
-                with Image.open(img_file) as img:
-                    image = img.convert("RGB")
-                
-                # Save a copy for debugging
-                debug_image_path = f"debug_images/{task_id}.png"
-                image.save(debug_image_path)
-                logging.info(f"Saved debug image for task_id {task_id}")
-            except Exception as e:
-                logging.error(f"Failed to load image for {task_id}: {e}")
-                image = None
-        else:
-            image = None 
-            
-        # If image is not available, skip VQA
-        if image is None:
+        if not img_file or not os.path.exists(img_file):
             item["VQA_score"] = 0.0
             item["render_score"] = item.get("render_score", 0.0)
             item["VQAeval"] = []
-            output_data.append(item)
-            continue
-        
-        # Run VQA evaluation in a single call with JSON output
+            output_data[index] = item
+            return
+
         vqa_questions = item.get("VQA", [])
         total_questions = len(vqa_questions)
         if total_questions == 0:
             item["VQA_score"] = 0.0
             item["VQAeval"] = []
-            output_data.append(item)
-            continue
-
-        # Build the question-answer list for the prompt
-        qa_list = ""
-        for idx, vqa in enumerate(vqa_questions, 1):
-            qa_list += f"{idx}. Question: {vqa['question']} Expected Answer: {vqa['answer']}\n"
+            output_data[index] = item
+            return
 
         messages = [
             {
                 "role": "user",
                 "content": [
+                    {"type": "text", "text": build_vqa_prompt(vqa_questions)},
                     {
-                        "type": "text",
-                        "text": (
-                            "You are given an image and a list of question-answer pairs. "
-                            "For each pair, verify if the image content supports the expected answer based on the corresponding question. "
-                            "If the image is fully white, then you should always output false"
-                            "Base your judgment solely on the visual content of the provided image, and the question. Do not imagine anything. "
-                            "Do not use any external information or common-sense reasoning beyond what is visible. "
-                            "Respond with a JSON object mapping each question number to true or false (e.g., {\"1\": true, \"2\": false}). "
-                            "If the image is unclear or does not contain enough information to answer, use null for that question. "
-                            "Here are the question-answer pairs:\n"
-                            f"{qa_list}"
-                        )
+                        "type": "image_url",
+                        "image_url": {"url": image_to_data_url(img_file)},
                     },
-                    {
-                        "type": "image",
-                        "image": image
-                    }
-                ]
+                ],
             }
         ]
 
         try:
-            response = llm.call_model(model_name, messages, temperature=0.0, max_tokens=None)
-            parsed = json.loads(response)
+            async with semaphore:
+                response = await client.complete(messages, temperature=kwargs.get("temperature", 0.0))
+            parsed = parse_vqa_response(response)
             evaluations = [parsed.get(str(idx)) for idx in range(1, total_questions + 1)]
             true_count = sum(1 for ans in evaluations if ans is True)
         except Exception as e:
@@ -150,7 +132,19 @@ def vqa_eval(
 
         item["VQA_score"] = true_count / total_questions
         item["VQAeval"] = evaluations
-        output_data.append(item)
+        output_data[index] = item
+
+    await asyncio.gather(*(evaluate_one(index, item) for index, item in enumerate(data)))
     
-    logging.info(f"VQA evaluation completed for {len(output_data)} tasks")
-    return output_data
+    logging.info(f"VQA evaluation completed for {len(data)} tasks")
+    return [item for item in output_data if item is not None]
+
+
+def vqa_eval(
+    model_name: str,
+    vlm_engine: str | None = None,
+    data: list[dict[str, Any]] | None = None,
+    images: dict[str, str] | None = None,
+    **kwargs,
+) -> list[dict[str, Any]]:
+    return asyncio.run(vqa_eval_async(model_name, vlm_engine, data, images, **kwargs))

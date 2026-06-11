@@ -1,8 +1,6 @@
-fire
+litellm
 python-dotenv
-playwright
-xmltodict
+pyyaml
 toml
-pdf2image
-markdown
-matplotlib
+typer
+xmltodict

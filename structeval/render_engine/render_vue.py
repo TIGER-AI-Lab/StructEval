@@ -1,6 +1,7 @@
 import os
 import re
 import html  # for un‑escaping &lt;…&gt; that often wraps SFC code
+import json
 import logging
 import tempfile
 import subprocess
@@ -9,6 +10,7 @@ import shutil
 import time
 import socket
 import threading
+from functools import partial
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from .render_utils import start_browser
 
@@ -16,6 +18,91 @@ from .render_utils import start_browser
 VUE_TEMPLATE_DIR = os.path.join(
     os.path.dirname(os.path.abspath(__file__)), "vue_template"
 )
+
+
+def _js_string(value):
+    return json.dumps(value or "")
+
+
+def _drop_import_lines(script):
+    return "\n".join(
+        line for line in script.splitlines() if not line.strip().startswith("import ")
+    ).strip()
+
+
+def _strip_trailing_semicolons(value):
+    value = value.strip()
+    while value.endswith(";"):
+        value = value[:-1].rstrip()
+    return value
+
+
+def _unwrap_define_component(value):
+    value = value.strip()
+    match = re.match(r"defineComponent\s*\((.*)\)\s*$", value, re.DOTALL)
+    if match:
+        return match.group(1).strip()
+    return value
+
+
+def _unwrap_export_default_options(script):
+    options = _drop_import_lines(script)
+    options = re.sub(r"^\s*export\s+default\s+", "", options, count=1).strip()
+    options = _unwrap_define_component(options)
+    options = _strip_trailing_semicolons(options)
+    if options.startswith("{") and options.endswith("}"):
+        options = options[1:-1].strip()
+    return options
+
+
+def _build_component_object(template=None, options=""):
+    entries = []
+    if template is not None:
+        entries.append(f"  template: {_js_string(template)}")
+    options = options.strip()
+    if options:
+        entries.append("  " + options)
+    return "{\n" + ",\n".join(entries) + "\n}"
+
+
+def _extract_setup_bindings(script_setup):
+    names = []
+    for pattern in (
+        r"\b(?:const|let|var)\s+([A-Za-z_$][\w$]*)",
+        r"\bfunction\s+([A-Za-z_$][\w$]*)\s*\(",
+    ):
+        names.extend(re.findall(pattern, script_setup))
+    return sorted(set(names))
+
+
+def _build_script_setup_component(template, script_setup):
+    script_setup = _drop_import_lines(script_setup)
+    bindings = _extract_setup_bindings(script_setup)
+    return_statement = "return { " + ", ".join(bindings) + " };" if bindings else "return {};"
+    setup_lines = "\n".join(f"    {line}" for line in script_setup.splitlines())
+    return (
+        "{\n"
+        f"  template: {_js_string(template)},\n"
+        "  setup() {\n"
+        f"{setup_lines}\n"
+        f"    {return_statement}\n"
+        "  }\n"
+        "}"
+    )
+
+
+def _fallback_component(raw_code):
+    escaped_code = html.escape(raw_code)
+    return _build_component_object(template=f"<pre>{escaped_code}</pre>")
+
+
+def _vue_mount_is_empty(app_content):
+    if not app_content.get("hasApp"):
+        return True
+    content_html = (app_content.get("contentHTML") or "").strip()
+    text_content = (app_content.get("textContent") or "").strip()
+    without_comments = re.sub(r"<!--.*?-->", "", content_html, flags=re.DOTALL).strip()
+    return not without_comments and not text_content
 
 
 def extract_vue_code_from_tag(generation):
@@ -58,31 +145,28 @@ def extract_vue_code_from_tag(generation):
 
     # Handle <script setup> syntax for Vue 3
     if template and script_setup:
-        # For script setup, we need to convert it to options API format
-        # This is a simplified conversion - in a real-world scenario, you'd need
-        # a more sophisticated parser for complete support
-        setup_code = f"setup() {{ {script_setup} return {{ }}; }}"
-        component_code = "{\n  template: `" + template + "`,\n" + setup_code + "\n}"
+        component_code = _build_script_setup_component(template, script_setup)
     # If both template and script exist, merge them
     elif template and script:
-        # Remove export default and surrounding braces if present
-        script = script.strip()
-        if script.startswith("export default"):
-            script = script[len("export default") :].strip()
-        if script.startswith("{") and script.endswith("}"):
-            script = script[1:-1].strip()
-        # Compose the component object
-        component_code = "{\n  template: `" + template + "`,\n" + script + "\n}"
-    elif template:
-        component_code = "{\n  template: `" + template + "`\n}"
-    # Check if it's already in object format (starts with a curly brace)
-    elif vue_code.strip().startswith("{") and vue_code.strip().endswith("}"):
-        component_code = vue_code
-    else:
-        # Final fallback: treat whole code as template (this is a simplification)
-        component_code = (
-            "{\n  template: `<pre>${escapeTemplate(`" + vue_code + "`)}</pre>`\n}"
+        component_code = _build_component_object(
+            template=template,
+            options=_unwrap_export_default_options(script),
         )
+    elif template:
+        component_code = _build_component_object(template=template)
+    elif vue_code.strip().startswith("export default"):
+        component_code = _build_component_object(
+            options=_unwrap_export_default_options(vue_code)
+        )
+    elif vue_code.strip().startswith("defineComponent"):
+        component_code = _build_component_object(
+            options=_unwrap_export_default_options(vue_code)
+        )
+    # Check if it's already in object format (starts with a curly brace)
+    elif vue_code.strip().startswith("{"):
+        component_code = _strip_trailing_semicolons(vue_code)
+    else:
+        component_code = _fallback_component(vue_code)
 
     return component_code, style
 
@@ -118,8 +202,8 @@ class QuietHTTPRequestHandler(SimpleHTTPRequestHandler):
 
 def start_http_server(directory, port):
     """Start a simple HTTP server in a separate thread"""
-    os.chdir(directory)  # stay here until cleanup
-    server = HTTPServer(("localhost", port), QuietHTTPRequestHandler)
+    handler = partial(QuietHTTPRequestHandler, directory=directory)
+    server = HTTPServer(("localhost", port), handler)
     thread = threading.Thread(target=server.serve_forever, daemon=True)
     thread.start()
     return server
@@ -146,9 +230,7 @@ async def render_vue_and_screenshot(task_id, vue_code, img_output_path):
     except Exception as e:
         logging.error(f"[{task_id}] Error processing Vue component: {e}")
         # Create a fallback component wrapping the raw code in a pre element
-        processed_vue_code = (
-            "{\n  template: `<pre>${escapeTemplate(`" + vue_code + "`)}</pre>`\n}"
-        )
+        processed_vue_code = _fallback_component(vue_code)
         style_content = None
 
     # Ensure template exists
@@ -156,8 +238,6 @@ async def render_vue_and_screenshot(task_id, vue_code, img_output_path):
         logging.error(f"[{task_id}] Cannot render Vue - template not found")
         return render_score
 
-    # Keep track of the original working directory
-    original_dir = os.getcwd()
     server = None
 
     try:
@@ -176,6 +256,7 @@ async def render_vue_and_screenshot(task_id, vue_code, img_output_path):
             formatted_vue_code = f"""
 // Template for Vue application
 const {{ createApp }} = Vue;
+const {{ ref, reactive, computed, watch, onMounted, onUnmounted, nextTick }} = Vue;
 
 // Simple Vue component that directly uses the input code
 const App = {processed_vue_code};
@@ -225,16 +306,26 @@ app.mount('#app');
             # Set a longer timeout for rendering complex Vue components
             logging.info(f"[{task_id}] Starting Playwright browser...")
             browser, context, page, playwright = await start_browser()
+            page_errors = []
+            console_errors = []
 
             # Log browser console messages for debugging
             page.on(
                 "console",
-                lambda msg: logging.info(
-                    f"[{task_id}] Browser Console: {msg.type} - {msg.text}"
+                lambda msg: (
+                    console_errors.append(msg.text)
+                    if msg.type == "error"
+                    else logging.info(
+                        f"[{task_id}] Browser Console: {msg.type} - {msg.text}"
+                    )
                 ),
             )
             page.on(
-                "pageerror", lambda err: logging.error(f"[{task_id}] Page Error: {err}")
+                "pageerror",
+                lambda err: (
+                    page_errors.append(str(err)),
+                    logging.error(f"[{task_id}] Page Error: {err}"),
+                ),
             )
 
             logging.info(f"[{task_id}] Playwright browser started.")
@@ -259,7 +350,9 @@ app.mount('#app');
                     """() => {
                     const app = document.getElementById('app');
                     return {
+                        hasApp: !!app,
                         contentHTML: app ? app.innerHTML : 'No app element found',
+                        textContent: app ? app.innerText : '',
                         appChildrenCount: app ? app.children.length : 0
                     };
                 }"""
@@ -268,11 +361,38 @@ app.mount('#app');
                 logging.info(f"[{task_id}] Vue app content: {app_content}")
 
                 screenshot_path = os.path.join(img_output_path, f"{task_id}.png")
-                await page.screenshot(path=screenshot_path, full_page=True)
-                logging.info(f"[{task_id}] Vue screenshot saved: {screenshot_path}")
-                render_score = 1
+                error_screenshot_path = os.path.join(img_output_path, f"{task_id}_error.png")
+
+                failure_reason = None
+                if page_errors:
+                    failure_reason = "; ".join(page_errors[:3])
+                elif console_errors:
+                    failure_reason = "; ".join(console_errors[:3])
+                elif _vue_mount_is_empty(app_content):
+                    failure_reason = "Vue app mount is empty"
+
+                if failure_reason:
+                    logging.error(f"[{task_id}] Vue rendering failed: {failure_reason}")
+                    if os.path.exists(screenshot_path):
+                        os.remove(screenshot_path)
+                    await page.screenshot(path=error_screenshot_path, full_page=True)
+                    logging.info(f"[{task_id}] Vue error screenshot saved: {error_screenshot_path}")
+                else:
+                    if os.path.exists(error_screenshot_path):
+                        os.remove(error_screenshot_path)
+                    await page.screenshot(path=screenshot_path, full_page=True)
+                    logging.info(f"[{task_id}] Vue screenshot saved: {screenshot_path}")
+                    render_score = 1
             except Exception as e:
                 logging.error(f"[{task_id}] Vue rendering failed: {e}")
+                screenshot_path = os.path.join(img_output_path, f"{task_id}.png")
+                if os.path.exists(screenshot_path):
+                    os.remove(screenshot_path)
+                try:
+                    error_screenshot_path = os.path.join(img_output_path, f"{task_id}_error.png")
+                    await page.screenshot(path=error_screenshot_path, full_page=True)
+                except Exception:
+                    pass
             finally:
                 logging.info(f"[{task_id}] Starting Vue cleanup...")
                 await page.close()
@@ -284,8 +404,5 @@ app.mount('#app');
                 logging.info(f"[{task_id}] Vue cleanup finished.")
     except Exception as e:
         logging.error(f"Vue setup failed for task {task_id}: {e}")
-    finally:
-        # Restore the original working directory
-        os.chdir(original_dir)
 
     return render_score

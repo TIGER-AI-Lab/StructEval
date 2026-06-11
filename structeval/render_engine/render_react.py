@@ -19,32 +19,96 @@ def extract_react_from_code_tag(generation):
     return html.unescape(extracted_code)  # Decode HTML entities
 
 
+def _normalize_react_source(source):
+    processed_react = source.strip()
+    export_name = None
+
+    if processed_react.startswith("<code>") and processed_react.endswith("</code>"):
+        processed_react = processed_react[len("<code>") : -len("</code>")].strip()
+
+    new_lines = []
+    for line in processed_react.splitlines():
+        stripped = line.strip()
+
+        if re.match(r"^\s*import\b", line):
+            continue
+
+        default_function = re.match(
+            r"^(\s*)export\s+default\s+(async\s+)?function(?:\s+([A-Za-z_$][\w$]*))?\s*\(",
+            line,
+        )
+        if default_function:
+            indent, async_prefix, name = default_function.groups()
+            export_name = name or "App"
+            replacement = f"{indent}{async_prefix or ''}function {export_name}("
+            line = re.sub(
+                r"^(\s*)export\s+default\s+(async\s+)?function(?:\s+[A-Za-z_$][\w$]*)?\s*\(",
+                replacement,
+                line,
+                count=1,
+            )
+            new_lines.append(line)
+            continue
+
+        default_class = re.match(
+            r"^(\s*)export\s+default\s+class(?:\s+([A-Za-z_$][\w$]*))?",
+            line,
+        )
+        if default_class:
+            indent, name = default_class.groups()
+            export_name = name or "App"
+            line = re.sub(
+                r"^(\s*)export\s+default\s+class(?:\s+[A-Za-z_$][\w$]*)?",
+                f"{indent}class {export_name}",
+                line,
+                count=1,
+            )
+            new_lines.append(line)
+            continue
+
+        default_identifier = re.match(
+            r"^\s*export\s+default\s+([A-Za-z_$][\w$]*)\s*;?\s*$",
+            line,
+        )
+        if default_identifier:
+            export_name = default_identifier.group(1)
+            continue
+
+        default_expression = re.match(r"^(\s*)export\s+default\s+(.+)$", line)
+        if default_expression:
+            indent, expression = default_expression.groups()
+            export_name = "App"
+            new_lines.append(f"{indent}const App = {expression}")
+            continue
+
+        named_export = re.match(
+            r"^(\s*)export\s+(?=(const|let|var|function|class)\b)",
+            line,
+        )
+        if named_export:
+            line = re.sub(r"^(\s*)export\s+", r"\1", line, count=1)
+
+        if re.match(r"^\s*export\s+\{", line):
+            continue
+
+        new_lines.append(line)
+
+    return "\n".join(new_lines), export_name
+
+
+def _react_root_has_content(root_state):
+    if not root_state.get("hasRoot"):
+        return False
+    html_content = (root_state.get("html") or "").strip()
+    text_content = (root_state.get("text") or "").strip()
+    return bool(html_content or text_content)
+
+
 def create_simple_react_app(task_id, react_content):
     task_dir = os.path.join(REACT_RENDER_DIR, task_id)
     os.makedirs(task_dir, exist_ok=True)
 
-    processed_react = react_content.strip()
-    export_name = None  # remember the component that was exported as default
-
-    # Remove outer <code> tags if present
-    if processed_react.startswith("<code>") and processed_react.endswith("</code>"):
-        processed_react = processed_react[len("<code>") : -len("</code>")].strip()
-
-    # Split into lines and filter out all import and export lines
-    lines = processed_react.splitlines()
-    new_lines = []
-    for line in lines:
-        stripped = line.strip()
-        if stripped.startswith("import"):
-            continue  # drop every import line
-        if stripped.startswith("export default"):
-            # remember which component was the default export, then drop the line
-            export_parts = stripped.split()
-            if len(export_parts) >= 3:
-                export_name = export_parts[2].rstrip(";")
-            continue
-        new_lines.append(line)
-    processed_react = "\n".join(new_lines)
+    processed_react, export_name = _normalize_react_source(react_content)
 
     # If hooks like useState/useEffect are referenced without React import,
     # destructure them from the global React to avoid "useState is not defined" errors.
@@ -206,19 +270,62 @@ async def render_react_and_screenshot(task_id, react_content, img_output_path):
         return render_score
 
     browser, context, page, playwright = await start_browser()
+    page_errors = []
+    console_errors = []
+    page.on("pageerror", lambda err: page_errors.append(str(err)))
+    page.on(
+        "console",
+        lambda msg: console_errors.append(msg.text) if msg.type == "error" else None,
+    )
+
+    screenshot_path = os.path.join(img_output_path_abs, f"{task_id}.png")
+    error_screenshot_path = os.path.join(img_output_path_abs, f"{task_id}_error.png")
     try:
-        await page.goto(f"file://{html_path}")
-        await page.wait_for_load_state("networkidle")
+        await page.goto(f"file://{html_path}", wait_until="domcontentloaded", timeout=60000)
+        await page.wait_for_load_state("networkidle", timeout=60000)
 
         # Extra time to ensure React fully renders
         await page.wait_for_timeout(2000)
 
-        screenshot_path = os.path.join(img_output_path_abs, f"{task_id}.png")
-        await page.screenshot(path=screenshot_path, full_page=True)
-        logging.info(f"React screenshot saved: {screenshot_path}")
-        render_score = 1
+        root_state = await page.evaluate(
+            """() => {
+                const root = document.getElementById('root');
+                return {
+                    hasRoot: !!root,
+                    html: root ? root.innerHTML : '',
+                    text: root ? root.innerText : ''
+                };
+            }"""
+        )
+
+        failure_reason = None
+        if page_errors:
+            failure_reason = "; ".join(page_errors[:3])
+        elif console_errors:
+            failure_reason = "; ".join(console_errors[:3])
+        elif not _react_root_has_content(root_state):
+            failure_reason = "React root is empty"
+
+        if failure_reason:
+            logging.error(f"React rendering failed for {task_id}: {failure_reason}")
+            if os.path.exists(screenshot_path):
+                os.remove(screenshot_path)
+            await page.screenshot(path=error_screenshot_path, full_page=True)
+            logging.info(f"React error screenshot saved: {error_screenshot_path}")
+        else:
+            if os.path.exists(error_screenshot_path):
+                os.remove(error_screenshot_path)
+            await page.screenshot(path=screenshot_path, full_page=True)
+            logging.info(f"React screenshot saved: {screenshot_path}")
+            render_score = 1
     except Exception as e:
         logging.error(f"React rendering error for {task_id}: {e}")
+        if os.path.exists(screenshot_path):
+            os.remove(screenshot_path)
+        try:
+            await page.screenshot(path=error_screenshot_path, full_page=True)
+        except Exception:
+            pass
     finally:
         await page.close()
         await context.close()

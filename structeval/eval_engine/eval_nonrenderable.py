@@ -1,6 +1,4 @@
 import logging
-import os
-import json
 from typing import Dict, List, Any
 from .eval_utils import load_file_structure, determine_output_type, path_exists
 
@@ -41,7 +39,7 @@ def evaluate_nonrenderable(items: List[Dict[str, Any]], saved_files_dir: str) ->
         file_path = item.get("output_file", None)
         if file_path is None:
             item["key_validation_score"] = 0
-            break
+            continue
 
         structure, parsed_success = load_file_structure(file_path, output_type.lower())
 
@@ -55,8 +53,8 @@ def evaluate_nonrenderable(items: List[Dict[str, Any]], saved_files_dir: str) ->
             for path in raw_output_metric:
                 if path_exists(structure, path):
                     item["key_validation_score"] += 1
-        
-        # Aggregate key validation score
-        item["key_validation_score"] = item["key_validation_score"] / len(raw_output_metric)
+            item["key_validation_score"] = item["key_validation_score"] / len(raw_output_metric)
+        else:
+            item["key_validation_score"] = 0
 
     return items 

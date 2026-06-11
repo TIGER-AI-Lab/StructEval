@@ -29,8 +29,8 @@ def evaluate_renderable(
     for item in items:
         raw_output_eval(item)
     
-    # If VLM is provided, run VQA evaluation on images
-    if vlm_model_name and vlm_engine:
+    # If a judge model is provided, run VQA evaluation on images.
+    if vlm_model_name:
         from .eval_vqa import vqa_eval
         items = vqa_eval(vlm_model_name, vlm_engine, items, images, **kwargs)
     else:

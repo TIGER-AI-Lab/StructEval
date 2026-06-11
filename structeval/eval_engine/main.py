@@ -1,7 +1,5 @@
-import json
 import logging
-import re
-from typing import Dict, List, Any, Union, Optional
+from typing import Dict, List, Any, Optional
 
 # Import specialized evaluation modules
 from .eval_renderable import evaluate_renderable
@@ -90,9 +88,6 @@ def calculate_final_score(item: Dict[str, Any]) -> None:
         # Non-renderable output
         # 20% render (syntax validity) + 80% path validation
         key_validation_score = item.get("key_validation_score", 0)
-        if (render_score == 0):
-            print("zero render score")
-            print(key_validation_score)
         final_score = (0.2 * render_score) + (0.8 * key_validation_score)
     
     item["final_eval_score"] = round(final_score, 2)

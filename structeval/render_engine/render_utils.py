@@ -1,14 +1,13 @@
 import json
 import yaml
 import csv
-import io
 import logging
 import codecs
 import re
 import os
-from playwright.async_api import async_playwright
 import xmltodict
 import toml
+from playwright.async_api import async_playwright
 
 
 # Copy of TYPE_CODES from main.py to avoid circular imports
@@ -239,7 +238,7 @@ def score_non_renderable(task, non_renderable_dir):
                 with open(file_path, "r", encoding="utf-8") as f:
                     result = csv.DictReader(f)
             else:
-                raise Valuerror("Unsupported file format.")
+                raise ValueError("Unsupported file format.")
 
             # if file not empty, but valid format files, then score = 1
             if result:
@@ -248,7 +247,7 @@ def score_non_renderable(task, non_renderable_dir):
         except Exception as e:
             logging.error(f"Error loading file {file_path}: {str(e)}")
             task["render_score"] = score
-            return None, 0
+            return task
 
     task["render_score"] = score
     return task

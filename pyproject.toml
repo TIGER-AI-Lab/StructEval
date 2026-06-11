@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "structeval"
+version = "0.1.0"
+description = "Lightweight API-first evaluation for structured LLM outputs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "StructEval authors", email = "dongfu.jiang@uwaterloo.ca" }
+]
+dependencies = [
+  "litellm>=1.0.0",
+  "python-dotenv>=1.0.0",
+  "pyyaml>=6.0",
+  "toml>=0.10.2",
+  "typer>=0.12.0",
+  "xmltodict>=0.13.0",
+]
+
+[project.optional-dependencies]
+render = [
+  "markdown>=3.5",
+  "matplotlib>=3.8",
+  "pdf2image>=1.17",
+  "playwright>=1.40",
+]
+test = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+structeval = "structeval.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["structeval*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

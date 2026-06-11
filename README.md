@@ -1,132 +1,363 @@
 # StructEval
 
-StructEval is a framework for evaluating language models on structured outputs, supporting rendering and evaluation of generated code. Our paper has been accepted by TMLR 2025.
+StructEval evaluates language models on structured output generation and
+conversion tasks. This refactor is API-first: inference and VQA judging go
+through LiteLLM, local GPU inference backends are not required, and the CLI is
+designed around one main workflow.
 
-## Installation
+Supported model providers include OpenAI, OpenRouter, DeepSeek, Anthropic/Claude,
+Azure OpenAI, and other OpenAI-compatible endpoints supported by LiteLLM.
 
-### Installation with conda
+## What This Repo Does
 
-```bash
-# Create and activate the conda environment from the environment.yml file
-conda create -n structeval python=3.12
-conda activate structeval
+- Runs model inference over the StructEval dataset.
+- Renders visual/code outputs such as HTML, React, Vue, Angular, SVG, Mermaid,
+  Matplotlib, LaTeX/TikZ, Typst, Vega, Markdown, and Canvas.
+- Extracts and validates non-renderable structured outputs such as JSON, YAML,
+  CSV, TOML, and XML.
+- Evaluates rendered outputs with a vision judge model.
+- Writes reproducible `inference.json`, `evaluation.json`, `summary.json`, and
+  `run.json` artifacts.
 
-# Install all required packages(required)
-pip install -r requirements.txt
-
-# Separately install the llm-engines(required for inference)
-pip install git+https://github.com/jdf-prog/LLM-Engines.git
-
-# Install playwright browsers (required for rendering)
-playwright install
-
-# You could also install the package in development mode(optional)
-pip install -e .
-```
-
-### System Dependencies(Optional to read)
-
-The following system packages will be installed automatically through conda:
-- `ghostscript` and `poppler`: Required for PDF processing
-- `nodejs`: Required for Playwright
-- `graphviz`: Required for visualization
-- `imagemagick`: Required for image processing
-
-If you encounter any issues with system dependencies, you can install them manually using your system's package manager:
+The public CLI is:
 
 ```bash
-# Ubuntu/Debian
-sudo apt-get update
-sudo apt-get install ghostscript poppler-utils nodejs graphviz imagemagick
-
-# CentOS/RHEL
-sudo yum install ghostscript poppler nodejs graphviz ImageMagick
-
-# macOS
-brew install ghostscript poppler node graphviz imagemagick
+structeval init
+structeval run
+structeval reproduce
+structeval evaluate
+structeval summary
+structeval doctor
 ```
 
-## CLI Usage
+Advanced debug commands `infer` and `render` remain available, but are hidden
+from the primary help output.
 
-StructEval provides a command-line interface for running inference, rendering, and evaluation.
+## Install
 
-### Basic Commands
+Use `uv` for local development:
 
 ```bash
-# Run inference
-python -m structeval.cli inference \
-    --llm_model_name "model_name" \
-    --llm_engine "engine_name" \
-    --input_path "path/to/input.json" \
-    --output_path "path/to/output.json"
-
-# Render outputs
-python -m structeval.cli render \
-    --input_path "path/to/inference_output.json" \
-    --img_output_path "path/to/rendered_images" \
-    --non_renderable_output_dir "path/to/non_renderable_files"
-
-# Run evaluation
-python -m structeval.cli evaluate \
-    --vlm_model_name "model_name" \
-    --vlm_engine "engine_name" \
-    --input_path "path/to/inference_output.json" \
-    --output_path "path/to/evaluation_output.json" \
-    --img_path "path/to/rendered_images" \
-    --non_renderable_output_dir "path/to/non_renderable_files"
+uv sync --extra render --extra test
+uv run playwright install chromium
 ```
 
-### Command Parameters
-
-#### Inference
-- `--llm_model_name`: Name of the language model (e.g., "meta-llama/Llama-3.1-8B-Instruct", "gpt-4.1-mini")
-- `--llm_engine`: Engine for running inference (e.g., "vllm", "openai")
-- `--input_path`: Path to the input dataset JSON file
-- `--output_path`: Path to save inference results
-
-#### Render
-- `--input_path`: Path to the inference output JSON
-- `--img_output_path`: Directory to save rendered images
-- `--non_renderable_output_dir`: Directory to save non-renderable outputs
-
-#### Evaluate
-- `--vlm_model_name`: Name of the vision language model for evaluation (e.g., "gpt-4.1-mini")
-- `--vlm_engine`: Engine for evaluation (e.g., "openai")
-- `--input_path`: Path to the inference output JSON
-- `--output_path`: Path to save evaluation results
-- `--img_path`: Path to the directory containing rendered images
-- `--non_renderable_output_dir`: Directory containing non-renderable outputs
-
-## Helper Scripts
-
-The repository includes helper scripts for running full experiments:
-
-### run_inference.py
-Run inference across multiple models:
+For API-only use without local rendering:
 
 ```bash
-python -m structeval.run_inference
+uv sync
 ```
 
-### run_render.py
-Render outputs from inference results:
+Check the environment:
 
 ```bash
-python -m structeval.run_render
+uv run structeval doctor --render
 ```
 
-### run_evaluation.py
-Evaluate rendered outputs:
+Optional system dependencies are needed only for the corresponding renderers:
+
+| Dependency | Used By |
+| --- | --- |
+| Node.js and npm | Angular, Vue, browser render helpers |
+| Playwright Chromium | HTML, SVG, React, Vue, Angular, Mermaid, Vega, Canvas |
+| TeX or Tectonic, plus poppler | LaTeX and TikZ |
+| Typst and ImageMagick | Typst |
+
+Rendering executes model-generated code locally. Run evaluations in an isolated
+environment if the model output is untrusted.
+
+## Quick Start
+
+Create config and model-registry templates:
 
 ```bash
-python -m structeval.run_evaluation
+uv run structeval init
 ```
 
-These scripts can be configured by editing the model lists and file paths within them.
+This writes:
 
-## Input Format
+```text
+structeval.yaml
+models/models.yaml
+```
 
-The input JSON should be an array of task objects with the following structure:
+Run a two-task smoke test:
+
+```bash
+uv run structeval run \
+  --dataset dataset/StructEval_dataset.json \
+  --model openrouter-gpt-4.1-mini \
+  --judge-model openrouter-gpt-4.1-mini \
+  --limit 2
+```
+
+Run the full benchmark from config:
+
+```bash
+uv run structeval run --config structeval.yaml
+```
+
+Run only one benchmark side:
+
+```bash
+uv run structeval run \
+  --dataset dataset/StructEval_dataset.json \
+  --model openrouter-gpt-4.1-mini \
+  --judge-model openrouter-gpt-4.1-mini \
+  --split renderable
+
+uv run structeval run \
+  --dataset dataset/StructEval_dataset.json \
+  --model openrouter-gpt-4.1-mini \
+  --judge-model openrouter-gpt-4.1-mini \
+  --split nonrenderable
+```
+
+`--split` supports `full`, `renderable`, and `nonrenderable`. `--limit` is
+applied after filtering.
+
+## API Keys And Models
+
+StructEval uses LiteLLM model strings. You can pass them directly:
+
+```bash
+uv run structeval run \
+  --dataset dataset/StructEval_dataset.json \
+  --model openai/gpt-4.1-mini \
+  --judge-model openai/gpt-4.1-mini
+```
+
+Or use aliases from `models/models.yaml`:
+
+```yaml
+models:
+  gpt-4.1-mini:
+    model: openai/gpt-4.1-mini
+    api_key_env: OPENAI_API_KEY
+
+  openrouter-gpt-4.1-mini:
+    model: openrouter/openai/gpt-4.1-mini
+    api_key_env: OPENROUTER_API_KEY
+
+  deepseek-v4-pro:
+    model: deepseek/deepseek-v4-pro
+    api_key_env: DEEPSEEK_API_KEY
+
+  claude-sonnet-4:
+    model: anthropic/claude-sonnet-4
+    api_key_env: ANTHROPIC_API_KEY
+```
+
+Common environment variables:
+
+```bash
+export OPENAI_API_KEY=...
+export OPENROUTER_API_KEY=...
+export DEEPSEEK_API_KEY=...
+export ANTHROPIC_API_KEY=...
+```
+
+For OpenRouter, `OPEN_ROUTER_API_KEY` is also accepted as a fallback for
+`OPENROUTER_API_KEY`.
+
+Provider-specific LiteLLM parameters can be placed in the registry:
+
+```yaml
+models:
+  my-openai-compatible-model:
+    model: openai/my-model
+    api_base: http://localhost:8000/v1
+    api_key_env: MY_API_KEY
+    litellm_params:
+      extra_headers:
+        X-Example: value
+```
+
+CLI flags override `structeval.yaml`, and `structeval.yaml` overrides model
+registry defaults.
+
+## Config
+
+Minimal config:
+
+```yaml
+dataset: dataset/StructEval_dataset.json
+output_dir: runs/gpt-4.1-mini
+model: openrouter-gpt-4.1-mini
+judge_model: openrouter-gpt-4.1-mini
+split: full
+concurrency: 8
+render_concurrency: 4
+temperature: 0.0
+judge_temperature: 0.0
+max_tokens: null
+timeout: null
+max_retries: 2
+```
+
+Optional advanced config:
+
+```yaml
+models_path: models/models.yaml
+api_base: null
+api_key_env: null
+judge_api_base: null
+judge_api_key_env: null
+litellm_params: {}
+judge_litellm_params: {}
+```
+
+Run it:
+
+```bash
+uv run structeval run --config structeval.yaml
+```
+
+If `--output-dir` is omitted, `run` writes to:
+
+```text
+runs/<safe-model-name>/<utc-timestamp>/
+```
+
+If `output_dir` is set in config, that exact directory is used.
+
+## Reproduce A Paper Subtask
+
+`reproduce` is the convenient path for paper-style task subsets. It defaults to:
+
+- dataset: `dataset/StructEval_dataset.json`
+- API concurrency: `32`
+- render concurrency: `4`
+- generation temperature: `0.0`
+- judge temperature: `0.0`
+- max tokens: unlimited
+
+Examples:
+
+```bash
+uv run structeval reproduce \
+  --model openrouter-gpt-4.1-mini \
+  --judge-model openrouter-gpt-4.1-mini \
+  --task svg
+
+uv run structeval reproduce \
+  --model openrouter-gpt-4.1-mini \
+  --judge-model openrouter-gpt-4.1-mini \
+  --task "JSON->YAML"
+
+uv run structeval reproduce \
+  --model openrouter-gpt-4.1-mini \
+  --judge-model openrouter-gpt-4.1-mini \
+  --task "HTML->Vue" \
+  --render-concurrency 16
+```
+
+Task aliases:
+
+- `svg` means `Text->SVG`.
+- `T->SVG`, `Text->SVG`, and `Text to SVG` are equivalent.
+- `JSON->YAML` and `JSON to YAML` are equivalent.
+- Omit `--task` to run the full dataset.
+
+Exact API generations are not guaranteed to match the paper or another provider.
+For deterministic score reproduction, reuse the same saved `generation` values
+and rerun render/evaluate.
+
+## Outputs
+
+Each run directory contains:
+
+```text
+inference.json
+images/
+non_renderable_format_files/
+evaluation.json
+summary.json
+run.json
+```
+
+Important fields kept for compatibility:
+
+- `generation`
+- `parsed_code`
+- `render_score`
+- `raw_output_score`
+- `VQA_score`
+- `key_validation_score`
+- `final_eval_score`
+
+`run.json` stores metadata such as model, judge model, dataset, split, task,
+paths, and concurrency settings without modifying per-sample structures.
+
+## Rescore Existing Generations
+
+If you already have `inference.json`, rerender and evaluate it:
+
+```bash
+uv run structeval render \
+  --input-path runs/my-run/inference.json \
+  --img-output-path runs/my-run/images \
+  --non-renderable-output-dir runs/my-run/non_renderable_format_files \
+  --render-concurrency 16
+
+uv run structeval evaluate \
+  --input-path runs/my-run/inference.json \
+  --output-path runs/my-run/evaluation.json \
+  --img-path runs/my-run/images \
+  --non-renderable-output-dir runs/my-run/non_renderable_format_files \
+  --judge-model openrouter-gpt-4.1-mini \
+  --concurrency 32
+
+uv run structeval summary \
+  --input-path runs/my-run/evaluation.json \
+  --output-path runs/my-run/summary.json
+```
+
+`render` is hidden from the primary CLI help because normal users should use
+`run` or `reproduce`, but it is intentionally available for debugging and
+rescoring workflows.
+
+## Scoring
+
+Renderable tasks:
+
+```text
+final_eval_score = 0.2 * render_score + 0.1 * raw_output_score + 0.7 * VQA_score
+```
+
+Non-renderable tasks:
+
+```text
+final_eval_score = 0.2 * render_score + 0.8 * key_validation_score
+```
+
+`summary.json` reports:
+
+- all-task average
+- renderable average
+- non-renderable average
+- average by `output_type`
+
+## Rendering Notes
+
+`--concurrency` controls API calls. `--render-concurrency` controls local render
+jobs. Render concurrency is additionally capped per output type to avoid unstable
+local failures:
+
+- Angular, Vue, and Typst are conservative.
+- HTML, SVG, Markdown, Canvas, Matplotlib, and non-renderable extraction can run
+  with more parallelism.
+- LaTeX/TikZ rendering depends heavily on the local TeX installation.
+
+Recent renderer fixes make React, Vue, Angular, and TikZ execution stricter and
+less likely to produce blank-page false positives. That improves correctness, but
+it also means exact StructEval-V scores can differ from older local render
+pipelines. To compare scores, keep the renderer version and system dependencies
+fixed.
+
+## Dataset Format
+
+The dataset is a JSON array of tasks:
 
 ```json
 [
@@ -139,86 +370,40 @@ The input JSON should be an array of task objects with the following structure:
     "output_type": "JSON",
     "query_example": "",
     "VQA": [],
-    "raw_output_metric": [
-      "novel.title",
-      "novel.author.name",
-      "novel.characters[0].name"
-    ],
+    "raw_output_metric": ["novel.title", "novel.author.name"],
     "rendering": false
   }
 ]
 ```
 
-### Input Fields:
-- `task_id`: Unique identifier for the task
-- `query`: The prompt sent to the model
-- `task_name`: Name of the task (e.g., "Text to JSON", "Text to Angular")
-- `input_type`: Type of input (e.g., "Text")
-- `output_type`: Expected output format (e.g., "JSON", "Angular")
-- `VQA`: Array of visual question-answer pairs for evaluating renderable outputs
-- `raw_output_metric`: Keys or elements to check in the output
-- `rendering`: Boolean indicating if the output should be rendered visually
+Renderable tasks include VQA questions. Non-renderable tasks include
+`raw_output_metric` key paths used for structural validation.
 
-## Output Format
+## Development
 
-### Inference Output
-The inference process adds a `generation` field to each task in the input:
+Run tests:
 
-```json
-[
-  {
-    "task_id": "000500",
-    "query": "Please output JSON code:\n\nTask:\n...",
-    "feature_requirements": "",
-    "task_name": "Text to JSON",
-    "input_type": "Text",
-    "output_type": "JSON",
-    "query_example": "",
-    "VQA": [],
-    "raw_output_metric": [...],
-    "rendering": false,
-    "generation": "```json\n{\n  \"novel\": {\n    \"title\": \"The Obsidian Labyrinth\",\n    \"author\": {\n      \"name\": \"Anya Petrova\",\n      \"birth_year\": 1978\n    },\n    ...\n  }\n}\n```"
-  }
-]
+```bash
+uv run --extra test pytest -q
 ```
 
-### Evaluation Output
-The evaluation result contains additional scoring fields:
+Run CLI checks:
 
-```json
-[
-  {
-    "task_id": "000500",
-    "query": "Please output JSON code:\n\nTask:\n...",
-    "feature_requirements": "",
-    "task_name": "Text to JSON",
-    "input_type": "Text",
-    "output_type": "JSON",
-    "VQA": [],
-    "raw_output_metric": [...],
-    "rendering": false,
-    "generation": "...",
-    "output_file": "experiment_results/model-name/non_renderable_files/000500.json",
-    "render_score": 1,
-    "VQA_score": null,
-    "key_validation_score": 1.0,
-    "final_eval_score": 1.0
-  }
-]
+```bash
+uv run structeval --help
+uv run structeval run --help
+uv run python -m structeval.cli --help
 ```
 
-### Evaluation Fields:
-- `output_file`: Path to the rendered output or extracted JSON file
-- `render_score`: Score indicating if the output was rendered successfully (0 or 1)
-- `VQA_score`: Score from visual question-answering evaluation (for renderable outputs)
-- `key_validation_score`: Score from validating expected keys in JSON output (for non-renderable outputs)
-- `raw_output_eval`: Array of boolean values indicating whether each raw output metric was satisfied
-- `raw_output_score`: Score from the raw output evaluation
-- `final_eval_score`: Overall evaluation score between 0 and 1
+Package import should work outside the repository root after installation:
+
+```bash
+uv run python -c "import structeval; print(structeval.__version__)"
+```
 
 ## Citation
-Please cite us with the following bibtex:
-```
+
+```bibtex
 @misc{yang2025structeval,
   title={StructEval: Benchmarking LLMs' Capabilities to Generate Structural Outputs},
   author={Jialin Yang and Dongfu Jiang and Lipeng He and Sherman Siu and Yuxuan Zhang and Disen Liao and Zhuofeng Li and Huaye Zeng and Yiming Jia and Haozhe Wang and Benjamin Schneider and Chi Ruan and Wentao Ma and Zhiheng Lyu and Yifei Wang and Yi Lu and Quy Duc Do and Ziyan Jiang and Ping Nie and Wenhu Chen},

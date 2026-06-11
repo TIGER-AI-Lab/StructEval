@@ -3,6 +3,7 @@ import re
 import logging
 import tempfile
 import subprocess
+import shutil
 
 def extract_typst_from_code_tag(generation):
     match = re.search(r"<code>(.*?)</code>", generation, re.DOTALL)
@@ -18,6 +19,13 @@ def render_typst_and_screenshot(task_id, typst_code, img_output_path):
 
     if not typst_code:
         logging.warning(f"No Typst content for task {task_id}")
+        return render_score
+    if shutil.which("typst") is None:
+        logging.error(f"Typst rendering failed for {task_id}: typst CLI not found")
+        return render_score
+    converter = shutil.which("magick") or shutil.which("convert")
+    if converter is None:
+        logging.error(f"Typst rendering failed for {task_id}: ImageMagick CLI not found")
         return render_score
 
     try:
@@ -40,7 +48,7 @@ def render_typst_and_screenshot(task_id, typst_code, img_output_path):
             # Convert PDF to PNG
             # Capture stderr for convert
             convert_result = subprocess.run([
-                               "magick", 
+                               converter,
                                "-density", "300", 
                                pdf_path, 
                                "-background", "white", "-alpha", "remove", "-alpha", "off",
