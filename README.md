@@ -2,6 +2,8 @@
 
 StructEval is a framework for evaluating language models on structured outputs, supporting rendering and evaluation of generated code. Our paper has been accepted by TMLR 2025.
 
+(**Note**: check the [litellm branch](https://github.com/TIGER-AI-Lab/StructEval/tree/litellm) as a more friendly cli to evaluate more latest models.)
+
 ## Installation
 
 ### Installation with conda
