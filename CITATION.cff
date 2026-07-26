@@ -1,0 +1,107 @@
+cff-version: 1.2.0
+message: "If you use StructEval, please cite the TMLR 2025 paper below."
+title: "StructEval: Benchmarking LLMs' Capabilities to Generate Structural Outputs"
+type: software
+version: "0.0.5"
+license: Apache-2.0
+url: "https://tiger-ai-lab.github.io/StructEval/"
+repository-code: "https://github.com/TIGER-AI-Lab/StructEval"
+identifiers:
+  - type: swh
+    value: "swh:1:snp:dae6681462669c7447cc92210da2e2bb1d738cd8"
+    description: "Software Heritage snapshot of the canonical repository."
+authors:
+  - family-names: Yang
+    given-names: Jialin
+  - family-names: Jiang
+    given-names: Dongfu
+  - family-names: He
+    given-names: Lipeng
+  - family-names: Siu
+    given-names: Sherman
+  - family-names: Zhang
+    given-names: Yuxuan
+  - family-names: Liao
+    given-names: Disen
+  - family-names: Li
+    given-names: Zhuofeng
+  - family-names: Zeng
+    given-names: Huaye
+  - family-names: Jia
+    given-names: Yiming
+  - family-names: Wang
+    given-names: Haozhe
+  - family-names: Schneider
+    given-names: Benjamin
+  - family-names: Ruan
+    given-names: Chi
+  - family-names: Ma
+    given-names: Wentao
+  - family-names: Lyu
+    given-names: Zhiheng
+  - family-names: Wang
+    given-names: Yifei
+  - family-names: Lu
+    given-names: Yi
+  - family-names: Do
+    given-names: Quy Duc
+  - family-names: Jiang
+    given-names: Ziyan
+  - family-names: Nie
+    given-names: Ping
+  - family-names: Chen
+    given-names: Wenhu
+preferred-citation:
+  type: article
+  title: "StructEval: Benchmarking LLMs' Capabilities to Generate Structural Outputs"
+  authors:
+    - family-names: Yang
+      given-names: Jialin
+    - family-names: Jiang
+      given-names: Dongfu
+    - family-names: He
+      given-names: Lipeng
+    - family-names: Siu
+      given-names: Sherman
+    - family-names: Zhang
+      given-names: Yuxuan
+    - family-names: Liao
+      given-names: Disen
+    - family-names: Li
+      given-names: Zhuofeng
+    - family-names: Zeng
+      given-names: Huaye
+    - family-names: Jia
+      given-names: Yiming
+    - family-names: Wang
+      given-names: Haozhe
+    - family-names: Schneider
+      given-names: Benjamin
+    - family-names: Ruan
+      given-names: Chi
+    - family-names: Ma
+      given-names: Wentao
+    - family-names: Lyu
+      given-names: Zhiheng
+    - family-names: Wang
+      given-names: Yifei
+    - family-names: Lu
+      given-names: Yi
+    - family-names: Do
+      given-names: Quy Duc
+    - family-names: Jiang
+      given-names: Ziyan
+    - family-names: Nie
+      given-names: Ping
+    - family-names: Chen
+      given-names: Wenhu
+  journal: "Transactions on Machine Learning Research"
+  year: 2025
+  url: "https://openreview.net/forum?id=buDwV7LUA7"
+  identifiers:
+    - type: doi
+      value: "10.48550/arXiv.2505.20139"
+      description: "DOI for the arXiv preprint."
+    - type: other
+      value: "arXiv:2505.20139"
+      description: "arXiv preprint identifier."
