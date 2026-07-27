@@ -1,0 +1,25 @@
+# StructEval
+
+> StructEval is an open-source benchmark and evaluation framework for testing language models' ability to generate structured outputs, including renderable and non-renderable formats.
+
+StructEval supports inference, rendering, and evaluation through a command-line workflow. It evaluates generated outputs with structural validation and visual checks for renderable artifacts.
+
+## Canonical resources
+
+- [GitHub repository](https://github.com/TIGER-AI-Lab/StructEval): source code, CLI, examples, and dataset files.
+- [Research paper](https://arxiv.org/abs/2505.20139): *StructEval: Benchmarking LLMs' Capabilities to Generate Structural Outputs*.
+- [TMLR venue](https://openreview.net/forum?id=3w6M6fJ6fN): peer-reviewed publication record.
+- [Dataset directory](https://github.com/TIGER-AI-Lab/StructEval/tree/main/dataset): renderable, non-renderable, and consolidated StructEval data files.
+- [Citation record](https://github.com/TIGER-AI-Lab/StructEval#citation): BibTeX citation and author list.
+
+## Evaluation capabilities
+
+- Generate model outputs from structured-output prompts.
+- Render outputs that require visual evaluation with Playwright.
+- Validate keys and raw output metrics for non-renderable formats.
+- Score render quality with visual question answering for renderable outputs.
+- Produce per-example metrics and an overall `final_eval_score` between 0 and 1.
+
+## Citation
+
+If you use StructEval, cite the paper and link to the canonical repository above.
