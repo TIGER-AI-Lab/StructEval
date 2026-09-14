@@ -1,6 +1,6 @@
 # StructEval
 
-StructEval is a framework for evaluating language models on structured outputs, supporting rendering and evaluation of generated code. Our paper has been accepted by TMLR 2025.
+StructEval is a framework for evaluating language models on structured outputs, supporting rendering and evaluation of generated code. Our paper was published in [Transactions on Machine Learning Research in January 2026](https://openreview.net/forum?id=buDwV7LUA7).
 
 (**Note**: check the [litellm branch](https://github.com/TIGER-AI-Lab/StructEval/tree/litellm) as a more friendly cli to evaluate more latest models.)
 
@@ -219,7 +219,7 @@ The evaluation result contains additional scoring fields:
 - `final_eval_score`: Overall evaluation score between 0 and 1
 
 ## Citation
-Please cite us with the following bibtex:
+The preferred TMLR citation is available in [`CITATION.cff`](CITATION.cff) and on [OpenReview](https://openreview.net/forum?id=buDwV7LUA7). The original 2025 arXiv preprint citation is preserved below:
 ```
 @misc{yang2025structeval,
   title={StructEval: Benchmarking LLMs' Capabilities to Generate Structural Outputs},

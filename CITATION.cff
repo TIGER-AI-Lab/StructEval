@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use StructEval, please cite the TMLR 2025 paper below."
+message: "If you use StructEval, please cite the TMLR 2026 paper below."
 title: "StructEval: Benchmarking LLMs' Capabilities to Generate Structural Outputs"
 type: software
 version: "0.0.5"
@@ -96,7 +96,7 @@ preferred-citation:
     - family-names: Chen
       given-names: Wenhu
   journal: "Transactions on Machine Learning Research"
-  year: 2025
+  year: 2026
   url: "https://openreview.net/forum?id=buDwV7LUA7"
   identifiers:
     - type: doi
