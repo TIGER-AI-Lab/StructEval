@@ -3,10 +3,10 @@ import os
 import json
 import asyncio
 from typing import Optional, List, Dict, Any
-from inference import run_inference
-from render_engine.main import process_json_file as render_task
-from render_engine.render_utils import determine_output_type as get_rendering_type
-from eval_engine.main import evaluate_dataset
+from .inference import run_inference
+from .render_engine.main import process_json_file as render_task
+from .render_engine.render_utils import determine_output_type as get_rendering_type
+from .eval_engine.main import evaluate_dataset
 
 
 class StructEvalCLI:
