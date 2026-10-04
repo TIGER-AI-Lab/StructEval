@@ -1,0 +1,116 @@
+{
+  "source": "Original website paper leaderboard",
+  "source_url": "https://github.com/TIGER-AI-Lab/StructEval/blob/4ae689e6e37cf4345bbc0c9eb877c2cb2b37d6ad/static/js/index.js",
+  "paper_url": "https://arxiv.org/abs/2505.20139",
+  "aggregation": "Reported unweighted average of the four subset scores",
+  "rows": [
+    {
+      "model": "GPT-4o",
+      "type": "Closed",
+      "se_t_gen": 91.52,
+      "se_t_conv": 73.95,
+      "se_v_gen": 65.39,
+      "se_v_conv": 73.2,
+      "average": 76.02
+    },
+    {
+      "model": "o1-mini",
+      "type": "Closed",
+      "se_t_gen": 88.12,
+      "se_t_conv": 81.82,
+      "se_v_gen": 61.98,
+      "se_v_conv": 70.4,
+      "average": 75.58
+    },
+    {
+      "model": "GPT-4.1-mini",
+      "type": "Closed",
+      "se_t_gen": 92.57,
+      "se_t_conv": 75.63,
+      "se_v_gen": 64.3,
+      "se_v_conv": 70.04,
+      "average": 75.64
+    },
+    {
+      "model": "GPT-4o-mini",
+      "type": "Closed",
+      "se_t_gen": 79.86,
+      "se_t_conv": 75.57,
+      "se_v_gen": 60.77,
+      "se_v_conv": 76.54,
+      "average": 73.19
+    },
+    {
+      "model": "Gemini-1.5-pro",
+      "type": "Closed",
+      "se_t_gen": 88.07,
+      "se_t_conv": 74.24,
+      "se_v_gen": 58.11,
+      "se_v_conv": 66.59,
+      "average": 71.75
+    },
+    {
+      "model": "Qwen3-4B",
+      "type": "Open",
+      "se_t_gen": 64.95,
+      "se_t_conv": 81.13,
+      "se_v_gen": 57.0,
+      "se_v_conv": 65.08,
+      "average": 67.04
+    },
+    {
+      "model": "Llama-3.1-8B-Instruct",
+      "type": "Open",
+      "se_t_gen": 60.22,
+      "se_t_conv": 71.26,
+      "se_v_gen": 54.44,
+      "se_v_conv": 61.15,
+      "average": 61.77
+    },
+    {
+      "model": "Gemini-2.0-flash",
+      "type": "Closed",
+      "se_t_gen": 72.42,
+      "se_t_conv": 72.2,
+      "se_v_gen": 53.62,
+      "se_v_conv": 51.97,
+      "average": 62.55
+    },
+    {
+      "model": "Qwen2.5-7B-Instruct",
+      "type": "Open",
+      "se_t_gen": 59.21,
+      "se_t_conv": 62.18,
+      "se_v_gen": 53.28,
+      "se_v_conv": 61.43,
+      "average": 59.03
+    },
+    {
+      "model": "Phi-4-mini-instruct",
+      "type": "Open",
+      "se_t_gen": 51.38,
+      "se_t_conv": 72.39,
+      "se_v_gen": 51.62,
+      "se_v_conv": 52.48,
+      "average": 56.97
+    },
+    {
+      "model": "Meta-Llama-3-8B-Instruct",
+      "type": "Open",
+      "se_t_gen": 49.18,
+      "se_t_conv": 53.65,
+      "se_v_gen": 46.61,
+      "se_v_conv": 56.91,
+      "average": 51.59
+    },
+    {
+      "model": "Phi-3-mini-128k-instruct",
+      "type": "Open",
+      "se_t_gen": 47.39,
+      "se_t_conv": 29.78,
+      "se_v_gen": 44.77,
+      "se_v_conv": 41.23,
+      "average": 40.79
+    }
+  ]
+}

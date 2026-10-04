@@ -4,6 +4,16 @@ Homepage of StructEval, a benchmark dataset designed to evaluate the ability of 
 
 This website is adapted from [Nerfies website](https://nerfies.github.io) and [MathVista](https://mathvista.github.io/).
 
+## Preview and leaderboard updates
+
+Run `python3 -m http.server 8001 --bind 127.0.0.1` in this directory and open
+http://127.0.0.1:8001/ to preview the site with its interactive leaderboard.
+
+To refresh the reviewed evaluation runs from the sibling StructEval repository,
+run `python3 scripts/sync_leaderboard.py --source ../StructEval`.
+See [LEADERBOARD.md](LEADERBOARD.md) for source artifacts, update rules,
+model metadata, and the procedure for adding new results.
+
 # Website License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

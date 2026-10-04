@@ -1,0 +1,59 @@
+{
+  "dataset": "dataset/StructEval_dataset.json",
+  "runs": [
+    {
+      "id": "deepseek-v4-flash-20260611",
+      "model_key": "deepseek-v4-flash",
+      "evaluation": "experiment_results/openrouter_full_20260611T064211Z/deepseek-v4-flash/evaluation_eval.json",
+      "evaluated_on": "2026-06-11",
+      "judge": "GPT-4.1 mini",
+      "protocol_source": "experiment_results/openrouter_full_20260611T064211Z/deepseek-v4-flash/evaluate_eval.log",
+      "notes": ""
+    },
+    {
+      "id": "qwen3.7-plus-20260611",
+      "model_key": "qwen3.7-plus",
+      "evaluation": "experiment_results/openrouter_full_20260611T064211Z/qwen3.7-plus/evaluation_eval.json",
+      "evaluated_on": "2026-06-11",
+      "judge": "GPT-4.1 mini",
+      "protocol_source": "experiment_results/openrouter_full_20260611T064211Z/qwen3.7-plus/evaluate_eval.log",
+      "notes": ""
+    },
+    {
+      "id": "gpt-5.4-nano-20260611",
+      "model_key": "gpt-5.4-nano",
+      "evaluation": "experiment_results/openrouter_full_20260611T064211Z/gpt-5.4-nano/evaluation_eval.json",
+      "evaluated_on": "2026-06-11",
+      "judge": "GPT-4.1 mini",
+      "protocol_source": "experiment_results/openrouter_full_20260611T064211Z/gpt-5.4-nano/evaluate_eval.log",
+      "notes": ""
+    },
+    {
+      "id": "gpt41mini-20260611",
+      "model_key": "GPT-4.1-mini",
+      "evaluation": "experiment_results/gpt41mini_openrouter_reproduce/full-rerender-fixed-20260611T054618Z/evaluation.json",
+      "evaluated_on": "2026-06-11",
+      "judge": "GPT-4.1 mini",
+      "protocol_source": "experiment_results/gpt41mini_openrouter_reproduce/full-rerender-fixed-20260611T054618Z/evaluate.log",
+      "notes": "Latest completed rerender run with renderer fixes."
+    },
+    {
+      "id": "nemotron-ultra-gpt41mini-20261001",
+      "model_key": "nemotron-3-ultra",
+      "evaluation": "experiment_results/nemotron_ultra_free_full_20261001/evaluation_gpt41mini.json",
+      "evaluated_on": "2026-10-01",
+      "judge": "GPT-4.1 mini",
+      "protocol_source": "experiment_results/nemotron_ultra_free_full_20261001/run.json",
+      "notes": "Two judges evaluate the same generated outputs. Only tasks with completed scoring are included; incomplete runs are excluded from full-benchmark rankings."
+    },
+    {
+      "id": "nemotron-ultra-luna-20261001",
+      "model_key": "nemotron-3-ultra",
+      "evaluation": "experiment_results/nemotron_ultra_free_full_20261001/evaluation_luna.json",
+      "evaluated_on": "2026-10-01",
+      "judge": "GPT-6 Luna",
+      "protocol_source": "experiment_results/nemotron_ultra_free_full_20261001/run.json",
+      "notes": "Two judges evaluate the same generated outputs. Only tasks with completed scoring are included; incomplete runs are excluded from full-benchmark rankings."
+    }
+  ]
+}

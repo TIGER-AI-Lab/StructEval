@@ -1,0 +1,193 @@
+{
+  "reviewed_at": "2026-10-02",
+  "notes": "Release dates describe the vendor availability documented in each linked source, not the evaluation date. Parameter counts are vendor-reported total parameters, in billions; MoE activated parameters are separate. Null means not publicly documented in the reviewed sources.",
+  "models": {
+    "GPT-4o": {
+      "name": "GPT-4o",
+      "provider": "OpenAI",
+      "access": "closed",
+      "release_date": "2024-05-13",
+      "release_note": "",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": "https://developers.openai.com/api/docs/changelog",
+      "parameters_source": null
+    },
+    "GPT-4o-mini": {
+      "name": "GPT-4o mini",
+      "provider": "OpenAI",
+      "access": "closed",
+      "release_date": "2024-07-18",
+      "release_note": "",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": "https://developers.openai.com/api/docs/changelog",
+      "parameters_source": null
+    },
+    "GPT-4.1-mini": {
+      "name": "GPT-4.1 mini",
+      "provider": "OpenAI",
+      "access": "closed",
+      "release_date": "2025-04-14",
+      "release_note": "",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": "https://developers.openai.com/api/docs/changelog",
+      "parameters_source": null
+    },
+    "o1-mini": {
+      "name": "o1-mini",
+      "provider": "OpenAI",
+      "access": "closed",
+      "release_date": "2024-09-12",
+      "release_note": "",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": "https://developers.openai.com/api/docs/changelog",
+      "parameters_source": null
+    },
+    "gpt-5.4-nano": {
+      "name": "GPT-5.4 nano",
+      "provider": "OpenAI",
+      "access": "closed",
+      "release_date": "2026-03-17",
+      "release_note": "",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": "https://developers.openai.com/api/docs/changelog",
+      "parameters_source": null
+    },
+    "gpt-6-luna": {
+      "name": "GPT-6 Luna",
+      "provider": "OpenAI",
+      "access": "closed",
+      "release_date": "2026-09-22",
+      "release_note": "",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": "https://developers.openai.com/api/docs/changelog",
+      "parameters_source": null
+    },
+    "Llama-3.1-8B-Instruct": {
+      "name": "Llama 3.1 8B Instruct",
+      "provider": "Meta",
+      "access": "open",
+      "release_date": "2024-07-23",
+      "release_note": "Vendor-reported 8B size class.",
+      "parameters_b": 8,
+      "active_parameters_b": null,
+      "release_source": "https://ai.meta.com/blog/meta-llama-3-1/",
+      "parameters_source": "https://ai.meta.com/blog/meta-llama-3-1/"
+    },
+    "Meta-Llama-3-8B-Instruct": {
+      "name": "Llama 3 8B Instruct",
+      "provider": "Meta",
+      "access": "open",
+      "release_date": "2024-04-18",
+      "release_note": "Vendor-reported 8B size class.",
+      "parameters_b": 8,
+      "active_parameters_b": null,
+      "release_source": "https://ai.meta.com/blog/meta-llama-3/",
+      "parameters_source": "https://ai.meta.com/blog/meta-llama-3/"
+    },
+    "Phi-3-mini-128k-instruct": {
+      "name": "Phi-3 mini 128K",
+      "provider": "Microsoft",
+      "access": "open",
+      "release_date": "2024-04-23",
+      "release_note": "",
+      "parameters_b": 3.8,
+      "active_parameters_b": null,
+      "release_source": "https://news.microsoft.com/source/features/ai/the-phi-3-small-language-models-with-big-potential/",
+      "parameters_source": "https://news.microsoft.com/source/features/ai/the-phi-3-small-language-models-with-big-potential/"
+    },
+    "Phi-4-mini-instruct": {
+      "name": "Phi-4 mini",
+      "provider": "Microsoft",
+      "access": "open",
+      "release_date": "2025-02-26",
+      "release_note": "",
+      "parameters_b": 3.8,
+      "active_parameters_b": null,
+      "release_source": "https://azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family/",
+      "parameters_source": "https://azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family/"
+    },
+    "Qwen2.5-7B-Instruct": {
+      "name": "Qwen2.5 7B Instruct",
+      "provider": "Qwen",
+      "access": "open",
+      "release_date": "2024-09-19",
+      "release_note": "",
+      "parameters_b": 7.61,
+      "active_parameters_b": null,
+      "release_source": "https://qwenlm.github.io/blog/qwen2.5/",
+      "parameters_source": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+    },
+    "Qwen3-4B": {
+      "name": "Qwen3 4B",
+      "provider": "Qwen",
+      "access": "open",
+      "release_date": "2025-04-29",
+      "release_note": "",
+      "parameters_b": 4,
+      "active_parameters_b": null,
+      "release_source": "https://qwenlm.github.io/blog/qwen3/",
+      "parameters_source": "https://huggingface.co/Qwen/Qwen3-4B"
+    },
+    "Gemini-1.5-pro": {
+      "name": "Gemini 1.5 Pro",
+      "provider": "Google",
+      "access": "closed",
+      "release_date": "2024-02-15",
+      "release_note": "Initial preview availability; evaluated snapshot was not recorded in the original table.",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": "https://blog.google/innovation-and-ai/products/google-gemini-next-generation-model-february-2024/",
+      "parameters_source": null
+    },
+    "Gemini-2.0-flash": {
+      "name": "Gemini 2.0 Flash",
+      "provider": "Google",
+      "access": "closed",
+      "release_date": "2025-02-05",
+      "release_note": "General availability of the stable model; experimental preview was released earlier.",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-updates-february-2025/",
+      "parameters_source": null
+    },
+    "deepseek-v4-flash": {
+      "name": "DeepSeek V4 Flash",
+      "provider": "DeepSeek",
+      "access": "open",
+      "release_date": "2026-04-24",
+      "release_note": "Preview release, matching the June evaluation. Later revisions of this API alias are not evaluated here.",
+      "parameters_b": 284,
+      "active_parameters_b": 13,
+      "release_source": "https://api-docs.deepseek.com/news/news260424/",
+      "parameters_source": "https://api-docs.deepseek.com/news/news260424/"
+    },
+    "qwen3.7-plus": {
+      "name": "Qwen3.7 Plus",
+      "provider": "Qwen",
+      "access": "closed",
+      "release_date": "2026-06-01",
+      "release_note": "Vendor-listed Global/International availability; May 26 is the snapshot date.",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "parameters_source": null
+    },
+    "nemotron-3-ultra": {
+      "name": "Nemotron 3 Ultra",
+      "provider": "NVIDIA",
+      "access": "open",
+      "release_date": "2026-06-04",
+      "release_note": "",
+      "parameters_b": 550,
+      "active_parameters_b": 55,
+      "release_source": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/",
+      "parameters_source": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/"
+    }
+  }
+}
