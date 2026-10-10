@@ -59,7 +59,31 @@ source, never whichever judge produced the higher score.
 The original website's results in `static/data/paper-baseline.json` supply
 fallback rows until newer completed evaluations are available. For example,
 GPT-4.1 mini now appears once with its updated score. Nemotron 3 Ultra's two judge
-runs produce one pending model row, currently covering 912 of 2,035 tasks.
+runs now cover all 2,035 tasks. Its displayed result uses the first configured
+source, GPT-4.1 mini (74.26%), rather than choosing the higher-scoring judge.
+
+## October 10, 2026 update
+
+The snapshot contains 26 ranked models. Eleven full evaluations from
+`experiment_results/model_sweep_20261004` add ten new models and update Qwen2.5
+7B Instruct to its latest Ollama run (50.10%). Nemotron also moves from pending to
+ranked after completing its full evaluation. Original reported results remain in
+`paper-baseline.json` as evidence, including the superseded Qwen2.5 row.
+
+The new sweep uses GPT-6 Luna as its VQA judge, documented in `score_all.py` and
+each run's summary. This differs from GPT-4.1 mini and the paper protocol; the
+judge remains visible in model details. The new Gemma 4 26B A4B entry is an
+evaluated model with a Luna judge, not a Gemma-judged run. Scores include recorded
+render failures; zero-success format renderers are noted per run in the inspector
+and downloadable evidence. The local Qwen run also records its 8,192-token limits
+and unrecorded checkpoint quantization. Evaluation dates come from completion
+timestamps in the run state, converted to America/Toronto.
+
+The 100-task GPT-6.1 Sol / Claude Sonnet 5.5 comparison and unfinished sweep runs
+are excluded from this full-benchmark update. Prior local Gemma judge runs remain
+excluded. Release dates and parameter counts link to the reviewed vendor sources.
+
+## Score provenance
 
 Recorded scores are preserved: imported runs average all evaluated examples,
 while the original table reports an average of four subset scores. Each row

@@ -1,5 +1,5 @@
 {
-  "reviewed_at": "2026-10-02",
+  "reviewed_at": "2026-10-10",
   "notes": "Release dates describe the vendor availability documented in each linked source, not the evaluation date. Parameter counts are vendor-reported total parameters, in billions; MoE activated parameters are separate. Null means not publicly documented in the reviewed sources.",
   "models": {
     "GPT-4o": {
@@ -188,6 +188,116 @@
       "active_parameters_b": 55,
       "release_source": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/",
       "parameters_source": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/"
+    },
+    "deepseek-v3.2": {
+      "name": "DeepSeek V3.2",
+      "provider": "DeepSeek",
+      "access": "open",
+      "release_date": "2025-12-01",
+      "release_note": "Total size as reported for the published checkpoint; active count not recorded in the reviewed source.",
+      "parameters_b": 685,
+      "active_parameters_b": null,
+      "release_source": "https://api-docs.deepseek.com/news/news251201/",
+      "parameters_source": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2"
+    },
+    "gemini-2.5-flash-lite": {
+      "name": "Gemini 2.5 Flash-Lite",
+      "provider": "Google",
+      "access": "closed",
+      "release_date": "2025-07-22",
+      "release_note": "Stable general availability; preview was available earlier.",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": "https://developers.googleblog.com/en/gemini-25-flash-lite-is-now-stable-and-generally-available/",
+      "parameters_source": null
+    },
+    "gemini-3.1-flash-lite": {
+      "name": "Gemini 3.1 Flash-Lite",
+      "provider": "Google",
+      "access": "closed",
+      "release_date": "2026-03-03",
+      "release_note": "Initial preview availability.",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/",
+      "parameters_source": null
+    },
+    "gemini-3.8-flash": {
+      "name": "Gemini 3.8 Flash",
+      "provider": "Google",
+      "access": "closed",
+      "release_date": "2026-09-02",
+      "release_note": "",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "parameters_source": null
+    },
+    "gemma-4-26b-a4b-it": {
+      "name": "Gemma 4 26B A4B IT",
+      "provider": "Google",
+      "access": "open",
+      "release_date": "2026-03-31",
+      "release_note": "Official model-card MoE parameter counts; the vision encoder is listed separately at approximately 0.55B.",
+      "parameters_b": 25.2,
+      "active_parameters_b": 3.8,
+      "release_source": "https://ai.google.dev/gemma/docs/releases",
+      "parameters_source": "https://ai.google.dev/gemma/docs/core/model_card_4"
+    },
+    "mistral-small-2603": {
+      "name": "Mistral Small 4",
+      "provider": "Mistral",
+      "access": "open",
+      "release_date": "2026-03-16",
+      "release_note": "",
+      "parameters_b": 119,
+      "active_parameters_b": 6.5,
+      "release_source": "https://mistral.ai/news/mistral-small-4/",
+      "parameters_source": "https://docs.mistral.ai/models/mistral-small-4-0-26-03"
+    },
+    "qwen3-30b-a3b-instruct-2507": {
+      "name": "Qwen3 30B A3B Instruct 2507",
+      "provider": "Qwen",
+      "access": "open",
+      "release_date": "2025-07-30",
+      "release_note": "",
+      "parameters_b": 30.5,
+      "active_parameters_b": 3.3,
+      "release_source": "https://github.com/QwenLM/Qwen3#news",
+      "parameters_source": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507"
+    },
+    "tencent-hy3": {
+      "name": "Tencent Hy3",
+      "provider": "Tencent",
+      "access": "open",
+      "release_date": "2026-07-06",
+      "release_note": "Official release, not the April preview. The model card lists an additional 3.8B MTP layer separately.",
+      "parameters_b": 295,
+      "active_parameters_b": 21,
+      "release_source": "https://www.tencent.com/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/",
+      "parameters_source": "https://huggingface.co/tencent/Hy3"
+    },
+    "mimo-v2.6-flash": {
+      "name": "MiMo V2.6 Flash",
+      "provider": "Xiaomi MiMo",
+      "access": "open",
+      "release_date": "2026-09-22",
+      "release_note": "API release date; size follows the published Flash-RL model card.",
+      "parameters_b": 309,
+      "active_parameters_b": 15,
+      "release_source": "https://mimo.mi.com/docs/en-US/updates/model",
+      "parameters_source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL"
+    },
+    "glm-5.3-flash": {
+      "name": "GLM 5.3 Flash",
+      "provider": "Z.ai",
+      "access": "open",
+      "release_date": "2026-08-25",
+      "release_note": "Weight release date documented by NVIDIA; parameter counts follow Z.ai documentation.",
+      "parameters_b": 320,
+      "active_parameters_b": 18,
+      "release_source": "https://docs.api.nvidia.com/nim/reference/z-ai-glm-5-3-flash",
+      "parameters_source": "https://docs.z.ai/guides/vlm/glm-5.3-flash"
     }
   }
 }

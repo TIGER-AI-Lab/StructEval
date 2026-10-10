@@ -8,6 +8,7 @@ const accessLabel = (access) => access === "open" ? "Open Source" : "Closed Sour
 const providerLogos = {
   OpenAI: "openai", Google: "google", Meta: "meta", Microsoft: "microsoft",
   Qwen: "qwen", DeepSeek: "deepseek", NVIDIA: "nvidia",
+  Mistral: "mistral", Tencent: "tencent", "Xiaomi MiMo": "xiaomimimo", "Z.ai": "zai",
 };
 
 function element(tag, text, className) {
@@ -56,6 +57,7 @@ function renderInspector(row) {
   sources.append(link("Score evidence ↗", row.artifact_url));
   panel.append(sources);
   if (row.release_note) panel.append(element("p", row.release_note, "inspector-note"));
+  if (row.notes) panel.append(element("p", row.notes, "inspector-note"));
 }
 
 function selectModel(row) {
@@ -262,7 +264,7 @@ function renderBoard() {
 }
 
 async function loadLeaderboard() {
-  const response = await fetch("./static/data/leaderboard.json");
+  const response = await fetch("./static/data/leaderboard.json", { cache: "no-cache" });
   if (!response.ok) throw new Error(`Leaderboard request failed: ${response.status}`);
   state.data = await response.json();
   if (state.data.schema_version !== 3 || !Array.isArray(state.data.results)) throw new Error("Unsupported leaderboard snapshot");
