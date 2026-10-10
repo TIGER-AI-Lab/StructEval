@@ -216,6 +216,26 @@
 			</div></div>
 			<p class="leaderboard-footnote">All models share one overall ranking; filtering preserves their overall ranks. Green rows indicate Open Source; blue rows indicate Closed Source, based on model weight availability. Scores are percentages (higher is better). T = text-only; V = visually renderable; Gen = generation; Conv = conversion. Parameters are total model parameters, with active MoE parameters shown separately. Undisclosed sizes are omitted from the size chart.</p>
 			<noscript><p class="load-error">Enable JavaScript to explore the leaderboard, or <a href="./static/data/leaderboard.json">download the full results snapshot</a>.</p></noscript>
+<!-- BEGIN LUNA SWEEP -->
+			<div class="table-toolbar" id="luna-results"><div><p class="eyebrow">New full-benchmark evaluations</p><h3 class="title is-4">GPT-6 Luna judge</h3></div><a class="evidence-link" href="./static/data/luna-sweep-20261004.json" download>Download this snapshot ↗</a></div>
+			<p class="leaderboard-intro">All results below cover the same 2,035 tasks and use GPT-6 Luna as the visual judge. They form a separate ranking because scores from the paper protocol and other judges are not directly comparable. More models will be added as their scoring finishes.</p>
+			<div class="leaderboard-card"><div class="table-scroll" tabindex="0" role="region" aria-label="GPT-6 Luna model scores; scroll horizontally for all columns">
+				<table class="modern-table" style="min-width: 760px"><caption class="visually-hidden">Full StructEval results with GPT-6 Luna as judge</caption>
+				<thead><tr><th scope="col">#</th><th scope="col" class="model-heading">Model</th><th scope="col">Overall</th><th scope="col">Renderable</th><th scope="col">Non-renderable</th><th scope="col">Render rate</th></tr></thead><tbody>
+				<tr><td class="rank">01</td><th scope="row" class="model-cell">Xiaomi MiMo V2.6 Flash</th><td class="score">76.15%</td><td>69.45%</td><td>83.82%</td><td>90.02%</td></tr>
+				<tr><td class="rank">02</td><th scope="row" class="model-cell">Gemini 3.8 Flash</th><td class="score">73.59%</td><td>65.92%</td><td>82.35%</td><td>86.83%</td></tr>
+				<tr><td class="rank">03</td><th scope="row" class="model-cell">Gemini 3.1 Flash Lite</th><td class="score">73.37%</td><td>66.22%</td><td>81.54%</td><td>87.62%</td></tr>
+				<tr><td class="rank">04</td><th scope="row" class="model-cell">Tencent HY3</th><td class="score">73.14%</td><td>69.10%</td><td>77.76%</td><td>88.80%</td></tr>
+				<tr><td class="rank">05</td><th scope="row" class="model-cell">DeepSeek V3.2</th><td class="score">72.88%</td><td>70.23%</td><td>75.91%</td><td>88.89%</td></tr>
+				<tr><td class="rank">06</td><th scope="row" class="model-cell">Mistral Small 2603</th><td class="score">70.07%</td><td>62.26%</td><td>79.01%</td><td>82.95%</td></tr>
+				<tr><td class="rank">07</td><th scope="row" class="model-cell">Gemini 2.5 Flash Lite</th><td class="score">69.85%</td><td>65.24%</td><td>75.11%</td><td>86.93%</td></tr>
+				<tr><td class="rank">08</td><th scope="row" class="model-cell">GLM 5.3 Flash</th><td class="score">69.76%</td><td>60.10%</td><td>80.79%</td><td>83.19%</td></tr>
+				<tr><td class="rank">09</td><th scope="row" class="model-cell">Qwen3 30B A3B Instruct 2507</th><td class="score">69.54%</td><td>66.51%</td><td>73.01%</td><td>86.58%</td></tr>
+				<tr><td class="rank">10</td><th scope="row" class="model-cell">Gemma 4 26B A4B IT</th><td class="score">64.24%</td><td>56.86%</td><td>72.67%</td><td>81.38%</td></tr>
+				<tr><td class="rank">11</td><th scope="row" class="model-cell">Qwen2.5 7B (local)</th><td class="score">50.10%</td><td>49.90%</td><td>50.34%</td><td>66.29%</td></tr>
+				</tbody></table></div></div>
+			<p class="leaderboard-footnote">11 of 18 models scored as of 2026-10-10 22:25 UTC. Render rate is the mean render score. Scores are percentages, and all 2,035 tasks remain in the denominator.</p>
+<!-- END LUNA SWEEP -->
 		</div>
 	</section>
 

@@ -1,0 +1,129 @@
+{
+  "updated_at": "2026-10-10 22:25 UTC",
+  "dataset_n": 2035,
+  "judge": "openrouter/openai/gpt-6-luna",
+  "score_aggregation": "Mean over all 2,035 examples",
+  "results": [
+    {
+      "model": "Xiaomi MiMo V2.6 Flash",
+      "model_id": "xiaomi__mimo-v2.6-flash",
+      "n": 2035,
+      "overall": 76.15,
+      "renderable": 69.45,
+      "non_renderable": 83.82,
+      "render_rate": 90.02,
+      "summary_sha256": "b4040b68aa70cf38742c0086ff9cadaffcda9f3422b5067d4dd072e90a4c69e5",
+      "source": "experiment_results/model_sweep_20261004/generations/xiaomi__mimo-v2.6-flash/summary.json"
+    },
+    {
+      "model": "Gemini 3.8 Flash",
+      "model_id": "google__gemini-3.8-flash",
+      "n": 2035,
+      "overall": 73.59,
+      "renderable": 65.92,
+      "non_renderable": 82.35,
+      "render_rate": 86.83,
+      "summary_sha256": "871840128a331779e80c68fad202ed4910fe95648abbc5b50d1ccbbcec3800ea",
+      "source": "experiment_results/model_sweep_20261004/generations/google__gemini-3.8-flash/summary.json"
+    },
+    {
+      "model": "Gemini 3.1 Flash Lite",
+      "model_id": "google__gemini-3.1-flash-lite",
+      "n": 2035,
+      "overall": 73.37,
+      "renderable": 66.22,
+      "non_renderable": 81.54,
+      "render_rate": 87.62,
+      "summary_sha256": "acdb9a72dc8a650207df2c8b867019487005db4219c77cdc267b6d8b35d44919",
+      "source": "experiment_results/model_sweep_20261004/generations/google__gemini-3.1-flash-lite/summary.json"
+    },
+    {
+      "model": "Tencent HY3",
+      "model_id": "tencent__hy3",
+      "n": 2035,
+      "overall": 73.14,
+      "renderable": 69.1,
+      "non_renderable": 77.76,
+      "render_rate": 88.8,
+      "summary_sha256": "23f3bb1b692d359f32561014ce8939f5b00014bfaafe40bd7324adced56f5d1d",
+      "source": "experiment_results/model_sweep_20261004/generations/tencent__hy3/summary.json"
+    },
+    {
+      "model": "DeepSeek V3.2",
+      "model_id": "deepseek__deepseek-v3.2",
+      "n": 2035,
+      "overall": 72.88,
+      "renderable": 70.23,
+      "non_renderable": 75.91,
+      "render_rate": 88.89,
+      "summary_sha256": "a1ec1fa5a36bcae1204117cf448389ab65213d5089a09192fda16554c17b62fc",
+      "source": "experiment_results/model_sweep_20261004/generations/deepseek__deepseek-v3.2/summary.json"
+    },
+    {
+      "model": "Mistral Small 2603",
+      "model_id": "mistralai__mistral-small-2603",
+      "n": 2035,
+      "overall": 70.07,
+      "renderable": 62.26,
+      "non_renderable": 79.01,
+      "render_rate": 82.95,
+      "summary_sha256": "82e297901333ec7fd6a8d1f085f93a62dc6c68146753e5fa727e2c4f1fd1b8c0",
+      "source": "experiment_results/model_sweep_20261004/generations/mistralai__mistral-small-2603/summary.json"
+    },
+    {
+      "model": "Gemini 2.5 Flash Lite",
+      "model_id": "google__gemini-2.5-flash-lite",
+      "n": 2035,
+      "overall": 69.85,
+      "renderable": 65.24,
+      "non_renderable": 75.11,
+      "render_rate": 86.93,
+      "summary_sha256": "41ba4178988a219bbd7aaa01c4b23ffed4712313a4bdaedfef976f37bcb8429c",
+      "source": "experiment_results/model_sweep_20261004/generations/google__gemini-2.5-flash-lite/summary.json"
+    },
+    {
+      "model": "GLM 5.3 Flash",
+      "model_id": "z-ai__glm-5.3-flash",
+      "n": 2035,
+      "overall": 69.76,
+      "renderable": 60.1,
+      "non_renderable": 80.79,
+      "render_rate": 83.19,
+      "summary_sha256": "8eab9294be4f0e162383643a091f8f5b477190fa00ef7955ea12d72008eb785c",
+      "source": "experiment_results/model_sweep_20261004/generations/z-ai__glm-5.3-flash/summary.json"
+    },
+    {
+      "model": "Qwen3 30B A3B Instruct 2507",
+      "model_id": "qwen__qwen3-30b-a3b-instruct-2507",
+      "n": 2035,
+      "overall": 69.54,
+      "renderable": 66.51,
+      "non_renderable": 73.01,
+      "render_rate": 86.58,
+      "summary_sha256": "ce931c7f43953fd272f24859f0f2a2a7d80a07071ba46b8b74705a9edd506945",
+      "source": "experiment_results/model_sweep_20261004/generations/qwen__qwen3-30b-a3b-instruct-2507/summary.json"
+    },
+    {
+      "model": "Gemma 4 26B A4B IT",
+      "model_id": "google__gemma-4-26b-a4b-it",
+      "n": 2035,
+      "overall": 64.24,
+      "renderable": 56.86,
+      "non_renderable": 72.67,
+      "render_rate": 81.38,
+      "summary_sha256": "3e378ed095f4acbc467ad53241cf99e69166d2aede1c514780ae78825b73c70f",
+      "source": "experiment_results/model_sweep_20261004/generations/google__gemma-4-26b-a4b-it/summary.json"
+    },
+    {
+      "model": "Qwen2.5 7B (local)",
+      "model_id": "qwen2.5-7b",
+      "n": 2035,
+      "overall": 50.1,
+      "renderable": 49.9,
+      "non_renderable": 50.34,
+      "render_rate": 66.29,
+      "summary_sha256": "9dc110c7132ac889c39628dad2d180f3dbcfc398aa97b6582dd6d2794b6ed46d",
+      "source": "experiment_results/model_sweep_20261004/local_generations/qwen2.5-7b/summary.json"
+    }
+  ]
+}
