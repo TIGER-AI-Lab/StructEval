@@ -83,6 +83,9 @@ The 100-task GPT-6.1 Sol / Claude Sonnet 5.5 comparison and unfinished sweep run
 are excluded from this full-benchmark update. Prior local Gemma judge runs remain
 excluded. Release dates and parameter counts link to the reviewed vendor sources.
 
+The previously published `static/data/luna-sweep-20261004.json` batch snapshot is
+retained as an archive; its separate table is superseded by the unified board.
+
 ## Score provenance
 
 Recorded scores are preserved: imported runs average all evaluated examples,
