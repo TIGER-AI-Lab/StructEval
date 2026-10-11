@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-11T01:24:27+00:00",
+  "updated_at": "2026-10-11T04:21:13+00:00",
   "dataset_n": 2035,
   "dataset_sha256": "e22afaac1db009fb05ab0fef183ed1fc66e7999960ad26235b7c2d70e4f0913a",
   "results": [
@@ -525,6 +525,46 @@
       "artifact_url": "./static/data/artifacts/kimi-k2.5-luna-20261010.json"
     },
     {
+      "name": "Gemma 4 31B IT",
+      "provider": "Google",
+      "access": "open",
+      "release_date": "2026-03-31",
+      "release_note": "Official model card reports 30.7B parameters for the dense model; the vision encoder is listed separately at approximately 0.55B.",
+      "parameters_b": 30.7,
+      "active_parameters_b": null,
+      "release_source": "https://ai.google.dev/gemma/docs/releases",
+      "parameters_source": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "id": "gemma-4-31b-it-luna-20261010",
+      "model_key": "gemma-4-31b-it",
+      "evaluation": "experiment_results/model_sweep_20261004/generations/google__gemma-4-31b-it/evaluation_luna.json",
+      "evaluated_on": "2026-10-10",
+      "judge": "GPT-6 Luna",
+      "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Angular, Matplotlib, Typst. Recorded failures remain included in scores.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "score_aggregation": "Mean over evaluated examples",
+      "complete": true,
+      "n": 2035,
+      "expected_n": 2035,
+      "subset_counts": {
+        "v_generation": 650,
+        "v_conversion": 435,
+        "t_generation": 250,
+        "t_conversion": 700
+      },
+      "metrics": {
+        "overall": 71.78,
+        "renderable": 63.74,
+        "non_renderable": 80.96,
+        "render_rate": 87.47,
+        "t_generation": 94.33,
+        "t_conversion": 76.19,
+        "v_generation": 58.65,
+        "v_conversion": 71.36
+      },
+      "artifact_url": "./static/data/artifacts/gemma-4-31b-it-luna-20261010.json"
+    },
+    {
       "name": "Gemini 1.5 Pro",
       "provider": "Google",
       "access": "closed",
@@ -820,6 +860,46 @@
       "artifact_url": "./static/data/artifacts/gemma-nemotron-4b-bf16-ea-luna-20261004.json"
     },
     {
+      "name": "Qwen3 8B (Ollama)",
+      "provider": "Qwen",
+      "access": "open",
+      "release_date": "2025-04-29",
+      "release_note": "The evaluated Ollama checkpoint quantization was not recorded.",
+      "parameters_b": 8.2,
+      "active_parameters_b": null,
+      "release_source": "https://qwenlm.github.io/blog/qwen3/",
+      "parameters_source": "https://huggingface.co/Qwen/Qwen3-8B",
+      "id": "qwen3-8b-luna-20261010",
+      "model_key": "Qwen3-8B",
+      "evaluation": "experiment_results/model_sweep_20261004/local_generations/qwen3-8b/evaluation_luna.json",
+      "evaluated_on": "2026-10-10",
+      "judge": "GPT-6 Luna",
+      "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores. Ollama local generation, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_local.py",
+      "score_aggregation": "Mean over evaluated examples",
+      "complete": true,
+      "n": 2035,
+      "expected_n": 2035,
+      "subset_counts": {
+        "v_generation": 650,
+        "v_conversion": 435,
+        "t_generation": 250,
+        "t_conversion": 700
+      },
+      "metrics": {
+        "overall": 64.71,
+        "renderable": 57.14,
+        "non_renderable": 73.36,
+        "render_rate": 81.13,
+        "t_generation": 66.54,
+        "t_conversion": 75.79,
+        "v_generation": 57.7,
+        "v_conversion": 56.3
+      },
+      "artifact_url": "./static/data/artifacts/qwen3-8b-luna-20261010.json"
+    },
+    {
       "name": "Gemma 4 26B A4B IT",
       "provider": "Google",
       "access": "open",
@@ -942,6 +1022,46 @@
       },
       "artifact_url": "./static/data/paper-baseline.json",
       "notes": "Original website paper results; exact evaluation date and model snapshot not recorded in that table."
+    },
+    {
+      "name": "Gemma3 4B (Ollama)",
+      "provider": "Google",
+      "access": "open",
+      "release_date": "2025-03-10",
+      "release_note": "The evaluated Ollama checkpoint quantization was not recorded; 4B is the vendor-reported size class.",
+      "parameters_b": 4,
+      "active_parameters_b": null,
+      "release_source": "https://ai.google.dev/gemma/docs/releases",
+      "parameters_source": "https://huggingface.co/google/gemma-3-4b-it",
+      "id": "gemma3-4b-luna-20261010",
+      "model_key": "gemma3-4b",
+      "evaluation": "experiment_results/model_sweep_20261004/local_generations/gemma3-4b/evaluation_luna.json",
+      "evaluated_on": "2026-10-10",
+      "judge": "GPT-6 Luna",
+      "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, TOML, Typst. Recorded failures remain included in scores. Ollama local generation, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_local.py",
+      "score_aggregation": "Mean over evaluated examples",
+      "complete": true,
+      "n": 2035,
+      "expected_n": 2035,
+      "subset_counts": {
+        "v_generation": 650,
+        "v_conversion": 435,
+        "t_generation": 250,
+        "t_conversion": 700
+      },
+      "metrics": {
+        "overall": 54.14,
+        "renderable": 46.7,
+        "non_renderable": 62.63,
+        "render_rate": 73.66,
+        "t_generation": 60.89,
+        "t_conversion": 63.25,
+        "v_generation": 43.43,
+        "v_conversion": 51.57
+      },
+      "artifact_url": "./static/data/artifacts/gemma3-4b-luna-20261010.json"
     },
     {
       "name": "Llama 3 8B Instruct",

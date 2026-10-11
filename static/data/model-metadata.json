@@ -1,5 +1,5 @@
 {
-  "reviewed_at": "2026-10-10",
+  "reviewed_at": "2026-10-11",
   "notes": "Release dates describe the vendor availability documented in each linked source, not the evaluation date. Parameter counts are vendor-reported total parameters, in billions; MoE activated parameters are separate. Null means not publicly documented in the reviewed sources.",
   "models": {
     "GPT-4o": {
@@ -331,6 +331,39 @@
       "active_parameters_b": null,
       "release_source": null,
       "parameters_source": null
+    },
+    "gemma-4-31b-it": {
+      "name": "Gemma 4 31B IT",
+      "provider": "Google",
+      "access": "open",
+      "release_date": "2026-03-31",
+      "release_note": "Official model card reports 30.7B parameters for the dense model; the vision encoder is listed separately at approximately 0.55B.",
+      "parameters_b": 30.7,
+      "active_parameters_b": null,
+      "release_source": "https://ai.google.dev/gemma/docs/releases",
+      "parameters_source": "https://ai.google.dev/gemma/docs/core/model_card_4"
+    },
+    "Qwen3-8B": {
+      "name": "Qwen3 8B",
+      "provider": "Qwen",
+      "access": "open",
+      "release_date": "2025-04-29",
+      "release_note": "The evaluated Ollama checkpoint quantization was not recorded.",
+      "parameters_b": 8.2,
+      "active_parameters_b": null,
+      "release_source": "https://qwenlm.github.io/blog/qwen3/",
+      "parameters_source": "https://huggingface.co/Qwen/Qwen3-8B"
+    },
+    "gemma3-4b": {
+      "name": "Gemma3 4B",
+      "provider": "Google",
+      "access": "open",
+      "release_date": "2025-03-10",
+      "release_note": "The evaluated Ollama checkpoint quantization was not recorded; 4B is the vendor-reported size class.",
+      "parameters_b": 4,
+      "active_parameters_b": null,
+      "release_source": "https://ai.google.dev/gemma/docs/releases",
+      "parameters_source": "https://huggingface.co/google/gemma-3-4b-it"
     }
   }
 }

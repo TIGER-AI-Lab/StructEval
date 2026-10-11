@@ -62,10 +62,10 @@ GPT-4.1 mini now appears once with its updated score. Nemotron 3 Ultra's two jud
 runs now cover all 2,035 tasks. Its displayed result uses the first configured
 source, GPT-4.1 mini (74.26%), rather than choosing the higher-scoring judge.
 
-## October 10, 2026 update
+## October 11, 2026 update
 
-The snapshot contains 29 ranked models. Eleven full evaluations from
-`experiment_results/model_sweep_20261004` add ten new models and update Qwen2.5
+The snapshot contains 32 ranked models. Sixteen full evaluations from
+`experiment_results/model_sweep_20261004` add fifteen new models and update Qwen2.5
 7B Instruct to its latest Ollama run (50.10%). Nemotron also moves from pending to
 ranked after completing its full evaluation. Original reported results remain in
 `paper-baseline.json` as evidence, including the superseded Qwen2.5 row.
@@ -86,8 +86,8 @@ excluded. Release dates and parameter counts link to the reviewed vendor sources
 The previously published `static/data/luna-sweep-20261004.json` batch snapshot is
 retained as an archive; its separate table is superseded by the unified board.
 
-The snapshot also includes the subsequently completed DeepSeek V3.1 Terminus and
-Kimi K2.5 evaluations. Gemma-Nemotron 4B BF16 EA was discovered under
+The snapshot also includes the subsequently completed DeepSeek V3.1 Terminus,
+Kimi K2.5, Gemma 4 31B IT, Qwen3 8B, and Gemma3 4B evaluations. Gemma-Nemotron 4B BF16 EA was discovered under
 `runs/gemma-nemotron-4b-bf16-ea-vllm-full`, outside the sweep directories. Its
 October 4 GPT-6 Luna rejudge covers all 2,035 tasks and scores 65.55%; the original
 self-judged artifact is excluded. The evaluation owner confirms this is a
