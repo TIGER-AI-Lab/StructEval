@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-10T22:25:44+00:00",
+  "updated_at": "2026-10-11T00:40:14+00:00",
   "dataset_n": 2035,
   "dataset_sha256": "e22afaac1db009fb05ab0fef183ed1fc66e7999960ad26235b7c2d70e4f0913a",
   "results": [
@@ -216,6 +216,46 @@
       },
       "artifact_url": "./static/data/paper-baseline.json",
       "notes": "Original website paper results; exact evaluation date and model snapshot not recorded in that table."
+    },
+    {
+      "name": "DeepSeek V3.1 Terminus",
+      "provider": "DeepSeek",
+      "access": "open",
+      "release_date": "2025-09-22",
+      "release_note": "Terminus update of DeepSeek V3.1; total model size follows the official checkpoint card.",
+      "parameters_b": 685,
+      "active_parameters_b": null,
+      "release_source": "https://api-docs.deepseek.com/news/news250922/",
+      "parameters_source": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",
+      "id": "deepseek-v3.1-terminus-luna-20261010",
+      "model_key": "deepseek-v3.1-terminus",
+      "evaluation": "experiment_results/model_sweep_20261004/generations/deepseek__deepseek-v3.1-terminus/evaluation_luna.json",
+      "evaluated_on": "2026-10-10",
+      "judge": "GPT-6 Luna",
+      "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "score_aggregation": "Mean over evaluated examples",
+      "complete": true,
+      "n": 2035,
+      "expected_n": 2035,
+      "subset_counts": {
+        "v_generation": 650,
+        "v_conversion": 435,
+        "t_generation": 250,
+        "t_conversion": 700
+      },
+      "metrics": {
+        "overall": 74.54,
+        "renderable": 68.67,
+        "non_renderable": 81.26,
+        "render_rate": 90.12,
+        "t_generation": 92.97,
+        "t_conversion": 77.07,
+        "v_generation": 64.3,
+        "v_conversion": 75.2
+      },
+      "artifact_url": "./static/data/artifacts/deepseek-v3.1-terminus-luna-20261010.json"
     },
     {
       "name": "Nemotron 3 Ultra",
@@ -443,6 +483,46 @@
         "v_conversion": 78.82
       },
       "artifact_url": "./static/data/artifacts/deepseek-v3.2-luna-20261010.json"
+    },
+    {
+      "name": "Kimi K2.5",
+      "provider": "Moonshot AI",
+      "access": "open",
+      "release_date": "2026-01-27",
+      "release_note": "Total and active MoE parameter counts follow the official model card.",
+      "parameters_b": 1000,
+      "active_parameters_b": 32,
+      "release_source": "https://www.kimi.ai/ai-models/kimi-k2-5",
+      "parameters_source": "https://huggingface.co/moonshotai/Kimi-K2.5",
+      "id": "kimi-k2.5-luna-20261010",
+      "model_key": "kimi-k2.5",
+      "evaluation": "experiment_results/model_sweep_20261004/generations/moonshotai__kimi-k2.5/evaluation_luna.json",
+      "evaluated_on": "2026-10-10",
+      "judge": "GPT-6 Luna",
+      "protocol_source": "experiment_results/model_sweep_20261004/score_priority.py",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "score_aggregation": "Mean over evaluated examples",
+      "complete": true,
+      "n": 2035,
+      "expected_n": 2035,
+      "subset_counts": {
+        "v_generation": 650,
+        "v_conversion": 435,
+        "t_generation": 250,
+        "t_conversion": 700
+      },
+      "metrics": {
+        "overall": 72.79,
+        "renderable": 68.65,
+        "non_renderable": 77.52,
+        "render_rate": 89.43,
+        "t_generation": 91.89,
+        "t_conversion": 72.39,
+        "v_generation": 62.42,
+        "v_conversion": 77.97
+      },
+      "artifact_url": "./static/data/artifacts/kimi-k2.5-luna-20261010.json"
     },
     {
       "name": "Gemini 1.5 Pro",

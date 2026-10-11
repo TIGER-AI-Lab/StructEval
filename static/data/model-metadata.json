@@ -288,6 +288,28 @@
       "release_source": "https://mimo.mi.com/docs/en-US/updates/model",
       "parameters_source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL"
     },
+    "deepseek-v3.1-terminus": {
+      "name": "DeepSeek V3.1 Terminus",
+      "provider": "DeepSeek",
+      "access": "open",
+      "release_date": "2025-09-22",
+      "release_note": "Terminus update of DeepSeek V3.1; total model size follows the official checkpoint card.",
+      "parameters_b": 685,
+      "active_parameters_b": null,
+      "release_source": "https://api-docs.deepseek.com/news/news250922/",
+      "parameters_source": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus"
+    },
+    "kimi-k2.5": {
+      "name": "Kimi K2.5",
+      "provider": "Moonshot AI",
+      "access": "open",
+      "release_date": "2026-01-27",
+      "release_note": "Total and active MoE parameter counts follow the official model card.",
+      "parameters_b": 1000,
+      "active_parameters_b": 32,
+      "release_source": "https://www.kimi.ai/ai-models/kimi-k2-5",
+      "parameters_source": "https://huggingface.co/moonshotai/Kimi-K2.5"
+    },
     "glm-5.3-flash": {
       "name": "GLM 5.3 Flash",
       "provider": "Z.ai",

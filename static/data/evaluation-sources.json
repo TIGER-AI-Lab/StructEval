@@ -156,6 +156,26 @@
       "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
     },
     {
+      "id": "deepseek-v3.1-terminus-luna-20261010",
+      "model_key": "deepseek-v3.1-terminus",
+      "evaluation": "experiment_results/model_sweep_20261004/generations/deepseek__deepseek-v3.1-terminus/evaluation_luna.json",
+      "evaluated_on": "2026-10-10",
+      "judge": "GPT-6 Luna",
+      "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+    },
+    {
+      "id": "kimi-k2.5-luna-20261010",
+      "model_key": "kimi-k2.5",
+      "evaluation": "experiment_results/model_sweep_20261004/generations/moonshotai__kimi-k2.5/evaluation_luna.json",
+      "evaluated_on": "2026-10-10",
+      "judge": "GPT-6 Luna",
+      "protocol_source": "experiment_results/model_sweep_20261004/score_priority.py",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+    },
+    {
       "id": "qwen2.5-7b-instruct-luna-20261010",
       "model_key": "Qwen2.5-7B-Instruct",
       "evaluation": "experiment_results/model_sweep_20261004/local_generations/qwen2.5-7b/evaluation_luna.json",
