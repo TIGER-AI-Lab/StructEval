@@ -64,6 +64,20 @@ source, GPT-4.1 mini (74.26%), rather than choosing the higher-scoring judge.
 
 ## October 11, 2026 update
 
+The full refresh checked evaluation files under both `experiment_results/` and
+`runs/`, including ignored files and rejudge directories. All 25 reviewed full
+evaluation sources were reimported against the 2,035-task dataset; all eighteen
+models listed in the October sweep's scoring configuration are included.
+Together with the original paper results, model deduplication yields 34 ranked
+models. There are no unlisted completed runs using the accepted judge protocols.
+
+The remaining full artifacts are accounted for: two earlier GPT-4.1 mini runs
+are superseded by its fixed rerender; Gemma-Nemotron's self-judged run is
+superseded by its Luna rejudge; and the five `small_models_full_20261002` runs
+(Gemma 4 E4B, GPT-6 Luna, MiniCPM5 2B, Nemotron3 Nano 4B, and Qwen3.5 4B)
+still use the previously excluded local Gemma judge. Smoke and subset runs,
+including the 100-task Sol/Sonnet comparison, do not supply full-benchmark ranks.
+
 The snapshot contains 34 ranked models. All eighteen full evaluations from
 `experiment_results/model_sweep_20261004` add seventeen new models and update Qwen2.5
 7B Instruct to its latest Ollama run (50.10%). Nemotron also moves from pending to
