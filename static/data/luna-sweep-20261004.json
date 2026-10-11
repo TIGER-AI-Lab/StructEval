@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10 22:25 UTC",
+  "updated_at": "2026-10-11 00:39 UTC",
   "dataset_n": 2035,
   "judge": "openrouter/openai/gpt-6-luna",
   "score_aggregation": "Mean over all 2,035 examples",
@@ -14,6 +14,17 @@
       "render_rate": 90.02,
       "summary_sha256": "b4040b68aa70cf38742c0086ff9cadaffcda9f3422b5067d4dd072e90a4c69e5",
       "source": "experiment_results/model_sweep_20261004/generations/xiaomi__mimo-v2.6-flash/summary.json"
+    },
+    {
+      "model": "DeepSeek V3.1 Terminus",
+      "model_id": "deepseek__deepseek-v3.1-terminus",
+      "n": 2035,
+      "overall": 74.54,
+      "renderable": 68.67,
+      "non_renderable": 81.26,
+      "render_rate": 90.12,
+      "summary_sha256": "3c1a3c84e660cea895b1b50d6f0ad1db0a8c17f63f90779738f0330995769188",
+      "source": "experiment_results/model_sweep_20261004/generations/deepseek__deepseek-v3.1-terminus/summary.json"
     },
     {
       "model": "Gemini 3.8 Flash",
@@ -58,6 +69,17 @@
       "render_rate": 88.89,
       "summary_sha256": "a1ec1fa5a36bcae1204117cf448389ab65213d5089a09192fda16554c17b62fc",
       "source": "experiment_results/model_sweep_20261004/generations/deepseek__deepseek-v3.2/summary.json"
+    },
+    {
+      "model": "Kimi K2.5",
+      "model_id": "moonshotai__kimi-k2.5",
+      "n": 2035,
+      "overall": 72.79,
+      "renderable": 68.65,
+      "non_renderable": 77.52,
+      "render_rate": 89.43,
+      "summary_sha256": "d465f99d80f326f3ce6986c9019f0d503e87276087e8c3d376f2d8f0bfa6fc58",
+      "source": "experiment_results/model_sweep_20261004/generations/moonshotai__kimi-k2.5/summary.json"
     },
     {
       "model": "Mistral Small 2603",
