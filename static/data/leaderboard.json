@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-11T00:40:14+00:00",
+  "updated_at": "2026-10-11T01:24:27+00:00",
   "dataset_n": 2035,
   "dataset_sha256": "e22afaac1db009fb05ab0fef183ed1fc66e7999960ad26235b7c2d70e4f0913a",
   "results": [
@@ -778,6 +778,46 @@
       },
       "artifact_url": "./static/data/paper-baseline.json",
       "notes": "Original website paper results; exact evaluation date and model snapshot not recorded in that table."
+    },
+    {
+      "name": "Gemma-Nemotron 4B BF16 EA",
+      "provider": "NVIDIA",
+      "access": "closed",
+      "release_date": null,
+      "release_note": "Non-public Early Access checkpoint (v1.0.0-ea), confirmed by the evaluation owner. Public release date and vendor-reported total parameter count are not documented. The 4B checkpoint name is not treated as a verified total parameter count.",
+      "parameters_b": null,
+      "active_parameters_b": null,
+      "release_source": null,
+      "parameters_source": null,
+      "id": "gemma-nemotron-4b-bf16-ea-luna-20261004",
+      "model_key": "gemma-nemotron-4b-bf16-ea",
+      "evaluation": "runs/gemma-nemotron-4b-bf16-ea-vllm-full/rejudge_luna/evaluation.json",
+      "evaluated_on": "2026-10-04",
+      "judge": "GPT-6 Luna",
+      "protocol_source": "runs/gemma-nemotron-4b-bf16-ea-vllm-full/rejudge_luna.py",
+      "generation_protocol_source": "runs/gemma-nemotron-4b-bf16-ea-vllm-full/run.json",
+      "notes": "Full 2,035-task evaluation of the BF16 v1.0.0-ea checkpoint served locally with vLLM, thinking disabled, temperature 1.0, top-p 0.95, and 8,192 output tokens. GPT-6 Luna rejudged the saved outputs and rendered images; the original self-judged scores are not used. No successful Typst renders were recorded; failures remain included in scores.",
+      "score_aggregation": "Mean over evaluated examples",
+      "complete": true,
+      "n": 2035,
+      "expected_n": 2035,
+      "subset_counts": {
+        "v_generation": 650,
+        "v_conversion": 435,
+        "t_generation": 250,
+        "t_conversion": 700
+      },
+      "metrics": {
+        "overall": 65.55,
+        "renderable": 57.7,
+        "non_renderable": 74.53,
+        "render_rate": 81.57,
+        "t_generation": 75.84,
+        "t_conversion": 74.06,
+        "v_generation": 59.38,
+        "v_conversion": 55.17
+      },
+      "artifact_url": "./static/data/artifacts/gemma-nemotron-4b-bf16-ea-luna-20261004.json"
     },
     {
       "name": "Gemma 4 26B A4B IT",

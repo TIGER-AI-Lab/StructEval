@@ -64,7 +64,7 @@ source, GPT-4.1 mini (74.26%), rather than choosing the higher-scoring judge.
 
 ## October 10, 2026 update
 
-The snapshot contains 26 ranked models. Eleven full evaluations from
+The snapshot contains 29 ranked models. Eleven full evaluations from
 `experiment_results/model_sweep_20261004` add ten new models and update Qwen2.5
 7B Instruct to its latest Ollama run (50.10%). Nemotron also moves from pending to
 ranked after completing its full evaluation. Original reported results remain in
@@ -85,6 +85,15 @@ excluded. Release dates and parameter counts link to the reviewed vendor sources
 
 The previously published `static/data/luna-sweep-20261004.json` batch snapshot is
 retained as an archive; its separate table is superseded by the unified board.
+
+The snapshot also includes the subsequently completed DeepSeek V3.1 Terminus and
+Kimi K2.5 evaluations. Gemma-Nemotron 4B BF16 EA was discovered under
+`runs/gemma-nemotron-4b-bf16-ea-vllm-full`, outside the sweep directories. Its
+October 4 GPT-6 Luna rejudge covers all 2,035 tasks and scores 65.55%; the original
+self-judged artifact is excluded. The evaluation owner confirms this is a
+non-public Early Access checkpoint, so it is categorized as closed. Its public
+release date and vendor-reported total parameter count remain undocumented,
+so it appears in the unified table but is omitted from both chart axes.
 
 ## Score provenance
 
@@ -109,7 +118,8 @@ with the agreed judge has been reviewed.
 
 ## Add a reviewed run
 
-1. Save the run's full evaluation JSON and document the exact model/provider,
+1. Look for completed runs in both `experiment_results/` and `runs/`, including
+   rejudge subdirectories. Save the run's full evaluation JSON and document the exact model/provider,
    model snapshot when available, dataset, judge, generation settings, rendering
    environment, and evaluation date in the evaluation repository.
 2. Add its model metadata to `static/data/model-metadata.json` with source links.
