@@ -364,6 +364,28 @@
       "active_parameters_b": null,
       "release_source": "https://ai.google.dev/gemma/docs/releases",
       "parameters_source": "https://huggingface.co/google/gemma-3-4b-it"
+    },
+    "qwen3.5-9b": {
+      "name": "Qwen3.5 9B",
+      "provider": "Qwen",
+      "access": "open",
+      "release_date": "2026-03-02",
+      "release_note": "The model card reports 9B language model parameters; a vision encoder is listed separately. Evaluated Ollama checkpoint quantization was not recorded.",
+      "parameters_b": 9,
+      "active_parameters_b": null,
+      "release_source": "https://github.com/QwenLM/Qwen3.8/blob/main/README.md#news",
+      "parameters_source": "https://huggingface.co/Qwen/Qwen3.5-9B"
+    },
+    "gemma2-9b": {
+      "name": "Gemma 2 9B",
+      "provider": "Google",
+      "access": "open",
+      "release_date": "2024-06-27",
+      "release_note": "9B is the vendor-reported size class. Evaluated Ollama checkpoint quantization was not recorded.",
+      "parameters_b": 9,
+      "active_parameters_b": null,
+      "release_source": "https://ai.google.dev/gemma/docs/releases",
+      "parameters_source": "https://huggingface.co/google/gemma-2-9b-it"
     }
   }
 }

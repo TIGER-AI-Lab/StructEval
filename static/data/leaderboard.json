@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-11T04:21:13+00:00",
+  "updated_at": "2026-10-11T07:17:02+00:00",
   "dataset_n": 2035,
   "dataset_sha256": "e22afaac1db009fb05ab0fef183ed1fc66e7999960ad26235b7c2d70e4f0913a",
   "results": [
@@ -593,6 +593,46 @@
       "notes": "Original website paper results; exact evaluation date and model snapshot not recorded in that table."
     },
     {
+      "name": "Qwen3.5 9B (Ollama)",
+      "provider": "Qwen",
+      "access": "open",
+      "release_date": "2026-03-02",
+      "release_note": "The model card reports 9B language model parameters; a vision encoder is listed separately. Evaluated Ollama checkpoint quantization was not recorded.",
+      "parameters_b": 9,
+      "active_parameters_b": null,
+      "release_source": "https://github.com/QwenLM/Qwen3.8/blob/main/README.md#news",
+      "parameters_source": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "id": "qwen3.5-9b-luna-20261011",
+      "model_key": "qwen3.5-9b",
+      "evaluation": "experiment_results/model_sweep_20261004/local_generations/qwen3.5-9b/evaluation_luna.json",
+      "evaluated_on": "2026-10-11",
+      "judge": "GPT-6 Luna",
+      "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores. Ollama local generation, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_local.py",
+      "score_aggregation": "Mean over evaluated examples",
+      "complete": true,
+      "n": 2035,
+      "expected_n": 2035,
+      "subset_counts": {
+        "v_generation": 650,
+        "v_conversion": 435,
+        "t_generation": 250,
+        "t_conversion": 700
+      },
+      "metrics": {
+        "overall": 70.96,
+        "renderable": 62.68,
+        "non_renderable": 80.43,
+        "render_rate": 86.04,
+        "t_generation": 78.73,
+        "t_conversion": 81.03,
+        "v_generation": 58.76,
+        "v_conversion": 68.53
+      },
+      "artifact_url": "./static/data/artifacts/qwen3.5-9b-luna-20261011.json"
+    },
+    {
       "name": "Mistral Small 4",
       "provider": "Mistral",
       "access": "open",
@@ -818,6 +858,46 @@
       },
       "artifact_url": "./static/data/paper-baseline.json",
       "notes": "Original website paper results; exact evaluation date and model snapshot not recorded in that table."
+    },
+    {
+      "name": "Gemma 2 9B (Ollama)",
+      "provider": "Google",
+      "access": "open",
+      "release_date": "2024-06-27",
+      "release_note": "9B is the vendor-reported size class. Evaluated Ollama checkpoint quantization was not recorded.",
+      "parameters_b": 9,
+      "active_parameters_b": null,
+      "release_source": "https://ai.google.dev/gemma/docs/releases",
+      "parameters_source": "https://huggingface.co/google/gemma-2-9b-it",
+      "id": "gemma2-9b-luna-20261011",
+      "model_key": "gemma2-9b",
+      "evaluation": "experiment_results/model_sweep_20261004/local_generations/gemma2-9b/evaluation_luna.json",
+      "evaluated_on": "2026-10-11",
+      "judge": "GPT-6 Luna",
+      "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, TOML, Typst. Recorded failures remain included in scores. Ollama local generation, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded. Three generation requests failed with HTTP 500 after retries and are included as empty outputs in the 2,035-task score (at most 0.15 percentage points of the aggregate).",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_local.py",
+      "score_aggregation": "Mean over evaluated examples",
+      "complete": true,
+      "n": 2035,
+      "expected_n": 2035,
+      "subset_counts": {
+        "v_generation": 650,
+        "v_conversion": 435,
+        "t_generation": 250,
+        "t_conversion": 700
+      },
+      "metrics": {
+        "overall": 66.29,
+        "renderable": 57.41,
+        "non_renderable": 76.43,
+        "render_rate": 83.0,
+        "t_generation": 70.3,
+        "t_conversion": 78.62,
+        "v_generation": 53.1,
+        "v_conversion": 63.84
+      },
+      "artifact_url": "./static/data/artifacts/gemma2-9b-luna-20261011.json"
     },
     {
       "name": "Gemma-Nemotron 4B BF16 EA",

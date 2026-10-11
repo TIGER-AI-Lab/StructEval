@@ -64,8 +64,8 @@ source, GPT-4.1 mini (74.26%), rather than choosing the higher-scoring judge.
 
 ## October 11, 2026 update
 
-The snapshot contains 32 ranked models. Sixteen full evaluations from
-`experiment_results/model_sweep_20261004` add fifteen new models and update Qwen2.5
+The snapshot contains 34 ranked models. All eighteen full evaluations from
+`experiment_results/model_sweep_20261004` add seventeen new models and update Qwen2.5
 7B Instruct to its latest Ollama run (50.10%). Nemotron also moves from pending to
 ranked after completing its full evaluation. Original reported results remain in
 `paper-baseline.json` as evidence, including the superseded Qwen2.5 row.
@@ -79,15 +79,17 @@ and downloadable evidence. The local Qwen run also records its 8,192-token limit
 and unrecorded checkpoint quantization. Evaluation dates come from completion
 timestamps in the run state, converted to America/Toronto.
 
-The 100-task GPT-6.1 Sol / Claude Sonnet 5.5 comparison and unfinished sweep runs
-are excluded from this full-benchmark update. Prior local Gemma judge runs remain
+The 100-task GPT-6.1 Sol / Claude Sonnet 5.5 comparison is excluded from this
+full-benchmark update. Prior local Gemma judge runs remain
 excluded. Release dates and parameter counts link to the reviewed vendor sources.
 
 The previously published `static/data/luna-sweep-20261004.json` batch snapshot is
 retained as an archive; its separate table is superseded by the unified board.
 
 The snapshot also includes the subsequently completed DeepSeek V3.1 Terminus,
-Kimi K2.5, Gemma 4 31B IT, Qwen3 8B, and Gemma3 4B evaluations. Gemma-Nemotron 4B BF16 EA was discovered under
+Kimi K2.5, Gemma 4 31B IT, Qwen3 8B, Gemma3 4B, Qwen3.5 9B, and Gemma 2 9B
+evaluations. Three Gemma 2 generation requests failed after retries; their empty
+outputs remain in the denominator. Gemma-Nemotron 4B BF16 EA was discovered under
 `runs/gemma-nemotron-4b-bf16-ea-vllm-full`, outside the sweep directories. Its
 October 4 GPT-6 Luna rejudge covers all 2,035 tasks and scores 65.55%; the original
 self-judged artifact is excluded. The evaluation owner confirms this is a
@@ -130,9 +132,8 @@ with the agreed judge has been reviewed.
    outputs as full evaluations.
 5. Refresh the browser to see the updated table and both chart axes.
 
-The local small-model batch also contains inference work without completed
-scoring. Those outputs must acquire reviewed evaluation artifacts before adding
-rows to the leaderboard.
+The five local small-model runs in this sweep have completed generation and
+GPT-6 Luna scoring, and appear in the unified leaderboard.
 
 ## Release dates and model size
 
