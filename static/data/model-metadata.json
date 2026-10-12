@@ -1,5 +1,5 @@
 {
-  "reviewed_at": "2026-10-11",
+  "reviewed_at": "2026-10-12",
   "notes": "Release dates describe the vendor availability documented in each linked source, not the evaluation date. Parameter counts are vendor-reported total parameters, in billions; MoE activated parameters are separate. Null means not publicly documented in the reviewed sources.",
   "models": {
     "GPT-4o": {
@@ -320,17 +320,6 @@
       "active_parameters_b": 18,
       "release_source": "https://docs.api.nvidia.com/nim/reference/z-ai-glm-5-3-flash",
       "parameters_source": "https://docs.z.ai/guides/vlm/glm-5.3-flash"
-    },
-    "gemma-nemotron-4b-bf16-ea": {
-      "name": "Gemma-Nemotron 4B BF16 EA",
-      "provider": "NVIDIA",
-      "access": "closed",
-      "release_date": null,
-      "release_note": "Non-public Early Access checkpoint (v1.0.0-ea), confirmed by the evaluation owner. Public release date and vendor-reported total parameter count are not documented. The 4B checkpoint name is not treated as a verified total parameter count.",
-      "parameters_b": null,
-      "active_parameters_b": null,
-      "release_source": null,
-      "parameters_source": null
     },
     "gemma-4-31b-it": {
       "name": "Gemma 4 31B IT",

@@ -187,16 +187,6 @@
       "name": "Qwen2.5 7B Instruct (Ollama)"
     },
     {
-      "id": "gemma-nemotron-4b-bf16-ea-luna-20261004",
-      "model_key": "gemma-nemotron-4b-bf16-ea",
-      "evaluation": "runs/gemma-nemotron-4b-bf16-ea-vllm-full/rejudge_luna/evaluation.json",
-      "evaluated_on": "2026-10-04",
-      "judge": "GPT-6 Luna",
-      "protocol_source": "runs/gemma-nemotron-4b-bf16-ea-vllm-full/rejudge_luna.py",
-      "generation_protocol_source": "runs/gemma-nemotron-4b-bf16-ea-vllm-full/run.json",
-      "notes": "Full 2,035-task evaluation of the BF16 v1.0.0-ea checkpoint served locally with vLLM, thinking disabled, temperature 1.0, top-p 0.95, and 8,192 output tokens. GPT-6 Luna rejudged the saved outputs and rendered images; the original self-judged scores are not used. No successful Typst renders were recorded; failures remain included in scores."
-    },
-    {
       "id": "gemma-4-31b-it-luna-20261010",
       "model_key": "gemma-4-31b-it",
       "evaluation": "experiment_results/model_sweep_20261004/generations/google__gemma-4-31b-it/evaluation_luna.json",
