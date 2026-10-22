@@ -62,8 +62,9 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
-      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__deepseek__deepseek-v3.2/audit.json"
     },
     {
       "id": "gemini-2.5-flash-lite-luna-20261004",
@@ -72,8 +73,9 @@
       "evaluated_on": "2026-10-04",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
-      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__google__gemini-2.5-flash-lite/audit.json"
     },
     {
       "id": "gemini-3.1-flash-lite-luna-20261010",
@@ -82,8 +84,9 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Angular, Matplotlib, Typst. Recorded failures remain included in scores.",
-      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__google__gemini-3.1-flash-lite/audit.json"
     },
     {
       "id": "gemini-3.8-flash-luna-20261010",
@@ -92,8 +95,9 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Angular, Matplotlib, Typst. Recorded failures remain included in scores.",
-      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__google__gemini-3.8-flash/audit.json"
     },
     {
       "id": "gemma-4-26b-a4b-it-luna-20261010",
@@ -102,8 +106,9 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Angular, Matplotlib, Typst. Recorded failures remain included in scores.",
-      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__google__gemma-4-26b-a4b-it/audit.json"
     },
     {
       "id": "mistral-small-2603-luna-20261010",
@@ -112,8 +117,9 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
-      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__mistralai__mistral-small-2603/audit.json"
     },
     {
       "id": "qwen3-30b-a3b-instruct-2507-luna-20261010",
@@ -122,8 +128,9 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
-      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__qwen__qwen3-30b-a3b-instruct-2507/audit.json"
     },
     {
       "id": "tencent-hy3-luna-20261010",
@@ -132,8 +139,9 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
-      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__tencent__hy3/audit.json"
     },
     {
       "id": "mimo-v2.6-flash-luna-20261010",
@@ -142,8 +150,9 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
-      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__xiaomi__mimo-v2.6-flash/audit.json"
     },
     {
       "id": "glm-5.3-flash-luna-20261010",
@@ -152,8 +161,9 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
-      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__z-ai__glm-5.3-flash/audit.json"
     },
     {
       "id": "deepseek-v3.1-terminus-luna-20261010",
@@ -162,8 +172,9 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
-      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__deepseek__deepseek-v3.1-terminus/audit.json"
     },
     {
       "id": "kimi-k2.5-luna-20261010",
@@ -172,8 +183,9 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_priority.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores.",
-      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py"
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
+      "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__moonshotai__kimi-k2.5/audit.json"
     },
     {
       "id": "qwen2.5-7b-instruct-luna-20261010",
@@ -182,9 +194,10 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores. Ollama qwen2.5:7b, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded. This is the latest complete run for this model.",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator. Ollama qwen2.5:7b, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded. This is the latest complete run for this model.",
       "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_local.py",
-      "name": "Qwen2.5 7B Instruct (Ollama)"
+      "name": "Qwen2.5 7B Instruct (Ollama)",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/local_generations__qwen2.5-7b/audit.json"
     },
     {
       "id": "gemma-4-31b-it-luna-20261010",
@@ -193,9 +206,10 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Angular, Matplotlib, Typst. Recorded failures remain included in scores.",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator.",
       "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_openrouter.py",
-      "name": "Gemma 4 31B IT"
+      "name": "Gemma 4 31B IT",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/generations__google__gemma-4-31b-it/audit.json"
     },
     {
       "id": "qwen3-8b-luna-20261010",
@@ -204,9 +218,10 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores. Ollama local generation, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded.",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator. Ollama local generation, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded.",
       "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_local.py",
-      "name": "Qwen3 8B (Ollama)"
+      "name": "Qwen3 8B (Ollama)",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/local_generations__qwen3-8b/audit.json"
     },
     {
       "id": "gemma3-4b-luna-20261010",
@@ -215,9 +230,10 @@
       "evaluated_on": "2026-10-10",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, TOML, Typst. Recorded failures remain included in scores. Ollama local generation, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded.",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator. Ollama local generation, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded.",
       "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_local.py",
-      "name": "Gemma3 4B (Ollama)"
+      "name": "Gemma3 4B (Ollama)",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/local_generations__gemma3-4b/audit.json"
     },
     {
       "id": "qwen3.5-9b-luna-20261011",
@@ -226,9 +242,10 @@
       "evaluated_on": "2026-10-11",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, Typst. Recorded failures remain included in scores. Ollama local generation, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded.",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator. Ollama local generation, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded.",
       "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_local.py",
-      "name": "Qwen3.5 9B (Ollama)"
+      "name": "Qwen3.5 9B (Ollama)",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/local_generations__qwen3.5-9b/audit.json"
     },
     {
       "id": "gemma2-9b-luna-20261011",
@@ -237,9 +254,10 @@
       "evaluated_on": "2026-10-11",
       "judge": "GPT-6 Luna",
       "protocol_source": "experiment_results/model_sweep_20261004/score_all.py",
-      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. No successful renders recorded for Matplotlib, TOML, Typst. Recorded failures remain included in scores. Ollama local generation, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded. Three generation requests failed with HTTP 500 after retries and are included as empty outputs in the 2,035-task score (at most 0.15 percentage points of the aggregate).",
+      "notes": "Full 2,035-task run; VQA judge: GPT-6 Luna via OpenRouter. Cached Matplotlib and Typst outputs and affected Angular outputs were rerendered on 2026-10-22, with affected visual results rejudged by the same GPT-6 Luna model. Remaining render failures stay in the denominator. Ollama local generation, temperature 0, 8,192-token context and output limits; checkpoint quantization was not recorded. Three generation requests failed with HTTP 500 after retries and are included as empty outputs in the 2,035-task score (at most 0.15 percentage points of the aggregate).",
       "generation_protocol_source": "experiment_results/model_sweep_20261004/infer_local.py",
-      "name": "Gemma 2 9B (Ollama)"
+      "name": "Gemma 2 9B (Ollama)",
+      "renderer_audit_source": "experiment_results/model_sweep_20261004/renderer_audit_20261022/local_generations__gemma2-9b/audit.json"
     }
   ]
 }

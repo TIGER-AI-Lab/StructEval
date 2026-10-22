@@ -1,0 +1,494 @@
+{
+  "updated_at": "2026-10-22",
+  "judge": "GPT-6 Luna",
+  "dataset_n": 2035,
+  "method": "Rerendered cached Matplotlib and Typst outputs and affected Angular outputs; rejudged affected visual results with the same judge. Model generations and text-only scores are unchanged.",
+  "results": [
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/deepseek__deepseek-v3.1-terminus",
+      "original_overall_percent": 74.54,
+      "corrected_overall_percent": 77.21,
+      "delta_points": 2.67,
+      "text_only_percent": 81.26,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 49,
+          "old_score_percent": 9.24,
+          "new_score_percent": 95.02
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 13,
+          "old_score_percent": 10.0,
+          "new_score_percent": 31.26
+        },
+        "Angular": {
+          "old_rendered": 82,
+          "new_rendered": 83,
+          "old_score_percent": 83.92,
+          "new_score_percent": 84.68
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/deepseek__deepseek-v3.2",
+      "original_overall_percent": 72.88,
+      "corrected_overall_percent": 75.52,
+      "delta_points": 2.64,
+      "text_only_percent": 75.91,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 45,
+          "old_score_percent": 8.7,
+          "new_score_percent": 83.88
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 18,
+          "old_score_percent": 10.0,
+          "new_score_percent": 38.74
+        },
+        "Angular": {
+          "old_rendered": 73,
+          "new_rendered": 75,
+          "old_score_percent": 74.6,
+          "new_score_percent": 76.49
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/google__gemini-2.5-flash-lite",
+      "original_overall_percent": 69.85,
+      "corrected_overall_percent": 72.0,
+      "delta_points": 2.15,
+      "text_only_percent": 75.11,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 50,
+          "old_score_percent": 8.82,
+          "new_score_percent": 96.32
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 0,
+          "old_score_percent": 9.96,
+          "new_score_percent": 9.96
+        },
+        "Angular": {
+          "old_rendered": 86,
+          "new_rendered": 86,
+          "old_score_percent": 86.21,
+          "new_score_percent": 86.21
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/google__gemini-3.1-flash-lite",
+      "original_overall_percent": 73.37,
+      "corrected_overall_percent": 81.17,
+      "delta_points": 7.8,
+      "text_only_percent": 81.54,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 50,
+          "old_score_percent": 9.12,
+          "new_score_percent": 96.9
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 48,
+          "old_score_percent": 9.9,
+          "new_score_percent": 92.24
+        },
+        "Angular": {
+          "old_rendered": 0,
+          "new_rendered": 88,
+          "old_score_percent": 9.06,
+          "new_score_percent": 86.66
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/google__gemini-3.8-flash",
+      "original_overall_percent": 73.59,
+      "corrected_overall_percent": 80.59,
+      "delta_points": 7.0,
+      "text_only_percent": 82.35,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 50,
+          "old_score_percent": 8.46,
+          "new_score_percent": 95.72
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 47,
+          "old_score_percent": 10.0,
+          "new_score_percent": 92.44
+        },
+        "Angular": {
+          "old_rendered": 0,
+          "new_rendered": 69,
+          "old_score_percent": 9.02,
+          "new_score_percent": 69.62
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/google__gemma-4-26b-a4b-it",
+      "original_overall_percent": 64.24,
+      "corrected_overall_percent": 68.88,
+      "delta_points": 4.64,
+      "text_only_percent": 72.67,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 50,
+          "old_score_percent": 8.82,
+          "new_score_percent": 96.26
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 44,
+          "old_score_percent": 10.0,
+          "new_score_percent": 82.76
+        },
+        "Angular": {
+          "old_rendered": 0,
+          "new_rendered": 17,
+          "old_score_percent": 9.13,
+          "new_score_percent": 24.22
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/google__gemma-4-31b-it",
+      "original_overall_percent": 71.78,
+      "corrected_overall_percent": 77.47,
+      "delta_points": 5.69,
+      "text_only_percent": 80.96,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 50,
+          "old_score_percent": 9.46,
+          "new_score_percent": 95.96
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 30,
+          "old_score_percent": 10.0,
+          "new_score_percent": 63.06
+        },
+        "Angular": {
+          "old_rendered": 0,
+          "new_rendered": 54,
+          "old_score_percent": 8.57,
+          "new_score_percent": 56.98
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/mistralai__mistral-small-2603",
+      "original_overall_percent": 70.07,
+      "corrected_overall_percent": 72.45,
+      "delta_points": 2.38,
+      "text_only_percent": 79.01,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 49,
+          "old_score_percent": 9.12,
+          "new_score_percent": 94.46
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 7,
+          "old_score_percent": 10.0,
+          "new_score_percent": 21.36
+        },
+        "Angular": {
+          "old_rendered": 50,
+          "new_rendered": 50,
+          "old_score_percent": 53.4,
+          "new_score_percent": 53.4
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/moonshotai__kimi-k2.5",
+      "original_overall_percent": 72.79,
+      "corrected_overall_percent": 77.27,
+      "delta_points": 4.48,
+      "text_only_percent": 77.52,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 50,
+          "old_score_percent": 8.46,
+          "new_score_percent": 95.96
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 46,
+          "old_score_percent": 10.0,
+          "new_score_percent": 89.94
+        },
+        "Angular": {
+          "old_rendered": 72,
+          "new_rendered": 81,
+          "old_score_percent": 74.77,
+          "new_score_percent": 82.61
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/qwen__qwen3-30b-a3b-instruct-2507",
+      "original_overall_percent": 69.54,
+      "corrected_overall_percent": 71.63,
+      "delta_points": 2.09,
+      "text_only_percent": 73.01,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 50,
+          "old_score_percent": 9.34,
+          "new_score_percent": 95.84
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 0,
+          "old_score_percent": 10.0,
+          "new_score_percent": 10.0
+        },
+        "Angular": {
+          "old_rendered": 85,
+          "new_rendered": 85,
+          "old_score_percent": 84.23,
+          "new_score_percent": 83.36
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/tencent__hy3",
+      "original_overall_percent": 73.14,
+      "corrected_overall_percent": 76.87,
+      "delta_points": 3.73,
+      "text_only_percent": 77.76,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 50,
+          "old_score_percent": 8.2,
+          "new_score_percent": 95.34
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 37,
+          "old_score_percent": 10.0,
+          "new_score_percent": 74.88
+        },
+        "Angular": {
+          "old_rendered": 87,
+          "new_rendered": 87,
+          "old_score_percent": 87.97,
+          "new_score_percent": 87.79
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/xiaomi__mimo-v2.6-flash",
+      "original_overall_percent": 76.15,
+      "corrected_overall_percent": 79.64,
+      "delta_points": 3.49,
+      "text_only_percent": 83.82,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 48,
+          "old_score_percent": 8.22,
+          "new_score_percent": 91.78
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 33,
+          "old_score_percent": 9.68,
+          "new_score_percent": 65.54
+        },
+        "Angular": {
+          "old_rendered": 88,
+          "new_rendered": 90,
+          "old_score_percent": 88.41,
+          "new_score_percent": 89.74
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/generations/z-ai__glm-5.3-flash",
+      "original_overall_percent": 69.76,
+      "corrected_overall_percent": 76.18,
+      "delta_points": 6.42,
+      "text_only_percent": 80.79,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 50,
+          "old_score_percent": 7.86,
+          "new_score_percent": 95.54
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 48,
+          "old_score_percent": 10.0,
+          "new_score_percent": 94.54
+        },
+        "Angular": {
+          "old_rendered": 9,
+          "new_rendered": 62,
+          "old_score_percent": 16.18,
+          "new_score_percent": 63.17
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/local_generations/gemma2-9b",
+      "original_overall_percent": 66.29,
+      "corrected_overall_percent": 67.29,
+      "delta_points": 1.0,
+      "text_only_percent": 76.43,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 25,
+          "old_score_percent": 9.44,
+          "new_score_percent": 51.6
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 0,
+          "old_score_percent": 9.96,
+          "new_score_percent": 9.96
+        },
+        "Angular": {
+          "old_rendered": 78,
+          "new_rendered": 78,
+          "old_score_percent": 77.2,
+          "new_score_percent": 76.47
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/local_generations/gemma3-4b",
+      "original_overall_percent": 54.14,
+      "corrected_overall_percent": 56.97,
+      "delta_points": 2.83,
+      "text_only_percent": 62.63,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 37,
+          "old_score_percent": 9.28,
+          "new_score_percent": 71.52
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 37,
+          "old_score_percent": 9.9,
+          "new_score_percent": 62.98
+        },
+        "Angular": {
+          "old_rendered": 19,
+          "new_rendered": 19,
+          "old_score_percent": 21.39,
+          "new_score_percent": 21.39
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/local_generations/qwen2.5-7b",
+      "original_overall_percent": 50.1,
+      "corrected_overall_percent": 53.11,
+      "delta_points": 3.01,
+      "text_only_percent": 50.34,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 45,
+          "old_score_percent": 9.02,
+          "new_score_percent": 84.08
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 30,
+          "old_score_percent": 10.0,
+          "new_score_percent": 56.9
+        },
+        "Angular": {
+          "old_rendered": 71,
+          "new_rendered": 71,
+          "old_score_percent": 71.79,
+          "new_score_percent": 71.96
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/local_generations/qwen3-8b",
+      "original_overall_percent": 64.71,
+      "corrected_overall_percent": 67.47,
+      "delta_points": 2.76,
+      "text_only_percent": 73.36,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 50,
+          "old_score_percent": 9.08,
+          "new_score_percent": 95.7
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 17,
+          "old_score_percent": 9.88,
+          "new_score_percent": 35.94
+        },
+        "Angular": {
+          "old_rendered": 65,
+          "new_rendered": 65,
+          "old_score_percent": 67.01,
+          "new_score_percent": 66.69
+        }
+      }
+    },
+    {
+      "source": "experiment_results/model_sweep_20261004/local_generations/qwen3.5-9b",
+      "original_overall_percent": 70.96,
+      "corrected_overall_percent": 73.03,
+      "delta_points": 2.07,
+      "text_only_percent": 80.43,
+      "formats": {
+        "Matplotlib": {
+          "old_rendered": 0,
+          "new_rendered": 49,
+          "old_score_percent": 9.02,
+          "new_score_percent": 92.66
+        },
+        "Typst": {
+          "old_rendered": 0,
+          "new_rendered": 0,
+          "old_score_percent": 9.96,
+          "new_score_percent": 9.96
+        },
+        "Angular": {
+          "old_rendered": 62,
+          "new_rendered": 62,
+          "old_score_percent": 64.41,
+          "new_score_percent": 64.58
+        }
+      }
+    }
+  ]
+}

@@ -1,5 +1,20 @@
 # Updating the leaderboard
 
+## October 22, 2026 renderer correction
+
+The eighteen October model-sweep runs were reimported after correcting the
+Matplotlib, Typst, and affected Angular renderers. Cached model generations were
+reused; affected visual tasks were rejudged with the same GPT-6 Luna model. The
+950 text-only task scores are unchanged. The corrected overall scores rose by
+1.00–7.80 percentage points; the before/after values and format-level render
+counts are in `static/data/renderer-audit-20261022.json`.
+
+The evaluation repository retains each prior `evaluation_luna.json` and
+`summary.json` under its run's `pre_renderer_audit_20261022/` directory. The
+downloadable per-task evidence in `static/data/artifacts/` was regenerated from
+the corrected evaluations. Gemma-Nemotron remains excluded from the public
+leaderboard, and its result files were not changed in this update.
+
 The page reads `static/data/leaderboard.json`. The chart and table share the same
 results and filters. The leaderboard appears immediately after the compact hero.
 
